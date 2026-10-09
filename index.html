@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>国金证券 政策与战略组</title>
+<style>
+  :root {
+    --bg: #0d1b2a;
+    --card: #132438;
+    --border: #1f3450;
+    --text: #e6edf3;
+    --muted: #8fa3b8;
+    --accent: #4a8ad1;
+    --accent-soft: #6a9bd0;
+    --amber: #d4a94f;
+    --gold: #e3b95f;
+    --radius: 12px;
+    /* 浅蓝区（下方内容区）变量 */
+    --bg-light: #e8f0f7;
+    --card-light: #ffffff;
+    --border-light: #d4e0ec;
+    --text-light: #1f2733;
+    --muted-light: #5b6472;
+    --accent-light: #2f6fb8;
+    --accent-soft-light: #4a8ad1;
+    --gold-light: #c9962e;
+    --amber-light: #b8860b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Navbar */
+  .navbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(13,27,42,0.96);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .navbar .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .navbar .logo { font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+  .navbar .logo .brand { color: var(--gold); }
+  .navbar nav { display: flex; gap: 24px; }
+  .navbar nav a { color: var(--muted); font-size: 14px; transition: color .15s; }
+  .navbar nav a:hover { color: var(--text); }
+
+  /* 汉堡按钮（默认隐藏，移动端显示） */
+  .nav-toggle {
+    display: none;
+    background: none; border: none; cursor: pointer;
+    width: 40px; height: 40px; padding: 8px;
+    position: relative; z-index: 110;
+  }
+  .nav-toggle span {
+    display: block; height: 2px; width: 22px;
+    background: var(--text); border-radius: 2px;
+    margin: 4px auto; transition: all .25s ease;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  @media (max-width: 700px) {
+    .navbar nav {
+      display: none;
+      position: absolute; top: 60px; left: 0; right: 0;
+      flex-direction: column; gap: 0;
+      background: rgba(13,27,42,0.98);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 0;
+    }
+    .navbar nav.open { display: flex; }
+    .navbar nav a {
+      padding: 14px 24px; font-size: 16px; color: var(--text);
+      border-left: 2px solid transparent;
+    }
+    .navbar nav a:hover { background: rgba(90,124,160,0.10); border-left-color: var(--accent); }
+    .navbar nav a::after { display: none; }
+    .nav-toggle { display: block; }
+  }
+
+  /* Masthead */
+  .masthead {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #0d1b2a;
+  }
+  /* 背景：极简经纬线网格 SVG */
+  .masthead .bg-grid {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .masthead .bg-grid svg { width: 100%; height: 100%; display: block; }
+  .masthead::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 56% 60% at 50% 40%, rgba(13,27,42,0.5) 0%, rgba(13,27,42,0.2) 55%, rgba(13,27,42,0) 80%),
+      linear-gradient(180deg, rgba(13,27,42,0.4) 0%, rgba(13,27,42,0.08) 38%, rgba(13,27,42,0.1) 58%, rgba(13,27,42,0.35) 78%, rgba(13,27,42,1) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* 深蓝 masthead 与浅蓝内容区之间为干净的分界线，无渐变过渡 */
+  .masthead .wrap { position: relative; z-index: 2; width: 100%; }
+  .masthead .en { color: var(--muted); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .masthead h1 { font-size: 32px; font-weight: 600; margin: 12px 0 16px; text-shadow: 0 2px 24px rgba(13,27,42,0.9); }
+  .masthead .sub { color: var(--muted); font-size: 15px; max-width: 640px; margin: 0 auto; text-shadow: 0 1px 16px rgba(13,27,42,0.9); }
+  .masthead .stats { margin-top: 24px; display: flex; justify-content: center; gap: 28px; color: var(--muted); font-size: 13px; text-shadow: 0 1px 12px rgba(13,27,42,0.9); }
+  .masthead .stats span b { color: var(--text); font-weight: 600; }
+
+  /* Section heading */
+  .section { padding: 64px 0; }
+  .section-head { margin-bottom: 32px; }
+  .section-head .en { color: var(--gold); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .section-head h2 { font-size: 24px; font-weight: 600; margin-top: 4px; }
+
+  /* Column cards grid */
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  .card .visual {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 110px;
+    height: 110px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .card .visual svg { width: 100%; height: 100%; display: block; }
+  .card .meta { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+  .card .num { color: var(--gold); font-size: 12px; }
+  .card .freq { color: var(--muted); font-size: 12px; border: 1px solid var(--border); padding: 2px 8px; border-radius: 20px; }
+  .card .badge { color: var(--amber); font-size: 11px; border: 1px solid var(--amber); padding: 1px 6px; border-radius: 4px; }
+  .card .title { font-size: 21px; font-weight: 600; margin-bottom: 2px; padding-right: 60px; }
+  .card .title-en { font-size: 12px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; padding-right: 60px; }
+  .card .desc { font-size: 14px; color: var(--muted); margin-bottom: 16px; flex: 1; }
+  .card .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .card .tags span { font-size: 12px; color: #8fb8e0; background: rgba(74,138,209,0.18); padding: 3px 10px; border-radius: 20px; }
+  .card .btn {
+    display: inline-block; text-align: center;
+    color: var(--text); border: 1px solid var(--border);
+    padding: 9px 0; border-radius: 8px; font-size: 14px;
+    text-decoration: none; transition: all .15s;
+  }
+  .card .btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  /* Coverage */
+  .coverage { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .coverage { grid-template-columns: repeat(2, 1fr); } }
+  .cov { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+  .cov .icon { font-size: 20px; margin-bottom: 8px; }
+  .cov .name { font-size: 15px; font-weight: 600; }
+  .cov .desc { font-size: 12px; color: var(--muted); }
+
+  /* Research notes */
+  .note { border-bottom: 1px solid var(--border); padding: 20px 0; display: flex; gap: 16px; align-items: baseline; }
+  .note:first-of-type { border-top: 1px solid var(--border); }
+  .note .t { font-size: 16px; font-weight: 600; flex: 1; }
+  .note .m { font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  /* About */
+  .about { padding: 64px 0 96px; color: var(--muted); font-size: 14px; max-width: 720px; }
+
+  /* ============ 润色增强 ============ */
+  ::selection { background: rgba(74,138,209,0.35); color: #fff; }
+  body { -webkit-font-smoothing: antialiased; }
+
+  /* 导航栏：更精致的分隔与高亮 */
+  .navbar {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+  .navbar nav a {
+    position: relative;
+    padding: 4px 0;
+  }
+  .navbar nav a::after {
+    content: "";
+    position: absolute; left: 0; bottom: 0;
+    width: 0; height: 2px;
+    background: var(--accent-soft);
+    border-radius: 2px;
+    transition: width .2s ease;
+  }
+  .navbar nav a:hover::after { width: 100%; }
+
+  /* 主标题区：标题更精致、加副标细节 */
+  .masthead .en { color: var(--gold); opacity: 0.9; }
+  .masthead h1 { letter-spacing: 0.02em; }
+  .masthead .stats span {
+    display: inline-flex; align-items: baseline; gap: 6px;
+  }
+
+  /* 板块标题区：细分隔线 */
+  .section-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+  }
+  .section-head .en { order: 2; margin-left: auto; align-self: center; }
+  .section-head h2 { order: 1; }
+
+  /* 卡片悬停微交互 */
+  .card {
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(227,185,95,0.2);
+  }
+  .card .visual { transition: opacity .25s ease; }
+  .card:hover .visual { opacity: 0.85; }
+  .card .btn {
+    position: relative;
+    overflow: hidden;
+  }
+  .card .btn::after {
+    content: "→";
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform .2s ease;
+  }
+  .card .btn:hover::after { transform: translateX(4px); }
+  /* 去掉 HTML 里已有的 → 避免重复 */
+  .card .btn { font-weight: 500; }
+
+  /* 覆盖领域卡 hover */
+  .cov { transition: transform .2s ease, border-color .2s ease; }
+  .cov:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .cov .icon { transition: transform .2s ease; display: inline-block; }
+  .cov:hover .icon { transform: scale(1.12); }
+
+  /* 研报列表 hover */
+  .note { transition: padding-left .2s ease, background .2s ease; border-radius: 8px; padding-left: 8px; margin-left: -8px; }
+  .note:hover { padding-left: 16px; background: rgba(19,36,56,0.5); }
+  .note .t { transition: color .15s ease; }
+  .note:hover .t { color: var(--gold); }
+
+  /* 关于区：顶部细线 */
+  .about { border-top: 1px solid var(--border); margin-top: 32px; padding-top: 40px; }
+
+  /* ============ 响应式适配（平板 & 手机） ============ */
+
+  /* 平板（≤960px）：主标题、卡片、间距微调 */
+  @media (max-width: 960px) {
+    .wrap { padding: 0 20px; }
+    .masthead { padding: 80px 0; min-height: 480px; }
+    .masthead h1 { font-size: 28px; }
+  }
+
+  /* 手机（≤700px） */
+  @media (max-width: 700px) {
+    .wrap { padding: 0 16px; }
+    .section { padding: 44px 0; }
+
+    /* 主标题区：缩小字号、减少纵向空间、统计项换行 */
+    .masthead {
+      padding: 64px 0;
+      min-height: 420px;
+    }
+    .masthead .en { font-size: 11px; letter-spacing: 0.14em; }
+    .masthead h1 { font-size: 23px; margin: 10px 0 12px; line-height: 1.35; }
+    .masthead .sub { font-size: 14px; padding: 0 8px; }
+    .masthead .stats {
+      gap: 14px 22px; flex-wrap: wrap; font-size: 12px;
+    }
+
+    /* 版块标题 */
+    .section-head { flex-wrap: wrap; gap: 6px; }
+    .section-head h2 { font-size: 21px; }
+    .section-head .en { margin-left: 0; order: 1; width: 100%; }
+    .section-head h2 { order: 2; }
+
+    /* 卡片：视觉图缩小、标题/英文标题放开右侧留白、标签字号 */
+    .grid { gap: 16px; }
+    .card { padding: 20px; }
+    .card .visual { width: 84px; height: 84px; top: 16px; right: 14px; opacity: 0.42; }
+    .card .title { font-size: 19px; padding-right: 0; }
+    .card .title-en { font-size: 11px; padding-right: 0; }
+    .card .desc { font-size: 13px; }
+    .card .tags span { font-size: 11px; }
+
+    /* 覆盖领域：2列→保持2列，窄屏降字号 */
+    .coverage { gap: 12px; }
+    .cov { padding: 14px; }
+    .cov .name { font-size: 14px; }
+    .cov .desc { font-size: 11px; }
+
+    /* 研报列表：换行，时间另起一行 */
+    .note { flex-direction: column; gap: 4px; }
+    .note .m { white-space: normal; font-size: 12px; }
+    .note .t { font-size: 15px; }
+  }
+
+  /* 超小屏（≤400px）：进一步收紧 */
+  @media (max-width: 400px) {
+    .masthead h1 { font-size: 20px; }
+    .coverage { grid-template-columns: 1fr; }
+    .card .visual { display: none; }
+  }
+
+  /* ============ 浅色内容区（研究专栏起） ============ */
+  #columns, #coverage, #notes, .about {
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+  /* 顶部渐变：从深蓝 masthead 平滑过渡到浅蓝 */
+  /* 顶部过渡由 .masthead::after 单段渐变完成，这里无需额外渐变 */
+
+  /* 浅色区的区块标题 */
+  #columns .section-head .en,
+  #coverage .section-head .en,
+  #notes .section-head .en {
+    color: var(--gold-light);
+  }
+  #columns .section-head,
+  #coverage .section-head,
+  #notes .section-head {
+    border-bottom-color: var(--border-light);
+  }
+  #columns .section-head h2,
+  #coverage .section-head h2,
+  #notes .section-head h2 {
+    color: var(--text-light);
+  }
+
+  /* 浅色区的卡片 */
+  #columns .card, #coverage .cov {
+    background: var(--card-light);
+    border-color: var(--border-light);
+  }
+  #columns .card .title,
+  #coverage .cov .name {
+    color: var(--text-light);
+  }
+  #columns .card .title-en,
+  #columns .card .desc,
+  #coverage .cov .desc {
+    color: var(--muted-light);
+  }
+  #columns .card .num { color: var(--gold-light); }
+  #columns .card .freq { color: var(--muted-light); border-color: var(--border-light); }
+  #columns .card .badge { color: var(--amber-light); border-color: var(--amber-light); }
+  #columns .card .tags span {
+    color: var(--accent-light);
+    background: rgba(47,111,184,0.1);
+  }
+  #columns .card .btn {
+    color: var(--text-light);
+    border-color: var(--border-light);
+  }
+  #columns .card .btn:hover { background: var(--accent-light); border-color: var(--accent-light); color: #fff; }
+  #columns .card:hover { border-color: var(--gold-light); box-shadow: 0 12px 32px rgba(31,39,51,0.1), 0 0 0 1px rgba(201,150,46,0.22); }
+
+  /* 浅色区研报列表 */
+  #notes .note { border-bottom-color: var(--border-light); }
+  #notes .note:first-of-type { border-top-color: var(--border-light); }
+  #notes .note .t { color: var(--text-light); }
+  #notes .note .m { color: var(--muted-light); }
+  #notes .note:hover { background: rgba(47,111,184,0.05); }
+  #notes .note:hover .t { color: var(--gold-light); }
+
+  /* 浅色区 footer */
+  .about { color: var(--muted-light); border-top-color: var(--border-light); }
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="wrap">
+      <div class="logo"><span class="brand">国金证券</span> 政策与战略组</div>
+      <nav id="nav-menu">
+        <a href="#columns">研究专栏</a>
+        <a href="#coverage">覆盖领域</a>
+        <a href="#notes">研究报告</a>
+        <a href="#about">关于我们</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="bg-grid" aria-hidden="true">
+      <svg viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#1f3450" stroke-width="1" fill="none">
+          <line x1="0" y1="120" x2="1440" y2="120"/>
+          <line x1="0" y1="200" x2="1440" y2="200"/>
+          <line x1="0" y1="280" x2="1440" y2="280"/>
+          <line x1="0" y1="360" x2="1440" y2="360"/>
+          <line x1="0" y1="440" x2="1440" y2="440"/>
+        </g>
+        <g stroke="#1f3450" stroke-width="1" fill="none">
+          <ellipse cx="720" cy="260" rx="640" ry="60"/>
+          <ellipse cx="720" cy="260" rx="480" ry="100"/>
+          <ellipse cx="720" cy="260" rx="320" ry="140"/>
+          <ellipse cx="720" cy="260" rx="160" ry="170"/>
+          <ellipse cx="720" cy="260" rx="0" ry="190"/>
+        </g>
+        <g stroke="#2a4a6e" stroke-width="1" fill="none">
+          <path d="M720 70 Q 820 260 720 450"/>
+          <path d="M720 70 Q 620 260 720 450"/>
+          <path d="M720 70 Q 920 260 720 450"/>
+          <path d="M720 70 Q 520 260 720 450"/>
+          <path d="M720 70 Q 1020 260 720 450"/>
+          <path d="M720 70 Q 420 260 720 450"/>
+        </g>
+        <circle cx="720" cy="260" r="190" stroke="#4a8ad1" stroke-width="1" fill="none" opacity="0.5"/>
+      </svg>
+    </div>
+    
+    <div class="wrap">
+      <div class="en">SINOLINK SECURITIES · POLICY & STRATEGY</div>
+      <h1>国金证券 政策与战略组</h1>
+      <p class="sub">这里是一句话定位说明,阐述门户的研究主线、数据来源与持续更新机制。</p>
+      <div class="stats">
+        <span><b>4</b> 大研究板块</span>
+        <span><b>持续</b> 跟踪更新</span>
+        <span><b>团队</b> 成员署名</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Data columns -->
+  <section class="section" id="columns" style="padding-top: 80px;">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="en">RESEARCH COLUMNS</div>
+        <h2>研究专栏</h2>
+      </div>
+      <div class="grid">
+
+        <!-- 板块 01 -->
+        <div class="card">
+          <div class="visual" aria-hidden="true">
+            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+              <!-- 国内政策：精致政策文书 -->
+              <g>
+                <rect x="18" y="12" width="74" height="86" rx="5" fill="#1a2f47" stroke="#4a8ad1" stroke-width="1.4"/>
+                <path d="M18 22 Q55 30 92 22" stroke="#4a8ad1" stroke-width="1.2" fill="none"/>
+                <g stroke="#4a8ad1" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="30" y1="38" x2="80" y2="38"/>
+                  <line x1="30" y1="50" x2="80" y2="50"/>
+                  <line x1="30" y1="62" x2="68" y2="62"/>
+                  <line x1="30" y1="74" x2="80" y2="74"/>
+                </g>
+                <circle cx="80" cy="80" r="10" fill="none" stroke="#e05b4e" stroke-width="1.4" opacity="0.85"/>
+              </g>
+            </svg>
+          </div>
+          <div class="meta"><span class="num">板块 01</span><span class="freq">持续 · 国内政策</span></div>
+          <div class="title">国内政策解读</div>
+          <div class="title-en">Domestic Policy Interpretation</div>
+          <p class="desc">跟踪中央经济工作会议、政府工作报告、部委文件与产业政策,解读政策定调、发力方向与市场影响。</p>
+          <div class="tags"><span>宏观定调</span><span>财政货币</span><span>产业政策</span><span>部委文件</span></div>
+          <a class="btn" href="#">进入板块</a>
+        </div>
+
+        <!-- 板块 02 -->
+        <div class="card">
+          <div class="visual" aria-hidden="true">
+            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+              <!-- 美国政治：极简白宫 -->
+              <g stroke="#4a8ad1" stroke-width="1.3" fill="none" stroke-linejoin="round">
+                <path d="M30 42 L55 26 L80 42 Z" fill="#1a2f47"/>
+                <rect x="30" y="42" width="50" height="28" fill="#1a2f47"/>
+                <line x1="30" y1="42" x2="80" y2="42"/>
+                <line x1="36" y1="70" x2="74" y2="70"/>
+                <line x1="41" y1="76" x2="69" y2="76"/>
+              </g>
+              <g stroke="#4a8ad1" stroke-width="1.1">
+                <line x1="38" y1="46" x2="38" y2="66"/>
+                <line x1="48" y1="46" x2="48" y2="66"/>
+                <line x1="55" y1="48" x2="55" y2="66"/>
+                <line x1="62" y1="46" x2="62" y2="66"/>
+                <line x1="72" y1="46" x2="72" y2="66"/>
+              </g>
+              <path d="M50 66 L50 59 A5 5 0 0 1 60 59 L60 66" stroke="#4a8ad1" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <div class="meta"><span class="num">板块 02</span><span class="freq">持续 · 美国政治</span></div>
+          <div class="title">美国政治动态跟踪与分析</div>
+          <div class="title-en">US Politics Tracking & Analysis</div>
+          <p class="desc">跟踪美国行政、立法与选举动态,分析其政策取向、对华姿态及对全球市场与中美关系的传导。</p>
+          <div class="tags"><span>白宫国会</span><span>选举周期</span><span>对华政策</span><span>贸易科技</span></div>
+          <a class="btn" href="#">进入板块</a>
+        </div>
+
+        <!-- 板块 03 -->
+        <div class="card">
+          <div class="visual" aria-hidden="true">
+            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+              <!-- 大陆轮廓：真实世界地图（以欧亚大陆为中心，正射投影） -->
+              <g fill="#2a4a6e" fill-opacity="0.75" stroke="#4a8ad1" stroke-width="0.4" stroke-linejoin="round">
+                <path d="M31.7,80.2L31.5,80.9L31.9,81.3L32.1,82.2L32.4,82.8L32.8,83.6L33.1,84.6L32.7,85.2L31.7,84.9L31.1,84.9L31.3,85.7L31.8,86.4L30.8,86.1L31.2,86.8L30.5,86.6L30.3,86.5Z M23.9,80.1L23.1,79.1L22.7,78.5L22.1,77.6L21.7,77.0L21.1,75.9L20.7,75.3L20.5,74.6L20.6,73.9L20.2,72.9L20.0,71.9L19.6,71.0L19.5,70.2L19.2,69.4L18.8,68.4L18.6,67.7L18.4,67.0L18.6,66.2L18.7,65.3L18.5,64.5L18.4,63.9L18.0,63.4L17.6,62.4L17.5,61.2L17.1,60.5L16.8,59.9L16.3,59.3L16.0,58.5L15.9,57.8L15.7,57.0L15.4,56.4L15.4,55.6L15.3,54.7L15.3,54.1L15.4,53.4L15.4,52.7L15.4,51.9L15.6,51.0L15.6,50.2L15.7,49.5L15.8,48.8L15.9,48.1L16.1,47.5L16.4,46.6L16.8,46.1L17.2,45.2L17.6,44.4L17.8,43.7L18.4,43.2L18.9,42.9L19.6,42.7L20.0,43.1L20.9,42.5L21.5,42.1L22.2,42.4L22.9,42.1L22.9,42.8L23.1,43.7L23.7,44.3L24.6,45.1L24.9,45.7L25.5,46.5L26.1,47.2L26.3,47.8L25.8,48.3L25.4,49.0L25.0,49.3L25.0,50.1L25.2,50.7L25.8,51.9L25.6,52.6L26.2,53.8L26.4,54.4L27.1,53.8L27.7,53.7L28.4,54.4L28.6,55.1L29.0,55.7L29.5,56.1L30.1,57.1L30.7,57.4L31.3,57.5L31.6,58.2L32.4,58.7L33.1,58.3L33.5,57.7L34.3,57.0L34.7,56.3L34.6,55.7L33.8,55.5L33.2,55.2L32.6,54.3L31.8,53.8L31.5,52.7L31.8,51.9L32.5,51.1L33.0,51.5L34.1,51.8L34.8,51.7L36.0,52.2L36.5,53.0L37.0,53.6L37.8,54.0L38.5,53.9L38.7,53.2L38.4,52.6L38.0,51.6L37.5,50.5L38.4,50.2L39.0,49.9L38.4,49.6L37.7,49.5L37.1,49.9L37.5,50.4L36.9,50.4L36.2,50.5L36.0,49.5L36.5,49.3L36.1,48.8L35.0,48.9L34.0,49.5L33.3,50.0L33.2,50.7L32.5,51.0L32.0,50.4L31.3,50.0L30.7,50.3L30.5,51.2L30.4,51.8L29.7,52.3L29.3,51.6L29.6,50.5L29.7,49.7L29.8,48.9L30.2,48.3L30.4,47.6L30.3,46.9L30.1,46.1L30.2,45.5L30.4,44.7L30.0,44.0L29.5,44.7L29.3,45.9L29.3,46.7L29.4,47.6L29.5,48.5L29.1,48.0L28.8,48.7L28.0,49.1L28.4,48.6L28.6,47.8L28.5,46.9L28.4,46.3L28.5,45.2L28.9,44.1L28.9,43.4L28.3,43.3L27.6,42.4L26.9,42.3L26.2,42.6L25.5,42.4L24.9,43.1L24.3,43.3L23.6,42.7L23.1,42.2L23.4,41.3L23.3,40.6L23.8,39.9L24.2,39.2L24.9,38.9L25.4,38.3L25.9,37.7L26.3,38.4L26.4,39.4L26.7,40.2L28.0,39.3L28.4,38.6L28.7,37.5L29.3,38.1L29.8,37.5L30.4,38.4L31.1,38.3L32.4,38.1L32.9,38.5L33.5,38.8L33.9,38.3L34.7,37.5L35.5,37.5L35.1,38.1L34.4,38.4L34.0,38.9L34.1,39.6L34.3,40.3L35.2,40.5L35.7,41.0L36.6,41.3L37.3,40.5L38.1,40.3L38.1,41.0L38.8,40.3L38.9,39.7L39.7,40.0L40.1,40.4L40.6,39.9L39.6,39.5L39.3,38.9L39.8,38.1L40.1,37.5L41.0,37.2L42.0,37.1L42.3,36.4L41.4,36.4L40.4,36.8L39.6,36.9L38.8,37.4L38.4,38.3L37.7,38.7L36.4,39.3L35.9,39.6L35.2,39.5L35.3,38.7L35.8,38.0L36.4,37.2L35.7,36.8L35.5,36.1L36.1,35.5L37.3,34.6L38.6,34.7L39.5,34.7L40.5,34.5L41.9,34.1L42.5,34.1L43.6,33.9L44.3,34.3L45.0,34.1L45.6,34.5L45.8,35.2L45.3,35.6L46.1,36.5L46.4,37.5L46.2,38.3L45.3,38.4L44.6,37.4L44.5,38.0L43.9,38.8L44.2,39.4L44.4,38.9L45.0,39.4L45.4,38.8L46.3,38.5L47.0,38.6L47.3,37.9L47.8,38.3L47.4,38.9L48.1,38.5L48.7,38.4L49.8,38.1L50.5,38.6L51.2,38.8L51.4,38.1L52.2,38.2L53.3,39.2L53.3,38.6L53.1,37.6L53.6,36.8L54.0,36.2L54.5,36.7L54.4,37.4L54.4,38.7L54.5,39.5L54.0,40.4L54.7,40.2L55.0,39.5L55.0,38.7L54.9,37.7L55.0,36.8L55.3,37.4L55.5,36.7L56.4,36.9L56.1,35.8L56.9,35.6L57.2,34.8L58.0,34.2L58.6,34.0L59.1,33.5L59.2,32.6L59.8,32.9L60.4,32.7L61.2,32.9L61.2,33.9L61.7,34.1L62.3,33.9L63.1,33.8L63.7,33.5L63.9,32.8L64.8,33.1L65.5,33.5L65.9,32.9L66.3,32.4L65.9,31.8L66.8,30.4L67.8,30.2L67.9,29.5L68.8,29.4L68.9,28.6L68.9,28.0L68.6,27.5L68.5,26.6L68.9,26.0L69.6,25.2L69.7,24.3L70.4,24.8L71.1,24.9L70.8,25.5L70.8,26.2L71.7,26.6L72.5,26.7L73.0,27.1L73.7,27.9L74.3,28.6L74.7,29.0L75.1,30.2L75.1,30.9L76.0,31.7L77.3,32.0L77.7,32.7L78.2,33.3L78.9,33.8L79.5,34.8L79.9,35.6L78.7,35.0L77.4,34.4L76.6,33.8L76.1,33.2L75.3,31.9L74.8,31.2L74.3,30.5L73.4,30.0L74.0,30.7L74.6,31.6L73.8,31.4L73.9,32.1L74.8,33.2L75.2,33.9L74.5,34.3L74.2,35.5L74.0,36.4L74.5,38.0L75.0,40.0L75.8,39.9L76.2,39.1L77.0,39.2L77.8,40.3L78.4,40.8L79.1,41.7L79.4,42.9L79.9,44.4L80.1,45.4L80.0,46.6L79.4,47.5L79.4,48.2L79.7,48.8L79.6,49.6L79.4,50.1L80.1,50.5L80.8,50.9L81.5,51.9L81.3,52.7L80.8,53.6L80.4,52.8L80.0,52.3L79.6,51.7L79.0,51.9L78.8,51.0L77.8,51.6L77.4,52.5L77.3,51.9L77.3,51.3L76.8,51.6L76.6,52.3L76.2,53.1L76.5,53.8L77.4,53.9L77.6,53.2L78.4,53.0L78.1,53.8L77.9,54.9L78.4,55.5L78.9,56.0L79.4,56.3L80.0,57.0L80.1,57.6L80.6,58.2L80.4,58.9L80.4,59.8L80.3,60.9L80.1,61.9L79.7,62.8L79.1,63.8L78.6,64.2L77.9,65.0L77.3,65.7L76.8,66.0L76.7,66.8L76.3,66.3L75.5,66.4L74.7,67.5L74.3,68.3L74.8,69.2L75.5,69.8L76.5,70.2L76.9,71.2L77.0,72.2L76.6,72.8L76.0,73.4L75.6,74.1L74.9,75.0L74.7,74.2L73.8,74.2L73.1,73.5L72.0,73.7L71.3,75.0L71.2,75.9L71.9,76.2L72.4,76.9L73.1,77.0L73.9,77.4L73.9,78.0L74.3,78.5L74.1,79.2L73.5,79.1L72.8,78.9L72.3,78.5L72.0,77.9L71.9,77.3L71.1,76.7L70.6,76.3L70.7,75.7L70.8,74.8L70.5,73.8L70.0,73.0L69.8,72.2L69.1,72.2L68.4,72.9L67.6,72.9L67.8,72.1L67.0,70.9L66.2,70.3L65.9,69.7L65.4,69.1L64.8,69.8L64.0,69.8L62.7,70.4L62.5,71.3L61.6,71.8L60.9,72.6L60.4,73.1L59.8,73.6L58.9,74.3L58.4,74.8L58.5,75.6L58.3,76.7L58.3,77.6L57.7,78.1L57.0,78.9L56.1,78.6L55.8,77.8L55.5,77.2L54.9,76.3L54.7,75.6L54.0,74.4L53.8,73.2L53.6,72.4L53.6,71.6L53.5,71.0L52.5,71.4L51.2,70.4L50.6,69.4L50.0,68.7L49.6,68.1L48.4,68.1L47.4,68.0L46.5,67.9L45.4,67.5L44.8,67.2L44.1,67.0L44.0,66.1L43.2,66.0L42.6,66.1L41.9,65.7L41.4,65.1L40.9,64.7L40.7,64.0L40.4,63.0L39.8,62.7L39.3,63.0L39.3,63.7L39.4,64.3L40.0,65.2L39.9,65.9L40.1,66.6L40.4,65.8L40.6,66.4L40.5,67.1L41.1,67.3L41.9,67.5L42.9,66.9L43.5,66.4L43.4,67.4L43.9,68.2L44.7,68.6L45.1,69.2L45.0,69.8L44.3,70.5L43.8,70.9L43.0,71.4L42.4,71.7L41.8,72.1L41.0,72.1L40.2,72.1L39.4,72.6L38.4,72.5L37.8,72.8L37.0,72.7L36.1,72.5L35.2,72.5L34.6,72.3L34.6,71.6L34.4,70.9L34.5,70.3L34.4,69.5L34.1,68.9L33.9,68.2L33.6,67.1L33.2,66.1L33.3,65.3L33.2,64.5L32.8,63.8L32.8,62.9L32.6,62.1L32.5,61.4L32.1,60.7L32.6,60.0L32.1,60.5L31.5,60.1L31.5,59.0L31.4,59.8L31.5,60.6L31.5,61.7L31.6,62.6L31.8,63.5L32.0,64.9L32.1,65.7L31.9,66.4L31.9,67.2L32.3,67.9L32.5,68.7L32.5,69.3L33.4,70.7L34.0,71.6L34.4,72.2L34.3,72.9L34.8,73.7L35.7,74.0L36.3,74.1L37.2,74.2L38.0,74.4L38.6,74.4L39.1,74.9L38.7,75.9L38.3,76.4L37.9,77.0L37.3,77.6L36.7,78.0L36.0,78.4L35.4,78.6L34.4,78.7L33.2,79.2L32.6,79.4L32.0,79.9L31.7,80.2Z M63.1,20.5L62.7,20.0L61.8,19.9L61.1,19.7L60.4,19.5L59.5,19.3L58.9,19.1L58.1,18.7L57.3,18.4L56.5,18.2L55.7,18.2L55.1,18.3L54.1,18.1L53.3,18.2L52.6,18.1L52.3,18.7L53.0,18.9L52.6,19.4L51.8,19.1L51.3,18.6L50.7,18.8L50.1,19.3L49.3,19.4L48.8,18.9L49.4,18.4L49.8,17.9L50.4,17.6L51.1,17.0L51.3,16.4L50.5,16.3L49.7,16.4L49.0,16.4L48.2,16.5L47.2,16.6L46.6,16.8L45.7,16.7L44.4,16.9L45.2,17.1L44.5,17.6L45.2,17.7L45.8,17.7L46.6,18.2L45.9,18.5L45.1,18.8L44.3,18.9L43.5,19.0L42.6,19.0L42.0,19.4L40.7,20.0L40.0,20.1L39.2,20.3L38.2,20.8L37.4,21.0L36.9,21.3L36.9,20.5L37.4,20.1L38.2,19.6L39.0,19.1L39.6,18.5L38.7,19.1L37.8,19.6L37.0,19.7L36.4,20.0L35.8,20.4L35.3,20.8L36.1,20.1L36.8,19.5L37.7,19.2L38.5,18.7L37.9,18.9L38.6,18.5L39.3,18.2L38.7,18.5L39.4,18.2L39.4,18.2Z M64.5,16.1L63.3,16.0L64.0,16.3L64.6,16.6L65.1,17.1L65.4,17.8L66.0,18.3L66.6,18.9L67.2,19.3L67.9,19.9L68.4,20.2L69.2,20.4L69.9,20.8L69.2,20.8L70.4,21.2L71.4,21.4L72.1,21.7L72.7,22.0L73.4,22.4L74.3,23.1L75.1,23.7L74.3,23.2L73.4,22.6L72.5,22.2L71.7,21.9L72.1,22.4L72.2,23.2L71.7,23.6L70.9,23.4L70.4,23.0L69.6,22.6L69.9,23.4L69.7,24.0L68.7,23.3L68.0,23.5L67.4,23.4L66.7,23.3L66.1,23.0L65.5,22.7L64.9,22.4L64.6,21.7L63.9,21.1L63.3,20.7L63.1,20.5Z M49.6,20.4L49.0,20.5L48.2,20.6L47.1,20.7L46.2,20.6L45.3,20.6L44.6,20.7L43.9,20.4L45.1,20.2L44.2,20.1L43.4,20.1L44.5,19.5L43.9,19.6L43.2,19.7L44.1,19.3L44.8,19.1L45.9,19.1L47.0,18.6L46.4,19.2L46.9,19.7L47.7,19.7L48.6,19.8L49.4,19.5L50.3,19.3L51.2,19.3L51.9,19.7L51.3,20.4L50.7,20.5L50.1,20.3L49.6,20.4Z M91.5,67.8L92.0,67.3L92.4,66.7L93.0,66.4L92.8,67.0L92.8,67.8L92.2,68.5L91.8,69.4L91.5,70.2L91.1,70.8L90.5,71.4L90.1,72.0L90.6,71.0L89.9,70.9L89.1,71.4L88.8,72.0L88.9,71.2L88.1,71.5L88.5,70.8L89.3,70.0L89.4,70.7L90.1,69.7L90.4,68.9L91.0,68.3L91.5,67.8Z M80.8,73.7L81.2,73.1L81.4,72.5L82.3,72.7L82.1,73.6L81.9,74.3L82.2,74.8L82.0,75.8L81.5,76.9L81.3,78.2L80.6,78.7L79.7,78.7L79.1,79.2L78.0,79.5L78.0,78.9L77.4,78.7L77.4,77.8L77.7,77.3L78.6,76.9L78.9,76.2L79.6,75.7L80.0,75.1L80.4,74.3L80.8,73.7Z M74.6,80.2L75.4,80.5L75.5,81.3L75.4,82.0L74.7,82.3L73.5,82.1L72.8,81.7L72.0,80.9L71.4,80.7L71.0,80.0L70.4,79.9L69.6,79.4L68.9,79.0L70.2,78.4L70.8,78.8L71.7,79.1L72.3,79.4L72.9,79.2L73.8,79.7L74.4,80.3L74.6,80.2Z M50.6,25.0L50.9,25.6L50.6,26.2L50.0,26.6L49.8,25.9L49.4,26.3L49.4,26.9L48.5,27.0L47.7,26.8L46.5,26.9L45.8,26.7L44.8,27.1L44.2,27.2L43.6,26.9L42.9,27.0L41.8,27.2L42.5,26.5L41.7,26.5L41.5,27.2L40.7,26.4L40.7,25.7L40.0,25.3L39.9,24.6L39.3,24.2L38.8,23.8L37.9,23.8L38.3,23.1L39.2,22.6L39.8,22.4L40.7,22.2L41.6,22.1L42.3,22.0L43.4,22.3L43.9,22.7L44.3,22.2L44.9,22.6L45.5,22.3L46.1,22.6L47.2,22.7L48.4,22.6L49.0,22.3L49.6,22.1L50.2,22.3L50.3,23.2L51.0,23.4L51.1,24.0L50.8,24.6L50.3,24.9L50.6,25.0Z M38.2,86.0L38.6,86.6L39.0,87.3L38.5,87.7L38.3,88.6L38.1,89.4L37.2,89.4L36.3,88.9L36.0,88.5L35.5,87.9L35.8,87.4L35.3,86.6L36.1,86.5L36.8,86.5L37.4,86.3L38.0,85.8L38.2,86.0Z M79.3,86.8L78.7,87.2L78.0,87.7L77.3,88.2L76.8,88.5L77.2,88.1L77.4,87.5L77.8,87.0L78.1,86.3L78.5,85.9L79.2,85.4L79.9,84.7L80.7,84.2L81.2,83.7L82.0,83.1L82.6,82.5L83.0,81.9L83.5,81.1L84.1,80.7L84.6,79.9L85.0,79.4L85.4,78.9L86.0,78.6L86.5,78.1L86.8,77.5L87.2,76.7L87.7,76.2L88.1,75.6L88.7,75.0L89.2,74.3L89.0,75.0L88.6,75.7L89.2,75.3L89.8,74.5L90.1,73.9L90.5,73.1L90.8,72.3L91.0,71.7L91.3,70.9L91.2,71.6L91.1,72.3Z M83.5,45.7L83.7,46.6L84.1,47.1L84.6,47.8L84.6,49.1L84.1,49.8L84.1,50.9L83.5,50.6L83.1,51.3L82.9,52.0L83.4,53.6L82.5,53.5L82.4,52.7L82.5,51.6L82.5,50.9L83.0,50.1L83.0,48.5L83.4,47.5L83.0,46.2L82.5,45.7L82.5,44.8L83.2,45.3L83.5,45.7Z"/>
+              </g>
+              <!-- 地缘局势：经纬球体 -->
+              <g stroke="#4a8ad1" fill="none">
+                <circle cx="55" cy="55" r="42" stroke-width="1.2"/>
+                <ellipse cx="55" cy="55" rx="28" ry="42" stroke-width="0.6" opacity="0.55"/>
+                <ellipse cx="55" cy="55" rx="14" ry="42" stroke-width="0.6" opacity="0.55"/>
+                <line x1="55" y1="13" x2="55" y2="97" stroke-width="0.6" opacity="0.6"/>
+                <line x1="13" y1="55" x2="97" y2="55" stroke-width="0.6" opacity="0.6"/>
+                <line x1="21" y1="33" x2="89" y2="33" stroke-width="0.5" opacity="0.5"/>
+                <line x1="21" y1="77" x2="89" y2="77" stroke-width="0.5" opacity="0.5"/>
+                <line x1="34" y1="15" x2="76" y2="15" stroke-width="0.5" opacity="0.4"/>
+                <line x1="34" y1="95" x2="76" y2="95" stroke-width="0.5" opacity="0.4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="meta"><span class="num">板块 03</span><span class="freq">持续 · 地缘政治</span></div>
+          <div class="title">地缘局势分析</div>
+          <div class="title-en">Geopolitical Analysis</div>
+          <p class="desc">研判大国博弈、区域冲突与供应链地缘风险,解读地缘变量对能源、航运、资产价格与大类配置的影响。</p>
+          <div class="tags"><span>大国博弈</span><span>区域冲突</span><span>能源航运</span><span>供应链安全</span></div>
+          <a class="btn" href="#">进入板块</a>
+        </div>
+
+        <!-- 板块 04 -->
+        <div class="card">
+          <div class="visual" aria-hidden="true">
+            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+              <!-- 热点事件：发散波纹 -->
+              <g stroke="#4a8ad1" fill="none" stroke-linecap="round">
+                <circle cx="55" cy="55" r="9" stroke-width="1.7"/>
+                <circle cx="55" cy="55" r="20" stroke-width="1.1" opacity="0.7"/>
+                <circle cx="55" cy="55" r="33" stroke-width="0.8" opacity="0.45"/>
+                <circle cx="55" cy="55" r="48" stroke-width="0.5" opacity="0.25"/>
+                <line x1="55" y1="55" x2="55" y2="16" stroke-width="1.2" opacity="0.7"/>
+                <line x1="55" y1="55" x2="88" y2="34" stroke-width="1.2" opacity="0.7"/>
+                <line x1="55" y1="55" x2="22" y2="34" stroke-width="1.2" opacity="0.7"/>
+              </g>
+              <g fill="#4a8ad1">
+                <circle cx="20" cy="24" r="2.2"/>
+                <circle cx="92" cy="20" r="1.8"/>
+                <circle cx="94" cy="82" r="2"/>
+                <circle cx="16" cy="80" r="1.8"/>
+              </g>
+              <g>
+                <circle cx="40" cy="20" r="1.6" fill="#e05b4e"/>
+                <circle cx="72" cy="18" r="1.4" fill="#e3b95f"/>
+                <circle cx="86" cy="48" r="1.5" fill="#e05b4e"/>
+              </g>
+            </svg>
+          </div>
+          <div class="meta"><span class="num">板块 04</span><span class="freq">即时 · 热点事件</span></div>
+          <div class="title">热点事件分析</div>
+          <div class="title-en">Hot Event Analysis</div>
+          <p class="desc">聚焦突发热点与市场关注事件,快速研判事件成因、影响链条与政策含义,提供及时而克制的解读。</p>
+          <div class="tags"><span>突发解读</span><span>市场影响</span><span>政策含义</span><span>事件跟踪</span></div>
+          <a class="btn" href="#">进入板块</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage -->
+  <section class="section" id="coverage">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="en">COVERAGE</div>
+        <h2>研究覆盖领域</h2>
+      </div>
+      <div class="coverage">
+        <div class="cov"><div class="icon">📜</div><div class="name">国内政策</div><div class="desc">宏观定调 · 产业政策</div></div>
+        <div class="cov"><div class="icon">🇺🇸</div><div class="name">美国政治</div><div class="desc">白宫国会 · 对华政策</div></div>
+        <div class="cov"><div class="icon">🌍</div><div class="name">地缘局势</div><div class="desc">大国博弈 · 区域冲突</div></div>
+        <div class="cov"><div class="icon">⚡</div><div class="name">热点事件</div><div class="desc">突发解读 · 市场影响</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research notes -->
+  <section class="section" id="notes">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="en">RESEARCH NOTES</div>
+        <h2>最新研究报告</h2>
+      </div>
+      <div class="note"><span class="t">研报标题占位</span><span class="m">分类 · 联系人 · 日期</span></div>
+      <div class="note"><span class="t">研报标题占位</span><span class="m">分类 · 联系人 · 日期</span></div>
+      <div class="note"><span class="t">研报标题占位</span><span class="m">分类 · 联系人 · 日期</span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <footer class="about" id="about">
+    <div class="wrap">
+      <p>关于本门户的说明文字:研究团队定位、研究主线、数据更新机制与成员署名,后续在此补充。</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (!toggle || !menu) return;
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      // 点击菜单项后自动收起
+      menu.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          menu.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
