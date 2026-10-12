@@ -401,6 +401,61 @@
 
   /* 浅色区 footer */
   .about { color: var(--muted-light); border-top-color: var(--border-light); }
+
+  /* ============ 子页面（美国板块 · 政策收集与梳理） ============ */
+  [hidden] { display: none !important; }
+  .subview { background: var(--bg-light); color: var(--text-light); min-height: 100vh; }
+  .subhead {
+    background: #0d1b2a; color: #e6edf3;
+    padding: 88px 0 48px; text-align: center;
+  }
+  .subhead .back { display: inline-block; color: #8fa3b8; font-size: 13px; margin-bottom: 16px; }
+  .subhead .back:hover { color: var(--gold); }
+  .subhead h1 { font-size: 27px; font-weight: 600; margin-bottom: 8px; }
+  .subhead .suben { color: var(--gold); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .subhead .subdesc { color: #8fa3b8; font-size: 14px; max-width: 660px; margin: 14px auto 0; }
+
+  /* 子页面内的卡片（浅色区） */
+  .subview .card { background: var(--card-light); border-color: var(--border-light); }
+  .subview .card .title { color: var(--text-light); padding-right: 0; }
+  .subview .card .title-en { color: var(--muted-light); padding-right: 0; }
+  .subview .card .desc { color: var(--muted-light); }
+  .subview .card .num { color: var(--gold-light); }
+  .subview .card .freq { color: var(--muted-light); border-color: var(--border-light); }
+  .subview .card .tags span { color: var(--accent-light); background: rgba(47,111,184,0.1); }
+  .subview .card .btn { color: var(--text-light); border-color: var(--border-light); }
+  .subview .card .btn:hover { background: var(--accent-light); border-color: var(--accent-light); color: #fff; }
+  .subview .card:hover { border-color: var(--gold-light); box-shadow: 0 12px 32px rgba(31,39,51,0.1), 0 0 0 1px rgba(201,150,46,0.22); }
+  /* 子页面卡片图标：浅色底上略提亮，保持水印质感 */
+  .subview .card .visual { opacity: 0.55; }
+  .subview .card:hover .visual { opacity: 0.7; }
+  @media (min-width: 901px) {
+    .subview .card .title, .subview .card .title-en { padding-right: 60px; }
+  }
+  /* 子页面：条目列表（政策文件） */
+  .subview .note { border-bottom-color: var(--border-light); }
+  .subview .note:first-of-type { border-top-color: var(--border-light); }
+  .subview .note .t { color: var(--text-light); }
+  .subview .note .t a { color: inherit; text-decoration: none; }
+  .subview .note .m { color: var(--muted-light); }
+  .subview .note:hover { background: rgba(47,111,184,0.05); }
+  .subview .note:hover .t a { color: var(--gold-light); }
+  .subview .note .kind { display: inline-block; font-size: 11px; color: var(--accent-light); background: rgba(47,111,184,0.1); padding: 1px 8px; border-radius: 10px; margin-right: 8px; }
+  .subview .note .t .ext { font-size: 11px; color: var(--muted-light); margin-left: 6px; }
+  #board-updated { text-align: right; border: none; background: none; padding: 0; }
+  #board-updated b { color: var(--accent-light); font-weight: 600; }
+  /* 子页面：返回按钮与说明行 */
+  .subview .placeholder {
+    color: var(--muted-light); font-size: 13px;
+    border: 1px dashed var(--border-light); border-radius: var(--radius);
+    padding: 16px 18px; background: rgba(255,255,255,0.6);
+  }
+
+  @media (max-width: 700px) {
+    .subhead { padding: 72px 0 40px; }
+    .subhead h1 { font-size: 21px; }
+    .subhead .subdesc { font-size: 13px; padding: 0 8px; }
+  }
 </style>
 </head>
 <body>
@@ -456,7 +511,7 @@
       <h1>国金证券 政策与战略组</h1>
       <p class="sub">这里是一句话定位说明,阐述门户的研究主线、数据来源与持续更新机制。</p>
       <div class="stats">
-        <span><b>4</b> 大研究板块</span>
+        <span><b>3</b> 大研究板块</span>
         <span><b>持续</b> 跟踪更新</span>
         <span><b>团队</b> 成员署名</span>
       </div>
@@ -476,59 +531,22 @@
         <div class="card">
           <div class="visual" aria-hidden="true">
             <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-              <!-- 国内政策：精致政策文书 -->
-              <g>
-                <rect x="18" y="12" width="74" height="86" rx="5" fill="#1a2f47" stroke="#4a8ad1" stroke-width="1.4"/>
-                <path d="M18 22 Q55 30 92 22" stroke="#4a8ad1" stroke-width="1.2" fill="none"/>
-                <g stroke="#4a8ad1" stroke-width="1.6" stroke-linecap="round">
-                  <line x1="30" y1="38" x2="80" y2="38"/>
-                  <line x1="30" y1="50" x2="80" y2="50"/>
-                  <line x1="30" y1="62" x2="68" y2="62"/>
-                  <line x1="30" y1="74" x2="80" y2="74"/>
-                </g>
-                <circle cx="80" cy="80" r="10" fill="none" stroke="#e05b4e" stroke-width="1.4" opacity="0.85"/>
+              <!-- 美国政治：美国地图轮廓（本土 + 阿拉斯加） -->
+              <g fill="#1a2f47" stroke="#4a8ad1" stroke-width="1" stroke-linejoin="round">
+                <path d="M106 56.3 L104.5 57.9 L104 57.4 L103.9 58.4 L102.7 59.4 L102.3 62 L103.4 62.7 L103.9 62.5 L103.6 62.1 L104 62.7 L102.6 63.4 L102.2 63 L102.2 63.7 L100.5 64.4 L99.3 65.6 L99.2 64.7 L99.6 67.3 L99 68.8 L97.8 68.2 L98.2 67.2 L97.7 68 L98.9 69.9 L98.2 72.3 L98.2 70.9 L97.1 69.8 L97.4 68.3 L96.6 68.9 L97.3 70.9 L96 70.5 L96.1 69.7 L95.9 70.2 L97.5 71.2 L97.2 71.6 L96.2 70.9 L97.6 72 L96.9 72 L97.6 72.8 L96.3 72.4 L98.2 72.8 L99.2 74.5 L98.3 73.2 L98.7 74.1 L97.4 74.2 L97.5 74.6 L98.4 74.4 L98.5 74.9 L98.9 74.5 L98.5 75.5 L97.2 75.5 L98.1 75.7 L97.5 76.3 L98.3 76.5 L97 76.9 L96.6 78.4 L96.4 78 L95.3 79.1 L93.3 82 L92.9 81.7 L92.4 83.8 L93 86.4 L95.6 91.3 L95.6 93.9 L94.6 94.4 L93.1 92.8 L92.9 91.9 L92.6 92.2 L92.6 91.5 L92.1 91.7 L91.3 90.7 L91.7 90.1 L91.1 90.1 L91.1 88.3 L89.3 86.7 L88.7 86.5 L86.9 87.4 L86.4 86.4 L84 86.6 L84.2 86.2 L82.8 86.9 L82.7 86.1 L82.6 86.7 L79.3 87.1 L79.5 87.5 L80.7 87.4 L80.3 88.1 L81.4 88.8 L80.9 89.2 L79.6 88.3 L79.6 89.1 L77.9 88.9 L78 88.4 L77 87.9 L76.4 88.5 L74.1 88.2 L74 87.8 L74 88.3 L72.7 88.9 L73 88.6 L72.3 88.3 L72.5 88.9 L71.9 89.6 L70.4 90.4 L70.8 90.2 L69.8 90 L70.1 90.5 L68.6 91.5 L68.5 92.4 L68 92.2 L69 94.8 L67.2 94.5 L65.9 93.9 L65.3 92 L62.6 88 L61.2 87.7 L59.7 89.1 L58.1 88 L57.4 86.1 L55.4 83.9 L52.8 83.5 L52.7 84.3 L48.6 83.7 L43.4 80.7 L43.7 80.4 L40.2 79.9 L40 78.5 L38.8 77 L36.1 75.2 L36.3 74.4 L35.2 71.8 L35.6 71 L35 69.5 L35.2 69.1 L35.5 69.8 L35.4 68.8 L36.5 69 L34.5 68.6 L34.1 66.8 L34 64.1 L34.9 62.3 L35 59.9 L37.4 54.4 L38.3 54.8 L37.4 54.3 L38 53.2 L37.7 50.6 L39.8 51.6 L39 52.8 L39.9 52.1 L39.6 53.1 L39 53.2 L39.4 53.4 L40.3 52 L40.2 50.2 L56.7 53.6 L68.5 54.5 L71.7 54.5 L72 53.9 L72.4 55 L74.3 55.1 L76 56 L78.5 56 L79.7 55.4 L84 57.4 L84.5 58.1 L85 57.9 L85.3 58.7 L87.2 59.7 L88.1 62.7 L87.2 65.4 L87.9 66.1 L92.2 63.4 L91.8 62.3 L92.4 61.9 L94.7 61.4 L96.4 58.7 L100.6 57.6 L101.4 56.6 L102.1 52.8 L103.9 52.9 L104.6 55.1 L106 56.3Z M99.4 65.9 L99.8 65.2 L101.8 64.4 L99.4 65.9Z"/>
+                <path d="M5.7 23.8 L8.7 22.9 L9.3 23 L9.1 23.9 L11.1 24.1 L10.4 22.5 L10.8 23.5 L11.8 23.8 L10.7 23.1 L10.9 22.5 L9.6 22.1 L7.8 19.2 L8.4 18.3 L10.1 18.4 L11.9 16.2 L13.1 15.9 L13.2 16.6 L13.5 15.6 L14.6 15.6 L15.6 14.7 L16.1 15.3 L15.8 15.8 L16.4 15.4 L17 16 L18.1 15.9 L18.4 16.7 L22.9 17.4 L24.2 17.1 L25.8 17.8 L28.2 35.6 L30 35.3 L32.1 37.7 L32.9 36.2 L33.9 35.8 L38.7 40.8 L40.8 41.2 L41 43.8 L39.8 41.5 L38.9 42.7 L39.2 41.4 L36.8 40.1 L36.7 38.7 L35.8 38.6 L35.7 37.7 L35.5 38.3 L34.9 38 L33.9 36.4 L34.7 38.5 L33.8 38.4 L33.3 37.2 L33.3 37.8 L32.5 37.4 L33.6 38.3 L33.2 38.8 L29.6 37 L29.7 36.1 L30.1 36.7 L30.3 36.2 L29.8 36 L28.9 36.7 L27.9 36 L25.3 36.5 L24.5 36 L24.7 35.3 L23.6 35.8 L23.8 35.4 L22.9 35.3 L23.1 34.5 L21.7 35 L21.8 34.4 L21.1 35.2 L21 35.8 L21.6 35.8 L21.2 36.8 L20.3 36.6 L18.8 38.2 L18 38.3 L18.7 37.2 L17.9 37.2 L18.4 35.4 L19.3 34.8 L20.6 35.1 L19.7 34.5 L20.2 33.9 L16.8 36.2 L17.1 36.8 L15.6 38.3 L16.3 39.1 L12.8 42.2 L9.2 44.5 L9.2 44.1 L7.3 44.7 L7.2 44.2 L5 45.3 L7.1 43.6 L8.6 44 L8.8 43.1 L12 41.2 L12.2 39.4 L13 38.1 L11.5 39 L11.7 38.3 L11 38.2 L10.7 39.3 L9.5 37.8 L7.6 38.3 L8.3 37.5 L8 35.1 L8.5 34.4 L7.7 35.7 L6.6 35.8 L5.3 34.1 L6 33.5 L6.3 34.2 L7.2 34.1 L5.7 33.4 L5.7 32.7 L5.4 33 L5.3 31.6 L6.7 30.5 L7.3 29.2 L8.2 29.8 L9.2 29 L10.2 29.1 L10.2 27.4 L10.8 26.9 L10.1 26.6 L9.1 27.3 L8.9 26.7 L8.8 27.2 L6.5 26.3 L6.1 25.1 L6.8 25 L5.7 23.8Z"/>
               </g>
             </svg>
           </div>
-          <div class="meta"><span class="num">板块 01</span><span class="freq">持续 · 国内政策</span></div>
-          <div class="title">国内政策解读</div>
-          <div class="title-en">Domestic Policy Interpretation</div>
-          <p class="desc">跟踪中央经济工作会议、政府工作报告、部委文件与产业政策,解读政策定调、发力方向与市场影响。</p>
-          <div class="tags"><span>宏观定调</span><span>财政货币</span><span>产业政策</span><span>部委文件</span></div>
-          <a class="btn" href="#">进入板块</a>
+          <div class="meta"><span class="num">板块 01</span><span class="freq">持续 · 美国政治</span></div>
+          <div class="title">美国政治动态跟踪</div>
+          <div class="title-en">US Politics Tracking</div>
+          <p class="desc">跟踪美国行政、立法与选举动态,分析其政策取向、对华姿态及对全球市场与中美关系的传导。</p>
+          <div class="tags"><span>白宫国会</span><span>选举周期</span><span>对华政策</span><span>贸易科技</span></div>
+          <a class="btn" href="#" data-enter="us">进入板块</a>
         </div>
 
         <!-- 板块 02 -->
-        <div class="card">
-          <div class="visual" aria-hidden="true">
-            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-              <!-- 美国政治：极简白宫 -->
-              <g stroke="#4a8ad1" stroke-width="1.3" fill="none" stroke-linejoin="round">
-                <path d="M30 42 L55 26 L80 42 Z" fill="#1a2f47"/>
-                <rect x="30" y="42" width="50" height="28" fill="#1a2f47"/>
-                <line x1="30" y1="42" x2="80" y2="42"/>
-                <line x1="36" y1="70" x2="74" y2="70"/>
-                <line x1="41" y1="76" x2="69" y2="76"/>
-              </g>
-              <g stroke="#4a8ad1" stroke-width="1.1">
-                <line x1="38" y1="46" x2="38" y2="66"/>
-                <line x1="48" y1="46" x2="48" y2="66"/>
-                <line x1="55" y1="48" x2="55" y2="66"/>
-                <line x1="62" y1="46" x2="62" y2="66"/>
-                <line x1="72" y1="46" x2="72" y2="66"/>
-              </g>
-              <path d="M50 66 L50 59 A5 5 0 0 1 60 59 L60 66" stroke="#4a8ad1" stroke-width="1.2" fill="none"/>
-            </svg>
-          </div>
-          <div class="meta"><span class="num">板块 02</span><span class="freq">持续 · 美国政治</span></div>
-          <div class="title">美国政治动态跟踪与分析</div>
-          <div class="title-en">US Politics Tracking & Analysis</div>
-          <p class="desc">跟踪美国行政、立法与选举动态,分析其政策取向、对华姿态及对全球市场与中美关系的传导。</p>
-          <div class="tags"><span>白宫国会</span><span>选举周期</span><span>对华政策</span><span>贸易科技</span></div>
-          <a class="btn" href="#">进入板块</a>
-        </div>
-
-        <!-- 板块 03 -->
         <div class="card">
           <div class="visual" aria-hidden="true">
             <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
@@ -550,7 +568,7 @@
               </g>
             </svg>
           </div>
-          <div class="meta"><span class="num">板块 03</span><span class="freq">持续 · 地缘政治</span></div>
+          <div class="meta"><span class="num">板块 02</span><span class="freq">持续 · 地缘政治</span></div>
           <div class="title">地缘局势分析</div>
           <div class="title-en">Geopolitical Analysis</div>
           <p class="desc">研判大国博弈、区域冲突与供应链地缘风险,解读地缘变量对能源、航运、资产价格与大类配置的影响。</p>
@@ -558,7 +576,7 @@
           <a class="btn" href="#">进入板块</a>
         </div>
 
-        <!-- 板块 04 -->
+        <!-- 板块 03 -->
         <div class="card">
           <div class="visual" aria-hidden="true">
             <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
@@ -585,7 +603,7 @@
               </g>
             </svg>
           </div>
-          <div class="meta"><span class="num">板块 04</span><span class="freq">即时 · 热点事件</span></div>
+          <div class="meta"><span class="num">板块 03</span><span class="freq">即时 · 热点事件</span></div>
           <div class="title">热点事件分析</div>
           <div class="title-en">Hot Event Analysis</div>
           <p class="desc">聚焦突发热点与市场关注事件,快速研判事件成因、影响链条与政策含义,提供及时而克制的解读。</p>
@@ -633,6 +651,970 @@
     </div>
   </footer>
 
+  <!-- ============ 子页面：美国政治动态（政策收集与梳理） ============ -->
+  <main id="view-us" class="subview" hidden>
+    <div class="subhead">
+      <div class="wrap">
+        <a class="back" href="#" id="back-link">← 返回门户</a>
+        <h1>美国政治动态跟踪</h1>
+        <div class="suben">US Politics · Policy Collection</div>
+        <p class="subdesc">按决策主体分类收集白宫、国会与其他部门的政策文本、立法动态及选举信息。本板块只做条目的收集与梳理归档,不做分析研判。</p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top: 48px;">
+      <div class="wrap">
+        <div class="grid">
+
+          <!-- 子板块 01 -->
+          <div class="card">
+            <div class="visual" aria-hidden="true">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <!-- 白宫：极简立面 -->
+                <g stroke="#2f6fb8" stroke-width="1.3" fill="none" stroke-linejoin="round">
+                  <path d="M30 42 L55 26 L80 42 Z" fill="#dce9f6"/>
+                  <rect x="30" y="42" width="50" height="28" fill="#dce9f6"/>
+                  <line x1="30" y1="42" x2="80" y2="42"/>
+                  <line x1="36" y1="70" x2="74" y2="70"/>
+                  <line x1="41" y1="76" x2="69" y2="76"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.1">
+                  <line x1="38" y1="46" x2="38" y2="66"/>
+                  <line x1="48" y1="46" x2="48" y2="66"/>
+                  <line x1="55" y1="48" x2="55" y2="66"/>
+                  <line x1="62" y1="46" x2="62" y2="66"/>
+                  <line x1="72" y1="46" x2="72" y2="66"/>
+                </g>
+                <path d="M50 66 L50 59 A5 5 0 0 1 60 59 L60 66" stroke="#2f6fb8" stroke-width="1.2" fill="none"/>
+              </svg>
+            </div>
+            <div class="meta"><span class="num">01</span><span class="freq">白宫</span></div>
+            <div class="title">白宫政策</div>
+            <div class="title-en">White House Policy</div>
+            <p class="desc">收集总统行政令、总统备忘录、公告,以及白宫、USTR 等发布的政策文本,按发布时间归档。</p>
+            <div class="tags"><span>行政令</span><span>总统备忘录</span><span>公告</span><span>USTR</span></div>
+            <a class="btn" href="#" data-enter="board" data-board="whitehouse">进入</a>
+          </div>
+
+          <!-- 子板块 02 -->
+          <div class="card">
+            <div class="visual" aria-hidden="true">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <!-- 国会：穹顶立面 -->
+                <g stroke="#2f6fb8" stroke-width="1.3" fill="none" stroke-linejoin="round">
+                  <circle cx="55" cy="30" r="3"/>
+                  <path d="M43 46 A12 12 0 0 1 67 46 Z" fill="#dce9f6"/>
+                  <rect x="45" y="46" width="20" height="6" fill="#dce9f6"/>
+                  <line x1="55" y1="33" x2="55" y2="40"/>
+                  <line x1="52" y1="40" x2="58" y2="40"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.1">
+                  <line x1="33" y1="52" x2="77" y2="52"/>
+                  <line x1="37" y1="54" x2="37" y2="62"/>
+                  <line x1="44" y1="54" x2="44" y2="62"/>
+                  <line x1="51" y1="54" x2="51" y2="62"/>
+                  <line x1="59" y1="54" x2="59" y2="62"/>
+                  <line x1="66" y1="54" x2="66" y2="62"/>
+                  <line x1="73" y1="54" x2="73" y2="62"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.2" fill="none">
+                  <line x1="28" y1="62" x2="82" y2="62"/>
+                  <line x1="24" y1="68" x2="86" y2="68"/>
+                  <line x1="20" y1="74" x2="90" y2="74"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span class="num">02</span><span class="freq">国会</span></div>
+            <div class="title">国会政策</div>
+            <div class="title-en">Congressional Policy</div>
+            <p class="desc">收集国会法案、决议、听证与拨款文本,按立法进度与议题归类梳理。</p>
+            <div class="tags"><span>法案</span><span>决议</span><span>听证</span><span>拨款</span></div>
+            <a class="btn" href="#" data-enter="board" data-board="congress">进入</a>
+          </div>
+
+          <!-- 子板块 03 -->
+          <div class="card">
+            <div class="visual" aria-hidden="true">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <!-- 独立监管机构：机构建筑 + 频谱波纹 -->
+                <g stroke="#2f6fb8" stroke-width="1.1" fill="none" opacity="0.85">
+                  <path d="M48 26 Q 41 32 48 38"/>
+                  <path d="M42 23 Q 31 32 42 41"/>
+                  <path d="M62 26 Q 69 32 62 38"/>
+                  <path d="M68 23 Q 79 32 68 41"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.2" fill="none">
+                  <line x1="55" y1="31" x2="55" y2="42"/>
+                  <circle cx="55" cy="28" r="2.6" fill="#dce9f6"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.2" fill="none">
+                  <rect x="37" y="42" width="36" height="30" fill="#dce9f6"/>
+                  <line x1="37" y1="52" x2="73" y2="52"/>
+                  <line x1="45" y1="52" x2="45" y2="72"/>
+                  <line x1="55" y1="52" x2="55" y2="72"/>
+                  <line x1="65" y1="52" x2="65" y2="72"/>
+                  <line x1="32" y1="72" x2="78" y2="72"/>
+                  <line x1="27" y1="76" x2="83" y2="76"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span class="num">03</span><span class="freq">其他部门</span></div>
+            <div class="title">其他部门政策</div>
+            <div class="title-en">Other Agency Policy</div>
+            <p class="desc">收集联邦部门与独立监管机构发布的政策文本与规则决定,如 FCC、CPP 等。</p>
+            <div class="tags"><span>FCC</span><span>CPP</span><span>部门规则</span></div>
+            <a class="btn" href="#" data-enter="board" data-board="agencies">进入</a>
+          </div>
+
+          <!-- 子板块 04 -->
+          <div class="card">
+            <div class="visual" aria-hidden="true">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <!-- 选举动态：选票投入票箱 -->
+                <g stroke="#2f6fb8" stroke-width="1.2" fill="none">
+                  <rect x="40" y="22" width="30" height="32" rx="2" fill="#dce9f6"/>
+                  <path d="M47 38 L52 43 L62 30" stroke-width="1.5"/>
+                  <line x1="46" y1="47" x2="64" y2="47"/>
+                </g>
+                <g stroke="#2f6fb8" stroke-width="1.3" fill="none">
+                  <rect x="32" y="56" width="46" height="28" fill="#dce9f6"/>
+                  <line x1="42" y1="56" x2="68" y2="56" stroke-width="2.4"/>
+                  <line x1="28" y1="84" x2="82" y2="84"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span class="num">04</span><span class="freq">选举</span></div>
+            <div class="title">选举动态</div>
+            <div class="title-en">Election Dynamics</div>
+            <p class="desc">收集选举周期内的初选与大选日程、候选人议题主张与竞选纲领、关键州民调表现,按时间线归档。</p>
+            <div class="tags"><span>选举行程</span><span>候选人</span><span>竞选纲领</span><span>民调</span></div>
+            <a class="btn" href="#">进入</a>
+          </div>
+
+        </div>
+
+        <p class="placeholder" style="margin-top: 24px;">白宫、国会、其他部门三个子板块条目由官方来源（联邦公报、国会官网）定时抓取,每周六自动更新（对应美国时间周五）;选举动态暂不抓取。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 子页面：条目列表（政策文件，定时抓取更新） ============ -->
+  <main id="view-board" class="subview" hidden>
+    <div class="subhead">
+      <div class="wrap">
+        <a class="back" href="#" id="back-link-board">← 返回美国板块</a>
+        <h1 id="board-title">子板块</h1>
+        <div class="suben" id="board-suben"></div>
+        <p class="subdesc" id="board-desc"></p>
+      </div>
+    </div>
+    <section class="section" style="padding-top: 40px;">
+      <div class="wrap">
+        <div id="board-list"></div>
+        <p class="placeholder" id="board-empty" hidden>暂无条目,等待首次定时抓取更新（每周六,对应美国时间周五）。</p>
+        <p class="placeholder" id="board-updated" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 政策条目数据块：由 scripts/fetch_policy.py 定时抓取回写，请勿手动编辑 -->
+  <script type="application/json" id="policy-data">
+{
+  "fetched_at": "2026-10-11 00:06",
+  "boards": {
+    "whitehouse": {
+      "updated_at": "2026-10-11 00:06",
+      "items": [
+        {
+          "board": "whitehouse",
+          "date": "2026-10-13",
+          "title": "Columbus Day, 2026",
+          "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20972/columbus-day-2026",
+          "source": "联邦公报",
+          "kind": "公告",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-13",
+          "title": "National Energy Dominance Month, 2026",
+          "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20969/national-energy-dominance-month-2026",
+          "source": "联邦公报",
+          "kind": "公告",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-09",
+          "title": "Emergency Tax Relief on Diesel Fuel",
+          "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20855/emergency-tax-relief-on-diesel-fuel",
+          "source": "联邦公报",
+          "kind": "行政令",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-08",
+          "title": "Request for Comments on the Effect of the European Union's Carbon Border Adjustment Mechanism and the Proposals To Expand Coverage on U.S. Trade",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20615/request-for-comments-on-the-effect-of-the-european-unions-carbon-border-adjustment-mechanism-and-the",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "美国贸易代表办公室 USTR"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-07",
+          "title": "National Manufacturing Day, 2026",
+          "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20629/national-manufacturing-day-2026",
+          "source": "联邦公报",
+          "kind": "公告",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-07",
+          "title": "Notice of Conforming Amendment to Product Exclusion: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+          "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20511/notice-of-conforming-amendment-to-product-exclusion-chinas-acts-policies-and-practices-related-to",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "美国贸易代表办公室 USTR"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-07",
+          "title": "Continuation of Actions: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+          "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20510/continuation-of-actions-chinas-acts-policies-and-practices-related-to-technology-transfer",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "美国贸易代表办公室 USTR"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-05",
+          "title": "Request for Public Comments and Notice of Public Hearing Relating to the Operation of the Agreement Between the United States of America, the United Mexican States, and Canada",
+          "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20341/request-for-public-comments-and-notice-of-public-hearing-relating-to-the-operation-of-the-agreement",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "美国贸易代表办公室 USTR"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-02",
+          "title": "Inaugurating the Era of Super Intelligence",
+          "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20321/inaugurating-the-era-of-super-intelligence",
+          "source": "联邦公报",
+          "kind": "行政令",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-02",
+          "title": "Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors",
+          "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20320/eliminating-disease-carrying-pests-and-restoring-enjoyment-of-the-great-outdoors",
+          "source": "联邦公报",
+          "kind": "行政令",
+          "agency": "美国总统行政办公室"
+        },
+        {
+          "board": "whitehouse",
+          "date": "2026-10-02",
+          "title": "Streamlining Access to Government Services Through America.gov",
+          "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20319/streamlining-access-to-government-services-through-americagov",
+          "source": "联邦公报",
+          "kind": "行政令",
+          "agency": "美国总统行政办公室"
+        }
+      ]
+    },
+    "congress": {
+      "updated_at": "2026-10-11 00:03",
+      "items": [
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "TAS Act",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5441",
+          "source": "国会官网",
+          "kind": "参议院法案",
+          "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To modify the authority of Department of Defense for installation support services and intergovernmental support agreements, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10793",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Armed Services."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To modify and enhance the Federal budgeting and appropriations process, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10780",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Rules, and in addition to the C"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To establish a grant program to make grants to States to improve access to the special supplemental nutrition program for women, infants, and children.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10794",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Education and Workforce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Higher Education Act of 1965 to require certain institutions to require students who are United States citizens to pass the United States naturalization test in order to graduate, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10786",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Education and Workforce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To provide for the payment of attorney's fees to a prevailing defendant in a civil action for defamation or libel.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10783",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend title 36, United States Code, to request the President to designate a month each year as National American History and Founders Month.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10781",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Lower Premiums, Faster Payments Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10788",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in add"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To prohibit Federal funds from being provided to any State or local government that celebrates Indigenous Peoples Day instead of Columbus Day, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10791",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Oversight and Government "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To provide incentives for and protect whistleblowers under the authority of the Federal Trade Commission, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10792",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Education and Workforce, and in"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To establish the Office of Artificial Intelligence and Emerging Technology Threats within the Executive Office of the President, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10768",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Internal Revenue Code of 1986 to establish a credit to incentivize the use of certain low-emission anesthetic gases by health care facilities, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10778",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Ways and Means."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To establish a moratorium on oil and gas production and exploration activities in the Eglin Gulf Test and Training Range, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10789",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Natural Resources."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To establish an emergency preparedness grant program for higher education institutions, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10771",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Transportation and Infras"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Internal Revenue Code of 1986 to prevent governmental interference in the operation of private and religious schools.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10773",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Ways and Means."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Marine Mammal Protection Act of 1972 and the Animal Welfare Act to prohibit the taking, importation, exportation, and breeding of certain cetaceans for public display, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10774",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Natural Resources, and in addit"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To codify certain policies to combat transnational cyber-enabled crime, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10777",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Small Business Act to reauthorize the SCORE program, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10785",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Small Business."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To direct the Chairman of the Federal Trade Commission to establish a task force for the purpose of studying the effects of automated accounts on social media, public discourse, and elections.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10775",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To evaluate and invest in Ukrainian defense technologies.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10772",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Armed Services."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Internal Revenue Code of 1986 to provide home ownership assistance, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10784",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To accommodate certain facilities within the right-of-way on any Federal-aid highway.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10769",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Transportation and Infras"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend title III of the Public Health Service Act to temporarily limit the use of rebates under the 340B Program.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10770",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Clean Air Act to require that at least one member of the Chemical Safety and Hazard Investigation Board has demonstrated knowledge and substantial experience in the trades or industrial labor, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10790",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend the Marine Mammal Protection Act of 1972 to change certain requirements regarding certain allowed take of marine mammals, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10776",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Natural Resources."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To amend title XVIII of the Social Security Act to exclude urological and ostomy supplies from competitive acquisition programs under the Medicare program for 5 years, and for other purposes.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10787",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in add"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To designate the facility of the United States Postal Service located at 1905 Route 112 in Medford, New York, as the \"Gunnery Sergeant Ruben Santos Post Office Building\".",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10779",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Oversight and Government "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "To reauthorize the Clean School Bus Program.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10782",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Expressing profound sorrow over the death of Alexander Michel Odeh.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1621",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the House Committee on Oversight and Government "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Directing the President pursuant to section 5(c) of the War Powers Resolution to remove United States Armed Forces from hostilities against the Houthis in Yemen that have not been authorized by Congress.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/124",
+          "source": "国会官网",
+          "kind": "众院共同决议",
+          "agency": "众议院 · Referred to the House Committee on Foreign Affairs."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Expressing support for the preservation, protection, and maintenance of statues and monuments honoring Christopher Columbus as an enduring testament to the Nation's history, heritage, and identity.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1622",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the House Committee on Natural Resources."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Expressing support for the recognition of October 2026, as \"National Dyslexia Awareness Month\".",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1623",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the House Committee on Education and Workforce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "VA Fiscal Management Modernization Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/7683",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Placed on the Union Calendar, Calendar No. 739."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Stop Price Gouging in Grocery Stores Act of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/4966",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in add"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Downpayment Toward Equity Act of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/4069",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Financial Services."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Puerto Rico Nutrition Assistance Fairness Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/5168",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Subcommittee on Nutrition and Foreign Agricu"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "ASAP Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/6130",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Ordered to be Reported in the Nature of a Substitute by the "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "HEADACHE Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/5536",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "No 9/11 Family Left Behind Act of 2026",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9350",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Ally’s Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/4606",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in add"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "National Guard Relief Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/8848",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Armed Services."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Executive Settlement Review Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10764",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Motion Picture, Television, and Entertainment Revitalization Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10582",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Ways and Means."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Broadband Infrastructure Extension Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9521",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Oversight and Government "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Firearm Access During Shutdowns Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/5874",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Directing the Federal Trade Commission to investigate and report on anticompetitive practices and violations of the antitrust laws in the fire truck manufacturing industry.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/203",
+          "source": "国会官网",
+          "kind": "众院联合决议",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Improving Menopause Care for Veterans Act of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/219",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Subcommittee on Health."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "HOME Act of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3720",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Subcommittee on Economic Opportunity."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Innovative FEED Act of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/2203",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Stop SIM Box Scams Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10705",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Energy and Commerce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Stopping Harmful and Outrageous Torts Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9298",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Recognizing and honoring the 27th anniversary of the Supreme Court decision in Olmstead v. L.C.",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1586",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the Committee on Education and Workforce, and in"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "H–1Bs for Physicians and the Healthcare Workforce Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/7961",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on the Judiciary."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Reducing Hereditary Cancer Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/4752",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in add"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "BASIC Act of 2026",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10612",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Education and Workforce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Fit to Serve Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3569",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Armed Services."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "AI OVERWATCH Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/6875",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Ordered to be Reported in the Nature of a Substitute by the "
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Encouraging the recognition of a \"National LGBTQ+ Servicemembers and Veterans Day\".",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1572",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the Committee on Armed Services, and in addition"
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "Original National Domestic Violence Awareness Month Resolution of 2025",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/846",
+          "source": "国会官网",
+          "kind": "众议院决议",
+          "agency": "众议院 · Referred to the House Committee on Education and Workforce."
+        },
+        {
+          "board": "congress",
+          "date": "2026-10-10",
+          "title": "VA Home Loan Navigator Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9404",
+          "source": "国会官网",
+          "kind": "众议院法案",
+          "agency": "众议院 · Referred to the House Committee on Veterans' Affairs."
+        }
+      ]
+    },
+    "agencies": {
+      "updated_at": "2026-10-11 00:06",
+      "items": [
+        {
+          "board": "agencies",
+          "date": "2026-10-13",
+          "title": "Petition for Reconsideration of Action in Rulemaking Proceeding",
+          "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20895/petition-for-reconsideration-of-action-in-rulemaking-proceeding",
+          "source": "联邦公报",
+          "kind": "拟议规则",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-08",
+          "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20681/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-08",
+          "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20676/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-08",
+          "title": "Information Collections Being Submitted for Review and Approval to Office of Management and Budget",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20607/information-collections-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-08",
+          "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20591/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-08",
+          "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+          "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20590/information-collection-being-reviewed-by-the-federal-communications-commission",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-06",
+          "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+          "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20487/information-collection-being-reviewed-by-the-federal-communications-commission",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-06",
+          "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+          "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20486/information-collections-being-reviewed-by-the-federal-communications-commission",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-06",
+          "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+          "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20485/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-06",
+          "title": "Radio Broadcasting Services; Selmer, Tennessee",
+          "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20464/radio-broadcasting-services-selmer-tennessee",
+          "source": "联邦公报",
+          "kind": "规则",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-06",
+          "title": "Radio Broadcasting Services; Whitehall, Michigan",
+          "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20463/radio-broadcasting-services-whitehall-michigan",
+          "source": "联邦公报",
+          "kind": "规则",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-05",
+          "title": "Wireline Competition Bureau and Office of Economics and Analytics Adopt 2026 Mandatory Data Collection for Incarcerated People's Communications Services",
+          "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20362/wireline-competition-bureau-and-office-of-economics-and-analytics-adopt-2026-mandatory-data",
+          "source": "联邦公报",
+          "kind": "规则",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-01",
+          "title": "[WC Docket Nos. 25-208, 25-209; FCC 26-19; FR ID 370342] Reducing Barriers to Network Improvements and Service Changes, Accelerating Network Modernization",
+          "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20192/wc-docket-nos-25-208-25-209-fcc-26-19-fr-id-370342-reducing-barriers-to-network-improvements-and",
+          "source": "联邦公报",
+          "kind": "规则",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-01",
+          "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+          "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20158/information-collections-being-reviewed-by-the-federal-communications-commission",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        },
+        {
+          "board": "agencies",
+          "date": "2026-10-01",
+          "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+          "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20157/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+          "source": "联邦公报",
+          "kind": "通告",
+          "agency": "Federal Communications Commission"
+        }
+      ]
+    }
+  }
+}
+</script>
+
   <script>
     (function () {
       var toggle = document.getElementById('nav-toggle');
@@ -651,6 +1633,113 @@
           toggle.setAttribute('aria-expanded', 'false');
         }
       });
+    })();
+
+    // ===== 子页面切换：美国板块（政策收集与梳理） =====
+    (function () {
+      var usView = document.getElementById('view-us');
+      var boardView = document.getElementById('view-board');
+      if (!usView || !boardView) return;
+      var portalEls = [].slice.call(document.querySelectorAll('.masthead, #columns, #coverage, #notes, .about'));
+      var enterBtns = [].slice.call(document.querySelectorAll('[data-enter="us"]'));
+      var boardBtns = [].slice.call(document.querySelectorAll('[data-enter="board"]'));
+      var backLink = document.getElementById('back-link');
+      var backLinkBoard = document.getElementById('back-link-board');
+
+      var BOARD_META = {
+        whitehouse: { title: '白宫政策', en: 'White House Policy', desc: '总统行政令、总统备忘录、公告,以及白宫、USTR 等发布的政策文本。来源：联邦公报（Federal Register）官方数据,每周六自动更新。' },
+        congress: { title: '国会政策', en: 'Congressional Policy', desc: '国会参众两院法案与决议的最新立法动态。来源：国会官网（congress.gov）官方数据,每周六自动更新。' },
+        agencies: { title: '其他部门政策', en: 'Other Agency Policy', desc: '联邦部门与独立监管机构（如 FCC、CPP 等）发布的政策文本与规则决定。来源：联邦公报（Federal Register）官方数据,每周六自动更新。' }
+      };
+
+      function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+      function readPolicyData() {
+        try { return JSON.parse(document.getElementById('policy-data').textContent) || {}; }
+        catch (e) { return {}; }
+      }
+
+      function renderBoard(key) {
+        var meta = BOARD_META[key] || BOARD_META.whitehouse;
+        document.getElementById('board-title').textContent = meta.title;
+        document.getElementById('board-suben').textContent = meta.en;
+        document.getElementById('board-desc').textContent = meta.desc;
+
+        var data = readPolicyData();
+        var board = data.boards && data.boards[key];
+        var items = (board && board.items) || [];
+        var list = document.getElementById('board-list');
+        var empty = document.getElementById('board-empty');
+        var updated = document.getElementById('board-updated');
+
+        if (items.length === 0) {
+          list.innerHTML = '';
+          empty.hidden = false;
+          updated.hidden = true;
+        } else {
+          empty.hidden = true;
+          list.innerHTML = items.map(function (it) {
+            return '<div class="note">' +
+              '<span class="t"><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + '<span class="ext">↗</span></a></span>' +
+              '<span class="m"><span class="kind">' + esc(it.kind) + '</span>' + esc(it.source) + ' · ' + esc(it.date) + '</span>' +
+              '</div>';
+          }).join('');
+          updated.hidden = false;
+          updated.innerHTML = '最近更新：<b>' + esc(board.updated_at || data.fetched_at || '—') + '</b>';
+        }
+      }
+
+      function showUs(e) {
+        if (e) e.preventDefault();
+        portalEls.forEach(function (el) { el.hidden = true; });
+        boardView.hidden = true;
+        usView.hidden = false;
+        window.scrollTo(0, 0);
+        document.title = '美国政治动态跟踪 · 国金证券 政策与战略组';
+      }
+      function showBoard(key, e) {
+        if (e) e.preventDefault();
+        portalEls.forEach(function (el) { el.hidden = true; });
+        usView.hidden = true;
+        boardView.hidden = false;
+        renderBoard(key);
+        window.scrollTo(0, 0);
+        document.title = (BOARD_META[key] ? BOARD_META[key].title : '条目列表') + ' · 国金证券 政策与战略组';
+      }
+      function showPortal(e) {
+        if (e) e.preventDefault();
+        usView.hidden = true;
+        boardView.hidden = true;
+        portalEls.forEach(function (el) { el.hidden = false; });
+        window.scrollTo(0, 0);
+        document.title = '国金证券 政策与战略组';
+      }
+
+      enterBtns.forEach(function (b) { b.addEventListener('click', showUs); });
+      boardBtns.forEach(function (b) {
+        b.addEventListener('click', function (e) { showBoard(b.getAttribute('data-board'), e); });
+      });
+      if (backLink) backLink.addEventListener('click', showPortal);
+      if (backLinkBoard) backLinkBoard.addEventListener('click', showUs);
+
+      // 在子页面时点击导航菜单，先回到门户再跳转锚点
+      [].slice.call(document.querySelectorAll('#nav-menu a')).forEach(function (a) {
+        a.addEventListener('click', function () {
+          if (!usView.hidden || !boardView.hidden) showPortal();
+        });
+      });
+
+      // 支持链接带 #us / #board-whitehouse 等直达；运行中改 hash 也可切换
+      function applyHash() {
+        var h = location.hash;
+        if (h === '#us') showUs();
+        else if (h.indexOf('#board-') === 0) showBoard(h.slice(7));
+      }
+      window.addEventListener('hashchange', applyHash);
+      applyHash();
     })();
   </script>
 
