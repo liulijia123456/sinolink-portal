@@ -450,62 +450,64 @@
   /* 子页面：条目简报展开面板 */
   .subview .note { flex-wrap: wrap; }
 
-  /* 子页面：筛选栏 */
+  /* 子页面：筛选栏（左筛选 + 右搜索/重置两区） */
   .filter-bar {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
     background: var(--card-light); border: 1px solid var(--border-light);
     border-radius: var(--radius); padding: 12px 14px; margin-bottom: 16px;
     box-shadow: 0 1px 3px rgba(23,42,64,0.05);
   }
-  .filter-group { display: flex; align-items: center; gap: 6px; }
+  .filter-group { display: flex; align-items: center; gap: 7px; }
   .filter-label {
     font-size: 11px; font-weight: 600; color: var(--muted-light);
     white-space: nowrap; letter-spacing: 0.05em;
   }
+  .filter-select, .filter-input, .filter-reset { height: 30px; }
   .filter-select {
-    font-family: inherit; font-size: 13px; color: var(--text-light);
-    background-color: #f1f4f9; border: 1px solid transparent; border-radius: 999px;
-    padding: 5px 26px 5px 12px; cursor: pointer; line-height: 1.4;
+    font-family: inherit; font-size: 12.5px; color: var(--text-light);
+    background-color: #f6f8fb; border: 1px solid #e4e9f1; border-radius: 8px;
+    padding: 0 24px 0 11px; cursor: pointer; line-height: 28px;
     -webkit-appearance: none; appearance: none;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%235b6472' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 10px center;
+    background-repeat: no-repeat; background-position: right 9px center;
     transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease, color .15s ease;
   }
-  .filter-select:hover { background-color: #e6ecf4; }
+  .filter-select:hover { border-color: #c9d4e2; background-color: #eff3f9; }
   .filter-select.active {
-    background-color: rgba(47,111,184,0.1); color: var(--accent-light); font-weight: 600;
-    border-color: rgba(47,111,184,0.4);
+    background-color: rgba(47,111,184,0.08); color: var(--accent-light); font-weight: 600;
+    border-color: rgba(47,111,184,0.45);
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%232f6fb8' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
-  .filter-select:focus {
+  .filter-select:focus, .filter-input:focus {
     outline: none; background-color: #fff; border-color: var(--accent-light);
     box-shadow: 0 0 0 3px rgba(47,111,184,0.12);
   }
-  .filter-search { flex: 1; min-width: 200px; display: flex; justify-content: flex-end; }
+  /* 右区：搜索 + 重置（与左侧筛选以竖线分隔） */
+  .filter-search {
+    margin-left: auto; display: flex; align-items: center; gap: 8px;
+    padding-left: 14px; border-left: 1px solid var(--border-light);
+    align-self: center;
+  }
   .filter-input {
-    width: 100%; max-width: 300px; font-family: inherit; font-size: 13px; color: var(--text-light);
-    background-color: #f1f4f9; border: 1px solid transparent; border-radius: 999px;
-    padding: 6px 14px 6px 34px; line-height: 1.4;
+    width: 230px; max-width: 230px; font-family: inherit; font-size: 12.5px; color: var(--text-light);
+    background-color: #f6f8fb; border: 1px solid #e4e9f1; border-radius: 8px;
+    padding: 0 12px 0 32px; line-height: 28px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 14 14'%3E%3Ccircle cx='6' cy='6' r='4.5' stroke='%235b6472' fill='none' stroke-width='1.5'/%3E%3Cpath d='M9.5 9.5L13 13' stroke='%235b6472' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: left 12px center;
-    transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease, max-width .2s ease;
+    background-repeat: no-repeat; background-position: left 10px center;
+    transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
   }
-  .filter-input:hover { background-color: #e6ecf4; }
+  .filter-input:hover { border-color: #c9d4e2; background-color: #eff3f9; }
   .filter-input.active {
-    background-color: rgba(47,111,184,0.08); color: var(--text-light);
-    border-color: rgba(47,111,184,0.4);
+    background-color: rgba(47,111,184,0.06); color: var(--text-light);
+    border-color: rgba(47,111,184,0.45);
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 14 14'%3E%3Ccircle cx='6' cy='6' r='4.5' stroke='%232f6fb8' fill='none' stroke-width='1.5'/%3E%3Cpath d='M9.5 9.5L13 13' stroke='%232f6fb8' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-  }
-  .filter-input:focus {
-    outline: none; background-color: #fff; border-color: var(--accent-light);
-    box-shadow: 0 0 0 3px rgba(47,111,184,0.12); max-width: 360px;
   }
   .filter-input::placeholder { color: var(--muted-light); }
   .filter-reset {
     display: none; font-family: inherit; font-size: 12px; font-weight: 500;
     color: var(--muted-light); background: none;
-    border: 1px dashed var(--border-light); border-radius: 999px;
-    padding: 4px 13px; cursor: pointer; white-space: nowrap;
+    border: 1px dashed #c2ccd9; border-radius: 8px;
+    padding: 0 13px; cursor: pointer; white-space: nowrap; line-height: 28px;
     transition: all .15s ease;
   }
   .filter-reset.show { display: inline-block; }
@@ -515,10 +517,10 @@
   @media (max-width: 700px) {
     .filter-bar { gap: 8px; padding: 10px; }
     .filter-label { font-size: 10px; }
-    .filter-select { font-size: 12px; padding: 4px 22px 4px 10px; }
-    .filter-input { max-width: none; font-size: 12px; }
-    .filter-search { min-width: 100%; justify-content: stretch; }
-    .filter-reset { margin-left: auto; }
+    .filter-select { font-size: 12px; padding: 0 22px 0 10px; }
+    .filter-search { min-width: 100%; padding-left: 0; border-left: none; }
+    .filter-input { flex: 1; width: auto; max-width: none; font-size: 12px; }
+    .filter-reset { margin-left: 0; }
   }
   /* ===== 子页面：选举动态 ===== */
   .ele-hero {
@@ -574,8 +576,8 @@
   .st:hover { filter: brightness(0.9); }
   .st.sel { stroke: var(--accent-light); stroke-width: 2.2; }
   .comp-dot { fill: var(--gold-light, #c99630); stroke: #fff; stroke-width: 1.5; pointer-events: none; }
-  .st-label { font-size: 10.5px; font-weight: 600; fill: #33415c; text-anchor: middle; pointer-events: none; paint-order: stroke; stroke: rgba(255,255,255,.88); stroke-width: 2.6px; stroke-linejoin: round; }
-  .st-lead { stroke: #b8c2d4; stroke-width: 0.7; fill: none; pointer-events: none; }
+  .st-label { font-size: 13px; font-weight: 700; fill: #2b3a52; text-anchor: middle; pointer-events: none; paint-order: stroke; stroke: rgba(255,255,255,.92); stroke-width: 3.2px; stroke-linejoin: round; letter-spacing: 0.2px; }
+  .st-lead { stroke: #b8c2d4; stroke-width: 0.8; fill: none; pointer-events: none; }
   .ele-map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 10px 4px 4px; border-top: 1px dashed var(--border-light); margin-top: 10px; }
   .ele-map-legend span { font-size: 11.5px; color: var(--muted-light); display: flex; align-items: center; gap: 6px; }
   .lg { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
@@ -600,6 +602,10 @@
   @media (max-width: 860px) {
     .ele-map-wrap { grid-template-columns: 1fr; }
     .ele-map-panel { min-height: 150px; }
+    /* 窄屏下地图整体等比缩得太小，州简称无法辨认：改为卡片内横向滚动，保住最小渲染尺寸 */
+    .ele-map-box { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    #ele-map { min-width: 640px; }
+    .ele-map-legend { padding-bottom: 2px; }
   }
 
 
@@ -721,6 +727,178 @@
     margin-left: auto; text-decoration: none; white-space: nowrap; transition: all .15s ease;
   }
   .subview .note .brief-src:hover { background: var(--accent-light); color: #fff; }
+
+  /* 栏目标题：研判 / 条目分区 */
+  .col-head { display: flex; align-items: baseline; gap: 10px; margin: 4px 0 14px; }
+  .col-head .ch-cn { font-size: 16px; font-weight: 700; color: var(--text-light); padding-left: 10px; border-left: 3px solid var(--gold-light); line-height: 1.3; }
+  .col-head .ch-en { font-size: 11px; color: var(--muted-light); letter-spacing: 0.05em; white-space: nowrap; }
+
+  /* 大事日历（美国政治板块）：月历网格 */
+  .us-cal {
+    background: var(--card-light); border: 1px solid var(--border-light); border-radius: var(--radius);
+    padding: 16px 18px 14px; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(23,42,64,0.05);
+  }
+  .uc-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 12px; border-bottom: 1px dashed var(--border-light); }
+  .uc-nav { display: inline-flex; align-items: center; gap: 8px; }
+  .uc-nav button {
+    font-family: inherit; font-size: 16px; line-height: 1; color: var(--muted-light);
+    background: #f4f7fb; border: 1px solid #e4e9f1; border-radius: 8px;
+    width: 30px; height: 30px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    transition: all .15s ease;
+  }
+  .uc-nav button:hover:not(:disabled) { color: #fff; background: var(--accent-light); border-color: var(--accent-light); transform: translateY(-1px); }
+  .uc-nav button:disabled { opacity: 0.35; cursor: default; }
+  .uc-month { font-size: 17px; font-weight: 700; color: var(--text-light); min-width: 128px; text-align: center; letter-spacing: 0.02em; }
+  .uc-mcount { display: inline-block; font-size: 10.5px; font-weight: 600; color: var(--accent-light); background: rgba(47,111,184,0.08); border: 1px solid rgba(47,111,184,0.18); border-radius: 10px; padding: 1px 8px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
+  .uc-tz { display: inline-flex; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; flex-shrink: 0; }
+  .uc-tz button {
+    font-family: inherit; font-size: 12px; font-weight: 500; color: var(--muted-light);
+    background: none; border: none; padding: 5px 14px; cursor: pointer; white-space: nowrap;
+    transition: all .15s ease;
+  }
+  .uc-tz button + button { border-left: 1px solid var(--border-light); }
+  .uc-tz button.on { background: var(--accent-light); color: #fff; font-weight: 600; }
+  .uc-tz button:not(.on):hover { color: var(--accent-light); }
+  /* 周表头 + 日期格 */
+  .uc-main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; margin-top: 12px; align-items: stretch; }
+  .uc-grid { display: grid; grid-template-columns: repeat(7, 1fr); border: 1px solid var(--border-light); border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(23,42,64,0.04); }
+  .uc-grid > * { border-right: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+  .uc-grid > *:nth-child(7n) { border-right: none; }
+  .uc-wd {
+    text-align: center; font-size: 11.5px; font-weight: 700; color: var(--muted-light);
+    background: linear-gradient(180deg, #f7f9fc, #f0f4f9); padding: 8px 0; letter-spacing: 0.08em;
+  }
+  .uc-wd.wk { color: #b5493c; }
+  .uc-wd.tcol { color: var(--accent-light); box-shadow: inset 0 -2px 0 var(--accent-light); }
+  .uc-cell { min-height: 92px; padding: 5px 5px 4px; background: #fff; transition: background .12s ease; }
+  .uc-cell.dim { background: #fafbfd; }
+  .uc-cell.tcol { background: rgba(47,111,184,0.03); }
+  .uc-num { font-size: 12.5px; font-weight: 600; color: var(--muted-light); line-height: 1; margin-bottom: 3px; font-family: Georgia, 'Times New Roman', serif; }
+  .uc-cell.wkend { background: rgba(181,73,60,0.018); }
+  .uc-cell.tcol.wkend { background: rgba(47,111,184,0.03); }
+  .uc-cell.wkend .uc-num { color: #b5493c; }
+  .uc-cell.today { background: rgba(47,111,184,0.055); }
+  .uc-cell.today .uc-num {
+    background: var(--accent-light); color: #fff; border-radius: 50%;
+    width: 21px; height: 21px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 3px;
+  }
+  .uc-cell.has-ev { cursor: pointer; }
+  .uc-cell.has-ev:hover { background: rgba(47,111,184,0.05); }
+  .uc-cell.sel { box-shadow: inset 0 0 0 2px var(--accent-light); background: rgba(47,111,184,0.07); }
+  .uc-ev {
+    font-size: 10.5px; line-height: 1.35; font-weight: 600; border-radius: 4px;
+    padding: 2px 5px 2px 6px; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    cursor: default; background: #fff; border: 1px solid #e6ebf2; border-left-width: 3px;
+  }
+  .uc-ev.econ { border-left-color: #2f6fb8; color: #2f6fb8; }
+  .uc-ev.pol { border-left-color: #c99630; color: #8a6320; }
+  .uc-ev.dip { border-left-color: #8a76b0; color: #6a5a8c; }
+  .uc-ev.hol { border-left-color: #b5493c; color: #a2433a; }
+  .uc-ev.live { border-color: rgba(201,150,46,0.45); background: rgba(201,150,46,0.06); box-shadow: none; }
+  .uc-ev .tt { font-weight: 700; margin-left: 3px; }
+  .uc-more { font-size: 10px; color: var(--muted-light); padding-left: 3px; }
+  /* 详情面板（点击日期格查看当日事件） */
+  .uc-detail { border: 1px solid var(--border-light); border-radius: 10px; background: #fafbfd; padding: 13px 15px 11px; overflow-y: auto; }
+  .ud-head {
+    font-size: 14.5px; font-weight: 700; color: var(--text-light); padding-bottom: 9px; margin-bottom: 2px;
+    border-bottom: 1px dashed var(--border-light); border-left: 3px solid var(--gold-light); padding-left: 9px;
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+  }
+  .ud-sub { font-size: 11px; color: var(--muted-light); font-weight: 500; white-space: nowrap; }
+  .ud-empty { font-size: 12px; color: var(--muted-light); text-align: center; padding: 36px 0 30px; line-height: 2.1; }
+  .ud-empty svg { display: block; margin: 0 auto 8px; }
+  .ud-item { padding: 9px 0; border-bottom: 1px dashed var(--border-light); }
+  .ud-item:last-child { border-bottom: none; }
+  .ud-line { font-size: 12.5px; font-weight: 600; color: var(--text-light); line-height: 1.55; }
+  .ud-meta { font-size: 11.5px; color: var(--muted-light); margin-top: 3px; line-height: 1.7; }
+  .ud-meta b { color: var(--accent-light); font-weight: 600; }
+  .ud-item.live .ud-line { color: #8a6320; }
+  .uc-cat { display: inline-block; font-size: 10.5px; font-weight: 600; border-radius: 9px; padding: 1px 8px; margin-right: 7px; vertical-align: 1px; }
+  .uc-cat.econ { color: #2f6fb8; background: rgba(47,111,184,0.1); }
+  .uc-cat.pol { color: #8a6320; background: rgba(201,150,46,0.13); }
+  .uc-cat.dip { color: #6a5a8c; background: rgba(106,90,140,0.12); }
+  .uc-cat.hol { color: #a2433a; background: rgba(181,73,60,0.1); }
+  .uc-live-badge { display: inline-block; font-size: 10px; font-weight: 700; color: #b5493c; background: rgba(181,73,60,0.1); border-radius: 8px; padding: 0 7px; margin-left: 7px; vertical-align: 1px; }
+  /* 图例：分类计数胶囊 + 来源行，两行规整排布 */
+  .uc-legend { margin-top: 12px; border-top: 1px solid var(--border-light); padding-top: 10px; }
+  .uc-lg-row { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+  .uc-legend .lg {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 500; color: var(--text-light);
+    width: auto; height: auto;
+    background: #f6f8fb; border: 1px solid #e8edf4; border-radius: 12px; padding: 3px 11px; white-space: nowrap;
+  }
+  .uc-legend .lg b { font-weight: 700; }
+  .uc-legend .lg .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .uc-legend .lg .dot.econ { background: #2f6fb8; }
+  .uc-legend .lg .dot.pol { background: #c99630; }
+  .uc-legend .lg .dot.dip { background: #8a76b0; }
+  .uc-legend .lg .dot.hol { background: #b5493c; }
+  .uc-legend .lg.lg-tz { color: var(--muted-light); border-style: dashed; background: none; }
+  .uc-legend .uc-src { display: block; margin-top: 7px; font-size: 10.5px; color: var(--muted-light); line-height: 1.6; }
+  @media (max-width: 1080px) { .uc-main { grid-template-columns: 1fr; } .uc-detail { max-height: 320px; } }
+  @media (max-width: 860px) {
+    .uc-cell { min-height: 72px; padding: 4px 3px 3px; }
+    .uc-ev { font-size: 9.5px; padding: 1.5px 3px 1.5px 4px; }
+    .uc-ev .tt { display: none; }
+    .uc-month { min-width: 100px; font-size: 15px; }
+  }
+  @media (max-width: 700px) { .uc-bar { flex-direction: column; align-items: stretch; } .uc-tz { width: 100%; display: flex; } .uc-tz button { flex: 1; } }
+
+  /* 周期研判（每周 / 每月政策总览） */
+  .board-review { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 26px; align-items: start; }
+  .rvw-card {
+    background: var(--card-light); border: 1px solid var(--border-light); border-radius: var(--radius);
+    padding: 18px 20px 16px; box-shadow: 0 1px 3px rgba(23,42,64,0.05);
+  }
+  .rvw-card.wk { border-top: 3px solid var(--gold-light, #c99630); }
+  .rvw-card.mo { border-top: 3px solid var(--accent-light); }
+  .rvw-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 2px; }
+  .rvw-toggle-wrap { display: flex; justify-content: center; padding: 12px 0 2px; }
+  .rvw-card.open .rvw-toggle-wrap { padding-bottom: 0; }
+  .rvw-toggle {
+    font-size: 11px; font-weight: 600; color: var(--muted-light);
+    background: none; border: 1px solid var(--border-light); border-radius: 12px;
+    padding: 2px 12px; cursor: pointer; white-space: nowrap; transition: all .15s ease;
+  }
+  .rvw-toggle:hover { color: var(--gold-light); border-color: var(--gold-light); background: rgba(201,150,46,0.08); }
+  .rvw-card.open .rvw-toggle { color: #fff; background: var(--gold-light); border-color: var(--gold-light); }
+  .rvw-card.open .rvw-toggle .chev { transform: rotate(180deg); }
+  .rvw-toggle .chev { display: inline-block; font-style: normal; margin-left: 4px; transition: transform .18s ease; }
+  .rvw-ref {
+    display: inline-block; font-size: 10px; font-weight: 700; line-height: 1;
+    color: var(--gold-light); border: 1px solid rgba(201,150,46,0.55); border-radius: 4px;
+    padding: 1px 4px; margin: 0 3px; vertical-align: 2px; text-decoration: none;
+    transition: all .13s ease; cursor: pointer;
+  }
+  .rvw-ref:hover { color: #fff; background: var(--gold-light); border-color: var(--gold-light); }
+  .rvw-verdict .rvw-ref { color: #8a6320; border-color: rgba(138,99,32,0.45); }
+  .rvw-verdict .rvw-ref:hover { color: #fff; }
+  .note.ref-flash { animation: refFlash 1.8s ease; }
+  @keyframes refFlash {
+    0% { box-shadow: 0 0 0 0 rgba(201,150,46,0); background: rgba(201,150,46,0.22); }
+    30% { box-shadow: 0 0 0 4px rgba(201,150,46,0.28); background: rgba(201,150,46,0.14); }
+    100% { box-shadow: 0 0 0 10px rgba(201,150,46,0); background: rgba(255,255,255,0.6); }
+  }
+  .rvw-tag { font-size: 11px; font-weight: 700; color: #fff; padding: 2px 9px; border-radius: 4px; letter-spacing: 0.08em; white-space: nowrap; }
+  .rvw-card.wk .rvw-tag { background: var(--gold-light, #c99630); }
+  .rvw-card.mo .rvw-tag { background: var(--accent-light); }
+  .rvw-period { font-size: 13.5px; font-weight: 700; color: var(--text-light); }
+  .rvw-at { font-size: 11px; color: var(--muted-light); margin-left: auto; white-space: nowrap; }
+  .rvw-stats { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0 14px; padding-bottom: 13px; border-bottom: 1px dashed var(--border-light); }
+  .rvw-stat { font-size: 11.5px; color: var(--muted-light); background: rgba(47,111,184,0.06); border: 1px solid rgba(47,111,184,0.13); padding: 2px 10px; border-radius: 11px; }
+  .rvw-stat b { color: var(--accent-light); font-weight: 600; }
+  .rvw-body p { font-size: 13px; line-height: 1.85; color: var(--text-light); margin: 0 0 10px; text-align: justify; }
+  .rvw-body p:last-child { margin-bottom: 0; }
+  .rvw-body p .rvw-lead { font-weight: 700; }
+  .rvw-body p.rvw-verdict {
+    background: rgba(201,150,46,0.08); border-left: 3px solid var(--gold-light);
+    border-radius: 6px; padding: 9px 12px; font-weight: 500;
+  }
+  .rvw-body p.rvw-verdict .rvw-lead { color: #8a6320; }
+  .rvw-body .rvw-h { font-size: 13px; font-weight: 700; color: var(--accent-light); margin: 4px 0 8px; letter-spacing: 0.02em; }
+  .rvw-note { font-size: 11px; color: var(--muted-light); margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border-light); line-height: 1.7; }
+  @media (max-width: 980px) { .board-review { grid-template-columns: 1fr; } }
+
   /* 子页面：返回按钮与说明行 */
   .subview .placeholder {
     color: var(--muted-light); font-size: 13px;
@@ -942,6 +1120,27 @@
 
     <section class="section" style="padding-top: 48px;">
       <div class="wrap">
+        <!-- 大事日历：美国经济 / 政治 / 外交重要节点（官方来源核实日期，支持美东 / 北京双时区显示） -->
+        <div class="col-head"><span class="ch-cn">大事日历</span><span class="ch-en">Key Events Calendar</span></div>
+        <div class="us-cal" id="us-cal">
+          <div class="uc-bar">
+            <div class="uc-nav">
+              <button type="button" id="uc-prev" aria-label="上个月">‹</button>
+              <span class="uc-month" id="uc-month">—</span>
+              <button type="button" id="uc-next" aria-label="下个月">›</button>
+            </div>
+            <div class="uc-tz" id="uc-tz" role="group" aria-label="时区切换">
+              <button type="button" data-tz="et" class="on">美国时间（美东）</button>
+              <button type="button" data-tz="bj">北京时间</button>
+            </div>
+          </div>
+          <div class="uc-main">
+            <div class="uc-grid" id="uc-grid"></div>
+            <div class="uc-detail" id="uc-detail"></div>
+          </div>
+          <div class="uc-legend" id="uc-note"></div>
+        </div>
+        <div class="col-head"><span class="ch-cn">板块入口</span><span class="ch-en">Sub-boards</span></div>
         <div class="grid">
 
           <!-- 子板块 01 -->
@@ -1088,7 +1287,11 @@
     </div>
     <section class="section" style="padding-top: 40px;">
       <div class="wrap">
+        <!-- 周期研判：每周（周六更新）/ 每月（次月 1 日更新）政策总览 -->
+        <div class="col-head" id="review-head" hidden><span class="ch-cn">政策研判</span><span class="ch-en">Weekly &amp; Monthly Review</span></div>
+        <div id="board-review" class="board-review" hidden></div>
         <!-- 筛选栏：时间 / 类型 / 简报 / 搜索 -->
+        <div class="col-head"><span class="ch-cn">政策条目</span><span class="ch-en">Policy Tracker</span></div>
         <div class="filter-bar" id="filter-bar">
           <div class="filter-group">
             <span class="filter-label">时间</span>
@@ -1126,8 +1329,8 @@
           </div>
           <div class="filter-group filter-search">
             <input type="search" id="filter-q" class="filter-input" placeholder="搜索标题 / 领域…" autocomplete="off">
+            <button type="button" class="filter-reset" id="filter-reset">重置筛选</button>
           </div>
-          <button type="button" class="filter-reset" id="filter-reset">重置筛选</button>
         </div>
         <p class="placeholder" id="filter-count" hidden></p>
         <div id="board-list"></div>
@@ -1223,24 +1426,24 @@
               <circle class="comp-dot" cx="732" cy="263.4" r="6"><title>竞争性参议院席位</title></circle>
               </g>
               <g id="ele-map-labels">
-              <line class="st-lead" x1="874.8" y1="137.3" x2="937" y2="123"/>
-              <line class="st-lead" x1="897.3" y1="136" x2="937" y2="140.5"/>
-              <line class="st-lead" x1="912.7" y1="173.3" x2="937" y2="158"/>
-              <line class="st-lead" x1="905.7" y1="185.8" x2="937" y2="175.5"/>
-              <line class="st-lead" x1="886.1" y1="195.7" x2="937" y2="193"/>
-              <line class="st-lead" x1="859.2" y1="233.5" x2="937" y2="210.5"/>
-              <line class="st-lead" x1="852.5" y1="253" x2="937" y2="228"/>
-              <line class="st-lead" x1="832.6" y1="267.2" x2="937" y2="245.5"/>
-              <line class="st-lead" x1="827.3" y1="267.5" x2="937" y2="263"/>
-              <text class="st-label" x="950" y="126">VT</text>
-              <text class="st-label" x="950" y="143.5">NH</text>
-              <text class="st-label" x="950" y="161">MA</text>
-              <text class="st-label" x="950" y="178.5">RI</text>
-              <text class="st-label" x="950" y="196">CT</text>
-              <text class="st-label" x="950" y="213.5">NJ</text>
-              <text class="st-label" x="950" y="231">DE</text>
-              <text class="st-label" x="950" y="248.5">MD</text>
-              <text class="st-label" x="950" y="266">DC</text>
+              <line class="st-lead" x1="874.8" y1="137.3" x2="930" y2="123"/>
+              <line class="st-lead" x1="897.3" y1="136" x2="930" y2="142.5"/>
+              <line class="st-lead" x1="912.7" y1="173.3" x2="930" y2="162"/>
+              <line class="st-lead" x1="905.7" y1="185.8" x2="930" y2="181.5"/>
+              <line class="st-lead" x1="886.1" y1="195.7" x2="930" y2="201"/>
+              <line class="st-lead" x1="859.2" y1="233.5" x2="930" y2="220.5"/>
+              <line class="st-lead" x1="852.5" y1="253" x2="930" y2="240"/>
+              <line class="st-lead" x1="832.6" y1="267.2" x2="930" y2="259.5"/>
+              <line class="st-lead" x1="827.3" y1="267.5" x2="930" y2="279"/>
+              <text class="st-label" x="943" y="126">VT</text>
+              <text class="st-label" x="943" y="145.5">NH</text>
+              <text class="st-label" x="943" y="165">MA</text>
+              <text class="st-label" x="943" y="184.5">RI</text>
+              <text class="st-label" x="943" y="204">CT</text>
+              <text class="st-label" x="943" y="223.5">NJ</text>
+              <text class="st-label" x="943" y="243">DE</text>
+              <text class="st-label" x="943" y="262.5">MD</text>
+              <text class="st-label" x="943" y="282">DC</text>
               <text class="st-label" x="674.9" y="456.8">AL</text>
               <text class="st-label" x="107.7" y="528.2">AK</text>
               <text class="st-label" x="169.3" y="369.8">AZ</text>
@@ -1249,7 +1452,7 @@
               <text class="st-label" x="750.8" y="415.2">GA</text>
               <text class="st-label" x="659.4" y="296.5">IN</text>
               <text class="st-label" x="486" y="296.8">KS</text>
-              <text class="st-label" x="918.1" y="118.4">ME</text>
+              <text class="st-label" x="918.1" y="122">ME</text>
               <text class="st-label" x="540" y="114.3">MN</text>
               <text class="st-label" x="819.1" y="329.7">NC</text>
               <text class="st-label" x="455.1" y="103.6">ND</text>
@@ -1423,6 +1626,291 @@
       "title": "特朗普及其盟友累计筹款 4.29 亿美元,创中期选举周期纪录",
       "detail": "科技界亿万富豪与多家企业参与捐款;马斯克此前已表态重回共和党阵营并投入巨额资金提升共和党选民投票率,第三方搅局效应消退。",
       "source": "综合公开报道"
+    }
+  ]
+}
+</script>
+
+<!-- 大事日历数据块：日期均经官方来源核实（美联储 / BLS / G20 官网 / IMF 官网 / 中国外交部）
+     d = 起始日期（美东）；d2 = 结束日期（多日事件，可选）；t = 美东时刻 HH:MM（可选，无则全日事件）
+     cat: econ 经济 / pol 政治 / dip 外交 -->
+<script type="application/json" id="us-cal-data">
+{
+  "updated_at": "2026-10-13",
+  "source_note": "美联储 / BLS / BEA / 普查局 / G20 / IMF / UNFCCC / WEF 官网及中国外交部（日期经官方来源核实）",
+  "events": [
+    {
+      "d": "2026-10-12",
+      "d2": "2026-10-18",
+      "cat": "dip",
+      "title": "IMF / 世界银行 2026 年会",
+      "note": "泰国曼谷 · 全年会期",
+      "s": "IMF年会"
+    },
+    {
+      "d": "2026-10-14",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 9 月 CPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "CPI"
+    },
+    {
+      "d": "2026-10-15",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 9 月 PPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "PPI"
+    },
+    {
+      "d": "2026-10-15",
+      "cat": "dip",
+      "title": "G20 财长与央行行长会议",
+      "note": "泰国曼谷 · 配合 IMF 年会",
+      "s": "G20财长会"
+    },
+    {
+      "d": "2026-10-15",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 9 月零售销售公布",
+      "s": "零售销售",
+      "note": "普查局（Census）· 与 PPI 同日公布"
+    },
+    {
+      "d": "2026-10-27",
+      "d2": "2026-10-28",
+      "t": "14:00",
+      "cat": "econ",
+      "title": "FOMC 议息会议（10 月）",
+      "note": "决议于会期第二日公布 · 会后主席记者会 14:30",
+      "s": "FOMC"
+    },
+    {
+      "d": "2026-10-29",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国三季度 GDP 初值公布",
+      "s": "GDP初值",
+      "note": "经济分析局（BEA）· 与 PCE 同日、FOMC 决议次日"
+    },
+    {
+      "d": "2026-10-29",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 9 月 PCE 物价指数公布",
+      "s": "PCE",
+      "note": "经济分析局（BEA）· 美联储偏好的通胀指标"
+    },
+    {
+      "d": "2026-10-30",
+      "d2": "2026-10-31",
+      "cat": "dip",
+      "title": "G20 外长会议",
+      "note": "美国亚特兰大",
+      "s": "G20外长会"
+    },
+    {
+      "d": "2026-11-01",
+      "cat": "econ",
+      "title": "美国冬令时开始",
+      "note": "美股交易时段对应北京时间后移 1 小时（22:30 开盘）",
+      "s": "冬令时开始"
+    },
+    {
+      "d": "2026-11-03",
+      "cat": "pol",
+      "title": "2026 年中期选举日",
+      "note": "改选产生第 120 届国会 · 全部 435 席众议院与 35 席参议院",
+      "s": "中期选举日"
+    },
+    {
+      "d": "2026-11-06",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 10 月非农就业报告",
+      "note": "劳工统计局（BLS）",
+      "s": "非农"
+    },
+    {
+      "d": "2026-11-09",
+      "d2": "2026-11-20",
+      "cat": "dip",
+      "title": "COP31 联合国气候变化大会",
+      "s": "COP31",
+      "note": "土耳其安塔利亚 · 世界领导人气候行动峰会 11-12 日"
+    },
+    {
+      "d": "2026-11-10",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 10 月 CPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "CPI"
+    },
+    {
+      "d": "2026-11-11",
+      "cat": "hol",
+      "title": "退伍军人节（联邦假日）",
+      "note": "美国债市休市，股市正常交易",
+      "s": "退伍军人节"
+    },
+    {
+      "d": "2026-11-13",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 10 月 PPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "PPI"
+    },
+    {
+      "d": "2026-11-17",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 10 月零售销售公布",
+      "s": "零售销售",
+      "note": "普查局（Census）"
+    },
+    {
+      "d": "2026-11-18",
+      "d2": "2026-11-19",
+      "cat": "dip",
+      "title": "APEC 领导人非正式会议",
+      "note": "中国深圳 · 第三十三次 · 中美互动焦点",
+      "s": "APEC峰会"
+    },
+    {
+      "d": "2026-11-25",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 10 月 PCE 物价指数公布",
+      "s": "PCE",
+      "note": "经济分析局（BEA）· 与三季度 GDP 二次估计同日公布"
+    },
+    {
+      "d": "2026-11-26",
+      "cat": "hol",
+      "title": "感恩节（联邦假日）",
+      "note": "美股休市",
+      "s": "感恩节"
+    },
+    {
+      "d": "2026-12-04",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 11 月非农就业报告",
+      "note": "劳工统计局（BLS）",
+      "s": "非农"
+    },
+    {
+      "d": "2026-12-08",
+      "d2": "2026-12-09",
+      "t": "14:00",
+      "cat": "econ",
+      "title": "FOMC 议息会议（12 月）",
+      "note": "决议于 12 月 9 日公布 · 含经济预测摘要（点阵图）",
+      "s": "FOMC"
+    },
+    {
+      "d": "2026-12-10",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 11 月 CPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "CPI"
+    },
+    {
+      "d": "2026-12-11",
+      "cat": "pol",
+      "title": "联邦政府拨款截止日",
+      "s": "拨款截止",
+      "note": "H.R.6500 临时拨款至 12 月 11 日 · 届满前须通过全年拨款案或新 CR，否则政府停摆 · 跛脚鸭国会关键节点"
+    },
+    {
+      "d": "2026-12-14",
+      "d2": "2026-12-15",
+      "cat": "dip",
+      "title": "G20 领导人峰会",
+      "note": "美国迈阿密 · 美国总统主办",
+      "s": "G20峰会"
+    },
+    {
+      "d": "2026-12-15",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 11 月 PPI 公布",
+      "note": "劳工统计局（BLS）",
+      "s": "PPI"
+    },
+    {
+      "d": "2026-12-16",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 11 月零售销售公布",
+      "s": "零售销售",
+      "note": "普查局（Census）· 假日购物季首轮官方数据"
+    },
+    {
+      "d": "2026-12-23",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 11 月 PCE 物价指数公布",
+      "s": "PCE",
+      "note": "经济分析局（BEA）· 与三季度 GDP 终值同日公布"
+    },
+    {
+      "d": "2026-12-25",
+      "cat": "hol",
+      "title": "圣诞节（联邦假日）",
+      "note": "美股休市",
+      "s": "圣诞节"
+    },
+    {
+      "d": "2027-01-01",
+      "cat": "hol",
+      "title": "元旦（联邦假日）",
+      "s": "元旦",
+      "note": "美股休市"
+    },
+    {
+      "d": "2027-01-03",
+      "cat": "pol",
+      "title": "第 120 届国会开幕",
+      "s": "新国会开幕",
+      "note": "中期选举后新一届国会议员宣誓就职并选举众议院议长"
+    },
+    {
+      "d": "2027-01-08",
+      "t": "08:30",
+      "cat": "econ",
+      "title": "美国 12 月非农就业报告",
+      "note": "劳工统计局（BLS）",
+      "s": "非农"
+    },
+    {
+      "d": "2027-01-18",
+      "cat": "hol",
+      "title": "马丁·路德·金纪念日（联邦假日）",
+      "s": "MLK纪念日",
+      "note": "美股休市"
+    },
+    {
+      "d": "2027-01-18",
+      "d2": "2027-01-22",
+      "cat": "dip",
+      "title": "达沃斯世界经济论坛年会",
+      "s": "达沃斯论坛",
+      "note": "瑞士达沃斯 · 第 57 届年会"
+    },
+    {
+      "d": "2027-01-26",
+      "d2": "2027-01-27",
+      "t": "14:00",
+      "cat": "econ",
+      "title": "FOMC 议息会议（2027 年 1 月）",
+      "s": "FOMC",
+      "note": "决议于 1 月 27 日公布 · 会后主席记者会 14:30"
     }
   ]
 }
@@ -2712,7 +3200,61 @@
             "body": "【政策背景】\n基本药物供应链安全是本届政府的既定优先事项。管理与预算办公室（OMB）依据 31 U.S.C. 501 等授权发布信息请求（RFI），就「战略准备与应对管理局（ASPR）86 种基本药物清单」相关的成品制剂（FDF）、原料药（API）与关键起始物料（KSM），摸排美国本土及近岸地区现存与闲置（idle）产能。回复截止 2026 年 10 月 26 日，结果将共享给有基本药物采购需求或负责强化本土仿制药产业基础的联邦机构。\n\n【核心内容】\n本次 RFI 为市场调研性质，不直接授予合同：OMB 要求产业界申报本土与近岸（near shore）的新建及闲置产能信息，覆盖 FDF、API、KSM 三个环节。RFI 明确回复将跨机构共享，用于后续基本药物采购与产业基础政策——可视为后续政府采购倾斜、补贴或国防生产法（DPA）工具使用的前置摸底。\n\n【要点提炼】\n1. 政策链条定位：从「认定依赖风险」进入「盘点可用产能」阶段，下一步通常是采购承诺或产能激励，政策推进路径清晰；\n2. 覆盖环节完整：FDF、API、KSM 三环并提，指向对海外（尤其是亚洲）原料药依赖的系统性替代意图；\n3. 「近岸」首次与「本土」并列出现在 OMB 口径中，墨西哥、加拿大等近岸产能被纳入可选池，与近岸外包政策取向一致。\n\n【对金融市场的预期影响】\n总体判断：对美国本土与近岸仿制药及 CDMO 板块构成中期政策利好预期，短期无直接定价事件。\n受益方向：拥有美国本土或墨西哥产能的仿制药企业、CDMO 与原料药生产商可能进入后续采购与激励名单；闲置产能的「再激活」主题值得跟踪。\n受损方向：以亚洲原料药为主要供应来源、且无本土/近岸布局的美国仿制药分销商，中长期面临采购资格与合规成本压力。\n跟踪节点：10 月 26 日回复截止后 OMB 或 ASPR 的后续动作（采购公告、DPA 资金、清单扩容）；国会是否配套立法（如基本药物本土生产税收抵免）。"
           }
         }
-      ]
+      ],
+      "overview": {
+        "weekly": {
+          "tag": "每周研判",
+          "period": "2026 年第 41 周（10 月 4 日 – 10 月 10 日）",
+          "updated_at": "2026-10-10（周六）",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "73 条"
+            },
+            {
+              "k": "结构",
+              "v": "规则 37 · 拟议规则 30 · 总统文件 2"
+            },
+            {
+              "k": "高频部门",
+              "v": "交通 19 · 卫生 12 · 商务 9 · 国土安全 9"
+            },
+            {
+              "k": "重点简报",
+              "v": "7 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【本周主线】\n对华关税进入常态化管理：USTR 同日发布 301 条款行动延续通告[[50]]与产品排除一致性修正通告[[49]]，并就美墨加协定（USMCA）运行情况启动公众意见征求与公开听证[[73]]。判断：行动延续是程序性维持，真正的信号在排除修正——关税重心正从「加码施压」转向「排除清单的精细化管理」，对被纳入排除通道的机械、电子、农产品链条是确定性改善；USMCA 复审与 301 排除并行，指向下一阶段贸易政策的主战场是「存量协定重谈」而非新壁垒。\n对欧战线开辟：USTR 就欧盟碳边境调节机制（CBAM）及扩围提案对美国贸易的影响征求公众意见[[31]]，系美方首次系统性评估该机制对美出口的冲击。判断：这是反制或效仿的前置程序，跨大西洋碳贸易摩擦概率上升，出口欧盟的高碳行业（钢铝、化工、水泥）需提前评估合规与成本敞口。\n小额贸易征管收紧：CBP 拟修改 2500 美元以下低值货物非正式报关申报要求、新设邮路电子报关类别并调整保证金[[46]]。判断：这是针对跨境电商小额包裹的数据与征管补漏，方向是抬高合规成本、堵住免税套利，对低价直邮模式构成趋势性利空，而非一次性扰动。\n数字资产监管边际松绑：FinCEN 撤回拟将可兑换虚拟货币混币列为首要洗钱关注交易类别的特别措施[[62]]，同日财政部另撤回数字资产交易相关要求[[61]]。判断：两案同撤表明数字资产合规基调从「预设违法推定」转向「基于风险的可监管」，混币与链上服务合规成本趋势性下降。\n能源临时纾困：总统签署柴油燃料紧急税收减免行政令[[20]]。判断：属供给冲击驱动的临时性减税，利好运输、农业燃料成本短期回落，但无结构意义，不应外推。\n【信号与噪声】\n本周 73 条中适航指令、航路调整、渔业配额、安全区类条目合计过半，均属常规技术性监管，不构成独立交易线索；食品追溯执法政策指南草案[[29]]与 FDA 钠减量草案[[10]]值得食品饮料板块跟踪，其余噪声可忽略。\n【总体研判】\n本周最有信息量的是三组方向性信号：其一，对华关税排除管理常态化叠加 USMCA 复审，贸易不确定性边际下降，受益排序为对美出口敞口高的机械电子与农业；其二，低值货物征管改革是小额跨境电商商业模式层面的利空，平台与物流企业的合规投入将系统性上升；其三，FinCEN 连续撤回数字资产拟议措施，与行政分支对加密行业的友好姿态一致，方向性利好链上合规服务。能源、医疗类条目（柴油减免[[20]]、医保覆盖透明度[[60]]）单独看均属次要扰动。",
+          "note": "每周研判覆盖上一个周日至周六窗口的联邦公报条目，每周六更新；正文中「§」角标可定位到下方对应政策条目。"
+        },
+        "monthly": {
+          "tag": "每月研判",
+          "period": "2026 年 10 月 · 第 1 期（月中滚动）",
+          "updated_at": "2026-10-13",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "112 条（9 月 25 日起）"
+            },
+            {
+              "k": "结构",
+              "v": "规则 58 · 拟议规则 36 · 总统文件 7"
+            },
+            {
+              "k": "高频部门",
+              "v": "交通 25 · 国土安全 16 · 商务 15 · 卫生 14"
+            },
+            {
+              "k": "重点简报",
+              "v": "11 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【月度主线】\n科技政策旗帜确立：10 月 2 日「开启超级智能时代」行政令[[93]]将人工智能与算力基础设施置于白宫产业议程首位。判断：这是本周期最重要的单一政策文件，后续联邦采购、电力审批、出口管制都将围绕算力供给展开，AI 算力链（数据中心、电力设备、半导体）的政策确定性显著抬升。\n药价改革双线合围：卫生与公众服务部推出高效药品定价全球基准（GLOBE）模型[[102]]，财政部、劳工部与卫生与公众服务部联合发布医疗保障覆盖透明度规则[[60]]。判断：GLOBE 以 Medicare Part B 通胀返款叠加国际基准推进，口径是「返款」而非「定价」，但方向明确压缩高价药在美溢价空间；覆盖透明度规则同步压实数据披露。美国市场收入占比高的创新药企（尤其 Part B 用药）估值面临政策折价，仿制药与流通端相对受益。\n财政纪律工具启用：OMB 依《1974 年国会预算与扣押控制法》提出合计 8.1 亿美元撤销拨款提案[[110]]。判断：规模相对联邦预算可忽略，信号意义大于实质——行政分支开始常态化使用撤销工具与国会争夺支出主导权，后续若提案规模升级，受影响部门（商务、教育、卫生、国土安全）的拨款稳定性需纳入观察。\n供应链与制裁并行：ASPR 就 86 种基本药物的本土及近岸生产发出信息请求[[111]]，医药供应链安全议程启动；财政部发布伊朗相关认定[[2]]与委内瑞拉制裁网络通用许可第 60 号[[3]]，并推进 A7 网络次级代理资金转移禁令[[74]]。判断：制裁工具保持高频，能源、航运与代理行网络的合规风险敞口仍在扩张。\n对华与对欧经贸组合：301 行动延续[[50]]、产品排除修正[[49]]、低值货物报关改革[[46]]、欧盟 CBAM 公众意见征求[[31]]密集落地。判断：组合特征是「对华排除常态化 + 征管技术性收紧 + 对欧开辟新战场」，贸易政策整体不确定性下移，但对欧碳贸易摩擦是新变量。\n【总体研判】\n本周期白宫政策呈「产业政策进攻、社会监管选择性收缩、财政工具试探」的三线格局。核心判断有三：第一，AI 行政令是主线中的主线，算力与电力基础设施链条应作为政策受益组合持续超配跟踪；第二，药价改革从口号进入可执行规则阶段，GLOBE 模型落地节奏是医药板块最大的单一政策风险，回避美国 Part B 收入占比过高的标的；第三，数字资产监管边际放松（FinCEN 撤回[[62]][[61]]）与跨境电商征管收紧（低值货物[[46]]）一松一紧，代表本届监管取向「松金融、紧实物边控」的一般规律，可外推至后续同类政策。撤销拨款[[110]]与 USCMA 复审[[73]]是下月需重点跟踪的两个升级风险点。",
+          "note": "每月研判覆盖上一自然月，于次月 1 日发布完整版；本期为创刊滚动版，覆盖数据收录起点 9 月 25 日以来的全部条目；正文中「§」角标可定位到下方对应政策条目。"
+        }
+      }
     },
     "congress": {
       "updated_at": "2026-10-11 00:03",
@@ -3401,7 +3943,61 @@
           "title_cn": "退伍军人事务部住房贷款导航法案",
           "domain": "住房"
         }
-      ]
+      ],
+      "overview": {
+        "weekly": {
+          "tag": "每周研判",
+          "period": "2026 年第 41 周（10 月 4 日 – 10 月 10 日）",
+          "updated_at": "2026-10-10（周六）",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "60 条（10-10 快照）"
+            },
+            {
+              "k": "结构",
+              "v": "众议院法案 51 · 决议 8 · 参议院法案 1"
+            },
+            {
+              "k": "立法进度",
+              "v": "提交委员会 56 · 进入院会程序 4"
+            },
+            {
+              "k": "重点简报",
+              "v": "6 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【本周主线】\nAI 立法双轨并进：众议院提出在总统行政办公室设立人工智能与新兴技术威胁办公室法案[[10]]，同期「AI 监督监察法案」已表决出委员会、进入院会程序[[56]]。判断：国会 AI 议程正从原则性辩论转入机构设立与监督工具落地阶段，两案若推进，AI 安全审计与合规评估的政府需求将放量，相关安全厂商订单能见度提升。\n战争权力制衡再现：众议院提出依《战争权力法》第 5(c) 条要求总统撤出未经国会授权的也门胡塞武装军事行动的决议[[29]]。判断：此类决议历史生效概率低，但作为国会收回军事授权的姿态，将抬升行政分支在红海行动上的政治成本，边际影响国防授权谈判筹码。\n监管机构被立法「点名」：FTC 举报人激励与保护法案[[9]]、要求 FTC 设特别工作组研究自动化账号对社交媒体与选举的影响[[18]]、指示 FTC 调查消防车制造业反竞争行为[[45]]三案并发。判断：国会正以立法手段直接给独立监管机构「派活」，FTC 议程被动扩容；被点名领域（自动化账号生态、特种车辆制造）面临调查前置的合规压力。\n民生与产业提案：制止食品杂货店价格欺诈法案[[33]]、住房所有权援助税收抵免[[20]]、电影电视娱乐产业振兴法案[[42]]、340B 药品定价返利临时限制[[22]]、医师及医疗人才 H-1B 签证法案[[52]]集中提交。\n【信号与噪声】\n60 条中 56 条尚处「提交委员会」最初阶段，参照历史成活率（不足一成），单独均不构成交易线索；真正值得跟踪的是进度最快的两案——已出委员会的 AI 监督监察法案[[56]]与 ASAP 法案[[36]]。设施命名[[26]]、悼念与纪念类决议[[28]][[30]][[31]]属例行事务，可忽略。\n【总体研判】\n本周国会动态的核心信号是 AI 立法进入执行机构化阶段，威胁办公室[[10]]与监督监察[[56]]双轨并行，其确定性高于其余全部主线；FTC 被三案点名[[9]][[18]][[45]]显示立法问责独立机构已成常规工具，与白宫板块 FinCEN 撤回拟议措施的方向对照，形成「行政放松、立法收紧」的监管张力；也门决议[[29]]以政治信号对待。民生类提案[[33]][[20]][[42]]处于早期，跟踪委员会排期即可，不宜提前定价。",
+          "note": "每周研判基于国会官网（congress.gov）每周六抓取的立法动态快照；正文中「§」角标可定位到下方对应政策条目。"
+        },
+        "monthly": {
+          "tag": "每月研判",
+          "period": "2026 年 10 月 · 第 1 期（月中滚动）",
+          "updated_at": "2026-10-11",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "60 条（10-10 快照起）"
+            },
+            {
+              "k": "密集领域",
+              "v": "国防 8 · 司法 7 · 能源 6 · 医疗 6"
+            },
+            {
+              "k": "立法进度",
+              "v": "提交委员会 56 · 院会程序 4"
+            },
+            {
+              "k": "重点简报",
+              "v": "6 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【月度主线】\n立法结构画像：本期 60 条中众议院法案 51、决议 8、参议院法案仅 1，立法动能高度集中于众议院；领域上国防/安全（8）[[19]][[29]]、司法/执法（7）[[16]][[49]]、能源/环境（6）[[12]][[23]]、医疗/医药（6）[[22]][[25]][[53]]构成四大密集区。判断：中期选举年前的余下会期，众议院多数党正以高提案量塑造议程叙事，实际成案率仍取决于参议院，对提案总量不必过度解读。\nAI 与国防技术交叉：除 AI 双轨立法[[10]][[56]]外，评估并投资乌克兰国防技术法案[[19]]提出以国防创新绑定对乌援助。判断：国防技术（无人系统、AI 反制）是两党少数共识区，相关采购链条的国会授权确定性上升，与白宫板块算力行政令形成呼应。\n退伍军人事务集群：VA 财政管理现代化[[32]]、更年期医疗改善[[46]]、住房贷款导航[[59]]、国民警卫队纾困[[40]]多案并发。判断：VA 系列法案争议度低、历史成活率偏高，可作为观察两党合作温度的先行指标。\n医疗与住房民生线：340B 返利限制[[22]]、遗传性癌症筛查[[53]]、住房税收抵免[[20]]、HOME 住房法案[[47]]、公平首付援助[[34]]。判断：药价端与白宫 GLOBE 模型形成立法—行政两线合围，医药定价的政策风险溢价应持续计入；住房类提案对建筑与按揭产业链是潜在期权，但进度是硬约束。\n【信号与噪声】\n数据为 10 月 10 日单日快照，参议院动态覆盖有限；大量决议与命名类条目无政策含义。有效信号集中在 AI 双轨[[10]][[56]]、FTC 三案[[9]][[18]][[45]]、乌克兰国防技术[[19]]与已出委员会的[[36]]。\n【总体研判】\n国会本期画像可概括为「众议院高密度试水、参议院静默」：有定价意义的只有 AI 立法双轨与 FTC 被点名三案；乌克兰国防技术[[19]]是国防订单预期的边际增量；其余大量提案属议程政治产物。对照白宫板块，政策风险的主导权仍在行政分支（规则可即时生效），国会线按「信号大于实质」对待，跟踪出委员会进度与参议院对接情况即可。",
+          "note": "每月研判覆盖上一自然月，于次月 1 日发布完整版；本期为创刊滚动版，覆盖数据收录起点 10 月 10 日快照；正文中「§」角标可定位到下方对应政策条目。"
+        }
+      }
     },
     "agencies": {
       "updated_at": "2026-10-12 13:50",
@@ -3609,11 +4205,65 @@
           "title_cn": "信息采集事项提交管理与预算办公室（OMB）审查批准",
           "domain": "电信/媒体"
         }
-      ]
+      ],
+      "overview": {
+        "weekly": {
+          "tag": "每周研判",
+          "period": "2026 年第 41 周（10 月 4 日 – 10 月 10 日）",
+          "updated_at": "2026-10-10（周六）",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "11 条（窗口内）"
+            },
+            {
+              "k": "结构",
+              "v": "通告 11（程序性为主）"
+            },
+            {
+              "k": "实质条目",
+              "v": "在押通信数据采集 1 条"
+            },
+            {
+              "k": "重点简报",
+              "v": "1 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【本周主线】\n实质条目仅一条：FCC 竞争线路局与经济分析办公室通过 2026 年在押人员通信服务强制数据采集[[13]]。判断：这是监狱与看守所通信资费监管（降低在押人员通话成本议程）的数据基础设施，方向上利好相关电信服务承包商，但金额层面市场影响有限。\n程序性条目占绝对多数：信息采集类通告 8 条[[3]][[4]][[5]][[6]][[7]][[8]][[9]][[10]]与田纳西、密歇根两州无线电广播服务许可[[11]][[12]]均属例行动作，不构成政策信号。\n窗口边缘动向：10 月 1 日的 FCC 网络现代化规则[[14]]与 10 月 13 日的两起美联储银行控制权变更公示[[1]][[2]]分别位于本周窗口前后，均已收录在下方条目并纳入每月研判。\n【信号与噪声】\n独立机构本周处于规则间歇期，信息采集通告的密集出现本身无增量信息；真正的市场信号在窗口边缘——美联储银行并购审批动向（见每月研判）。\n【总体研判】\n本周独立机构板块可交易信息密度低，核心判断有二：其一，在押通信数据采集[[13]]延续 FCC「降低壁垒、强化数据」的消费者保护风格，与 10 月 1 日网络现代化规则[[14]]同一脉络；其二，美联储于窗口后（10 月 13 日）连续公示两起银行控制权变更[[1]][[2]]，叠加白宫板块 FinCEN 撤回数字资产拟议措施，监管温度整体偏松，区域银行整合窗口正在打开，银行股的事件驱动机会值得跟踪。",
+          "note": "每周研判覆盖上一个周日至周六窗口的联邦公报条目，每周六更新；正文中「§」角标可定位到下方对应政策条目。"
+        },
+        "monthly": {
+          "tag": "每月研判",
+          "period": "2026 年 10 月 · 第 1 期（月中滚动）",
+          "updated_at": "2026-10-13",
+          "stats": [
+            {
+              "k": "本期收录",
+              "v": "17 条（10-01 起）"
+            },
+            {
+              "k": "结构",
+              "v": "FCC 15 · 美联储 2"
+            },
+            {
+              "k": "类型",
+              "v": "通告 12 · 规则 4 · 拟议规则 1"
+            },
+            {
+              "k": "重点简报",
+              "v": "4 条"
+            }
+          ],
+          "expanded": false,
+          "body": "【月度主线】\n银行并购审批窗口开启：美联储公示华盛顿联邦银行（WaFd）申请收购 EverBank[[1]]，以及 Gullace 家族信托收购银行股份的控制权变更通告[[2]]。判断：两案并发是区域银行整合周期重启的直接信号；若审批节奏延续，中小银行并购将成为银行板块持续的事件驱动线索，存款份额处于中间区银行的被并购期权价值值得重估。\n电信网络现代化落地：FCC 发布降低网络改造与服务变更壁垒、加速网络现代化的规则[[14]]。判断：直接改善电信设备商与工程服务商的订单能见度，铜缆退网与光纤替换的资本开支节奏有望加快；对运营商是短期成本、长期效率。\n消费者保护议程延续：在押人员通信服务强制数据采集[[13]]为降低在押人员通信资费提供监管数据基础；同期信息采集通告群（12 条）多为程序性事务。\n【信号与噪声】\n17 条中 12 条为信息采集类程序通告，无独立信号；无线电广播许可[[11]][[12]]属地方性事务。值得注意的对照：本周 FCC 对大型平台与内容监管无实质动作，而国会板块 FTC 被三案点名——独立机构自身节奏偏温和，收紧压力来自立法端。\n【总体研判】\n本周期独立机构板块呈「一松一稳」格局：金融监管端，美联储银行控制权变更密集公示[[1]][[2]]与白宫 FinCEN 撤回加密拟议措施同向，确认金融监管边际放松的主基调，银行整合与加密合规是两条可跟踪的事件线；电信监管端，FCC 以网络现代化[[14]]与消费者数据[[13]]为抓手，监管风格务实且对供给友好。独立机构当前无收紧信号，板块风险偏好可维持，下一观察点是美联储对 WaFd 案的审批时限。",
+          "note": "每月研判覆盖上一自然月，于次月 1 日发布完整版；本期为创刊滚动版，覆盖数据收录起点 10 月 1 日以来的全部条目；正文中「§」角标可定位到下方对应政策条目。"
+        }
+      }
     }
   }
 }
-</script>
+  </script>
 
   <script>
     (function () {
@@ -3767,6 +4417,99 @@
         return out;
       }
 
+      // 周期研判正文排版：【】段头 + 导语加粗；【总体研判】段头之后的段落整体高亮（与简报正文同一套约定）
+      // 引用角标：正文中 [[N]]（N = 该板块 items 数组原始索引）渲染为「§」跳转锚点
+      function reviewBodyHtml(body) {
+        var LEAD_RE = /^([^，。；：！？、\s「」（）0-9]{2,12})：\s*/;
+        var out = '', inVerdict = false;
+        String(body || '').split('\n').forEach(function (ln) {
+          if (!ln.trim()) return;
+          var hm = ln.match(/^(【[^】]+】)/);
+          if (hm) {
+            inVerdict = /【总体研判】/.test(hm[1]);
+            out += '<div class="rvw-h">' + esc(hm[1]) + '</div>';
+            var rest = ln.slice(hm[1].length);
+            if (rest.trim()) out += '<p' + (inVerdict ? ' class="rvw-verdict"' : '') + '>' + refLinks(esc(rest)) + '</p>';
+          } else {
+            var lm = ln.match(LEAD_RE);
+            out += '<p' + (inVerdict ? ' class="rvw-verdict"' : '') + '>' +
+              (lm ? '<span class="rvw-lead">' + esc(lm[1]) + '：</span>' + refLinks(esc(ln.slice(lm[0].length))) : refLinks(esc(ln))) +
+              '</p>';
+          }
+        });
+        return out;
+      }
+      function refLinks(html) {
+        return html.replace(/\[\[(\d+)\]\]/g, function (m, n) {
+          return '<a href="#note-' + n + '" class="rvw-ref" data-ref="' + n + '" title="定位到下方对应政策条目">§</a>';
+        });
+      }
+
+      // 周期研判卡：每周（周六更新）/ 每月（次月 1 日更新）政策总览；无数据时整块隐藏
+      function renderReview(key, board) {
+        var host = document.getElementById('board-review');
+        var head = document.getElementById('review-head');
+        if (!host) return;
+        var ov = board && board.overview;
+        if (!ov || (!ov.weekly && !ov.monthly)) {
+          host.hidden = true; host.innerHTML = '';
+          if (head) head.hidden = true;
+          return;
+        }
+        function card(o, cls) {
+          if (!o) return '';
+          var expanded = !!o.expanded;
+          var stats = (o.stats || []).map(function (st) {
+            return '<span class="rvw-stat">' + esc(st.k) + '：<b>' + esc(st.v) + '</b></span>';
+          }).join('');
+          return '<div class="rvw-card ' + cls + (expanded ? ' open' : '') + '">' +
+            '<div class="rvw-head"><span class="rvw-tag">' + esc(o.tag) + '</span>' +
+            '<span class="rvw-period">' + esc(o.period) + '</span>' +
+            '<span class="rvw-at">更新于 ' + esc(o.updated_at) + '</span></div>' +
+            (stats ? '<div class="rvw-stats">' + stats + '</div>' : '') +
+            '<div class="rvw-toggle-wrap"><button type="button" class="rvw-toggle" aria-expanded="' + expanded + '"><span class="rvw-toggle-t">' + (expanded ? '收起' : '展开研判') + '</span><i class="chev">▾</i></button></div>' +
+            '<div class="rvw-detail"' + (expanded ? '' : ' hidden') + '>' +
+            '<div class="rvw-body">' + reviewBodyHtml(o.body) + '</div>' +
+            (o.note ? '<div class="rvw-note">' + esc(o.note) + '</div>' : '') +
+            '</div></div>';
+        }
+        host.hidden = false;
+        if (head) head.hidden = false;
+        host.innerHTML = card(ov.weekly, 'wk') + card(ov.monthly, 'mo');
+
+        // 展开 / 收起
+        [].slice.call(host.querySelectorAll('.rvw-toggle')).forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var c = btn.closest('.rvw-card');
+            var d = c.querySelector('.rvw-detail');
+            d.hidden = !d.hidden;
+            c.classList.toggle('open', !d.hidden);
+            btn.setAttribute('aria-expanded', String(!d.hidden));
+            btn.querySelector('.rvw-toggle-t').textContent = d.hidden ? '展开研判' : '收起';
+          });
+        });
+
+        // 「§」角标跳转：目标不在当前筛选结果中时，先清除筛选再定位（onclick 赋值幂等，避免重复绑定）
+        host.onclick = function (e) {
+          var a = e.target.closest ? e.target.closest('.rvw-ref') : null;
+          if (!a) return;
+          e.preventDefault();
+          var target = document.getElementById('note-' + a.getAttribute('data-ref'));
+          if (!target) {
+            var rst = document.getElementById('filter-reset');
+            if (rst) rst.click();
+            target = document.getElementById('note-' + a.getAttribute('data-ref'));
+          }
+          if (!target) return;
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          target.classList.remove('ref-flash');
+          // 强制重启动画
+          void target.offsetWidth;
+          target.classList.add('ref-flash');
+        };
+      }
+
       function fillKindOptions(items) {
         var sel = document.getElementById('filter-kind');
         var kinds = [];
@@ -3835,6 +4578,8 @@
         var data = readPolicyData();
         var board = data.boards && data.boards[key];
         var allItems = (board && board.items) || [];
+        // 周期研判卡（每周 / 每月总览，数据位于各板块 overview 字段）
+        renderReview(key, board);
         var list = document.getElementById('board-list');
         var empty = document.getElementById('board-empty');
         var updated = document.getElementById('board-updated');
@@ -3867,10 +4612,12 @@
         empty.hidden = true;
 
         var nBrief = 0;
+        // 挂原始索引：研判卡「§」角标跳转依赖 note-{原始索引} 锚点
+        allItems.forEach(function (it, i) { it.__oi = i; });
         list.innerHTML = items.map(function (it, idx) {
           var hasBrief = !!(it.brief && it.brief.body);
           if (hasBrief) nBrief++;
-          return '<div class="note' + (hasBrief ? ' has-brief' : '') + '" data-idx="' + idx + '">' +
+          return '<div class="note' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + idx + '">' +
             '<span class="t"><span class="title-main">' + esc(it.title) + '</span>' +
             (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
             '<span class="m"><span class="kind">' + esc(it.kind) + '</span>' + ((it.agency && key !== 'congress') ? '<span class="agcy">' + esc(it.agency) + '</span>' : '') + (it.domain ? '<span class="dom">' + esc(it.domain) + '</span>' : '') + esc(it.source) + ' · ' + esc(it.date) +
@@ -4080,6 +4827,216 @@
           updated.textContent = '最近更新：' + (data.updated_at || '—') + ' · 共 ' + items.length + ' 条（人工整理,随重大节点更新）';
         }
       }
+
+      // ===== 大事日历（美国政治板块）=====
+      var usCalTz = 'et';
+      var usCalYm = null; // 当前展示月份 {y, m}，null 时初始化为美东今天所在月
+      var usCalDayMap = {}; // 日期(YYYY-MM-DD) → 当日事件条数组（含原始数据，供详情面板使用）
+      var usCalSel = null; // 当前选中的日期
+      // 美东 d + t(HH:MM) → UTC 时刻（DST 自校准：迭代至 Intl 在 America/New_York 回推一致）
+      function etInstant(d, t) {
+        var guess = Date.parse(d + 'T' + t + ':00Z');
+        var fmt = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false });
+        for (var i = 0; i < 4; i++) {
+          var p = fmt.format(new Date(guess));            // "2026-10-28, 02:00"
+          var got = p.replace(', ', 'T').slice(0, 16);   // "2026-10-28T02:00"
+          var want = d + 'T' + t;
+          if (got === want) return guess;
+          guess += Date.parse(want.replace('T', ' ') + 'Z') - Date.parse(got.replace('T', ' ') + 'Z');
+        }
+        return guess;
+      }
+      // 在指定时区下取 y/m/d/时/分/星期（zh 星期短格式，如「周三」）
+      function calParts(ms, tz) {
+        var parts = new Intl.DateTimeFormat('en-CA', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date(ms));
+        var o = {}; parts.forEach(function (p) { o[p.type] = p.value; });
+        var wdMap = { Sun: '日', Mon: '一', Tue: '二', Wed: '三', Thu: '四', Fri: '五', Sat: '六' };
+        var wdEn = new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short' }).format(new Date(ms));
+        return { y: o.year, m: o.month, d: o.day, hh: o.hour === '24' ? '00' : o.hour, mm: o.minute, wd: wdMap[wdEn] || '' };
+      }
+      function pad2(n) { return (n < 10 ? '0' : '') + n; }
+      function ymdAdd(dateStr, n) {
+        var dt = new Date(dateStr + 'T12:00:00Z'); // 以 UTC 正午加减，避免边界
+        dt.setUTCDate(dt.getUTCDate() + n);
+        return dt.toISOString().slice(0, 10);
+      }
+
+      function renderUsCalendar() {
+        var host = document.getElementById('uc-grid');
+        var monthEl = document.getElementById('uc-month');
+        var noteEl = document.getElementById('uc-note');
+        if (!host) return;
+        var data = {};
+        try { data = JSON.parse(document.getElementById('us-cal-data').textContent) || {}; } catch (err) {}
+        var evs = data.events || [];
+        var tzName = usCalTz === 'bj' ? 'Asia/Shanghai' : 'America/New_York';
+        var tzLabel = usCalTz === 'bj' ? '北京时间' : '美东时间';
+        // 「今天」：格子高亮以所选时区为准；已结束过滤以美东日期为准
+        var nowParts = calParts(Date.now(), tzName);
+        var todayKey = nowParts.y + '-' + nowParts.m + '-' + nowParts.d;
+        var todayEt = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+        if (!usCalYm) usCalYm = { y: +todayEt.slice(0, 4), m: +todayEt.slice(5, 7) };
+        // 翻月边界：最早 = 美东当月；最晚 = 最晚事件所在月
+        var minYm = todayEt.slice(0, 7);
+        var maxDay = '0000-00-00';
+        evs.forEach(function (ev) { var end = ev.d2 || ev.d; if (end > maxDay) maxDay = end; });
+        var maxYm = maxDay.slice(0, 7);
+
+        // 构建 dayMap：日期(YYYY-MM-DD) → 事件条数组
+        var dayMap = usCalDayMap = {};
+        function addDay(key, item) { if (!dayMap[key]) dayMap[key] = []; dayMap[key].push(item); }
+        evs.forEach(function (ev) {
+          var end = ev.d2 || ev.d;
+          if (end < todayEt) return; // 已结束
+          var live = ev.d <= todayEt && todayEt <= end; // 进行中
+          var short = ev.s || ev.title;
+          var tip = ev.title + (ev.note ? ' · ' + ev.note : '');
+          if (ev.t) {
+            // 有明确美东时刻：多日会期时 t 落在最后一天（如 FOMC 决议于第二日公布）
+            var ms = etInstant(end, ev.t);
+            var p = calParts(ms, tzName);
+            var timeStr = p.hh + ':' + p.mm;
+            var dk = p.y + '-' + p.m + '-' + p.d; // 决议/公布时刻在所选时区落到的日期
+            if (ev.d2) {
+              var cur = ev.d;
+              while (cur <= end) {
+                if (cur === dk) {
+                  addDay(cur, { label: short + '决议', time: timeStr, cat: ev.cat, live: live, tip: tip + ' · 决议公布 ' + timeStr + ' ' + tzLabel, ev: ev, kind: 'dec' });
+                } else {
+                  addDay(cur, { label: short, cat: ev.cat, live: live, tip: tip + '（会期 ' + ev.d + ' ~ ' + end + '）', ev: ev, kind: 'day' });
+                }
+                cur = ymdAdd(cur, 1);
+              }
+              if (dk > end) { // 决议时刻跨日（如北京时间为次日）
+                addDay(dk, { label: short + '决议', time: timeStr, cat: ev.cat, live: false, tip: tip + ' · 决议公布 ' + timeStr + ' ' + tzLabel, ev: ev, kind: 'dec' });
+              }
+            } else {
+              addDay(dk, { label: short, time: timeStr, cat: ev.cat, live: live, tip: tip + ' · ' + timeStr + ' ' + tzLabel, ev: ev, kind: 't' });
+            }
+          } else {
+            var cur2 = ev.d;
+            while (cur2 <= end) {
+              addDay(cur2, { label: short, cat: ev.cat, live: live, tip: tip, ev: ev, kind: 'day' });
+              cur2 = ymdAdd(cur2, 1);
+            }
+          }
+        });
+
+        // 渲染月份网格（周日为第一列）
+        var y = usCalYm.y, m = usCalYm.m;
+        var ymStr = y + '-' + pad2(m);
+        var firstWd = new Date(Date.UTC(y, m - 1, 1)).getUTCDay();
+        var daysInMonth = new Date(Date.UTC(y, m, 0)).getUTCDate();
+        var rows = Math.ceil((firstWd + daysInMonth) / 7);
+        // 今天所在列（仅当本月包含今天时高亮整列）
+        var todayCol = -1;
+        if (todayKey.slice(0, 7) === ymStr) todayCol = (firstWd + (+todayKey.slice(8, 10)) - 1) % 7;
+        var WD = ['日', '一', '二', '三', '四', '五', '六'];
+        var html = WD.map(function (w, i) {
+          return '<div class="uc-wd' + (i === 0 || i === 6 ? ' wk' : '') + (i === todayCol ? ' tcol' : '') + '">周' + w + '</div>';
+        }).join('');
+        for (var i = 0; i < rows * 7; i++) {
+          var dayNum = i - firstWd + 1;
+          if (dayNum < 1 || dayNum > daysInMonth) { html += '<div class="uc-cell dim' + (i % 7 === todayCol ? ' tcol' : '') + '"></div>'; continue; }
+          var key = ymStr + '-' + pad2(dayNum);
+          var items = dayMap[key] || [];
+          var wkend = (i % 7 === 0 || i % 7 === 6);
+          var inner = items.slice(0, 3).map(function (it) {
+            return '<div class="uc-ev ' + it.cat + (it.live ? ' live' : '') + '" title="' + esc(it.tip) + '">' +
+              esc(it.label) + (it.time ? '<span class="tt">' + it.time + '</span>' : '') + '</div>';
+          }).join('');
+          if (items.length > 3) inner += '<div class="uc-more">+' + (items.length - 3) + ' 项</div>';
+          html += '<div class="uc-cell' + (key === todayKey ? ' today' : '') + (wkend ? ' wkend' : '') +
+            (i % 7 === todayCol ? ' tcol' : '') +
+            (items.length ? ' has-ev' : '') + (usCalSel === key && items.length ? ' sel' : '') + '" data-k="' + key + '">' +
+            '<div class="uc-num">' + dayNum + '</div>' + inner + '</div>';
+        }
+        host.innerHTML = html;
+        // 点击有事件的日期格：在旁边面板展示当日事件详情（仅信息，不做分析）
+        [].slice.call(host.querySelectorAll('.uc-cell.has-ev')).forEach(function (c) {
+          c.addEventListener('click', function () {
+            var k = c.getAttribute('data-k');
+            usCalSel = (usCalSel === k) ? null : k; // 再次点击取消选中
+            [].slice.call(host.querySelectorAll('.uc-cell.sel')).forEach(function (x) { x.classList.remove('sel'); });
+            if (usCalSel) c.classList.add('sel');
+            renderUsCalDetail();
+          });
+        });
+        // 月份标题 + 本月事件计数
+        var monthCnt = 0;
+        Object.keys(dayMap).forEach(function (k) { if (k.slice(0, 7) === ymStr) monthCnt += dayMap[k].length; });
+        if (monthEl) monthEl.innerHTML = y + ' 年 ' + m + ' 月' +
+          (monthCnt ? '<span class="uc-mcount">本月 ' + monthCnt + ' 项</span>' : '');
+        // 翻月按钮状态
+        var prevBtn = document.getElementById('uc-prev');
+        var nextBtn = document.getElementById('uc-next');
+        if (prevBtn) prevBtn.disabled = ymStr <= minYm;
+        if (nextBtn) nextBtn.disabled = ymStr >= maxYm;
+        // 图例与数据说明（两行规整排布：分类图例 / 来源行）
+        if (noteEl) {
+          noteEl.innerHTML = '<div class="uc-lg-row">' +
+            '<span class="lg"><span class="dot econ"></span>经济</span>' +
+            '<span class="lg"><span class="dot pol"></span>政治</span>' +
+            '<span class="lg"><span class="dot dip"></span>外交</span>' +
+            '<span class="lg"><span class="dot hol"></span>节日</span>' +
+            '<span class="lg lg-tz">时刻显示：' + tzLabel + '</span>' +
+            '</div><span class="uc-src">日期来源：' + esc(data.source_note || '官方来源核实') + ' · 数据更新：' + esc(data.updated_at || '—') + '</span>';
+        }
+        // 时区按钮状态
+        [].slice.call(document.querySelectorAll('#uc-tz button')).forEach(function (b) {
+          b.classList.toggle('on', b.getAttribute('data-tz') === usCalTz);
+        });
+        renderUsCalDetail();
+      }
+      // 详情面板：展示选中日期的事件明细（完整标题 / 时刻 / 会期 / 备注，仅信息呈现）
+      function renderUsCalDetail() {
+        var host = document.getElementById('uc-detail');
+        if (!host) return;
+        var tzLabel = usCalTz === 'bj' ? '北京时间' : '美东时间';
+        var CAT = { econ: '经济', pol: '政治', dip: '外交', hol: '节日' };
+        var items = usCalSel ? (usCalDayMap[usCalSel] || []) : [];
+        if (!items.length) {
+          host.innerHTML = '<div class="ud-head">当日事件</div>' +
+            '<div class="ud-empty"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c3cdd9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>点击日历中带事件的日期<br>查看当日具体安排</div>';
+          return;
+        }
+        var dt = new Date(usCalSel + 'T12:00:00Z');
+        var WD = ['日', '一', '二', '三', '四', '五', '六'];
+        var head = (+usCalSel.slice(5, 7)) + ' 月 ' + (+usCalSel.slice(8, 10)) + ' 日' +
+          '<span class="ud-sub">周' + WD[dt.getUTCDay()] + ' · 当日 ' + items.length + ' 项</span>';
+        var rows = items.map(function (it) {
+          var ev = it.ev;
+          var metas = [];
+          if (it.kind === 'dec') metas.push('决议公布：<b>' + it.time + '</b> ' + tzLabel);
+          else if (it.time) metas.push('<b>' + it.time + '</b> ' + tzLabel);
+          if (ev.d2) metas.push('会期 ' + ev.d + ' ~ ' + ev.d2 + '（美东）');
+          if (ev.note) metas.push(esc(ev.note));
+          return '<div class="ud-item' + (it.live ? ' live' : '') + '">' +
+            '<div class="ud-line"><span class="uc-cat ' + esc(it.cat) + '">' + (CAT[it.cat] || '') + '</span>' +
+            esc(ev.title) + (it.live ? '<span class="uc-live-badge">进行中</span>' : '') + '</div>' +
+            (metas.length ? '<div class="ud-meta">' + metas.join(' · ') + '</div>' : '') + '</div>';
+        }).join('');
+        host.innerHTML = '<div class="ud-head">' + head + '</div>' + rows;
+      }
+      [].slice.call(document.querySelectorAll('#uc-tz button')).forEach(function (b) {
+        b.addEventListener('click', function () {
+          var tz = b.getAttribute('data-tz');
+          if (tz === usCalTz) return;
+          usCalTz = tz;
+          renderUsCalendar();
+        });
+      });
+      document.getElementById('uc-prev').addEventListener('click', function () {
+        usCalYm.m--; if (usCalYm.m < 1) { usCalYm.m = 12; usCalYm.y--; }
+        usCalSel = null; // 翻月后清空选中
+        renderUsCalendar();
+      });
+      document.getElementById('uc-next').addEventListener('click', function () {
+        usCalYm.m++; if (usCalYm.m > 12) { usCalYm.m = 1; usCalYm.y++; }
+        usCalSel = null;
+        renderUsCalendar();
+      });
+      renderUsCalendar();
 
       // 在子页面时点击导航菜单，先回到门户再跳转锚点
       [].slice.call(document.querySelectorAll('#nav-menu a')).forEach(function (a) {
