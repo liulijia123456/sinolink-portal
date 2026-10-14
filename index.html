@@ -766,6 +766,50 @@
     padding: 16px 18px 14px; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(23,42,64,0.05);
   }
   .uc-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 12px; border-bottom: 1px dashed var(--border-light); }
+  /* 实时时钟（美东 / 北京双时区） */
+  .uc-clock {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    background: linear-gradient(180deg, #f8fafd, #eef3f9);
+    border: 1px solid #e4eaf3; border-radius: 10px;
+    padding: 9px 14px; margin-bottom: 13px;
+  }
+  .ucc-live {
+    display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; color: #b5493c;
+    background: rgba(181,73,60,0.09); border-radius: 10px; padding: 2px 9px;
+  }
+  .ucc-live i { width: 6px; height: 6px; border-radius: 50%; background: #b5493c; animation: uccPulse 1.7s ease-in-out infinite; }
+  @keyframes uccPulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.32; transform: scale(0.7); } }
+  .ucc-block { display: inline-flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+  .ucc-lab { font-size: 11.5px; font-weight: 600; color: var(--muted-light); }
+  .ucc-time {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 19px; font-weight: 700; letter-spacing: 0.01em; color: var(--accent-light);
+    font-variant-numeric: tabular-nums;
+  }
+  .ucc-time-bj { color: var(--text-light); }
+  .ucc-sub { font-size: 11px; color: var(--muted-light); }
+  .ucc-sub b { color: var(--accent-light); font-weight: 600; }
+  /* 时令徽章：夏令时（EDT）/ 冬令时（EST） */
+  .ucc-zone {
+    align-self: center; flex-shrink: 0;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em;
+    color: #8a6320; background: rgba(201,150,46,0.14); border: 1px solid rgba(201,150,46,0.28);
+    border-radius: 9px; padding: 1px 8px; cursor: help;
+  }
+  .ucc-zone.winter { color: #2f6fb8; background: rgba(47,111,184,0.10); border-color: rgba(47,111,184,0.24); }
+  .ucc-zone-cn { color: #6b7d90; background: rgba(120,140,160,0.12); border-color: rgba(120,140,160,0.22); cursor: default; }
+  .ucc-split { width: 1px; height: 22px; background: var(--border-light); flex-shrink: 0; }
+  .ucc-hint { margin-left: auto; font-size: 11px; color: var(--muted-light); white-space: nowrap; }
+  @media (max-width: 860px) {
+    .uc-clock { gap: 10px; padding: 8px 11px; }
+    .ucc-time { font-size: 16.5px; }
+    .ucc-lab { font-size: 11px; }
+    .ucc-hint { display: none; }
+  }
+  @media (max-width: 700px) {
+    .ucc-split, .ucc-sub { display: none; }
+  }
   .uc-nav { display: inline-flex; align-items: center; gap: 8px; position: relative; }
   .uc-nav .uc-step {
     font-family: inherit; font-size: 16px; line-height: 1; color: var(--muted-light);
@@ -846,21 +890,37 @@
   }
   .uc-wd.wk { color: #b5493c; }
   .uc-wd.tcol { color: var(--accent-light); box-shadow: inset 0 -2px 0 var(--accent-light); }
-  .uc-cell { min-height: 92px; padding: 5px 5px 4px; background: #fff; transition: background .12s ease; }
+  .uc-cell { min-height: 92px; padding: 5px 5px 4px; background: #fff; transition: background .12s ease; position: relative; }
   .uc-cell.dim { background: #fafbfd; }
-  .uc-cell.tcol { background: rgba(47,111,184,0.03); }
+  /* 三个时段底色：过去（冷灰）/ 今天（浅蓝，无描边）/ 将来（白）；今天的强调交由圆形日期与「今天」角标承担 */
+  .uc-cell.st-past { background: #eef2f7; }
+  .uc-cell.st-past .uc-num { color: #a4b2c1; font-weight: 500; }
+  .uc-cell.st-fut { background: #ffffff; }
+  .uc-cell.today { background: #d9e9fb; }
   .uc-num { font-size: 12.5px; font-weight: 600; color: var(--muted-light); line-height: 1; margin-bottom: 3px; font-family: Georgia, 'Times New Roman', serif; }
-  .uc-cell.wkend { background: rgba(181,73,60,0.018); }
-  .uc-cell.tcol.wkend { background: rgba(47,111,184,0.03); }
   .uc-cell.wkend .uc-num { color: #b5493c; }
-  .uc-cell.today { background: rgba(47,111,184,0.055); }
+  .uc-cell.st-past.wkend .uc-num { color: #c2a7a3; }
   .uc-cell.today .uc-num {
     background: var(--accent-light); color: #fff; border-radius: 50%;
-    width: 21px; height: 21px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 3px;
+    width: 23px; height: 23px; display: inline-flex; align-items: center; justify-content: center;
+    margin-bottom: 3px; box-shadow: 0 0 0 2px #fff;
+  }
+  /* 当天角标 */
+  .uc-today-tag {
+    position: absolute; top: 4px; right: 5px; z-index: 2;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; line-height: 1.5;
+    color: #fff; background: var(--accent-light); border-radius: 7px; padding: 1px 6px;
+    box-shadow: 0 1px 3px rgba(47,111,184,0.35);
   }
   .uc-cell.has-ev { cursor: pointer; }
-  .uc-cell.has-ev:hover { background: rgba(47,111,184,0.05); }
-  .uc-cell.sel { box-shadow: inset 0 0 0 2px var(--accent-light); background: rgba(47,111,184,0.07); }
+  .uc-cell.has-ev:hover:not(.sel) { background: #f4f9fd; }
+  .uc-cell.st-past.has-ev:hover:not(.sel) { background: #e5ebf3; }
+  .uc-cell.today.has-ev:hover:not(.sel) { background: #cbe0f8; }
+  /* 选中态按所处时段给不同底色（不覆盖时段语义） */
+  .uc-cell.sel { box-shadow: inset 0 0 0 2px var(--accent-light); }
+  .uc-cell.st-past.sel { background: #dde6f1; }
+  .uc-cell.st-fut.sel { background: #ecf4fd; }
+  .uc-cell.today.sel { background: #bfd7f5; }
   .uc-ev {
     font-size: 10.5px; line-height: 1.35; font-weight: 600; border-radius: 4px;
     padding: 2px 5px 2px 6px; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -870,7 +930,9 @@
   .uc-ev.pol { border-left-color: #c99630; color: #8a6320; }
   .uc-ev.dip { border-left-color: #8a76b0; color: #6a5a8c; }
   .uc-ev.hol { border-left-color: #b5493c; color: #a2433a; }
-  .uc-ev.live { border-color: rgba(201,150,46,0.45); background: rgba(201,150,46,0.06); box-shadow: none; }
+  /* 进行中（跨日会期覆盖当天）：用实色琥珀底，不用半透明 —— 半透明底在饱和格底色（如今日亮蓝）上会被透掉而看不出来；
+     仅改上/右/下三边色，保留分类左栏色作为类别标识 */
+  .uc-ev.live { background: #fdf3dc; border-top-color: #e2c68c; border-right-color: #e2c68c; border-bottom-color: #e2c68c; box-shadow: none; }
   /* 已结束的历史节点：保留显示但弱化，便于与未来节点区分 */
   .uc-ev.past { opacity: 0.45; }
   .uc-ev.past:hover { opacity: 0.75; }
@@ -878,6 +940,13 @@
   .uc-ev.stale::after { content: '改'; font-size: 8.5px; font-weight: 700; color: #b5493c; margin-left: 3px; vertical-align: 1px; }
   .uc-ev .tt { font-weight: 700; margin-left: 3px; }
   .uc-more { font-size: 10px; color: var(--muted-light); padding-left: 3px; }
+  /* 今天格底色饱和（亮蓝），格内事件条加实白底 + 深描边 + 投影，使其从蓝底上“浮”起来，不被底色覆盖 */
+  .uc-cell.today .uc-ev {
+    background: #ffffff; border-top-color: #a3bede; border-right-color: #a3bede; border-bottom-color: #a3bede;
+    box-shadow: 0 1px 2px rgba(23,42,64,0.20);
+  }
+  .uc-cell.today .uc-ev.live { background: #fdf3dc; }
+  .uc-cell.today .uc-ev.past { opacity: 0.82; }
   /* 详情面板（点击日期格查看当日事件） */
   .uc-detail { border: 1px solid var(--border-light); border-radius: 10px; background: #fafbfd; padding: 13px 15px 11px; overflow-y: auto; }
   .ud-head {
@@ -1210,6 +1279,24 @@
              点月份标题可展开年月选择器，直接跳转到任意年月（有事件的月份带圆点，范围外月份置灰） -->
         <div class="col-head"><span class="ch-cn">大事日历</span><span class="ch-en">Key Events Calendar</span></div>
         <div class="us-cal" id="us-cal">
+          <!-- 实时时钟：美东 / 北京双时区，每秒刷新（美东自动切换 EDT / EST） -->
+          <div class="uc-clock" id="uc-clock">
+            <span class="ucc-live"><i></i>实时</span>
+            <span class="ucc-block">
+              <span class="ucc-lab">美国东部</span>
+              <b class="ucc-time" id="ucc-et">--:--:--</b>
+              <span class="ucc-zone" id="ucc-et-zone">—</span>
+              <span class="ucc-sub" id="ucc-et-sub">—</span>
+            </span>
+            <span class="ucc-split" aria-hidden="true"></span>
+            <span class="ucc-block">
+              <span class="ucc-lab">北京时间</span>
+              <b class="ucc-time ucc-time-bj" id="ucc-bj">--:--:--</b>
+              <span class="ucc-zone ucc-zone-cn">UTC+8</span>
+              <span class="ucc-sub" id="ucc-bj-sub">—</span>
+            </span>
+            <span class="ucc-hint" id="ucc-hint"></span>
+          </div>
           <div class="uc-bar">
             <div class="uc-nav" id="uc-nav">
               <button type="button" id="uc-prev" class="uc-step" aria-label="上个月">‹</button>
@@ -5876,16 +5963,18 @@
           var key = ymStr + '-' + pad2(dayNum);
           var items = dayMap[key] || [];
           var wkend = (i % 7 === 0 || i % 7 === 6);
+          // 三个时段底色：已过去 / 今天 / 将来（以所选时区的「今天」为界）
+          var stCls = key < todayKey ? ' st-past' : (key === todayKey ? ' st-today' : ' st-fut');
           var inner = items.slice(0, 4).map(function (it) {
             return '<div class="uc-ev ' + it.cat + (it.live ? ' live' : '') + (it.past ? ' past' : '') + (it.stale ? ' stale' : '') +
               '" title="' + esc(it.tip) + '">' +
               esc(it.label) + (it.time ? '<span class="tt">' + it.time + '</span>' : '') + '</div>';
           }).join('');
           if (items.length > 4) inner += '<div class="uc-more">+' + (items.length - 4) + ' 项</div>';
-          html += '<div class="uc-cell' + (key === todayKey ? ' today' : '') + (wkend ? ' wkend' : '') +
-            (i % 7 === todayCol ? ' tcol' : '') +
+          html += '<div class="uc-cell' + stCls + (key === todayKey ? ' today' : '') + (wkend ? ' wkend' : '') +
             (items.length ? ' has-ev' : '') + (usCalSel === key && items.length ? ' sel' : '') + '" data-k="' + key + '">' +
-            '<div class="uc-num">' + dayNum + '</div>' + inner + '</div>';
+            '<div class="uc-num">' + dayNum + '</div>' +
+            (key === todayKey ? '<span class="uc-today-tag">今天</span>' : '') + inner + '</div>';
         }
         host.innerHTML = html;
         // 点击有事件的日期格：在旁边面板展示当日事件详情（仅信息，不做分析）
@@ -6065,6 +6154,62 @@
         renderUsCalendar();
       });
       renderUsCalendar();
+
+      // ===== 实时时钟（美国东部 / 北京）=====
+      var UC_WD = { Sun: '日', Mon: '一', Tue: '二', Wed: '三', Thu: '四', Fri: '五', Sat: '六' };
+      function ucClockParts(ms, tz) {
+        var p = new Intl.DateTimeFormat('en-CA', {
+          timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit',
+          hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+        }).formatToParts(new Date(ms));
+        var o = {}; p.forEach(function (x) { o[x.type] = x.value; });
+        var wdEn = new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short' }).format(new Date(ms));
+        return { y: o.year, m: o.month, d: o.day, hh: o.hour, mm: o.minute, ss: o.second,
+                 wd: UC_WD[wdEn] || '', key: o.year + '-' + o.month + '-' + o.day };
+      }
+      function ucClockOffsetMin(ms, tz) {
+        var p = ucClockParts(ms, tz);
+        var asUTC = Date.UTC(+p.y, +p.m - 1, +p.d, +p.hh, +p.mm, +p.ss);
+        return Math.round((asUTC - Math.floor(ms / 1000) * 1000) / 60000);
+      }
+      function ucZoneAbbr(ms) {
+        try {
+          var p = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', timeZoneName: 'short' })
+            .formatToParts(new Date(ms));
+          var z = p.filter(function (x) { return x.type === 'timeZoneName'; })[0];
+          return z ? z.value : 'ET';
+        } catch (e) { return 'ET'; }
+      }
+      // 美东当前是否处于夏令时：EDT = UTC-4(-240)，EST = UTC-5(-300)
+      function ucEtIsDst(ms) {
+        return ucClockOffsetMin(ms, 'America/New_York') > -270;
+      }
+      function renderUsClock() {
+        var host = document.getElementById('uc-clock');
+        if (!host) return;
+        if (host.offsetParent === null) return; // 不在美国板块时跳过刷新
+        var ms = Date.now();
+        var et = ucClockParts(ms, 'America/New_York');
+        var bj = ucClockParts(ms, 'Asia/Shanghai');
+        document.getElementById('ucc-et').textContent = et.hh + ':' + et.mm + ':' + et.ss;
+        document.getElementById('ucc-bj').textContent = bj.hh + ':' + bj.mm + ':' + bj.ss;
+        // 时令徽章：夏令时 / 冬令时（北京不实行夏令时，全年 UTC+8）
+        var dst = ucEtIsDst(ms);
+        var zEl = document.getElementById('ucc-et-zone');
+        if (zEl) {
+          zEl.textContent = ucZoneAbbr(ms) + ' · ' + (dst ? '夏令时' : '冬令时');
+          zEl.className = 'ucc-zone' + (dst ? '' : ' winter');
+          zEl.title = dst
+            ? '美国东部夏令时 EDT（UTC-4）· 每年 3 月第二个周日至 11 月第一个周日'
+            : '美国东部冬令时 EST（UTC-5）· 每年 11 月第一个周日至次年 3 月第二个周日';
+        }
+        document.getElementById('ucc-et-sub').textContent = (+et.m) + ' 月 ' + (+et.d) + ' 日 周' + et.wd;
+        document.getElementById('ucc-bj-sub').textContent = (+bj.m) + ' 月 ' + (+bj.d) + ' 日 周' + bj.wd;
+        document.getElementById('ucc-hint').textContent =
+          et.key === bj.key ? '' : '当前日期相差 1 天';
+      }
+      renderUsClock();
+      setInterval(renderUsClock, 1000);
 
       // 在子页面时点击导航菜单，先回到门户再跳转锚点
       [].slice.call(document.querySelectorAll('#nav-menu a')).forEach(function (a) {
