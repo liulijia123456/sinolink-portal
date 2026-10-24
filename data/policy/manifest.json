@@ -1,8 +1,7 @@
 {
   "schema": 1,
-  "built_at": "2026-10-24T17:23:00+08:00",
+  "built_at": "2026-10-24T17:56:09+08:00",
   "source_fetched_at": "2026-10-24 14:00",
-  "source_html_md5": "ca58372c1efd55cbdf9247009c016004",
   "boards": {
     "whitehouse": {
       "count": 150,
