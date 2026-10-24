@@ -54,8 +54,11 @@ INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 LOG_FILE = os.path.join(BASE_DIR, 'logs', 'fetch.log')
 
 LOOKBACK_DAYS = 10          # 回看天数；每周运行的话 7 天足够，10 天留缓冲
-MAX_ITEMS_PER_BOARD = 60    # 每个板块在页面上保留的最大条目数
-# 分板块上限覆盖：白宫板块含总统文件 + EOP 机构 + 内阁各部规则，条数多，上限放宽
+# 每个板块在页面上保留的最大条目数。
+# 注意：此值会**截断**已有条目，调小会丢掉历史，调大只是放宽上限。
+# 现网存量：白宫 150 / 国会 118 / 独立机构 55，因此统一上限设为 150。
+MAX_ITEMS_PER_BOARD = 150
+# 分板块上限覆盖（保留机制，便于个别板块放宽）
 MAX_OVERRIDES = {'whitehouse': 150}
 HTTP_TIMEOUT = 20           # 单次请求超时（秒）
 HTTP_RETRIES = 3            # 单源请求最大重试次数
@@ -191,6 +194,7 @@ def setup_logger():
     logger.setLevel(logging.INFO)
     fmt = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s',
                             datefmt='%Y-%m-%d %H:%M:%S')
+    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
     fh = logging.handlers.RotatingFileHandler(
         LOG_FILE, maxBytes=1024 * 1024, backupCount=3, encoding='utf-8')
     fh.setFormatter(fmt)

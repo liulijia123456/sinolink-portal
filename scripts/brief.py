@@ -85,6 +85,7 @@ def setup_logger():
     logger = logging.getLogger('policy_brief')
     logger.setLevel(logging.INFO)
     fmt = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
     fh = logging.handlers.RotatingFileHandler(LOG_FILE, maxBytes=1024 * 1024, backupCount=3, encoding='utf-8')
     fh.setFormatter(fmt)
     sh = logging.StreamHandler(sys.stdout)
