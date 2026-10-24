@@ -1,0 +1,723 @@
+{
+  "schema": 1,
+  "board": "agencies",
+  "board_label": "独立机构政策",
+  "updated_at": "2026-10-24 14:00",
+  "count": 55,
+  "items": [
+    {
+      "date": "2026-10-26",
+      "title": "Enhancing the Ability of Consumers To Control the Robocalls",
+      "title_cn": "增强消费者控制骚扰电话的能力（规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21821/enhancing-the-ability-of-consumers-to-control-the-robocalls",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "【政策背景】\n联邦通信委员会（FCC）依据《电话消费者保护法》（TCPA）框架对骚扰电话（robocalls）治理规则进行修订。随着营销类与信息类自动呼叫规模扩大，消费者\"撤销同意\"的行使方式与呼叫方的合规处理流程之间长期存在摩擦。本次终局规则旨在确保消费者既能撤销不再希望接收的骚扰电话同意，又不影响其继续接收仍需要的服务类呼叫。\n\n【核心内容】\n终局规则对撤销同意机制作出四项调整：一是允许呼叫方将撤销请求解释为仅适用于该次撤销所指向的特定信息类骚扰电话类别，而非一概撤销全部类别；二是允许呼叫方指定唯一的撤销同意渠道，便于自动化处理；三是修订金融机构的同意要求豁免，使其能更便捷地就账户欺诈活动向客户发出警示；四是授权消费者与政府事务局（CGB）会同执法局（EB）审查骚扰电话规则文本，确保规则清晰易读。\n\n【要点提炼】\n一、规则基调是\"精化\"而非\"加码\"：在保留消费者撤销权的同时，为呼叫方提供了分类撤销、指定渠道等降低合规摩擦的安排。\n二、金融机构获得更宽松的欺诈警示豁免，反欺诈类呼叫与短信触达的合规确定性提升。\n三、按类别撤销的设计减少了\"一次撤销、全部停发\"的过度合规风险，对依赖自动呼叫开展客户通知的机构（银行、保险、公用事业）尤为有利。\n四、CGB与EB的文本审查授权表明FCC后续仍将对骚扰电话规则做技术性清理，规则体系处于持续演进中。\n\n【对金融市场的预期影响】\n总体判断：对电信与金融客服合规构成温和利好，方向为正、幅度小、属合规成本层面的边际改善，不构成板块级定价事件。\n受益方向：银行、保险等金融机构的反欺诈通知触达效率提升，呼叫中心外包与客户互动管理服务商的合规摩擦下降；电信运营商面临的撤销请求处理口径更为清晰。\n承压方向：依赖宽泛同意开展营销呼叫的机构操作空间收窄，营销类自动呼叫的合规要求并未放松。\n关键前提：分类撤销与指定渠道安排的具体执行细则，以及CGB、EB后续文本审查是否衍生新的解释口径。\n观察节点：规则生效日期与FCC就执行口径发布的进一步指引；同日配套发布的进一步征求意见（现代化拟议规则）所涉更严格条款的走向。"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Modernizing the Ability of Consumers To Control Robocalls",
+      "title_cn": "实现消费者控制骚扰电话能力的现代化（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21820/modernizing-the-ability-of-consumers-to-control-robocalls",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "【政策背景】\n与骚扰电话撤销同意终局规则同步，联邦通信委员会（FCC）发布拟议规则，就《电话消费者保护法》（TCPA）项下骚扰电话规则的进一步现代化公开征求意见。FCC认为，随着通信技术与行业实践变化，既有撤销同意规则的执行时限、渠道能力与关联主体待遇需要重新评估。\n\n【核心内容】\n本次征求意见聚焦四个议题：一是缩短呼叫方必须执行撤销请求的时限，即消费者撤销同意后呼叫方须多快停止呼叫；二是双向短信功能要求，探讨是否应要求呼叫方支持消费者通过回复短信直接行使撤销权；三是\"一键全撤\"（revoke all）方式，即是否要求提供一次性撤销全部类别呼叫同意的渠道；四是关联方（affiliates）待遇，即消费者对某一主体的撤销是否及如何适用于其关联企业。\n\n【要点提炼】\n一、该文件处于征求意见阶段，四议题均为开放性问句，最终是否入规、入规尺度如何均未确定。\n二、执行时限缩短与\"一键全撤\"若入规，将显著提高营销类呼叫方的合规标准，与同日发布的终局规则\"精化减负\"的基调形成对冲。\n三、双向短信与关联方条款直击呼叫中心技术与集团化运营结构，技术与组织改造成本将随规则严格程度而上升。\n四、终局规则与拟议规则\"一放一收\"的组合，反映FCC在消费者保护与行业合规负担之间寻求再平衡。\n\n【对金融市场的预期影响】\n总体判断：现阶段仅为规则演进的方向性信号，不构成定价事件；若严格条款入规，营销类自动呼叫产业链的合规成本将系统性上升。\n承压方向：电话营销服务商、呼叫中心外包商及依赖自动呼叫获客的金融、保险、电信企业的营销效率存在下行风险；若关联方条款从严，集团化机构需重构跨主体同意管理体系。\n受益方向：合规通信平台、消费者互动管理（CCaaS）及反骚扰技术供应商的潜在需求扩张。\n关键前提：四议题的最终取舍尚未可知，评议期内行业反馈强度将直接影响入规尺度。\n观察节点：征求意见截止日、FCC后续是否发布进一步的规则文本，以及\"一键全撤\"与关联方条款是否进入最终规则。"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Space Modernization for the 21st Century",
+      "title_cn": "面向21世纪的太空监管规则现代化（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21818/space-modernization-for-the-21st-century",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "【政策背景】\n联邦通信委员会（FCC）在\"面向21世纪的太空现代化\"程序中通过进一步拟议规则制定通告（FNPRM）。该程序是FCC针对卫星与空间业务监管框架的系统性改革，旨在适应商业航天与低轨星座快速发展对许可、频谱与轨道资源管理提出的新要求。本次FNPRM在此前改革基础上就追加的改革措施征求意见。\n\n【核心内容】\n本次文件的核心是FCC通过进一步拟议规则制定通告，就额外改革措施征求意见并提出新的规则建议。官方摘要未披露具体改革清单，但FNPRM的程序性质明确：FCC已在此前阶段完成初步规则制定，本轮是在既有框架上就追加改革再次开放评议，利益相关方可就新增提案提交意见。\n\n【要点提炼】\n一、程序性质为FNPRM，说明FCC太空监管改革采取\"分步走\"策略，本轮为追加改革环节，而非从零启动。\n二、官方摘要信息有限，具体改革条款需以后续公布的完整文本为准，当前阶段不宜对规则细节做过度推断。\n三、FCC太空程序改革的持续推进本身，反映美国监管层面对商业航天产业扩张的适配意愿，频谱分配、许可流程与轨道碎片管理等均为该程序的常规议题方向。\n四、分阶段推进意味着改革红利与合规调整将分批释放，产业影响呈渐进式。\n\n【对金融市场的预期影响】\n总体判断：方向对商业航天产业链偏正面，信号意义大于即时影响；在追加改革文本公布前不构成定价事件。\n受益方向：卫星制造、发射服务、卫星互联网运营及地面设备产业链的监管现代化预期增强，许可效率与频谱可得性若改善，将直接降低运营商的时间与合规成本。\n信号意义：FCC持续推进太空监管现代化，与商业航天资本开支周期形成制度共振，是观察美国航天产业政策取向的稳定指标。\n关键前提：追加改革的具体条款尚待完整文本披露，频谱共享、许可简化或轨道管理规则的实际松紧决定影响方向与幅度。\n观察节点：FNPRM完整文本与评议截止日；FCC就本程序的后续表决安排；主要星座运营商与航天企业在评议中的立场。"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会正在审查的信息收集事项（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21811/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Petition for Reconsideration of Action in Rulemaking Proceeding",
+      "title_cn": "规则制定程序中的复议申请处理（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21810/petition-for-reconsideration-of-action-in-rulemaking-proceeding",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "提交管理与预算办公室审查批准的信息收集事项（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21809/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Closed Captioning of Video Programming",
+      "title_cn": "视频节目隐藏字幕规定（规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21808/closed-captioning-of-video-programming",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Radio Broadcasting Services; AM or FM Proposals To Change the Community of License",
+      "title_cn": "无线电广播服务：调幅/调频电台变更许可社区提案（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21802/radio-broadcasting-services-am-or-fm-proposals-to-change-the-community-of-license",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Wireless Telecommunications Bureau Announces Upper C-Band Clearinghouse Selection Criteria and Submission Process",
+      "title_cn": "无线通信局公布上C频段清算所遴选标准与提交流程（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21732/wireless-telecommunications-bureau-announces-upper-c-band-clearinghouse-selection-criteria-and",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Wireless Telecommunications Bureau Establishes a New Docket and the Process for Comment on Eligible Space Station Operator Transition Plans",
+      "title_cn": "无线通信局就合格空间站运营商过渡计划设立新案卷并公布征求意见流程（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21731/wireless-telecommunications-bureau-establishes-a-new-docket-and-the-process-for-comment-on-eligible",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Notice of Proposals To Engage in or To Acquire Companies Engaged in Permissible Nonbanking Activities",
+      "title_cn": "从事或收购从事许可非银行业务公司的提案通告",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21692/notice-of-proposals-to-engage-in-or-to-acquire-companies-engaged-in-permissible-nonbanking",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21691/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "title_cn": "银行控股公司的设立、收购与合并（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21626/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份",
+      "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21625/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Privacy Act of 1974; System of Records",
+      "title_cn": "1974年《隐私法》：记录系统通告",
+      "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21619/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "title_cn": "银行控股公司的设立、收购与合并（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21513/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Establishment of the 4.9 GHz Band Manager Selection Federal Advisory Committee",
+      "title_cn": "设立4.9 GHz频段管理者遴选联邦咨询委员会（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21484/establishment-of-the-49-ghz-band-manager-selection-federal-advisory-committee",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Privacy Act of 1974; System of Records",
+      "title_cn": "《1974年隐私法》；记录系统（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21381/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n《1974 年隐私法》要求联邦机构就其维护的记录系统在联邦公报公示记录的存在与性质。FCC 的 Lifeline 计划为符合条件的低收入家庭提供语音或宽带接入服务折扣，其用户资格核验涉及大量个人身份信息（PII）。\n\n【核心内容】\nFCC 修订既有记录系统 FCC/WCB-1（Lifeline 计划），以履行隐私法的公示义务。修改内容包括记录系统的存在与性质说明，涉及申请人通过收入证明或参与其他合格计划来取得 Lifeline 资格所提交的信息。\n\n【要点提炼】\n1. 性质为隐私合规层面的记录系统公示修订，不创设新的补贴义务；\n2. 反映 Lifeline 计划的资格核验数据仍在持续归集与管理；\n3. 属于 FCC 普惠接入政策的配套行政维护动作。\n\n【对金融市场的预期影响】\n接近中性，不构成定价事件。对参与 Lifeline 的电信运营商（含宽带与无线服务商）而言，仅涉及既有补贴计划的合规成本，不改变补贴规模或竞争格局。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Privacy Act System of Records",
+      "title_cn": "《隐私法》记录系统（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21352/privacy-act-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n全国聋盲人士设备分发计划（NDBEDP）由 FCC 监管，由各州经认证的设备分发项目具体执行，需向 FCC 提交包含个人身份信息的项目运行数据以维持州级认证资格。\n\n【核心内容】\nFCC 拟修订记录系统 FCC/CGB-3（NDBEDP），以履行《1974 年隐私法》的公示义务。该系统保存各州认证项目按要求提交的信息，用于维持各州参与 NDBEDP 的认证状态。\n\n【要点提炼】\n1. 为隐私合规层面的记录系统公示，不改变 NDBEDP 的资金规模或设备分发规则；\n2. 数据主体为各州项目运行信息，涉及个人身份信息；\n3. 属 FCC 消费者与政府事务局的例行行政维护。\n\n【对金融市场的预期影响】\n中性。不涉及电信运营商的收入端定价或成本端负担，无投资含义。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Modernizing the Commission's National Environmental Policy Act Rules",
+      "title_cn": "现代化委员会《国家环境政策法》规则（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21347/modernizing-the-commissions-national-environmental-policy-act-rules",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 的通信基础设施部署需履行《国家历史保护法》（NHPA）第 106 条的历史遗产审查程序。该审查长期被业界视为基站与光纤部署的耗时环节，FCC 此前已启动相关规则的现代化改革。\n\n【核心内容】\nFCC 就 NHPA 框架进一步征求意见，目标是加速、简化并降低环境审查成本。焦点有二：一是重新厘清「undertaking」（ undertaking）的定义与第 106 条的实施方法；二是通信基础设施的部署与运营活动是否落入「undertaking」范围。同时征求可提升第 106 条程序效率与可预期性的其他做法。\n\n【要点提炼】\n1. 属规则现代化进程中的补充征求意见，尚未形成终局规则；\n2. 「undertaking」的界定是核心变量——若基础设施部署被排除或限缩，审查负担将实质下降；\n3. 方向明确指向为通信基建提速降本；\n4. 涉及历史遗产保护与基建效率的平衡，可能面临保护团体异议。\n\n【对金融市场的预期影响】\n若改革落地，有利于无线运营商、铁塔公司与光纤建设方的资本开支效率与网络部署节奏，属中期温和利好。当前仍处征求意见阶段，短期不构成定价事件，宜跟踪后续规则文本。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会正在审查的信息收集（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21328/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《1995 年文书削减法》（PRA），联邦机构的信息收集须经公示并接受必要性、准确性与负担最小化方面的公众评论。\n\n【核心内容】\nFCC 就其正在审查的一项信息收集征求公众与其他联邦机构意见，评论焦点包括：该收集对履行委员会职能是否必要、是否具有实际效用、负担估算是否准确、如何提升信息质量与清晰度、以及如何最小化收集负担。\n\n【要点提炼】\n1. 属 PRA 框架下的例行信息收集公示，非实质性监管规则；\n2. 反映 FCC 在压缩申报负担方面的持续动作；\n3. 对受监管机构而言是合规流程的边际调整。\n\n【对金融市场的预期影响】\n中性。不改变电信运营商的义务结构或成本量级，无定价含义。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Upper C-Band (3.98-4.2 GHz); Expanding Flexible Use of the 3.7 to 4.2 GHz Band",
+      "title_cn": "上C频段（3.98-4.2 GHz）；扩大3.7至4.2 GHz频段灵活使用",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21324/upper-c-band-398-42-ghz-expanding-flexible-use-of-the-37-to-42-ghz-band",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nC频段（3.7—4.2 GHz）是美国5G中频段部署的核心频谱资源。联邦通信委员会（FCC）此前通过报告与命令推进该频段的灵活使用改造，要求卫星等现有用户向新用途过渡，并涉及航空无线电高度表改装等配套安排。相关命令（FCC 26-46，含报告与命令、拟议修改命令及复议命令）所包含的信息收集要求须经管理与预算办公室（OMB）依《文书削减法》批准后方能生效。FCC于2026年10月19日在联邦公报发布规则文件，宣布OMB已批准编号3060-1272项下的信息收集要求。\n\n【核心内容】\n本文件宣布OMB批准FCC 26-46命令所附的信息收集要求（OMB控制号3060-1272），标志着上C频段（3.98—4.2 GHz）扩大灵活使用规则在程序上完备生效。结合FCC同日刊载的相关通告，无线电信局正就上C频段现有用户迁移的初步成本目录、以及支持迁移的无线电高度表改装返利类别与金额公开征求意见，迁移补偿机制进入细化阶段。\n\n【要点提炼】\n- OMB批准是规则实体生效前的最后一道程序节点，上C频段扩大灵活使用框架就此完全落地。\n- 配套机制同步推进：现有用户迁移成本目录与无线电高度表改装返利方案均在征求意见，指向卫星运营商迁出与航空安全改装两条成本线。\n- 频谱由卫星固定业务向地面移动宽带灵活用途的再配置继续深化。\n\n【对金融市场的预期影响】\n总体判断：对电信与卫星产业链构成温和正面信号，方向明确、幅度有限，属于既有频谱政策的程序性落地，边际增量主要来自确定性提升。\n\n受益方向：持有C频段牌照的无线运营商的频谱使用权进一步夯实，5G中频段网络部署的合规环境改善；通信基础设施建设与设备链受益于频谱可用性的长期扩张。\n\n承压方向：现有卫星运营商面临频段压缩与迁移执行压力，尽管有成本补偿机制，迁移进度与补偿充分性仍是其经营变量；航空业无线电高度表改装成本由返利方案部分对冲，返利类别与金额尚在征求意见阶段。\n\n观察节点：无线电信局对迁移成本目录与返利方案的反馈意见及最终方案；后续频谱拍卖或牌照调整安排。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "提交管理与预算办公室审查批准的信息收集（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21323/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《1995 年文书削减法》，机构信息收集须报送 OMB 审批；《2002 年小企业文书减免法》进一步要求机构就如何减轻小企业（雇员少于 25 人）负担专门征求意见。\n\n【核心内容】\nFCC 将其一项信息收集报送 OMB 审批并同时征求公众意见，其中依小企业文书减免法专门就减轻小企业申报负担征求意见。\n\n【要点提炼】\n1. 程序性报送与公示，非新增监管义务；\n2. 小企业负担减免是本轮评论的特定关注点；\n3. 与 FCC 整体的减负议程方向一致。\n\n【对金融市场的预期影响】\n中性。仅涉及合规申报流程，若后续落实小企业减免，对小型电信服务商的成本有边际改善，但量级有限。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Wireless Telecommunications Bureau Seeks Comment on Preliminary Cost Catalog for Upper C-Band Incumbent Transition",
+      "title_cn": "无线电信局就上C频段现有用户迁移初步成本目录征求意见（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21321/wireless-telecommunications-bureau-seeks-comment-on-preliminary-cost-catalog-for-upper-c-band",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 已在 Upper C-band（3.98–4.2 GHz）推进频谱重构：令现有卫星与地球站运营商腾退 4.0–4.16 GHz 频段，释放 160 兆赫中频段频谱供 3.7 GHz 业务牌照持有人在美国本土灵活使用。腾退成本由新牌照方补偿，具体成本目录需要明确。\n\n【核心内容】\nFCC 无线电信局就《Upper C-band 过渡初步成本目录》征求意见。该目录载明合格空间站运营商与现有地球站运营商在腾退过程中可能发生的合理必要过渡成本的初步估算，并包含选择一次性付款的现有地球站运营商的付款类别。\n\n【要点提炼】\n1. 成本目录是频谱腾退补偿机制的关键定价文件，直接决定补偿规模；\n2. 覆盖空间站运营商与地球站运营商两类主体，后者可选一次性付款；\n3. 初步估算，仍处征求意见阶段，最终金额可能调整；\n4. 释放的 160 兆赫中频频谱将用于 5G 等灵活用途。\n\n【对金融市场的预期影响】\n对无线运营商属中期利好：中频段频谱供给增加有助于网络容量与覆盖成本。对卫星运营商而言，补偿目录决定其腾退成本的回收程度，是现金流与资本开支的关键变量，须跟踪最终目录金额与付款安排。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "提交管理与预算办公室审查批准的信息收集（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21318/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《1995 年文书削减法》与《2002 年小企业文书减免法》，FCC 的信息收集须报 OMB 审批，并就减轻雇员少于 25 人的小企业申报负担专门征求意见。\n\n【核心内容】\nFCC 将其另一项信息收集报送 OMB 审批并征求公众意见，同样包含针对小企业负担减免的专项评论请求。\n\n【要点提炼】\n1. 与同日另一份同类公告并列，属 FCC 批量推进的信息收集续期工作；\n2. 程序性报送，非新增义务；\n3. 关注点在小企业的合规负担。\n\n【对金融市场的预期影响】\n中性。不产生可定价的成本或收入影响。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Privacy Act of 1974; System of Records",
+      "title_cn": "《1974年隐私法》；记录系统（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21315/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n互联网电信中继服务用户注册数据库（ITRS-URD）用于支撑 FCC 电信中继服务（TRS）项目的管理、运营与职能履行，其数据包含用户个人身份信息。\n\n【核心内容】\nFCC 拟修订记录系统 FCC/CGB-4（ITRS-URD 项目），以履行《1974 年隐私法》的公示义务。该系统收集、使用、存储并维护支持 ITRS 各项计划所需的个人身份信息。\n\n【要点提炼】\n1. 隐私合规层面的记录系统公示修订；\n2. 不改变 TRS 服务的资助规模或资格规则；\n3. 属 FCC 对残障人士通信服务项目的配套数据治理。\n\n【对金融市场的预期影响】\n中性。不影响电信运营商的收入或成本结构。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Privacy Act of 1974; System of Records",
+      "title_cn": "《1974年隐私法》；记录系统（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21314/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n通用服务行政公司（USAC）在 FCC 及其有线竞争局授权下管理 universal service fund（USF）各项目及部分国会拨款项目，其客户关系管理（CRM）系统承载大量项目与用户信息。\n\n【核心内容】\nFCC 拟修订记录系统 FCC/WCB-6（USAC 客户关系管理系统），以履行《1974 年隐私法》的公示义务。\n\n【要点提炼】\n1. 属隐私合规的记录系统公示，不涉及 USF 的资金规模或分摊机制；\n2. USF 的资金来源为电信运营商按收入比例缴纳，其管理系统的调整不改变分摊规则；\n3. 反映 USAC 对通用服务项目的持续行政维护。\n\n【对金融市场的预期影响】\n中性。USF 分摊率若变动才具定价含义，本次仅为记录系统公示，不触及分摊。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "title_cn": "联邦通信委员会依授权审查的信息收集（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21313/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《1995 年文书削减法》，FCC 在授权范围内审查的信息收集须公示并征求公众与其他联邦机构意见。\n\n【核心内容】\nFCC 就一项依授权审查的信息收集征求意见，评论内容包括收集的必要性、实际效用、负担估算准确性、信息质量提升方式以及负担最小化措施。\n\n【要点提炼】\n1. 程序性公示，属 FCC 减负工作的常规动作；\n2. 由授权程序审查，说明该收集非重大新增义务；\n3. 与同批次其他信息收集公告性质一致。\n\n【对金融市场的预期影响】\n中性，无定价含义。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Petition for Reconsideration of Action in Rulemaking Proceeding; Correction",
+      "title_cn": "规则制定程序行动复议申请；更正（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21312/petition-for-reconsideration-of-action-in-rulemaking-proceeding-correction",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 规则制定程序中的复议申请（Petition for Reconsideration）需公示相关方与截止日期，程序性文件的日期准确性直接影响利害关系人的救济期限。\n\n【核心内容】\nFCC 此前发布的一份关于 ATIS（电信行业解决方案联盟）由 Thomas Goode 代表提交的复议申请公告中日期有误，本文件予以更正。\n\n【要点提炼】\n1. 纯技术性更正，不改变复议申请的受理状态或实体争议；\n2. 更正对象为程序性日期，涉及利害关系人的答复期限；\n3. 反映 FCC 规则程序仍在正常推进。\n\n【对金融市场的预期影响】\n中性。仅为日期更正，无实质政策或成本含义。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Privacy Act of 1974; System of Records",
+      "title_cn": "《1974年隐私法》；记录系统（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21301/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 通过 FCC-2 系统收集并维护联络人信息，并以披露与认证材料确保相对方遵守 FCC 规则。\n\n【核心内容】\nFCC 拟将既有记录系统 FCC-2 更名并修订为「商业联络、披露与认证」（原名为「商业联络与认证」），以履行《1974 年隐私法》的公示义务。\n\n【要点提炼】\n1. 记录系统的更名与范围调整，反映 FCC 将「披露」纳入该系统管理；\n2. 属合规与廉政层面的数据治理动作；\n3. 不创设新的披露义务或认证要求。\n\n【对金融市场的预期影响】\n中性。对受监管企业的合规流程无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Wireless Telecommunications Bureau Seeks Comment on Proposed Rebate Categories and Amounts for Radio Altimeter Retrofits To Support the Upper C-band Transition",
+      "title_cn": "无线电信局就支持上C频段迁移的无线电高度表改装拟议返利类别与金额征求意见（通告）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21280/wireless-telecommunications-bureau-seeks-comment-on-proposed-rebate-categories-and-amounts-for-radio",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 在 2026 年 7 月 24 日的 Upper C-band 报告与命令（FCC 26-46）中规定，新的 3.7 GHz 业务牌照方须承担现有用户的过渡成本，其中包括 FAA 强制要求的无线电高度表改装。\n\n【核心内容】\nFCC 无线电信局就无线电高度表改装的返还款项类别与金额征求意见，涵盖类别、具体金额及相关程序。该改装由 FAA 强制要求，目的是为 Upper C-band 引入地面无线业务扫清干扰障碍。\n\n【要点提炼】\n1. 与同日的成本目录公告配套，共同构成 C 波段腾退的补偿定价体系；\n2. 高度表改装成本由无线牌照方承担，属频谱清理的既定成本分摊安排；\n3. 航空器改装涉及机队规模，金额可能可观，是航空业的现金流变量；\n4. 仍处征求意见阶段，最终类别与金额可能调整。\n\n【对金融市场的预期影响】\n对航空公司而言，改装成本经返还机制部分回收，实际净负担取决于返还比例，需跟踪最终金额。对无线运营商属已预期成本，落地后有助于频谱可用时间表明确化，中期利好网络部署。"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Television Broadcasting Services Des Moines, Iowa",
+      "title_cn": "电视广播服务；艾奥瓦州得梅因（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21260/television-broadcasting-services-des-moines-iowa",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFCC 的电视 allotments 表规定各播出机构的频道分配，频道调整需经规则制定申请的公示与审查程序。\n\n【核心内容】\n应爱荷华公共广播委员会（PBS 成员台 KDIN-TV 的执照持有人）申请，FCC 拟修订电视 allotments 表，将得梅因地区的频道由 UHF *34 替换为 VHF *11，技术参数沿用该台现行执照。媒体局此前已批准其规则制定申请。\n\n【要点提炼】\n1. 属地方性的技术频道替换，非全国性广播政策；\n2. 由 UHF 转 VHF 涉及覆盖特性与接收设备适配；\n3. 申请人持建设许可，频道替换服务于其建台计划。\n\n【对金融市场的预期影响】\n中性。仅影响单一公共广播台的技术参数，无行业定价含义。"
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Agency Information Collection Activities: Information Collection Extension; Submission for OMB Review; Regulatory Capital Reporting for Institutions Subject to the Advanced Capital Adequacy Framework (FFIEC 101)",
+      "title_cn": "机构信息收集活动：适用于高级资本充足率框架机构的监管资本报告（FFIEC 101）延期并提交OMB审查",
+      "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21185/agency-information-collection-activities-information-collection-extension-submission-for-omb-review",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\nFFIEC 101 是适用于高级资本充足率框架下机构的监管资本报表，由货币监理署（OCC）、美联储与 FDIC 共同收集，须依《1995 年文书削减法》定期经 OMB 审批续期。\n\n【核心内容】\nFFIEC 于 2026 年 6 月 5 日就 FFIEC 101 无修订延期三年征求了 60 天公众意见；本次为报 OMB 审批的信息收集延期申请。\n\n【要点提炼】\n1. 延期为「无修订」续期三年，报表内容与填报要求不变；\n2. 适用对象为采用高级资本充足率框架的大型银行机构；\n3. 三家监管机构联合推进，属常规监管数据维护。\n\n【对金融市场的预期影响】\n中性偏正面。报表要求不变意味着监管资本数据口径保持稳定，降低大型银行的合规调整成本与不确定性；也侧面说明短期内无收紧高级法资本填报的意图。"
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告；银行或银行控股公司股份收购",
+      "url": "https://www.federalregister.gov/documents/2026/10/15/2026-21092/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《银行控股公司法》与相关法规，取得银行或银行控股公司股权达到申报门槛的，须向美联储提交控制权变更通知并公示，接受公众评议后由美联储审查。\n\n【核心内容】\n美联储发布银行控制权变更通知，公示相关方收购银行或银行控股公司股份的申报事项。联邦公报未提供该批通知的逐项摘要。\n\n【要点提炼】\n1. 性质为例行程序性披露，非新出台的监管政策；\n2. 申请人须在公示期内接受公众评议，美联储据此审查控制权变更；\n3. 反映银行业股权层面的正常整合活动。\n\n【对金融市场的预期影响】\n接近中性，不构成定价事件。仅在个案涉及上市金融机构时才具有微观层面的意义；如需具体交易细节，须查阅美联储公告原文。"
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Petition for Reconsideration of Action in Rulemaking Proceeding",
+      "title_cn": "规则制定程序中的复议申请",
+      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20895/petition-for-reconsideration-of-action-in-rulemaking-proceeding",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 规则制定程序中的复议请愿通知：Thomas Goode 代表电信行业解决方案联盟（ATIS）就委员会此前在规则制定程序中采取的行动提出复议请愿。属程序性文书，仅宣布请愿已提交，后续须由委员会决定是否受理与重审。ATIS 是电信业标准制定组织，其请涉及既有规则的技术或程序瑕疵主张，值得通信设备与标准相关企业跟踪，但本身不产生新义务，对金融市场无直接影响。"
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "title_cn": "银行控股公司的设立、收购与合并（WaFd 申请收购 EverBank）",
+      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20887/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-12",
+        "body": "【政策背景】\n《银行控股公司法》（BHC Act, 1956）规定，公司设立银行控股公司、收购或合并银行或银行控股公司，须经美联储理事会事前批准（Regulation Y, 12 CFR 225）。美联储按周在联邦公报公示收到的申请，启动法定公众评论程序。本期公示一笔申请：WaFd, Inc.（华盛顿州西雅图）申请收购 EverBank Financial Corp，并间接收购其旗下 EverBank, National Association（佛罗里达州杰克逊维尔）；评论期至 2026 年 11 月 12 日，由旧金山联邦储备银行受理。\n\n【核心内容】\n本期内容为 BHC Act 第 3 节项下收购申请的公示：WaFd, Inc. 拟收购 EverBank Financial Corp 并间接取得 EverBank, N.A. 控制权。公示不是批准决定，而是评论程序的启动；审议标准为 12 U.S.C. 1842(c) 列举的因素，包括财务与管理资源、竞争影响、便利与需求（社区信贷）等。\n\n【要点提炼】\n1. 程序定位：收购审批的公示评论阶段，是否批准仍待审议，存在附加条件或否决的可能；\n2. 交易体量可观：EverBank 为全美大型直营银行之一，若获批将明显扩大 WaFd 的资产规模与地域覆盖，由西北太平洋地区延伸至佛罗里达等东南部市场；\n3. 时间可预期：评论 11 月 12 日截止，参照同类案件，决议通常于评论结束后数周至数月内作出。\n\n【对金融市场的预期影响】\n交易层面：WaFd 为上市公司，收购大型标的后须关注融资结构（现金与换股比例）、资本充足率变化与整合成本；区域银行并购主题下，直营银行类资产的估值锚可能受此交易参考价影响。\n行业层面：本期公示延续 2025 年以来银行并购审批提速、交易回暖的趋势，监管端对中型银行整合态度相对宽松，有利于区域银行板块的并购预期。\n跟踪节点：评论期内是否出现社区团体或竞争方面的异议；旧金山联储与理事会的审议进度；WaFd 后续披露的交易条款。若获批，可作为衡量本轮并购周期监管口径的样本。"
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告；银行或银行控股公司股份收购（Gullace 家族信托）",
+      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20886/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-12",
+        "body": "【政策背景】\n《银行控制权变更法》（CIBCA, 12 U.S.C. 1817(j)）规定，个人或实体取得银行或银行控股公司控制权，须事前向美联储提交通告。美联储按周公示收到的控制权变更申请，评论期较短。本期公示一笔：Gullace Generation Family Trust（受托人 Christopher Matthew Gullace，佛罗里达州德尔雷海滩）拟收购 Greater Rochester Bancorp Inc. 表决权股份，并间接收购 Genesee Regional Bank（纽约州罗切斯特）；评论期至 2026 年 10 月 28 日，由纽约联邦储备银行受理。\n\n【核心内容】\n本期内容为家族信托收购社区银行母公司的控制权变更通告，审议标准为 CIBCA 第 7 段（12 U.S.C. 1817(j)(7)）列举的因素：拟议收购的财务状况、管理能力、竞争影响等。标的 Genesee Regional Bank 为纽约州小型社区银行，交易属家族层面的股权安排，非机构间并购。\n\n【要点提炼】\n1. 程序定位：控制权变更的法定公示评论程序，非批准决定；\n2. 交易规模小、私人性质明显，是社区银行股权家族安排类申请的典型样本；\n3. 评论期约两周（10 月 28 日截止），审议节奏快于 BHC 收购申请。\n\n【对金融市场的预期影响】\n总体判断：低重要性例行通告，不构成定价事件；标的为非上市社区银行，公开市场无直接交易对象。\n行业含义：此类通告的常态存在反映社区银行股权结构的持续更替；对跟踪美国社区银行板块的投资者，价值在于累计样本而非单笔交易。\n观察节点：无需主动跟踪，除非评论期内出现异议或美联储附加条件，历史概率极低。"
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "title_cn": "银行控股公司的设立、收购与合并",
+      "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20741/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n银行控股公司的设立、并购与收购须依《银行控股公司法》向美联储申报并公示，美联储在公众评议期内审查其对竞争与金融稳定的影响。\n\n【核心内容】\n美联储公示银行控股公司的设立、收购与合并申报事项。联邦公报未提供该批申报的逐项摘要。\n\n【要点提炼】\n1. 属例行程序性公示，非监管规则变化；\n2. 公示期内利害关系人可提出异议，美联储据此决定是否批准；\n3. 该批申报的存在说明银行业整合在正常推进。\n\n【对金融市场的预期影响】\n接近中性。个案层面可能影响相关机构的股权结构，但整体不构成行业定价事件；具体交易细节须查阅美联储公告原文。"
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告；银行或银行控股公司股份收购",
+      "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20740/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n依《银行控股公司法》，取得银行或银行控股公司股权达申报门槛者须向美联储提交控制权变更通知，经公示与审查后方可实施。\n\n【核心内容】\n美联储发布银行控制权变更通知，公示相关方收购银行或银行控股公司股份的申报。联邦公报未提供该批通知的逐项摘要。\n\n【要点提炼】\n1. 程序性披露，反映监管流程正常运转；\n2. 不创设新的监管要求；\n3. 与同期同类公告共同构成银行业股权变动的例行记录。\n\n【对金融市场的预期影响】\n中性。不产生可定价的行业影响，具体个案须查阅原文。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "信息采集事项提交管理与预算办公室（OMB）审查批准",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20681/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 依据《1995 年文书工作削减法》（PRA）将一项信息收集提交管理与预算办公室（OMB）审批的例行通知，同时征求公众意见，并按《2002 年小企业文书减负法》专门征询如何进一步减轻雇员少于 25 人的小企业的信息收集负担。属程序性合规文书，不涉及新政策，对通信行业受访企业只有边际合规成本影响，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "title_cn": "联邦通信委员会（FCC）依授权审查中的信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20676/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 在授权范围内对一项既有信息收集进行 PRA 例行审核的通知，征集意见涵盖收集的必要性、负担估计的准确性、信息质量与自动收集技术的运用空间，以及小企业减负。程序要点：无有效 OMB 控制号的信息收集，FCC 不得实施，相对人亦无须遵守。属合规流程文书，无新政策内容，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Information Collections Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "多项信息采集事项提交管理与预算办公室（OMB）审查批准",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20607/information-collections-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 将多项信息收集提交 OMB 审批的例行 PRA 通知，征求公众与其他联邦机构意见，并按《2002 年小企业文书减负法》专门征询减轻小企业负担的方式。程序性合规文书，不改变任何监管要求，受访企业的报告义务维持现状，仅控制号与有效期更新。对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "title_cn": "联邦通信委员会（FCC）依授权审查中的信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20591/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 在授权范围内对多项信息收集进行 PRA 例行审核，征集意见包括收集的必要性、负担估计准确性、信息质量提升与减负途径（含自动化技术），以及对雇员少于 25 人的小企业的额外减负。审查通过后相应 OMB 控制号延续有效，受访企业义务不变。属程序性文书，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会（FCC）审查中的信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20590/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 对一项信息收集进行 PRA 例行审核的通知，征集意见围绕收集必要性、负担估计、信息质量与小企业减负展开。此类审核决定既有报告义务的 OMB 控制号能否延续，不新增监管要求；通信行业受访主体合规成本维持现状。程序性文书，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "title_cn": "银行控制权变更通告；银行或银行控股公司股份收购",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20668/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n美联储依《银行控股公司法》对银行与银行控股公司的控制权变更实行事前申报审查，申报事项须在联邦公报公示。\n\n【核心内容】\n美联储发布银行控制权变更通知，公示相关方收购银行或银行控股公司股份的申报。联邦公报未提供该批通知的逐项摘要。\n\n【要点提炼】\n1. 例行程序性披露，非新政策；\n2. 属银行业股权层面整合活动的记录；\n3. 公示期内的公众评议是审批的前置环节。\n\n【对金融市场的预期影响】\n中性。无行业层面的定价含义，个案细节须查阅美联储公告原文。"
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Loans to Executive Officers, Directors, and Principal Shareholders of Member Banks: Bank Holding Companies",
+      "title_cn": "向成员银行高管、董事和主要股东贷款：银行控股公司（拟议规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20509/loans-to-executive-officers-directors-and-principal-shareholders-of-member-banks-bank-holding",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "美联储（Federal Reserve）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n美联储的 O 条例（Regulation O）规范成员银行向其内部人及其关联方内部人发放贷款的行为，旨在防止利益输送。美联储于 2026 年 8 月 4 日发布了 O 条例的现代化修订提案，原评论期至 2026 年 10 月 5 日。\n\n【核心内容】\n美联储将 O 条例修订提案的评论期延长 30 天，至 2026 年 11 月 4 日。\n\n【要点提炼】\n1. 评论期延长说明议题存在实质争议或业界的反馈需求较强；\n2. O 条例修订涉及银行向高管、董事与主要股东的授信边界，直接影响银行内部人授信的合规安排；\n3. 延长不改变提案内容，仅延后决策时点。\n\n【对金融市场的预期影响】\n中性偏观察。评论期延长本身不构成定价事件，但意味着 O 条例的最终规则落地时点后移，银行内部人授信的合规调整窗口相应延长。需跟踪 11 月 4 日后的规则动向，尤其关注是否扩大银行控股公司层面的适用范围。"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会（FCC）审查中的信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20487/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 依据 PRA 对多项信息收集进行例行审核的通告，征求公众与其他联邦机构意见，评估维度包括必要性、负担估计准确性、信息质量、自动化收集技术的运用及小企业减负。审核结果仅影响控制号续期，不改变实体监管要求。属合规流程文书，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会（FCC）审查中的多项信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20486/information-collections-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 对多项信息收集进行 PRA 例行审核的通知，公众意见可针对收集必要性、负担估计、信息质量与小企业（少于 25 名雇员）减负提出。此类批量审核通常覆盖若干续期中的报告义务，通过后控制号延续、义务不变。程序性文书，无新政策内容，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "title_cn": "联邦通信委员会（FCC）依授权审查中的信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20485/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 在授权范围内对多项信息收集进行 PRA 例行审核，征集意见涵盖必要性、负担估计、信息质量与减负途径。程序规则提示：无有效 OMB 控制号的信息收集不得实施，相对人无须遵守无控制号的收集要求。属程序性合规文书，不涉及新政策，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Radio Broadcasting Services; Selmer, Tennessee",
+      "title_cn": "无线电广播服务；田纳西州塞尔默",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20464/radio-broadcasting-services-selmer-tennessee",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 修订 FM 频率分配表，删除田纳西州 Selmer 的空置 288A 频道：该频道与 WVNA-FM 电台的间距短于规则要求 9 公里，且无满足间距要求的替代频道可用。依据委员会不保留不合规空置频道的既有政策作出。属地方广播频率的技术性清理，影响限于当地潜在申办者，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Radio Broadcasting Services; Whitehall, Michigan",
+      "title_cn": "无线电广播服务；密歇根州怀特霍尔",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20463/radio-broadcasting-services-whitehall-michigan",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 修订 FM 频率分配表，将密歇根州 Whitehall 的空置频道由 248A 替换为 258A。工程分析确认 258A 可在社区西北约 13 公里处设台并满足最小间距要求（参考坐标 43-28-30 NL / 86-27-38 WL）。申办窗口暂不开放，是否开放由委员会后续命令决定。属地方广播频率的技术性调整，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Wireline Competition Bureau and Office of Economics and Analytics Adopt 2026 Mandatory Data Collection for Incarcerated People's Communications Services",
+      "title_cn": "竞争线路局与经济分析办公室通过2026年在押人员通信服务强制数据采集",
+      "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20362/wireline-competition-bureau-and-office-of-economics-and-analytics-adopt-2026-mandatory-data",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-12",
+        "body": "【政策背景】\n监狱通信服务（IPCS）长期是 FCC 价格监管的重点领域：在押人员及其家属对通信服务缺乏议价能力，历史上费率与附加费高企。FCC 在近年一系列规则（费率上限、附加费限制）基础上建立了强制数据报送机制，以持续监测市场结构与费率执行。10 月 5 日，FCC 竞争线路局（WCB）与经济分析办公室（OEA）联合发布命令，通过 2026 年度 IPCS 强制数据采集的实施细则。\n\n【核心内容】\n本次命令的内容为 2026 年度数据采集的操作文件：报送说明、Word 与 Excel 报送模板及合规认证表。向监管口径明确了 2026 年报什么、怎么报、何时报，属于既有监测机制的年度例行落地，不改变费率规则本身。\n\n【要点提炼】\n1. 程序性文件：为 2026 年度 IPCS 强制数据采集提供报送工具与说明，不创设新的监管要求；\n2. 数据采集是 FCC 评估监狱通信费率上限执行效果的基础设施，报送口径的连续性保证了费率监管的证据基础；\n3. 对在押通信服务商而言，合规成本为既定年度负担，未额外加码。\n\n【对金融市场的预期影响】\n总体判断：低重要性例行文件，跟踪价值大于交易价值，不构成定价事件。\n无直接标的：在押通信市场高度集中于两家私营龙头，均不上市或为私募持有，公开市场没有直接交易对象，这一点决定了本命令的影响力上限。\n行业含义偏负面：数据采集的延续表明 FCC 监管强度不减，监狱通信运营商的费率与附加费空间继续受压，行业利润率天花板明确——对该行业的私募估值构成持续压制。\n观察节点：若年度数据揭示行业集中度或利润率仍处高位，FCC 启动新一轮费率复审（含按分钟计费转向包月制等模式改革）的概率将上升；监管节奏约一年一检，可预期、可跟踪。\n对电信监管主题：本命令与同周生效的铜线退役规则共同勾勒出 FCC 当前的双轨取向——对网络基础设施投资放松管制、对消费者端费率从严监管。跟踪 FCC 议题的投资者可将这一框架作为预判其后续动作的基准，费率类议题从严、投资类议题从宽。"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "title": "[WC Docket Nos. 25-208, 25-209; FCC 26-19; FR ID 370342] Reducing Barriers to Network Improvements and Service Changes, Accelerating Network Modernization",
+      "title_cn": "降低网络改造与服务变更壁垒，加速网络现代化（FCC规则）",
+      "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20192/wc-docket-nos-25-208-25-209-fcc-26-19-fr-id-370342-reducing-barriers-to-network-improvements-and",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-12",
+        "body": "【政策背景】\n美国传统铜线电话网络的退役与光纤化改造，长期受制于 FCC 的网络变更披露与服务终止规则：运营商每一步网络调整都面临繁琐的披露与等待程序，拖慢了淘汰老旧铜缆、升级光纤的节奏。FCC 在 WC Docket Nos. 25-208、25-209 中发布《报告与命令》（FCC 26-19），修订网络变更披露与服务终止规则以降低制度性摩擦；依程序，涉及信息采集的修订须待 OMB 完成《文书削减法》审查后方可生效。10 月 1 日，竞争线路局公告：OMB 已批准相关信息采集，修订规则生效日期确定。\n\n【核心内容】\n本公告宣布修订后的网络变更披露与服务终止规则完成全部程序性关卡、正式生效。规则修订的方向是「降低网络改造与服务变更的审批与披露负担、加速网络现代化」——简化运营商退役铜线、调整服务时所需履行的程序，缩短变更等待期。\n\n【要点提炼】\n1. 生效程序完成：OMB 批准信息采集，FCC 26-19 的修订规则自此具备完全效力，网络改造提速进入执行阶段；\n2. 监管取向宽松化：从「程序管控优先」转向「现代化优先」，反映监管层对运营商加快光纤替换铜线的政策支持；\n3. 消费者端影响两面：网络升级加快改善服务质量，但铜线服务终止的便利化也意味着部分传统用户（偏远地区、依赖铜线的用户）的服务转换期保护相对弱化。\n\n【对金融市场的预期影响】\n总体判断：对美国电信板块构成结构性利好，且利好已从「预期」进入「执行」阶段——规则完成全部程序关卡、正式生效，是本公告最重要的边际变化，值得正面计价。\n直接受益：AT&T、Verizon、Lumen 等推进大规模铜线退役与光纤置换的运营商。审批等待期缩短直接加快资本开支转化为新服务收入的节奏，单位改造成本下降提升光纤项目的内部回报率。\n供应链受益：光纤、光模块、网络工程施工等设备与工程环节。退役改造可执行性增强后，订单释放节奏更确定，板块景气度可见度提升。\n政策框架判断：这是「去监管 + 基础设施现代化」组合的又一落地样本。FCC 后续在宽带部署、普遍服务基金改革等关联议题上的取向，可纳入同一框架预判，方向大概率延续宽松。\n风险提示：铜线退役加速可能引发消费者团体与部分州监管机构的程序性诉讼，拖累局部节奏；但方向上不改，诉讼风险只影响节奏、不改变趋势。"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+      "title_cn": "联邦通信委员会（FCC）审查中的多项信息采集事项",
+      "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20158/information-collections-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 对多项信息收集进行 PRA 例行审核的通告，征集意见围绕收集必要性、负担估计准确性、信息质量改进、自动化收集技术与小企业减负。审核通过后相应报告义务的控制号延续有效，监管实质要求不变。属合规流程文书，对通信行业受访主体仅有边际影响，对金融市场无实质影响。"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "title_cn": "信息采集事项提交管理与预算办公室（OMB）审查批准",
+      "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20157/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "FCC 将一项信息收集提交 OMB 审批的例行 PRA 通知，邀请公众与其他联邦机构评论，并依《2002 年小企业文书减负法》专门征询对雇员少于 25 人的小企业的减负方案。属程序性合规文书，不新增监管要求，受访企业义务以控制号续期为限维持现状。对金融市场无实质影响。"
+      }
+    }
+  ]
+}

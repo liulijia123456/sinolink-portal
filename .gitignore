@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# 敏感凭据：国会 API key 绝不入库
+scripts/.congress_api_key
+
+# 运行时产物
+logs/
+scripts/brief_queue.md
+scripts/briefs.json
+data/.tmp/
