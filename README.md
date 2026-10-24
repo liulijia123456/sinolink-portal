@@ -1,0 +1,370 @@
+# 国金证券 政策与战略 · 门户网站
+
+国金证券政策与战略组的内部研究门户。纯静态单页站点（无构建、无框架、无后端），
+数据与页面分离：页面是 `index.html` 一个文件，政策条目存放在 `data/policy/*.json`，
+由 `scripts/` 下的 Python 脚本抓取、补写、校验后提交。
+
+线上地址：<https://liulijia123456.github.io/sinolink-portal/>
+仓库：`git@github.com:liulijia123456/sinolink-portal.git`（GitHub Pages，部署分支 `main`）
+
+---
+
+## 1. 架构总览
+
+```
+                ┌──────────────────────────────────────────┐
+                │  index.html（656 KB，单文件）             │
+                │  ├─ 内联 CSS（深海军蓝 + 纸感暖白双区）    │
+                │  ├─ 3 个 <script>（视图路由 / 自动更新 / 装饰）│
+                │  └─ 2 个内嵌 JSON 数据块                  │
+                │      ├─ id="election-data"（选举动态）     │
+                │      └─ id="us-cal-data"（大事日历）       │
+                └───────────────┬──────────────────────────┘
+                                │ fetch（同源相对路径）
+                ┌───────────────▼──────────────────────────┐
+                │  data/policy/（政策三板块，外置 JSON）      │
+                │  ├─ {board}-items.json     条目主体        │
+                │  ├─ {board}-overview.json  周/月研判        │
+                │  └─ manifest.json          计数与时间戳     │
+                └───────────────▲──────────────────────────┘
+                                │ 读写（portal_store.py 存储层）
+                ┌───────────────┴──────────────────────────┐
+                │  scripts/（9 个 Python 脚本，标准库即可运行）│
+                └───────────────▲──────────────────────────┘
+                                │ 本地自动化 / GitHub Actions
+                        git push → Pages 自动重建
+```
+
+三条关键设计约束，改动前务必了解：
+
+1. **页面不读 HTML 里的数据块**。政策条目全部走 `fetch('data/policy/…')`，
+   因此**必须用 HTTP 服务预览**，双击打开 `file://` 会因跨域/协议限制拿不到数据。
+2. **数据只由脚本写**。`brief` / `title_cn` / `domain` 都有各自归属的写入通道，
+   手工编辑 JSON 极易造成 `count` 与 `manifest` 脱节、编码错乱、字段被覆盖。
+3. **两套数据通道并存**：`data/policy/` 是权威存量（全量历史，页面主列表读它）；
+   `updates.json` 是增量清单（供页面「内置自动更新模块」静默拉取），两者不互相同步。
+
+---
+
+## 2. 目录结构
+
+| 路径 | 说明 |
+| --- | --- |
+| `index.html` | 全站唯一页面：门户首页 + 4 个子视图（`us` / `eu` / `board` / `election`）+ 全部样式与脚本 |
+| `data/policy/` | 政策三板块数据（`whitehouse` / `congress` / `agencies`），已入库 |
+| `scripts/` | 抓取、简报、校验、日历维护等维护工具 |
+| `logs/` | `fetch.log` / `brief.log`（运行时产物，已 gitignore） |
+| `scripts/.congress_api_key` | 国会 API 密钥（**已 gitignore，绝不入库**） |
+| `github自动更新部署包.zip` | 早期部署包（含 Actions 工作流，见 §9） |
+| `.workbuddy/` | 本地自动化的工作记忆（当前未被 gitignore，勿提交） |
+
+### 页面视图与 hash 路由
+
+| hash | 视图 | 内容 |
+| --- | --- | --- |
+| （空） | 门户首页 | 研究专栏四卡 + 覆盖范围 + 说明 + 页脚 |
+| `#us` | 美国板块 | 三个政策子板块卡 + 选举动态卡 + 大事日历 |
+| `#board-whitehouse` | 子板块 | 白宫政策条目列表（筛选 / 分页 / 研判区） |
+| `#board-congress` | 子板块 | 国会政策条目列表 |
+| `#board-agencies` | 子板块 | 独立机构政策条目列表 |
+| `#election` | 选举动态 | 中期选举 / 2028 总统大选两栏 + 民调卡 |
+| `#eu` | 欧洲板块 | 欧盟 / 英国 / 法国 / 俄罗斯四卡（**纯静态，暂无数据管线**） |
+
+首页四张专栏卡中，`tone-us`（美国政治）与 `tone-eu`（欧洲政治）已接内容；
+`tone-geo`（地缘局势分析）与 `tone-hot`（热点事件分析）的「进入板块」按钮
+**没有 `data-enter` 属性**，目前是占位卡，点击无跳转。
+
+---
+
+## 3. 本地开发
+
+### 3.1 预览（必须走 HTTP）
+
+```bash
+cd /Users/silentecho/Desktop/门户/sinolink-portal
+python3 -m http.server 8000
+# 打开 http://localhost:8000/index.html
+```
+
+必须从**仓库根目录**起服务：页面里写的是相对路径 `data/policy/…`，
+服务根目录错位会导致三个板块全部空白。
+
+### 3.2 环境要求
+
+- Python 3.8+，**仅用标准库**（`json` / `urllib` / `logging`），无第三方依赖，无需虚拟环境。
+- 国会 API：优先读环境变量 `CONGRESS_API_KEY`，其次 `scripts/.congress_api_key`，
+  都没有则回落 `DEMO_KEY`（限流严重，仅够调试）。申请：<https://api.congress.gov/sign-up/>
+
+```bash
+export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
+# 或写入 scripts/.congress_api_key（已 gitignore）
+```
+
+### 3.3 改页面的注意事项
+
+- `data-page-node-id="…"` 属性由上游可视化编辑器生成，**不要删除或批量重排**，
+  否则后续可视化改版会产生大范围无意义 diff。
+- 内联 SVG（国徽、欧盟旗、欧洲地图、地球仪）是人工简化/正算的路径数据，
+  改尺寸请改 `viewBox` 与容器，不要动 `<path d="…">`。
+- 全站配色走 CSS 变量（`--bg` / `--card` / `--accent` / `--gold` …，浅色区带
+  `-light` 后缀），改主题只改 `:root`，不要散改具体规则。
+- 站点**无构建流程**：改完 `index.html` 直接刷新即可，不需要打包。
+
+---
+
+## 4. 数据模型
+
+### 4.1 `data/policy/{board}-items.json`
+
+```json
+{
+  "schema": 1,
+  "board": "whitehouse",
+  "updated_at": "2026-10-24 14:00",
+  "count": 150,
+  "items": [
+    {
+      "date": "2026-10-26",
+      "title": "英文原标题",
+      "title_cn": "中文标题",
+      "url": "https://www.federalregister.gov/documents/…",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "domain": "电信/媒体",
+      "brief": { "at": "2026-10-24", "tier": "note", "body": "…" }
+    }
+  ]
+}
+```
+
+硬性要求（`validate_data.py` 会拦）：
+
+- `items` 按 `date` **严格倒序**；`url` 全板块唯一；`date` 为 `YYYY-MM-DD`。
+- `count` 必须等于 `len(items)`；`schema` 为 `1`；`board` 与文件名一致。
+- `domain` 必须在固定词表内（见 §6.3）；`title_cn` 与 `domain` 缺失在 `--strict` 下拦截发布。
+
+### 4.2 `data/policy/{board}-overview.json`
+
+周/月研判区数据，`weekly` 与 `monthly` 各含
+`{tag, period, updated_at, stats, expanded, body, note}`。
+由撰写端直接维护，脚本不改写。
+
+### 4.3 `data/policy/manifest.json`
+
+```json
+{ "schema": 1, "built_at": "…", "source_fetched_at": "…",
+  "boards": { "whitehouse": {"count": 150, "updated_at": "…"}, … } }
+```
+
+**存在性即开关**：`manifest.json` 在，`portal_store.load_policy()` 走 JSON 形态；
+不存在则回落到读 `index.html` 里的旧数据块。因此删掉它会让整站回退到历史形态。
+
+### 4.4 内嵌数据块（在 `index.html` 里）
+
+| id | 结构 | 维护方式 |
+| --- | --- | --- |
+| `election-data` | `{updated_at, map, sections, gallup_update}` | 手工编辑（无脚本） |
+| `us-cal-data` | `{updated_at, source_note, events[]}` | `cal_update.py merge` 只追加 |
+
+日历事件字段：`d`（必填，起始日）、`cat`（`econ/pol/dip/hol`）、`title`（必填）、
+`d2`（多日结束日）、`t`（美东时刻）、`s`（格内短标题）、`note`（地点/机构/来源）、
+`replaces_title`（把同名旧条目标「已调整」但不删除）。
+
+---
+
+## 5. 脚本清单
+
+| 脚本 | 用途 | 常用命令 |
+| --- | --- | --- |
+| `fetch_policy.py` | 抓取三板块政策条目并合并入库 | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
+| `brief.py` | 生成简报任务队列 / 合并简报 | `python3 scripts/brief.py queue --limit 8`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
+| `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
+| `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
+| `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
+| `gen_updates_json.py` | 生成 `updates.json` 增量清单 | `python3 scripts/gen_updates_json.py --days 10 --out updates.json` |
+| `fix_congress_urls.py` | 修正决议类条目的错误 URL | `python3 scripts/fix_congress_urls.py [--dry-run]` |
+| `migrate_to_json.py` | 一次性迁移/回灌（非常规工具） | `python3 scripts/migrate_to_json.py --source index.html --out data/policy` |
+| `portal_store.py` | 存储层（被上面脚本 import） | — |
+
+### 5.1 `fetch_policy.py` — 数据入口
+
+数据来源全部为美国政府官方接口：
+
+- **白宫政策**：联邦公报总统文件（行政令/备忘录/公告）+ EOP 组成机构
+  （`WHITEHOUSE_AGENCY_SLUGS`：USTR、OMB、OSTP、CEQ、ONDCP、NSC、NEC）
+  + 内阁各部（`CABINET_DEPT_SLUGS`，**只收 Rule / Proposed Rule**，不收 Notice）。
+- **国会政策**：`api.congress.gov/v3/bill`，参众两院法案与决议最新动态。
+- **独立机构政策**：联邦公报按机构过滤，`AGENCY_SLUGS` 当前为美联储 + FCC。
+
+要增删机构或扩大范围，改这三个字典即可（slug 取自联邦公报 agency 字段）。
+
+关键常量（改动需连带考虑 §6.1 的上限同步）：
+
+```python
+LOOKBACK_DAYS = 10
+MAX_OVERRIDES = {'whitehouse': 300, 'congress': 400, 'agencies': 200}
+HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
+```
+
+退出码：`0` 全部成功 / `1` 部分成功（成功板块已回写）/ `2` 全部失败（保留旧数据）。
+
+> 注意：`DEPT_NOTICE_EXTRA` 为「几乎不发规则」的部门（如国防部，实测近 30 天 84 条
+> 全为 Notice）单独放宽到通告，并用关键词剔除程序性条目。新增此类部门前先查实际发文构成。
+
+### 5.2 `brief.py` — 简报分层与合并
+
+两层简报，按「市场相关性」分类，避免长简报覆盖率被新增量稀释：
+
+| 层级 | 篇幅 | 结构 | 判据 |
+| --- | --- | --- | --- |
+| `full` 长简报 | 800–2000 字 | 四段：`【政策背景】`/`【核心内容】`/`【要点提炼】`/`对金融市场的预期影响` | 白宫直接行为（行政令/备忘录/公告）；终局规则 + 高相关领域；法案已过委员会门槛 + 高相关领域 |
+| `note` 要点速览 | 150–300 字 | 3–5 条要点，无段头 | 拟议规则、程序性通告、决议、礼仪类、低相关领域、仅提出未审议的法案 |
+
+流程：
+
+```bash
+# 1) 出队列（含官方摘要素材，标注每条该写 full 还是 note）
+python3 scripts/brief.py queue --limit 8
+#    输出 scripts/brief_queue.md（已 gitignore）
+
+# 2) 按队列撰写，写成 { "<条目url>": {"at","tier","body"} } 的 JSON
+# 3) 合并入库
+python3 scripts/brief.py merge scripts/briefs.json
+```
+
+合并保护：已有 `full` 不会被 `note` 覆盖（除非 `--force`）。
+**`briefs.json` 的键必须是数据文件里的真实 `url`**，差一个后缀就会静默漏合并——
+合并后务必用 `validate_data.py` 的简报计数复核。
+
+### 5.3 其余脚本要点
+
+- `edit_items.py`：模型只「判断」，脚本只「写入」。`title_cn` / `domain` 默认只补空值，
+  `--overwrite` 才覆盖；`domain` 必须落在词表内，否则退出码 1。`brief` 不归它管。
+- `cal_update.py`：键为 `(d, d2, title)`，命中即跳过，**绝无删除分支**；
+  写回前用 `(d, title)` 键集合做兜底断言；只改 `us-cal-data` 一个数据块。
+  需要「待定 → 官方确认」精化时加 `--update-notes`。
+- `fix_congress_urls.py`：congress.gov 对法案与四类决议用不同路径段，早期统一写成
+  `-bill` 曾导致跳错。脚本按 `kind` 推候选类型、查官方标题、`title` 比对一致才改。
+- `gen_updates_json.py`：把新增条目导出为前端自动更新模块消费的清单，**只写 `updates.json`**，
+  不碰 `data/policy/`。缺 `CONGRESS_API_KEY` 时跳过国会板块，不失败。
+
+---
+
+## 6. 数据纪律（最容易踩的四类坑）
+
+### 6.1 留置上限必须两处同步
+
+`fetch_policy.py: MAX_OVERRIDES` 与 `validate_data.py: MAX_ITEMS` 是同一组语义。
+只改一处会导致「脚本不截断、校验告警」或反向不一致。
+
+调**小**会静默丢弃历史（每周全量轮换即历史归零）。现取值按单次抓取量放宽到
+1 个月 ~ 2 个月存量：白宫 300 / 国会 400 / 机构 200。
+
+### 6.2 「抓取条数」不等于「净增条数」
+
+`fetch.log` 里若标注 dry-run，该轮不落库。读日志判断增量前，先核对
+「旧 N 条」与 manifest 的分板块计数是否一致，否则会把重复条目误读为新增。
+commit message 的净增数按实际入库量填写。
+
+### 6.3 领域词表固定（17 项）
+
+```
+科技/AI · 贸易/关税 · 能源/环境 · 医疗/医药 · 国防/安全 · 财政/税收
+金融/保险 · 电信/媒体 · 农业/食品 · 教育/劳动 · 住房 · 交通
+司法/执法 · 社会保障 · 产业/企业 · 政府运作 · 其他
+```
+
+新增标签必须同步改 `validate_data.py: DOMAINS` **和** 定时任务的 prompt 约定，
+否则校验直接报错退出。
+
+### 6.4 简报质量告警的处理口径
+
+`note` 参考区间 100–900 字，`full` 除四段段头齐全外 400–4000 字。
+区间外只告警不拦截；但**旧条目的历史告警不要为了清零而硬改正文**，
+应记录为遗留项并在下一轮新增时收紧。
+
+---
+
+## 7. 周更标准流程（SOP）
+
+每周六执行，对应美东时间周五收盘后。推荐顺序不可颠倒：
+
+| 环节 | 动作 | 命令 |
+| --- | --- | --- |
+| A 抓取 | 拉取三板块条目 | `python3 scripts/fetch_policy.py --days 10` |
+| B 补字段 | 新增条目的中文标题与领域 | `edit_items.py patch.json` |
+| C 简报 | 出队列 → 撰写 → 合并 | `brief.py queue` → `brief.py merge` |
+| D 选举/日历 | 民调与事件增量 | 手工改 `election-data`；`cal_update.py merge` |
+| E 校验 | 发布前体检 | `validate_data.py --strict` |
+| F 提交 | 校验通过才推 | `git add -A && git commit && git push` |
+
+自检要点：
+
+- 开工先看 `manifest.json: built_at` 是否为当日，避免同日重复抓取。
+- D 环节的选举板块当前**只有 `.ele-table` 的 CSS 定义、没有实际表格实例**，
+  表格类更新无落点，改版前不要按旧结构写数据。
+- 日历候选必须有官方来源核验（BLS/BEA/FOMC 日程、白宫、USTR 等），
+  不确定的写进 `note` 而不要臆造日期。
+
+---
+
+## 8. 校验与故障排查
+
+```bash
+python3 scripts/validate_data.py            # 常规：结构硬错误 + 内容告警
+python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn / domain 即失败
+```
+
+退出码：`0` 通过 / `1` 结构错误 / `2` 严格模式内容缺失。
+
+| 现象 | 原因 | 处理 |
+| --- | --- | --- |
+| 三个板块全空白 | 预览未走 HTTP，或服务根目录不在仓库根 | 从仓库根起 `http.server` |
+| `count 与实际不符` | 手工删改过 items | 改 `count`，或回滚该文件 |
+| `条目未按日期倒序` | 新条目追加到尾部 | 按 `date` 倒序重排后重跑校验 |
+| `出现词表外的领域标签` | 新造标签 | 改回词表值，或同步扩词表 |
+| `url 重复` | 同一文件被两次抓取合并 | 去重保留信息更全的一条 |
+| 简报合并后条数没变 | `briefs.json` 的键 url 不匹配 | 用数据文件里的真实 url 逐条复核 |
+| 国会板块 0 条 | `DEMO_KEY` 限流 | 配置正式 key |
+
+---
+
+## 9. 部署与已知缺口
+
+**部署**：`main` 分支 push 后 GitHub Pages 自动重建，无需其他动作。
+回滚用 `git revert <sha>`（优先）或 `git checkout <sha> -- <file>`，
+`data/policy/` 与 `index.html` 可独立回滚。
+
+以下为**已知缺口**，按优先级排列，是后续迭代的起点：
+
+1. **`.github/workflows/weekly-update.yml` 未入库**。工作流（每周六 UTC 01:00
+   跑 `gen_updates_json.py` 并提交 `updates.json`）目前只存在于
+   `github自动更新部署包.zip` 里。当前周更实际由本地自动化执行并 push，
+   云端定时任务并未生效。若要恢复云端兜底，需把工作流放回 `.github/workflows/`
+   并在仓库 Secrets 配置 `CONGRESS_API_KEY`。
+2. **`updates.json` 未入库**。页面自动更新模块的首选源是 `./updates.json`，
+   缺失时静默降级到备源绝对地址再失败，功能实际处于「静默无更新」状态。
+3. **`scripts/gen_europe_map.py` 缺失**。`index.html` 的欧洲地图注释引用了它，
+   仓库中无此文件，地图轮廓目前只能手工维护。
+4. **地缘局势 / 热点事件两个专栏无数据管线**，按钮无 `data-enter`，是占位。
+5. **`.workbuddy/` 未加入 `.gitignore`**，提交时注意不要带上工作记忆文件。
+6. **`github自动更新部署包.zip`（263 KB）仍被版本控制跟踪**，内容已被仓库文件超越，
+   建议归档到 `docs/` 或移出仓库。
+7. **欧洲板块无数据源**：四张卡片为纯静态描述，接入抓取前需先定义
+   `data/eu/*.json` 的 schema 与来源（欧盟机构官网 / 各国议会 / 选举委员会）。
+
+---
+
+## 10. 编码约定
+
+- 脚本一律 `#!/usr/bin/env python3` + `# -*- coding: utf-8 -*-`，
+  模块 docstring 写清用途、用法、退出码；只依赖标准库。
+- 所有写盘走 `portal_store.save_policy()` 的原子写（临时文件 + `os.replace`），
+  不要直接 `open(..., 'w')` 覆盖数据文件。
+- 时间戳统一北京时间 `+08:00`（`TZ8`），日历事件的 `t` 字段是**美东时刻**，
+  两者不要混用。
+- 页面文案为简体中文书面语，标题用「动宾/偏正」短语（如「修订《联邦水污染控制法》
+  第404条湿地许可范围」），不写口语化摘要、不堆修饰词。
+- commit message 用中文，写清「改了什么 + 为什么」，数据类提交带日期与净增数，
+  例如：`数据周更 2026-10-24：白宫 +0 / 国会 +0 / 独立机构 +0`。
