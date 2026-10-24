@@ -490,9 +490,11 @@ def main():
             board['items'] = merge_items(board.get('items', []), new_items,
                                          MAX_OVERRIDES.get(key, MAX_ITEMS_PER_BOARD))
             board['updated_at'] = stamp
-            log.info('[%s] 合并完成：旧 %d 条 + 新 %d 条 → 共 %d 条',
-                     name, old_n, len(new_items), len(board['items']))
-            ok.append((name, len(new_items), len(board['items'])))
+            log.info('[%s] 合并完成：旧 %d 条 + 抓取 %d 条 → 共 %d 条（净增 %d）',
+                     name, old_n, len(new_items), len(board['items']),
+                     len(board['items']) - old_n)
+            ok.append((name, len(new_items), len(board['items']) - old_n,
+                       len(board['items'])))
         except Exception as e:
             log.error('[%s] 抓取失败: %s（保留旧数据，本板块不更新）', name, e)
             fail.append((name, str(e)))
@@ -507,8 +509,8 @@ def main():
 
     if args.dry_run:
         log.info('dry-run 模式：不回写 %s', target_desc)
-        for name, new_n, total_n in ok:
-            log.info('  %s：新增 %d 条，累计 %d 条', name, new_n, total_n)
+        for name, new_n, net_n, total_n in ok:
+            log.info('  %s：抓取 %d 条，净增 %d 条，累计 %d 条', name, new_n, net_n, total_n)
         return 0
 
     try:
@@ -517,8 +519,8 @@ def main():
         log.error('回写 %s 失败: %s（本次抓取结果未保存，下次将重新抓取）', target_desc, e)
         return 2
 
-    for name, new_n, total_n in ok:
-        log.info('  %s：新增 %d 条，累计 %d 条', name, new_n, total_n)
+    for name, new_n, net_n, total_n in ok:
+        log.info('  %s：抓取 %d 条，净增 %d 条，累计 %d 条', name, new_n, net_n, total_n)
     if fail:
         for name, err in fail:
             log.warning('  %s：失败 —— %s', name, err)
