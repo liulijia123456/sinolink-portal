@@ -44,6 +44,9 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import portal_store as store          # noqa: E402  统一数据读写（JSON / 内嵌双形态）
+
 # ---------------------------------------------------------------- 配置
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -405,24 +408,17 @@ def fetch_agencies(since):
 # ---------------------------------------------------------------- 合并与回写
 
 def read_index():
-    with open(INDEX_HTML, 'r', encoding='utf-8') as f:
-        return f.read()
-
-
-def extract_payload(html):
-    m = DATA_BLOCK_RE.search(html)
-    if not m:
-        raise RuntimeError('index.html 中未找到 id="policy-data" 数据块，请先检查页面结构')
+    """兼容旧调用：JSON 存储形态下不再需要读取 index.html。"""
     try:
-        payload = json.loads(m.group(0)[len(m.group(1)):-len(m.group(2))])
-    except json.JSONDecodeError:
-        log.warning('旧数据块 JSON 解析失败，按空数据处理')
-        payload = {}
-    payload.setdefault('fetched_at', None)
-    payload.setdefault('boards', {})
-    for key in ('whitehouse', 'congress', 'agencies'):
-        payload['boards'].setdefault(key, {'updated_at': None, 'items': []})
-    return payload
+        with open(INDEX_HTML, 'r', encoding='utf-8') as f:
+            return f.read()
+    except OSError:
+        return ''
+
+
+def extract_payload(html=None):
+    """统一走 portal_store：data/policy/manifest.json 存在则读 JSON，否则回落 HTML 数据块。"""
+    return store.load_policy()
 
 
 def merge_items(old_items, new_items, max_n):
@@ -448,14 +444,10 @@ def merge_items(old_items, new_items, max_n):
 
 
 def write_payload(payload):
-    html = read_index()
-    block = json.dumps(payload, ensure_ascii=False, indent=2)
-    new_html, n = DATA_BLOCK_RE.subn(
-        lambda m: m.group(1) + '\n' + block + '\n' + m.group(2), html)
-    if n != 1:
-        raise RuntimeError('数据块替换失败（匹配 %d 处，应为 1）' % n)
-    with open(INDEX_HTML, 'w', encoding='utf-8') as f:
-        f.write(new_html)
+    """统一走 portal_store：JSON 形态写 data/policy/*.json（原子写），否则回写 HTML 数据块。"""
+    store.save_policy(payload)
+    if not store.use_json():
+        log.info('已回写 index.html 数据块（未启用 data/policy JSON 形态）')
 
 # ---------------------------------------------------------------- 主流程
 

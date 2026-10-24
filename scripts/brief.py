@@ -37,6 +37,9 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import portal_store as store          # noqa: E402  统一数据读写（JSON / 内嵌双形态）
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 LOG_FILE = os.path.join(BASE_DIR, 'logs', 'brief.log')
@@ -124,19 +127,12 @@ def strip_html(html_text):
 # ---------------------------------------------------------------- 数据块读写
 
 def load_payload():
-    html = open(INDEX_HTML, encoding='utf-8').read()
-    m = re.search(r'(<script type="application/json" id="policy-data"[^>]*>).*?(</script>)', html, re.S)
-    if not m:
-        raise RuntimeError('未找到 policy-data 数据块')
-    return html, m, json.loads(m.group(0)[len(m.group(1)):-len(m.group(2))])
+    """统一走 portal_store；返回值保留 3 元组以兼容旧调用（前两项已不再使用）。"""
+    return None, None, store.load_policy()
 
 
 def save_payload(payload):
-    html, m, _ = load_payload()
-    block = json.dumps(payload, ensure_ascii=False, indent=2)
-    new_html = html[:m.start()] + m.group(1) + '\n' + block + '\n' + m.group(2) + html[m.end():]
-    with open(INDEX_HTML, 'w', encoding='utf-8') as f:
-        f.write(new_html)
+    store.save_policy(payload)
 
 
 # ---------------------------------------------------------------- 摘要抓取
