@@ -12,4 +12,6 @@ scripts/.congress_api_key
 logs/
 scripts/brief_queue.md
 scripts/briefs.json
+scripts/patch_titles.json
+scripts/cal_candidates*.json
 data/.tmp/
