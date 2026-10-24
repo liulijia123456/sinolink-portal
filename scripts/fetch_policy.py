@@ -5,7 +5,9 @@
 ================================
 
 每周六运行（对应美国时间周五），从官方来源抓取三个子板块的政策文件，
-去重合并后回写 index.html 中的 <script type="application/json" id="policy-data"> 数据块。
+去重合并后写入 data/policy/{board}-items.json（并同步 manifest.json 的计数与时间戳）。
+若 data/policy/manifest.json 不存在，则退回旧形态：回写 index.html 中的
+<script type="application/json" id="policy-data"> 数据块。
 
 数据来源（均为美国政府官方接口）：
   白宫政策    —— 联邦公报（Federal Register）总统文件（行政令/备忘录/公告）
@@ -19,7 +21,7 @@
 选举动态板块按需求不抓取，脚本不涉及。
 
 用法：
-  python3 fetch_policy.py              # 正常抓取并回写 index.html
+  python3 fetch_policy.py              # 正常抓取并写入 data/policy/*.json
   python3 fetch_policy.py --days 14    # 覆盖回看天数（默认 10）
   python3 fetch_policy.py --dry-run    # 只抓取打印统计，不回写文件
 
@@ -56,10 +58,13 @@ LOG_FILE = os.path.join(BASE_DIR, 'logs', 'fetch.log')
 LOOKBACK_DAYS = 10          # 回看天数；每周运行的话 7 天足够，10 天留缓冲
 # 每个板块在页面上保留的最大条目数。
 # 注意：此值会**截断**已有条目，调小会丢掉历史，调大只是放宽上限。
-# 现网存量：白宫 150 / 国会 118 / 独立机构 55，因此统一上限设为 150。
-MAX_ITEMS_PER_BOARD = 150
-# 分板块上限覆盖（保留机制，便于个别板块放宽）
-MAX_OVERRIDES = {'whitehouse': 150}
+# 单次抓取量（10 天回看）：白宫约 110 条、国会约 150 条、独立机构约 35 条。
+# 若上限等于单次量，每周会全量轮换、历史被静默丢弃，故按板块分别放宽：
+#   白宫 300 ≈ 1 个月；国会 400 ≈ 3 周（法案更新最密集）；独立机构 200 ≈ 2 个月。
+# 单板块 JSON 体积约 0.3–0.4 MB，Pages 开启 gzip 后传输约 40–50 KB，可接受。
+MAX_ITEMS_PER_BOARD = 300
+# 分板块上限覆盖
+MAX_OVERRIDES = {'whitehouse': 300, 'congress': 400, 'agencies': 200}
 HTTP_TIMEOUT = 20           # 单次请求超时（秒）
 HTTP_RETRIES = 3            # 单源请求最大重试次数
 USER_AGENT = ('sinolink-portal-policy-fetcher/1.0 '
@@ -458,7 +463,7 @@ def write_payload(payload):
 def main():
     ap = argparse.ArgumentParser(description='国金门户 · 美国政策文件定时抓取')
     ap.add_argument('--days', type=int, default=LOOKBACK_DAYS, help='回看天数（默认 %(default)s）')
-    ap.add_argument('--dry-run', action='store_true', help='只抓取打印统计，不回写 index.html')
+    ap.add_argument('--dry-run', action='store_true', help='只抓取打印统计，不回写数据')
     args = ap.parse_args()
 
     tz8 = timezone(timedelta(hours=8))
@@ -498,8 +503,10 @@ def main():
 
     payload['fetched_at'] = stamp
 
+    target_desc = 'data/policy/*.json' if store.use_json() else 'index.html 数据块'
+
     if args.dry_run:
-        log.info('dry-run 模式：不回写 index.html')
+        log.info('dry-run 模式：不回写 %s', target_desc)
         for name, new_n, total_n in ok:
             log.info('  %s：新增 %d 条，累计 %d 条', name, new_n, total_n)
         return 0
@@ -507,7 +514,7 @@ def main():
     try:
         write_payload(payload)
     except Exception as e:
-        log.error('回写 index.html 失败: %s（本次抓取结果未保存，下次将重新抓取）', e)
+        log.error('回写 %s 失败: %s（本次抓取结果未保存，下次将重新抓取）', target_desc, e)
         return 2
 
     for name, new_n, total_n in ok:
@@ -515,11 +522,11 @@ def main():
     if fail:
         for name, err in fail:
             log.warning('  %s：失败 —— %s', name, err)
-        log.warning('========== 部分成功（%d 成功 / %d 失败），已回写成功板块 ==========',
-                    len(ok), len(fail))
+        log.warning('========== 部分成功（%d 成功 / %d 失败），已回写成功板块到 %s ==========',
+                    len(ok), len(fail), target_desc)
         return 1
 
-    log.info('========== 抓取完成，index.html 已更新 ==========')
+    log.info('========== 抓取完成，已写入 %s ==========', target_desc)
     return 0
 
 
