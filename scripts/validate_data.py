@@ -107,14 +107,21 @@ def check_board(path, board):
         b = it.get('brief') or {}
         body = b.get('body') or ''
         if body:
-            miss = [h for h in BRIEF_HEADERS if h not in body]
-            if miss:
-                brief_issues += 1
-                warn('%s[%d]：简报缺少段头 %s（%s）'
-                     % (board, i, '、'.join(miss), (it.get('title') or '')[:40]))
-            elif not (300 <= len(body) <= 4000):
-                warn('%s[%d]：简报长度 %d 字，超出 300–4000 参考区间'
-                     % (board, i, len(body)))
+            # 分层校验：full 需四段结构；note 只求短而实，不要求段头
+            tier = b.get('tier') or ('full' if len(body) >= 400 else 'note')
+            if tier == 'note':
+                if not (100 <= len(body) <= 900):
+                    warn('%s[%d]：要点速览长度 %d 字，参考区间 100–900'
+                         % (board, i, len(body)))
+            else:
+                miss = [h for h in BRIEF_HEADERS if h not in body]
+                if miss:
+                    brief_issues += 1
+                    warn('%s[%d]：长简报缺少段头 %s（%s）'
+                         % (board, i, '、'.join(miss), (it.get('title') or '')[:40]))
+                elif not (400 <= len(body) <= 4000):
+                    warn('%s[%d]：长简报长度 %d 字，参考区间 400–4000'
+                         % (board, i, len(body)))
 
     if dates != sorted(dates, reverse=True):
         err('%s：条目未按日期倒序排列' % board)
@@ -122,9 +129,15 @@ def check_board(path, board):
         err('%s：出现词表外的领域标签 %s' % (board, '、'.join(sorted(set(bad_dom)))))
 
     n_brief = sum(1 for it in items if (it.get('brief') or {}).get('body'))
-    print('[%s] %d 条 · 中文标题 %d/%d · 领域 %d/%d · 简报 %d · 最近 %s'
+    n_note = sum(1 for it in items
+                 if (it.get('brief') or {}).get('body')
+                 and (((it.get('brief') or {}).get('tier') == 'note')
+                      or (not (it.get('brief') or {}).get('tier')
+                          and len((it.get('brief') or {}).get('body') or '') < 400)))
+    print('[%s] %d 条 · 中文标题 %d/%d · 领域 %d/%d · 简报 %d（长 %d / 要点 %d）· 最近 %s'
           % (board, len(items), len(items) - no_cn, len(items),
-             len(items) - no_dom, len(items), n_brief, max(dates) if dates else '-'))
+             len(items) - no_dom, len(items), n_brief, n_brief - n_note, n_note,
+             max(dates) if dates else '-'))
     if no_cn:
         block('%s：%d 条缺中文标题（title_cn）' % (board, no_cn))
     if no_dom:

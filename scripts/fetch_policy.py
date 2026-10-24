@@ -449,7 +449,22 @@ def merge_items(old_items, new_items, max_n):
                 it.update(carried)
         merged[it['url']] = it
     out = sorted(merged.values(), key=lambda x: (x.get('date') or ''), reverse=True)
-    return out[:max_n]
+    if len(out) <= max_n:
+        return out
+    # 截断策略（两条约束同时满足）：
+    # 1) 时效底线：最新的一段无条件保留（约占上限 40%），否则条目一旦普遍带上
+    #    简报，新抓的数据会被全部挤掉，页面就再也看不到更新。
+    # 2) 成本保护：剩余名额优先给**有简报**的条目，brief 是已花掉的人力/模型成本，
+    #    按纯日期淘汰会让写过的简报随条目一起消失。
+    # 输出仍按日期倒序，页面排序不受影响。
+    n_recent = max(1, int(max_n * 0.4))
+    head = out[:n_recent]
+    rest = out[n_recent:]
+    slots = max_n - len(head)
+    ranked = sorted(rest, key=lambda x: (1 if (x.get('brief') or {}).get('body') else 0,
+                                         x.get('date') or ''), reverse=True)
+    kept_ids = {id(x) for x in head} | {id(x) for x in ranked[:max(0, slots)]}
+    return [x for x in out if id(x) in kept_ids]
 
 
 def write_payload(payload):

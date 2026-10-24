@@ -3891,7 +3891,7 @@
               '</p>';
           }
         }
-        return '<div class="brief-head"><span class="brief-tag">政策简报</span>' +
+        return '<div class="brief-head"><span class="brief-tag">' + (b.tier === 'note' ? '政策速览' : '政策简报') + '</span>' +
           '<span class="brief-at">' + esc(b.at || '') + '</span>' +
           '<a class="brief-src" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></div>' +
           body;
