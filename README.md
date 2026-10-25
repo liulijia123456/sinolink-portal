@@ -142,16 +142,17 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 - 新样式一律写在 `#view-us` 作用域内，**不要**改 `.subhead` / `.card` / `.col-head`
   等全局规则 —— 欧洲板块、条目列表、选举动态共用这些类，改动会波及四视图。
 - 新增 DOM 元素时不要带 `data-page-node-id`。
-- 抬头为单列排版（返回链接 → 标题 → 英文副标 → 说明 → 读数带），日历控制台为
-  单列（时钟 → 工具条 → 月历 → 图例）；原「档案信息栏」「栏目行（SECTION 02）」
-  「未来 30 天议程侧栏」三块已按需求删除，对应的 `.ush-rail` / `.us-eyebrow` /
-  `.uc-agenda` 样式与 `renderAgenda()`、`window.usSyncAgenda()` 一并清除。
+- 抬头为单列排版（返回链接 → 标题 → 英文副标 → 说明），底部留白 52px（≤700px 为 40px）；
+  日历控制台为单列（时钟 → 工具条 → 月历 → 图例）。以下内容已按需求删除，
+  其作用域样式与脚本一并清除，不留死代码：「档案信息栏」`.ush-rail`、
+  「栏目行 SECTION 02」`.us-eyebrow`、「未来 30 天议程侧栏」`.uc-agenda`
+  与 `renderAgenda()` / `window.usSyncAgenda()`、以及整条「读数带」`.us-stats`
+  （原四格，先删「政策条目累计」一格，后整条移除）与 `renderStats()`。
 - 美国板块保留一个对外接口：`window.usCalApi.jumpToDate(key)`
   （跳月 + 选中日 + 展开当日安排），供控制台直接调用。
-- 读数带为三格（日历节点 / 未来 30 天 / 最近更新），数值来自真实数据，不是硬编码：
-  三格读内嵌 `us-cal-data`；板块卡徽标（`data-us-count`）与脚注（`data-us-foot`）
-  读 `data/policy/manifest.json`（`fetch`，`file://` 下静默失败、徽标保持占位）；
-  选举动态条数读内嵌 `election-data`。原「政策条目累计」一格已删除。
+- 板块卡徽标（`data-us-count`）与脚注（`data-us-foot`）的数值来自真实数据，不是硬编码，
+  由 `renderCardMeta()` 回填：白宫 / 国会 / 独立机构读 `data/policy/manifest.json`
+  （`fetch`，`file://` 下静默失败、徽标保持占位），选举动态条数读内嵌 `election-data`。
 
 ---
 

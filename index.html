@@ -1925,8 +1925,8 @@
     position: relative; z-index: 2;
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "back" "h1" "en" "desc" "stats";
-    padding-top: 38px; padding-bottom: 0;
+    grid-template-areas: "back" "h1" "en" "desc";
+    padding-top: 38px; padding-bottom: 52px;
   }
   #view-us .us-head .back {
     grid-area: back; justify-self: start; align-self: center;
@@ -1950,23 +1950,6 @@
     grid-area: desc; text-align: left; margin: 0; max-width: 62ch;
     font-size: 13.5px; line-height: 2.05; color: rgba(242, 238, 230, .6); letter-spacing: .01em;
   }
-  /* ---------- 读数带（档案抬头底部） ---------- */
-  #view-us .us-stats {
-    grid-area: stats; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 44px; border-top: 1px solid rgba(201, 168, 106, .26);
-  }
-  #view-us .uss-cell { padding: 18px 20px 20px 0; border-right: 1px solid rgba(242, 238, 230, .1); }
-  #view-us .uss-cell:last-child { border-right: none; }
-  #view-us .uss-k {
-    display: block; font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .2em;
-    text-transform: uppercase; color: rgba(242, 238, 230, .42); margin-bottom: 9px;
-  }
-  #view-us .uss-v {
-    display: block; font-family: var(--us-serif); font-size: 30px; font-weight: 600; line-height: 1;
-    color: #f7f3eb; font-variant-numeric: tabular-nums; letter-spacing: .01em;
-  }
-  #view-us .uss-v em { font-style: normal; font-size: 13px; color: rgba(242, 238, 230, .5); margin-left: 5px; font-family: var(--us-sans); }
-  #view-us .uss-s { display: block; margin-top: 8px; font-size: 11px; line-height: 1.7; color: rgba(242, 238, 230, .42); }
 
   /* ---------- 区块标题：编号 + 宋体标题 + 发丝线 ---------- */
   #view-us .section { padding: 56px 0 0; }
@@ -2190,14 +2173,9 @@
     #view-us .grid .card .visual { width: 68px; height: 68px; top: 18px; right: 18px; }
   }
   @media (max-width: 700px) {
-    #view-us .us-head .wrap { padding-top: 26px; }
+    #view-us .us-head .wrap { padding-top: 26px; padding-bottom: 40px; }
     #view-us .us-head h1 { font-size: 25px; letter-spacing: .03em; }
     #view-us .us-head .subdesc { font-size: 12.5px; line-height: 1.95; }
-    #view-us .us-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 32px; }
-    #view-us .uss-cell { border-bottom: 1px solid rgba(242, 238, 230, .1); }
-    /* 三格在双列下：前两格并排，末格通栏，避免右下留缺口 */
-    #view-us .uss-cell:last-child { grid-column: 1 / -1; border-right: none; border-bottom: none; }
-    #view-us .uss-v { font-size: 25px; }
     #view-us .col-head .ch-cn { font-size: 20px; }
     #view-us .us-cal { border-radius: 2px; }
     #view-us .uc-bar { flex-direction: column; align-items: stretch; }
@@ -2567,12 +2545,6 @@
         <h1 data-page-node-id="0aXIYYCSgkXDH1d7BQ63xc">美国政治动态跟踪</h1>
         <div class="suben" data-page-node-id="bN8N7zD31RHghxVAHQyD97">US Politics · Policy Collection</div>
         <p class="subdesc" data-page-node-id="OmLGlP2z40vNmS0ktZTHcq">按决策主体分类归集白宫行政行动、国会立法进程与独立监管机构动向,覆盖总统行政令、联邦公报规则文本、法案提案、委员会表决与最终裁决,并同步收录联邦选举与政策日程节点。各条目均标注来源机构、发布时间与效力状态,按主题持续增量更新,便于检索与跨期比对。</p>
-        <!-- 读数带：数值由内嵌数据块实时渲染 -->
-        <div class="us-stats" id="us-stats">
-          <div class="uss-cell"><span class="uss-k">Calendar Nodes</span><span class="uss-v" id="uss-nodes">—</span><span class="uss-s">大事日历节点总数</span></div>
-          <div class="uss-cell"><span class="uss-k">Next 30 Days</span><span class="uss-v" id="uss-next30">—</span><span class="uss-s">未来 30 天内待发生节点</span></div>
-          <div class="uss-cell"><span class="uss-k">Last Updated</span><span class="uss-v" id="uss-updated">—</span><span class="uss-s">最近一次数据更新时间</span></div>
-        </div>
       </div>
     </div>
 
@@ -6235,37 +6207,9 @@
         return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
       });
     }
-    // 美东今天（与日历口径一致：日历「今天」以美东为准）
-    function etToday() {
-      var p = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-      return p;
-    }
-    function ymdAdd(ds, n) {
-      var dt = new Date(ds + 'T12:00:00Z');
-      dt.setUTCDate(dt.getUTCDate() + n);
-      return dt.toISOString().slice(0, 10);
-    }
-    function readCal() {
-      var el = document.getElementById('us-cal-data');
-      try { return JSON.parse(el.textContent) || {}; } catch (e) { return {}; }
-    }
 
-    /* ---------- 1) 读数带：日历节点 / 未来 30 天 / 最近更新；并回填板块卡徽标 ---------- */
-    function renderStats() {
-      var cal = readCal();
-      var evs = cal.events || [];
-      var today = etToday();
-      var limit = ymdAdd(today, 30);
-      var n30 = 0;
-      evs.forEach(function (ev) {
-        var end = ev.d2 || ev.d;
-        if (ev.d <= limit && end >= today) n30++;
-      });
-      var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
-      set('uss-nodes', evs.length);
-      set('uss-next30', n30);
-      set('uss-updated', cal.updated_at || '—');
-
+    /* ---------- 1) 板块卡徽标：条数与更新日期 ---------- */
+    function renderCardMeta() {
       // 各板块条数：读 data/policy/manifest.json 回填板块卡徽标与脚注（需 HTTP 预览）
       var boards = ['whitehouse', 'congress', 'agencies'];
       fetch('data/policy/manifest.json', { cache: 'no-cache' })
@@ -6299,7 +6243,7 @@
     function animateIn() {
       var head = usView.querySelector('.us-head .wrap');
       if (head && !reduce) {
-        [['h1', 90], ['.suben', 140], ['.subdesc', 180], ['.us-stats', 290]].forEach(function (g) {
+        [['h1', 90], ['.suben', 140], ['.subdesc', 180]].forEach(function (g) {
           var el = head.querySelector(g[0]);
           if (!el) return;
           el.classList.add('us-anim');
@@ -6317,13 +6261,13 @@
       usView.classList.add('us-live');
     }
 
-    renderStats();
+    renderCardMeta();
     // 进入美国板块时重放动效（hash 路由切换）
     var lastHash = location.hash;
     function onHash() {
       if (location.hash === lastHash) return;
       lastHash = location.hash;
-      if (location.hash === '#us') { renderStats(); animateIn(); }
+      if (location.hash === '#us') { renderCardMeta(); animateIn(); }
     }
     window.addEventListener('hashchange', onHash);
     // 直接以 #us 进入
