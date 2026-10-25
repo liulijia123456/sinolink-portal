@@ -1996,7 +1996,7 @@
     margin: 0; padding: 13px 22px 14px;
     border: 0; border-radius: 3px 3px 0 0;
     background-color: #0a121c; background-image: none;
-    box-shadow: inset 0 1px 0 rgba(242, 238, 230, .045), inset 0 0 0 1px rgba(201, 168, 106, .17);
+    box-shadow: inset 0 1px 0 rgba(242, 238, 230, .045), inset 0 0 0 1px rgba(255, 255, 255, .07);
     justify-content: center; align-items: center;
     gap: 0; flex-wrap: nowrap;
     font-variant-numeric: tabular-nums;
@@ -2005,13 +2005,13 @@
   #view-us .uc-clock::before {
     content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
     background: conic-gradient(from var(--ucc-ang),
-      rgba(201, 168, 106, .18) 0turn,
-      rgba(201, 168, 106, .8) .09turn,
-      rgba(246, 242, 232, .92) .20turn,
-      rgba(139, 180, 214, .72) .31turn,
-      rgba(201, 168, 106, .3) .44turn,
-      rgba(201, 168, 106, .18) .62turn,
-      rgba(201, 168, 106, .18) 1turn);
+      rgba(159, 196, 233, .2) 0turn,
+      rgba(159, 196, 233, .78) .09turn,
+      rgba(255, 255, 255, .92) .20turn,
+      rgba(226, 197, 141, .8) .31turn,
+      rgba(226, 197, 141, .26) .44turn,
+      rgba(159, 196, 233, .2) .62turn,
+      rgba(159, 196, 233, .2) 1turn);
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
@@ -2025,8 +2025,8 @@
     content: ''; position: absolute; left: 4%; right: 4%; bottom: -8px; height: 62px;
     top: auto; width: auto;
     background:
-      radial-gradient(40% 100% at 28% 100%, rgba(139, 180, 214, .34) 0%, rgba(139, 180, 214, 0) 72%),
-      radial-gradient(40% 100% at 72% 100%, rgba(201, 168, 106, .26) 0%, rgba(201, 168, 106, 0) 72%);
+      radial-gradient(40% 100% at 28% 100%, rgba(159, 196, 233, .32) 0%, rgba(159, 196, 233, 0) 72%),
+      radial-gradient(40% 100% at 72% 100%, rgba(226, 197, 141, .24) 0%, rgba(226, 197, 141, 0) 72%);
     filter: blur(18px);
     opacity: .5; pointer-events: none; z-index: 0;
     animation: uccBreath 7.2s cubic-bezier(.45, 0, .55, 1) infinite;
@@ -2046,55 +2046,65 @@
     position: relative; z-index: 1;
   }
   #view-us .uc-clock .ucc-top { display: inline-flex; align-items: baseline; gap: 7px; flex: none; }
+  /* 美东一系：蓝（暗底用的低饱和数据蓝，靠透明度分层，不发光） */
   #view-us .uc-clock .ucc-lab {
     font-family: var(--us-mono); font-size: 10px; font-weight: 500;
-    letter-spacing: .2em; color: rgba(242, 238, 230, .58); white-space: nowrap;
+    letter-spacing: .2em; color: rgba(159, 196, 233, .62); white-space: nowrap;
   }
-  /* 时令从「徽章」降级为纯文字：铜金只用来标刻度，不做底块 */
+  /* 时令从「徽章」降级为纯文字，随所属时区同色 */
   #view-us .uc-clock .ucc-zone {
     font-family: var(--us-mono); font-size: 9px; font-weight: 400; letter-spacing: .1em;
-    color: rgba(201, 168, 106, .74); background: none; border: 0;
+    color: rgba(159, 196, 233, .5); background: none; border: 0;
     padding: 0; border-radius: 0; cursor: help; flex-shrink: 0;
   }
-  #view-us .uc-clock .ucc-zone.winter { color: rgba(169, 188, 203, .66); background: none; border: 0; }
-  #view-us .uc-clock .ucc-zone-cn { color: rgba(201, 168, 106, .54); background: none; border: 0; }
+  #view-us .uc-clock .ucc-zone.winter { color: rgba(159, 196, 233, .38); background: none; border: 0; }
+  /* 北京一系：金（同一铜金，压到与蓝同档的明度） */
+  #view-us .uc-clock .ucc-block + .ucc-mid + .ucc-block .ucc-lab { color: rgba(226, 197, 141, .66); }
+  #view-us .uc-clock .ucc-zone-cn { color: rgba(226, 197, 141, .55); background: none; border: 0; }
   #view-us .uc-clock .ucc-digits {
     display: inline-flex; align-items: baseline; gap: 4px; flex: none; animation: none;
   }
   #view-us .uc-clock .ucc-time {
     font-family: var(--us-mono); font-size: 23px; font-weight: 500; line-height: 1;
-    letter-spacing: .01em; color: #e4eaee; text-shadow: none;
+    letter-spacing: .01em; color: #9fc4e9; text-shadow: none;
     font-variant-numeric: tabular-nums;
   }
   #view-us .uc-clock .ucc-time-s {
     font-family: var(--us-mono); font-size: 12px; font-weight: 500; letter-spacing: .02em;
-    color: rgba(228, 234, 238, .5);
+    color: rgba(159, 196, 233, .5);
   }
-  #view-us .uc-clock .ucc-time-bj { color: #ecdfc6; text-shadow: none; }
-  #view-us .uc-clock .ucc-time-s.u-s-bj { color: rgba(227, 215, 191, .5); }
+  #view-us .uc-clock .ucc-time-bj { color: #e2c58d; text-shadow: none; }
+  #view-us .uc-clock .ucc-time-s.u-s-bj { color: rgba(226, 197, 141, .5); }
   #view-us .uc-clock .ucc-sub {
     font-family: var(--us-mono); font-size: 10px; font-weight: 400;
-    letter-spacing: .05em; color: rgba(242, 238, 230, .44); white-space: nowrap;
+    letter-spacing: .05em; color: rgba(159, 196, 233, .44); white-space: nowrap;
   }
-  #view-us .uc-clock .ucc-sub-cn { color: rgba(242, 238, 230, .44); }
-  #view-us .uc-clock .ucc-sub b { color: rgba(201, 168, 106, .8); font-weight: 500; }
-  /* 中缝：一根发丝线，中点一枚静态小点（原来的呼吸放大收掉） */
+  #view-us .uc-clock .ucc-sub-cn { color: rgba(226, 197, 141, .44); }
+  #view-us .uc-clock .ucc-sub b { color: inherit; font-weight: 500; }
+  /* 中缝：一根白色发丝线，中点一枚白色呼吸灯 */
   #view-us .uc-clock .ucc-mid {
     flex: none; width: 1px; margin: 0 44px; align-self: center;
     height: 24px; position: relative; z-index: 1;
-    background: linear-gradient(180deg, rgba(201, 168, 106, 0) 0%, rgba(201, 168, 106, .3) 28%,
-      rgba(201, 168, 106, .3) 72%, rgba(201, 168, 106, 0) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .26) 28%,
+      rgba(255, 255, 255, .26) 72%, rgba(255, 255, 255, 0) 100%);
   }
+  /* 只动透明度与缩放（合成层），光晕是静态的，不吃性能 */
   #view-us .uc-clock .ucc-node {
-    width: 3px; height: 3px; margin: -1.5px 0 0 -1.5px;
-    background: rgba(201, 168, 106, .8); box-shadow: none; animation: none;
+    width: 4px; height: 4px; margin: -2px 0 0 -2px;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, .8), 0 0 14px rgba(255, 255, 255, .3);
+    animation: uccNode 4.6s cubic-bezier(.45, 0, .55, 1) infinite;
+  }
+  @keyframes uccNode {
+    0%, 100% { opacity: .42; transform: scale(.82); }
+    50% { opacity: 1; transform: scale(1.18); }
   }
   /* 提示语（如「当前日期相差 1 天」）挂在右端，空时完全不占位 */
   #view-us .uc-clock .ucc-hint {
     position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
     left: auto; z-index: 2; white-space: nowrap;
     font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .06em;
-    color: rgba(201, 168, 106, .72);
+    color: rgba(255, 255, 255, .62);
   }
   #view-us .uc-clock .ucc-hint:empty { display: none; }
 
@@ -2269,10 +2279,12 @@
     /* 时钟：窄屏放不下「两地同排」，改为上下两行 */
     #view-us .uc-clock { flex-direction: column; align-items: stretch; padding: 12px 16px 14px; }
     #view-us .uc-clock .ucc-block { flex: none; width: 100%; gap: 11px; }
-    #view-us .uc-clock .ucc-block + .ucc-block {
-      margin-top: 9px; padding-top: 9px; border-top: 1px solid rgba(242, 238, 230, .07);
+    /* 中缝转成横线，白色呼吸灯就落在两行之间 */
+    #view-us .uc-clock .ucc-mid {
+      width: auto; height: 1px; margin: 10px 0; align-self: stretch;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .22) 26%,
+        rgba(255, 255, 255, .22) 74%, rgba(255, 255, 255, 0) 100%);
     }
-    #view-us .uc-clock .ucc-mid { display: none; }
     #view-us .uc-clock .ucc-hint {
       position: static; transform: none; margin-top: 9px; text-align: left;
     }
@@ -2292,6 +2304,7 @@
   @media (prefers-reduced-motion: reduce) {
     #view-us .uc-clock::before { animation: none; }
     #view-us .uc-clock::after { animation: none; opacity: .5; transform: none; }
+    #view-us .uc-clock .ucc-node { animation: none; opacity: .9; transform: none; }
   }
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
