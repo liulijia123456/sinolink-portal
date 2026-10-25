@@ -1957,16 +1957,19 @@
   }
   /* 右侧美国轮廓（本土 + 阿拉斯加 + 夏威夷）：只描边、压到极淡，当地理底纹用 */
   #view-us .us-head .us-map {
-    position: absolute; right: 17%; top: 50%; transform: translateY(-50%);
-    height: min(92%, 380px); width: auto;
+    position: absolute; right: 24%; top: 50%; transform: translateY(-50%);
+    width: min(52vw, 620px); height: auto;
     fill: none; stroke: rgba(166, 199, 230, .78); stroke-width: 1.15; stroke-linejoin: round;
     opacity: .5; pointer-events: none; z-index: 1;
   }
-  /* 中等宽度先缩一档，避免与说明文字相撞；再窄就收掉 */
+  /* 尺寸跟着视口走（不是固定 px），所以浏览器放大后地图不会消失，只会一起缩小、压淡 */
   @media (max-width: 1400px) {
-    #view-us .us-head .us-map { height: min(88%, 320px); }
+    #view-us .us-head .us-map { opacity: .44; }
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1100px) {
+    #view-us .us-head .us-map { right: 10%; width: min(64vw, 540px); opacity: .32; }
+  }
+  @media (max-width: 640px) {
     #view-us .us-head .us-map { display: none; }
   }
 
