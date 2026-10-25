@@ -8,6 +8,7 @@
     python3 scripts/gen_us_map.py [输入 geojson] [输出 svg]
 
 默认：输入 /tmp/ne110.json，输出 /tmp/us-map.svg。
+版式：本土居右，阿拉斯加放在本土左上角，夏威夷在左下角（见下方 BOX_*）。
 输出为 <svg class="us-map" viewBox="0 0 600 380"> + 三条 <path>，仅描边，
 样式（描边色/透明度/尺寸）写在 index.html 的 #view-us .us-head .us-map 里。
 
@@ -21,9 +22,9 @@ SRC = sys.argv[1] if len(sys.argv) > 1 else "/tmp/ne110.json"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "/tmp/us-map.svg"
 
 VB_W, VB_H = 600.0, 380.0          # 输出画布
-BOX_CONUS = (146.0, 6.0, 594.0, 322.0)
-BOX_ALASKA = (8.0, 214.0, 140.0, 322.0)
-BOX_HAWAII = (58.0, 332.0, 140.0, 372.0)
+BOX_CONUS = (150.0, 6.0, 594.0, 322.0)
+BOX_ALASKA = (4.0, 8.0, 138.0, 118.0)      # 放在本土左上角
+BOX_HAWAII = (18.0, 316.0, 132.0, 372.0)   # 左下角
 
 
 def albers(phi1, phi2, phi0, lam0):

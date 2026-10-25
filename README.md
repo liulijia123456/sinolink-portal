@@ -176,7 +176,8 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
   作为地理底纹压在文字之下（`z-index` 介于网格与 `.wrap` 之间）。
   尺寸按**高度**适配（`height: min(86%, 330px); width: auto`），避免在较矮的抬头里被裁掉；
   ≤1100px 文字铺满时隐藏。路径由 `scripts/gen_us_map.py` 从 Natural Earth 110m 生成
-  （Albers 投影 + Douglas–Peucker 简化，约 385 点 / 4.6 KB），改投影或留白后重跑即可。
+  （Albers 投影 + Douglas–Peucker 简化，约 385 点 / 4.5 KB）。版式为**本土居右、阿拉斯加在本土左上角、
+  夏威夷在左下角**（在脚本顶部的 `BOX_*` 常量里调）；改投影或留白后重跑即可。
   该 `<svg>` 是手工新增节点，**不带 `data-page-node-id`**；编辑器重存有可能把它吃掉，改完要核对。
 
 ---
