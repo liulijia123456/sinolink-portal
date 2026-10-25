@@ -177,7 +177,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
-| `fetch_policy.py` | 抓取三板块政策条目并合并入库 | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
+| `fetch_policy.py` | 抓取三板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
 | `brief.py` | 生成简报任务队列 / 合并简报 | `python3 scripts/brief.py queue --limit 8`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
@@ -199,11 +199,10 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 要增删机构或扩大范围，改这三个字典即可（slug 取自联邦公报 agency 字段）。
 
-关键常量（改动需连带考虑 §6.1 的上限同步）：
+关键常量：
 
 ```python
 LOOKBACK_DAYS = 10
-MAX_OVERRIDES = {'whitehouse': 300, 'congress': 400, 'agencies': 200}
 HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 ```
 
@@ -253,13 +252,26 @@ python3 scripts/brief.py merge scripts/briefs.json
 
 ## 6. 数据纪律（最容易踩的四类坑）
 
-### 6.1 留置上限必须两处同步
+### 6.1 留置策略：纯增量累积，无留置上限
 
-`fetch_policy.py: MAX_OVERRIDES` 与 `validate_data.py: MAX_ITEMS` 是同一组语义。
-只改一处会导致「脚本不截断、校验告警」或反向不一致。
+2026-10-25 起取消分板块留置上限（此前为白宫 300 / 国会 400 / 机构 200）。
+`fetch_policy.py: merge_items()` 现在**只按 url 去重与覆盖，绝不截断**，
+历史条目永久保留。
 
-调**小**会静默丢弃历史（每周全量轮换即历史归零）。现取值按单次抓取量放宽到
-1 个月 ~ 2 个月存量：白宫 300 / 国会 400 / 机构 200。
+理由：政策文本是研究底稿，过期不等于无价值；截断会连带丢掉已写好的简报、
+译名与领域标签（已付出的加工成本），且删除动作是静默的——历史被清空时
+不会有任何报错，只有事后回看才发现。
+
+**代价与应对**：
+
+- JSON 体积随时间线性增长。当前三板块 gzip 合计约 106 KB（原始 386 KB）。
+  按日均新增 30 条外推：一年后约 3.7 MB，两年后约 7.3 MB。
+- 页面 `fetch` 的是整个 JSON，**每次打开都要全量传输**。
+- 渲染侧无压力：前端已有分页（`boardPageSize` 默认 20 条 / 页，`board-pager` 组件），
+  每页只渲染当前页。
+- 因此若日后需要控制传输体积，正确做法是**在页面端只渲染前 N 条**，
+  而不是在存储端删数据——存储端删数据即违背本策略。
+- `validate_data.py` 不做条数上限校验（存储层不截断，校验层就不该报「超过上限」）。
 
 ### 6.2 「抓取条数」不等于「净增条数」
 

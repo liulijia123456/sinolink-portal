@@ -4,10 +4,15 @@
 国金门户 · 美国政策文件定时抓取
 ================================
 
-每周六运行（对应美国时间周五），从官方来源抓取三个子板块的政策文件，
+每日运行，从官方来源抓取三个子板块的政策文件，
 去重合并后写入 data/policy/{board}-items.json（并同步 manifest.json 的计数与时间戳）。
 若 data/policy/manifest.json 不存在，则退回旧形态：回写 index.html 中的
 <script type="application/json" id="policy-data"> 数据块。
+
+**留置策略：纯增量累积，无留置上限。** 合并只按 url 去重与覆盖，绝不截断，
+历史条目永久保留。政策文本是研究底稿，过期不等于无价值；截断会连带丢掉
+已写好的简报、译名与领域标签（已付出的加工成本）。传输体积由页面端
+fetch + gzip 控制，不在存储端删数据。
 
 数据来源（均为美国政府官方接口）：
   白宫政策    —— 联邦公报（Federal Register）总统文件（行政令/备忘录/公告）
@@ -55,16 +60,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 LOG_FILE = os.path.join(BASE_DIR, 'logs', 'fetch.log')
 
-LOOKBACK_DAYS = 10          # 回看天数；每周运行的话 7 天足够，10 天留缓冲
-# 每个板块在页面上保留的最大条目数。
-# 注意：此值会**截断**已有条目，调小会丢掉历史，调大只是放宽上限。
-# 单次抓取量（10 天回看）：白宫约 110 条、国会约 150 条、独立机构约 35 条。
-# 若上限等于单次量，每周会全量轮换、历史被静默丢弃，故按板块分别放宽：
-#   白宫 300 ≈ 1 个月；国会 400 ≈ 3 周（法案更新最密集）；独立机构 200 ≈ 2 个月。
-# 单板块 JSON 体积约 0.3–0.4 MB，Pages 开启 gzip 后传输约 40–50 KB，可接受。
-MAX_ITEMS_PER_BOARD = 300
-# 分板块上限覆盖
-MAX_OVERRIDES = {'whitehouse': 300, 'congress': 400, 'agencies': 200}
+LOOKBACK_DAYS = 10          # 回看天数；每日运行 7 天足够，10 天留缓冲
+# 留置策略：纯增量累积，不设留置上限。
+# 历史条目永久保留——政策文本是研究底稿，过期不等于无价值，截断会静默丢失
+# 已写好的简报与译名（那是已付出的加工成本）。
+# 代价是 JSON 体积随时间线性增长，页面侧靠 fetch + gzip 传输控制开销。
+# 如需为传输体积设限，应在页面端做「只渲染前 N 条」，而不是在存储端删数据。
 HTTP_TIMEOUT = 20           # 单次请求超时（秒）
 HTTP_RETRIES = 3            # 单源请求最大重试次数
 USER_AGENT = ('sinolink-portal-policy-fetcher/1.0 '
@@ -430,8 +431,12 @@ def extract_payload(html=None):
     return store.load_policy()
 
 
-def merge_items(old_items, new_items, max_n):
-    """按 url 去重合并，新条目覆盖旧条目（保留旧条目已生成的简报/翻译/领域标签）；按日期倒序截断。"""
+def merge_items(old_items, new_items):
+    """按 url 去重合并，新条目覆盖旧条目（保留旧条目已生成的简报/翻译/领域标签）。
+
+    纯增量累积：**不做任何截断**，历史条目永久保留。
+    仅当 url 缺失时丢弃该条（无 url 无法去重，也无溯源价值）。
+    """
     # 人工生成字段：新抓条目不含这些字段，须从旧条目沿用
     CARRY_FIELDS = ('brief', 'title_cn', 'domain')
     old_by_url = {it.get('url'): it for it in old_items if it.get('url')}
@@ -448,23 +453,8 @@ def merge_items(old_items, new_items, max_n):
                 it = dict(it)
                 it.update(carried)
         merged[it['url']] = it
-    out = sorted(merged.values(), key=lambda x: (x.get('date') or ''), reverse=True)
-    if len(out) <= max_n:
-        return out
-    # 截断策略（两条约束同时满足）：
-    # 1) 时效底线：最新的一段无条件保留（约占上限 40%），否则条目一旦普遍带上
-    #    简报，新抓的数据会被全部挤掉，页面就再也看不到更新。
-    # 2) 成本保护：剩余名额优先给**有简报**的条目，brief 是已花掉的人力/模型成本，
-    #    按纯日期淘汰会让写过的简报随条目一起消失。
-    # 输出仍按日期倒序，页面排序不受影响。
-    n_recent = max(1, int(max_n * 0.4))
-    head = out[:n_recent]
-    rest = out[n_recent:]
-    slots = max_n - len(head)
-    ranked = sorted(rest, key=lambda x: (1 if (x.get('brief') or {}).get('body') else 0,
-                                         x.get('date') or ''), reverse=True)
-    kept_ids = {id(x) for x in head} | {id(x) for x in ranked[:max(0, slots)]}
-    return [x for x in out if id(x) in kept_ids]
+    # 按日期倒序，页面排序不受影响
+    return sorted(merged.values(), key=lambda x: (x.get('date') or ''), reverse=True)
 
 
 def write_payload(payload):
@@ -502,8 +492,7 @@ def main():
             new_items = fn(since)
             board = payload['boards'][key]
             old_n = len(board.get('items', []))
-            board['items'] = merge_items(board.get('items', []), new_items,
-                                         MAX_OVERRIDES.get(key, MAX_ITEMS_PER_BOARD))
+            board['items'] = merge_items(board.get('items', []), new_items)
             board['updated_at'] = stamp
             log.info('[%s] 合并完成：旧 %d 条 + 抓取 %d 条 → 共 %d 条（净增 %d）',
                      name, old_n, len(new_items), len(board['items']),

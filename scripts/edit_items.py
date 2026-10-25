@@ -28,7 +28,7 @@ patch.json 格式（键为条目 url，值为要补的字段）：
     brief     本脚本不处理，简报统一走 brief.py merge
 
 退出码：
-    0 正常（可能有个别 url 未命中，属正常：条目可能已被上限截断）
+    0 正常（可能有个别 url 未命中，属正常：该 url 不在当前数据中）
     1 出错（patch 文件坏、领域不在词表、写入失败）
 """
 
@@ -120,7 +120,7 @@ def main():
     if len(filled) > 30:
         print('  …… 其余 %d 项省略' % (len(filled) - 30))
     if missing:
-        print('未命中 url（条目可能已被上限截断，属正常）：')
+        print('未命中 url（该 url 不在当前数据中）：')
         for u in missing[:10]:
             print('  ? %s' % u[:90])
         if len(missing) > 10:

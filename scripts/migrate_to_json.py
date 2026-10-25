@@ -86,7 +86,8 @@ def main():
     ap.add_argument('--source', default='index.html', help='源 HTML（默认 index.html）')
     ap.add_argument('--out', default='data/policy', help='输出目录（默认 data/policy）')
     ap.add_argument('--merge-source', default='', help='历史回灌：仅补齐主源缺失的条目（按 url 去重）')
-    ap.add_argument('--max-items', type=int, default=150, help='单板块上限（默认 150，按日期倒序截断）')
+    ap.add_argument('--max-items', type=int, default=0,
+                    help='单板块留置上限（默认 0 = 不限制，纯增量累积；仅调试时用）')
     ap.add_argument('--dry-run', action='store_true', help='只统计不写文件')
     args = ap.parse_args()
 
@@ -138,10 +139,12 @@ def main():
                 seen.add(o['url'])
                 items.append(o)
                 added += 1
-        # 按日期倒序，同日期保持原顺序；再按上限截断
+        # 按日期倒序，同日期保持原顺序；仅在显式指定上限时才截断
         items.sort(key=lambda x: x.get('date') or '', reverse=True)
-        truncated = max(0, len(items) - args.max_items)
-        items = items[:args.max_items]
+        truncated = 0
+        if args.max_items and args.max_items > 0:
+            truncated = max(0, len(items) - args.max_items)
+            items = items[:args.max_items]
 
         # 完整性校验：url 唯一、日期非空
         urls = [it['url'] for it in items if it['url']]

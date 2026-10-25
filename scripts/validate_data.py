@@ -28,8 +28,9 @@ from datetime import datetime
 
 BOARDS = ('whitehouse', 'congress', 'agencies')
 SCHEMA = 1
-# 分板块留置上限，须与 scripts/fetch_policy.py 的 MAX_OVERRIDES 保持一致
-MAX_ITEMS = {'whitehouse': 300, 'congress': 400, 'agencies': 200}
+# 留置策略：纯增量累积，不设留置上限（与 fetch_policy.py 的合并逻辑一致）。
+# 此处不做条数上限校验——存储层不截断，校验层就不该报「超过上限」的告警。
+# 若需控制页面传输体积，应在页面端只渲染前 N 条，而不是限制存储。
 
 # 固定领域词表（与定时任务 prompt 中的约定保持一致）
 DOMAINS = {
@@ -76,9 +77,6 @@ def check_board(path, board):
         return
     if d.get('count') != len(items):
         err('%s：count=%r 与实际 %d 不符' % (board, d.get('count'), len(items)))
-    if len(items) > MAX_ITEMS.get(board, 300):
-        warn('%s：条目 %d 条，超过上限 %d（脚本会自动截断）'
-             % (board, len(items), MAX_ITEMS.get(board, 300)))
 
     urls, dates, no_cn, no_dom, bad_dom, brief_issues = set(), [], 0, 0, [], 0
     for i, it in enumerate(items):
