@@ -1951,8 +1951,9 @@
     color: var(--us-brass-2);
   }
   #view-us .us-head .subdesc {
-    /* 505px ≈ 37 个全角字：让换行落在第一个句号之后，避免把「规则／同时」拆到两行 */
-    grid-area: desc; text-align: left; margin: 0; max-width: 505px;
+    /* 492px：实测「…规则文本；」正好 486px，再加一档就会把「以」拖到行尾，
+       所以取 492 让换行落在分号之后 */
+    grid-area: desc; text-align: left; margin: 0; max-width: 492px;
     font-size: 13.5px; line-height: 2.05; color: rgba(242, 238, 230, .6); letter-spacing: .01em;
   }
   /* 右侧美国轮廓（本土 + 阿拉斯加 + 夏威夷）：只描边、压到极淡，当地理底纹用 */
@@ -2718,7 +2719,7 @@
         <a class="back" href="#" id="back-link" data-page-node-id="wYwYrLJ9wV3MMsHdKxuCMf">← 返回门户</a>
         <h1 data-page-node-id="0aXIYYCSgkXDH1d7BQ63xc">美国政治动态跟踪</h1>
         <div class="suben" data-page-node-id="bN8N7zD31RHghxVAHQyD97">US Politics · Policy Collection</div>
-        <p class="subdesc" data-page-node-id="OmLGlP2z40vNmS0ktZTHcq">以国际关系研究与金融分析为视角，跟踪白宫行政行动、国会立法与独立机构规则。同时收录联邦选举与关键日程。</p>
+        <p class="subdesc" data-page-node-id="OmLGlP2z40vNmS0ktZTHcq">定时跟踪美国白宫、国会与独立机构的政策动态，覆盖行政令、法案与规则文本；以国际关系研究与金融分析双重视角，分析政策取向、决策节奏及其市场影响。</p>
       </div>
     </div>
 
