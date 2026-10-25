@@ -1933,7 +1933,9 @@
       "desc   rail"
       "stats  stats";
     column-gap: 60px;
-    padding-top: 52px; padding-bottom: 0;
+    /* 抬头文字整体上移 14px（52 → 38）；减少的部分由读数带的 margin-top 补回，
+       深色底板的顶边与底边位置因此保持不变 */
+    padding-top: 38px; padding-bottom: 0;
   }
   #view-us .us-head .back {
     grid-area: back; justify-self: start; align-self: center;
@@ -1986,7 +1988,8 @@
   /* ---------- 读数带（档案抬头底部） ---------- */
   #view-us .us-stats {
     grid-area: stats; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-top: 42px; border-top: 1px solid rgba(201, 168, 106, .26);
+    /* 42 + 14：吸收抬头 padding-top 减少的 14px，读数带与底板底边保持原位 */
+    margin-top: 56px; border-top: 1px solid rgba(201, 168, 106, .26);
   }
   #view-us .uss-cell { padding: 18px 20px 20px 0; border-right: 1px solid rgba(242, 238, 230, .1); }
   #view-us .uss-cell:last-child { border-right: none; }
@@ -2280,10 +2283,10 @@
     #view-us .grid .card .visual { width: 68px; height: 68px; top: 18px; right: 18px; }
   }
   @media (max-width: 700px) {
-    #view-us .us-head .wrap { padding-top: 34px; }
+    #view-us .us-head .wrap { padding-top: 26px; }
     #view-us .us-head h1 { font-size: 25px; letter-spacing: .03em; }
     #view-us .us-head .subdesc { font-size: 12.5px; line-height: 1.95; }
-    #view-us .us-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 30px; }
+    #view-us .us-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 38px; }
     #view-us .uss-v { font-size: 25px; }
     #view-us .col-head .ch-cn { font-size: 20px; }
     #view-us .us-cal { border-radius: 2px; }
