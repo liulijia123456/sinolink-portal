@@ -10,6 +10,8 @@
 默认：输入 /tmp/ne110.json，输出 /tmp/us-map.svg。
 版式：**同一投影、同一比例，按真实地理方位摆放**——阿拉斯加在西北、夏威夷在西南、
 本土居中偏东；阿留申群岛一直延伸到西经 170° 之外，若嫌地图太宽可用 --clip-lon 截断。
+加拿大与墨西哥也按同一投影画进来（class="usm-neighbor"），仅作背景；
+整块在北纬 60° 以北的多边形（北极群岛）会被略去，免得压过美国主体。
 输出为 <svg class="us-map" viewBox="0 0 600 380"> + 三条 <path>，仅描边，
 样式（描边色/透明度/尺寸）写在 index.html 的 #view-us .us-head .us-map 里。
 
@@ -87,6 +89,17 @@ def classify(polys):
     return conus, alaska, hawaii
 
 
+def country_polys(data, iso):
+    """取某个国家的全部多边形（MultiPolygon 拆平）。"""
+    out = []
+    for f in data["features"]:
+        if f["properties"].get("ISO_A3") != iso:
+            continue
+        g = f["geometry"]
+        out.extend(g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]])
+    return out
+
+
 def to_d(rings):
     return " ".join("M" + " ".join("%.1f %.1f" % (x, y) for x, y in r) + "Z" for r in rings)
 
@@ -143,7 +156,33 @@ def main():
               ("alaska", fit(alaska_p, AK_SCALE, _center(alaska_p))),
               ("hawaii", fit(hawaii_p))]
 
-    body = "\n".join('  <path class="usm-%s" d="%s"/>' % (k, to_d(v)) for k, v in groups)
+    # 加拿大 / 墨西哥：同一投影、同一比例，画在画布外面的部分自然被 SVG 视口裁掉，
+    # 只保留与画布相交的多边形，既省字节又刚好露出「北美一角」
+    def fit_neighbor(polys_):
+        out = []
+        for poly in polys_:
+            ring = poly[0]
+            # 整块都在北纬 60° 以北的多边形（加拿大北极群岛）直接略去：
+            # 它们只是背景，留着会把美国的主体压下去
+            if min(p[1] for p in ring) > 60:
+                continue
+            pts = [((x * s + ox), (y * s + oy)) for x, y in (fn(lo, la) for lo, la in ring)]
+            if not pts:
+                continue
+            nxs = [p[0] for p in pts]
+            nys = [p[1] for p in pts]
+            if max(nxs) < -20 or min(nxs) > VB_W + 20 or max(nys) < -20 or min(nys) > VB_H + 20:
+                continue
+            pts = rdp(pts, 0.6)
+            if len(pts) > 2:
+                out.append(pts)
+        return out
+
+    neighbors = fit_neighbor(country_polys(data, "CAN")) + fit_neighbor(country_polys(data, "MEX"))
+
+    body = "\n".join(
+        ['  <path class="usm-neighbor" d="%s"/>' % to_d(neighbors)]
+        + ['  <path class="usm-%s" d="%s"/>' % (k, to_d(v)) for k, v in groups])
     svg = ('<svg class="us-map" viewBox="0 0 %.0f %.0f" xmlns="http://www.w3.org/2000/svg" '
            'aria-hidden="true" focusable="false">\n%s\n</svg>\n') % (VB_W, VB_H, body)
     open(OUT, "w", encoding="utf-8").write(svg)
