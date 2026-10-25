@@ -1094,30 +1094,6 @@
   .col-head { display: flex; align-items: baseline; gap: 10px; margin: 4px 0 14px; }
   .col-head .ch-cn { font-size: 16px; font-weight: 700; color: var(--text-light); padding-left: 10px; border-left: 3px solid var(--gold-light); line-height: 1.3; }
   .col-head .ch-en { font-size: 11px; color: var(--muted-light); letter-spacing: 0.05em; white-space: nowrap; }
-  /* 板块级「立即更新」按钮组：右侧对齐，含结果提示与云端抓取入口 */
-  .col-head .bd-upd { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
-  .bd-upd-btn {
-    display: inline-flex; align-items: center; gap: 5px; font-family: inherit;
-    font-size: 12px; font-weight: 600; color: var(--accent-light);
-    background: var(--card-light); border: 1px solid var(--accent-light); border-radius: 8px;
-    padding: 0 12px; line-height: 27px; cursor: pointer; white-space: nowrap;
-    transition: background .15s ease, color .15s ease;
-  }
-  .bd-upd-btn:hover { background: var(--accent-light); color: #fff; }
-  .bd-upd-btn:disabled { opacity: .55; cursor: default; background: var(--card-light); color: var(--accent-light); }
-  .bd-upd-btn .bd-upd-ico { font-size: 13px; display: inline-block; }
-  .bd-upd-btn.is-busy .bd-upd-ico { animation: bdSpin .8s linear infinite; }
-  @keyframes bdSpin { to { transform: rotate(360deg); } }
-  .bd-upd-note { font-size: 11.5px; color: var(--muted-light); white-space: nowrap; }
-  .bd-upd-note.ok { color: #2f7a4f; font-weight: 600; }
-  .bd-upd-note.off { color: #9a6b12; font-weight: 600; }
-  .bd-upd-src { font-size: 11.5px; color: var(--muted-light); text-decoration: none; border-bottom: 1px dashed #c2ccd9; white-space: nowrap; }
-  .bd-upd-src:hover { color: var(--accent-light); border-bottom-style: solid; }
-  @media (max-width: 700px) {
-    .col-head { flex-wrap: wrap; }
-    .col-head .bd-upd { margin-left: 0; width: 100%; justify-content: flex-start; }
-  }
-
   /* 大事日历（美国政治板块）：月历网格 */
   .us-cal {
     background: var(--card-light); border: 1px solid var(--border-light); border-radius: var(--radius);
@@ -2280,16 +2256,6 @@
   #view-us .grid .card:hover::before { width: 100%; }
   #view-us .grid .card .meta { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
   #view-us .grid .card .num { font-family: var(--us-serif); font-size: 21px; font-weight: 600; color: var(--us-brass); line-height: 1; }
-  #view-us .grid .card .freq {
-    font-family: var(--us-mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
-    color: rgba(11, 23, 36, .58); border: 1px solid var(--us-line); border-radius: 2px; padding: 3px 9px;
-  }
-  /* 条数徽标紧跟分类标签，避开右上角图版 */
-  #view-us .grid .card .us-badge {
-    font-family: var(--us-mono); font-size: 10px; letter-spacing: .06em;
-    color: var(--us-blue); background: var(--us-blue-2); border: 1px solid rgba(47, 111, 184, .18);
-    border-radius: 2px; padding: 3px 9px; white-space: nowrap;
-  }
   #view-us .grid .card .title {
     font-family: var(--us-serif); font-size: 23px; font-weight: 600; letter-spacing: .04em;
     color: #16212e; margin-bottom: 5px; padding-right: 128px;
@@ -2835,7 +2801,7 @@
                 <path d="M50 66 L50 59 A5 5 0 0 1 60 59 L60 66" stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="nbbM6D7ZGtthHFCjtzhS1A"></path>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="F2gQsyPCFeyqVHtwc247FZ"><span class="num" data-page-node-id="6ugNjdt65c6DCNnQAm4E0d">01</span><span class="freq" data-page-node-id="uNpscH1PpAW4mxx8bZn7Iu">白宫</span><span class="us-badge" data-us-count="whitehouse" data-page-node-id="XctYgY0KAlmPejK1qqAj3W">150 条</span></div>
+            <div class="meta" data-page-node-id="F2gQsyPCFeyqVHtwc247FZ"><span class="num" data-page-node-id="6ugNjdt65c6DCNnQAm4E0d">01</span></div>
             <div class="title" data-page-node-id="JCNwpWEwfhTHFbQfpBKLH9">白宫政策</div>
             <div class="title-en" data-page-node-id="AH6RWD3lv53PYGRC6uFLK0">White House Policy</div>
             <p class="desc" data-page-node-id="ZzOR9HtYAagq4ZZlDuS0bU">收集总统行政令、总统备忘录、公告,总统行政办公室（EOP）各组成机构（OMB、USTR、OSTP 等）文件,以及内阁各部发布的规则与拟议规则。</p>
@@ -2872,7 +2838,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="aGCXuJKrOcSN2YOepQfQ35"><span class="num" data-page-node-id="2NxyvOO5LO2FZEErnDwBGZ">02</span><span class="freq" data-page-node-id="Qgl9E0i0e5IDt1DQzla6Uz">国会</span><span class="us-badge" data-us-count="congress" data-page-node-id="5GWZFMT6BFG0Da5XPZYR8H">118 条</span></div>
+            <div class="meta" data-page-node-id="aGCXuJKrOcSN2YOepQfQ35"><span class="num" data-page-node-id="2NxyvOO5LO2FZEErnDwBGZ">02</span></div>
             <div class="title" data-page-node-id="jYiKzjkyZNfdyPWWiKmUzS">国会政策</div>
             <div class="title-en" data-page-node-id="16URTQ9tvqGJCO3mX9G6QH">Congressional Policy</div>
             <p class="desc" data-page-node-id="ud55BFjrDFjCm9Knyp4AFi">收集国会法案、决议、听证与拨款文本,按立法进度与议题归类梳理。</p>
@@ -2907,7 +2873,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="HeYUR3GZAKzUILNBKpzOAQ"><span class="num" data-page-node-id="ZljE6Dmgc8jY7KATiR1BMY">03</span><span class="freq" data-page-node-id="W485Pq7LJZpCRRecJpuhGX">独立机构</span><span class="us-badge" data-us-count="agencies" data-page-node-id="CEVbeCFp1ryC7XpUsnh9rL">55 条</span></div>
+            <div class="meta" data-page-node-id="HeYUR3GZAKzUILNBKpzOAQ"><span class="num" data-page-node-id="ZljE6Dmgc8jY7KATiR1BMY">03</span></div>
             <div class="title" data-page-node-id="U47Qj07ztkD7vRhdcGVuXm">独立机构政策</div>
             <div class="title-en" data-page-node-id="DRkSynO4mZQltuRCSy4T9h">Independent Agencies</div>
             <p class="desc" data-page-node-id="YdoBep2Gi0Aao3c4tjgtpS">收集独立监管与决策机构发布的政策文本与规则决定,涵盖美联储（Federal Reserve）与联邦通信委员会（FCC）。</p>
@@ -2933,7 +2899,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">04</span><span class="freq" data-page-node-id="kMQiigGWo55mMpXqNIQa9l">选举</span><span class="us-badge" data-us-count="election" data-page-node-id="Qv87HhXIPAiDAO88NgDHC0">29 条</span></div>
+            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">04</span></div>
             <div class="title" data-page-node-id="QY6unKrZzP5hPvvoyqbEbv">选举动态</div>
             <div class="title-en" data-page-node-id="xR2OZQtuAKLTlVcQTMlHrD">Election Dynamics</div>
             <p class="desc" data-page-node-id="07SRDV3ExCo0cyzRPrNFOJ">收集选举周期内的初选与大选日程、候选人议题主张与竞选纲领、关键州民调表现,按时间线归档。</p>
@@ -3123,13 +3089,6 @@
         <div id="board-review" class="board-review" data-page-node-id="Hys9SceSTNvRIGmzXmvtPh"><div class="rvw-card wk" data-page-node-id="CvPpoqN1v0zRCj2WGtTjnD"><div class="rvw-head" data-page-node-id="HoBXscHG4SyFVI2FSFD27g"><span class="rvw-tag" data-page-node-id="Y6C8zgFHs2GGMHn2mXMqRG">每周研判</span><span class="rvw-period" data-page-node-id="Rfbsf7AXSEqiP8BCEAO2s4">2026 年第 41 周（10 月 4 日 – 10 月 10 日）</span><span class="rvw-at" data-page-node-id="FhJxOV5KLbFzLAGIeWTlHC">更新于 2026-10-10（周六）</span></div><div class="rvw-stats" data-page-node-id="bVoD5BuwksUzy4oMgmprQ7"><span class="rvw-stat" data-page-node-id="Pmy76q3riIYZ8CmhCCwSyr">本期收录：<b data-page-node-id="IIhpbsors45Mnth0S80FQ4">73 条</b></span><span class="rvw-stat" data-page-node-id="wjrfXs7yS8NIF3BcvkBTJ3">结构：<b data-page-node-id="TCbpyQMgQGA3klQnWDhQDA">规则 37 · 拟议规则 30 · 总统文件 2</b></span><span class="rvw-stat" data-page-node-id="hoGGISJgeqZS9dIjowmbpQ">高频部门：<b data-page-node-id="JgJAwFVnY6thzHB7Eo1BM1">交通 19 · 卫生 12 · 商务 9 · 国土安全 9</b></span><span class="rvw-stat" data-page-node-id="tGCrPHqVj0ez4V2KCH44Ie">重点简报：<b data-page-node-id="gKw02zIGRiEzSwtqshtkbf">7 条</b></span></div><div class="rvw-toggle-wrap" data-page-node-id="cWnFsdDi9d4qGQ1MwDFHZC"><button type="button" class="rvw-toggle" aria-expanded="false" data-page-node-id="u6j3jBpLsswiJWtkvTC6G8"><span class="rvw-toggle-t" data-page-node-id="VsPfBij8i1xtSungQm7JDz">展开研判</span><i class="chev" data-page-node-id="PZC4zvO5fhg2xTZOH2TMDP">▾</i></button></div><div class="rvw-detail" hidden="" data-page-node-id="EUtGAlwFMFFgTRPzCFWntA"><div class="rvw-body" data-page-node-id="VGRIBjebkRQFK2pJbTeEYq"><div class="rvw-h" data-page-node-id="SIkUHFRYxONkWnfwmlOOPi">【本周主线】</div><p data-page-node-id="8TFVXyLYXaEsov15CLihBc"><span class="rvw-lead" data-page-node-id="NO1TiZnPONOEthn2FCKFrI">对华关税进入常态化管理：</span>USTR 同日发布 301 条款行动延续通告<a href="#note-50" class="rvw-ref" data-ref="50" title="定位到下方对应政策条目" data-page-node-id="ZEDNxmRfZz7ghHUbr77Mqp">§</a>与产品排除一致性修正通告<a href="#note-49" class="rvw-ref" data-ref="49" title="定位到下方对应政策条目" data-page-node-id="b6FHW22krvUO6yAOdRLPMV">§</a>，并就美墨加协定（USMCA）运行情况启动公众意见征求与公开听证<a href="#note-73" class="rvw-ref" data-ref="73" title="定位到下方对应政策条目" data-page-node-id="CZf64FnhPxJxxR5fDmQ9FW">§</a>。判断：行动延续是程序性维持，真正的信号在排除修正——关税重心正从「加码施压」转向「排除清单的精细化管理」，对被纳入排除通道的机械、电子、农产品链条是确定性改善；USMCA 复审与 301 排除并行，指向下一阶段贸易政策的主战场是「存量协定重谈」而非新壁垒。</p><p data-page-node-id="hwQBU0J86iG6hYMe28qqvN"><span class="rvw-lead" data-page-node-id="FzCHFKCYBLE0ymDCBzsWVC">对欧战线开辟：</span>USTR 就欧盟碳边境调节机制（CBAM）及扩围提案对美国贸易的影响征求公众意见<a href="#note-31" class="rvw-ref" data-ref="31" title="定位到下方对应政策条目" data-page-node-id="HLvdolSgXgiEfLBKCDOLnV">§</a>，系美方首次系统性评估该机制对美出口的冲击。判断：这是反制或效仿的前置程序，跨大西洋碳贸易摩擦概率上升，出口欧盟的高碳行业（钢铝、化工、水泥）需提前评估合规与成本敞口。</p><p data-page-node-id="Ia1pAi2IhS07uVSuQPEYhI"><span class="rvw-lead" data-page-node-id="CSrALZf7IVRidUhwFVvnM8">小额贸易征管收紧：</span>CBP 拟修改 2500 美元以下低值货物非正式报关申报要求、新设邮路电子报关类别并调整保证金<a href="#note-46" class="rvw-ref" data-ref="46" title="定位到下方对应政策条目" data-page-node-id="isRtFqoXrGGW2lCcDrzgWS">§</a>。判断：这是针对跨境电商小额包裹的数据与征管补漏，方向是抬高合规成本、堵住免税套利，对低价直邮模式构成趋势性利空，而非一次性扰动。</p><p data-page-node-id="v2wC34Mtm2k72GcGAXBAm8"><span class="rvw-lead" data-page-node-id="msXUIjniQGQYXrrHFDWhvy">数字资产监管边际松绑：</span>FinCEN 撤回拟将可兑换虚拟货币混币列为首要洗钱关注交易类别的特别措施<a href="#note-62" class="rvw-ref" data-ref="62" title="定位到下方对应政策条目" data-page-node-id="ENBKLjGjn2xHPM83xCt0UC">§</a>，同日财政部另撤回数字资产交易相关要求<a href="#note-61" class="rvw-ref" data-ref="61" title="定位到下方对应政策条目" data-page-node-id="oMTPHUwanFftGGSB37luYT">§</a>。判断：两案同撤表明数字资产合规基调从「预设违法推定」转向「基于风险的可监管」，混币与链上服务合规成本趋势性下降。</p><p data-page-node-id="GjECYThFq4DYedX4d75WKE"><span class="rvw-lead" data-page-node-id="FyI32daauGgkSnnwVgKeHr">能源临时纾困：</span>总统签署柴油燃料紧急税收减免行政令<a href="#note-20" class="rvw-ref" data-ref="20" title="定位到下方对应政策条目" data-page-node-id="Y6AQfPu2dScFprDNEIMQQa">§</a>。判断：属供给冲击驱动的临时性减税，利好运输、农业燃料成本短期回落，但无结构意义，不应外推。</p><div class="rvw-h" data-page-node-id="xhheHLy5gqveZo3718ts6A">【信号与噪声】</div><p data-page-node-id="vwC92egLbhLrkWy4NBN9yA">本周 73 条中适航指令、航路调整、渔业配额、安全区类条目合计过半，均属常规技术性监管，不构成独立交易线索；食品追溯执法政策指南草案<a href="#note-29" class="rvw-ref" data-ref="29" title="定位到下方对应政策条目" data-page-node-id="JPBszfAffI5RtAqhjq1klC">§</a>与 FDA 钠减量草案<a href="#note-10" class="rvw-ref" data-ref="10" title="定位到下方对应政策条目" data-page-node-id="pPbAL99HI8FtkyrYvTW9QH">§</a>值得食品饮料板块跟踪，其余噪声可忽略。</p><div class="rvw-h" data-page-node-id="14Rnmtg0anT85WP6cydQzO">【总体研判】</div><p class="rvw-verdict" data-page-node-id="T3aa5iEaR4CGlruwCeZmcs">本周最有信息量的是三组方向性信号：其一，对华关税排除管理常态化叠加 USMCA 复审，贸易不确定性边际下降，受益排序为对美出口敞口高的机械电子与农业；其二，低值货物征管改革是小额跨境电商商业模式层面的利空，平台与物流企业的合规投入将系统性上升；其三，FinCEN 连续撤回数字资产拟议措施，与行政分支对加密行业的友好姿态一致，方向性利好链上合规服务。能源、医疗类条目（柴油减免<a href="#note-20" class="rvw-ref" data-ref="20" title="定位到下方对应政策条目" data-page-node-id="JOFduQCgqSKLuVUd70azIb">§</a>、医保覆盖透明度<a href="#note-60" class="rvw-ref" data-ref="60" title="定位到下方对应政策条目" data-page-node-id="YFwStdBDIz2v0HbK7iy2q8">§</a>）单独看均属次要扰动。</p></div><div class="rvw-note" data-page-node-id="W6ejMDeoOvGcBMBYsLz8hT">每周研判覆盖上一个周日至周六窗口的联邦公报条目，每周六更新；正文中「§」角标可定位到下方对应政策条目。</div></div></div><div class="rvw-card mo" data-page-node-id="3cM0xOlv5Q3eS5wJG1fLea"><div class="rvw-head" data-page-node-id="wT1k9jDJGfEMAqvinCPFZg"><span class="rvw-tag" data-page-node-id="jRQu6MJLZFw2yeeP5Swj3w">每月研判</span><span class="rvw-period" data-page-node-id="shKiHXj6thNihe7A0z7LWH">2026 年 10 月 · 第 1 期（月中滚动）</span><span class="rvw-at" data-page-node-id="6yuk4PLgAnBrgq2Ezu0v2X">更新于 2026-10-13</span></div><div class="rvw-stats" data-page-node-id="PwcLKs1f5GlDWiFYdldvRe"><span class="rvw-stat" data-page-node-id="kqFXE3od99aSOY3aNmth7F">本期收录：<b data-page-node-id="OYxxxF5MLCHBAA4ABlisj1">112 条（9 月 25 日起）</b></span><span class="rvw-stat" data-page-node-id="b6wt0e2UUzYHkRGiIz358V">结构：<b data-page-node-id="kkkkacohSzUp7N4iNKvrTV">规则 58 · 拟议规则 36 · 总统文件 7</b></span><span class="rvw-stat" data-page-node-id="14fi9OHDWDkk4cLDVQ3lSa">高频部门：<b data-page-node-id="Ip485Ea9odheqaV8k0eDWe">交通 25 · 国土安全 16 · 商务 15 · 卫生 14</b></span><span class="rvw-stat" data-page-node-id="TTQ0BkcFPOhvVqLBJHg8nz">重点简报：<b data-page-node-id="m13KoqRk2geEoDBcyp1IvP">11 条</b></span></div><div class="rvw-toggle-wrap" data-page-node-id="IiGsEAlYIxs1ZHFqGLyigX"><button type="button" class="rvw-toggle" aria-expanded="false" data-page-node-id="fYG3epvF6awHKTgzkkqzu6"><span class="rvw-toggle-t" data-page-node-id="B2Uo8oATUOhNrtGfGicvJu">展开研判</span><i class="chev" data-page-node-id="zI7lmeITZ7mQi2zOJeoAEe">▾</i></button></div><div class="rvw-detail" hidden="" data-page-node-id="MIXEJQSBPHzjh0u69ArA9O"><div class="rvw-body" data-page-node-id="FwBSqUISOLUh0jH39QgBiv"><div class="rvw-h" data-page-node-id="Sqq5nmxC0KeP4y2eedeS6p">【月度主线】</div><p data-page-node-id="3I0dbGvKGAoiecLUjzV1sj"><span class="rvw-lead" data-page-node-id="5TZGh9Yb4ui3xw2zdlrwZD">科技政策旗帜确立：</span>10 月 2 日「开启超级智能时代」行政令<a href="#note-93" class="rvw-ref" data-ref="93" title="定位到下方对应政策条目" data-page-node-id="VRDXrd4qRwbqAvSroiwcRg">§</a>将人工智能与算力基础设施置于白宫产业议程首位。判断：这是本周期最重要的单一政策文件，后续联邦采购、电力审批、出口管制都将围绕算力供给展开，AI 算力链（数据中心、电力设备、半导体）的政策确定性显著抬升。</p><p data-page-node-id="Rf9tfUtCvJ02YW1bdPtSnt"><span class="rvw-lead" data-page-node-id="ArXGhj5aU7AL0wOAeKZfwt">药价改革双线合围：</span>卫生与公众服务部推出高效药品定价全球基准（GLOBE）模型<a href="#note-102" class="rvw-ref" data-ref="102" title="定位到下方对应政策条目" data-page-node-id="BPmXUgZpzGWJM1mJzm07Oq">§</a>，财政部、劳工部与卫生与公众服务部联合发布医疗保障覆盖透明度规则<a href="#note-60" class="rvw-ref" data-ref="60" title="定位到下方对应政策条目" data-page-node-id="K8L62EOf0XQDr8KHDoJjnN">§</a>。判断：GLOBE 以 Medicare Part B 通胀返款叠加国际基准推进，口径是「返款」而非「定价」，但方向明确压缩高价药在美溢价空间；覆盖透明度规则同步压实数据披露。美国市场收入占比高的创新药企（尤其 Part B 用药）估值面临政策折价，仿制药与流通端相对受益。</p><p data-page-node-id="ALNP3Pvf6hrvuNgMnPqDPM"><span class="rvw-lead" data-page-node-id="zGEqDfXeDqcEP63YWF4Vci">财政纪律工具启用：</span>OMB 依《1974 年国会预算与扣押控制法》提出合计 8.1 亿美元撤销拨款提案<a href="#note-110" class="rvw-ref" data-ref="110" title="定位到下方对应政策条目" data-page-node-id="wwQUTZE6YtwXLndxm68qAp">§</a>。判断：规模相对联邦预算可忽略，信号意义大于实质——行政分支开始常态化使用撤销工具与国会争夺支出主导权，后续若提案规模升级，受影响部门（商务、教育、卫生、国土安全）的拨款稳定性需纳入观察。</p><p data-page-node-id="j8Eu9kQVJW9foGAMH1ah08"><span class="rvw-lead" data-page-node-id="oRG53E2uepVvugbL0TENyE">供应链与制裁并行：</span>ASPR 就 86 种基本药物的本土及近岸生产发出信息请求<a href="#note-111" class="rvw-ref" data-ref="111" title="定位到下方对应政策条目" data-page-node-id="hqKCRmXBB16UI7jA1aWV5c">§</a>，医药供应链安全议程启动；财政部发布伊朗相关认定<a href="#note-2" class="rvw-ref" data-ref="2" title="定位到下方对应政策条目" data-page-node-id="hRLMzeGEGjYUEudbERrNGS">§</a>与委内瑞拉制裁网络通用许可第 60 号<a href="#note-3" class="rvw-ref" data-ref="3" title="定位到下方对应政策条目" data-page-node-id="t16pf6BMXKddDq48MqodoW">§</a>，并推进 A7 网络次级代理资金转移禁令<a href="#note-74" class="rvw-ref" data-ref="74" title="定位到下方对应政策条目" data-page-node-id="f3NUwuUoNQfmRH4w2kEJvT">§</a>。判断：制裁工具保持高频，能源、航运与代理行网络的合规风险敞口仍在扩张。</p><p data-page-node-id="eRif89DVvzdIsWcgY6i3AY"><span class="rvw-lead" data-page-node-id="I3s6WEnQJxLq7QIQYsLDrg">对华与对欧经贸组合：</span>301 行动延续<a href="#note-50" class="rvw-ref" data-ref="50" title="定位到下方对应政策条目" data-page-node-id="UauKKfak4nw2XFQoprIkjz">§</a>、产品排除修正<a href="#note-49" class="rvw-ref" data-ref="49" title="定位到下方对应政策条目" data-page-node-id="ZMvu403BJb3h9UqwtqBOrp">§</a>、低值货物报关改革<a href="#note-46" class="rvw-ref" data-ref="46" title="定位到下方对应政策条目" data-page-node-id="SGY0aQHVX5CqUA3DJB19Jw">§</a>、欧盟 CBAM 公众意见征求<a href="#note-31" class="rvw-ref" data-ref="31" title="定位到下方对应政策条目" data-page-node-id="y413bE45VvdFzLdSGZROfi">§</a>密集落地。判断：组合特征是「对华排除常态化 + 征管技术性收紧 + 对欧开辟新战场」，贸易政策整体不确定性下移，但对欧碳贸易摩擦是新变量。</p><div class="rvw-h" data-page-node-id="ZyMPhoZEFL1yh5JhWVAOWP">【总体研判】</div><p class="rvw-verdict" data-page-node-id="ju9MT1k2QI6TX2HiNysk4q">本周期白宫政策呈「产业政策进攻、社会监管选择性收缩、财政工具试探」的三线格局。核心判断有三：第一，AI 行政令是主线中的主线，算力与电力基础设施链条应作为政策受益组合持续超配跟踪；第二，药价改革从口号进入可执行规则阶段，GLOBE 模型落地节奏是医药板块最大的单一政策风险，回避美国 Part B 收入占比过高的标的；第三，数字资产监管边际放松（FinCEN 撤回<a href="#note-62" class="rvw-ref" data-ref="62" title="定位到下方对应政策条目" data-page-node-id="vAjwQlMTbsG9AN1HI7pewt">§</a><a href="#note-61" class="rvw-ref" data-ref="61" title="定位到下方对应政策条目" data-page-node-id="g0Rto2N2TFYqi28xBCBNiP">§</a>）与跨境电商征管收紧（低值货物<a href="#note-46" class="rvw-ref" data-ref="46" title="定位到下方对应政策条目" data-page-node-id="YddpZCZpfEFQGgMgz4rNsb">§</a>）一松一紧，代表本届监管取向「松金融、紧实物边控」的一般规律，可外推至后续同类政策。撤销拨款<a href="#note-110" class="rvw-ref" data-ref="110" title="定位到下方对应政策条目" data-page-node-id="Myx82rHZKbbNt6eCzoT7DB">§</a>与 USCMA 复审<a href="#note-73" class="rvw-ref" data-ref="73" title="定位到下方对应政策条目" data-page-node-id="V2YUpb8E3ipwAnDeOxv7Cc">§</a>是下月需重点跟踪的两个升级风险点。</p></div><div class="rvw-note" data-page-node-id="bqStH3nLUykW2ykR6zKB43">每月研判覆盖上一自然月，于次月 1 日发布完整版；本期为创刊滚动版，覆盖数据收录起点 9 月 25 日以来的全部条目；正文中「§」角标可定位到下方对应政策条目。</div></div></div></div>
         <!-- 筛选栏：时间 / 部门 / 类型 / 领域 / 搜索 -->
         <div class="col-head" data-page-node-id="sosnyuGwtkPEmqP9dpgK5x"><span class="ch-cn" data-page-node-id="NnBezQkDlyPaUsLiPdK0ET">政策条目</span><span class="ch-en" data-page-node-id="6KAYPfTRPmyywLBrKiDMw2">Policy Tracker</span>
-          <div class="bd-upd" data-page-node-id="eGxpP8PgW6ko0oAbM5uIQW">
-            <button type="button" class="bd-upd-btn" id="board-update-btn" title="立即从云端数据源拉取本板块最新条目" data-page-node-id="QCSqNREtD57rFoP39qAuAP">
-              <span class="bd-upd-ico" data-page-node-id="aZTKHACCg3qUXfYPmnisVU">↻</span><span class="bd-upd-txt" data-page-node-id="mY5OWAAuaaiH3uSBMyr5Gq">立即更新</span>
-            </button>
-            <span class="bd-upd-note" id="board-update-note" aria-live="polite" data-page-node-id="IwTLJsabuCnAKeFlRmbSiS"></span>
-            <a class="bd-upd-src" id="board-update-src" href="https://github.com/liulijia123456/sinolink-portal/actions/workflows/weekly-update.yml" target="_blank" rel="noopener" title="在 GitHub 上立即运行一次真实抓取（页面为静态托管，无法直连官方接口）" data-page-node-id="J7AmHm3SayGg5hjQboHjMG">触发云端抓取 ↗</a>
-          </div>
         </div>
         <div class="filter-bar" id="filter-bar" data-page-node-id="F4AgDMbOGGfeED7g83za1Y">
           <div class="filter-group" data-page-node-id="u6PeR4lS7CNoLfG8hrkT4C">
