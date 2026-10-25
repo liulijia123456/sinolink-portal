@@ -10,8 +10,9 @@
 默认：输入 /tmp/ne110.json，输出 /tmp/us-map.svg。
 版式：**同一投影、同一比例，按真实地理方位摆放**——阿拉斯加在西北、夏威夷在西南、
 本土居中偏东；阿留申群岛一直延伸到西经 170° 之外，若嫌地图太宽可用 --clip-lon 截断。
-加拿大与墨西哥也按同一投影画进来（class="usm-neighbor"），仅作背景；
-整块在北纬 60° 以北的多边形（北极群岛）会被略去，免得压过美国主体。
+加拿大、墨西哥、中美洲与加勒比（见 NEIGHBORS）也按同一投影画进来（class="usm-neighbor"），
+仅作背景；整块在北纬 60° 以北的多边形（北极群岛）会被略去，免得压过美国主体。
+画布 600×470，缩放按「全部内容」的包围盒求，故美加墨的相对大小与方位都是真实的。
 输出为 <svg class="us-map" viewBox="0 0 600 380"> + 三条 <path>，仅描边，
 样式（描边色/透明度/尺寸）写在 index.html 的 #view-us .us-head .us-map 里。
 
@@ -24,7 +25,7 @@ import sys
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/tmp/ne110.json"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "/tmp/us-map.svg"
 
-VB_W, VB_H = 600.0, 380.0
+VB_W, VB_H = 600.0, 470.0   # 比原来的 380 更高，留给墨西哥 / 中美洲 / 加勒比
 PAD = 10.0                 # 画布内留白
 CLIP_LON = -172.0          # 阿留申群岛截断经度（更西的岛不画，避免地图被拉得过宽）
 AK_SCALE = 1.0             # 阿拉斯加缩放，1.0 = 与本土同比例（真实）
@@ -128,8 +129,17 @@ def main():
     alaska_p = project(alaska, CLIP_LON)
     hawaii_p = project(hawaii)
 
-    # 同一投影、同一比例：先求所有组的整体包围盒，再统一缩放
-    all_pts = [p for g in (conus_p, alaska_p, hawaii_p) for r in g for p in r]
+    # 邻国（加拿大 / 墨西哥 / 中美洲 / 加勒比）也一起投影，用于求「整幅内容」的包围盒
+    NEIGHBORS = ["CAN", "MEX", "BLZ", "GTM", "HND", "SLV", "NIC", "CRI", "PAN",
+                 "CUB", "BHS", "HTI", "DOM", "JAM", "PRI"]
+    nb_p = []
+    for iso in NEIGHBORS:
+        nb_p += [[fn(lo, la) for lo, la in poly[0]]
+                 for poly in country_polys(data, iso)
+                 if min(pt[1] for pt in poly[0]) <= 60]
+
+    # 同一投影、同一比例：按「内容整体」求包围盒，宽度与高度取较小的缩放比，保证都进画布
+    all_pts = [p for g in (conus_p, alaska_p, hawaii_p) for r in g for p in r] + [p for r in nb_p for p in r]
     xs = [p[0] for p in all_pts]
     ys = [p[1] for p in all_pts]
     x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
@@ -158,27 +168,16 @@ def main():
 
     # 加拿大 / 墨西哥：同一投影、同一比例，画在画布外面的部分自然被 SVG 视口裁掉，
     # 只保留与画布相交的多边形，既省字节又刚好露出「北美一角」
-    def fit_neighbor(polys_):
+    def fit_neighbor(rings_):
         out = []
-        for poly in polys_:
-            ring = poly[0]
-            # 整块都在北纬 60° 以北的多边形（加拿大北极群岛）直接略去：
-            # 它们只是背景，留着会把美国的主体压下去
-            if min(p[1] for p in ring) > 60:
-                continue
-            pts = [((x * s + ox), (y * s + oy)) for x, y in (fn(lo, la) for lo, la in ring)]
-            if not pts:
-                continue
-            nxs = [p[0] for p in pts]
-            nys = [p[1] for p in pts]
-            if max(nxs) < -20 or min(nxs) > VB_W + 20 or max(nys) < -20 or min(nys) > VB_H + 20:
-                continue
+        for ring in rings_:
+            pts = [(x * s + ox, y * s + oy) for x, y in ring]
             pts = rdp(pts, 0.6)
             if len(pts) > 2:
                 out.append(pts)
         return out
 
-    neighbors = fit_neighbor(country_polys(data, "CAN")) + fit_neighbor(country_polys(data, "MEX"))
+    neighbors = fit_neighbor(nb_p)
 
     body = "\n".join(
         ['  <path class="usm-neighbor" d="%s"/>' % to_d(neighbors)]
