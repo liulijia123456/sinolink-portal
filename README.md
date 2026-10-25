@@ -171,6 +171,12 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
   秒位仍由 `renderUsClock()` 每秒刷新。≤860px 两行堆叠时，中缝转为横线，呼吸灯落在两行之间，
   每行成为「标签左 / 时间右」。**注意**：`.ucc-block` 的基类含 `flex-direction: column`，
   作用域内必须显式写 `flex-direction: row`，否则三点定位会退化成竖排。
+- 抬头右侧有一幅**美国轮廓**（本土 48 州 + 阿拉斯加 + 夏威夷），只描边不填充，
+  作为地理底纹压在文字之下（`z-index` 介于网格与 `.wrap` 之间）。
+  尺寸按**高度**适配（`height: min(86%, 330px); width: auto`），避免在较矮的抬头里被裁掉；
+  ≤1100px 文字铺满时隐藏。路径由 `scripts/gen_us_map.py` 从 Natural Earth 110m 生成
+  （Albers 投影 + Douglas–Peucker 简化，约 385 点 / 4.6 KB），改投影或留白后重跑即可。
+  该 `<svg>` 是手工新增节点，**不带 `data-page-node-id`**；编辑器重存有可能把它吃掉，改完要核对。
 
 ---
 
