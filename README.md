@@ -135,16 +135,19 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | 样式块 | 作用域 | 用途 |
 | --- | --- | --- |
 | `<style id="v2-portal">` | `#columns` / `#coverage` / `#notes` / `.about` | 首页页头、板块标题、覆盖领域、研报列表 |
-| `<style id="v3-us-board">` | `#view-us` 全部 | 美国政治板块：档案抬头、读数带、日历控制台、议程侧栏、板块卡 |
+| `<style id="v3-us-board">` | `#view-us` 全部 | 美国政治板块：档案抬头、读数带、日历控制台、板块卡 |
 
 改美国板块时注意：
 
 - 新样式一律写在 `#view-us` 作用域内，**不要**改 `.subhead` / `.card` / `.col-head`
   等全局规则 —— 欧洲板块、条目列表、选举动态共用这些类，改动会波及四视图。
 - 新增 DOM 元素时不要带 `data-page-node-id`。
-- 美国板块对外暴露两个接口供组件联动：
-  `window.usCalApi.jumpToDate(key)`（跳月 + 选中日 + 展开当日安排）、
-  `window.usSyncAgenda()`（议程侧栏高度随月历网格同步）。
+- 抬头为单列排版（返回链接 → 标题 → 英文副标 → 说明 → 读数带），日历控制台为
+  单列（时钟 → 工具条 → 月历 → 图例）；原「档案信息栏」「栏目行（SECTION 02）」
+  「未来 30 天议程侧栏」三块已按需求删除，对应的 `.ush-rail` / `.us-eyebrow` /
+  `.uc-agenda` 样式与 `renderAgenda()`、`window.usSyncAgenda()` 一并清除。
+- 美国板块保留一个对外接口：`window.usCalApi.jumpToDate(key)`
+  （跳月 + 选中日 + 展开当日安排），供控制台直接调用。
 - 读数带与徽标的数值来自真实数据，不是硬编码：
   政策条目数读 `data/policy/manifest.json`（`fetch`，`file://` 下静默失败并显示「—」），
   日历节点 / 未来 30 天 / 最近更新读内嵌 `us-cal-data`，选举动态条数读内嵌 `election-data`。
