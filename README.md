@@ -153,6 +153,15 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 - 板块卡徽标（`data-us-count`）与脚注（`data-us-foot`）的数值来自真实数据，不是硬编码，
   由 `renderCardMeta()` 回填：白宫 / 国会 / 独立机构读 `data/policy/manifest.json`
   （`fetch`，`file://` 下静默失败、徽标保持占位），选举动态条数读内嵌 `election-data`。
+- 双时区时钟带（`.uc-clock`）为「克制版」窄条：约 52px 高、单行横排
+  「地区 · 时令 / 时分 / 秒位 / 日期」，美东在左、北京在右，中缝一根发丝线。
+  两个动效都写在伪元素上，不加 DOM：
+  `::before` 是 1px 旋转渐变描边（`@property --ucc-ang` 驱动 conic 渐变 + `mask-composite` 挖空，
+  14s 一圈）；`::after` 是贴下沿的呼吸弥散背光（左右冷/暖两团，`blur(18px)`，7.2s 一次呼吸）。
+  `prefers-reduced-motion: reduce` 下两者停转、定格静态亮度。
+  `@property` 不可用的旧浏览器降级为静止渐变描边，不影响可读性。
+  DOM 里原有的四角框 `.ucc-corner` 与秒进度条 `.ucc-track` 由样式隐藏（节点保留，脚本继续写入）；
+  秒位仍由 `renderUsClock()` 每秒刷新。
 
 ---
 
