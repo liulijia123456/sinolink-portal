@@ -148,9 +148,10 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
   `.uc-agenda` 样式与 `renderAgenda()`、`window.usSyncAgenda()` 一并清除。
 - 美国板块保留一个对外接口：`window.usCalApi.jumpToDate(key)`
   （跳月 + 选中日 + 展开当日安排），供控制台直接调用。
-- 读数带与徽标的数值来自真实数据，不是硬编码：
-  政策条目数读 `data/policy/manifest.json`（`fetch`，`file://` 下静默失败并显示「—」），
-  日历节点 / 未来 30 天 / 最近更新读内嵌 `us-cal-data`，选举动态条数读内嵌 `election-data`。
+- 读数带为三格（日历节点 / 未来 30 天 / 最近更新），数值来自真实数据，不是硬编码：
+  三格读内嵌 `us-cal-data`；板块卡徽标（`data-us-count`）与脚注（`data-us-foot`）
+  读 `data/policy/manifest.json`（`fetch`，`file://` 下静默失败、徽标保持占位）；
+  选举动态条数读内嵌 `election-data`。原「政策条目累计」一格已删除。
 
 ---
 
