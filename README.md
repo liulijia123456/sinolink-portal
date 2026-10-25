@@ -286,18 +286,35 @@ commit message 的净增数按实际入库量填写。
 
 ---
 
-## 7. 周更标准流程（SOP）
+## 7. 更新标准流程（SOP）
 
-每周六执行，对应美东时间周五收盘后。推荐顺序不可颠倒：
+2026-10-25 起按板块拆分为 4 个独立任务，各任务时段错开、互不阻塞
+（详见 §9 定时任务分工）。各任务共用的守门环节：**校验 → 提交 → 推送**。
+
+**政策条目日更**（每日 08:00）：
 
 | 环节 | 动作 | 命令 |
 | --- | --- | --- |
 | A 抓取 | 拉取三板块条目 | `python3 scripts/fetch_policy.py --days 10` |
 | B 补字段 | 新增条目的中文标题与领域 | `edit_items.py patch.json` |
 | C 简报 | 出队列 → 撰写 → 合并 | `brief.py queue` → `brief.py merge` |
-| D 选举/日历 | 民调与事件增量 | 手工改 `election-data`；`cal_update.py merge` |
 | E 校验 | 发布前体检 | `validate_data.py --strict` |
 | F 提交 | 校验通过才推 | `git add -A && git commit && git push` |
+
+**大事日历日更**（每日 07:00）：
+
+| 环节 | 动作 | 命令 |
+| --- | --- | --- |
+| A 体检 | 读现状与缺口 | `cal_update.py check` |
+| B 预填 | 补齐未来 4 个月官方日程 | 写 `scripts/cal_candidates.json` |
+| C 核实 | 检索临时节点与改期 | 官方源核验，不确定的列为「待定」 |
+| D 合并 | 只追加不删除 | `cal_update.py merge cand.json --update-notes` |
+
+**选举动态日更**（每日 10:00）：检索 → 追加 `election-data` 的 items（倒序插入）
+→ 核对评级/席位/民调（确有变化才改）→ 提交。
+
+**政策研判周更**（周六 09:00）：读最近 7 天条目 → 撰写三个板块的 `weekly`
+（每月 1 日另写 `monthly`）→ 直接编辑 `*-overview.json` → 提交。
 
 自检要点：
 
@@ -330,7 +347,38 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 
 ---
 
-## 9. 部署与已知缺口
+## 9. 定时任务分工
+
+2026-10-25 起，原单一「周更」任务拆为 4 个按板块划分的任务。每个任务只负责
+一个数据区块，改动文件互不重叠，时段错开，互不阻塞。
+
+| 任务 | 频率 | 负责区块 | 改动文件 |
+| --- | --- | --- | --- |
+| 大事日历日更 | 每日 07:00 | `us-cal-data` | `index.html`（日历块） |
+| 政策条目日更 | 每日 08:00 | 三个政策子板块 | `data/policy/*-items.json` |
+| 选举动态日更 | 每日 10:00 | `election-data` | `index.html`（选举块） |
+| 政策研判周更 | 周六 09:00 | 周/月研判 | `data/policy/*-overview.json` |
+
+**分工原则**：
+
+- **按数据区块拆，不按步骤拆**。抓取与译名/简报同属政策板块，合成一个任务；
+  日历与选举各有独立的数据源与核实逻辑，各自成任务。
+- **发布守门内嵌在各任务**，不做独立发布任务：每个任务结束前自行
+  `validate_data.py --strict` → `git commit` → `git push`，校验不通过就不提交。
+- **日历日更靠规则化预填，不靠每日检索**。FOMC、BLS、BEA、OPM 联邦假日
+  都提前一年公布全年日程，日更的核心是滚动补齐未来 4 个月窗口 + 核实临时变更。
+  官方源：`federalreserve.gov/monetarypolicy/fomccalendars.htm`、
+  `bls.gov/schedule/{年}/home.htm`、`bea.gov/news/schedule`、
+  `opm.gov/.../federal-holidays/holidays.ics`。
+- **`monthly` 研判只在每月 1 日更新**，其余周六只更新 `weekly`。
+- **选举动态临近选举日（2026-11-03）后需改版**（结果版图、第 120 届国会构成），
+  届时先确认方案再改。
+
+原「国金门户 · 美国政策周更抓取」任务已 PAUSED，其职责由上述 4 个任务覆盖。
+
+---
+
+## 10. 部署与已知缺口
 
 **部署**：`main` 分支 push 后 GitHub Pages 自动重建，无需其他动作。
 回滚用 `git revert <sha>`（优先）或 `git checkout <sha> -- <file>`，
@@ -348,7 +396,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 3. **`scripts/gen_europe_map.py` 缺失**。`index.html` 的欧洲地图注释引用了它，
    仓库中无此文件，地图轮廓目前只能手工维护。
 4. **地缘局势 / 热点事件两个专栏无数据管线**，按钮无 `data-enter`，是占位。
-5. **`.workbuddy/` 未加入 `.gitignore`**，提交时注意不要带上工作记忆文件。
+5. **`.workbuddy/` 已加入 `.gitignore`**（2026-10-25 补），工作记忆与任务归档不再入库。
 6. **`github自动更新部署包.zip`（263 KB）仍被版本控制跟踪**，内容已被仓库文件超越，
    建议归档到 `docs/` 或移出仓库。
 7. **欧洲板块无数据源**：四张卡片为纯静态描述，接入抓取前需先定义
@@ -356,7 +404,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 
 ---
 
-## 10. 编码约定
+## 11. 编码约定
 
 - 脚本一律 `#!/usr/bin/env python3` + `# -*- coding: utf-8 -*-`，
   模块 docstring 写清用途、用法、退出码；只依赖标准库。
