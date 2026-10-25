@@ -27,6 +27,7 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else "/tmp/us-map.svg"
 
 VB_W, VB_H = 660.0, 470.0   # 比原来的 380 更高，留给墨西哥 / 中美洲 / 加勒比
 PAD = 10.0                 # 画布内留白
+DC_LON, DC_LAT = -77.0369, 38.9072   # 华盛顿特区
 CLIP_LON = -172.0          # 阿留申群岛截断经度（更西的岛不画，避免地图被拉得过宽）
 AK_SCALE = 1.0             # 阿拉斯加缩放，1.0 = 与本土同比例（真实）
 
@@ -182,6 +183,11 @@ def main():
     body = "\n".join(
         ['  <path class="usm-neighbor" d="%s"/>' % to_d(neighbors)]
         + ['  <path class="usm-%s" d="%s"/>' % (k, to_d(v)) for k, v in groups])
+
+    # 华盛顿特区：一枚金色呼吸点（外圈晕 + 核心点）
+    dcx, dcy = (v * s + o for v, o in zip(fn(DC_LON, DC_LAT), (ox, oy)))
+    body += ('\n  <circle class="usm-dc-glow" cx="%.1f" cy="%.1f" r="7"/>'
+             '\n  <circle class="usm-dc" cx="%.1f" cy="%.1f" r="2.4"/>') % (dcx, dcy, dcx, dcy)
     svg = ('<svg class="us-map" viewBox="0 0 %.0f %.0f" xmlns="http://www.w3.org/2000/svg" '
            'aria-hidden="true" focusable="false">\n%s\n</svg>\n') % (VB_W, VB_H, body)
     open(OUT, "w", encoding="utf-8").write(svg)
