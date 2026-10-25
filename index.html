@@ -2379,7 +2379,7 @@
   </header>
 
   <!-- Data columns -->
-  <section class="section" id="columns" style="padding-top: 80px;" data-page-node-id="jmx9XnvCSGehbW6nlzVXbk" hidden="">
+  <section class="section" id="columns" style="padding-top: 80px;" data-page-node-id="jmx9XnvCSGehbW6nlzVXbk">
     <div class="wrap" data-page-node-id="8rV7ks910LoqkpoEpYpP52">
       <div class="sec-head" data-page-node-id="CjuHCEJuFWQsC1O4BCjKnt">
         <span class="sh-idx rv in" style="--d: 0ms;" data-page-node-id="zSCHseVTRtlvVk8O9IblBP">01</span>
@@ -2624,7 +2624,7 @@
   </section>
 
   <!-- Coverage -->
-  <section class="section" id="coverage" data-page-node-id="R8lZRNwb0BiuixvwtnfonP" hidden="">
+  <section class="section" id="coverage" data-page-node-id="R8lZRNwb0BiuixvwtnfonP">
     <div class="wrap" data-page-node-id="vJQGpDuFoBHVEGbuNjVblH">
       <div class="sec-head" data-page-node-id="NOJf0CGjEOsbU6gSOuDBAj">
         <span class="sh-idx" data-page-node-id="ySSrGyqgJS74Rk7QnWNvX1">02</span>
@@ -2641,7 +2641,7 @@
   </section>
 
   <!-- Research notes -->
-  <section class="section" id="notes" data-page-node-id="S23RGLkPqpoWg8uQv5QkY0" hidden="">
+  <section class="section" id="notes" data-page-node-id="S23RGLkPqpoWg8uQv5QkY0">
     <div class="wrap" data-page-node-id="gZrVxJ7WvTOPRHvI6O9OBq">
       <div class="sec-head" data-page-node-id="7to1w9OXbcTQTQdBjt90WV">
         <span class="sh-idx" data-page-node-id="IQFddbttBZEChM1qnTe2Ln">03</span>
@@ -2657,7 +2657,7 @@
   </section>
 
   <!-- About -->
-  <footer class="about" id="about" data-page-node-id="SOKYpuJJHkTxHZcRmq0AeE" hidden="">
+  <footer class="about" id="about" data-page-node-id="SOKYpuJJHkTxHZcRmq0AeE">
     <div class="wrap about-inner" data-page-node-id="ss88tYd3b016KqNA38cWdn">
       <div class="ab-label rv" style="--d: 0ms;" data-page-node-id="fYGsMjDp1C3fZUafy5D7gs">关于本门户</div>
       <p class="rv" style="--d: 0ms;" data-page-node-id="kqhEFXaCbpzMMSaJqJA2iH">关于本门户的说明文字:研究团队定位、研究主线、数据更新机制与成员署名,后续在此补充。</p>
@@ -5755,6 +5755,16 @@
         else if (h === '#eu') showEu();
         else if (h === '#election') showElection();
         else if (h.indexOf('#board-') === 0) showBoard(h.slice(7));
+        else {
+          // 回到门户：只恢复显隐与标题，不滚动，页内锚点仍照常跳转。
+          // 这一步兼作自愈——若 HTML 被外部编辑器把 hidden 写死在门户区块上，加载时照样能还原。
+          usView.hidden = true;
+          boardView.hidden = true;
+          if (electionView) electionView.hidden = true;
+          if (euView) euView.hidden = true;
+          portalEls.forEach(function (el) { el.hidden = false; });
+          document.title = '国金证券 政策与战略';
+        }
       }
       window.addEventListener('hashchange', applyHash);
       applyHash();
