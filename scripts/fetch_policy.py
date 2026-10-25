@@ -349,10 +349,23 @@ def fetch_whitehouse(since):
     return items
 
 
+def current_congress(year=None):
+    """按年份推算当前国会届次（第 1 届为 1789—1791，每届两年）。
+
+    用于过滤往届法案：congress.gov 的 updateDate 会因元数据回填而变动，
+    只按 updateDate 过滤会把往届旧案当成当日新条目收进来（实测混入第 102—118 届
+    共 35 条，最早可追溯到 1991 年）。
+    """
+    y = year or datetime.now(timezone(timedelta(hours=8))).year
+    return (y - 1789) // 2 + 1
+
+
 def fetch_congress(since):
-    """国会政策：congress.gov API 最新法案/决议动态。"""
+    """国会政策：congress.gov API 最新法案/决议动态（仅当前届次）。"""
     items = []
     offset = 0
+    cur_cg = current_congress()
+    skipped_old_cg = 0
     # 最多翻 3 页（150 条），按 updateDate 本地过滤；DEMO_KEY 限流，控制请求数
     for page in range(3):
         params = {
@@ -371,6 +384,11 @@ def fetch_congress(since):
             upd = (b.get('updateDate') or '')[:10]
             if upd and upd < since:
                 reached_old = True
+                continue
+            # 只收当前届次：往届法案的 updateDate 也可能落在窗口内，
+            # 但那是元数据回填，不是本届议程，收进来会污染板块与研判。
+            if b.get('congress') and int(b['congress']) != cur_cg:
+                skipped_old_cg += 1
                 continue
             btype = (b.get('type') or '').upper()
             chamber = CONGRESS_CHAMBER_URL.get(btype, 'house')
@@ -393,7 +411,9 @@ def fetch_congress(since):
             break
         offset += 50
         time.sleep(1)  # 礼貌限速
-    log.info('[国会] 抓到 %d 条（%s 以来）', len(items), since)
+    log.info('[国会] 抓到 %d 条（%s 以来，第 %d 届）%s',
+             len(items), since, cur_cg,
+             ('，跳过往届 %d 条' % skipped_old_cg) if skipped_old_cg else '')
     return items
 
 

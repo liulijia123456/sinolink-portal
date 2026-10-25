@@ -221,7 +221,9 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 - `items` 按 `date` **严格倒序**；`url` 全板块唯一；`date` 为 `YYYY-MM-DD`。
 - `count` 必须等于 `len(items)`；`schema` 为 `1`；`board` 与文件名一致。
-- `domain` 必须在固定词表内（见 §6.3）；`title_cn` 与 `domain` 缺失在 `--strict` 下拦截发布。
+- `domain` 必须在固定词表内（见 §6.3）；`title_cn`、`domain`、`brief` 缺失均在 `--strict` 下拦截发布。
+- **`brief` 为全覆盖要求**：每一条目都必须有简报（`full` 或 `note`），层级只决定详略。
+  缺简报在 `--strict` 下按内容缺失处理（退出码 2），不得发布。
 
 ### 4.2 `data/policy/{board}-overview.json`
 
@@ -257,7 +259,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
 | `fetch_policy.py` | 抓取三板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
-| `brief.py` | 生成简报任务队列 / 合并简报 | `python3 scripts/brief.py queue --limit 8`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
+| `brief.py` | 简报覆盖率体检 / 生成队列 / 合并简报（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
 | `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
@@ -290,21 +292,35 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 > 注意：`DEPT_NOTICE_EXTRA` 为「几乎不发规则」的部门（如国防部，实测近 30 天 84 条
 > 全为 Notice）单独放宽到通告，并用关键词剔除程序性条目。新增此类部门前先查实际发文构成。
 
-### 5.2 `brief.py` — 简报分层与合并
+### 5.2 `brief.py` — 简报全覆盖与合并
 
-两层简报，按「市场相关性」分类，避免长简报覆盖率被新增量稀释：
+**核心约束：每一条目都必须有简报，覆盖率 100%，不允许空简报。**
+层级只决定**详略**，不决定有无——这是 2026-10-25 从「抽样配额」改过来的：
+旧策略每轮只写 6–8 份长简报、覆盖率约 3%，缺口单调扩大，条目没有简报等同于不存在。
 
 | 层级 | 篇幅 | 结构 | 判据 |
 | --- | --- | --- | --- |
 | `full` 长简报 | 800–2000 字 | 四段：`【政策背景】`/`【核心内容】`/`【要点提炼】`/`对金融市场的预期影响` | 白宫直接行为（行政令/备忘录/公告）；终局规则 + 高相关领域；法案已过委员会门槛 + 高相关领域 |
-| `note` 要点速览 | 150–300 字 | 3–5 条要点，无段头 | 拟议规则、程序性通告、决议、礼仪类、低相关领域、仅提出未审议的法案 |
+| `note` 要点速览 | 150–300 字 | 3–5 条要点，无段头，最后一条写清「对市场意味着什么」 | 其余全部：拟议规则、程序性通告、决议、礼仪类、低相关领域、仅提出未审议的法案、例行/属地性文件、往届法案 |
+
+判据里有三条**降级保护**，防止高价值领域把例行文件误升为长简报：
+
+- `ROUTINE_RE`：海岸警卫队安全区/安保区、空域设立与撤销、适航指令、渔业休渔、
+  吊桥操作规则、`Correction` 等技术性或属地性文件，一律 `note`。
+- 往届法案：URL 中届次不等于当前届次（按年份推算）的一律 `note`，且简报须注明所属届次。
+- 礼仪类决议（`CEREMONIAL_RE`）：一律 `note`。
 
 流程：
 
 ```bash
+# 0) 发布前体检覆盖率（退出码 0 全覆盖 / 1 有缺失）
+python3 scripts/brief.py coverage
+
 # 1) 出队列（含官方摘要素材，标注每条该写 full 还是 note）
-python3 scripts/brief.py queue --limit 8
-#    输出 scripts/brief_queue.md（已 gitignore）
+python3 scripts/brief.py queue --all      # 全量待写条目（每日任务用这个）
+python3 scripts/brief.py queue --limit 8  # 两头推进抽样（人工补写时可用）
+#    输出 scripts/brief_queue.md（已 gitignore），素材长度按层级自适应
+#    （full 取 1800 字、note 取 600 字，避免为写概述而拉全文）
 
 # 2) 按队列撰写，写成 { "<条目url>": {"at","tier","body"} } 的 JSON
 # 3) 合并入库
@@ -313,7 +329,7 @@ python3 scripts/brief.py merge scripts/briefs.json
 
 合并保护：已有 `full` 不会被 `note` 覆盖（除非 `--force`）。
 **`briefs.json` 的键必须是数据文件里的真实 `url`**，差一个后缀就会静默漏合并——
-合并后务必用 `validate_data.py` 的简报计数复核。
+合并后必须再跑一次 `coverage` 复核，或看 `validate_data.py --strict` 的覆盖率列。
 
 ### 5.3 其余脚本要点
 
@@ -375,6 +391,10 @@ commit message 的净增数按实际入库量填写。
 区间外只告警不拦截；但**旧条目的历史告警不要为了清零而硬改正文**，
 应记录为遗留项并在下一轮新增时收紧。
 
+**简报缺失是另一个量级**：缺简报由 `--strict` 拦截发布（退出码 2），
+不属于「告警」——因为读者看到条目却读不到任何判断，等同于条目不存在。
+处理次序：`coverage` 定位缺失 → `queue --all` 出队列 → 撰写 → `merge` → 复核。
+
 ---
 
 ## 7. 更新标准流程（SOP）
@@ -388,7 +408,7 @@ commit message 的净增数按实际入库量填写。
 | --- | --- | --- |
 | A 抓取 | 拉取三板块条目 | `python3 scripts/fetch_policy.py --days 10` |
 | B 补字段 | 新增条目的中文标题与领域 | `edit_items.py patch.json` |
-| C 简报 | 出队列 → 撰写 → 合并 | `brief.py queue` → `brief.py merge` |
+| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率** | `brief.py queue --all` → `brief.py merge` → `brief.py coverage` |
 | E 校验 | 发布前体检 | `validate_data.py --strict` |
 | F 提交 | 校验通过才推 | `git add -A && git commit && git push` |
 
