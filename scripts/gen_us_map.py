@@ -8,11 +8,12 @@
     python3 scripts/gen_us_map.py [输入 geojson] [输出 svg]
 
 默认：输入 /tmp/ne110.json，输出 /tmp/us-map.svg。
-版式：本土居右，阿拉斯加放在本土左上角，夏威夷在左下角（见下方 BOX_*）。
+版式：**同一投影、同一比例，按真实地理方位摆放**——阿拉斯加在西北、夏威夷在西南、
+本土居中偏东；阿留申群岛一直延伸到西经 170° 之外，若嫌地图太宽可用 --clip-lon 截断。
 输出为 <svg class="us-map" viewBox="0 0 600 380"> + 三条 <path>，仅描边，
 样式（描边色/透明度/尺寸）写在 index.html 的 #view-us .us-head .us-map 里。
 
-数据：Natural Earth 110m（公有领域）。110m 精度足够做背景轮廓，点数约 380。
+数据：Natural Earth 110m（公有领域）。
 """
 import json
 import math
@@ -21,14 +22,16 @@ import sys
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/tmp/ne110.json"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "/tmp/us-map.svg"
 
-VB_W, VB_H = 600.0, 380.0          # 输出画布
-BOX_CONUS = (150.0, 6.0, 594.0, 322.0)
-BOX_ALASKA = (4.0, 8.0, 138.0, 118.0)      # 放在本土左上角
-BOX_HAWAII = (18.0, 316.0, 132.0, 372.0)   # 左下角
+VB_W, VB_H = 600.0, 380.0
+PAD = 10.0                 # 画布内留白
+CLIP_LON = -172.0          # 阿留申群岛截断经度（更西的岛不画，避免地图被拉得过宽）
+AK_SCALE = 1.0             # 阿拉斯加缩放，1.0 = 与本土同比例（真实）
+
+# 单一 Albers 等积圆锥投影：标准纬线取美国本土，经线中心取 -100
+PHI1, PHI2, PHI0, LAM0 = 29.5, 45.5, 38.0, -100.0
 
 
 def albers(phi1, phi2, phi0, lam0):
-    """Albers 等积圆锥投影，返回 (lon, lat) -> (x, y)，y 轴向下。"""
     phi1, phi2, phi0, lam0 = map(math.radians, (phi1, phi2, phi0, lam0))
     n = 0.5 * (math.sin(phi1) + math.sin(phi2))
     c = math.cos(phi1) ** 2 + 2 * n * math.sin(phi1)
@@ -68,39 +71,7 @@ def rdp(pts, eps):
     return rdp(pts[:idx + 1], eps)[:-1] + rdp(pts[idx:], eps)
 
 
-def bbox(rings):
-    xs = [x for r in rings for x, _ in r]
-    ys = [y for r in rings for _, y in r]
-    return min(xs), min(ys), max(xs), max(ys)
-
-
-def project(polys, fn):
-    return [[fn(p[0], p[1]) for p in poly[0]] for poly in polys]
-
-
-def fit(rings, box, eps):
-    x0, y0, x1, y1 = bbox(rings)
-    s = min((box[2] - box[0]) / (x1 - x0), (box[3] - box[1]) / (y1 - y0))
-    ox = box[0] + ((box[2] - box[0]) - (x1 - x0) * s) / 2 - x0 * s
-    oy = box[1] + ((box[3] - box[1]) - (y1 - y0) * s) / 2 - y0 * s
-    out = []
-    for r in rings:
-        pts = rdp([(x * s + ox, y * s + oy) for x, y in r], eps)
-        if len(pts) > 2:
-            out.append(pts)
-    return out
-
-
-def to_d(rings):
-    return " ".join("M" + " ".join("%.1f %.1f" % (x, y) for x, y in r) + "Z" for r in rings)
-
-
-def main():
-    data = json.load(open(SRC, encoding="utf-8"))
-    usa = [f for f in data["features"] if f["properties"].get("ISO_A3") == "USA"][0]
-    geom = usa["geometry"]
-    polys = geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]
-
+def classify(polys):
     conus, alaska, hawaii = [], [], []
     for poly in polys:
         ring = poly[0]
@@ -113,12 +84,64 @@ def main():
             alaska.append(poly)
         elif hi > -130 and lb > 24:        # 本土 48 州
             conus.append(poly)
+    return conus, alaska, hawaii
 
-    groups = [
-        ("conus", fit(project(conus, albers(29.5, 45.5, 37.5, -96)), BOX_CONUS, 0.55)),
-        ("alaska", fit(project(alaska, albers(55, 65, 64, -152)), BOX_ALASKA, 0.4)),
-        ("hawaii", fit(project(hawaii, albers(8, 18, 20.5, -157)), BOX_HAWAII, 0.18)),
-    ]
+
+def to_d(rings):
+    return " ".join("M" + " ".join("%.1f %.1f" % (x, y) for x, y in r) + "Z" for r in rings)
+
+
+def main():
+    data = json.load(open(SRC, encoding="utf-8"))
+    usa = [f for f in data["features"] if f["properties"].get("ISO_A3") == "USA"][0]
+    geom = usa["geometry"]
+    polys = geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]
+    conus, alaska, hawaii = classify(polys)
+
+    fn = albers(PHI1, PHI2, PHI0, LAM0)
+
+    def project(group, clip=None):
+        out = []
+        for poly in group:
+            ring = poly[0]
+            if clip is not None and min(p[0] for p in ring) < clip:
+                continue          # 整块岛礁略去；逐点截断会把形状切坏
+            pts = [fn(lon, lat) for lon, lat in ring]
+            if len(pts) > 2:
+                out.append(pts)
+        return out
+
+    conus_p = project(conus)
+    alaska_p = project(alaska, CLIP_LON)
+    hawaii_p = project(hawaii)
+
+    # 同一投影、同一比例：先求所有组的整体包围盒，再统一缩放
+    all_pts = [p for g in (conus_p, alaska_p, hawaii_p) for r in g for p in r]
+    xs = [p[0] for p in all_pts]
+    ys = [p[1] for p in all_pts]
+    x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+    s = min((VB_W - 2 * PAD) / (x1 - x0), (VB_H - 2 * PAD) / (y1 - y0))
+    ox = PAD + ((VB_W - 2 * PAD) - (x1 - x0) * s) / 2 - x0 * s
+    oy = PAD + ((VB_H - 2 * PAD) - (y1 - y0) * s) / 2 - y0 * s
+
+    def fit(group, scale=1.0, pivot=None):
+        out = []
+        for r in group:
+            pts = []
+            for x, y in r:
+                if pivot is not None:
+                    # 以该组自身重心为基准缩放，位置保持不变
+                    px, py = pivot
+                    x, y = px + (x - px) * scale, py + (y - py) * scale
+                pts.append((x * s + ox, y * s + oy))
+            pts = rdp(pts, 0.5)
+            if len(pts) > 2:
+                out.append(pts)
+        return out
+
+    groups = [("conus", fit(conus_p)),
+              ("alaska", fit(alaska_p, AK_SCALE, _center(alaska_p))),
+              ("hawaii", fit(hawaii_p))]
 
     body = "\n".join('  <path class="usm-%s" d="%s"/>' % (k, to_d(v)) for k, v in groups)
     svg = ('<svg class="us-map" viewBox="0 0 %.0f %.0f" xmlns="http://www.w3.org/2000/svg" '
@@ -126,6 +149,13 @@ def main():
     open(OUT, "w", encoding="utf-8").write(svg)
     total = sum(len(r) for _, g in groups for r in g)
     print("已生成 %s：%d 个点，%d 字节" % (OUT, total, len(svg)))
+
+
+def _center(group):
+    pts = [p for r in group for p in r]
+    if not pts:
+        return None
+    return (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
 
 
 if __name__ == "__main__":
