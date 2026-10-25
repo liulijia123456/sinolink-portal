@@ -1928,7 +1928,9 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "back" "h1" "en" "desc";
-    padding-top: 38px; padding-bottom: 52px;
+    /* 与首页大抬头同一量级的纵向留白（首页 156/84、高 520）；这里内容更少，取 96/104、约 470 */
+    min-height: 470px; align-content: center;
+    padding: 96px 24px 104px;
   }
   #view-us .us-head .back {
     grid-area: back; justify-self: start; align-self: center;
@@ -1955,7 +1957,7 @@
   /* 右侧美国轮廓（本土 + 阿拉斯加 + 夏威夷）：只描边、压到极淡，当地理底纹用 */
   #view-us .us-head .us-map {
     position: absolute; right: 1.6%; top: 50%; transform: translateY(-50%);
-    height: min(86%, 330px); width: auto;
+    height: min(84%, 360px); width: auto;
     fill: none; stroke: rgba(166, 199, 230, .78); stroke-width: 1.15; stroke-linejoin: round;
     opacity: .5; pointer-events: none; z-index: 1;
   }
@@ -2328,7 +2330,7 @@
     }
   }
   @media (max-width: 700px) {
-    #view-us .us-head .wrap { padding-top: 26px; padding-bottom: 40px; }
+    #view-us .us-head .wrap { min-height: 0; padding: 46px 20px 54px; }
     #view-us .us-head h1 { font-size: 25px; letter-spacing: .03em; }
     #view-us .us-head .subdesc { font-size: 12.5px; line-height: 1.95; }
     #view-us .col-head .ch-cn { font-size: 20px; }
