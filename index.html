@@ -2219,7 +2219,7 @@
     font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .16em;
     color: rgba(11, 23, 36, .45); padding-bottom: 9px; border-bottom: 1px solid var(--us-line-soft);
   }
-  #view-us .uc-pend-list { list-style: none; margin: 0; padding: 0; }
+  #view-us .uc-pend-list { list-style: none; margin: 0; padding: 0; max-height: 46vh; overflow-y: auto; }
   #view-us .uc-pend-list li {
     display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
     padding: 8px 0; border-bottom: 1px dashed var(--us-line-soft);
@@ -2817,16 +2817,16 @@
               <button type="button" id="uc-next" class="uc-step" aria-label="下个月" data-page-node-id="JKUWNOc1hmag7t3xjZ0nA7">›</button>
               <div class="uc-picker" id="uc-picker" role="dialog" aria-label="选择年月" hidden="" data-page-node-id="flOjY19hW8Bt3YVlEJyN6d"><div class="ucp-head" data-page-node-id="iFgR5xKkQYiQJYGQgyF99C"><button type="button" class="ucp-y" data-step="-1" aria-label="上一年" disabled="" data-page-node-id="onnkRM3LCpEei0FMTmzQHI">‹</button><span class="ucp-year" data-page-node-id="I4H6kC7Ne3yYhs1AUdeSI9">2026 年</span><button type="button" class="ucp-y" data-step="1" aria-label="下一年" data-page-node-id="gDym5iBOzjXyDYSgoX7VO0">›</button></div><div class="ucp-grid" data-page-node-id="sEeeMApphGCZQgRk662Jdg"><button type="button" class="ucp-m" data-ym="2026-01" disabled="" data-page-node-id="PtNPr3O3x2w1aWXnCspWZX">1 月</button><button type="button" class="ucp-m" data-ym="2026-02" disabled="" data-page-node-id="avqVD74NAy5rmSNRARJUoQ">2 月</button><button type="button" class="ucp-m" data-ym="2026-03" disabled="" data-page-node-id="jCMNQwji132azFEcy8LejU">3 月</button><button type="button" class="ucp-m" data-ym="2026-04" disabled="" data-page-node-id="Wim8oPJSuHmwfwWqhwOuR4">4 月</button><button type="button" class="ucp-m" data-ym="2026-05" disabled="" data-page-node-id="zqbS3QHnGQ6zpYHpi2uIDH">5 月</button><button type="button" class="ucp-m" data-ym="2026-06" disabled="" data-page-node-id="X1W5K6WExBIO4q9B9EsV2Q">6 月</button><button type="button" class="ucp-m" data-ym="2026-07" disabled="" data-page-node-id="8YJu6FrZEM0RRsvHp6uUIk">7 月</button><button type="button" class="ucp-m" data-ym="2026-08" disabled="" data-page-node-id="2p42QElKNfpxoIVwx3sbg0">8 月</button><button type="button" class="ucp-m" data-ym="2026-09" disabled="" data-page-node-id="fPEtrdbOsAgPGud3f8FNxq">9 月</button><button type="button" class="ucp-m on has" data-ym="2026-10" data-page-node-id="XkoMXEDuoQ0X8WypNgx9A9">10 月</button><button type="button" class="ucp-m has" data-ym="2026-11" data-page-node-id="nQS7NtqEJ3RymC35vp6HST">11 月</button><button type="button" class="ucp-m has" data-ym="2026-12" data-page-node-id="fRxX1TVreUCPLvM8JWnw9D">12 月</button></div><div class="ucp-foot" data-page-node-id="3QtXSmDPX5Wk41vlktdmDV"><button type="button" id="ucp-now" disabled="" data-page-node-id="P8W3CmHt4Zm8RevKTXDPbC">回到当月</button></div></div>
             </div>
-            <!-- 时间待定：官方已公布时间窗口、尚未公布具体日期的事件；内容按当前月份由 JS 渲染 -->
-            <div class="uc-pend" id="uc-pend" hidden>
+            <!-- 具体日期待定：已公布时间窗口、尚未公布具体日期的事件（全量，不随月份变化） -->
+            <div class="uc-pend" id="uc-pend">
               <details class="uc-pend-d" id="uc-pend-d">
-                <summary class="uc-pend-btn" aria-label="本月时间待定事件">
-                  待定<b id="uc-pend-n">0</b>项<i class="uc-pend-caret">▾</i>
+                <summary class="uc-pend-btn" aria-label="具体日期待定的事件">
+                  具体日期待定<b id="uc-pend-n">0</b>项<i class="uc-pend-caret">▾</i>
                 </summary>
-                <div class="uc-pend-pop" role="dialog" aria-label="本月时间待定事件">
-                  <div class="uc-pend-head">本月已公布窗口 · 未定具体日期</div>
+                <div class="uc-pend-pop" role="dialog" aria-label="具体日期待定的事件">
+                  <div class="uc-pend-head">已公布时间窗口 · 具体日期未定</div>
                   <ul class="uc-pend-list" id="uc-pend-list"></ul>
-                  <div class="uc-pend-foot">日期确认后自动并入月历</div>
+                  <div class="uc-pend-foot">确定日期后并入月历</div>
                 </div>
               </details>
             </div>
@@ -4038,7 +4038,7 @@
 <!-- 大事日历数据块：日期均经官方来源核实（美联储 / BLS / G20 官网 / IMF 官网 / 中国外交部）
      d = 起始日期（美东）；d2 = 结束日期（多日事件，可选）；t = 美东时刻 HH:MM（可选，无则全日事件）
      cat: econ 经济 / pol 政治 / dip 外交
-     pending: 仅收录「与美国相关、已公布时间窗口但未定具体日期」的事件，按月显示；
+     pending: 仅收录「与美国相关、已公布时间窗口但未定具体日期」的事件；入口常显、列出全量，不按月过滤；
               一旦官方给出确切日期，应从 pending 删除、在 events 里新增正式条目，避免两边重复 -->
 <script type="application/json" id="us-cal-data" data-page-node-id="cUkl4rGEZMlNxLY0sF6Y9H">
 {
@@ -6378,19 +6378,15 @@
         return dt.toISOString().slice(0, 10);
       }
 
-      // 时间待定入口：窗口与当前月有交集即列出；当月没有就整块隐藏。
+      // 具体日期待定入口：列全部待定事件（不随月份过滤），按起始日排序。
       // 数据在 us-cal-data 的 pending 数组：{title, from, to, win, place}
-      var ucPendYm = null;
-      function renderPending(data, ym) {
+      function renderPending(data) {
         var wrap = document.getElementById('uc-pend');
-        var box  = document.getElementById('uc-pend-d');
         var cnt  = document.getElementById('uc-pend-n');
         var list = document.getElementById('uc-pend-list');
         if (!wrap || !list) return;
-        var items = (data.pending || []).filter(function (p) {
-          var f = String(p.from || '').slice(0, 7);
-          var t = String(p.to || p.from || '').slice(0, 7);
-          return !!f && f <= ym && ym <= t;
+        var items = (data.pending || []).slice().sort(function (a, b) {
+          return String(a.from || '').localeCompare(String(b.from || ''));
         });
         if (cnt) cnt.textContent = items.length;
         wrap.hidden = !items.length;
@@ -6399,11 +6395,6 @@
           return '<li><span class="uc-pend-t">' + esc(p.title || '') + '</span>' +
                  '<span class="uc-pend-w">' + w + '</span></li>';
         }).join('');
-        // 换月时收起面板，避免展开着上一个月的清单
-        if (ucPendYm !== ym) {
-          if (box) box.open = false;
-          ucPendYm = ym;
-        }
       }
 
       function renderUsCalendar() {
@@ -6592,8 +6583,8 @@
             '</div><span class="uc-src">日期来源：' + esc(data.source_note || '官方来源核实') + ' · 数据更新：' + esc(data.updated_at || '—') +
             '</span>';
         }
-        // 待定入口（按当前月份过滤）
-        renderPending(data, ymStr);
+        // 具体日期待定入口（全量，不随月份变化）
+        renderPending(data);
         // 时区按钮状态
         [].slice.call(document.querySelectorAll('#uc-tz button')).forEach(function (b) {
           b.classList.toggle('on', b.getAttribute('data-tz') === usCalTz);
