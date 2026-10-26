@@ -495,9 +495,10 @@ def merge_items(old_items, new_items):
     return sorted(merged.values(), key=lambda x: (x.get('date') or ''), reverse=True)
 
 
-def write_payload(payload):
-    """统一走 portal_store：JSON 形态写 data/policy/*.json（原子写），否则回写 HTML 数据块。"""
-    store.save_policy(payload)
+def write_payload(payload, boards=None):
+    """统一走 portal_store：JSON 形态写 data/policy/*.json（原子写），否则回写 HTML 数据块。
+    boards 给定时只写这些板块（拆分定时任务时用，避免覆盖其他板块的抓取结果）。"""
+    store.save_policy(payload, boards)
     if not store.use_json():
         log.info('已回写 index.html 数据块（未启用 data/policy JSON 形态）')
 
@@ -507,6 +508,8 @@ def main():
     ap = argparse.ArgumentParser(description='国金门户 · 美国政策文件定时抓取')
     ap.add_argument('--days', type=int, default=LOOKBACK_DAYS, help='回看天数（默认 %(default)s）')
     ap.add_argument('--dry-run', action='store_true', help='只抓取打印统计，不回写数据')
+    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies'],
+                    help='只抓取指定板块（拆分定时任务用）；不填则三板块全抓')
     args = ap.parse_args()
 
     tz8 = timezone(timedelta(hours=8))
@@ -514,13 +517,16 @@ def main():
     since = (now - timedelta(days=args.days)).strftime('%Y-%m-%d')
     stamp = now.strftime('%Y-%m-%d %H:%M')
 
-    log.info('========== 抓取开始（回看 %d 天，since %s） ==========', args.days, since)
+    log.info('========== 抓取开始（%s，回看 %d 天，since %s） ==========',
+             args.board or '三板块', args.days, since)
 
     sources = [
-        ('whitehouse', '白宫政策', fetch_whitehouse),
-        ('congress', '国会政策', fetch_congress),
+        ('whitehouse', '白宫及内阁各部政策', fetch_whitehouse),
+        ('congress', '国会法案', fetch_congress),
         ('agencies', '独立机构政策', fetch_agencies),
     ]
+    if args.board:
+        sources = [x for x in sources if x[0] == args.board]
 
     payload = extract_payload(read_index())
     ok, fail = [], []
@@ -556,7 +562,7 @@ def main():
         return 0
 
     try:
-        write_payload(payload)
+        write_payload(payload, [args.board] if args.board else None)
     except Exception as e:
         log.error('回写 %s 失败: %s（本次抓取结果未保存，下次将重新抓取）', target_desc, e)
         return 2

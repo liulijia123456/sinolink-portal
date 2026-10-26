@@ -154,13 +154,16 @@ def main():
     ap = argparse.ArgumentParser(description='校验 data/policy 数据文件')
     ap.add_argument('--dir', default='data/policy', help='数据目录（默认 data/policy）')
     ap.add_argument('--strict', action='store_true', help='新增条目缺中文标题/领域即失败')
+    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies'],
+                    help='只校验指定板块（拆分定时任务用）；不填则三板块全验')
     args = ap.parse_args()
 
     if not os.path.isdir(args.dir):
         print('[错误] 目录不存在：%s' % args.dir, file=sys.stderr)
         return 1
 
-    for board in BOARDS:
+    targets = [args.board] if args.board else list(BOARDS)
+    for board in targets:
         p = os.path.join(args.dir, '%s-items.json' % board)
         if not os.path.exists(p):
             err('缺少文件 %s-items.json' % board)
@@ -174,7 +177,7 @@ def main():
     if os.path.exists(mf):
         try:
             m = json.load(open(mf, encoding='utf-8'))
-            for board in BOARDS:
+            for board in targets:
                 p = os.path.join(args.dir, '%s-items.json' % board)
                 if os.path.exists(p):
                     actual = len(json.load(open(p, encoding='utf-8')).get('items') or [])

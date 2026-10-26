@@ -94,11 +94,21 @@ def _load_json():
     return payload
 
 
-def _save_json(payload):
+def _save_json(payload, boards=None):
     os.makedirs(POLICY_DIR, exist_ok=True)
     stamp = _now().strftime('%Y-%m-%d %H:%M')
+    targets = [b for b in BOARDS if (not boards or b in boards)]
+    # 只写部分板块时，其余板块的 manifest 计数沿用磁盘现值，避免用可能过期的内存值覆盖
     manifest_boards = {}
-    for board in BOARDS:
+    if boards and os.path.exists(MANIFEST):
+        try:
+            old = json.load(open(MANIFEST, encoding='utf-8'))
+            for b, v in (old.get('boards') or {}).items():
+                if b not in targets:
+                    manifest_boards[b] = v
+        except Exception:
+            pass
+    for board in targets:
         b = payload.get('boards', {}).get(board) or {}
         items = b.get('items') or []
         updated_at = b.get('updated_at') or stamp
@@ -163,5 +173,7 @@ def load_policy():
     return _load_json() if use_json() else _load_html()
 
 
-def save_policy(payload):
-    return _save_json(payload) if use_json() else _save_html(payload)
+def save_policy(payload, boards=None):
+    """写回策略数据。boards 为 None 时写全部板块；给定列表时只写这些板块，
+    便于「一个板块一个定时任务」的拆分场景——不覆盖其他板块的文件与 manifest 计数。"""
+    return _save_json(payload, boards) if use_json() else _save_html(payload)

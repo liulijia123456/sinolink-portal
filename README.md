@@ -446,18 +446,22 @@ commit message 的净增数按实际入库量填写。
 
 ## 7. 更新标准流程（SOP）
 
-2026-10-25 起按板块拆分为 4 个独立任务，各任务时段错开、互不阻塞
+2026-10-25 起按板块拆分任务，2026-10-27 再把「政策条目」一拆为三，各任务时段错开、互不阻塞
 （详见 §9 定时任务分工）。各任务共用的守门环节：**校验 → 提交 → 推送**。
 
-**政策条目日更**（每日 08:00）：
+**政策条目日更（三板块各一个任务）**：白宫及内阁各部 08:00 / 国会法案 08:35 / 独立机构 09:10。
+三者流程相同，只是命令都带 `--board`，且只提交本板块文件：
 
-| 环节 | 动作 | 命令 |
+| 环节 | 动作 | 命令（以 whitehouse 为例） |
 | --- | --- | --- |
-| A 抓取 | 拉取三板块条目 | `python3 scripts/fetch_policy.py --days 10` |
+| A 抓取 | 只抓本板块 | `python3 scripts/fetch_policy.py --board whitehouse` |
 | B 补字段 | 新增条目的中文标题与领域 | `edit_items.py patch.json` |
-| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率** | `brief.py queue --all` → `brief.py merge` → `brief.py coverage` |
-| E 校验 | 发布前体检 | `validate_data.py --strict` |
-| F 提交 | 校验通过才推 | `git add -A && git commit && git push` |
+| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率** | `brief.py queue --board whitehouse --all` → `merge` → `coverage --board whitehouse` |
+| E 校验 | 只校验本板块 | `validate_data.py --board whitehouse --strict` |
+| F 提交 | 只加本板块文件与 manifest | `git add data/policy/whitehouse-items.json data/policy/manifest.json && git commit && git push` |
+
+拆分的技术保障：`portal_store.save_policy(payload, boards)` 支持只写指定板块，
+其余板块的文件与 manifest 计数沿用磁盘现值，避免三个任务互相覆盖。
 
 **大事日历日更**（每日 07:00）：
 
@@ -496,6 +500,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 | 现象 | 原因 | 处理 |
 | --- | --- | --- |
 | 三个板块全空白 | 预览未走 HTTP，或服务根目录不在仓库根 | 从仓库根起 `http.server` |
+| 单板块任务报「manifest count 不符」 | 另一板块任务同时写盘 | 等其结束或 `git pull --rebase` 后重跑（三任务已错开 35 分钟，正常不会撞） |
 | `count 与实际不符` | 手工删改过 items | 改 `count`，或回滚该文件 |
 | `条目未按日期倒序` | 新条目追加到尾部 | 按 `date` 倒序重排后重跑校验 |
 | `出现词表外的领域标签` | 新造标签 | 改回词表值，或同步扩词表 |
