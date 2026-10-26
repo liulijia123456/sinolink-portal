@@ -2193,6 +2193,44 @@
   #view-us .uc-tz { border-radius: 2px; border-color: var(--us-line); }
   #view-us .uc-tz button { font-family: var(--us-mono); font-size: 11px; letter-spacing: .06em; }
   #view-us .uc-tz button.on { background: var(--us-brass-2); color: #0b1724; }
+  /* ── 时间待定：本月已公布窗口、未定具体日期的事件 ── */
+  #view-us .uc-pend { margin: 0 auto; position: relative; }
+  #view-us .uc-pend-d { position: relative; }
+  #view-us .uc-pend-btn {
+    list-style: none; display: inline-flex; align-items: center;
+    font-family: var(--us-mono); font-size: 10.5px; letter-spacing: .1em;
+    color: #8a6420; background: rgba(201, 168, 106, .12);
+    border: 1px dashed rgba(168, 130, 60, .55); border-radius: 2px;
+    padding: 4px 10px; cursor: pointer; white-space: nowrap;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  #view-us .uc-pend-btn::-webkit-details-marker { display: none; }
+  #view-us .uc-pend-btn:hover { background: rgba(201, 168, 106, .22); border-color: rgba(168, 130, 60, .85); }
+  #view-us .uc-pend-btn b { font-weight: 700; color: var(--us-ink); margin: 0 3px; }
+  #view-us .uc-pend-caret { font-style: normal; font-size: 9px; margin-left: 5px; color: rgba(138, 100, 32, .75); transition: transform .18s ease; }
+  #view-us .uc-pend-d[open] .uc-pend-caret { transform: rotate(180deg); }
+  #view-us .uc-pend-pop {
+    position: absolute; top: calc(100% + 9px); left: 50%; transform: translateX(-50%);
+    width: 348px; max-width: 82vw; z-index: 40;
+    background: var(--us-card); border: 1px solid var(--us-line); border-radius: 3px;
+    box-shadow: 0 18px 40px rgba(11, 23, 36, .18); padding: 12px 14px 13px;
+  }
+  #view-us .uc-pend-head {
+    font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .16em;
+    color: rgba(11, 23, 36, .45); padding-bottom: 9px; border-bottom: 1px solid var(--us-line-soft);
+  }
+  #view-us .uc-pend-list { list-style: none; margin: 0; padding: 0; }
+  #view-us .uc-pend-list li {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+    padding: 8px 0; border-bottom: 1px dashed var(--us-line-soft);
+  }
+  #view-us .uc-pend-list li:last-child { border-bottom: 0; }
+  #view-us .uc-pend-t { font-size: 12.5px; font-weight: 600; color: var(--us-ink); }
+  #view-us .uc-pend-w { font-family: var(--us-mono); font-size: 10.5px; color: rgba(11, 23, 36, .48); white-space: nowrap; }
+  #view-us .uc-pend-foot {
+    margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--us-line-soft);
+    font-size: 10.5px; color: rgba(11, 23, 36, .4);
+  }
   /* 年月选择面板 */
   #view-us .uc-picker { border-radius: 3px; border-color: var(--us-line); box-shadow: 0 16px 36px rgba(11, 23, 36, .18); }
   #view-us .ucp-year { font-family: var(--us-serif); font-size: 14px; }
@@ -2778,6 +2816,23 @@
               <button type="button" class="uc-month" id="uc-month" aria-haspopup="dialog" aria-expanded="false" aria-label="选择年月" title="点击选择年月 · 可选范围 2026-10 ~ 2027-06" data-page-node-id="b16ZTpeB6DZMktRGoGX0nT">2026 年 10 月<span class="uc-mcount" data-page-node-id="DGG1IHghfddJ7v54nm14jt">本月 18 项</span><span class="uc-caret" data-page-node-id="9NTHzSiHIXfJkUm0vigH58">▾</span></button>
               <button type="button" id="uc-next" class="uc-step" aria-label="下个月" data-page-node-id="JKUWNOc1hmag7t3xjZ0nA7">›</button>
               <div class="uc-picker" id="uc-picker" role="dialog" aria-label="选择年月" hidden="" data-page-node-id="flOjY19hW8Bt3YVlEJyN6d"><div class="ucp-head" data-page-node-id="iFgR5xKkQYiQJYGQgyF99C"><button type="button" class="ucp-y" data-step="-1" aria-label="上一年" disabled="" data-page-node-id="onnkRM3LCpEei0FMTmzQHI">‹</button><span class="ucp-year" data-page-node-id="I4H6kC7Ne3yYhs1AUdeSI9">2026 年</span><button type="button" class="ucp-y" data-step="1" aria-label="下一年" data-page-node-id="gDym5iBOzjXyDYSgoX7VO0">›</button></div><div class="ucp-grid" data-page-node-id="sEeeMApphGCZQgRk662Jdg"><button type="button" class="ucp-m" data-ym="2026-01" disabled="" data-page-node-id="PtNPr3O3x2w1aWXnCspWZX">1 月</button><button type="button" class="ucp-m" data-ym="2026-02" disabled="" data-page-node-id="avqVD74NAy5rmSNRARJUoQ">2 月</button><button type="button" class="ucp-m" data-ym="2026-03" disabled="" data-page-node-id="jCMNQwji132azFEcy8LejU">3 月</button><button type="button" class="ucp-m" data-ym="2026-04" disabled="" data-page-node-id="Wim8oPJSuHmwfwWqhwOuR4">4 月</button><button type="button" class="ucp-m" data-ym="2026-05" disabled="" data-page-node-id="zqbS3QHnGQ6zpYHpi2uIDH">5 月</button><button type="button" class="ucp-m" data-ym="2026-06" disabled="" data-page-node-id="X1W5K6WExBIO4q9B9EsV2Q">6 月</button><button type="button" class="ucp-m" data-ym="2026-07" disabled="" data-page-node-id="8YJu6FrZEM0RRsvHp6uUIk">7 月</button><button type="button" class="ucp-m" data-ym="2026-08" disabled="" data-page-node-id="2p42QElKNfpxoIVwx3sbg0">8 月</button><button type="button" class="ucp-m" data-ym="2026-09" disabled="" data-page-node-id="fPEtrdbOsAgPGud3f8FNxq">9 月</button><button type="button" class="ucp-m on has" data-ym="2026-10" data-page-node-id="XkoMXEDuoQ0X8WypNgx9A9">10 月</button><button type="button" class="ucp-m has" data-ym="2026-11" data-page-node-id="nQS7NtqEJ3RymC35vp6HST">11 月</button><button type="button" class="ucp-m has" data-ym="2026-12" data-page-node-id="fRxX1TVreUCPLvM8JWnw9D">12 月</button></div><div class="ucp-foot" data-page-node-id="3QtXSmDPX5Wk41vlktdmDV"><button type="button" id="ucp-now" disabled="" data-page-node-id="P8W3CmHt4Zm8RevKTXDPbC">回到当月</button></div></div>
+            </div>
+            <!-- 时间待定：本月已公布窗口、未定具体日期的事件（样式先行，暂未接数据） -->
+            <div class="uc-pend">
+              <details class="uc-pend-d">
+                <summary class="uc-pend-btn" aria-label="本月时间待定事件">
+                  待定<b>3</b>项<i class="uc-pend-caret">▾</i>
+                </summary>
+                <div class="uc-pend-pop" role="dialog" aria-label="本月时间待定事件">
+                  <div class="uc-pend-head">本月已公布窗口 · 未定具体日期</div>
+                  <ul class="uc-pend-list">
+                    <li><span class="uc-pend-t">东盟峰会后续系列会议</span><span class="uc-pend-w">11 月中下旬 · 马尼拉</span></li>
+                    <li><span class="uc-pend-t">COP31 高级别磋商</span><span class="uc-pend-w">11 月下旬 · UNFCCC</span></li>
+                    <li><span class="uc-pend-t">中美经贸工作组会议</span><span class="uc-pend-w">11 月底前 · USTR</span></li>
+                  </ul>
+                  <div class="uc-pend-foot">日期确认后自动并入月历</div>
+                </div>
+              </details>
             </div>
             <div class="uc-tz" id="uc-tz" role="group" aria-label="时区切换" data-page-node-id="5mYiWvYsgcMre02BsrPyxn" style="">
               <button type="button" data-tz="et" class="on" data-page-node-id="p8jIc4IFFJPuMABFA3qIIY">美国时间（美东）</button>
