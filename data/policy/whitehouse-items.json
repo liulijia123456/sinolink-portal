@@ -1,1013 +1,1080 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-10-24 14:00",
+  "updated_at": "2026-10-26 13:29",
   "count": 150,
   "items": [
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Request for Comments on Further Suspension of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance",
-      "title_cn": "就进一步暂停301条款行动征求意见：中国针对海运、物流与造船业谋求主导地位（通告）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "美国贸易代表办公室 USTR",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-24",
         "body": "【政策背景】\n本案源于美国贸易代表办公室（USTR）依据《1974年贸易法》第301条就中国针对海运、物流与造船业谋求主导地位的行为、政策与做法所发起的调查。该调查项下的行动此前已进入暂停状态。USTR在2026年10月26日的联邦公报通告中提出，为就本案所涉问题与中国进一步谈判，拟修改本案行动，将其再暂停两个月，至2027年1月9日。\n\n【核心内容】\n通告的核心是就上述拟议修改公开征求意见：一是暂停的性质为\"进一步暂停\"，即在既有暂停安排基础上顺延，而非撤销301行动；二是暂停期限明确为两个月，截止2027年1月9日；三是暂停目的指向为中美之间围绕本案所涉行为、政策与做法的进一步谈判留出空间；四是USTR邀请利害关系方就拟议修改提交意见，意味着最终决定是否顺延、顺延条件如何，仍留有博弈与听证程序空间。\n\n【要点提炼】\n一、这是程序性而非实体性动作：行动本身未被撤销，暂停到期后是否恢复、修改或继续延长，取决于谈判进展与评议结果。\n二、两个月的时间窗口较短，说明双方谈判处于滚动推进状态，301造船案仍是中美经贸谈判桌上的活议题。\n三、征求意见程序为美国国内产业界（航运、造船、港口、进口商）与中方相关方提供了正式的表达渠道，评议内容本身将成为观察美方内部利益博弈的窗口。\n四、悬置未决的301行动构成一种\"期权式\"威慑：即使暂停，其存在本身继续影响市场对中美经贸摩擦走向的预期。\n\n【对金融市场的预期影响】\n总体判断：对中美贸易敏感资产构成温和的情绪面利好，方向为正、幅度有限、时效集中于2027年1月9日到期前后，属程序性事件而非定价事件。\n受益方向：航运、港口、造船及跨境物流板块的情绪面压力暂缓，涉及中美航线的运费与港口费预期边际改善；对华敞口较高的出口链与进口分销商亦可获得短暂喘息。\n风险提示：暂停不等于撤销。若两个月内谈判无实质进展，301行动存在恢复或加码的可能，相关板块的情绪改善随时可能回吐。\n信号意义：此举表明美方在造船业301案上倾向以谈判换时间，与对华经贸接触的整体节奏一致，可作为观察中美经贸磋商氛围的辅助指标。\n观察节点：一是本通告的征求意见截止日及评议要点；二是2027年1月9日到期前后USTR的正式决定；三是其间中美经贸高层接触是否释放与该调查相关的安排。",
         "tier": "full"
-      }
+      },
+      "title_cn": "就进一步暂停301条款行动征求意见：中国针对海运、物流与造船业谋求主导地位（通告）",
+      "domain": "贸易/关税"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Outbound Investment Security Program Regulations",
-      "title_cn": "对外投资安全计划条例（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "财政部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-24",
         "body": "【政策背景】\n美国财政部于2026年10月26日发布拟议规则，就落实《综合对外投资国家安全法》C编制定实施细则。该法已编纂为《国防生产法》第八编，标志着美国对外投资审查机制从行政令框架上升为成文法框架。现行对外投资安全计划（Outbound Investment Security Program）已依据既有法规运行，本次拟议规则是在成文法授权基础上对该计划的制度化重构。\n\n【核心内容】\n拟议规则包含四方面安排：一是申报义务，要求美国主体就涉及从事\"须申报技术\"（notifiable technologies）的外国主体的特定交易向财政部申报；二是禁止条款，禁止美国主体从事涉及从事\"被禁止技术\"（prohibited technologies）的外国主体的特定交易；三是制度衔接，在与《国防生产法》第八编一致的前提下，沿用现行对外投资安全计划法规中的若干定义与概念，保持监管连续性；四是适用日期安排，为法规增设适用日期条款，使相关规定继续适用于相应时间窗口内发生的活动，确保新旧规则过渡期间不出现监管真空。\n\n【要点提炼】\n一、立法层级提升：对外投资审查从行政工具变为法定制度，未来政府更迭亦难以轻易撤回，制度的长期性与刚性显著增强。\n二、\"申报加禁止\"双层结构延续现行框架，覆盖对象仍是从事特定敏感技术的外国主体所涉交易，美国主体的合规义务进一步明确。\n三、沿用现行定义与概念意味着市场已积累的合规经验大体可迁移，规则突变风险较低，但最终文本仍可能调整技术范围与交易类型的边界。\n四、适用日期条款体现财政部对过渡期执法连续性的重视，存量交易与历史活动的合规责任不会因规则切换而豁免。\n\n【对金融市场的预期影响】\n总体判断：对涉华敏感技术跨境投资构成中长期收紧信号，方向偏紧、幅度取决于最终规则的技术清单与交易范围，时效以规则落地节奏为准。\n承压方向：美元基金、私募股权与风险投资对涉及须申报或被禁止技术的境外项目的投资意愿与交易速度将受抑制，相关项目的跨境融资难度上升；跨境并购与合资金融服务的合规成本抬升。\n受益方向：监管科技、出口管制与制裁合规服务、跨境法律与咨询业务的需求将获得制度性支撑。\n关键前提：最终影响取决于\"须申报技术\"与\"被禁止技术\"两份清单的边界，拟议规则阶段的清单表述是核心跟踪变量。\n观察节点：一是征求意见期内美国金融业与产业界对技术清单与交易豁免的反馈；二是最终规则发布时间及生效日期；三是与盟友类似对外投资审查机制的协调动向。",
         "tier": "full"
-      }
+      },
+      "title_cn": "对外投资安全计划条例（拟议规则）",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Performance Review Board Membership",
-      "title_cn": "绩效评审委员会成员名单（通告）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21777/performance-review-board-membership",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-24",
         "body": "国防部发布通告，公布陆军部绩效评审委员会（Performance Review Board）成员名单。\n绩效评审委员会是高级行政体系（SES）绩效管理的常设机制，负责审议高级文官的绩效评级与绩效奖金建议，成员构成属人事安排事项。\n本次公告仅列明成员姓名，不涉及政策变更、组织架构调整或支出授权，无评论期，不产生规章效力。\n对市场意味着什么：无直接定价影响。此类人事类通告不含采购、许可或监管义务变化，任何板块均不因此调整盈利预期；仅可作为观察国防部高层人事稳定性的边缘信号，观察节点为委员会成员变动是否与陆军部采购或项目管理层调整同步。",
         "tier": "note"
-      }
+      },
+      "title_cn": "绩效评审委员会成员名单（通告）",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Wyoming Regulatory Program",
-      "title_cn": "怀俄明州露天采矿监管计划（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21835/wyoming-regulatory-program",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-24",
         "body": "【政策背景】\n《1977年露天采矿控制与复垦法》（Surface Mining Control and Reclamation Act, SMCRA）确立了联邦与州分工的煤矿开采监管框架：联邦政府制定最低标准，州可在其监管计划获批准后取得首要管辖权（primacy），但该计划须始终“不低于”联邦标准，且任何修订都须经内政部露天采矿复垦与执法办公室（OSMRE）审批。怀俄明州是美国最大的产煤州，其土地质量处（WLQD）承担州内露天与地下煤矿的日常监管职能。2024 年 1 月 19 日，OSM 部分批准了 WLQD 关于煤层钻探勘探的规则修订（SATS No. WY-050-FOR，Docket ID No. OSM-2021-0004），并在该终局规则“OSM 未予批准的怀俄明州规则修订”标题下，列出若干含有印刷错误的条款，明确要求 WLQD 通过后续规则制定予以更正。本次修订（SATS No. WY-055-FOR，Docket ID No. OSM-2025-0002）即是 WLQD 针对这批印刷错误提交的更正方案。\n\n【核心内容】\nOSM 批准怀俄明州监管计划的本次修订。修订内容严格限于对前述印刷错误条款的技术性更正，不涉及监管标准的放宽或收紧，也不新增、删除或改写在许可审批、现场检查、土地复垦与复垦保证金方面的实质义务。怀俄明州的 primacy 地位、联邦监督关系以及现行许可体系均维持不变。从规章生命周期看，本次批准属于州计划修订流程中的收尾动作，其功能是让州规则文本与其此前已被批准的实质内容保持一致。\n\n【要点提炼】\n1. 修订性质为技术性更正，来源可直接追溯至 2024 年部分批准决定中列出的印刷错误清单，属前序程序的延续。\n2. 不涉及任何标准调整：复垦技术要求、保证金制度、许可条件、检查频次均不在本次修订范围内。\n3. 程序上属州计划修订的常规审批，不改变公众参与安排，也不设新增合规过渡期。\n4. 怀俄明州作为最大产煤州的监管框架连续性得到维持，消除了规则文本与批准决定之间的不一致。\n5. 该事项印证了州计划修订的“增量式”特点：多数修订内容琐碎，真正具备财务含义的修订需单独识别。\n\n【对金融市场的预期影响】\n总体判断：对煤炭、电力及相关设备板块无定价影响，属监管框架的技术性维护，不改变产量、单位成本或负债口径，投资者无需据此调整任何板块的盈利预测。\n\n关键前提：上述判断成立的前提是本次修订确如官方摘要所述仅涵盖印刷错误更正，未夹带实质条款变更；若州规则文本中包含超出该范围的内容，需重新评估。\n\n受益方向：无明确受益标的。若必须指出，规则文本清晰度的提升对煤炭企业的合规与法务部门属边际利好，可小幅降低规则解释成本，但不进入财务报表可观测的量级。\n\n承压方向：无承压标的。本次修订未新增任何检查、报告或保证金义务，不构成成本端的增量负担。\n\n风险提示：真正需要警惕的是州计划修订触及复垦保证金机制，特别是 self-bonding（自我担保）的资格与财务测试条款。一旦该类条款收紧，煤炭企业将被迫改用第三方担保、信托或现金抵押覆盖复垦义务，直接占用营运资金并抬高财务费用。本次修订明确不含此类内容，但这是后续所有类似修订的必查项。\n\n信号意义：本次批准显示 OSM 与怀俄明州之间的州计划修订通道运行正常，联邦与州层面未出现监管摩擦，对判断美国煤炭主产区监管环境的稳定性具有中性偏正面的参考。\n\n观察节点：一是怀俄明州后续提交的规则修订（SATS 编号序列）是否触及保证金或复垦标准；二是 OSM 对怀俄明州计划的年度监督评估结论；三是主要煤炭生产企业在年报中资产退役义务（ARO）与担保工具结构的披露变化。",
         "tier": "full"
-      }
+      },
+      "title_cn": "怀俄明州露天采矿监管计划（规则）",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Ohio Regulatory Program",
-      "title_cn": "俄亥俄州露天采矿监管计划（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21807/ohio-regulatory-program",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-24",
         "body": "【政策背景】\n《1977年露天采矿控制与复垦法》（SMCRA）框架下，取得首要管辖权（primacy）的州可以执行本州监管计划，但计划的任何增补、废止或修改均须经内政部露天采矿复垦与执法办公室（OSMRE）批准，以确保不低于联邦最低标准。俄亥俄州位于阿巴拉契亚与伊利诺伊盆地交汇的产煤带，其监管由州自然资源部依《俄亥俄州行政法典》相关章节实施。与西部大型露天矿不同，俄亥俄州的煤矿规模偏小、地下矿占比更高，许可证续期、水文资料要求与复垦保证金安排对区域内经营主体的现金流更为敏感。本次修订涉及依《俄亥俄州行政法典》新增、废止或修改的 39 条规则，覆盖面明显宽于单纯的技术性更正。\n\n【核心内容】\nOSM 批准俄亥俄州监管计划的本次修订。修订涵盖许可申请、水文图与剖面图、一般图件要求、特殊类别采矿的许可要求、地下采矿许可申请、小经营者援助计划，以及 self-bonding（自我担保复垦保证金）共 39 条规则。其中前几类属于许可与技术文件要求的标准化，旨在使州层面的申报材料格式与联邦要求对齐；小经营者援助计划涉及对小型经营者提供的技术支持与费用安排；self-bonding 则是本次修订中唯一直接具备财务含义的议题——该机制允许财务状况达标的经营者以自身信用替代第三方担保来覆盖复垦义务，其资格门槛的松紧直接决定企业是占用现金还是占用信用。\n\n【要点提炼】\n1. 覆盖面广：一次性调整 39 条规则，横跨许可申请、技术文件、特殊类别采矿与地下采矿全链条，属州计划的系统性校准而非单点修补。\n2. 含 self-bonding 条款，这是本次修订中唯一可能对资产负债表产生影响的议题，须优先识别。\n3. 属州规则与联邦最低标准的一致性校准，性质上是合规口径统一，而非监管尺度突变。\n4. 涉及小经营者援助计划，对区域内中小型采矿主体的成本结构有直接影响。\n5. 水文图与剖面图等技术文件要求的标准化，会改变许可申请的准备成本与审查周期。\n\n【对金融市场的预期影响】\n总体判断：对煤炭开采与区域电力板块影响有限但具方向性——若 self-bonding 条款收紧，将提高煤企的现金占用与担保成本，属成本端的小幅负面；若维持或放松，则为边际正面，整体不构成板块级定价事件。\n\n关键前提：官方摘要仅列出 self-bonding 属于修订范围，未披露具体调整方向（收紧资格、维持现状抑或放松），因此上述方向性判断存在不确定性，须以《俄亥俄州行政法典》正式条文为准，不宜据此直接定价。\n\n承压方向：若 self-bonding 资格门槛提高，煤炭企业须改用第三方担保、信托或现金抵押覆盖复垦义务，直接占用营运资金并抬高财务费用。在阿巴拉契亚煤价中枢偏弱、电厂采购向低成本产区转移的背景下，现金流本已紧张的中小型煤炭生产商与电厂附属性煤矿受影响相对更大，可能加速区域产能出清。\n\n受益方向：若规则反而简化自我担保的资格审查并保留该工具，煤企的现金占用压力将边际缓解；同时许可与技术文件要求的标准化有利于缩短审批周期、降低项目前期准备成本，对仍在运营的地下矿主体属小幅利好。\n\n信号意义：阿巴拉契亚产区的许可与保证金规则趋严，与电力板块长期脱碳进程叠加，中长期会抬高该区域煤炭的边际生产成本，压缩其在电力采购中的价格竞争力。这一趋势对判断美国东部煤价的区域价差具有参考价值。\n\n风险提示：一是条款方向未明带来的判断不确定性；二是若州规则对水文资料要求显著提高，小型经营者可能因技术能力不足而退出许可申请，进一步集中区域产能。\n\n观察节点：一是《俄亥俄州行政法典》条文对 self-bonding 资格财务测试的具体规定；二是 OSM 后续对俄亥俄州计划的监督发现与年度评估；三是区域煤炭企业年报中资产退役义务（ARO）规模与担保工具结构的披露变化；四是俄亥俄州煤矿许可发放与续期的实际节奏。",
         "tier": "full"
-      }
+      },
+      "title_cn": "俄亥俄州露天采矿监管计划（规则）",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Reallocation of Pacific Cod in the Bering Sea and Aleutian Islands Management Area",
-      "title_cn": "阿拉斯加专属经济区渔业：白令海与阿留申群岛管理区太平洋鳕配额重新分配（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21805/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-pacific-cod-in-the-bering-sea",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-24",
         "body": "国家海洋渔业局（NMFS）将白令海与阿留申群岛管理区（BSAI）预计未被利用的太平洋鳕鱼配额，从使用拖网渔具的捕捞船再分配给长度 60 英尺（18.3 米）以下、使用钩钓或笼捕渔具的捕捞船，以及《美国渔业法》（AFA）项下的拖网捕捞加工船。\n目的是使 2026 年 BSAI 太平洋鳕鱼总可捕量（TAC）得以充分捕捞，避免配额闲置。\n属年度渔业管理中的常规再分配措施，即时生效，不改变 TAC 总量。\n对市场意味着什么：对海产品与渔业板块影响局限于配额内部结构。总可捕量不变意味着白鱼供给总量无变化，但捕捞窗口后移可能使第四季度阿拉斯加鳕鱼到岸量阶段性增加，对冷冻鱼片与鱼糜价格构成温和压制；相关上市公司规模小，不构成板块级定价事件。观察节点为后续是否还有二次再分配。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业：白令海与阿留申群岛管理区太平洋鳕配额重新分配（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Streamlining the Regulations Governing Testimony by Employees and the Production of Documents in Legal Proceedings; Correction",
-      "title_cn": "精简雇员在法律程序中作证及提交文件的管理规定；更正（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21764/streamlining-the-regulations-governing-testimony-by-employees-and-the-production-of-documents-in",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-24",
         "body": "商务部对其关于现任及前任雇员在司法程序中作证和出示文件的规章作出更正性修订。\n此前商务部已通过终局规则简化该规章，删除冗余文字、对其他授权的重复引述以及不必要的阐述；但该规则中有一项修订指引错误地载明修改了某段引言文字与某子项，实际上并未修改。\n本次行动仅更正该不准确的修订指引，不对规章作任何其他更改，无实质影响。\n对市场意味着什么：无直接定价影响。属《联邦公报》层面的纯文书更正，不改变企业或个人在商务部相关司法程序中的权利与义务，也不产生新的合规要求。",
         "tier": "note"
-      }
+      },
+      "title_cn": "精简雇员在法律程序中作证及提交文件的管理规定；更正（规则）",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Establishment of Class E Airspace; Canton, IL",
-      "title_cn": "设立E类空域：伊利诺伊州坎顿（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21817/establishment-of-class-e-airspace-canton-il",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-24",
         "body": "联邦航空管理局（FAA）在伊利诺伊州 Canton 的 Graham Hospital 直升机起降点设立 E 类空域。\n目的是支持新增的仪表进离场程序与仪表飞行规则（IFR）运行，提升该起降点的全天候可用性与进近安全裕度。\n空域范围限于单个医院直升机起降点，属 FAA 空域划设中的例行个案。\n对市场意味着什么：无直接定价影响。单一起降点的空域划设不改变机场容量、航线网络或航空公司的运营指标，仅使当地医疗转运与急救航空服务的运行效率小幅受益，不具备可交易的板块含义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立E类空域：伊利诺伊州坎顿（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-26",
       "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
-      "title_cn": "联邦机动车安全标准：第108号标准现代化以适配配备自动驾驶系统的车辆（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21794/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• NHTSA 拟修订 FMVSS No.108（灯具、反光装置及相关设备），取消不必要条款、为无人工操作装置的自动驾驶车辆（ADS）提供设计弹性。\n• 明文以「不降低车辆安全性」为前提，属技术标准现代化，不是新增强制要求。\n• 修订涉及整体式前照灯试验电压、纵向布置要求，以及 ADS 车辆的操作件替代方案。\n• 对市场意味着什么：短期无直接定价影响；中期利好自动驾驶整车与车灯供应链，减少为适配人工操作条款而做的冗余设计，但需待最终规则确认适用范围。",
         "tier": "note"
-      }
+      },
+      "title_cn": "联邦机动车安全标准：第108号标准现代化以适配配备自动驾驶系统的车辆（拟议规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
-      "title_cn": "落实《美国稳定币国家创新指导与确立法》：货币监理署管辖实体发行稳定币的实施规则",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "财政部",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-10-25",
         "body": "【政策背景】\n《指导与确立美国稳定币国家创新法案》确立联邦层面支付型稳定币的监管框架，将发行主体按联邦与州两条路径划分归属。货币监理署（OCC）负责在其管辖范围内——联邦特许银行及其子公司——落实该法案的审慎要求。本件为该法案在 OCC 一侧的实施规则，2026 年 10 月 23 日以最终规则形式公布。\n\n【核心内容】\n规则就 OCC 管辖实体发行支付型稳定币及相关活动设定准入与持续监管要求：储备资产的构成与托管、赎回权利与时限、资本与流动性、风险管理与审计，以及禁止性业务边界。规则同时明确此类活动属银行可从事的附属业务，须事前经 OCC 审批或无异议程序，并与既有的资本、流动性、反洗钱框架叠加适用。\n需注明：本次取得的官方素材仅为规则摘要，未含条文全文，具体储备合格资产清单与审批程序细节须以联邦公报文本为准。\n\n【要点提炼】\n- 监管归属清晰化：联邦特许机构发币走 OCC 路径，与州监管路径并行。\n- 储备与赎回是核心义务，直接决定稳定币的信用质量与挤兑韧性。\n- 准入采事前审批制，新进入者面临合规成本门槛。\n- 与银行既有监管框架叠加而非替代，银行系发行方相对占优。\n- 规则落地仍依赖后续审批细则与储备资产合格范围的明确。\n\n【对金融市场的预期影响】\n总体判断：中期利好合规稳定币及配套的托管清算基础设施，短期对二级市场定价影响有限。\n\n受益方向：已进入 OCC 监管视野的银行系发行主体；稳定币储备若集中于短期国债，将为短端美债提供边际增量需求；合规托管、链上审计与储备证明服务商。\n\n承压方向：依赖非合规储备或跨境套利模式的发行主体，相对成本优势收窄；仅持州牌照的中小发行方面临是否升级联邦牌照的选择。\n\n关键前提：储备合格资产的范围界定决定商业模式空间——若收窄至现金与短债，利息分润模式将受压。\n\n观察节点：OCC 后续发布的审批程序与申请表格、首批联邦路径申请案例、州监管方是否给出对等认定。\n\n风险提示：规则可能因诉讼调整；跨境使用场景的监管归属尚未完全明朗。",
         "tier": "full"
-      }
+      },
+      "title_cn": "落实《美国稳定币国家创新指导与确立法》：货币监理署管辖实体发行稳定币的实施规则",
+      "domain": "金融/保险"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "21st Century ROAD to Housing Act Prohibition on Large Institutional Investor Purchases of Single-Family Homes",
-      "title_cn": "落实《21世纪住房之路法案》：禁止大型机构投资者购买独栋住宅（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21675/21st-century-road-to-housing-act-prohibition-on-large-institutional-investor-purchases-of",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "财政部",
-      "domain": "住房",
       "brief": {
         "at": "2026-10-25",
         "body": "• 财政部就《21 世纪住房之路法》第 1001 条发布拟议规则，落实对大型机构投资者购买独栋住宅的禁令。\n• 规则细化「大型机构投资者」的认定口径、法定例外的适用范围，以及执法机制。\n• 立法本意是抑制机构资金与自住需求争抢存量房源，属住房可负担性议程的一环。\n• 对市场意味着什么：对市场意味着什么：对单户租赁（SFR）运营商的扩张速度构成中期约束，利好以自住为主的中小经纪人；但例外条款范围决定实际影响，短期无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "落实《21世纪住房之路法案》：禁止大型机构投资者购买独栋住宅（拟议规则）",
+      "domain": "住房"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Notice of Record of Decision for the Environmental Impact Statement for Basing F-35A Lightning II Formal Training Unit at Kingsley Field ANGB, Klamath Falls, Oregon",
-      "title_cn": "F-35A正式训练部队部署俄勒冈州克拉马斯福尔斯金斯利机场环境影响报告决策记录（通告）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21696/notice-of-record-of-decision-for-the-environmental-impact-statement-for-basing-f-35a-lightning-ii",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "• 空军部于 2026 年 10 月 5 日签署决定记录（ROD），批准在俄勒冈州 Kingsley 空军国民警卫队基地驻扎 F-35A 正式训练中队。\n• 环评程序至此完成，项目进入实施阶段。\n• 属地性军事基建安排，不涉及采购规模或预算调整。\n• 对市场意味着什么：无直接定价影响；仅对基地周边基建与地方经济有边际作用。",
         "tier": "note"
-      }
+      },
+      "title_cn": "F-35A正式训练部队部署俄勒冈州克拉马斯福尔斯金斯利机场环境影响报告决策记录（通告）",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Supplemental Nutrition Assistance Program: Electronic Benefits Transfer Card Security Measures",
-      "title_cn": "补充营养援助计划：电子福利转账卡安全措施（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21658/supplemental-nutrition-assistance-program-electronic-benefits-transfer-card-security-measures",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "农业部",
-      "domain": "社会保障",
       "brief": {
         "at": "2026-10-25",
         "body": "• 农业部食品与营养局拟修订 SNAP 法规，推动 EBT 卡技术现代化并对齐消费支付行业标准。\n• 目标是提升计划完整性（防盗刷）与受益人使用便利，保护补助资金不被盗取。\n• 具体措施含卡片安全能力升级与交易处理规范调整。\n• 对市场意味着什么：利好支付网络、发卡与反欺诈服务商的中标机会；SNAP 年度支出规模庞大但费率低，对相关公司收入弹性有限，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "补充营养援助计划：电子福利转账卡安全措施（拟议规则）",
+      "domain": "社会保障"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Pacific Cod by Catcher Vessels Using Trawl Gear in the Central Regulatory Area of the Gulf of Alaska",
-      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾中部管理区拖网捕捞船太平洋鳕配额（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21680/fisheries-of-the-exclusive-economic-zone-off-alaska-pacific-cod-by-catcher-vessels-using-trawl-gear",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• NMFS 在阿拉斯加湾中部监管区禁止拖网渔船定向捕捞太平洋鳕鱼。\n• 目的是避免突破 2026 年度总可捕量（TAC）中分配给拖网船队的配额。\n• 属配额用尽后的例行休渔措施。\n• 对市场意味着什么：对鳕鱼现货与水产加工有边际收紧，但属常规渔季管理，无系统性定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾中部管理区拖网捕捞船太平洋鳕配额（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Pollock in Statistical Area 620 in the Gulf of Alaska",
-      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾620统计区狭鳕捕捞（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21676/fisheries-of-the-exclusive-economic-zone-off-alaska-pollock-in-statistical-area-620-in-the-gulf-of",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• NMFS 在阿拉斯加湾 620 统计区禁止定向捕捞狭鳕。\n• 目的是避免超出 2026 年该区狭鳕年度总可捕量。\n• 属配额管理下的例行休渔，非新增管制。\n• 对市场意味着什么：狭鳕是鱼糜与冷冻鱼排主要原料，短期或抬升相关水产原料成本，但影响限于渔业链，无宏观定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾620统计区狭鳕捕捞（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Action Levels for Cadmium in Processed Food Intended for Babies and Young Children; Draft Guidance for Industry; Availability",
-      "title_cn": "婴幼儿加工食品镉含量行动水平：行业指南草案（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21670/action-levels-for-cadmium-in-processed-food-intended-for-babies-and-young-children-draft-guidance",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "卫生与公众服务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• FDA 发布行业指南草案，拟为供 2 岁以下婴幼儿食用的特定加工食品设定镉的行动水平（action level）。\n• 目标是在可达成的前提下进一步降低食品供应链中的镉含量。\n• 行动水平为执法参考值，非强制性限量标准。\n• 对市场意味着什么：婴幼儿辅食企业面临原料筛选与检测成本上升，中期利好第三方检测服务；对配方与原料产地结构有边际影响，短期无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "婴幼儿加工食品镉含量行动水平：行业指南草案（拟议规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Hazard Analysis and Risk-Based Preventive Controls for Human Food; Draft Guidance for Industry; Availability",
-      "title_cn": "人类食品危害分析与基于风险的预防性控制：行业指南草案（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21669/hazard-analysis-and-risk-based-preventive-controls-for-human-food-draft-guidance-for-industry",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "卫生与公众服务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• FDA 发布多章节行业指南草案的新增章节，阐释人类食品危害分析与基于风险的预防性控制合规路径。\n• 属对现行 CGMP 与预防性控制法规的解释性文件，不新增法定义务。\n• 面向食品生产企业的合规操作层面。\n• 对市场意味着什么：无直接定价影响；对食品企业的合规投入与召回风险敞口有边际影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "人类食品危害分析与基于风险的预防性控制：行业指南草案（拟议规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Part 572; Anthropomorphic Test Devices; Test Device for Human Occupant Restraint 50th Percentile Adult Male Dummy (THOR-50M); Extension of Comment Period",
-      "title_cn": "第572部分拟人化测试装置：THOR-50M第50百分位成年男性碰撞假人征求意见期延长（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21730/part-572-anthropomorphic-test-devices-test-device-for-human-occupant-restraint-50th-percentile-adult",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• NHTSA 应汽车创新联盟（Auto Innovators）请求，将 THOR-50M 假人相关补充提案的公众评议期延长 30 天。\n• 事项涉及新增脊柱配置与面部泡沫替代方案的规格征询。\n• 属程序性延期，实体标准未变。\n• 对市场意味着什么：无定价影响；仅推迟新假人强制时点，对整车与被动安全供应商的合规时间表有边际影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "第572部分拟人化测试装置：THOR-50M第50百分位成年男性碰撞假人征求意见期延长（拟议规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Airworthiness Directives; The Boeing Company Airplanes; Correction",
-      "title_cn": "适航指令：波音公司飞机；更正（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21686/airworthiness-directives-the-boeing-company-airplanes-correction",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 更正此前就波音 787-8/9/10 发布的适航指令中的段落引用错误。\n• 除该处笔误外，原指令其余内容不变。\n• 属纯技术性更正，不改变适航要求或合规义务。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：波音公司飞机；更正（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-23",
       "title": "Airworthiness Directives; MD Helicopters, LLC Helicopters",
-      "title_cn": "适航指令：MD直升机公司直升机（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21664/airworthiness-directives-md-helicopters-llc-helicopters",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 对 MD 直升机 369D/E/F/FF/H 与 500N 型发布新适航指令。\n• 触发原因是主传动轴联轴器机械损伤报告，要求对花键裂纹做一次性目视检查，视结果更换。\n• 属强制性适航要求，运营人须在规定期限内完成。\n• 对市场意味着什么：对 MD 机队的维护成本与可用率有边际影响，涉及零部件与维修需求；对上市公司无实质定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：MD直升机公司直升机（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Advancing Women's Health To Improve Outcomes in All Phases of Life",
-      "title_cn": "行政令：促进女性全生命周期健康以改善健康结果",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21666/advancing-womens-health-to-improve-outcomes-in-all-phases-of-life",
       "source": "联邦公报",
       "kind": "行政令",
       "agency": "美国总统行政办公室",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-10-25",
         "body": "【政策背景】\n第 14437 号行政令于 2026 年 10 月 19 日签署、10 月 22 日刊于联邦公报。其政策判断是：女性高发或特有的疾病——心血管疾病、癌症、卒中、阿尔茨海默病、自身免疫与炎症性疾病、骨质疏松、精神健康、慢性疼痛、子宫内膜异位症、子宫肌瘤、多囊卵巢综合征、不孕、孕产健康、更年期、神经系统疾病与老龄健康——所获得的研究资源与临床关注低于其他疾病，且研究成果向临床与社区实践的转化不足。\n\n【核心内容】\n第 2 节要求卫生与公众服务部经 NIH 主任，在 90 天内于适当的研究所或中心内设立「女性健康司」，与 NIH 女性健康研究办公室协同，职责包括：加强被研究不足疾病的科学评审、推进全生命周期研究（含重复性研究）、推动诊断技术创新、强化跨学科协作、改进性别特异性结局的数据与研究方法、提高女性与女童的临床试验纳入、并对受资助方落实「性别作为生物学变量」政策建立问责、促进成果向临床与公共卫生实践转化。\n第 3 节设立白宫女性健康特别工作组，由 HHS 部长与白宫幕僚长共同主持，成员含国防部长等跨部门官员。\n\n【要点提炼】\n- 组织化落地：以新建司局加跨部门工作组的方式，把女性健康从研究议题提升为常设行政架构。\n- 90 天为硬期限，机构设置与预算流向可观察。\n- 强调「转化」而非仅「研究」，指向临床指南、社区实践乃至支付端的后续动作。\n- 临床试验的性别纳入与数据方法要求趋严，对药械企业的试验设计构成合规影响。\n- 行政令未含拨款额度，资金仍取决于年度拨款程序；实际效力取决于预算配套。\n\n【对金融市场的预期影响】\n总体判断：中期对女性健康相关药械、诊断与保险支付形成结构性利好，短期不构成定价事件。\n\n受益方向：女性健康管线集中的制药与器械企业（生殖健康、更年期、子宫内膜异位症、骨质疏松）；体外诊断与影像筛查；承接联邦研究经费的 CRO/CDMO。\n\n承压方向：临床试验设计长期忽视性别差异的企业，面临补做研究与审批延迟风险；若后续指南收紧，相关适应证的数据要求上升。\n\n关键前提：行政令本身不拨款，实际影响取决于 FY2027 拨款与 NIH 内部资源再分配；无预算配套则落地效果有限。\n\n观察节点：90 天期满（约 2027 年 1 月中）的 NIH 司局设立公告、工作组首次会议议程、FY2027 预算请求中相关科目的变化。\n\n风险提示：行政令可被后续行政令修改，跨届政策连续性存在不确定性。",
         "tier": "full"
-      }
+      },
+      "title_cn": "行政令：促进女性全生命周期健康以改善健康结果",
+      "domain": "医疗/医药"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Notice of Federal Advisory Committee Meeting-Science, Technology and Innovation Board",
-      "title_cn": "通告：联邦咨询委员会会议——科学、技术与创新委员会",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21612/notice-of-federal-advisory-committee-meeting-science-technology-and-innovation-board",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "科技/AI",
       "brief": {
         "at": "2026-10-25",
         "body": "• 国防部公告「科学、技术与创新委员会」（STIB）联邦咨询委员会会议安排。\n• 公告文本中该部门自称「战争部」（Department of War），为称谓变化。\n• 属会议通知，不涉及政策决定。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "通告：联邦咨询委员会会议——科学、技术与创新委员会",
+      "domain": "科技/AI"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Fisheries Off West Coast States; Modification of the West Coast Salmon Fisheries; Inseason Action #1-#11",
-      "title_cn": "西海岸各州渔业：西海岸鲑鱼渔业修订，季内行动第1—11号（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21607/fisheries-off-west-coast-states-modification-of-the-west-coast-salmon-fisheries-inseason-action-1-11",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• NMFS 公布 2026—2027 年度西海岸海洋鲑鱼渔业的十一项渔期内行动。\n• 调整范围为美加边界至俄勒冈州 Cape Falcon 之间的商业鲑鱼渔业。\n• 属渔季中的动态管理，非年度框架调整。\n• 对市场意味着什么：对西海岸商业捕捞与加工有边际影响，属常规渔业管理，无系统性定价含义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "西海岸各州渔业：西海岸鲑鱼渔业修订，季内行动第1—11号（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Airworthiness Directives; General Electric Company Engines",
-      "title_cn": "适航指令：通用电气公司发动机（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21590/airworthiness-directives-general-electric-company-engines",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 对 GE CF34-8C/8E 系列多型发动机发布新适航指令。\n• 触发原因是可变几何（VG）系统作动器腐蚀导致 EICAS 出现「Engine Degraded」告警。\n• 要求移除特定版本的 EEC/FADEC 软件并按指令执行后续措施。\n• 对市场意味着什么：涉及支线客机机队的软件升级与维修工时，对 MRO 与航发零部件需求有边际拉动；无实质定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：通用电气公司发动机（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Establishment of Class E Airspace; Havana, IL",
-      "title_cn": "设立E类空域：伊利诺伊州哈瓦那（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21565/establishment-of-class-e-airspace-havana-il",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 在伊利诺伊州 Havana 的 Mason District 医院直升机坪设立 E 类空域。\n• 目的是支持新增仪表进近程序与仪表飞行规则运行。\n• 属属地空域技术性调整。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立E类空域：伊利诺伊州哈瓦那（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Revocation of Class E Airspace; Santa Elena, TX",
-      "title_cn": "撤销E类空域：得克萨斯州圣埃伦娜（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21564/revocation-of-class-e-airspace-santa-elena-tx",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 撤销得州 Santa Elena 的 Diamond \"O\" Ranch 机场 E 类空域。\n• 原因是相关仪表程序取消、Santa Elena 无线电信标退役。\n• 属空域资源清理，与新建程序配套。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "撤销E类空域：得克萨斯州圣埃伦娜（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Establishment of Class E Airspace; DeKalb, IL",
-      "title_cn": "设立E类空域：伊利诺伊州迪卡尔布（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21563/establishment-of-class-e-airspace-dekalb-il",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• FAA 在伊利诺伊州 DeKalb 的 Northwestern Memorial Healthcare 直升机坪设立 E 类空域。\n• 目的是支持新增仪表程序与仪表飞行规则运行。\n• 属属地空域技术性调整。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立E类空域：伊利诺伊州迪卡尔布（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Safety Zone; Brownsville Ship Channel, Brownsville, TX",
-      "title_cn": "安全区：得克萨斯州布朗斯维尔航运水道（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21636/safety-zone-brownsville-ship-channel-brownsville-tx",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海岸警卫队为得州 Brownsville 航道设立临时安全区。\n• 原因是超大型无动力船舶拖带过境，需保护人员、船舶与海洋环境。\n• 未经港长授权，船舶与人员不得进入该区域。\n• 对市场意味着什么：短期影响该航道通航效率，属临时性措施，无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区：得克萨斯州布朗斯维尔航运水道（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Drawbridge Operation Regulation; Manitowoc River, Manitowoc, WI",
-      "title_cn": "开启桥运行规定：威斯康星州马尼托沃克河（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21608/drawbridge-operation-regulation-manitowoc-river-manitowoc-wi",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海岸警卫队拟调整威斯康星州 Manitowoc 河上第八街桥与第十街桥的开合时间规则。\n• 市政府请求全面审查现行规则，以缓解市中心交通拥堵并实现两桥远程操作。\n• 2025 年 5 月曾发布临时规则征求意见，本次拟正式纳入远程操作安排。\n• 对市场意味着什么：无定价影响；仅涉及地方交通与桥梁运营方式。",
         "tier": "note"
-      }
+      },
+      "title_cn": "开启桥运行规定：威斯康星州马尼托沃克河（拟议规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "Indefinite Suspension of the De Minimis Exemption for Mail Shipments and New Postal Informal Entry Process; Delayed Compliance Extension",
-      "title_cn": "无限期暂停邮件货物小额免税待遇并实施新邮政非正式入境程序：合规期限延后（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21600/indefinite-suspension-of-the-de-minimis-exemption-for-mail-shipments-and-new-postal-informal-entry",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-25",
         "body": "【政策背景】\n《1930 年关税法》第 321 条长期允许单一收件人单日价值不超过 800 美元的进口包裹免关税、免正式报关入境，即「de minimis 豁免」。该制度在跨境电商高速扩张后被指造成关税流失、合规盲区与安全风险。2026 年 6 月 24 日，美国海关与边境保护局（CBP）发布规则，要求经国际邮政网络入境、且涉及伙伴政府机构（PGA）要求、或适用《美国协调关税表》第 98/99 章关税、或依第 98 章／自贸协定申报免税的货物，必须走正式报关程序。\n\n【核心内容】\n本件（2026 年 10 月 22 日）不改变实体规则，而是延长合规日期：CBP 宣布给予公众更多时间以符合 6 月 24 日规则下的正式报关要求，理由是相关方改造系统与流程需要时间。该文件属「de minimis 邮件渠道豁免无限期暂停」这一政策序列的组成部分。\n需注明：本次取得的官方素材未含新合规日期的具体时点，确切日期须以联邦公报文本为准。\n\n【要点提炼】\n- 方向不变、节奏后移：邮件渠道的 de minimis 豁免仍处暂停状态，本次只是合规期限延后。\n- 适用范围是所有经国际邮政网络入境且触发 PGA／关税条件的包裹，不限于单一来源国。\n- 正式报关意味着需要进口商记录、HTSUS 归类、原产地与价值申报，清关成本与时效压力上升。\n- 延期不等于豁免恢复；过渡期内的执法弹性由 CBP 裁量。\n- 与既有的对等关税、301／232 措施叠加，实际税负需逐案核算。\n\n【对金融市场的预期影响】\n总体判断：跨境电商与邮政小包渠道的成本抬升是既定的中期趋势，本次延期仅把冲击曲线右移。\n\n受益方向：具备正式报关能力的货代与清关服务商；海外仓与保税仓运营商；平台自营的 B2B2C 物流；美国本土仓配资产需求边际上升。\n\n承压方向：依赖邮政小包直邮的低价跨境电商平台与卖家，单位物流成本上升、时效拉长；邮政运营商的分拣与数据能力承压。\n\n关键前提：正式报关的单票固定成本决定实际冲击幅度——低客单价商品受影响最大，高客单价商品可摊薄。\n\n观察节点：CBP 公布的新合规日期、过渡期执法口径、邮政渠道申报量与实际清关时效数据。\n\n风险提示：规则可能面临贸易诉讼；若主要贸易伙伴采取对等措施，跨境小包流向可能重构而非单纯萎缩。",
         "tier": "full"
-      }
+      },
+      "title_cn": "无限期暂停邮件货物小额免税待遇并实施新邮政非正式入境程序：合规期限延后（规则）",
+      "domain": "贸易/关税"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-22",
       "title": "RIN 1625-AA00",
-      "title_cn": "海岸警卫队水道安全管理规则（RIN 1625-AA00）",
       "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21593/rin-1625-aa00",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海岸警卫队为纽约 Wantagh 附近 Zach's Bay 水域设立临时安全区。\n• 原因是 Jones Beach 州立公园游泳活动改期——原定 9 月 25—26 日因风暴取消。\n• 未经港长授权不得进入，属活动保障性措施。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "海岸警卫队水道安全管理规则（RIN 1625-AA00）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
-      "title_cn": "行政令：落实《2026年林赛·格雷厄姆制裁俄罗斯与伊朗法》",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21599/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026",
       "source": "联邦公报",
       "kind": "行政令",
       "agency": "美国总统行政办公室",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "【政策背景】\n《林赛·格雷厄姆制裁俄罗斯与伊朗法案》（Graham Act，22 U.S.C. 10802 et seq.）于 2026 年 9 月 18 日签署成法，授权对外国主体实施制裁、对人员施加限制，并对自俄罗斯联邦及特定其他国家进口至美国的货物征收关税。该法第 115 条允许总统在向国会提交「符合美国国家利益」的书面认证及说明报告后，豁免该法项下的制裁、限制与关税。\n\n【核心内容】\n第 14436 号行政令于 2026 年 10 月 16 日签署、10 月 21 日刊发，作出三项安排：\n其一，第 1、4 节：总统已向国会提交认证，豁免 Graham Act 项下的制裁、限制与关税——即以关税替代金融制裁作为主要施压工具。\n其二，第 2 节：(a) 对俄罗斯原产货物税率加征 500%（从价）；(b) 对俄罗斯原油与天然气前五大进口国，若在 2026 年 10 月 18 日及之后明知新购俄产油气，其输美货物税率加征 100%；(c) 对协助俄罗斯石油制裁规避的前五大「便利国」，输美货物税率加征 100%；(d) 上述加征叠加于一切其他关税、税费之上，包括《1930 年关税法》第 VII 编、《1974 年贸易法》第 122/201/301 条、《1962 年贸易扩展法》第 232 条。\n其三，第 3 节：美国贸易代表（USTR）会同国务院、财政部、能源部监测进口与采购情况，定期向总统报告并提出后续行动建议。上述加征均受第 114 条例外与第 4 节豁免约束。\n\n【要点提炼】\n- 工具切换：以关税替代制裁，规避制裁豁免的政治成本，但把压力直接传导至贸易流。\n- 500% 的加征在实操上接近禁运，俄美双边贸易将被压缩至近零。\n- 二级关税设计针对第三国（油气前五大进口国、前五大便利国），是本令外溢效应最强的部分。\n- 10 月 18 日为「新购」时点分界，构成明确的存量豁免界线。\n- 认定权集中于 USTR，名单未随令公布，属关键待定项。\n\n【对金融市场的预期影响】\n总体判断：短期抬升能源地缘风险溢价，中期加速全球原油贸易流向重构与航运路线调整。\n\n受益方向：非俄来源原油与 LNG 出口商（美国、中东、西非）；合规运力与油轮运价；替代供应链下的储运与能源基础设施。\n\n承压方向：仍大量进口俄油的国家，其输美商品面临 100% 加征，相关出口企业与承接程物流的航运公司；俄罗斯主权与准主权相关资产。\n\n关键前提：前五大进口国与「便利国」名单的认定时点与口径，决定二级关税的实际覆盖面；名单迟迟不公布则市场难以定价。\n\n观察节点：USTR 公布名单与监测报告；10 月 18 日后俄油气出口目的地结构变化；被点名国家是否调整采购。\n\n风险提示：二级关税可能引发贸易伙伴报复；豁免与加征并存的架构存在法律挑战空间；关税叠加后实际税负须逐案核算，不宜以单一税率概括。",
         "tier": "full"
-      }
+      },
+      "title_cn": "行政令：落实《2026年林赛·格雷厄姆制裁俄罗斯与伊朗法》",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Guidance Under Section 355 Concerning Device and Active Trade or Business; Partial Withdrawal",
-      "title_cn": "《国内收入法典》第355条指导意见：装置与积极经营业务认定；部分撤回（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21568/guidance-under-section-355-concerning-device-and-active-trade-or-business-partial-withdrawal",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "财政部",
-      "domain": "财政/税收",
       "brief": {
         "at": "2026-10-25",
         "body": "• 财政部部分撤回此前关于第 355 条「设备禁止」与「积极经营业务」要求的拟议规则通知。\n• 涉及公司分拆（spin-off）中控制公司股票分配免税待遇的适用条件。\n• 撤回意味着相关交易的税务确定性下降，实务上更依赖个案裁定。\n• 对市场意味着什么：对分拆交易的税务筹划构成摩擦，或延后部分 spin-off 时间表；属程序性撤回，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《国内收入法典》第355条指导意见：装置与积极经营业务认定；部分撤回（拟议规则）",
+      "domain": "财政/税收"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Reallocation of Pacific Cod in the Western Regulatory Area of the Gulf of Alaska",
-      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾西部管理区太平洋鳕配额重新分配（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21556/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-pacific-cod-in-the-western",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• NMFS 将阿拉斯加湾西部监管区太平洋鳕鱼未使用的配额，从拖网渔船重新分配给笼壶渔船。\n• 目的是使 2026 年度总可捕量得以充分采捕，避免配额浪费。\n• 属渔季中的配额调剂。\n• 对市场意味着什么：对鳕鱼供给有边际补充，属常规渔业管理，无系统性定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾西部管理区太平洋鳕配额重新分配（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Modify Groundfish Season Timing in the Bering Sea and Aleutian Islands and Gulf of Alaska Groundfish Fisheries",
-      "title_cn": "阿拉斯加专属经济区渔业：修改白令海与阿留申群岛及阿拉斯加湾底层鱼捕捞季时间安排（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21507/fisheries-of-the-exclusive-economic-zone-off-alaska-modify-groundfish-season-timing-in-the-bering",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-25",
         "body": "• NMFS 拟对白令海—阿留申群岛与阿拉斯加湾底层鱼渔业的开捕与休渔时点作两项技术性修订。\n• 一是授权 NMFS 参照国际太平洋大比目鱼委员会设定的渔期，确定裸盖鱼 IFQ/CDQ 渔季的开休时间。\n• 二是给予 NMFS 调整每日休渔时点的弹性。\n• 对市场意味着什么：降低渔获节奏的不确定性，属操作性优化，无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业：修改白令海与阿留申群岛及阿拉斯加湾底层鱼捕捞季时间安排（拟议规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Safety Zone; T/V DENISE FOSS (O.N. 1254223), Honolulu, HI",
-      "title_cn": "安全区：檀香山DENISE FOSS号拖船（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21498/safety-zone-tv-denise-foss-on-1254223-honolulu-hi",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海岸警卫队为檀香山港 T/V DENISE FOSS 及其拖带物设立半径 500 码的移动安全区。\n• 原因是运输两台船岸起重机，需保护人员、船舶与海洋环境。\n• 未经港长授权不得进入。\n• 对市场意味着什么：短期影响港口作业窗口，属临时措施，无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区：檀香山DENISE FOSS号拖船（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-21",
       "title": "Security Zones; Protection of Military Cargo, Captain of the Port Zone Puget Sound, WA",
-      "title_cn": "警戒区：华盛顿州普吉特湾港区长辖区军用货物保护（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21478/security-zones-protection-of-military-cargo-captain-of-the-port-zone-puget-sound-wa",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海岸警卫队将于 2026 年 10 月 30 日至 11 月 1 日在普吉特湾（华盛顿州）执行军事货物安保区。\n• 范围为 Blair 水道与 Sitcum 水道（Commencement 湾）。\n• 执行期内船舶须服从港长或其指定代表指令。\n• 对市场意味着什么：短期影响该港区通航与作业安排，无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "警戒区：华盛顿州普吉特湾港区长辖区军用货物保护（规则）",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Certificate of Alternate Compliance for USS PATRICK GALLAGHER (DDG 127)",
-      "title_cn": "通告：帕特里克·加拉格尔号驱逐舰（DDG 127）替代合规证书",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21463/certificate-of-alternate-compliance-for-uss-patrick-gallagher-ddg-127",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海军公告已为 USS PATRICK GALLAGHER（DDG 127）签发替代合规证书。\n• 原因是军舰特殊构造与用途无法完全符合《1972 年国际海上避碰规则》航行灯条款。\n• 公告目的是提醒相关水域海员注意。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "通告：帕特里克·加拉格尔号驱逐舰（DDG 127）替代合规证书",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Certificate of Alternate Compliance for USS Harrisburg (LPD 30)",
-      "title_cn": "通告：哈里斯堡号两栖船坞运输舰（LPD 30）替代合规证书",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21456/certificate-of-alternate-compliance-for-uss-harrisburg-lpd-30",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "• 海军公告已为 USS HARRISBURG（LPD 30）签发替代合规证书。\n• 同样基于军舰特殊构造与用途，无法完全符合 72 COLREGS 航行灯条款。\n• 属海员告知性公告。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "通告：哈里斯堡号两栖船坞运输舰（LPD 30）替代合规证书",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Notice of Meeting of Department of Defense Federal Advisory Committee-Defense Policy Board",
-      "title_cn": "通告：国防部联邦咨询委员会会议——国防政策委员会",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21404/notice-of-meeting-of-department-of-defense-federal-advisory-committee-defense-policy-board",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-25",
         "body": "• 国防部公告国防政策委员会（DPB）联邦咨询委员会会议安排。\n• 属会议通知，不涉及政策决定或采购安排。\n• 文中该部门自称「战争部」（Department of War）。\n• 对市场意味着什么：无定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "通告：国防部联邦咨询委员会会议——国防政策委员会",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Civil Penalties Inflation Adjustments; Annual Adjustments",
-      "title_cn": "民事罚款通胀调整：年度调整（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21474/civil-penalties-inflation-adjustments-annual-adjustments",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-24",
         "body": "内政部印第安事务局（BIA）依《2015年联邦民事罚款通胀调整法改进法》及行政管理和预算局（OMB）指引，对其规章中的民事罚款额度作年度通胀调整。\n调整是法定强制、公式化执行的，各机构须按 OMB 公布的调整系数逐年更新罚款上限，不涉及执法政策或处罚尺度的裁量变化。\n覆盖 BIA 规章项下的各类民事罚款上限。\n对市场意味着什么：无直接定价影响。罚款上限按通胀机械上调，幅度小且完全可预期，不改变在印第安领地经营能源、牧业、林业或博彩业务企业的合规成本结构，也不影响相关或有负债的计提假设。",
         "tier": "note"
-      }
+      },
+      "title_cn": "民事罚款通胀调整：年度调整（规则）",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Minimum Maturation Temperature for Beef and Ovine Meat From Regions Affected With Foot-and-Mouth Disease",
-      "title_cn": "口蹄疫疫区牛肉与羊肉最低熟化温度要求（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21433/minimum-maturation-temperature-for-beef-and-ovine-meat-from-regions-affected-with-foot-and-mouth",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "农业部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-24",
         "body": "农业部拟修订规章，将来自口蹄疫（FMD）疫区的鲜（冷藏或冷冻）去骨牛肉与羊肉的最低成熟温度由 4℃ 下调至 2℃。\n其余现行 FMD 相关进口缓解措施维持不变。\n目的是与美国认可的世界动物卫生组织（WOAH）关于 FMD 最低成熟温度的标准接轨，同时继续防范 FMD 传入美国。\n对市场意味着什么：对肉类加工与进口贸易板块影响轻微偏正面。温度门槛下调降低了疫区去骨牛肉输美的处理成本与品质损耗，理论上利好南美等 FMD 疫区出口国屠宰加工企业的对美业务；但美国对 FMD 疫区牛肉进口仍受无疫认定、工厂注册等多重限制，短期实际增量有限。观察节点为评论期后的终局规则与相关国家 WOAH 无疫区状态进展。",
         "tier": "note"
-      }
+      },
+      "title_cn": "口蹄疫疫区牛肉与羊肉最低熟化温度要求（拟议规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Atlantic Highly Migratory Species; Atlantic Bluefin Tuna Fisheries; Closure of the General Category October Through November Fishery for 2026",
-      "title_cn": "大西洋高度洄游物种：2026年10—11月大西洋蓝鳍金枪鱼普通类别捕捞关闭（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21450/atlantic-highly-migratory-species-atlantic-bluefin-tuna-fisheries-closure-of-the-general-category",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-24",
         "body": "国家海洋渔业局（NMFS）关闭大西洋蓝鳍金枪鱼 General 类别渔场在 10 月至 11 月时段的剩余捕捞。\n关闭期间，General 类别仅可保留、持有或卸下弯曲叉长 73 英寸（185 厘米）及以上的大中及巨型蓝鳍金枪鱼。\n本次行动同时免除该时段原定的限制捕捞日（RFD）；获豁免后，持证渔船可在钓获放生与标记放流计划框架下标记并放生各尺寸蓝鳍金枪鱼。\n渔场将于 2026 年 12 月 1 日自动重开。\n对市场意味着什么：对高端海产品与日料供应链板块构成短期供给收紧信号。General 类别关闭会压缩第四季度美东蓝鳍金枪鱼上岸量，对高等级腹肉批发价形成支撑；但该类别配额占比不大且 12 月 1 日自动重开，属季节性、可预期的价格扰动而非趋势性变化。",
         "tier": "note"
-      }
+      },
+      "title_cn": "大西洋高度洄游物种：2026年10—11月大西洋蓝鳍金枪鱼普通类别捕捞关闭（规则）",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026",
-      "title_cn": "联邦医疗保险计划：落实《2026年综合拨款法》第6219、6220与6224条（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21420/medicare-program-implementation-of-sections-6219-6220-and-6224-of-the-consolidated-appropriations",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "卫生与公众服务部",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-10-24",
         "body": "医疗保险和医疗补助服务中心（CMS）发布拟议规则，实施《2026年综合拨款法》第 6219 条（低收入人群 Medicare D 部分费用分摊减免调整）、第 6220 条（REAL 卫生提供者法，要求增强且准确的卫生提供者名录）与第 6224 条（现代化并确保药品福利管理机构问责）。\n三项均为立法已确立的条款，本规则负责将其操作化，涉及支付与报销口径、提供者名录数据要求以及 PBM 的报告义务。\n属拟议规则阶段，须经公众评论后发布终局规则方可生效。\n对市场意味着什么：对医保、PBM 与药房零售板块具中等方向性意义。第 6224 条延续了近年针对 PBM 价差与返点模式的监管压力，若终局规则严格落实，垂直整合型医保商旗下 PBM 分部的利润率与药房网络议价空间可能承压；低收入受益人费用分摊减免调整则有利于 D 部分参保留存率。观察节点为终局规则发布与 2027 计划年度的报价及星级评定。",
         "tier": "note"
-      }
+      },
+      "title_cn": "联邦医疗保险计划：落实《2026年综合拨款法》第6219、6220与6224条（拟议规则）",
+      "domain": "医疗/医药"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Airspace Designations; Incorporation by Reference Amendment of FAA Order JO 7400.11M",
-      "title_cn": "空域指定：援引修订FAA第JO 7400.11M号令（规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21422/airspace-designations-incorporation-by-reference-amendment-of-faa-order-jo-740011m",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-24",
         "body": "联邦航空管理局（FAA）对 2026 年 5 月至 9 月期间在《联邦公报》发布的若干终局规则作行政性更正。\n更正内容是将相关空域划设修正案转入 FAA 第 JO 7400.11 号命令的最新修订版，该命令以引用方式（incorporation by reference）纳入联邦规章。\n更正仅涉及文件归位与技术性引用，不改变任何空域范围、高度或运行要求。\n对市场意味着什么：无直接定价影响。属引用纳入机制的例行技术维护，对航空公司、通用航空与机场运营方不产生新增义务，也不改变任何航线的运行条件。",
         "tier": "note"
-      }
+      },
+      "title_cn": "空域指定：援引修订FAA第JO 7400.11M号令（规则）",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-20",
       "title": "Authorizations for Certain Activities at Liquefied Natural Gas Plants",
-      "title_cn": "液化天然气工厂特定活动授权程序（拟议规则）",
       "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21443/authorizations-for-certain-activities-at-liquefied-natural-gas-plants",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "能源部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-24",
         "body": "联邦能源监管委员会（FERC）拟修订规章，为液化天然气（LNG）厂区的特定活动设立授权程序，使其无需依《天然气法》第 3 条或第 7 条逐案取得授权命令。\n改革指向将常规、低风险的场区活动由逐案审批转为通用授权，缩短审批周期。\n属拟议规则阶段，尚未生效，最终纳入通用授权的活动清单范围有待终局规则明确。\n对市场意味着什么：对 LNG 与天然气基础设施板块构成温和正面信号。若终局规则落地，LNG 项目运营期的改扩建与调试活动审批时间成本下降，有利于降低项目延期的资本占用；但新建与重大扩容仍须走第 3 条或第 7 条程序，因此不构成产能门槛的实质放松。观察节点为终局规则文本及其纳入通用授权的活动清单范围。",
         "tier": "note"
-      }
+      },
+      "title_cn": "液化天然气工厂特定活动授权程序（拟议规则）",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Managing Senior Professional Performance",
-      "title_cn": "管理高级专业人员绩效",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "管理与预算办公室 OMB",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n美国联邦高级专业与技术岗位（SL/ST）的绩效考核规则长期与高级行政官（SES）体系并行但标准不一。人事管理办公室（OPM）与管理与预算办公室（OMB）发布最终规则，强化高级专业人员（SL 与 ST 岗位）的绩效考核。\n\n【核心内容】\n最终规则设立专门针对高级专业人员考核的新子部分，使其更贴近 SES 考核规定；同时取消高级专业人员考核方案（appraisal programs）、取消对绩效评级等级标准化分布（强制分布）的禁止，并加强对考核流程的监督。\n\n【要点提炼】\n1. 与 SES 规则靠拢，意味着高级专业岗位考核趋严、趋统一；\n2. 取消「禁止强制分布」，为部门引入评级分布（含末位分布）打开空间；\n3. 强化监督意味着考核过程受更严格的程序约束；\n4. 属联邦人事管理改革，与本届政府重塑文官体系的议程一致。\n\n【对金融市场的预期影响】\n中性。属联邦内部人事管理规则，不产生行业定价影响。间接含义在于联邦技术岗位的考核与留任机制变化，对承接联邦技术合同的企业的人才环境有微弱影响。",
         "tier": "full"
-      }
+      },
+      "title_cn": "管理高级专业人员绩效",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Regulations Regarding Payment of Tax by Commercially Acceptable Means",
-      "title_cn": "关于以商业可接受方式缴纳税款的规定",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21267/regulations-regarding-payment-of-tax-by-commercially-acceptable-means",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "财政部",
-      "domain": "财政/税收",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n长期以来，美国纳税人通过信用卡或借记卡缴税须经由国税局（IRS）签约的第三方支付处理商完成，纳税人需向处理商支付手续费。《纳税人优先法》（Taxpayer First Act）对相关法律作出修改，允许IRS直接接受信用卡或借记卡缴税，无需再将纳税人转接至第三方处理商。财政部/IRS据此对既有规章进行配套修订，于2026年10月19日在联邦公报发布最终规章。\n\n【核心内容】\n最终规章落实《纳税人优先法》的上述修法内容：其一，取消对IRS在信用卡、借记卡或签账卡缴税相关合同项下支付任何费用的限制；其二，取消IRS向以信用卡或借记卡缴税的纳税人收取任何费用或收费的限制。规章为IRS直接受理银行卡缴税、并自行决定费用承担方式扫清了规章层面的障碍。\n\n【要点提炼】\n- 核心变化是缴税通道\"去中介化\"：IRS可直接受理银行卡缴税，第三方处理商不再是必经环节。\n- 费用安排弹性化：既取消了IRS向处理商付费的限制，也取消了IRS向缴费人收费的限制，具体商业安排留待IRS合同确定。\n- 属于《纳税人优先法》的滞后配套落地，不改变纳税人义务本身。\n\n【对金融市场的预期影响】\n总体判断：影响限于支付产业链局部环节，对大盘无定价意义，属结构性微调。\n\n承压方向：长期承接联邦缴税流量的第三方支付处理商面临业务量分流风险，IRS直连模式下其手续费收入的可持续性取决于未来合同安排。\n\n受益方向：若IRS自建或直接签约受理通道，大型卡组织与收单网络的政府支付流量入口价值上升；对纳税人而言缴费成本存在下降空间。\n\n观察节点：IRS后续就银行卡缴税合同的招标与费率安排，是判断利益再分配方向的直接依据。",
         "tier": "full"
-      }
+      },
+      "title_cn": "关于以商业可接受方式缴纳税款的规定",
+      "domain": "财政/税收"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Marine Mammals; Incidental Take of Polar Bears and Pacific Walruses in the Beaufort Sea and North Slope of Alaska",
-      "title_cn": "海洋哺乳动物；波弗特海及阿拉斯加北坡北极熊与太平洋海象的附带捕获",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21371/marine-mammals-incidental-take-of-polar-bears-and-pacific-walruses-in-the-beaufort-sea-and-north",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n阿拉斯加油气行业在波弗特海及阿拉斯加北坡的勘探、开发、生产与运输活动，需遵守《1972年海洋哺乳动物保护法》（MMPA）对北极熊和太平洋海象等受保护物种的管制要求。行业在实际作业中不可避免地对少量海洋哺乳动物造成非故意的\"附带捕获\"（incidental take），须获得内政部鱼类和野生动物管理局（FWS）的专门授权方可合法作业。上一轮为期五年的附带捕获监管框架自2021年8月6日生效，至2026年8月5日到期。应阿拉斯加石油与天然气协会（AOGA）依MMPA提出的申请，FWS于2026年10月19日在联邦公报发布最终规则，接续建立新的五年期授权框架。\n\n【核心内容】\n本规则为在波弗特海（含阿拉斯加及外大陆架OCS水域）及阿拉斯加北部毗邻海岸全年开展的油气行业活动，就少量北极熊与太平洋海象的附带、非故意捕获的授权提供便利化安排。规则适用的活动类型与上一轮（2021—2026年）监管框架所覆盖的油气勘探、开发、生产与运输活动基本一致，授权有效期为五年。FWS将依据本规则，应申请就具体活动核发授权书（letters of authorization）。\n\n【要点提炼】\n- 规则性质为最终规则，直接生效，为阿拉斯加北坡油气作业提供为期五年的合规确定性。\n- 授权对象为\"少量、附带、非故意\"的捕获，不改变MMPA对海洋哺乳动物的基本保护框架。\n- 应行业协会申请启动，反映内政部对阿拉斯加油气开发的支持取向。\n- 具体项目仍需逐案申请授权书，监管通道由\"框架授权+个案核发\"两级构成。\n\n【对金融市场的预期影响】\n总体判断：对能源板块构成小幅正面信号，方向明确但幅度有限，属中长期制度性利好而非短期定价事件。\n\n受益方向：在阿拉斯加北坡及波弗特海拥有权益或作业的油气勘探开发与油服企业获得五年期监管确定性，项目合规成本与许可不确定性下降，有利于相关资本开支计划的推进。\n\n信号意义：本规则与本届政府放松阿拉斯加资源开发管制的政策取向一致，与同日发布的阿拉斯加国家公园狩猎捕捞规则修订（恢复1981年ANILCA框架）形成政策组合，指向联邦土地与近海资源开发管制的系统性回调。\n\n风险提示：授权以\"少量附带捕获\"为边界，环保组织可能依MMPA提起司法挑战；且个案授权书仍须逐案申请，具体项目进度存在执行层面的不确定性。",
         "tier": "full"
-      }
+      },
+      "title_cn": "海洋哺乳动物；波弗特海及阿拉斯加北坡北极熊与太平洋海象的附带捕获",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Outer Continental Shelf Oil and Gas Leasing; Corrections",
-      "title_cn": "外大陆架油气租赁；更正",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21346/outer-continental-shelf-oil-and-gas-leasing-corrections",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n《联邦法规汇编》（CFR）第30编第560部分是规范外大陆架（OCS）油气租赁的核心规章，由内政部海洋能源管理局（BOEM）负责管理。内政部曾于2008年和2016年发布两项规则，其中部分已定稿的修正案因技术性疏漏始终未被编入CFR正文，导致现行文本与生效规则之间存在引用不一致。内政部于2026年10月19日发布更正文件予以修复。\n\n【核心内容】\n本文件属纯技术性更正：修正30 CFR第560部分中的引用，将2008年与2016年两项规则中已定稿但未落入CFR的修正案补入汇编文本，使规章文本与既已生效的实体规则保持一致。文件不创设新的权利义务，不改变OCS油气租赁的现行实体政策。\n\n【要点提炼】\n- 属编纂层面的技术性更正，无政策增量。\n- 更正消除文本与生效规则之间长期存在的不一致，降低合规引用风险。\n- 与同日发布的波弗特海附带捕获授权等规则同步刊载，反映内政部近期对OCS油气监管文本的系统梳理。\n\n【对金融市场的预期影响】\n总体判断：不构成定价事件，对市场无方向性影响。\n\n信号意义：唯一的增量信息是内政部正在系统性清理OCS油气租赁规章文本，与本届政府推进近海油气开发的议程在程序层面相互印证，可作为观察后续租赁销售节奏的背景信号。\n\n风险提示：无实质性风险增量；市场参与者无需据此调整头寸。",
         "tier": "full"
-      }
+      },
+      "title_cn": "外大陆架油气租赁；更正",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Gates of the Arctic National Park and Preserve; Use of Off-Road Vehicles for Subsistence Purposes by Residents of Anaktuvuk Pass",
-      "title_cn": "北极之门国家公园和保护区；阿纳克图武克帕斯居民为生计目的使用越野车",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21300/gates-of-the-arctic-national-park-and-preserve-use-of-off-road-vehicles-for-subsistence-purposes-by",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n阿拉斯加北极之门国家公园与保护区（Gates of the Arctic）涉及当地居民的 subsistence 使用权与国家公园保护的平衡。国家公园管理局（NPS）拟修订该园区的特别规章。\n\n【核心内容】\nNPS 拟修订规章，设立一项程序：园区主管可就当地农村居民为生存目的使用越野车（ORV）设定合理的缓解措施。\n\n【要点提炼】\n1. 核心是授予园区主管设定「缓解措施」的裁量程序，而非一律禁止或一律允许；\n2. 涉及原住民生存权益与生态保护的长期张力；\n3. 属地方性规章修订，影响范围限于该园区。\n\n【对金融市场的预期影响】\n中性。不涉及资源开发许可或商业活动授权，无产业定价含义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "北极之门国家公园和保护区；阿纳克图武克帕斯居民为生计目的使用越野车",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Alaska; Wildlife, Harvest, and Access",
-      "title_cn": "阿拉斯加；野生动物、捕猎与进入权",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21299/alaska-wildlife-harvest-and-access",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n阿拉斯加国家公园区域内的狩猎、捕捞、诱捕及相关的公众进入与限制程序，长期受《1980年阿拉斯加国家利益土地保护法》（ANILCA）及其1981年实施框架规范。2015年、2017年和2024年，国家公园管理局（NPS）先后对该框架作出若干偏离性修改。本届政府依据第14153号和第14192号行政令以及内政部长第3422号、第3447号命令，推动恢复原有框架。NPS于2026年10月19日发布最终规则完成这一回调。\n\n【核心内容】\n规则修订NPS关于阿拉斯加地区狩猎、钓鱼、诱捕及其他收获相关活动的规章，以及限制公众使用和进入阿拉斯加公园区域（包括出于生计目的）的程序。核心动作是恢复1981年为实施ANILCA而建立、运行逾三十年的监管框架，并针对公众意见和机构复审对该框架作针对性更新；同时撤销2015年、2017年和2024年偏离该框架的监管修改。恢复后的框架承认阿拉斯加州、联邦生计管理计划与NPS在管理阿拉斯加公园区域公众使用与资源方面互补而有区别的角色。\n\n【要点提炼】\n- 规则取向是\"恢复旧框架+定向更新\"，州政府在野生动物管理中的权重回升。\n- 明确援引本届政府行政令与内政部长命令，属系统性放松管制议程的一部分。\n- 直接影响集中于阿拉斯加州内土地使用、狩猎捕捞与生计活动管理，联邦与州管理边界重新划分。\n\n【对金融市场的预期影响】\n总体判断：对金融市场无直接定价意义，但作为阿拉斯加资源治理转向的风向标具有观察价值。\n\n信号意义：规则与同日发布的波弗特海海洋哺乳动物附带捕获授权规则、外大陆架油气租赁规章更正构成同一政策簇，指向联邦在阿拉斯加土地、野生动物与近海资源管理上的整体松绑，利好阿拉斯加资源开发的制度环境。\n\n受益方向：阿拉斯加本地的户外狩猎捕捞服务业、向导服务及相关地方经济直接受益；资源开发企业面临的州—联邦双重管制摩擦下降。\n\n风险提示：框架回调压缩了联邦层面对公园区域生态保护的管制工具，环保诉讼风险上升，后续司法审查结果可能影响规则稳定性。",
         "tier": "full"
-      }
+      },
+      "title_cn": "阿拉斯加；野生动物、捕猎与进入权",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Streamlining the Regulations Governing Testimony by Employees and the Production of Documents in Legal Proceedings",
-      "title_cn": "简化雇员在法律程序中作证及文件提交的监管规定",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21272/streamlining-the-regulations-governing-testimony-by-employees-and-the-production-of-documents-in",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n联邦部门对其现职与离职雇员在法律程序中作证、以及提供本部门文件的管理规章（即「Touhy 规章」类规则），长期被认为程序繁复。\n\n【核心内容】\n本规则修订该部门关于雇员作证与文件提供的规章，删除和/或替换冗余表述、引用其他授权的表述或其他需简化的内容。\n\n【要点提炼】\n1. 性质为规章文本的技术性精简（streamlining），非政策实质转向；\n2. 影响涉及该部门的诉讼取证程序效率；\n3. 属行政减负议程的组成部分。\n\n【对金融市场的预期影响】\n中性。程序性规则精简，不产生产业影响。若后续涉该部门的诉讼取证效率提升，对相关诉讼当事人有微弱程序性意义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "简化雇员在法律程序中作证及文件提交的监管规定",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Airbus Helicopters",
-      "title_cn": "适航指令；空中客车直升机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21387/airworthiness-directives-airbus-helicopters",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nFAA 对已发现的不安全状况发布适航指令（AD），强制运营人执行检查或改装。本次针对空客直升机多个型号。\n\n【核心内容】\nFAA 拟针对所有空客直升机 AS350B3、AS355F/F1/F2/N/NP、EC130B4、EC130T2 型号发布新适航指令。起因是收到一份报告：上球轴承端与相关部件之间的拧紧力矩丧失。\n\n【要点提炼】\n1. 属例行适航安全指令，针对具体机械缺陷；\n2. 涉及空客直升机主力机型，运营机队需执行检查/修理；\n3. 目前为拟议阶段（NPRM），最终要求可能调整。\n\n【对金融市场的预期影响】\n中性偏弱负面。适航指令会带来运营方的检查与维修成本，对直升机运营商（含油气服务、医疗救援、旅游）有边际成本影响；对空客（EAD）的保修与声誉影响有限，属航空业的常态合规成本。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；空中客车直升机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Airbus SAS Airplanes",
-      "title_cn": "适航指令；空中客车SAS飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21334/airworthiness-directives-airbus-sas-airplanes",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n适航指令常以「supersede」（取代）形式更新既有指令，扩大适用范围或收紧要求。\n\n【核心内容】\nFAA 拟取代适航指令 2025-09-07，该指令适用于部分空客 A330-243、-243F、-841、-941 飞机。原指令要求修订飞机飞行手册（AFM），提供应对无线电管理面板双重失效的操作指引。\n\n【要点提炼】\n1. 针对 A330 系列的无线电管理面板失效场景，属航电系统冗余问题；\n2. 以取代既有指令的形式更新，说明发现了原有措施不足；\n3. 涉及 A330 机队，运营人需更新手册与程序。\n\n【对金融市场的预期影响】\n中性。属持续性适航管理，成本由运营方承担且量级有限；对空客的财务影响可忽略。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；空中客车SAS飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; The Boeing Company Airplanes",
-      "title_cn": "适航指令；波音公司飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21333/airworthiness-directives-the-boeing-company-airplanes",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n水平安定面间隙（freeplay）超标会导致俯仰振荡，是 737 系列的结构性适航关注点。\n\n【核心内容】\nFAA 对部分波音 737-600/-700/-700C/-800/-900/-900ER 系列飞机发布新适航指令。起因是多家运营人报告因水平安定面间隙过大导致俯仰振荡事件。该指令要求执行相应检查与处理。\n\n【要点提炼】\n1. 起因是多家运营人的实际报告，属已发生的安全事件驱动；\n2. 涉及 737 NG 全系列，机队规模大，影响面广；\n3. 属结构性/操纵面问题，检查和修理工时可能较高。\n\n【对金融市场的预期影响】\n对波音中性偏负面：737 NG 大规模机队的检查要求会增加航空公司维修成本，并可能再度引发对该机型设计与维护的审视；对航空公司是直接的维修成本与可用率影响。属本批适航指令中影响面较大的一条。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；波音公司飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; The Boeing Company Airplanes",
-      "title_cn": "适航指令；波音公司飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21332/airworthiness-directives-the-boeing-company-airplanes",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n客舱服务组件（PSU）上安装的视频监视器在硬着陆等载荷下脱落，构成客舱安全（松脱物）风险。\n\n【核心内容】\nFAA 对部分波音 737-600/-700/-700C/-800/-900/-900ER 系列飞机发布新适航指令。起因是一份报告指出部分 PSU 安装的视频监视器在硬着陆期间从 PSU 导轨上脱落。\n\n【要点提炼】\n1. 针对客舱内饰件（视频监视器）的固定可靠性；\n2. 触发事件为硬着陆，属载荷验证不足问题；\n3. 涉及 737 NG 系列，需检查/改装固定方式。\n\n【对金融市场的预期影响】\n中性偏弱负面。为航空公司带来客舱改装与检查成本；对机上娱乐（IFE）设备供应商可能涉及固定件的设计责任，但量级有限。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；波音公司飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Airbus SAS Airplanes",
-      "title_cn": "适航指令；空中客车SAS飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21331/airworthiness-directives-airbus-sas-airplanes",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nA330-841/-941（A330neo）的飞行手册与最低设备清单要求随运行经验积累而更新。\n\n【核心内容】\nFAA 取代适航指令 2025-04-05，该指令适用于所有空客 A330-841 与 -941 飞机。原指令要求修订飞机飞行手册（AFM）并删除此前要求的限制，同时修订现行最低设备清单。\n\n【要点提炼】\n1. 针对 A330neo 机型，属手册与设备清单的持续更新；\n2. 以取代形式发布，反映运行经验的累积；\n3. 属文档与程序层面的合规要求。\n\n【对金融市场的预期影响】\n中性。文档修订类适航指令的合规成本低，无实质财务影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；空中客车SAS飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; The Boeing Company Airplanes",
-      "title_cn": "适航指令；波音公司飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21326/airworthiness-directives-the-boeing-company-airplanes",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n发动机风扇整流罩的保护系统若覆盖不足，可能导致部件与系统暴露于损伤风险。\n\n【核心内容】\nFAA 对部分波音 787-8、787-9、787-10 飞机发布新适航指令。起因是一份报告指出右发左侧风扇整流罩的保护系统未能充分覆盖相关部件与系统。\n\n【要点提炼】\n1. 针对 787 全系列的发动机整流罩保护设计；\n2. 属设计充分性问题，可能要求改装或加装保护；\n3. 涉及宽体机主力机型。\n\n【对金融市场的预期影响】\n中性偏弱负面。对 787 运营方产生改装成本；对波音而言属新增强制改装要求，若涉及设计更改则有一定工程与成本影响，需关注后续是否扩大适用范围。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；波音公司飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Airbus SAS Airplanes",
-      "title_cn": "适航指令；空中客车SAS飞机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21325/airworthiness-directives-airbus-sas-airplanes",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nA330/A340 系列的老旧机型随服役时间延长出现新的结构或系统问题。\n\n【核心内容】\nFAA 发布新适航指令，适用于所有空客 A330-243/-243F/-341/-342/-343/-841/-941 以及 A340-211/-212/-213/-311/-312/-313/-541/-642 飞机。起因是收到相关报告（具体不安全状况以指令文本为准）。\n\n【要点提炼】\n1. 覆盖 A330 与 A340 的广泛型号，机队基数大但多为老旧机型；\n2. 属新增适航指令，非取代既有指令；\n3. 运营人需按指令执行检查或改装。\n\n【对金融市场的预期影响】\n中性偏弱负面。对运营 A330/A340 的航空公司产生合规成本；对空客的财务影响有限，但反映老旧机型维护负担上升，可能加速部分机队的退役决策。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；空中客车SAS飞机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Pratt & Whitney RTX Corporation (Type Certificate Previously Held by Pratt & Whitney Division United Technologies Corporation) Engines",
-      "title_cn": "适航指令；普惠RTX公司（型号合格证原由普惠联合技术公司持有）发动机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21298/airworthiness-directives-pratt-and-whitney-rtx-corporation-type-certificate-previously-held-by-pratt",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nPW4000 系列发动机（PW4074/PW4077/PW4084D/PW4090 等）的高压部件需定期超声检测。\n\n【核心内容】\nFAA 拟取代适航指令 2026-09-02，该指令适用于部分普惠（RTX 公司，型号合格证原由普惠持有）PW4074、PW4074D、PW4077、PW4077D、PW4084D、PW4090、PW4090-3 发动机。原指令要求对高压部件执行重复的角度超声扫查检查（AUSI）。\n\n【要点提炼】\n1. 针对 PW4000 系列的高压部件检测要求；\n2. 取代既有指令，可能收紧检查间隔或扩大范围；\n3. 重复检查意味着持续性的维修成本。\n\n【对金融市场的预期影响】\n中性偏弱负面。对装配 PW4000 的机队（主要为 777 等）运营方产生持续性检测成本；对 RTX 的保修与发动机服务收入结构有边际影响。属发动机在役管理的常态动作。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；普惠RTX公司（型号合格证原由普惠联合技术公司持有）发动机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Pratt & Whitney Division Engines",
-      "title_cn": "适航指令；普惠公司发动机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21290/airworthiness-directives-pratt-and-whitney-division-engines",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n尾喷管起火（tailpipe fire）与推力控制失效属发动机的严重不安全状况。\n\n【核心内容】\nFAA 对全部普惠 PW4052、PW4056、PW4060、PW4060A、PW4060C、PW4062、PW4062A、PW4152、PW4156、PW4156A、PW4158、PW4460、PW4462 发动机发布新适航指令。起因是多起尾喷管起火、推力控制失效的报告。\n\n【要点提炼】\n1. 起因是「多起报告」，说明属重复性事件而非个案；\n2. 覆盖 PW4000 系列的广泛型号；\n3. 属安全等级较高的强制指令，可能要求停场检查或改装。\n\n【对金融市场的预期影响】\n对相关机队运营方负面：多起起火/失控事件驱动的强制指令通常伴随较高的停场与改装成本，影响飞机可用率。对 RTX 而言，若被认定为设计或制造缺陷，可能涉及保修与赔偿责任，值得跟踪后续调查结论。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；普惠公司发动机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
-      "title_cn": "适航指令；罗尔斯·罗伊斯德国公司发动机",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21278/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nBR700 系列发动机（装配庞巴迪环球系列等公务机）的适航限制章节（ALS）需随服役经验更新。\n\n【核心内容】\nFAA 取代适航指令 2009-04-13，适用于部分罗尔斯·罗伊斯德国（RRD）BR700-715A1-30、BR700-715B1-30、BR700-715C1-30 发动机。原指令要求修订运营人既有经批准的发动机适航限制章节（ALS）。\n\n【要点提炼】\n1. 针对 BR700 发动机的适航限制章节，属寿命件与检修周期的更新；\n2. 取代 2009 年的旧指令，说明要求有实质更新；\n3. 主要影响公务机机队。\n\n【对金融市场的预期影响】\n中性偏弱负面。对公务机运营方产生手册修订与可能的检修周期调整成本；对罗罗的售后市场收入有边际影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；罗尔斯·罗伊斯德国公司发动机",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Safety Zone; FRL Inaugural Invitational eFoil Exhibition Race, Miami Marine Stadium Basin, Miami, FL",
-      "title_cn": "安全区；佛罗里达州迈阿密海洋体育场水域FRL首届邀请赛电动水翼表演赛",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21305/safety-zone-frl-inaugural-invitational-efoil-exhibition-race-miami-marine-stadium-basin-miami-fl",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n海岸警卫队（USCG）对水上赛事等临时性活动设立临时安全区（safety zone），限制无关船只进入。\n\n【核心内容】\nUSCG 拟在迈阿密海洋体育场盆地（Miami Marine Stadium Basin）的部分可航水域设立临时安全区，以保障 FRL 首届邀请赛电动水翼板（eFoil）表演赛事。设立目的是保护人员、船舶与海洋环境免受潜在危险。\n\n【要点提炼】\n1. 属临时性、局部性的航行管制，非长期规则；\n2. 针对电动水翼板赛事这一新兴水上运动；\n3. 目前为拟议阶段。\n\n【对金融市场的预期影响】\n中性。临时安全区不涉及商业航运通道的长期变更，无产业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区；佛罗里达州迈阿密海洋体育场水域FRL首届邀请赛电动水翼表演赛",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Special Local Regulation; Ponce Harbor, Ponce, PR",
-      "title_cn": "地方特别规定；波多黎各庞塞港",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21302/special-local-regulation-ponce-harbor-ponce-pr",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n海岸警卫队以特别地方规章（SLR）在赛事期间对特定水域实施临时航行管制。\n\n【核心内容】\nUSCG 在波多黎各蓬塞（Ponce）的 Bahia de Ponce 部分水域设立临时特别地方规章，以保障 2026 年 10 月举办的「Discover the Caribbean Regatta」帆船赛事期间的水上人命安全。\n\n【要点提炼】\n1. 属赛事期间的临时管制，有明确起止时间；\n2. 影响范围为蓬塞港局部水域；\n3. 不涉及商业港口的常规运营。\n\n【对金融市场的预期影响】\n中性。局部临时管制对港口物流无实质影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "地方特别规定；波多黎各庞塞港",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "President's Military Spouse Commission; Notice of Federal Advisory Committee Meeting",
-      "title_cn": "《总统军人配偶委员会联邦咨询委员会会议通知》",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21372/presidents-military-spouse-commission-notice-of-federal-advisory-committee-meeting",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-19",
         "body": "【政策背景】\n总统军人配偶委员会（President's Military Spouse Commission）是联邦咨询委员会，就军人配偶就业、随军搬迁、子女教育等议题向国防部提供建议。\n\n【核心内容】\n国防部（文中称\"战争部\"）发布通告，公布该委员会即将举行的联邦咨询委员会会议安排。\n\n【要点提炼】\n1. 属程序性会议公告，本身不含政策调整；\n2. 会议议题与结论须待召开后披露；\n3. 委员会职能延续，未涉及机构调整。\n\n【对金融市场的预期影响】\n无直接影响。若会议后续推动军人家庭福利、住房或教育领域的政策调整，可能波及相关服务与消费板块，需跟踪会议成果。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《总统军人配偶委员会联邦咨询委员会会议通知》",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-19",
       "title": "Information Collection Requirement; Defense Federal Acquisition Regulation Supplement (DFARS) Parts 223 and 226, Occupational Safety and Drug-Free Work Force",
-      "title_cn": "《国防联邦采购条例补充（DFARS）第223、226部分信息收集要求：职业安全与无毒工作场所》",
       "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21330/information-collection-requirement-defense-federal-acquisition-regulation-supplement-dfars-parts-223",
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国防部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-19",
         "body": "【政策背景】\n依《1995年文书削减法》（Paperwork Reduction Act），联邦机构新增或延长信息收集要求须公开征求意见。DFARS 是国防部在《联邦采购条例》（FAR）之外另行制定的补充采购规则。\n\n【核心内容】\n国防部拟延长一项已获批的信息收集要求，涉及 DFARS 第223部分（职业安全）与第226部分（无毒工作场所），并就该收集的必要性、负担估计的准确性、信息质量的提升方式以及减轻填报负担的途径征求公众意见。\n\n【要点提炼】\n1. 属既有信息收集义务的延期，不新增实体合规义务；\n2. 相关条款要求承包商就职业安全与无毒工作场所事项提交证明与记录；\n3. 公众可在公示期内就负担与必要性提出意见。\n\n【对金融市场的预期影响】\n影响限于国防承包商的合规成本，属可预期的日常负担，对国防军工板块基本面无实质影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《国防联邦采购条例补充（DFARS）第223、226部分信息收集要求：职业安全与无毒工作场所》",
+      "domain": "国防/安全"
     },
     {
       "date": "2026-10-19",
@@ -1040,229 +1107,244 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Non-Applicability of Section 357(c) to Consolidated Groups",
-      "title_cn": "第357(c)条不适用于合并纳税集团",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21253/non-applicability-of-section-357c-to-consolidated-groups",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "财政部",
-      "domain": "财政/税收",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n《国内税收法典》第 357(c) 条规定：若被转让财产上负担的债务超过其计税基础，转让方须确认收益。该条在合并纳税集团（consolidated group）内部的资产划转中可能产生不符合商业实质的税负。\n\n【核心内容】\n本最终规章澄清：在合并集团成员之间的特定转让中，受让方承担某些负债不会减少转让方所取得的受让方股票计税基础。该规章影响合并集团内部的资产与负债划转。\n\n【要点提炼】\n1. 澄清第 357(c) 条不适用于合并集团内部的特定转让；\n2. 消除了集团内部重组可能触发的不当当期确认收益；\n3. 属技术性澄清，降低了企业内部重组的税务摩擦。\n\n【对金融市场的预期影响】\n中性偏正面。对大型集团企业（尤其频繁进行内部重组、分拆或资产划转的公司）是税务确定性的改善，降低了内部重组的潜在税负。属企业税的技术性利好，量级取决于企业自身的重组频率。",
         "tier": "note"
-      }
+      },
+      "title_cn": "第357(c)条不适用于合并纳税集团",
+      "domain": "财政/税收"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Denali National Park and Preserve; Vehicle Use",
-      "title_cn": "迪纳利国家公园和保护区；车辆使用",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21222/denali-national-park-and-preserve-vehicle-use",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "内政部",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n德纳里国家公园与保护区的园区道路（15–90 英里限制段）车辆通行数量受规章限制，实际执行依据车辆管理计划（VMP）。\n\n【核心内容】\n国家公园管理局（NPS）修订德纳里国家公园与保护区的特别规章，使关于限制路段（Denali Park Road 15–90 英里）通行车辆数量的规定与 NPS 已实施的车辆管理计划保持一致。\n\n【要点提炼】\n1. 性质为规章与既有管理实践的「对齐」，非通行量的实质放宽或收紧；\n2. 使规章文本反映已执行的 VMP；\n3. 影响德纳里公园的旅游车辆管理。\n\n【对金融市场的预期影响】\n中性。不改变实际通行配额，对阿拉斯加旅游与公园特许经营商无新的影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "迪纳利国家公园和保护区；车辆使用",
+      "domain": "能源/环境"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Reallocation of Atka Mackerel in the Bering Sea and Aleutian Islands Management Area",
-      "title_cn": "阿拉斯加专属经济区渔业；白令海及阿留申群岛管理区阿特卡鲭鱼配额再分配",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21239/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-atka-mackerel-in-the-bering-sea",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n白令海/阿留申群岛（BSAI）渔区的 Atka mackerel（阿特卡鲭鱼）设有 incidental catch allowance（ICA，兼捕配额），未使用部分可按规定再分配。\n\n【核心内容】\nNMFS 将 2026 年白令海亚区与东阿留申区（BS/EAI）预计未使用的 Atka mackerel 兼捕配额再分配给该区的 Amendment 80 合作配额。\n\n【要点提炼】\n1. 属渔业配额的年度技术性再分配，非 total allowable catch 的调整；\n2. 受益方为 Amendment 80 合作配额持有者（底鱼拖网船队）；\n3. 提高配额利用率，减少资源闲置。\n\n【对金融市场的预期影响】\n中性偏弱正面。对白令海底鱼渔业（Amendment 80 船队及相关加工企业）是可捕量的边际增加，但属年度例行调整，量级有限。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业；白令海及阿留申群岛管理区阿特卡鲭鱼配额再分配",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Fishery Management Plans of St. Croix and St. Thomas and St. John; Spiny Lobster Management Measures",
-      "title_cn": "圣克罗伊、圣托马斯和圣约翰渔业管理计划；刺龙虾管理措施",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21205/fishery-management-plans-of-st-croix-and-st-thomas-and-st-john-spiny-lobster-management-measures",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n加勒比渔业管理委员会为圣克罗伊（St. Croix）与圣托马斯/圣约翰（St. Thomas and St. John）分别制定渔业管理计划（FMP），年度捕捞限额（ACL）需按最新资源评估更新。\n\n【核心内容】\nNMFS 拟制定规章，实施加勒比渔业管理委员会准备的两份 FMP 下的「框架行动 4」（Framework Action 4），更新圣克罗伊与圣托马斯/圣约翰的龙虾（spiny lobster）年度捕捞限额。\n\n【要点提炼】\n1. 属年度捕捞限额的资源评估驱动更新；\n2. 影响美属维尔京群岛的龙虾渔业；\n3. 目前为拟议阶段。\n\n【对金融市场的预期影响】\n中性。区域渔业规模小，对海产品市场无宏观影响；对当地渔业与旅游业有局部意义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "圣克罗伊、圣托马斯和圣约翰渔业管理计划；刺龙虾管理措施",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Shortraker Rockfish in the Central Regulatory Area of the Gulf of Alaska",
-      "title_cn": "阿拉斯加专属经济区渔业；阿拉斯加湾中部管理区短鳍平鲉",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21184/fisheries-of-the-exclusive-economic-zone-off-alaska-shortraker-rockfish-in-the-central-regulatory",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "商务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n阿拉斯加湾（GOA）中部管制区的 shortraker rockfish（短棘平鲉）实行禁渔保留（retention）管理，达到配额后禁止保留。\n\n【核心内容】\nNMFS 禁止在阿拉斯加湾中部管制区保留 shortraker rockfish，仅允许已登记参加中部 GOA 岩鱼计划并持岩鱼合作配额许可的捕捞/加工船保留。原因是 2026 年 shortraker rockfish 配额已达。\n\n【要点提炼】\n1. 属配额达限后的例行禁保留措施；\n2. 仅豁免岩鱼合作计划的持证人；\n3. 是季节性管理动作，非资源状况恶化信号。\n\n【对金融市场的预期影响】\n中性。属阿拉斯加渔业年度管理的例行动作，对海产品供给的价格影响微弱。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阿拉斯加专属经济区渔业；阿拉斯加湾中部管理区短鳍平鲉",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Powered Air Purifying Respirators (PAPRs) in Underground Mines",
-      "title_cn": "地下矿山电动送风过滤式呼吸器（PAPR）",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21154/powered-air-purifying-respirators-paprs-in-underground-mines",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "劳工部",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n动力送风过滤式呼吸器（PAPR）在地下煤矿的使用标准涉及矿工粉尘防护，矿山安全与健康管理局（MSHA）于 2025 年 7 月 1 日发布了拟议规则。\n\n【核心内容】\n应公众请求，MSHA 重开该拟议规则的规则制定记录，并就 2025 年 7 月 1 日发布的《地下煤矿中的动力送风过滤式呼吸器（PAPR）》拟议规则安排一场线上公开听证会。\n\n【要点提炼】\n1. 属规则制定程序的「记录重开 + 公开听证」，反映业界参与诉求较强；\n2. 议题为地下煤矿的呼吸防护设备标准；\n3. 最终规则尚未出台。\n\n【对金融市场的预期影响】\n中性偏观察。若最终规则强制或鼓励地下煤矿采用 PAPR，将增加煤矿运营商的设备与合规成本，同时利好矿山安全设备供应商。重开记录意味着规则落地时点后移，需跟踪听证结果与最终文本。",
         "tier": "note"
-      }
+      },
+      "title_cn": "地下矿山电动送风过滤式呼吸器（PAPR）",
+      "domain": "教育/劳动"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Establishment of United States Area Navigation Route T-550 and Revocation of Very High Frequency Omnidirectional Range Federal Airway V-320",
-      "title_cn": "设立美国区域导航航线T-550并撤销甚高频全向信标联邦航路V-320",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21192/establishment-of-united-states-area-navigation-route-t-550-and-revocation-of-very-high-frequency",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nFAA 正推进从地基 VOR 航路向基于性能的导航（PBN/RNAV）航路过渡，老旧 VOR 航路因导航信号限制逐步撤销。\n\n【核心内容】\n本行动撤销阿拉斯加的 VOR 联邦航路 V-320，原因是导航信号限制导致该航路部分路段无法使用。同时设立美国区域导航航路 T-550。需注意存在两条同名的 V-320（阿拉斯加与另一州各一条），本次撤销的是阿拉斯加的那条。\n\n【要点提炼】\n1. 属空域现代化的航路结构调整，非空域容量削减；\n2. 撤销原因是信号覆盖不足导致航路不可用；\n3. 以 RNAV 航路 T-550 替代，需机载设备支持。\n\n【对金融市场的预期影响】\n中性。属航路结构调整，对航空运营无实质成本影响；长期看 RNAV 过渡有利于航路效率，但对不具备 RNAV 能力的老旧机队构成运营限制。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立美国区域导航航线T-550并撤销甚高频全向信标联邦航路V-320",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Establishment of Restricted Areas R-5306G and R-5306H and Amendment of Restricted Areas R-5306C and R-5306E; Cherry Point, NC",
-      "title_cn": "设立限制区R-5306G和R-5306H并修订限制区R-5306C和R-5306E；北卡罗来纳州切里波因特",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21179/establishment-of-restricted-areas-r-5306g-and-r-5306h-and-amendment-of-restricted-areas-r-5306c-and",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n限制区（restricted area）用于军事训练等活动的空域隔离，其边界坐标与管制机构需随实际使用调整。\n\n【核心内容】\n本行动在北卡罗来纳州海军陆战队航空站樱桃角（MCAS Cherry Point）设立限制区 R-5306G 与 R-5306H；修订 R-5306C 与 R-5306D 的两处经纬度坐标；并将 R-5306A、R-5306C、R-5306D、R-5306E 的管制机构调整为该航空站。\n\n【要点提炼】\n1. 新增两个限制区，意味着该航空站周边军事训练空域扩大；\n2. 同时修正既有边界坐标与管制归属；\n3. 属国防训练需求的配套空域调整。\n\n【对金融市场的预期影响】\n中性。局部空域调整对民航航路有轻微绕行成本，但樱桃角周边非繁忙航路，影响可忽略。反映海军陆战队航空训练的活跃度。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立限制区R-5306G和R-5306H并修订限制区R-5306C和R-5306E；北卡罗来纳州切里波因特",
+      "domain": "国防/安全"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Establishment of Class E Airspace; Coleman, TX",
-      "title_cn": "设立E类空域；得克萨斯州科尔曼",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21145/establishment-of-class-e-airspace-coleman-tx",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "交通部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nE 类空域的设立通常配合新仪表程序（instrument procedures）的实施，使机场具备仪表飞行规则（IFR）运行条件。\n\n【核心内容】\n本行动在德克萨斯州科尔曼（Coleman, TX）的 Ranch at Double Gates 机场设立 E 类空域，以支持新的仪表程序与 IFR 运行。\n\n【要点提炼】\n1. 属小型机场的仪表运行能力建设；\n2. 需配合新仪表程序设计；\n3. 影响范围为机场周边局部空域。\n\n【对金融市场的预期影响】\n中性。地方通航机场的空域升级，无产业层面影响；对当地通航与公务航空有便利意义。",
         "tier": "note"
-      }
+      },
+      "title_cn": "设立E类空域；得克萨斯州科尔曼",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Safety Zone; Cumberland River, Hendersonville, TN",
-      "title_cn": "安全区；田纳西州亨德森维尔坎伯兰河",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21240/safety-zone-cumberland-river-hendersonville-tn",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n水上烟火表演期间，海岸警卫队设立临时安全区以保护人员与船舶。\n\n【核心内容】\nUSCG 拟在田纳西州亨德森维尔（Hendersonville）坎伯兰河（Cumberland River）221.7 至 222 英里航标之间的可航水域设立临时安全区，以应对水上烟火表演的潜在危险。\n\n【要点提炼】\n1. 临时性、局部性管制，配合单一活动；\n2. 有明确的河段范围与时间；\n3. 目前为拟议阶段。\n\n【对金融市场的预期影响】\n中性。无商业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区；田纳西州亨德森维尔坎伯兰河",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Special Local Regulation; Lake Havasu, Lake Havasu City, AZ",
-      "title_cn": "地方特别规定；亚利桑那州哈瓦苏湖城哈瓦苏湖",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21162/special-local-regulation-lake-havasu-lake-havasu-city-az",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n哈瓦苏湖（Lake Havasu）是热门水上活动水域，USCG 在大型水上活动期间实施临时特别地方规章（SLR）。\n\n【核心内容】\nUSCG 在哈瓦苏湖部分可航水域设立临时特别地方规章，以保障 2026 年「Lake Havasu Witch Paddle」活动期间的水上人命安全，活动自上午 8 时开始。\n\n【要点提炼】\n1. 属赛事期间的临时航行管制；\n2. 影响局部水域与限定时段；\n3. 该湖同期还有多项同类管制（反映水上活动密集）。\n\n【对金融市场的预期影响】\n中性。对当地水上旅游与游艇租赁有短暂运营限制，无财务量级影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "地方特别规定；亚利桑那州哈瓦苏湖城哈瓦苏湖",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Safety Zone; Atlantic Ocean, Culebra, Puerto Rico",
-      "title_cn": "安全区；波多黎各库莱布拉萨大西洋海域",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21161/safety-zone-atlantic-ocean-culebra-puerto-rico",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nUSCG 在海滩相邻水域设立临时安全区，通常与水下作业或特定活动相关。\n\n【核心内容】\nUSCG 在波多黎各库莱布拉（Culebra）Puerto Rico Playa Tamarindo Grande 海滩附近坐标点 200 码范围内的可航水域设立临时安全区，以保护人员、船舶与海洋环境。\n\n【要点提炼】\n1. 范围明确（某坐标点 200 码内），影响极小；\n2. 临时性管制；\n3. 涉及波多黎各离岛水域。\n\n【对金融市场的预期影响】\n中性。无商业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区；波多黎各库莱布拉萨大西洋海域",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Special Local Regulations; Annual Marine Events on the Colorado River, Between Davis Dam (Bullhead City, Arizona) and Headgate Dam (Parker, Arizona), Blue Water Resort and Casino Parker Enduro and NWSRA Water Ski Races, Colorado River, Parker, AZ",
-      "title_cn": "地方特别规定；科罗拉多河（戴维斯坝至海德盖特坝段）年度水上赛事",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21160/special-local-regulations-annual-marine-events-on-the-colorado-river-between-davis-dam-bullhead-city",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n科罗拉多河（戴维斯坝至布尔海德城段）每年举办多项水上赛事，USCG 有一套既有的年度海上活动特别地方规章。\n\n【核心内容】\nUSCG 将于 2026 年 10 月 23 日至 25 日执行既有的特别地方规章，以保障 Blue Water Resort and Casino Parker Enduro 与 NWSRA 滑水赛事期间可航水域的人命安全。\n\n【要点提炼】\n1. 属既有规章的年度执行通知，非新设规则；\n2. 时间为 10 月 23–25 日，共三天；\n3. 涉及亚利桑那/内华达交界的科罗拉多河段。\n\n【对金融市场的预期影响】\n中性。对当地水上赛事旅游与博彩度假村（Blue Water Resort）的活动运营有配套意义，无财务定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "地方特别规定；科罗拉多河（戴维斯坝至海德盖特坝段）年度水上赛事",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Special Local Regulation; Lake Havasu, Lake Havasu City, AZ",
-      "title_cn": "地方特别规定；亚利桑那州哈瓦苏湖城哈瓦苏湖",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21157/special-local-regulation-lake-havasu-lake-havasu-city-az",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n哈瓦苏湖水上赛事密集，USCG 逐项设立临时特别地方规章。\n\n【核心内容】\nUSCG 在哈瓦苏湖部分可航水域设立临时特别地方规章，以保障 2026 年 10 月 20 日下午 3 时开始的「Pineapple Races」活动期间的水上人命安全。\n\n【要点提炼】\n1. 与同日另一项哈瓦苏湖管制（Witch Paddle）并列，属活动密集期的常规操作；\n2. 临时、局部管制；\n3. 有明确起止时间。\n\n【对金融市场的预期影响】\n中性。无商业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "地方特别规定；亚利桑那州哈瓦苏湖城哈瓦苏湖",
+      "domain": "交通"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-16",
       "title": "Implementation of Electronic Submission of Mariner Course Completion Data",
-      "title_cn": "实施船员培训结业数据电子化提交",
       "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21146/implementation-of-electronic-submission-of-mariner-course-completion-data",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "国土安全部",
-      "domain": "交通",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n海岸警卫队此前要求海员培训课程结业数据以电子方式提交，但配套系统尚未建成。\n\n【核心内容】\n本文件宣布：USCG 在 2028 年 11 月 25 日之前不强制要求电子提交海员课程结业数据，原因是提供电子提交的系统尚未全面运行。USCG 将另行通知启用时间。\n\n【要点提炼】\n1. 性质为合规要求的推迟实施，非取消；\n2. 推迟期限长（至 2028 年 11 月），反映系统建设进度缓慢；\n3. 培训机构在推迟期内可沿用原有提交方式。\n\n【对金融市场的预期影响】\n中性偏弱正面。对海员培训机构与航运公司而言，避免了在系统不成熟时的合规负担，属行政负担的缓释。无实质财务影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "实施船员培训结业数据电子化提交",
+      "domain": "交通"
     },
     {
       "date": "2026-10-16",

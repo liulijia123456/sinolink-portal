@@ -404,8 +404,10 @@ def fetch_congress(since):
                 'url': url,
                 'source': '国会官网',
                 'kind': kind,
+                # 最新行动文本保留足够长度：截断过短会把 "ordered to be reported"
+                # 一类关键进展切掉，导致 brief.py 的层级判定失效（实测漏判）。
                 'agency': ('参议院' if chamber == 'senate' else '众议院')
-                          + (' · ' + latest[:60] if latest else ''),
+                          + (' · ' + latest[:180] if latest else ''),
             })
         if reached_old or 'next' not in data.get('pagination', {}):
             break

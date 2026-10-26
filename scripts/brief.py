@@ -278,13 +278,17 @@ def congress_summary(congress, chamber_slug, number):
     """国会官网：取法案 summary（官方摘要）；无 summary 时降级取法案详情。"""
     api_type = {'senate': 's', 'house': 'hr'}.get(chamber_slug, chamber_slug)
     try:
-        url = ('https://api.congress.gov/v3/bill/%s/%s/%s/summary?api_key=%s&format=json'
+        # 注意：官方端点是复数 /summaries（返回列表）；旧写法 /summary 恒 404，
+        # 导致所有法案都取不到 CRS 官方摘要、只能降级为法案元数据。
+        url = ('https://api.congress.gov/v3/bill/%s/%s/%s/summaries?api_key=%s&format=json'
                % (congress, api_type, number, CONGRESS_API_KEY))
         d = http_get_json(url)
-        s = (d.get('summary') or {})
-        text = s.get('text') or ''
-        if text:
-            return strip_html(text) if '<' in text else text
+        summaries = d.get('summaries') or []
+        if summaries:
+            summaries = sorted(summaries, key=lambda x: (x.get('version') or ''))
+            text = (summaries[-1].get('text') or '')
+            if text:
+                return strip_html(text) if '<' in text else text
     except urllib.error.HTTPError as e:
         if e.code != 404:
             raise
