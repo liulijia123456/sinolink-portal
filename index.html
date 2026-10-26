@@ -2872,7 +2872,7 @@
             <p class="desc" data-page-node-id="ZzOR9HtYAagq4ZZlDuS0bU">收集总统行政令、总统备忘录、公告,总统行政办公室（EOP）各组成机构（OMB、USTR、OSTP 等）文件,以及内阁各部发布的规则与拟议规则。</p>
             <div class="tags" data-page-node-id="YZAOcd8ZosZuNsxiRP963z"><span data-page-node-id="FfniiNJttOg4EWPTpZc8kY">行政令</span><span data-page-node-id="Qunk7JavWdlmQAFJi7H1wr">EOP 机构</span><span data-page-node-id="reGiDwDbeWuLn5zww2S5yO">OMB</span><span data-page-node-id="YGclSnxkq52PaDSlkKUiGZ">USTR</span><span data-page-node-id="repYANh7O3FCTqeyjuL8md">内阁各部</span></div>
             <a class="btn" href="#" data-enter="board" data-board="whitehouse" data-page-node-id="L12C3P2Ly2nRthFl7gxu0k" style="">进入板块</a>
-            <div class="us-foot" data-us-foot="whitehouse" data-page-node-id="ZDuwggjfLhDtcowcigtT32">来源：联邦公报 · 每日 08:00 自动更新 · 更新于 2026-10-24 14:00</div>
+            <div class="us-foot" data-us-foot="whitehouse" data-page-node-id="ZDuwggjfLhDtcowcigtT32">来源：联邦公报 · 每日 08:00 自动更新</div>
           </div>
 
           <!-- 子板块 02 -->
@@ -2909,7 +2909,7 @@
             <p class="desc" data-page-node-id="ud55BFjrDFjCm9Knyp4AFi">收集国会法案、决议、听证与拨款文本,按立法进度与议题归类梳理。</p>
             <div class="tags" data-page-node-id="hH5H65qn1FEMRFZNnFxTPs"><span data-page-node-id="ItEBU2ZCRu0dii2RfOl6xp">法案</span><span data-page-node-id="GyYkrWVnZwgq0IGHb7yN2F">决议</span><span data-page-node-id="BJqE3v7z6AjQUIAhgeKkGh">听证</span><span data-page-node-id="zmnMMfIEWqjLHJe4CiQinU">拨款</span></div>
             <a class="btn" href="#" data-enter="board" data-board="congress" data-page-node-id="rRpyASZBOPS2HHpfrpzxxu" style="">进入板块</a>
-            <div class="us-foot" data-us-foot="congress" data-page-node-id="LhfB8wnP85l2hZ40Is2Fup">来源：国会官网 congress.gov · 每日 08:00 自动更新 · 更新于 2026-10-24 14:00</div>
+            <div class="us-foot" data-us-foot="congress" data-page-node-id="LhfB8wnP85l2hZ40Is2Fup">来源：国会官网 congress.gov · 每日 08:00 自动更新</div>
           </div>
 
           <!-- 子板块 03 -->
@@ -2944,7 +2944,7 @@
             <p class="desc" data-page-node-id="YdoBep2Gi0Aao3c4tjgtpS">收集独立监管与决策机构发布的政策文本与规则决定,涵盖美联储（Federal Reserve）与联邦通信委员会（FCC）。</p>
             <div class="tags" data-page-node-id="jf2YEexGsXVYGl8kGnT761"><span data-page-node-id="QWBnMK0H7mZe18NKG9gfb6">美联储</span><span data-page-node-id="Yt06OzsprEgCHnYrbRQUkz">FCC</span><span data-page-node-id="kd3ZXKV4IfEklQb9JTulJ3">机构规则</span></div>
             <a class="btn" href="#" data-enter="board" data-board="agencies" data-page-node-id="SutLuq2NcAUvyR2MFICusm" style="">进入板块</a>
-            <div class="us-foot" data-us-foot="agencies" data-page-node-id="VHbnNFRsZzI6uk8TAPH8Xz">来源：联邦公报（美联储 / FCC）· 每日 08:00 自动更新 · 更新于 2026-10-24 14:00</div>
+            <div class="us-foot" data-us-foot="agencies" data-page-node-id="VHbnNFRsZzI6uk8TAPH8Xz">来源：联邦公报（美联储 / FCC）· 每日 08:00 自动更新</div>
           </div>
 
           <!-- 子板块 04 -->
@@ -7453,8 +7453,6 @@
             if (!b) return;
             var badge = document.querySelector('[data-us-count="' + k + '"]');
             if (badge) badge.textContent = (b.count || 0) + ' 条';
-            var foot = document.querySelector('[data-us-foot="' + k + '"]');
-            if (foot && b.updated_at) foot.textContent += ' · 更新于 ' + b.updated_at;
           });
         })
         .catch(function () { /* file:// 预览时忽略 */ });
