@@ -2290,58 +2290,88 @@
   #view-us .uc-legend .lg .dot { border-radius: 1px; }
   #view-us .uc-legend .uc-src { margin-top: 8px; font-size: 10.5px; line-height: 1.75; color: rgba(11, 23, 36, .46); }
 
-  /* ---------- 板块入口：表格化卡片 ---------- */
+  /* ---------- 板块入口：圆角纸卡 ---------- */
   #view-us .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
-    background: var(--us-line); border: 1px solid var(--us-line); border-radius: 3px; overflow: hidden;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
+    background: none; border: 0; border-radius: 0; overflow: visible;
   }
   #view-us .grid .card {
-    position: relative; background: var(--us-card); border: none; border-radius: 0;
-    padding: 26px 30px 24px; transition: background .2s ease;
+    position: relative; background: #ffffff;
+    border: 1px solid rgba(11, 23, 36, .09); border-radius: 20px;
+    padding: 26px 28px 22px;
+    box-shadow: 0 1px 2px rgba(11, 23, 36, .05), 0 6px 16px -12px rgba(11, 23, 36, .18);
+    transition: transform .38s cubic-bezier(.2, .7, .2, 1), box-shadow .38s ease,
+                border-color .38s ease, background-color .38s ease;
   }
-  #view-us .grid .card::before {
-    content: ''; position: absolute; left: 0; top: 0; height: 2px; width: 0;
-    background: var(--us-brass); transition: width .3s cubic-bezier(.2, .7, .2, 1);
+  /* 悬停：整卡轻抬 + 右上角一层极淡暖光（不加位移纹理、不做回弹） */
+  #view-us .grid .card::after {
+    content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: radial-gradient(115% 78% at 100% 0%, rgba(201, 168, 106, .16), rgba(201, 168, 106, 0) 62%);
+    opacity: 0; transition: opacity .42s ease;
   }
-  #view-us .grid .card:hover { transform: none; border-color: transparent; box-shadow: none; background: #fff; }
-  #view-us .grid .card:hover::before { width: 100%; }
-  #view-us .grid .card .meta { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-  #view-us .grid .card .num { font-family: var(--us-serif); font-size: 21px; font-weight: 600; color: var(--us-brass); line-height: 1; }
+  #view-us .grid .card .meta { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  #view-us .grid .card .num { font-family: var(--us-serif); font-size: 19px; font-weight: 600; color: var(--us-brass); line-height: 1; }
   #view-us .grid .card .title {
     font-family: var(--us-serif); font-size: 23px; font-weight: 600; letter-spacing: .04em;
-    color: #16212e; margin-bottom: 5px; padding-right: 128px;
+    color: #16212e; margin-bottom: 5px; padding-right: 104px;
   }
   #view-us .grid .card .title-en {
     font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .26em; text-transform: uppercase;
-    color: rgba(11, 23, 36, .38); margin-bottom: 14px; padding-right: 128px;
+    color: rgba(11, 23, 36, .38); margin-bottom: 14px; padding-right: 104px;
   }
   #view-us .grid .card .desc { font-size: 13.5px; line-height: 1.95; color: rgba(11, 23, 36, .62); margin-bottom: 16px; }
-  #view-us .grid .card .tags { gap: 7px; margin-bottom: 18px; }
+  /* 标签：药丸形，去掉描边，改用一层极淡的墨色，避免与纸底打架 */
+  #view-us .grid .card .tags { gap: 8px; margin-bottom: 18px; }
   #view-us .grid .card .tags span {
-    font-family: var(--us-mono); font-size: 10.5px; letter-spacing: .04em; color: var(--us-blue);
-    background: var(--us-blue-2); border: 1px solid rgba(47, 111, 184, .14); border-radius: 2px; padding: 3px 9px;
+    font-family: var(--us-mono); font-size: 10.5px; letter-spacing: .04em; color: rgba(11, 23, 36, .60);
+    background: rgba(11, 23, 36, .05); border: 1px solid transparent; border-radius: 999px; padding: 4px 12px;
+    transition: background-color .25s ease, color .25s ease;
   }
+  /* 按钮：药丸形；悬停时墨色填满、箭头右移 */
   #view-us .grid .card .btn {
     align-self: flex-start; display: inline-flex; align-items: center; justify-content: space-between; gap: 14px;
-    font-family: var(--us-mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
-    color: #16212e; border: 1px solid var(--us-line); border-radius: 2px; padding: 9px 14px; min-width: 168px;
-    transition: all .18s ease;
+    font-family: var(--us-mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+    color: #16212e; background: transparent; border: 1px solid rgba(11, 23, 36, .16); border-radius: 999px;
+    padding: 10px 18px; min-width: 168px;
+    transition: background-color .28s ease, color .28s ease, border-color .28s ease;
   }
-  #view-us .grid .card .btn::after { content: "→"; margin-left: 0; color: var(--us-brass); transition: transform .2s ease; }
-  #view-us .grid .card .btn:hover { background: var(--us-brass-2); border-color: var(--us-brass-2); color: #0b1724; }
-  #view-us .grid .card .btn:hover::after { color: #0b1724; transform: translateX(4px); }
+  #view-us .grid .card .btn::after { content: "→"; color: var(--us-brass); transition: transform .3s cubic-bezier(.2, .7, .2, 1), color .28s ease; }
+  #view-us .grid .card .btn:focus-visible { outline: 2px solid rgba(47, 111, 184, .55); outline-offset: 2px; }
   #view-us .grid .card .us-foot {
-    margin-top: 14px; padding-top: 11px; border-top: 1px solid var(--us-line-soft);
+    margin-top: 16px; padding-top: 11px; border-top: 1px solid var(--us-line-soft);
     font-family: var(--us-mono); font-size: 10px; letter-spacing: .04em; color: rgba(11, 23, 36, .42);
   }
-  /* 图版：改成「图纸」托盘 */
+  /* 图标：圆形暖调底盘，去掉蓝色方托与描边，改用铜金线条 */
   #view-us .grid .card .visual {
-    width: 92px; height: 92px; top: 22px; right: 22px; opacity: .92; padding: 10px;
-    background: var(--us-blue-2); border: 1px solid rgba(47, 111, 184, .16); border-radius: 3px;
-    transition: opacity .25s ease, transform .3s cubic-bezier(.2, .7, .2, 1);
+    width: 78px; height: 78px; top: 22px; right: 22px; padding: 12px;
+    display: grid; place-items: center;
+    color: #7c5a20; background: rgba(201, 168, 106, .16);
+    border: 0; border-radius: 50%;
+    transition: background-color .38s ease, transform .38s cubic-bezier(.2, .7, .2, 1);
   }
-  #view-us .grid .card:hover .visual { opacity: 1; transform: translateY(-2px); }
-  #view-us .grid .card .visual svg { width: 100%; height: 100%; }
+  #view-us .grid .card .visual svg { width: 100%; height: 100%; display: block; }
+  /* 悬停态只在具备 hover 能力的设备上生效，避免触屏点按后状态粘住 */
+  @media (hover: hover) and (pointer: fine) {
+    #view-us .grid .card:hover {
+      transform: translateY(-3px);
+      background: #ffffff;
+      border-color: rgba(168, 130, 60, .30);
+      box-shadow: 0 16px 34px -18px rgba(11, 23, 36, .28), 0 2px 5px rgba(11, 23, 36, .05);
+    }
+    #view-us .grid .card:hover::after { opacity: 1; }
+    #view-us .grid .card:hover .tags span { background: rgba(11, 23, 36, .07); color: rgba(11, 23, 36, .72); }
+    #view-us .grid .card .btn:hover { background: #16212e; border-color: #16212e; color: #f7f3ea; }
+    #view-us .grid .card .btn:hover::after { color: #e8c98a; transform: translateX(4px); }
+    #view-us .grid .card:hover .visual { background: rgba(201, 168, 106, .26); transform: translateY(-2px) scale(1.03); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #view-us .grid .card,
+    #view-us .grid .card .visual,
+    #view-us .grid .card .btn,
+    #view-us .grid .card .tags span { transition: none; }
+    #view-us .grid .card:hover { transform: none; }
+    #view-us .grid .card:hover .visual { transform: none; }
+  }
 
   /* ---------- 底部说明 ---------- */
   #view-us .placeholder {
@@ -2847,23 +2877,16 @@
           <!-- 子板块 01 -->
           <div class="card" data-page-node-id="dxnDA7D2CvcMPtCEFjPD4J" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="PBv2wW7Hs8qN86ix2V1s2V">
-              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="8MYnC80ZMpC9TsP6U5HLHU" style="">
-                <!-- 白宫：极简立面 -->
-                <g stroke="#2f6fb8" stroke-width="1.3" fill="none" stroke-linejoin="round" data-page-node-id="CcQCGKFcFTi52iFIIvqlon">
-                  <path d="M30 42 L55 26 L80 42 Z" fill="#dce9f6" data-page-node-id="cpzD20P9XYbElt3swOiaAp"></path>
-                  <rect x="30" y="42" width="50" height="28" fill="#dce9f6" data-page-node-id="41D9TFdhwwHhXTG14JabDv"></rect>
-                  <line x1="30" y1="42" x2="80" y2="42" data-page-node-id="iaF0eT2ZJRdRz3Pdy1f4Mh"></line>
-                  <line x1="36" y1="70" x2="74" y2="70" data-page-node-id="OIh5LdBr6HNbUH6LZBvOvq"></line>
-                  <line x1="41" y1="76" x2="69" y2="76" data-page-node-id="9Ame8irZj191Zyn5pfQZTi"></line>
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="8MYnC80ZMpC9TsP6U5HLHU" style="">                <!-- 白宫：柱廊立面（山花 + 檐部 + 四柱 + 台基）与旗杆 -->
+                <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M55 32 V24"/>
+                  <path d="M55 25 L64 28.5 L55 32"/>
+                  <path d="M29 52 L55 34 L81 52"/>
+                  <path d="M34 52 H76"/>
+                  <path d="M39 52 V74 M49 52 V74 M61 52 V74 M71 52 V74"/>
+                  <path d="M32 74 H78"/>
+                  <path d="M26 80 H84"/>
                 </g>
-                <g stroke="#2f6fb8" stroke-width="1.1" data-page-node-id="CF25l1KICjA4GrMPfLex4y">
-                  <line x1="38" y1="46" x2="38" y2="66" data-page-node-id="nAPWtVnXVivDsWnplJSW5R"></line>
-                  <line x1="48" y1="46" x2="48" y2="66" data-page-node-id="OrdgnE1dtiKAAnfznV33MI"></line>
-                  <line x1="55" y1="48" x2="55" y2="66" data-page-node-id="cz8ESSnRzQ944HDLRNaBVb"></line>
-                  <line x1="62" y1="46" x2="62" y2="66" data-page-node-id="y0QTxMZwIOmKcTbDJs1AJl"></line>
-                  <line x1="72" y1="46" x2="72" y2="66" data-page-node-id="O2qGkyLAl2WmJLp8ghqY1g"></line>
-                </g>
-                <path d="M50 66 L50 59 A5 5 0 0 1 60 59 L60 66" stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="nbbM6D7ZGtthHFCjtzhS1A"></path>
               </svg>
             </div>
             <div class="meta" data-page-node-id="F2gQsyPCFeyqVHtwc247FZ"><span class="num" data-page-node-id="6ugNjdt65c6DCNnQAm4E0d">01</span></div>
@@ -2878,28 +2901,18 @@
           <!-- 子板块 02 -->
           <div class="card" data-page-node-id="zey3QQ3mXtfhcuPfArvP7N" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="QQ7Wi2DE7JkrV18IbvCV0d">
-              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="OPUQPfmfOKTLZKsBPjudBZ" style="">
-                <!-- 国会：穹顶立面 -->
-                <g stroke="#2f6fb8" stroke-width="1.3" fill="none" stroke-linejoin="round" data-page-node-id="s4Vjk6pq7o65z6HLif8ez6">
-                  <circle cx="55" cy="30" r="3" data-page-node-id="wZXqdIlUFtxSLJga75lDqL"></circle>
-                  <path d="M43 46 A12 12 0 0 1 67 46 Z" fill="#dce9f6" data-page-node-id="CtnY6xSLGwj5ZLhLpwmFxP"></path>
-                  <rect x="45" y="46" width="20" height="6" fill="#dce9f6" data-page-node-id="3eOM6y9zFIW41XT9ENaXe1"></rect>
-                  <line x1="55" y1="33" x2="55" y2="40" data-page-node-id="hMDabN9pg56uJIIzNkAULx"></line>
-                  <line x1="52" y1="40" x2="58" y2="40" data-page-node-id="MEIEHpuz5TknJrPx8p7Er6"></line>
-                </g>
-                <g stroke="#2f6fb8" stroke-width="1.1" data-page-node-id="BUFWGnoFE3RxP9VgK4rY7Q">
-                  <line x1="33" y1="52" x2="77" y2="52" data-page-node-id="ewnFLvEl32whhR5nWgS6gb"></line>
-                  <line x1="37" y1="54" x2="37" y2="62" data-page-node-id="9QACfDAjKASUC8ZBqF53vk"></line>
-                  <line x1="44" y1="54" x2="44" y2="62" data-page-node-id="f35Fb8xO4AGHASHT0AE71Q"></line>
-                  <line x1="51" y1="54" x2="51" y2="62" data-page-node-id="C27Hr2uOuZuflczFPtpGEa"></line>
-                  <line x1="59" y1="54" x2="59" y2="62" data-page-node-id="YWEyN4YRCr82F22kZQlQyK"></line>
-                  <line x1="66" y1="54" x2="66" y2="62" data-page-node-id="HIxqa1hFmFjAn3POpT9yuY"></line>
-                  <line x1="73" y1="54" x2="73" y2="62" data-page-node-id="Px93YnathxkVOA2Tr2jyKA"></line>
-                </g>
-                <g stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="T4lmaJbKgZMfBqxDV22eCU">
-                  <line x1="28" y1="62" x2="82" y2="62" data-page-node-id="n0InIwOoQvOyK0CBeAbKXd"></line>
-                  <line x1="24" y1="68" x2="86" y2="68" data-page-node-id="xOIHONQBexrC7DAoo98iER"></line>
-                  <line x1="20" y1="74" x2="90" y2="74" data-page-node-id="nwu50N9SJyjwyb2FUk4EVl"></line>
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="OPUQPfmfOKTLZKsBPjudBZ" style="">                <!-- 国会：窄穹顶与鼓座压在更宽的主体之上，柱列托起檐部 -->
+                <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M55 30 V24"/>
+                  <path d="M44 41 A11 11 0 0 1 66 41"/>
+                  <path d="M41 41 H69"/>
+                  <path d="M41 41 V55 M69 41 V55"/>
+                  <path d="M41 55 H69"/>
+                  <path d="M33 55 H77"/>
+                  <path d="M33 55 V73 M77 55 V73"/>
+                  <path d="M42 63 V73 M50 63 V73 M61 63 V73 M69 63 V73"/>
+                  <path d="M29 73 H81"/>
+                  <path d="M25 79 H85"/>
                 </g>
               </svg>
             </div>
@@ -2915,26 +2928,16 @@
           <!-- 子板块 03 -->
           <div class="card" data-page-node-id="Ozq75t6O3jCA36CIdmaEgt" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="adiR82pY4HMe32iKE8grHU">
-              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="c2rBNsgmiAuD2kjx9emGci" style="">
-                <!-- 独立监管机构：机构建筑 + 频谱波纹 -->
-                <g stroke="#2f6fb8" stroke-width="1.1" fill="none" opacity="0.85" data-page-node-id="YtzQQ3gGgtfBwC01X01wM3">
-                  <path d="M48 26 Q 41 32 48 38" data-page-node-id="XgLtqv4v7W9jDX9UDCi0mC"></path>
-                  <path d="M42 23 Q 31 32 42 41" data-page-node-id="8GGdkdkvKbF1mBQxmMyuRX"></path>
-                  <path d="M62 26 Q 69 32 62 38" data-page-node-id="grE2wC83i3JSzJ2kdK8JoC"></path>
-                  <path d="M68 23 Q 79 32 68 41" data-page-node-id="CARN9zq6NA2bnndVTo68Op"></path>
-                </g>
-                <g stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="dKtGtfbmmbqQKcwfA2jBCR">
-                  <line x1="55" y1="31" x2="55" y2="42" data-page-node-id="rgDru433ExItLkDsDidbaM"></line>
-                  <circle cx="55" cy="28" r="2.6" fill="#dce9f6" data-page-node-id="QkPGQyoiuHaQqkwfmVy3TS"></circle>
-                </g>
-                <g stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="KAS7vKJVODPcFBN691gswD">
-                  <rect x="37" y="42" width="36" height="30" fill="#dce9f6" data-page-node-id="qYobmF6Z5V8msT5x7RDJF6"></rect>
-                  <line x1="37" y1="52" x2="73" y2="52" data-page-node-id="CBJle6f1WgQxdrvtqD6ExT"></line>
-                  <line x1="45" y1="52" x2="45" y2="72" data-page-node-id="Gdq1USGJge7twfNNx7yDle"></line>
-                  <line x1="55" y1="52" x2="55" y2="72" data-page-node-id="WcEMiWCdFIiMFwMoGxVmsd"></line>
-                  <line x1="65" y1="52" x2="65" y2="72" data-page-node-id="5wmZLExHZxgN72YqwORGbE"></line>
-                  <line x1="32" y1="72" x2="78" y2="72" data-page-node-id="QxIs0aGUCPY9umFjpWSXRY"></line>
-                  <line x1="27" y1="76" x2="83" y2="76" data-page-node-id="ZYc4h4ZbEp6yw0MFK1nr5v"></line>
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="c2rBNsgmiAuD2kjx9emGci" style="">                <!-- 独立机构：楼体与双窗，屋顶两道扩散弧表示监管与频谱 -->
+                <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M55 54 V48"/>
+                  <path d="M49 47 A7 7 0 0 1 61 47"/>
+                  <path d="M43 41 A13 13 0 0 1 67 41"/>
+                  <path d="M36 78 V54 H74 V78"/>
+                  <path d="M31 54 H79"/>
+                  <path d="M27 78 H83"/>
+                  <rect x="43" y="62" width="10" height="10" rx="2.4"/>
+                  <rect x="57" y="62" width="10" height="10" rx="2.4"/>
                 </g>
               </svg>
             </div>
@@ -2950,17 +2953,12 @@
           <!-- 子板块 04 -->
           <div class="card" data-page-node-id="YH3xolnT0PuT8pIsZkAu0Z" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="aJkQhl7PPi6q5nyOnzpfPJ">
-              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="XVNlIuFKc4tBa0S3N67Gvx" style="">
-                <!-- 选举动态：选票投入票箱 -->
-                <g stroke="#2f6fb8" stroke-width="1.2" fill="none" data-page-node-id="iiyNcCWWcvPl2jZIj9qes1">
-                  <rect x="40" y="22" width="30" height="32" rx="2" fill="#dce9f6" data-page-node-id="yA83C537PtLNySAdx4mAND"></rect>
-                  <path d="M47 38 L52 43 L62 30" stroke-width="1.5" data-page-node-id="GtCFe855aNWn8rt0oQeNqY"></path>
-                  <line x1="46" y1="47" x2="64" y2="47" data-page-node-id="5eftmGYwe6kWSHr0YlPmkF"></line>
-                </g>
-                <g stroke="#2f6fb8" stroke-width="1.3" fill="none" data-page-node-id="0bCZQDx9Hpt2n0GnjYoKKT">
-                  <rect x="32" y="56" width="46" height="28" fill="#dce9f6" data-page-node-id="VFdR8hkUWDfPLqCVtC0cL2"></rect>
-                  <line x1="42" y1="56" x2="68" y2="56" stroke-width="2.4" data-page-node-id="kqjFwV8tIs1Q13H6rzKz4b"></line>
-                  <line x1="28" y1="84" x2="82" y2="84" data-page-node-id="kjNg717Q76HWWx9GsMvTYD"></line>
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="XVNlIuFKc4tBa0S3N67Gvx" style="">                <!-- 选举：选票投入票箱 -->
+                <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="27" y="53" width="56" height="28" rx="9"/>
+                  <path d="M43 62 H67"/>
+                  <rect x="45" y="30" width="26" height="20" rx="5"/>
+                  <path d="M51 40 L55 44 L62 35"/>
                 </g>
               </svg>
             </div>
