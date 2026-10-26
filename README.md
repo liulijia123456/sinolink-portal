@@ -312,7 +312,11 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 - **白宫及内阁各部政策**：联邦公报总统文件（行政令/备忘录/公告）+ EOP 组成机构
   （`WHITEHOUSE_AGENCY_SLUGS`：USTR、OMB、OSTP、CEQ、ONDCP、NSC、NEC）
-  + 内阁各部（`CABINET_DEPT_SLUGS`，**只收 Rule / Proposed Rule**，不收 Notice）。
+  + **全部 15 个内阁各部**（`CABINET_DEPT_SLUGS`，**只收 Rule / Proposed Rule**，不收 Notice）：
+  国务院、财政部、国防部、司法部、内政部、农业部、商务部、劳工部、卫生与公众服务部、
+  住房与城市发展部、交通部、能源部、教育部、退伍军人事务部、国土安全部。
+  前端「部门」筛选为固定花名册（15 部 + 4 个 EOP 机构，分两组 `optgroup` 展示），
+  某部门当期 0 条也保留在分类里，便于按部门长期跟踪；独立机构板块仍按数据动态生成。
 - **国会法案**：`api.congress.gov/v3/bill`，参众两院法案与决议最新动态。
 - **独立机构政策**：联邦公报按机构过滤，`AGENCY_SLUGS` 当前为美联储 + FCC。
 

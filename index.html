@@ -3228,7 +3228,7 @@
           </div>
           <div class="filter-group" id="filter-agency-group" data-page-node-id="I9D1m8k5quVtBOiNPCzrcu">
             <span class="filter-label" data-page-node-id="5PCm5EoL8b9eTsBbpnGIYx">部门</span>
-            <select class="filter-select" id="filter-agency" data-page-node-id="qxeYevdgdAJOVGICBnsUuj"><option value="all" data-page-node-id="zlQI2cx49AoPejuBjV2Eth">全部</option><option value="交通部" data-page-node-id="cUdo7QZRKyZtVfy4eqsbxl">交通部</option><option value="内政部" data-page-node-id="arrffdZcxrYdDHFjxSKR8Y">内政部</option><option value="农业部" data-page-node-id="HalecIIjZL7LQcCjaBWhPe">农业部</option><option value="劳工部" data-page-node-id="ksGS0J5L0IARQl3PJbX45m">劳工部</option><option value="卫生与公众服务部" data-page-node-id="MA9Q0zOGvyLBhnJGLg9my2">卫生与公众服务部</option><option value="司法部" data-page-node-id="Xvu5pIvM4biR3sakUaRXwH">司法部</option><option value="商务部" data-page-node-id="KZfbGZMg2weWqz1VooG2JM">商务部</option><option value="国土安全部" data-page-node-id="DlCtWHwu1Du24BSZJSPBDt">国土安全部</option><option value="国防部" data-page-node-id="iKZVJdhXiva86DTwuDNIn6">国防部</option><option value="管理与预算办公室 OMB" data-page-node-id="aGRaa7n20arD2FgDlNMvVo">管理与预算办公室 OMB</option><option value="美国总统行政办公室" data-page-node-id="4ebdFX9dw0XwMVrwmWO6Zx">美国总统行政办公室</option><option value="美国贸易代表办公室 USTR" data-page-node-id="xOcjS3VDg7P21yvCzWkp9J">美国贸易代表办公室 USTR</option><option value="能源部" data-page-node-id="ybWhWSwKMoZ1p4ebJ0MWwT">能源部</option><option value="财政部" data-page-node-id="dGxMy7luar9AXpdl2RGSa7">财政部</option></select>
+            <select class="filter-select" id="filter-agency" data-page-node-id="qxeYevdgdAJOVGICBnsUuj"><option value="all" data-page-node-id="zlQI2cx49AoPejuBjV2Eth">全部</option><optgroup label="内阁各部"><option value="国务院">国务院</option><option value="财政部" data-page-node-id="dGxMy7luar9AXpdl2RGSa7">财政部</option><option value="国防部" data-page-node-id="iKZVJdhXiva86DTwuDNIn6">国防部</option><option value="司法部" data-page-node-id="Xvu5pIvM4biR3sakUaRXwH">司法部</option><option value="内政部" data-page-node-id="arrffdZcxrYdDHFjxSKR8Y">内政部</option><option value="农业部" data-page-node-id="HalecIIjZL7LQcCjaBWhPe">农业部</option><option value="商务部" data-page-node-id="KZfbGZMg2weWqz1VooG2JM">商务部</option><option value="劳工部" data-page-node-id="ksGS0J5L0IARQl3PJbX45m">劳工部</option><option value="卫生与公众服务部" data-page-node-id="MA9Q0zOGvyLBhnJGLg9my2">卫生与公众服务部</option><option value="住房与城市发展部">住房与城市发展部</option><option value="交通部" data-page-node-id="cUdo7QZRKyZtVfy4eqsbxl">交通部</option><option value="能源部" data-page-node-id="ybWhWSwKMoZ1p4ebJ0MWwT">能源部</option><option value="教育部">教育部</option><option value="退伍军人事务部">退伍军人事务部</option><option value="国土安全部" data-page-node-id="DlCtWHwu1Du24BSZJSPBDt">国土安全部</option></optgroup><optgroup label="白宫 / 总统行政办公室"><option value="美国总统行政办公室" data-page-node-id="4ebdFX9dw0XwMVrwmWO6Zx">美国总统行政办公室</option><option value="管理与预算办公室 OMB" data-page-node-id="aGRaa7n20arD2FgDlNMvVo">管理与预算办公室 OMB</option><option value="美国贸易代表办公室 USTR" data-page-node-id="xOcjS3VDg7P21yvCzWkp9J">美国贸易代表办公室 USTR</option><option value="科技政策办公室 OSTP">科技政策办公室 OSTP</option></optgroup></select>
           </div>
           <div class="filter-group" data-page-node-id="whka0K65tsMdOMejzZq3V8">
             <span class="filter-label" data-page-node-id="Jh3FE0yZrv7WiTBOxT6BsA">类型</span>
@@ -5764,16 +5764,46 @@
         sel.value = kinds.indexOf(prev) >= 0 ? prev : 'all';
       }
 
-      function fillAgencyOptions(items) {
+      // 白宫及内阁各部板块：固定花名册（15 个内阁各部 + 白宫/EOP 机构），
+      // 不因当期有没有条目而消失，便于按部门长期跟踪；独立机构板块仍按数据生成。
+      var CABINET_DEPTS = ['国务院', '财政部', '国防部', '司法部', '内政部', '农业部', '商务部', '劳工部',
+        '卫生与公众服务部', '住房与城市发展部', '交通部', '能源部', '教育部', '退伍军人事务部', '国土安全部'];
+      var EOP_AGENCIES = ['美国总统行政办公室', '管理与预算办公室 OMB', '美国贸易代表办公室 USTR',
+        '科技政策办公室 OSTP'];
+
+      function fillAgencyOptions(items, fixedRoster) {
         var sel = document.getElementById('filter-agency');
         var seen = [];
         items.forEach(function (it) { if (it.agency && seen.indexOf(it.agency) === -1) seen.push(it.agency); });
-        seen.sort();
         var prev = sel.value;
-        sel.innerHTML = '<option value="all">全部</option>' + seen.map(function (a) {
-          return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
-        }).join('');
-        sel.value = seen.indexOf(prev) >= 0 ? prev : 'all';
+        var html = '<option value="all">全部</option>';
+        if (fixedRoster) {
+          var other = seen.filter(function (a) {
+            return CABINET_DEPTS.indexOf(a) < 0 && EOP_AGENCIES.indexOf(a) < 0;
+          }).sort();
+          html += '<optgroup label="内阁各部">' + CABINET_DEPTS.map(function (a) {
+            return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
+          }).join('') + '</optgroup>';
+          html += '<optgroup label="白宫 / 总统行政办公室">' + EOP_AGENCIES.map(function (a) {
+            return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
+          }).join('') + '</optgroup>';
+          if (other.length) {
+            html += '<optgroup label="其他">' + other.map(function (a) {
+              return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
+            }).join('') + '</optgroup>';
+          }
+        } else {
+          seen.sort();
+          html += seen.map(function (a) {
+            return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
+          }).join('');
+        }
+        sel.innerHTML = html;
+        var ok = fixedRoster
+          ? (prev === 'all' || CABINET_DEPTS.indexOf(prev) >= 0 || EOP_AGENCIES.indexOf(prev) >= 0 ||
+             seen.indexOf(prev) >= 0)
+          : (prev === 'all' || seen.indexOf(prev) >= 0);
+        sel.value = ok ? prev : 'all';
       }
 
       function fillDomainOptions(items) {
@@ -5835,7 +5865,7 @@
         var agencySel = document.getElementById('filter-agency');
         if (key === 'agencies' || key === 'whitehouse') {
           agencyGroup.hidden = false;
-          fillAgencyOptions(allItems);
+          fillAgencyOptions(allItems, key === 'whitehouse');
         } else {
           agencyGroup.hidden = true;
           agencySel.value = 'all';
