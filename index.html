@@ -1942,7 +1942,9 @@
   #view-us .us-head .us-map > path { opacity: .5; }
   /* 州界：比国界更细更淡，能读出分区但不抢主轮廓 */
   #view-us .us-head .us-map .usm-states {
-    stroke: rgba(86, 156, 226, .46); stroke-width: .7;
+    /* 州界用虚线：与实线的国界（美国亮蓝、邻国浅灰）在「线型」上就分开 */
+    stroke: rgba(86, 156, 226, .58); stroke-width: .75;
+    stroke-dasharray: 3 2.6; stroke-linecap: butt;
   }
   /* 加拿大 / 墨西哥：只当地理背景，描边更细更淡，保证美国是主体 */
   #view-us .us-head .us-map .usm-neighbor {
