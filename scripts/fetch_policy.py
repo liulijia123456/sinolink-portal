@@ -61,6 +61,13 @@ INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 LOG_FILE = os.path.join(BASE_DIR, 'logs', 'fetch.log')
 
 LOOKBACK_DAYS = 10          # 回看天数；每日运行 7 天足够，10 天留缓冲
+# 内阁各部单独用更长的回看窗口：规则类文件发布频次低，10 天窗口下国务院 / 教育部 /
+# 住房与城市发展部 / 退伍军人事务部等部门常常连续多日为 0，等于名义覆盖、实际空置。
+# 21 天覆盖多数部门的月度节奏；实测 10 天 55 条、21 天 167 条、30 天 272 条。
+DEPT_LOOKBACK_DAYS = 21
+# 单部门单轮入库上限（按发布日从新到旧取），用于把首次扩大窗口后的回补分摊到数轮，
+# 避免一轮涌入上百条而写不完简报。超出的条目不丢弃，下一轮继续抓（接口按日期倒序）。
+DEPT_MAX_PER_RUN = 6
 # 留置策略：纯增量累积，不设留置上限。
 # 历史条目永久保留——政策文本是研究底稿，过期不等于无价值，截断会静默丢失
 # 已写好的简报与译名（那是已付出的加工成本）。
@@ -317,6 +324,8 @@ def fetch_whitehouse(since):
 
     # 3) 内阁各部：默认仅收录规则与拟议规则（通告类程序文件不收，控制信噪比）；
     #    对 DEPT_NOTICE_EXTRA 中列明的部门额外收录通告（剔除程序性噪声后限量）
+    dept_since = (datetime.now(timezone(timedelta(hours=8)))
+                  - timedelta(days=DEPT_LOOKBACK_DAYS)).strftime('%Y-%m-%d')
     for slug, label in CABINET_DEPT_SLUGS.items():
         extra = DEPT_NOTICE_EXTRA.get(slug)
         types = ['RULE', 'PRORULE']
@@ -324,14 +333,17 @@ def fetch_whitehouse(since):
             types = types + list(extra.get('allow', ()))
         dept_params = _fr_params({
             'conditions[agencies][]': [slug],
-            'conditions[publication_date][gte]': since,
+            'conditions[publication_date][gte]': dept_since,
             'conditions[type][]': types,
         })
         try:
             dept_data = http_get_json(FR_API, dept_params, '白宫-' + label)
+            docs = sorted(dept_data.get('results', []),
+                          key=lambda d: d.get('publication_date') or '', reverse=True)
             n_dept = 0
             n_extra = 0
-            for doc in dept_data.get('results', []):
+            n_defer = 0
+            for doc in docs:
                 if extra and doc.get('type') == 'Notice':
                     title_l = (doc.get('title') or '').lower()
                     if any(kw in title_l for kw in extra.get('exclude_kw', ())):
@@ -339,10 +351,14 @@ def fetch_whitehouse(since):
                     if n_extra >= int(extra.get('max', 0)):
                         continue
                     n_extra += 1
+                if n_dept >= DEPT_MAX_PER_RUN:
+                    n_defer += 1
+                    continue
                 kind = FR_KIND.get(doc.get('type'), doc.get('type') or '文件')
                 items.append(_fr_item('whitehouse', doc, kind, agency=label))
                 n_dept += 1
-            log.info('[白宫-内阁:%s] 抓到 %d 条', label, n_dept)
+            log.info('[白宫-内阁:%s] 抓到 %d 条%s', label, n_dept,
+                     ('（另有 %d 条顺延至下轮）' % n_defer) if n_defer else '')
         except Exception as e:
             log.error('[白宫-内阁:%s] 抓取失败: %s（仅该部子源失败，其他结果保留）', label, e)
         time.sleep(1)  # 礼貌限速
