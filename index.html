@@ -1370,9 +1370,16 @@
   /* 已结束的历史节点：保留显示但弱化，便于与未来节点区分 */
   .uc-ev.past { opacity: 0.5; }
   .uc-ev.past:hover { opacity: 0.85; }
-  .uc-ev.stale { border-left-style: dashed; }
-  /* 「改」是提醒标记，与类别无关，钉死警示红，不跟任何一套类别色走（否则换色时它会跟着变色） */
-  .uc-ev.stale::after { content: '改'; font-size: 8.5px; font-weight: 700; color: #c92c1d; margin-left: 3px; vertical-align: 1px; }
+  /* 已调整（改期）条目：整条改中性灰 —— 灰底与四类彩色彻底分开，左侧色条用灰色虚线 */
+  .uc-ev.stale {
+    color: #4a5560; background: #e9ecef; border-color: #cdd3da; border-left-color: #98a2ac;
+    border-left-style: dashed;
+  }
+  /* 角标「调整」：灰底上仍用警示红，与四类类别色都不撞 */
+  .uc-ev.stale::after {
+    content: '调整'; font-size: 8px; font-weight: 700; color: #c92c1d;
+    margin-left: 3px; vertical-align: 1px; letter-spacing: -.02em;
+  }
   .uc-ev .tt { font-weight: 700; margin-left: 3px; }
   .uc-more { font-size: 10px; color: var(--muted-light); padding-left: 3px; }
   /* 今天格底色饱和（亮蓝），事件条本身已是淡彩实底，只补一道投影让它从蓝底上浮起来 */
