@@ -23,6 +23,7 @@ import math
 import sys
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/tmp/ne110.json"
+STATES = "/tmp/ne110_states_lines.json"   # 110m 州界（LineString），缺省时自动跳过
 OUT = sys.argv[2] if len(sys.argv) > 2 else "/tmp/us-map.svg"
 
 VB_W, VB_H = 660.0, 470.0   # 比原来的 380 更高，留给墨西哥 / 中美洲 / 加勒比
@@ -106,6 +107,34 @@ def to_d(rings):
     return " ".join("M" + " ".join("%.1f %.1f" % (x, y) for x, y in r) + "Z" for r in rings)
 
 
+def to_d_lines(lines):
+    """折线（州界）用：只 M + 连续坐标，不闭合，否则会多画一条首尾连线。"""
+    out = []
+    for r in lines:
+        if len(r) > 1:
+            out.append("M" + " ".join("%.1f %.1f" % (x, y) for x, y in r))
+    return " ".join(out)
+
+
+def state_lines(path, fn):
+    """读取 110m 州界（只取美国），投影成折线。"""
+    import os
+    if not os.path.exists(path):
+        return []
+    d = json.load(open(path, encoding="utf-8"))
+    out = []
+    for f in d.get("features", []):
+        if str(f["properties"].get("ADM0_A3", "")).upper() != "USA":
+            continue
+        g = f.get("geometry") or {}
+        if g.get("type") == "LineString":
+            out.append([fn(lo, la) for lo, la in g["coordinates"]])
+        elif g.get("type") == "MultiLineString":
+            for line in g["coordinates"]:
+                out.append([fn(lo, la) for lo, la in line])
+    return out
+
+
 def main():
     data = json.load(open(SRC, encoding="utf-8"))
     usa = [f for f in data["features"] if f["properties"].get("ISO_A3") == "USA"][0]
@@ -180,8 +209,16 @@ def main():
 
     neighbors = fit_neighbor(nb_p)
 
+    # 州界：与美国同一投影、同一变换，简化后作为「国界之下」的细线
+    states = []
+    for line in state_lines(STATES, fn):
+        pts = rdp([(x * s + ox, y * s + oy) for x, y in line], 0.45)
+        if len(pts) > 1:
+            states.append(pts)
+
     body = "\n".join(
         ['  <path class="usm-neighbor" d="%s"/>' % to_d(neighbors)]
+        + (['  <path class="usm-states" d="%s"/>' % to_d_lines(states)] if states else [])
         + ['  <path class="usm-%s" d="%s"/>' % (k, to_d(v)) for k, v in groups])
 
     # 华盛顿特区：一枚金色呼吸点（外圈晕 + 核心点）
