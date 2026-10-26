@@ -2211,7 +2211,7 @@
   #view-us .uc-pend-d[open] .uc-pend-caret { transform: rotate(180deg); }
   #view-us .uc-pend-pop {
     position: absolute; top: calc(100% + 9px); left: 50%; transform: translateX(-50%);
-    width: 348px; max-width: 82vw; z-index: 40;
+    width: 400px; max-width: 86vw; z-index: 40;
     background: var(--us-card); border: 1px solid var(--us-line); border-radius: 3px;
     box-shadow: 0 18px 40px rgba(11, 23, 36, .18); padding: 12px 14px 13px;
   }
@@ -2225,7 +2225,7 @@
     padding: 8px 0; border-bottom: 1px dashed var(--us-line-soft);
   }
   #view-us .uc-pend-list li:last-child { border-bottom: 0; }
-  #view-us .uc-pend-t { font-size: 12.5px; font-weight: 600; color: var(--us-ink); }
+  #view-us .uc-pend-t { font-size: 12.5px; font-weight: 600; color: var(--us-ink); line-height: 1.5; }
   #view-us .uc-pend-w { font-family: var(--us-mono); font-size: 10.5px; color: rgba(11, 23, 36, .48); white-space: nowrap; }
   #view-us .uc-pend-foot {
     margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--us-line-soft);
@@ -4038,8 +4038,11 @@
 <!-- 大事日历数据块：日期均经官方来源核实（美联储 / BLS / G20 官网 / IMF 官网 / 中国外交部）
      d = 起始日期（美东）；d2 = 结束日期（多日事件，可选）；t = 美东时刻 HH:MM（可选，无则全日事件）
      cat: econ 经济 / pol 政治 / dip 外交
-     pending: 仅收录「与美国相关、已公布时间窗口但未定具体日期」的事件；入口常显、列出全量，不按月过滤；
-              一旦官方给出确切日期，应从 pending 删除、在 events 里新增正式条目，避免两边重复 -->
+     pending: 收录「已公布时间窗口但未定具体日期」的美国相关事件，范围包括——
+              ① 美国国内议程（立法、人事、监管等）；② 美国与中国及其他行为体（欧盟、俄罗斯、乌克兰、
+              伊朗、中东、印太等）的双边／多边互动；③ 美国高级领导人的出访与参会行程。
+              入口常显、列出全量，不按月过滤；一旦官方给出确切日期，应从 pending 删除、
+              在 events 里新增正式条目，避免两边重复 -->
 <script type="application/json" id="us-cal-data" data-page-node-id="cUkl4rGEZMlNxLY0sF6Y9H">
 {
   "updated_at": "2026-10-26",
@@ -5315,7 +5318,7 @@
   "pending": [
     {
       "title": "中美 AI 政府间对话",
-      "from": "2026-11-01",
+      "from": "2026-11-08",
       "to": "2026-11-30",
       "win": "11 月底前",
       "place": "白宫科技政策办"
@@ -5328,11 +5331,60 @@
       "place": "USDA"
     },
     {
+      "title": "美乌安全保障协议后续磋商",
+      "from": "2026-11-15",
+      "to": "2026-11-30",
+      "win": "11 月下旬",
+      "place": "基辅 / 华盛顿"
+    },
+    {
+      "title": "国务卿中东之行",
+      "from": "2026-11-15",
+      "to": "2026-11-30",
+      "win": "11 月下旬",
+      "place": "以色列 / 沙特"
+    },
+    {
+      "title": "美俄战略稳定磋商",
+      "from": "2026-11-20",
+      "to": "2026-12-31",
+      "win": "年底前",
+      "place": "日内瓦"
+    },
+    {
+      "title": "北约防长会议（美国防长出席）",
+      "from": "2026-12-01",
+      "to": "2026-12-15",
+      "win": "12 月上旬",
+      "place": "布鲁塞尔"
+    },
+    {
       "title": "美联储主席提名听证",
       "from": "2026-12-01",
       "to": "2026-12-20",
       "win": "12 月上旬",
       "place": "参院银行委员会"
+    },
+    {
+      "title": "美欧贸易与技术委员会（TTC）部长级会议",
+      "from": "2026-12-01",
+      "to": "2026-12-31",
+      "win": "12 月内",
+      "place": "布鲁塞尔"
+    },
+    {
+      "title": "美伊核问题间接谈判",
+      "from": "2026-12-01",
+      "to": "2026-12-31",
+      "win": "12 月内",
+      "place": "马斯喀特"
+    },
+    {
+      "title": "副总统印太之行",
+      "from": "2027-01-01",
+      "to": "2027-01-31",
+      "win": "1 月内",
+      "place": "东京 / 新德里"
     },
     {
       "title": "美国 2027 财年拨款法案",
