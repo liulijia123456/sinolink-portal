@@ -2817,19 +2817,15 @@
               <button type="button" id="uc-next" class="uc-step" aria-label="下个月" data-page-node-id="JKUWNOc1hmag7t3xjZ0nA7">›</button>
               <div class="uc-picker" id="uc-picker" role="dialog" aria-label="选择年月" hidden="" data-page-node-id="flOjY19hW8Bt3YVlEJyN6d"><div class="ucp-head" data-page-node-id="iFgR5xKkQYiQJYGQgyF99C"><button type="button" class="ucp-y" data-step="-1" aria-label="上一年" disabled="" data-page-node-id="onnkRM3LCpEei0FMTmzQHI">‹</button><span class="ucp-year" data-page-node-id="I4H6kC7Ne3yYhs1AUdeSI9">2026 年</span><button type="button" class="ucp-y" data-step="1" aria-label="下一年" data-page-node-id="gDym5iBOzjXyDYSgoX7VO0">›</button></div><div class="ucp-grid" data-page-node-id="sEeeMApphGCZQgRk662Jdg"><button type="button" class="ucp-m" data-ym="2026-01" disabled="" data-page-node-id="PtNPr3O3x2w1aWXnCspWZX">1 月</button><button type="button" class="ucp-m" data-ym="2026-02" disabled="" data-page-node-id="avqVD74NAy5rmSNRARJUoQ">2 月</button><button type="button" class="ucp-m" data-ym="2026-03" disabled="" data-page-node-id="jCMNQwji132azFEcy8LejU">3 月</button><button type="button" class="ucp-m" data-ym="2026-04" disabled="" data-page-node-id="Wim8oPJSuHmwfwWqhwOuR4">4 月</button><button type="button" class="ucp-m" data-ym="2026-05" disabled="" data-page-node-id="zqbS3QHnGQ6zpYHpi2uIDH">5 月</button><button type="button" class="ucp-m" data-ym="2026-06" disabled="" data-page-node-id="X1W5K6WExBIO4q9B9EsV2Q">6 月</button><button type="button" class="ucp-m" data-ym="2026-07" disabled="" data-page-node-id="8YJu6FrZEM0RRsvHp6uUIk">7 月</button><button type="button" class="ucp-m" data-ym="2026-08" disabled="" data-page-node-id="2p42QElKNfpxoIVwx3sbg0">8 月</button><button type="button" class="ucp-m" data-ym="2026-09" disabled="" data-page-node-id="fPEtrdbOsAgPGud3f8FNxq">9 月</button><button type="button" class="ucp-m on has" data-ym="2026-10" data-page-node-id="XkoMXEDuoQ0X8WypNgx9A9">10 月</button><button type="button" class="ucp-m has" data-ym="2026-11" data-page-node-id="nQS7NtqEJ3RymC35vp6HST">11 月</button><button type="button" class="ucp-m has" data-ym="2026-12" data-page-node-id="fRxX1TVreUCPLvM8JWnw9D">12 月</button></div><div class="ucp-foot" data-page-node-id="3QtXSmDPX5Wk41vlktdmDV"><button type="button" id="ucp-now" disabled="" data-page-node-id="P8W3CmHt4Zm8RevKTXDPbC">回到当月</button></div></div>
             </div>
-            <!-- 时间待定：本月已公布窗口、未定具体日期的事件（样式先行，暂未接数据） -->
-            <div class="uc-pend">
-              <details class="uc-pend-d">
+            <!-- 时间待定：官方已公布时间窗口、尚未公布具体日期的事件；内容按当前月份由 JS 渲染 -->
+            <div class="uc-pend" id="uc-pend" hidden>
+              <details class="uc-pend-d" id="uc-pend-d">
                 <summary class="uc-pend-btn" aria-label="本月时间待定事件">
-                  待定<b>3</b>项<i class="uc-pend-caret">▾</i>
+                  待定<b id="uc-pend-n">0</b>项<i class="uc-pend-caret">▾</i>
                 </summary>
                 <div class="uc-pend-pop" role="dialog" aria-label="本月时间待定事件">
                   <div class="uc-pend-head">本月已公布窗口 · 未定具体日期</div>
-                  <ul class="uc-pend-list">
-                    <li><span class="uc-pend-t">东盟峰会后续系列会议</span><span class="uc-pend-w">11 月中下旬 · 马尼拉</span></li>
-                    <li><span class="uc-pend-t">COP31 高级别磋商</span><span class="uc-pend-w">11 月下旬 · UNFCCC</span></li>
-                    <li><span class="uc-pend-t">中美经贸工作组会议</span><span class="uc-pend-w">11 月底前 · USTR</span></li>
-                  </ul>
+                  <ul class="uc-pend-list" id="uc-pend-list"></ul>
                   <div class="uc-pend-foot">日期确认后自动并入月历</div>
                 </div>
               </details>
@@ -5313,6 +5309,57 @@
       "s": "圣诞节",
       "note": "联邦假日 · 美股休市 · 名义日期 12 月 25 日（周六）提前至 12 月 24 日 · 来源：美国人事管理局联邦假日安排"
     }
+  ],
+  "pending": [
+    {
+      "title": "东盟峰会后续系列会议",
+      "from": "2026-11-08",
+      "to": "2026-11-30",
+      "win": "11 月中下旬",
+      "place": "马尼拉"
+    },
+    {
+      "title": "COP31 高级别磋商",
+      "from": "2026-11-15",
+      "to": "2026-11-30",
+      "win": "11 月下旬",
+      "place": "UNFCCC"
+    },
+    {
+      "title": "中美经贸工作组会议",
+      "from": "2026-11-01",
+      "to": "2026-11-30",
+      "win": "11 月底前",
+      "place": "USTR"
+    },
+    {
+      "title": "美联储主席提名听证",
+      "from": "2026-12-01",
+      "to": "2026-12-20",
+      "win": "12 月上旬",
+      "place": "参院银行委员会"
+    },
+    {
+      "title": "欧盟对华电动车关税复审",
+      "from": "2026-12-10",
+      "to": "2026-12-31",
+      "win": "12 月中下旬",
+      "place": "欧盟委员会"
+    },
+    {
+      "title": "中美 AI 政府间对话",
+      "from": "2027-01-01",
+      "to": "2027-01-31",
+      "win": "1 月底前",
+      "place": "白宫科技政策办"
+    },
+    {
+      "title": "APEC 2027 主题与议程发布",
+      "from": "2027-01-01",
+      "to": "2027-01-31",
+      "win": "1 月内",
+      "place": "越南"
+    }
   ]
 }
 </script>
@@ -6350,6 +6397,34 @@
         return dt.toISOString().slice(0, 10);
       }
 
+      // 时间待定入口：窗口与当前月有交集即列出；当月没有就整块隐藏。
+      // 数据在 us-cal-data 的 pending 数组：{title, from, to, win, place}
+      var ucPendYm = null;
+      function renderPending(data, ym) {
+        var wrap = document.getElementById('uc-pend');
+        var box  = document.getElementById('uc-pend-d');
+        var cnt  = document.getElementById('uc-pend-n');
+        var list = document.getElementById('uc-pend-list');
+        if (!wrap || !list) return;
+        var items = (data.pending || []).filter(function (p) {
+          var f = String(p.from || '').slice(0, 7);
+          var t = String(p.to || p.from || '').slice(0, 7);
+          return !!f && f <= ym && ym <= t;
+        });
+        if (cnt) cnt.textContent = items.length;
+        wrap.hidden = !items.length;
+        list.innerHTML = items.map(function (p) {
+          var w = esc(p.win || '') + (p.place ? ' · ' + esc(p.place) : '');
+          return '<li><span class="uc-pend-t">' + esc(p.title || '') + '</span>' +
+                 '<span class="uc-pend-w">' + w + '</span></li>';
+        }).join('');
+        // 换月时收起面板，避免展开着上一个月的清单
+        if (ucPendYm !== ym) {
+          if (box) box.open = false;
+          ucPendYm = ym;
+        }
+      }
+
       function renderUsCalendar() {
         var host = document.getElementById('uc-grid');
         var monthEl = document.getElementById('uc-month');
@@ -6536,6 +6611,8 @@
             '</div><span class="uc-src">日期来源：' + esc(data.source_note || '官方来源核实') + ' · 数据更新：' + esc(data.updated_at || '—') +
             '</span>';
         }
+        // 待定入口（按当前月份过滤）
+        renderPending(data, ymStr);
         // 时区按钮状态
         [].slice.call(document.querySelectorAll('#uc-tz button')).forEach(function (b) {
           b.classList.toggle('on', b.getAttribute('data-tz') === usCalTz);
