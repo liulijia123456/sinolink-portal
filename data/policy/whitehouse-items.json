@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-10-26 13:29",
-  "count": 150,
+  "updated_at": "2026-10-27 09:07",
+  "count": 154,
   "items": [
     {
       "board": "whitehouse",
@@ -1407,34 +1407,36 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-15",
       "title": "Privacy Act of 1974; Implementation",
-      "title_cn": "《1974年隐私法》实施",
       "url": "https://www.federalregister.gov/documents/2026/10/15/2026-21063/privacy-act-of-1974-implementation",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "司法部",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n司法部下属移民审查执行办公室（EOIR）在今日联邦公报的通告部分发布了一项新记录系统的通知。\n\n【核心内容】\n本拟议规则配套 EOIR 新设的「欺诈与滥用防范项目记录」（Fraud and Abuse Prevention Program Records）记录系统而发布。\n\n【要点提炼】\n1. 属《1974 年隐私法》实施的配套规则；\n2. 指向移民审查体系中的欺诈与滥用防范；\n3. 属部门内部数据治理，非移民政策实质变化。\n\n【对金融市场的预期影响】\n中性。数据治理类规则无产业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《1974年隐私法》实施",
+      "domain": "司法/执法"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-15",
       "title": "Privacy Act of 1974; Implementation",
-      "title_cn": "《1974年隐私法》实施",
       "url": "https://www.federalregister.gov/documents/2026/10/15/2026-21060/privacy-act-of-1974-implementation",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "司法部",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n司法部下属司法项目办公室（OJP）在今日联邦公报通告部分发布了新记录系统「司法统计局（BJS）统计数据」的通知。\n\n【核心内容】\n本拟议规则配套 JUSTICE/OJP-017「司法统计局统计数据」这一新记录系统而发布。\n\n【要点提炼】\n1. 属隐私法实施的配套规则；\n2. 涉及司法统计数据的系统化管理；\n3. 与同日的另一项司法部隐私法规则（EOIR 项目）为同批发布。\n\n【对金融市场的预期影响】\n中性。无产业影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《1974年隐私法》实施",
+      "domain": "司法/执法"
     },
     {
       "date": "2026-10-15",
@@ -1587,79 +1589,84 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-14",
       "title": "Imposition and Collection of Civil Penalties for Certain Immigration-Related Violations",
-      "title_cn": "对某些移民相关违法行为处以并收缴民事罚款",
       "url": "https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations",
       "source": "联邦公报",
       "kind": "规则",
-      "agency": "国土安全部",
-      "domain": "司法/执法",
+      "agency": "司法部",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n《移民与国籍法》（INA）规定对未在自愿离境期内离境、或在最终驱逐令后故意拒不/拒绝离境的外国人可处以民事罚款。相关部门于 2025 年 6 月 27 日发布了简化罚款评估程序的临时最终规则（IFR）。\n\n【核心内容】\n本规则延续并推进该临时最终规则的规则制定，目标是简化 INA 项下针对上述情形的民事罚款评估程序。\n\n【要点提炼】\n1. 指向移民执法中的民事罚款程序简化，属执法工具的效率化；\n2. 适用对象为未按期离境或拒不执行驱逐令的个人；\n3. 属本届政府强化移民执法的配套措施之一。\n\n【对金融市场的预期影响】\n中性。移民民事罚款不涉及雇主制裁或用工限制，对劳动力市场无直接传导。若与更广泛的移民执法行动叠加，可能间接影响特定行业的用工供给，但本规则本身不构成定价事件。",
         "tier": "note"
-      }
+      },
+      "title_cn": "对某些移民相关违法行为处以并收缴民事罚款",
+      "domain": "司法/执法"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-14",
       "title": "Schedules of Controlled Substances: Temporary Placement of 7- Hydroxymitragynine and Mitragynine Pseudoindoxyl Above a Specified Threshold in Schedule I",
-      "title_cn": "管制物质附表：将超过特定阈值的7-羟基帽柱木碱与帽柱木碱伪吲哚酚临时列入附表一",
       "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20943/schedules-of-controlled-substances-temporary-placement-of-7--hydroxymitragynine-and-mitragynine",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "司法部",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n7-羟基帽柱木碱（7-hydroxymitragynine）与帽柱木碱伪吲哚酚（mitragynine pseudoindoxyl）是 kratom（帽柱木）相关的生物碱，DEA 可依管制物质法以临时列管命令（temporary scheduling）将其列入附表 I。\n\n【核心内容】\nDEA 局长发布拟发布临时列管命令的意向通知，拟将 7-羟基帽柱木碱与帽柱木碱伪吲哚酚（包括其异构体、酯、醚、盐及上述物质的盐，无论其存在形式如何）临时列入管制物质附表。\n\n【要点提炼】\n1. 性质为「拟发布临时命令的意向通知」，列管尚未生效；\n2. 临时列管是 DEA 应对新出现物质的快速工具，通常有效期为 2 年（可延长）；\n3. 针对 kratom 相关的强效生物碱，而非 kratom 植物本身；\n4. 列入附表 I 意味着无公认医疗用途且滥用可能性高。\n\n【对金融市场的预期影响】\n对 kratom/植物膳食补充剂行业属重大负面：若临时列管命令落地，含上述成分的产品将面临联邦层面的非法化，相关生产商、零售商与电商平台的该品类收入需大幅下修。当前仅有意向通知，建议立即跟踪正式临时命令的发布时点与适用范围（是否区分天然含量与添加）。",
         "tier": "full"
-      }
+      },
+      "title_cn": "管制物质附表：将超过特定阈值的7-羟基帽柱木碱与帽柱木碱伪吲哚酚临时列入附表一",
+      "domain": "司法/执法"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-14",
       "title": "Schedules of Controlled Substances: Temporary Placement of MGM-15 and MGM-16 in Schedule I",
-      "title_cn": "管制物质附表：将MGM-15与MGM-16临时列入附表一",
       "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20942/schedules-of-controlled-substances-temporary-placement-of-mgm-15-and-mgm-16-in-schedule-i",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "司法部",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\nMGM-15 与 MGM-16 是与 7-羟基帽柱木碱相关的两种合成物质，DEA 以临时列管方式快速应对。\n\n【核心内容】\nDEA 发布拟发布临时列管命令的意向通知，拟将两种与 7-羟基帽柱木碱相关的物质（MGM-15 与 MGM-16），包括其异构体、酯、醚、盐及上述物质的盐，临时列入附表 I。\n\n【要点提炼】\n1. 与同日的 7-OH/伪吲哚酚意向通知为配套发布，构成对 kratom 相关强效生物碱的组合式列管；\n2. MGM-15/MGM-16 为合成衍生物，指向规避列管的结构改造；\n3. 目前仅有意向通知阶段。\n\n【对金融市场的预期影响】\n对 kratom 及合成生物碱产品行业负面。与同日另一份意向通知叠加，显示 DEA 正系统性收紧该品类。若正式命令落地，相关产品线与渠道将受到实质冲击。建议跟踪正式命令文本。",
         "tier": "note"
-      }
+      },
+      "title_cn": "管制物质附表：将MGM-15与MGM-16临时列入附表一",
+      "domain": "司法/执法"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-14",
       "title": "Further Reducing Bureaucracy and Burden From the Administration for Native Americans",
-      "title_cn": "进一步减少原住民事务管理局的官僚程序与负担",
       "url": "https://www.federalregister.gov/documents/2026/10/14/2026-21004/further-reducing-bureaucracy-and-burden-from-the-administration-for-native-americans",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "卫生与公众服务部",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n卫生与公众服务部（HHS）儿童与家庭管理局（ACF）负责《原住民项目法》（Native American Programs Act）下的项目规章，本届政府推进规章精简议程。\n\n【核心内容】\nHHS/ACF 拟进一步修订《原住民项目法》规章，以精简该部分内容。\n\n【要点提炼】\n1. 性质为规章精简（streamlining），属行政减负议程；\n2. 涉及原住民项目的管理要求；\n3. 目前为拟议阶段。\n\n【对金融市场的预期影响】\n中性。原住民项目规章的精简对联邦拨款规模无明确影响，无产业定价含义；对承接相关项目的部落组织与非营利机构有合规负担的边际改善。",
         "tier": "note"
-      }
+      },
+      "title_cn": "进一步减少原住民事务管理局的官僚程序与负担",
+      "domain": "政府运作"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-14",
       "title": "Food Additives Permitted in Feed and Drinking Water of Animals; Chromium Propionate",
-      "title_cn": "允许用于动物饲料与饮用水的食品添加剂；丙酸铬",
       "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20979/food-additives-permitted-in-feed-and-drinking-water-of-animals-chromium-propionate",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "卫生与公众服务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-17",
         "body": "【政策背景】\n丙酸铬（chromium propionate）作为动物饲料中的铬源，需经 FDA 批准列入饲料添加剂许可清单。\n\n【核心内容】\nFDA 修订动物饲料与饮水中允许使用的食品添加剂规章，批准丙酸铬作为铬源用于蛋鸡（laying hens）与种鸡（breeder chickens）的饲料。\n\n【要点提炼】\n1. 属饲料添加剂用途的扩项批准；\n2. 新增适用对象为蛋鸡与种鸡；\n3. 反映该添加剂在禽类营养中的安全性评估获得认可。\n\n【对金融市场的预期影响】\n中性偏弱正面。对丙酸铬生产商与禽类饲料企业是可销售范围的扩大；对蛋鸡/种鸡养殖端的饲料配方有新增选项。量级有限，属细分市场的边际利好。",
         "tier": "note"
-      }
+      },
+      "title_cn": "允许用于动物饲料与饮用水的食品添加剂；丙酸铬",
+      "domain": "农业/食品"
     },
     {
       "date": "2026-10-14",
@@ -1887,19 +1894,20 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-13",
       "title": "Project-Level Predecisional Administrative Review Process",
-      "title_cn": "项目级预决定行政审查程序",
       "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20890/project-level-predecisional-administrative-review-process",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "农业部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-14",
         "body": "农业部林务局发布最终规则，修订「项目级行政复议程序」：即公众就国家森林与草地土地管理计划实施项目提出异议、寻求复议的程序。规则整合并精简既有流程、提高效率，并与《国家环境政策法》（NEPA）条例的近期修订保持一致。属程序性规则，实际影响在于加快林业项目审批节奏，对木材、基建与自然保护利益相关方的程序参与方式有直接影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "项目级预决定行政审查程序",
+      "domain": "农业/食品"
     },
     {
       "date": "2026-10-13",
@@ -1977,19 +1985,20 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-13",
       "title": "Use of Salt Substitutes To Reduce the Sodium Content in Standardized Foods",
-      "title_cn": "在标准化食品中使用盐替代品以降低钠含量",
       "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20848/use-of-salt-substitutes-to-reduce-the-sodium-content-in-standardized-foods",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "卫生与公众服务部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-14",
         "body": "FDA 发布最终规则，修订食品标准法规，允许在以食盐为必需或可选成分的标准化食品中使用盐替代物，以降低钠含量。政策指向是高血压及心脑血管疾病的风险控制：规则在保持食品基本特性与质构的前提下，为行业低钠配方创新提供合规路径。对食品饮料行业的配方重构、标签与供应链（钾基盐替代物）有直接影响，是 FDA「健康食品供给」议程的落地动作之一。",
         "tier": "note"
-      }
+      },
+      "title_cn": "在标准化食品中使用盐替代品以降低钠含量",
+      "domain": "农业/食品"
     },
     {
       "date": "2026-10-13",
@@ -2157,19 +2166,20 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-09",
       "title": "Schedules of Controlled Substances; Removal of Exemption Status for Inactive Butalbital Products",
-      "title_cn": "管制物质附表；移除非活性布他比妥产品的豁免地位",
       "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20757/schedules-of-controlled-substances-removal-of-exemption-status-for-inactive-butalbital-products",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "司法部",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-14",
         "body": "缉毒局（DEA）撤销部分丁巴比妥类非麻醉处方产品的豁免地位：相关产品因停产或申请豁免的企业已注销，其国家药品编码（NDC）处于非活跃状态，故从豁免处方产品表中移除，不再视为《受控物质法》下的豁免处方产品。不影响仍在生产销售的产品。属管制清单的例行清理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "管制物质附表；移除非活性布他比妥产品的豁免地位",
+      "domain": "司法/执法"
     },
     {
       "date": "2026-10-09",
@@ -2187,19 +2197,20 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-09",
       "title": "Raisins Produced From Grapes Grown in California; Order Amending Marketing Order No. 989",
-      "title_cn": "加州葡萄制葡萄干；修订第 989 号销售令",
       "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20792/raisins-produced-from-grapes-grown-in-california-order-amending-marketing-order-no-989",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "农业部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-14",
         "body": "农业部批准并采纳加州葡萄干行政委员会提出、并经加州葡萄干生产者公投通过的营销令 989 修正案：委员会席位由 47 席压缩至 21 席，取消产区代表席位并增设一名无隶属生产者席位，取消指定合作谈判协会席位，法定人数由 25 降至 14；调整营销政策制定因子并澄清再加工葡萄干质量表述；新增接受自愿捐助与知识产权归属条款。属行业自治组织的治理结构调整。",
         "tier": "note"
-      }
+      },
+      "title_cn": "加州葡萄制葡萄干；修订第 989 号销售令",
+      "domain": "农业/食品"
     },
     {
       "date": "2026-10-09",
@@ -2307,32 +2318,98 @@
       }
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-08",
       "title": "Cut Flowers Regulations; Removal of Chrysanthemum White Rust-Related Provisions",
-      "title_cn": "鲜切花条例；移除菊花白锈病相关条款",
       "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20630/cut-flowers-regulations-removal-of-chrysanthemum-white-rust-related-provisions",
       "source": "联邦公报",
       "kind": "规则",
       "agency": "农业部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-14",
         "body": "动植物卫生检验局修订鲜切花进口法规：将特定切花的进口要求移入「农产品进口要求」数据库（ACIR）实行通知式管理，并全面取消对菊花白锈病（CWR）存在国的菊花属等鲜切花进口限制。属检疫政策放松与贸易便利化措施，对国际花卉贸易（尤其哥伦比亚、厄瓜多尔等对美出口国）构成利好。",
         "tier": "note"
-      }
+      },
+      "title_cn": "鲜切花条例；移除菊花白锈病相关条款",
+      "domain": "农业/食品"
     },
     {
+      "board": "whitehouse",
       "date": "2026-10-08",
       "title": "Almonds Grown in California; Amendment to the Marketing Order",
-      "title_cn": "加州产杏仁；销售令修订",
       "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20622/almonds-grown-in-california-amendment-to-the-marketing-order",
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "农业部",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-14",
         "body": "• 农业部拟议修订加州杏仁营销令 981，赋予杏仁行政委员会向商业银行借款的权限。\n• 目的是增强行业计划在现金流波动期的资金灵活性，不改变摊款比例或质量标准。\n• 属行业自治权限的程序性扩充，评论期开放中。\n• 对市场意味着什么：无定价影响；对杏仁种植与加工行业组织的资金调度能力有边际改善。",
+        "tier": "note"
+      },
+      "title_cn": "加州产杏仁；销售令修订",
+      "domain": "农业/食品"
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-08",
+      "title": "Impact Aid Programs",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20687/impact-aid-programs",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "教育部",
+      "title_cn": "《影响补助项目》技术性修订（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "美国教育部修订《影响补助项目》（Impact Aid Programs）法规，仅作技术性更正：纠正语法、拼写与排版错误，更正或更新法定授权引注与法规交叉引用，更新邮寄与交付方式。\n教育部明确，本次修订不新增或改变任何监管、记录保存、报告义务，也不改变对任何法规的解释，属文本层面的清理性修订。\n该文件为最终规则，2026 年 11 月 9 日生效，无评论期安排，规章识别号 RIN 1810-AB66。\n对市场意味着什么：无直接定价影响。影响补助是联邦对地方学区因联邦用地与联邦人员子女造成税基损失的补偿性拨款，本次不触及拨款规模、资格认定或计算公式，对教育服务采购与地方财政均无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-07",
+      "title": "Statements of General Policy or Interpretation Not Directly Related to Regulations; Withdrawal of Proposed Rule",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20523/statements-of-general-policy-or-interpretation-not-directly-related-to-regulations-withdrawal-of",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "劳工部",
+      "title_cn": "与法规无直接关联的一般政策或解释声明：撤回拟议规则（拟议规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "美国劳工部撤回 2025 年 7 月 2 日公布的拟议规则（90 FR 28985）。该提案原拟删除《联邦法规汇编》第 29 编第 V 章 B 分章中未经通知评论程序制定、或未依该程序后续修订的部分条款。\n撤回后，劳工部正式终止该项规则制定程序，提案退出后续审议议程，案卷号 Docket No. WHD-2025-0002，规章识别号 RIN 1235-AA52。\n该文件归入「与法规无直接关联的一般政策或解释声明」栏目，属程序性撤回，现行 29 CFR 相关条款维持原状。\n对市场意味着什么：无直接定价影响。撤回标的是针对程序瑕疵条款的清理性提案，未涉及工资、工时或加班计算等实质标准，雇主合规义务与劳动成本不发生变动；观察节点为劳工部是否另行以逐条方式重启同类清理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-07",
+      "title": "Energy Conservation Program: Test Procedures for Commercial Warm Air Furnaces",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20517/energy-conservation-program-test-procedures-for-commercial-warm-air-furnaces",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "能源部",
+      "title_cn": "节能计划：商用暖风炉测试程序撤销（最终规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "美国能源部撤销商用暖风炉（CWAF）依《能源政策与节约法》采纳的附录 B 测试程序，即「商用暖风炉能效测量统一测试方法（热效率二）」。\n能源部复核后认定，附录 B 对代表性的改善程度不确定，不足以抵消合规负担的上升；撤销亦与拟议《程序规则》方向一致——对包括商用暖风炉在内的特定设备类别，除极有限情形外采用行业测试程序。\n商用暖风炉继续适用附录 A（热效率一）的测试要求。文件为最终规则，2026 年 12 月 7 日生效，案卷号 EERE-2025-BT-TP-0035，规章识别号 RIN 1904-AG06。\n对市场意味着什么：合规测试负担边际下降。制造商无需按附录 B 重新认证，可沿用既有附录 A 数据，检测与认证支出减少；但测试方法口径变动可能影响能效分值可比性，需关注州级能效标准与采购规格是否随之调整。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-06",
+      "title": "Transparency in Coverage",
+      "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20447/transparency-in-coverage",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "title_cn": "承保透明度（最终规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "劳工部、财政部与卫生与公众服务部联合发布最终规则，修订《公共卫生服务法》《1974 年雇员退休收入保障法》与《国内税收法典》下非祖父条款团体健康计划及保险发行人的价格透明度报告要求，落实第 14221 号行政令。\n网络内费率与网络外允许金额机器可读文件：新增上下文文件及产品类型、网络名称与网络标识等数据元素，调整数据汇总层级，剔除低概率的提供者—服务映射，延长报告期并下调网络外历史数据索赔门槛，降低报告频率。\n要求全部公开机器可读文件（含处方药文件）提供含联系信息的文本文件与带网址页脚；价格信息须在在线工具、纸质（应请求）之外同时支持电话提供，并视为满足《无意外账单法》第 114 条。\n对市场意味着什么：健康险公司披露合规成本结构变化。报送频率下降与低概率映射剔除为边际减负，标准化与可检索性提升利好第三方价格比较及雇主福利管理工具；但数据颗粒度调整可能降低部分细分价格的可观测性，关键信号节点为首轮报送口径落地。",
         "tier": "note"
       }
     }
