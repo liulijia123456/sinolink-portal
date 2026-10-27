@@ -21,7 +21,8 @@ fetch + gzip 控制，不在存储端删数据。
                  + 内阁各部（见 CABINET_DEPT_SLUGS）发布的规则与拟议规则
                  （部委通告类程序文件不收录，控制信噪比）
   国会政策    —— 国会官网 congress.gov 官方 API，参众两院法案/决议最新动态
-  独立机构政策 —— 联邦公报按机构过滤（美联储、FCC，见 AGENCY_SLUGS，可自行增删）
+  独立机构政策 —— 联邦公报按机构过滤（美联储、FCC、USITC、CFIUS、USAID，
+                 见 AGENCY_SLUGS，可自行增删）
 
 选举动态板块按需求不抓取，脚本不涉及。
 
@@ -96,10 +97,33 @@ def _load_congress_key():
 CONGRESS_API_KEY = _load_congress_key()
 
 # 独立机构板块收录的联邦机构（Federal Register agency slug → 中文标签）
-# 范围：美联储 + 联邦通信委员会（FCC）；不含 CFPB 等其他机构。
+# 范围：美联储、FCC、USITC、CFIUS、USAID。
+# 注：CFIUS 在联邦公报无独立机构条目，其文件由财政部「投资安全办公室」
+#     （investment-security-office）署名发布——该办公室同时主管外国投资审查
+#     （CFIUS）与对外投资安全计划，故按 CFIUS 归集。此类文件同时带有
+#     treasury-department 标签，白宫板块的内阁各部查询（Rule / Proposed Rule）
+#     也会收录同一条，两个板块各按自己的口径展示，属预期重叠。
+# 注：USAID 自 2025 年重组后职能并入国务院，联邦公报发文近乎停摆
+#     （近 180 天 1 条），保留该 slug 以接住后续可能出现的文件。
 AGENCY_SLUGS = {
     'federal-reserve-system': '美联储（Federal Reserve）',
     'federal-communications-commission': '联邦通信委员会 FCC',
+    'international-trade-commission': '国际贸易委员会 USITC',
+    'investment-security-office': '外国投资委员会 CFIUS',
+    'agency-for-international-development': '国际开发署 USAID',
+}
+
+# 独立机构的通告噪声词表（按机构逐个配置，标题命中即剔除）。
+# 独立机构板块不设类型过滤——USITC 的贸易救济裁决、CFIUS 的审查规则
+# 大多以通告（Notice）形式发布，按类型卡会把实质条目一并挡掉。
+# 因此这里按标题剔除纯行政事务类通告：人事任命、会议、信息公开、人事制度。
+AGENCY_NOISE_KW = {
+    'international-trade-commission': (
+        'performance review board',     # 绩效评审委员会任命（纯人事）
+        'sunshine act',                 # 会议公告
+        'information collection',       # 信息采集征求意见
+        'senior executive service',     # 高管任命与评级
+    ),
 }
 
 FR_API = 'https://www.federalregister.gov/api/v1/documents.json'
@@ -446,20 +470,37 @@ def fetch_congress(since):
 
 
 def fetch_agencies(since):
-    """独立机构政策：联邦公报按机构（美联储、FCC）。"""
+    """独立机构政策：联邦公报按机构（美联储、FCC、USITC、CFIUS、USAID）。
+
+    逐机构独立容错：单个机构接口失败不影响其他机构的结果（与 EOP 各机构同口径）。
+    噪声剔除见 AGENCY_NOISE_KW——只有该机构显式配置时才按标题过滤。
+    """
     items = []
     for slug, label in AGENCY_SLUGS.items():
         params = _fr_params({
             'conditions[agencies][]': [slug],
             'conditions[publication_date][gte]': since,
         })
-        data = http_get_json(FR_API, params, '独立机构-' + label)
+        try:
+            data = http_get_json(FR_API, params, '独立机构-' + label)
+        except Exception as e:
+            log.error('[独立机构-%s] 抓取失败: %s（仅该机构子源失败，其他结果保留）', label, e)
+            time.sleep(1)
+            continue
+        noise = AGENCY_NOISE_KW.get(slug, ())
         n = 0
+        n_noise = 0
         for doc in data.get('results', []):
+            if noise:
+                title_l = (doc.get('title') or '').lower()
+                if any(kw in title_l for kw in noise):
+                    n_noise += 1
+                    continue
             kind = FR_KIND.get(doc.get('type'), doc.get('type') or '文件')
             items.append(_fr_item('agencies', doc, kind, agency=label))
             n += 1
-        log.info('[独立机构-%s] 抓到 %d 条', label, n)
+        log.info('[独立机构-%s] 抓到 %d 条%s', label, n,
+                 ('（剔除程序性通告 %d 条）' % n_noise) if n_noise else '')
         time.sleep(1)  # 礼貌限速
     return items
 
