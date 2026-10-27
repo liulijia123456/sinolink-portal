@@ -2482,21 +2482,14 @@
   /* 分支根节点（国会 / 总统 / 最高法院）：白底 + 左侧铜金书脊 */
   #view-us .ibr-root {
     position: relative; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
-    margin: 14px 18px 0; padding: 9px 12px 9px 13px; text-align: left;
+    margin: 14px 18px 0; padding: 9px 12px 9px 13px;
     background: #fff; border: 1px solid rgba(11, 23, 36, .1); border-radius: 2px;
-    font: inherit; color: inherit; cursor: default; width: auto;
-    transition: border-color .2s ease, background-color .2s ease;
   }
   #view-us .ibr-root::before {
     content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--us-brass);
   }
   #view-us .ibr-root .ir-cn { font-family: var(--us-serif); font-size: 14.5px; font-weight: 600; letter-spacing: .05em; color: #16212e; }
   #view-us .ibr-root .ir-en { font-family: var(--us-mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: rgba(11, 23, 36, .4); }
-  #view-us .ibr-root .if-n {
-    margin-left: auto; font-family: var(--us-mono); font-weight: 400;
-    font-size: 9.5px; line-height: 1.6; color: var(--us-blue);
-    background: rgba(47, 111, 184, .09); border-radius: 2px; padding: 0 5px;
-  }
 
   /* 左脊树：li 自身的竖线 + 横线拼出肘形连接 */
   #view-us .ibr-tree { list-style: none; margin: 8px 18px 0 27px; padding: 0; }
@@ -2509,28 +2502,22 @@
     content: ''; position: absolute; left: 0; top: 50%; width: 13px; height: 1px; background: var(--us-line);
   }
 
-  /* 机构行：可跳转的用 button，纯结构标签用 span，右侧 ↗ 为官网（不嵌套在 button 内） */
+  /* 机构行：机构名 + 英文缩写向左，右侧 ↗ 为官网外链（唯一可点元素） */
   #view-us .if-row { display: flex; align-items: center; min-width: 0; }
   #view-us .ifl {
     flex: 1 1 auto; min-width: 0; display: flex; align-items: baseline; gap: 6px;
-    padding: 5px 6px; border: 0; border-radius: 2px; background: none;
+    padding: 5px 6px;
     font-family: var(--us-sans); font-size: 12.5px; line-height: 1.45; color: #1b2531;
-    text-align: left; cursor: default; transition: background-color .18s ease, color .18s ease;
   }
-  #view-us .ifl:disabled { color: #1b2531; opacity: 1; }
   #view-us .ifl .if-cn { min-width: 0; }
   #view-us .ifl .if-en {
     flex: 0 0 auto; font-family: var(--us-mono); font-size: 9px; letter-spacing: .05em;
     color: rgba(11, 23, 36, .36); white-space: nowrap;
   }
-  #view-us .ifl .if-n {
-    flex: none; margin-left: auto; font-family: var(--us-mono); font-weight: 400;
-    font-size: 9.5px; line-height: 1.6; color: var(--us-blue);
-    background: rgba(47, 111, 184, .09); border-radius: 2px; padding: 0 5px;
-  }
+  /* 官网外链：机构行里唯一可点的元素，故比正文弱一档但仍需可辨 */
   #view-us .if-ext {
     flex: none; padding: 6px 2px; font-size: 10px; line-height: 1;
-    color: rgba(11, 23, 36, .26); text-decoration: none; transition: color .18s ease;
+    color: rgba(11, 23, 36, .42); text-decoration: none; transition: color .18s ease;
   }
   #view-us .if-ext:hover { color: var(--us-blue); }
 
@@ -2546,20 +2533,11 @@
     text-transform: uppercase; color: rgba(11, 23, 36, .26);
   }
   #view-us .ibr-grid { display: grid; gap: 1px 10px; }
-  /* 密排网格里的单元格更窄，收紧内边距与字号，保证「卫生与公众服务部」「住房与城市发展部」
-     这类九字部名与右侧条数徽标仍能排在一行 */
+  /* 密排网格里的单元格更窄，收紧内边距与字号，保证九字部名（如「卫生与公众服务部」）不折行 */
   #view-us .ibr-grid .ifl { padding: 5px 4px; gap: 5px; font-size: 12px; }
   #view-us .ibr-grid.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #view-us .ibr-grid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   #view-us .ibr > .ibr-grp:last-child { margin-bottom: 16px; }
-
-  /* 分支页脚：贴底，保证三列视觉齐平 */
-  #view-us .ibr-foot {
-    margin: auto 0 0; padding: 12px 18px 13px; border-top: 1px solid var(--us-line-soft);
-    font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .03em;
-    line-height: 1.75; color: rgba(11, 23, 36, .42);
-  }
-  #view-us .ibr-foot b { font-weight: 400; color: var(--us-blue); }
 
   /* 州与地方政府：横条 */
   #view-us .inst-state { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--us-line); }
@@ -2577,23 +2555,6 @@
     padding: 11px 22px 12px; border-top: 1px solid var(--us-line); background: #f6f3ec;
     font-size: 10.5px; line-height: 1.85; color: rgba(11, 23, 36, .46);
   }
-  #view-us .inst-foot b { font-family: var(--us-mono); font-weight: 400; color: var(--us-blue); }
-
-  /* 可交互态只在有数据时挂上（.has-data 由脚本回填条数时添加） */
-  #view-us .ifl.has-data, #view-us .ibr-root.has-data { cursor: pointer; }
-  @media (hover: hover) and (pointer: fine) {
-    #view-us .ifl.has-data:hover { background: rgba(47, 111, 184, .075); color: #14304f; }
-    #view-us .ibr-root.has-data:hover { border-color: rgba(47, 111, 184, .3); }
-  }
-  #view-us .ifl:focus-visible, #view-us .ibr-root:focus-visible {
-    outline: 2px solid rgba(47, 111, 184, .5); outline-offset: 1px;
-  }
-  #view-us .ifl.has-data::after {
-    content: '→'; margin-left: 4px; font-size: 10px; color: var(--us-brass);
-    opacity: 0; transition: opacity .18s ease, transform .18s ease;
-  }
-  #view-us .ifl.has-data:hover::after { opacity: 1; }
-
   @media (max-width: 1080px) {
     #view-us .inst-cols { grid-template-columns: minmax(0, 1fr); }
     #view-us .ibr + .ibr { border-left: 0; border-top: 1px solid var(--us-line); }
@@ -2611,7 +2572,7 @@
     #view-us .ist + .ist { border-left: 0; border-top: 1px solid var(--us-line); }
   }
   @media (prefers-reduced-motion: reduce) {
-    #view-us .ifl, #view-us .if-ext, #view-us .ibr-root { transition: none; }
+    #view-us .if-ext { transition: none; }
   }
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
@@ -3168,19 +3129,16 @@
              政治机构导航（Government Directory）
              -----------------------------------------------------------------
              结构依美国政府结构图整理：立法 / 行政 / 司法 三支并列，州与地方政府单列。
-             静态结构 + 脚本回填在库条数：
-               data-go       目标板块（congress / whitehouse / agencies）
-               data-agency   该板块内的筛选值；院别用通配写法「参议院*」「众议院*」
-               data-label    筛选控件里显示的机构名
-             有在库条目的行才可点（脚本添加 .has-data 并解除 disabled），
-             无条目的行退化为纯结构标签；右侧 ↗ 为机构官网，不嵌在 button 内。
+             纯静态机构索引：每行唯一可点的元素是右侧 ↗ 官网外链（新窗口打开），
+             机构名本身不可点，也不与本门户的政策板块、在库条数发生关联。
+             增删机构只需照抄一行 .if-row；分组用 .ibr-grid（c2 / c3 控制列数）。
              本区块为手工新增节点，按 v3 约定不带 data-page-node-id。
              ================================================================= -->
         <div class="col-head" style="margin-top: 46px;"><span class="ch-cn">政治机构导航</span><span class="ch-en">Government Directory</span></div>
         <div class="inst" id="inst-nav">
           <div class="inst-note">
             <span class="in-k">三权分立与联邦制</span>
-            <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。机构后的数字是本门户在库条目数，点选即可进入对应板块并按该机构筛选；↗ 为机构官网。</span>
+            <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。机构名后的 ↗ 为官网外链。</span>
           </div>
 
           <div class="inst-cols">
@@ -3192,22 +3150,22 @@
                 <span class="irc">立法<span class="ire">Legislative</span></span>
               </header>
 
-              <button type="button" class="ibr-root" data-go="congress" data-label="国会" disabled>
+              <div class="ibr-root">
                 <span class="ir-cn">国会</span>
                 <span class="ir-en">Congress · 535 席</span>
-              </button>
+              </div>
 
               <ul class="ibr-tree">
                 <li class="if-row">
-                  <button type="button" class="ifl" data-go="congress" data-agency="参议院*" data-label="参议院" disabled>
+                  <span class="ifl">
                     <span class="if-cn">参议院</span><span class="if-en">Senate · 100</span>
-                  </button>
+                  </span>
                   <a class="if-ext" href="https://www.senate.gov" target="_blank" rel="noopener" title="参议院官网">↗</a>
                 </li>
                 <li class="if-row">
-                  <button type="button" class="ifl" data-go="congress" data-agency="众议院*" data-label="众议院" disabled>
+                  <span class="ifl">
                     <span class="if-cn">众议院</span><span class="if-en">House · 435</span>
-                  </button>
+                  </span>
                   <a class="if-ext" href="https://www.house.gov" target="_blank" rel="noopener" title="众议院官网">↗</a>
                 </li>
               </ul>
@@ -3268,7 +3226,6 @@
                 </div>
               </div>
 
-              <div class="ibr-foot">本门户 · 国会法案 <b data-inst-cnt="congress">—</b> 条 · 每日 08:35 更新</div>
             </section>
 
             <!-- Ⅱ 行政 -->
@@ -3278,10 +3235,10 @@
                 <span class="irc">行政<span class="ire">Executive</span></span>
               </header>
 
-              <button type="button" class="ibr-root" data-go="whitehouse" data-label="白宫及内阁各部" disabled>
+              <div class="ibr-root">
                 <span class="ir-cn">总统</span>
                 <span class="ir-en">President · 白宫</span>
-              </button>
+              </div>
 
               <ul class="ibr-tree">
                 <li class="if-row">
@@ -3294,93 +3251,93 @@
                 <div class="g-h">内阁 15 部<i>Cabinet Departments</i></div>
                 <div class="ibr-grid c3">
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="国务院" data-label="国务院" disabled>
+                    <span class="ifl">
                       <span class="if-cn">国务院</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.state.gov" target="_blank" rel="noopener" title="Department of State">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="财政部" data-label="财政部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">财政部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://home.treasury.gov" target="_blank" rel="noopener" title="Department of the Treasury">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="国防部" data-label="国防部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">国防部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.defense.gov" target="_blank" rel="noopener" title="Department of Defense">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="司法部" data-label="司法部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">司法部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.justice.gov" target="_blank" rel="noopener" title="Department of Justice">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="内政部" data-label="内政部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">内政部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.doi.gov" target="_blank" rel="noopener" title="Department of the Interior">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="农业部" data-label="农业部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">农业部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.usda.gov" target="_blank" rel="noopener" title="Department of Agriculture">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="商务部" data-label="商务部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">商务部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.commerce.gov" target="_blank" rel="noopener" title="Department of Commerce">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="劳工部" data-label="劳工部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">劳工部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.dol.gov" target="_blank" rel="noopener" title="Department of Labor">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="卫生与公众服务部" data-label="卫生与公众服务部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">卫生与公众服务部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.hhs.gov" target="_blank" rel="noopener" title="Department of Health and Human Services">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="住房与城市发展部" data-label="住房与城市发展部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">住房与城市发展部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.hud.gov" target="_blank" rel="noopener" title="Department of Housing and Urban Development">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="交通部" data-label="交通部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">交通部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.transportation.gov" target="_blank" rel="noopener" title="Department of Transportation">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="能源部" data-label="能源部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">能源部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.energy.gov" target="_blank" rel="noopener" title="Department of Energy">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="教育部" data-label="教育部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">教育部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.ed.gov" target="_blank" rel="noopener" title="Department of Education">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="退伍军人事务部" data-label="退伍军人事务部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">退伍军人事务部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.va.gov" target="_blank" rel="noopener" title="Department of Veterans Affairs">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="国土安全部" data-label="国土安全部" disabled>
+                    <span class="ifl">
                       <span class="if-cn">国土安全部</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.dhs.gov" target="_blank" rel="noopener" title="Department of Homeland Security">↗</a>
                   </div>
                 </div>
@@ -3390,21 +3347,21 @@
                 <div class="g-h">总统行政办公室<i>Executive Office</i></div>
                 <div class="ibr-grid c2">
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="管理与预算办公室 OMB" data-label="管理与预算办公室" disabled>
+                    <span class="ifl">
                       <span class="if-cn">管理与预算办公室</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.whitehouse.gov/omb/" target="_blank" rel="noopener" title="Office of Management and Budget">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="美国贸易代表办公室 USTR" data-label="美国贸易代表办公室" disabled>
+                    <span class="ifl">
                       <span class="if-cn">美国贸易代表办公室</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://ustr.gov" target="_blank" rel="noopener" title="Office of the United States Trade Representative">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="whitehouse" data-agency="科技政策办公室 OSTP" data-label="科技政策办公室" disabled>
+                    <span class="ifl">
                       <span class="if-cn">科技政策办公室</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.whitehouse.gov/ostp/" target="_blank" rel="noopener" title="Office of Science and Technology Policy">↗</a>
                   </div>
                 </div>
@@ -3414,27 +3371,27 @@
                 <div class="g-h">独立机构<i>Independent Agencies</i></div>
                 <div class="ibr-grid c2">
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="agencies" data-agency="美联储（Federal Reserve）" data-label="美联储" disabled>
+                    <span class="ifl">
                       <span class="if-cn">美联储</span><span class="if-en">FRB</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.federalreserve.gov" target="_blank" rel="noopener" title="Federal Reserve Board">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="agencies" data-agency="联邦通信委员会 FCC" data-label="联邦通信委员会" disabled>
+                    <span class="ifl">
                       <span class="if-cn">联邦通信委员会</span><span class="if-en">FCC</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.fcc.gov" target="_blank" rel="noopener" title="Federal Communications Commission">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="agencies" data-agency="国际贸易委员会 USITC" data-label="国际贸易委员会" disabled>
+                    <span class="ifl">
                       <span class="if-cn">国际贸易委员会</span><span class="if-en">USITC</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://www.usitc.gov" target="_blank" rel="noopener" title="U.S. International Trade Commission">↗</a>
                   </div>
                   <div class="if-row">
-                    <button type="button" class="ifl" data-go="agencies" data-agency="外国投资委员会 CFIUS" data-label="外国投资委员会" disabled>
+                    <span class="ifl">
                       <span class="if-cn">外国投资委员会</span><span class="if-en">CFIUS</span>
-                    </button>
+                    </span>
                     <a class="if-ext" href="https://home.treasury.gov/policy-issues/international/the-committee-on-foreign-investment-in-the-united-states-cfius" target="_blank" rel="noopener" title="CFIUS · 财政部投资安全办公室">↗</a>
                   </div>
                   <div class="if-row">
@@ -3456,7 +3413,6 @@
                 </div>
               </div>
 
-              <div class="ibr-foot">本门户 · 白宫及内阁各部 <b data-inst-cnt="whitehouse">—</b> 条、独立机构 <b data-inst-cnt="agencies">—</b> 条</div>
             </section>
 
             <!-- Ⅲ 司法 -->
@@ -3536,7 +3492,6 @@
                 </div>
               </div>
 
-              <div class="ibr-foot">本门户暂未建司法板块 · 仅列机构结构与官网</div>
             </section>
 
           </div>
@@ -3579,13 +3534,14 @@
                 </div>
                 <div class="if-row">
                   <span class="ifl"><span class="if-cn">地方执法</span><span class="if-en">Law Enforcement</span></span>
+                  <a class="if-ext" href="https://www.sheriffs.org" target="_blank" rel="noopener" title="全美警长协会 · 地方执法">↗</a>
                 </div>
               </div>
             </section>
           </div>
 
           <div class="inst-foot">
-            结构据美国政府结构图（U.S. Government Structure）整理，仅列常设机构；委员会取两院对应的常设委员会。机构后的条目数为本门户在库条目数，随每日抓取变动，点选按机构筛选：国会法案 <b data-inst-cnt="congress">—</b> 条、白宫及内阁各部 <b data-inst-cnt="whitehouse">—</b> 条、独立机构 <b data-inst-cnt="agencies">—</b> 条。司法、州与地方政府暂未建板块，只列结构与官网。
+            结构据美国政府结构图（U.S. Government Structure）整理，仅列常设机构；委员会取两院对应的常设委员会。各机构名后的 ↗ 指向其官网。
           </div>
         </div>
       </div>
@@ -6453,13 +6409,7 @@
             if (isNaN(d.getTime()) || (now - d) / 86400000 > parseInt(st.time, 10)) return false;
           }
           if (st.kind !== 'all' && it.kind !== st.kind) return false;
-          // 机构筛选：值以「*」结尾时按前缀匹配（国会板块用「参议院*」「众议院*」筛院别）
-          if (st.agency !== 'all') {
-            var ag = it.agency || '', want = st.agency;
-            if (want.charAt(want.length - 1) === '*') {
-              if (ag.indexOf(want.slice(0, -1)) !== 0) return false;
-            } else if (ag !== want) return false;
-          }
+          if (st.agency !== 'all' && (it.agency || '') !== st.agency) return false;
           if (st.domain !== 'all' && (it.domain || '其他') !== st.domain) return false;
           if (st.q) {
             var q = st.q.toLowerCase();
@@ -6602,22 +6552,13 @@
       var EOP_AGENCIES = ['美国总统行政办公室', '管理与预算办公室 OMB', '美国贸易代表办公室 USTR',
         '科技政策办公室 OSTP'];
 
-      // 机构下拉的三种取法：
-      //   fixedRoster   白宫板块——15 内阁各部 + EOP 固定花名册，不随当期有无条目增减
-      //   chamberMode   国会板块——条目 agency 为「参议院 · 立法动作」形式，按前缀筛院别
-      //                 更有意义，故只给「参议院*」「众议院*」两项（* 表示前缀匹配）
-      //   其余          独立机构板块——按数据中实际出现的机构生成
-      function fillAgencyOptions(items, fixedRoster, chamberMode) {
+      function fillAgencyOptions(items, fixedRoster) {
         var sel = document.getElementById('filter-agency');
         var seen = [];
         items.forEach(function (it) { if (it.agency && seen.indexOf(it.agency) === -1) seen.push(it.agency); });
-        // 由「政治机构导航」直接进入时 filterState 已预置筛选值，优先于控件当前值
-        var prev = (filterState.agency && filterState.agency !== 'all') ? filterState.agency : sel.value;
+        var prev = sel.value;
         var html = '<option value="all">全部</option>';
-        if (chamberMode) {
-          html += '<optgroup label="院别">' +
-            '<option value="参议院*">参议院</option><option value="众议院*">众议院</option></optgroup>';
-        } else if (fixedRoster) {
+        if (fixedRoster) {
           var other = seen.filter(function (a) {
             return CABINET_DEPTS.indexOf(a) < 0 && EOP_AGENCIES.indexOf(a) < 0;
           }).sort();
@@ -6639,14 +6580,11 @@
           }).join('');
         }
         sel.innerHTML = html;
-        var ok = chamberMode
-          ? (prev === 'all' || prev === '参议院*' || prev === '众议院*')
-          : fixedRoster
-            ? (prev === 'all' || CABINET_DEPTS.indexOf(prev) >= 0 || EOP_AGENCIES.indexOf(prev) >= 0 ||
-               seen.indexOf(prev) >= 0)
-            : (prev === 'all' || seen.indexOf(prev) >= 0);
+        var ok = fixedRoster
+          ? (prev === 'all' || CABINET_DEPTS.indexOf(prev) >= 0 || EOP_AGENCIES.indexOf(prev) >= 0 ||
+             seen.indexOf(prev) >= 0)
+          : (prev === 'all' || seen.indexOf(prev) >= 0);
         sel.value = ok ? prev : 'all';
-        filterState.agency = sel.value;   // 控件与筛选状态始终一致
       }
 
       function fillDomainOptions(items) {
@@ -6703,15 +6641,12 @@
 
         fillKindOptions(allItems);
         fillDomainOptions(allItems);
-        // 「机构」筛选：白宫板块列内阁各部 + EOP 固定花名册，独立机构板块按数据生成，
-        // 国会板块改用「院别」（参议院 / 众议院，前缀匹配）；其余板块隐藏并强制全部
+        // 「部门」筛选在白宫、独立机构板块显示（这两个板块含多个机构）；国会板块隐藏并强制全部
         var agencyGroup = document.getElementById('filter-agency-group');
         var agencySel = document.getElementById('filter-agency');
-        var agencyLab = agencyGroup ? agencyGroup.querySelector('.filter-label') : null;
-        if (key === 'agencies' || key === 'whitehouse' || key === 'congress') {
+        if (key === 'agencies' || key === 'whitehouse') {
           agencyGroup.hidden = false;
-          if (agencyLab) agencyLab.textContent = key === 'congress' ? '院别' : '部门';
-          fillAgencyOptions(allItems, key === 'whitehouse', key === 'congress');
+          fillAgencyOptions(allItems, key === 'whitehouse');
         } else {
           agencyGroup.hidden = true;
           agencySel.value = 'all';
@@ -6895,9 +6830,7 @@
         window.scrollTo(0, 0);
         document.title = '美国政治动态跟踪 · 国金证券 政策与战略';
       }
-      // preset：可选，{ agency: '财政部' | '参议院*' } —— 由「政治机构导航」点选进入时
-      // 预置机构筛选；实际控件值在 renderBoard → fillAgencyOptions 里同步
-      function showBoard(key, e, preset) {
+      function showBoard(key, e) {
         if (e) e.preventDefault();
         portalEls.forEach(function (el) { el.hidden = true; });
         usView.hidden = true;
@@ -6917,7 +6850,6 @@
         document.getElementById('filter-kind').value = 'all';
         document.getElementById('filter-domain').value = 'all';
         document.getElementById('filter-q').value = '';
-        if (preset && preset.agency) filterState.agency = preset.agency;
         boardPage = 0;
         // 数据已外置：先占位，加载完成再渲染；加载期间切换板块则丢弃旧结果
         var pend = (showBoardSeq = (showBoardSeq || 0) + 1);
@@ -7795,85 +7727,6 @@
           if (!usView.hidden || !boardView.hidden || (electionView && !electionView.hidden) || (euView && !euView.hidden)) showPortal();
         });
       });
-
-      // ===== 政治机构导航：回填在库条数 + 点选直达板块 =====
-      // 结构为静态 HTML（便于在可视化编辑器里改字），脚本只做三件事：
-      //   1) 按机构汇总各板块条目，回填机构后的条数；无条目的行保持 disabled＝纯结构标签
-      //   2) 导航区进入视口才拉三个板块的数据（拉过即进 POLICY 缓存，进板块不再重复下载）
-      //   3) 点选 → showBoard(key, null, {agency})，下拉控件值由 fillAgencyOptions 同步
-      (function initInstNav() {
-        var nav = document.getElementById('inst-nav');
-        if (!nav) return;
-        var cells = [].slice.call(nav.querySelectorAll('[data-go]'));
-        var cntEls = [].slice.call(nav.querySelectorAll('[data-inst-cnt]'));
-        var filled = false, requested = false;
-
-        // agency 为空＝整个板块；以「*」结尾＝按前缀匹配（院别用）
-        function countOf(key, agency) {
-          var board = POLICY.boards[key];
-          if (!board) return -1;
-          var items = board.items || [];
-          if (!agency) return items.length;
-          var wild = agency.charAt(agency.length - 1) === '*';
-          var stem = wild ? agency.slice(0, -1) : agency;
-          var n = 0;
-          for (var i = 0; i < items.length; i++) {
-            var a = items[i].agency || '';
-            if (wild ? a.indexOf(stem) === 0 : a === stem) n++;
-          }
-          return n;
-        }
-
-        function fill() {
-          if (filled) return;
-          filled = true;
-          cells.forEach(function (el) {
-            var n = countOf(el.getAttribute('data-go'), el.getAttribute('data-agency') || '');
-            if (n > 0) {
-              el.disabled = false;
-              el.classList.add('has-data');
-              var b = document.createElement('b');
-              b.className = 'if-n';
-              b.textContent = n;
-              el.appendChild(b);
-              el.title = el.getAttribute('data-agency')
-                ? '进入板块并按「' + (el.getAttribute('data-label') || '') + '」筛选 · ' + n + ' 条'
-                : '进入板块 · 共 ' + n + ' 条';
-            }
-          });
-          cntEls.forEach(function (el) {
-            var n = countOf(el.getAttribute('data-inst-cnt'), '');
-            if (n >= 0) el.textContent = n;
-          });
-        }
-
-        function ensure() {
-          if (requested) return;
-          requested = true;
-          Promise.all(['whitehouse', 'congress', 'agencies'].map(function (k) {
-            return loadBoard(k).catch(function () { return null; });
-          })).then(fill).catch(function () {});
-        }
-
-        nav.addEventListener('click', function (e) {
-          var t = e.target.closest ? e.target.closest('[data-go]') : null;
-          if (!t || t.disabled) return;
-          e.preventDefault();
-          showBoard(t.getAttribute('data-go'), null, {
-            agency: t.getAttribute('data-agency') || '',
-            label: t.getAttribute('data-label') || ''
-          });
-        });
-
-        // 导航区滚入视口（提前 500px）再拉数据，避免一进板块就下载三份条目
-        if (!('IntersectionObserver' in window)) { ensure(); return; }
-        var io = new IntersectionObserver(function (es) {
-          for (var i = 0; i < es.length; i++) {
-            if (es[i].isIntersecting) { io.disconnect(); ensure(); return; }
-          }
-        }, { rootMargin: '500px 0px' });
-        io.observe(nav);
-      })();
 
       // 支持链接带 #us / #eu / #board-whitehouse / #election 等直达；运行中改 hash 也可切换
       function applyHash() {
