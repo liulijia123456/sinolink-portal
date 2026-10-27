@@ -221,6 +221,16 @@ log = setup_logger()
 
 # ---------------------------------------------------------------- HTTP
 
+# 代理策略：优先显式环境变量代理（http_proxy / https_proxy），否则直连。
+# 不采用 macOS「系统设置 → 代理」里的代理（urllib 经 _scproxy 自动读取）：本机常驻
+# 127.0.0.1:7890 一类的本地代理，代理进程未运行时 urlopen 会卡在 TLS 握手直至超时
+# （报 _ssl.c 握手超时），而 curl 等不读系统代理的工具可正常直连。政府站点直连可达。
+# 注：显式设置 http_proxy / https_proxy 时仍按环境变量走代理，不改变用户显式配置。
+_ENV_PROXY = {k: v for k, v in urllib.request.getproxies_environment().items() if v}
+OPENER = (urllib.request.build_opener() if _ENV_PROXY
+          else urllib.request.build_opener(urllib.request.ProxyHandler({})))
+
+
 def http_get_json(url, params, source_name):
     """带重试的 GET JSON。返回解析后的 dict；失败抛出最后一次异常。"""
     qs = urllib.parse.urlencode(params, doseq=True)
@@ -229,7 +239,7 @@ def http_get_json(url, params, source_name):
     for attempt in range(1, HTTP_RETRIES + 1):
         try:
             req = urllib.request.Request(full, headers={'User-Agent': USER_AGENT})
-            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+            with OPENER.open(req, timeout=HTTP_TIMEOUT) as resp:
                 raw = resp.read().decode('utf-8', errors='replace')
             return json.loads(raw)
         except urllib.error.HTTPError as e:
