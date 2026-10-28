@@ -2527,16 +2527,25 @@
 
   /* 分支根节点（国会 / 总统 / 最高法院）：白底 + 左侧铜金书脊 */
   #view-us .ibr-root {
-    position: relative; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
-    margin: 14px 18px 0; padding: 9px 12px 9px 13px;
+    position: relative; margin: 14px 18px 0; min-height: 73px;
     background: #fff; border: 1px solid rgba(11, 23, 36, .1); border-radius: 2px;
   }
+  /* 根节点与普通条目共用展开逻辑，内边距与面板留白单独给 */
+  #view-us .ibr-root .if-toggle { padding: 9px 12px 9px 13px; align-content: center; }
+  #view-us .ibr-root .if-ext { padding: 6px 10px 6px 2px; }
+  #view-us .ibr-root .if-more { margin: 0 12px 10px 13px; }
   #view-us .ibr-root::before {
     content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--us-brass);
   }
-  #view-us .ibr-root .ir-cn { font-family: var(--us-serif); font-size: 14.5px; font-weight: 600; letter-spacing: .05em; color: #16212e; }
-  #view-us .ibr-root .ir-en { font-family: var(--us-mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: rgba(11, 23, 36, .4); }
-  #view-us .ibr-root .if-who { margin-left: auto; font-size: 11px; color: #2b3a4d; }
+  #view-us .ibr-root .ir-cn {
+    flex: none; white-space: nowrap;
+    font-family: var(--us-serif); font-size: 14.5px; font-weight: 600; letter-spacing: .05em; color: #16212e;
+  }
+  #view-us .ibr-root .ir-en {
+    flex: none; white-space: nowrap;
+    font-family: var(--us-mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: rgba(11, 23, 36, .4);
+  }
+  #view-us .ibr-root .if-who { font-size: 10.5px; color: #2b3a4d; }
 
   /* 左脊树：li 自身的竖线 + 横线拼出肘形连接 */
   #view-us .ibr-tree { list-style: none; margin: 8px 18px 0 27px; padding: 0; }
@@ -3272,10 +3281,19 @@
               <span class="irn">Ⅰ</span>
               <span class="irc">立法<span class="ire">Legislative</span></span>
             </header>
-            <div class="ibr-root">
-            <span class="ir-cn">国会</span>
-            <span class="ir-en">Congress · 535 席</span>
-            <span class="if-who"><span class="who-cn">无单一首长</span> <span class="who-tail"><i class="pty pty-n">两院</i></span></span>
+            <div class="ibr-root if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-congress" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="ir-cn">国会</span><span class="ir-en">Congress · 535 席</span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-cn">无单一首长</span> <span class="who-tail"><i class="pty pty-n">两院</i></span></span></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.congress.gov" target="_blank" rel="noopener" title="Congress.gov">↗</a>
+            </div>
+            <div class="if-more" id="ifm-congress" hidden>
+              <p><b>职责</b>由参议院（100 席）与众议院（435 席）组成，行使立法权、拨款权、参议院独有的人事与条约批准权、弹劾权，并监督行政部门。</p>
+              <p><b>权力</b>掌握联邦预算与立法的双重闸门；调查传票与听证可强制行政部门交出文件与证人；两院分治意味着任何一院都能否决立法。</p>
+            </div>
           </div>
             <ul class="ibr-tree">
           <li>
@@ -3480,10 +3498,19 @@
               <span class="irn">Ⅱ</span>
               <span class="irc">行政<span class="ire">Executive</span></span>
             </header>
-            <div class="ibr-root">
-            <span class="ir-cn">总统</span>
-            <span class="ir-en">President · 白宫</span>
-            <span class="if-who"><span class="who-title">总统</span>&nbsp;<span class="who-cn">唐纳德·特朗普</span> <span class="who-tail"><em class="who-en">Donald Trump</em> <i class="pty pty-r">共和党</i></span></span>
+            <div class="ibr-root if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-president" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="ir-cn">总统</span><span class="ir-en">President · 白宫</span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">总统</span>&nbsp;<span class="who-cn">唐纳德·特朗普</span> <span class="who-tail"><em class="who-en">Donald Trump</em> <i class="pty pty-r">共和党</i></span></span></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.whitehouse.gov" target="_blank" rel="noopener" title="白宫官网">↗</a>
+            </div>
+            <div class="if-more" id="ifm-president" hidden>
+              <p><b>职责</b>国家元首与政府首脑，负责执行法律、统辖武装力量、缔结条约、任命官员并向国会发表国情咨文。</p>
+              <p><b>权力</b>行政令、机构人事与预算建议权；否决权（国会须两院各三分之二推翻）；特赦权；在紧急状态与授权立法下拥有广泛裁量。</p>
+            </div>
           </div>
             <ul class="ibr-tree">
           <li>
@@ -3886,10 +3913,19 @@
               <span class="irn">Ⅲ</span>
               <span class="irc">司法<span class="ire">Judicial</span></span>
             </header>
-            <div class="ibr-root">
-            <span class="ir-cn">最高法院</span>
-            <span class="ir-en">Supreme Court · 9 名大法官</span>
-            <span class="if-who"><span class="who-title">首席大法官</span>&nbsp;<span class="who-cn">约翰·罗伯茨</span> <span class="who-tail"><em class="who-en">John Roberts</em> <i class="pty pty-n">无党派</i></span></span>
+            <div class="ibr-root if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-scotus" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="ir-cn">最高法院</span><span class="ir-en">Supreme Court</span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席大法官</span>&nbsp;<span class="who-cn">约翰·罗伯茨</span> <span class="who-tail"><em class="who-en">John Roberts</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.supremecourt.gov" target="_blank" rel="noopener" title="Supreme Court of the United States">↗</a>
+            </div>
+            <div class="if-more" id="ifm-scotus" hidden>
+              <p><b>职责</b>终审宪法与联邦法律争议；9 名大法官由总统提名、参议院确认，终身任职；首席大法官主持合议并领导联邦司法系统。</p>
+              <p><b>权力</b>司法审查权可判定立法与行政措施违宪；判例划定监管权限边界（关税授权、机构解释权、行政程序），对市场预期影响直接。</p>
+            </div>
           </div>
             <ul class="ibr-tree">
           <li>
