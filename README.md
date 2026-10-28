@@ -25,7 +25,7 @@
                 └───────────────┬──────────────────────────┘
                                 │ fetch（同源相对路径）
                 ┌───────────────▼──────────────────────────┐
-                │  data/policy/（政策四板块，外置 JSON）      │
+                │  data/policy/（政策四板块 + 政党占位）      │
                 │  ├─ {board}-items.json     条目主体        │
                 │  ├─ {board}-overview.json  周/月研判        │
                 │  └─ manifest.json          计数与时间戳     │
@@ -54,7 +54,7 @@
 | 路径 | 说明 |
 | --- | --- |
 | `index.html` | 全站唯一页面：门户首页 + 4 个子视图（`us` / `eu` / `board` / `election`）+ 全部样式与脚本 |
-| `data/policy/` | 政策四板块数据（`whitehouse` / `congress` / `agencies` / `judicial`），已入库 |
+| `data/policy/` | 政策四板块数据（`whitehouse` / `congress` / `agencies` / `judicial`）+ `parties` 政党动态占位（0 条），已入库 |
 | `scripts/` | 抓取、简报、校验、日历维护等维护工具 |
 | `logs/` | `fetch.log` / `brief.log`（运行时产物，已 gitignore） |
 | `scripts/.congress_api_key` | 国会 API 密钥（**已 gitignore，绝不入库**） |
@@ -66,11 +66,12 @@
 | hash | 视图 | 内容 |
 | --- | --- | --- |
 | （空） | 门户首页 | 研究专栏四卡 + 覆盖范围 + 说明 + 页脚 |
-| `#us` | 美国板块 | 四个政策子板块卡 + 选举动态卡 + 大事日历 |
+| `#us` | 美国板块 | 四个政策子板块卡 + 选举动态卡 + 政党动态卡 + 大事日历 |
 | `#board-whitehouse` | 子板块 | 白宫及内阁各部政策条目列表（筛选 / 分页 / 研判区） |
 | `#board-congress` | 子板块 | 国会法案条目列表 |
 | `#board-agencies` | 子板块 | 独立机构政策条目列表 |
 | `#board-judicial` | 子板块 | 司法裁判条目列表（按法院层级 / 裁判类型 / 领域筛选） |
+| `#board-parties` | 子板块 | 政党动态（框架页，0 条；数据源与更新频率待定） |
 | `#election` | 选举动态 | 中期选举 / 2028 总统大选两栏 + 民调卡 |
 | `#eu` | 欧洲板块 | 欧盟 / 英国 / 法国 / 俄罗斯四卡（**纯静态，暂无数据管线**） |
 
@@ -268,6 +269,9 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 > 司法板块（`judicial`）条目额外带 `summary` 字段（CourtListener 检索片段，≤1200 字），
 > 仅作简报素材，不在列表直接展示；其余字段与上表一致。
+>
+> 政党动态（`parties`）为**框架占位**：`items` 为空、`count` 为 0，允许通过 `--strict`；
+> 数据源确定前不设抓取器与定时任务。
 
 ### 4.2 `data/policy/{board}-overview.json`
 
@@ -634,7 +638,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 ## 9. 定时任务分工
 
 2026-10-25 起，原单一「周更」任务拆为按板块划分的任务；2026-10-28 新增司法裁判，
-当前共 5 个日更/周更任务。每个任务只负责一个数据区块，改动文件互不重叠，
+当前共 7 个日更/周更任务。每个任务只负责一个数据区块，改动文件互不重叠，
 时段错开，互不阻塞。
 
 | 任务 | 频率 | 负责区块 | 改动文件 |
@@ -664,6 +668,10 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 
 原「国金门户 · 美国政策周更抓取」任务已 PAUSED，其职责由上述政策日更与研判任务覆盖。
 
+**政党动态（`parties`）当前不设定时任务**：只有入口卡与空板块骨架，数据文件
+`parties-items.json` 为 0 条占位；待确定来源、收录标准与更新频率后，再按
+「一板块一任务」的方式新增抓取器与自动化。
+
 ---
 
 ## 10. 部署与已知缺口
@@ -689,7 +697,10 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
    建议归档到 `docs/` 或移出仓库。
 7. **欧洲板块无数据源**：四张卡片为纯静态描述，接入抓取前需先定义
    `data/eu/*.json` 的 schema 与来源（欧盟机构官网 / 各国议会 / 选举委员会）。
-8. **司法裁判板块的素材与覆盖上限**：CourtListener 检索 RSS 单次最多 20 条，且只返回
+8. **政党动态板块只有框架**：入口卡、空板块、筛选与数据占位已就位（`#board-parties`），
+   但没有抓取器、没有定时任务、没有条目。下一步需先定来源（两党全国委员会、国会
+   党团、州党部、FEC 竞选资金等）、收录标准与更新频率，再补抓取器与任务。
+9. **司法裁判板块的素材与覆盖上限**：CourtListener 检索 RSS 单次最多 20 条，且只返回
    命中片段；最高法院官网对本机返回 403，GovInfo 的 `DEMO_KEY` 配额极低。因此板块
    目前以 `note` 为主，长简报只覆盖最高法院实体判决。若要提高覆盖与详略，需申请
    CourtListener token（REST API）或 api.data.gov key（GovInfo USCOURTS），

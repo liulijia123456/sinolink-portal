@@ -862,7 +862,7 @@ def main():
     ap.add_argument('--days', type=int, default=LOOKBACK_DAYS, help='回看天数（默认 %(default)s）')
     ap.add_argument('--dry-run', action='store_true', help='只抓取打印统计，不回写数据')
     ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'],
-                    help='只抓取指定板块（拆分定时任务用）；不填则四板块全抓')
+                    help='只抓取指定板块（拆分定时任务用）；不填则四个可抓取板块全抓')
     args = ap.parse_args()
 
     tz8 = timezone(timedelta(hours=8))
