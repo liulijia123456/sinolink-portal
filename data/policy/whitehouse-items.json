@@ -1,9 +1,217 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-10-27 09:07",
-  "count": 154,
+  "updated_at": "2026-10-28 08:07",
+  "count": 167,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Establishment of Federal Advisory Committees-Advisory Council on Health and Human Performance Optimization",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21900/establishment-of-federal-advisory-committees-advisory-council-on-health-and-human-performance",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "title_cn": "联邦咨询委员会设立：健康与人体效能优化咨询委员会（通告）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "国防部发布通告，依《联邦咨询委员会法》将「健康与人体效能优化咨询委员会」设立为酌定型联邦咨询委员会，属常设咨询架构而非规则制定。\n通告文本以「战争部（Department of War，DoW）」指称国防部，与该部更名后的对外表述一致，机构建制本身未变。\n委员会职能指向军人及部队健康、体能与人因效能优化，后续以会议通告与建议报告形式输出，不直接设定监管义务或支出授权。\n对市场意味着什么：无直接定价影响。咨询委员会不产生采购合同、许可条件或合规期限，国防板块订单节奏不受扰动；可作观察军队卫勤与人体效能技术投入方向的边缘信号，观察节点为该委员会首次会议议题。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Implementation of HAVANA Act of 2021",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21923/implementation-of-havana-act-of-2021",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "title_cn": "《2021年哈瓦那法》实施（规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "司法部以最终规则采纳 2024 年 4 月 19 日发布的《2021年哈瓦那法》实施暂行最终规则，暂行规则期间未收到公众意见。\n《哈瓦那法》授权各机构首长向遭受符合条件脑损伤的特定人员支付补偿，本规则即为该补偿机制的落地程序。\n最终规则对暂行规则仅作非实质性修订，涉及支付审查流程中相关官员的职称表述，以及依其后立法变动调整索赔的最早合格日期。\n对市场意味着什么：无直接定价影响。属联邦雇员补偿程序的内部调整，不涉及商业保险赔付责任或医疗产品审批；可跟踪之处是跨境派驻人员的雇主责任与保险安排实践，观察节点为其他机构是否跟进发布同等实施规则。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Bipartisan Safer Communities Act of 2022-Criteria for National Instant Criminal Background Check System (“NICS”) Background Checks of Firearm Handlers",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21920/bipartisan-safer-communities-act-of-2022-criteria-for-national-instant-criminal-background-check",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "title_cn": "《2022年两党更安全社区法》：全国即时犯罪背景审查系统（NICS）对枪械经营者的审查标准（规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "司法部修订联邦调查局全国即时犯罪背景审查系统（NICS）相关规章，授权持牌枪械经营商（FFL）为在职及拟聘雇员自愿发起雇佣背景审查。\n最终规则细化了「枪械从业人员背景审查」（FHC）的实施方式：经营商可对「合格雇员」提交查询用于岗位适格性判断，属自愿使用而非强制义务。\n修订仅扩展 NICS 的合法查询用途，不改变禁止性情形清单与购枪审查的实体标准。\n对市场意味着什么：对枪械零售与制造板块影响限于合规层面。自愿性设计不新增普遍强制成本，大型连锁零售商可借此降低雇员适格性诉讼风险，中小经销商的系统接入与记录保存负担略有上升；不构成板块级定价事件，观察节点为生效日后 FHC 的实际查询量。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Subsistence Management Regulations for Public Lands in Alaska-2026-27 and 2027-28 Subsistence Taking of Wildlife Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21849/subsistence-management-regulations-for-public-lands-in-alaska-2026-27-and-2027-28-subsistence-taking",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "农业部",
+      "title_cn": "阿拉斯加公共土地生计管理规章：2026—27年度与2027—28年度生计性野生动物捕获规定（规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "农业部通过联邦生计委员会以最终规则修订阿拉斯加公共土地上生计性狩猎与捕猎的季期、收获限额及方式方法，适用 2026—27 与 2027—28 两个监管年度。\n委员会按双年度节奏推进：野生动物生计规章在偶数年完成修订，鱼类与贝类在奇数年修订，公众提案与评议在此前一年进行。\n规则同时处理习惯性与传统性使用的相关安排。\n对市场意味着什么：无直接定价影响。规则仅涉及阿拉斯加农村居民的自给性捕获，不改变商业捕捞配额或野生动物制品贸易条件，对上市农食企业无营收口径影响；观察节点为双年度修订是否引发部落政府或环保团体的司法挑战。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Pacific Cod by Vessels Using Pot Gear in the Western Regulatory Area of the Gulf of Alaska",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21888/fisheries-of-the-exclusive-economic-zone-off-alaska-pacific-cod-by-vessels-using-pot-gear-in-the",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "title_cn": "阿拉斯加专属经济区渔业：阿拉斯加湾西部监管区使用罐笼渔具船只的太平洋鳕捕捞（规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "国家海洋渔业局（NMFS）禁止在阿拉斯加湾西部监管区使用罐笼（pot）渔具的船只定向捕捞太平洋鳕。\n措施目的是防止超过 2026 年分配给该区域罐笼渔具船只的太平洋鳕总可捕量（TAC），属配额执行性关闭，不反映资源状况恶化。\n关闭即时生效，TAC 总量本身未调整；后续若出现未利用配额，仍可能通过再分配重新开放。\n对市场意味着什么：对白鱼供给影响偏短期且局部。阿拉斯加湾西部罐笼船队体量有限，关闭使该区域第四季度鳕鱼到岸量收缩，对去头去脏鳕鱼与鱼糜报价构成温和支撑；若配额随后再分配给钩钓或拖网船队，支撑将迅速消退。观察节点为配额再分配公告。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Patient Protection and Affordable Care Act, Exchange Pre-Eligibility Verification",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21891/patient-protection-and-affordable-care-act-exchange-pre-eligibility-verification",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "卫生与公众服务部",
+      "title_cn": "《患者保护与平价医疗法》：保险交易所资格预审核查（拟议规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "卫生与公众服务部提出拟议规则，落实《工作家庭减税法》（WFTC）中关于保险交易所参保资格与核验的新要求。\n拟议修订涉及不一致期间（inconsistency period）的设定、不一致情形的核验程序，以及年度资格重新认定与计划年度内的资格重新认定。\n同时扩展核验期间的参保方式，并新设保险生效日期规则，意在压缩资格待定期间的保障空档。\n对市场意味着什么：对管理式医疗与交易所保险公司影响体现在参保人数与核验成本两端。核验程序收紧可能压低不符合补贴资格者的参保留存，扩展参保方式与新生效日期则缓冲退保冲击，净效应取决于最终规则口径；观察节点为评论期结束、最终规则发布，以及随后开放参保期的实际登记数。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Hazardous Materials: Harmonization With International Standards",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21922/hazardous-materials-harmonization-with-international-standards",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "title_cn": "危险货物运输：与国际标准协调一致（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "管道与危险材料安全管理局（PHMSA）提出拟议规则，修订《危险材料规章》以采纳若干国际规则与标准。\n修订范围包括正确运输名称、危险类别、包装类别、特殊规定、包装授权、航空运输数量限制与船舶积载要求。\n官方说明的目标是保持与最新国际规则一致、降低美国境内主体的合规成本，并减轻监管对美国经济的负担。\n对市场意味着什么：利好跨境危险品物流与化工出口。与国际标准并轨可减少同一货物在美规与国际危规下的双重分类与再包装，降低化工品、锂电池与气雾剂的对美运输合规成本，对货代与包装检测服务商构成增量需求。关键前提是拟议条款最终未被实质性修改，观察节点为评论期结束后的最终规则。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Special Conditions: Embraer S.A. Model ERJ 190-400 Airplane; Embraer Enhanced Takeoff System",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21907/special-conditions-embraer-sa-model-erj-190-400-airplane-embraer-enhanced-takeoff-system",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "title_cn": "特殊条件：巴西航空工业公司ERJ 190-400型飞机；巴航工业增强起飞系统（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "联邦航空局（FAA）就巴西航空工业公司 ERJ 190-400 系列飞机提出特殊条件。\n该机型将采用「巴航工业增强起飞系统」（E2TS），相对现行运输类飞机适航标准所设想的技术状态，属新颖或非典型设计特征。\n现行适航规章对该功能缺乏充分或适当的安全标准，故以特殊条件补充局长认为必要的安全要求，作为型号合格证颁发的前提。\n对市场意味着什么：对巴航工业交付节奏影响有限但方向明确。特殊条件属取证程序环节，通过后 E2TS 可提升高温高原机场的起飞性能，强化该机型在中东、拉美等市场的销售卖点；若条件附加额外试验要求，认证周期可能后移。观察节点为特殊条件最终版与型号合格证时间表。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Airworthiness Directives; Ontic Engineering and Manufacturing, Inc. (Type Certificate Previously Held by Swearingen, Fairchild Aircraft, and M7 Aerospace) Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21902/airworthiness-directives-ontic-engineering-and-manufacturing-inc-type-certificate-previously-held-by",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "title_cn": "适航指令；Ontic工程制造公司（型号合格证原由斯韦林根、费尔柴尔德飞机与M7航空航天公司持有）飞机（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "联邦航空局（FAA）对 Ontic 工程制造公司 SA226 与 SA227 系列（含军方 C-26A/B 编号）飞机发布适航指令。\n指令缘于多起飞行中俯仰配平作动器失效的报告。\n要求重复检查作动器密封胶是否开裂、缺失或失效，必要时更换并重新封胶；同时重复测量作动器行程时间并采取相应措施。\n对市场意味着什么：无直接定价影响。受影响机型为斯韦林根与费尔柴尔德遗留机队，多用于支线货运、通用航空与特殊任务，机队规模小、运营方分散，维护成本增量有限；可跟踪之处是 Ontic 作为老机型零件独家供应方的售后定价能力。观察节点为指令生效日与替代件方案。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21864/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "title_cn": "适航指令；波音公司飞机（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "联邦航空局（FAA）对波音 757-200 与 757-300 系列飞机发布适航指令。\n指令缘于一起报告：在重着陆过程中，部分安装在旅客服务组件（PSU）导轨上的视频监视器脱落。\n要求更换未配置二次保持系绳的 PSU 视频监视器，以消除客舱内物体飞脱伤人的不安全状态。\n对市场意味着什么：无直接定价影响。757 客机已停产多年，在役机队以货运改装与包机为主，改装工作量小、单机成本低，不构成航空板块盈利变量；对客舱内饰改装供应商属零星订单。观察节点为指令生效后是否扩展至仍在产的同类 PSU 安装构型。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21863/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "title_cn": "适航指令；波音公司飞机（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "联邦航空局（FAA）对波音 737-8、737-9 与 737-8200 系列飞机发布适航指令。\n指令缘于泄漏检查中发现发动机燃油关断活门检修盖板的原位成型（FiP）密封垫存在渗漏。\n要求按构型对 FiP 密封垫的密封胶安装状况进行详细检查，或在预成型密封件受损时检查检修盖板；随后执行液体渗漏测试，并按检查结果采取相应措施。\n对市场意味着什么：对运营端影响为可控的停场工时。受影响为 737 MAX 系列，全球机队规模大但检查属例行工时级别；若渗漏检出率偏高，可能造成短期非计划停场增加、运力边际收缩。对波音属质保与改装支出，不改变交付节奏判断。观察节点为指令生效日与航空公司报告的非计划拆换率。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21862/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "title_cn": "适航指令；波音公司飞机（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "联邦航空局（FAA）对波音 737-700、737-700C、737-800 与 737-900ER 系列飞机发布适航指令。\n指令缘于泄漏检查中发现发动机燃油关断活门检修盖板的原位成型（FiP）密封垫渗漏。\n要求对左右两侧 FiP 密封垫的密封胶安装状况详细检查，对检修盖板执行液体渗漏测试，并按结果采取措施。\n对市场意味着什么：影响面大于同批 MAX 指令。737 NG 是全球在役数量最大的窄体机队，检查涉及双侧盖板，集中检修将带来阶段性维修工时与航材需求；若渗漏普遍，非计划停场会传导至运力与票价。对波音属质保支出，对 MRO 与密封件供应商构成增量订单。观察节点为生效日与机队渗漏检出比例。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-10-27",
+      "title": "Safety Zone; Southern California Annual Firework Events for the Los Angeles-Long Beach Captain of the Port Zone",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21918/safety-zone-southern-california-annual-firework-events-for-the-los-angeles-long-beach-captain-of-the",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "国土安全部",
+      "title_cn": "安全区；南加州年度烟火活动（洛杉矶—长滩港务监督区）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "海岸警卫队提出拟议规则，修订洛杉矶—长滩港务监督区南加州年度烟火活动安全区。\n拟新增 8 项活动、更新 13 项活动、删除 2 项活动，与年度烟火演出安排同步调整。\n安全区用于保护水域使用者避开坠落物影响范围，未经港务监督长特别许可，人员与船舶不得进入。\n对市场意味着什么：无直接定价影响。安全区为小时级临时禁航，对集装箱与油轮靠泊的影响限于单场演出时段，港务方可通过调整引航窗口消化；对烟火演出与活动策划行业属常规审批事项。观察节点为最终规则确定的年度活动清单与禁航时段。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-10-26",
@@ -2357,13 +2565,13 @@
       "source": "联邦公报",
       "kind": "规则",
       "agency": "教育部",
-      "title_cn": "《影响补助项目》技术性修订（最终规则）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-10-27",
         "body": "美国教育部修订《影响补助项目》（Impact Aid Programs）法规，仅作技术性更正：纠正语法、拼写与排版错误，更正或更新法定授权引注与法规交叉引用，更新邮寄与交付方式。\n教育部明确，本次修订不新增或改变任何监管、记录保存、报告义务，也不改变对任何法规的解释，属文本层面的清理性修订。\n该文件为最终规则，2026 年 11 月 9 日生效，无评论期安排，规章识别号 RIN 1810-AB66。\n对市场意味着什么：无直接定价影响。影响补助是联邦对地方学区因联邦用地与联邦人员子女造成税基损失的补偿性拨款，本次不触及拨款规模、资格认定或计算公式，对教育服务采购与地方财政均无实质影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《影响补助项目》技术性修订（最终规则）",
+      "domain": "教育/劳动"
     },
     {
       "board": "whitehouse",
@@ -2373,13 +2581,13 @@
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "劳工部",
-      "title_cn": "与法规无直接关联的一般政策或解释声明：撤回拟议规则（拟议规则）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-10-27",
         "body": "美国劳工部撤回 2025 年 7 月 2 日公布的拟议规则（90 FR 28985）。该提案原拟删除《联邦法规汇编》第 29 编第 V 章 B 分章中未经通知评论程序制定、或未依该程序后续修订的部分条款。\n撤回后，劳工部正式终止该项规则制定程序，提案退出后续审议议程，案卷号 Docket No. WHD-2025-0002，规章识别号 RIN 1235-AA52。\n该文件归入「与法规无直接关联的一般政策或解释声明」栏目，属程序性撤回，现行 29 CFR 相关条款维持原状。\n对市场意味着什么：无直接定价影响。撤回标的是针对程序瑕疵条款的清理性提案，未涉及工资、工时或加班计算等实质标准，雇主合规义务与劳动成本不发生变动；观察节点为劳工部是否另行以逐条方式重启同类清理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "与法规无直接关联的一般政策或解释声明：撤回拟议规则（拟议规则）",
+      "domain": "教育/劳动"
     },
     {
       "board": "whitehouse",
@@ -2389,13 +2597,13 @@
       "source": "联邦公报",
       "kind": "规则",
       "agency": "能源部",
-      "title_cn": "节能计划：商用暖风炉测试程序撤销（最终规则）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-27",
         "body": "美国能源部撤销商用暖风炉（CWAF）依《能源政策与节约法》采纳的附录 B 测试程序，即「商用暖风炉能效测量统一测试方法（热效率二）」。\n能源部复核后认定，附录 B 对代表性的改善程度不确定，不足以抵消合规负担的上升；撤销亦与拟议《程序规则》方向一致——对包括商用暖风炉在内的特定设备类别，除极有限情形外采用行业测试程序。\n商用暖风炉继续适用附录 A（热效率一）的测试要求。文件为最终规则，2026 年 12 月 7 日生效，案卷号 EERE-2025-BT-TP-0035，规章识别号 RIN 1904-AG06。\n对市场意味着什么：合规测试负担边际下降。制造商无需按附录 B 重新认证，可沿用既有附录 A 数据，检测与认证支出减少；但测试方法口径变动可能影响能效分值可比性，需关注州级能效标准与采购规格是否随之调整。",
         "tier": "note"
-      }
+      },
+      "title_cn": "节能计划：商用暖风炉测试程序撤销（最终规则）",
+      "domain": "能源/环境"
     },
     {
       "board": "whitehouse",
