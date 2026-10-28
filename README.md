@@ -373,6 +373,10 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 | 复核 | GovInfo USCOURTS（GPO） | 地区/巡回法院意见书官方 PDF、案号、nature-of-suit | `api.govinfo.gov/collections/USCOURTS`（需 api.data.gov key） | 按需 |
 | 关联 | 联邦公报 | 司法部等部门规则 | 已在白宫板块收录，不重复入库 | 每日 08:00 |
 
+复核源不进入自动入库：只用于核对已抓条目的案号、裁判日期、裁判结果与原文；
+发现不一致时以官方原文为准，修正条目字段并在简报中注明更正。GovInfo 若配置
+`GOVINFO_API_KEY`，可在 `fetch_judicial()` 内扩展为补充源，当前未默认开启。
+
 **收录范围**
 
 - 法院：美国最高法院；13 个联邦巡回上诉法院（第一至第十一、哥伦比亚特区、联邦巡回）；
