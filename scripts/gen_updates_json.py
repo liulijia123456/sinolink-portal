@@ -61,7 +61,7 @@ def load_existing(index_html=None):
         import fetch_policy as fp
         with open(path, 'r', encoding='utf-8') as f:
             payload = fp.extract_payload(f.read())
-        for board in ('whitehouse', 'congress', 'agencies'):
+        for board in ('whitehouse', 'congress', 'agencies', 'judicial'):
             for it in payload.get('boards', {}).get(board, {}).get('items', []):
                 u = (it.get('url') or '').strip()
                 if not u:
@@ -148,7 +148,7 @@ def main():
 
     boards = collect(args.days, known)
     items = []
-    for b in ('whitehouse', 'congress', 'agencies'):
+    for b in ('whitehouse', 'congress', 'agencies', 'judicial'):
         items.extend(boards.get(b, []))
 
     if not items:
@@ -173,7 +173,7 @@ def main():
     print('[完成] %s：共 %d 条（%s）' % (
         args.out, len(items),
         '、'.join('%s %d' % (BOARD_LABEL[b], len(boards.get(b, [])))
-                  for b in ('whitehouse', 'congress', 'agencies') if boards.get(b))))
+                  for b in ('whitehouse', 'congress', 'agencies', 'judicial') if boards.get(b))))
     return 0
 
 

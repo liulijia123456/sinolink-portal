@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "board": "judicial",
+  "updated_at": "2026-10-28 15:21",
+  "count": 14,
+  "items": [
+    {
+      "board": "judicial",
+      "date": "2026-10-27",
+      "title": "Leos v. MUFG",
+      "url": "https://www.courtlistener.com/opinion/11046073/leos-v-mufg/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "Foreign Asset Control’s implementation of the U.S. Sanctions regime. 6 The district court ruled for",
+      "title_cn": "Leos 诉三菱日联金融集团（涉 OFAC 制裁执行）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第二巡回上诉法院就一起涉及美国财政部外国资产控制办公室（OFAC）制裁机制实施的案件作出裁判。检索片段显示，争点集中于 OFAC 制裁规则在私人诉讼中的适用，地区法院此前已作出对一方有利的裁判，上诉法院本次处理其上诉。\n制裁名单认定、民事责任与救济范围等实体结论未在片段中载明，具体以判决书原文为准。\n对市场意味着什么：涉及金融机构对被制裁主体的筛查与交易限制，可能影响跨境支付与合规责任边界；属个案裁判，无直接定价影响，但为制裁合规的民事风险提供判例参照。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-27",
+      "title": "M.O. v. Helland",
+      "url": "https://www.courtlistener.com/opinion/11046340/mo-v-helland/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Program violates various provisions of the Administrative Procedure Act. Id. ¥§ 153-194. Plaintiffs allege ongoing",
+      "title_cn": "M.O. 诉 Helland（联邦项目《行政程序法》合法性之争）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "哥伦比亚特区联邦地区法院审理一起针对联邦项目合法性的诉讼。原告主张该项目违反《行政程序法》多项条款，并请求制止项目继续实施；检索片段仅显示诉状主张与程序进展。\n法院是否支持原告、颁发何种救济，片段未载明，须以裁判文书原文为准。\n对市场意味着什么：若法院认定项目越权或程序违法，相关行政措施的执行节奏可能改变；目前属程序阶段，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "United States v. State of California",
+      "url": "https://www.courtlistener.com/opinion/11045973/united-states-v-state-of-california/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "course, whenever a district court denies a preliminary injunction, that denial is an appealable interlocutory",
+      "title_cn": "美国诉加利福尼亚州（初步禁令中间上诉）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第九巡回上诉法院审理联邦政府对加利福尼亚州提起的诉讼，争点涉及地区法院拒绝颁发初步禁令后，联邦政府能否提起中间上诉。裁判文书讨论中间上诉的受理条件与初步禁令审查标准。\n实体争点（联邦与州权限冲突的具体条款）及最终处理未在片段中展开，以原文为准。\n对市场意味着什么：案件结果决定争议州法在诉讼期间是否继续执行，对相关行业合规安排有直接影响；当前无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "Prado v. City of Berkeley",
+      "url": "https://www.courtlistener.com/opinion/11045981/prado-v-city-of-berkeley/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "第九巡回上诉法院",
+      "summary": "stay and stay pending appeal. (Nos. 26-6170, 26-6177, Dkt. 4). The request for stay pending appeal is GRANTED",
+      "title_cn": "Prado 诉伯克利市（上诉期间中止执行）",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第九巡回上诉法院批准上诉人提出的上诉期间中止申请（stay pending appeal），暂时停止地区法院相关命令的执行。检索片段确认中止获准，但未载明中止范围与实体争点。\n案件涉及伯克利市一项地方措施，具体条款与中止边界以命令原文为准。\n对市场意味着什么：中止执行使地方政策在上诉期间维持现状，影响当地住房与公共空间治理安排；属地方性事项，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "Corner Post, Inc. v. Board of Governors",
+      "url": "https://www.courtlistener.com/opinion/11045799/corner-post-inc-v-board-of-governors/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第八巡回上诉法院",
+      "summary": "Federal Reserve went to work. After a lengthy notice-and-comment period, the Board of Governors issued Regulation",
+      "title_cn": "Corner Post 诉美联储理事会（规章效力之争）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第八巡回上诉法院审理 Corner Post 对美联储理事会规章提起的诉讼。检索片段显示，理事会在完成通告评论程序后发布系争规章（Regulation），案件争点涉及该规章的制定程序与效力。\n上诉法院的裁判结论与救济未在片段中载明，具体以判决书原文为准。\n对市场意味着什么：若规章被认定程序瑕疵或越权，将影响相关支付与银行业务的合规基础；属个案司法审查，短期无直接定价影响，但判例可能改变监管规则稳定性的预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "Safe Affordable Georgia, Inc. v. Chairman of the State Ethics Commission",
+      "url": "https://www.courtlistener.com/opinion/11045912/safe-affordable-georgia-inc-v-chairman-of-the-state-ethics-commission/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十一巡回上诉法院",
+      "summary": "is the plaintiff’s request for a preliminary injunction. USCA11 Case: 26-10312 Document:",
+      "title_cn": "Safe Affordable Georgia 诉佐治亚州伦理委员会主席（初步禁令申请）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第十一巡回上诉法院审理一起针对佐治亚州伦理委员会主席的诉讼，争点为地区法院是否应颁发初步禁令。检索片段显示案件处于初步禁令审查阶段。\n法院对初步禁令的准驳、审查标准适用及实体争点未在片段中完整呈现，以原文为准。\n对市场意味着什么：涉及州级伦理与竞选财务规则的执行状态，影响州内政治活动合规安排；属地方治理事项，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "Khaboshan v. U.S. Department of State",
+      "url": "https://www.courtlistener.com/opinion/11045835/khaboshan-v-us-department-of-state/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "of their visa applications under the Administrative Procedure Act (APA), 5 U.S.C. §§ 555(b), 706, and",
+      "title_cn": "Khaboshan 诉美国国务院（签证审理迟延与《行政程序法》）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "哥伦比亚特区联邦地区法院审理一起签证申请人对国务院提起的诉讼。原告依《行政程序法》第 555(b) 条与第 706 条主张国务院未在合理期限内审理其签证申请，请求法院审查该不作为。\n法院是否认定审理迟延违法、是否发出履行令，片段未载明，以原文为准。\n对市场意味着什么：涉及行政机关审理期限的司法审查标准，对移民与跨境人员流动的行政效率有参照意义；无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-26",
+      "title": "Welter v. Defense Health Agency",
+      "url": "https://www.courtlistener.com/opinion/11045913/welter-v-defense-health-agency/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "“incorporate[d] [it] by reference” into a final agency action, Sears, 421 U.S. at 161. Relatedly, the Welters",
+      "title_cn": "Welter 诉国防卫生局（最终机关行为与引用并入）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "哥伦比亚特区联邦地区法院审理一起针对国防卫生局（DHA）的诉讼。裁判文书讨论某项文件能否经「引用并入」构成《行政程序法》意义上的最终机关行为，并援引 Sears 案先例。\n法院对最终机关行为的认定与救济结论未在片段中完整呈现，以原文为准。\n对市场意味着什么：最终机关行为认定决定司法审查时点，影响国防医疗体系内政策文件的可诉性；属程序性判例，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-23",
+      "title": "South Carolina Coastal Conservation League v. United States Army Corps of Engineers",
+      "url": "https://www.courtlistener.com/opinion/11045544/south-carolina-coastal-conservation-league-v-united-states-army-corps-of/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第四巡回上诉法院",
+      "summary": "allege the Corps’ LEDPA determination was arbitrary and capricious because the Corps did not consider",
+      "title_cn": "南卡罗来纳海岸保护联盟诉陆军工程兵团（LEDPA 认定）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "第四巡回上诉法院审理环保团体对陆军工程兵团许可决定的挑战。原告主张工程兵团在选定「最小环境损害可行替代方案」（LEDPA）时未充分考虑相关因素，构成《行政程序法》上的恣意与反复。\n法院是否维持、撤销或发回该认定，片段未载明，以原文为准。\n对市场意味着什么：LEDPA 认定直接影响湿地与水域开发许可，对基建、能源与房地产项目的环评路径有实质影响；属个案许可审查，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-23",
+      "title": "California Valley Miwok Tribe v. Douglas Burgum",
+      "url": "https://www.courtlistener.com/opinion/11044232/california-valley-miwok-tribe-v-douglas-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区巡回上诉法院",
+      "summary": "Plaintiffs challenged that revision under the Administrative Procedure Act. The district court upheld",
+      "title_cn": "加州谷米沃克部落诉内政部长伯古姆（部落认定）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "哥伦比亚特区巡回上诉法院审理加州谷米沃克部落对内政部长提起的诉讼，争点涉及内政部对部落政府组成与联邦认定关系的处理。\n裁判结果与内政部具体命令未在片段中载明，以判决书原文为准。\n对市场意味着什么：联邦部落认定影响部落博彩、土地信托与联邦补助资格，对相关地区博彩与资源开发格局有潜在影响；属个案，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-22",
+      "title": "Ramseur v. Phelan",
+      "url": "https://www.courtlistener.com/opinion/11043014/ramseur-v-phelan/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "under the Administrative Procedure Act, calling the Board’s decisions arbitrary and capricious. But the",
+      "title_cn": "Ramseur 诉 Phelan（机关裁决的《行政程序法》审查）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "哥伦比亚特区联邦地区法院审理一起依《行政程序法》挑战机关裁决的案件。原告主张相关委员会（Board）的决定恣意且反复，请求法院撤销。\n法院对被诉裁决的审查结论未在片段中载明，以原文为准。\n对市场意味着什么：涉及行政机关裁决的司法审查强度，对同类行政程序的稳定性有判例意义；无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-14",
+      "title": "FCC v. Brown",
+      "url": "https://www.courtlistener.com/opinion/11034117/fcc-v-brown/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "美国最高法院",
+      "summary": "Cite as: 610 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A476 _________________ FEDERAL COMMUNICATIONS COMMISSION v. SHERROD BROWN, ET AL. ON APPLICATION FOR STAY _________________ No. 26A477 _________________",
+      "title_cn": "FCC 诉 Brown（中止申请，全体一致裁定）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "美国最高法院以全体一致（per curiam）形式处理 FCC 提出的中止申请（No. 26A476 / 26A477），被申请人为 Sherrod Brown 等。检索片段仅含案件抬头与「中止申请」程序信息。\n最高法院对准予或驳回中止、以及中止范围未在片段中载明，须以裁定原文为准。\n对市场意味着什么：若涉及 FCC 规则在上诉期间是否生效，将影响广播与电信企业的合规时点；目前无法从片段判断准驳，暂不构成定价因素。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-09-25",
+      "title": "People Not Politicians v. Onder",
+      "url": "https://www.courtlistener.com/opinion/10984030/people-not-politicians-v-onder/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "美国最高法院",
+      "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A388 _________________ PEOPLE NOT POLITICIANS, ET AL. v. ROBERT ONDER, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. In 2022, the Missouri Legislature enacted a redistricting map for elections",
+      "title_cn": "People Not Politicians 诉 Onder（密苏里州选区重划中止申请）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "美国最高法院以全体一致形式处理针对密苏里州 2022 年选区重划地图的中止申请（No. 26A388）。检索片段显示，申请人请求在诉讼期间中止相关地图或下级法院命令的执行。\n最高法院对准驳结果与理由未在片段中载明，以裁定原文为准。\n对市场意味着什么：选区重划直接影响众议院选区结构与选举结果预期，进而影响政策前景；属司法程序节点，无直接资产定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-09-25",
+      "title": "Department of Homeland Security v. League of Women Voters",
+      "url": "https://www.courtlistener.com/opinion/10983722/department-of-homeland-security-v-league-of-women-voters/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "美国最高法院",
+      "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A308 _________________ DEPARTMENT OF HOMELAND SECURITY, ET AL. v. LEAGUE OF WOMEN VOTERS, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. Since 1986, the Systematic Alien Verification for Entitle-",
+      "title_cn": "国土安全部诉妇女选民联盟（SAVE 系统中止申请）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "美国最高法院以全体一致形式处理国土安全部提出的中止申请（No. 26A308）。检索片段提及自 1986 年运行的「系统性外国人资格核验系统」（SAVE），争点涉及该系统的使用范围与下级法院禁令。\n最高法院对准驳结果未在片段中载明，以裁定原文为准。\n对市场意味着什么：SAVE 系统用于核验移民身份以决定公共福利与选民登记资格，裁定结果影响各州选举与福利管理流程；属制度性争议，无直接定价影响。",
+        "tier": "note"
+      }
+    }
+  ]
+}

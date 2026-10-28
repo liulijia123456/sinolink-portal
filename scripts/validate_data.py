@@ -28,7 +28,7 @@ import re
 import sys
 from datetime import datetime
 
-BOARDS = ('whitehouse', 'congress', 'agencies')
+BOARDS = ('whitehouse', 'congress', 'agencies', 'judicial')
 SCHEMA = 1
 # 留置策略：纯增量累积，不设留置上限（与 fetch_policy.py 的合并逻辑一致）。
 # 此处不做条数上限校验——存储层不截断，校验层就不该报「超过上限」的告警。
@@ -154,8 +154,8 @@ def main():
     ap = argparse.ArgumentParser(description='校验 data/policy 数据文件')
     ap.add_argument('--dir', default='data/policy', help='数据目录（默认 data/policy）')
     ap.add_argument('--strict', action='store_true', help='新增条目缺中文标题/领域即失败')
-    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies'],
-                    help='只校验指定板块（拆分定时任务用）；不填则三板块全验')
+    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'],
+                    help='只校验指定板块（拆分定时任务用）；不填则四板块全验')
     args = ap.parse_args()
 
     if not os.path.isdir(args.dir):

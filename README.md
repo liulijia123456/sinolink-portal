@@ -13,26 +13,26 @@
 
 ```
                 ┌──────────────────────────────────────────┐
-                │  index.html（690 KB，单文件）             │
+                │  index.html（约 1.0 MB，单文件）           │
                 │  ├─ 内联 CSS（按视图分作用域）              │
                 │  │   ├─ 基础样式（深海军蓝 + 纸感暖白双区）  │
                 │  │   ├─ #v2-portal    首页（#columns 等）    │
                 │  │   └─ #v3-us-board  美国板块（#view-us）   │
-                │  ├─ 3 个 <script>（视图路由 / 自动更新 / 装饰）│
+                │  ├─ 4 个 <script>（视图路由 / 自动更新 / 装饰）│
                 │  └─ 2 个内嵌 JSON 数据块                  │
                 │      ├─ id="election-data"（选举动态）     │
                 │      └─ id="us-cal-data"（大事日历）       │
                 └───────────────┬──────────────────────────┘
                                 │ fetch（同源相对路径）
                 ┌───────────────▼──────────────────────────┐
-                │  data/policy/（政策三板块，外置 JSON）      │
+                │  data/policy/（政策四板块，外置 JSON）      │
                 │  ├─ {board}-items.json     条目主体        │
                 │  ├─ {board}-overview.json  周/月研判        │
                 │  └─ manifest.json          计数与时间戳     │
                 └───────────────▲──────────────────────────┘
                                 │ 读写（portal_store.py 存储层）
                 ┌───────────────┴──────────────────────────┐
-                │  scripts/（9 个 Python 脚本，标准库即可运行）│
+                │  scripts/（12 个 Python 脚本，标准库即可运行）│
                 └───────────────▲──────────────────────────┘
                                 │ 本地自动化 / GitHub Actions
                         git push → Pages 自动重建
@@ -54,7 +54,7 @@
 | 路径 | 说明 |
 | --- | --- |
 | `index.html` | 全站唯一页面：门户首页 + 4 个子视图（`us` / `eu` / `board` / `election`）+ 全部样式与脚本 |
-| `data/policy/` | 政策三板块数据（`whitehouse` / `congress` / `agencies`），已入库 |
+| `data/policy/` | 政策四板块数据（`whitehouse` / `congress` / `agencies` / `judicial`），已入库 |
 | `scripts/` | 抓取、简报、校验、日历维护等维护工具 |
 | `logs/` | `fetch.log` / `brief.log`（运行时产物，已 gitignore） |
 | `scripts/.congress_api_key` | 国会 API 密钥（**已 gitignore，绝不入库**） |
@@ -66,10 +66,11 @@
 | hash | 视图 | 内容 |
 | --- | --- | --- |
 | （空） | 门户首页 | 研究专栏四卡 + 覆盖范围 + 说明 + 页脚 |
-| `#us` | 美国板块 | 三个政策子板块卡 + 选举动态卡 + 大事日历 |
+| `#us` | 美国板块 | 四个政策子板块卡 + 选举动态卡 + 大事日历 |
 | `#board-whitehouse` | 子板块 | 白宫及内阁各部政策条目列表（筛选 / 分页 / 研判区） |
 | `#board-congress` | 子板块 | 国会法案条目列表 |
 | `#board-agencies` | 子板块 | 独立机构政策条目列表 |
+| `#board-judicial` | 子板块 | 司法裁判条目列表（按法院层级 / 裁判类型 / 领域筛选） |
 | `#election` | 选举动态 | 中期选举 / 2028 总统大选两栏 + 民调卡 |
 | `#eu` | 欧洲板块 | 欧盟 / 英国 / 法国 / 俄罗斯四卡（**纯静态，暂无数据管线**） |
 
@@ -97,6 +98,8 @@ python3 -m http.server 8000
 - Python 3.8+，**仅用标准库**（`json` / `urllib` / `logging`），无第三方依赖，无需虚拟环境。
 - 国会 API：优先读环境变量 `CONGRESS_API_KEY`，其次 `scripts/.congress_api_key`，
   都没有则回落 `DEMO_KEY`（限流严重，仅够调试）。申请：<https://api.congress.gov/sign-up/>
+- 司法裁判：CourtListener 检索 RSS 匿名可用，**无需密钥**。若日后接其 REST API
+  （`COURTLISTENER_TOKEN`）或 GovInfo（`GOVINFO_API_KEY`），再自行配置环境变量。
 
 ```bash
 export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
@@ -263,6 +266,9 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 - **`brief` 为全覆盖要求**：每一条目都必须有简报（`full` 或 `note`），层级只决定详略。
   缺简报在 `--strict` 下按内容缺失处理（退出码 2），不得发布。
 
+> 司法板块（`judicial`）条目额外带 `summary` 字段（CourtListener 检索片段，≤1200 字），
+> 仅作简报素材，不在列表直接展示；其余字段与上表一致。
+
 ### 4.2 `data/policy/{board}-overview.json`
 
 周/月研判区数据，`weekly` 与 `monthly` 各含
@@ -296,7 +302,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
-| `fetch_policy.py` | 抓取三板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
+| `fetch_policy.py` | 抓取四板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
 | `brief.py` | 简报覆盖率体检 / 生成队列 / 合并简报（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
@@ -337,6 +343,9 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 要增删机构或扩大范围，改这三个字典即可（slug 取自联邦公报 agency 字段）。
 
+司法裁判板块的来源、收录范围、更新频率、去重与有效性判定见 §5.1.1（与其他三板块的
+「联邦公报 / congress.gov」口径不同，单列一节）。
+
 关键常量：
 
 ```python
@@ -348,6 +357,75 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 
 > 注意：`DEPT_NOTICE_EXTRA` 为「几乎不发规则」的部门（如国防部，实测近 30 天 84 条
 > 全为 Notice）单独放宽到通告，并用关键词剔除程序性条目。新增此类部门前先查实际发文构成。
+
+### 5.1.1 司法裁判板块（judicial）—— 来源与抓取标准
+
+2026-10-28 新增。司法裁判没有统一官方 API：最高法院官网对脚本请求返回 403
+（Akamai 拦截），GovInfo 的 `api.data.gov` 配额对 `DEMO_KEY` 极低（实测当日即耗尽），
+两者都不适合做日更主通道。因此以 **CourtListener（Free Law Project）检索 RSS**
+作日更主通道，官方站点保留为人工复核源；条目里的原文链接指向 CourtListener 的
+意见书页，该页再链到法院原始 PDF。
+
+| 层级 | 来源 | 覆盖 | 抓取方式 | 频率 |
+| --- | --- | --- | --- | --- |
+| 主通道 | CourtListener 检索 RSS | 最高法院、13 个巡回法院、21 个重点地区法院 | `/feed/search/?q=&type=o&court=&filed_after=` | 每日 09:45 |
+| 复核 | 美国最高法院官网 | 判决书、命令清单、庭审排期 | 人工打开原文核对 | 按需 |
+| 复核 | GovInfo USCOURTS（GPO） | 地区/巡回法院意见书官方 PDF、案号、nature-of-suit | `api.govinfo.gov/collections/USCOURTS`（需 api.data.gov key） | 按需 |
+| 关联 | 联邦公报 | 司法部等部门规则 | 已在白宫板块收录，不重复入库 | 每日 08:00 |
+
+**收录范围**
+
+- 法院：美国最高法院；13 个联邦巡回上诉法院（第一至第十一、哥伦比亚特区、联邦巡回）；
+  政策诉讼高发的 21 个联邦地区法院——哥伦比亚特区，纽约南/东区，加州北/中/南区，
+  得州南/北/西/东区，伊利诺伊北区，马萨诸塞，弗吉尼亚东区，佛州南区，新泽西，
+  马里兰，亚利桑那，科罗拉多，华盛顿西区，密歇根东区，宾州东区，俄亥俄北区。
+- 案件：最高法院**全部裁判**（不限关键词）；巡回与地区法院只收命中政策争点词表的裁判。
+- 排除：破产法院、州法院、军事法院；刑事案件（`United States v. 个人` 且被告非政府、
+  公司或机构者）、量刑与人身保护令等程序性裁判；封存案件与占位案名。
+- 政策词表（15 项）：`Administrative Procedure Act` / `arbitrary and capricious` /
+  `major questions doctrine` / `final rule` / `agency action` / `executive order` /
+  `tariff` / `Section 301` / `sanctions` / `export control` / `preliminary injunction` /
+  `stay pending appeal` / `preemption` / `ultra vires` / `notice and comment`。
+  刻意不收 `due process`、`constitutional` 一类泛词——刑事案件几乎逐案命中，
+  会把板块变成刑事上诉流水账。
+
+**更新频率**
+
+- 日更：每日 09:45 抓一次。巡回/地区法院回看 10 天，最高法院回看 180 天（覆盖整个
+  开庭期与夏季命令）。窗口重叠是有意设计：法院补发、修订意见书时仍能捕获。
+- 人工复核：每周研判时抽查 1–2 条，核对裁判结果与简报是否一致。
+
+**去重规则**
+
+- 主键 `url`（CourtListener 意见书页）。`portal_store` 按 url 覆盖，保留既有
+  `brief` / `title_cn` / `domain`，不会因为重抓而丢加工成本。
+- 二次去重：同一轮多路查询命中同一案时，按 `(法院中文名, 案名规范化, 裁判日期)`
+  只留首条，避免最高法院/巡回法院两路重复。
+- 同一案件的不同意见书（majority / dissent）在 CourtListener 分属不同 URL，
+  按「同一案名 + 日期 + 法院」视为重复，只留最新收录的一条。若日后要分意见书展示，
+  必须改数据模型（增加 `opinion_type` 并调整主键），不要在现有 url 主键上硬塞。
+
+**有效性判定**
+
+- `date` 必须为 `YYYY-MM-DD`，且落在回看窗口内（不晚于当日）。
+- 案名非空，且不匹配封存/占位式（`Case Name in … Unavailable`、`Sealed`、`Order`、`Judgment`）。
+- 法院必须能映射为中文名；映射失败（州法院、破产法院、专门法院）即丢弃。
+- 检索片段命中刑事/缠讼噪声词（`indictment`、`habeas corpus`、`sentencing guidelines`、
+  `plea agreement`、`vexatious litigator` 等）即丢弃。
+- 每条保留 ≤1200 字检索片段（`summary`）作为简报素材；片段为空仍可入库，但简报须
+  注明「官方摘要未取得」。
+- 配额：最高法院 3 / 巡回法院 7 / 地区法院 4，单轮合计 ≤14 条。超出部分不删除，
+  下一轮继续抓（RSS 按日期倒序）。
+
+**已知限制**
+
+- CourtListener 检索 RSS 单次最多 20 条。若一个回看窗口内命中超过 20 条，超出部分
+  本轮抓不到；10 天窗口可在次日滚入，属可接受的延迟。
+- RSS 只给命中片段，不给完整裁判理由；意见书页对脚本有反爬校验。故司法条目默认
+  写 `note`（要点速览），只有最高法院实体判决才写 `full`，且素材不足时必须注明
+  「以判决书原文为准」，不得臆测裁判理由。
+- 想让覆盖更全，可在 `fetch_judicial` 里接 CourtListener REST API（需免费 token），
+  或接 GovInfo USCOURTS（需 api.data.gov key）；两者都不影响现有 RSS 通道。
 
 ### 5.2 `brief.py` — 简报全覆盖与合并
 
@@ -416,7 +494,7 @@ python3 scripts/brief.py merge scripts/briefs.json
 
 **代价与应对**：
 
-- JSON 体积随时间线性增长。当前三板块 gzip 合计约 106 KB（原始 386 KB）。
+- JSON 体积随时间线性增长。当前四板块 gzip 合计约 227 KB（原始 871 KB，2026-10-28）。
   按日均新增 30 条外推：一年后约 3.7 MB，两年后约 7.3 MB。
 - 页面 `fetch` 的是整个 JSON，**每次打开都要全量传输**。
 - 渲染侧无压力：前端已有分页（`boardPageSize` 默认 20 条 / 页，`board-pager` 组件），
@@ -456,11 +534,13 @@ commit message 的净增数按实际入库量填写。
 
 ## 7. 更新标准流程（SOP）
 
-2026-10-25 起按板块拆分任务，2026-10-27 再把「政策条目」一拆为三，各任务时段错开、互不阻塞
-（详见 §9 定时任务分工）。各任务共用的守门环节：**校验 → 提交 → 推送**。
+2026-10-25 起按板块拆分任务，2026-10-27 把「政策条目」一拆为三，2026-10-28 新增
+司法裁判（第四路），各任务时段错开、互不阻塞（详见 §9 定时任务分工）。各任务共用的
+守门环节：**校验 → 提交 → 推送**。
 
-**政策条目日更（三板块各一个任务）**：白宫及内阁各部 08:00 / 国会法案 08:35 / 独立机构 09:10。
-三者流程相同，只是命令都带 `--board`，且只提交本板块文件：
+**政策条目日更（四板块各一个任务）**：白宫及内阁各部 08:00 / 国会法案 08:35 /
+独立机构 09:10 / 司法裁判 09:45。四者流程相同，只是命令都带 `--board`，且只提交
+本板块文件：
 
 | 环节 | 动作 | 命令（以 whitehouse 为例） |
 | --- | --- | --- |
@@ -471,7 +551,33 @@ commit message 的净增数按实际入库量填写。
 | F 提交 | 只加本板块文件与 manifest | `git add data/policy/whitehouse-items.json data/policy/manifest.json && git commit && git push` |
 
 拆分的技术保障：`portal_store.save_policy(payload, boards)` 支持只写指定板块，
-其余板块的文件与 manifest 计数沿用磁盘现值，避免三个任务互相覆盖。
+其余板块的文件与 manifest 计数沿用磁盘现值，避免四个任务互相覆盖。
+
+**司法裁判日更（每日 09:45，独立任务）**
+
+| 环节 | 动作 | 命令 |
+| --- | --- | --- |
+| A 抓取 | 三路抓取（最高法院 / 巡回法院 / 地区法院），按配额与规则筛后入库 | `python3 scripts/fetch_policy.py --board judicial --days 10` |
+| B 补字段 | 新增条目的中文标题与领域（`title_cn` / `domain`） | `python3 scripts/edit_items.py patch.json` |
+| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率到 100%** | `brief.py queue --board judicial --all` → `merge` → `coverage --board judicial` |
+| D 校验 | 只校验本板块，缺简报/译名即失败 | `python3 scripts/validate_data.py --board judicial --strict` |
+| E 提交 | 只加本板块文件与 manifest | `git add data/policy/judicial-items.json data/policy/judicial-overview.json data/policy/manifest.json && git commit && git push` |
+
+异常处理（与代码行为一一对应）：
+
+1. **单路失败**：`fetch_judicial()` 对最高法院、巡回、地区三路各自 `try/except`，
+   一路超时或返回异常只丢该路，其余照常入库，进程退出码 `1`（部分成功）。
+2. **三路全失败**：`main()` 的 `ok` 为空时返回 `2`，**不写盘**，旧数据完整保留；
+   下一轮自动重试。
+3. **限流/超时**：`http_get_text()` 最多 3 次尝试，指数退避 2s / 4s；4xx 客户端错误
+   不重试（重试无意义），直接判该路失败。
+4. **20 条上限**：RSS 单次最多 20 条；当日志出现「返回 20 条上限，最早仅到 …」时，
+   说明窗口可能未覆盖，需在次日窗口内自然滚入，或临时把 `--days` 调大重跑。
+5. **简报缺口**：`coverage` < 100% 时 `validate --strict` 退出码 `2`，任务**不得提交**；
+   如实上报缺口条数与日期，下一轮继续补写，不得用空简报或臆测内容凑数。
+6. **校验失败**：不 commit、不 push，保留工作区改动供人工定位；修好后重跑 D、E。
+7. **同日重跑与改判**：`merge_items()` 按 url 覆盖并保留既有 `brief` / `title_cn` /
+   `domain`；法院补发或修订意见书时，新片段覆盖旧 `summary`，已写简报不丢。
 
 **大事日历日更**（每日 07:00）：
 
@@ -522,13 +628,17 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 
 ## 9. 定时任务分工
 
-2026-10-25 起，原单一「周更」任务拆为 4 个按板块划分的任务。每个任务只负责
-一个数据区块，改动文件互不重叠，时段错开，互不阻塞。
+2026-10-25 起，原单一「周更」任务拆为按板块划分的任务；2026-10-28 新增司法裁判，
+当前共 5 个日更/周更任务。每个任务只负责一个数据区块，改动文件互不重叠，
+时段错开，互不阻塞。
 
 | 任务 | 频率 | 负责区块 | 改动文件 |
 | --- | --- | --- | --- |
 | 大事日历日更 | 每日 07:00 | `us-cal-data` | `index.html`（日历块） |
-| 政策条目日更 | 每日 08:00 | 三个政策子板块 | `data/policy/*-items.json` |
+| 政策条目日更 · 白宫 | 每日 08:00 | `whitehouse` | `data/policy/whitehouse-*.json` |
+| 政策条目日更 · 国会 | 每日 08:35 | `congress` | `data/policy/congress-*.json` |
+| 政策条目日更 · 独立机构 | 每日 09:10 | `agencies` | `data/policy/agencies-*.json` |
+| 政策条目日更 · 司法裁判 | 每日 09:45 | `judicial` | `data/policy/judicial-*.json` |
 | 选举动态日更 | 每日 10:00 | `election-data` | `index.html`（选举块） |
 | 政策研判周更 | 周六 09:00 | 周/月研判 | `data/policy/*-overview.json` |
 
@@ -547,7 +657,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 - **选举动态临近选举日（2026-11-03）后需改版**（结果版图、第 120 届国会构成），
   届时先确认方案再改。
 
-原「国金门户 · 美国政策周更抓取」任务已 PAUSED，其职责由上述 4 个任务覆盖。
+原「国金门户 · 美国政策周更抓取」任务已 PAUSED，其职责由上述政策日更与研判任务覆盖。
 
 ---
 
@@ -574,6 +684,11 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
    建议归档到 `docs/` 或移出仓库。
 7. **欧洲板块无数据源**：四张卡片为纯静态描述，接入抓取前需先定义
    `data/eu/*.json` 的 schema 与来源（欧盟机构官网 / 各国议会 / 选举委员会）。
+8. **司法裁判板块的素材与覆盖上限**：CourtListener 检索 RSS 单次最多 20 条，且只返回
+   命中片段；最高法院官网对本机返回 403，GovInfo 的 `DEMO_KEY` 配额极低。因此板块
+   目前以 `note` 为主，长简报只覆盖最高法院实体判决。若要提高覆盖与详略，需申请
+   CourtListener token（REST API）或 api.data.gov key（GovInfo USCOURTS），
+   并在 `fetch_judicial()` / `brief.py: fetch_material()` 中接入。
 
 ---
 

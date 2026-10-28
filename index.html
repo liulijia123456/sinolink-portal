@@ -698,6 +698,8 @@
     transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease, color .15s ease;
   }
   .filter-select:hover { border-color: #c9d4e2; background-color: #eff3f9; }
+  /* 法院名较长（如「哥伦比亚特区联邦地区法院」），限宽避免把筛选栏撑开 */
+  #filter-agency { max-width: 210px; }
   .filter-select.active {
     background-color: rgba(47,111,184,0.08); color: var(--accent-light); font-weight: 600;
     border-color: rgba(47,111,184,0.45);
@@ -743,6 +745,9 @@
     .filter-bar { gap: 8px; padding: 10px; }
     .filter-label { font-size: 10px; }
     .filter-select { font-size: 12px; padding: 0 22px 0 10px; }
+    /* 法院名长，窄屏独占一行并吃满剩余宽度，避免把筛选栏与页面撑出横向滚动 */
+    #filter-agency-group { flex: 0 0 100%; min-width: 0; }
+    #filter-agency { max-width: none; flex: 1 1 auto; min-width: 0; }
     .filter-search { min-width: 100%; padding-left: 0; border-left: none; }
     .filter-input { flex: 1; width: auto; max-width: none; font-size: 12px; }
     .filter-reset { margin-left: 0; }
@@ -2408,6 +2413,12 @@
     transition: background-color .38s ease, transform .38s cubic-bezier(.2, .7, .2, 1);
   }
   #view-us .grid .card .visual svg { width: 100%; height: 100%; display: block; }
+  /* 第五张卡（选举）横跨两列：四个政策板块保持 2×2，选举作为独立横条 */
+  #view-us .grid .card.is-wide { grid-column: 1 / -1; }
+  #view-us .grid .card.is-wide .desc { max-width: 780px; }
+  @media (max-width: 860px) {
+    #view-us .grid .card.is-wide { grid-column: auto; }
+  }
   /* 悬停态只在具备 hover 能力的设备上生效，避免触屏点按后状态粘住 */
   @media (hover: hover) and (pointer: fine) {
     #view-us .grid .card:hover {
@@ -3078,7 +3089,7 @@
         <a class="back" href="#" id="back-link" data-page-node-id="wYwYrLJ9wV3MMsHdKxuCMf">← 返回门户</a>
         <h1 data-page-node-id="0aXIYYCSgkXDH1d7BQ63xc">美国政治动态跟踪</h1>
         <div class="suben" data-page-node-id="bN8N7zD31RHghxVAHQyD97">US Politics · Policy Collection</div>
-        <p class="subdesc" data-page-node-id="OmLGlP2z40vNmS0ktZTHcq">定时跟踪白宫、国会、独立机构的政策动态与选举进展；覆盖行政令、法案与规则文本，兼及政策日程关键节点；从国际关系与金融分析视角，研判政策取向与市场影响。</p>
+        <p class="subdesc" data-page-node-id="OmLGlP2z40vNmS0ktZTHcq">定时跟踪白宫、国会、独立机构与联邦法院的政策动态及选举进展；覆盖行政令、法案、规则文本与裁判文书，兼及政策日程关键节点；从国际关系与金融分析视角，研判政策取向与市场影响。</p>
       </div>
     </div>
 
@@ -3232,8 +3243,31 @@
             <div class="us-foot" data-us-foot="agencies" data-page-node-id="VHbnNFRsZzI6uk8TAPH8Xz">来源：联邦公报（美联储 / FCC / USITC / CFIUS / USAID）· 每日 09:10 自动更新</div>
           </div>
 
-          <!-- 子板块 04 -->
-          <div class="card" data-page-node-id="YH3xolnT0PuT8pIsZkAu0Z" style="">
+          <!-- 子板块 04：司法裁判（2026-10-28 新增，CourtListener 日更） -->
+          <div class="card">
+            <div class="visual" aria-hidden="true">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <!-- 司法：山花、六柱与台阶，取法院正立面简形 -->
+                <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M55 25 L88 43 H22 Z"/>
+                  <path d="M22 43 V50 H88 V43"/>
+                  <path d="M28 50 V77 M39.2 50 V77 M50.4 50 V77 M61.6 50 V77 M72.8 50 V77 M84 50 V77"/>
+                  <path d="M18 84 H92"/>
+                  <path d="M13 90 H97"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span class="num">04</span></div>
+            <div class="title">司法裁判</div>
+            <div class="title-en">Judicial Decisions</div>
+            <p class="desc">收集联邦司法体系内的政策相关裁判：最高法院裁判与中止、调卷令等命令，13 个巡回上诉法院及重点联邦地区法院的判决与裁定，按法院层级、裁判类型与政策领域归类。</p>
+            <div class="tags"><span>最高法院</span><span>巡回法院</span><span>地区法院</span><span>裁判要旨</span></div>
+            <a class="btn" href="#" data-enter="board" data-board="judicial">进入板块</a>
+            <div class="us-foot" data-us-foot="judicial">来源：CourtListener · 每日 09:45 自动更新</div>
+          </div>
+
+          <!-- 子板块 05 -->
+          <div class="card is-wide" data-page-node-id="YH3xolnT0PuT8pIsZkAu0Z" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="aJkQhl7PPi6q5nyOnzpfPJ">
               <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="XVNlIuFKc4tBa0S3N67Gvx" style="">                <!-- 选举：选票投入票箱 -->
                 <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -3244,7 +3278,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">04</span></div>
+            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">05</span></div>
             <div class="title" data-page-node-id="QY6unKrZzP5hPvvoyqbEbv">选举动态</div>
             <div class="title-en" data-page-node-id="xR2OZQtuAKLTlVcQTMlHrD">Election Dynamics</div>
             <p class="desc" data-page-node-id="07SRDV3ExCo0cyzRPrNFOJ">收集选举周期内的初选与大选日程、候选人议题主张与竞选纲领、关键州民调表现,按时间线归档。</p>
@@ -3255,7 +3289,7 @@
 
         </div>
 
-        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构三个子板块条目由官方来源（联邦公报、国会官网）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新。</p>
+        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新。</p>
 
         <!-- =================================================================
              政治机构导航（Government Directory）
@@ -4453,7 +4487,7 @@
             </select>
           </div>
           <div class="filter-group" id="filter-agency-group" data-page-node-id="I9D1m8k5quVtBOiNPCzrcu">
-            <span class="filter-label" data-page-node-id="5PCm5EoL8b9eTsBbpnGIYx">部门</span>
+            <span class="filter-label" id="filter-agency-label" data-page-node-id="5PCm5EoL8b9eTsBbpnGIYx">部门</span>
             <select class="filter-select" id="filter-agency" data-page-node-id="qxeYevdgdAJOVGICBnsUuj"><option value="all" data-page-node-id="zlQI2cx49AoPejuBjV2Eth">全部</option><optgroup label="内阁各部"><option value="国务院">国务院</option><option value="财政部" data-page-node-id="dGxMy7luar9AXpdl2RGSa7">财政部</option><option value="国防部" data-page-node-id="iKZVJdhXiva86DTwuDNIn6">国防部</option><option value="司法部" data-page-node-id="Xvu5pIvM4biR3sakUaRXwH">司法部</option><option value="内政部" data-page-node-id="arrffdZcxrYdDHFjxSKR8Y">内政部</option><option value="农业部" data-page-node-id="HalecIIjZL7LQcCjaBWhPe">农业部</option><option value="商务部" data-page-node-id="KZfbGZMg2weWqz1VooG2JM">商务部</option><option value="劳工部" data-page-node-id="ksGS0J5L0IARQl3PJbX45m">劳工部</option><option value="卫生与公众服务部" data-page-node-id="MA9Q0zOGvyLBhnJGLg9my2">卫生与公众服务部</option><option value="住房与城市发展部">住房与城市发展部</option><option value="交通部" data-page-node-id="cUdo7QZRKyZtVfy4eqsbxl">交通部</option><option value="能源部" data-page-node-id="ybWhWSwKMoZ1p4ebJ0MWwT">能源部</option><option value="教育部">教育部</option><option value="退伍军人事务部">退伍军人事务部</option><option value="国土安全部" data-page-node-id="DlCtWHwu1Du24BSZJSPBDt">国土安全部</option></optgroup><optgroup label="白宫 / 总统行政办公室"><option value="美国总统行政办公室" data-page-node-id="4ebdFX9dw0XwMVrwmWO6Zx">美国总统行政办公室</option><option value="管理与预算办公室 OMB" data-page-node-id="aGRaa7n20arD2FgDlNMvVo">管理与预算办公室 OMB</option><option value="美国贸易代表办公室 USTR" data-page-node-id="xOcjS3VDg7P21yvCzWkp9J">美国贸易代表办公室 USTR</option><option value="科技政策办公室 OSTP">科技政策办公室 OSTP</option></optgroup></select>
           </div>
           <div class="filter-group" data-page-node-id="whka0K65tsMdOMejzZq3V8">
@@ -4465,7 +4499,7 @@
             <select class="filter-select" id="filter-domain" data-page-node-id="KJEOKdpoyyPCpZuoh10vn9"><option value="all" data-page-node-id="AsazgJkGZd3WvWZuAAiBQ8">全部</option><option value="科技/AI" data-page-node-id="tXQP6FyJxbFKCW6zKT1K51">科技/AI</option><option value="贸易/关税" data-page-node-id="oBCsaKYEeo8cf56Gknldl5">贸易/关税</option><option value="能源/环境" data-page-node-id="ubZ41GIpUoN1xEDTIAL7Vh">能源/环境</option><option value="医疗/医药" data-page-node-id="J3fZaiv0UpBVJ5bdvr1nHx">医疗/医药</option><option value="国防/安全" data-page-node-id="CCx8OPSGd3enXuKcVoMOjU">国防/安全</option><option value="财政/税收" data-page-node-id="SjlTH8952rHJxsjMQNOAnF">财政/税收</option><option value="金融/保险" data-page-node-id="eWEWd1QSA7bEtreHGcBmn2">金融/保险</option><option value="农业/食品" data-page-node-id="YhQv3qXRKKGFnxlLZTZxPx">农业/食品</option><option value="教育/劳动" data-page-node-id="mZkTC4GekxXgJUqPrp0bqn">教育/劳动</option><option value="住房" data-page-node-id="WeIUG6g7zlb6MtQXwYlDoJ">住房</option><option value="交通" data-page-node-id="omTiGgCGBuFa6Y3zZNqZ3a">交通</option><option value="司法/执法" data-page-node-id="FidFDDgH9CfDGF27pFvxff">司法/执法</option><option value="社会保障" data-page-node-id="9GQix5K6omGGBaPybhMy5V">社会保障</option><option value="政府运作" data-page-node-id="vW4c1ZMaGMcx4mhKz9B1lG">政府运作</option></select>
           </div>
           <div class="filter-group filter-search" data-page-node-id="KBZdmttoviarbJOVUsJCuP">
-            <input type="search" id="filter-q" class="filter-input" placeholder="搜索标题 / 领域…" autocomplete="off" data-page-node-id="cbuIfNi61XfgY3OFJBblrP">
+            <input type="search" id="filter-q" class="filter-input" placeholder="搜索标题 / 领域 / 机构…" autocomplete="off" data-page-node-id="cbuIfNi61XfgY3OFJBblrP">
             <button type="button" class="filter-reset" id="filter-reset" data-page-node-id="yGD4wxEqp8TTp4wIc5zg9V">重置筛选</button>
           </div>
         </div>
@@ -7270,7 +7304,7 @@
 </script>
 
   <!-- 政策条目数据块：由 scripts/fetch_policy.py 定时抓取回写，请勿手动编辑 -->
-  <!-- 政策条目数据已外置为独立 JSON：data/policy/{whitehouse,congress,agencies}-items.json
+  <!-- 政策条目数据已外置为独立 JSON：data/policy/{whitehouse,congress,agencies,judicial}-items.json
        生成与回灌见 scripts/migrate_to_json.py；日更由定时任务写这些文件，不再回写本页 -->
 
   <script data-page-node-id="GgvPve8wNVMH3IsczXaeor">
@@ -7349,7 +7383,8 @@
       var BOARD_META = {
         whitehouse: { title: '白宫及内阁各部政策', en: 'White House & Cabinet', desc: '总统行政令、总统备忘录、公告;总统行政办公室（EOP）各组成机构——管理与预算办公室（OMB）、美国贸易代表办公室（USTR）、科技政策办公室（OSTP）等——发布的文件;以及内阁各部（国防部、财政部、商务部、国土安全部等）发布的规则与拟议规则，国防部另收录剔除程序性文件后的通告（部委通告类程序文件不收录）。来源：联邦公报（Federal Register）官方数据,每日自动更新。' },
         congress: { title: '国会法案', en: 'Congressional Bills', desc: '国会参众两院法案与决议的最新立法动态。来源：国会官网（congress.gov）官方数据,每日自动更新。' },
-        agencies: { title: '独立机构政策', en: 'Independent Agencies', desc: '独立监管与决策机构发布的政策文本与规则决定:美联储（Federal Reserve）、联邦通信委员会（FCC）、国际贸易委员会（USITC，反倾销与反补贴调查、337 调查的立案、裁决与复审通告）、外国投资委员会（CFIUS，按财政部投资安全办公室署名归集）、国际开发署（USAID）。来源：联邦公报（Federal Register）官方数据,每日自动更新。' }
+        agencies: { title: '独立机构政策', en: 'Independent Agencies', desc: '独立监管与决策机构发布的政策文本与规则决定:美联储（Federal Reserve）、联邦通信委员会（FCC）、国际贸易委员会（USITC，反倾销与反补贴调查、337 调查的立案、裁决与复审通告）、外国投资委员会（CFIUS，按财政部投资安全办公室署名归集）、国际开发署（USAID）。来源：联邦公报（Federal Register）官方数据,每日自动更新。' },
+        judicial: { title: '司法裁判', en: 'Judicial Decisions', desc: '联邦司法体系内的政策相关裁判:美国最高法院的判决与中止、调卷令等命令;13 个联邦巡回上诉法院对行政程序、规章效力、关税与制裁、禁令救济等争点的裁判;以及政策诉讼高发的重点联邦地区法院裁定。按法院层级、裁判类型与政策领域归类,每条附裁判要旨与市场含义;裁判文书原文链接指向 CourtListener 收录页。来源：CourtListener（Free Law Project）检索接口,每日自动更新;最高法院官网与 GovInfo 用于人工复核。' }
       };
 
       function esc(s) {
@@ -7454,7 +7489,7 @@
           if (st.domain !== 'all' && (it.domain || '其他') !== st.domain) return false;
           if (st.q) {
             var q = st.q.toLowerCase();
-            var hay = ((it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.kind || '') + ' ' + (it.domain || '')).toLowerCase();
+            var hay = ((it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.kind || '') + ' ' + (it.domain || '') + ' ' + (it.agency || '')).toLowerCase();
             if (hay.indexOf(q) === -1) return false;
           }
           return true;
@@ -7593,13 +7628,23 @@
       var EOP_AGENCIES = ['美国总统行政办公室', '管理与预算办公室 OMB', '美国贸易代表办公室 USTR',
         '科技政策办公室 OSTP'];
 
-      function fillAgencyOptions(items, fixedRoster) {
+      // 司法板块：法院按层级分组，层级顺序固定；某层级当期 0 条即不出现
+      var COURT_GROUPS = ['美国最高法院', '巡回上诉法院', '地区法院', '国际贸易法院'];
+      function courtGroup(name) {
+        if (name === '美国最高法院') return '美国最高法院';
+        if (String(name).indexOf('巡回上诉法院') >= 0) return '巡回上诉法院';
+        if (String(name).indexOf('联邦地区法院') >= 0) return '地区法院';
+        if (String(name).indexOf('国际贸易法院') >= 0) return '国际贸易法院';
+        return '其他';
+      }
+
+      function fillAgencyOptions(items, mode) {
         var sel = document.getElementById('filter-agency');
         var seen = [];
         items.forEach(function (it) { if (it.agency && seen.indexOf(it.agency) === -1) seen.push(it.agency); });
         var prev = sel.value;
         var html = '<option value="all">全部</option>';
-        if (fixedRoster) {
+        if (mode === 'whitehouse') {
           var other = seen.filter(function (a) {
             return CABINET_DEPTS.indexOf(a) < 0 && EOP_AGENCIES.indexOf(a) < 0;
           }).sort();
@@ -7614,6 +7659,19 @@
               return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
             }).join('') + '</optgroup>';
           }
+        } else if (mode === 'judicial') {
+          var buckets = {};
+          seen.forEach(function (a) {
+            var g = courtGroup(a);
+            (buckets[g] = buckets[g] || []).push(a);
+          });
+          COURT_GROUPS.concat(['其他']).forEach(function (g) {
+            var list = (buckets[g] || []).slice().sort();
+            if (!list.length) return;
+            html += '<optgroup label="' + esc(g) + '">' + list.map(function (a) {
+              return '<option value="' + esc(a) + '">' + esc(a) + '</option>';
+            }).join('') + '</optgroup>';
+          });
         } else {
           seen.sort();
           html += seen.map(function (a) {
@@ -7621,10 +7679,11 @@
           }).join('');
         }
         sel.innerHTML = html;
-        var ok = fixedRoster
-          ? (prev === 'all' || CABINET_DEPTS.indexOf(prev) >= 0 || EOP_AGENCIES.indexOf(prev) >= 0 ||
-             seen.indexOf(prev) >= 0)
-          : (prev === 'all' || seen.indexOf(prev) >= 0);
+        var ok = prev === 'all' || seen.indexOf(prev) >= 0;
+        // 白宫板块的固定花名册即使当期 0 条也在下拉中，选中态不能被重置
+        if (mode === 'whitehouse') {
+          ok = ok || CABINET_DEPTS.indexOf(prev) >= 0 || EOP_AGENCIES.indexOf(prev) >= 0;
+        }
         sel.value = ok ? prev : 'all';
       }
 
@@ -7682,14 +7741,18 @@
 
         fillKindOptions(allItems);
         fillDomainOptions(allItems);
-        // 「部门」筛选在白宫、独立机构板块显示（这两个板块含多个机构）；国会板块隐藏并强制全部
+        // 「部门 / 法院」筛选：白宫、独立机构按部门，司法按法院层级；国会板块隐藏并强制全部
         var agencyGroup = document.getElementById('filter-agency-group');
         var agencySel = document.getElementById('filter-agency');
-        if (key === 'agencies' || key === 'whitehouse') {
+        var agencyLabel = document.getElementById('filter-agency-label');
+        if (key === 'agencies' || key === 'whitehouse' || key === 'judicial') {
           agencyGroup.hidden = false;
-          fillAgencyOptions(allItems, key === 'whitehouse');
+          if (agencyLabel) agencyLabel.textContent = key === 'judicial' ? '法院' : '部门';
+          fillAgencyOptions(allItems, key === 'whitehouse' ? 'whitehouse'
+            : (key === 'judicial' ? 'judicial' : ''));
         } else {
           agencyGroup.hidden = true;
+          if (agencyLabel) agencyLabel.textContent = '部门';
           agencySel.value = 'all';
           filterState.agency = 'all';
         }
@@ -7878,11 +7941,12 @@
         if (euView) euView.hidden = true;
         if (electionView) electionView.hidden = true;
         boardView.hidden = false;
-        // 头图立面剪影只属于白宫板块
+        // 头图立面剪影只属于白宫 / 国会板块；司法板块沿用统一深色抬头（无剪影）
         var boardHead = document.querySelector('#view-board .subhead');
         if (boardHead) {
           boardHead.classList.toggle('is-whitehouse', key === 'whitehouse');
           boardHead.classList.toggle('is-congress', key === 'congress');
+          boardHead.classList.toggle('is-judicial', key === 'judicial');
         }
         // 切换板块时重置筛选
         filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', q: '' };
@@ -8837,7 +8901,7 @@
              "items": [{
                "id": "fr-2026-23456",      // 必填，去重主键（缺省时以 url 为主键）
                "target": "policy",         // policy|election|calendar|note
-               "board": "whitehouse",      // target=policy 时必填：whitehouse|congress|agencies
+               "board": "whitehouse",      // target=policy 时必填：whitehouse|congress|agencies|judicial
                "section": "midterm",       // target=election 时选填：midterm|presidential
                "date": "2026-10-16",
                "title": "英文原标题", "title_cn": "中文标题",
@@ -9075,7 +9139,7 @@
     }
 
     // ---------- 即时插入当前打开的板块列表 ----------
-    var BOARD_OF_TITLE = { '白宫及内阁各部政策': 'whitehouse', '国会法案': 'congress', '独立机构政策': 'agencies' };
+    var BOARD_OF_TITLE = { '白宫及内阁各部政策': 'whitehouse', '国会法案': 'congress', '独立机构政策': 'agencies', '司法裁判': 'judicial' };
     function currentBoardKey() {
       var bv = document.getElementById('view-board');
       var t = document.getElementById('board-title');
@@ -9380,7 +9444,7 @@
     /* ---------- 1) 板块卡徽标：条数与更新日期 ---------- */
     function renderCardMeta() {
       // 各板块条数：读 data/policy/manifest.json 回填板块卡徽标与脚注（需 HTTP 预览）
-      var boards = ['whitehouse', 'congress', 'agencies'];
+      var boards = ['whitehouse', 'congress', 'agencies', 'judicial'];
       fetch('data/policy/manifest.json', { cache: 'no-cache' })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (m) {

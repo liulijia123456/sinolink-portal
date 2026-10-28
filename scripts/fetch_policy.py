@@ -4,7 +4,7 @@
 国金门户 · 美国政策文件定时抓取
 ================================
 
-每日运行，从官方来源抓取三个子板块的政策文件，
+每日运行，从官方来源抓取四个子板块的政策文件，
 去重合并后写入 data/policy/{board}-items.json（并同步 manifest.json 的计数与时间戳）。
 若 data/policy/manifest.json 不存在，则退回旧形态：回写 index.html 中的
 <script type="application/json" id="policy-data"> 数据块。
@@ -14,7 +14,7 @@
 已写好的简报、译名与领域标签（已付出的加工成本）。传输体积由页面端
 fetch + gzip 控制，不在存储端删数据。
 
-数据来源（均为美国政府官方接口）：
+数据来源：
   白宫政策    —— 联邦公报（Federal Register）总统文件（行政令/备忘录/公告）
                  + 总统行政办公室（EOP）各组成机构（OMB、USTR、OSTP 等，
                  见 WHITEHOUSE_AGENCY_SLUGS）在联邦公报发布的文件
@@ -23,6 +23,11 @@ fetch + gzip 控制，不在存储端删数据。
   国会政策    —— 国会官网 congress.gov 官方 API，参众两院法案/决议最新动态
   独立机构政策 —— 联邦公报按机构过滤（美联储、FCC、USITC、CFIUS、USAID，
                  见 AGENCY_SLUGS，可自行增删）
+  司法裁判    —— CourtListener（Free Law Project）检索 RSS，分三路抓取：
+                 最高法院全部裁判、13 个巡回上诉法院与重点地区法院的
+                 政策相关裁判。该站镜像 PACER/法院意见书并提供原文链接；
+                 最高法院官网与 GovInfo 对自动抓取分别有 Akamai 拦截与
+                 限流，故作日更主通道，官方站点用于人工复核（见 README §5.1.1）。
 
 选举动态板块按需求不抓取，脚本不涉及。
 
@@ -40,6 +45,7 @@ fetch + gzip 控制，不在存储端删数据。
 """
 
 import argparse
+import html
 import json
 import logging
 import logging.handlers
@@ -50,6 +56,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -124,6 +131,96 @@ AGENCY_NOISE_KW = {
         'information collection',       # 信息采集征求意见
         'senior executive service',     # 高管任命与评级
     ),
+}
+
+# ---------------------------------------------------------------- 司法裁判（judicial）
+#
+# 来源口径：
+#   CourtListener（Free Law Project）检索 RSS —— 镜像 PACER 与各法院公布的裁判文书，
+#   提供案名、法院、裁判日期、原文链接与命中的原文片段。最高法院官网对本机网络
+#   返回 403（Akamai），GovInfo 的 api.data.gov 配额对 DEMO_KEY 极低，故以该站
+#   作为日更主通道；两者留作人工复核与后续接正（见 README §5.1.1）。
+#
+# 抓取分三路，各自限量，避免上诉法院与地区法院的高频刑事案件淹没板块：
+#   1) 最高法院：全部裁判（`court=scotus`），不看关键词；
+#   2) 巡回上诉法院：13 个联邦巡回法院，政策关键词全文检索；
+#   3) 地区法院：21 个政策诉讼高发地，同一组关键词检索。
+# 三路结果按「法院层级 + 案名 + 日期」二次去重，再按层级配额取最新。
+JUDICIAL_SCOTUS_LOOKBACK_DAYS = 180  # 最高法院：覆盖整个开庭期与夏季命令
+JUDICIAL_CAPS = {'supreme': 3, 'circuit': 7, 'district': 4}
+JUDICIAL_MAX_PER_RUN = 14
+
+CL_FEED = 'https://www.courtlistener.com/feed/search/'
+# 政策相关争点词表。只取能落到「政府行为合法性」的表述：
+# 行政程序、规章效力、行政令、关税与制裁、禁令救济、权限争议。
+# 刻意不收 "due process" "constitutional" 一类词——刑事案件几乎逐案命中。
+JUDICIAL_POLICY_QUERY = (
+    '("Administrative Procedure Act" OR "arbitrary and capricious" '
+    'OR "major questions doctrine" OR "final rule" OR "agency action" '
+    'OR "executive order" OR tariff OR "Section 301" OR sanctions '
+    'OR "export control" OR "preliminary injunction" OR "stay pending appeal" '
+    'OR preemption OR "ultra vires" OR "notice and comment")'
+)
+CIRCUIT_COURT_IDS = ('ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7',
+                     'ca8', 'ca9', 'ca10', 'ca11', 'cadc', 'cafc')
+# 政策诉讼高发的地区法院（PACER/CL 法院代码）：
+# 哥伦比亚特区（联邦机构所在地）、纽约两区、加州三区、得州四区、
+# 伊利诺伊北区、马萨诸塞、弗吉尼亚东区、佛州南区、新泽西、马里兰、
+# 亚利桑那、科罗拉多、华盛顿西区、密歇根东区、宾州东区、俄亥俄北区。
+DISTRICT_COURT_IDS = ('dcd', 'nysd', 'nyed', 'cand', 'cacd', 'casd',
+                      'txsd', 'txnd', 'txwd', 'ilnd', 'mad', 'vaed',
+                      'flsd', 'njd', 'mdd', 'azd', 'cod', 'wawd',
+                      'mied', 'paed', 'ohnd')
+
+# 无实质信息的占位案名（CourtListener 对封存/未公开案件的占位写法）
+JUDICIAL_BAD_TITLE = re.compile(
+    r'(^case name in .*unavailable$|^sealed\b|^sealed case$|^order$|^judgment$)',
+    re.I)
+
+# 刑事程序与缠讼类噪声：这些案件会因 "sanctions" "stay" "injunction" 等词
+# 命中政策检索，但争点是程序或个案量刑，不属政策动态，入库即污染板块。
+JUDICIAL_NOISE_RE = re.compile(
+    r'\b(vexatious litigator|motion to suppress|habeas corpus|'
+    r'sentencing guidelines|plea agreement|jury convicted|indictment|'
+    r'2255|2241)\b', re.I)
+
+# 「United States v. 某人」在巡回法院绝大多数是刑事上诉，不是政策诉讼；
+# 只有当被告为政府、公司、机构时才保留（反垄断、关税、民事执法等）。
+JUDICIAL_CIVIL_PARTY_RE = re.compile(
+    r'\b(State of|Commonwealth of|City of|County of|District of|Secretary|'
+    r'Department|Agency|Administration|Commission|Board|Bureau|Office|'
+    r'Corporation|Corp\.|Inc\.|LLC|Ltd\.|Company|University|Association|'
+    r'League|Coalition|Center|Foundation|Bank|Fund)\b', re.I)
+
+CIRCUIT_CN = {
+    'First': '第一', 'Second': '第二', 'Third': '第三', 'Fourth': '第四',
+    'Fifth': '第五', 'Sixth': '第六', 'Seventh': '第七', 'Eighth': '第八',
+    'Ninth': '第九', 'Tenth': '第十', 'Eleventh': '第十一',
+}
+DISTRICT_DIR_CN = {
+    'Northern': '北区', 'Southern': '南区', 'Eastern': '东区',
+    'Western': '西区', 'Central': '中区', 'Middle': '中区',
+}
+STATE_CN = {
+    'Alabama': '阿拉巴马', 'Alaska': '阿拉斯加', 'Arizona': '亚利桑那',
+    'Arkansas': '阿肯色', 'California': '加州', 'Colorado': '科罗拉多',
+    'Connecticut': '康涅狄格', 'Delaware': '特拉华', 'Florida': '佛罗里达',
+    'Georgia': '佐治亚', 'Hawaii': '夏威夷', 'Idaho': '爱达荷',
+    'Illinois': '伊利诺伊', 'Indiana': '印第安纳', 'Iowa': '艾奥瓦',
+    'Kansas': '堪萨斯', 'Kentucky': '肯塔基', 'Louisiana': '路易斯安那',
+    'Maine': '缅因', 'Maryland': '马里兰', 'Massachusetts': '马萨诸塞',
+    'Michigan': '密歇根', 'Minnesota': '明尼苏达', 'Mississippi': '密西西比',
+    'Missouri': '密苏里', 'Montana': '蒙大拿', 'Nebraska': '内布拉斯加',
+    'Nevada': '内华达', 'New Hampshire': '新罕布什尔', 'New Jersey': '新泽西',
+    'New Mexico': '新墨西哥', 'New York': '纽约', 'North Carolina': '北卡罗来纳',
+    'North Dakota': '北达科他', 'Ohio': '俄亥俄', 'Oklahoma': '俄克拉何马',
+    'Oregon': '俄勒冈', 'Pennsylvania': '宾夕法尼亚', 'Rhode Island': '罗得岛',
+    'South Carolina': '南卡罗来纳', 'South Dakota': '南达科他',
+    'Tennessee': '田纳西', 'Texas': '得州', 'Utah': '犹他', 'Vermont': '佛蒙特',
+    'Virginia': '弗吉尼亚', 'Washington': '华盛顿', 'West Virginia': '西弗吉尼亚',
+    'Wisconsin': '威斯康星', 'Wyoming': '怀俄明', 'Puerto Rico': '波多黎各',
+    'Guam': '关岛', 'Virgin Islands': '维尔京群岛',
+    'Northern Mariana Islands': '北马里亚纳群岛',
 }
 
 FR_API = 'https://www.federalregister.gov/api/v1/documents.json'
@@ -286,6 +383,29 @@ def http_get_json(url, params, source_name):
             log.warning('[%s] 请求失败（第 %d/%d 次）: %s', source_name, attempt, HTTP_RETRIES, e)
         if attempt < HTTP_RETRIES:
             time.sleep(2 ** attempt)  # 2s, 4s 指数退避
+    raise RuntimeError('%s 连续 %d 次请求失败: %s' % (source_name, HTTP_RETRIES, last_err))
+
+
+def http_get_text(url, source_name):
+    """带重试的 GET 文本（用于 CourtListener RSS，返回 Atom XML）。"""
+    last_err = None
+    for attempt in range(1, HTTP_RETRIES + 1):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT,
+                                                       'Accept': 'application/atom+xml,application/xml,text/xml'})
+            with OPENER.open(req, timeout=HTTP_TIMEOUT) as resp:
+                return resp.read().decode('utf-8', errors='replace')
+        except urllib.error.HTTPError as e:
+            if 400 <= e.code < 500 and e.code != 429:
+                log.error('[%s] HTTP %s（客户端错误，不重试）: %s', source_name, e.code, url)
+                raise
+            last_err = e
+            log.warning('[%s] HTTP %s（第 %d/%d 次），将重试', source_name, e.code, attempt, HTTP_RETRIES)
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last_err = e
+            log.warning('[%s] 请求失败（第 %d/%d 次）: %s', source_name, attempt, HTTP_RETRIES, e)
+        if attempt < HTTP_RETRIES:
+            time.sleep(2 ** attempt)
     raise RuntimeError('%s 连续 %d 次请求失败: %s' % (source_name, HTTP_RETRIES, last_err))
 
 # ---------------------------------------------------------------- 抓取源
@@ -504,6 +624,188 @@ def fetch_agencies(since):
         time.sleep(1)  # 礼貌限速
     return items
 
+# ---------------------------------------------------------------- 司法裁判抓取
+#
+# CourtListener 的检索 RSS 是 Atom，条目字段：
+#   <title> 案名 / <link href> 意见书页 / <published> 裁判日期
+#   <author><name> 法院全称 / <summary> 命中关键词的原文片段
+# 该站不提供摘要接口，片段即撰写简报时能拿到的最可靠素材，故一并入库
+# （字段 summary），brief.py 直接取用，不再回抓网页（意见书页对脚本返回 202）。
+
+def _strip_tags(s):
+    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', s or '')).strip()
+
+
+def _court_cn(name):
+    """法院英文全称 → 中文名（用于「法院」筛选与列表展示）。"""
+    n = (name or '').strip()
+    if n.startswith('Supreme Court'):
+        return '美国最高法院'
+    m = re.match(r'Court of Appeals for the (.+?) Circuit$', n)
+    if m:
+        c = m.group(1)
+        if c in ('District of Columbia', 'D.C.'):
+            return '哥伦比亚特区巡回上诉法院'
+        if c == 'Federal':
+            return '联邦巡回上诉法院'
+        return (CIRCUIT_CN.get(c, c) or c) + '巡回上诉法院'
+    m = re.match(r'District Court, District of (.+)$', n)
+    if m:
+        state = m.group(1)
+        if state == 'Columbia':
+            return '哥伦比亚特区联邦地区法院'
+        return STATE_CN.get(state, state) + '联邦地区法院'
+    m = re.match(r'District Court, (.+?) District of (.+)$', n)
+    if m:
+        direction, state = m.group(1), m.group(2)
+        return (STATE_CN.get(state, state) + DISTRICT_DIR_CN.get(direction, direction)
+                + '联邦地区法院')
+    if 'Court of International Trade' in n:
+        return '国际贸易法院'
+    return ''
+
+
+def _court_type(name):
+    """法院全称 → 层级代码；非联邦 Art. III 法院（含州法院、破产法院）返回 None。"""
+    n = (name or '')
+    if 'Supreme Court' in n:
+        return 'supreme'
+    if 'Court of Appeals' in n:
+        return 'circuit'
+    if 'Court of International Trade' in n:
+        return 'trade'
+    if 'Bankruptcy' in n:
+        return None
+    if 'District Court' in n:
+        return 'district'
+    return None
+
+
+def _judicial_kind(ctype, summary):
+    """裁判类型：判决（实体裁判）/ 裁定（程序性命令、中止申请等）。"""
+    head = (summary or '')[:500].lower()
+    if ctype == 'supreme':
+        if 'on application for stay' in head or 'on application to vacate' in head:
+            return '裁定'
+        if 'on petition for writ of certiorari' in head and 'certiorari to the' not in head:
+            return '裁定'
+    if head.startswith('order') or re.search(r'\bit is (hereby )?ordered\b', head):
+        return '裁定'
+    # 片段常从句子中间开始，需按「请求 + 准驳」句式判定临时禁令、中止等程序性裁定
+    if re.search(r'\b(motion|application|request|petition)\b[^.]{0,120}'
+                 r'\b(is|are|was|were)\s+(hereby\s+)?(granted|denied)\b', head):
+        return '裁定'
+    return '判决'
+
+
+def _parse_cl_feed(xml_text):
+    """解析 CourtListener Atom feed，返回 [{title, url, date, court, summary}]。"""
+    ns = {'a': 'http://www.w3.org/2005/Atom'}
+    root = ET.fromstring(xml_text)
+    out = []
+    for e in root.findall('a:entry', ns):
+        link_el = e.find('a:link', ns)
+        summary = _strip_tags(html.unescape(e.findtext('a:summary', default='', namespaces=ns) or ''))
+        summary = re.sub(r'Original document\s*$', '', summary).strip()
+        out.append({
+            'title': (e.findtext('a:title', default='', namespaces=ns) or '').strip(),
+            'url': link_el.get('href', '') if link_el is not None else '',
+            'date': (e.findtext('a:published', default='', namespaces=ns) or '')[:10],
+            'court': (e.findtext('a:author/a:name', default='', namespaces=ns) or '').strip(),
+            'summary': summary[:1200],
+        })
+    return out
+
+
+def _cl_search(courts, query, since, label):
+    """调用 CourtListener 检索 RSS。courts 为空表示不限法院。"""
+    params = {'q': query, 'type': 'o', 'order_by': 'dateFiled desc',
+              'filed_after': since}
+    if courts:
+        params['court'] = ','.join(courts)
+    url = CL_FEED + '?' + urllib.parse.urlencode(params)
+    xml_text = http_get_text(url, label)
+    entries = _parse_cl_feed(xml_text)
+    if len(entries) >= 20 and entries[-1]['date'] > since:
+        log.warning('[%s] 返回 20 条上限，最早仅到 %s（窗口自 %s 起），更早条目可能未覆盖',
+                    label, entries[-1]['date'], since)
+    log.info('[%s] 抓到 %d 条（filed_after %s）', label, len(entries), since)
+    return entries
+
+
+def fetch_judicial(since):
+    """司法裁判：最高法院 + 巡回上诉法院 + 重点地区法院（CourtListener）。"""
+    tz8 = timezone(timedelta(hours=8))
+    now = datetime.now(tz8)
+    today = now.strftime('%Y-%m-%d')
+    scotus_since = (now - timedelta(days=JUDICIAL_SCOTUS_LOOKBACK_DAYS)).strftime('%Y-%m-%d')
+
+    routes = [
+        ('supreme', '司法-最高法院', ('scotus',), '*', scotus_since),
+        ('circuit', '司法-巡回上诉法院', CIRCUIT_COURT_IDS, JUDICIAL_POLICY_QUERY, since),
+        ('district', '司法-地区法院', DISTRICT_COURT_IDS, JUDICIAL_POLICY_QUERY, since),
+    ]
+    items, seen = [], set()
+    for ctype, label, courts, query, win_start in routes:
+        try:
+            entries = _cl_search(courts, query, win_start, label)
+        except Exception as e:
+            # 单路失败不影响其余两路（与 EOP/独立机构逐机构容错同口径）
+            log.error('[%s] 抓取失败: %s（其余来源保留）', label, e)
+            time.sleep(1)
+            continue
+        cap = JUDICIAL_CAPS.get(ctype, 0)
+        kept = skipped_old = skipped_bad = skipped_dup = 0
+        for en in entries:
+            if kept >= cap:
+                break
+            d = en['date']
+            if not re.match(r'^\d{4}-\d{2}-\d{2}$', d) or d < win_start or d > today:
+                skipped_old += 1
+                continue
+            title = en['title']
+            if not title or JUDICIAL_BAD_TITLE.search(title):
+                skipped_bad += 1
+                continue
+            if JUDICIAL_NOISE_RE.search(en['summary'] or ''):
+                skipped_bad += 1
+                continue
+            if (title.lower().startswith('united states v.')
+                    and not JUDICIAL_CIVIL_PARTY_RE.search(title)):
+                skipped_bad += 1
+                continue
+            cn = _court_cn(en['court'])
+            if not cn:
+                skipped_bad += 1
+                continue
+            # 二次去重：同一案子在多路查询中重复出现时，按「法院 + 案名 + 日期」只留一条
+            key = (cn, re.sub(r'[^a-z0-9]+', '', title.lower()), d)
+            if key in seen:
+                skipped_dup += 1
+                continue
+            seen.add(key)
+            items.append({
+                'board': 'judicial',
+                'date': d,
+                'title': title,
+                'url': en['url'],
+                'source': 'CourtListener',
+                'kind': _judicial_kind(ctype, en['summary']),
+                'agency': cn,
+                'summary': en['summary'],
+            })
+            kept += 1
+        log.info('[%s] 入库 %d 条（配额 %d；跳过 超窗 %d / 无效 %d / 重复 %d）',
+                 label, kept, cap, skipped_old, skipped_bad, skipped_dup)
+        time.sleep(1)  # 礼貌限速
+
+    items.sort(key=lambda x: x['date'], reverse=True)
+    if len(items) > JUDICIAL_MAX_PER_RUN:
+        items = items[:JUDICIAL_MAX_PER_RUN]
+    log.info('[司法裁判] 合计 %d 条（上限 %d）', len(items), JUDICIAL_MAX_PER_RUN)
+    return items
+
+
 # ---------------------------------------------------------------- 合并与回写
 
 def read_index():
@@ -559,8 +861,8 @@ def main():
     ap = argparse.ArgumentParser(description='国金门户 · 美国政策文件定时抓取')
     ap.add_argument('--days', type=int, default=LOOKBACK_DAYS, help='回看天数（默认 %(default)s）')
     ap.add_argument('--dry-run', action='store_true', help='只抓取打印统计，不回写数据')
-    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies'],
-                    help='只抓取指定板块（拆分定时任务用）；不填则三板块全抓')
+    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'],
+                    help='只抓取指定板块（拆分定时任务用）；不填则四板块全抓')
     args = ap.parse_args()
 
     tz8 = timezone(timedelta(hours=8))
@@ -569,12 +871,13 @@ def main():
     stamp = now.strftime('%Y-%m-%d %H:%M')
 
     log.info('========== 抓取开始（%s，回看 %d 天，since %s） ==========',
-             args.board or '三板块', args.days, since)
+             args.board or '四板块', args.days, since)
 
     sources = [
         ('whitehouse', '白宫及内阁各部政策', fetch_whitehouse),
         ('congress', '国会法案', fetch_congress),
         ('agencies', '独立机构政策', fetch_agencies),
+        ('judicial', '司法裁判', fetch_judicial),
     ]
     if args.board:
         sources = [x for x in sources if x[0] == args.board]
