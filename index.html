@@ -8491,10 +8491,12 @@
               '<div><div class="pt-figure-role">' + esc(f.role) + '</div>' +
               '<div class="pt-figure-note">' + esc(f.note) + '</div></div></div>';
           }).join('');
+          var senate = (p.metrics.filter(function (m) { return m.label === '参议院'; })[0] || {}).value || '—';
+          var house = cls === 'dem' ? seat.dem : seat.rep;
           return '<article class="pt-party is-' + cls + '">' +
             '<div class="pt-party-head"><div><div class="pt-party-name">' + esc(p.name) + '</div>' +
             '<div class="pt-party-en">' + esc(p.en) + '</div></div>' +
-            '<span class="pt-party-seat">' + esc(data.cycle) + '</span></div>' +
+            '<span class="pt-party-seat">众院 ' + house + ' · 参院 ' + esc(senate) + '</span></div>' +
             '<div class="pt-party-meta"><span>主席：<b>' + esc(p.chair) + '</b></span>' +
             '<span>总部：<b>' + esc(p.hq) + '</b></span><span>成立：<b>' + esc(p.founded) + '</b></span>' +
             '<span>意识形态：<b>' + p.ideology.map(esc).join(' / ') + '</b></span></div>' +
