@@ -1,9 +1,105 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-10-27 10:22",
-  "count": 62,
+  "updated_at": "2026-10-28 09:29",
+  "count": 68,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21894/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "title_cn": "银行控股公司的设立、收购与合并（Upstart 申请转型为银行控股公司）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "美联储理事会公布依《1956年银行控股公司法》与 Regulation Y（12 CFR 225）提出的申请：Upstart Holdings, Inc.（加州伯灵格姆）申请通过收购 Upstart Bank, National Association（特拉华州威尔明顿）成为银行控股公司，并保留其项下大量非银子公司与证券化信托。\n申请拟依 Regulation Y 第 225.28(b)(1) 条开展放贷、依第 225.28(b)(2)(vi) 条从事资产管理与服务催收、依第 225.28(b)(14)(i)(A) 条从事数据处理、存储与提供。\n审查适用《银行控股公司法》第 3 条标准，涉及非银业务收购时另适用第 4 条标准；公众意见须于 2026 年 11 月 27 日前提交至旧金山联邦储备银行或理事会。\n对市场意味着什么：属个案准入审批而非规则修订，无直接定价影响。若获准，将为上市金融科技平台取得银行牌照再添一例，对同类机构的牌照路径有参照价值，但不改变监管框架本身。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21842/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company-correction",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "title_cn": "银行控制权变更通告；银行或银行控股公司股份收购（更正）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "美联储发布更正通告，对 2026 年 10 月 22 日刊登的《银行控制权变更通告》（FR Doc. 2026-21625，91 FR 66703）第 B.1 段予以更正。\n更正后的申请人为明尼苏达州哈莫尼的 Bushman 家族一致行动集团：Jerome 与 Barbara Bushman 生前银行股票可撤销信托（2023 年 12 月 5 日设立并修订，Barbara A. Bushman 任受托人）、Tia G. Bushman（明尼苏达州普利茅斯）与 Mitchell Bushman（威斯康星州哈特利），拟保留 First Southeastern Banc Group, Inc. 表决权股份，并间接保留 First Southeast Bank 表决权股份。\n通告未说明原段落的具体错误内容。\n对市场意味着什么：属文本更正，无直接定价影响；相关方持股申报以更正后版本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Proposed Agency Information Collection Activities; Comment Request",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21841/proposed-agency-information-collection-activities-comment-request",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "title_cn": "机构信息收集活动：统一经营与收入报告（Call Report）互惠存款口径修订并延期三年（征求意见）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "货币监理署、美联储与联邦存款保险公司联合征求对统一经营与收入报告（Call Report，FFIEC 031/041/051）三年延期与修订的意见，截止 2026 年 12 月 28 日。\n修订源于 FDIC 实施《21世纪住房之路法》第 902 条的临时最终规则（91 FR 56022，9 月 1 日生效）。该条修改《联邦存款保险法》第 29(i) 条互惠存款豁免：代理机构资格由 CAMELS 综合评级 1–2 级放宽至 1–3 级，一般上限改为按总负债分层计算，即 10 亿美元以下部分 50%、10 亿至 100 亿美元部分 40%、100 亿至 963.33 亿美元部分 30%。\n修订已获 OMB 紧急批准，自 9 月 30 日报告期起适用，涉及 RC-E 备忘 1.b/1.g、RC-O 第 9 项与术语表「经纪存款」条目，并对 RC-O 第 9、9.a 项新设保密豁免。\n对市场意味着什么：口径已随临时最终规则落地，本次仅补足程序。上限放宽与资格扩容边际降低中小银行互惠存款被计为经纪存款的成本，利好其存款留存与资金成本；对大型银行影响有限。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Notice of Suspension and Commencement of Proposed Debarment Proceedings",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21850/notice-of-suspension-and-commencement-of-proposed-debarment-proceedings",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "title_cn": "暂停参与普遍服务机制资格并启动除名程序（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "FCC 执法局通告，暂停 Richard Bernstein 参与学校与图书馆普遍服务支持机制（E-Rate）及全部普遍服务机制的资格，同时启动针对其本人的除名（debarment）程序。\n异议须在收到暂停通知后 30 日内或 2026 年 11 月 27 日前提出（以较早者为准）并附证明材料，执法局将在 90 日内作出决定；与其存在现存合同或拟签订合同的主体亦可提出申辩。\n通告未披露导致暂停的具体违规事实与涉案项目。\n对市场意味着什么：个案执法，无直接定价影响，不改变 E-Rate 补贴规则或普遍服务基金规模；对参与该项目的设备商与集成商仅有合规审查层面的边际提示。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Certain Vaporizer Devices, Cartridges Used Therewith, and Components Thereof; Notice of Request for Submissions on the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21885/certain-vaporizer-devices-cartridges-used-therewith-and-components-thereof-notice-of-request-for",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "电子雾化装置、烟弹及组件：337 调查初裁认定违规并征集公众利益意见",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "USITC 就第 337-TA-1464 号调查发布公众利益意见征集通告：主审行政法官已于 2026 年 10 月 20 日作出违反第 337 条的初裁，并提交救济与保证金建议。\n建议救济为针对 Glas, Inc. 与 Glas, LLC 的有限排除令与停止令，所涉美国专利为 11,134,722（权利要求 1、5、7、15–16、18–21）与 11,606,981（权利要求 1、5、8），标的为电子雾化装置、其烟弹及组件。\n公众与相关政府机构可在 2026 年 11 月 19 日下班前提交不超过 5 页的意见，聚焦公共健康与福利、美国竞争条件、同类产品产能替代与消费者影响。\n通告未载明涉案产品原产国，亦未披露委员会终裁时点。\n对市场意味着什么：初裁阶段，排除令尚未生效；若委员会终裁维持，涉案产品对美进口与销售将受限，但国别不明，暂不构成对特定供应链的定价冲击，观察节点为 11 月 19 日意见截止与终裁。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-27",
+      "title": "Mattresses From Cambodia, China, Malaysia, Serbia, Thailand, Turkey, and Vietnam; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21824/mattresses-from-cambodia-china-malaysia-serbia-thailand-turkey-and-vietnam-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "床垫（柬埔寨、中国、马来西亚、塞尔维亚、泰国、土耳其、越南）五年复审裁决：维持双反措施",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "USITC 公布床垫五年复审裁决：撤销对中国床垫的反补贴税令、以及对柬埔寨、马来西亚、塞尔维亚、泰国、土耳其、越南床垫的反倾销税令，可能导致实质损害在美国可预见期间内继续或再度发生，属肯定性裁决。\n复审于 2026 年 4 月 1 日立案（91 FR 16229），2026 年 7 月 6 日决定采用加速程序（91 FR 51745），裁决于 10 月 22 日提交，详见 USITC 第 5803 号出版物；Negatu 委员未参与。\n按《1930年关税法》第 751(c) 条，肯定性裁决意味着现行双反令继续有效，下次复审窗口在五年后。\n对市场意味着什么：七国床垫对美出口的双反税负延续，美国本土床垫生产商继续受保护，进口与跨境供应链成本不变；国内相关出口企业短期无缓解，替代路径仍为第三国产能布局。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-10-26",
@@ -172,13 +268,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "大直径石墨电极（中国、印度）双反终裁阶段日程",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会就中国与印度大直径石墨电极双反调查（701-TA-787-788、731-TA-1775-1776）排定终裁阶段日程，商务部初裁已认定存在补贴并按低于公平价值销售。\n涉案范围为炉用、直径超过 425 毫米的石墨电极（HTS 8545.11.00、3801.10.50、3801.90.00）；各方听证前简报截止 2027 年 2 月 2 日 17:15。\n对市场意味着什么：本条不含新的认定，但把中国石墨电极出口的关税不确定性推到 2027 年一季度；电极是电炉炼钢的刚性耗材，终裁若维持肯定性认定，美国电弧炉钢厂成本上行、本土电极产能受益，中国出口商需提前安排订单与转运。",
         "tier": "note"
-      }
+      },
+      "title_cn": "大直径石墨电极（中国、印度）双反终裁阶段日程",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -188,13 +284,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "三聚氰胺（中国）加速五年复审日程",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会就中国三聚氰胺双反令启动第二次五年复审（701-TA-526、731-TA-1262），并采用加速程序：2026 年 9 月 4 日认定国内利益方答复充分、被诉方答复不足，且无另行全面复审的情形。\n复审争点为撤销现行反倾销与反补贴令后，实质损害是否可能在可预见期间内继续或再度发生；非当事方书面意见截止 2026 年 12 月 30 日，且不得含新的事实信息。\n对市场意味着什么：加速程序意味着周期压缩、维持现行措施的概率上升，对三聚氰胺出口及下游板材、涂料成本的影响偏中性；真正决定税率水平的是商务部同期行政复审，观察节点为 12 月 30 日意见截止后的终局裁决。",
         "tier": "note"
-      }
+      },
+      "title_cn": "三聚氰胺（中国）加速五年复审日程",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -204,13 +300,13 @@
       "source": "联邦公报",
       "kind": "拟议规则",
       "agency": "外国投资委员会 CFIUS",
-      "title_cn": "对外投资安全计划条例（拟议规则）",
-      "domain": "科技/AI",
       "brief": {
         "at": "2026-10-27",
         "body": "财政部投资安全办公室（CFIUS 主管机构）发布拟议规则，实施《综合对外投资国家安全法》C 编（编入《国防生产法》第八章），把对外投资审查从行政令层面落到可执行条例。\n规则设两级口径：美国人涉「可申报技术」的特定交易须向财政部申报，涉「禁止类技术」的特定交易直接禁止；在符合第八章的前提下沿用现行对外投资条例的部分定义与概念。书面意见截止 2026 年 12 月 7 日。\n对市场意味着什么：对外投资限制由此获得常态化的申报—禁止框架，半导体与微电子、人工智能、量子信息领域的美元资本对华敞口面临合规成本与交易不确定性；跨境科技投资的架构将更多转向许可、服务与非股权安排，一级市场估值与退出路径承压。",
         "tier": "note"
-      }
+      },
+      "title_cn": "对外投资安全计划条例（拟议规则）",
+      "domain": "科技/AI"
     },
     {
       "board": "agencies",
@@ -332,13 +428,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "木制栅栏板（中国）双反调查日程修订",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会修订中国木制栅栏板双反调查（701-TA-807、731-TA-1808）初裁阶段日程；直接原因是商务部将立案裁定截止日推后至 2026 年 11 月 3 日，委员会据此同步调整。\n调整后各方书面简报截止 2026 年 10 月 23 日 17:15；该调查 2026 年 9 月 24 日已排定日程（91 FR 61438），本次属程序性改期。\n对市场意味着什么：改期不含实体判断，但把中国木制栅栏板出口的初裁时点顺延至 11 月初，短期不确定性延长；若初裁为肯定性认定，美国进口商与园艺零售渠道的采购成本将在 2027 年旺季前抬升。",
         "tier": "note"
-      }
+      },
+      "title_cn": "木制栅栏板（中国）双反调查日程修订",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -348,13 +444,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "小型立轴发动机（中国）五年复审裁决：维持双反措施",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会就中国小型立轴发动机双反令作出五年复审肯定性裁决（701-TA-643、731-TA-1493）：撤销现行反倾销与反补贴令，可能导致实质损害在可预见期间内继续或再度发生。\n裁决于 2026 年 10 月 16 日作出并提交，完整意见见 USITC 第 5801 号出版物；委员 Negatu 未参与本案。按 1930 年《关税法》第 751(c) 条，肯定性裁决意味着现行双反令继续有效。\n对市场意味着什么：措施延续不构成下游割草机、水泵与小型发电设备厂商的新增成本冲击，但也意味着中国整机与零部件出口在 2027 年前难以获得关税豁免，美国本土小型发动机制造商维持保护地位。",
         "tier": "note"
-      }
+      },
+      "title_cn": "小型立轴发动机（中国）五年复审裁决：维持双反措施",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -364,13 +460,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "无缝碳钢与合金钢管材（格鲁吉亚、印度）双反立案",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会就格鲁吉亚与印度无缝碳钢及合金钢标准管、管线管与压力管启动双反调查（701-TA-810、731-TA-1811-1812），进入初裁阶段。\n初裁争点为是否存在合理迹象表明美国产业因涉案进口遭受实质损害或实质损害威胁；涉案范围覆盖 HTS 7304.19.10、7304.19.50、7304.31.60、7304.39.00、7304.51.50、7304.59.60 等税号。\n对市场意味着什么：这是无缝管贸易救济对象从既有来源向格鲁吉亚、印度扩展的信号，管材进口来源多元化带来的价格优势将被压缩；油气与化工用管采购成本有上行风险，观察节点为委员会初裁时点。",
         "tier": "note"
-      }
+      },
+      "title_cn": "无缝碳钢与合金钢管材（格鲁吉亚、印度）双反立案",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -380,13 +476,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "厢式挂车及组件（中国）终裁：认定造成实质损害",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-27",
         "body": "委员会对中国厢式挂车及组件双反调查（701-TA-781、731-TA-1768）作出终裁肯定认定：美国产业因低于公平价值销售与补贴进口遭受实质损害。\n依 2025 年 11 月 20 日美国挂车制造商联盟（Great Dane、Stoughton Trailers、Wabash National）申请立案；涉案产品对应 HTS 8716.39.00 与 8716.90.50，委员 Thanhauser 与 Negatu 未参与。\n对市场意味着什么：终裁肯定后商务部将签发反倾销与反补贴令，中国挂车及组件对美出口的关税成本随之落地；三家申请方获得价格保护，依赖进口组件的物流与租赁企业采购成本上升。",
         "tier": "note"
-      }
+      },
+      "title_cn": "厢式挂车及组件（中国）终裁：认定造成实质损害",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
