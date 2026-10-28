@@ -24,7 +24,7 @@ fetch + gzip 控制，不在存储端删数据。
   独立机构政策 —— 联邦公报按机构过滤（美联储、FCC、USITC、CFIUS、USAID，
                  见 AGENCY_SLUGS，可自行增删）
   司法裁判    —— CourtListener（Free Law Project）检索 RSS，分三路抓取：
-                 最高法院全部裁判、13 个巡回上诉法院与重点地区法院的
+                 最高法院全部已公布意见、13 个巡回上诉法院与重点地区法院的
                  政策相关裁判。该站镜像 PACER/法院意见书并提供原文链接；
                  最高法院官网与 GovInfo 对自动抓取分别有 Akamai 拦截与
                  限流，故作日更主通道，官方站点用于人工复核（见 README §5.1.1）。
