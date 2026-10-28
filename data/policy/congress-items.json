@@ -1,9 +1,1977 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-10-27 08:55",
-  "count": 263,
+  "updated_at": "2026-10-28 08:42",
+  "count": 365,
   "items": [
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Protection of Syrian Religious and Ethnic Minorities Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10827",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, and Financial Services, for a period to be subsequently determined by the Speaker,",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "第119届国会众议院法案（H.R.10827），2026年10月15日由众议员瑞安·麦肯齐（共和党，宾夕法尼亚州第7选区）提出，交付外交委员会，并分送司法委员会与金融服务委员会。\n三委员会联署提示法案可能同时涉及对外援助条件、制裁与金融交易限制，官方摘要未取得，具体工具与对象以 congress.gov 文本为准。\n处于提出阶段，多委员会分送通常延长审议周期。\n对市场意味着什么：无直接定价影响。若最终纳入制裁条款，将影响在叙业务敞口与相关贸易融资；当前无文本依据，不预设方向。",
+        "tier": "note"
+      },
+      "title_cn": "保护叙利亚宗教与族裔少数群体法案",
+      "domain": "国防/安全"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Electric Grid Supply Chain Security Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5590",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Armed Services.",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "第119届国会参议院法案（S.5590），2026年9月29日由参议员吉姆·班克斯（共和党，印第安纳州）提出，二读后交付军事委员会。\n法案以国防供应链安全为切入点规范电网设备采购，官方摘要未取得，受限设备类别与来源国范围以 congress.gov 文本为准。\n处于提出阶段；交付军事委员会而非能源与自然资源委员会，提示立法路径可能挂靠国防授权法案。\n对市场意味着什么：无直接定价影响。若最终限制特定来源的变压器、逆变器等电网设备，将重构电网设备供应链并推高替换成本；关键信号节点为委员会是否启动审议。",
+        "tier": "note"
+      },
+      "title_cn": "电网供应链安全法案",
+      "domain": "能源/环境"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "RELA Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10773",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "第119届国会众议院法案（H.R.10773），2026年10月9日由众议员杰夫·克兰克（共和党，科罗拉多州第5选区）提出，同日交付筹款委员会。\n法案仅有简称，官方摘要未取得，具体税制调整内容以 congress.gov 文本为准，不作条款推测。\n处于提出阶段，未安排听证或标记。\n对市场意味着什么：无直接定价影响。在文本公布前不具备可评估的税收影响，观察节点为筹款委员会是否排期审议。",
+        "tier": "note"
+      },
+      "title_cn": "2026年RELA法案",
+      "domain": "财政/税收"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Gang Activity Reporting Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6748",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "法案全称为《2025年帮派活动报告法》（Gang Activity Reporting Act of 2025），官方政策领域标注为“犯罪与执法”。\n2025 年 12 月 16 日由众议员 Ashley Hinson（共和党，爱荷华州第 2 选区）提出，同日交付众议院司法委员会。\n该法案是第 117、118 届国会同名法案在第 119 届国会的重提版本，提案人与政策领域完全一致。\n最新行动仍停留在交付委员会，未进入听证或标记阶段。\n对市场意味着什么：无直接定价影响，但连续三届重提而未出委员会，说明其属常态化表态性提案而非立法优先事项，成案率低于刚提出法案 5–10% 的基准下限。观察节点为司法委员会是否首次安排听证或标记。",
+        "tier": "note"
+      },
+      "title_cn": "2025年帮派活动报告法案",
+      "domain": "司法/执法"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Dark Web Interdiction Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6104",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Energy and Commerce, and Financial Services, for a period to be subsequently determined by the Spea",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "法案全称为《2025年暗网拦截法》（Dark Web Interdiction Act of 2025），官方政策领域标注为“犯罪与执法”。\n2025 年 11 月 18 日由众议员 Chris Pappas（民主党，新罕布什尔州第 1 选区）提出，同日交付众议院司法委员会，并附加交付能源与商业委员会、金融服务委员会。\n附加交付金融服务委员会，通常意味着文本可能触及支付、资金流转或反洗钱环节的条款，具体以国会公布的法案文本为准。\n最新行动停留在多委员会交付，未进入听证或标记阶段。\n对市场意味着什么：当前不构成定价事件，但需列入观察清单。法案处于 Introduced 阶段，成案率约 5–10%，且文本细节未明；若后续推进并涉及对支付渠道或虚拟资产交易的义务设定，金融科技与支付板块的合规成本可能受影响。观察节点为司法委员会与金融服务委员会是否分别安排听证。",
+        "tier": "note"
+      },
+      "title_cn": "2025年暗网拦截法案",
+      "domain": "司法/执法"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Workers’ Right to Compete Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10879",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《劳动者竞争权法案》（Workers' Right to Compete Act，H.R.10879）由民主党众议员 Ro Khanna（加州第17选区）于2026年10月22日提出，同日移交众议院能源与商业委员会。\n法案名称指向保障劳动者从事竞争性工作的权利，官方摘要未取得，具体条款以法案文本为准。\n程序上仅完成提出与委员会移送，尚未举行听证或标记审议。\n对市场意味着什么：无直接定价影响。该法案属就业竞争规则微调型立法，未触及企业成本、税收或行业监管义务，仅作跟踪信号；观察节点为能源与商业委员会是否安排审议及法案全文公布。",
+        "tier": "note"
+      },
+      "title_cn": "劳动者竞争权法案",
+      "domain": "教育/劳动"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Protect Clean Water Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10869",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, ",
+      "brief": {
+        "at": "2026-10-24",
+        "body": "法案全称为《保护清洁水法》（Protect Clean Water Act）。\n2026 年 10 月 22 日由众议员 Laura Gillen（民主党，纽约州第 4 选区）提出，同日交付众议院交通与基础设施委员会，并附加交付能源与商业委员会。\n交付交通与基础设施委员会通常对应《清洁水法》下的排污许可与水质标准议题，条款全文官方素材未披露。\n最新行动停留在交付委员会，属刚提出阶段。\n对市场意味着什么：无直接定价影响，法案刚提出、成案率约 5–10%。若后续推进并触及排污许可或水质标准，需关注对市政水务、工业排污与基建承包方的合规成本影响；当前应作为跟踪信号。观察节点为交通与基础设施委员会是否举行听证，以及法案文本是否由 GPO 发布。",
+        "tier": "note"
+      },
+      "title_cn": "保护清洁水法案",
+      "domain": "能源/环境"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Streamlining Affordable Housing Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10901",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Financial Services.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《设立保障性住房建设者公式拨款项目法案》（H.R.10901）由民主党众议员 Norma Torres（加州第35选区）于2026年10月22日提出，同日移交众议院金融服务委员会，要求住房与城市发展部设立公式拨款项目，向各州提供拨款以精简其对保障性住房建设者的援助。\n官方摘要未取得，拨款规模、分配口径与适用条件均未公布。\n对市场意味着什么：方向上利好住宅开发与建筑链条，但仅提出阶段且资金规模未明，暂不构成定价事件；观察节点为金融服务委员会审议与拨款授权额度。",
+        "tier": "note"
+      },
+      "title_cn": "设立保障性住房建设者公式拨款项目法案",
+      "domain": "住房"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Teaching Engaged Citizenship Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10895",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Education and Workforce, and in addition to the Committee on House Administration, for a period to be subsequently determined by the Speaker, in each c",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《设立公民教育与服务学习拨款项目法案》（H.R.10895）由民主党众议员 Mary Gay Scanlon（宾夕法尼亚州第5选区）于2026年10月22日提出，交付众议院教育与劳动力委员会并追加众议院行政委员会审议，要求教育部设立公民教育与服务学习拨款项目。\n官方摘要未取得，资金规模与分配方式未公布。\n对市场意味着什么：无直接定价影响。属教育拨款类立法，影响集中于地方学区与非营利机构，规模与指向均有限；观察节点为委员会审议与拨款额度。",
+        "tier": "note"
+      },
+      "title_cn": "设立公民教育与服务学习拨款项目法案",
+      "domain": "教育/劳动"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "American Cost of Living Defense Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10904",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《设立联邦贸易委员会跨部门市场集中度监测工作组法案》（H.R.10904）由民主党众议员 Eugene Vindman（弗吉尼亚州第7选区）于2026年10月22日提出，同日移交众议院司法委员会，要求联邦贸易委员会召集跨部门工作组，追踪并报告特定经济部门的市场集中度与垄断行为。\n官方摘要未取得，所涉行业范围与报告义务未公布。\n对市场意味着什么：方向上若覆盖平台经济与并购密集行业，将抬升反垄断调查与披露压力，属长期待跟踪信号；提出阶段不构成定价事件，观察节点为司法委员会审议与行业覆盖范围。",
+        "tier": "note"
+      },
+      "title_cn": "设立联邦贸易委员会跨部门市场集中度监测工作组法案",
+      "domain": "司法/执法"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Sami’s Law",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10897",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Transportation and Infrastructure, and in addition to the Committees on Energy and Commerce, and the Budget, for a period to be subsequently determined",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《通过强化数字核验系统提升网约车平台乘客与驾驶员安全法案》（H.R.10897）于2026年10月22日提出，交付众议院交通与基础设施委员会并追加能源与商业、预算委员会审议，要求建立司机核验协议以防非授权驾驶员冒用账号，并防范平台上的身体与性侵风险。\n官方摘要未取得，核验方式与合规期限未公布。\n对市场意味着什么：若形成强制核验与留存要求，将抬高网约车平台合规与人力成本，是可观测的经营变量变化；但提出阶段不构成定价事件，观察节点为交通与基础设施委员会审议。",
+        "tier": "note"
+      },
+      "title_cn": "网约车平台数字核验与乘客安全法案",
+      "domain": "交通"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To establish a pilot program for voluntary Federal change of address notification service operated by the Administrator of General Services, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10880",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《设立联邦变更地址通知服务试点法案》（H.R.10880）由共和党众议员 Young Kim（加州第40选区）于2026年10月22日提出，交付众议院监督与政府改革委员会并追加筹款委员会审议，要求总务管理局负责人设立自愿性联邦变更地址通知服务试点。\n官方摘要未取得，试点的覆盖机构与实施期限未公布。\n对市场意味着什么：无直接定价影响。法案属政府内部行政服务试点，不涉及企业成本、税收或行业监管义务；观察节点为委员会审议与试点范围。",
+        "tier": "note"
+      },
+      "title_cn": "设立联邦变更地址通知服务试点法案",
+      "domain": "政府运作"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To terminate the diversity immigrant visa program.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10896",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《终止多元族裔移民签证项目法案》（H.R.10896）由共和党众议员 Keith Self（得克萨斯州第3选区）于2026年10月22日提出，同日移交众议院司法委员会，拟终止现行多元族裔移民签证项目。\n官方摘要未取得，项目终止的生效时点与既有申请人处置未公布。\n对市场意味着什么：无直接定价影响。签证规模相对整体劳动力市场与科技人才流动的边际影响有限，且未涉及企业合规义务；观察节点为司法委员会审议与终止时间表。",
+        "tier": "note"
+      },
+      "title_cn": "终止多元族裔移民签证项目法案",
+      "domain": "司法/执法"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "AI Cyber Defense Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10873",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Science, Space, and Technology.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《人工智能网络防御法案》（AI Cyber Defense Act，H.R.10873）由共和党众议员 Pat Harrigan（北卡罗来纳州第10选区）于2026年10月22日提出，同日移交众议院科学、空间与技术委员会。\n法案名称指向人工智能在网络防御中的运用与相关职责安排，官方摘要未取得，适用机构、授权范围与配套拨款未公布。\n对市场意味着什么：方向上利好网络安全服务与AI安全工具供应商，但授权主体与预算均未确定、提出阶段成案率低，属长期跟踪信号；观察节点为委员会审议与配套拨款。",
+        "tier": "note"
+      },
+      "title_cn": "人工智能网络防御法案",
+      "domain": "科技/AI"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "San Carlos Irrigation Project Divestiture Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10864",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Natural Resources.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《圣卡洛斯灌溉项目资产剥离法案》（San Carlos Irrigation Project Divestiture Act of 2026，H.R.10864）由共和党众议员 Elijah Crane（亚利桑那州第2选区）于2026年10月22日提出，同日移交众议院自然资源委员会。\n法案名称指向联邦政府所持圣卡洛斯灌溉项目权益的剥离安排，官方摘要未取得，剥离方式、定价机制与承接方范围未公布。\n对市场意味着什么：方向上若涉及灌溉用水资产的运营权转移，长期可能改变西部农业用水成本与相关资产估值；条款、规模与定价均未明，不构成定价事件；观察节点为自然资源委员会审议。",
+        "tier": "note"
+      },
+      "title_cn": "圣卡洛斯灌溉项目资产剥离法案",
+      "domain": "能源/环境"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Military Family Relocation Support Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10871",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Armed Services.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《军人家庭安置支持法案》（Military Family Relocation Support Act，H.R.10871）由民主党众议员 Maggie Goodlander（新罕布什尔州第2选区）于2026年10月22日提出，同日移交众议院武装部队委员会。\n法案名称指向军人家庭搬迁过程中的支持安排，官方摘要未取得，支持事项与成本分担方式未公布。\n对市场意味着什么：无直接定价影响。属军队人员福利类立法，不涉及企业义务或监管约束；观察节点为武装部队委员会审议与支持方案。",
+        "tier": "note"
+      },
+      "title_cn": "军人家庭安置支持法案",
+      "domain": "国防/安全"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Ronald Reagan Peace Through Strength Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10866",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committees on Foreign Affairs, and Intelligence (Permanent Select), for a period to be subsequently determined b",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《里根“以实力求和平”法案》（Ronald Reagan Peace Through Strength Act of 2026，H.R.10866）由共和党众议员 Brian K. Fitzpatrick（宾夕法尼亚州第1选区）于2026年10月22日提出，交付众议院筹款委员会并追加外交委员会、情报委员会（常设）审议。\n法案名称指向以外交与实力手段达成威慑目标的政策组合，官方摘要未取得，具体措施未公布。\n对市场意味着什么：若最终包含制裁或出口管制条款，对相关贸易与供应链有直接路径；但措施与国别指向完全未明，属高不确定性跟踪信号；观察节点为外交与情报委员会审议。",
+        "tier": "note"
+      },
+      "title_cn": "里根\"以实力求和平\"法案",
+      "domain": "贸易/关税"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Military Domestic Violence Survivors Support Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10870",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Armed Services.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《军人家庭暴力幸存者支持法案》（Military Domestic Violence Survivors Support Act，H.R.10870）由民主党众议员 Maggie Goodlander（新罕布什尔州第2选区）于2026年10月22日提出，同日移交众议院武装部队委员会。\n法案名称指向军人家庭暴力案件的支援与处置安排，官方摘要未取得，支持服务范围与报告义务未公布。\n对市场意味着什么：无直接定价影响。属军队内部司法与福利事项，不涉及企业成本或监管义务；观察节点为武装部队委员会审议与服务方案。",
+        "tier": "note"
+      },
+      "title_cn": "军人家庭暴力幸存者支持法案",
+      "domain": "国防/安全"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Recognizing the significance of equal pay and the pay disparity between disabled women and nondisabled men.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1637",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《承认残疾妇女与非残障男性薪酬差距重要意义决议》（H.Res.1637）由民主党众议员 Lateefah Simon（加州第12选区）于2026年10月22日提出，同日移交众议院教育与劳动力委员会。\n决议属表述性立法，不具备法律效力，官方政策领域为教育与劳动力；官方摘要未取得。\n对市场意味着什么：无直接定价影响。决议类文件仅表达国会立场，对企业薪酬合规无强制力，其观察价值在于平等薪酬议题在立法层面的关注度变化；观察节点为委员会审议及是否形成配套立法动议。",
+        "tier": "note"
+      },
+      "title_cn": "承认残疾妇女与非残障男性薪酬差距重要意义决议",
+      "domain": "教育/劳动"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "PFB Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10654",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Disability Assistance and Memorial Affairs.",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《假性毛囊炎军人退役与福利保障法案》（PFB Act，H.R.10654）由民主党众议员 Herb Conaway（新泽西州第3选区）于2026年10月1日提出，交付众议院武装部队委员会并追加退伍军人事务委员会审议。\n法案名称指向军人因假性毛囊炎（剃须所致皮肤炎症）相关疾病的退役与福利衔接安排，官方摘要未取得，诊断标准与待遇内容未公布。\n对市场意味着什么：方向上若涉及现役军人退役医学评估标准的调整，影响集中于军人医疗体系内部，与资本市场无直接通道；观察节点为武装部队与退伍军人事务委员会审议及文本公布。",
+        "tier": "note"
+      },
+      "title_cn": "假性毛囊炎军人退役与福利保障法案",
+      "domain": "国防/安全"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Emergency Preparedness in Higher Education Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10771",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Transportation and Infrastructure.",
+      "brief": {
+        "at": "2026-10-14",
+        "body": "• 众议院法案《高等教育应急准备法》，由众议员 Carter（D-LA）提出，已交交通与基础设施委员会。\n• 拟设立面向高等院校的应急准备拨款计划，属校园防灾基建类授权立法。\n• 目前处于提出后交付委员会阶段，未进入审议程序。\n• 对市场意味着什么：无定价影响；若后续推进，对校园安防与应急设备供应商有远期需求拉动，但成案率低。",
+        "tier": "note"
+      },
+      "title_cn": "设立高校应急准备拨款计划法案",
+      "domain": "教育/劳动"
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "SCREENS Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5520",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "title_cn": "SCREENS 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "参议院版《SCREENS 法案》，由艾奥瓦州共和党参议员查克·格拉斯利提出，2026 年 9 月 24 日二读后交付卫生、教育、劳工与养老金委员会。\n众议院同名版本（H.R.10850）由艾奥瓦州共和党众议员阿什利·辛森提出，交付能源与商业委员会并分送筹款委员会，两院形成同步提案格局。\n两版均标注卫生政策领域，缩略语全称与具体规制对象官方摘要未取得，具体以 congress.gov 文本为准，不凭标题推定条款。\n处于委员会交付阶段，无表决安排，按一般提案规律成案概率约 5%–10%。\n对市场意味着什么：无直接定价影响。参众两院同步提出提示议题具备两党共识基础，但缺乏摘要与文本支撑，不预设受益行业。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "SCREENS Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10850",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "title_cn": "SCREENS 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院版《SCREENS 法案》，由艾奥瓦州共和党众议员阿什利·辛森于 2026 年 10 月 19 日提出，交付能源与商业委员会，并分送筹款委员会在议长后续确定的期限内审议。\n与众议院版对应的参议院版本（S.5520）由格拉斯利提出并交付卫生、教育、劳工与养老金委员会，构成两院同步推进。\n分送筹款委员会提示法案可能含支付、医保或税收相关条款，若最终确认，审议层级与周期将相应延长。\n缩略语全称与实体规则官方摘要未取得，具体以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若涉及医保支付规则调整，将影响相关服务方的收入结构，惟当前无文本依据，不推定方向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Proposing an amendment to the Constitution of the United States extending the right to vote to citizens sixteen years of age or older.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/16",
+      "source": "国会官网",
+      "kind": "众院联合决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "关于将选举权年龄降至十六周岁的宪法修正案联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院联合决议第 16 号，交付众议院司法委员会，属宪法修正案类提案。\n决议提议修改美国宪法，将选举权的最低年龄由 18 岁下调至 16 岁。\n宪法修正案须经参众两院各三分之二多数通过，并由四分之三州（38 州）批准，程序门槛远高于普通立法，历史通过率极低。\n仅交付委员会，未安排听证或表决，实质推进可能性很小。\n对市场意味着什么：无直接定价影响。选举权年龄属宪制安排，不涉及财政、税收或行业监管，对资产价格无传导路径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Recognizing the significance of equal pay and the pay disparity between disabled women and both disabled and nondisabled men.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/829",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "title_cn": "关于承认残疾女性与男性薪酬差距问题的决议",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 829 号，由佛罗里达州民主党众议员谢拉·切尔菲勒斯-麦科米克提出，交付教育与劳动力委员会。\n决议旨在唤起对同工同酬问题的关注，重点指向残疾女性相对于残疾男性及非残疾男性的薪酬差距。\n属表达国会立场的决议，不具法律约束力，不设定薪酬标准或执法机制。\n决议自 2025 年 10 月提出后无进一步程序动作，仍停留在委员会阶段。\n对市场意味着什么：无直接定价影响。决议不改变《公平劳动标准法》框架下的薪酬义务，对企业用工成本无实质约束。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "No Leniency for Fentanyl Dealers Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9937",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Energy and Commerce, and Oversight and Government Reform, for a period to be subsequently determine",
+      "title_cn": "不宽宥芬太尼贩运者法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《不宽宥芬太尼贩运者法案》，交付众议院司法委员会并分送能源与商业、监督与政府改革委员会。\n法案下调触发强制最低刑期的毒品数量门槛：芬太尼由 400 克降至 20 克，芬太尼类似物由 100 克降至 5 克，适用于高层级初犯或累犯；另将较低层级门槛由 40 克降至 2 克、类似物由 10 克降至 0.5 克。\n实质是将同等数量行为的量刑档次整体上移，扩大强制最低刑期的适用范围。\n法案须经司法委员会审议及全院表决，量刑类立法通常伴随成本评估与监狱容量的争议。\n对市场意味着什么：无直接定价影响。量刑调整不改变芬太尼的管制等级与执法权限，对相关化工与制药企业的合规义务无新增要求。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Proposing an amendment to the Constitution of the United States relating to the authority of Congress and the States to regulate contributions and expenditures intended to affect elections and to enact public financing systems for political campaigns.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/122",
+      "source": "国会官网",
+      "kind": "众院联合决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "关于授权国会与各州规制竞选筹款并建立公共竞选融资制度的宪法修正案联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院联合决议第 122 号，交付司法委员会，属竞选资金领域的宪法修正案提案。\n拟授权国会与各州对候选人为影响选举而筹募与支出的资金进行规制，并施加合理的观点中立限制；同时授权建立公共竞选融资制度，通过增加公共资金对冲私人财富的影响。\n该提案实质回应最高法院在联合公民案等判例中确立的「政治支出属受宪法第一修正案保护的言论」立场，试图以修宪方式推翻判例。\n修宪须两院三分之二多数及 38 州批准，程序门槛极高，短期内无通过可能。\n对市场意味着什么：无直接定价影响。政治捐款规则若变更可能影响政治行动委员会与相关中介的业务，但修宪路径在可预见期内不可行，不构成任何现金流预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Proposing an amendment to the Constitution of the United States relating to contributions and expenditures intended to affect elections.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/121",
+      "source": "国会官网",
+      "kind": "众院联合决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "关于规制影响选举的捐款与支出的宪法修正案联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院联合决议第 121 号，交付司法委员会，属竞选资金宪法修正案提案。\n拟授权国会与各州对候选人及其他主体为影响选举而筹募与支出的资金设定合理上限，并授权以立法方式实施与执行。\n与第 122 号决议的差异在于：本决议明确允许区分自然人与公司等法律拟制实体，包括禁止公司类实体为影响选举支出资金；第 122 号则侧重公共竞选融资制度。\n两案并行提出，构成民主党阵营在竞选资金议题上的成套方案。\n修宪须两院三分之二多数与 38 州批准，实际通过可能性极低。\n对市场意味着什么：无直接定价影响。若企业政治支出受限将影响相关游说与政治咨询行业，但修宪路径在可预见期内不可行。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Suicide Prevention Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1062",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions. (Sponsor introductory remarks on measure: CR S1747)",
+      "title_cn": "预防自杀法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《预防自杀法案》，由参议员提出并在二读后交付卫生、教育、劳工与养老金委员会，提案人作开场发言并载入国会记录。\n法案设立两项拨款计划：疾病控制与预防中心向州、地方及部落卫生部门提供资助，用于扩大自伤行为的监测范围；药物滥用与心理健康服务局向医院急诊科提供资助，用于在患者出院后开展自杀未遂预防项目。\n设计逻辑是补齐两个薄弱环节——自伤数据的系统性监测，以及急诊出院后的高风险窗口期干预。\n属授权型法案，须经委员会审议与后续拨款程序方能形成实际支出。\n对市场意味着什么：无直接定价影响。拨款规模有限且流向公共卫生部门，对医疗服务上市公司收入结构影响可忽略。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Proposing an amendment to the Constitution of the United States to prohibit voting in Federal, State, or local elections by individuals who are not citizens of the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/107",
+      "source": "国会官网",
+      "kind": "众院联合决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "关于禁止非美国公民参加联邦、州及地方选举投票的宪法修正案联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院联合决议第 107 号，交付司法委员会，属选举资格领域的宪法修正案提案。\n拟明确禁止非美国公民在联邦、州或地方公职选举中投票，亦禁止就美国境内任何公投或复决事项投票。\n现行制度下，非公民在联邦选举中投票本已属违法，各州对地方选举的投票资格规定不一；本提案意在以宪法层级统一排除地方层面的非公民投票安排。\n修宪须两院三分之二多数及 38 州批准，程序门槛极高。\n对市场意味着什么：无直接定价影响。选举资格属宪制与州权议题，不涉及财政或行业监管，对资产价格无传导路径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Denouncing the horrors of socialism.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/58",
+      "source": "国会官网",
+      "kind": "众院共同决议",
+      "agency": "众议院 · Received in the Senate.",
+      "title_cn": "谴责社会主义之祸的共识决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院共同决议第 58 号，主题为谴责社会主义并反对在美国实施社会主义政策。\n当前程序状态为「已送参议院」（Received in the Senate），即众议院已完成审议并移送，参议院尚未安排进一步程序。\n共同决议须两院共同通过，但不具法律效力，不改变任何现行法律或预算安排。\n该决议属政治表态类文件，通常在选举周期内用于凝聚阵营立场，实质政策含义有限。\n对市场意味着什么：无直接定价影响。决议不产生法律义务或财政效果，对政策预期亦无实质指引。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Honoring Wadee Alfayoumi, a 6-year-old Palestinian-American boy, murdered as a victim of a hate crime for his Palestinian-Muslim identity, in the State of Illinois.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/57",
+      "source": "国会官网",
+      "kind": "众院共同决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "纪念伊利诺伊州遭仇恨犯罪杀害的巴勒斯坦裔男童瓦迪·法尤米的共识决议",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院共同决议第 57 号，由伊利诺伊州民主党众议员德莉娅·拉米雷斯提出，交付司法委员会。\n决议纪念在伊利诺伊州因巴勒斯坦-穆斯林身份遭仇恨犯罪杀害的六岁巴勒斯坦裔美国男童瓦迪·法尤米。\n属纪念与谴责类共同决议，不设制裁、不改变执法权限，亦不涉及联邦拨款。\n自 2025 年 10 月提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。决议属表达性文件，对外交政策与国内执法均无约束力。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Disability and Age in Jury Service Nondiscrimination Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/5096",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "陪审团服务中禁止年龄与残疾歧视法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《陪审团服务中禁止年龄与残疾歧视法案》，交付众议院司法委员会。\n法案禁止以残疾或年龄为由将个人排除于陪审团服务之外。\n进一步规定：对未满足特定资格条件（如英语能力达到充分水平）者，若可通过合理便利安排予以弥补，不得因其残疾而取消陪审资格。\n实质是把《美国残疾人法》的合理便利原则延伸至陪审员召集环节，义务主体为联邦法院系统的陪审团管理程序。\n须经司法委员会审议与全院表决，属低争议度的程序性权利法案。\n对市场意味着什么：无直接定价影响。义务主体为法院系统而非企业，不产生企业合规成本。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "ATTAIN Mental Health Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1878",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "title_cn": "ATTAIN 心理健康法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《ATTAIN 心理健康法案》（全称《2025 年心理健康信息导航全面透明与可及法案》），二读后交付卫生、教育、劳工与养老金委员会。\n要求卫生与公众服务部建立在线数据看板，集中披露心理健康与物质使用障碍领域的联邦资助信息。\n看板须具备可检索、及时更新两项特性，并标明各资助项目的申请期处于开放或关闭状态；同时须纳入州级配套项目与次级拨款信息。\n立法意图是降低申请方搜寻联邦心理健康资金的的信息成本，属信息基础设施类条款，不新增拨款授权。\n对市场意味着什么：无直接定价影响。法案不改变资金总量，仅改善信息可得性，对相关服务机构的收入预期无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Expressing the sense of Congress that tax-exempt fraternal benefit societies have historically provided and continue to provide critical benefits to the people and communities of the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/4",
+      "source": "国会官网",
+      "kind": "众院共同决议",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "title_cn": "关于承认免税兄弟互助会历史与现实贡献的国会意见共识决议",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院共同决议第 4 号，交付筹款委员会，主题为免税兄弟互助会的社会经济作用。\n决议表达国会立场：免税兄弟互助会构成私人的经济与社会支持体系，向其成员提供福利对于支撑志愿分会的慈善与互助活动具有必要性，其工作应继续受到鼓励。\n背景是该类组织依据税法第 501(c)(8) 条享受免税待遇，其免税资格的合理性长期受税务委员会关注。\n决议不具法律效力，不改变免税资格标准，亦不涉及具体税收条款修订。\n对市场意味着什么：无直接定价影响。决议若形成跨党派共识，可降低该类组织免税地位被立法调整的概率，对寿险与互助福利类机构的监管预期有微弱稳定作用，但不构成定价事件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Preventing Child Trafficking Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1049",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "2025 年防止儿童贩运法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年防止儿童贩运法案》，当前程序状态为「留存于议席」（Held at the desk），即已过参议院二读但未交付委员会，由议席保管。\n要求司法部受害者犯罪办公室与卫生与公众服务部人口贩运办公室协作，继续落实政府问责局《儿童贩运：应对公众意识与幸存者支持挑战》报告中的反贩运建议。\n具体义务包括：共同制定并实施儿童贩运预防策略，协调对幸存者的服务供给。\n属跨部门协作型授权法案，不新设大型拨款项目，执行依赖既有资源。\n对市场意味着什么：无直接定价影响。法案指向政府内部协作机制，不涉及企业合规义务或行业准入。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Less Bureaucracy, Better Tribal Education Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9604",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported (Amended) by the Yeas and Nays: 20 - 15.",
+      "title_cn": "减少官僚程序改善部落教育法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《减少官僚程序改善部落教育法案》，2026 年 10 月以口头表决后的记名投票 20 票赞成、15 票反对获委员会修正通过并提交全院。\n法案将印第安基础教育、高等教育、职业与技术教育及职业康复相关的职能与权限，由教育部整体移交内政部。\n移交范围为法案生效前教育部行使的全部相关职能；背景是 2025 年 11 月教育部与内政部已就由内政部管理相关竞赛、提供技术服务达成跨部门协议。\n20 比 15 的接近票数显示委员会内部分歧明显，主要争议集中于部落咨询机制与项目连续性。\n对市场意味着什么：无直接定价影响。部落教育拨款总量不变，变化在管理机构；若内政部采用不同的采购与承包规则，可能影响承接部落教育项目的服务商，惟方向不确定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Federal Water Pollution Control Act with respect to San Francisco Bay restoration, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1382",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 749.",
+      "title_cn": "修订《联邦水污染控制法》旧金山湾修复条款的法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】第 119 届国会众议院法案 H.R.1382，由加利福尼亚州第 2 选区民主党众议员贾里德·赫夫曼于 2025 年 2 月 14 日提出，标题为修订《联邦水污染控制法》（通称《清洁水法》）中关于旧金山湾修复的条款。2026 年 10 月 22 日，该法案被列入联合议程第 749 号（Union Calendar No. 749）。联合议程用于涉及拨款或税收事项、须由全院委员会审议的法案，列入该议程意味着法案已完成委员会审议，具备提交众议院全院表决的程序条件。旧金山湾修复长期依托《清洁水法》第 320 条的国家河口计划框架，由环境保护署牵头、旧金山湾河口伙伴关系实施；此类修订案通常涉及授权期限、资金用途或伙伴关系治理结构的调整。\n\n【核心内容】官方摘要尚未取得，具体条款以 congress.gov 公布的法案文本为准。从程序信息可确认三点：其一，法案自提出至列入联合议程历时约二十个月，走完了委员会审议与议程排定流程，在同类地方性环境法案中进度靠前；其二，列入联合议程而非私人议程，提示法案含拨款授权或财政收入相关条款，须在全院委员会框架下审议；其三，法案以修订现行条款的方式推进，属存量法律框架内的授权调整，而非创设新的监管体系。授权额度、执行主体与期限等实体内容在文本公布前无法确认，不宜按标题推定授权规模。\n\n【要点提炼】一、这是第 119 届国会中少数进入全院议程的环境类地方性法案，程序进度明显快于同类提案。二、立法路径为修订《清洁水法》既有条款，政策边际变化集中在资金授权与项目实施机制，不改变水质监管的总体框架。三、旧金山湾修复资金主要流向湿地恢复、水质监测与河口生态工程，承包与工程服务需求集中于加州本地，外溢范围有限。四、法案仍需众议院表决、参议院审议及两院协调，任一环节均可能停顿，距离成法尚有多个节点。\n\n【对金融市场的预期影响】总体判断：不构成定价事件，属区域性生态治理议题，对资产价格无直接传导路径。\n受益方向：若最终成法并附带授权额度，加州湾区的水务、生态修复工程与环境监测服务企业可能获得项目机会，但单笔授权规模有限，难以形成行业级盈利预期修正。\n承压方向：暂无可识别的明确承压主体；若条款涉及排放标准或水质要求收紧，湾区工业与港口运营主体可能承担合规成本，惟当前无文本依据。\n关键前提：法案须经众议院表决、参议院对应程序及总统签署，任一环节停顿即终止。\n信号节点：众议院规则委员会排期、全院表决结果、参议院是否提出对应版本、环保署是否同步发布实施指引。\n风险提示：官方摘要与法案文本均未取得，上述判断仅基于程序状态与既有法律框架，具体授权规模与义务条款以 congress.gov 文本为准。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "PREPARE Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2935",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committees on the Judiciary, Ways and Means, Agriculture, and Financial Services, for a period to be subseq",
+      "title_cn": "2025 年 PREPARE 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年 PREPARE 法案》，由俄亥俄州共和党众议员戴维·乔伊斯于 2025 年 4 月 17 日提出，交付能源与商业委员会，并分送司法、筹款、农业与金融服务委员会。\n政策领域标注为犯罪与执法，五委员会分送提示法案涉及跨领域规制，可能同时触及商业行为、执法权限与金融交易环节。\n官方摘要未取得，具体规制对象与工具以 congress.gov 文本为准，不凭缩略语推定条款内容。\n自提出后无进一步程序动作，仍停留于委员会交付阶段。\n对市场意味着什么：无直接定价影响。法案未进入审议程序，且无文本与摘要支撑，不预设任何行业影响方向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Secure Background Checks Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2648",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年强化背景审查法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年强化背景审查法案》，交付众议院司法委员会。\n法案将联邦对枪支弹药接收、持有、运输与携带的限制扩展至两类新增人群：未达联邦法律及本州法律最低年龄要求者；不符合例外情形（如为合法体育用途临时借用或租用枪支）的外州居民。\n同时对跨州运输或转让枪支以规避上述限制的行为设定刑事罚则，最高可处十年监禁、罚金或两者并罚。\n实质是收紧跨州购枪与年龄限制的执行口径，属控枪类立法，历来在参议院面临程序阻力。\n对市场意味着什么：无直接定价影响。法案指向个人持有行为，对枪械制造与零售企业的销售结构可能有边际影响，但成案概率低，不足以改变行业预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Major Richard Star Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2102",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Disability Assistance and Memorial Affairs.",
+      "title_cn": "理查德·斯塔尔少校法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《理查德·斯塔尔少校法案》，当前交付残疾援助与纪念事务小组委员会。\n法案允许有战斗相关伤残的退伍军人，在领取伤残补偿的同时全额领取退休金，不再作抵扣；适用范围包括服役年限不足二十年的战斗伤残退伍军人。\n现行制度下，同时领取战斗相关特别补偿与退休金的退伍军人，其退休金须按并行领取规则作相应扣减。\n该法案属长期推动的退伍军人待遇议题，历届国会均有提出，主要障碍是十年期财政成本估算较高。\n对市场意味着什么：无直接定价影响。若成法将增加联邦退伍军人支出，属财政层面的边际压力，对国防板块企业营收无直接关系。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Combatting Auto Robbery at the Source Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10872",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2026 年从源头打击盗抢机动车法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年从源头打击盗抢机动车法案》，由新泽西州民主党众议员乔什·戈特海默于 2026 年 10 月 22 日提出，交付众议院司法委员会。\n政策领域标注为犯罪与执法，法案名称指向对盗抢机动车链条上游环节的打击，可能涉及销赃渠道、车辆识别号码篡改或跨境运输等环节。\n官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定规制工具与罚则幅度。\n刚提出即交付委员会，尚无听证与表决安排。\n对市场意味着什么：无直接定价影响。若最终涉及车辆识别号码查验或二手车交易登记要求，可能增加经销商与保险理赔环节的合规成本，惟当前无文本依据。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Foreign Robocall Elimination Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6152",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported by the Yeas and Nays: 37 - 0.",
+      "title_cn": "境外自动语音电话治理法案",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《境外自动语音电话治理法案》（Foreign Robocall Elimination Act）为第 119 届国会众议院法案，2026 年 10 月以 37 票赞成、0 票反对获委员会表决通过并提交全院。非法自动语音电话（robocall）治理长期存在两个结构性缺口：一是境外呼叫源不受美国司法管辖，追溯与执法困难；二是语音服务提供商的合规申报环节缺乏经济约束，不合规主体被移出缓解数据库后仍可通过关联实体重新进入美国电话网络。现行制度依据《电话消费者保护法》与联邦通信委员会的 STIR/SHAKEN 框架，本次法案在既有框架上追加财务担保与追溯授权两项工具。\n\n【核心内容】法案修改并扩大联邦通信委员会针对非法自动语音电话的多项计划，并设立跨部门工作组就境外自动语音电话向联邦政府提供建议。第一，要求委员会制定规则，授权对特定语音服务提供商在向自动语音电话缓解数据库提交合规认证前收取保证金；未证明合法经营、未接受充分监管或无力缴纳罚款的提供商可被适用该要求，委员会须为符合条件的合法提供商类别设立豁免。第二，调整追溯联合体（traceback consortium）相关安排：为联合体在接收、共享或公布涉嫌欺诈、滥用或非法呼叫信息时提供责任豁免，并授权联合体依据提供商传输或发起非法呼叫、拒绝配合追溯的信息公布提供商名单——现行制度下仅委员会有权公布该名单。第三，设立跨部门工作组，专责境外自动语音电话治理。\n\n【要点提炼】一、治理思路从「事后移除」转向「准入前置」，以保证金提高境外及灰色提供商进入美国电话网络的成本。二、追溯联合体由纯技术协调机构获得准监管职能，可自行公布不合规提供商名单，透明度提升但需配套程序保障。三、37 比 0 的表决结果反映两党在打击境外诈骗电话上高度一致，法案后续程序阻力较小。四、合规成本将向中小型语音服务提供商集中，头部运营商与已建立合规体系的企业相对受益。\n\n【对金融市场的预期影响】总体判断：属通信监管边际收紧，行业影响集中在语音批发与增值服务环节，不构成宏观级定价事件。\n受益方向：合规体系完备的大型电信运营商与反欺诈软件、呼叫认证与号码分析服务商，可能因行业门槛提高获得份额改善；保证金制度亦将压缩灰色转售商的生存空间。\n承压方向：中小型语音批发商、国际长途转售商及依赖境外线路的呼叫中心外包企业，可能面临保证金占用与合规成本上升。\n关键前提：委员会须在法案生效后完成规则制定，保证金适用类别、豁免条件与金额由规则确定，实际影响取决于规则宽松度。\n信号节点：参议院对应立法进展、联邦通信委员会规则制定通知的发布时间与征求意见结果、首批被公布的不合规提供商名单。\n风险提示：法案尚未成法，委员会规则制定通常耗时数月至一年以上；保证金的实际费率与豁免范围未定，不宜据此推算具体企业的成本增量。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Opportunities for Fairness in Farming Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3516",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "title_cn": "2025 年农业公平机会法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年农业公平机会法案》，由南卡罗来纳州共和党众议员南希·梅斯于 2025 年 5 月 20 日提出，交付众议院农业委员会。\n政策领域标注为农业与食品，法案名称指向农业推广与产业推广计划（checkoff）的公平性议题，通常涉及对生产者强制缴纳的推广基金在治理、信息披露与资金使用上的约束。\n官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定规制对象。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。若涉及推广基金治理改革，将影响相关农产品行业协会的资金机制，对上市农业企业无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Chip EQUIP Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6207",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported by the Yeas and Nays: 39 - 0.",
+      "title_cn": "芯片设备（Chip EQUIP）法案",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《芯片设备质量、可用性与完整性保护法案》（Chip Equipment Quality, Usefulness, and Integrity Protection Act，简称 Chip EQUIP Act）为第 119 届国会众议院法案，2026 年 10 月以 39 票赞成、0 票反对获委员会表决通过并提交全院。该法案接续《2022 年芯片与科学法》的产业政策链条：2022 年 8 月成法的《芯片法》为商务部落实《2021 财年国防授权法》中的「美国芯片」条款拨付资金，用于扩建本土半导体制造能力与研发项目。此前补贴工具主要约束受资助企业的扩产行为与对华投资，未直接规范其设备采购来源；本法案将管制节点前移至制造设备的采购环节，属补贴条件工具箱的延伸。\n\n【核心内容】法案禁止接受特定联邦资金的企业，在为受资助项目采购时购买由「受关注外国实体」（例如由中国、伊朗、朝鲜或俄罗斯拥有或控制的公司）及其子公司制造的特定半导体制造设备。商务部须在与受覆盖实体（即接受芯片资金的企业）签订的每份协议条款中，纳入关于项目采购、安装或使用特定半导体制造设备的禁止性规定，禁止期自协议签署之日起十年。同时授权商务部在特定情形下豁免，例如相关设备在美国或盟国、伙伴国未以充足且可合理获得的数量生产，或质量不足以支撑既定或预期产能。\n\n【要点提炼】一、政策工具由「补贴换扩产承诺」扩展为「补贴换供应链来源承诺」，补贴条件覆盖设备采购环节。二、十年禁止期与协议绑定，意味着约束效力跟随项目周期，而非一次性审查。三、豁免条款保留了产能与质量双重例外，为美国及其盟国尚不能替代的成熟制程设备留出空间，实际执行弹性较大。四、39 比 0 的表决结果显示该议题在委员会层面无实质反对，后续程序阻力较低。五、对中国半导体设备厂商而言，直接受影响的是经由受资助项目进入美国市场的通道，而非全球销售。\n\n【对金融市场的预期影响】总体判断：属产业政策工具细化，对半导体设备板块形成结构性、非对称影响，短期不改变行业景气方向。\n受益方向：美国本土及盟国半导体设备厂商，在受资助项目的采购中相对份额提升；设备翻新、二手设备合规认证与供应链溯源服务需求亦可能增加。\n承压方向：中国半导体设备企业对美系受补贴产线的供货通道进一步收窄；同时受资助的芯片制造商面临合规审查成本与设备替换成本上升。\n关键前提：法案须完成众议院全院表决、参议院审议与总统签署；豁免范围由商务部在协议条款中具体界定，执行尺度决定实际约束强度。\n信号节点：众议院全院排期、参议院是否提出对应版本、商务部对既有芯片补贴协议的条款修订通知、豁免申请的首批裁定。\n风险提示：法案尚未成法，且豁免条款留有较大行政裁量空间；对具体企业营收的影响取决于其受资助项目的设备采购结构与替代供应商可得性，不宜线性外推。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Midwives for MOMS Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1599",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "title_cn": "2025 年助产士与母婴服务法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年助产士与母婴服务最大化法案》，二读后交付卫生、教育、劳工与养老金委员会。\n在卫生资源与服务管理局下设资助计划，用于在高等院校与护理学院设立或扩展助产教育项目。\n授标时须特别考虑两类机构：着力增加来自代表性不足群体的助产专业人员数量的机构；推动助产人员在专业医疗资源匮乏地区执业的机构。\n立法意图是缓解产科人力短缺与孕产妇健康结果的地域差异，属人力供给端干预。\n对市场意味着什么：无直接定价影响。资助流向教育机构而非服务企业，且规模有限，对医疗服务板块的收入结构无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Women and Lung Cancer Research and Preventive Services Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1157",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "2025 年女性肺癌研究与预防服务法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年女性肺癌研究与预防服务法案》，当前程序状态为「留存于议席」。\n要求卫生与公众服务部开展跨部门审查，以加速针对女性及服务不足人群的肺癌研究、预防与公众意识提升。\n审查须报告现有研究进展与知识缺口，识别在肺癌病因、预防、筛查、诊断与治疗方面的协同研究机会，并就国家肺癌筛查策略与公众宣传提出建议。\n属研究协调与政策建议类条款，不直接新增大额拨款，落点在联邦研究议程设定。\n对市场意味着什么：无直接定价影响。法案不改变筛查的医保覆盖范围或支付标准，对诊断与影像服务企业的收入无直接关系。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Jordan McNair Student Athlete Heat Fatality Prevention Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2373",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "title_cn": "乔丹·麦克奈尔学生运动员高温致死预防法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "参议院版《乔丹·麦克奈尔学生运动员高温致死预防法案》，由马里兰州民主党参议员安吉拉·阿尔索布鲁克斯于 2025 年 7 月 22 日提出，二读后交付卫生、教育、劳工与养老金委员会。\n政策领域标注为教育，法案以 2018 年马里兰大学橄榄球运动员乔丹·麦克奈尔在训练中因热射病死亡事件命名，指向校际体育训练中的高温安全规范。\n众议院存在同名版本（H.R.4517），两院同步推进。\n官方摘要未取得，具体规范工具（标准制定、披露义务或资助条件）以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若最终设定高校体育训练的高温管理标准，将增加院校的监测设备与人力投入，对体育器材与监测设备供应商可能有边际需求。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Jordan McNair Student Athlete Heat Fatality Prevention Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/4517",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "title_cn": "乔丹·麦克奈尔学生运动员高温致死预防法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院版《乔丹·麦克奈尔学生运动员高温致死预防法案》，由马里兰州民主党众议员奎西·姆富梅于 2025 年 7 月 17 日提出，交付教育与劳动力委员会。\n参议院对应版本（S.2373）由阿尔索布鲁克斯提出并交付卫生、教育、劳工与养老金委员会，构成两院同步提案。\n政策领域标注为教育，法案以学生运动员高温训练致死事件命名，指向校际体育的高温安全管理制度。\n官方摘要未取得，具体规范工具以 congress.gov 文本为准，不凭标题推定标准内容与适用范围。\n对市场意味着什么：无直接定价影响。若涉及训练环境监测与应急处置要求，高校将增加相关设备采购，但规模有限，不足以影响行业预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Save Our Forests Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/950",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Energy and Natural Resources.",
+      "title_cn": "2025 年森林保护法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年森林保护法案》，由亚利桑那州民主党参议员马克·凯利提出，二读后交付能源与自然资源委员会。\n政策领域标注为公共土地与自然资源，法案名称指向森林保护，通常涉及林业管理、野火风险或公有林地的采伐与保护规则。\n官方摘要未取得，具体条款与规制对象以 congress.gov 文本为准，不凭标题推定授权范围。\n自 2025 年 3 月提出后无进一步程序动作，仍停留于委员会交付阶段。\n对市场意味着什么：无直接定价影响。若最终涉及公有林地采伐限制，将影响木材供给与相关加工企业的原料成本，惟当前无文本依据，不预设方向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "National Defense Authorization Act for Fiscal Year 2027",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4784",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Motion to proceed to consideration of measure made in Senate. (CR S4276)",
+      "title_cn": "2027 财年国防授权法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2027 财年国防授权法案》，参议院已提出继续审议该案的动议（Motion to proceed）。\n法案为国防部 2027 财年项目、活动与军事建设设定政策与授权。\n主要内容包括：授权采购飞机、舰船等多类装备；设定现役与预备役人员规模；就军队医疗保障与军人薪酬设定政策。\n国防授权法案为年度必过法案，是观察国防预算规模与采购优先序的核心文本，参议院版本与众议院版本将在协商中确定最终授权额。\n对市场意味着什么：国防授权法案的实质定价影响集中在采办授权与项目排期。程序性动议本身不改变预算总量，但排期推进提示年度授权进程进入实质阶段，对国防承包商订单预期的边际影响取决于最终授权额与项目清单。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Romance Scam Prevention Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2481",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-129.",
+      "title_cn": "婚恋诈骗防治法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《婚恋诈骗防治法案》，已由总统签署成为第 119-129 号公法，完成全部立法程序。\n要求在线约会服务提供者（移动应用或网站）在特定情形下向用户发送「欺诈封禁通知」：用户已在该服务开立账户，且曾通过该服务接收到被封禁用户发送的消息。\n通知须包含：被封禁用户的用户名或其他资料标识；该用户与封禁用户最近一次收发消息的时间；以及说明封禁用户可能构成的欺诈风险。\n义务主体为在线约会平台，属消费者保护领域的披露义务，不涉及刑事罚则设定。\n对市场意味着什么：无直接定价影响。合规成本集中于在线约会平台的账户管理与通知系统改造，涉及主体数量有限，不构成行业级成本冲击。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Honoring the contributions of Indian Americans and supporting the designation of July as \"Indian American Heritage Month\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1641",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "title_cn": "纪念印度裔美国人贡献并支持设立「印度裔美国人传统月」的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1641 号，由伊利诺伊州民主党众议员拉贾·克里希纳穆尔蒂于 2026 年 10 月 26 日提出，交付监督与政府改革委员会。\n决议表彰印度裔美国人的贡献，并支持将 7 月指定为「印度裔美国人传统月」。\n属纪念与表彰类决议，不具法律效力，不涉及拨款或移民政策调整。\n政策领域标注为艺术、文化与宗教，与移民签证、职业移民配额等实质议题无直接关联。\n对市场意味着什么：无直接定价影响。决议为象征性文件，对 H-1B 等签证政策无任何约束力，不应据此推断移民政策取向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "License to Drill Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7831",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-134.",
+      "title_cn": "钻探许可法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《钻探许可法案》（License to Drill Act）为第 119 届国会众议院法案，已由总统签署成为第 119-134 号公法（Public Law No. 119-134），完成全部立法程序。该法案处理的是联邦土地油气许可审批的资金机制问题：土地管理局对每份新的油气许可申请收取处理费，费用划入「土地管理局许可处理改进基金」，用于扩充审批人力与信息化系统。按现行法律，该项收费授权截至 2026 财年末，若不续期，收费机制与配套的审批提速投入将同时失效。\n\n【核心内容】法案将土地管理局收取油气许可处理费的授权延长至 2037 财年。收费结构本身未作调整，仍为每份新申请按标准收取并划入许可处理改进基金，变化在于授权期限由 2026 财年延展至 2037 财年，覆盖十一个财年。法案篇幅简短，属典型的授权期限续期型立法，未改变费率水平、许可标准或环境审查要求。\n\n【要点提炼】一、法案解决的是审批资金机制的连续性，而非许可标准的实体变更，政策边际影响集中在审批时效而非准入门槛。二、十一年的授权窗口为企业提供了跨周期的审批预期，降低因授权到期导致的审批中断风险。三、许可处理改进基金的去向是审批人力与系统建设，间接影响联邦土地许可的周转速度。四、法案已成法，后续观察点转向土地管理局的实际许可发放节奏与费率是否调整。\n\n【对金融市场的预期影响】总体判断：已成法的技术性续期，对油气价格与板块估值无直接定价影响，影响路径限于审批时效与资本开支节奏。\n受益方向：在联邦土地持有较多未开发租约的独立油气生产商，审批确定性提升有助于将储量转化为产能；油气工程服务与钻井承包商亦可能间接受益于许可周转加快。\n承压方向：暂无明显承压主体；若审批提速带来联邦土地产量上升，边际上对价格形成微弱压力，但幅度可忽略。\n关键前提：实际效果取决于土地管理局的人员配备与审批能力，授权续期本身不保证许可发放量增加。\n信号节点：土地管理局年度许可发放统计、内政部是否调整收费标准、联邦土地租约拍卖节奏。\n风险提示：法案仅延长收费授权，未改变环境审查与司法挑战等非资金约束，审批周期改善幅度可能低于预期。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "A resolution designating September 2025 as \"National Child Awareness Month\" to promote awareness of charities that benefit children as well as youth-serving organizations throughout the United States and recognizing the efforts made by those charities and organizations on behalf of children and youth as critical contributions to the future of the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/414",
+      "source": "国会官网",
+      "kind": "参议院决议",
+      "agency": "参议院 · Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6798; text: CR S6794)",
+      "title_cn": "指定 2025 年 9 月为「全国儿童关爱月」的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "参议院决议第 414 号，由参议员兰克福德提出，2025 年 9 月 19 日经一致同意、无需修正并以序言通过，已完成参议院程序。\n决议将 2025 年 9 月指定为「全国儿童关爱月」，旨在提升对服务儿童的慈善机构及青年服务组织的关注。\n决议同时肯定上述机构在儿童与青少年事务上的努力，视为对美国未来的重要贡献。\n属参议院单院决议，不具法律效力，不产生拨款或监管义务。\n对市场意味着什么：无直接定价影响。纯象征性决议，对非营利部门资金流向与相关企业均无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "A resolution designating September 2026 as \"National Child Awareness Month\" to promote awareness of charities that benefit children as well as youth-serving organizations throughout the United States and recognizing the efforts made by those charities and organizations on behalf of children and youth as critical contributions to the future of the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/845",
+      "source": "国会官网",
+      "kind": "参议院决议",
+      "agency": "参议院 · Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553; text: CR S4569)",
+      "title_cn": "指定 2026 年 9 月为「全国儿童关爱月」的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "参议院决议第 845 号，由参议员兰克福德提出，2026 年 8 月 7 日经一致同意、无需修正并以序言通过，已完成参议院程序。\n决议将 2026 年 9 月指定为「全国儿童关爱月」，内容与上一年度同名决议（S.Res.414）一致，属年度例行指定。\n决议旨在提升对服务儿童的慈善机构及全美青年服务组织的关注，并肯定其在儿童与青少年事务上的贡献。\n属参议院单院决议，不具法律效力，不涉及拨款。\n对市场意味着什么：无直接定价影响。年度例行象征性决议，无政策与资金含义。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Romance Scam Prevention Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/841",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 145.",
+      "title_cn": "婚恋诈骗防治法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "参议院版《婚恋诈骗防治法案》，已列入参议院立法议程一般命令第 145 号，具备全院审议条件。\n要求在线约会服务提供者在用户已开户且曾收到被封禁用户消息的情形下，向该用户发送欺诈封禁通知。\n通知须载明被封禁用户的标识、双方最近一次通信时间，并说明该用户可能存在的欺诈风险。\n众议院同名版本（H.R.2481）已由总统签署成为第 119-129 号公法，参议院版本属程序性并轨收尾。\n对市场意味着什么：无直接定价影响。义务已由成法的众议院版本确立，参议院版本不新增实质义务，合规成本集中在在线约会平台的账户与通知系统。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Critical Infrastructure Manufacturing Feasibility Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1721",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-127.",
+      "title_cn": "关键基础设施制造业可行性法案",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《关键基础设施制造业可行性法案》，已由总统签署成为第 119-127 号公法，完成全部立法程序。\n要求商务部研究并报告关键基础设施领域的高需求产品。关键基础设施部门指其资产、系统与网络对国家安全、经济、公共卫生或安全具有关键意义的部门。\n研究须识别因制造能力、材料或供应链约束而依赖进口的高需求产品，并分析本土化生产的成本、收益与可行性。\n属研究评估类立法，不直接设补贴或采购要求，落点在为后续产业政策提供依据。\n对市场意味着什么：无直接定价影响。法案仅产生研究报告，不改变关税、补贴或采购规则；若报告指向特定品类的供应链缺口，可能为后续立法提供依据，属中期观察线索。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Animal Health Protection Act to establish a U.S. Swine health improvement plan as a voluntary program to be administered by the Secretary of Agriculture in cooperation with the States and the swine industry to prevent the introduction into the United States of, and to monitor for, diseases that threaten swine health, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10911",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "title_cn": "修订《动物卫生保护法》设立美国猪群健康改善自愿计划的法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由俄亥俄州民主党众议员马西·卡普图尔于 2026 年 10 月 26 日提出，交付众议院农业委员会。\n法案修订《动物卫生保护法》，设立「美国猪群健康改善计划」，作为由农业部长会同各州及养猪业界实施的自愿性计划。\n计划目标是防止威胁猪群健康的疫病传入美国，并建立相应的监测机制。\n自愿性定位意味着不构成强制免疫或强制扑杀义务，参与主体以养殖企业与州级动物卫生机构为主。\n对市场意味着什么：无直接定价影响。若计划落地将提升猪群疫病监测覆盖率，间接影响生猪期货的价格波动预期与养殖企业的防疫成本，惟法案尚在委员会阶段且无拨款条款。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "TAS Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5441",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 670.",
+      "title_cn": "TAS 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《纳税人协助与服务法案》（TAS Act），已列入参议院立法议程一般命令第 670 号。\n法案对联邦税务管理、纳税服务与争议解决机制作多项调整：扩大美国税务法院的权限，为特定有偿报税代理人设定执业标准。\n扩大电子报税适用范围，并要求国税局将纸质报税表与往来函件数字化。\n要求国税局建立电话等待时间看板、扩大纳税人获取报税信息与其他税务信息的渠道，并按季度发送欠税提醒。\n对市场意味着什么：无直接定价影响。法案不改变税率与税基，影响集中在纳税服务效率与合规便利度；电子报税与函件数字化要求对报税软件与文档处理服务商形成边际需求，规模取决于后续拨款。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Lower Elwha Klallam Tribe Project Lands Restoration Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1513",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 554.",
+      "title_cn": "下埃尔瓦克拉勒姆部落项目土地修复法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《下埃尔瓦克拉勒姆部落项目土地修复法案》（Lower Elwha Klallam Tribe Project Lands Restoration Act）为第 119 届国会参议院法案，2026 年 10 月列入参议院立法议程一般命令第 554 号（Calendar No. 554），具备全院审议条件。该法案处理的是华盛顿州埃尔瓦河（Elwha River）流域的土地权属问题。埃尔瓦河上的两座水坝于 2011 至 2014 年间拆除，是当时美国规模最大的河流生态修复工程；坝址及周边原项目用地在联邦与部落之间的权属安排长期未完全落定，需通过立法将特定地块纳入部落信托。\n\n【核心内容】法案将华盛顿州约 1,082.63 英亩的特定土地纳入信托，为下埃尔瓦克拉勒姆部落的利益持有，纳入信托的土地成为该部落保留地的一部分。同时，法案明确禁止在纳入信托的土地上进行博彩活动。这一禁止性条款是国会审议印第安土地信托法案时的常见安排，目的在于回应地方政府对新增博彩设施分流税收与客源的关切。\n\n【要点提炼】一、法案属土地权属确认型立法，不涉及拨款，政策成本极低，此类法案通常以一致同意方式通过。二、面积约 1,082.63 英亩，与埃尔瓦河修复工程的原项目用地相对应，属历史遗留问题的收尾处理。三、禁止博彩条款消除了地方政府的主要反对理由，但同时也排除了部落通过博彩业务获取现金流的可能。四、参议院已排入立法议程，后续需全院审议与众议院对应版本（H.R.2388，已成法）协调。\n\n【对金融市场的预期影响】总体判断：无直接定价影响，属土地权属与部落治理事项，不涉及财政支出或行业监管变更。\n受益方向：无可识别的上市主体受益；相关影响限于部落土地管理权与流域生态修复的长期治理安排。\n承压方向：无明确承压主体；禁止博彩条款使该地块不具备开发 casino 类项目的可能，对区域博彩竞争格局无实质改变。\n关键前提：参议院全院审议通过后，须与众议院已成的第 119-128 号公法版本协调，最终以两院一致文本送签。\n信号节点：参议院全院表决安排、两院文本差异的处理方式、内政部土地信托登记时点。\n风险提示：参议院版本与已成法的众议院版本在实体条款上基本一致，但程序上仍需完成参议院环节，存在因议程拥挤而未获排期的可能。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Lower Elwha Klallam Tribe Project Lands Restoration Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2388",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-128.",
+      "title_cn": "下埃尔瓦克拉勒姆部落项目土地修复法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《下埃尔瓦克拉勒姆部落项目土地修复法案》为第 119 届国会众议院法案，已由总统签署成为第 119-128 号公法（Public Law No. 119-128），完成全部立法程序。法案针对华盛顿州埃尔瓦河流域的土地权属安排：该河两座水坝于 2011 至 2014 年拆除，为美国历史上规模最大的河流生态修复项目之一，坝址及原项目用地在联邦与下埃尔瓦克拉勒姆部落之间的权属长期未落定，需以立法方式将特定地块纳入部落信托。此类私法案性质的印第安土地信托立法通常不涉及拨款，审议周期短、阻力小。\n\n【核心内容】法案将华盛顿州约 1,082.63 英亩的特定土地纳入信托，为下埃尔瓦克拉勒姆部落的利益持有，并成为该部落保留地的一部分。法案同时禁止在纳入信托的土地上进行博彩活动。该禁止性条款回应了州与地方政府对新增博彩设施分流税收的关切，是此类法案获得跨党派支持的常见对价安排；相对地，部落亦因此放弃在该地块开发博彩业务的权利。\n\n【要点提炼】一、法案已成法，法律状态确定，后续观察点转向内政部土地信托登记与地籍调整的实际执行。二、面积约 1,082.63 英亩，与埃尔瓦河修复工程原项目用地对应，属历史遗留权属问题的收尾。三、禁止博彩条款使法案不具备改变区域博彩市场格局的效应，政策外部性极小。四、参议院存在对应版本（S.1513）仍在立法议程中，两院文本一致，参议院环节属程序性收尾。\n\n【对金融市场的预期影响】总体判断：无直接定价影响。法案不涉及联邦拨款、税收或行业监管变更，属土地权属确认事项，对资产定价无可传导路径。\n受益方向：无可识别的上市主体受益；长期影响限于部落保留地范围扩大与流域生态治理的权属基础明确化。\n承压方向：无明确承压主体；禁止博彩条款排除了该地块的博彩开发可能，对区域博彩运营商竞争格局无实质影响。\n关键前提：内政部完成土地信托登记后，权属安排方实际生效；登记时点取决于部门工作排期。\n信号节点：内政部印第安事务局信托登记公告、参议院对应版本的处理结果、部落后续土地管理计划。\n风险提示：法案已成法，法律不确定性基本消除；剩余风险限于执行层面的登记延迟，对市场无实质影响。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Commerce, Justice, Science, and Related Agencies Appropriations Act, 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2354",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 122.",
+      "title_cn": "2026 财年商务、司法、科学及相关机构拨款法案",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《2026 财年商务、司法、科学及相关机构拨款法案》为第 119 届国会参议院拨款法案，2026 年 10 月列入参议院立法议程一般命令第 122 号（Calendar No. 122）。该法案属十二项年度拨款法案之一，为商务部、司法部、科学机构及若干相关独立机构提供 2026 财年可自由裁量支出。由于 2026 财年已开始，此类法案的审议进度直接关系到相关机构是按年度拨款法案、持续决议还是其他临时机制获得资金，因而具有超越部门预算的宏观财政含义。\n\n【核心内容】法案为商务部多个下属机构提供拨款，包括国际贸易管理局、工业与安全局、经济发展局、少数族裔企业发展局、经济与统计分析的各相关办公室、人口普查局、国家电信与信息管理局、专利商标局、国家标准与技术研究院、国家海洋与大气管理局及部级管理。为司法部提供拨款，涵盖司法运作管理与问责、移民审查执行办公室、监察长办公室、美国假释委员会、法律事务、法警局、国家安全司、跨机构执法、联邦调查局、缉毒局、烟酒枪炮及爆炸物管理局及联邦监狱系统；并为州与地方执法活动提供拨款，含暴力侵害妇女办公室、司法项目办公室与社区导向警务服务。为科学机构提供拨款，含科技政策办公室、国家太空委员会、国家航空航天局与国家科学基金会。此外为多个相关机构提供拨款，包括民权委员会与平等就业机会委员会等。\n\n【要点提炼】一、法案覆盖商务、司法与科学三大板块，其中工业与安全局（出口管制）、国家标准与技术研究院（技术标准）与人口普查局（统计基准）三项与市场关联度最高。二、司法部拨款含移民审查执行办公室与联邦监狱系统，反映执法与移民审理资源的配置取向。三、法案处于参议院议程排定阶段，尚未全院表决，与 2026 财年已开始的时间点形成张力，临时拨款机制的可能性上升。四、拨款法案的最终形态通常在参众两院协商后确定，委员会版本的数字不具终局性。\n\n【对金融市场的预期影响】总体判断：属常规年度拨款程序，单独不构成定价事件，但作为财政程序节点具有风险提示意义。\n受益方向：若法案按委员会版本推进，出口管制执法、标准制定与统计能力相关的技术服务与合规咨询需求保持稳定；国家科学基金会与航天项目相关承包商的资金确定性提升。\n承压方向：若拨款水平低于预期或长期依赖持续决议，相关机构将推迟采购与招标，承包商收入确认时点后移。\n关键前提：法案须完成参议院全院表决并与众议院对应版本协商；若无拨款法案成法，机构将按持续决议水平运行。\n信号节点：参议院全院排期、众议院对应法案进度、临时拨款法案的通过时点与期限、工业与安全局与国家标准与技术研究院的最终拨款额。\n风险提示：委员会版本金额与最终成法金额差异可能较大；拨款僵局导致的政府停摆风险无法从本法案单项信息推断，须结合整体财政谈判判断。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To require the Secretary of Agriculture and the Secretary of the Interior to jointly develop a strategy to increase the use of aquatic restoration and conservation activities in wildfire risk mitigation and post-fire recovery efforts, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10916",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for conside",
+      "title_cn": "关于将水生生态修复纳入野火风险减缓与灾后恢复工作的法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由科罗拉多州民主党众议员乔·内古斯于 2026 年 10 月 26 日提出，交付自然资源委员会，并分送农业委员会。\n法案要求农业部长与内政部长共同制定战略，在野火风险减缓与火灾后恢复工作中扩大水生生态修复与保护措施的应用。\n立法逻辑是将河岸带、湿地与水源地的修复纳入野火管理，视水生生态为降低火险与加快灾后恢复的组成部分。\n属跨部门战略制定类条款，不直接设定拨款额度，实施依赖既有野火管理与水资源项目的资金整合。\n对市场意味着什么：无直接定价影响。若战略落地，生态修复工程与水文监测服务需求可能增加，规模取决于后续拨款；对木材与公用事业板块无直接传导。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Food, Agriculture, Conservation, and Trade Act of 1990 to improve assistance for socially disadvantaged farmers and ranchers and veteran farmers and ranchers, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10914",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "title_cn": "修订《1990 年食品、农业、保护与贸易法》改善弱势农户与退伍军人农户援助的法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由弗吉尼亚州民主党众议员詹妮弗·麦克莱伦于 2026 年 10 月 26 日提出，交付众议院农业委员会。\n法案修订《1990 年食品、农业、保护与贸易法》，改进对「社会弱势农户与牧场主」及「退伍军人农户与牧场主」的援助安排。\n该法第 2501 条设立外联与援助计划，为上述群体提供技术协助、信贷渠道与土地获取支持；本修正案指向援助机制的改进而非新建计划。\n官方摘要未取得，具体调整内容（申请条件、资金分配或服务范围）以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。援助对象为个体农户，不改变大宗农产品价格支持水平，对农业上市公司无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To direct the Secretary of Agriculture to select and implement landscape-scale forest restoration projects, to assist communities in increasing their resilience to wildfire, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10917",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Agriculture, and in addition to the Committees on Natural Resources, Energy and Commerce, and Education and Workforce, for a period to be subsequently ",
+      "title_cn": "关于实施大规模森林景观修复以提升社区抗火能力的法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由加利福尼亚州民主党众议员吉米·帕内塔于 2026 年 10 月 26 日提出，交付农业委员会，并分送自然资源、能源与商业、教育与劳动力委员会。\n法案要求农业部长遴选并实施「景观尺度」森林修复项目，以协助社区提升对野火的抵御能力。\n「景观尺度」强调跨地块、跨所有权的大范围治理，通常涉及国家森林、私人林地与社区交界带（WUI）的协同处理。\n四委员会分送提示法案涉及土地管理、能源与环境许可及劳动力多个面向，审议周期较长。\n对市场意味着什么：无直接定价影响。若项目落地将带动林木处理、机械作业与生物质利用需求，对林业与工程服务企业构成边际机会，规模取决于后续拨款与项目范围。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Death in Custody Reporting Act of 2013 to require submission of reports to the Director of the Bureau of Justice Statistics, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10909",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Homeland Security, and Energy and Commerce, for a period to be subsequently determined by the Speak",
+      "title_cn": "修订《2013 年在押死亡报告法》规范报告报送的法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由田纳西州民主党众议员史蒂夫·科恩于 2026 年 10 月 26 日提出，交付司法委员会，并分送国土安全委员会与能源与商业委员会。\n法案修订《2013 年在押死亡报告法》，要求向司法统计局主任提交相关报告。\n该法原要求接受联邦执法资金的州向司法部报告在押人员死亡情况，本修正案指向报告报送的对象与流程规范。\n三委员会分送提示涉及执法、拘留场所与医疗照护多个环节，官方摘要未取得，具体条款以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。法案针对政府报告义务，不涉及私营拘留设施的经营标准变更；若后续延伸至设施合规审查，可能影响相关运营商的合同条件，惟当前无文本依据。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To require the Director of the National Institute of Standards and Technology to develop new standards, methodologies, and recommendations with respect to the cybersecurity of cloud-based infrastructure, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10915",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Science, Space, and Technology, and in addition to the Committee on Oversight and Government Reform, for a period to be subsequently determined by the ",
+      "title_cn": "关于制定云基础设施网络安全标准与方法的法案",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由共和党众议员提出，2026 年 10 月 26 日交付科学、空间与技术委员会，并分送监督与政府改革委员会。\n法案要求国家标准与技术研究院院长就云基础设施的网络安全制定新的标准、方法与建议。\n落点在标准供给而非直接监管，通常通过联邦采购引用与自愿性框架产生实际约束力。\n官方摘要未取得，标准覆盖范围（云服务架构、供应链、身份认证或数据隔离）以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若标准被联邦采购采纳，云服务商需追加合规认证投入；对已具备 FedRAMP 等资质的大型云厂商相对有利，对中小厂商形成合规门槛。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Federal Food, Drug, and Cosmetic Act to make adulterated food containing certain preservatives, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10913",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "修订《联邦食品、药品和化妆品法》将含特定防腐剂食品认定为掺假食品的法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由南卡罗来纳州共和党众议员南希·梅斯于 2026 年 10 月 26 日提出，交付众议院能源与商业委员会。\n法案修订《联邦食品、药品和化妆品法》，将含特定防腐剂的食品认定为掺假食品。\n该法项下「掺假」认定会直接触发禁止销售与扣押等执法后果，因此本修正案实质是以掺假认定作为特定食品添加剂的禁用工具。\n官方摘要未取得，被列明的防腐剂种类与限量标准以 congress.gov 文本为准，不得凭标题推定。\n对市场意味着什么：无直接定价影响。若特定防腐剂被纳入掺假认定，相关加工食品企业需调整配方，构成配方改造与原料替代成本；具体品类取决于最终列明清单。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Animal Welfare Act to provide for the protection of companion animals held or cared for at certain facilities, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10910",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "title_cn": "修订《动物福利法》加强特定场所伴侣动物保护的法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由加利福尼亚州共和党众议员詹姆斯·加拉格尔于 2026 年 10 月 26 日提出，交付众议院农业委员会。\n法案修订《动物福利法》，为在特定设施中收容或照护的伴侣动物提供保护。\n《动物福利法》现行监管对象主要为用于研究、展览与商业交易中的动物，伴侣动物收容机构（庇护所、繁殖者、寄养设施）的联邦标准覆盖存在差异，本修正案指向该缺口。\n官方摘要未取得，「特定设施」的范围与具体标准以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若收容与繁殖设施纳入联邦许可与检查体系，将增加相关机构的合规成本，对宠物食品与用品板块无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To amend the Arms Export Control Act to address third party transfers of certain defense articles for Ukraine, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10912",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Foreign Affairs.",
+      "title_cn": "修订《武器出口管制法》规范对乌克兰防务物资第三方转让的法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由马萨诸塞州民主党众议员威廉·基廷于 2026 年 10 月 26 日提出，交付众议院外交事务委员会。\n法案修订《武器出口管制法》，处理为乌克兰提供的特定防务物资的第三方转让问题。\n《武器出口管制法》下的第三方转让须经国务院事先同意，本修正案指向对乌军援物资在盟国之间再转让的授权安排。\n官方摘要未取得，涉及物资类别、受让方范围与通报义务的具体设计以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若第三方转让程序简化，可能加快对乌军援物资的流转节奏，对防务承包商订单确认时点有边际影响；不改变军援总量。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To implement Universal Savings Accounts and expand transparency, competition, and patient rights in health care.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10908",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "title_cn": "设立通用储蓄账户并提升医疗透明度与患者权利的法案",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由得克萨斯州共和党众议员迈克尔·克劳德于 2026 年 10 月 26 日提出，交付能源与商业委员会，并分送筹款委员会。\n法案包含两项内容：设立「通用储蓄账户」（Universal Savings Accounts），以及提升医疗领域的透明度、竞争与患者权利。\n通用储蓄账户属税收优惠储蓄工具，通常允许个人以税后资金存入并免税增值、灵活支取；相关税收条款由筹款委员会管辖。\n医疗部分指向价格透明、市场准入与患者选择权，具体工具官方摘要未取得。\n对市场意味着什么：无直接定价影响。若通用储蓄账户成法，将影响资产管理机构的存款类产品设计与资金流向；医疗透明条款若落地将影响保险与医院定价披露义务，惟当前无文本依据。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Supporting the designation of October 26, 2026, as the \"Day of the Deployed\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1639",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Armed Services.",
+      "title_cn": "支持将 2026 年 10 月 26 日定为「驻外服役者日」的决议",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1639 号，由密苏里州民主党众议员韦斯利·贝尔于 2026 年 10 月 26 日提出，交付武装部队委员会。\n决议支持将 2026 年 10 月 26 日指定为「驻外服役者日」，属对海外部署军人的纪念性安排。\n不具法律效力，不涉及军人薪酬、福利或部署授权。\n刚提出并交付委员会，尚无进一步程序安排。\n对市场意味着什么：无直接定价影响。纯纪念性决议，对国防预算与承包商订单无任何影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Health Equity and Accountability Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9877",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Health.",
+      "title_cn": "2026 年健康公平与问责法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年健康公平与问责法案》，由加利福尼亚州民主党众议员劳尔·鲁伊斯于 2026 年 7 月 22 日提出，2026 年 9 月 29 日交付卫生小组委员会。\n法案以缩小不同人群间的健康结果差异为目标，属综合性卫生政策提案。\n此类法案通常涵盖数据收集与分类、少数群体健康项目授权、医疗服务可及性改进与 workforce 多样化等条款，但官方摘要未取得，具体内容以 congress.gov 文本为准。\n目前处于小组委员会阶段，尚无听证或表决安排，综合型法案的审议周期通常较长。\n对市场意味着什么：无直接定价影响。法案不直接调整医保支付标准，若涉及数据报告义务可能增加医疗机构的信息系统投入；成案概率低，不构成收入预期变化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Defending the Human Rights of Palestinian Children and Families Living Under Israeli Military Occupation Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7545",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Foreign Affairs.",
+      "title_cn": "捍卫以色列军事占领下巴勒斯坦儿童与家庭人权法案",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由明尼苏达州民主党众议员贝蒂·麦科勒姆于 2026 年 2 月 12 日提出，交付众议院外交事务委员会。\n法案标题为捍卫生活在以色列军事占领下的巴勒斯坦儿童与家庭的人权，政策领域标注为国际事务。\n此类法案通常涉及对美援资金用途的限制条件或对特定行为的报告要求，但官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定制裁对象或援助条件。\n自提出后无进一步程序动作，仍停留于委员会阶段，在现届国会通过的可能性很低。\n对市场意味着什么：无直接定价影响。若最终涉及援助条件限制，将影响相关援助承包与地区业务敞口；当前无文本依据，不预设方向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Forced Abortion Prevention and Accountability Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6466",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "防止强迫堕胎与问责法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《防止强迫堕胎与问责法案》，由印第安纳州共和党众议员马克·梅斯默于 2025 年 12 月 4 日提出，交付众议院司法委员会。\n法案政策领域标注为犯罪与执法，指向对强迫他人堕胎行为的刑事化与追责。\n官方摘要未取得，具体罪名设置、构成要件与罚则幅度以 congress.gov 文本为准，不凭标题推定。\n自提出后无进一步程序动作，仍停留于委员会阶段；堕胎相关立法在参议院面临程序阻力。\n对市场意味着什么：无直接定价影响。法案指向个人刑事责任，不涉及医疗服务提供方的支付规则或执业许可，对医疗板块无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Supporting the designation of the week of August 24 through August 28, 2026, as the fourth annual \"National Community Health Worker Awareness Week\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1187",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "支持将 2026 年 8 月 24 日至 28 日定为第四届「全国社区卫生工作者宣传周」的决议",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1187 号，由加利福尼亚州民主党众议员劳尔·鲁伊斯于 2026 年 4 月 16 日提出，交付能源与商业委员会。\n决议支持将 2026 年 8 月 24 日至 28 日指定为第四届「全国社区卫生工作者宣传周」。\n社区卫生工作者在低收入与医疗资源匮乏社区承担健康教育、随访与转介职能，决议意在肯定其在医疗服务链条中的补充作用。\n属表达性决议，不具法律效力，不涉及社区卫生工作者的认证标准、支付方式或拨款。\n对市场意味着什么：无直接定价影响。决议为倡导性文件，与社区卫生服务相关的支付政策需通过医保立法或行政规则推进，本决议不构成政策信号。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Veteran Burial Timeliness and Death Certificate Accountability Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/4398",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Subcommittee Hearings Held",
+      "title_cn": "退伍军人安葬时效与死亡证明问责法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《退伍军人安葬时效与死亡证明问责法案》，由明尼苏达州共和党众议员汤姆·埃默于 2025 年 7 月 15 日提出，2026 年 6 月 30 日举行小组委员会听证。\n法案针对退伍军人安葬办理的时效问题与死亡证明签发环节的问责机制，属退伍军人事务的程序性改进立法。\n小组委员会已举行听证，是该批次中少数进入实质审议环节的退伍军人议题法案。\n官方摘要未取得，具体时效标准、责任主体与考核指标以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。法案指向政府部门办理时效，不涉及殡葬服务采购规则或退伍军人福利金额，对殡葬服务上市企业无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Fresh Start Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3111",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年重新出发法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年重新出发法案》，交付众议院司法委员会。\n法案允许「国家犯罪历史改进计划」（NCHIP）的资助资金用于实施州法规定的特定犯罪记录自动撤销或封存。\nNCHIP 资助原本用于提升州与部落政府犯罪历史记录的质量、完整性与可及性，并保障背景审查系统的有效运行。\n本修正案实质是把资助用途扩展至记录清除环节，将「自动封存」纳入联邦资金支持范围。\n对市场意味着什么：无直接定价影响。若各州据此扩大自动封存范围，背景审查服务商的数据源将出现缺口，可能影响雇佣前筛查的准确性，对人力资源与背景调查行业构成边际成本。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "FAIR Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7480",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "title_cn": "FAIR 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《FAIR 法案》，由弗吉尼亚州民主党众议员詹姆斯·沃金肖于 2026 年 2 月 10 日提出，交付监督与政府改革委员会。\n政策领域标注为政府运作与政治，法案以缩略语命名。\n官方摘要未取得，缩略语全称与规制对象均未获官方确认，具体条款以 congress.gov 文本为准，不凭名称推定内容。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。法案无文本与摘要支撑，且处于委员会交付的初始阶段，不构成任何行业或资产的政策预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Ban Abortion by Mail Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9421",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "禁止邮寄堕胎药物法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《禁止邮寄堕胎药物法案》，由南卡罗来纳州共和党众议员谢里·比格斯于 2026 年 6 月 24 日提出，交付能源与商业委员会。\n法案指向通过邮政渠道或快递方式配送堕胎药物的禁止性规定，属药物流通环节的管制提案。\n官方摘要未取得，具体规制工具（寄递禁令、承运人责任或药房许可）以 congress.gov 文本为准。\n自提出后无进一步程序动作，堕胎相关立法在参议院面临程序阻力，成案可能性低。\n对市场意味着什么：无直接定价影响。若寄递禁令成法，将影响药物分销与邮政、快递承运商的合规流程；当前处于委员会阶段，不足以改变医药流通板块预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "To designate the facility of the United States Postal Service located at 1905 Route 112 in Medford, New York, as the \"Gunnery Sergeant Ruben Santos Post Office Building\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10779",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "title_cn": "将纽约州梅德福 112 号公路 1905 号邮政设施命名为「鲁本·桑托斯军士长邮局」的法案",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "由共和党众议员提出，交付监督与政府改革委员会，属邮政设施命名类法案。\n法案将位于纽约州梅德福 112 号公路 1905 号的美国邮政设施命名为「鲁本·桑托斯军士长邮局大楼」。\n命名法案属礼仪性立法，通常以一致同意方式在两院通过，不涉及邮政设施的经营调整或网络优化。\n不产生拨款，不改变邮政服务的资费或普遍服务义务。\n对市场意味着什么：无直接定价影响。纯命名性法案，对邮政系统运营与相关物流企业无任何影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Zeus 95 Memorial Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10604",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Economic Opportunity.",
+      "title_cn": "宙斯 95 纪念法案",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《宙斯 95 纪念法案》，由华盛顿州民主党众议员金·施里尔于 2026 年 9 月 24 日提出，2026 年 10 月 14 日交付经济机会小组委员会。\n政策领域标注为武装部队与国家安全，法案以纪念命名，通常指向对特定牺牲人员或事件的纪念性安排（如纪念设施命名或纪念项目授权）。\n官方摘要未取得，纪念对象的具体身份与安排形式以 congress.gov 文本为准。\n已进入退伍军人事务委员会下属小组委员会，但尚无听证安排。\n对市场意味着什么：无直接定价影响。纪念性法案不涉及拨款规模或福利标准，对国防与退伍军人服务板块无财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "VA Medicinal Cannabis Research Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10655",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Health.",
+      "title_cn": "2026 年退伍军人事务部医用大麻研究法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年退伍军人事务部医用大麻研究法案》，由加利福尼亚州民主党众议员 J·路易斯·科雷亚于 2026 年 10 月 1 日提出，2026 年 10 月 14 日交付卫生小组委员会。\n法案指向由退伍军人事务部开展或支持医用大麻相关研究，政策领域标注为武装部队与国家安全。\n现行联邦法律下大麻仍属受控物质，退伍军人事务部开展相关研究受药品管制与内部政策限制，此类法案旨在为研究授权提供明确法律基础。\n官方摘要未取得，研究范围、授权方式与资金安排以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。法案仅涉及研究授权，不改变大麻的联邦管制等级或州合法市场的经营条件；对大麻相关上市公司无直接催化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Reimagining and Improving Student Education-Federal Student Loan Program Final Regulations\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/189",
+      "source": "国会官网",
+      "kind": "众院联合决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "title_cn": "否决教育部《重塑与改善学生教育——联邦学生贷款计划最终规则》的联合决议",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院联合决议第 189 号，由俄勒冈州民主党众议员苏珊娜·博纳米奇于 2026 年 5 月 21 日提出，交付教育与劳动力委员会。\n决议依据《美国法典》第五编第八章（国会审查法）启动否决程序，针对教育部提交的《重塑与改善学生教育——联邦学生贷款计划最终规则》。\n国会审查法允许国会以联合决议否决行政机构的最终规则，若两院通过并经总统签署（或推翻否决），该规则即告失效。\n决议为少数党议员常用工具，在总统所属党派控制国会多数时通过概率很低。\n对市场意味着什么：无直接定价影响。若否决成功，学生贷款计划的还款与减免规则将回退至前版，影响借款人偿付节奏与相关服务商的合同基础；当前处于委员会阶段，通过概率低。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Reaching English Learners Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10436",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "title_cn": "覆盖英语学习者法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《覆盖英语学习者法案》，交付众议院教育与劳动力委员会。\n要求教育部设立资助计划，用于培养有志成为教师者有效教授英语学习者的能力。\n资助须授予由两类主体组成的合作体：特定高等院校，以及高需求学区或高需求幼儿教育项目。\n设计逻辑是把师资培养与高需求岗位直接绑定，避免培训与就业脱节。\n对市场意味着什么：无直接定价影响。资金流向高校与公立学区，不涉及教育类上市公司的采购合同；对教育科技企业的产品准入亦无直接影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Recognizing and honoring the 27th anniversary of the Supreme Court decision in Olmstead v. L.C.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1586",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the Committee on Education and Workforce, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for",
+      "title_cn": "纪念最高法院 Olmstead 诉 L.C. 案判决二十七周年的决议",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1586 号，由密歇根州民主党众议员黛比·丁格尔于 2026 年 9 月 28 日提出，交付教育与劳动力委员会，并分送司法委员会。\n决议纪念并致敬最高法院在 Olmstead 诉 L.C. 案判决二十七周年。该案确立：在适当情形下，将残障人士不必要地机构化构成《美国残疾人法》下的歧视。\n决议属纪念性文件，不改变法律义务，但重申社区融合服务在残障政策中的基准地位。\n与同批次提出的《居家与社区服务可及法案》形成议题呼应。\n对市场意味着什么：无直接定价影响。决议不改变居家与社区服务的支付规则；若形成政策合力推动服务向社区端转移，长期将影响养老与护理机构的业务结构。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Passenger Rail Crew Protection Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8894",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in eac",
+      "title_cn": "客运铁路乘务人员保护法案",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《客运铁路乘务人员保护法案》，由纽约州民主党众议员劳拉·吉伦于 2026 年 5 月 19 日提出，交付交通与基础设施委员会，并分送司法委员会。\n法案针对客运铁路乘务人员在工作中的安全保护，政策领域标注为犯罪与执法。\n此类法案通常涉及对袭击乘务人员行为的刑事罚则加重或执法协作机制，官方摘要未取得，具体条款以 congress.gov 文本为准。\n两委员会分送提示涉及运输管理与人身份罚则，审议周期较长。\n对市场意味着什么：无直接定价影响。若加重袭击罚则，对铁路运营商的安保成本影响甚微；不改变客运铁路的补贴或票价机制。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Wildfire Response and Readiness Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10061",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Economic Opportunity.",
+      "title_cn": "野火应对与准备法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《野火应对与准备法案》，由科罗拉多州民主党众议员乔·内古斯于 2026 年 8 月 6 日提出，2026 年 9 月 23 日交付经济机会小组委员会。\n政策领域标注为公共土地与自然资源，法案指向野火应对能力与准备机制的建设。\n交付经济机会小组委员会提示条款可能涉及野火相关就业、培训或小型企业援助，而非单纯的林地管理。\n官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定授权内容。\n对市场意味着什么：无直接定价影响。若涉及联邦野火扑救资源配置或承包机制调整，将影响野火防治承包商的合同机会；当前处于小组委员会阶段，无实质进展。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "FLUENT Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10437",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "title_cn": "FLUENT 法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《FLUENT 法案》，由亚利桑那州民主党众议员阿德利塔·格里哈尔瓦于 2026 年 9 月 16 日提出，交付教育与劳动力委员会。\n政策领域标注为教育，法案以缩略语命名，与同批次提出的《覆盖英语学习者法案》（H.R.10436）主题相邻，均指向英语学习者教育。\n官方摘要未取得，缩略语全称与具体工具均未获官方确认，具体条款以 congress.gov 文本为准，不凭名称推定。\n刚提出并交付委员会，尚无听证安排。\n对市场意味着什么：无直接定价影响。教育类授权法案的资金流向公立学区与高校，对教育类上市公司无直接合同关系。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Physician Led and Rural Access to Quality Care Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2191",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "title_cn": "医生主导与农村优质医疗可及法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《医生主导与农村优质医疗可及法案》，交付能源与商业委员会，并分送筹款委员会。\n法案扩大《斯塔克法》（医师自我转诊法）下医生及医生持股医院的豁免弹性。该法一般禁止医生将联邦医疗保险或医疗补助可支付的服务转介至其本人或直系亲属有财务利益的主体。\n法案允许医生或其直系亲属持有位于 35 英里以外（特定山区为 15 英里以外）的农村医院的财务利益，属对 rural provider 例外条款的放宽。\n实质是缓解农村地区医院因转诊禁令难以获得医生投资的困境。\n对市场意味着什么：无直接定价影响。若成法，农村医院的股权融资渠道拓宽，对农村医院运营商与医疗地产投资机构构成边际利好；不改变联邦医疗保险支付费率。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Recognizing the outstanding contributions of Hispanics and Latinos in film, television, and streaming and their enduring impact on the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1594",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "表彰拉美裔在影视与流媒体领域贡献的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1594 号，由加利福尼亚州民主党众议员吉尔伯特·西斯内罗斯于 2026 年 10 月 1 日提出，交付能源与商业委员会。\n决议表彰拉美裔与西语裔在电影、电视及流媒体领域的杰出贡献及其对美国社会的持续影响。\n属表彰类决议，不具法律效力，不涉及内容监管、版权规则或许可制度。\n交付能源与商业委员会系因该委员会管辖传媒与通信事务，但决议本身不改变任何行业规则。\n对市场意味着什么：无直接定价影响。象征性决议，对影视与流媒体平台的经营环境无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Companion Animal Protection Against Cruel Testing Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10522",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "伴侣动物反残忍试验保护法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《伴侣动物反残忍试验保护法案》，交付能源与商业委员会。\n法案禁止将拨付给受覆盖联邦机构的资金用于涉及活体犬或猫的任何生物医学研究活动。\n受覆盖机构指卫生与公众服务部内负责授予、管理或支出生物医学研究资金的机构或办公室。\n禁令同时适用于实质性助推此类研究的活动，例如主要与该类研究相关的薪酬、设施维护与行政支持。\n对市场意味着什么：无直接定价影响。若成法，依赖联邦资金开展犬猫实验的研究机构需调整模型与外包安排，对实验动物供应商与合同研究组织构成边际收入影响，规模有限。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Medicare Dental, Vision, and Hearing Benefit Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2045",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "title_cn": "2025 年联邦医疗保险牙科、视力与听力福利法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年联邦医疗保险牙科、视力与听力福利法案》，交付能源与商业委员会，并分送筹款委员会。\n法案为联邦医疗保险（Medicare）新增牙科、视力与听力保障，属传统按项目付费体系原本排除的三类福利。\n覆盖范围包括：常规洁牙与检查、基础与重大牙科服务、急诊牙科与义齿；常规眼科检查、眼镜与隐形眼镜；常规听力检查、助听器及助听器验配检查。\n法案就上述服务设定专门支付规则、限制条件与共付比例。\n对市场意味着什么：若成法，将扩大牙科、视光与助听器服务的支付方覆盖，对相关服务网络与器械厂商构成增量需求；同时增加联邦医疗保险支出压力。当前处于委员会交付阶段，成案概率低，不宜计入业绩预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Transforming Education for the Future Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10421",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Education and Workforce, and in addition to the Committees on the Judiciary, Energy and Commerce, Ways and Means, Oversight and Government Reform, Scie",
+      "title_cn": "面向未来的教育变革法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《面向未来的教育变革法案》，由俄勒冈州民主党众议员苏珊娜·博纳米奇于 2026 年 9 月 16 日提出，交付教育与劳动力委员会，并分送司法、能源与商业、筹款、监督与政府改革、科学空间与技术、武装部队、农业六个委员会。\n七委员会分送提示法案为综合性教育提案，涉及民权、数据隐私、税收、科研与农业教育等多个面向。\n政策领域标注为教育，官方摘要未取得，具体条款以 congress.gov 文本为准。\n综合型法案审议周期长，多委员会分送通常进一步延后实质进展。\n对市场意味着什么：无直接定价影响。若涉及学生数据隐私或教育技术采购规则，将影响教育科技企业的合规与准入；当前无文本依据，不预设影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Fairness to Freedom Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3127",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年公平对待自由法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年公平对待自由法案》，交付众议院司法委员会。\n法案在特定移民程序中为无力聘请律师者确立由政府承担费用的获得法律代理的权利，涉及驱逐出境与移民保释听证。\n同时设立多个实体以落实法律代理服务，涵盖代理范围界定、资格认定标准等事项。\n现行制度下，此类程序中的当事人可聘请律师，但政府不承担费用。\n对市场意味着什么：无直接定价影响。若成法将新增公设移民辩护服务采购，对法律援助机构与移民服务非营利组织构成资金来源；不涉及企业用工合规，对上市公司无直接财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Federal Firearms Licensee Protection Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1773",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年联邦枪械执照持有人保护法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年联邦枪械执照持有人保护法案》，交付众议院司法委员会。\n法案修改对从持照进口商、制造商或经销商处或其经营场所盗窃枪支行为的刑事罚则。\n具体调整包括：最高监禁刑期由 10 年提高至 20 年；对在入室盗窃或抢劫过程中实施的此类犯罪设定 3 年或 5 年的强制最低刑期。\n犯罪未遂适用与既遂相同的罚则。\n对市场意味着什么：无直接定价影响。罚则加重不改变枪械零售商的许可与库存管理义务；若成法可能促使经销商加强安防投入，规模有限，对安防设备供应商影响可忽略。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Protect and Serve Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1551",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年保护与服务法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年保护与服务法案》，由佛罗里达州共和党众议员约翰·拉瑟福德于 2025 年 2 月 25 日提出，交付众议院司法委员会。\n政策领域标注为犯罪与执法，法案名称指向对执法人员（警察）的保护。\n此类法案通常针对以仇恨动机袭击执法人员的行为设定联邦加重罚则，但官方摘要未取得，具体构成要件与罚则幅度以 congress.gov 文本为准。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。法案指向个人刑事责任，不涉及执法设备采购或警务外包合同，对安防与国防板块无财务影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Heat Workforce Standards Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6213",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported (Amended) by the Yeas and Nays: 18 - 15.",
+      "title_cn": "2025 年高温作业劳动标准法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年高温作业劳动标准法案》，2026 年 10 月以记名投票 18 票赞成、15 票反对获委员会修正通过并提交全院。\n法案禁止职业安全与健康管理局最终确定、实施或执行要求特定雇主制定高温伤害与疾病预防计划的安全标准。\n禁止对象明确指向 2024 年 8 月 30 日公布征求意见的《室内外工作场所高温伤害与疾病预防》拟议规则，或任何实质相似的标准。\n该拟议标准一般适用于在高温环境下经营的雇主。\n对市场意味着什么：18 比 15 的接近票数显示分歧明显。若成法，农业、建筑、仓储与物流等高温暴露行业将免于联邦统一高温标准，避免合规成本，但部分州的标准仍然适用；对相关行业的成本预期构成边际利好，幅度取决于州级监管。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Combat Veterans Retirement Restoration Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10463",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Disability Assistance and Memorial Affairs.",
+      "title_cn": "战斗退伍军人退休待遇恢复法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《战斗退伍军人退休待遇恢复法案》，由印第安纳州共和党众议员维多利亚·斯帕茨于 2026 年 9 月 16 日提出，2026 年 9 月 30 日交付残疾援助与纪念事务小组委员会。\n法案指向有战斗相关伤残退伍军人的退休待遇恢复，与同批次提出的《理查德·斯塔尔少校法案》属同一议题族。\n现行制度下，退伍军人的伤残补偿与退休金并行领取须按抵扣规则处理，该类法案旨在取消或缩小抵扣。\n官方摘要未取得，适用人群与抵扣处理方式以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若成法将增加联邦退伍军人支出，属长期财政压力；对国防承包商营收无直接关系。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Advancing Menopause Care and Mid-Life Women’s Health Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9090",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "推进更年期照护与中年女性健康法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《推进更年期照护与中年女性健康法案》，由纽约州民主党众议员伊薇特·克拉克于 2026 年 6 月 2 日提出，交付能源与商业委员会。\n法案聚焦更年期照护与中年女性健康，通常涵盖临床指南制定、医生培训、公众宣教与研究投入等工具。\n与同批次提出的「世界更年期意识月」决议（H.Res.1610）形成议题配套。\n官方摘要未取得，具体条款与授权额度以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若涉及医保覆盖或指南更新，将影响更年期相关药品与远程医疗服务的需求结构；当前处于委员会阶段，不构成业绩预期变化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "GRACE for Military Survivors Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9489",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "title_cn": "军人遗属 GRACE 法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《军人遗属 GRACE 法案》，由加利福尼亚州民主党众议员迈克·汤普森于 2026 年 6 月 25 日提出，交付众议院筹款委员会。\n政策领域标注为税收，交付筹款委员会提示法案以税收工具处理军人遗属待遇，可能涉及遗属福利的免税安排或抵免设计。\n缩略语全称未获官方确认，官方摘要未取得，具体条款以 congress.gov 文本为准。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。若为遗属福利设立税收优惠，属财政边际减收，对金融服务机构的税务规划产品无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Ocean Protection and DDT Reduction Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10536",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Natural Resources, and in addition to the Committee on Science, Space, and Technology, for a period to be subsequently determined by the Speaker, in ea",
+      "title_cn": "海洋保护与滴滴涕削减法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《海洋保护与滴滴涕削减法案》，由加利福尼亚州民主党众议员萨尔瓦多·卡巴哈尔于 2026 年 9 月 24 日提出，交付自然资源委员会，并分送科学、空间与技术委员会。\n法案指向海洋生态保护与滴滴涕（DDT）污染削减，后者通常涉及历史遗留海底农药倾倒场的排查与处置。\n南加州海域存在已知的 DDT 倾倒区，此类立法通常涉及污染调查、修复责任与资金安排。\n官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定责任主体。\n对市场意味着什么：无直接定价影响。若确立修复责任与资金机制，可能涉及化工企业历史遗留责任与海洋工程修复合同；当前处于委员会阶段，无实质进展。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "HCBS Access Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8540",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committees on Education and Workforce, Oversight and Government Reform, and Ways and Means, for a period to",
+      "title_cn": "居家与社区服务可及法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《居家与社区服务可及法案》，由密歇根州民主党众议员黛比·丁格尔于 2026 年 4 月 28 日提出，交付能源与商业委员会。\n法案指向扩大居家与社区服务（HCBS）的可及性，该服务在联邦医疗保险与医疗补助体系下为老年人及残障人士提供非机构化照护。\n四委员会分送提示法案涉及支付规则、劳动力供给与财政安排多个面向，属综合性改革提案。\n官方摘要未取得，具体条款（资格扩围、支付标准或直接照护人员薪酬）以 congress.gov 文本为准。\n对市场意味着什么：若成法将扩大居家照护支付规模，对居家护理服务商、家庭医疗设备与远程监护企业构成结构性增量需求；同时增加医疗补助支出。当前处于委员会阶段，成案概率低，不宜计入预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Nitrous Oxide Safety Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7945",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported by the Yeas and Nays: 36 - 0.",
+      "title_cn": "2026 年一氧化二氮安全法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "【政策背景】《2026 年一氧化二氮安全法案》（Nitrous Oxide Safety Act of 2026）为第 119 届国会众议院法案，由加利福尼亚州第 15 选区民主党众议员凯文·马林于 2026 年 3 月 16 日提出，政策领域标注为商业。2026 年 9 月 16 日，法案以 36 票赞成、0 票反对获委员会表决通过并提交全院。一氧化二氮（俗称笑气）在美国同时具有医用麻醉、食品加工发泡剂与工业氧化剂等合法用途，近年来其非医疗用途消费在部分州引发公共健康关注，形成「合法商品、滥用风险」的监管张力；联邦层面此前主要依托食品药物管理局对食品用途的规制与各州对销售对象的限制，缺乏统一的联邦安全标准。\n\n【核心内容】官方摘要尚未取得，法案的具体规制工具以 congress.gov 公布文本为准，不得凭标题推定条款内容。从可得信息可确认的程序事实有三：其一，法案自提出至委员会通过历时约六个月，审议节奏快于多数同类提案；其二，36 比 0 的表决结果显示委员会层面无实质反对，议案在「安全」这一框架下具备跨党派共识；其三，法案政策领域标注为商业，提示规制落点可能在商品销售、流通或容器规格环节，而非医疗器械审批环节。上述推断仅基于领域标注与表决结果，不构成对条款的判断。\n\n【要点提炼】一、法案聚焦一氧化二氮的非医疗用途安全监管，属消费品安全与商业规制交叉议题。二、全票通过显示该议题在委员会层面已形成共识，后续全院程序阻力较小。三、若规制落点在销售对象或容器规格，直接受影响的是食品发泡剂（奶油枪气弹）的分销与零售渠道。四、法案尚未成法，规制对象、执法主体与罚则均待文本确认，当前不宜据此评估合规成本。\n\n【对金融市场的预期影响】总体判断：不构成定价事件，影响限于细分消费品分销环节，对大盘与行业指数无传导。\n受益方向：若法案引入产品标准或认证要求，合规的工业气体生产商与检测认证服务商可能获得相对优势；具备合规追溯体系的渠道商份额或提升。\n承压方向：以小包装气弹形式向零售端销售食品发泡剂的经销商，若销售对象限制或标签要求收紧，可能面临渠道收缩与包装改造成本。\n关键前提：法案须经众议院全院表决、参议院审议与总统签署；规制强度取决于最终文本与后续执法细则。\n信号节点：众议院全院排期与表决结果、参议院是否提出对应版本、最终文本中销售限制与罚则的具体设计。\n风险提示：官方摘要与文本均未取得，上述受益与承压判断基于领域标注与行业结构推演，具体条款以 congress.gov 文本为准，不应作为投资依据。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "No 9/11 Family Left Behind Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9350",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2026 年不落下任何 9·11 家庭法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年不落下任何 9·11 家庭法案》，由纽约州民主党众议员丹尼尔·戈德曼于 2026 年 6 月 18 日提出，交付众议院司法委员会。\n政策领域标注为犯罪与执法，法案名称指向 9·11 事件受害者家属的权益保障。\n此类法案通常涉及受害者赔偿基金的申领资格、程序时限或证据标准，亦可能涉及对外国主权豁免的调整。\n官方摘要未取得，具体条款以 congress.gov 文本为准，不凭标题推定。\n自提出后无进一步程序动作。\n对市场意味着什么：无直接定价影响。若涉及赔偿基金补充，属财政支出边际变化；对保险业而言，恐怖主义风险除外条款的适用不受本法案影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "VA AI Transparency Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10417",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Oversight and Investigations.",
+      "title_cn": "2026 年退伍军人事务部人工智能透明度法案",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年退伍军人事务部人工智能透明度法案》，由密歇根州共和党众议员汤姆·巴雷特于 2026 年 9 月 16 日提出，2026 年 9 月 29 日交付监督与调查小组委员会。\n法案要求退伍军人事务部就其在福利与医疗决策中使用人工智能的情况提升透明度。\n此类法案通常涉及算法披露、人工复核保障与决策可解释性要求，落点在政府部门的自动化决策治理。\n与同批次提出的《退伍军人事务部理赔人工智能问责法案》（H.R.10418）构成配套。\n对市场意味着什么：无直接定价影响。若成法，向退伍军人事务部提供 AI 决策工具的承包商需增加可解释性与审计功能，对公共部门 AI 供应商的合规成本有边际影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "DEFIANCE Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3562",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年 DEFIANCE 法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年 DEFIANCE 法案》（全称《2025 年打击露骨伪造图像与非自愿编辑法案》），交付众议院司法委员会。\n法案扩大对非自愿披露私密图像的民事救济，即通常所称的非自愿色情内容。\n同时就涉及「私密数字伪造」（deepfake）的非自愿行为设立新的联邦民事诉讼。私密数字伪造指以软件、机器学习或人工智能等技术生成、外观逼真的可识别个人私密图像。\n实质是首次在联邦层面对 AI 生成的私密伪造内容建立民事诉权。\n对市场意味着什么：无直接定价影响。若成法，生成式 AI 平台与内容托管方可能面临更高的诉讼风险与内容审核义务，对 AI 服务提供商的合规成本与责任保险定价有边际影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Legal Workforce Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/251",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Ways and Means, and Education and Workforce, for a period to be subsequently determined by the Spea",
+      "title_cn": "合法劳动力法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《合法劳动力法案》，交付司法委员会，并分送筹款委员会与教育与劳动力委员会。\n要求国土安全部建立电子就业资格确认系统，参照并取代现行 E-Verify 系统，用于雇主与招聘方核验个人移民身份。\n法案将系统使用由选择性转为强制：现行制度下仅部分雇主（如联邦合同承包商）须使用 E-Verify。\n法案同时规定可用于证明身份与工作授权的文件类型，并对录用通知至入职期间的核验流程作出安排。\n对市场意味着什么：若成法，所有雇主须强制核验工作授权，农业、建筑、餐饮与酒店等劳动密集行业的用工合规成本显著上升，可能出现劳动力供给收缩与工资上行压力；对背景核查与人力合规服务商构成增量需求。当前处于委员会阶段，成案概率低。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Lowering Drug Costs for American Families Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6166",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committees on Ways and Means, and Education and Workforce, for a period to be subsequently determined by th",
+      "title_cn": "降低美国家庭药价法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《降低美国家庭药价法案》，由新泽西州民主党众议员弗兰克·帕隆于 2025 年 11 月 20 日提出，交付能源与商业委员会，并分送筹款与教育与劳动力委员会。\n政策领域标注为卫生，法案指向降低美国家庭的处方药支出。\n此类法案通常涉及联邦医疗保险药品价格谈判范围的扩大、自付费用上限或药品中间环节的透明度要求，但官方摘要未取得，具体工具以 congress.gov 文本为准。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。若成法并扩大价格谈判范围，将压缩制药企业的美国市场净价，对品牌药企构成收入压力、对药品福利管理机构的透明度义务加重；当前仅为提案，不构成定价事件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Expressing support for the recognition of October 2026, as \"World Menopause Awareness Month\" and for global awareness and access to care during menopausal transition and post-menopause.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1610",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committees on Armed Services, and Veterans' Affairs, for a period to be subsequently determined by the Spea",
+      "title_cn": "支持将 2026 年 10 月定为「世界更年期意识月」的决议",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1610 号，由纽约州民主党众议员伊薇特·克拉克提出，交付能源与商业委员会，并分送武装部队委员会与退伍军人事务委员会。\n决议支持将 2026 年 10 月定为「世界更年期意识月」，并支持提升更年期过渡期及绝经后阶段的全球认知与照护可及性。\n分送军事与退伍军人事委会提示决议关注军人及退伍军人群体中的更年期健康服务覆盖问题。\n属表达性决议，不具法律效力，不改变医保覆盖范围或支付标准。\n对市场意味着什么：无直接定价影响。决议为倡导性文件，与同批次提出的《推进更年期照护与中年女性健康法案》形成议题呼应，但本身不产生支付政策变化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Fairness for High-Skilled Americans Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2315",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年高技能美国人公平法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年高技能美国人公平法案》，交付众议院司法委员会。\n法案取消「可选实践培训计划」（OPT）及其任何后续计划，除非国会以立法明确授权。\nOPT 计划允许 F-1 学生签证持有人在学业完成前或完成后（或两者）获得临时工作授权，是国际学生留美就业的主要通道，也是 H-1B 的主要来源池。\n法案以「除非国会明确授权」的日落式设计，实质上要求 OPT 重新立法方可存续。\n对市场意味着什么：若成法，国际毕业生留美工作的通道将中断，科技、工程与高等教育行业的技术人才供给可能收缩，并影响依赖 OPT 人才的企业用工成本；对高校国际招生收入亦构成压力。当前处于委员会阶段，成案概率低。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Expressing support for the preservation, protection, and maintenance of statues and monuments honoring Christopher Columbus as an enduring testament to the Nation's history, heritage, and identity.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1622",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Natural Resources.",
+      "title_cn": "支持保护与维护哥伦布雕像及纪念碑的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1622 号，由纽约州共和党众议员克劳迪娅·坦尼于 2026 年 10 月 9 日提出，交付自然资源委员会。\n决议支持对纪念克里斯托弗·哥伦布的雕像与纪念碑予以保存、保护与维护，并将其视为国家历史、传统与身份的持久见证。\n属表达性决议，不具法律效力，不改变联邦公共纪念物管理的审批权限或命名规则。\n近年围绕公共纪念物的移除争议多由州与地方层面处置，联邦决议的实际约束力有限。\n对市场意味着什么：无直接定价影响。象征性决议，对公共工程与文旅板块无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Infant Formula Safety Modernization Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7867",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "2026 年婴儿配方奶粉安全现代化法案",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2026 年婴儿配方奶粉安全现代化法案》，由康涅狄格州民主党众议员罗莎·德劳罗于 2026 年 3 月 9 日提出，交付能源与商业委员会。\n法案指向婴儿配方奶粉安全监管的现代化，政策领域标注为卫生。\n2022 年配方奶粉短缺事件后，该领域的监管焦点集中于生产企业登记、进口替代通道、供应链集中度与召回响应机制。\n官方摘要未取得，具体条款（生产标准、进口规则或供应监测）以 congress.gov 文本为准，不凭标题推定。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。若涉及生产标准提升或进口通道调整，将影响配方奶粉生产商的合规成本与市场准入格局；当前无文本依据，不预设方向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Low-Income Household Water Assistance Program Establishment Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/4733",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Water Resources and Environment.",
+      "title_cn": "低收入家庭用水援助计划设立法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《低收入家庭用水援助计划设立法案》，由伊利诺伊州民主党众议员埃里克·索伦森于 2025 年 7 月 23 日提出，2025 年 12 月 1 日交付水资源与环境小组委员会。\n法案设立面向低收入家庭的用水援助计划，属公用事业负担能力支持类立法，政策领域标注为环境保护。\n此类计划通常参照低收入家庭能源援助计划（LIHEAP）的运作模式，为水费与污水处理费提供直接补助。\n官方摘要未取得，资格标准、资金规模与实施主体以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若成法将形成对水务与污水处理公用事业的转移支付渠道，改善低收入用户欠费率，对水务公司的应收账款质量构成边际利好；规模取决于拨款。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Supreme Court Tenure Establishment and Retirement Modernization Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3544",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "2025 年最高法院任期与退休制度现代化法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《2025 年最高法院任期与退休制度现代化法案》，由佐治亚州民主党众议员亨利·约翰逊于 2025 年 5 月 21 日提出，交付众议院司法委员会。\n法案为大法官设定任期限制并调整退休安排，属最高法院结构性改革提案。\n此类法案通常设定 18 年交错任期，现任大法官在任期届满后转为资深法官身份，以保持席位更替的可预期性。\n官方摘要未取得，具体任期长度与过渡安排以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。司法结构改革不涉及财政或行业监管，且宪法层面的争议使其通过可能性极低，不构成任何政策预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Impeaching Russell Thurlow Vought, Director of the Office of Management and Budget, for high crimes and misdemeanors.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1479",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "title_cn": "弹劾白宫管理和预算办公室主任拉塞尔·沃特的决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "众议院决议第 1479 号，由加利福尼亚州民主党众议员悉尼·卡姆拉格-多夫于 2026 年 8 月 6 日提出，交付众议院司法委员会。\n决议以重罪与轻罪为由，弹劾白宫管理和预算办公室主任拉塞尔·沃特。\n弹劾决议在众议院须经司法委员会审议并由全院表决，通过后须参议院三分之二多数定罪方能免职。\n由少数党议员提出的弹劾决议在多数党控制议程的情况下通常长期滞留于委员会，实质推进可能性很低。\n对市场意味着什么：无直接定价影响。弹劾程序不影响预算执行与财政拨款安排；若后续牵动预算谈判节奏，可能对政府停摆风险预期产生间接影响，惟当前无实质进展。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "SILVER Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8007",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "title_cn": "SILVER 法案",
+      "domain": "其他",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《SILVER 法案》，由爱达荷州共和党众议员拉斯·富尔彻于 2026 年 3 月 19 日提出，交付众议院农业委员会。\n政策领域标注为金融与金融部门，但交付农业委员会，提示法案涉及农业金融工具或农村信贷安排。\n官方摘要未取得，缩略语全称与具体条款均未获官方确认，以 congress.gov 文本为准，不凭名称推定内容。\n自提出后无进一步程序动作，仍停留于委员会阶段。\n对市场意味着什么：无直接定价影响。法案无文本与摘要支撑，对农业信贷与大宗商品市场均不构成可评估的政策信号。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Trump Accounts for All Generations Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8313",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "title_cn": "跨世代特朗普账户法案",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《跨世代特朗普账户法案》，由内布拉斯加州共和党众议员阿德里安·史密斯于 2026 年 4 月 15 日提出，交付众议院筹款委员会。\n政策领域标注为税收。法案名称指向「特朗普账户」，该概念源于 2025 年成法税收立法中为新生儿设立的税收优惠投资账户安排。\n本提案意将账户适用范围扩展至更多年龄段，实现「跨世代」覆盖。\n官方摘要未取得，覆盖人群、缴款上限与税收待遇以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若成法将扩大税收优惠账户的适用人群，对资产管理机构的长期资金流入构成边际利好，并带来财政减收压力；当前处于委员会阶段，不构成定价事件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Kylie’s Voices for Childhood Cancer Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10405",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "凯莉儿童癌症之声法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《凯莉儿童癌症之声法案》，由新泽西州民主党众议员乔什·戈特海默于 2026 年 9 月 16 日提出，交付能源与商业委员会。\n法案以儿童癌症为主题，政策领域标注为卫生。\n此类法案通常涉及儿科癌症研究的资金授权、患儿登记系统或临床试验可及性改进，亦可能涉及儿童癌症幸存者的长期随访。\n官方摘要未取得，具体条款与授权额度以 congress.gov 文本为准，不凭标题推定。\n刚提出并交付委员会，尚无听证安排。\n对市场意味着什么：无直接定价影响。若涉及儿科肿瘤研究拨款，对儿童肿瘤药物研发企业构成边际利好，但规模有限且需经拨款程序；当前不构成收入预期变化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "Priority for Pediatric Cures Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10359",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "title_cn": "儿科疗法优先法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《儿科疗法优先法案》，由佛罗里达州共和党众议员格斯·比利拉基斯于 2026 年 9 月 14 日提出，交付能源与商业委员会。\n法案指向儿科疗法的优先审评或研发激励，政策领域标注为卫生。\n现行体系中儿科药物研发依托《儿科研究公平法》与优先审评券等机制，本提案可能涉及审评顺位、独占期或激励工具的调整。\n官方摘要未取得，具体工具以 congress.gov 文本为准，不凭标题推定。\n与同批次提出的《凯莉儿童癌症之声法案》形成儿科议题集群。\n对市场意味着什么：无直接定价影响。若涉及审评加速或独占期延长，对儿科药物管线集中的制药企业构成边际利好，但需文本确认，当前不构成定价事件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "National Critical Minerals Council Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10681",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Natural Resources.",
+      "title_cn": "国家关键矿产委员会法案",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《国家关键矿产委员会法案》，由内华达州民主党众议员苏西·李于 2026 年 10 月 1 日提出，交付众议院自然资源委员会。\n政策领域标注为能源，法案设立国家关键矿产委员会，属关键矿产治理的机构建设类提案。\n关键矿产议题近年聚焦供应链对华依赖、国内采矿许可与加工能力，委员会通常承担跨部门协调、清单制定与战略建议职能。\n官方摘要未取得，委员会构成、职权与是否具备许可协调权以 congress.gov 文本为准。\n对市场意味着什么：无直接定价影响。若委员会获得实质协调权，可能加快关键矿产项目的许可与融资对接，对锂、稀土与铜等矿企构成中期政策利好；当前处于委员会阶段，无实质进展。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-27",
+      "title": "VA Claims AI Accountability Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10418",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Oversight and Investigations.",
+      "title_cn": "退伍军人事务部理赔人工智能问责法案",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-10-28",
+        "body": "《退伍军人事务部理赔人工智能问责法案》，由密歇根州共和党众议员汤姆·巴雷特于 2026 年 9 月 16 日提出，2026 年 9 月 23 日交付监督与调查小组委员会。\n法案针对退伍军人事务部在理赔裁决中使用人工智能工具的问责机制。\n此类法案通常要求：自动化工具的决策须经人工复核、算法逻辑须可审计、错误裁决须有申诉与纠正通道。\n与同批次提出的《退伍军人事务部人工智能透明度法案》（H.R.10417）构成配套，一为透明度、一为问责。\n对市场意味着什么：无直接定价影响。若成法，向政府部门提供理赔自动化系统的供应商需增加人工复核与审计功能，合规成本上升；对公共部门 AI 承包商的合同条款有边际影响。",
+        "tier": "note"
+      }
+    },
     {
       "board": "congress",
       "date": "2026-10-26",
@@ -129,22 +2097,6 @@
       "brief": {
         "at": "2026-10-27",
         "body": "第119届国会众议院法案（H.R.10839），2026年10月15日由众议员詹姆斯·沃金肖（民主党，弗吉尼亚州第11选区）提出，同日交付监督与政府改革委员会。\n标题指向缓解城市热岛效应，官方摘要未取得，是否包含联邦赠款、建筑或路面材料标准尚无法确认，具体以 congress.gov 文本为准。\n处于提出阶段，未经委员会审议。\n对市场意味着什么：无直接定价影响。若后续纳入市政工程资助或建筑材料反射率要求，将对建材与市政施工形成边际需求；在此之前不构成可交易事件。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-26",
-      "title": "Protection of Syrian Religious and Ethnic Minorities Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10827",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, and Financial Services, for a period to be subsequently determined by the Speaker,",
-      "title_cn": "保护叙利亚宗教与族裔少数群体法案",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-10-27",
-        "body": "第119届国会众议院法案（H.R.10827），2026年10月15日由众议员瑞安·麦肯齐（共和党，宾夕法尼亚州第7选区）提出，交付外交委员会，并分送司法委员会与金融服务委员会。\n三委员会联署提示法案可能同时涉及对外援助条件、制裁与金融交易限制，官方摘要未取得，具体工具与对象以 congress.gov 文本为准。\n处于提出阶段，多委员会分送通常延长审议周期。\n对市场意味着什么：无直接定价影响。若最终纳入制裁条款，将影响在叙业务敞口与相关贸易融资；当前无文本依据，不预设方向。",
         "tier": "note"
       }
     },
@@ -295,22 +2247,6 @@
     {
       "board": "congress",
       "date": "2026-10-26",
-      "title": "Electric Grid Supply Chain Security Act",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5590",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Read twice and referred to the Committee on Armed Services.",
-      "title_cn": "电网供应链安全法案",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-10-27",
-        "body": "第119届国会参议院法案（S.5590），2026年9月29日由参议员吉姆·班克斯（共和党，印第安纳州）提出，二读后交付军事委员会。\n法案以国防供应链安全为切入点规范电网设备采购，官方摘要未取得，受限设备类别与来源国范围以 congress.gov 文本为准。\n处于提出阶段；交付军事委员会而非能源与自然资源委员会，提示立法路径可能挂靠国防授权法案。\n对市场意味着什么：无直接定价影响。若最终限制特定来源的变压器、逆变器等电网设备，将重构电网设备供应链并推高替换成本；关键信号节点为委员会是否启动审议。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-26",
       "title": "Historic Preservation and Land Conservation Certainty Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10813",
       "source": "国会官网",
@@ -401,22 +2337,6 @@
       "brief": {
         "at": "2026-10-27",
         "body": "第119届国会众议院法案（H.R.10808），2026年10月13日由众议员马特·范埃普斯（共和党，田纳西州第7选区）提出，同日交付筹款委员会。\n法案仅有简称，官方摘要与法案文本均未取得，政策领域标注为税收，但具体税式支出内容无法确认，不作条款推测。\n处于提出阶段，未经委员会审议。\n对市场意味着什么：无直接定价影响。信息不足，不构成任何板块的判断依据，待 GPO 公布文本后再行评估。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-26",
-      "title": "RELA Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10773",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
-      "title_cn": "2026年RELA法案",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-10-27",
-        "body": "第119届国会众议院法案（H.R.10773），2026年10月9日由众议员杰夫·克兰克（共和党，科罗拉多州第5选区）提出，同日交付筹款委员会。\n法案仅有简称，官方摘要未取得，具体税制调整内容以 congress.gov 文本为准，不作条款推测。\n处于提出阶段，未安排听证或标记。\n对市场意味着什么：无直接定价影响。在文本公布前不具备可评估的税收影响，观察节点为筹款委员会是否排期审议。",
         "tier": "note"
       }
     },
@@ -1076,22 +2996,6 @@
       }
     },
     {
-      "board": "congress",
-      "date": "2026-10-24",
-      "title": "Gang Activity Reporting Act of 2025",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6748",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
-      "brief": {
-        "at": "2026-10-24",
-        "body": "法案全称为《2025年帮派活动报告法》（Gang Activity Reporting Act of 2025），官方政策领域标注为“犯罪与执法”。\n2025 年 12 月 16 日由众议员 Ashley Hinson（共和党，爱荷华州第 2 选区）提出，同日交付众议院司法委员会。\n该法案是第 117、118 届国会同名法案在第 119 届国会的重提版本，提案人与政策领域完全一致。\n最新行动仍停留在交付委员会，未进入听证或标记阶段。\n对市场意味着什么：无直接定价影响，但连续三届重提而未出委员会，说明其属常态化表态性提案而非立法优先事项，成案率低于刚提出法案 5–10% 的基准下限。观察节点为司法委员会是否首次安排听证或标记。",
-        "tier": "note"
-      },
-      "title_cn": "2025年帮派活动报告法案",
-      "domain": "司法/执法"
-    },
-    {
       "date": "2026-10-24",
       "title": "Gang Activity Reporting Act of 2023",
       "title_cn": "2023年帮派活动报告法案",
@@ -1135,22 +3039,6 @@
         "body": "法案为《2022年帮派活动报告法》（Gang Activity Reporting Act of 2022）的参议院版本，官方政策领域标注为“犯罪与执法”。\n2022 年 9 月 28 日由参议员 Chuck Grassley（共和党，爱荷华州）提出，经二读后交付参议院司法委员会。\n时间上早于同届众议院版本（H.R.9195）三周，是 Grassley 系列提案的起点。\n最新行动仍停留在交付委员会，第 117 届国会结束时未再推进。\n对市场意味着什么：无直接定价影响。法案已成历史僵案，不构成任何板块的定价事件；其价值在于确认该议题由参议院司法委员会资深成员长期推动，若未来出现更大规模的犯罪或边境安全立法打包，该系列条款可能被并入。",
         "tier": "note"
       }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-24",
-      "title": "Dark Web Interdiction Act of 2025",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6104",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Energy and Commerce, and Financial Services, for a period to be subsequently determined by the Spea",
-      "brief": {
-        "at": "2026-10-24",
-        "body": "法案全称为《2025年暗网拦截法》（Dark Web Interdiction Act of 2025），官方政策领域标注为“犯罪与执法”。\n2025 年 11 月 18 日由众议员 Chris Pappas（民主党，新罕布什尔州第 1 选区）提出，同日交付众议院司法委员会，并附加交付能源与商业委员会、金融服务委员会。\n附加交付金融服务委员会，通常意味着文本可能触及支付、资金流转或反洗钱环节的条款，具体以国会公布的法案文本为准。\n最新行动停留在多委员会交付，未进入听证或标记阶段。\n对市场意味着什么：当前不构成定价事件，但需列入观察清单。法案处于 Introduced 阶段，成案率约 5–10%，且文本细节未明；若后续推进并涉及对支付渠道或虚拟资产交易的义务设定，金融科技与支付板块的合规成本可能受影响。观察节点为司法委员会与金融服务委员会是否分别安排听证。",
-        "tier": "note"
-      },
-      "title_cn": "2025年暗网拦截法案",
-      "domain": "司法/执法"
     },
     {
       "date": "2026-10-24",
@@ -1211,22 +3099,6 @@
         "body": "• 第 117 届国会参议院法案 S.3782，2022 年 3 月 8 日由参议员 Hassan（D-NH）提出。\n• 最新行动为二读后交付司法委员会。\n• 政策领域：犯罪与执法。**非本届议程**，属元数据回填。\n• 对市场意味着什么：无当期定价影响。",
         "tier": "note"
       }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-24",
-      "title": "Workers’ Right to Compete Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10879",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《劳动者竞争权法案》（Workers' Right to Compete Act，H.R.10879）由民主党众议员 Ro Khanna（加州第17选区）于2026年10月22日提出，同日移交众议院能源与商业委员会。\n法案名称指向保障劳动者从事竞争性工作的权利，官方摘要未取得，具体条款以法案文本为准。\n程序上仅完成提出与委员会移送，尚未举行听证或标记审议。\n对市场意味着什么：无直接定价影响。该法案属就业竞争规则微调型立法，未触及企业成本、税收或行业监管义务，仅作跟踪信号；观察节点为能源与商业委员会是否安排审议及法案全文公布。",
-        "tier": "note"
-      },
-      "title_cn": "劳动者竞争权法案",
-      "domain": "教育/劳动"
     },
     {
       "board": "congress",
@@ -2257,21 +4129,6 @@
       "domain": "财政/税收"
     },
     {
-      "date": "2026-10-23",
-      "title": "Protect Clean Water Act",
-      "title_cn": "保护清洁水法案",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10869",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Transportation and Infrastructu",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-10-24",
-        "body": "法案全称为《保护清洁水法》（Protect Clean Water Act）。\n2026 年 10 月 22 日由众议员 Laura Gillen（民主党，纽约州第 4 选区）提出，同日交付众议院交通与基础设施委员会，并附加交付能源与商业委员会。\n交付交通与基础设施委员会通常对应《清洁水法》下的排污许可与水质标准议题，条款全文官方素材未披露。\n最新行动停留在交付委员会，属刚提出阶段。\n对市场意味着什么：无直接定价影响，法案刚提出、成案率约 5–10%。若后续推进并触及排污许可或水质标准，需关注对市政水务、工业排污与基建承包方的合规成本影响；当前应作为跟踪信号。观察节点为交通与基础设施委员会是否举行听证，以及法案文本是否由 GPO 发布。",
-        "tier": "note"
-      }
-    },
-    {
       "board": "congress",
       "date": "2026-10-23",
       "title": "To amend the Federal Food, Drug, and Cosmetic Act and Public Health Service Act to advance the next-generation of clinical development of novel treatments and cures, and for other purposes.",
@@ -2332,54 +4189,6 @@
       "brief": {
         "at": "2026-10-26",
         "body": "《设立奥兰多与坦帕都会区工资地区法案》（H.R.10898）由民主党众议员 Darren Soto（佛罗里达州第9选区）于2026年10月22日提出，同日移交众议院监督与政府改革委员会，要求总统薪酬代理人为奥兰多与坦帕两个都会区设立工资地区。\n该机制用于联邦公务员地区工资率调整，官方摘要未取得，具体口径以法案文本为准。\n对市场意味着什么：无直接定价影响。工资地区调整影响联邦雇员薪酬与地方消费，对区域房市与消费有统计口径上的边际扰动，不构成资产定价事件；观察节点为委员会审议与薪酬代理人后续规则。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "To require the Secretary of Housing and Urban Development to establish a formula grant program to provide grants to States to be used to streamline assistance offered by such States to builders of affordable housing, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10901",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Financial Services.",
-      "title_cn": "设立保障性住房建设者公式拨款项目法案",
-      "domain": "住房",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《设立保障性住房建设者公式拨款项目法案》（H.R.10901）由民主党众议员 Norma Torres（加州第35选区）于2026年10月22日提出，同日移交众议院金融服务委员会，要求住房与城市发展部设立公式拨款项目，向各州提供拨款以精简其对保障性住房建设者的援助。\n官方摘要未取得，拨款规模、分配口径与适用条件均未公布。\n对市场意味着什么：方向上利好住宅开发与建筑链条，但仅提出阶段且资金规模未明，暂不构成定价事件；观察节点为金融服务委员会审议与拨款授权额度。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "To direct the Secretary of Education to establish a Civic Education and Service Learning Grant Program, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10895",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Education and Workforce, and in addition to the Committee on House Administration, for a period to be subsequently determined by the Speaker, in each c",
-      "title_cn": "设立公民教育与服务学习拨款项目法案",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《设立公民教育与服务学习拨款项目法案》（H.R.10895）由民主党众议员 Mary Gay Scanlon（宾夕法尼亚州第5选区）于2026年10月22日提出，交付众议院教育与劳动力委员会并追加众议院行政委员会审议，要求教育部设立公民教育与服务学习拨款项目。\n官方摘要未取得，资金规模与分配方式未公布。\n对市场意味着什么：无直接定价影响。属教育拨款类立法，影响集中于地方学区与非营利机构，规模与指向均有限；观察节点为委员会审议与拨款额度。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "To direct the Federal Trade Commission to convene an interagency working group to track and report on market concentration and monopoly activity with respect to certain sectors of the economy, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10904",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
-      "title_cn": "设立联邦贸易委员会跨部门市场集中度监测工作组法案",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《设立联邦贸易委员会跨部门市场集中度监测工作组法案》（H.R.10904）由民主党众议员 Eugene Vindman（弗吉尼亚州第7选区）于2026年10月22日提出，同日移交众议院司法委员会，要求联邦贸易委员会召集跨部门工作组，追踪并报告特定经济部门的市场集中度与垄断行为。\n官方摘要未取得，所涉行业范围与报告义务未公布。\n对市场意味着什么：方向上若覆盖平台经济与并购密集行业，将抬升反垄断调查与披露压力，属长期待跟踪信号；提出阶段不构成定价事件，观察节点为司法委员会审议与行业覆盖范围。",
         "tier": "note"
       }
     },
@@ -2466,22 +4275,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "To enhance passenger and driver safety on transportation network company platforms through enhanced digital verification systems, to implement driver verification protocols to prevent unauthorized drivers from fraudulently using TNC driver accounts, to prevent physical and sexual assault on TNC platforms, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10897",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Transportation and Infrastructure, and in addition to the Committees on Energy and Commerce, and the Budget, for a period to be subsequently determined",
-      "title_cn": "网约车平台数字核验与乘客安全法案",
-      "domain": "交通",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《通过强化数字核验系统提升网约车平台乘客与驾驶员安全法案》（H.R.10897）于2026年10月22日提出，交付众议院交通与基础设施委员会并追加能源与商业、预算委员会审议，要求建立司机核验协议以防非授权驾驶员冒用账号，并防范平台上的身体与性侵风险。\n官方摘要未取得，核验方式与合规期限未公布。\n对市场意味着什么：若形成强制核验与留存要求，将抬高网约车平台合规与人力成本，是可观测的经营变量变化；但提出阶段不构成定价事件，观察节点为交通与基础设施委员会审议。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "To amend titles II and XVIII of the Social Security Act to lower the Medicare eligibility age to 50, and for other purposes.",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10875",
       "source": "国会官网",
@@ -2492,22 +4285,6 @@
       "brief": {
         "at": "2026-10-26",
         "body": "《修订〈社会保障法〉第II编与第XVIII编将Medicare资格年龄降至50岁法案》（H.R.10875）由民主党众议员 Pramila Jayapal（华盛顿州第7选区）于2026年10月22日提出，交付众议院能源与商业委员会并追加筹款委员会审议。\n法案名称明确将Medicare资格年龄下调至50岁，官方摘要未取得，覆盖人群规模、筹资安排与时间表未公布。\n对市场意味着什么：若成法将实质扩大联邦医保覆盖人群与支付规模，对医院、医保支付方与医疗服务链条是中长期需求增量；但成案率低、筹资缺口是核心障碍，属跟踪信号；观察节点为委员会审议与文本公布。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "To establish a pilot program for voluntary federal change of address notification service operated by the Administrator of General Services, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10880",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each",
-      "title_cn": "设立联邦变更地址通知服务试点法案",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《设立联邦变更地址通知服务试点法案》（H.R.10880）由共和党众议员 Young Kim（加州第40选区）于2026年10月22日提出，交付众议院监督与政府改革委员会并追加筹款委员会审议，要求总务管理局负责人设立自愿性联邦变更地址通知服务试点。\n官方摘要未取得，试点的覆盖机构与实施期限未公布。\n对市场意味着什么：无直接定价影响。法案属政府内部行政服务试点，不涉及企业成本、税收或行业监管义务；观察节点为委员会审议与试点范围。",
         "tier": "note"
       }
     },
@@ -2578,22 +4355,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "To terminate the diversity immigrant visa program.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10896",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
-      "title_cn": "终止多元族裔移民签证项目法案",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《终止多元族裔移民签证项目法案》（H.R.10896）由共和党众议员 Keith Self（得克萨斯州第3选区）于2026年10月22日提出，同日移交众议院司法委员会，拟终止现行多元族裔移民签证项目。\n官方摘要未取得，项目终止的生效时点与既有申请人处置未公布。\n对市场意味着什么：无直接定价影响。签证规模相对整体劳动力市场与科技人才流动的边际影响有限，且未涉及企业合规义务；观察节点为司法委员会审议与终止时间表。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "To prohibit interference in elections for Federal office, and for other purposes.",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10907",
       "source": "国会官网",
@@ -2604,22 +4365,6 @@
       "brief": {
         "at": "2026-10-26",
         "body": "《禁止干预联邦选举法案》（H.R.10907）由民主党众议员 George Whitesides（加州第27选区）于2026年10月22日提出，交付众议院司法委员会并追加众议院行政委员会审议。\n法案名称指向对联邦选举干预行为的禁止性规定，官方摘要未取得，行为类型界定、适用对象与执行机制未公布。\n对市场意味着什么：无直接定价影响。属选举制度与信息完整性立法，与资产定价无直接通道；其观察价值在于中期选举前相关议题的政策化程度；观察节点为委员会审议与文本条款。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "AI Cyber Defense Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10873",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Science, Space, and Technology.",
-      "title_cn": "人工智能网络防御法案",
-      "domain": "科技/AI",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《人工智能网络防御法案》（AI Cyber Defense Act，H.R.10873）由共和党众议员 Pat Harrigan（北卡罗来纳州第10选区）于2026年10月22日提出，同日移交众议院科学、空间与技术委员会。\n法案名称指向人工智能在网络防御中的运用与相关职责安排，官方摘要未取得，适用机构、授权范围与配套拨款未公布。\n对市场意味着什么：方向上利好网络安全服务与AI安全工具供应商，但授权主体与预算均未确定、提出阶段成案率低，属长期跟踪信号；观察节点为委员会审议与配套拨款。",
         "tier": "note"
       }
     },
@@ -2690,22 +4435,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "San Carlos Irrigation Project Divestiture Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10864",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Natural Resources.",
-      "title_cn": "圣卡洛斯灌溉项目资产剥离法案",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《圣卡洛斯灌溉项目资产剥离法案》（San Carlos Irrigation Project Divestiture Act of 2026，H.R.10864）由共和党众议员 Elijah Crane（亚利桑那州第2选区）于2026年10月22日提出，同日移交众议院自然资源委员会。\n法案名称指向联邦政府所持圣卡洛斯灌溉项目权益的剥离安排，官方摘要未取得，剥离方式、定价机制与承接方范围未公布。\n对市场意味着什么：方向上若涉及灌溉用水资产的运营权转移，长期可能改变西部农业用水成本与相关资产估值；条款、规模与定价均未明，不构成定价事件；观察节点为自然资源委员会审议。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "To amend the Internal Revenue Code of 1986 to establish the motor fuel deduction.",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10890",
       "source": "国会官网",
@@ -2722,22 +4451,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "Military Family Relocation Support Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10871",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Armed Services.",
-      "title_cn": "军人家庭安置支持法案",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《军人家庭安置支持法案》（Military Family Relocation Support Act，H.R.10871）由民主党众议员 Maggie Goodlander（新罕布什尔州第2选区）于2026年10月22日提出，同日移交众议院武装部队委员会。\n法案名称指向军人家庭搬迁过程中的支持安排，官方摘要未取得，支持事项与成本分担方式未公布。\n对市场意味着什么：无直接定价影响。属军队人员福利类立法，不涉及企业义务或监管约束；观察节点为武装部队委员会审议与支持方案。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "Disaster Data Protection Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10894",
       "source": "国会官网",
@@ -2748,22 +4461,6 @@
       "brief": {
         "at": "2026-10-26",
         "body": "《灾害数据保护法案》（Disaster Data Protection Act，H.R.10894）由民主党众议员 Brittany Pettersen（科罗拉多州第7选区）于2026年10月22日提出，同日移交众议院司法委员会。\n法案名称指向灾害应急场景下的数据保护安排，官方摘要未取得，适用数据类型、义务对象与例外情形未公布。\n对市场意味着什么：无直接定价影响。属数据治理类立法，对保险理赔与灾害响应系统的合规成本影响尚不可测；观察节点为司法委员会审议与义务范围。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "Ronald Reagan Peace Through Strength Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10866",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committees on Foreign Affairs, and Intelligence (Permanent Select), for a period to be subsequently determined b",
-      "title_cn": "里根\"以实力求和平\"法案",
-      "domain": "贸易/关税",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《里根“以实力求和平”法案》（Ronald Reagan Peace Through Strength Act of 2026，H.R.10866）由共和党众议员 Brian K. Fitzpatrick（宾夕法尼亚州第1选区）于2026年10月22日提出，交付众议院筹款委员会并追加外交委员会、情报委员会（常设）审议。\n法案名称指向以外交与实力手段达成威慑目标的政策组合，官方摘要未取得，具体措施未公布。\n对市场意味着什么：若最终包含制裁或出口管制条款，对相关贸易与供应链有直接路径；但措施与国别指向完全未明，属高不确定性跟踪信号；观察节点为外交与情报委员会审议。",
         "tier": "note"
       }
     },
@@ -2898,22 +4595,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "Military Domestic Violence Survivors Support Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10870",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Armed Services.",
-      "title_cn": "军人家庭暴力幸存者支持法案",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《军人家庭暴力幸存者支持法案》（Military Domestic Violence Survivors Support Act，H.R.10870）由民主党众议员 Maggie Goodlander（新罕布什尔州第2选区）于2026年10月22日提出，同日移交众议院武装部队委员会。\n法案名称指向军人家庭暴力案件的支援与处置安排，官方摘要未取得，支持服务范围与报告义务未公布。\n对市场意味着什么：无直接定价影响。属军队内部司法与福利事项，不涉及企业成本或监管义务；观察节点为武装部队委员会审议与服务方案。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "ACRES Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/204",
       "source": "国会官网",
@@ -2994,22 +4675,6 @@
     {
       "board": "congress",
       "date": "2026-10-23",
-      "title": "Recognizing the significance of equal pay and the pay disparity between disabled women and nondisabled men.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1637",
-      "source": "国会官网",
-      "kind": "众议院决议",
-      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
-      "title_cn": "承认残疾妇女与非残障男性薪酬差距重要意义决议",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《承认残疾妇女与非残障男性薪酬差距重要意义决议》（H.Res.1637）由民主党众议员 Lateefah Simon（加州第12选区）于2026年10月22日提出，同日移交众议院教育与劳动力委员会。\n决议属表述性立法，不具备法律效力，官方政策领域为教育与劳动力；官方摘要未取得。\n对市场意味着什么：无直接定价影响。决议类文件仅表达国会立场，对企业薪酬合规无强制力，其观察价值在于平等薪酬议题在立法层面的关注度变化；观察节点为委员会审议及是否形成配套立法动议。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
       "title": "Supporting the designation of October 23, 2026, as \"National Marine Sanctuary Day\".",
       "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1635",
       "source": "国会官网",
@@ -3052,22 +4717,6 @@
       "brief": {
         "at": "2026-10-26",
         "body": "《罢工与被锁工人医疗保障法案》（H.R.3532）由民主党众议员 Christopher Deluzio（宾夕法尼亚州第17选区）于2025年5月21日提出，同日移交众议院教育与劳动力委员会，政策领域为劳动与就业。\n法案名称指向罢工或被锁工期间医疗保障的延续安排，官方摘要未取得，保障范围、期限与成本承担未公布。\n对市场意味着什么：方向上若明确工会成员罢工期的医疗保险延续义务，将影响部分雇主福利成本与劳资谈判条款；提出已逾一年且未进入实质审议，属低优先级跟踪信号；观察节点为委员会审议与文本公布。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "PFB Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10654",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for cons",
-      "title_cn": "假性毛囊炎军人退役与福利保障法案",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《假性毛囊炎军人退役与福利保障法案》（PFB Act，H.R.10654）由民主党众议员 Herb Conaway（新泽西州第3选区）于2026年10月1日提出，交付众议院武装部队委员会并追加退伍军人事务委员会审议。\n法案名称指向军人因假性毛囊炎（剃须所致皮肤炎症）相关疾病的退役与福利衔接安排，官方摘要未取得，诊断标准与待遇内容未公布。\n对市场意味着什么：方向上若涉及现役军人退役医学评估标准的调整，影响集中于军人医疗体系内部，与资本市场无直接通道；观察节点为武装部队与退伍军人事务委员会审议及文本公布。",
         "tier": "note"
       }
     },
@@ -3425,21 +5074,6 @@
       "brief": {
         "at": "2026-10-14",
         "body": "《意大利英雄与遗产法》：众议员 Rulli（共和党，俄亥俄）提出，禁止向以「原住民日」替代哥伦布日庆祝的州或地方政府提供联邦资金，已交政府改革监督委员会。将文化身份议题与联邦资金挂钩，是哥伦比亚日/原住民日之争在联邦立法层面的升级，象征性大于可执行性，但反映了选举季两党在身份政治议题上的动员策略。",
-        "tier": "note"
-      }
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Emergency Preparedness in Higher Education Act",
-      "title_cn": "设立高校应急准备拨款计划法案",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10771",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Transportation and Infras",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-10-14",
-        "body": "• 众议院法案《高等教育应急准备法》，由众议员 Carter（D-LA）提出，已交交通与基础设施委员会。\n• 拟设立面向高等院校的应急准备拨款计划，属校园防灾基建类授权立法。\n• 目前处于提出后交付委员会阶段，未进入审议程序。\n• 对市场意味着什么：无定价影响；若后续推进，对校园安防与应急设备供应商有远期需求拉动，但成案率低。",
         "tier": "note"
       }
     },
