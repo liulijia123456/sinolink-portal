@@ -2373,7 +2373,16 @@
     opacity: 0; transition: opacity .42s ease;
   }
   #view-us .grid .card .meta { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  #view-us .grid .card .num { font-family: var(--us-serif); font-size: 19px; font-weight: 600; color: var(--us-brass); line-height: 1; }
+  #view-us .grid .card .num {
+    font-family: var(--us-serif); font-size: 20px; font-weight: 600; color: var(--us-brass);
+    line-height: 1; letter-spacing: .06em;
+  }
+  /* 分支标注：立法 / 行政 / 司法，与序号用一道细线隔开 */
+  #view-us .grid .card .branch {
+    font-family: var(--us-mono); font-size: 10px; letter-spacing: .24em;
+    color: rgba(11, 23, 36, .46); padding-left: 11px; margin-left: 1px;
+    border-left: 1px solid rgba(11, 23, 36, .16); line-height: 1;
+  }
   #view-us .grid .card .title {
     font-family: var(--us-serif); font-size: 23px; font-weight: 600; letter-spacing: .04em;
     color: #16212e; margin-bottom: 5px; padding-right: 104px;
@@ -3169,29 +3178,6 @@
         <div class="grid" data-page-node-id="fWJVE0KnGKqEB9fyAh8Orl" style="">
 
           <!-- 子板块 01 -->
-          <div class="card" data-page-node-id="dxnDA7D2CvcMPtCEFjPD4J" style="">
-            <div class="visual" aria-hidden="true" data-page-node-id="PBv2wW7Hs8qN86ix2V1s2V">
-              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="8MYnC80ZMpC9TsP6U5HLHU" style="">                <!-- 白宫：参照参考图轮廓——浅坡屋面 + 实心厚檐口 + 密排六柱 + 实心台基，顶部小旗 -->
-                <g stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M55 35 V26"/>
-                  <path d="M34 42 L55 35 L76 42"/>
-                  <path d="M33 48 V73 M41.8 48 V73 M50.6 48 V73 M59.4 48 V73 M68.2 48 V73 M77 48 V73"/>
-                  <rect x="29" y="42" width="52" height="5.6" rx="1.4" fill="currentColor" stroke="none"/>
-                  <rect x="27" y="73" width="56" height="5.2" rx="1.4" fill="currentColor" stroke="none"/>
-                  <path d="M55 26 L64 29 L55 32" fill="currentColor" stroke="none"/>
-                </g>
-              </svg>
-            </div>
-            <div class="meta" data-page-node-id="F2gQsyPCFeyqVHtwc247FZ"><span class="num" data-page-node-id="6ugNjdt65c6DCNnQAm4E0d">01</span></div>
-            <div class="title" data-page-node-id="JCNwpWEwfhTHFbQfpBKLH9">白宫及内阁各部政策</div>
-            <div class="title-en" data-page-node-id="AH6RWD3lv53PYGRC6uFLK0">White House &amp; Cabinet</div>
-            <p class="desc" data-page-node-id="ZzOR9HtYAagq4ZZlDuS0bU">收集总统行政令、总统备忘录、公告,总统行政办公室（EOP）各组成机构（OMB、USTR、OSTP 等）文件,以及内阁各部发布的规则与拟议规则。</p>
-            <div class="tags" data-page-node-id="YZAOcd8ZosZuNsxiRP963z"><span data-page-node-id="FfniiNJttOg4EWPTpZc8kY">行政令</span><span data-page-node-id="Qunk7JavWdlmQAFJi7H1wr">EOP 机构</span><span data-page-node-id="reGiDwDbeWuLn5zww2S5yO">OMB</span><span data-page-node-id="YGclSnxkq52PaDSlkKUiGZ">USTR</span><span data-page-node-id="repYANh7O3FCTqeyjuL8md">内阁各部</span></div>
-            <a class="btn" href="#" data-enter="board" data-board="whitehouse" data-page-node-id="L12C3P2Ly2nRthFl7gxu0k" style="">进入板块</a>
-            <div class="us-foot" data-us-foot="whitehouse" data-page-node-id="ZDuwggjfLhDtcowcigtT32">来源：联邦公报 · 每日 08:00 自动更新</div>
-          </div>
-
-          <!-- 子板块 02 -->
           <div class="card" data-page-node-id="zey3QQ3mXtfhcuPfArvP7N" style="">
             <div class="visual" aria-hidden="true" data-page-node-id="QQ7Wi2DE7JkrV18IbvCV0d">
               <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="OPUQPfmfOKTLZKsBPjudBZ" style="">                <!-- 国会：窄穹顶与鼓座压在更宽的主体之上，柱列托起檐部 -->
@@ -3209,13 +3195,36 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="aGCXuJKrOcSN2YOepQfQ35"><span class="num" data-page-node-id="2NxyvOO5LO2FZEErnDwBGZ">02</span></div>
+            <div class="meta" data-page-node-id="aGCXuJKrOcSN2YOepQfQ35"><span class="num" data-page-node-id="2NxyvOO5LO2FZEErnDwBGZ">Ⅰ</span><span class="branch">立法</span></div>
             <div class="title" data-page-node-id="jYiKzjkyZNfdyPWWiKmUzS">国会法案</div>
             <div class="title-en" data-page-node-id="16URTQ9tvqGJCO3mX9G6QH">Congressional Bills</div>
             <p class="desc" data-page-node-id="ud55BFjrDFjCm9Knyp4AFi">收集国会法案、决议、听证与拨款文本,按立法进度与议题归类梳理。</p>
             <div class="tags" data-page-node-id="hH5H65qn1FEMRFZNnFxTPs"><span data-page-node-id="ItEBU2ZCRu0dii2RfOl6xp">法案</span><span data-page-node-id="GyYkrWVnZwgq0IGHb7yN2F">决议</span><span data-page-node-id="BJqE3v7z6AjQUIAhgeKkGh">听证</span><span data-page-node-id="zmnMMfIEWqjLHJe4CiQinU">拨款</span></div>
             <a class="btn" href="#" data-enter="board" data-board="congress" data-page-node-id="rRpyASZBOPS2HHpfrpzxxu" style="">进入板块</a>
             <div class="us-foot" data-us-foot="congress" data-page-node-id="LhfB8wnP85l2hZ40Is2Fup">来源：国会官网 congress.gov · 每日 08:35 自动更新</div>
+          </div>
+
+          <!-- 子板块 02 -->
+          <div class="card" data-page-node-id="dxnDA7D2CvcMPtCEFjPD4J" style="">
+            <div class="visual" aria-hidden="true" data-page-node-id="PBv2wW7Hs8qN86ix2V1s2V">
+              <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" data-page-node-id="8MYnC80ZMpC9TsP6U5HLHU" style="">                <!-- 白宫：参照参考图轮廓——浅坡屋面 + 实心厚檐口 + 密排六柱 + 实心台基，顶部小旗 -->
+                <g stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M55 35 V26"/>
+                  <path d="M34 42 L55 35 L76 42"/>
+                  <path d="M33 48 V73 M41.8 48 V73 M50.6 48 V73 M59.4 48 V73 M68.2 48 V73 M77 48 V73"/>
+                  <rect x="29" y="42" width="52" height="5.6" rx="1.4" fill="currentColor" stroke="none"/>
+                  <rect x="27" y="73" width="56" height="5.2" rx="1.4" fill="currentColor" stroke="none"/>
+                  <path d="M55 26 L64 29 L55 32" fill="currentColor" stroke="none"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta" data-page-node-id="F2gQsyPCFeyqVHtwc247FZ"><span class="num" data-page-node-id="6ugNjdt65c6DCNnQAm4E0d">Ⅱ</span><span class="branch">行政</span></div>
+            <div class="title" data-page-node-id="JCNwpWEwfhTHFbQfpBKLH9">白宫及内阁各部政策</div>
+            <div class="title-en" data-page-node-id="AH6RWD3lv53PYGRC6uFLK0">White House &amp; Cabinet</div>
+            <p class="desc" data-page-node-id="ZzOR9HtYAagq4ZZlDuS0bU">收集总统行政令、总统备忘录、公告,总统行政办公室（EOP）各组成机构（OMB、USTR、OSTP 等）文件,以及内阁各部发布的规则与拟议规则。</p>
+            <div class="tags" data-page-node-id="YZAOcd8ZosZuNsxiRP963z"><span data-page-node-id="FfniiNJttOg4EWPTpZc8kY">行政令</span><span data-page-node-id="Qunk7JavWdlmQAFJi7H1wr">EOP 机构</span><span data-page-node-id="reGiDwDbeWuLn5zww2S5yO">OMB</span><span data-page-node-id="YGclSnxkq52PaDSlkKUiGZ">USTR</span><span data-page-node-id="repYANh7O3FCTqeyjuL8md">内阁各部</span></div>
+            <a class="btn" href="#" data-enter="board" data-board="whitehouse" data-page-node-id="L12C3P2Ly2nRthFl7gxu0k" style="">进入板块</a>
+            <div class="us-foot" data-us-foot="whitehouse" data-page-node-id="ZDuwggjfLhDtcowcigtT32">来源：联邦公报 · 每日 08:00 自动更新</div>
           </div>
 
           <!-- 子板块 03 -->
@@ -3234,7 +3243,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="HeYUR3GZAKzUILNBKpzOAQ"><span class="num" data-page-node-id="ZljE6Dmgc8jY7KATiR1BMY">03</span></div>
+            <div class="meta" data-page-node-id="HeYUR3GZAKzUILNBKpzOAQ"><span class="num" data-page-node-id="ZljE6Dmgc8jY7KATiR1BMY">Ⅲ</span><span class="branch">行政</span></div>
             <div class="title" data-page-node-id="U47Qj07ztkD7vRhdcGVuXm">独立机构政策</div>
             <div class="title-en" data-page-node-id="DRkSynO4mZQltuRCSy4T9h">Independent Agencies</div>
             <p class="desc" data-page-node-id="YdoBep2Gi0Aao3c4tjgtpS">收集独立监管与决策机构发布的政策文本与规则决定,涵盖美联储（Federal Reserve）、联邦通信委员会（FCC）、国际贸易委员会（USITC）、外国投资委员会（CFIUS）与国际开发署（USAID）。</p>
@@ -3257,7 +3266,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta"><span class="num">04</span></div>
+            <div class="meta"><span class="num">Ⅳ</span><span class="branch">司法</span></div>
             <div class="title">司法裁判</div>
             <div class="title-en">Judicial Decisions</div>
             <p class="desc">收集联邦司法体系内的政策相关裁判：最高法院判决与中止申请等命令，13 个巡回上诉法院及重点联邦地区法院的判决与裁定，按法院层级、裁判类型与政策领域归类。</p>
@@ -3278,7 +3287,7 @@
                 </g>
               </svg>
             </div>
-            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">05</span></div>
+            <div class="meta" data-page-node-id="fa7xkYHHxSRyI1LhgBbpqV"><span class="num" data-page-node-id="c29wpREkgTUjcyaKQk1tQO">Ⅴ</span><span class="branch">选举</span></div>
             <div class="title" data-page-node-id="QY6unKrZzP5hPvvoyqbEbv">选举动态</div>
             <div class="title-en" data-page-node-id="xR2OZQtuAKLTlVcQTMlHrD">Election Dynamics</div>
             <p class="desc" data-page-node-id="07SRDV3ExCo0cyzRPrNFOJ">收集选举周期内的初选与大选日程、候选人议题主张与竞选纲领、关键州民调表现,按时间线归档。</p>
