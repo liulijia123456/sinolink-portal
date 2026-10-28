@@ -2702,6 +2702,370 @@
   @media (prefers-reduced-motion: reduce) {
     #view-us .if-ext { transition: none; }
   }
+</style>
+<style id="v4-parties">
+  /* =========================================================================
+     v4 · 政党动态看板 —— 作用域严格限定 #view-parties
+     ---------------------------------------------------------------------------
+     版式语言：对垒式竞选看板
+       · 左右对称双栏表达两党对等，中轴只做对比缝
+       · 支持率是唯一超大数字，其余读数降一级，避免层级打架
+       · 民主党低饱和蓝、共和党低饱和砖红，只用于政党身份与数据标记
+       · 铜金只做中轴、刻度与区块索引，不参与政党配色
+     ========================================================================= */
+  #view-parties {
+    --pt-ink: #0b1724;
+    --pt-ink-2: #12202f;
+    --pt-paper: #f2eee6;
+    --pt-card: #fbf9f4;
+    --pt-line: rgba(11, 23, 36, .17);
+    --pt-line-soft: rgba(11, 23, 36, .08);
+    --pt-brass: #a8823c;
+    --pt-brass-2: #c9a86a;
+    --pt-dem: #2f5d8a;
+    --pt-dem-soft: rgba(47, 93, 138, .10);
+    --pt-rep: #9a4a3c;
+    --pt-rep-soft: rgba(154, 74, 60, .10);
+    --pt-muted: rgba(11, 23, 36, .55);
+    --pt-faint: rgba(11, 23, 36, .38);
+    --pt-serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "SimSun", Georgia, "Times New Roman", serif;
+    --pt-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --pt-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background: var(--pt-paper);
+    color: #1b2531;
+    font-family: var(--pt-sans);
+  }
+  #view-parties .wrap { max-width: 1240px; }
+
+  /* ---------- 抬头 ---------- */
+  #view-parties .pt-head { padding: 76px 0 44px; }
+  #view-parties .pt-head h1 {
+    font-family: var(--pt-serif); font-size: clamp(28px, 3.4vw, 40px);
+    font-weight: 600; letter-spacing: .04em; margin-bottom: 8px;
+  }
+  #view-parties .pt-head .suben {
+    font-family: var(--pt-mono); font-size: 10.5px; letter-spacing: .28em;
+    text-transform: uppercase; color: var(--pt-brass-2);
+  }
+  #view-parties .pt-head .subdesc {
+    max-width: 760px; margin: 14px auto 0; font-size: 13.5px; line-height: 1.9;
+    color: rgba(230, 237, 243, .60);
+  }
+
+  /* ---------- 示例数据提示 ---------- */
+  #view-parties .pt-demo {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 11px 16px; margin-bottom: 20px;
+    background: rgba(201, 168, 106, .10); border: 1px solid rgba(168, 130, 60, .34);
+    border-radius: 8px; font-size: 11.5px; line-height: 1.8; color: rgba(11, 23, 36, .62);
+  }
+  #view-parties .pt-demo b {
+    flex: none; font-family: var(--pt-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: .12em; color: #fff; background: var(--pt-brass);
+    padding: 2px 8px; border-radius: 3px;
+  }
+
+  /* ---------- B 力量对比带 ---------- */
+  #view-parties .pt-power {
+    background: var(--pt-ink); border-radius: 14px; padding: 24px 28px 18px;
+    color: #e6edf3;
+  }
+  #view-parties .pt-power-top {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; margin-bottom: 18px;
+  }
+  #view-parties .pt-kicker {
+    font-family: var(--pt-mono); font-size: 10px; letter-spacing: .20em;
+    text-transform: uppercase; color: var(--pt-brass-2);
+  }
+  #view-parties .pt-power-note {
+    font-family: var(--pt-mono); font-size: 10px; color: rgba(230, 237, 243, .40);
+  }
+  #view-parties .pt-power-grid {
+    display: grid; grid-template-columns: minmax(0, 1fr) 190px minmax(0, 1fr);
+    align-items: center; gap: 20px;
+  }
+  #view-parties .pt-hero-name {
+    font-family: var(--pt-serif); font-size: 18px; letter-spacing: .06em; margin-bottom: 3px;
+  }
+  #view-parties .pt-hero-value {
+    font-family: var(--pt-sans); font-size: 56px; font-weight: 500; line-height: 1;
+    font-variant-numeric: tabular-nums; letter-spacing: -.03em;
+  }
+  #view-parties .pt-hero-delta {
+    font-family: var(--pt-mono); font-size: 12px; margin-left: 10px;
+    font-variant-numeric: tabular-nums;
+  }
+  #view-parties .pt-hero-note {
+    font-size: 11px; color: rgba(230, 237, 243, .45); margin-top: 8px;
+  }
+  #view-parties .pt-hero.is-dem .pt-hero-value { color: #8fb4d6; }
+  #view-parties .pt-hero.is-dem .pt-hero-delta { color: #8fb4d6; }
+  #view-parties .pt-hero.is-rep { text-align: right; }
+  #view-parties .pt-hero.is-rep .pt-hero-value { color: #d39a8c; }
+  #view-parties .pt-hero.is-rep .pt-hero-delta { color: #d39a8c; }
+  #view-parties .pt-gap {
+    text-align: center; padding: 0 18px;
+    border-left: 1px solid rgba(201, 168, 106, .22);
+    border-right: 1px solid rgba(201, 168, 106, .22);
+  }
+  #view-parties .pt-gap-label {
+    font-family: var(--pt-mono); font-size: 9.5px; letter-spacing: .16em;
+    color: rgba(230, 237, 243, .42);
+  }
+  #view-parties .pt-gap-value {
+    font-family: var(--pt-mono); font-size: 30px; line-height: 1.25;
+    color: var(--pt-brass-2); font-variant-numeric: tabular-nums;
+  }
+  #view-parties .pt-gap-lead { font-size: 11px; color: rgba(230, 237, 243, .55); }
+
+  /* ---------- 席位条 ---------- */
+  #view-parties .pt-seat { margin-top: 20px; }
+  #view-parties .pt-seat-head {
+    display: flex; justify-content: space-between; gap: 12px; margin-bottom: 6px;
+    font-family: var(--pt-mono); font-size: 9.5px; letter-spacing: .08em;
+    color: rgba(230, 237, 243, .42);
+  }
+  #view-parties .pt-seat-bar {
+    position: relative; display: flex; height: 10px; border-radius: 2px;
+    overflow: hidden; background: rgba(255, 255, 255, .08);
+  }
+  #view-parties .pt-seat-dem { background: #3f6f9e; }
+  #view-parties .pt-seat-rep { background: #9a4a3c; }
+  #view-parties .pt-seat-oth { background: #6b6f76; }
+  #view-parties .pt-seat-mark {
+    position: absolute; top: -3px; bottom: -3px; width: 1px;
+    background: var(--pt-brass-2); z-index: 2;
+  }
+  #view-parties .pt-seat-axis {
+    position: relative; height: 17px; margin-top: 5px;
+    font-family: var(--pt-mono); font-size: 9.5px; color: rgba(230, 237, 243, .42);
+  }
+  #view-parties .pt-seat-axis span {
+    position: absolute; transform: translateX(-50%); white-space: nowrap;
+  }
+
+  /* ---------- C 双党并置 ---------- */
+  #view-parties .pt-columns {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px; margin-top: 18px;
+  }
+  #view-parties .pt-party {
+    background: var(--pt-card); border: 1px solid var(--pt-line);
+    border-radius: 12px; padding: 22px 24px 18px;
+  }
+  #view-parties .pt-party.is-dem { border-top: 3px solid var(--pt-dem); }
+  #view-parties .pt-party.is-rep { border-top: 3px solid var(--pt-rep); }
+  #view-parties .pt-party-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+  }
+  #view-parties .pt-party-name {
+    font-family: var(--pt-serif); font-size: 24px; font-weight: 600; letter-spacing: .04em;
+  }
+  #view-parties .pt-party-en {
+    font-family: var(--pt-mono); font-size: 9px; letter-spacing: .20em;
+    text-transform: uppercase; color: var(--pt-faint); margin-top: 2px;
+  }
+  #view-parties .pt-party-seat {
+    flex: none; font-family: var(--pt-mono); font-size: 10px; letter-spacing: .06em;
+    color: var(--pt-muted); border: 1px solid var(--pt-line); border-radius: 11px;
+    padding: 2px 9px; white-space: nowrap;
+  }
+  #view-parties .pt-party-meta {
+    display: flex; flex-wrap: wrap; gap: 5px 14px;
+    margin: 10px 0 16px; font-size: 11px; color: var(--pt-muted);
+  }
+  #view-parties .pt-party-meta b { font-weight: 600; color: #1b2531; }
+  #view-parties .pt-metrics {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px;
+  }
+  #view-parties .pt-metric {
+    border: 1px solid var(--pt-line-soft); border-radius: 8px;
+    padding: 9px 11px; background: rgba(255, 255, 255, .5);
+  }
+  #view-parties .pt-metric span {
+    display: block; font-size: 10px; color: var(--pt-faint); margin-bottom: 3px;
+  }
+  #view-parties .pt-metric b {
+    display: block; font-family: var(--pt-mono); font-size: 21px; font-weight: 500;
+    line-height: 1.1; font-variant-numeric: tabular-nums;
+  }
+  #view-parties .pt-metric i {
+    display: block; font-style: normal; font-size: 9.5px; color: var(--pt-faint);
+    margin-top: 2px; line-height: 1.4;
+  }
+  #view-parties .pt-figures {
+    margin-top: 16px; border-top: 1px solid var(--pt-line-soft); padding-top: 12px;
+  }
+  #view-parties .pt-figures-h {
+    font-family: var(--pt-mono); font-size: 9.5px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--pt-faint); margin-bottom: 5px;
+  }
+  #view-parties .pt-figure { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+  #view-parties .pt-avatar {
+    flex: none; width: 30px; height: 30px; border-radius: 50%;
+    display: grid; place-items: center; font-family: var(--pt-mono); font-size: 9.5px;
+  }
+  #view-parties .is-dem .pt-avatar {
+    background: var(--pt-dem-soft); color: var(--pt-dem);
+    border: 1px solid rgba(47, 93, 138, .25);
+  }
+  #view-parties .is-rep .pt-avatar {
+    background: var(--pt-rep-soft); color: var(--pt-rep);
+    border: 1px solid rgba(154, 74, 60, .25);
+  }
+  #view-parties .pt-figure-role { font-size: 12.5px; font-weight: 600; line-height: 1.3; }
+  #view-parties .pt-figure-note { font-size: 10.5px; color: var(--pt-faint); line-height: 1.4; }
+
+  /* ---------- D 议题对比矩阵 ---------- */
+  #view-parties .pt-panel {
+    background: var(--pt-card); border: 1px solid var(--pt-line);
+    border-radius: 12px; padding: 20px 24px 18px; margin-top: 18px;
+  }
+  #view-parties .pt-panel-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 12px; margin-bottom: 10px;
+  }
+  #view-parties .pt-panel-title {
+    font-family: var(--pt-serif); font-size: 19px; font-weight: 600; letter-spacing: .04em;
+  }
+  #view-parties .pt-panel-sub {
+    font-family: var(--pt-mono); font-size: 9.5px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--pt-faint);
+  }
+  #view-parties .pt-matrix { border-top: 1px solid var(--pt-line); }
+  #view-parties .pt-matrix-row {
+    display: grid; grid-template-columns: minmax(0, 1fr) 120px minmax(0, 1fr) 96px;
+    align-items: center; gap: 12px; padding: 12px 0;
+    border-bottom: 1px solid var(--pt-line-soft);
+  }
+  #view-parties .pt-matrix-row.is-head { border-bottom: 1px solid var(--pt-line); padding: 8px 0; }
+  #view-parties .pt-matrix-dem { text-align: right; font-size: 12.5px; line-height: 1.65; }
+  #view-parties .pt-matrix-issue {
+    text-align: center; font-family: var(--pt-serif); font-size: 13.5px; font-weight: 600;
+  }
+  #view-parties .pt-matrix-issue small {
+    display: block; font-family: var(--pt-mono); font-size: 9px; font-weight: 400;
+    letter-spacing: .06em; color: var(--pt-faint); margin-top: 2px;
+  }
+  #view-parties .pt-matrix-rep { text-align: left; font-size: 12.5px; line-height: 1.65; }
+  #view-parties .pt-matrix-head-label {
+    font-family: var(--pt-mono); font-size: 9.5px; letter-spacing: .12em; color: var(--pt-faint);
+  }
+  #view-parties .pt-matrix-head-label.dem { text-align: right; color: var(--pt-dem); }
+  #view-parties .pt-matrix-head-label.rep { text-align: left; color: var(--pt-rep); }
+  #view-parties .pt-sal { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  #view-parties .pt-sal-bar {
+    width: 54px; height: 6px; border-radius: 2px;
+    background: rgba(168, 130, 60, .16); overflow: hidden;
+  }
+  #view-parties .pt-sal-fill { height: 100%; background: var(--pt-brass); }
+  #view-parties .pt-sal span {
+    width: 28px; text-align: right; font-family: var(--pt-mono);
+    font-size: 9.5px; color: var(--pt-faint);
+  }
+
+  /* ---------- E 双轨时间轴 ---------- */
+  #view-parties .pt-timeline { position: relative; height: 188px; margin-top: 6px; }
+  #view-parties .pt-tl-axis {
+    position: absolute; left: 0; right: 0; top: 94px; height: 1px; background: var(--pt-line);
+  }
+  #view-parties .pt-tl-lane {
+    position: absolute; left: 0; font-family: var(--pt-mono);
+    font-size: 10px; letter-spacing: .10em;
+  }
+  #view-parties .pt-tl-lane.dem { top: 50px; color: var(--pt-dem); }
+  #view-parties .pt-tl-lane.rep { top: 138px; color: var(--pt-rep); }
+  #view-parties .pt-tl-event {
+    position: absolute; width: 150px; transform: translateX(-50%); text-align: center;
+  }
+  #view-parties .pt-tl-event.dem { top: 10px; }
+  #view-parties .pt-tl-event.rep { top: 110px; }
+  #view-parties .pt-tl-dot {
+    display: block; width: 7px; height: 7px; border-radius: 50%; margin: 0 auto 5px;
+  }
+  #view-parties .pt-tl-event.dem .pt-tl-dot { background: var(--pt-dem); }
+  #view-parties .pt-tl-event.rep .pt-tl-dot { background: var(--pt-rep); }
+  #view-parties .pt-tl-date {
+    display: block; font-family: var(--pt-mono); font-size: 9.5px; color: var(--pt-faint);
+  }
+  #view-parties .pt-tl-title { display: block; font-size: 11px; line-height: 1.45; margin-top: 1px; }
+  #view-parties .pt-tl-national {
+    position: absolute; top: 0; bottom: 18px; width: 1px;
+    background: rgba(168, 130, 60, .35);
+  }
+  #view-parties .pt-tl-national .pt-tl-flag {
+    position: absolute; top: 90px; left: -4px; width: 9px; height: 9px;
+    background: var(--pt-brass); transform: rotate(45deg);
+  }
+  #view-parties .pt-tl-national-list {
+    display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px;
+    padding-top: 10px; border-top: 1px solid var(--pt-line-soft);
+    font-size: 10.5px; color: var(--pt-muted); line-height: 1.6;
+  }
+  #view-parties .pt-tl-national-list b {
+    font-family: var(--pt-mono); font-weight: 500; color: var(--pt-brass); margin-right: 6px;
+  }
+
+  /* ---------- F 数据说明 ---------- */
+  #view-parties .pt-foot {
+    margin-top: 18px; padding-left: 14px; border-left: 2px solid var(--pt-brass);
+    font-size: 11px; line-height: 1.9; color: rgba(11, 23, 36, .50);
+  }
+  #view-parties .pt-foot b { color: rgba(11, 23, 36, .72); font-weight: 600; }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 1100px) {
+    #view-parties .pt-power-grid { grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr); gap: 14px; }
+    #view-parties .pt-hero-value { font-size: 46px; }
+    #view-parties .pt-matrix-row { grid-template-columns: minmax(0, 1fr) 100px minmax(0, 1fr) 82px; gap: 10px; }
+  }
+  @media (max-width: 860px) {
+    #view-parties .pt-columns { grid-template-columns: 1fr; }
+    #view-parties .pt-power-grid { grid-template-columns: 1fr; gap: 10px; }
+    #view-parties .pt-hero.is-rep { text-align: left; }
+    #view-parties .pt-gap {
+      border-left: 0; border-right: 0;
+      border-top: 1px solid rgba(201, 168, 106, .22);
+      border-bottom: 1px solid rgba(201, 168, 106, .22);
+      padding: 10px 0;
+    }
+    #view-parties .pt-matrix-row { grid-template-columns: 1fr; gap: 3px; padding: 11px 0; }
+    #view-parties .pt-matrix-row.is-head { display: none; }
+    #view-parties .pt-matrix-dem, #view-parties .pt-matrix-rep { text-align: left; }
+    #view-parties .pt-matrix-issue { text-align: left; order: -1; }
+    #view-parties .pt-matrix-dem::before {
+      content: "D "; font-family: var(--pt-mono); font-size: 10px; color: var(--pt-dem);
+    }
+    #view-parties .pt-matrix-rep::before {
+      content: "R "; font-family: var(--pt-mono); font-size: 10px; color: var(--pt-rep);
+    }
+    #view-parties .pt-sal { justify-content: flex-start; margin-top: 4px; }
+    #view-parties .pt-timeline { height: auto; margin-top: 4px; }
+    #view-parties .pt-tl-axis, #view-parties .pt-tl-lane, #view-parties .pt-tl-national { display: none; }
+    #view-parties .pt-tl-event {
+      position: static; width: auto; transform: none; text-align: left;
+      margin: 7px 0; padding-left: 2px;
+    }
+    #view-parties .pt-tl-event.dem, #view-parties .pt-tl-event.rep { top: auto; }
+    #view-parties .pt-tl-event::before {
+      display: inline-block; width: 12px; font-family: var(--pt-mono); font-size: 10px;
+    }
+    #view-parties .pt-tl-event.dem::before { content: "D"; color: var(--pt-dem); }
+    #view-parties .pt-tl-event.rep::before { content: "R"; color: var(--pt-rep); }
+    #view-parties .pt-tl-dot { display: inline-block; margin: 0 6px 0 0; }
+    #view-parties .pt-tl-date, #view-parties .pt-tl-title { display: inline; }
+    #view-parties .pt-tl-title { margin-left: 4px; }
+  }
+  @media (max-width: 560px) {
+    #view-parties .pt-head { padding: 56px 0 32px; }
+    #view-parties .pt-hero-value { font-size: 42px; }
+    #view-parties .pt-metrics { grid-template-columns: 1fr 1fr; }
+    #view-parties .pt-metric:last-child { grid-column: span 2; }
+    #view-parties .pt-panel { padding: 16px 16px 14px; }
+    #view-parties .pt-party { padding: 18px 16px 14px; }
+  }
+
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
 
@@ -3290,7 +3654,7 @@
             <div class="us-foot" data-us-foot="election" data-page-node-id="UHFqG1Wbk7hhOyfpA9HzNJ">2026 中期选举 · 2028 总统大选 · 人工整理</div>
           </div>
 
-          <!-- 子板块 06：政党动态（2026-10-28 新增，框架占位，暂无抓取器与定时任务） -->
+          <!-- 子板块 06：政党动态（2026-10-28 新增，独立看板；暂无抓取器与定时任务） -->
           <div class="card">
             <div class="visual" aria-hidden="true">
               <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
@@ -3306,15 +3670,15 @@
             <div class="meta"><span class="num">Ⅵ</span><span class="branch">政党</span></div>
             <div class="title">政党动态</div>
             <div class="title-en">Party Dynamics</div>
-            <p class="desc">拟跟踪民主、共和两党全国委员会、国会党团与州党部的组织人事、纲领路线、竞选资金与初选动态；当前为框架页，数据源与更新频率待定。</p>
+            <p class="desc">拟跟踪民主、共和两党全国委员会、国会党团与州党部的组织人事、纲领路线、竞选资金与初选动态；当前为版式示例，数值待接入真实来源。</p>
             <div class="tags"><span>全国委员会</span><span>国会党团</span><span>党内派系</span><span>初选</span></div>
-            <a class="btn" href="#" data-enter="board" data-board="parties">进入板块</a>
-            <div class="us-foot" data-us-foot="parties">框架已就位 · 数据源待接入</div>
+            <a class="btn" href="#" data-enter="parties">进入板块</a>
+            <div class="us-foot" data-us-foot="parties">版式示例 · 数据待接入</div>
           </div>
 
         </div>
 
-        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;政党动态板块为框架页,数据源与更新频率待定。</p>
+        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;政党动态板块为版式示例,数据待接入。</p>
 
         <!-- =================================================================
              政治机构导航（Government Directory）
@@ -4710,6 +5074,28 @@
     </section>
   </main>
 
+  <!-- ============ 子页面：政党动态（对垒式看板，示例数据） ============ -->
+  <main id="view-parties" class="subview" hidden>
+    <div class="subhead pt-head">
+      <div class="wrap">
+        <a class="back" href="#" id="back-link-parties">← 返回美国板块</a>
+        <h1>政党动态</h1>
+        <div class="suben">Party Dynamics</div>
+        <p class="subdesc">以两党对照的方式呈现支持率、民调走势、政策主张、关键人物与重大活动；当前为版式示例，数值与人物待接入真实来源。</p>
+      </div>
+    </div>
+    <section class="section pt-section">
+      <div class="wrap">
+        <div class="pt-demo">
+          <b>示例版式</b>
+          <span>以下民调、席位与关注度数值仅用于验证排版，不是真实数据；接入来源前不得对外引用。关键人物以职务代称，姓名待补。</span>
+        </div>
+        <div id="parties-board" class="pt-board"></div>
+        <p class="pt-foot" id="parties-foot"></p>
+      </div>
+    </section>
+  </main>
+
   <!-- 选举动态数据块：人工/自动化整理维护，每日更新 -->
   <script type="application/json" id="election-data" data-page-node-id="SN4mEQcVKjq51TYqglTuu9">
 {
@@ -5619,6 +6005,117 @@
     "cadence": "随盖洛普季度党派认同（1/4/7/10 月发布）、总统满意度月度追踪及专项民调发布同步更新"
   }
 }
+</script>
+
+<script type="application/json" id="parties-data">
+{
+  "updated_at": "2026-10-28",
+  "cycle": "2026 中期选举",
+  "sample": true,
+  "parties": [
+    {
+      "id": "dem",
+      "name": "民主党",
+      "en": "Democratic Party",
+      "chair": "待补",
+      "hq": "华盛顿特区",
+      "founded": "1828",
+      "ideology": ["社会自由主义", "进步主义"],
+      "support": {
+        "value": 47.2,
+        "delta": 0.6,
+        "note": "通用选票 · 7 日均值"
+      },
+      "metrics": [
+        { "label": "好感度", "value": "44", "note": "不赞成 51" },
+        { "label": "参议院", "value": "47", "note": "改选 33 席" },
+        { "label": "州长", "value": "23", "note": "全美 50 州" }
+      ],
+      "figures": [
+        { "initials": "D1", "role": "众议院少数党领袖", "note": "立法议程与党团协调" },
+        { "initials": "D2", "role": "参议院少数党领袖", "note": "拨款与司法提名" },
+        { "initials": "D3", "role": "全国委员会主席", "note": "初选规则与州党部" }
+      ]
+    },
+    {
+      "id": "rep",
+      "name": "共和党",
+      "en": "Republican Party",
+      "chair": "待补",
+      "hq": "华盛顿特区",
+      "founded": "1854",
+      "ideology": ["保守主义", "经济自由主义"],
+      "support": {
+        "value": 45.6,
+        "delta": -0.6,
+        "note": "通用选票 · 7 日均值"
+      },
+      "metrics": [
+        { "label": "好感度", "value": "46", "note": "不赞成 49" },
+        { "label": "参议院", "value": "53", "note": "改选 33 席" },
+        { "label": "州长", "value": "27", "note": "全美 50 州" }
+      ],
+      "figures": [
+        { "initials": "R1", "role": "众议院议长", "note": "议程设置与拨款" },
+        { "initials": "R2", "role": "参议院多数党领袖", "note": "司法提名与预算" },
+        { "initials": "R3", "role": "全国委员会主席", "note": "州党部与筹款" }
+      ]
+    }
+  ],
+  "seats": {
+    "total": 435,
+    "majority": 218,
+    "dem": 205,
+    "rep": 220,
+    "other": 10
+  },
+  "issues": [
+    {
+      "label": "经济与税收",
+      "dem": "对富人加税 / 保留补贴",
+      "rep": "减税永久化 / 关税更强硬",
+      "salience": 34,
+      "tag": "首要议题"
+    },
+    {
+      "label": "移民与边境",
+      "dem": "立法化庇护程序",
+      "rep": "驱逐与边境执法优先",
+      "salience": 28,
+      "tag": "高极化"
+    },
+    {
+      "label": "能源与气候",
+      "dem": "补贴与电网改造",
+      "rep": "放松监管 / 保供化石能源",
+      "salience": 21,
+      "tag": "党内分歧"
+    },
+    {
+      "label": "外交与贸易",
+      "dem": "联盟协调 / 定向关税",
+      "rep": "双边施压 / 普遍关税",
+      "salience": 17,
+      "tag": "低关注"
+    }
+  ],
+  "timeline": [
+    { "date": "2026-11-03", "party": "both", "title": "中期选举投票日" },
+    { "date": "2027-02-15", "party": "dem", "title": "民主党全国委员会冬季会议" },
+    { "date": "2027-02-22", "party": "rep", "title": "共和党全国委员会冬季会议" },
+    { "date": "2027-06-20", "party": "dem", "title": "州党部大会" },
+    { "date": "2027-06-27", "party": "rep", "title": "州党部大会" },
+    { "date": "2027-09-10", "party": "dem", "title": "初选规则听证" },
+    { "date": "2027-09-17", "party": "rep", "title": "初选规则听证" },
+    { "date": "2028-01-15", "party": "both", "title": "总统初选启动" }
+  ],
+  "sources": [
+    { "name": "民调聚合", "note": "示例：7 日均值，样本 1,200，误差 ±3.1" },
+    { "name": "席位与人事", "note": "示例：众议院 435 席、参议院 100 席、州长 50 席" },
+    { "name": "立场文本", "note": "示例：按 2024 党纲与近期表决归纳" }
+  ]
+}
+
 </script>
 
 <!-- 大事日历数据块：日期均经官方来源核实（美联储 / BLS / G20 官网 / IMF 官网 / 中国外交部）
@@ -7358,16 +7855,19 @@
       var boardView = document.getElementById('view-board');
       var electionView = document.getElementById('view-election');
       var euView = document.getElementById('view-eu');
+      var partiesView = document.getElementById('view-parties');
       if (!usView || !boardView) return;
       var portalEls = [].slice.call(document.querySelectorAll('.masthead, #columns, #coverage, #notes, .about'));
       var enterBtns = [].slice.call(document.querySelectorAll('[data-enter="us"]'));
       var boardBtns = [].slice.call(document.querySelectorAll('[data-enter="board"]'));
       var electionBtns = [].slice.call(document.querySelectorAll('[data-enter="election"]'));
       var euBtns = [].slice.call(document.querySelectorAll('[data-enter="eu"]'));
+      var partiesBtns = [].slice.call(document.querySelectorAll('[data-enter="parties"]'));
       var backLink = document.getElementById('back-link');
       var backLinkBoard = document.getElementById('back-link-board');
       var backLinkElection = document.getElementById('back-link-election');
       var backLinkEu = document.getElementById('back-link-eu');
+      var backLinkParties = document.getElementById('back-link-parties');
       var renderCurrentBoard = null;  // 当前展示的板块（供筛选事件重渲染）
 
       // 筛选事件绑定
@@ -7409,8 +7909,7 @@
         whitehouse: { title: '白宫及内阁各部政策', en: 'White House & Cabinet', desc: '总统行政令、总统备忘录、公告;总统行政办公室（EOP）各组成机构——管理与预算办公室（OMB）、美国贸易代表办公室（USTR）、科技政策办公室（OSTP）等——发布的文件;以及内阁各部（国防部、财政部、商务部、国土安全部等）发布的规则与拟议规则，国防部另收录剔除程序性文件后的通告（部委通告类程序文件不收录）。来源：联邦公报（Federal Register）官方数据,每日自动更新。' },
         congress: { title: '国会法案', en: 'Congressional Bills', desc: '国会参众两院法案与决议的最新立法动态。来源：国会官网（congress.gov）官方数据,每日自动更新。' },
         agencies: { title: '独立机构政策', en: 'Independent Agencies', desc: '独立监管与决策机构发布的政策文本与规则决定:美联储（Federal Reserve）、联邦通信委员会（FCC）、国际贸易委员会（USITC，反倾销与反补贴调查、337 调查的立案、裁决与复审通告）、外国投资委员会（CFIUS，按财政部投资安全办公室署名归集）、国际开发署（USAID）。来源：联邦公报（Federal Register）官方数据,每日自动更新。' },
-        judicial: { title: '司法裁判', en: 'Judicial Decisions', desc: '联邦司法体系内的政策相关裁判:美国最高法院的判决与中止申请等命令;13 个联邦巡回上诉法院对行政程序、规章效力、关税与制裁、禁令救济等争点的裁判;以及政策诉讼高发的重点联邦地区法院裁定。按法院层级、裁判类型与政策领域归类,每条附裁判要旨与市场含义;裁判文书原文链接指向 CourtListener 收录页。来源：CourtListener（Free Law Project）检索接口,每日自动更新;最高法院官网与 GovInfo 用于人工复核。' },
-        parties: { title: '政党动态', en: 'Party Dynamics', desc: '拟跟踪民主、共和两党的全国委员会、国会党团、州党部与党内派系:组织人事更替、纲领与路线调整、竞选资金与初选规则。板块框架已就位,数据源、收录标准与更新频率待定,当前不设抓取器与定时任务。', empty: '政党动态板块框架已就位，条目源与更新频率待定。' }
+        judicial: { title: '司法裁判', en: 'Judicial Decisions', desc: '联邦司法体系内的政策相关裁判:美国最高法院的判决与中止申请等命令;13 个联邦巡回上诉法院对行政程序、规章效力、关税与制裁、禁令救济等争点的裁判;以及政策诉讼高发的重点联邦地区法院裁定。按法院层级、裁判类型与政策领域归类,每条附裁判要旨与市场含义;裁判文书原文链接指向 CourtListener 收录页。来源：CourtListener（Free Law Project）检索接口,每日自动更新;最高法院官网与 GovInfo 用于人工复核。' }
       };
 
       function esc(s) {
@@ -7955,22 +8454,159 @@
         return true;
       }
 
+      // ===== 政党动态：对垒式看板（示例数据，取自 #parties-data） =====
+      function renderParties() {
+        var host = document.getElementById('parties-board');
+        var foot = document.getElementById('parties-foot');
+        if (!host) return;
+        var raw = document.getElementById('parties-data');
+        var data;
+        try { data = JSON.parse(raw.textContent); } catch (err) {
+          host.innerHTML = '<p class="placeholder">政党数据解析失败，请检查 #parties-data。</p>';
+          return;
+        }
+        var dem = data.parties[0], rep = data.parties[1];
+        var gapNum = dem.support.value - rep.support.value;
+        var gap = (gapNum >= 0 ? '+' : '') + gapNum.toFixed(1);
+        var leader = gapNum >= 0 ? dem.name + '领先' : rep.name + '领先';
+        var seat = data.seats || { total: 435, majority: 218, dem: 0, rep: 0, other: 0 };
+        var total = seat.total || 435;
+        function pct(n) { return (n / total * 100).toFixed(2) + '%'; }
+        function signed(v) { return (v >= 0 ? '+' : '') + Number(v).toFixed(1); }
+        function hero(p, cls) {
+          return '<div class="pt-hero is-' + cls + '">' +
+            '<div class="pt-hero-name">' + esc(p.name) + '</div>' +
+            '<div><span class="pt-hero-value">' + Number(p.support.value).toFixed(1) + '%</span>' +
+            '<span class="pt-hero-delta">' + signed(p.support.delta) + '</span></div>' +
+            '<div class="pt-hero-note">' + esc(p.support.note) + '</div>' +
+            '</div>';
+        }
+        function partyCard(p, cls) {
+          var metrics = p.metrics.map(function (m) {
+            return '<div class="pt-metric"><span>' + esc(m.label) + '</span><b>' + esc(m.value) +
+              '</b><i>' + esc(m.note) + '</i></div>';
+          }).join('');
+          var figures = p.figures.map(function (f) {
+            return '<div class="pt-figure"><span class="pt-avatar">' + esc(f.initials) + '</span>' +
+              '<div><div class="pt-figure-role">' + esc(f.role) + '</div>' +
+              '<div class="pt-figure-note">' + esc(f.note) + '</div></div></div>';
+          }).join('');
+          return '<article class="pt-party is-' + cls + '">' +
+            '<div class="pt-party-head"><div><div class="pt-party-name">' + esc(p.name) + '</div>' +
+            '<div class="pt-party-en">' + esc(p.en) + '</div></div>' +
+            '<span class="pt-party-seat">' + esc(data.cycle) + '</span></div>' +
+            '<div class="pt-party-meta"><span>主席：<b>' + esc(p.chair) + '</b></span>' +
+            '<span>总部：<b>' + esc(p.hq) + '</b></span><span>成立：<b>' + esc(p.founded) + '</b></span>' +
+            '<span>意识形态：<b>' + p.ideology.map(esc).join(' / ') + '</b></span></div>' +
+            '<div class="pt-metrics">' + metrics + '</div>' +
+            '<div class="pt-figures"><div class="pt-figures-h">关键人物</div>' + figures + '</div>' +
+            '</article>';
+        }
+        var html = '<section class="pt-power">' +
+          '<div class="pt-power-top"><span class="pt-kicker">' + esc(data.cycle) + ' · 两党力量对比</span>' +
+          '<span class="pt-power-note">数据截至 ' + esc(data.updated_at) + ' · 示例</span></div>' +
+          '<div class="pt-power-grid">' + hero(dem, 'dem') +
+          '<div class="pt-gap"><div class="pt-gap-label">两党差距</div>' +
+          '<div class="pt-gap-value">' + gap + '</div><div class="pt-gap-lead">' + esc(leader) + '</div></div>' +
+          hero(rep, 'rep') + '</div>' +
+          '<div class="pt-seat"><div class="pt-seat-head"><span>众议院 ' + total + ' 席</span>' +
+          '<span>过半 ' + seat.majority + ' 席</span></div>' +
+          '<div class="pt-seat-bar"><span class="pt-seat-dem" style="width:' + pct(seat.dem) + '"></span>' +
+          '<span class="pt-seat-rep" style="width:' + pct(seat.rep) + '"></span>' +
+          '<span class="pt-seat-oth" style="width:' + pct(seat.other) + '"></span>' +
+          '<i class="pt-seat-mark" style="left:' + pct(seat.majority) + '"></i></div>' +
+          '<div class="pt-seat-axis"><span style="left:0;transform:none">民主党 ' + seat.dem + '</span>' +
+          '<span style="left:' + pct(seat.majority) + '">过半线 ' + seat.majority + '</span>' +
+          '<span style="left:100%;transform:translateX(-100%)">共和党 ' + seat.rep + '</span></div></div>' +
+          '</section>';
+
+        html += '<div class="pt-columns">' + partyCard(dem, 'dem') + partyCard(rep, 'rep') + '</div>';
+
+        var rows = data.issues.map(function (x) {
+          return '<div class="pt-matrix-row"><div class="pt-matrix-dem">' + esc(x.dem) + '</div>' +
+            '<div class="pt-matrix-issue">' + esc(x.label) + '<small>' + esc(x.tag) + '</small></div>' +
+            '<div class="pt-matrix-rep">' + esc(x.rep) + '</div>' +
+            '<div class="pt-sal"><span class="pt-sal-bar"><i class="pt-sal-fill" style="width:' +
+            Math.min(100, x.salience / 40 * 100).toFixed(1) + '%"></i></span><span>' + x.salience + '%</span></div></div>';
+        }).join('');
+        html += '<section class="pt-panel"><div class="pt-panel-head">' +
+          '<h2 class="pt-panel-title">议题立场对照</h2><span class="pt-panel-sub">同一行 = 同一议题</span></div>' +
+          '<div class="pt-matrix"><div class="pt-matrix-row is-head">' +
+          '<div class="pt-matrix-head-label dem">民主党主张</div>' +
+          '<div class="pt-matrix-head-label" style="text-align:center">议题</div>' +
+          '<div class="pt-matrix-head-label rep">共和党主张</div>' +
+          '<div class="pt-matrix-head-label" style="text-align:right">关注度</div></div>' +
+          rows + '</div></section>';
+
+        var T0 = Date.parse('2026-10-01T00:00:00Z');
+        var T1 = Date.parse('2028-08-31T00:00:00Z');
+        function pos(d) {
+          var t = Date.parse(d + 'T00:00:00Z');
+          return Math.max(2, Math.min(98, (t - T0) / (T1 - T0) * 100)).toFixed(2);
+        }
+        function fmtDate(d) { return d.slice(0, 7).replace('-', '.'); }
+        function evHtml(e, cls) {
+          return '<div class="pt-tl-event ' + cls + '" style="left:' + pos(e.date) + '%">' +
+            '<span class="pt-tl-dot"></span><span class="pt-tl-date">' + fmtDate(e.date) + '</span>' +
+            '<span class="pt-tl-title">' + esc(e.title) + '</span></div>';
+        }
+        var demEv = data.timeline.filter(function (e) { return e.party === 'dem'; });
+        var repEv = data.timeline.filter(function (e) { return e.party === 'rep'; });
+        var bothEv = data.timeline.filter(function (e) { return e.party === 'both'; });
+        html += '<section class="pt-panel"><div class="pt-panel-head">' +
+          '<h2 class="pt-panel-title">重大活动</h2><span class="pt-panel-sub">两党共用一条时间轴 · 截至 ' + esc(data.updated_at) + '</span></div>' +
+          '<div class="pt-timeline"><div class="pt-tl-axis"></div>' +
+          '<div class="pt-tl-lane dem">D 民主党</div><div class="pt-tl-lane rep">R 共和党</div>' +
+          bothEv.map(function (e) {
+            return '<div class="pt-tl-national" style="left:' + pos(e.date) + '%"><i class="pt-tl-flag"></i></div>';
+          }).join('') +
+          demEv.map(function (e) { return evHtml(e, 'dem'); }).join('') +
+          repEv.map(function (e) { return evHtml(e, 'rep'); }).join('') + '</div>' +
+          '<div class="pt-tl-national-list">' + bothEv.map(function (e) {
+            return '<span><b>' + esc(e.date) + '</b>' + esc(e.title) + '</span>';
+          }).join('') + '</div></section>';
+
+        host.innerHTML = html;
+        if (foot) {
+          foot.innerHTML = '<b>数据说明</b>　' + data.sources.map(function (x) {
+            return esc(x.name) + '：' + esc(x.note);
+          }).join('；') + '。当前为示例版式，接入真实民调前不得对外引用。';
+        }
+      }
+
+      function showParties(e) {
+        if (e) e.preventDefault();
+        if (!partiesView) return;
+        portalEls.forEach(function (el) { el.hidden = true; });
+        usView.hidden = true;
+        boardView.hidden = true;
+        if (euView) euView.hidden = true;
+        if (electionView) electionView.hidden = true;
+        partiesView.hidden = false;
+        renderParties();
+        window.scrollTo(0, 0);
+        document.title = '政党动态 · 国金证券 政策与战略';
+      }
+
       function showUs(e) {
         if (e) e.preventDefault();
         portalEls.forEach(function (el) { el.hidden = true; });
         boardView.hidden = true;
         if (euView) euView.hidden = true;
         if (electionView) electionView.hidden = true;
+        if (partiesView) partiesView.hidden = true;
         usView.hidden = false;
         window.scrollTo(0, 0);
         document.title = '美国政治动态跟踪 · 国金证券 政策与战略';
       }
       function showBoard(key, e) {
+        if (key === 'parties') { showParties(e); return; }
         if (e) e.preventDefault();
         portalEls.forEach(function (el) { el.hidden = true; });
         usView.hidden = true;
         if (euView) euView.hidden = true;
         if (electionView) electionView.hidden = true;
+        if (partiesView) partiesView.hidden = true;
         boardView.hidden = false;
         // 头图立面剪影只属于白宫 / 国会板块；司法板块沿用统一深色抬头（无剪影）
         var boardHead = document.querySelector('#view-board .subhead');
@@ -8013,6 +8649,7 @@
         usView.hidden = true;
         if (euView) euView.hidden = true;
         boardView.hidden = true;
+        if (partiesView) partiesView.hidden = true;
         electionView.hidden = false;
         renderElection();
         window.scrollTo(0, 0);
@@ -8025,6 +8662,7 @@
         usView.hidden = true;
         boardView.hidden = true;
         if (electionView) electionView.hidden = true;
+        if (partiesView) partiesView.hidden = true;
         euView.hidden = false;
         window.scrollTo(0, 0);
         document.title = '欧洲政治动态跟踪 · 国金证券 政策与战略';
@@ -8035,6 +8673,7 @@
         boardView.hidden = true;
         if (electionView) electionView.hidden = true;
         if (euView) euView.hidden = true;
+        if (partiesView) partiesView.hidden = true;
         portalEls.forEach(function (el) { el.hidden = false; });
         window.scrollTo(0, 0);
         document.title = '国金证券 政策与战略';
@@ -8045,9 +8684,11 @@
         b.addEventListener('click', function (e) { showBoard(b.getAttribute('data-board'), e); });
       });
       electionBtns.forEach(function (b) { b.addEventListener('click', showElection); });
+      partiesBtns.forEach(function (b) { b.addEventListener('click', showParties); });
       if (backLink) backLink.addEventListener('click', showPortal);
       if (backLinkBoard) backLinkBoard.addEventListener('click', showUs);
       if (backLinkElection) backLinkElection.addEventListener('click', showUs);
+      if (backLinkParties) backLinkParties.addEventListener('click', showUs);
       euBtns.forEach(function (b) { b.addEventListener('click', showEu); });
       if (backLinkEu) backLinkEu.addEventListener('click', showPortal);
 
@@ -8887,6 +9528,7 @@
         if (h === '#us') showUs();
         else if (h === '#eu') showEu();
         else if (h === '#election') showElection();
+        else if (h === '#parties' || h === '#board-parties') showParties();
         else if (h.indexOf('#board-') === 0) showBoard(h.slice(7));
         else {
           // 回到门户：只恢复显隐与标题，不滚动，页内锚点仍照常跳转。
@@ -8895,6 +9537,7 @@
           boardView.hidden = true;
           if (electionView) electionView.hidden = true;
           if (euView) euView.hidden = true;
+          if (partiesView) partiesView.hidden = true;
           portalEls.forEach(function (el) { el.hidden = false; });
           document.title = '国金证券 政策与战略';
         }
@@ -9170,7 +9813,7 @@
     }
 
     // ---------- 即时插入当前打开的板块列表 ----------
-    var BOARD_OF_TITLE = { '白宫及内阁各部政策': 'whitehouse', '国会法案': 'congress', '独立机构政策': 'agencies', '司法裁判': 'judicial', '政党动态': 'parties' };
+    var BOARD_OF_TITLE = { '白宫及内阁各部政策': 'whitehouse', '国会法案': 'congress', '独立机构政策': 'agencies', '司法裁判': 'judicial' };
     function currentBoardKey() {
       var bv = document.getElementById('view-board');
       var t = document.getElementById('board-title');
@@ -9475,7 +10118,7 @@
     /* ---------- 1) 板块卡徽标：条数与更新日期 ---------- */
     function renderCardMeta() {
       // 各板块条数：读 data/policy/manifest.json 回填板块卡徽标与脚注（需 HTTP 预览）
-      var boards = ['whitehouse', 'congress', 'agencies', 'judicial', 'parties'];
+      var boards = ['whitehouse', 'congress', 'agencies', 'judicial'];
       fetch('data/policy/manifest.json', { cache: 'no-cache' })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (m) {

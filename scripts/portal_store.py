@@ -29,7 +29,7 @@ POLICY_DIR = os.path.join(BASE_DIR, 'data', 'policy')
 INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 MANIFEST = os.path.join(POLICY_DIR, 'manifest.json')
 
-BOARDS = ('whitehouse', 'congress', 'agencies', 'judicial', 'parties')
+BOARDS = ('whitehouse', 'congress', 'agencies', 'judicial')
 SCHEMA = 1
 TZ8 = timezone(timedelta(hours=8))
 

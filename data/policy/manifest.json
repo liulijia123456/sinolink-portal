@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "built_at": "2026-10-28T18:56:13+08:00",
+  "built_at": "2026-10-28T19:16:14+08:00",
   "source_fetched_at": "2026-10-28 15:21",
   "boards": {
     "whitehouse": {
@@ -18,10 +18,6 @@
     "judicial": {
       "count": 14,
       "updated_at": "2026-10-28 15:21"
-    },
-    "parties": {
-      "count": 0,
-      "updated_at": "2026-10-28"
     }
   }
 }

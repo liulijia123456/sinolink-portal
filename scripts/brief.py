@@ -211,7 +211,7 @@ CG_SLUG_TYPE = {
 }
 
 BOARD_CN = {'whitehouse': '白宫政策', 'congress': '国会政策',
-            'agencies': '其他部门政策', 'judicial': '司法裁判', 'parties': '政党动态'}
+            'agencies': '其他部门政策', 'judicial': '司法裁判'}
 
 
 def setup_logger():
@@ -393,7 +393,7 @@ MATERIAL_CHARS = {TIER_FULL: 1800, TIER_NOTE: 600}
 def cmd_coverage(args):
     """体检简报覆盖率：每一条目都必须有简报。"""
     _, _, payload = load_payload()
-    boards = [args.board] if args.board else ['whitehouse', 'congress', 'agencies', 'judicial', 'parties']
+    boards = [args.board] if args.board else ['whitehouse', 'congress', 'agencies', 'judicial']
     total_all = miss_all = 0
     for board in boards:
         items = (payload['boards'].get(board) or {}).get('items', [])
@@ -445,7 +445,7 @@ def cmd_queue(args):
              '> 成果写入 scripts/briefs.json（键为条目 url，含 tier 字段）后运行 merge 合并。',
              '> 合并后运行 brief.py coverage 复核覆盖率。', '']
     total = 0
-    boards = [args.board] if args.board else ['whitehouse', 'congress', 'agencies', 'judicial', 'parties']
+    boards = [args.board] if args.board else ['whitehouse', 'congress', 'agencies', 'judicial']
     for board in boards:
         items = (payload['boards'].get(board) or {}).get('items', [])
         all_pending = [it for it in items if not (it.get('brief') or {}).get('body')]
@@ -525,14 +525,14 @@ def main():
     ap = argparse.ArgumentParser(description='国金门户 · 政策简报工具')
     sub = ap.add_subparsers(dest='cmd', required=True)
     q = sub.add_parser('queue', help='生成待写简报队列（含官方摘要素材）')
-    q.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial', 'parties'])
+    q.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'])
     q.add_argument('--limit', type=int, default=8, help='每个板块最多列出条数（默认 8）')
     q.add_argument('--all', action='store_true',
                    help='列出全部待写条目（全覆盖模式，忽略 --limit；每日任务应使用）')
     q.add_argument('--fresh-ratio', type=float, default=0.5,
                    help='其中最新条目占比（默认 0.5，即一半最新一半最旧，两头推进清欠账）')
     c = sub.add_parser('coverage', help='体检简报覆盖率（每一条目都必须有简报）')
-    c.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial', 'parties'])
+    c.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'])
     m = sub.add_parser('merge', help='合并简报 JSON 进数据文件')
     m.add_argument('input', help='简报 JSON 文件路径（键为条目 url）')
     m.add_argument('--force', action='store_true',

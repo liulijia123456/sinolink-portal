@@ -28,9 +28,7 @@ import re
 import sys
 from datetime import datetime
 
-BOARDS = ('whitehouse', 'congress', 'agencies', 'judicial', 'parties')
-# 框架已就位、数据源尚未接入的板块：允许 0 条，其余板块仍要求非空
-PLACEHOLDER_BOARDS = {'parties'}
+BOARDS = ('whitehouse', 'congress', 'agencies', 'judicial')
 SCHEMA = 1
 # 留置策略：纯增量累积，不设留置上限（与 fetch_policy.py 的合并逻辑一致）。
 # 此处不做条数上限校验——存储层不截断，校验层就不该报「超过上限」的告警。
@@ -77,9 +75,6 @@ def check_board(path, board):
 
     items = d.get('items') or []
     if not items:
-        if board in PLACEHOLDER_BOARDS:
-            print('[%s] 0 条（框架占位，允许为空）' % board)
-            return
         err('%s：条目数为 0' % board)
         return
     if d.get('count') != len(items):
@@ -159,8 +154,8 @@ def main():
     ap = argparse.ArgumentParser(description='校验 data/policy 数据文件')
     ap.add_argument('--dir', default='data/policy', help='数据目录（默认 data/policy）')
     ap.add_argument('--strict', action='store_true', help='新增条目缺中文标题/领域即失败')
-    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial', 'parties'],
-                    help='只校验指定板块（拆分定时任务用）；不填则全部板块全验')
+    ap.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'],
+                    help='只校验指定板块（拆分定时任务用）；不填则四板块全验')
     args = ap.parse_args()
 
     if not os.path.isdir(args.dir):
