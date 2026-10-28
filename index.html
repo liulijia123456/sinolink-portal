@@ -3178,928 +3178,930 @@
              政治机构导航（Government Directory）
              -----------------------------------------------------------------
              结构依美国政府结构图整理：立法 / 行政 / 司法 三支并列，州与地方政府单列。
-             纯静态机构索引：每行唯一可点的元素是右侧 ↗ 官网外链（新窗口打开），
-             机构名本身不可点，也不与本门户的政策板块、在库条数发生关联。
-             增删机构只需照抄一行 .if-row；分组用 .ibr-grid（c2 / c3 控制列数）。
+             每行两行结构：第一行机构名 + 英文缩写，第二行现任首长 + 党派色块；
+             行内 .if-toggle 点击展开 .if-more（职责 / 权力），右侧 ↗ 为独立官网外链。
+             增删机构照抄一个 .if-item；改首长只改 .if-who 与 .pty；分组用 .ibr-grid。
+             首长信息需定期维护（人事变动），党派标注规则见块底脚注。
              本区块为手工新增节点，按 v3 约定不带 data-page-node-id。
              ================================================================= -->
         <div class="col-head" style="margin-top: 46px;"><span class="ch-cn">政治机构导航</span><span class="ch-en">Government Directory</span></div>
         <div class="inst" id="inst-nav">
-  <div class="inst-note">
-    <span class="in-k">三权分立与联邦制</span>
-    <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。每行第二行为现任首长与党派，点行内任一处可展开职责与权力，右侧 ↗ 为机构官网（数据截至 2026 年 10 月）。</span>
-  </div>
+        <div class="inst-note">
+          <span class="in-k">三权分立与联邦制</span>
+          <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。每行第二行为现任首长与党派，点行内任一处可展开职责与权力，右侧 ↗ 为机构官网（数据截至 2026 年 10 月）。</span>
+        </div>
 
-  <div class="inst-cols">
+        <div class="inst-cols">
 
-    <section class="ibr">
-      <header class="ibr-h">
-        <span class="irn">Ⅰ</span>
-        <span class="irc">立法<span class="ire">Legislative</span></span>
-      </header>
-      <div class="ibr-root">
-      <span class="ir-cn">国会</span>
-      <span class="ir-en">Congress · 535 席</span>
-      <span class="if-who">无单一首长</span><i class="pty pty-n">两院</i>
-    </div>
-      <ul class="ibr-tree">
-    <li>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-senate" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">参议院</span><span class="if-en">Senate · 100</span></span>
-          <span class="if-l2"><span class="if-who">约翰·图恩</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.senate.gov" target="_blank" rel="noopener" title="参议院官网">↗</a>
-      </div>
-      <div class="if-more" id="ifm-senate" hidden>
-        <p><b>职责</b>审议法案与条约，批准总统提名的内阁成员、法官与大使，并行使弹劾审判权。副总统兼任议长，日常议程由多数党领袖掌握。</p>
-        <p><b>权力</b>60 票终结辩论的门槛使其对立法拥有实际否决点；每州两席、六年一任，改选错开，构成对众议院短期多数意志的制衡。</p>
-      </div>
-    </div>
-    </li>
-    <li>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-house" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">众议院</span><span class="if-en">House · 435</span></span>
-          <span class="if-l2"><span class="if-who">迈克·约翰逊</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.house.gov" target="_blank" rel="noopener" title="众议院官网">↗</a>
-      </div>
-      <div class="if-more" id="ifm-house" hidden>
-        <p><b>职责</b>提出并表决税收与拨款法案，弹劾联邦官员，选举议长并决定其议事规则。</p>
-        <p><b>权力</b>拨款与税收法案的宪法发起权，加上调查传票权，使其成为财政与监督议程的闸门；议长通过规则委员会控制上会顺序。</p>
-      </div>
-    </div>
-    </li>
-    </ul><div class="ibr-grp">
-      <div class="g-h">两院常设委员会<i>Committees</i></div>
-      <div class="ibr-grid">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-approps" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">参议院拨款委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">苏珊·柯林斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://appropriations.senate.gov" target="_blank" rel="noopener" title="Senate Appropriations">↗</a>
-      </div>
-      <div class="if-more" id="ifm-s-approps" hidden>
-        <p><b>职责</b>审定 12 项年度拨款法案的参议院版本，管辖联邦可自由裁量支出的规模与分配。</p>
-        <p><b>权力</b>通过法案与报告语言设定项目资金和政策附加条件，是政府关门与持续决议博弈的核心场。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-approps" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">众议院拨款委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">汤姆·科尔</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://appropriations.house.gov" target="_blank" rel="noopener" title="House Appropriations">↗</a>
-      </div>
-      <div class="if-more" id="ifm-h-approps" hidden>
-        <p><b>职责</b>起草众议院版 12 项拨款法案，逐项审议各机构预算请求。</p>
-        <p><b>权力</b>掌握各机构年度经费的初稿权；附加条款常被用作政策工具（如限制资金用途）。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-finance" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">参议院财政委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">迈克·克拉波</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.finance.senate.gov" target="_blank" rel="noopener" title="Senate Finance">↗</a>
-      </div>
-      <div class="if-more" id="ifm-s-finance" hidden>
-        <p><b>职责</b>管辖税收、贸易、关税、社保与医疗保险立法，并审议财政部与贸易代表提名。</p>
-        <p><b>权力</b>税收与贸易法案的必经关口；总统的关税与贸易授权多需其配合，主席可单方面决定是否启动审议。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-wm" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">众议院筹款委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">杰森·史密斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://waysandmeans.house.gov" target="_blank" rel="noopener" title="House Ways and Means">↗</a>
-      </div>
-      <div class="if-more" id="ifm-h-wm" hidden>
-        <p><b>职责</b>宪法规定的税收法案发起委员会，兼管贸易、社保与医保支付。</p>
-        <p><b>权力</b>一切增减税法案须由此起步；贸易协定授权与众院版关税立法的入口，主席掌握听证与表决节奏。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-jud" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">参议院司法委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">查克·格拉斯利</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.judiciary.senate.gov" target="_blank" rel="noopener" title="Senate Judiciary">↗</a>
-      </div>
-      <div class="if-more" id="ifm-s-jud" hidden>
-        <p><b>职责</b>审议联邦法官与司法部提名，管辖移民、反垄断、知识产权与刑法。</p>
-        <p><b>权力</b>提名确认的第一道关卡，可无限期搁置人选；对司法部与联邦调查机构有监督与传票权。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-jud" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">众议院司法委员会</span><span class="if-en"></span></span>
-          <span class="if-l2"><span class="if-who">吉姆·乔丹</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://judiciary.house.gov" target="_blank" rel="noopener" title="House Judiciary">↗</a>
-      </div>
-      <div class="if-more" id="ifm-h-jud" hidden>
-        <p><b>职责</b>管辖司法部、移民、反垄断与宪法议题，开展监督与弹劾调查。</p>
-        <p><b>权力</b>传票与藐视国会程序的主要发起者；对行政机构的文件与证人拥有强制调取权。</p>
-      </div>
-    </div>
-    </div>
-    </div><div class="ibr-grp">
-      <div class="g-h">立法支持机构<i>Legislative Agencies</i></div>
-      <div class="ibr-grid">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gao" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">政府问责局</span><span class="if-en">GAO</span></span>
-          <span class="if-l2"><span class="if-who">奥里斯·布朗（代理）</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.gao.gov" target="_blank" rel="noopener" title="政府问责局官网">↗</a>
-      </div>
-      <div class="if-more" id="ifm-gao" hidden>
-        <p><b>职责</b>对联邦支出、项目绩效与合同招标开展审计评估，向国会提交报告与建议，并处理投标抗议。</p>
-        <p><b>权力</b>无强制执行权，但审计结论、「高风险清单」与投标抗议裁决直接进入拨款与立法辩论；主计长任期内受免职保护。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cbo" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国会预算办公室</span><span class="if-en">CBO</span></span>
-          <span class="if-l2"><span class="if-who">菲利普·斯瓦格尔</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.cbo.gov" target="_blank" rel="noopener" title="Congressional Budget Office">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cbo" hidden>
-        <p><b>职责</b>对法案做成本估算（score），发布预算与经济十年展望。</p>
-        <p><b>权力</b>估算结果决定法案能否符合预算规则；口径与方法本身即政治博弈对象，直接影响税率与支出方案的可行性。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-loc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国会图书馆</span><span class="if-en">LoC</span></span>
-          <span class="if-l2"><span class="if-who">罗伯特·纽伦（代理）</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.loc.gov" target="_blank" rel="noopener" title="Library of Congress">↗</a>
-      </div>
-      <div class="if-more" id="ifm-loc" hidden>
-        <p><b>职责</b>收藏与研究服务、版权登记（版权局）与国会参考咨询。</p>
-        <p><b>权力</b>馆长职位自 2025 年 5 月起存在任命争议，代理安排未经参议院确认；版权局的政策报告可左右 AI 训练数据的合法性判断。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-crs" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国会研究服务局</span><span class="if-en">CRS</span></span>
-          <span class="if-l2"><span class="if-who">—</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://crsreports.congress.gov" target="_blank" rel="noopener" title="Congressional Research Service">↗</a>
-      </div>
-      <div class="if-more" id="ifm-crs" hidden>
-        <p><b>职责</b>为议员提供无党派政策研究与法律分析，覆盖外交、税收、科技与预算议题。</p>
-        <p><b>权力</b>研究结论供议员内部使用，公开程度受国会规则限制；主任由馆长任命，随馆长职位争议处于代理状态。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gpo" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">政府出版局</span><span class="if-en">GPO</span></span>
-          <span class="if-l2"><span class="if-who">休·哈尔彭</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.gpo.gov" target="_blank" rel="noopener" title="Government Publishing Office">↗</a>
-      </div>
-      <div class="if-more" id="ifm-gpo" hidden>
-        <p><b>职责</b>出版联邦公报、国会文件与法律文本，运营 govinfo 数据库。</p>
-        <p><b>权力</b>掌握联邦信息发布通道：《联邦公报》刊登是规则生效的必要环节，也决定公众与市场能多快看到原文。</p>
-      </div>
-    </div>
-    </div>
-    </div>
-    </section>
+          <section class="ibr">
+            <header class="ibr-h">
+              <span class="irn">Ⅰ</span>
+              <span class="irc">立法<span class="ire">Legislative</span></span>
+            </header>
+            <div class="ibr-root">
+            <span class="ir-cn">国会</span>
+            <span class="ir-en">Congress · 535 席</span>
+            <span class="if-who">无单一首长</span><i class="pty pty-n">两院</i>
+          </div>
+            <ul class="ibr-tree">
+          <li>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-senate" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">参议院</span><span class="if-en">Senate · 100</span></span>
+                <span class="if-l2"><span class="if-who">约翰·图恩</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.senate.gov" target="_blank" rel="noopener" title="参议院官网">↗</a>
+            </div>
+            <div class="if-more" id="ifm-senate" hidden>
+              <p><b>职责</b>审议法案与条约，批准总统提名的内阁成员、法官与大使，并行使弹劾审判权。副总统兼任议长，日常议程由多数党领袖掌握。</p>
+              <p><b>权力</b>60 票终结辩论的门槛使其对立法拥有实际否决点；每州两席、六年一任，改选错开，构成对众议院短期多数意志的制衡。</p>
+            </div>
+          </div>
+          </li>
+          <li>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-house" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">众议院</span><span class="if-en">House · 435</span></span>
+                <span class="if-l2"><span class="if-who">迈克·约翰逊</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.house.gov" target="_blank" rel="noopener" title="众议院官网">↗</a>
+            </div>
+            <div class="if-more" id="ifm-house" hidden>
+              <p><b>职责</b>提出并表决税收与拨款法案，弹劾联邦官员，选举议长并决定其议事规则。</p>
+              <p><b>权力</b>拨款与税收法案的宪法发起权，加上调查传票权，使其成为财政与监督议程的闸门；议长通过规则委员会控制上会顺序。</p>
+            </div>
+          </div>
+          </li>
+          </ul><div class="ibr-grp">
+            <div class="g-h">两院常设委员会<i>Committees</i></div>
+            <div class="ibr-grid">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-approps" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">参议院拨款委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">苏珊·柯林斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://appropriations.senate.gov" target="_blank" rel="noopener" title="Senate Appropriations">↗</a>
+            </div>
+            <div class="if-more" id="ifm-s-approps" hidden>
+              <p><b>职责</b>审定 12 项年度拨款法案的参议院版本，管辖联邦可自由裁量支出的规模与分配。</p>
+              <p><b>权力</b>通过法案与报告语言设定项目资金和政策附加条件，是政府关门与持续决议博弈的核心场。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-approps" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">众议院拨款委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">汤姆·科尔</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://appropriations.house.gov" target="_blank" rel="noopener" title="House Appropriations">↗</a>
+            </div>
+            <div class="if-more" id="ifm-h-approps" hidden>
+              <p><b>职责</b>起草众议院版 12 项拨款法案，逐项审议各机构预算请求。</p>
+              <p><b>权力</b>掌握各机构年度经费的初稿权；附加条款常被用作政策工具（如限制资金用途）。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-finance" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">参议院财政委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">迈克·克拉波</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.finance.senate.gov" target="_blank" rel="noopener" title="Senate Finance">↗</a>
+            </div>
+            <div class="if-more" id="ifm-s-finance" hidden>
+              <p><b>职责</b>管辖税收、贸易、关税、社保与医疗保险立法，并审议财政部与贸易代表提名。</p>
+              <p><b>权力</b>税收与贸易法案的必经关口；总统的关税与贸易授权多需其配合，主席可单方面决定是否启动审议。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-wm" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">众议院筹款委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">杰森·史密斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://waysandmeans.house.gov" target="_blank" rel="noopener" title="House Ways and Means">↗</a>
+            </div>
+            <div class="if-more" id="ifm-h-wm" hidden>
+              <p><b>职责</b>宪法规定的税收法案发起委员会，兼管贸易、社保与医保支付。</p>
+              <p><b>权力</b>一切增减税法案须由此起步；贸易协定授权与众院版关税立法的入口，主席掌握听证与表决节奏。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-s-jud" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">参议院司法委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">查克·格拉斯利</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.judiciary.senate.gov" target="_blank" rel="noopener" title="Senate Judiciary">↗</a>
+            </div>
+            <div class="if-more" id="ifm-s-jud" hidden>
+              <p><b>职责</b>审议联邦法官与司法部提名，管辖移民、反垄断、知识产权与刑法。</p>
+              <p><b>权力</b>提名确认的第一道关卡，可无限期搁置人选；对司法部与联邦调查机构有监督与传票权。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-h-jud" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">众议院司法委员会</span><span class="if-en"></span></span>
+                <span class="if-l2"><span class="if-who">吉姆·乔丹</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://judiciary.house.gov" target="_blank" rel="noopener" title="House Judiciary">↗</a>
+            </div>
+            <div class="if-more" id="ifm-h-jud" hidden>
+              <p><b>职责</b>管辖司法部、移民、反垄断与宪法议题，开展监督与弹劾调查。</p>
+              <p><b>权力</b>传票与藐视国会程序的主要发起者；对行政机构的文件与证人拥有强制调取权。</p>
+            </div>
+          </div>
+          </div>
+          </div><div class="ibr-grp">
+            <div class="g-h">立法支持机构<i>Legislative Agencies</i></div>
+            <div class="ibr-grid">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gao" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">政府问责局</span><span class="if-en">GAO</span></span>
+                <span class="if-l2"><span class="if-who">奥里斯·布朗（代理）</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.gao.gov" target="_blank" rel="noopener" title="政府问责局官网">↗</a>
+            </div>
+            <div class="if-more" id="ifm-gao" hidden>
+              <p><b>职责</b>对联邦支出、项目绩效与合同招标开展审计评估，向国会提交报告与建议，并处理投标抗议。</p>
+              <p><b>权力</b>无强制执行权，但审计结论、「高风险清单」与投标抗议裁决直接进入拨款与立法辩论；主计长任期内受免职保护。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cbo" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国会预算办公室</span><span class="if-en">CBO</span></span>
+                <span class="if-l2"><span class="if-who">菲利普·斯瓦格尔</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.cbo.gov" target="_blank" rel="noopener" title="Congressional Budget Office">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cbo" hidden>
+              <p><b>职责</b>对法案做成本估算（score），发布预算与经济十年展望。</p>
+              <p><b>权力</b>估算结果决定法案能否符合预算规则；口径与方法本身即政治博弈对象，直接影响税率与支出方案的可行性。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-loc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国会图书馆</span><span class="if-en">LoC</span></span>
+                <span class="if-l2"><span class="if-who">罗伯特·纽伦（代理）</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.loc.gov" target="_blank" rel="noopener" title="Library of Congress">↗</a>
+            </div>
+            <div class="if-more" id="ifm-loc" hidden>
+              <p><b>职责</b>收藏与研究服务、版权登记（版权局）与国会参考咨询。</p>
+              <p><b>权力</b>馆长职位自 2025 年 5 月起存在任命争议，代理安排未经参议院确认；版权局的政策报告可左右 AI 训练数据的合法性判断。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-crs" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国会研究服务局</span><span class="if-en">CRS</span></span>
+                <span class="if-l2"><span class="if-who">—</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://crsreports.congress.gov" target="_blank" rel="noopener" title="Congressional Research Service">↗</a>
+            </div>
+            <div class="if-more" id="ifm-crs" hidden>
+              <p><b>职责</b>为议员提供无党派政策研究与法律分析，覆盖外交、税收、科技与预算议题。</p>
+              <p><b>权力</b>研究结论供议员内部使用，公开程度受国会规则限制；主任由馆长任命，随馆长职位争议处于代理状态。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gpo" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">政府出版局</span><span class="if-en">GPO</span></span>
+                <span class="if-l2"><span class="if-who">休·哈尔彭</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.gpo.gov" target="_blank" rel="noopener" title="Government Publishing Office">↗</a>
+            </div>
+            <div class="if-more" id="ifm-gpo" hidden>
+              <p><b>职责</b>出版联邦公报、国会文件与法律文本，运营 govinfo 数据库。</p>
+              <p><b>权力</b>掌握联邦信息发布通道：《联邦公报》刊登是规则生效的必要环节，也决定公众与市场能多快看到原文。</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
 
-    <section class="ibr">
-      <header class="ibr-h">
-        <span class="irn">Ⅱ</span>
-        <span class="irc">行政<span class="ire">Executive</span></span>
-      </header>
-      <div class="ibr-root">
-      <span class="ir-cn">总统</span>
-      <span class="ir-en">President · 白宫</span>
-      <span class="if-who">唐纳德·特朗普</span><i class="pty pty-r">共和党</i>
-    </div>
-      <ul class="ibr-tree">
-    <li>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-vp" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">副总统</span><span class="if-en">Vice President</span></span>
-          <span class="if-l2"><span class="if-who">JD·万斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.whitehouse.gov" target="_blank" rel="noopener" title="白宫官网">↗</a>
-      </div>
-      <div class="if-more" id="ifm-vp" hidden>
-        <p><b>职责</b>兼任参议院议长，参与外交、国安与内阁事务，并在总统继任顺序中列第一位。</p>
-        <p><b>权力</b>仅在参议院 50:50 时投决定票；近年副总统在人事与外交特使上的实际影响力显著上升。</p>
-      </div>
-    </div>
-    </li>
-    </ul><div class="ibr-grp">
-      <div class="g-h">内阁 15 部<i>Cabinet Departments</i></div>
-      <div class="ibr-grid c3">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-state" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国务院</span><span class="if-en">STATE</span></span>
-          <span class="if-l2"><span class="if-who">马尔科·鲁比奥</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.state.gov" target="_blank" rel="noopener" title="Department of State">↗</a>
-      </div>
-      <div class="if-more" id="ifm-state" hidden>
-        <p><b>职责</b>主管外交与领事事务、条约谈判、对外援助与制裁协调。</p>
-        <p><b>权力</b>签证与领事裁量、对外军售审批；与财政部共同塑造制裁名单与出口管制的执行边界。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-treasury" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">财政部</span><span class="if-en">TREAS</span></span>
-          <span class="if-l2"><span class="if-who">斯科特·贝森特</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://home.treasury.gov" target="_blank" rel="noopener" title="Department of the Treasury">↗</a>
-      </div>
-      <div class="if-more" id="ifm-treasury" hidden>
-        <p><b>职责</b>征税与国债管理、银行监管（OCC）、金融情报（FinCEN）与经济制裁（OFAC）。</p>
-        <p><b>权力</b>OFAC 名单与二级制裁、国债发行与现金余额工具；部长兼任 CFIUS 主席，掌握外资审查闸门。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-defense" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国防部</span><span class="if-en">DOD</span></span>
-          <span class="if-l2"><span class="if-who">皮特·赫格塞思</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.defense.gov" target="_blank" rel="noopener" title="Department of Defense">↗</a>
-      </div>
-      <div class="if-more" id="ifm-defense" hidden>
-        <p><b>职责</b>统辖陆海空与太空力量，负责国防采购、海外驻军与军事行动。</p>
-        <p><b>权力</b>采办预算决定工业基础订单；通过安全审查与供应链规则影响关键矿产、芯片与造船业。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-justice" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">司法部</span><span class="if-en">DOJ</span></span>
-          <span class="if-l2"><span class="if-who">托德·布兰奇</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.justice.gov" target="_blank" rel="noopener" title="Department of Justice">↗</a>
-      </div>
-      <div class="if-more" id="ifm-justice" hidden>
-        <p><b>职责</b>联邦检察、民事与反垄断执法、移民法庭与监狱系统。</p>
-        <p><b>权力</b>起诉与和解裁量、并购反垄断审查、FARA 外国代理人登记；政策声明可改变企业合规预期。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-interior" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">内政部</span><span class="if-en">DOI</span></span>
-          <span class="if-l2"><span class="if-who">道格·伯格姆</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.doi.gov" target="_blank" rel="noopener" title="Department of the Interior">↗</a>
-      </div>
-      <div class="if-more" id="ifm-interior" hidden>
-        <p><b>职责</b>管理联邦土地、矿产与油气租约、国家公园与印第安事务。</p>
-        <p><b>权力</b>公共土地租让与许可节奏直接影响油气、矿业与输电项目的时间表。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-agriculture" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">农业部</span><span class="if-en">USDA</span></span>
-          <span class="if-l2"><span class="if-who">布鲁克·罗林斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.usda.gov" target="_blank" rel="noopener" title="Department of Agriculture">↗</a>
-      </div>
-      <div class="if-more" id="ifm-agriculture" hidden>
-        <p><b>职责</b>农业补贴、食品与营养计划、动植物检疫与农村信贷。</p>
-        <p><b>权力</b>补贴支付与商品采购计划影响农产品价格与贸易流向；检疫决定可即时中断进口。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-commerce" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">商务部</span><span class="if-en">DOC</span></span>
-          <span class="if-l2"><span class="if-who">霍华德·卢特尼克</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.commerce.gov" target="_blank" rel="noopener" title="Department of Commerce">↗</a>
-      </div>
-      <div class="if-more" id="ifm-commerce" hidden>
-        <p><b>职责</b>经济与人口统计、出口管制（BIS）、贸易救济（ITA）、海洋与渔业。</p>
-        <p><b>权力</b>实体清单与出口许可、反倾销初裁；BEA 与普查局的数据发布口径是市场定价的基准。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-labor" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">劳工部</span><span class="if-en">DOL</span></span>
-          <span class="if-l2"><span class="if-who">基思·桑德林</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.dol.gov" target="_blank" rel="noopener" title="Department of Labor">↗</a>
-      </div>
-      <div class="if-more" id="ifm-labor" hidden>
-        <p><b>职责</b>劳动标准、职业安全（OSHA）、养老金监管（EBSA）与就业统计。</p>
-        <p><b>权力</b>规则制定影响用工成本与养老金投资口径；工资工时执法与 H-1B 劳工条件审查。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-hhs" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">卫生与公众服务部</span><span class="if-en">HHS</span></span>
-          <span class="if-l2"><span class="if-who">小肯尼迪</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.hhs.gov" target="_blank" rel="noopener" title="Department of Health and Human Services">↗</a>
-      </div>
-      <div class="if-more" id="ifm-hhs" hidden>
-        <p><b>职责</b>医疗保险（CMS）、公共卫生（CDC）、药品与疫苗审批（FDA）及医学研究（NIH）。</p>
-        <p><b>权力</b>药品与器械审批、医保支付费率与覆盖范围，直接决定医药行业收入曲线。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-hud" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">住房与城市发展部</span><span class="if-en">HUD</span></span>
-          <span class="if-l2"><span class="if-who">斯科特·特纳</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.hud.gov" target="_blank" rel="noopener" title="Housing and Urban Development">↗</a>
-      </div>
-      <div class="if-more" id="ifm-hud" hidden>
-        <p><b>职责</b>住房补贴、联邦住房署（FHA）抵押保险与社区发展拨款。</p>
-        <p><b>权力</b>FHA 保险标准与租金规则影响住房信贷可得性与租赁市场供给。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-dot" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">交通部</span><span class="if-en">DOT</span></span>
-          <span class="if-l2"><span class="if-who">肖恩·达菲</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.transportation.gov" target="_blank" rel="noopener" title="Department of Transportation">↗</a>
-      </div>
-      <div class="if-more" id="ifm-dot" hidden>
-        <p><b>职责</b>航空、公路、铁路与海事监管，管理空管（FAA）与交通基建拨款。</p>
-        <p><b>权力</b>适航与航线许可、汽车安全标准、基建项目审批节奏，直接影响运输成本与工期。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-energy" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">能源部</span><span class="if-en">DOE</span></span>
-          <span class="if-l2"><span class="if-who">克里斯·赖特</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.energy.gov" target="_blank" rel="noopener" title="Department of Energy">↗</a>
-      </div>
-      <div class="if-more" id="ifm-energy" hidden>
-        <p><b>职责</b>核武器与核能、能源研究、战略石油储备与电网政策。</p>
-        <p><b>权力</b>LNG 出口许可、SPR 释放与核能许可支持，直接影响油气与电力价格曲线。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ed" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">教育部</span><span class="if-en">ED</span></span>
-          <span class="if-l2"><span class="if-who">琳达·麦克马洪</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.ed.gov" target="_blank" rel="noopener" title="Department of Education">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ed" hidden>
-        <p><b>职责</b>联邦学生贷款与助学拨款、民权执法与教育数据。</p>
-        <p><b>权力</b>学生贷款还款规则与减免政策影响消费与资产证券化；联邦资助条件对高校有实质约束。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-va" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">退伍军人事务部</span><span class="if-en">VA</span></span>
-          <span class="if-l2"><span class="if-who">道格·柯林斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.va.gov" target="_blank" rel="noopener" title="Veterans Affairs">↗</a>
-      </div>
-      <div class="if-more" id="ifm-va" hidden>
-        <p><b>职责</b>退伍军人医疗、伤残补偿、教育与住房贷款担保。</p>
-        <p><b>权力</b>运营全美最大的一体化医疗系统之一，其采购与药品目录对医疗供应链有显著拉动。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-dhs" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国土安全部</span><span class="if-en">DHS</span></span>
-          <span class="if-l2"><span class="if-who">马克韦恩·马林</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.dhs.gov" target="_blank" rel="noopener" title="Department of Homeland Security">↗</a>
-      </div>
-      <div class="if-more" id="ifm-dhs" hidden>
-        <p><b>职责</b>边境与移民执法（ICE/CBP）、网络安全（CISA）、应急管理（FEMA）。</p>
-        <p><b>权力</b>入境限制与签证豁免、供应链网络安全指引；关税由 CBP 实际征收，执法口径决定清关成本。</p>
-      </div>
-    </div>
-    </div>
-    </div><div class="ibr-grp">
-      <div class="g-h">总统行政办公室<i>Executive Office</i></div>
-      <div class="ibr-grid c2">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-omb" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">管理与预算办公室</span><span class="if-en">OMB</span></span>
-          <span class="if-l2"><span class="if-who">拉塞尔·沃特</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.whitehouse.gov/omb/" target="_blank" rel="noopener" title="Office of Management and Budget">↗</a>
-      </div>
-      <div class="if-more" id="ifm-omb" hidden>
-        <p><b>职责</b>编制总统预算、审查机构规章（OIRA）、统筹采购与人事管理政策。</p>
-        <p><b>权力</b>规章审查可延迟或改写部门规则；预算扣留与拨款执行的解释权是行政—国会博弈的焦点。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ustr" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">美国贸易代表办公室</span><span class="if-en">USTR</span></span>
-          <span class="if-l2"><span class="if-who">贾米森·格里尔</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://ustr.gov" target="_blank" rel="noopener" title="U.S. Trade Representative">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ustr" hidden>
-        <p><b>职责</b>贸易谈判、301/232 调查、WTO 争端与贸易协定执行。</p>
-        <p><b>权力</b>301 关税与排除清单、谈判授权执行，是关税政策最直接的操作机构。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ostp" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">科技政策办公室</span><span class="if-en">OSTP</span></span>
-          <span class="if-l2"><span class="if-who">克拉齐奥斯</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.whitehouse.gov/ostp/" target="_blank" rel="noopener" title="Office of Science and Technology Policy">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ostp" hidden>
-        <p><b>职责</b>总统科技顾问、跨部门科技政策协调、科研预算优先级。</p>
-        <p><b>权力</b>通过预算备忘录与标准倡议影响 AI、量子、生物技术的联邦投入方向与技术治理口径。</p>
-      </div>
-    </div>
-    </div>
-    </div><div class="ibr-grp">
-      <div class="g-h">独立机构<i>Independent Agencies</i></div>
-      <div class="ibr-grid c2">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fed" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">美联储</span><span class="if-en">FRB</span></span>
-          <span class="if-l2"><span class="if-who">凯文·沃什</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.federalreserve.gov" target="_blank" rel="noopener" title="Federal Reserve Board">↗</a>
-      </div>
-      <div class="if-more" id="ifm-fed" hidden>
-        <p><b>职责</b>制定货币政策（FOMC）、监管银行与维护支付系统。</p>
-        <p><b>权力</b>政策利率与资产负债表规模、压力测试与资本要求；理事任期与总统错配，独立性受法律保护。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fcc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">联邦通信委员会</span><span class="if-en">FCC</span></span>
-          <span class="if-l2"><span class="if-who">布伦丹·卡尔</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.fcc.gov" target="_blank" rel="noopener" title="Federal Communications Commission">↗</a>
-      </div>
-      <div class="if-more" id="ifm-fcc" hidden>
-        <p><b>职责</b>频谱分配、电信与广播牌照、宽带与网络中立规则。</p>
-        <p><b>权力</b>牌照与频谱拍卖、并购的公共利益审查，直接影响电信、媒体与卫星通信格局。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-usitc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国际贸易委员会</span><span class="if-en">USITC</span></span>
-          <span class="if-l2"><span class="if-who">布雷特·多伊尔</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.usitc.gov" target="_blank" rel="noopener" title="U.S. International Trade Commission">↗</a>
-      </div>
-      <div class="if-more" id="ifm-usitc" hidden>
-        <p><b>职责</b>反倾销/反补贴损害裁定、337 知识产权调查、维护关税税则。</p>
-        <p><b>权力</b>337 排除令可直接禁止进口；损害认定决定关税能否落地，是贸易救济的技术关口。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cfius" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">外国投资委员会</span><span class="if-en">CFIUS</span></span>
-          <span class="if-l2"><span class="if-who">斯科特·贝森特</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://home.treasury.gov/policy-issues/international/the-committee-on-foreign-investment-in-the-united-states-cfius" target="_blank" rel="noopener" title="CFIUS · 财政部">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cfius" hidden>
-        <p><b>职责</b>审查外资并购的美国国家安全影响，可附条件批准或建议总统否决。</p>
-        <p><b>权力</b>强制申报、缓解协议与撤资令；由财政部长任主席，对涉华技术、数据与关键基础设施交易影响最大。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cia" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">中央情报局</span><span class="if-en">CIA</span></span>
-          <span class="if-l2"><span class="if-who">约翰·拉特克利夫</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.cia.gov" target="_blank" rel="noopener" title="Central Intelligence Agency">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cia" hidden>
-        <p><b>职责</b>对外人力情报搜集与全源分析，向总统与决策层提供情报评估。</p>
-        <p><b>权力</b>秘密行动需总统授权；评估结论影响出口管制、谈判判断与军事部署的节奏。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-nasa" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国家航空航天局</span><span class="if-en">NASA</span></span>
-          <span class="if-l2"><span class="if-who">贾里德·艾萨克曼</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.nasa.gov" target="_blank" rel="noopener" title="NASA">↗</a>
-      </div>
-      <div class="if-more" id="ifm-nasa" hidden>
-        <p><b>职责</b>民用航天、深空探测与航空研究，管理庞大的承包商体系。</p>
-        <p><b>权力</b>合同授予决定航天产业链订单；月球基地与火星计划牵动商业航天估值与供应链。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-epa" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">环境保护局</span><span class="if-en">EPA</span></span>
-          <span class="if-l2"><span class="if-who">李·泽尔丁</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.epa.gov" target="_blank" rel="noopener" title="Environmental Protection Agency">↗</a>
-      </div>
-      <div class="if-more" id="ifm-epa" hidden>
-        <p><b>职责</b>空气与水污染标准、化学品与农药登记、温室气体规则。</p>
-        <p><b>权力</b>排放标准与许可否决、汽车尾气规则，直接约束制造、能源与矿业的合规成本。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ftc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">联邦贸易委员会</span><span class="if-en">FTC</span></span>
-          <span class="if-l2"><span class="if-who">安德鲁·弗格森</span><i class="pty pty-r">共和党</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.ftc.gov" target="_blank" rel="noopener" title="Federal Trade Commission">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ftc" hidden>
-        <p><b>职责</b>反垄断与消费者保护执法，并购审查与虚假广告、数据隐私案件。</p>
-        <p><b>权力</b>行政起诉与同意令、规则制定权（含竞业限制等），对平台并购具有实质否决力。</p>
-      </div>
-    </div>
-    </div>
-    </div>
-    </section>
+          <section class="ibr">
+            <header class="ibr-h">
+              <span class="irn">Ⅱ</span>
+              <span class="irc">行政<span class="ire">Executive</span></span>
+            </header>
+            <div class="ibr-root">
+            <span class="ir-cn">总统</span>
+            <span class="ir-en">President · 白宫</span>
+            <span class="if-who">唐纳德·特朗普</span><i class="pty pty-r">共和党</i>
+          </div>
+            <ul class="ibr-tree">
+          <li>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-vp" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">副总统</span><span class="if-en">Vice President</span></span>
+                <span class="if-l2"><span class="if-who">JD·万斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.whitehouse.gov" target="_blank" rel="noopener" title="白宫官网">↗</a>
+            </div>
+            <div class="if-more" id="ifm-vp" hidden>
+              <p><b>职责</b>兼任参议院议长，参与外交、国安与内阁事务，并在总统继任顺序中列第一位。</p>
+              <p><b>权力</b>仅在参议院 50:50 时投决定票；近年副总统在人事与外交特使上的实际影响力显著上升。</p>
+            </div>
+          </div>
+          </li>
+          </ul><div class="ibr-grp">
+            <div class="g-h">内阁 15 部<i>Cabinet Departments</i></div>
+            <div class="ibr-grid c3">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-state" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国务院</span><span class="if-en">STATE</span></span>
+                <span class="if-l2"><span class="if-who">马尔科·鲁比奥</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.state.gov" target="_blank" rel="noopener" title="Department of State">↗</a>
+            </div>
+            <div class="if-more" id="ifm-state" hidden>
+              <p><b>职责</b>主管外交与领事事务、条约谈判、对外援助与制裁协调。</p>
+              <p><b>权力</b>签证与领事裁量、对外军售审批；与财政部共同塑造制裁名单与出口管制的执行边界。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-treasury" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">财政部</span><span class="if-en">TREAS</span></span>
+                <span class="if-l2"><span class="if-who">斯科特·贝森特</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://home.treasury.gov" target="_blank" rel="noopener" title="Department of the Treasury">↗</a>
+            </div>
+            <div class="if-more" id="ifm-treasury" hidden>
+              <p><b>职责</b>征税与国债管理、银行监管（OCC）、金融情报（FinCEN）与经济制裁（OFAC）。</p>
+              <p><b>权力</b>OFAC 名单与二级制裁、国债发行与现金余额工具；部长兼任 CFIUS 主席，掌握外资审查闸门。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-defense" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国防部</span><span class="if-en">DOD</span></span>
+                <span class="if-l2"><span class="if-who">皮特·赫格塞思</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.defense.gov" target="_blank" rel="noopener" title="Department of Defense">↗</a>
+            </div>
+            <div class="if-more" id="ifm-defense" hidden>
+              <p><b>职责</b>统辖陆海空与太空力量，负责国防采购、海外驻军与军事行动。</p>
+              <p><b>权力</b>采办预算决定工业基础订单；通过安全审查与供应链规则影响关键矿产、芯片与造船业。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-justice" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">司法部</span><span class="if-en">DOJ</span></span>
+                <span class="if-l2"><span class="if-who">托德·布兰奇</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.justice.gov" target="_blank" rel="noopener" title="Department of Justice">↗</a>
+            </div>
+            <div class="if-more" id="ifm-justice" hidden>
+              <p><b>职责</b>联邦检察、民事与反垄断执法、移民法庭与监狱系统。</p>
+              <p><b>权力</b>起诉与和解裁量、并购反垄断审查、FARA 外国代理人登记；政策声明可改变企业合规预期。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-interior" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">内政部</span><span class="if-en">DOI</span></span>
+                <span class="if-l2"><span class="if-who">道格·伯格姆</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.doi.gov" target="_blank" rel="noopener" title="Department of the Interior">↗</a>
+            </div>
+            <div class="if-more" id="ifm-interior" hidden>
+              <p><b>职责</b>管理联邦土地、矿产与油气租约、国家公园与印第安事务。</p>
+              <p><b>权力</b>公共土地租让与许可节奏直接影响油气、矿业与输电项目的时间表。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-agriculture" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">农业部</span><span class="if-en">USDA</span></span>
+                <span class="if-l2"><span class="if-who">布鲁克·罗林斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.usda.gov" target="_blank" rel="noopener" title="Department of Agriculture">↗</a>
+            </div>
+            <div class="if-more" id="ifm-agriculture" hidden>
+              <p><b>职责</b>农业补贴、食品与营养计划、动植物检疫与农村信贷。</p>
+              <p><b>权力</b>补贴支付与商品采购计划影响农产品价格与贸易流向；检疫决定可即时中断进口。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-commerce" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">商务部</span><span class="if-en">DOC</span></span>
+                <span class="if-l2"><span class="if-who">霍华德·卢特尼克</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.commerce.gov" target="_blank" rel="noopener" title="Department of Commerce">↗</a>
+            </div>
+            <div class="if-more" id="ifm-commerce" hidden>
+              <p><b>职责</b>经济与人口统计、出口管制（BIS）、贸易救济（ITA）、海洋与渔业。</p>
+              <p><b>权力</b>实体清单与出口许可、反倾销初裁；BEA 与普查局的数据发布口径是市场定价的基准。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-labor" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">劳工部</span><span class="if-en">DOL</span></span>
+                <span class="if-l2"><span class="if-who">基思·桑德林</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.dol.gov" target="_blank" rel="noopener" title="Department of Labor">↗</a>
+            </div>
+            <div class="if-more" id="ifm-labor" hidden>
+              <p><b>职责</b>劳动标准、职业安全（OSHA）、养老金监管（EBSA）与就业统计。</p>
+              <p><b>权力</b>规则制定影响用工成本与养老金投资口径；工资工时执法与 H-1B 劳工条件审查。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-hhs" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">卫生与公众服务部</span><span class="if-en">HHS</span></span>
+                <span class="if-l2"><span class="if-who">小肯尼迪</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.hhs.gov" target="_blank" rel="noopener" title="Department of Health and Human Services">↗</a>
+            </div>
+            <div class="if-more" id="ifm-hhs" hidden>
+              <p><b>职责</b>医疗保险（CMS）、公共卫生（CDC）、药品与疫苗审批（FDA）及医学研究（NIH）。</p>
+              <p><b>权力</b>药品与器械审批、医保支付费率与覆盖范围，直接决定医药行业收入曲线。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-hud" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">住房与城市发展部</span><span class="if-en">HUD</span></span>
+                <span class="if-l2"><span class="if-who">斯科特·特纳</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.hud.gov" target="_blank" rel="noopener" title="Housing and Urban Development">↗</a>
+            </div>
+            <div class="if-more" id="ifm-hud" hidden>
+              <p><b>职责</b>住房补贴、联邦住房署（FHA）抵押保险与社区发展拨款。</p>
+              <p><b>权力</b>FHA 保险标准与租金规则影响住房信贷可得性与租赁市场供给。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-dot" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">交通部</span><span class="if-en">DOT</span></span>
+                <span class="if-l2"><span class="if-who">肖恩·达菲</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.transportation.gov" target="_blank" rel="noopener" title="Department of Transportation">↗</a>
+            </div>
+            <div class="if-more" id="ifm-dot" hidden>
+              <p><b>职责</b>航空、公路、铁路与海事监管，管理空管（FAA）与交通基建拨款。</p>
+              <p><b>权力</b>适航与航线许可、汽车安全标准、基建项目审批节奏，直接影响运输成本与工期。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-energy" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">能源部</span><span class="if-en">DOE</span></span>
+                <span class="if-l2"><span class="if-who">克里斯·赖特</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.energy.gov" target="_blank" rel="noopener" title="Department of Energy">↗</a>
+            </div>
+            <div class="if-more" id="ifm-energy" hidden>
+              <p><b>职责</b>核武器与核能、能源研究、战略石油储备与电网政策。</p>
+              <p><b>权力</b>LNG 出口许可、SPR 释放与核能许可支持，直接影响油气与电力价格曲线。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ed" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">教育部</span><span class="if-en">ED</span></span>
+                <span class="if-l2"><span class="if-who">琳达·麦克马洪</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.ed.gov" target="_blank" rel="noopener" title="Department of Education">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ed" hidden>
+              <p><b>职责</b>联邦学生贷款与助学拨款、民权执法与教育数据。</p>
+              <p><b>权力</b>学生贷款还款规则与减免政策影响消费与资产证券化；联邦资助条件对高校有实质约束。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-va" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">退伍军人事务部</span><span class="if-en">VA</span></span>
+                <span class="if-l2"><span class="if-who">道格·柯林斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.va.gov" target="_blank" rel="noopener" title="Veterans Affairs">↗</a>
+            </div>
+            <div class="if-more" id="ifm-va" hidden>
+              <p><b>职责</b>退伍军人医疗、伤残补偿、教育与住房贷款担保。</p>
+              <p><b>权力</b>运营全美最大的一体化医疗系统之一，其采购与药品目录对医疗供应链有显著拉动。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-dhs" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国土安全部</span><span class="if-en">DHS</span></span>
+                <span class="if-l2"><span class="if-who">马克韦恩·马林</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.dhs.gov" target="_blank" rel="noopener" title="Department of Homeland Security">↗</a>
+            </div>
+            <div class="if-more" id="ifm-dhs" hidden>
+              <p><b>职责</b>边境与移民执法（ICE/CBP）、网络安全（CISA）、应急管理（FEMA）。</p>
+              <p><b>权力</b>入境限制与签证豁免、供应链网络安全指引；关税由 CBP 实际征收，执法口径决定清关成本。</p>
+            </div>
+          </div>
+          </div>
+          </div><div class="ibr-grp">
+            <div class="g-h">总统行政办公室<i>Executive Office</i></div>
+            <div class="ibr-grid c2">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-omb" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">管理与预算办公室</span><span class="if-en">OMB</span></span>
+                <span class="if-l2"><span class="if-who">拉塞尔·沃特</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.whitehouse.gov/omb/" target="_blank" rel="noopener" title="Office of Management and Budget">↗</a>
+            </div>
+            <div class="if-more" id="ifm-omb" hidden>
+              <p><b>职责</b>编制总统预算、审查机构规章（OIRA）、统筹采购与人事管理政策。</p>
+              <p><b>权力</b>规章审查可延迟或改写部门规则；预算扣留与拨款执行的解释权是行政—国会博弈的焦点。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ustr" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">美国贸易代表办公室</span><span class="if-en">USTR</span></span>
+                <span class="if-l2"><span class="if-who">贾米森·格里尔</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://ustr.gov" target="_blank" rel="noopener" title="U.S. Trade Representative">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ustr" hidden>
+              <p><b>职责</b>贸易谈判、301/232 调查、WTO 争端与贸易协定执行。</p>
+              <p><b>权力</b>301 关税与排除清单、谈判授权执行，是关税政策最直接的操作机构。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ostp" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">科技政策办公室</span><span class="if-en">OSTP</span></span>
+                <span class="if-l2"><span class="if-who">克拉齐奥斯</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.whitehouse.gov/ostp/" target="_blank" rel="noopener" title="Office of Science and Technology Policy">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ostp" hidden>
+              <p><b>职责</b>总统科技顾问、跨部门科技政策协调、科研预算优先级。</p>
+              <p><b>权力</b>通过预算备忘录与标准倡议影响 AI、量子、生物技术的联邦投入方向与技术治理口径。</p>
+            </div>
+          </div>
+          </div>
+          </div><div class="ibr-grp">
+            <div class="g-h">独立机构<i>Independent Agencies</i></div>
+            <div class="ibr-grid c2">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fed" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">美联储</span><span class="if-en">FRB</span></span>
+                <span class="if-l2"><span class="if-who">凯文·沃什</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.federalreserve.gov" target="_blank" rel="noopener" title="Federal Reserve Board">↗</a>
+            </div>
+            <div class="if-more" id="ifm-fed" hidden>
+              <p><b>职责</b>制定货币政策（FOMC）、监管银行与维护支付系统。</p>
+              <p><b>权力</b>政策利率与资产负债表规模、压力测试与资本要求；理事任期与总统错配，独立性受法律保护。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fcc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">联邦通信委员会</span><span class="if-en">FCC</span></span>
+                <span class="if-l2"><span class="if-who">布伦丹·卡尔</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.fcc.gov" target="_blank" rel="noopener" title="Federal Communications Commission">↗</a>
+            </div>
+            <div class="if-more" id="ifm-fcc" hidden>
+              <p><b>职责</b>频谱分配、电信与广播牌照、宽带与网络中立规则。</p>
+              <p><b>权力</b>牌照与频谱拍卖、并购的公共利益审查，直接影响电信、媒体与卫星通信格局。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-usitc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国际贸易委员会</span><span class="if-en">USITC</span></span>
+                <span class="if-l2"><span class="if-who">布雷特·多伊尔</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.usitc.gov" target="_blank" rel="noopener" title="U.S. International Trade Commission">↗</a>
+            </div>
+            <div class="if-more" id="ifm-usitc" hidden>
+              <p><b>职责</b>反倾销/反补贴损害裁定、337 知识产权调查、维护关税税则。</p>
+              <p><b>权力</b>337 排除令可直接禁止进口；损害认定决定关税能否落地，是贸易救济的技术关口。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cfius" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">外国投资委员会</span><span class="if-en">CFIUS</span></span>
+                <span class="if-l2"><span class="if-who">斯科特·贝森特</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://home.treasury.gov/policy-issues/international/the-committee-on-foreign-investment-in-the-united-states-cfius" target="_blank" rel="noopener" title="CFIUS · 财政部">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cfius" hidden>
+              <p><b>职责</b>审查外资并购的美国国家安全影响，可附条件批准或建议总统否决。</p>
+              <p><b>权力</b>强制申报、缓解协议与撤资令；由财政部长任主席，对涉华技术、数据与关键基础设施交易影响最大。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cia" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">中央情报局</span><span class="if-en">CIA</span></span>
+                <span class="if-l2"><span class="if-who">约翰·拉特克利夫</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.cia.gov" target="_blank" rel="noopener" title="Central Intelligence Agency">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cia" hidden>
+              <p><b>职责</b>对外人力情报搜集与全源分析，向总统与决策层提供情报评估。</p>
+              <p><b>权力</b>秘密行动需总统授权；评估结论影响出口管制、谈判判断与军事部署的节奏。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-nasa" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国家航空航天局</span><span class="if-en">NASA</span></span>
+                <span class="if-l2"><span class="if-who">贾里德·艾萨克曼</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.nasa.gov" target="_blank" rel="noopener" title="NASA">↗</a>
+            </div>
+            <div class="if-more" id="ifm-nasa" hidden>
+              <p><b>职责</b>民用航天、深空探测与航空研究，管理庞大的承包商体系。</p>
+              <p><b>权力</b>合同授予决定航天产业链订单；月球基地与火星计划牵动商业航天估值与供应链。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-epa" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">环境保护局</span><span class="if-en">EPA</span></span>
+                <span class="if-l2"><span class="if-who">李·泽尔丁</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.epa.gov" target="_blank" rel="noopener" title="Environmental Protection Agency">↗</a>
+            </div>
+            <div class="if-more" id="ifm-epa" hidden>
+              <p><b>职责</b>空气与水污染标准、化学品与农药登记、温室气体规则。</p>
+              <p><b>权力</b>排放标准与许可否决、汽车尾气规则，直接约束制造、能源与矿业的合规成本。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ftc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">联邦贸易委员会</span><span class="if-en">FTC</span></span>
+                <span class="if-l2"><span class="if-who">安德鲁·弗格森</span><i class="pty pty-r">共和党</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.ftc.gov" target="_blank" rel="noopener" title="Federal Trade Commission">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ftc" hidden>
+              <p><b>职责</b>反垄断与消费者保护执法，并购审查与虚假广告、数据隐私案件。</p>
+              <p><b>权力</b>行政起诉与同意令、规则制定权（含竞业限制等），对平台并购具有实质否决力。</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
 
-    <section class="ibr">
-      <header class="ibr-h">
-        <span class="irn">Ⅲ</span>
-        <span class="irc">司法<span class="ire">Judicial</span></span>
-      </header>
-      <div class="ibr-root">
-      <span class="ir-cn">最高法院</span>
-      <span class="ir-en">Supreme Court · 9 名大法官</span>
-      <span class="if-who">约翰·罗伯茨</span><i class="pty pty-n">无党派</i>
-    </div>
-      <ul class="ibr-tree">
-    <li>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-circuits" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">上诉法院</span><span class="if-en">13 巡回</span></span>
-          <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">13 巡回</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="U.S. Courts of Appeals">↗</a>
-      </div>
-      <div class="if-more" id="ifm-circuits" hidden>
-        <p><b>职责</b>复审辖区内地区法院判决与部分联邦机构决定。</p>
-        <p><b>权力</b>巡回判决在辖区生效，常形成「巡回分裂」，最终由最高法院裁断。</p>
-      </div>
-    </div>
-    </li>
-    <li>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-districts" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">地区法院</span><span class="if-en">94 辖区</span></span>
-          <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">94 辖区</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="U.S. District Courts">↗</a>
-      </div>
-      <div class="if-more" id="ifm-districts" hidden>
-        <p><b>职责</b>审理联邦刑事、民事案件与破产关联事务。</p>
-        <p><b>权力</b>临时禁令与藐视法庭裁定可即时阻断行政措施（关税、移民令等）。</p>
-      </div>
-    </div>
-    </li>
-    </ul><div class="ibr-grp">
-      <div class="g-h">专门法院<i>Specialized Courts</i></div>
-      <div class="ibr-grid">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cit" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">国际贸易法院</span><span class="if-en">CIT</span></span>
-          <span class="if-l2"><span class="if-who">马克·巴尼特</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://cit.uscourts.gov" target="_blank" rel="noopener" title="Court of International Trade">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cit" hidden>
-        <p><b>职责</b>专属管辖关税归类、反倾销/反补贴与贸易救济诉讼。</p>
-        <p><b>权力</b>可撤销总统关税措施，是贸易政策司法审查的第一站；判决可上诉至联邦巡回法院。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-tax" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">税务法院</span><span class="if-en">USTC</span></span>
-          <span class="if-l2"><span class="if-who">帕特里克·厄达</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.ustaxcourt.gov" target="_blank" rel="noopener" title="United States Tax Court">↗</a>
-      </div>
-      <div class="if-more" id="ifm-tax" hidden>
-        <p><b>职责</b>审理纳税人与国税局的税务争议，可在缴税前先行审理。</p>
-        <p><b>权力</b>判例影响跨境转让定价与税收协定适用；对小企业欠税争议具有实质救济功能。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cfc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">联邦索赔法院</span><span class="if-en">CFC</span></span>
-          <span class="if-l2"><span class="if-who">马修·索洛姆森</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.uscfc.uscourts.gov" target="_blank" rel="noopener" title="Court of Federal Claims">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cfc" hidden>
-        <p><b>职责</b>审理针对联邦政府的合同、征用与补偿诉讼。</p>
-        <p><b>权力</b>政府采购与合同争议的终局救济，判决影响承包商现金流与投标意愿。</p>
-      </div>
-    </div>
-    </div>
-    </div><div class="ibr-grp">
-      <div class="g-h">其他法院<i>Other Courts</i></div>
-      <div class="ibr-grid">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cafc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">联邦巡回上诉法院</span><span class="if-en">CAFC</span></span>
-          <span class="if-l2"><span class="if-who">金伯利·摩尔</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://cafc.uscourts.gov" target="_blank" rel="noopener" title="Court of Appeals for the Federal Circuit">↗</a>
-      </div>
-      <div class="if-more" id="ifm-cafc" hidden>
-        <p><b>职责</b>专属管辖专利上诉、国际贸易法院与索赔法院上诉、政府合同与退伍军人上诉。</p>
-        <p><b>权力</b>专利与关税判例全国统一适用，是技术、医药与贸易诉讼最关键的上诉层。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-bankruptcy" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">破产法院</span><span class="if-en">Bankruptcy</span></span>
-          <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">各辖区</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.uscourts.gov/services-forms/bankruptcy" target="_blank" rel="noopener" title="Bankruptcy Courts">↗</a>
-      </div>
-      <div class="if-more" id="ifm-bankruptcy" hidden>
-        <p><b>职责</b>审理破产重整与清算，受地区法院监督。</p>
-        <p><b>权力</b>自动冻结（automatic stay）与重整计划批准，直接决定债权人回收率与重组节奏。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fisc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">外国情报监视法院</span><span class="if-en">FISC</span></span>
-          <span class="if-l2"><span class="if-who">安东尼·特伦加</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.fisc.uscourts.gov" target="_blank" rel="noopener" title="FISC">↗</a>
-      </div>
-      <div class="if-more" id="ifm-fisc" hidden>
-        <p><b>职责</b>审查《外国情报监视法》下的监视与搜查申请，11 名法官由首席大法官指定。</p>
-        <p><b>权力</b>702 条款年度认证的审批者，可在程序内设定查询与最小化规则；裁决多属保密。</p>
-      </div>
-    </div>
-    </div>
-    </div><div class="ibr-grp">
-      <div class="g-h">司法行政机构<i>Judicial Agencies</i></div>
-      <div class="ibr-grid">
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ao" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">法院行政办公室</span><span class="if-en">AO</span></span>
-          <span class="if-l2"><span class="if-who">罗伯特·康拉德</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="Administrative Office of the U.S. Courts">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ao" hidden>
-        <p><b>职责</b>联邦法院的预算、人事、IT 与案件管理系统。</p>
-        <p><b>权力</b>案件管理系统与数据发布标准决定司法信息公开程度；预算请求影响法院审理能力。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fjc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">联邦司法中心</span><span class="if-en">FJC</span></span>
-          <span class="if-l2"><span class="if-who">罗宾·罗森伯格</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.fjc.gov" target="_blank" rel="noopener" title="Federal Judicial Center">↗</a>
-      </div>
-      <div class="if-more" id="ifm-fjc" hidden>
-        <p><b>职责</b>法官培训、司法研究与出版（含《科学证据参考手册》）。</p>
-        <p><b>权力</b>培训与研究材料塑造法官对专业证据的认知，间接影响技术类案件的裁判口径。</p>
-      </div>
-    </div>
-    <div class="if-item">
-      <div class="if-head">
-        <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ussc" title="点击展开：职责与权力">
-          <span class="if-l1"><span class="if-cn">量刑委员会</span><span class="if-en">USSC</span></span>
-          <span class="if-l2"><span class="if-who">卡尔顿·里夫斯</span><i class="pty pty-n">无党派</i></span>
-          <i class="if-caret" aria-hidden="true"></i>
-        </button>
-        <a class="if-ext" href="https://www.ussc.gov" target="_blank" rel="noopener" title="U.S. Sentencing Commission">↗</a>
-      </div>
-      <div class="if-more" id="ifm-ussc" hidden>
-        <p><b>职责</b>制定联邦量刑指南，每年向国会提交修正案。</p>
-        <p><b>权力</b>指南修正改变量刑区间，影响监禁人口与白领犯罪、出口管制案件的量刑预期。</p>
-      </div>
-    </div>
-    </div>
-    </div>
-    </section>
+          <section class="ibr">
+            <header class="ibr-h">
+              <span class="irn">Ⅲ</span>
+              <span class="irc">司法<span class="ire">Judicial</span></span>
+            </header>
+            <div class="ibr-root">
+            <span class="ir-cn">最高法院</span>
+            <span class="ir-en">Supreme Court · 9 名大法官</span>
+            <span class="if-who">约翰·罗伯茨</span><i class="pty pty-n">无党派</i>
+          </div>
+            <ul class="ibr-tree">
+          <li>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-circuits" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">上诉法院</span><span class="if-en">13 巡回</span></span>
+                <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">13 巡回</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="U.S. Courts of Appeals">↗</a>
+            </div>
+            <div class="if-more" id="ifm-circuits" hidden>
+              <p><b>职责</b>复审辖区内地区法院判决与部分联邦机构决定。</p>
+              <p><b>权力</b>巡回判决在辖区生效，常形成「巡回分裂」，最终由最高法院裁断。</p>
+            </div>
+          </div>
+          </li>
+          <li>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-districts" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">地区法院</span><span class="if-en">94 辖区</span></span>
+                <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">94 辖区</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="U.S. District Courts">↗</a>
+            </div>
+            <div class="if-more" id="ifm-districts" hidden>
+              <p><b>职责</b>审理联邦刑事、民事案件与破产关联事务。</p>
+              <p><b>权力</b>临时禁令与藐视法庭裁定可即时阻断行政措施（关税、移民令等）。</p>
+            </div>
+          </div>
+          </li>
+          </ul><div class="ibr-grp">
+            <div class="g-h">专门法院<i>Specialized Courts</i></div>
+            <div class="ibr-grid">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cit" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">国际贸易法院</span><span class="if-en">CIT</span></span>
+                <span class="if-l2"><span class="if-who">马克·巴尼特</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://cit.uscourts.gov" target="_blank" rel="noopener" title="Court of International Trade">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cit" hidden>
+              <p><b>职责</b>专属管辖关税归类、反倾销/反补贴与贸易救济诉讼。</p>
+              <p><b>权力</b>可撤销总统关税措施，是贸易政策司法审查的第一站；判决可上诉至联邦巡回法院。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-tax" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">税务法院</span><span class="if-en">USTC</span></span>
+                <span class="if-l2"><span class="if-who">帕特里克·厄达</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.ustaxcourt.gov" target="_blank" rel="noopener" title="United States Tax Court">↗</a>
+            </div>
+            <div class="if-more" id="ifm-tax" hidden>
+              <p><b>职责</b>审理纳税人与国税局的税务争议，可在缴税前先行审理。</p>
+              <p><b>权力</b>判例影响跨境转让定价与税收协定适用；对小企业欠税争议具有实质救济功能。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cfc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">联邦索赔法院</span><span class="if-en">CFC</span></span>
+                <span class="if-l2"><span class="if-who">马修·索洛姆森</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.uscfc.uscourts.gov" target="_blank" rel="noopener" title="Court of Federal Claims">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cfc" hidden>
+              <p><b>职责</b>审理针对联邦政府的合同、征用与补偿诉讼。</p>
+              <p><b>权力</b>政府采购与合同争议的终局救济，判决影响承包商现金流与投标意愿。</p>
+            </div>
+          </div>
+          </div>
+          </div><div class="ibr-grp">
+            <div class="g-h">其他法院<i>Other Courts</i></div>
+            <div class="ibr-grid">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cafc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">联邦巡回上诉法院</span><span class="if-en">CAFC</span></span>
+                <span class="if-l2"><span class="if-who">金伯利·摩尔</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://cafc.uscourts.gov" target="_blank" rel="noopener" title="Court of Appeals for the Federal Circuit">↗</a>
+            </div>
+            <div class="if-more" id="ifm-cafc" hidden>
+              <p><b>职责</b>专属管辖专利上诉、国际贸易法院与索赔法院上诉、政府合同与退伍军人上诉。</p>
+              <p><b>权力</b>专利与关税判例全国统一适用，是技术、医药与贸易诉讼最关键的上诉层。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-bankruptcy" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">破产法院</span><span class="if-en">Bankruptcy</span></span>
+                <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">各辖区</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.uscourts.gov/services-forms/bankruptcy" target="_blank" rel="noopener" title="Bankruptcy Courts">↗</a>
+            </div>
+            <div class="if-more" id="ifm-bankruptcy" hidden>
+              <p><b>职责</b>审理破产重整与清算，受地区法院监督。</p>
+              <p><b>权力</b>自动冻结（automatic stay）与重整计划批准，直接决定债权人回收率与重组节奏。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fisc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">外国情报监视法院</span><span class="if-en">FISC</span></span>
+                <span class="if-l2"><span class="if-who">安东尼·特伦加</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.fisc.uscourts.gov" target="_blank" rel="noopener" title="FISC">↗</a>
+            </div>
+            <div class="if-more" id="ifm-fisc" hidden>
+              <p><b>职责</b>审查《外国情报监视法》下的监视与搜查申请，11 名法官由首席大法官指定。</p>
+              <p><b>权力</b>702 条款年度认证的审批者，可在程序内设定查询与最小化规则；裁决多属保密。</p>
+            </div>
+          </div>
+          </div>
+          </div><div class="ibr-grp">
+            <div class="g-h">司法行政机构<i>Judicial Agencies</i></div>
+            <div class="ibr-grid">
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ao" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">法院行政办公室</span><span class="if-en">AO</span></span>
+                <span class="if-l2"><span class="if-who">罗伯特·康拉德</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="Administrative Office of the U.S. Courts">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ao" hidden>
+              <p><b>职责</b>联邦法院的预算、人事、IT 与案件管理系统。</p>
+              <p><b>权力</b>案件管理系统与数据发布标准决定司法信息公开程度；预算请求影响法院审理能力。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fjc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">联邦司法中心</span><span class="if-en">FJC</span></span>
+                <span class="if-l2"><span class="if-who">罗宾·罗森伯格</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.fjc.gov" target="_blank" rel="noopener" title="Federal Judicial Center">↗</a>
+            </div>
+            <div class="if-more" id="ifm-fjc" hidden>
+              <p><b>职责</b>法官培训、司法研究与出版（含《科学证据参考手册》）。</p>
+              <p><b>权力</b>培训与研究材料塑造法官对专业证据的认知，间接影响技术类案件的裁判口径。</p>
+            </div>
+          </div>
+          <div class="if-item">
+            <div class="if-head">
+              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ussc" title="点击展开：职责与权力">
+                <span class="if-l1"><span class="if-cn">量刑委员会</span><span class="if-en">USSC</span></span>
+                <span class="if-l2"><span class="if-who">卡尔顿·里夫斯</span><i class="pty pty-n">无党派</i></span>
+                <i class="if-caret" aria-hidden="true"></i>
+              </button>
+              <a class="if-ext" href="https://www.ussc.gov" target="_blank" rel="noopener" title="U.S. Sentencing Commission">↗</a>
+            </div>
+            <div class="if-more" id="ifm-ussc" hidden>
+              <p><b>职责</b>制定联邦量刑指南，每年向国会提交修正案。</p>
+              <p><b>权力</b>指南修正改变量刑区间，影响监禁人口与白领犯罪、出口管制案件的量刑预期。</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
 
-  </div>
+        </div>
 
-  <!-- 州与地方政府 -->
-  <div class="inst-state">
-    <section class="ist">
-      <header class="ist-h">
-        <span class="ih-cn">州政府</span>
-        <span class="ih-en">State Governments</span>
-      </header>
-      <div class="ibr-grid">
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-governor" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">州长</span><span class="if-en">Governor</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.nga.org" target="_blank" rel="noopener" title="全美州长协会">↗</a>
+        <!-- 州与地方政府 -->
+        <div class="inst-state">
+          <section class="ist">
+            <header class="ist-h">
+              <span class="ih-cn">州政府</span>
+              <span class="ih-en">State Governments</span>
+            </header>
+            <div class="ibr-grid">
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-governor" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">州长</span><span class="if-en">Governor</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.nga.org" target="_blank" rel="noopener" title="全美州长协会">↗</a>
+              </div>
+              <div class="if-more" id="ifm-governor" hidden>
+                <p><b>职责</b>州行政首长，掌管州预算、国民警卫队与州机构。</p>
+                <p><b>权力</b>州级紧急状态、否决权与产业补贴，直接影响芯片、新能源等项目落地。</p>
+              </div>
+            </div>
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-legislature" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">州议会</span><span class="if-en">Legislature</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.ncsl.org" target="_blank" rel="noopener" title="全美州议会联合会">↗</a>
+              </div>
+              <div class="if-more" id="ifm-legislature" hidden>
+                <p><b>职责</b>州级立法与预算审批，部分州兼具任命与弹劾权。</p>
+                <p><b>权力</b>州税与监管立法决定企业选址与合规成本，隐私、AI 立法多由州先行。</p>
+              </div>
+            </div>
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-statecourts" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">州法院</span><span class="if-en">State Courts</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.ncsc.org" target="_blank" rel="noopener" title="全国州法院中心">↗</a>
+              </div>
+              <div class="if-more" id="ifm-statecourts" hidden>
+                <p><b>职责</b>审理州法案件，多数州最高法院终审州宪法问题。</p>
+                <p><b>权力</b>州宪法可提供高于联邦的权利保护，影响平台、劳工与环境诉讼。</p>
+              </div>
+            </div>
+            </div>
+          </section>
+          <section class="ist">
+            <header class="ist-h">
+              <span class="ih-cn">地方政府</span>
+              <span class="ih-en">Local Governments</span>
+            </header>
+            <div class="ibr-grid">
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-city" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">市议会</span><span class="if-en">City Councils</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美市镇</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.nlc.org" target="_blank" rel="noopener" title="全美城市联盟">↗</a>
+              </div>
+              <div class="if-more" id="ifm-city" hidden>
+                <p><b>职责</b>市政立法、分区（zoning）与地方预算。</p>
+                <p><b>权力</b>土地用途与许可决定项目落地，是数据中心、制造业选址的关键节点。</p>
+              </div>
+            </div>
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-county" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">县委员会</span><span class="if-en">County Boards</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美县</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.naco.org" target="_blank" rel="noopener" title="全美县协会">↗</a>
+              </div>
+              <div class="if-more" id="ifm-county" hidden>
+                <p><b>职责</b>县行政与预算、地方公共服务（治安、公共卫生）。</p>
+                <p><b>权力</b>地方税收与债券发行、土地利用审批，对基建与工业园区有决定权。</p>
+              </div>
+            </div>
+            <div class="if-item">
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-sheriff" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="if-cn">地方执法</span><span class="if-en">Law Enforcement</span></span>
+                  <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美</i></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.sheriffs.org" target="_blank" rel="noopener" title="全美警长协会">↗</a>
+              </div>
+              <div class="if-more" id="ifm-sheriff" hidden>
+                <p><b>职责</b>市/县警察与治安官负责地方治安与刑事侦查。</p>
+                <p><b>权力</b>执法优先次序与地方羁押安排；与联邦移民执法的协作程度由地方决定。</p>
+              </div>
+            </div>
+            </div>
+          </section>
         </div>
-        <div class="if-more" id="ifm-governor" hidden>
-          <p><b>职责</b>州行政首长，掌管州预算、国民警卫队与州机构。</p>
-          <p><b>权力</b>州级紧急状态、否决权与产业补贴，直接影响芯片、新能源等项目落地。</p>
-        </div>
-      </div>
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-legislature" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">州议会</span><span class="if-en">Legislature</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.ncsl.org" target="_blank" rel="noopener" title="全美州议会联合会">↗</a>
-        </div>
-        <div class="if-more" id="ifm-legislature" hidden>
-          <p><b>职责</b>州级立法与预算审批，部分州兼具任命与弹劾权。</p>
-          <p><b>权力</b>州税与监管立法决定企业选址与合规成本，隐私、AI 立法多由州先行。</p>
-        </div>
-      </div>
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-statecourts" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">州法院</span><span class="if-en">State Courts</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">50 州</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.ncsc.org" target="_blank" rel="noopener" title="全国州法院中心">↗</a>
-        </div>
-        <div class="if-more" id="ifm-statecourts" hidden>
-          <p><b>职责</b>审理州法案件，多数州最高法院终审州宪法问题。</p>
-          <p><b>权力</b>州宪法可提供高于联邦的权利保护，影响平台、劳工与环境诉讼。</p>
-        </div>
-      </div>
-      </div>
-    </section>
-    <section class="ist">
-      <header class="ist-h">
-        <span class="ih-cn">地方政府</span>
-        <span class="ih-en">Local Governments</span>
-      </header>
-      <div class="ibr-grid">
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-city" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">市议会</span><span class="if-en">City Councils</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美市镇</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.nlc.org" target="_blank" rel="noopener" title="全美城市联盟">↗</a>
-        </div>
-        <div class="if-more" id="ifm-city" hidden>
-          <p><b>职责</b>市政立法、分区（zoning）与地方预算。</p>
-          <p><b>权力</b>土地用途与许可决定项目落地，是数据中心、制造业选址的关键节点。</p>
-        </div>
-      </div>
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-county" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">县委员会</span><span class="if-en">County Boards</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美县</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.naco.org" target="_blank" rel="noopener" title="全美县协会">↗</a>
-        </div>
-        <div class="if-more" id="ifm-county" hidden>
-          <p><b>职责</b>县行政与预算、地方公共服务（治安、公共卫生）。</p>
-          <p><b>权力</b>地方税收与债券发行、土地利用审批，对基建与工业园区有决定权。</p>
-        </div>
-      </div>
-      <div class="if-item">
-        <div class="if-head">
-          <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-sheriff" title="点击展开：职责与权力">
-            <span class="if-l1"><span class="if-cn">地方执法</span><span class="if-en">Law Enforcement</span></span>
-            <span class="if-l2"><span class="if-who">无单一首长</span><i class="pty pty-n">全美</i></span>
-            <i class="if-caret" aria-hidden="true"></i>
-          </button>
-          <a class="if-ext" href="https://www.sheriffs.org" target="_blank" rel="noopener" title="全美警长协会">↗</a>
-        </div>
-        <div class="if-more" id="ifm-sheriff" hidden>
-          <p><b>职责</b>市/县警察与治安官负责地方治安与刑事侦查。</p>
-          <p><b>权力</b>执法优先次序与地方羁押安排；与联邦移民执法的协作程度由地方决定。</p>
-        </div>
-      </div>
-      </div>
-    </section>
-  </div>
 
-  <div class="inst-foot">
-    结构据美国政府结构图（U.S. Government Structure）整理，仅列常设机构；委员会取两院对应的常设委员会。首长信息核实至 2026 年 10 月，「代理」为未经参议院确认的临时任职。党派标注规则：经选举或政治任命产生的职位标所属政党，法官与国会辅助机构标「无党派」，独立监管机构按其任命总统所属党派标注。各机构名后的 ↗ 指向其官网。
-  </div>
-</div>
+        <div class="inst-foot">
+          结构据美国政府结构图（U.S. Government Structure）整理，仅列常设机构；委员会取两院对应的常设委员会。首长信息核实至 2026 年 10 月，「代理」为未经参议院确认的临时任职。党派标注规则：经选举或政治任命产生的职位标所属政党，法官与国会辅助机构标「无党派」，独立监管机构按其任命总统所属党派标注。各机构名后的 ↗ 指向其官网。
+        </div>
+      </div>
+      </div>
     </section>
   </main>
 
