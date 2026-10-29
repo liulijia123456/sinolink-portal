@@ -2573,8 +2573,8 @@
   }
   #view-us .ir-en {
     flex: none; white-space: nowrap;
-    font-family: var(--us-mono); font-size: 8px; letter-spacing: .14em;
-    text-transform: uppercase; color: rgba(11, 23, 36, .36);
+    font-family: var(--us-mono); font-size: 8.5px; letter-spacing: .16em;
+    text-transform: uppercase; color: #8a6420;
   }
   #view-us .ibr-root .if-who { font-size: 10.5px; color: #2b3a4d; }
 
@@ -2604,9 +2604,10 @@
   #view-us .ibr-grid.c2 .if-cn, #view-us .ibr-grid.c3 .if-cn { font-size: 12.5px; }
   /* 三列窄格不显示英文缩写：部名多为 7–8 字，缩写会让「住房与城市发展部」断行 */
   #view-us .ibr-grid.c3 .if-en { display: none; }
+  /* 机构英文/简称：等宽大写 + 字距，用铜金棕色与「人名英文」的浅灰区分开 */
   #view-us .if-en {
-    flex: 0 0 auto; font-family: var(--us-mono); font-size: 8px; letter-spacing: .06em;
-    color: rgba(11, 23, 36, .32); white-space: nowrap;
+    flex: 0 0 auto; font-family: var(--us-mono); font-size: 8.5px; letter-spacing: .12em;
+    text-transform: uppercase; color: #8a6420; white-space: nowrap;
   }
   #view-us .if-who {
     min-width: 0; font-size: 10.5px; line-height: 1.42; color: #2b3a4d; word-break: keep-all;
