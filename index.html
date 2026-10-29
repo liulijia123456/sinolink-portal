@@ -2611,10 +2611,12 @@
   #view-us .if-who {
     min-width: 0; font-size: 10.5px; line-height: 1.42; color: #2b3a4d; word-break: keep-all;
   }
-  /* 职称：宋体小字 + 字距，读作标签；姓名保持黑体，二者在族别上分开 */
+  /* 职称：宋体小字加墨色细框，做成「印章式」标签；姓名保持黑体，二者在族别上分开 */
   #view-us .who-title {
-    font-family: var(--us-serif); font-size: 10px; letter-spacing: .06em;
-    color: rgba(11, 23, 36, .62);
+    display: inline-block; vertical-align: 1px; padding: 0 4px;
+    border: 1px solid rgba(11, 23, 36, .38); border-radius: 2px;
+    font-family: var(--us-serif); font-size: 9.5px; line-height: 1.5; letter-spacing: .04em;
+    color: #16212e;
   }
   #view-us .who-tail { white-space: nowrap; }
   /* 网格内统一成三行（名称 / 职称+姓名 / 英文名+党派），同组内不出现 2、3 行混排 */
@@ -2629,9 +2631,13 @@
     font-style: normal; font-size: 8px; line-height: 1.6; letter-spacing: .04em;
     padding: 0 5px; border-radius: 2px; border: 1px solid transparent; white-space: nowrap;
   }
-  #view-us .pty-d { color: #245c9b; border-color: rgba(47, 111, 184, .34); background: rgba(47, 111, 184, .055); }
-  #view-us .pty-r { color: #9d3b31; border-color: rgba(168, 68, 58, .32); background: rgba(168, 68, 58, .05); }
+  /* 党派改为纯色文字，不再加框：每行只保留"职称"一个方框，避免整页碎成一排小方块 */
+  #view-us .pty-d, #view-us .pty-r { padding: 0 1px; border-color: transparent; background: none; font-size: 8.5px; }
+  #view-us .pty-d { color: #245c9b; }
+  #view-us .pty-r { color: #9d3b31; }
   #view-us .pty-n { color: rgba(11, 23, 36, .5); border-color: rgba(11, 23, 36, .16); background: none; }
+  /* 「无党派」按党派处理（纯文字）；「两院 / 13 巡回 / 50 州」等口径标签保留细框 */
+  #view-us .pty-x { padding: 0 1px; border-color: transparent; }
 
   /* 展开箭头与官网外链：两列固定宽度，右缘对齐 */
   #view-us .if-caret {
@@ -3881,7 +3887,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gao" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">政府问责局</span><span class="if-en">GAO</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">代理主计长</span>&nbsp;<span class="who-cn">奥里斯·布朗</span> <span class="who-tail"><em class="who-en">Orice Williams Brown</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">代理主计长</span>&nbsp;<span class="who-cn">奥里斯·布朗</span> <span class="who-tail"><em class="who-en">Orice Williams Brown</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.gao.gov" target="_blank" rel="noopener" title="政府问责局官网">↗</a>
@@ -3895,7 +3901,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cbo" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">国会预算办公室</span><span class="if-en">CBO</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">菲利普·斯瓦格尔</span> <span class="who-tail"><em class="who-en">Phillip Swagel</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">菲利普·斯瓦格尔</span> <span class="who-tail"><em class="who-en">Phillip Swagel</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.cbo.gov" target="_blank" rel="noopener" title="Congressional Budget Office">↗</a>
@@ -3909,7 +3915,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-loc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">国会图书馆</span><span class="if-en">LoC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">代理馆长</span>&nbsp;<span class="who-cn">罗伯特·纽伦</span> <span class="who-tail"><em class="who-en">Robert Newlen</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">代理馆长</span>&nbsp;<span class="who-cn">罗伯特·纽伦</span> <span class="who-tail"><em class="who-en">Robert Newlen</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.loc.gov" target="_blank" rel="noopener" title="Library of Congress">↗</a>
@@ -3937,7 +3943,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-gpo" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">政府出版局</span><span class="if-en">GPO</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">局长</span>&nbsp;<span class="who-cn">休·哈尔彭</span> <span class="who-tail"><em class="who-en">Hugh Halpern</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">局长</span>&nbsp;<span class="who-cn">休·哈尔彭</span> <span class="who-tail"><em class="who-en">Hugh Halpern</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.gpo.gov" target="_blank" rel="noopener" title="Government Publishing Office">↗</a>
@@ -4375,7 +4381,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-scotus" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="ir-cn">最高法院</span><span class="ir-en">Supreme Court</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席大法官</span>&nbsp;<span class="who-cn">约翰·罗伯茨</span> <span class="who-tail"><em class="who-en">John Roberts</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席大法官</span>&nbsp;<span class="who-cn">约翰·罗伯茨</span> <span class="who-tail"><em class="who-en">John Roberts</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.supremecourt.gov" target="_blank" rel="noopener" title="Supreme Court of the United States">↗</a>
@@ -4425,7 +4431,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cit" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">国际贸易法院</span><span class="if-en">CIT</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">马克·巴尼特</span> <span class="who-tail"><em class="who-en">Mark Barnett</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">马克·巴尼特</span> <span class="who-tail"><em class="who-en">Mark Barnett</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://cit.uscourts.gov" target="_blank" rel="noopener" title="Court of International Trade">↗</a>
@@ -4439,7 +4445,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-tax" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">税务法院</span><span class="if-en">USTC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">帕特里克·厄达</span> <span class="who-tail"><em class="who-en">Patrick Urda</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">帕特里克·厄达</span> <span class="who-tail"><em class="who-en">Patrick Urda</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.ustaxcourt.gov" target="_blank" rel="noopener" title="United States Tax Court">↗</a>
@@ -4453,7 +4459,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cfc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">联邦索赔法院</span><span class="if-en">CFC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">马修·索洛姆森</span> <span class="who-tail"><em class="who-en">Matthew Solomson</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">马修·索洛姆森</span> <span class="who-tail"><em class="who-en">Matthew Solomson</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.uscfc.uscourts.gov" target="_blank" rel="noopener" title="Court of Federal Claims">↗</a>
@@ -4471,7 +4477,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-cafc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">联邦巡回上诉法院</span><span class="if-en">CAFC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">金伯利·摩尔</span> <span class="who-tail"><em class="who-en">Kimberly Moore</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">金伯利·摩尔</span> <span class="who-tail"><em class="who-en">Kimberly Moore</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://cafc.uscourts.gov" target="_blank" rel="noopener" title="Court of Appeals for the Federal Circuit">↗</a>
@@ -4499,7 +4505,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fisc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">外国情报监视法院</span><span class="if-en">FISC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">安东尼·特伦加</span> <span class="who-tail"><em class="who-en">Anthony Trenga</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">首席法官</span>&nbsp;<span class="who-cn">安东尼·特伦加</span> <span class="who-tail"><em class="who-en">Anthony Trenga</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.fisc.uscourts.gov" target="_blank" rel="noopener" title="FISC">↗</a>
@@ -4517,7 +4523,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ao" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">法院行政办公室</span><span class="if-en">AO</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">罗伯特·康拉德</span> <span class="who-tail"><em class="who-en">Robert Conrad</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">罗伯特·康拉德</span> <span class="who-tail"><em class="who-en">Robert Conrad</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.uscourts.gov" target="_blank" rel="noopener" title="Administrative Office of the U.S. Courts">↗</a>
@@ -4531,7 +4537,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-fjc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">联邦司法中心</span><span class="if-en">FJC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">罗宾·罗森伯格</span> <span class="who-tail"><em class="who-en">Robin Rosenberg</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">主任</span>&nbsp;<span class="who-cn">罗宾·罗森伯格</span> <span class="who-tail"><em class="who-en">Robin Rosenberg</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.fjc.gov" target="_blank" rel="noopener" title="Federal Judicial Center">↗</a>
@@ -4545,7 +4551,7 @@
             <div class="if-head">
               <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-ussc" title="点击展开：职责与权力">
                 <span class="if-l1"><span class="if-cn">量刑委员会</span><span class="if-en">USSC</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">主席</span>&nbsp;<span class="who-cn">卡尔顿·里夫斯</span> <span class="who-tail"><em class="who-en">Carlton Reeves</em> <i class="pty pty-n">无党派</i></span></span></span>
+                <span class="if-l2"><span class="if-who"><span class="who-title">主席</span>&nbsp;<span class="who-cn">卡尔顿·里夫斯</span> <span class="who-tail"><em class="who-en">Carlton Reeves</em> <i class="pty pty-n pty-x">无党派</i></span></span></span>
                 <i class="if-caret" aria-hidden="true"></i>
               </button>
               <a class="if-ext" href="https://www.ussc.gov" target="_blank" rel="noopener" title="U.S. Sentencing Commission">↗</a>
