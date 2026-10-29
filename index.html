@@ -2497,11 +2497,16 @@
   }
 
   /* =========================================================================
-     政治机构导航 —— 三权分支 + 州与地方政府
+     政治机构导航 —— 分层目录（tiered directory）
      ---------------------------------------------------------------------------
-     版式沿用「档案卷宗」：三个分支列用 1px 发丝线分隔成表格；分支内是左脊树
-     （li::before 竖线 + li::after 横线＝肘形连接线），大分组改用密排网格；
-     铜金只做编号与宪法条款索引，蓝色只做条目数与可交互态。
+     层级：Ⅰ分支 → 根节点 → 分组 → 机构 → 首长 → 展开说明
+     字体分工（只此三族，不混用）
+       · 宋体 --us-serif  名称层级：分支标题 18 / 根节点 15 / 州与地方 13.5
+       · 黑体 --us-sans   机构名 13、分组标题 11.5、首长 10.5、说明正文 11
+       · 等宽 --us-mono   索引与代码：Ⅰ、英文缩写 8、条目计数 9
+     颜色阶梯：主墨 #101a26（名称）> 次 #2b3a4d（首长）> 辅 .52（职称）> 弱 .32（缩写/计数）
+     结构：每支一条竖脊（x=18），分组与树节点用 11px 横线挂在脊上，形成单一归属路径；
+           铜金只做索引与刻度，蓝/红只做党派，不参与其他用色。
      ========================================================================= */
   #view-us .inst {
     margin-top: 30px; border: 1px solid var(--us-line); border-radius: 3px;
@@ -2509,192 +2514,218 @@
   }
   #view-us .inst-note {
     display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 18px;
-    padding: 13px 22px 14px; border-bottom: 1px solid var(--us-line);
+    padding: 14px 22px 15px; border-bottom: 1px solid var(--us-line);
     background: linear-gradient(180deg, rgba(255, 255, 255, .65), rgba(255, 255, 255, 0));
   }
   #view-us .inst-note .in-k {
     font-family: var(--us-serif); font-size: 13.5px; font-weight: 600;
-    letter-spacing: .05em; color: #16212e;
+    letter-spacing: .05em; color: #101a26;
   }
-  #view-us .inst-note .in-v { flex: 1 1 340px; font-size: 11.5px; line-height: 1.75; color: rgba(11, 23, 36, .52); }
+  #view-us .inst-note .in-v { flex: 1 1 340px; font-size: 11.5px; line-height: 1.8; color: rgba(11, 23, 36, .54); }
 
+  /* ---------- 三支并置 ---------- */
   #view-us .inst-cols {
     display: grid;
     grid-template-columns: minmax(0, .95fr) minmax(0, 1.5fr) minmax(0, .85fr);
   }
-  #view-us .ibr { display: flex; flex-direction: column; min-width: 0; }
+  #view-us .ibr { position: relative; display: flex; flex-direction: column; min-width: 0; }
   #view-us .ibr + .ibr { border-left: 1px solid var(--us-line); }
-  #view-us .ibr-h {
-    display: flex; align-items: baseline; gap: 10px;
-    padding: 14px 18px 12px; border-bottom: 1px solid var(--us-line-soft); background: #f6f3ec;
-  }
-  #view-us .ibr-h .irn { font-family: var(--us-mono); font-size: 11px; letter-spacing: .1em; color: var(--us-brass); }
-  #view-us .ibr-h .irc {
-    display: flex; flex-direction: column; gap: 2px; line-height: 1.2;
-    font-family: var(--us-serif); font-size: 16px; font-weight: 600;
-    letter-spacing: .06em; color: #16212e;
-  }
-  #view-us .ibr-h .ire {
-    font-family: var(--us-mono); font-size: 8.5px; font-weight: 400;
-    letter-spacing: .22em; text-transform: uppercase; color: rgba(11, 23, 36, .38);
+  /* 支脊：从根节点下方一直延伸到本支最后一个分组 */
+  #view-us .ibr::before {
+    content: ''; position: absolute; left: 18px; top: 74px; bottom: 20px; width: 1px;
+    background: linear-gradient(180deg, rgba(11, 23, 36, .20) 0%, rgba(11, 23, 36, .15) 72%, rgba(11, 23, 36, .04) 100%);
   }
 
-  /* 分支根节点（国会 / 总统 / 最高法院）：白底 + 左侧铜金书脊 */
-  #view-us .ibr-root {
-    position: relative; margin: 14px 18px 0; min-height: 73px;
-    background: #fff; border: 1px solid rgba(11, 23, 36, .1); border-radius: 2px;
+  /* 分支标题：Ⅰ + 中文 + 英文代码 */
+  #view-us .ibr-h {
+    position: relative; z-index: 1;
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 15px 18px 12px; background: #f6f3ec;
+    border-bottom: 1px solid var(--us-line-soft);
   }
-  /* 根节点与普通条目共用展开逻辑，内边距与面板留白单独给 */
-  #view-us .ibr-root .if-toggle { padding: 9px 12px 9px 13px; align-content: center; }
-  #view-us .ibr-root .if-ext { padding: 6px 10px 6px 2px; }
-  #view-us .ibr-root .if-more { margin: 0 12px 10px 13px; }
+  #view-us .ibr-h .irn { font-family: var(--us-mono); font-size: 10.5px; letter-spacing: .18em; color: var(--us-brass); }
+  #view-us .ibr-h .irc {
+    display: flex; flex-direction: column; gap: 3px; line-height: 1.15;
+    font-family: var(--us-serif); font-size: 18px; font-weight: 600;
+    letter-spacing: .06em; color: #101a26;
+  }
+  #view-us .ibr-h .ire {
+    font-family: var(--us-mono); font-size: 8px; font-weight: 400;
+    letter-spacing: .26em; text-transform: uppercase; color: rgba(11, 23, 36, .34);
+  }
+
+  /* 根节点：白底卡片 + 铜金书脊，坐在支脊顶端 */
+  #view-us .ibr-root {
+    position: relative; margin: 14px 18px 0;
+    background: #fff; border: 1px solid rgba(11, 23, 36, .09); border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(11, 23, 36, .035);
+  }
   #view-us .ibr-root::before {
     content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--us-brass);
   }
-  #view-us .ibr-root .ir-cn {
+  /* 三张根节点卡片统一 76px，内容垂直居中（最高法院的首长信息折两行） */
+  #view-us .ibr-root .if-toggle { padding: 8px 10px 8px 12px; min-height: 76px; align-content: center; }
+  #view-us .ibr-root .if-ext { padding: 6px 10px 6px 2px; }
+  #view-us .ibr-root .if-more { margin: 0 10px 10px 12px; }
+  #view-us .ir-cn {
     flex: none; white-space: nowrap;
-    font-family: var(--us-serif); font-size: 14.5px; font-weight: 600; letter-spacing: .05em; color: #16212e;
+    font-family: var(--us-serif); font-size: 15px; font-weight: 600; letter-spacing: .05em; color: #101a26;
   }
-  #view-us .ibr-root .ir-en {
+  #view-us .ir-en {
     flex: none; white-space: nowrap;
-    font-family: var(--us-mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: rgba(11, 23, 36, .4);
+    font-family: var(--us-mono); font-size: 8px; letter-spacing: .14em;
+    text-transform: uppercase; color: rgba(11, 23, 36, .36);
   }
   #view-us .ibr-root .if-who { font-size: 10.5px; color: #2b3a4d; }
 
-  /* 左脊树：li 自身的竖线 + 横线拼出肘形连接 */
-  #view-us .ibr-tree { list-style: none; margin: 8px 18px 0 27px; padding: 0; }
-  #view-us .ibr-tree > li { position: relative; padding-left: 15px; }
-  #view-us .ibr-tree > li::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--us-line);
-  }
-  /* 肘形横线固定在表头中线（两行约 44px），展开面板变高时连接线不跟着跑 */
-  #view-us .ibr-tree > li:last-child::before { bottom: auto; height: 22px; }
+  /* 树节点：横线挂在支脊上 */
+  #view-us .ibr-tree { list-style: none; margin: 10px 18px 0 18px; padding: 0; }
+  #view-us .ibr-tree > li { position: relative; padding-left: 12px; }
   #view-us .ibr-tree > li::after {
-    content: ''; position: absolute; left: 0; top: 22px; width: 13px; height: 1px; background: var(--us-line);
+    content: ''; position: absolute; left: 0; top: 22px; width: 11px; height: 1px;
+    background: rgba(11, 23, 36, .24);
   }
 
-  /* 机构行：两行结构 —— 第一行机构名 + 英文缩写，第二行现任首长 + 党派；
-     整行可点（.if-toggle）展开职责与权力，右侧 ↗ 单独指向官网外链 */
+  /* ---------- 机构条目：两行结构 ---------- */
   #view-us .if-item { min-width: 0; }
   #view-us .if-head { display: flex; align-items: center; }
   #view-us .if-toggle {
     flex: 1 1 auto; min-width: 0; display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) 12px;
     grid-template-areas: "l1 c" "l2 c";
-    align-items: center; column-gap: 6px; row-gap: 1px;
+    align-items: center; column-gap: 6px; row-gap: 0;
     padding: 5px 4px; border: 0; border-radius: 2px; background: none;
     font-family: var(--us-sans); text-align: left; color: #1b2531; cursor: pointer;
     transition: background-color .16s ease;
   }
   #view-us .if-l1 { grid-area: l1; display: flex; align-items: baseline; gap: 5px; min-width: 0; }
-  #view-us .if-l2 { grid-area: l2; display: flex; align-items: center; gap: 5px; min-width: 0; }
-  #view-us .if-cn { font-size: 12.5px; line-height: 1.4; min-width: 0; }
+  #view-us .if-l2 { grid-area: l2; min-width: 0; }
+  #view-us .if-cn { min-width: 0; font-size: 13px; font-weight: 500; line-height: 1.35; color: #16212e; }
+  #view-us .ibr-grid.c2 .if-cn, #view-us .ibr-grid.c3 .if-cn { font-size: 12.5px; }
+  /* 三列窄格不显示英文缩写：部名多为 7–8 字，缩写会让「住房与城市发展部」断行 */
+  #view-us .ibr-grid.c3 .if-en { display: none; }
   #view-us .if-en {
-    flex: 0 0 auto; font-family: var(--us-mono); font-size: 9px; letter-spacing: .05em;
-    color: rgba(11, 23, 36, .36); white-space: nowrap;
+    flex: 0 0 auto; font-family: var(--us-mono); font-size: 8px; letter-spacing: .06em;
+    color: rgba(11, 23, 36, .32); white-space: nowrap;
   }
-  /* 首长：中文名 + 英文原名 + 党派。keep-all 保证中文姓名不被拆开，
-     只在「中文名 / 英文名」之间的空格处断行，窄格自动折成两行 */
   #view-us .if-who {
-    min-width: 0; font-size: 10.5px; line-height: 1.5; color: #2b3a4d; word-break: keep-all;
+    min-width: 0; font-size: 10.5px; line-height: 1.42; color: #2b3a4d; word-break: keep-all;
   }
-  /* 「英文原名 + 党派」整体不断开：窄格里要么一起留在姓名后，要么整体折到第二行 */
-  /* 职称：与姓名同一行，比姓名浅一档，读起来是「职称 姓名」 */
-  #view-us .who-title { color: rgba(11, 23, 36, .52); letter-spacing: .02em; }
+  #view-us .who-title { color: rgba(11, 23, 36, .5); }
   #view-us .who-tail { white-space: nowrap; }
+  /* 网格内统一成三行（名称 / 职称+姓名 / 英文名+党派），同组内不出现 2、3 行混排 */
+  #view-us .ibr-grid .who-tail { display: block; }
   #view-us .who-en {
-    font-style: normal; font-family: var(--us-mono); font-size: 8.5px;
-    letter-spacing: .01em; color: rgba(11, 23, 36, .45);
+    font-style: normal; font-family: var(--us-mono); font-size: 8px;
+    letter-spacing: .02em; color: rgba(11, 23, 36, .42);
   }
-  /* 党派：民主党蓝（--us-blue 一侧）/ 共和党红（与周末红同源）/ 无党派灰 */
+  /* 党派：描边胶囊，只借颜色做区分，不与正文抢视觉重量 */
   #view-us .pty {
-    display: inline-block; vertical-align: 1px;
-    font-style: normal; font-size: 8.5px; line-height: 1.55; letter-spacing: .02em;
-    padding: 0 4px; border-radius: 2px; border: 1px solid transparent; white-space: nowrap;
+    display: inline-block; vertical-align: 1px; margin-left: 5px;
+    font-style: normal; font-size: 8px; line-height: 1.6; letter-spacing: .04em;
+    padding: 0 5px; border-radius: 2px; border: 1px solid transparent; white-space: nowrap;
   }
-  #view-us .pty-d { color: #245c9b; background: rgba(47, 111, 184, .10); border-color: rgba(47, 111, 184, .26); }
-  #view-us .pty-r { color: #9d3b31; background: rgba(168, 68, 58, .09); border-color: rgba(168, 68, 58, .24); }
-  #view-us .pty-n { color: rgba(11, 23, 36, .5); background: rgba(11, 23, 36, .045); border-color: rgba(11, 23, 36, .14); }
-  /* 展开箭头 */
+  #view-us .pty-d { color: #245c9b; border-color: rgba(47, 111, 184, .34); background: rgba(47, 111, 184, .055); }
+  #view-us .pty-r { color: #9d3b31; border-color: rgba(168, 68, 58, .32); background: rgba(168, 68, 58, .05); }
+  #view-us .pty-n { color: rgba(11, 23, 36, .5); border-color: rgba(11, 23, 36, .16); background: none; }
+
+  /* 展开箭头与官网外链：两列固定宽度，右缘对齐 */
   #view-us .if-caret {
-    grid-area: c; align-self: center; width: 6px; height: 6px; margin-right: 2px;
+    grid-area: c; align-self: center; justify-self: end; width: 6px; height: 6px;
     border-right: 1px solid rgba(11, 23, 36, .42); border-bottom: 1px solid rgba(11, 23, 36, .42);
     transform: rotate(45deg) translate(-1px, -1px); transition: transform .2s ease;
   }
   #view-us .if-item.open .if-caret { transform: rotate(-135deg) translate(-1px, -1px); }
-  @media (hover: hover) and (pointer: fine) {
-    #view-us .if-toggle:hover { background: rgba(47, 111, 184, .055); }
-    #view-us .if-toggle:hover .if-cn { color: #14304f; }
-  }
-  #view-us .if-toggle:focus-visible { outline: 2px solid rgba(47, 111, 184, .5); outline-offset: 1px; }
-  /* 官网外链：与展开按钮并列的独立链接 */
   #view-us .if-ext {
-    flex: none; padding: 6px 2px; font-size: 10px; line-height: 1;
+    flex: none; width: 16px; padding: 6px 2px; text-align: right; font-size: 10px; line-height: 1;
     color: rgba(11, 23, 36, .42); text-decoration: none; transition: color .18s ease;
   }
   #view-us .if-ext:hover { color: var(--us-blue); }
-  /* 展开时占用整行宽度，避免 161px 窄格里正文被挤成七八行 */
-  #view-us .ibr-grid .if-item.open { grid-column: 1 / -1; }
-  /* 展开面板：职责 / 权力 */
-  #view-us .if-more {
-    margin: 0 4px 7px; padding: 8px 10px 9px; border-left: 2px solid rgba(168, 130, 60, .5);
-    background: #f7f4ec; border-radius: 0 2px 2px 0;
+  @media (hover: hover) and (pointer: fine) {
+    #view-us .if-toggle:hover { background: rgba(47, 111, 184, .05); }
+    #view-us .if-toggle:hover .if-cn { color: #0f2237; }
   }
-  #view-us .if-more p { margin: 0; font-size: 11px; line-height: 1.85; color: rgba(11, 23, 36, .66); }
-  #view-us .if-more p + p { margin-top: 5px; }
-  #view-us .if-more b { margin-right: 5px; font-weight: 600; color: #8a6420; }
+  #view-us .if-toggle:focus-visible { outline: 2px solid rgba(47, 111, 184, .5); outline-offset: 1px; }
 
-  /* 分组：细虚线小标题 + 密排网格 */
-  #view-us .ibr-grp { margin: 14px 18px 0; }
+  /* 展开面板 */
+  #view-us .ibr-grid .if-item.open { grid-column: 1 / -1; }
+  #view-us .if-more {
+    margin: 0 4px 8px; padding: 9px 11px 10px;
+    border-left: 2px solid rgba(168, 130, 60, .45);
+    background: rgba(168, 130, 60, .055); border-radius: 0 2px 2px 0;
+  }
+  #view-us .if-more p { margin: 0; font-size: 11px; line-height: 1.85; color: rgba(11, 23, 36, .68); }
+  #view-us .if-more p + p { margin-top: 5px; }
+  #view-us .if-more b {
+    margin-right: 6px; font-weight: 600; font-size: 10px;
+    letter-spacing: .08em; color: #8a6420;
+  }
+
+  /* ---------- 分组：横线挂在支脊上，右侧计数 ---------- */
+  #view-us .ibr-grp { position: relative; margin: 20px 18px 0 30px; }
   #view-us .ibr-grp .g-h {
-    display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; padding-bottom: 6px;
-    border-bottom: 1px dashed var(--us-line-soft);
-    font-family: var(--us-mono); font-size: 9.5px; letter-spacing: .12em; color: rgba(11, 23, 36, .44);
+    position: relative; display: flex; align-items: baseline; gap: 8px;
+    margin: 0 0 8px; padding: 0 0 7px;
+    border-bottom: 1px solid rgba(11, 23, 36, .12);
   }
+  #view-us .ibr-grp .g-h::before {
+    content: ''; position: absolute; left: -12px; top: 8px; width: 11px; height: 1px;
+    background: rgba(11, 23, 36, .24);
+  }
+  #view-us .g-cn { font-size: 11.5px; font-weight: 600; letter-spacing: .04em; color: #16212e; }
   #view-us .ibr-grp .g-h i {
-    font-style: normal; font-size: 8.5px; letter-spacing: .18em;
-    text-transform: uppercase; color: rgba(11, 23, 36, .26);
+    font-style: normal; font-family: var(--us-mono); font-size: 8px;
+    letter-spacing: .16em; text-transform: uppercase; color: rgba(11, 23, 36, .3);
   }
-  #view-us .ibr-grid { display: grid; gap: 1px 10px; }
-  /* 密排网格里的单元格更窄，收紧内边距与字号，保证九字部名（如「卫生与公众服务部」）不折行 */
-  #view-us .ibr-grid .ifl { padding: 5px 4px; gap: 5px; font-size: 12px; }
+  #view-us .g-n { margin-left: auto; font-family: var(--us-mono); font-size: 9px; font-weight: 400; color: rgba(11, 23, 36, .42); }
+  #view-us .ibr-grid { display: grid; gap: 2px 12px; }
   #view-us .ibr-grid.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #view-us .ibr-grid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  #view-us .ibr > .ibr-grp:last-child { margin-bottom: 16px; }
+  #view-us .ibr-grid .if-toggle { padding: 4px 4px; }
+  #view-us .ibr > .ibr-grp:last-child { margin-bottom: 18px; }
 
-  /* 州与地方政府：横条 */
+  /* ---------- 州与地方政府 ---------- */
   #view-us .inst-state { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--us-line); }
-  #view-us .ist { display: flex; flex-direction: column; min-width: 0; padding: 14px 20px 15px; }
+  #view-us .ist { display: flex; flex-direction: column; min-width: 0; padding: 16px 20px 18px; }
   #view-us .ist + .ist { border-left: 1px solid var(--us-line); }
-  #view-us .ist-h { display: flex; align-items: baseline; gap: 9px; }
-  #view-us .ist-h .ih-cn { font-family: var(--us-serif); font-size: 14px; font-weight: 600; letter-spacing: .05em; color: #16212e; }
-  #view-us .ist-h .ih-en {
-    font-family: var(--us-mono); font-size: 8.5px; letter-spacing: .18em;
-    text-transform: uppercase; color: rgba(11, 23, 36, .34);
+  #view-us .ist-h {
+    display: flex; align-items: baseline; gap: 8px;
+    padding-bottom: 7px; margin-bottom: 8px; border-bottom: 1px solid rgba(11, 23, 36, .12);
   }
-  #view-us .ist-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px 10px; margin-top: 6px; }
+  #view-us .ist-h .ih-cn {
+    font-family: var(--us-serif); font-size: 13.5px; font-weight: 600;
+    letter-spacing: .05em; color: #101a26;
+  }
+  #view-us .ist-h .ih-en {
+    font-family: var(--us-mono); font-size: 8px; letter-spacing: .2em;
+    text-transform: uppercase; color: rgba(11, 23, 36, .32);
+  }
+  #view-us .ist-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px 12px; }
 
   #view-us .inst-foot {
-    padding: 11px 22px 12px; border-top: 1px solid var(--us-line); background: #f6f3ec;
-    font-size: 10.5px; line-height: 1.85; color: rgba(11, 23, 36, .46);
+    padding: 12px 22px 13px; border-top: 1px solid var(--us-line); background: #f6f3ec;
+    font-size: 10.5px; line-height: 1.9; color: rgba(11, 23, 36, .46);
   }
+
+  /* ---------- 响应式 ---------- */
   @media (max-width: 1080px) {
     #view-us .inst-cols { grid-template-columns: minmax(0, 1fr); }
     #view-us .ibr + .ibr { border-left: 0; border-top: 1px solid var(--us-line); }
     #view-us .ibr-grid.c3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    #view-us .ibr > .ibr-grp:last-child { margin-bottom: 14px; }
-    /* 三支改为上下堆叠后，每行宽度足够，改回单行排版：机构名左、首长与党派右 */
-    #view-us .if-toggle { grid-template-columns: minmax(0, 1fr) auto auto; grid-template-areas: "l1 l2 c"; }
-    #view-us .if-l2 { justify-content: flex-end; }
+    /* 堆叠后行宽充足：机构名左，首长与党派右，回到单行 */
+    #view-us .if-toggle { grid-template-columns: minmax(0, 1fr) auto 12px; grid-template-areas: "l1 l2 c"; }
+    #view-us .if-l2 { text-align: right; }
+    /* 单行模式下取消网格的三行强制换行，首长信息回到一行 */
+    #view-us .ibr-grid .who-tail { display: inline; }
     #view-us .ibr-tree > li::after { top: 14px; }
-    #view-us .ibr-tree > li:last-child::before { height: 14px; }
   }
   @media (max-width: 760px) {
     #view-us .inst-note { padding: 12px 16px 13px; }
     #view-us .ibr-h { padding: 12px 16px 11px; }
+    #view-us .ibr::before { left: 16px; }
     #view-us .ibr-root { margin: 12px 16px 0; }
-    #view-us .ibr-tree { margin: 8px 16px 0 25px; }
-    #view-us .ibr-grp { margin: 12px 16px 0; }
+    #view-us .ibr-tree { margin: 10px 16px 0 16px; }
+    #view-us .ibr-grp { margin: 18px 16px 0 28px; }
     #view-us .ibr-grid.c3, #view-us .ibr-grid.c2, #view-us .ist-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     #view-us .inst-state { grid-template-columns: minmax(0, 1fr); }
     #view-us .ist + .ist { border-left: 0; border-top: 1px solid var(--us-line); }
@@ -3694,7 +3725,7 @@
         <div class="inst" id="inst-nav">
         <div class="inst-note">
           <span class="in-k">三权分立与联邦制</span>
-          <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。每行第二行为职称 + 现任首长（中文名 + 英文原名）与党派，点行内任一处可展开职责与权力，右侧 ↗ 为机构官网（数据截至 2026 年 10 月）。</span>
+          <span class="in-v">依美国政府结构图整理：立法、行政、司法三支并列，州与地方政府单列。每行下方标注职称、现任首长（中文名 + 英文原名）与党派，点行内任一处可展开职责与权力，右侧 ↗ 为机构官网（数据截至 2026 年 10 月）。</span>
         </div>
 
         <div class="inst-cols">
@@ -3752,7 +3783,7 @@
           </div>
           </li>
           </ul><div class="ibr-grp">
-            <div class="g-h">两院常设委员会<i>Committees</i></div>
+            <div class="g-h"><span class="g-cn">两院常设委员会</span><i>Committees</i><b class="g-n">6</b></div>
             <div class="ibr-grid">
           <div class="if-item">
             <div class="if-head">
@@ -3840,7 +3871,7 @@
           </div>
           </div>
           </div><div class="ibr-grp">
-            <div class="g-h">立法支持机构<i>Legislative Agencies</i></div>
+            <div class="g-h"><span class="g-cn">立法支持机构</span><i>Legislative Agencies</i><b class="g-n">5</b></div>
             <div class="ibr-grid">
           <div class="if-item">
             <div class="if-head">
@@ -3953,7 +3984,7 @@
           </div>
           </li>
           </ul><div class="ibr-grp">
-            <div class="g-h">内阁 15 部<i>Cabinet Departments</i></div>
+            <div class="g-h"><span class="g-cn">内阁 15 部</span><i>Cabinet Departments</i><b class="g-n">15</b></div>
             <div class="ibr-grid c3">
           <div class="if-item">
             <div class="if-head">
@@ -4167,7 +4198,7 @@
           </div>
           </div>
           </div><div class="ibr-grp">
-            <div class="g-h">总统行政办公室<i>Executive Office</i></div>
+            <div class="g-h"><span class="g-cn">总统行政办公室</span><i>Executive Office</i><b class="g-n">3</b></div>
             <div class="ibr-grid c2">
           <div class="if-item">
             <div class="if-head">
@@ -4213,7 +4244,7 @@
           </div>
           </div>
           </div><div class="ibr-grp">
-            <div class="g-h">独立机构<i>Independent Agencies</i></div>
+            <div class="g-h"><span class="g-cn">独立机构</span><i>Independent Agencies</i><b class="g-n">8</b></div>
             <div class="ibr-grid c2">
           <div class="if-item">
             <div class="if-head">
@@ -4384,7 +4415,7 @@
           </div>
           </li>
           </ul><div class="ibr-grp">
-            <div class="g-h">专门法院<i>Specialized Courts</i></div>
+            <div class="g-h"><span class="g-cn">专门法院</span><i>Specialized Courts</i><b class="g-n">3</b></div>
             <div class="ibr-grid">
           <div class="if-item">
             <div class="if-head">
@@ -4430,7 +4461,7 @@
           </div>
           </div>
           </div><div class="ibr-grp">
-            <div class="g-h">其他法院<i>Other Courts</i></div>
+            <div class="g-h"><span class="g-cn">其他法院</span><i>Other Courts</i><b class="g-n">3</b></div>
             <div class="ibr-grid">
           <div class="if-item">
             <div class="if-head">
@@ -4476,7 +4507,7 @@
           </div>
           </div>
           </div><div class="ibr-grp">
-            <div class="g-h">司法行政机构<i>Judicial Agencies</i></div>
+            <div class="g-h"><span class="g-cn">司法行政机构</span><i>Judicial Agencies</i><b class="g-n">3</b></div>
             <div class="ibr-grid">
           <div class="if-item">
             <div class="if-head">
