@@ -1,9 +1,145 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-10-28 15:21",
-  "count": 14,
+  "updated_at": "2026-10-29 14:52",
+  "count": 22,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Center for Biological Diversity v. United States Bureau of Reclamation",
+      "url": "https://www.courtlistener.com/opinion/11047636/center-for-biological-diversity-v-united-states-bureau-of-reclamation/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "NEPA and the ESA, and therefore, the Administrative Procedure Act, 5 U.S.C. §§ 701–06. The allocations",
+      "title_cn": "生物多样性中心诉美国垦务局（涉 WIIN 法案水利合同转换的 NEPA／ESA 审查义务）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第九巡回上诉法院（No. 25-5137）维持地区法院判决。争点在于垦务局依《水利基础设施改善法案》第 4011(a) 条，将 67 份水利服务合同转为还款合同前，是否须逐份履行《国家环境政策法》环评与《濒危物种法》第 7 条磋商。\n合议庭认定该条款在承包商请求时课以强制转换义务，未赋予垦务局变更条款以缓解环境损害的裁量空间；转换属非裁量行为，合同特定环评与磋商义务不适用。判决并界定射程：转换后合同项下供水仍受中央谷地工程整体环评与生物意见约束。\n对市场意味着什么：加州联邦水利合同转换的程序不确定性下降，有利于农业用水区与供水方的长期供水预期；属程序性裁判，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Wright v. United Services Automobile Association",
+      "url": "https://www.courtlistener.com/opinion/11048434/wright-v-united-services-automobile-association/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第一巡回上诉法院",
+      "summary": "8 For instance, no party argues for federal preemption or that the doctrine \"affect[s] federal",
+      "title_cn": "赖特诉联合服务汽车协会（涉保险费率与法定费率原则，提请州最高法院释法）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第一巡回上诉法院（No. 25-1979）就保单持有人针对联合服务汽车协会（USAA）费率制定行为的诉讼作出裁定。争点为：马萨诸塞州依第 175E 章批准的保险费率，是否使联邦「法定费率原则」排除州法项下索赔。\n合议庭认定适用该州法而非联邦法定费率原则，并认为州最高法院对此尚无控制性先例——既往判例均涉其他费率条款、最近一则逾四十年——故主动提请州最高法院答复，未就实体责任作终局判断。第九巡回法院已在同类加州案件中就 USAA 提请释法。\n对市场意味着什么：保险费率监管的司法审查路径待州最高法院明确，短期不改变费率水平；州批准费率抗辩的边界存不确定性，属法律风险而非定价事件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Hall Trucking Inc. v. Secretary of Labor",
+      "url": "https://www.courtlistener.com/opinion/11047635/hall-trucking-inc-v-secretary-of-labor/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第八巡回上诉法院",
+      "summary": "ALJ’s rulings on expert witnesses were arbitrary and capricious because the ALJ: (1) ruled that DiTommaso",
+      "title_cn": "霍尔货运公司诉劳工部长（涉 OSHA 一般责任条款适用与专家证人裁断）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第八巡回上诉法院（No. 25-2769）驳回霍尔货运公司的复审申请，维持复审委员会行政法官的裁断。该公司搬运石油钻井平台时卡车撞击致员工死亡，劳工部依《职业安全与健康法》一般责任条款处以罚单，指明内部交通管制方案（ITCP）为消减措施。\n法院认定证据足以支持「既有安全措施不足」——倒车影像反光、指挥人员背对车辆、员工未着高可见度服装；ITCP 可满足「指明具体步骤」要求。该公司关于 29 C.F.R. § 1926.601(b)(4) 取代一般责任条款的主张未在复审申请中提出，视为放弃。\n对市场意味着什么：无直接定价影响；运输与能源承包商的安全管理标准与举证边界得到强化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Katie Phang v. Todd Blanche",
+      "url": "https://www.courtlistener.com/opinion/11047252/katie-phang-v-todd-blanche/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区巡回上诉法院",
+      "summary": "Upon consideration of the motion for a stay pending appeal, the opposition thereto, and the reply; and",
+      "title_cn": "凯蒂·方诉托德·布兰奇（涉《爱泼斯坦档案透明法》文件审查，中止执行申请被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区巡回上诉法院（No. 26-5299，与 No. 26-5334 合并）驳回联邦政府上诉期间中止执行的申请。案件源于地区法院（1:26-cv-01417）就《爱泼斯坦档案透明法》项下外文文件审查所作裁判，政府以总检察长官方身份上诉。\n合议庭认为政府未达中止执行的高门槛：仅启动外文文件审查不构成不可弥补损害，实体争议解决前即行公开的可能性亦不紧迫。政府如经初步审查后认为特定文件存在删减或不予公开的实质依据，相关争议须经后续诉讼解决。\n对市场意味着什么：无直接定价影响；反映行政部门在信息公开类成文法项下的时效抗辩受限，披露时点的法律不确定性上升。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Humane World for Animals v. United States Department of Agriculture",
+      "url": "https://www.courtlistener.com/opinion/11047645/humane-world-for-animals-v-united-states-department-of-agriculture/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "ORDER This is an Administrative Procedure Act (APA) action challenging the United",
+      "title_cn": "「人道世界」动保组织诉美国农业部（涉马匹保护规则暂缓实施之诉，第三人介入获准）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院（No. 26-1372，Sooknanan 法官）作出程序性裁定，准许田纳西走马全国庆典协会以被告身份任意介入。本案依《行政程序法》挑战农业部及动植物卫生检验局对《马匹保护法》的执行，指向其暂缓实施 2024 年终规则——该规则拟修改走马检查规范，以遏制「压脚」虐待行为。\n法院依《联邦民事诉讼规则》第 24(b) 条认定介入适时、与本案共享争点、且不致不当迟延；协会诉求与政府一致，即推迟规则生效日，故无需单独证明诉讼资格。实体争点未决。\n对市场意味着什么：无直接定价影响；涉及马术与马匹交易行业的合规成本预期，规则生效时点仍取决于实体审理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Democratic National Committee v. Trump",
+      "url": "https://www.courtlistener.com/opinion/11047647/democratic-national-committee-v-trump/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "statutory authority, in violation of the Administrative Procedure Act (“APA”), 5 U.S.C. § 500 et seq., and",
+      "title_cn": "民主党全国委员会诉特朗普（涉联邦资金资助边境宣传广告，法院签发临时限制令）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院（No. 26-3506）批准民主党全国委员会临时限制令申请，禁止继续播出五支已上线宣传广告。原告主张海关与边境保护局依 2025 年《One Big Beautiful Bill Act》取得的纪念拨款中，2,000 万美元经预算办公室分摊后流向「全国媒体宣传」采购。\n法院认定原告依「政治竞争性损害」具备诉讼资格，针对 OMB 与 DHS 的《行政程序法》主张存在实质胜诉可能，OMB 的分摊构成终局机构行为；该主张足以支撑临时救济，未处理针对白宫办公室的越权主张。\n对市场意味着什么：无直接定价影响；涉及拨款用途与宣传禁令边界，对承接政府传播合约的供应商构成风险提示。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Moody v. Wolfe",
+      "url": "https://www.courtlistener.com/opinion/11048369/moody-v-wolfe/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "for Temporary Restraining Order and for Preliminary Injunction, ECF No. 4, raising the allegations as",
+      "title_cn": "穆迪诉沃尔夫（起诉第二巡回法院书记官，因缺乏管辖权被驳回）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院（No. 26-2410，McFadden 法官）准许原告免诉讼费起诉，同时以不损害再诉的方式驳回全案，并驳回其临时限制令与初步禁令申请。原告自行起诉第二巡回上诉法院书记官与行政经理，主张二人以「不具司法权的联邦行政官员」身份介入二十余起上诉程序，请求赔偿并宣告相关行为无效。\n法院从两点否定其请求：其一，地区法院对其他巡回法院及其职员的行为无审查管辖权，该监督职责专属该巡回法院，原告应申请复议或请求调卷令；其二，被告就损害赔偿享有绝对司法豁免，该豁免通常亦及于针对法院职员的衡平请求。\n对市场意味着什么：无直接定价影响；系法院职员豁免与跨院管辖边界的常规适用。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-28",
+      "title": "Rastogi v. Rastogi",
+      "url": "https://www.courtlistener.com/opinion/11047644/rastogi-v-rastogi/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Plaintiffs’ Opposition invokes the Administrative Procedure Act (APA), arguing that federal courts are",
+      "title_cn": "拉斯托吉诉拉斯托吉（医疗事故索赔诉卫生与公众服务部等，因管辖与行政救济未穷尽被驳回）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院（No. 26-2191）准许卫生与公众服务部及北卡罗来纳州卫生与公众服务部的驳回动议，并以未送达为由终结对其余两家医疗机构的请求。原告为已故患者家属，自行起诉，主张 2025 年 12 月在北卡州 Mission Hospital 检查后死亡。\n法院认定：要求联邦机构启动调查或追诉属不可裁判事项，系法律赋予的裁量，不因《行政程序法》第 702 条弃权条款而受审查；医疗过失索赔属《联邦侵权索赔法》范畴，原告未先行行政求偿，法院无标的管辖；对北卡州机构亦无属人管辖。\n对市场意味着什么：无直接定价影响；系患者对联邦机构求偿的程序门槛适用，不构成医院责任认定。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-10-27",
@@ -13,13 +149,13 @@
       "kind": "判决",
       "agency": "第二巡回上诉法院",
       "summary": "Foreign Asset Control’s implementation of the U.S. Sanctions regime. 6 The district court ruled for",
-      "title_cn": "Leos 诉三菱日联金融集团（涉 OFAC 制裁执行）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-10-28",
         "body": "第二巡回上诉法院就一起涉及美国财政部外国资产控制办公室（OFAC）制裁机制实施的案件作出裁判。检索片段显示，争点集中于 OFAC 制裁规则在私人诉讼中的适用，地区法院此前已作出对一方有利的裁判，上诉法院本次处理其上诉。\n制裁名单认定、民事责任与救济范围等实体结论未在片段中载明，具体以判决书原文为准。\n对市场意味着什么：涉及金融机构对被制裁主体的筛查与交易限制，可能影响跨境支付与合规责任边界；属个案裁判，无直接定价影响，但为制裁合规的民事风险提供判例参照。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Leos 诉三菱日联金融集团（涉 OFAC 制裁执行）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -64,13 +200,13 @@
       "kind": "裁定",
       "agency": "第九巡回上诉法院",
       "summary": "stay and stay pending appeal. (Nos. 26-6170, 26-6177, Dkt. 4). The request for stay pending appeal is GRANTED",
-      "title_cn": "Prado 诉伯克利市（上诉期间中止执行）",
-      "domain": "住房",
       "brief": {
         "at": "2026-10-28",
         "body": "第九巡回上诉法院批准上诉人提出的上诉期间中止申请（stay pending appeal），暂时停止地区法院相关命令的执行。检索片段确认中止获准，但未载明中止范围与实体争点。\n案件涉及伯克利市一项地方措施，具体条款与中止边界以命令原文为准。\n对市场意味着什么：中止执行使地方政策在上诉期间维持现状，影响当地住房与公共空间治理安排；属地方性事项，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Prado 诉伯克利市（上诉期间中止执行）",
+      "domain": "住房"
     },
     {
       "board": "judicial",
@@ -81,13 +217,13 @@
       "kind": "判决",
       "agency": "第八巡回上诉法院",
       "summary": "Federal Reserve went to work. After a lengthy notice-and-comment period, the Board of Governors issued Regulation",
-      "title_cn": "Corner Post 诉美联储理事会（规章效力之争）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-10-28",
         "body": "第八巡回上诉法院审理 Corner Post 对美联储理事会规章提起的诉讼。检索片段显示，理事会在完成通告评论程序后发布系争规章（Regulation），案件争点涉及该规章的制定程序与效力。\n上诉法院的裁判结论与救济未在片段中载明，具体以判决书原文为准。\n对市场意味着什么：若规章被认定程序瑕疵或越权，将影响相关支付与银行业务的合规基础；属个案司法审查，短期无直接定价影响，但判例可能改变监管规则稳定性的预期。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Corner Post 诉美联储理事会（规章效力之争）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -200,13 +336,13 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 610 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A476 _________________ FEDERAL COMMUNICATIONS COMMISSION v. SHERROD BROWN, ET AL. ON APPLICATION FOR STAY _________________ No. 26A477 _________________",
-      "title_cn": "FCC 诉 Brown（中止申请，全体一致裁定）",
-      "domain": "电信/媒体",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致（per curiam）形式处理 FCC 提出的中止申请（No. 26A476 / 26A477），被申请人为 Sherrod Brown 等。检索片段仅含案件抬头与「中止申请」程序信息。\n最高法院对准予或驳回中止、以及中止范围未在片段中载明，须以裁定原文为准。\n对市场意味着什么：若涉及 FCC 规则在上诉期间是否生效，将影响广播与电信企业的合规时点；目前无法从片段判断准驳，暂不构成定价因素。",
         "tier": "note"
-      }
+      },
+      "title_cn": "FCC 诉 Brown（中止申请，全体一致裁定）",
+      "domain": "电信/媒体"
     },
     {
       "board": "judicial",
@@ -217,13 +353,13 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A388 _________________ PEOPLE NOT POLITICIANS, ET AL. v. ROBERT ONDER, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. In 2022, the Missouri Legislature enacted a redistricting map for elections",
-      "title_cn": "People Not Politicians 诉 Onder（密苏里州选区重划中止申请）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致形式处理针对密苏里州 2022 年选区重划地图的中止申请（No. 26A388）。检索片段显示，申请人请求在诉讼期间中止相关地图或下级法院命令的执行。\n最高法院对准驳结果与理由未在片段中载明，以裁定原文为准。\n对市场意味着什么：选区重划直接影响众议院选区结构与选举结果预期，进而影响政策前景；属司法程序节点，无直接资产定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "People Not Politicians 诉 Onder（密苏里州选区重划中止申请）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -234,13 +370,13 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A308 _________________ DEPARTMENT OF HOMELAND SECURITY, ET AL. v. LEAGUE OF WOMEN VOTERS, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. Since 1986, the Systematic Alien Verification for Entitle-",
-      "title_cn": "国土安全部诉妇女选民联盟（SAVE 系统中止申请）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致形式处理国土安全部提出的中止申请（No. 26A308）。检索片段提及自 1986 年运行的「系统性外国人资格核验系统」（SAVE），争点涉及该系统的使用范围与下级法院禁令。\n最高法院对准驳结果未在片段中载明，以裁定原文为准。\n对市场意味着什么：SAVE 系统用于核验移民身份以决定公共福利与选民登记资格，裁定结果影响各州选举与福利管理流程；属制度性争议，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "国土安全部诉妇女选民联盟（SAVE 系统中止申请）",
+      "domain": "政府运作"
     }
   ]
 }
