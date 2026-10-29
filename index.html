@@ -2611,7 +2611,11 @@
   #view-us .if-who {
     min-width: 0; font-size: 10.5px; line-height: 1.42; color: #2b3a4d; word-break: keep-all;
   }
-  #view-us .who-title { color: rgba(11, 23, 36, .5); }
+  /* 职称：宋体小字 + 字距，读作标签；姓名保持黑体，二者在族别上分开 */
+  #view-us .who-title {
+    font-family: var(--us-serif); font-size: 10px; letter-spacing: .06em;
+    color: rgba(11, 23, 36, .62);
+  }
   #view-us .who-tail { white-space: nowrap; }
   /* 网格内统一成三行（名称 / 职称+姓名 / 英文名+党派），同组内不出现 2、3 行混排 */
   #view-us .ibr-grid .who-tail { display: block; }
@@ -3953,19 +3957,19 @@
               <span class="irc">行政<span class="ire">Executive</span></span>
             </header>
             <div class="ibr-root if-item">
-            <div class="if-head">
-              <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-president" title="点击展开：职责与权力">
-                <span class="if-l1"><span class="ir-cn">总统</span><span class="ir-en">President · 白宫</span></span>
-                <span class="if-l2"><span class="if-who"><span class="who-title">总统</span>&nbsp;<span class="who-cn">唐纳德·特朗普</span> <span class="who-tail"><em class="who-en">Donald Trump</em> <i class="pty pty-r">共和党</i></span></span></span>
-                <i class="if-caret" aria-hidden="true"></i>
-              </button>
-              <a class="if-ext" href="https://www.whitehouse.gov" target="_blank" rel="noopener" title="白宫官网">↗</a>
+              <div class="if-head">
+                <button type="button" class="if-toggle" aria-expanded="false" aria-controls="ifm-president" title="点击展开：职责与权力">
+                  <span class="if-l1"><span class="ir-cn">白宫</span><span class="ir-en">The White House</span></span>
+                  <span class="if-l2"><span class="if-who"><span class="who-title">总统</span>&nbsp;<span class="who-cn">唐纳德·特朗普</span> <span class="who-tail"><em class="who-en">Donald Trump</em> <i class="pty pty-r">共和党</i></span></span></span>
+                  <i class="if-caret" aria-hidden="true"></i>
+                </button>
+                <a class="if-ext" href="https://www.whitehouse.gov" target="_blank" rel="noopener" title="白宫官网">↗</a>
+              </div>
+              <div class="if-more" id="ifm-president" hidden>
+                <p><b>职责</b>总统的官邸与办公机构，也是行政权的决策中枢；白宫办公厅、国家安全委员会、国家经济委员会等幕僚单位在此协调各部门政策。</p>
+                <p><b>权力</b>行政令与总统备忘录在此签署发布；幕僚长与各委员会决定哪些议题进入总统视野，实际影响决策节奏与政策优先级。</p>
+              </div>
             </div>
-            <div class="if-more" id="ifm-president" hidden>
-              <p><b>职责</b>国家元首与政府首脑，负责执行法律、统辖武装力量、缔结条约、任命官员并向国会发表国情咨文。</p>
-              <p><b>权力</b>行政令、机构人事与预算建议权；否决权（国会须两院各三分之二推翻）；特赦权；在紧急状态与授权立法下拥有广泛裁量。</p>
-            </div>
-          </div>
             <ul class="ibr-tree">
           <li>
           <div class="if-item">
