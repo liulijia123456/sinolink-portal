@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-10-29 13:30",
-  "count": 439,
+  "updated_at": "2026-10-30 10:21",
+  "count": 493,
   "items": [
     {
       "board": "congress",
@@ -145,6 +145,870 @@
       "brief": {
         "at": "2026-10-29",
         "body": "· 由加利福尼亚州共和党众议员金永于 2026 年 10 月 26 日提出，交付众议院金融服务委员会。\n· 属纪念性决议，仅表达对将 2026 年 10 月定为「全国财务规划月」的支持，不具法律效力。\n· 官方摘要未取得，决议措辞以 congress.gov 文本为准；此类礼仪性决议通常快速通过或被搁置。\n· 对市场意味着什么：无直接定价影响。决议不改变任何监管义务或税收规则，仅具象征意义，与理财行业的经营条件无关。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterinary Services to Improve Public Health in Rural Communities Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/620",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "改善农村社区公共卫生的兽医服务法案",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，最新行动为「Held at the desk」，即在议事台待处理，未交付委员会审议，属程序性停留。\n官方摘要显示，法案扩大对部落社区公共卫生兽医服务（如疾病监测、疫苗接种）的支持，以应对人畜共患传染病。\n授权卫生与公众服务部通过印第安卫生服务局，在疾病发生风险较高的服务区内支出资金用于防控。\n政策落点在公共卫生能力建设，不涉及兽医执业资格或动物药品审批制度的改动。\n对市场意味着什么：无直接定价影响。支出规模取决于后续拨款，动物疫苗与诊断试剂企业仅在项目落地后获得边际订单，当前不构成可交易信息。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Plum Island Preservation Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/412",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
+      "title_cn": "普拉姆岛保护法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由康涅狄格州民主党参议员布卢门撒尔于 2025 年 2 月 5 日提出，交付国土安全与政府事务委员会，此后无进一步行动。\n官方摘要未取得，从案名与交付委员会判断，法案涉及纽约长岛外海普拉姆岛（原梅岛动物疾病中心所在地）的保存与管理安排。\n该岛长期存在生物安全设施去留与土地处置争议，保存类立法的核心通常是限制开发或变更用途。\n本次为元数据回填触发的更新，非 2026 年 10 月的新立法进展，简报按第 119 届国会既有议案记录。\n对市场意味着什么：无直接定价影响。土地处置与生物安全设施迁移属联邦资产管理事项，不触及上市企业经营假设。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Mass Timber Federal Buildings Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1094",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Environment and Public Works.",
+      "title_cn": "联邦政府建筑采用大截面工程木结构法案",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由俄勒冈州民主党参议员默克利于 2025 年 3 月 24 日提出，交付环境与公共工程委员会，尚未安排审议。\n官方摘要未取得，从案名判断，法案旨在推动联邦政府建筑采用大截面工程木（mass timber）结构，具体适用范围与采购要求以 congress.gov 文本为准。\n工程木以层压木材替代部分钢材与混凝土，属建筑低碳化路径，涉及联邦采购标准与建筑规范衔接。\n本次为元数据回填触发的更新，非当届 10 月新增立法进展。\n对市场意味着什么：无直接定价影响。若形成联邦采购偏好，将边际利好工程木加工与木结构设计环节，但须待委员会文本明确强制比例或补贴安排。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A bill for the relief of Vichai Sae Tung (also known as Chai Chaowasaree).",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/716",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "title_cn": "为 Vichai Sae Tung（又名 Chai Chaowasaree）提供救济的私人法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由夏威夷州民主党参议员广野庆子于 2025 年 2 月 25 日提出，交付司法委员会，属私人救济法案（private bill）。\n此类法案针对特定个人的移民或归化困境提供个别救济，通常以免除特定 inadmissibility 条款或调整身份为主要内容。\n官方摘要未取得，当事人具体请求与适用条款以文本为准，不宜据案名推定。\n私人法案仅影响个案，不改变一般性法律规则。\n对市场意味着什么：无直接定价影响。个案救济不涉及签证配额、劳工证或行业用工规则调整。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A bill to designate the facility of the United States Postal Service located at 28 East Airy Street in Norristown, Pennsylvania, as the \"Charles L. Blockson Post Office Building\".",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/814",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
+      "title_cn": "将宾夕法尼亚州诺里斯敦东艾里街 28 号邮政设施命名为「查尔斯·L·布洛克森邮局大楼」的法案",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由宾夕法尼亚州议员提出，交付国土安全与政府事务委员会，属邮政设施命名类法案。\n官方摘要确认：将位于宾夕法尼亚州诺里斯敦东艾里街 28 号的美国邮政设施命名为「查尔斯·L·布洛克森邮局大楼」。\n布洛克森为宾州历史学者与藏书家，此类命名通常用于纪念地方文化人物。\n命名法案不改变邮政服务范围、网点布局或资费。\n对市场意味着什么：无直接定价影响。命名不涉及邮政运营主体成本或监管规则，对物流与邮政板块无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "NCAA Accountability Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/955",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+      "title_cn": "全国大学体育协会（NCAA）问责法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付商务、科学与交通委员会，尚未安排审议。\n官方摘要显示，法案为跨州大学体育协会的调查设定正当程序与通知要求，适用对象为对校际体育有管辖权且成员机构不少于 900 家的组织，实际指向 NCAA。\n要求此类组织在调查成员院校与在校运动员时建立并执行正当程序规范，包括告知与申辩环节。\n法案不直接介入运动员薪酬或姓名肖像权规则，落点在调查程序合规。\n对市场意味着什么：无直接定价影响。规则约束对象为行业协会而非上市公司，惟大学体育转播与赞助合同的争议处置效率可能间接受影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Protection of Women and Girls in Sports Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/9",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 45. Record Vote Number: 100. (CR S1455-1456)",
+      "title_cn": "保护体育运动中的女性与女孩法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院就推进该议案的动议进行终结辩论表决，以 51 票赞成、45 票反对未获通过（第 100 号点名表决），议案未能进入实质审议。\n官方摘要显示，法案规定接受联邦资金的学校教育项目若允许出生性别为男性者参加女子项目，即构成对《1972 年教育修正案》第九编的违反。\n第九编原禁止联邦资助教育项目中的性别歧视，法案将「性别」界定为出生时的生理性别。\n60 票门槛未达成，反映该议题在两党间的分歧未收敛。\n对市场意味着什么：无直接定价影响。表决失败意味着高校体育合规成本与相关诉讼风险维持现状，教育服务与体育产业短期无规则变动。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Protection of Women in Olympic and Amateur Sports Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/405",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+      "title_cn": "保护奥林匹克与业余体育运动中女性法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付商务、科学与交通委员会，尚未安排审议。\n官方摘要显示，法案要求经认证的业余体育全国管理机构（如美国体操协会）禁止生理性别为男性者参加指定给女性的业余赛事。\n法案对「男性」作出以生殖系统功能为核心的界定，并排除发育或遗传异常等情形。\n适用范围限于全国管理机构的认证赛事，不直接覆盖高校体育与职业联赛。\n对市场意味着什么：无直接定价影响。若成法，相关体育协会的参赛资格规则与赛事认证需调整，涉及合规成本，但规模有限且不触及商业合同主体。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Muhammad Ali Congressional Gold Medal Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/366",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Banking, Housing, and Urban Affairs. (Sponsor introductory remarks on measure: CR S545-546)",
+      "title_cn": "授予穆罕默德·阿里国会金质奖章法案",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付银行、住房与城市事务委员会，提案人作有介绍性发言。\n官方摘要显示，法案规定向穆罕默德·阿里追授国会金质奖章，并授权从美国铸币局公共企业基金列支制章费用。\n重复青铜纪念章的销售收入须回存该基金，属国会金质奖章的通行财务安排。\n国会金质奖章为荣誉性立法，不涉及产业监管或财政拨款规模变化。\n对市场意味着什么：无直接定价影响。制章支出由铸币局企业基金承担并可由纪念章销售回收，对财政与贵金属需求无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Restoring Confidence in the World Anti-Doping Agency Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/233",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 340.",
+      "title_cn": "恢复对世界反兴奋剂机构信心法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "议案已列入参议院立法日程一般事项，日程编号 340，具备进入院会审议的程序条件。\n官方摘要显示，法案要求国家毒品控制政策办公室每年评估世界反兴奋剂机构的治理与程序，并与美国反兴奋剂机构、美国奥委会及残奥委会、运动员咨询委员会协商。\n评估重点包括该机构是否具备可信且独立的治理模式、美国是否获得公平代表权，以及治理改革落实情况。\n评估结论将构成美国对该机构立场与出资态度的依据。\n对市场意味着什么：无直接定价影响。评估结果可能影响美国对国际体育组织的会费与话语权安排，对体育营销与赛事转播的传导间接且缓慢。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Fix Our Forests Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1462",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 212.",
+      "title_cn": "修复我们的森林法案",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "【政策背景】\n美国西部与山区州近年野火频次与过火面积上行，联邦林地的燃料负荷管理、审批时限与责任划分成为国会持续争论的议题。法案由犹他州共和党参议员柯蒂斯于 2025 年 4 月 10 日提出，政策领域归入公共土地与自然资源。2025 年 10 月 27 日，议案被列入参议院立法日程一般事项，日程编号 212，标志着其已走出委员会环节、具备进入院会审议的程序资格。\n\n【核心内容】\n截至本轮更新，官方摘要未取得，具体条文以 congress.gov 文本为准。可确认的要素有三：其一，法案属森林管理与野火治理方向，落点在联邦林地的处置与项目推进；其二，提案人为共和党山区州参议员，与前届会期同类议案的党派归属一致；其三，程序状态为列入立法日程，尚未安排院会表决。上述三点构成判断其后续路径的基础，但文本层面的具体授权、豁免条款与资金规模均无法从现有素材确认，不宜据标题推定条款细节。\n\n【要点提炼】\n第一，列入日程一般事项不等于必然表决，多数议案在此环节等待 unanimous consent 或党团安排，历史上相当比例的议案在会期结束时随届会失效。第二，森林管理类立法的核心分歧长期集中在《国家环境政策法》审查豁免范围与司法审查时限，若文本含豁免条款，将直接影响项目开工节奏。第三，本届国会会期已进入尾声，剩余立法窗口有限，议案在 2027 年第 120 届国会需重新提出。第四，参议院版本与众议院此前同类议案的口径差异，将决定两院协调的难度。\n\n【对金融市场的预期影响】\n总体判断：该议案当前处于程序性推进阶段，尚未构成定价事件，对大类资产无直接冲击，影响集中在林业与电力公用事业的远期预期。\n受益方向：若后续文本确立联邦林地燃料处理与间伐项目的加速机制，木材采伐、林业工程服务与生物质利用环节有望获得订单增量，山区州电力公用事业的野火赔偿责任敞口亦可能因燃料管理改善而边际缓释。\n承压方向：环保审查豁免若扩大，相关诉讼与合规不确定性上升，环境法律服务与保险承保口径可能调整；野火责任险费率的下行则取决于实际过火面积而非立法本身。\n关键前提：文本须明确授权规模与资金渠道，且须经院会表决与众议院协调；仅列入日程不产生实质效力。\n信号节点：参议院院会是否安排表决、是否援引 unanimous consent、以及两院版本协调的启动时点，是后续跟踪的三个观察点。\n风险提示：官方摘要缺失，条款判断存在不确定性；本届会期剩余时间有限，议案随届会失效的概率不低。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veteran Caregiver Reeducation, Reemployment, and Retirement Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/879",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "退伍军人照护者再教育、再就业与退休法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由堪萨斯州共和党参议员莫兰于 2025 年 3 月 6 日提出，参议院退伍军人事务委员会已以替代性修正案形式通过并 favorably 报送全院审议。\n法案针对退伍军人照护者，涉及其再教育、再就业与退休待遇三个环节，属照护者支持体系的延伸。\n官方摘要未取得，替代性修正案的具体条款以 congress.gov 文本为准，不宜据案名推定给付标准。\n委员会报送意味着议案进入全院日程排队，下一步取决于党团安排。\n对市场意味着什么：无直接定价影响。照护者给付属联邦转移支付，规模有限，对家庭照护与居家护理服务企业的订单影响需待拨款确认。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Coast Guard Combat-Injured Tax Fairness Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/878",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Finance.",
+      "title_cn": "海岸警卫队战伤人员税收公平法案",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由路易斯安那州共和党参议员卡西迪于 2025 年 3 月 6 日提出，交付财政委员会，尚未安排审议。\n法案指向海岸警卫队战伤人员的税收待遇，按案名判断属税收公平类修正，旨在使该群体适用与国防部战伤人员一致的税收处理。\n官方摘要未取得，涉及的具体税目、追溯期间与资格认定以文本为准。\n交付财政委员会意味着任何税收条款变动须由该委员会主导，而税改议题在会期尾声的排期空间有限。\n对市场意味着什么：无直接定价影响。受益群体规模小、税式支出有限，不改变财政收支的中期路径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "REP VA Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/831",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "REP VA 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n官方摘要显示，法案要求退伍军人事务部确保其雇员或承包商就服务与福利致电退伍军人时，使用单一且广为人知的电话号码，并显示表明来自该部的来电识别信息。\n同时要求退伍军人健康管理局在美国每个时区至少设有一个呼叫中心，处理预约与转诊相关诉求。\n立法动因指向诈骗电话混淆与预约响应不畅两类问题，属服务可及性改进。\n对市场意味着什么：无直接定价影响。呼叫中心布点可能带来政府服务外包合同增量，但规模取决于实施预算，对通信与业务流程外包企业仅为边际机会。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A bill to direct the Secretary of Veterans Affairs to ensure veterans may obtain a physical copy of a form for reimbursement of certain travel expenses by mail or at medical facilities of the Department of Veterans Affairs, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/812",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "要求退伍军人事务部长确保退伍军人可通过邮寄或在部属医疗设施领取差旅费报销表格纸质副本的法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求退伍军人事务部确保退伍军人可在任何部属医疗设施取得差旅费报销所需表格纸质副本，或经申请由邮寄方式获取。\n法案并允许退伍军人在任一设施现场递交或邮寄提交该表格，设施须完成评估并处理相应报销申请。\n立法动因指向数字化程度不足导致的报销障碍，属行政流程便利化。\n对市场意味着什么：无直接定价影响。仅为表格获取与递交渠道调整，不改变报销标准与财政支出规模。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "VetPAC Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/787",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "VetPAC 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "议案最新行动为「Held at the desk」，在议事台待处理，未交付委员会。\n官方摘要显示，法案设立退伍军人健康管理局政策咨询委员会，职责为审查该局运营，并据此向国会提交含建议的报告。\n委员会属咨询性机构，不具管理权或拨款权，其影响路径为报告与听证所形成的政策压力。\n此类机构设立法案通常成本较低、争议有限，但需占用立法日程名额。\n对市场意味着什么：无直接定价影响。咨询委员会不改变医疗服务采购与给付规则，对医疗机构与保险板块无实质传导。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Rural Veterans Transportation to Care Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/784",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-86.",
+      "title_cn": "农村退伍军人就医交通法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已就该议案举行听证，听证记录编为 S.Hrg. 119-86。\n官方摘要显示，法案扩大并永久化退伍军人事务部的就医交通补助计划：将适用范围从高度偏远地区扩展至一般农村地区。\n授权向县退伍军人服务组织和部落组织发放补助，用于协助退伍军人获得就医交通。\n并提高单笔补助上限，具体额度以文本为准。\n对市场意味着什么：无直接定价影响。补助经由非营利与地方政府渠道发放，客运与医疗转运企业可能获得少量合同机会，规模取决于年度拨款。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Justice for ALS Veterans Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/749",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held.",
+      "title_cn": "为肌萎缩侧索硬化症退伍军人伸张正义法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已就该议案举行听证。\n官方摘要显示，法案将增额抚养与补偿性赔偿（DIC）扩展适用于因肌萎缩侧索硬化症（ALS）死亡的退伍军人的遗属，不受该退伍军人患病至死亡间隔时长限制。\n现行法要求服役相关伤残在死亡前连续完全致残至少八年方可适用增额，ALS 病程常短于此期限，构成本案针对的制度缺口。\n法案并规定该增额具有追溯适用效力，追溯起点以文本为准。\n对市场意味着什么：无直接定价影响。追溯性给付将形成一次性财政支出，规模取决于受益人数，但不改变退伍军人福利的中期增长路径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "SAFE STEPS for Veterans Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/668",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-247.",
+      "title_cn": "退伍军人 SAFE STEPS 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-247。\n案名全称为《支持跌倒教育与预防、强化培训与促进退伍军人安全倡议法案》，聚焦退伍军人行动能力与老龄照护。\n官方摘要显示，法案要求在退伍军人健康管理局内设立并运行跌倒预防办公室，负责提供、评估与改进相关医疗服务。\n办公室职责包括监督与标准化各设施的跌倒风险评估与干预流程，具体指标以文本为准。\n对市场意味着什么：无直接定价影响。预防性服务扩张对辅助器具、居家改造与康复服务企业构成边际需求，但需待拨款与实施规则落地。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Guard and Reserve GI Bill Parity Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/649",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "国民警卫队与预备役《退伍军人权利法案》待遇对等法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n官方摘要显示，法案扩大预备役与国民警卫队成员适用《后 9/11 退伍军人权利法案》教育资助的资格。\n将计入资格的活动类型扩展至现役、非现役训练、年度训练勤务，以及全职国民警卫队勤务或现役勤务。\n现行法一般仅联邦现役勤务计入资助资格，法案实质是承认训练勤务的服役属性。\n对市场意味着什么：无直接定价影响。受益人群扩大将抬升教育资助支出，边际利好营利性高等教育与职业培训机构的招生，但须待成本估算公布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans Homecare Choice Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/635",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "退伍军人居家照护选择法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n官方摘要显示，法案将护士登记机构（nurse registry）纳入退伍军人社区照护计划的合格服务提供方范围。\n登记机构指符合州执业许可要求、代表注册护士、执业护士、认证护理助理、家庭健康助理等人员撮合服务合同并支付报酬的主体。\n实际效果是使居家护理人力可经由中介机构纳入联邦付费通道。\n对市场意味着什么：无直接定价影响。居家护理与护理人力中介企业获得联邦支付准入的可能性上升，属结构性利好，但费率和准入条件须待实施规则明确。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Caring for Survivors Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/611",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-35.",
+      "title_cn": "遗属照护法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-35。\n官方摘要显示，法案提高向遗属发放的月度抚养与补偿性赔偿（DIC）标准。\nDIC 适用于因服役相关状况死亡的退伍军人、服役期间死亡的军人，以及虽非因服役相关状况死亡但生前被评定为完全致残的退伍军人的合格遗属。\n本案仅调整遗属档位的月度金额，未改动资格认定规则。\n对市场意味着什么：无直接定价影响。属标准性转移支付上调，规模可估算但有限，对财政与消费的宏观影响可忽略。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Ensuring VetSuccess On Campus Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/610",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "确保校园退伍军人成功计划（VetSuccess On Campus）法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "议案最新行动为「Held at the desk」，在议事台待处理。\n官方摘要显示，法案要求退伍军人事务部确保「校园退伍军人成功」（VSOC）计划覆盖全部 50 州，每州至少配置一名 VSOC 辅导员。\n该计划服务对象为从军旅转向校园生活的退伍军人、现役军人与合格家属，提供学业与福利衔接辅导。\n法案属服务网络覆盖要求，不涉及新的给付项目。\n对市场意味着什么：无直接定价影响。辅导员编制扩张带来少量人事支出，高校端的退伍军人服务岗位可能受益，但不构成产业级需求。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "BRAVE Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/609",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "BRAVE 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n案名全称为《为退伍军人心理健康参与建设资源与准入法案》，聚焦退伍军人事务部心理健康服务。\n官方摘要显示，法案授权该部在一定期限内豁免持证专业心理健康咨询师的执照或认证要求，以缓解人手不足。\n并延长以帕克·戈登·福克斯上士命名的自杀预防补助计划，具体延长期限以文本为准。\n同时涉及 Vet Center 管理与女性退伍军人照护等事项。\n对市场意味着什么：无直接定价影响。心理服务人力扩张利好行为健康服务提供方，但联邦采购规模有限，传导至上市公司业绩的路径较长。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Improving Veteran Access to Care Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/607",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "改善退伍军人就医可及性法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "议案最新行动为「Held at the desk」，在议事台待处理。\n官方摘要显示，法案要求退伍军人事务部组建跨职能项目团队，改进医疗预约排程流程。\n团队任务包括开发或续建排程系统与平台，使工作人员与患者均可查看可预约时段。\n并建立电话渠道，由排程人员协助确认可用性与完成预约。\n落点在信息系统与人工通道并行，而非扩大医疗服务供给。\n对市场意味着什么：无直接定价影响。排程系统建设可能形成政府 IT 采购机会，规模取决于实施合同，对医疗信息化企业为边际利好。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "CHAMPVA Children's Care Protection Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/605",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-86.",
+      "title_cn": "CHAMPVA 子女照护保护法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-86。\n官方摘要显示，法案规定子女在退伍军人事务部民用健康与医疗计划（CHAMPVA）下的医疗资格延续至 26 岁生日，且不受婚姻状况影响。\n现行规则通常以年龄或就学状态为限，婚姻状况亦构成资格排除事由，本案取消该两项限制。\nCHAMPVA 覆盖的是特定伤残或死亡退伍军人的家属，与现役军人家庭的 TRICARE 分属不同体系。\n对市场意味着什么：无直接定价影响。受保人数增加将抬升联邦医疗支出，利好承接 CHAMPVA 的商保与药房福利管理方，规模取决于参保基数。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Ensuring Continuity in Veterans Health Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/540",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "确保退伍军人健康照护连续性法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求在判定退伍军人社区照护计划是否符合其「最佳医疗利益」时，须将照护连续性纳入考量。\n现行判定侧重等待时间与地理可及性，照护连续性指患者与既有医疗团队关系的延续。\n纳入连续性标准后，转诊至社区机构的门槛可能提高，影响该计划的转诊结构。\n对市场意味着什么：无直接定价影响。若转诊增速放缓，社区照护承接方的业务增量相应收窄，对居家护理与诊所网络企业构成边际负面，但幅度取决于实施口径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Coordinating Care for Senior Veterans and Wounded Warriors Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/506",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "老年退伍军人与伤残军人照护协调法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n官方摘要显示，法案要求退伍军人事务部实施为期三年的试点，为同时参加联邦医疗保险（Medicare）与退伍军人医疗系统的退伍军人提供照护与福利的协调、导航与管理服务。\n试点针对双资格人群在兩套体系间的重复用药、转诊断点与福利衔接问题。\n试点期限与评估指标以文本为准，未设定永久化条款。\n对市场意味着什么：无直接定价影响。照护协调服务可能形成外包合同，利好护理管理与健康导航类企业；若试点显示节省效果，中期或推动更大范围的整合支付安排。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans 2nd Amendment Protection Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/478",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-35.",
+      "title_cn": "退伍军人第二修正案权利保护法案",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-35。\n官方摘要显示，法案禁止退伍军人事务部仅因退伍军人或受益人已被委任财务管理人，即向国家即时犯罪背景审查系统（NICS）报送其个人身份信息。\n例外情形为司法机构已作出该人存在法定禁止情形的裁定或认定。\n立法动因指向以财务管理人身份推定丧失持枪资格的争议做法。\n对市场意味着什么：无直接定价影响。法案调整联邦机构的信息报送义务，不改变民用枪械的销售监管与背景审查流程，对枪械制造商与零售商无实质影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Free Child Care for America Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10741",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Education and Workforce, and in addition to the Committees on Ways and Means, Agriculture, Energy and Commerce, and Financial Services, for a period to",
+      "title_cn": "美国免费儿童照护法案",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由加利福尼亚州民主党众议员卡纳于 2026 年 10 月 5 日提出，交付教育与劳动力委员会，并分送筹款、农业、能源与商业、金融服务四个委员会。\n官方摘要未取得，从案名判断，法案旨在建立面向家庭的免费儿童照护安排，具体给付方式、资金渠道与资格门槛以文本为准。\n五委员会分送提示内容横跨教育、税收、营养补贴、医疗与金融多个面向，协调成本高。\n属新提出议案，尚无委员会审议安排。\n对市场意味着什么：无直接定价影响。若免费照护以补贴形式落地，将直接扩大托育需求，利好连锁托育与幼教服务商；但当前仅处提案阶段，成案概率有限。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4487",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "2026 年退伍军人补偿生活成本调整法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求退伍军人事务部按社会保障受益人生活成本调整的同一百分比，上调多项给付金额。\n涉及战时伤残补偿、受抚养人附加补偿、特定伤残退伍军人的服装津贴，以及遗属抚养与补偿性赔偿。\n调整以 2026 年 12 月 1 日生效的社会保障生活成本调整为基准，并须公布具体金额。\n同类年度法案通常以例行程序通过，本案为 2027 财年版本的提前布局。\n对市场意味着什么：无直接定价影响。属年度指数化调整，财政影响可预测且不改变福利体系结构。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2392",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Became Public Law No: 119-42.",
+      "title_cn": "2025 年退伍军人补偿生活成本调整法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "该议案已由总统签署成为公法，编号 119-42。\n官方摘要显示，该法要求退伍军人事务部按社会保障受益人生活成本调整的同一百分比，上调战时伤残补偿、受抚养人附加补偿、特定伤残退伍军人服装津贴，以及遗属抚养与补偿性赔偿。\n调整基准为 2025 年 12 月 1 日生效的社会保障生活成本调整，并须公布具体金额。\n属年度例行指数化立法，已完成全部立法程序。\n对市场意味着什么：无直接定价影响。给付上调已计入财政基线，对退伍军人消费相关板块的边际影响分散且难以单独识别。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "SCHEDULES Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4229",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "SCHEDULES 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n案名全称为《为立法者评估服务而设的社区健康排程与易懂数据法案》，聚焦转诊等待时间的度量。\n官方摘要显示，法案要求退伍军人事务部设定标准，规定从转诊录入系统到实际就诊（无论院内或社区照护）之间的时限。\n标准须在联邦公报与公开网站发布，并按季度至少报告一次相关数量数据。\n立法逻辑是以公开披露替代直接强制，形成对等待时间的问责压力。\n对市场意味着什么：无直接定价影响。若等待时间标准趋严，社区照护转诊量可能上升，边际利好承接方；但同时可能暴露院内产能不足，形成追加预算压力。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "TAP Promotion Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3938",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "过渡援助计划（TAP）促进法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求过渡援助计划下的离队前咨询须包含介绍退伍军人事务部福利的宣讲环节。\n并要求该部每年就宣讲情况提交报告，内容包括参与宣讲的退伍军人服务组织名单、出席军人数量，以及对宣讲内容的调整建议。\n落点在离队窗口期的福利知晓率，属信息触达改进。\n对市场意味着什么：无直接定价影响。福利使用率提升可能抬升教育与医疗给付支出，但传导链条长，且不改变给付标准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Fairness for Servicemembers and their Families Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/385",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "军人及其家庭公平法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求退伍军人事务部定期审查并报告军人团体人寿保险（SGLI）与退伍军人团体人寿保险（VGLI）的最高保额。\n审查周期为每五年一次，并须参照前五个财年城市消费者价格指数（CPI-U）的平均涨幅。\n现行法下保额上限由国会立法设定，本案以定期审查机制替代一次性调整。\n对市场意味着什么：无直接定价影响。保额上限若随通胀上调，将扩大团体寿险的承保规模，对承接该计划的保险人构成业务增量，惟费率与风险分担由政府主导。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Purple Heart Veterans Education Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/342",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "紫心勋章退伍军人教育法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n官方摘要显示，法案授权特定紫心勋章获得者可选择将《后 9/11 退伍军人权利法案》教育资助中未使用的部分转移给一名或多名合格家属。\n适用对象为因 2001 年 9 月 11 日及以后服役而获授紫心勋章、且已退出现役的退伍军人。\n转移的资助总月数设上限，具体额度以文本为准。\n对市场意味着什么：无直接定价影响。资助转移将改变受益人在高校与培训机构间的分布，边际利好招收退伍军人依赖型学生的院校，规模取决于符合条件的获勋人数。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "United States Cadet Nurse Corps Service Recognition Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3329",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "美国学员护士团服务认定法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案将 1943 年 7 月 1 日至 1948 年 12 月 31 日期间在美国学员护士团服役认定为现役服役。\n该认定使符合条件者获得部分退伍军人福利，包括丧葬补助（不含安葬于阿灵顿国家公墓）与荣誉退伍军人身份。\n并规定国防部须为该期间服役者签发荣誉条件退役证明。\n对市场意味着什么：无直接定价影响。受益群体为二战末期护理人员及其遗属，人数随年龄递减，财政支出有限且不具持续性。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "VA Zero Suicide Demonstration Project Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3139",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "退伍军人事务部零自杀示范项目法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求退伍军人事务部设立「零自杀倡议」试点，以改善退伍军人的安全防护与自杀照护。\n试点在五个退伍军人医疗中心实施，其中须包含一个服务农村与偏远地区退伍军人的中心。\n项目核心为风险筛查、安全计划制定与随访机制的标准化，具体指标以文本为准。\n对市场意味着什么：无直接定价影响。试点规模限于五家医疗中心，不构成行为健康服务市场的实质性需求变化，惟若评估有效可能推动全国推广。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans SPORT Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3138",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "退伍军人 SPORT 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n案名全称为《退伍军人支持假肢机会与娱乐治疗法案》。\n官方摘要显示，法案将用于体育及其他娱乐活动的适应性假肢与终端装置纳入退伍军人事务部医疗服务的定义范围。\n据此，符合条件的退伍军人可依医疗服务的给付规则获得此类人工肢体，而非按辅助器具另行申请。\n对市场意味着什么：无直接定价影响。假肢与康复器械企业的联邦订单范围扩大，属细分领域利好；规模受限于适用人群与单件成本，需待实施规则确认编码与报销口径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Housing for All Veterans Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3137",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Banking, Housing, and Urban Affairs.",
+      "title_cn": "为所有退伍军人提供住房法案",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由明尼苏达州民主党参议员史密斯于 2025 年 11 月 6 日提出，交付银行、住房与城市事务委员会，尚未安排审议。\n官方摘要未取得，从案名判断，法案涉及退伍军人住房的可及性安排，可能包括购房、租房或过渡性住房支持，具体工具以 congress.gov 文本为准。\n交付银行委员会意味着主要落点在住房信贷或住房金融机构的职责，而非退伍军人事务部的医疗服务体系。\n本次为元数据回填触发的更新，非 2026 年 10 月的新立法进展。\n对市场意味着什么：无直接定价影响。若涉及退伍军人住房贷款担保调整，将边际影响住房信贷机构的业务量，但须待文本明确担保比例与额度。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "USS Frank E. Evans Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3131",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Energy and Natural Resources Subcommittee on National Parks. Hearings held.",
+      "title_cn": "埃文斯号驱逐舰（USS Frank E. Evans）纪念法案",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院能源与自然资源委员会国家公园小组委员会已就该议案举行听证。\n官方摘要显示，法案要求国防部批准将 1969 年 6 月 3 日埃文斯号驱逐舰（USS Frank E. Evans）事件中遇难的 74 名舰员姓名刻入华盛顿特区越战退伍军人纪念墙。\n该事件发生于越南近海演习期间，因舰艇碰撞沉没，遇难者此前未获列入纪念墙资格。\n立法实质是对纪念墙收录标准的个别豁免，不涉及抚恤标准调整。\n对市场意味着什么：无直接定价影响。纯纪念性立法，无财政支出与产业监管含义。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Next of Kin Collections Protection Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/274",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "近亲债务追收保护法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案调整退伍军人事务部在受领人死亡情形下，既有评级或决定项下养恤金减额或终止的生效日期。\n规定该生效日期应为受领人死亡当月的最后一日，而非此前的更早日期。\n实际效果是避免因死亡日期在月中而向前追溯扣减，减少对遗属的追缴。\n对市场意味着什么：无直接定价影响。属支付时点规则的技术性修正，涉及金额零散，不改变养恤金标准与总体支出规模。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans Health Care Freedom Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/219",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-86.",
+      "title_cn": "退伍军人医疗自由法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-86。\n官方摘要显示，法案要求退伍军人事务部照护与支付创新中心实施三年试点，使参保退伍军人可在「覆盖照护体系」内自主选择服务提供方。\n覆盖体系包括该部医疗设施、参与社区照护计划的提供方，以及已签订退伍军人照护协议的合格主体。\n试点结构类似管理式竞争模式，参与者的选择权与费用分担规则以文本为准。\n对市场意味着什么：无直接定价影响。若试点扩大私营提供方准入，利好社区医院与诊所网络；但三年期限与有限规模使其不构成中期定价事件，须观察评估结果。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A bill to amend title 38, United States Code, to prohibit smoking on the premises of any facility of the Veterans Health Administration, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2171",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs. (text: CR S3534)",
+      "title_cn": "修订《美国法典》第 38 编，禁止在退伍军人健康管理局任何设施内吸烟的法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，法案文本已载于国会记录 S3534。\n官方摘要显示，法案修订《美国法典》第 38 编，禁止在退伍军人健康管理局任何设施的场所内吸烟。\n「吸烟」界定为香烟、雪茄与烟斗的使用（即烟草的加热或燃烧），并涵盖任何电子尼古丁输送系统。\n适用范围为全部设施场所，未设室外指定吸烟区豁免，具体边界以文本为准。\n对市场意味着什么：无直接定价影响。联邦医疗设施的内部管理规则调整，对烟草与电子烟企业的销售无实质影响，惟强化了医疗机构无烟化的政策取向。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "ACES Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/201",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Became Public Law No: 119-32.",
+      "title_cn": "ACES 法案（简称含义官方未列明）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "该议案已由总统签署成为公法，编号 119-32。\n官方摘要显示，该法要求退伍军人事务部与国家科学院、工程院和医学院签订协议，就定期驾驶固定翼飞机的现役空勤人员中癌症患病率与死亡率开展研究并提交报告。\n研究对象限定为曾以空勤身份服役并经常执飞固定翼飞机的退伍军人。\n研究结论将构成后续推定服役关联认定与赔偿立法的证据基础。\n对市场意味着什么：无直接定价影响。研究合同规模有限；若结论支持癌症与飞行环境相关，中期可能扩大推定伤残范围，抬升退伍军人医疗与赔偿支出。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Protecting Veteran Community Care Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1912",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "保护退伍军人社区照护法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案要求退伍军人事务部通过社区照护计划，为特定退伍军人提供居住式心理健康或物质使用障碍治疗服务。\n适用情形包括：符合该部心理健康居住康复治疗项目优先收治标准但无法安排入住的，以及已申请服务但该部无法按合规方式提供的情形。\n实质是在院内产能不足时以社区机构作为承接通道。\n对市场意味着什么：影响有限。若成法，居住式行为健康机构获得联邦付费入口，利好相关运营商；规模取决于院内床位缺口，不构成全行业需求扩张。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "VA Employee Fairness Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1650",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "退伍军人事务部雇员公平法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由伊利诺伊州民主党参议员达克沃斯于 2025 年 5 月 7 日提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要未取得，从案名判断，法案涉及退伍军人事务部雇员的雇佣关系与程序性权利，可能包括集体谈判、纪律处分程序或申诉渠道的调整。\n该部近年人事改革争议集中于加速解雇权限与绩效认定，本案方向可能与之相反。\n具体条款以 congress.gov 文本为准，不宜据案名推定。\n对市场意味着什么：无直接定价影响。联邦雇员工会权利属劳动关系范畴，不涉及上市企业的用工成本或监管义务。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Veterans’ Transition to Trucking Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1537",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Veterans' Affairs.",
+      "title_cn": "退伍军人转业进入货运业法案",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付退伍军人事务委员会，尚未安排审议。\n官方摘要显示，法案授权退伍军人事务部充任州批准机构，为跨州运营的学徒项目（在多个州开展的非联邦学徒计划）办理批准，使其可用于退伍军人教育资助。\n现行制度下，课程批准由各州指定机构负责，跨州项目须逐州申请，形成重复合规负担。\n本案将跨州学徒的批准权上收至联邦层面，指向卡车司机等短缺职业的入行通道。\n对市场意味着什么：影响有限。货运与物流企业的退伍军人招聘与培训管道拓宽，边际利好培训服务与车队用工，但无直接定价含义。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A bill to amend title 38, United States Code, to make permanent and codify the pilot program for use of contract physicians for disability examinations, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1533",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "title_cn": "修订《美国法典》第 38 编，将合同制医生承担伤残鉴定的试点项目永久化并法典化的法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已以替代性修正案形式通过并报送全院。\n法案修订《美国法典》第 38 编，将使用合同制医生承担伤残鉴定的试点项目永久化并写入法典。\n试点原为应对鉴定积压而设的临时机制，依赖外部医疗人力完成初次与复审体检。\n永久化后该部可长期采购合同鉴定服务，不再受试点期限约束，具体采购规则以文本为准。\n对市场意味着什么：无直接定价影响。伤残鉴定外包规模将稳定化，利好提供政府体检与医学评估服务的供应商，合同体量取决于积压处置进度。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Restore VA Accountability Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/124",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 119-35.",
+      "title_cn": "恢复退伍军人事务部问责法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "参议院退伍军人事务委员会已举行听证，记录编为 S.Hrg. 119-35。\n案名全称为《恢复退伍军人事务部问责法案》。\n官方摘要显示，法案修改该部特定雇员与高管的处分程序：当该部以实质证据认定担任主管或管理职务者的绩效或行为不当足以构成处分时，可将其免职、降级或停职。\n该授权不适用于特定任命人员及处于试用期者。\n实质是降低对管理层的解雇门槛，缩短程序周期。\n对市场意味着什么：无直接定价影响。属联邦人事管理规则调整，不改变该部对外采购与医疗给付安排。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "Gold Star and Surviving Spouse Career Services Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1204",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "title_cn": "金星家庭与遗属职业服务法案",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "议案最新行动为「Held at the desk」，在议事台待处理。\n官方摘要显示，法案将劳工部「伤残退伍军人外展计划」的资格范围扩大至特定退伍军人与现役军人的配偶。\n该计划原为伤残退伍军人提供职业与就业服务，由劳工部管理。\n新增资格涵盖：服役期间死亡者的配偶、因服役相关伤残死亡者的配偶，以及被列为失踪超过 90 天的现役军人配偶等情形。\n对市场意味着什么：无直接定价影响。就业服务受益面扩大但以公共就业服务机构承接为主，对私营人力资源企业的业务增量有限。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A joint resolution proposing an amendment to the Constitution of the United States relating to the authority of Congress and the States to regulate contributions and expenditures intended to affect elections and to enact public financing systems for political campaigns.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/78",
+      "source": "国会官网",
+      "kind": "参院联合决议",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "title_cn": "提议修改宪法，就国会与各州规范影响选举的捐款与支出、建立公共竞选融资制度的权限作出规定的联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付司法委员会，尚未安排审议。\n官方摘要显示，该联合决议提出宪法修正案，授权国会与各州规范并对候选人及其他主体为影响选举而募集与支出的资金施加合理的、观点中立的限制。\n同时授权建立并实施公共竞选融资制度，包括以增加公共资金对冲私人资金影响的设计。\n修正案并赋予国会与各州以立法实施与执行的权力。\n宪法修正须经两院三分之二多数并通过四分之三州批准，程序门槛极高。\n对市场意味着什么：无直接定价影响。属长期议程性提案，通过概率极低；若推进，将影响政治行动委员会与政治广告支出结构，对媒体广告收入构成远期变量。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A joint resolution proposing an amendment to the Constitution of the United States relating to contributions and expenditures intended to affect elections.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/43",
+      "source": "国会官网",
+      "kind": "参院联合决议",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "title_cn": "提议修改宪法，就影响选举的捐款与支出作出规定的联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付司法委员会，尚未安排审议。\n官方摘要显示，该联合决议提出宪法修正案，授权国会与各州对候选人及其他主体为影响选举而募集与支出的资金设定合理上限。\n修正案允许区分自然人与依法律设立的公司或其他拟制实体，包括禁止此类实体为影响选举而支出资金。\n并赋予国会与各州以立法实施与执行的权力。\n该案与同批第 78 号决议方向一致，差别在于未纳入公共竞选融资制度。\n对市场意味着什么：无直接定价影响。若成真将限制企业政治支出，影响行业协会与政治广告投放，但修宪门槛使其短期内不具现实约束力。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-10-29",
+      "title": "A joint resolution proposing an amendment to the Constitution of the United States relative to the fundamental right to vote.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/186",
+      "source": "国会官网",
+      "kind": "参院联合决议",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary. (text: CR S2055)",
+      "title_cn": "提议修改宪法，规定投票基本权利的联合决议",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-30",
+        "body": "由参议院提出，交付司法委员会，决议文本已载于国会记录 S2055。\n官方摘要显示，该联合决议提出宪法修正案，赋予每名达到法定投票年龄的美国公民在其居住辖区任何公职选举中的基本投票权。\n并规定该权利不得被联邦、州或州的政治区划剥夺或限制，除非系为促进重大政府利益且采用限制最小的手段。\n同时废止宪法第十四修正案中与因犯罪丧失投票权相关的特定条款。\n对市场意味着什么：影响有限。属选举权议题的长期议程，修宪门槛极高；若推进将改变各州选民资格与投票程序，涉及选举设备与管理系统采购，惟当前无现实立法路径。",
         "tier": "note"
       }
     },
