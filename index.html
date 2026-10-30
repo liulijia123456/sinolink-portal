@@ -1398,7 +1398,17 @@
     margin-left: 3px; vertical-align: 1px; letter-spacing: -.02em;
   }
   .uc-ev .tt { font-weight: 700; margin-left: 3px; }
-  .uc-more { font-size: 10px; color: var(--muted-light); padding-left: 3px; }
+  /* 溢出提示「+N 项」：原来是 10px 灰字，混在事件条里几乎看不见；
+     现在按事件条的规格做成「第 5 行」，铜金色（索引色）与四类事件条的
+     蓝/红/紫/金都能区分，一眼能看出这天还有内容没铺开 */
+  .uc-more {
+    display: flex; align-items: center; width: 100%; box-sizing: border-box;
+    margin-bottom: 2px; padding: 2px 5px;
+    font-size: 10.5px; font-weight: 700; line-height: 1.35; letter-spacing: .02em;
+    color: #7a5717; background: rgba(168,130,60,.17);
+    border: 1px solid rgba(168,130,60,.5); border-left: 4px solid #a8823c;
+    border-radius: 4px;
+  }
   /* 今天格底色饱和（亮蓝），事件条本身已是淡彩实底，只补一道投影让它从蓝底上浮起来 */
   .uc-cell.today .uc-ev { box-shadow: 0 1px 2px rgba(23,42,64,0.16); }
   .uc-cell.today .uc-ev.live { box-shadow: inset 0 0 0 1.5px rgba(38,54,72,0.66), 0 1px 2px rgba(23,42,64,0.16); }
@@ -2355,7 +2365,11 @@
     font-size: 10.5px; letter-spacing: .01em; border-radius: 2px; padding: 2px 5px;
     border-color: var(--us-line-soft); font-weight: 600;
   }
-  #view-us .uc-more { font-family: var(--us-mono); font-size: 9.5px; }
+  #view-us .uc-more {
+    font-family: var(--us-mono); font-size: 10.5px; letter-spacing: .04em;
+    border-radius: 2px; border-left-width: 4px;
+    color: #7a5717; background: rgba(168, 130, 60, .18); border-color: rgba(168, 130, 60, .5);
+  }
   /* 当日展开块 */
   #view-us .uc-expand { background: #f4f7fb; box-shadow: inset 3px 0 0 var(--us-blue); }
   #view-us .ue-head { border-bottom-color: var(--us-line); }
@@ -9839,7 +9853,7 @@
               '" title="' + esc(it.tip) + '">' +
               esc(it.label) + (it.time ? '<span class="tt">' + it.time + '</span>' : '') + '</div>';
           }).join('');
-          if (items.length > 4) inner += '<div class="uc-more">+' + (items.length - 4) + ' 项</div>';
+          if (items.length > 4) inner += '<div class="uc-more" aria-hidden="true">+' + (items.length - 4) + ' 项</div>';
           var open = usCalSel === key && items.length > 0;
           html += '<div class="uc-cell' + stCls + (key === todayKey ? ' today' : '') + (wkend ? ' wkend' : '') +
             (items.length ? ' has-ev' : '') + (open ? ' sel' : '') + '" data-k="' + key + '"' +
