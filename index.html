@@ -1430,17 +1430,40 @@
   }
   .ue-close b { font-size: 10px; font-weight: 400; }
   .ue-close:hover { color: #b5493c; border-color: rgba(181,73,60,0.5); background: rgba(181,73,60,0.05); }
-  /* 明细分列铺开：够宽时两到三列，避免整行只有一行字、右侧大片留白 */
-  .ue-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0 22px; }
-  .ud-item { padding: 9px 0; border-bottom: 1px dashed var(--border-light); }
-  .ud-item:last-child { border-bottom: none; }
-  .ud-line { font-size: 12.5px; font-weight: 600; color: var(--text-light); line-height: 1.55; }
-  .ud-meta { font-size: 11.5px; color: var(--muted-light); margin-top: 3px; line-height: 1.7; }
-  .ud-meta b { color: var(--accent-light); font-weight: 600; }
-  /* 进行中：标题不再染成琥珀色（那会和「政治」的暖色撞成一片），改用左侧金线 + 既有徽章表达 */
-  .ud-item.live { box-shadow: inset 3px 0 0 rgba(201,150,46,0.55); padding-left: 9px; }
+  /* 明细分列铺开：每项独立成卡，要素自上而下为 标题行 → 事实行 → 说明 → 来源。
+     列宽取 430px：低于这个宽度长备注会把卡片拉成窄条，行高参差反而更乱。 */
+  .ue-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(430px, 1fr)); gap: 10px 22px; padding: 12px 0 2px; align-items: start; }
+  .ud-item {
+    display: flex; flex-direction: column; gap: 6px; min-width: 0;
+    padding: 11px 13px 10px 14px;
+    background: #fcfbf9; border: 1px solid var(--border-light); border-left: 3px solid var(--border-light);
+    border-radius: 6px;
+  }
+  .ud-item.econ { border-left-color: var(--c-econ-bar); }
+  .ud-item.pol  { border-left-color: var(--c-pol-bar); }
+  .ud-item.dip  { border-left-color: var(--c-dip-bar); }
+  .ud-item.hol  { border-left-color: var(--c-hol-bar); }
+  /* 标题行：类别标签 + 标题 + 状态徽章，三者基线对齐，标题可换行不挤压 */
+  .ud-line { display: flex; align-items: baseline; font-size: 12.5px; font-weight: 600; color: var(--text-light); line-height: 1.55; }
+  .ud-line .uc-cat { flex: none; }
+  .ud-t { flex: 1 1 auto; min-width: 0; }
+  .ud-line .uc-live-badge, .ud-line .uc-past-badge { flex: none; margin-left: 7px; }
+  /* 事实行：时刻 / 会期各自成一格，标签小字、值用正文字色，避免与备注混成一段 */
+  .ud-facts { display: flex; flex-wrap: wrap; gap: 2px 18px; }
+  .ud-f { display: inline-flex; align-items: baseline; gap: 5px; font-size: 11px; line-height: 1.5; color: var(--text-light); }
+  .ud-f i { font-style: normal; font-size: 10px; letter-spacing: .04em; color: var(--muted-light); }
+  .ud-note { margin: 0; font-size: 11.5px; color: var(--muted-light); line-height: 1.75; }
+  /* 来源单独压到卡片底部，用发丝线隔开，读者可一眼跳过 */
+  .ud-src {
+    margin: 1px 0 0; padding-top: 6px; border-top: 1px dashed var(--border-light);
+    font-size: 10.5px; color: var(--muted-light); line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  .ud-src i { font-style: normal; margin-right: 6px; letter-spacing: .04em; color: #a7b3bf; }
+  /* 进行中：标题不再染成琥珀色（那会和「政治」的暖色撞成一片），改用整圈细描边 + 既有徽章表达 */
+  .ud-item.live { box-shadow: inset 0 0 0 1.5px rgba(201,150,46,0.5); }
   .ud-item.past .ud-line { color: var(--muted-light); }
-  .ud-item.past .ud-meta { opacity: 0.8; }
+  .ud-item.past .ud-note { opacity: 0.8; }
   .ud-item.stale .ud-line { color: var(--muted-light); }
   .uc-cat { display: inline-block; font-size: 10.5px; font-weight: 600; border-radius: 9px; padding: 1px 8px; margin-right: 7px; vertical-align: 1px; }
   .uc-cat.econ { color: var(--c-econ); background: var(--c-econ-bg); box-shadow: inset 0 0 0 1px var(--c-econ-bd); }
@@ -1473,7 +1496,7 @@
     .uc-ev .tt { display: none; }
     .uc-month { min-width: 100px; font-size: 15px; }
     .uc-expand { padding: 10px 10px 11px 11px; }
-    .ue-list { grid-template-columns: 1fr; gap: 0; }
+    .ue-list { grid-template-columns: 1fr; gap: 8px; }
   }
   @media (max-width: 700px) { .uc-bar { flex-direction: column; align-items: stretch; } .uc-tz { width: 100%; display: flex; } .uc-tz button { flex: 1; } .uc-picker { width: min(262px, calc(100vw - 72px)); } }
 
@@ -2283,13 +2306,18 @@
     color: rgba(11, 23, 36, .45); padding-bottom: 9px; border-bottom: 1px solid var(--us-line-soft);
   }
   #view-us .uc-pend-list { list-style: none; margin: 0; padding: 0; max-height: 46vh; overflow-y: auto; }
+  /* 两列定死：左列标题至少拿走一半宽，右列时间窗/地点最多 46%。
+     之前用 flex + nowrap，长窗口文案会把标题挤到 1 字宽、竖排成一柱。 */
   #view-us .uc-pend-list li {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
+    align-items: baseline; gap: 2px 18px;
     padding: 8px 0; border-bottom: 1px dashed var(--us-line-soft);
   }
   #view-us .uc-pend-list li:last-child { border-bottom: 0; }
-  #view-us .uc-pend-t { font-size: 12.5px; font-weight: 600; color: var(--us-ink); line-height: 1.5; }
-  #view-us .uc-pend-w { font-family: var(--us-mono); font-size: 10.5px; color: rgba(11, 23, 36, .48); white-space: nowrap; }
+  #view-us .uc-pend-t { min-width: 0; font-size: 12.5px; font-weight: 600; color: var(--us-ink); line-height: 1.5; }
+  #view-us .uc-pend-m { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; min-width: 0; text-align: right; }
+  #view-us .uc-pend-w { font-family: var(--us-mono); font-size: 10.5px; color: rgba(11, 23, 36, .55); line-height: 1.5; }
+  #view-us .uc-pend-p { font-size: 10.5px; color: rgba(11, 23, 36, .4); line-height: 1.5; }
   #view-us .uc-pend-foot {
     margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--us-line-soft);
     font-size: 10.5px; color: rgba(11, 23, 36, .4);
@@ -2334,11 +2362,13 @@
   #view-us .ue-day { font-family: var(--us-serif); font-size: 15px; }
   #view-us .ue-sub { font-family: var(--us-mono); letter-spacing: .06em; }
   #view-us .ue-close { border-radius: 2px; }
-  #view-us .ue-list { gap: 0 24px; }
-  #view-us .ud-item { border-bottom-color: var(--us-line-soft); }
+  #view-us .ue-list { gap: 10px 24px; }
+  #view-us .ud-item { background: #fff; border-color: var(--us-line-soft); border-radius: 2px; }
   #view-us .ud-line { font-weight: 600; }
-  #view-us .ud-meta { font-family: var(--us-mono); font-size: 11px; }
-  #view-us .ud-meta b { color: var(--us-blue); }
+  #view-us .ud-f, #view-us .ud-f i { font-family: var(--us-mono); }
+  #view-us .ud-f i { letter-spacing: .08em; }
+  #view-us .ud-src { border-top-color: var(--us-line-soft); font-size: 10px; }
+  #view-us .ud-src i { font-family: var(--us-mono); color: var(--us-copper, #8a6420); }
   #view-us .uc-cat { border-radius: 2px; font-family: var(--us-mono); letter-spacing: .04em; }
   #view-us .uc-live-badge, #view-us .uc-past-badge { border-radius: 2px; font-family: var(--us-mono); }
   /* 图例 */
@@ -9675,9 +9705,11 @@
         if (cnt) cnt.textContent = items.length;
         wrap.hidden = !items.length;
         list.innerHTML = items.map(function (p) {
-          var w = esc(p.win || '') + (p.place ? ' · ' + esc(p.place) : '');
           return '<li><span class="uc-pend-t">' + esc(p.title || '') + '</span>' +
-                 '<span class="uc-pend-w">' + w + '</span></li>';
+                 '<span class="uc-pend-m">' +
+                   (p.win ? '<span class="uc-pend-w">' + esc(p.win) + '</span>' : '') +
+                   (p.place ? '<span class="uc-pend-p">' + esc(p.place) + '</span>' : '') +
+                 '</span></li>';
         }).join('');
       }
 
@@ -9935,7 +9967,46 @@
         host.hidden = !usCalPickOpen;
         btn.setAttribute('aria-expanded', usCalPickOpen ? 'true' : 'false');
       }
-      // 当日展开块：整行铺开选中日期的事件明细（完整标题 / 时刻 / 会期 / 备注，仅信息呈现）
+      // note 形如「地点 · 说明 · 来源：xxx」：把尾部的来源摘出来单独成行，
+      // 正文里不再混着出处，读者扫读时可以先看事实、再看依据。
+      // 另外三类段落与卡片上方的字段重复，显示时丢掉（数据不动，展开块只做呈现）：
+      //   ① 多日会期条目里又写一遍的「会期 X 月 X—X 日」；
+      //   ② 只有时刻的段（「08:30 美东时间」），卡片已有「时刻」字段；
+      //   ③ 只有机构名的段（「劳工统计局（BLS）」），与底部来源是同一机构。
+      var RE_UD_TIME = /^\d{1,2}[:：]\d{2}\s*(?:美东时间|美东|ET)?\s*(?:发布|公布)?$/;
+      var RE_UD_ORG = /^([^（）]{2,20})（([A-Za-z][A-Za-z &.]*)）$/;
+      function usCalSplitNote(note, hasRange) {
+        var s = String(note || '');
+        var i = s.lastIndexOf('来源');
+        var body = s, src = '';
+        if (i > 0) {
+          var tail = s.slice(i);
+          if (/^来源\s*[:：]/.test(tail)) {
+            body = s.slice(0, i).replace(/[\s·]+$/, '');
+            src = tail.replace(/^来源\s*[:：]\s*/, '');
+          }
+        }
+        // 逐段过一遍：单段的 note 同样可能有「08:30 美东时间」这类冗余
+        if (body) {
+          body = body.split(/\s*·\s*/).filter(function (seg) {
+            var t = seg.trim();
+            if (!t) return false;
+            if (RE_UD_TIME.test(t)) return false;
+            var org = RE_UD_ORG.exec(t);
+            if (org && src && src.indexOf(org[2]) >= 0) return false;
+            if (hasRange && /会期/.test(t) && /\d/.test(t) && t.length <= 24) return false;
+            return true;
+          }).join(' · ');
+        }
+        // 正文只剩一个机构名、又没有来源时，它本来就是出处，移到来源行更合适
+        var onlyOrg = RE_UD_ORG.exec((body || '').trim());
+        if (!src && onlyOrg && (body || '').trim().length <= 24) {
+          src = body.trim();
+          body = '';
+        }
+        return { body: body, src: src };
+      }
+      // 当日展开块：整行铺开选中日期的事件明细（标题行 / 事实行 / 说明 / 来源，仅信息呈现）
       function usCalExpandHTML(key, items, col) {
         var tzLabel = usCalTz === 'bj' ? '北京时间' : '美东时间';
         var CAT = { econ: '经济', pol: '政治', dip: '外交', hol: '节日' };
@@ -9943,18 +10014,23 @@
         var WD = ['日', '一', '二', '三', '四', '五', '六'];
         var rows = items.map(function (it) {
           var ev = it.ev;
-          var metas = [];
-          if (it.kind === 'dec') metas.push('决议公布：<b>' + it.time + '</b> ' + tzLabel);
-          else if (it.time) metas.push('<b>' + it.time + '</b> ' + tzLabel);
-          if (ev.d2) metas.push('会期 ' + ev.d + ' ~ ' + ev.d2 + '（美东）');
-          if (ev.note) metas.push(esc(ev.note));
-          return '<div class="ud-item' + (it.live ? ' live' : '') + (it.past ? ' past' : '') + (it.stale ? ' stale' : '') + '">' +
+          var facts = [];
+          if (it.kind === 'dec') facts.push(['决议', esc(it.time) + ' ' + tzLabel]);
+          else if (it.time) facts.push(['时刻', esc(it.time) + ' ' + tzLabel]);
+          if (ev.d2) facts.push(['会期', esc(ev.d) + ' ~ ' + esc(ev.d2)]);
+          var parts = usCalSplitNote(ev.note, !!ev.d2);
+          return '<div class="ud-item ' + esc(it.cat || '') + (it.live ? ' live' : '') + (it.past ? ' past' : '') + (it.stale ? ' stale' : '') + '">' +
             '<div class="ud-line"><span class="uc-cat ' + esc(it.cat) + '">' + (CAT[it.cat] || '') + '</span>' +
-            esc(ev.title) +
+            '<span class="ud-t">' + esc(ev.title) + '</span>' +
             (it.live ? '<span class="uc-live-badge">进行中</span>' : '') +
             (it.past ? '<span class="uc-past-badge">已结束</span>' : '') +
             (it.stale ? '<span class="uc-past-badge">已调整</span>' : '') + '</div>' +
-            (metas.length ? '<div class="ud-meta">' + metas.join(' · ') + '</div>' : '') + '</div>';
+            (facts.length ? '<div class="ud-facts">' + facts.map(function (f) {
+              return '<span class="ud-f"><i>' + f[0] + '</i>' + f[1] + '</span>';
+            }).join('') + '</div>' : '') +
+            (parts.body ? '<p class="ud-note">' + esc(parts.body) + '</p>' : '') +
+            (parts.src ? '<p class="ud-src"><i>来源</i>' + esc(parts.src) + '</p>' : '') +
+            '</div>';
         }).join('');
         return '<div class="uc-expand" role="region" aria-label="当日安排" style="--ue-col:' + (col || 0) + '">' +
           '<div class="ue-head">' +
