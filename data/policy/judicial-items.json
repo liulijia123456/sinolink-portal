@@ -1,9 +1,145 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-10-29 14:52",
-  "count": 22,
+  "updated_at": "2026-10-30 09:57",
+  "count": 30,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "California Chamber of Commerce v. Bonta",
+      "url": "https://www.courtlistener.com/opinion/11049399/california-chamber-of-commerce-v-bonta/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "Amendment / Preliminary Injunction The panel affirmed the district court’s preliminary injunction preventing",
+      "title_cn": "加州商会诉邦塔（涉加州 SB 399 雇主强制会议禁令的第一修正案审查）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第九巡回上诉法院 10 月 29 日维持地区法院初步禁令，禁止加州执行 SB 399（《加州劳动法典》第 1137 条）。该法禁止雇主因雇员拒绝参加以传达雇主对宗教或政治事务意见为目的的会议，而施加解雇等不利处分。\n\n合议庭由 Tallman 执笔，认定该法虽表面规制行为，但仅在雇主表达特定观点时启动，实质构成内容与言说者身份的双重限制，应适用严格审查；加州援引的「被俘听众」理论不适用于非政府场合的非政府言论。法院并确认原告具备起诉资格，未触及《国家劳动关系法》优先适用问题。\n\n对市场意味着什么：无直接定价影响。争点限于雇主内部言论的宪法边界，不改变加州工资、工时与集体谈判义务。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "Greater Boston Legal Services v. U.S. Dep't of Homeland Security",
+      "url": "https://www.courtlistener.com/opinion/11049697/greater-boston-legal-services-v-us-dept-of-homeland-security/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第一巡回上诉法院",
+      "summary": "brought claims under the Administrative Procedure Act (\"APA\"), 5 U.S.C. § 706, et",
+      "title_cn": "大波士顿法律服务处诉国土安全部（涉移民程序材料获取政策与起诉资格）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第一巡回上诉法院 10 月 29 日维持马萨诸塞州联邦地区法院判决，以原告缺乏《宪法》第三条起诉资格为由驳回全部请求。原告为两家移民律所及一家法律援助机构，主张国土安全部将移民程序中的证据开示统一转为《信息自由法》申请（所称「不披露政策」），违反《行政程序法》、正当程序条款与移民法规。\n\n合议庭由 Gelpí 法官执笔，认为原告未能证明该做法在国土安全部全部门统一存在，所称损害因而不具「具体性」，属推测性；律所因代理成本上升主张的组织资格亦不成立。因起诉资格不成立，法院未进入实体审理。\n\n对市场意味着什么：无直接定价影响。判决仅涉移民程序举证途径，未改变实体移民规则。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "Red Eagle Law, Lc v. Rubio",
+      "url": "https://www.courtlistener.com/opinion/11049712/red-eagle-law-lc-v-rubio/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "DV-2027 Program was arbitrary and capricious and unlawfully withheld agency action under the Administrative",
+      "title_cn": "Red Eagle 律所诉鲁比奥（涉 2027 财年多元化签证抽签停摆的紧急中止）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第九巡回上诉法院 10 月 29 日准许国务院紧急中止申请，暂停执行地区法院要求重启 2027 财年多元化签证（DV-2027）抽签的初步禁令，并指令书记员排定上诉简报日程。\n\n合议庭以 per curiam 形式出具，由 McKeown、Smith、Thomas 三位法官组成。法院认为政府实体上很可能胜诉：多元化签证法未设法律服务条款，原告律所的经济利益与该法宗旨仅有边际关联，难谓落入法条保护或规制的利益区间。法院声明不认可国务院未开放登记期的做法；Smith 法官协同意见进一步质疑原告的第三条起诉资格。\n\n对市场意味着什么：无直接定价影响。抽签停摆压缩移民律所业务量，对上市企业无实质敞口。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "Uber Technologies, Inc. v. City of Seattle",
+      "url": "https://www.courtlistener.com/opinion/11049397/uber-technologies-inc-v-city-of-seattle/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "SUMMARY * First Amendment / Preliminary Injunction The panel filed (1) an order withdrawing",
+      "title_cn": "优步诉西雅图市（涉网约工停用权利条例的强制披露要求）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第九巡回上诉法院 10 月 29 日维持地区法院驳回初步禁令的裁定，允许西雅图继续执行第 126878 号法令（《网约工停用权利条例》，市政法典第 8.40 章）。合议庭并撤销 3 月 4 日原意见，以修订意见取代，驳回全席重审申请。\n\n法院假定而不裁定该条例是否规制言论；即便规制，亦属商业言论，适用较宽松的 Zauderer 标准。要求书面告知停用政策、且停用须与「安全高效运营」合理相关，与市政府保障工作者知情与公共安全的利益相合，内容属事实性且负担有限，故合宪；条例亦不构成违宪模糊。Bennett 法官就言论定性提出异议。\n\n对市场意味着什么：无直接定价影响。合规成本限于平台披露停用规则。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "Colvin and Son, LLC v. Burgum",
+      "url": "https://www.courtlistener.com/opinion/11049398/colvin-and-son-llc-v-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "Plaintiffs challenged the Gather Plans as agency action, seeking review under §§ 706(2)(A) and (2)(C)",
+      "title_cn": "科尔文父子牧场等诉伯格姆（涉土地管理局野马聚集计划的即时清除义务）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "第九巡回上诉法院 10 月 29 日维持内华达州联邦地区法院简易判决，驳回牧场主对土地管理局（BLM）野马聚集计划的挑战。\n\n争议法条为《野生自由漫游马匹与驴法》中「立即从范围中清除超量动物以达到适当管理水平」的要求（16 U.S.C. § 1333(b)(2)）。合议庭由 Holcomb 法官执笔，认为该法仅要求「在后勤与合理可行范围内尽快」清除，未要求 BLM 为初次聚集设定具体时限；后续维持性聚集及其附条件安排不适用「即时性」要求。故聚集计划合规。\n\n对市场意味着什么：无直接定价影响。指向内华达州公共牧场与联邦土地管理，对牧业、矿业用地预期有间接参考。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "World Professional Association for Transgender Health v. Federal Trade Commission",
+      "url": "https://www.courtlistener.com/opinion/11049420/world-professional-association-for-transgender-health-v-federal-trade/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "declaratory relief. The Court granted a preliminary injunction, holding that the FTC had likely issued",
+      "title_cn": "世界跨性别健康专业协会诉联邦贸易委员会（涉民事调查令撤回后的无实际意义认定）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院 10 月 29 日以案件已无实际意义为由，准许联邦贸易委员会撤诉动议，驳回世界跨性别健康专业协会请求。此前法院曾部分准许初步禁令，认定该委员会很可能因原告受保护言论而发出调查令构成报复；该委员会随后撤回，转而于德州北区提起执法诉讼。\n\nBoasberg 首席法官认为，原告主张的损害根源唯一指向已撤回的调查令，法院已无法提供有效救济，否则将沦为咨询性意见；两项例外（自愿停止、可重复却逃避审查）均不适用。法院并指出记录几无疑问显示该委员会曾侵犯原告权利，但调查令既不存在，本院无权作无实效谴责。\n\n对市场意味着什么：无直接定价影响。属执法程序争议，未触及广告标准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "Corewell Health William Beaumont University Hospital v. Kennedy",
+      "url": "https://www.courtlistener.com/opinion/11049714/corewell-health-william-beaumont-university-hospital-v-kennedy/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "process is unlawful, Beaumont moves for a preliminary injunction reinstating its access to those discounts",
+      "title_cn": "Corewell 健康威廉·博蒙特大学医院诉肯尼迪（涉 340B 登记季度生效规则的初步禁令）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院 10 月 29 日驳回 Corewell 健康威廉·博蒙特大学医院初步禁令动议，驳回政府撤诉动议。争议指向卫生资源与服务管理局（HRSA）第 340B 条折扣计划的注册规则：每季度仅一次且仅向未来生效，承保实体只能在 DSH 与 RRC 择一。该院误判资格改登记为 RRC，两季度失去孤儿药折扣。\n\nNichols 法官认定该院具备起诉资格，但其已于 10 月 1 日恢复 DSH 身份，损失属既往且未量化，未达不可弥补损害标准；季度延迟生效规则是否越权属接近临界的问题，法院倾向认为属合理程序机制。\n\n对市场意味着什么：无直接定价影响。340B 折扣资格与登记节奏未变。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-29",
+      "title": "New England Donor Services, Inc. v. United States Department of Health and Human Services",
+      "url": "https://www.courtlistener.com/opinion/11049421/new-england-donor-services-inc-v-united-states-department-of-health-and/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "that rule, multiple OPOs brought this Administrative Procedure Act (APA) action seeking to vacate it and",
+      "title_cn": "新英格兰器官捐献服务机构诉卫生与公众服务部（涉器官采购组织认证规则合法性）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-29",
+        "body": "哥伦比亚特区联邦地区法院 10 月 29 日驳回多家器官采购组织（OPO）的简易判决动议，准许卫生与公众服务部及联邦医疗保险和医疗补助服务中心的交叉动议。原告请求依《行政程序法》撤销 2020 年 CMS 关于 OPO 认证方式的规则，主张其超越法定授权且武断反复。\n\nSooknanan 法官认为不存在阻却司法审查的事由，但认定 CMS 系在国会授权范围内行使裁量，决策处于合理区间，且在通知评论程序中审议了备选方法与数据来源、回应了实质性替代方案，故规则合法。法院强调司法审查范围谦抑，不得以自身判断替代机构判断。\n\n对市场意味着什么：无直接定价影响。规则维持现状，OPO 认证格局不变。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-10-28",
@@ -13,13 +149,13 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "NEPA and the ESA, and therefore, the Administrative Procedure Act, 5 U.S.C. §§ 701–06. The allocations",
-      "title_cn": "生物多样性中心诉美国垦务局（涉 WIIN 法案水利合同转换的 NEPA／ESA 审查义务）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-10-29",
         "body": "第九巡回上诉法院（No. 25-5137）维持地区法院判决。争点在于垦务局依《水利基础设施改善法案》第 4011(a) 条，将 67 份水利服务合同转为还款合同前，是否须逐份履行《国家环境政策法》环评与《濒危物种法》第 7 条磋商。\n合议庭认定该条款在承包商请求时课以强制转换义务，未赋予垦务局变更条款以缓解环境损害的裁量空间；转换属非裁量行为，合同特定环评与磋商义务不适用。判决并界定射程：转换后合同项下供水仍受中央谷地工程整体环评与生物意见约束。\n对市场意味着什么：加州联邦水利合同转换的程序不确定性下降，有利于农业用水区与供水方的长期供水预期；属程序性裁判，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "生物多样性中心诉美国垦务局（涉 WIIN 法案水利合同转换的 NEPA／ESA 审查义务）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -30,13 +166,13 @@
       "kind": "判决",
       "agency": "第一巡回上诉法院",
       "summary": "8 For instance, no party argues for federal preemption or that the doctrine \"affect[s] federal",
-      "title_cn": "赖特诉联合服务汽车协会（涉保险费率与法定费率原则，提请州最高法院释法）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-10-29",
         "body": "第一巡回上诉法院（No. 25-1979）就保单持有人针对联合服务汽车协会（USAA）费率制定行为的诉讼作出裁定。争点为：马萨诸塞州依第 175E 章批准的保险费率，是否使联邦「法定费率原则」排除州法项下索赔。\n合议庭认定适用该州法而非联邦法定费率原则，并认为州最高法院对此尚无控制性先例——既往判例均涉其他费率条款、最近一则逾四十年——故主动提请州最高法院答复，未就实体责任作终局判断。第九巡回法院已在同类加州案件中就 USAA 提请释法。\n对市场意味着什么：保险费率监管的司法审查路径待州最高法院明确，短期不改变费率水平；州批准费率抗辩的边界存不确定性，属法律风险而非定价事件。",
         "tier": "note"
-      }
+      },
+      "title_cn": "赖特诉联合服务汽车协会（涉保险费率与法定费率原则，提请州最高法院释法）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -81,13 +217,13 @@
       "kind": "裁定",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "ORDER This is an Administrative Procedure Act (APA) action challenging the United",
-      "title_cn": "「人道世界」动保组织诉美国农业部（涉马匹保护规则暂缓实施之诉，第三人介入获准）",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-10-29",
         "body": "哥伦比亚特区联邦地区法院（No. 26-1372，Sooknanan 法官）作出程序性裁定，准许田纳西走马全国庆典协会以被告身份任意介入。本案依《行政程序法》挑战农业部及动植物卫生检验局对《马匹保护法》的执行，指向其暂缓实施 2024 年终规则——该规则拟修改走马检查规范，以遏制「压脚」虐待行为。\n法院依《联邦民事诉讼规则》第 24(b) 条认定介入适时、与本案共享争点、且不致不当迟延；协会诉求与政府一致，即推迟规则生效日，故无需单独证明诉讼资格。实体争点未决。\n对市场意味着什么：无直接定价影响；涉及马术与马匹交易行业的合规成本预期，规则生效时点仍取决于实体审理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "「人道世界」动保组织诉美国农业部（涉马匹保护规则暂缓实施之诉，第三人介入获准）",
+      "domain": "农业/食品"
     },
     {
       "board": "judicial",
