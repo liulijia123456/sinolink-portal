@@ -308,6 +308,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
 | `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
+| `cal_audit.py` | 日历事实审计 + 受控删除（就职/选举人团年度规则、休市口径、会期长度、相关性） | `python3 scripts/cal_audit.py check`<br>`python3 scripts/cal_audit.py prune del.json [--dry-run]` |
 | `gen_updates_json.py` | 生成 `updates.json` 增量清单 | `python3 scripts/gen_updates_json.py --days 10 --out updates.json` |
 | `fix_congress_urls.py` | 修正决议类条目的错误 URL | `python3 scripts/fix_congress_urls.py [--dry-run]` |
 | `migrate_to_json.py` | 一次性迁移/回灌（非常规工具） | `python3 scripts/migrate_to_json.py --source index.html --out data/policy` |
@@ -535,6 +536,32 @@ commit message 的净增数按实际入库量填写。
 **简报缺失是另一个量级**：缺简报由 `--strict` 拦截发布（退出码 2），
 不属于「告警」——因为读者看到条目却读不到任何判断，等同于条目不存在。
 处理次序：`coverage` 定位缺失 → `queue --all` 出队列 → 撰写 → `merge` → 复核。
+
+### 6.5 日历纪律：准确性优先于完整度
+
+日历（`us-cal-data`）是全站唯一「靠模型推断日期」的数据，也是最容易写错的地方。
+2026-10-30 审计发现 10 类确定错误（就职典礼填错年份、中期选举年出现选举人团程序、
+哥伦布日误标美股休市、东盟峰会会期 11 天、2028 年 FOMC 会期臆测、收录 CHOGM 等），
+已删除 17 条。以下四条为硬约束，`scripts/cal_audit.py` 会机器拦截：
+
+1. **相关性门禁**。本日历是「美国政治/经济/外交」日历，不是国际会议日历。
+   只收：美国国内事项；美国为正式成员或参与方的多边机制（G20/APEC/Quad/COP/
+   IMF-世行/达沃斯/慕安会/东盟系列中的东盟—美国峰会与 EAS）；对美国有直接传导的
+   第三方事件（须在 note 写明传导路径）。
+   **不收**：英联邦（CHOGM）、法语国家组织、非盟、海合会等美国非成员的机制；
+   他国国内司法程序；美国未参与的区域会议。
+2. **年度规则**。总统就职只在年份 ≡1 (mod 4) 的 1 月 20 日；选举人团证书与会议
+   投票只在大选年（年份 ≡0 (mod 4)）12 月；国会计票只在 ≡1 年份的 1 月 6 日。
+   中期选举年（2026 这类）不存在上述程序。
+3. **美股休市**。全年只有 10 个全天休市，**哥伦布日与退伍军人节美股照常交易**，
+   这两天标题不得出现「休市」。
+4. **只写已公布的日程**。FOMC 目前公布到 2027 年；2027 年东盟系列会议、COP 未来
+   届次若未定则不写。峰会/部长会会期 2—4 天，超 8 天视为录入错误（COP 约两周，上限 16 天）。
+   同一事件多渠道日期冲突时**只保留一条**，在 note 写明各来源说法与取舍依据。
+
+工具：`cal_audit.py check` 做规则审计（退出码 0/1，发布前必须为 0）；
+`cal_audit.py prune` 做受控删除（按 `(d, title)` 精确匹配，输出清单并支持 `--dry-run`）。
+删除只用于修正事实错误，不得用于「清理旧条目」——后者与本项目「纯增量累积」原则冲突。
 
 ---
 
