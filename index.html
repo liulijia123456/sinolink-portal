@@ -1514,60 +1514,6 @@
   }
   @media (max-width: 700px) { .uc-bar { flex-direction: column; align-items: stretch; } .uc-tz { width: 100%; display: flex; } .uc-tz button { flex: 1; } .uc-picker { width: min(262px, calc(100vw - 72px)); } }
 
-  /* 周期研判（每周 / 每月政策总览） */
-  .board-review { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 26px; align-items: start; }
-  .rvw-card {
-    background: var(--card-light); border: 1px solid var(--border-light); border-radius: var(--radius);
-    padding: 18px 20px 16px; box-shadow: 0 1px 3px rgba(23,42,64,0.05);
-  }
-  .rvw-card.wk { border-top: 3px solid var(--gold-light, #c99630); }
-  .rvw-card.mo { border-top: 3px solid var(--accent-light); }
-  .rvw-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 2px; }
-  .rvw-toggle-wrap { display: flex; justify-content: center; padding: 12px 0 2px; }
-  .rvw-card.open .rvw-toggle-wrap { padding-bottom: 0; }
-  .rvw-toggle {
-    font-size: 11px; font-weight: 600; color: var(--muted-light);
-    background: none; border: 1px solid var(--border-light); border-radius: 12px;
-    padding: 2px 12px; cursor: pointer; white-space: nowrap; transition: all .15s ease;
-  }
-  .rvw-toggle:hover { color: var(--gold-light); border-color: var(--gold-light); background: rgba(201,150,46,0.08); }
-  .rvw-card.open .rvw-toggle { color: #fff; background: var(--gold-light); border-color: var(--gold-light); }
-  .rvw-card.open .rvw-toggle .chev { transform: rotate(180deg); }
-  .rvw-toggle .chev { display: inline-block; font-style: normal; margin-left: 4px; transition: transform .18s ease; }
-  .rvw-ref {
-    display: inline-block; font-size: 10px; font-weight: 700; line-height: 1;
-    color: var(--gold-light); border: 1px solid rgba(201,150,46,0.55); border-radius: 4px;
-    padding: 1px 4px; margin: 0 3px; vertical-align: 2px; text-decoration: none;
-    transition: all .13s ease; cursor: pointer;
-  }
-  .rvw-ref:hover { color: #fff; background: var(--gold-light); border-color: var(--gold-light); }
-  .rvw-verdict .rvw-ref { color: #8a6320; border-color: rgba(138,99,32,0.45); }
-  .rvw-verdict .rvw-ref:hover { color: #fff; }
-  .note.ref-flash { animation: refFlash 1.8s ease; }
-  @keyframes refFlash {
-    0% { box-shadow: 0 0 0 0 rgba(201,150,46,0); background: rgba(201,150,46,0.22); }
-    30% { box-shadow: 0 0 0 4px rgba(201,150,46,0.28); background: rgba(201,150,46,0.14); }
-    100% { box-shadow: 0 0 0 10px rgba(201,150,46,0); background: rgba(255,255,255,0.6); }
-  }
-  .rvw-tag { font-size: 11px; font-weight: 700; color: #fff; padding: 2px 9px; border-radius: 4px; letter-spacing: 0.08em; white-space: nowrap; }
-  .rvw-card.wk .rvw-tag { background: var(--gold-light, #c99630); }
-  .rvw-card.mo .rvw-tag { background: var(--accent-light); }
-  .rvw-period { font-size: 13.5px; font-weight: 700; color: var(--text-light); }
-  .rvw-at { font-size: 11px; color: var(--muted-light); margin-left: auto; white-space: nowrap; }
-  .rvw-stats { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0 14px; padding-bottom: 13px; border-bottom: 1px dashed var(--border-light); }
-  .rvw-stat { font-size: 11.5px; color: var(--muted-light); background: rgba(47,111,184,0.06); border: 1px solid rgba(47,111,184,0.13); padding: 2px 10px; border-radius: 11px; }
-  .rvw-stat b { color: var(--accent-light); font-weight: 600; }
-  .rvw-body p { font-size: 13px; line-height: 1.85; color: var(--text-light); margin: 0 0 10px; text-align: justify; }
-  .rvw-body p:last-child { margin-bottom: 0; }
-  .rvw-body p .rvw-lead { font-weight: 700; }
-  .rvw-body p.rvw-verdict {
-    background: rgba(201,150,46,0.08); border-left: 3px solid var(--gold-light);
-    border-radius: 6px; padding: 9px 12px; font-weight: 500;
-  }
-  .rvw-body p.rvw-verdict .rvw-lead { color: #8a6320; }
-  .rvw-body .rvw-h { font-size: 13px; font-weight: 700; color: var(--accent-light); margin: 4px 0 8px; letter-spacing: 0.02em; }
-  .rvw-note { font-size: 11px; color: var(--muted-light); margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border-light); line-height: 1.7; }
-  @media (max-width: 980px) { .board-review { grid-template-columns: 1fr; } }
 
   /* 子页面：返回按钮与说明行 */
   .subview .placeholder {
@@ -3170,6 +3116,125 @@
     #view-parties .pt-party { padding: 18px 16px 14px; }
   }
 
+
+  /* ================= 政策条目工作区（左分类树 + 检索条 + 条目表） ================= */
+  .pw-section { padding: 30px 0 72px; }
+  .pw { display: grid; grid-template-columns: 234px minmax(0, 1fr); gap: 20px; align-items: start; }
+
+  /* 左栏 */
+  .pw-side {
+    position: sticky; top: 78px;
+    background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
+    padding: 14px 12px 10px; box-shadow: 0 1px 2px rgba(11, 23, 36, .04);
+  }
+  .pw-side-h { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 2px 6px 10px; border-bottom: 1px solid var(--border-light); }
+  .pw-side-t { font-size: 13px; font-weight: 700; letter-spacing: .04em; color: #16212e; }
+  .pw-side-n { font-family: var(--mono, "SFMono-Regular", Menlo, monospace); font-size: 11px; color: var(--muted); }
+  .pw-tree { margin-top: 10px; max-height: min(56vh, 620px); overflow-y: auto; }
+  .pw-tree-g { font-family: var(--mono, monospace); font-size: 10px; letter-spacing: .16em; color: var(--muted); padding: 12px 8px 6px; }
+  .pw-tree-i {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 8px; width: 100%;
+    text-align: left; background: none; border: 0; border-radius: 8px; padding: 7px 8px;
+    font: inherit; font-size: 12.5px; color: #16212e; cursor: pointer; line-height: 1.5;
+    transition: background-color .16s ease, color .16s ease;
+  }
+  .pw-tree-i span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pw-tree-i b { font-family: var(--mono, monospace); font-weight: 500; font-size: 11px; color: var(--muted); }
+  .pw-tree-i:hover { background: rgba(11, 23, 36, .045); }
+  .pw-tree-i.on { background: rgba(168, 130, 60, .13); color: #6b4a12; font-weight: 600; box-shadow: inset 2px 0 0 var(--gold-light, #a8823c); }
+  .pw-tree-i.on b { color: #6b4a12; }
+  .pw-side-foot { margin-top: 10px; padding: 10px 8px 2px; border-top: 1px dashed var(--border-light); font-size: 11px; line-height: 1.7; color: var(--muted); }
+
+  /* 右栏工具条 */
+  .pw-main { min-width: 0; }
+  .pw-top { background: #fff; border: 1px solid var(--border-light); border-radius: 14px; padding: 14px 16px 12px; box-shadow: 0 1px 2px rgba(11, 23, 36, .04); }
+  .pw-search { display: flex; gap: 10px; }
+  .pw-q {
+    flex: 1; min-width: 0; height: 38px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 0 12px; font: inherit; font-size: 13px; color: #16212e; background: #fff;
+  }
+  .pw-q:focus { outline: none; border-color: var(--accent-light); box-shadow: 0 0 0 3px rgba(47, 111, 184, .12); }
+  .pw-reset {
+    height: 38px; padding: 0 14px; border: 1px solid rgba(11, 23, 36, .16); border-radius: 8px;
+    background: #fff; font: inherit; font-size: 12.5px; color: #16212e; cursor: pointer;
+    transition: background-color .18s ease, border-color .18s ease, color .18s ease;
+  }
+  .pw-reset:hover { background: #16212e; border-color: #16212e; color: #f7f3ea; }
+  .pw-cond { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 12px; }
+  .pw-lab { font-size: 12px; color: #6b7683; }
+  .pw-lab-lead { margin-right: 2px; }
+  .pw-sel {
+    height: 32px; border: 1px solid var(--border); border-radius: 7px; background: #fff;
+    font: inherit; font-size: 12.5px; color: #16212e; padding: 0 8px; cursor: pointer;
+  }
+  .pw-sel.active { border-color: var(--gold-light, #a8823c); background: rgba(168, 130, 60, .07); }
+  .pw-grp { display: inline-flex; align-items: center; gap: 8px; }
+  .pw-selcond {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    margin-top: 12px; padding-top: 11px; border-top: 1px dashed var(--border-light);
+  }
+  .pw-chip {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 12px;
+    background: rgba(168, 130, 60, .12); color: #6b4a12; border-radius: 999px; padding: 3px 10px 3px 11px;
+  }
+  .pw-chip button { border: 0; background: none; color: inherit; cursor: pointer; font-size: 13px; line-height: 1; padding: 0; opacity: .55; }
+  .pw-chip button:hover { opacity: 1; }
+  .pw-clear { border: 0; background: none; color: var(--accent-light); font: inherit; font-size: 12px; cursor: pointer; padding: 0 4px; }
+
+  /* 表格 */
+  .pw-table { margin-top: 14px; background: #fff; border: 1px solid var(--border-light); border-radius: 14px; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 23, 36, .04); }
+  .pw-thead, .pw-r {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr) 98px 166px 88px 124px;
+    gap: 16px; align-items: start;
+  }
+  .pw-thead {
+    padding: 11px 18px; background: #f7f4ee; border-bottom: 1px solid var(--border-light);
+    font-family: var(--mono, monospace); font-size: 10.5px; letter-spacing: .16em; color: var(--muted);
+  }
+  .pw-thead .pw-th-act { text-align: right; }
+
+  /* 条目行：覆盖 .note 的横向 flex 布局 */
+  .pw-item { display: block; padding: 0; border-bottom: 1px solid var(--border-light); }
+  .pw-item:first-child { border-top: 0; }
+  .pw-item:last-child { border-bottom: 0; }
+  .pw-r { padding: 11px 18px; cursor: pointer; transition: background-color .16s ease; }
+  .pw-item:hover .pw-r { background: #faf8f3; }
+  .pw-item.open .pw-r { background: #f7f4ee; }
+
+  .c-date { font-family: var(--mono, monospace); font-size: 11.5px; color: var(--muted); padding-top: 2px; white-space: nowrap; }
+  .c-title .title-main { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; font-weight: 600; line-height: 1.5; color: #16212e; }
+  .c-title .title-cn { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 12px; font-weight: 400; line-height: 1.55; color: #6b7683; margin-top: 3px; }
+  .c-kind span, .c-domain span {
+    display: inline-block; font-size: 11px; line-height: 1.7; padding: 0 7px;
+    border-radius: 4px; background: rgba(11, 23, 36, .055); color: #46525f; white-space: nowrap;
+  }
+  .c-agency { font-size: 12px; line-height: 1.6; color: #46525f; }
+  .c-act { display: flex; gap: 8px; justify-content: flex-end; align-items: center; padding-top: 1px; }
+  .c-act .brief-toggle, .c-act .src-btn { white-space: nowrap; }
+  .pw-item .brief { padding: 4px 18px 18px 18px; border-top: 1px dashed var(--border-light); margin-top: 2px; }
+
+  .pw-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 12px; font-size: 12px; color: #6b7683; }
+  .pw-count b { color: #16212e; }
+
+  /* 1320 以下：侧栏移到顶部，表格吃满宽度（否则标题列会被挤到 200px 以内） */
+  @media (max-width: 1320px) {
+    .pw { grid-template-columns: 1fr; }
+    .pw-side { position: static; }
+    /* 侧栏改为多列排布：机构名与条目数不会被拉到两端 */
+    .pw-tree { max-height: 232px; display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 2px 12px; align-content: start; }
+    .pw-tree-g { grid-column: 1 / -1; }
+  }
+  @media (max-width: 900px) {
+    .pw-thead, .pw-r { grid-template-columns: 84px minmax(0, 1fr) 92px 136px 116px; }
+    .pw-th-dom, .c-domain { display: none; }
+  }
+  @media (max-width: 760px) {
+    .pw-thead { display: none; }
+    .pw-r { grid-template-columns: 1fr; gap: 6px; padding: 13px 14px; }
+    .c-act { justify-content: flex-start; }
+    .c-date { padding-top: 0; }
+  }
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
 
@@ -4962,45 +5027,72 @@
         <p class="subdesc" id="board-desc" data-page-node-id="rcHT8k5NzcUaOi3Q510hO5">总统行政令、总统备忘录、公告;总统行政办公室（EOP）各组成机构——管理与预算办公室（OMB）、美国贸易代表办公室（USTR）、科技政策办公室（OSTP）等——发布的文件;以及内阁各部（国防部、财政部、商务部、国土安全部等）发布的规则与拟议规则，国防部另收录剔除程序性文件后的通告（部委通告类程序文件不收录）。来源：联邦公报（Federal Register）官方数据,每日自动更新。</p>
       </div>
     </div>
-    <section class="section" style="padding-top: 40px;" data-page-node-id="FWW3PPr6TLqb8EbKzEZnoz">
-      <div class="wrap" data-page-node-id="wvTJJl5v7fTgvRDErwIq2W">
-        <!-- 周期研判：每周（周六更新）/ 每月（次月 1 日更新）政策总览 -->
-        <div class="col-head" id="review-head" data-page-node-id="9IFvmTMxkA6LG0aGAWqDwn"><span class="ch-cn" data-page-node-id="YWQyUzbvzZqNBKQMUnUwv9">政策归纳</span><span class="ch-en" data-page-node-id="np3Gbj1n1y1xM8ViQEohuE">Policy Digest</span></div>
-        <div id="board-review" class="board-review" data-page-node-id="Hys9SceSTNvRIGmzXmvtPh"></div>
-        <!-- 筛选栏：时间 / 部门 / 类型 / 领域 / 搜索 -->
-        <div class="col-head" data-page-node-id="sosnyuGwtkPEmqP9dpgK5x"><span class="ch-cn" data-page-node-id="NnBezQkDlyPaUsLiPdK0ET">政策条目</span><span class="ch-en" data-page-node-id="6KAYPfTRPmyywLBrKiDMw2">Policy Tracker</span>
+    <section class="section pw-section" data-page-node-id="FWW3PPr6TLqb8EbKzEZnoz">
+      <div class="wrap pw" data-page-node-id="wvTJJl5v7fTgvRDErwIq2W">
+
+        <!-- 左栏：分类树（按机构 / 类型分组，条目数实时统计） -->
+        <aside class="pw-side">
+          <div class="pw-side-h">
+            <span class="pw-side-t" id="pw-tree-title">分类</span>
+            <span class="pw-side-n" id="pw-tree-n"></span>
+          </div>
+          <nav class="pw-tree" id="pw-tree" aria-label="按分类筛选"></nav>
+          <div class="pw-side-foot">
+            <span>条目按发布时间倒序归档，每日增量更新</span>
+          </div>
+        </aside>
+
+        <!-- 右栏：检索条 → 筛选条件 → 已选条件 → 表格 → 分页 -->
+        <div class="pw-main">
+          <div class="pw-top">
+            <div class="pw-search">
+              <input type="search" id="filter-q" class="pw-q" placeholder="请输入标题、机构、领域或文号关键词" autocomplete="off" aria-label="搜索条目">
+              <button type="button" class="pw-reset" id="filter-reset" title="清除全部筛选条件">恢复默认</button>
+            </div>
+            <div class="pw-cond">
+              <span class="pw-lab pw-lab-lead">筛选条件</span>
+              <span class="pw-grp"><span class="pw-lab">时间</span>
+                <select class="pw-sel" id="filter-time" aria-label="时间范围">
+                  <option value="all">全部</option>
+                  <option value="7">近 7 天</option>
+                  <option value="30">近 30 天</option>
+                </select>
+              </span>
+              <span class="pw-grp"><span class="pw-lab">类型</span>
+                <select class="pw-sel" id="filter-kind" aria-label="文件类型"></select>
+              </span>
+              <span class="pw-grp"><span class="pw-lab">领域</span>
+                <select class="pw-sel" id="filter-domain" aria-label="领域"></select>
+              </span>
+              <span class="pw-grp" id="filter-agency-group">
+                <span class="pw-lab" id="filter-agency-label">部门</span>
+                <select class="pw-sel" id="filter-agency" aria-label="按机构筛选"></select>
+              </span>
+            </div>
+            <div class="pw-selcond" id="pw-selected" hidden></div>
+          </div>
+
+          <div class="pw-table">
+            <div class="pw-thead">
+              <span>日期</span>
+              <span>标题</span>
+              <span>类型</span>
+              <span id="pw-th-agency">部门 / 机构</span>
+              <span class="pw-th-dom">领域</span>
+              <span class="pw-th-act">操作</span>
+            </div>
+            <div id="board-list" class="pw-tbody" data-page-node-id="wWPtcuwaAjr5KaIxMgFhCF"></div>
+          </div>
+
+          <p class="placeholder" id="board-empty" hidden="" data-page-node-id="3eloM1xB6Z6r1bRTMELPsU">暂无条目，等待首次定时抓取更新（每日）。</p>
+
+          <div class="pw-foot">
+            <span class="pw-count" id="filter-count" data-page-node-id="CHVFwITbStAHxi1hOIDUL3"></span>
+            <span class="pw-updated" id="board-updated" data-page-node-id="zxVouaBfprDSsUqoBUiNK8"></span>
+          </div>
+
+          <div class="board-pager" id="board-pager" hidden=""></div>
         </div>
-        <div class="filter-bar" id="filter-bar" data-page-node-id="F4AgDMbOGGfeED7g83za1Y">
-          <div class="filter-group" data-page-node-id="u6PeR4lS7CNoLfG8hrkT4C">
-            <span class="filter-label" data-page-node-id="bGzUSHnfMX3XaRLcgmN2TV">时间</span>
-            <select class="filter-select" id="filter-time" data-page-node-id="kPOZbQYJVzEjOMakeM9b3u">
-              <option value="all" data-page-node-id="6PKCI4Do729SbOmALR8NQ5">全部</option>
-              <option value="7" data-page-node-id="m9xrX7qnpFiiFWAmHITNM5">近 7 天</option>
-              <option value="30" data-page-node-id="NuEGplwEDoH4QeIZu182Dd">近 30 天</option>
-            </select>
-          </div>
-          <div class="filter-group" id="filter-agency-group" data-page-node-id="I9D1m8k5quVtBOiNPCzrcu">
-            <span class="filter-label" id="filter-agency-label" data-page-node-id="5PCm5EoL8b9eTsBbpnGIYx">部门</span>
-            <select class="filter-select" id="filter-agency" data-page-node-id="qxeYevdgdAJOVGICBnsUuj"><option value="all" data-page-node-id="zlQI2cx49AoPejuBjV2Eth">全部</option><optgroup label="内阁各部"><option value="国务院">国务院</option><option value="财政部" data-page-node-id="dGxMy7luar9AXpdl2RGSa7">财政部</option><option value="国防部" data-page-node-id="iKZVJdhXiva86DTwuDNIn6">国防部</option><option value="司法部" data-page-node-id="Xvu5pIvM4biR3sakUaRXwH">司法部</option><option value="内政部" data-page-node-id="arrffdZcxrYdDHFjxSKR8Y">内政部</option><option value="农业部" data-page-node-id="HalecIIjZL7LQcCjaBWhPe">农业部</option><option value="商务部" data-page-node-id="KZfbGZMg2weWqz1VooG2JM">商务部</option><option value="劳工部" data-page-node-id="ksGS0J5L0IARQl3PJbX45m">劳工部</option><option value="卫生与公众服务部" data-page-node-id="MA9Q0zOGvyLBhnJGLg9my2">卫生与公众服务部</option><option value="住房与城市发展部">住房与城市发展部</option><option value="交通部" data-page-node-id="cUdo7QZRKyZtVfy4eqsbxl">交通部</option><option value="能源部" data-page-node-id="ybWhWSwKMoZ1p4ebJ0MWwT">能源部</option><option value="教育部">教育部</option><option value="退伍军人事务部">退伍军人事务部</option><option value="国土安全部" data-page-node-id="DlCtWHwu1Du24BSZJSPBDt">国土安全部</option></optgroup><optgroup label="白宫 / 总统行政办公室"><option value="美国总统行政办公室" data-page-node-id="4ebdFX9dw0XwMVrwmWO6Zx">美国总统行政办公室</option><option value="管理与预算办公室 OMB" data-page-node-id="aGRaa7n20arD2FgDlNMvVo">管理与预算办公室 OMB</option><option value="美国贸易代表办公室 USTR" data-page-node-id="xOcjS3VDg7P21yvCzWkp9J">美国贸易代表办公室 USTR</option><option value="科技政策办公室 OSTP">科技政策办公室 OSTP</option></optgroup></select>
-          </div>
-          <div class="filter-group" data-page-node-id="whka0K65tsMdOMejzZq3V8">
-            <span class="filter-label" data-page-node-id="Jh3FE0yZrv7WiTBOxT6BsA">类型</span>
-            <select class="filter-select" id="filter-kind" data-page-node-id="ze8WcO0AkUOFlr6AmcZD5e"><option value="all" data-page-node-id="MrLM14oEeVYL1sCT1LdMIc">全部</option><option value="通告" data-page-node-id="EMGBoEdkaskmGdHSGDix66">通告</option><option value="拟议规则" data-page-node-id="jpXin836RBMsd7fCqBUoBH">拟议规则</option><option value="规则" data-page-node-id="mKvZq3ouZX0Cux34JZ4EVt">规则</option><option value="行政令" data-page-node-id="U7mtg3H8XDW08UUzyyXqdu">行政令</option><option value="总统备忘录" data-page-node-id="1tfJegIV31bQqpZFnt3mo2">总统备忘录</option><option value="公告" data-page-node-id="V40vNiqCpFoRTb9P1x0e6M">公告</option></select>
-          </div>
-          <div class="filter-group" data-page-node-id="PCWow6xaDE09I7lVZA6fX6">
-            <span class="filter-label" data-page-node-id="rAVPwUEvty6cWbeuADjUK8">领域</span>
-            <select class="filter-select" id="filter-domain" data-page-node-id="KJEOKdpoyyPCpZuoh10vn9"><option value="all" data-page-node-id="AsazgJkGZd3WvWZuAAiBQ8">全部</option><option value="科技/AI" data-page-node-id="tXQP6FyJxbFKCW6zKT1K51">科技/AI</option><option value="贸易/关税" data-page-node-id="oBCsaKYEeo8cf56Gknldl5">贸易/关税</option><option value="能源/环境" data-page-node-id="ubZ41GIpUoN1xEDTIAL7Vh">能源/环境</option><option value="医疗/医药" data-page-node-id="J3fZaiv0UpBVJ5bdvr1nHx">医疗/医药</option><option value="国防/安全" data-page-node-id="CCx8OPSGd3enXuKcVoMOjU">国防/安全</option><option value="财政/税收" data-page-node-id="SjlTH8952rHJxsjMQNOAnF">财政/税收</option><option value="金融/保险" data-page-node-id="eWEWd1QSA7bEtreHGcBmn2">金融/保险</option><option value="农业/食品" data-page-node-id="YhQv3qXRKKGFnxlLZTZxPx">农业/食品</option><option value="教育/劳动" data-page-node-id="mZkTC4GekxXgJUqPrp0bqn">教育/劳动</option><option value="住房" data-page-node-id="WeIUG6g7zlb6MtQXwYlDoJ">住房</option><option value="交通" data-page-node-id="omTiGgCGBuFa6Y3zZNqZ3a">交通</option><option value="司法/执法" data-page-node-id="FidFDDgH9CfDGF27pFvxff">司法/执法</option><option value="社会保障" data-page-node-id="9GQix5K6omGGBaPybhMy5V">社会保障</option><option value="政府运作" data-page-node-id="vW4c1ZMaGMcx4mhKz9B1lG">政府运作</option></select>
-          </div>
-          <div class="filter-group filter-search" data-page-node-id="KBZdmttoviarbJOVUsJCuP">
-            <input type="search" id="filter-q" class="filter-input" placeholder="搜索标题 / 领域 / 机构…" autocomplete="off" data-page-node-id="cbuIfNi61XfgY3OFJBblrP">
-            <button type="button" class="filter-reset" id="filter-reset" data-page-node-id="yGD4wxEqp8TTp4wIc5zg9V">重置筛选</button>
-          </div>
-        </div>
-        <p class="placeholder" id="filter-count" data-page-node-id="CHVFwITbStAHxi1hOIDUL3">共 150 条</p>
-        <div id="board-list" data-page-node-id="wWPtcuwaAjr5KaIxMgFhCF"><div class="note has-brief" id="note-0" data-idx="0" data-page-node-id="1qdIwvjeUjnXOcCnhItzl2"><span class="t" data-page-node-id="OUG9PjvPNl6DpSn5GptFBC"><span class="title-main" data-page-node-id="n9P8ZgcsFJ4HQtw3FB0m1X">Request for Comments on Further Suspension of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance</span><span class="title-cn" data-page-node-id="FXdgpo0jpE3Za9gGTfLIQ4">就进一步暂停301条款行动征求意见：中国针对海运、物流与造船业谋求主导地位（通告）</span></span><span class="m" data-page-node-id="iYJvBgvzAmmSrz5tQof8vG"><span class="kind" data-page-node-id="y4uxvCWC56JDU35Cj7YNmW">通告</span><span class="agcy" data-page-node-id="b6o752fop7ydrgNoiCAvva">美国贸易代表办公室 USTR</span><span class="dom" data-page-node-id="U1SXww2I2y0zHFy83SS5c5">贸易/关税</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="jrMx33AKAnxlI0WUcsCYsJ"><span data-page-node-id="bdTUlKMZIWrisA8IEDGVns">简报</span><i class="chev" data-page-node-id="nHDvAEkWlyftWaj9pYqypY">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime" target="_blank" rel="noopener" data-page-node-id="ICv8WbO9pA5tCJbHsuK6MW"><span data-page-node-id="jqqlZEf4hfC66CPAVnDkgC">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="VOi8hUFVg27gSwNpfMpzl7"><div class="brief-head" data-page-node-id="N3yQJVOhREbBHzGO6BKE7I"><span class="brief-tag" data-page-node-id="5ufZyXQwMNXWjzhv63VoCS">政策简报</span><span class="brief-at" data-page-node-id="nChL0eKuIcS9nyKImRRFBS">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime" target="_blank" rel="noopener" data-page-node-id="TsGcirBg8SBEOYwILv6b3r"><span data-page-node-id="CXPgV7LfuG5zZLTqPeVGYR">原文</span> ↗</a></div><div class="brief-h" data-page-node-id="2OdG3Okpnf5cGqYBTWTmaw">【政策背景】</div><p data-page-node-id="tHU57As1N8EIRbB8AHmOKe">本案源于美国贸易代表办公室（USTR）依据《1974年贸易法》第301条就中国针对海运、物流与造船业谋求主导地位的行为、政策与做法所发起的调查。该调查项下的行动此前已进入暂停状态。USTR在2026年10月26日的联邦公报通告中提出，为就本案所涉问题与中国进一步谈判，拟修改本案行动，将其再暂停两个月，至2027年1月9日。</p><div class="brief-h" data-page-node-id="H184IHRGOr86EIf89e7Xe8">【核心内容】</div><p data-page-node-id="Rf29AZkdQ8lh0SCPjitBaA">通告的核心是就上述拟议修改公开征求意见：一是暂停的性质为"进一步暂停"，即在既有暂停安排基础上顺延，而非撤销301行动；二是暂停期限明确为两个月，截止2027年1月9日；三是暂停目的指向为中美之间围绕本案所涉行为、政策与做法的进一步谈判留出空间；四是USTR邀请利害关系方就拟议修改提交意见，意味着最终决定是否顺延、顺延条件如何，仍留有博弈与听证程序空间。</p><div class="brief-h" data-page-node-id="gmsArN3x4RbB7Sd7eP7wdZ">【要点提炼】</div><p data-page-node-id="n5Nc8uoAKoa3S2DN1osUrH">一、这是程序性而非实体性动作：行动本身未被撤销，暂停到期后是否恢复、修改或继续延长，取决于谈判进展与评议结果。</p><p data-page-node-id="dFzjf9lixAJN8vTjRem3o5">二、两个月的时间窗口较短，说明双方谈判处于滚动推进状态，301造船案仍是中美经贸谈判桌上的活议题。</p><p data-page-node-id="O1NsyhVZoUe7m5NdUAzgUx">三、征求意见程序为美国国内产业界（航运、造船、港口、进口商）与中方相关方提供了正式的表达渠道，评议内容本身将成为观察美方内部利益博弈的窗口。</p><p data-page-node-id="4tNvry0DucZuwkp1JZBJAM">四、悬置未决的301行动构成一种"期权式"威慑：即使暂停，其存在本身继续影响市场对中美经贸摩擦走向的预期。</p><div class="brief-h" data-page-node-id="Wju3IoJmcNjvL5dxm1ATaY">【对金融市场的预期影响】</div><p class="brief-verdict" data-page-node-id="chFALRIpLBPcptkZz5n97v"><span class="brief-lead" data-page-node-id="A5ljqW6OxqWfP6TDbYJP2l">总体判断：</span>对中美贸易敏感资产构成温和的情绪面利好，方向为正、幅度有限、时效集中于2027年1月9日到期前后，属程序性事件而非定价事件。</p><p data-page-node-id="puZmQZQh15mYkijW4CkRip"><span class="brief-lead" data-page-node-id="NHdLQy17zKLe7SRNnIaAcB">受益方向：</span>航运、港口、造船及跨境物流板块的情绪面压力暂缓，涉及中美航线的运费与港口费预期边际改善；对华敞口较高的出口链与进口分销商亦可获得短暂喘息。</p><p data-page-node-id="APVqs0444FnHfuEUTwi8rV"><span class="brief-lead" data-page-node-id="bQriGAhyPKwRYiWM1GfM3T">风险提示：</span>暂停不等于撤销。若两个月内谈判无实质进展，301行动存在恢复或加码的可能，相关板块的情绪改善随时可能回吐。</p><p data-page-node-id="INOTTHBf7corcxrlDJ5I6B"><span class="brief-lead" data-page-node-id="wb707I4uFDdacC280VIjgn">信号意义：</span>此举表明美方在造船业301案上倾向以谈判换时间，与对华经贸接触的整体节奏一致，可作为观察中美经贸磋商氛围的辅助指标。</p><p data-page-node-id="uIPd5oqczjQaj3SytYW44l"><span class="brief-lead" data-page-node-id="E6YTrXGcxcBXMyBGEqgM0M">观察节点：</span>一是本通告的征求意见截止日及评议要点；二是2027年1月9日到期前后USTR的正式决定；三是其间中美经贸高层接触是否释放与该调查相关的安排。</p></div></div><div class="note has-brief" id="note-1" data-idx="1" data-page-node-id="jP217uqkvhYD99mtYeFdyj"><span class="t" data-page-node-id="YempvMGIsvQaJbicJ6kvny"><span class="title-main" data-page-node-id="7kgOC7EcmQ95xUmK3OEwrA">Outbound Investment Security Program Regulations</span><span class="title-cn" data-page-node-id="evaDo6dCL2CrcZp1m2bR9l">对外投资安全计划条例（拟议规则）</span></span><span class="m" data-page-node-id="aohgXBbk07h7A6cKXAbwKk"><span class="kind" data-page-node-id="iVpeOcNFB3poHED1g1pAG5">拟议规则</span><span class="agcy" data-page-node-id="TmFC1LEQuqdF8KSSnaYXkc">财政部</span><span class="dom" data-page-node-id="JjnDcK7X3Ld1kdTo4SE4IH">国防/安全</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="BnC45HWA7hICZGWmrfetDh"><span data-page-node-id="GmaUQ70ePj5zwpaBveBUOB">简报</span><i class="chev" data-page-node-id="Ur5PKQKaSzRyvjVOaL1HY9">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations" target="_blank" rel="noopener" data-page-node-id="CzIfAgkDCMMqU51CpAFo7S"><span data-page-node-id="DGFv0fS2HmhC0aLN8L4mTl">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="f08OL2DptzcUT9MlxCbO5B"><div class="brief-head" data-page-node-id="wGHISjN1imDlNAgziI5y2b"><span class="brief-tag" data-page-node-id="cxGzXEFlswxJJo9wArZC6P">政策简报</span><span class="brief-at" data-page-node-id="widoeOtvJwvcBEOGpQYvxA">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations" target="_blank" rel="noopener" data-page-node-id="xgs6xSiBZyHlq0DqaKdAkN"><span data-page-node-id="U5C22Tph8BSbckOhU36dGc">原文</span> ↗</a></div><div class="brief-h" data-page-node-id="fcc9G7xC3zB0KH1VALV2jh">【政策背景】</div><p data-page-node-id="u59DvVPcDEnqt4hwZKpFLl">美国财政部于2026年10月26日发布拟议规则，就落实《综合对外投资国家安全法》C编制定实施细则。该法已编纂为《国防生产法》第八编，标志着美国对外投资审查机制从行政令框架上升为成文法框架。现行对外投资安全计划（Outbound Investment Security Program）已依据既有法规运行，本次拟议规则是在成文法授权基础上对该计划的制度化重构。</p><div class="brief-h" data-page-node-id="kJtrJRQqQkQ6mJFN2ulEji">【核心内容】</div><p data-page-node-id="jiPr5QAZiEerWnhWPbmZrw"><span class="brief-lead" data-page-node-id="z46C8C5F96MLUsoe0tx5EO">拟议规则包含四方面安排：</span>一是申报义务，要求美国主体就涉及从事"须申报技术"（notifiable technologies）的外国主体的特定交易向财政部申报；二是禁止条款，禁止美国主体从事涉及从事"被禁止技术"（prohibited technologies）的外国主体的特定交易；三是制度衔接，在与《国防生产法》第八编一致的前提下，沿用现行对外投资安全计划法规中的若干定义与概念，保持监管连续性；四是适用日期安排，为法规增设适用日期条款，使相关规定继续适用于相应时间窗口内发生的活动，确保新旧规则过渡期间不出现监管真空。</p><div class="brief-h" data-page-node-id="f8CfrvV1O2k1p7cPMFWqkf">【要点提炼】</div><p data-page-node-id="CTj0PQGy81xMdCk5x928PQ">一、立法层级提升：对外投资审查从行政工具变为法定制度，未来政府更迭亦难以轻易撤回，制度的长期性与刚性显著增强。</p><p data-page-node-id="xc4svo4N4WF0PxHEgbXSrH">二、"申报加禁止"双层结构延续现行框架，覆盖对象仍是从事特定敏感技术的外国主体所涉交易，美国主体的合规义务进一步明确。</p><p data-page-node-id="rObZPOamLtB0mt3PEkB12s">三、沿用现行定义与概念意味着市场已积累的合规经验大体可迁移，规则突变风险较低，但最终文本仍可能调整技术范围与交易类型的边界。</p><p data-page-node-id="M7K7YXwdnQLvDdYzpGeo4E">四、适用日期条款体现财政部对过渡期执法连续性的重视，存量交易与历史活动的合规责任不会因规则切换而豁免。</p><div class="brief-h" data-page-node-id="Satsy54ibp1GWpBETxfy8S">【对金融市场的预期影响】</div><p class="brief-verdict" data-page-node-id="nqmSNO3GhS4YZISI2Hm4Xq"><span class="brief-lead" data-page-node-id="4bO3NJtA5cCGxhPR6GViuf">总体判断：</span>对涉华敏感技术跨境投资构成中长期收紧信号，方向偏紧、幅度取决于最终规则的技术清单与交易范围，时效以规则落地节奏为准。</p><p data-page-node-id="n5MB94pcVs4hHFtVQ86aBf"><span class="brief-lead" data-page-node-id="F4HpgYPtRW6B65WWiHCAXF">承压方向：</span>美元基金、私募股权与风险投资对涉及须申报或被禁止技术的境外项目的投资意愿与交易速度将受抑制，相关项目的跨境融资难度上升；跨境并购与合资金融服务的合规成本抬升。</p><p data-page-node-id="PtIzOctHADeSkt8lqhpLtf"><span class="brief-lead" data-page-node-id="ydWulutYNqo4p06aVmXb84">受益方向：</span>监管科技、出口管制与制裁合规服务、跨境法律与咨询业务的需求将获得制度性支撑。</p><p data-page-node-id="2iS5xdUubJTvXmuQhtBT7V"><span class="brief-lead" data-page-node-id="OG8Wnp35KUjRMjojt1zwy9">关键前提：</span>最终影响取决于"须申报技术"与"被禁止技术"两份清单的边界，拟议规则阶段的清单表述是核心跟踪变量。</p><p data-page-node-id="QcviTyKAwABH4Up5IkpT90"><span class="brief-lead" data-page-node-id="Qa6WCzzRz77AHb8FZMGFEe">观察节点：</span>一是征求意见期内美国金融业与产业界对技术清单与交易豁免的反馈；二是最终规则发布时间及生效日期；三是与盟友类似对外投资审查机制的协调动向。</p></div></div><div class="note has-brief" id="note-2" data-idx="2" data-page-node-id="a19qsV86PEzqHnjaDeozko"><span class="t" data-page-node-id="FMkVT2U4e7Pue0SQMnq7CU"><span class="title-main" data-page-node-id="eXwTZHLCRsRVTRMbzHKHDm">Performance Review Board Membership</span><span class="title-cn" data-page-node-id="bZWA38NfAROoFJ7kYQKY9O">绩效评审委员会成员名单（通告）</span></span><span class="m" data-page-node-id="yb9biWaE18wBNI02RCAONu"><span class="kind" data-page-node-id="3wiHJZbaIU6d6jp12GbKM5">通告</span><span class="agcy" data-page-node-id="utVbyYWSVytabWXk5pkFyg">国防部</span><span class="dom" data-page-node-id="e9fKQlCO9rvvAbaFHEIQWC">政府运作</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="N4IEcNXxXUvBoVkj2lTa2O"><span data-page-node-id="HWjDGGcDMYHUZa8d3nVDnR">简报</span><i class="chev" data-page-node-id="jP5u9LkUwRJlwECQ9av8kR">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21777/performance-review-board-membership" target="_blank" rel="noopener" data-page-node-id="bd1JwtwVc1qImpSpS7HQd8"><span data-page-node-id="KKWJyz4pEjl4dK5IZa4Doi">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="AZlyiD53KUxsFHiQBS9Mg6"><div class="brief-head" data-page-node-id="mD0yGGGUzjUTD3eAXV5Vyb"><span class="brief-tag" data-page-node-id="lgCVZV7huu2Sk4fSEpme2a">政策速览</span><span class="brief-at" data-page-node-id="uvRx1muTHKpLtXF8ZkyDmi">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21777/performance-review-board-membership" target="_blank" rel="noopener" data-page-node-id="CNyziTWx9EfsVADHdZq40m"><span data-page-node-id="Gcv10e1uxSWIV1OUYIMQbR">原文</span> ↗</a></div><p data-page-node-id="TFrTAHVREwCoM3QpVwibb7">国防部发布通告，公布陆军部绩效评审委员会（Performance Review Board）成员名单。</p><p data-page-node-id="Dd9E4GyEmYB7pkxHloWdPy">绩效评审委员会是高级行政体系（SES）绩效管理的常设机制，负责审议高级文官的绩效评级与绩效奖金建议，成员构成属人事安排事项。</p><p data-page-node-id="snGCouNDP9QDX0QR0z0WLl">本次公告仅列明成员姓名，不涉及政策变更、组织架构调整或支出授权，无评论期，不产生规章效力。</p><p data-page-node-id="wF6Ul90LZWL5mILbTPjtIU"><span class="brief-lead" data-page-node-id="DGPuoIMG2bo0L7nKRBtQVG">对市场意味着什么：</span>无直接定价影响。此类人事类通告不含采购、许可或监管义务变化，任何板块均不因此调整盈利预期；仅可作为观察国防部高层人事稳定性的边缘信号，观察节点为委员会成员变动是否与陆军部采购或项目管理层调整同步。</p></div></div><div class="note has-brief" id="note-3" data-idx="3" data-page-node-id="Hvie0ltqvyvGkonrLIdgry"><span class="t" data-page-node-id="tkri2FwLa6L1PFp82XdDKW"><span class="title-main" data-page-node-id="dzDnH6w1M3HDCLQrcChrHq">Wyoming Regulatory Program</span><span class="title-cn" data-page-node-id="llLAmAl6I2pQmleMxlfJwX">怀俄明州露天采矿监管计划（规则）</span></span><span class="m" data-page-node-id="GsH1HkKpEa8Webq08rDSgb"><span class="kind" data-page-node-id="GvWva9VnJCOwxjPUCqEAlQ">规则</span><span class="agcy" data-page-node-id="LBvEpzSnGF4CgP5iKQ9qog">内政部</span><span class="dom" data-page-node-id="tKyRp9kQlA4TffvTsQqlGL">能源/环境</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="wJ6SGpRRYqhOha6KL0al7K"><span data-page-node-id="Iw3tz4yvEVF1fPupF23V3k">简报</span><i class="chev" data-page-node-id="Vb8Fk5t5VGUrZFV5jXEyN2">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21835/wyoming-regulatory-program" target="_blank" rel="noopener" data-page-node-id="qfZVbKrBAchfIFBLsaBafX"><span data-page-node-id="SBn6daXologZKRYAPXaWX0">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="099gVo0klQKhb2jOScomgD"><div class="brief-head" data-page-node-id="9KAjsvnhjiA2Ix2o0ClEIa"><span class="brief-tag" data-page-node-id="vCFdOqELCMfCxBHoNhV8Ld">政策简报</span><span class="brief-at" data-page-node-id="nzXbXsU1CtFwtPcuuCFDIR">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21835/wyoming-regulatory-program" target="_blank" rel="noopener" data-page-node-id="KX8GCnEz9B0wGO5nH2qKbh"><span data-page-node-id="TzGhWFnlFHG0hsChqACQ8Q">原文</span> ↗</a></div><div class="brief-h" data-page-node-id="kDT2tZd4H2KY77yQ4mvQ4B">【政策背景】</div><p data-page-node-id="MJLFSuPlH9vac6LBY3Udp9">《1977年露天采矿控制与复垦法》（Surface Mining Control and Reclamation Act, SMCRA）确立了联邦与州分工的煤矿开采监管框架：联邦政府制定最低标准，州可在其监管计划获批准后取得首要管辖权（primacy），但该计划须始终“不低于”联邦标准，且任何修订都须经内政部露天采矿复垦与执法办公室（OSMRE）审批。怀俄明州是美国最大的产煤州，其土地质量处（WLQD）承担州内露天与地下煤矿的日常监管职能。2024 年 1 月 19 日，OSM 部分批准了 WLQD 关于煤层钻探勘探的规则修订（SATS No. WY-050-FOR，Docket ID No. OSM-2021-0004），并在该终局规则“OSM 未予批准的怀俄明州规则修订”标题下，列出若干含有印刷错误的条款，明确要求 WLQD 通过后续规则制定予以更正。本次修订（SATS No. WY-055-FOR，Docket ID No. OSM-2025-0002）即是 WLQD 针对这批印刷错误提交的更正方案。</p><div class="brief-h" data-page-node-id="OrFGn0slj4rRCHG4kVQqjw">【核心内容】</div><p data-page-node-id="wqvkLKCnjISi6CFGZYwoFY">OSM 批准怀俄明州监管计划的本次修订。修订内容严格限于对前述印刷错误条款的技术性更正，不涉及监管标准的放宽或收紧，也不新增、删除或改写在许可审批、现场检查、土地复垦与复垦保证金方面的实质义务。怀俄明州的 primacy 地位、联邦监督关系以及现行许可体系均维持不变。从规章生命周期看，本次批准属于州计划修订流程中的收尾动作，其功能是让州规则文本与其此前已被批准的实质内容保持一致。</p><div class="brief-h" data-page-node-id="tbSRs5KGIS0PeD6QIDXUOx">【要点提炼】</div><p data-page-node-id="H9fnmkaBDYAStxI55K80NW">1. 修订性质为技术性更正，来源可直接追溯至 2024 年部分批准决定中列出的印刷错误清单，属前序程序的延续。</p><p data-page-node-id="wBSaHnOwKAZpZ0PCcsfdeK">2. 不涉及任何标准调整：复垦技术要求、保证金制度、许可条件、检查频次均不在本次修订范围内。</p><p data-page-node-id="L3RmbyjPJzxBhvrFkExGJF">3. 程序上属州计划修订的常规审批，不改变公众参与安排，也不设新增合规过渡期。</p><p data-page-node-id="UoFm2EkwLeDzJbsrrwQLly">4. 怀俄明州作为最大产煤州的监管框架连续性得到维持，消除了规则文本与批准决定之间的不一致。</p><p data-page-node-id="ySKJ6GDY23bwVTSo02tQMK">5. 该事项印证了州计划修订的“增量式”特点：多数修订内容琐碎，真正具备财务含义的修订需单独识别。</p><div class="brief-h" data-page-node-id="T1f7QT0g8fw2bQQ2Jh7Lqs">【对金融市场的预期影响】</div><p class="brief-verdict" data-page-node-id="BzqVPP0nHvJijgYE5zT0BH"><span class="brief-lead" data-page-node-id="GWC5PbczbHHbY8BOSQDPrw">总体判断：</span>对煤炭、电力及相关设备板块无定价影响，属监管框架的技术性维护，不改变产量、单位成本或负债口径，投资者无需据此调整任何板块的盈利预测。</p><p data-page-node-id="599FODFjDHC9ChqILFEPGH"><span class="brief-lead" data-page-node-id="vjComX2DXP1fXaFEE2tdoM">关键前提：</span>上述判断成立的前提是本次修订确如官方摘要所述仅涵盖印刷错误更正，未夹带实质条款变更；若州规则文本中包含超出该范围的内容，需重新评估。</p><p data-page-node-id="KEJxr18N9FA7rZ2F0BHpKa"><span class="brief-lead" data-page-node-id="ZcwEKMyxGfDchaXFx0u2Nz">受益方向：</span>无明确受益标的。若必须指出，规则文本清晰度的提升对煤炭企业的合规与法务部门属边际利好，可小幅降低规则解释成本，但不进入财务报表可观测的量级。</p><p data-page-node-id="I8lH2jyX9UVmO5nYCAO9DD"><span class="brief-lead" data-page-node-id="CGwiliwnRSmk8J4Wvib2Dl">承压方向：</span>无承压标的。本次修订未新增任何检查、报告或保证金义务，不构成成本端的增量负担。</p><p data-page-node-id="QhDxkQ3B8t5eBquHVzt4Bv"><span class="brief-lead" data-page-node-id="E1ZYdx1kuZ18JIV3eZBHJg">风险提示：</span>真正需要警惕的是州计划修订触及复垦保证金机制，特别是 self-bonding（自我担保）的资格与财务测试条款。一旦该类条款收紧，煤炭企业将被迫改用第三方担保、信托或现金抵押覆盖复垦义务，直接占用营运资金并抬高财务费用。本次修订明确不含此类内容，但这是后续所有类似修订的必查项。</p><p data-page-node-id="KUDDMElbEq471o2lWKtGxN"><span class="brief-lead" data-page-node-id="Glag4yZGKDUns4kfanLWOM">信号意义：</span>本次批准显示 OSM 与怀俄明州之间的州计划修订通道运行正常，联邦与州层面未出现监管摩擦，对判断美国煤炭主产区监管环境的稳定性具有中性偏正面的参考。</p><p data-page-node-id="5s70H6qUmaICUCMeDE6cKj"><span class="brief-lead" data-page-node-id="Yi04PByeI2Jof7ER27UU9u">观察节点：</span>一是怀俄明州后续提交的规则修订（SATS 编号序列）是否触及保证金或复垦标准；二是 OSM 对怀俄明州计划的年度监督评估结论；三是主要煤炭生产企业在年报中资产退役义务（ARO）与担保工具结构的披露变化。</p></div></div><div class="note has-brief" id="note-4" data-idx="4" data-page-node-id="tlf0jRezwRX0nIjWkyTzLO"><span class="t" data-page-node-id="dZ6tdnQmZrTMW4ghZtHCNj"><span class="title-main" data-page-node-id="EaJonokbCJWr0VRMRFsEoY">Ohio Regulatory Program</span><span class="title-cn" data-page-node-id="oSeMWy5GIB6mpcApOxn2nR">俄亥俄州露天采矿监管计划（规则）</span></span><span class="m" data-page-node-id="ZeJdCu2Z4rM8BnJDSC9l1D"><span class="kind" data-page-node-id="RzuFFe7Opros5RitLMMNfb">规则</span><span class="agcy" data-page-node-id="0gYiAHjmDQxRynPflwkoKw">内政部</span><span class="dom" data-page-node-id="laZZEBNcqV67OmotHZJLLs">能源/环境</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="vFpWKiKVAfD0dr9100Du7z"><span data-page-node-id="e1GDvyEyA5BICgup2Zcvyy">简报</span><i class="chev" data-page-node-id="zoymDTwAm2OXejgzTOAbVB">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21807/ohio-regulatory-program" target="_blank" rel="noopener" data-page-node-id="Evrpidzjpp3DnfhEhhhj5K"><span data-page-node-id="4Ktsj9kaWPdDncvvOkxAdN">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="OtyeMxbivARsWWj2kdAoe8"><div class="brief-head" data-page-node-id="iNVTP0e5vqHTmxvsxr8Bne"><span class="brief-tag" data-page-node-id="xHXoP5wmtFJPYe84q7ij8Y">政策简报</span><span class="brief-at" data-page-node-id="666MYbQ2uIjlzvd4vHnR5W">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21807/ohio-regulatory-program" target="_blank" rel="noopener" data-page-node-id="Op1KjuTI4G4xNmnikrYALD"><span data-page-node-id="1x7qTnftSuG6BmlB7siRdh">原文</span> ↗</a></div><div class="brief-h" data-page-node-id="uDNMAMspnJFlQ9J3l5CzB8">【政策背景】</div><p data-page-node-id="3CPKI2Y8r7Fv1Et4d8vOik">《1977年露天采矿控制与复垦法》（SMCRA）框架下，取得首要管辖权（primacy）的州可以执行本州监管计划，但计划的任何增补、废止或修改均须经内政部露天采矿复垦与执法办公室（OSMRE）批准，以确保不低于联邦最低标准。俄亥俄州位于阿巴拉契亚与伊利诺伊盆地交汇的产煤带，其监管由州自然资源部依《俄亥俄州行政法典》相关章节实施。与西部大型露天矿不同，俄亥俄州的煤矿规模偏小、地下矿占比更高，许可证续期、水文资料要求与复垦保证金安排对区域内经营主体的现金流更为敏感。本次修订涉及依《俄亥俄州行政法典》新增、废止或修改的 39 条规则，覆盖面明显宽于单纯的技术性更正。</p><div class="brief-h" data-page-node-id="hkhyx1fvF8r1NP4toIN8gU">【核心内容】</div><p data-page-node-id="L3bzl8dPiCYoaCRIMtTQwb">OSM 批准俄亥俄州监管计划的本次修订。修订涵盖许可申请、水文图与剖面图、一般图件要求、特殊类别采矿的许可要求、地下采矿许可申请、小经营者援助计划，以及 self-bonding（自我担保复垦保证金）共 39 条规则。其中前几类属于许可与技术文件要求的标准化，旨在使州层面的申报材料格式与联邦要求对齐；小经营者援助计划涉及对小型经营者提供的技术支持与费用安排；self-bonding 则是本次修订中唯一直接具备财务含义的议题——该机制允许财务状况达标的经营者以自身信用替代第三方担保来覆盖复垦义务，其资格门槛的松紧直接决定企业是占用现金还是占用信用。</p><div class="brief-h" data-page-node-id="NCCcTr0KSuC8Jn0TrgXFSE">【要点提炼】</div><p data-page-node-id="DsYtA5pln4PNCWRn1yTjDP">1. 覆盖面广：一次性调整 39 条规则，横跨许可申请、技术文件、特殊类别采矿与地下采矿全链条，属州计划的系统性校准而非单点修补。</p><p data-page-node-id="tWN1BhUdkHr60JSP1rsh4P">2. 含 self-bonding 条款，这是本次修订中唯一可能对资产负债表产生影响的议题，须优先识别。</p><p data-page-node-id="nysF7s31k3yCs4AmRr7po2">3. 属州规则与联邦最低标准的一致性校准，性质上是合规口径统一，而非监管尺度突变。</p><p data-page-node-id="AHFUcE8C5rI2cVZIdPn5SP">4. 涉及小经营者援助计划，对区域内中小型采矿主体的成本结构有直接影响。</p><p data-page-node-id="utE4s5G4egTiQ7Hllhs1FO">5. 水文图与剖面图等技术文件要求的标准化，会改变许可申请的准备成本与审查周期。</p><div class="brief-h" data-page-node-id="rstX6Dr5kHeXOSxO807qCG">【对金融市场的预期影响】</div><p class="brief-verdict" data-page-node-id="vM1HkxNHlippGYhHbfOo9Z"><span class="brief-lead" data-page-node-id="t5uqcIdqMlU4IqCTlvEYpk">总体判断：</span>对煤炭开采与区域电力板块影响有限但具方向性——若 self-bonding 条款收紧，将提高煤企的现金占用与担保成本，属成本端的小幅负面；若维持或放松，则为边际正面，整体不构成板块级定价事件。</p><p data-page-node-id="COhxKcSY2eLyib5mg0HBxW"><span class="brief-lead" data-page-node-id="b0IFLdHaKoTjC3Dv8uKITG">关键前提：</span>官方摘要仅列出 self-bonding 属于修订范围，未披露具体调整方向（收紧资格、维持现状抑或放松），因此上述方向性判断存在不确定性，须以《俄亥俄州行政法典》正式条文为准，不宜据此直接定价。</p><p data-page-node-id="viC4KCck8ytZkjfG7b97YB"><span class="brief-lead" data-page-node-id="dgqtvKQtfVjnA0gBxNDJcf">承压方向：</span>若 self-bonding 资格门槛提高，煤炭企业须改用第三方担保、信托或现金抵押覆盖复垦义务，直接占用营运资金并抬高财务费用。在阿巴拉契亚煤价中枢偏弱、电厂采购向低成本产区转移的背景下，现金流本已紧张的中小型煤炭生产商与电厂附属性煤矿受影响相对更大，可能加速区域产能出清。</p><p data-page-node-id="qOcUK8YEvW16aZv9mnfuuV"><span class="brief-lead" data-page-node-id="fbnL3gLn8h8D4BPWC8BxoJ">受益方向：</span>若规则反而简化自我担保的资格审查并保留该工具，煤企的现金占用压力将边际缓解；同时许可与技术文件要求的标准化有利于缩短审批周期、降低项目前期准备成本，对仍在运营的地下矿主体属小幅利好。</p><p data-page-node-id="Sh1EjQNhAnpKqMnslsNZMi"><span class="brief-lead" data-page-node-id="2BDgEoLG5Fma4j7PQRJChp">信号意义：</span>阿巴拉契亚产区的许可与保证金规则趋严，与电力板块长期脱碳进程叠加，中长期会抬高该区域煤炭的边际生产成本，压缩其在电力采购中的价格竞争力。这一趋势对判断美国东部煤价的区域价差具有参考价值。</p><p data-page-node-id="syeHgorGPjLfA5aY2g2Zdh"><span class="brief-lead" data-page-node-id="JLo8vPG2DeLILrZyb4oJEp">风险提示：</span>一是条款方向未明带来的判断不确定性；二是若州规则对水文资料要求显著提高，小型经营者可能因技术能力不足而退出许可申请，进一步集中区域产能。</p><p data-page-node-id="1jnO5XUD8FBC6DFP78RFZB"><span class="brief-lead" data-page-node-id="ddOqJh3pRbf1Uksv675IyN">观察节点：</span>一是《俄亥俄州行政法典》条文对 self-bonding 资格财务测试的具体规定；二是 OSM 后续对俄亥俄州计划的监督发现与年度评估；三是区域煤炭企业年报中资产退役义务（ARO）规模与担保工具结构的披露变化；四是俄亥俄州煤矿许可发放与续期的实际节奏。</p></div></div><div class="note has-brief" id="note-5" data-idx="5" data-page-node-id="85ox7ctWUokggMxZ6zCiba"><span class="t" data-page-node-id="D7BMqDzvCwpEjEwfG6K56G"><span class="title-main" data-page-node-id="9dc4sx0d7IBgudodQUfiwQ">Fisheries of the Exclusive Economic Zone Off Alaska; Reallocation of Pacific Cod in the Bering Sea and Aleutian Islands Management Area</span><span class="title-cn" data-page-node-id="5Z5fh0nWc00kuQbd2SEozz">阿拉斯加专属经济区渔业：白令海与阿留申群岛管理区太平洋鳕配额重新分配（规则）</span></span><span class="m" data-page-node-id="efE2ZSCdASqImc3EoSGNyH"><span class="kind" data-page-node-id="axXVV4EZc7EdvZA30VDmZH">规则</span><span class="agcy" data-page-node-id="8iXrFIJ7ZwFwoGgNVgxmzV">商务部</span><span class="dom" data-page-node-id="mssZuxg4lzFrkmXIeJccMe">农业/食品</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="NWpMx7BHQBDj8ArEK0Hi8C"><span data-page-node-id="jTSMc4CQqyszjhm6oo1Kbh">简报</span><i class="chev" data-page-node-id="NOMq6hcfQGMX3H0Xa5rgTC">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21805/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-pacific-cod-in-the-bering-sea" target="_blank" rel="noopener" data-page-node-id="n5GwRyf5DhVV1zedKcILFZ"><span data-page-node-id="5DgfSNS5gLW4hHQXEgCqlD">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="NmhYidLfdUZnpAVSXR2oRj"><div class="brief-head" data-page-node-id="rR1myFWEjnqqNVY2L7b8kY"><span class="brief-tag" data-page-node-id="gjK9MLFCvCM5JuKvwxKU98">政策速览</span><span class="brief-at" data-page-node-id="K8gJAff3QHrDC4mOrPk5bf">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21805/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-pacific-cod-in-the-bering-sea" target="_blank" rel="noopener" data-page-node-id="vFkLlCLkFk5sfRUCpTSxfp"><span data-page-node-id="KABo4xOhWqNnI9H1VfIJAo">原文</span> ↗</a></div><p data-page-node-id="PTlA4xYFU1vsy5RoxFS6S8">国家海洋渔业局（NMFS）将白令海与阿留申群岛管理区（BSAI）预计未被利用的太平洋鳕鱼配额，从使用拖网渔具的捕捞船再分配给长度 60 英尺（18.3 米）以下、使用钩钓或笼捕渔具的捕捞船，以及《美国渔业法》（AFA）项下的拖网捕捞加工船。</p><p data-page-node-id="O2kyqgeJfriA1opTiPGRdM">目的是使 2026 年 BSAI 太平洋鳕鱼总可捕量（TAC）得以充分捕捞，避免配额闲置。</p><p data-page-node-id="3t1blo59iA9EPsB0OWYIK9">属年度渔业管理中的常规再分配措施，即时生效，不改变 TAC 总量。</p><p data-page-node-id="lB3EBJRMnnHciBD68Hu9xk"><span class="brief-lead" data-page-node-id="FWpbLKczzNeFxZEEZbRmm9">对市场意味着什么：</span>对海产品与渔业板块影响局限于配额内部结构。总可捕量不变意味着白鱼供给总量无变化，但捕捞窗口后移可能使第四季度阿拉斯加鳕鱼到岸量阶段性增加，对冷冻鱼片与鱼糜价格构成温和压制；相关上市公司规模小，不构成板块级定价事件。观察节点为后续是否还有二次再分配。</p></div></div><div class="note has-brief" id="note-6" data-idx="6" data-page-node-id="r1GSwQjfLSkr32CCw0k6tJ"><span class="t" data-page-node-id="VLG8Po9l2J8Gl2Sk0Nf5j0"><span class="title-main" data-page-node-id="C34Amrz0yOUaAZdUV7GLN0">Streamlining the Regulations Governing Testimony by Employees and the Production of Documents in Legal Proceedings; Correction</span><span class="title-cn" data-page-node-id="q8ztVBBkIEvb0YiuPonUso">精简雇员在法律程序中作证及提交文件的管理规定；更正（规则）</span></span><span class="m" data-page-node-id="5FtDjENzYtC46z3QYnOq7M"><span class="kind" data-page-node-id="9qPB8VsX8bP9MNqCW9MRXg">规则</span><span class="agcy" data-page-node-id="valSXIWTEXSclPyM4zxeNq">商务部</span><span class="dom" data-page-node-id="d70jEngkb1RCvPPnBgS1db">政府运作</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="2c319nLo1u4Fb0a4ERs7Fs"><span data-page-node-id="PmT9bSp3lIYSqCgMvF1yYv">简报</span><i class="chev" data-page-node-id="ENDGq55xcKmymxQKNgJKBJ">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21764/streamlining-the-regulations-governing-testimony-by-employees-and-the-production-of-documents-in" target="_blank" rel="noopener" data-page-node-id="mYAagSVMGdpEfBnYvCG3jM"><span data-page-node-id="SgtdZLbCm3txeC70zUFLam">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="K2gqdUsGKXF5NuRbtVyuuI"><div class="brief-head" data-page-node-id="z24KG64MOQLZDU2tDtegPP"><span class="brief-tag" data-page-node-id="gA2UsWwTUJhhmWip4K8QRD">政策速览</span><span class="brief-at" data-page-node-id="HEJiKeoiqxwENzx8x5DyJi">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21764/streamlining-the-regulations-governing-testimony-by-employees-and-the-production-of-documents-in" target="_blank" rel="noopener" data-page-node-id="cMgMS2olRETEOuXUyhtCUC"><span data-page-node-id="Ag0AZldkh64uTDGNEHgTKk">原文</span> ↗</a></div><p data-page-node-id="BwLE0G5JydsnklzIZokBrc">商务部对其关于现任及前任雇员在司法程序中作证和出示文件的规章作出更正性修订。</p><p data-page-node-id="6Wc0Dp3WfJFFAfMXxSBbYU">此前商务部已通过终局规则简化该规章，删除冗余文字、对其他授权的重复引述以及不必要的阐述；但该规则中有一项修订指引错误地载明修改了某段引言文字与某子项，实际上并未修改。</p><p data-page-node-id="8GmlFTl8aeMHA0AqnUoYFf">本次行动仅更正该不准确的修订指引，不对规章作任何其他更改，无实质影响。</p><p data-page-node-id="7pNAOcNlt4hzjTzQmGVa9S"><span class="brief-lead" data-page-node-id="ayZ6qq168V5RU30aJgftJC">对市场意味着什么：</span>无直接定价影响。属《联邦公报》层面的纯文书更正，不改变企业或个人在商务部相关司法程序中的权利与义务，也不产生新的合规要求。</p></div></div><div class="note has-brief" id="note-7" data-idx="7" data-page-node-id="rWTGtBU65CnHyRCrjAJeMp"><span class="t" data-page-node-id="vwfIRHdwpzy6kVmBH7mr7y"><span class="title-main" data-page-node-id="aXFvNCYkIDShvcTrbVua4J">Establishment of Class E Airspace; Canton, IL</span><span class="title-cn" data-page-node-id="TZiACsspmQxpxEHcuP63hn">设立E类空域：伊利诺伊州坎顿（规则）</span></span><span class="m" data-page-node-id="P5GIVG0QSyPdxUISMF7u1g"><span class="kind" data-page-node-id="abhNCW6jwXX9h90bucbRwB">规则</span><span class="agcy" data-page-node-id="7utFBqnr6HCvDRNDfCYwv6">交通部</span><span class="dom" data-page-node-id="Or9CjyCqzwsbpVRPpDDqIW">交通</span>联邦公报 · 2026-10-26<button type="button" class="toggle-btn brief-toggle" data-page-node-id="bqimCxAW7WeWHbfD4B5DK5"><span data-page-node-id="U1GUNCI53svBp4l64Qrp8C">简报</span><i class="chev" data-page-node-id="t7yDwR9jAHoGsAbqjGzqzL">▾</i></button> <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21817/establishment-of-class-e-airspace-canton-il" target="_blank" rel="noopener" data-page-node-id="xP3a552yf6kCEi5PY7fAGM"><span data-page-node-id="vgsq8U5gaz6ZNVInqp4DAS">原文</span> ↗</a></span><div class="brief" hidden="" data-page-node-id="vfj0xgWogAv2UWzi0j0Se9"><div class="brief-head" data-page-node-id="6Gk51Imbhw9dyiB6CD6iYu"><span class="brief-tag" data-page-node-id="Yk4QrW3sNc94kGPK45ikv3">政策速览</span><span class="brief-at" data-page-node-id="OkF962YexXBDYBhcLjJjG7">2026-10-24</span><a class="brief-src" href="https://www.federalregister.gov/documents/2026/10/26/2026-21817/establishment-of-class-e-airspace-canton-il" target="_blank" rel="noopener" data-page-node-id="aVsO37drQ9kGvFjaRyp5QQ"><span data-page-node-id="51ou0KZ9UFBjaOiHtt8AHH">原文</span> ↗</a></div><p data-page-node-id="xpVZ3jdIkw8BBClbbVP0Cd">联邦航空管理局（FAA）在伊利诺伊州 Canton 的 Graham Hospital 直升机起降点设立 E 类空域。</p><p data-page-node-id="wnIEeS9QCx2DuPAGfcXrqz">目的是支持新增的仪表进离场程序与仪表飞行规则（IFR）运行，提升该起降点的全天候可用性与进近安全裕度。</p><p data-page-node-id="aXM4CMhmALKXgpu7kZpVtQ">空域范围限于单个医院直升机起降点，属 FAA 空域划设中的例行个案。</p><p data-page-node-id="57CjeabN1WBKw01w2w7npz"><span class="brief-lead" data-page-node-id="HqKFEnMHGPQB1xGctoQLdl">对市场意味着什么：</span>无直接定价影响。单一起降点的空域划设不改变机场容量、航线网络或航空公司的运营指标，仅使当地医疗转运与急救航空服务的运行效率小幅受益，不具备可交易的板块含义。</p></div></div><div class="note" id="note-8" data-idx="8" data-page-node-id="U8WScPV0qEV5SuASC26rUQ"><span class="t" data-page-node-id="OadRB7ae2Ehtdd1LxESe2W"><span class="title-main" data-page-node-id="UiVN81MtxmAHFoqWbbJuHa">Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles</span><span class="title-cn" data-page-node-id="1UXLDtQdCVOiLZpYIcDLgF">联邦机动车安全标准：第108号标准现代化以适配配备自动驾驶系统的车辆（拟议规则）</span></span><span class="m" data-page-node-id="7uQj8g4sTXDjwWWY3WmYOS"><span class="kind" data-page-node-id="6kGwL5j2hM6k2s90Of2tTZ">拟议规则</span><span class="agcy" data-page-node-id="tdC9GsOP1IfuBdkMg5z3Ia">交通部</span><span class="dom" data-page-node-id="Z9aXFDCRFNDK5EY6Grf0Iy">交通</span>联邦公报 · 2026-10-26 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/26/2026-21794/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped" target="_blank" rel="noopener" data-page-node-id="Lt83Bjwv67TyTNaqSiWBO4"><span data-page-node-id="xbHtCxH28yvBT2GaffE8nI">原文</span> ↗</a></span></div><div class="note" id="note-9" data-idx="9" data-page-node-id="HLefIFqNHxSZEDWrDjYSJu"><span class="t" data-page-node-id="ASGlc2LWxzPlfwyYHvNAbB"><span class="title-main" data-page-node-id="cSNCErxmcZFhEHBjAZjyQk">Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency</span><span class="title-cn" data-page-node-id="CM9CwRUpN1o6SfWIuQv8X6">落实《美国稳定币国家创新指导与确立法》：货币监理署管辖实体发行稳定币的实施规则</span></span><span class="m" data-page-node-id="kt3l9ZVbeOgcXdcW1gQ9i1"><span class="kind" data-page-node-id="trtOag6u28Sa4BHxkQGUBc">规则</span><span class="agcy" data-page-node-id="MTasslpOPwz79CDAl5cKaf">财政部</span><span class="dom" data-page-node-id="kMMQS62vUFFIUUS5uesgvv">金融/保险</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the" target="_blank" rel="noopener" data-page-node-id="rrm4vJJYl3w26gNeRDtIjC"><span data-page-node-id="PiWvVH1oAvRJyTYnZTsi6x">原文</span> ↗</a></span></div><div class="note" id="note-10" data-idx="10" data-page-node-id="6uEQV6wRDAaO1UBAsMAUpS"><span class="t" data-page-node-id="uSzghqXzgrSRbBUFvmfb11"><span class="title-main" data-page-node-id="36qRzA2Zux37oKGIALu23i">21st Century ROAD to Housing Act Prohibition on Large Institutional Investor Purchases of Single-Family Homes</span><span class="title-cn" data-page-node-id="8uXsac0daAmvYktMDhfczs">落实《21世纪住房之路法案》：禁止大型机构投资者购买独栋住宅（拟议规则）</span></span><span class="m" data-page-node-id="67tCzz07b4ow7SwbAWIeZs"><span class="kind" data-page-node-id="xSn9itCYnH3NIHAFuruUrW">拟议规则</span><span class="agcy" data-page-node-id="jWK018pAr5mTnasbHGkJG8">财政部</span><span class="dom" data-page-node-id="GRmNDF7PLFvyDdHH0y1fbS">住房</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21675/21st-century-road-to-housing-act-prohibition-on-large-institutional-investor-purchases-of" target="_blank" rel="noopener" data-page-node-id="QyQpX0PQ7TKnsxsaJYI4xf"><span data-page-node-id="GHRb6AIojtqbsCX9VYpfXh">原文</span> ↗</a></span></div><div class="note" id="note-11" data-idx="11" data-page-node-id="ALsSpsQAXFKq8GLbpLzFzH"><span class="t" data-page-node-id="UVpRYYDo5JQRtgXbjKiiEU"><span class="title-main" data-page-node-id="SGgfLYtOjvpIE3k4qfe4ZC">Notice of Record of Decision for the Environmental Impact Statement for Basing F-35A Lightning II Formal Training Unit at Kingsley Field ANGB, Klamath Falls, Oregon</span><span class="title-cn" data-page-node-id="JX7fuHzRt0airCHZPwrdt3">F-35A正式训练部队部署俄勒冈州克拉马斯福尔斯金斯利机场环境影响报告决策记录（通告）</span></span><span class="m" data-page-node-id="Koaypby8JZcMXuATiYccvl"><span class="kind" data-page-node-id="fQrKkSvQGCdOjytJ5ncGAB">通告</span><span class="agcy" data-page-node-id="FFfXOwb4adx8wje5VNYF0D">国防部</span><span class="dom" data-page-node-id="rSjyzn2BSC0lHhriCLZs2r">国防/安全</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21696/notice-of-record-of-decision-for-the-environmental-impact-statement-for-basing-f-35a-lightning-ii" target="_blank" rel="noopener" data-page-node-id="SjtjRJwh5l0q0Q6DZTA0DV"><span data-page-node-id="1oLEIlNOZCeyiPDF1FPcPm">原文</span> ↗</a></span></div><div class="note" id="note-12" data-idx="12" data-page-node-id="no1DRMM6Sm6PA8XHbVYwtU"><span class="t" data-page-node-id="FN4kC3G6r5qP0AtIeiDZdI"><span class="title-main" data-page-node-id="Cis0eKU9pKZbfmGMJayCN9">Supplemental Nutrition Assistance Program: Electronic Benefits Transfer Card Security Measures</span><span class="title-cn" data-page-node-id="RAliFVayBLcNJBdHCH1nEg">补充营养援助计划：电子福利转账卡安全措施（拟议规则）</span></span><span class="m" data-page-node-id="aJ6PVkCWO08KecxM2OQVKd"><span class="kind" data-page-node-id="s4DO7oMoJBYfXE20nAZDQ5">拟议规则</span><span class="agcy" data-page-node-id="Nfx97dMSub7HEAM3hDe9QS">农业部</span><span class="dom" data-page-node-id="QerJzYAqFGP7XAJvsuIFJC">社会保障</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21658/supplemental-nutrition-assistance-program-electronic-benefits-transfer-card-security-measures" target="_blank" rel="noopener" data-page-node-id="oBQAyo9w4QeGgqYq1t7GZI"><span data-page-node-id="DOdKDAr2UVpWvrE9gxDLxv">原文</span> ↗</a></span></div><div class="note" id="note-13" data-idx="13" data-page-node-id="mfn1AMdtldDTVtvI8D3qCC"><span class="t" data-page-node-id="lCqNAQ1A1l7UlspkaTCfHD"><span class="title-main" data-page-node-id="32e2d3dd6eEPYnnAzDPEnq">Fisheries of the Exclusive Economic Zone Off Alaska; Pacific Cod by Catcher Vessels Using Trawl Gear in the Central Regulatory Area of the Gulf of Alaska</span><span class="title-cn" data-page-node-id="Wj00otROPGPfu5n0zritVi">阿拉斯加专属经济区渔业：阿拉斯加湾中部管理区拖网捕捞船太平洋鳕配额（规则）</span></span><span class="m" data-page-node-id="YE4sAQbv6eerkUsoZDiPsb"><span class="kind" data-page-node-id="4bNiDqrkV3WYzxPfLpx1Aq">规则</span><span class="agcy" data-page-node-id="tq9c4rToFoJ8UuTOAwYSZ3">商务部</span><span class="dom" data-page-node-id="m5Jj9hC4fL7td5pKpyFLd4">农业/食品</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21680/fisheries-of-the-exclusive-economic-zone-off-alaska-pacific-cod-by-catcher-vessels-using-trawl-gear" target="_blank" rel="noopener" data-page-node-id="RBSC9spRJjRXgZWn5HjGAH"><span data-page-node-id="kQHHSchFuMWwwwJU8BV7OR">原文</span> ↗</a></span></div><div class="note" id="note-14" data-idx="14" data-page-node-id="yjinDo5sd2OlrZJBXzC1T5"><span class="t" data-page-node-id="R2agVYtS76ABRymGGu5ghg"><span class="title-main" data-page-node-id="0Y0oXw1j1FcMwIiPUuIQJ4">Fisheries of the Exclusive Economic Zone Off Alaska; Pollock in Statistical Area 620 in the Gulf of Alaska</span><span class="title-cn" data-page-node-id="r0DUP4d403GAtrNPCXJCze">阿拉斯加专属经济区渔业：阿拉斯加湾620统计区狭鳕捕捞（规则）</span></span><span class="m" data-page-node-id="7FcxC4mLxXRrPCe4MMStfE"><span class="kind" data-page-node-id="fDsxHlBLzVz3OEmzXKugaO">规则</span><span class="agcy" data-page-node-id="zLwTCC7Lru6Whpts87xJeF">商务部</span><span class="dom" data-page-node-id="7A4yQwWo6EY1htUjz1rKTH">农业/食品</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21676/fisheries-of-the-exclusive-economic-zone-off-alaska-pollock-in-statistical-area-620-in-the-gulf-of" target="_blank" rel="noopener" data-page-node-id="XFVu4hRNjALrlrTjk90LeY"><span data-page-node-id="DxNtUlW4f6Tw5nRbCDX3Oh">原文</span> ↗</a></span></div><div class="note" id="note-15" data-idx="15" data-page-node-id="LmncI00yMecYgBrCBIKLaF"><span class="t" data-page-node-id="tKe3ATFeNW8dlFxNuyFTP6"><span class="title-main" data-page-node-id="Sg5tLBkCBX0h2dr2qNRINB">Action Levels for Cadmium in Processed Food Intended for Babies and Young Children; Draft Guidance for Industry; Availability</span><span class="title-cn" data-page-node-id="MbJuOSDT3B5zT4PFoTr3aH">婴幼儿加工食品镉含量行动水平：行业指南草案（拟议规则）</span></span><span class="m" data-page-node-id="1mXyj56ZNXHIf0Ukh0nJnZ"><span class="kind" data-page-node-id="nSUg27Ru5jGly7AoSKe9P1">拟议规则</span><span class="agcy" data-page-node-id="dMmTkiz7UdULKhOHaAoc2x">卫生与公众服务部</span><span class="dom" data-page-node-id="lQC6Hj4XjzfvTdCCez6gHd">农业/食品</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21670/action-levels-for-cadmium-in-processed-food-intended-for-babies-and-young-children-draft-guidance" target="_blank" rel="noopener" data-page-node-id="9OXpPYU05clJDpWj90w1X5"><span data-page-node-id="ehGhrFnwbG1BkhSjFCgQbH">原文</span> ↗</a></span></div><div class="note" id="note-16" data-idx="16" data-page-node-id="qVlnKshKZhllgdF0h345Ff"><span class="t" data-page-node-id="VZNM0551Z18zwhJCLDSqQW"><span class="title-main" data-page-node-id="eBvBZrlM4vxB42yBsJiHoG">Hazard Analysis and Risk-Based Preventive Controls for Human Food; Draft Guidance for Industry; Availability</span><span class="title-cn" data-page-node-id="8EILaOxJiF6FHpS3FET23a">人类食品危害分析与基于风险的预防性控制：行业指南草案（拟议规则）</span></span><span class="m" data-page-node-id="JTNiJc1dKzHRHOAuJCupxi"><span class="kind" data-page-node-id="PEwTyEkZoK477kbrDJ11EW">拟议规则</span><span class="agcy" data-page-node-id="BSf8tnrD5QdH3nS41yhTOg">卫生与公众服务部</span><span class="dom" data-page-node-id="cmTYhIslLColHupnprdm9z">农业/食品</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21669/hazard-analysis-and-risk-based-preventive-controls-for-human-food-draft-guidance-for-industry" target="_blank" rel="noopener" data-page-node-id="SuNZRQQesZdKIRyJ1DcVgE"><span data-page-node-id="UWjh6ddSe8G0vnjxThNbuX">原文</span> ↗</a></span></div><div class="note" id="note-17" data-idx="17" data-page-node-id="nnIjmxk3IxKEnRlApMsrEQ"><span class="t" data-page-node-id="hm0Ok7njB1bwvfOsQdfhtj"><span class="title-main" data-page-node-id="DY9q735fP73CWdUGe7TFXg">Part 572; Anthropomorphic Test Devices; Test Device for Human Occupant Restraint 50th Percentile Adult Male Dummy (THOR-50M); Extension of Comment Period</span><span class="title-cn" data-page-node-id="3IarkEB02zUa73ApbsSh5L">第572部分拟人化测试装置：THOR-50M第50百分位成年男性碰撞假人征求意见期延长（拟议规则）</span></span><span class="m" data-page-node-id="lcchJQDMa9oaJQlEAhQFvp"><span class="kind" data-page-node-id="vSPJQV8JnDIDe55ntL5anu">拟议规则</span><span class="agcy" data-page-node-id="fc7yMGkqAiTrmejcJRCfP1">交通部</span><span class="dom" data-page-node-id="2qa0RARcEvGuFEo9w3L8V7">交通</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21730/part-572-anthropomorphic-test-devices-test-device-for-human-occupant-restraint-50th-percentile-adult" target="_blank" rel="noopener" data-page-node-id="5UbqUrSAGCxA98K5lrSyFG"><span data-page-node-id="mjpmcNYDTApzreCbU8Sd0S">原文</span> ↗</a></span></div><div class="note" id="note-18" data-idx="18" data-page-node-id="GSnddvGy8Ojy9g6xTkoTIc"><span class="t" data-page-node-id="HNDYCI1NXpDSRJfCkufAKC"><span class="title-main" data-page-node-id="1ZbjO39qGyZeICdolrtHbr">Airworthiness Directives; The Boeing Company Airplanes; Correction</span><span class="title-cn" data-page-node-id="OCABfv1A8y4t8zASqVwQcN">适航指令：波音公司飞机；更正（规则）</span></span><span class="m" data-page-node-id="dDuLmkEj600tCUHHMHCbQa"><span class="kind" data-page-node-id="LrCAviIUg2NEwVG62ysAab">规则</span><span class="agcy" data-page-node-id="Mkr8vTnitUJ8IE6qWOFKEw">交通部</span><span class="dom" data-page-node-id="UNllgLBKIpU8PoKu57HR3u">交通</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21686/airworthiness-directives-the-boeing-company-airplanes-correction" target="_blank" rel="noopener" data-page-node-id="Rc1OFtUpgkIOBuLfVBjwly"><span data-page-node-id="DpMvF5fegbLMmCpCBwUCBz">原文</span> ↗</a></span></div><div class="note" id="note-19" data-idx="19" data-page-node-id="ZT1EJ2Jqz4ltGUFDrH0cAd"><span class="t" data-page-node-id="e7KjITPkZmVO1phCcdCwZF"><span class="title-main" data-page-node-id="UBL7bULO1frz2N0u5bkNpJ">Airworthiness Directives; MD Helicopters, LLC Helicopters</span><span class="title-cn" data-page-node-id="yrJRupm9coctUdfQZwuCz9">适航指令：MD直升机公司直升机（规则）</span></span><span class="m" data-page-node-id="4rQdxIsy3pBCrYdKSDSqTv"><span class="kind" data-page-node-id="XfynouXMhqvCK5knvzvMoO">规则</span><span class="agcy" data-page-node-id="hU5YD3LDzDE8I8BB5nSOKH">交通部</span><span class="dom" data-page-node-id="QXbjU0UmDOkJ9hHBoD0SRX">交通</span>联邦公报 · 2026-10-23 <a class="src-btn" href="https://www.federalregister.gov/documents/2026/10/23/2026-21664/airworthiness-directives-md-helicopters-llc-helicopters" target="_blank" rel="noopener" data-page-node-id="bH5qpeM93adHjiiFlLQvgD"><span data-page-node-id="RLa1FVMfJdaTdrDAADutZg">原文</span> ↗</a></span></div></div>
-        <div class="board-pager" id="board-pager" data-page-node-id="i0cfubPRnczpZKvRvtoNxV"><span class="pg-info" data-page-node-id="JZI6WyhcUymKhADHMnXExF">共 <b data-page-node-id="HODBksQ6YdljnDgRif82kb">150</b> 条 · 第 <b data-page-node-id="1uHVbtyQt6HPQUo8JZ6k0X">1</b>/8 页 · 本页 1–20 条</span><span class="pg-nav" data-page-node-id="SWcJaNwV9pV10peHg6z9TZ"><button type="button" class="pg-btn pg-step" data-pg="prev" disabled="" aria-label="上一页" data-page-node-id="QPZzVIaIiZO5BKol1Pv0QT">‹</button><button type="button" class="pg-btn on" data-pg="0" aria-current="page" data-page-node-id="n6DKUwWpaAZHQ1EGBG7QVj">1</button><button type="button" class="pg-btn" data-pg="1" data-page-node-id="udlG0HeFGhuhuLQt2ZvvPt">2</button><button type="button" class="pg-btn" data-pg="2" data-page-node-id="yKtMPCxeWI4NrgSkIRMcX6">3</button><button type="button" class="pg-btn" data-pg="3" data-page-node-id="A8k3Go2s9IkAX3ilpe38ir">4</button><button type="button" class="pg-btn" data-pg="4" data-page-node-id="ngQScNrbY5Y3hGADTASUl6">5</button><span class="pg-gap" data-page-node-id="9tn3KFcfKHVxBkLfDf96S7">…</span><button type="button" class="pg-btn" data-pg="7" data-page-node-id="J67JFG0n6Cf7QW8XHcF2gF">8</button><button type="button" class="pg-btn pg-step" data-pg="next" aria-label="下一页" data-page-node-id="FtFekOtODMBGOIgkZQ0N74">›</button></span><select class="pg-size" aria-label="每页条数" data-page-node-id="V5nQUUoXLMwpROcDnhnS0e"><option value="10" data-page-node-id="UtKK5rEnr71oR8bCj3Yb49">10 条/页</option><option value="20" selected="" data-page-node-id="g58pMVLu1E8gJioHwhdT1z">20 条/页</option><option value="50" data-page-node-id="PK5EmZCy8IvswVRJHcVSVD">50 条/页</option></select><span class="pg-jump" data-page-node-id="7duY4TXv6Cs4jeoILx9nse">跳至 <input type="number" class="pg-jump-in" min="1" max="8" value="1" aria-label="跳至页码" data-page-node-id="BkwlKYXtDVw8YXuRRjUPcF"> 页</span></div>
-        <p class="placeholder" id="board-empty" hidden="" data-page-node-id="3eloM1xB6Z6r1bRTMELPsU">暂无条目,等待首次定时抓取更新（每日）。</p>
-        <p class="placeholder" id="board-updated" data-page-node-id="zxVouaBfprDSsUqoBUiNK8">最近更新：<b data-page-node-id="QYYeTarhcSHYfb5pnppYMh">2026-10-24 14:00</b></p>
       </div>
     </section>
   </main>
@@ -9326,7 +9418,7 @@
       }
       // 政策条目数据已外置为独立 JSON（data/policy/*.json）。
       // POLICY 与原来的 data.boards 结构完全一致：{boards:{key:{updated_at,items,overview}}}，
-      // 因此 renderBoard / renderReview / applyFilters / 分页 / 简报渲染均无需改动。
+      // 因此 renderBoard / applyFilters / 分页 / 简报渲染均无需改动。
       var POLICY = { boards: {} };
       var POLICY_LOADING = {};
       var showBoardSeq = 0;
@@ -9459,90 +9551,7 @@
         });
       }
 
-      // 政策归纳卡：每周 / 每月总览；无数据时整块隐藏
-      var REVIEW_BODY_ON = false;   // 正文暂留空，只渲染卡片框架；待人工撰写后再置 true
-      function renderReview(key, board) {
-        var host = document.getElementById('board-review');
-        var head = document.getElementById('review-head');
-        if (!host) return;
-        var ov = board && board.overview;
-        if (!ov || (!ov.weekly && !ov.monthly)) {
-          host.hidden = true; host.innerHTML = '';
-          if (head) head.hidden = true;
-          return;
-        }
-        function card(o, cls) {
-          if (!o) return '';
-          var expanded = !!o.expanded;
-          var tagTxt = String(o.tag || '').replace('研判', '归纳');   // 数据里仍写「每周研判」，展示改为「每周归纳」
-          var head = '<div class="rvw-head"><span class="rvw-tag">' + esc(tagTxt) + '</span>' +
-            '<span class="rvw-period">' + esc(o.period) + '</span>' +
-            '<span class="rvw-at">更新于 ' + esc(o.updated_at) + '</span></div>';
-          // 政策归纳：正文暂留空、只保留卡片框架；人工撰写完成后把 REVIEW_BODY_ON 改为 true 即恢复
-          if (!REVIEW_BODY_ON) return '<div class="rvw-card ' + cls + '">' + head + '</div>';
-          var stats = (o.stats || []).map(function (st) {
-            return '<span class="rvw-stat">' + esc(st.k) + '：<b>' + esc(st.v) + '</b></span>';
-          }).join('');
-          return '<div class="rvw-card ' + cls + (expanded ? ' open' : '') + '">' + head +
-            '<div class="rvw-toggle-wrap"><button type="button" class="rvw-toggle" aria-expanded="' + expanded + '"><span class="rvw-toggle-t">' + (expanded ? '收起' : '展开归纳') + '</span><i class="chev">▾</i></button></div>' +
-            '<div class="rvw-detail"' + (expanded ? '' : ' hidden') + '>' +
-            '<div class="rvw-body">' + reviewBodyHtml(o.body) + '</div>' +
-            (o.note ? '<div class="rvw-note">' + esc(o.note) + '</div>' : '') +
-            '</div></div>';
-        }
-        host.hidden = false;
-        if (head) head.hidden = false;
-        host.innerHTML = card(ov.weekly, 'wk') + card(ov.monthly, 'mo');
-
-        // 展开 / 收起
-        [].slice.call(host.querySelectorAll('.rvw-toggle')).forEach(function (btn) {
-          btn.addEventListener('click', function (e) {
-            e.stopPropagation();
-            var c = btn.closest('.rvw-card');
-            var d = c.querySelector('.rvw-detail');
-            d.hidden = !d.hidden;
-            c.classList.toggle('open', !d.hidden);
-            btn.setAttribute('aria-expanded', String(!d.hidden));
-            btn.querySelector('.rvw-toggle-t').textContent = d.hidden ? '展开归纳' : '收起';
-          });
-        });
-
-        // 「§」角标跳转：目标在其他页则先翻页，被筛选条件排除则先清除筛选，再定位（onclick 赋值幂等，避免重复绑定）
-        host.onclick = function (e) {
-          var a = e.target.closest ? e.target.closest('.rvw-ref') : null;
-          if (!a) return;
-          e.preventDefault();
-          var oi = parseInt(a.getAttribute('data-ref'), 10);
-          if (isNaN(oi)) return;
-          // 1) 当前页已包含该条：直接定位
-          if (focusNote(oi)) return;
-          // 2) 在当前筛选结果中查找所在页
-          var key = renderCurrentBoard;
-          var data = readPolicyData();
-          var board = data.boards && data.boards[key];
-          var allItems = (board && board.items) || [];
-          allItems.forEach(function (it, i) { it.__oi = i; });
-          var items = applyFilters(allItems);
-          var pos = itemPos(items, oi);
-          // 3) 被筛选条件排除：先清除筛选（重渲染并把页码归零），再重新定位
-          if (pos < 0) {
-            var rst = document.getElementById('filter-reset');
-            if (rst) rst.click();
-            items = applyFilters(allItems);
-            pos = itemPos(items, oi);
-          }
-          if (pos < 0) return;
-          // 4) 翻到目标所在页并定位
-          var pg = Math.floor(pos / boardPageSize);
-          if (pg !== boardPage) {
-            boardPage = pg;
-            if (renderCurrentBoard) renderBoard(renderCurrentBoard);
-          }
-          focusNote(oi);
-        };
-      }
-
-      function fillKindOptions(items) {
+            function fillKindOptions(items) {
         var sel = document.getElementById('filter-kind');
         var kinds = [];
         items.forEach(function (it) { if (it.kind && kinds.indexOf(it.kind) === -1) kinds.push(it.kind); });
@@ -9636,6 +9645,92 @@
       }
 
       // 激活态同步：非默认值的筛选控件蓝色高亮；有筛选时显示「重置」按钮
+      // ---------- 左栏分类树：按机构（国会按类型）分组，带条目数 ----------
+      function renderPwTree(key, items) {
+        var host = document.getElementById('pw-tree');
+        var title = document.getElementById('pw-tree-title');
+        var num = document.getElementById('pw-tree-n');
+        if (!host) return;
+        var byKind = key === 'congress';
+        if (title) title.textContent = byKind ? '按文件类型' : (key === 'judicial' ? '按法院' : '按机构');
+        var groups = {}, total = 0;
+        items.forEach(function (it) {
+          var k = byKind ? (it.kind || '其他') : (it.agency || it.source || '未标注机构');
+          groups[k] = (groups[k] || 0) + 1;
+          total++;
+        });
+        var keys = Object.keys(groups).sort(function (a, b) {
+          return groups[b] - groups[a] || a.localeCompare(b, 'zh');
+        });
+        if (num) num.textContent = total + ' 条';
+        var cur = byKind ? filterState.kind : filterState.agency;
+        var html = '<button type="button" class="pw-tree-i' + (!cur || cur === 'all' ? ' on' : '') +
+                   '" data-v="all"><span>全部条目</span><b>' + total + '</b></button>';
+        html += '<div class="pw-tree-g">' + (byKind ? '类型' : (key === 'judicial' ? '法院' : '机构')) +
+                '（' + keys.length + '）</div>';
+        html += keys.map(function (k) {
+          return '<button type="button" class="pw-tree-i' + (cur === k ? ' on' : '') + '" data-v="' + esc(k) + '">' +
+                 '<span>' + esc(k) + '</span><b>' + groups[k] + '</b></button>';
+        }).join('');
+        host.innerHTML = html;
+        host.onclick = function (e) {
+          var b = e.target.closest ? e.target.closest('.pw-tree-i') : null;
+          if (!b) return;
+          var v = b.getAttribute('data-v');
+          if (byKind) {
+            filterState.kind = v;
+            var ks = document.getElementById('filter-kind'); if (ks) ks.value = v;
+          } else {
+            filterState.agency = v;
+            var as = document.getElementById('filter-agency'); if (as) as.value = v;
+          }
+          boardPage = 0;
+          syncFilterUI();
+          if (renderCurrentBoard) renderBoard(renderCurrentBoard);
+        };
+      }
+
+      // ---------- 已选条件 ----------
+      function renderPwChips() {
+        var host = document.getElementById('pw-selected');
+        if (!host) return;
+        var LAB = { kind: '类型', domain: '领域', agency: '机构' };
+        var chips = [];
+        if (filterState.q) chips.push(['关键词：' + filterState.q, 'q']);
+        var t = document.getElementById('filter-time');
+        if (t && t.value !== 'all') chips.push(['时间：' + t.options[t.selectedIndex].text, 'time']);
+        ['kind', 'domain', 'agency'].forEach(function (k) {
+          var el = document.getElementById('filter-' + k);
+          if (!el || el.value === 'all') return;
+          if (el.parentElement && el.parentElement.hidden) return;
+          chips.push([LAB[k] + '：' + el.options[el.selectedIndex].text, k]);
+        });
+        if (!chips.length) { host.hidden = true; host.innerHTML = ''; return; }
+        host.hidden = false;
+        host.innerHTML = '<span class="pw-lab">已选条件</span>' +
+          chips.map(function (c) {
+            return '<span class="pw-chip">' + esc(c[0]) +
+                   '<button type="button" data-k="' + c[1] + '" aria-label="移除该条件">×</button></span>';
+          }).join('') +
+          '<button type="button" class="pw-clear" data-k="__all">清除全部</button>';
+        host.onclick = function (e) {
+          var b = e.target.closest ? e.target.closest('button') : null;
+          if (!b) return;
+          var k = b.getAttribute('data-k');
+          if (k === '__all') { var r = document.getElementById('filter-reset'); if (r) r.click(); return; }
+          if (k === 'q') {
+            var q = document.getElementById('filter-q'); if (q) q.value = '';
+            filterState.q = '';
+          } else {
+            var el = document.getElementById('filter-' + k);
+            if (el) { el.value = 'all'; filterState[k] = 'all'; }
+          }
+          boardPage = 0;
+          syncFilterUI();
+          if (renderCurrentBoard) renderBoard(renderCurrentBoard);
+        };
+      }
+
       function syncFilterUI() {
         var defaults = { 'filter-time': 'all', 'filter-agency': 'all', 'filter-kind': 'all', 'filter-domain': 'all' };
         var any = false;
@@ -9653,6 +9748,7 @@
         }
         var rst = document.getElementById('filter-reset');
         if (rst) rst.classList.toggle('show', any);
+        renderPwChips();
       }
 
       function renderBoard(key) {
@@ -9664,8 +9760,6 @@
         var data = readPolicyData();
         var board = data.boards && data.boards[key];
         var allItems = (board && board.items) || [];
-        // 周期研判卡（每周 / 每月总览，数据位于各板块 overview 字段）
-        renderReview(key, board);
         var list = document.getElementById('board-list');
         var empty = document.getElementById('board-empty');
         var updated = document.getElementById('board-updated');
@@ -9688,6 +9782,10 @@
           agencySel.value = 'all';
           filterState.agency = 'all';
         }
+        var thAgency = document.getElementById('pw-th-agency');
+        if (thAgency) thAgency.textContent = key === 'congress' ? '来源'
+          : (key === 'judicial' ? '法院' : '部门 / 机构');
+        renderPwTree(key, allItems);
         syncFilterUI();
         renderCurrentBoard = key;
         // 挂原始索引：研判卡「§」角标跳转依赖 note-{原始索引} 锚点
@@ -9719,12 +9817,19 @@
         list.innerHTML = pageItems.map(function (it, idx) {
           var hasBrief = !!(it.brief && it.brief.body);
           if (hasBrief) nBrief++;
-          return '<div class="note' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '">' +
-            '<span class="t"><span class="title-main">' + esc(it.title) + '</span>' +
-            (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
-            '<span class="m"><span class="kind">' + esc(it.kind) + '</span>' + ((it.agency && key !== 'congress') ? '<span class="agcy">' + esc(it.agency) + '</span>' : '') + (it.domain ? '<span class="dom">' + esc(it.domain) + '</span>' : '') + esc(it.source) + ' · ' + esc(it.date) +
-            (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>简报</span><i class="chev">▾</i></button>' : '') +
-            ' <a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></span>' +
+          return '<div class="note pw-item' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '">' +
+            '<div class="pw-r">' +
+              '<span class="c-date">' + esc(it.date) + '</span>' +
+              '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
+                (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
+              '<span class="c-kind"><span>' + esc(it.kind || '文件') + '</span></span>' +
+              '<span class="c-agency">' + (it.agency && key !== 'congress' ? esc(it.agency) : esc(it.source || '')) + '</span>' +
+              '<span class="c-domain">' + (it.domain ? '<span>' + esc(it.domain) + '</span>' : '') + '</span>' +
+              '<span class="c-act">' +
+                (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>简报</span><i class="chev">▾</i></button>' : '') +
+                '<a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a>' +
+              '</span>' +
+            '</div>' +
             (hasBrief ? '<div class="brief" hidden>' + briefHtml(it) + '</div>' : '') +
             '</div>';
         }).join('');
