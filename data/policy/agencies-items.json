@@ -1,9 +1,73 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-10-30 09:46",
-  "count": 78,
+  "updated_at": "2026-10-31 14:05",
+  "count": 82,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-10-30",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22205/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "title_cn": "银行控制权变更通告：银行或银行控股公司股份收购（三宗申请）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "· 美联储依《银行控制权变更法》（12 U.S.C. 1817(j)）与 Y 条例 §225.41 公布三宗事前通告，均属家族控制集团内部股权归集：收购明尼苏达州 PB Bancshares（Premier Bank 母公司）股份、继续持有北达科他州 Security State Bank Holding Company 与盐湖城 First Utah Bancorporation 股份。\n· 异议意见须于 2026 年 11 月 16 日前送达明尼阿波利斯或旧金山储备银行、或理事会。\n· 属个案批复，不涉及 Y 条例规则文本修订。\n· 对市场意味着什么：无直接定价影响。三家标的均为社区银行控股公司，规模小、无公开流通市场，不改变银行业并购审查尺度。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-30",
+      "title": "Diamond Sawblades and Parts Thereof From China; Determination",
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22244/diamond-sawblades-and-parts-thereof-from-china-determination",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "金刚石锯片及其部件（中国）第三次五年复审裁决：肯定性",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "· 国际贸易委员会就中国金刚石锯片及部件（731-TA-1092，第三次五年复审）作出肯定性裁决：撤销现行反倾销令很可能导致实质损害在可预见期间内继续或再度发生。\n· 该复审于 2026 年 3 月 2 日立案，6 月 5 日裁定采用加速程序；裁决 10 月 28 日作出并提交，载于 USITC 第 5807 号出版物，10 月 30 日刊发。\n· 按法定衔接，肯定性裁决将维持现行反倾销令，有效期再延五年。Negatu 委员未参与。\n· 对市场意味着什么：中国出口企业的美国市场准入维持现状，无新增税率；对美本土生产商的边际利好已在市场预期内，无直接定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-30",
+      "title": "Railway Tank Cars and Parts Thereof From Mexico; Revised Schedule for the Subject Investigations",
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22191/railway-tank-cars-and-parts-thereof-from-mexico-revised-schedule-for-the-subject-investigations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "铁路罐车及其部件（墨西哥）双反调查初裁日程修订",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "· 国际贸易委员会修订墨西哥铁路罐车及部件双反调查（701-TA-809、731-TA-1810）初裁阶段日程。\n· 动因是商务部将立案裁定截止期延长 20 天至 2026 年 11 月 9 日（91 FR 67288），委员会据以顺延自身日程。\n· 委员会须在收到商务部立案通知后 25 日内作出初裁，并在其后 5 个工作日内向商务部提交意见。\n· 本次通告仅涉日程调整，未作任何实体认定。\n· 对市场意味着什么：无直接定价影响。实际影响取决于 11 月 9 日商务部是否立案及随后的初裁结论，罐车进口商与铁路装备板块的时点风险相应后移约三周。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-10-30",
+      "title": "Ironing Tables and Certain Parts Thereof From China; Scheduling of an Expedited Five-Year Review",
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22167/ironing-tables-and-certain-parts-thereof-from-china-scheduling-of-an-expedited-five-year-review",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "熨衣板及其部件（中国）第四次五年复审（加速）日程通告",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "· 国际贸易委员会就中国熨衣板及部件（731-TA-1047，第四次五年复审）启动加速复审并公布日程。\n· 2026 年 10 月 5 日委员会认定国内利害关系方答复充分、应诉方答复不充分，且无其他情形需全面复审，故依《1930 年关税法》§751(c)(3) 采用加速程序。\n· 复审标的为撤销现行反倾销令是否可能导致实质损害继续或再度发生；委员会尚未作出结论。Negatu 委员未参与。\n· 对市场意味着什么：无直接定价影响。加速程序不设实地听证与补充问卷，历史结果多为维持现行反倾销令，关注点在裁决公布时点而非税率变动。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-10-29",
