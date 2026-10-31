@@ -47,7 +47,7 @@ CAT_DEF = collections.OrderedDict([
     ('econ', '经济'),
     ('pol', '政治与治理'),
     ('dip', '外交与安全'),
-    ('mkt', '市场作息'),
+    ('mkt', '交易日历'),
 ])
 
 TOPIC_DEF = collections.OrderedDict([
@@ -61,7 +61,7 @@ TOPIC_DEF = collections.OrderedDict([
     ('energy', '能源与环境'),
     ('security', '安全与地缘'),
     ('election', '选举与政治程序'),
-    ('calendar', '作息与假期'),
+    ('calendar', '假期与时制'),
 ])
 
 ACTOR_DEF = collections.OrderedDict([
@@ -180,7 +180,7 @@ def classify(ev):
         out['_from'] = 'override'
         return out
 
-    # ① 市场作息：联邦假日与时制切换
+    # ① 交易日历：联邦假日、休市安排与时制切换
     if ev.get('cat') in ('hol', 'mkt') or '联邦假日' in title:
         return {'cat': 'mkt', 'topic': 'calendar', 'actor': 'none', '_from': 'holiday'}
     if '冬令时' in title or '夏令时' in title:

@@ -299,7 +299,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 | 指标 | 取值 | 说明 |
 | --- | --- | --- |
-| `cat` | `econ` / `pol` / `dip` / `mkt` | 一级范畴，决定格内色条与图例（经济蓝 / 政治红 / 外交紫 / 作息绿） |
+| `cat` | `econ` / `pol` / `dip` / `mkt` | 一级范畴，决定格内色条与图例（经济蓝 / 政治红 / 外交紫 / 交易日历绿） |
 | `topic` | `price` / `labor` / `growth` / `trade` / `money` / `fiscal` / `tech` / `energy` / `security` / `election` / `calendar` | 议题域，用于检索与聚合 |
 | `actor` | `exec` / `agency` / `congress` / `fed` / `court` / `stats` / `intl` / `none` | 主导主体 |
 

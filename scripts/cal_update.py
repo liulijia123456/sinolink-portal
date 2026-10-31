@@ -16,7 +16,7 @@
 
 单个候选节点字段：
     d     必填  YYYY-MM-DD        起始日（美东）
-    cat   必填  econ|pol|dip|mkt  经济 / 政治 / 外交 / 作息
+    cat   必填  econ|pol|dip|mkt  经济 / 政治 / 外交 / 交易日历
     title 必填  中文全称
     d2    选填  YYYY-MM-DD        多日会期结束日
     t     选填  HH:MM             美东时刻（定期数据发布、FOMC 决议等）
