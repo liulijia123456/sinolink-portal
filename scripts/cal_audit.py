@@ -62,9 +62,12 @@ FOMC_KNOWN = {
 # 官方日程已公布到的最远年份；超出即「尚未公布」，不应写入具体日期
 FOMC_PUBLISHED_YEARS = (2026, 2027)
 
+# 一级范畴取值（与 scripts/cal_classify.py、docs/日历分类指标.md 保持一致）
+CATS = ('stat', 'monetary', 'pol', 'dip', 'mkt')
+
 # dip 类会期上限：峰会/部长会通常 2—4 天，超过 7 天基本可判定为录入错误
 DIP_MAX_SPAN = 8
-# 远期阈值：超过该月数的 econ/pol 条目，官方通常尚未公布，须复核
+# 远期阈值：超过该月数的 stat/monetary/pol 条目，官方通常尚未公布，须复核
 FAR_FUTURE_MONTHS = 18
 
 
@@ -108,7 +111,7 @@ def audit(events, today=None):
         d2 = e.get('d2') or ''
         if d2 and (not DATE_RE.match(d2) or d2 < d):
             err('结束日非法或早于起始日：%s~%s（%s）' % (d, d2, e.get('title')))
-        if e.get('cat') not in ('econ', 'pol', 'dip', 'hol'):
+        if e.get('cat') not in CATS:
             err('分类非法：%r（%s）' % (e.get('cat'), e.get('title')))
         if not (e.get('title') or '').strip():
             err('缺少标题（d=%s）' % d)
@@ -216,7 +219,7 @@ def audit(events, today=None):
         elif d not in FOMC_KNOWN:
             err('FOMC 会期与官方日程不符：%s（%s）——不在已核实的会议列表中' % (d, t))
 
-    # R8 远期 econ/pol 条目：官方一般尚未公布，提示复核。
+    # R8 远期 stat/monetary/pol 条目：官方一般尚未公布，提示复核。
     # 法定/公式可推算的事件不算臆测（大选日、就职日、国会开幕、计票、选举人团、
     # 夏令时切换、联邦假日），一律豁免，否则每年都会刷一堆无意义告警。
     STATUTORY_RE = re.compile(
@@ -225,9 +228,9 @@ def audit(events, today=None):
     for e in events:
         d = e.get('d') or ''
         t = e.get('title') or ''
-        if e.get('cat') == 'hol' or STATUTORY_RE.search(t):
+        if e.get('cat') == 'mkt' or STATUTORY_RE.search(t):
             continue
-        if e.get('cat') in ('econ', 'pol') and d[:7] > limit:
+        if e.get('cat') in ('stat', 'monetary', 'pol') and d[:7] > limit:
             warn('远期条目（>%d 个月）须核实是否有官方公布：%s（%s）'
                  % (FAR_FUTURE_MONTHS, d, t))
 
