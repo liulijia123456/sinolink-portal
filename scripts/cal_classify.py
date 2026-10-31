@@ -6,13 +6,12 @@
 
 给 us-cal-data 的每条事件补四个分类指标，并把同一类条目的写法收敛到统一口径。
 
-四个指标（详细定义见 docs/日历分类指标.md）：
+三个指标（详细定义见 docs/日历分类指标.md）：
 
-  cat     一级范畴，决定格子色条与图例，5 值：stat / monetary / pol / dip / mkt
+  cat     一级范畴，决定格子色条与图例，4 值：econ / pol / dip / mkt
   topic   议题域，用于检索与聚合，11 值：price / labor / growth / trade / money /
           fiscal / tech / energy / security / election / calendar
-  actor   主导主体，7 值：exec / agency / congress / fed / court / stats / intl / none
-  impact  市场传导强度，3 值：high / mid / low
+  actor   主导主体，8 值：exec / agency / congress / fed / court / stats / intl / none
 
 为什么要有这套东西：原方案只有 econ/pol/dip/hol 四类，结果「美国对外投资安全计划
 拟议规则意见期截止」这类行政规则制定被塞进 econ，「政治」只剩 12 条选举与国会程序；
@@ -45,8 +44,7 @@ BLOCK_RE = re.compile(
 # ---------------------------------------------------------------- 指标定义
 
 CAT_DEF = collections.OrderedDict([
-    ('stat', '统计发布'),
-    ('monetary', '货币政策'),
+    ('econ', '经济'),
     ('pol', '政治与治理'),
     ('dip', '外交与安全'),
     ('mkt', '市场作息'),
@@ -75,12 +73,6 @@ ACTOR_DEF = collections.OrderedDict([
     ('stats', '统计机构'),
     ('intl', '外国政府或多边组织'),
     ('none', '无主导主体'),
-])
-
-IMPACT_DEF = collections.OrderedDict([
-    ('high', '高'),
-    ('mid', '中'),
-    ('low', '低'),
 ])
 
 # ---------------------------------------------------------------- 分类规则
@@ -136,37 +128,37 @@ POL_RULES = [
 # 个别条目的手工归类：规则判错或需要专门口径时在此覆盖，键为 (日期, 标题)
 OVERRIDES = {
     ('2026-12-07', '美国对外投资安全计划拟议规则公众意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'exec', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'exec'},
     ('2026-11-02', '美联储压力测试透明度新规生效'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'fed', 'impact': 'low'},
+        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
     ('2026-12-01', '美联储资本计划规则与压力资本缓冲修订生效'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'fed', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
     ('2027-01-18', 'OCC 稳定币发行实施规则生效'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
     ('2026-10-20', 'SEC 加密资产拟议规则公众意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
     ('2026-11-13', 'EPA 三氯乙烯合规日期延长意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency', 'impact': 'low'},
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
     ('2026-12-04', 'EPA 可再生燃料标准豁免再分配意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency', 'impact': 'low'},
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
     ('2026-11-23', '财政部 ROAD 住房法机构购房禁令意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec', 'impact': 'low'},
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
     ('2027-01-09', '301 条款造船等行业关税暂停拟延至 1 月 9 日'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
     ('2027-01-12', 'USMCA 2027 年度联合审查公众意见截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec', 'impact': 'low'},
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
     ('2027-07-01', 'USMCA 2027 年度联合审查'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
     ('2026-12-11', '联邦政府拨款截止日'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'congress', 'impact': 'high'},
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'congress'},
     ('2026-11-03', '2026 年中期选举日'):
-        {'cat': 'pol', 'topic': 'election', 'actor': 'exec', 'impact': 'high'},
+        {'cat': 'pol', 'topic': 'election', 'actor': 'exec'},
     ('2028-11-07', '2028 年美国总统与国会大选日'):
-        {'cat': 'pol', 'topic': 'election', 'actor': 'exec', 'impact': 'high'},
+        {'cat': 'pol', 'topic': 'election', 'actor': 'exec'},
     ('2029-01-20', '美国总统就职典礼'):
-        {'cat': 'pol', 'topic': 'election', 'actor': 'exec', 'impact': 'mid'},
+        {'cat': 'pol', 'topic': 'election', 'actor': 'exec'},
     ('2027-01-10', '中美关税休战延期期满'):
-        {'cat': 'dip', 'topic': 'trade', 'actor': 'exec', 'impact': 'high'},
+        {'cat': 'dip', 'topic': 'trade', 'actor': 'exec'},
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
@@ -179,7 +171,7 @@ IMPACT_BY_FAMILY = [
 
 
 def classify(ev):
-    """按规则给出四指标；返回 dict（含 _from 说明依据，便于复核）。"""
+    """按规则给出三项指标；返回 dict（含 _from 说明依据，便于复核）。"""
     title = ev.get('title') or ''
     date = ev.get('d') or ''
     key = (date, title)
@@ -190,47 +182,32 @@ def classify(ev):
 
     # ① 市场作息：联邦假日与时制切换
     if ev.get('cat') in ('hol', 'mkt') or '联邦假日' in title:
-        return {'cat': 'mkt', 'topic': 'calendar', 'actor': 'none', 'impact': 'low',
-                '_from': 'holiday'}
+        return {'cat': 'mkt', 'topic': 'calendar', 'actor': 'none', '_from': 'holiday'}
     if '冬令时' in title or '夏令时' in title:
-        return {'cat': 'mkt', 'topic': 'calendar', 'actor': 'none', 'impact': 'low',
-                '_from': 'dst'}
+        return {'cat': 'mkt', 'topic': 'calendar', 'actor': 'none', '_from': 'dst'}
 
     # ② 货币政策
     if 'FOMC' in title:
-        imp = 'high' if '纪要' not in title else 'mid'
-        return {'cat': 'monetary', 'topic': 'money', 'actor': 'fed', 'impact': imp,
-                '_from': 'fomc'}
+        return {'cat': 'econ', 'topic': 'money', 'actor': 'fed', '_from': 'fomc'}
 
     # ③ 统计发布
     for pat, topic in STAT_RULES:
         if re.search(pat, title):
-            imp = 'mid'
-            for ipat, ilevel in IMPACT_BY_FAMILY:
-                if re.search(ipat, title):
-                    imp = ilevel
-                    break
-            actor = 'stats'
-            if re.search(r'贸易差额', title):
-                actor = 'stats'          # 普查局与 BEA 联合发布，统一记统计机构
-            return {'cat': 'stat', 'topic': topic, 'actor': actor, 'impact': imp,
+            # 普查局与 BEA 联合发布，统一记统计机构
+            return {'cat': 'econ', 'topic': topic, 'actor': 'stats',
                     '_from': 'stat:' + pat}
 
     # ④ 外交与安全
     for pat, topic, actor in DIP_RULES:
         if re.search(pat, title):
-            imp = 'mid' if re.search(r'领导人峰会|领导人非正式会议|外长|峰会', title) else 'low'
-            return {'cat': 'dip', 'topic': topic, 'actor': actor, 'impact': imp,
-                    '_from': 'dip:' + pat}
+            return {'cat': 'dip', 'topic': topic, 'actor': actor, '_from': 'dip:' + pat}
 
     # ⑤ 政治与治理
     for pat, topic, actor in POL_RULES:
         if re.search(pat, title):
-            imp = 'mid' if re.search(r'意见期|生效|审查|选举|就职|国会', title) else 'low'
-            return {'cat': 'pol', 'topic': topic, 'actor': actor, 'impact': imp,
-                    '_from': 'pol:' + pat}
+            return {'cat': 'pol', 'topic': topic, 'actor': actor, '_from': 'pol:' + pat}
 
-    return {'cat': '', 'topic': '', 'actor': '', 'impact': '', '_from': 'none'}
+    return {'cat': '', 'topic': '', 'actor': '', '_from': 'none'}
 
 
 # ---------------------------------------------------------------- 假日口径
@@ -331,10 +308,8 @@ def cmd_check(args):
             bad.append((key, '非法 topic=%r' % got['topic'], got['_from']))
         if got['actor'] not in ACTOR_DEF:
             bad.append((key, '非法 actor=%r' % got['actor'], got['_from']))
-        if got['impact'] not in IMPACT_DEF:
-            bad.append((key, '非法 impact=%r' % got['impact'], got['_from']))
         # 已写入的数据与规则结果不一致时提示（改过规则没重跑 apply）
-        for f in ('cat', 'topic', 'actor', 'impact'):
+        for f in ('cat', 'topic', 'actor'):
             if e.get(f) and e.get(f) != got[f]:
                 bad.append((key, '%s 数据=%r 规则=%r' % (f, e.get(f), got[f]), got['_from']))
 
@@ -347,7 +322,7 @@ def cmd_check(args):
         for (d, t), msg, frm in bad[:30]:
             print('  %s %-40s %s（规则：%s）' % (d, (t or '')[:38], msg, frm))
         return 1
-    print('\n[通过] 四指标均合法且与规则一致。')
+    print('\n[通过] 三项指标均合法且与规则一致。')
     return 0
 
 
@@ -363,7 +338,6 @@ def cmd_report(args):
             ('范畴', CAT_DEF.get(got['cat'], got['cat'])),
             ('议题', TOPIC_DEF.get(got['topic'], got['topic'])),
             ('主体', ACTOR_DEF.get(got['actor'], got['actor'])),
-            ('传导', IMPACT_DEF.get(got['impact'], got['impact'])),
             ('标题', e.get('title')),
             ('短标签', e.get('s', '')),
             ('备注', e.get('note', '')),
@@ -400,14 +374,16 @@ def cmd_apply(args):
         if not got.get('cat'):
             sys.exit('错误：无法归类 %s %s' % (e.get('d'), e.get('title')))
         touched = False
-        for f in ('cat', 'topic', 'actor', 'impact'):
+        for f in ('cat', 'topic', 'actor'):
             if e.get(f) != got[f]:
                 e[f] = got[f]
                 touched = True
+        if e.pop('impact', None) is not None:
+            touched = True
         if touched:
             n_cat += 1
             changes.append(('指标', e.get('d'), e.get('title'),
-                            '%s/%s/%s/%s' % (got['cat'], got['topic'], got['actor'], got['impact'])))
+                            '%s/%s/%s' % (got['cat'], got['topic'], got['actor'])))
         if args.fix_holiday:
             d = fix_holiday(e)
             if d:

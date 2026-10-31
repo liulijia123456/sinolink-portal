@@ -295,18 +295,17 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 日历事件字段：`d`（必填，起始日）、`title`（必填）、`d2`（多日结束日）、`t`（美东时刻）、
 `s`（格内短标题）、`note`（地点/机构/来源）、`replaces_title`（把同名旧条目标「已调整」但不删除），
-以及四个分类指标（2026-10-31 起）：
+以及三个分类指标（2026-10-31 起）：
 
 | 指标 | 取值 | 说明 |
 | --- | --- | --- |
-| `cat` | `stat` / `monetary` / `pol` / `dip` / `mkt` | 一级范畴，决定格内色条与图例 |
+| `cat` | `econ` / `pol` / `dip` / `mkt` | 一级范畴，决定格内色条与图例（经济蓝 / 政治红 / 外交紫 / 作息绿） |
 | `topic` | `price` / `labor` / `growth` / `trade` / `money` / `fiscal` / `tech` / `energy` / `security` / `election` / `calendar` | 议题域，用于检索与聚合 |
 | `actor` | `exec` / `agency` / `congress` / `fed` / `court` / `stats` / `intl` / `none` | 主导主体 |
-| `impact` | `high` / `mid` / `low` | 市场传导强度 |
 
 指标定义、判定顺序与口径规范见 `docs/日历分类指标.md`；条目清单见 `docs/日历条目清单.md`
-（另有同内容 CSV）。旧值迁移：`econ` → `stat`（货币政策拆出为 `monetary`，8 条监管规则改判
-`pol`），`hol` → `mkt`（并入时制切换），`pol`/`dip` 不变。
+（另有同内容 CSV）。`econ` 含统计发布与 FOMC；`mkt` 取代原 `hol` 并并入时制切换；
+原本混在 `econ` 里的 8 条行政规则制定改判 `pol`。
 
 ---
 
@@ -491,8 +490,8 @@ python3 scripts/brief.py merge scripts/briefs.json
 - `cal_update.py`：键为 `(d, d2, title)`，命中即跳过，**绝无删除分支**；
   写回前用 `(d, title)` 键集合做兜底断言；只改 `us-cal-data` 一个数据块。
   需要「待定 → 官方确认」精化时加 `--update-notes`。
-- `cal_classify.py`：日历分类与口径规范化。按规则给每条补 `cat/topic/actor/impact`
-  四指标，`check` 校验覆盖与一致性、`apply` 写入（幂等，支持 `--fix-holiday` 统一假日口径）、
+- `cal_classify.py`：日历分类与口径规范化。按规则给每条补 `cat/topic/actor`
+  三项指标，`check` 校验覆盖与一致性、`apply` 写入（幂等，支持 `--fix-holiday` 统一假日口径）、
   `report --csv` 导出清单。规则判错时在 `OVERRIDES` 里按 `(日期, 标题)` 覆盖。定义见
   `docs/日历分类指标.md`。
 - `fix_congress_urls.py`：congress.gov 对法案与四类决议用不同路径段，早期统一写成

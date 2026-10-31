@@ -16,7 +16,7 @@
 
 单个候选节点字段：
     d     必填  YYYY-MM-DD        起始日（美东）
-    cat   必填  stat|monetary|pol|dip|mkt  统计 / 货币 / 政治 / 外交 / 作息
+    cat   必填  econ|pol|dip|mkt  经济 / 政治 / 外交 / 作息
     title 必填  中文全称
     d2    选填  YYYY-MM-DD        多日会期结束日
     t     选填  HH:MM             美东时刻（定期数据发布、FOMC 决议等）
@@ -43,7 +43,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_PORTAL = os.path.join(os.path.dirname(HERE), 'index.html')
-CATS = ('stat', 'monetary', 'pol', 'dip', 'mkt')
+CATS = ('econ', 'pol', 'dip', 'mkt')
 BLOCK_RE = re.compile(r'(<script type="application/json" id="us-cal-data"[^>]*>)(.*?)(</script>)', re.S)
 DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 TIME_RE = re.compile(r'^([01]\d|2[0-3]):[0-5]\d$')
