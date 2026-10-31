@@ -1,9 +1,111 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-10-30 09:57",
-  "count": 30,
+  "updated_at": "2026-10-31 14:13",
+  "count": 36,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "Flux Drive v. Sparks",
+      "url": "https://www.courtlistener.com/opinion/11050875/flux-drive-v-sparks/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十巡回上诉法院",
+      "summary": "2026 WL 352016, *5–8 (10th Cir. 2026) (imposing sanctions on a pro se attorney who used a generative AI",
+      "title_cn": "Flux Drive 诉 Sparks 案（涉商业秘密窃取指控中对伊利诺伊州被告的属人管辖权）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "第十巡回上诉法院合并三案，维持对三名伊利诺伊州被告驳回起诉的裁定。原告指控其共谋窃取水冷驱动装置商业秘密并转交中国制造商仿冒生产；法院认定被告虽有对科罗拉多州的有目的联系，但被指控损害与该州行为之间缺乏因果链条，特定属人管辖权不成立。法院并依科州费用转移法维持合计约 18.4 万美元律师费判付。\n商业秘密实体争点未进入审理，片段亦未载明合议庭对《保护商业秘密法》域外适用的判断，以判决书原文为准。\n对市场意味着什么：无直接定价影响。此为管辖程序性裁定，不改变任何企业的责任认定；对涉华技术转移诉讼的原告方提示，仅凭邮件与资金往来难以在被告住所地之外建立管辖。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "United States v. State of California",
+      "url": "https://www.courtlistener.com/opinion/11050887/united-states-v-state-of-california/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "the denial tantamount to the denial of a preliminary injunction.” Babaria v. Blinken, 87 F.4th 963, 976",
+      "title_cn": "美国诉加利福尼亚州案（涉邮寄选票公民身份核验与《至上条款》，第九巡回拒绝在上诉期间发布禁制令）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "第九巡回上诉法院以全体法官名义驳回联邦政府的紧急动议，拒绝在上诉期间命令加州与洛杉矶县暂扣并核验被联邦列为「可能非公民」者的邮寄选票。政府主张《至上条款》与 18 U.S.C. § 611 禁止两被告寄送并计读此类选票，地区法院拒发临时限制令，巡回法院认定未满足禁制令门槛，Bumatay 法官持异议。\n法院对政府是否具备原告资格与诉因明示「假定而不裁定」，此前同案另一上诉（26-7070）已因管辖问题被驳回。\n对市场意味着什么：无直接定价影响。距 11 月 3 日中期选举仅数日，该裁定意味着联邦核验要求在本次选举中不生效，选举结果认证争议风险仍在，但尚不构成可定价的资产类别风险。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "Seyb v. Labrador",
+      "url": "https://www.courtlistener.com/opinion/11050872/seyb-v-labrador/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "appeal. “[I]f the petition [for a stay pending appeal] has not made a certain threshold showing",
+      "title_cn": "Seyb 诉 Labrador 案（涉爱达荷州健康例外堕胎禁令，上诉期间暂缓执行地区法院禁令）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "第九巡回上诉法院以 2:1 准许爱达荷州在上诉期间暂缓执行地区法院禁令。该禁令原禁止州方依《生命防卫法》（Idaho Code § 18-622）与《胎儿心跳法》（§ 18-8804）起诉为保护孕妇健康而实施堕胎的医生。多数意见认为州方已较强证明其可能依 Dobbs 胜诉，且州保护胎儿生命的利益超过医生所受损害。\nBerzon 法官异议称 Dobbs 未触及独立的生命健康例外；首份上诉状定于 12 月 18 日提交。\n对市场意味着什么：无直接定价影响。属州法与宪法解释争议，不涉及医药企业产品责任或医保支付政策的直接调整。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "Alamrew v. Morgan",
+      "url": "https://www.courtlistener.com/opinion/11050871/alamrew-v-morgan/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第五巡回上诉法院",
+      "summary": "ROA.230. Each of these demands was sanctionable when made. Alamrew was given written notice",
+      "title_cn": "Alamrew 诉 Morgan 案（涉移民长期拘留人身保护令，上诉因无实际意义被撤销）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "第五巡回上诉法院准许将案件更正登记为民事上诉，并以争议已无实际意义为由撤销上诉，其余待决动议一并驳回。案件源于一名埃塞俄比亚公民被长期拘留后提起的 § 2241 人身保护令申请：地区法院认定 Zadvydas 六个月期限已耗尽，于 8 月 28 日命令立即释放并禁止移送。\n巡回法院未就 8 U.S.C. § 1252 管辖排除条款或人身保护令救济范围作实体裁判。Oldham 法官另出具意见批评地区法院命令背离人身保护令本旨，但法院本身未施加任何制裁；检索片段中「可受制裁」一语出自该单独意见，非裁判结论。\n对市场意味着什么：无直接定价影响。属移民拘留程序争议，不改变现行拘留与遣返政策框架。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "Greenspan v. Executive Office for U.S. Attorneys",
+      "url": "https://www.courtlistener.com/opinion/11050940/greenspan-v-executive-office-for-us-attorneys/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "moved to compel production and to impose contempt sanctions, asserting that defendants were “actively engaged",
+      "title_cn": "Greenspan 诉联邦检察官执行办公室案（涉《信息自由法》豁免主张与可分割性审查）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "哥伦比亚特区联邦地区法院就《信息自由法》诉讼第二轮交叉简易判决作出裁定：确认联邦调查局检索方法合理、其对豁免 5（律师工作成果与检控策略）的扣留成立，但认定联邦调查局与缉毒署对豁免 3、6、7(C)—7(E) 的说明不足，尤其未就已见于公开法庭文件的信息履行可分割性审查与「可预见损害」举证。\n法院驳回原告简易判决动议，被告动议部分获准、部分被驳回，并给予其提交补充声明补正的机会。案涉 1990 年代芝加哥洗钱与海洛因贩运侦查档案，介入被告为尼日利亚总统 Tinubu。\n对市场意味着什么：无直接定价影响。属政府信息公开范畴，不产生行业性合规义务变化。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-10-30",
+      "title": "Thomas v. Monarez",
+      "url": "https://www.courtlistener.com/opinion/11050919/thomas-v-monarez/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "that the CDC’s vaccine frameworks are arbitrary and capricious; a declaration that the CDC’s use of",
+      "title_cn": "Thomas 诉 Monarez 案（涉 CDC 儿童疫苗接种时间表，因缺乏诉讼资格被驳回）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-10-31",
+        "body": "哥伦比亚特区联邦地区法院依《联邦民事诉讼规则》12(b)(1) 以缺乏宪法第三条诉讼资格为由驳回全案，未触及 12(b)(6) 实体争点。两名医生主张因采用个体化疫苗方案被州医学会吊销执照，法院认定吊销决定基于多项独立于 CDC 建议的理由，且即便胜诉州医学会亦无遵从义务，因果关系与可救济性均不成立。\n原告组织未能证明其核心活动遭直接干预，仅资源转向不构成可认知损害。\n对市场意味着什么：无直接定价影响。CDC 推荐接种时间表未被司法变更，疫苗采购与支付政策不受影响；针对疫苗政策的诉讼仍将持续。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-10-29",
@@ -13,13 +115,13 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "Amendment / Preliminary Injunction The panel affirmed the district court’s preliminary injunction preventing",
-      "title_cn": "加州商会诉邦塔（涉加州 SB 399 雇主强制会议禁令的第一修正案审查）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-10-29",
         "body": "第九巡回上诉法院 10 月 29 日维持地区法院初步禁令，禁止加州执行 SB 399（《加州劳动法典》第 1137 条）。该法禁止雇主因雇员拒绝参加以传达雇主对宗教或政治事务意见为目的的会议，而施加解雇等不利处分。\n\n合议庭由 Tallman 执笔，认定该法虽表面规制行为，但仅在雇主表达特定观点时启动，实质构成内容与言说者身份的双重限制，应适用严格审查；加州援引的「被俘听众」理论不适用于非政府场合的非政府言论。法院并确认原告具备起诉资格，未触及《国家劳动关系法》优先适用问题。\n\n对市场意味着什么：无直接定价影响。争点限于雇主内部言论的宪法边界，不改变加州工资、工时与集体谈判义务。",
         "tier": "note"
-      }
+      },
+      "title_cn": "加州商会诉邦塔（涉加州 SB 399 雇主强制会议禁令的第一修正案审查）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -30,13 +132,13 @@
       "kind": "判决",
       "agency": "第一巡回上诉法院",
       "summary": "brought claims under the Administrative Procedure Act (\"APA\"), 5 U.S.C. § 706, et",
-      "title_cn": "大波士顿法律服务处诉国土安全部（涉移民程序材料获取政策与起诉资格）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-29",
         "body": "第一巡回上诉法院 10 月 29 日维持马萨诸塞州联邦地区法院判决，以原告缺乏《宪法》第三条起诉资格为由驳回全部请求。原告为两家移民律所及一家法律援助机构，主张国土安全部将移民程序中的证据开示统一转为《信息自由法》申请（所称「不披露政策」），违反《行政程序法》、正当程序条款与移民法规。\n\n合议庭由 Gelpí 法官执笔，认为原告未能证明该做法在国土安全部全部门统一存在，所称损害因而不具「具体性」，属推测性；律所因代理成本上升主张的组织资格亦不成立。因起诉资格不成立，法院未进入实体审理。\n\n对市场意味着什么：无直接定价影响。判决仅涉移民程序举证途径，未改变实体移民规则。",
         "tier": "note"
-      }
+      },
+      "title_cn": "大波士顿法律服务处诉国土安全部（涉移民程序材料获取政策与起诉资格）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -47,13 +149,13 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "DV-2027 Program was arbitrary and capricious and unlawfully withheld agency action under the Administrative",
-      "title_cn": "Red Eagle 律所诉鲁比奥（涉 2027 财年多元化签证抽签停摆的紧急中止）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-29",
         "body": "第九巡回上诉法院 10 月 29 日准许国务院紧急中止申请，暂停执行地区法院要求重启 2027 财年多元化签证（DV-2027）抽签的初步禁令，并指令书记员排定上诉简报日程。\n\n合议庭以 per curiam 形式出具，由 McKeown、Smith、Thomas 三位法官组成。法院认为政府实体上很可能胜诉：多元化签证法未设法律服务条款，原告律所的经济利益与该法宗旨仅有边际关联，难谓落入法条保护或规制的利益区间。法院声明不认可国务院未开放登记期的做法；Smith 法官协同意见进一步质疑原告的第三条起诉资格。\n\n对市场意味着什么：无直接定价影响。抽签停摆压缩移民律所业务量，对上市企业无实质敞口。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Red Eagle 律所诉鲁比奥（涉 2027 财年多元化签证抽签停摆的紧急中止）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -98,13 +200,13 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "declaratory relief. The Court granted a preliminary injunction, holding that the FTC had likely issued",
-      "title_cn": "世界跨性别健康专业协会诉联邦贸易委员会（涉民事调查令撤回后的无实际意义认定）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-29",
         "body": "哥伦比亚特区联邦地区法院 10 月 29 日以案件已无实际意义为由，准许联邦贸易委员会撤诉动议，驳回世界跨性别健康专业协会请求。此前法院曾部分准许初步禁令，认定该委员会很可能因原告受保护言论而发出调查令构成报复；该委员会随后撤回，转而于德州北区提起执法诉讼。\n\nBoasberg 首席法官认为，原告主张的损害根源唯一指向已撤回的调查令，法院已无法提供有效救济，否则将沦为咨询性意见；两项例外（自愿停止、可重复却逃避审查）均不适用。法院并指出记录几无疑问显示该委员会曾侵犯原告权利，但调查令既不存在，本院无权作无实效谴责。\n\n对市场意味着什么：无直接定价影响。属执法程序争议，未触及广告标准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "世界跨性别健康专业协会诉联邦贸易委员会（涉民事调查令撤回后的无实际意义认定）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -115,13 +217,13 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "process is unlawful, Beaumont moves for a preliminary injunction reinstating its access to those discounts",
-      "title_cn": "Corewell 健康威廉·博蒙特大学医院诉肯尼迪（涉 340B 登记季度生效规则的初步禁令）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-10-29",
         "body": "哥伦比亚特区联邦地区法院 10 月 29 日驳回 Corewell 健康威廉·博蒙特大学医院初步禁令动议，驳回政府撤诉动议。争议指向卫生资源与服务管理局（HRSA）第 340B 条折扣计划的注册规则：每季度仅一次且仅向未来生效，承保实体只能在 DSH 与 RRC 择一。该院误判资格改登记为 RRC，两季度失去孤儿药折扣。\n\nNichols 法官认定该院具备起诉资格，但其已于 10 月 1 日恢复 DSH 身份，损失属既往且未量化，未达不可弥补损害标准；季度延迟生效规则是否越权属接近临界的问题，法院倾向认为属合理程序机制。\n\n对市场意味着什么：无直接定价影响。340B 折扣资格与登记节奏未变。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Corewell 健康威廉·博蒙特大学医院诉肯尼迪（涉 340B 登记季度生效规则的初步禁令）",
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
