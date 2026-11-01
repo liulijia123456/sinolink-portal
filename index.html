@@ -9732,6 +9732,7 @@
         return { board: board, items: (board && board.items) || [] };
       }
 
+      var FILTER_BOARD = '';
       function applyFilters(items) {
         var st = filterState;
         var now = new Date();
@@ -9740,8 +9741,14 @@
             var d = new Date(it.date || '');
             if (isNaN(d.getTime()) || (now - d) / 86400000 > parseInt(st.time, 10)) return false;
           }
-          if (st.kind !== 'all' && it.kind !== st.kind) return false;
-          if (st.agency !== 'all' && (it.agency || '') !== st.agency) return false;
+          if (st.kind !== 'all') {
+            var kv = FILTER_BOARD === 'congress' ? congressType(it.kind) : it.kind;
+            if (kv !== st.kind) return false;
+          }
+          if (st.agency !== 'all') {
+            var av = FILTER_BOARD === 'congress' ? congressChamber(it.kind) : (it.agency || '');
+            if (av !== st.agency) return false;
+          }
           if (st.domain !== 'all' && (it.domain || '其他') !== st.domain) return false;
           if (st.q) {
             var q = st.q.toLowerCase();
@@ -9783,10 +9790,24 @@
         });
       }
 
-            function fillKindOptions(items) {
+            // 国会的 kind 是「参议院法案」这种合体写法：拆成院别（部门）与文种（类型）两个维度，
+      // 与其它板块「部门 / 类型」分开筛选的口径保持一致。
+      function congressChamber(k) {
+        k = k || '';
+        if (/^(参议院|参院)/.test(k)) return '参议院';
+        if (/^(众议院|众院)/.test(k)) return '众议院';
+        return '';
+      }
+      // 去掉院别前缀，只留文种：法案 / 决议 / 联合决议 / 共同决议
+      function congressType(k) { return String(k || '').replace(/^(参议院|参院|众议院|众院)/, ''); }
+
+      function fillKindOptions(items, key) {
         var sel = document.getElementById('filter-kind');
         var kinds = [];
-        items.forEach(function (it) { if (it.kind && kinds.indexOf(it.kind) === -1) kinds.push(it.kind); });
+        items.forEach(function (it) {
+          var v = key === 'congress' ? congressType(it.kind) : it.kind;
+          if (v && kinds.indexOf(v) === -1) kinds.push(v);
+        });
         var prev = sel.value;
         sel.innerHTML = '<option value="all">全部</option>' + kinds.map(function (k) {
           return '<option value="' + esc(k) + '">' + esc(k) + '</option>';
@@ -9814,6 +9835,19 @@
       function fillAgencyOptions(items, mode) {
         var sel = document.getElementById('filter-agency');
         var seen = [];
+        if (mode === 'congress') {
+          items.forEach(function (it) {
+            var c = congressChamber(it.kind);
+            if (c && seen.indexOf(c) === -1) seen.push(c);
+          });
+          seen.sort(function (a, b) { return a === '众议院' ? -1 : (b === '众议院' ? 1 : 0); });
+          var prevCh = sel.value;
+          sel.innerHTML = '<option value="all">全部</option>' + seen.map(function (c) {
+            return '<option value="' + esc(c) + '">' + esc(c) + '</option>';
+          }).join('');
+          sel.value = (prevCh === 'all' || seen.indexOf(prevCh) >= 0) ? prevCh : 'all';
+          return;
+        }
         items.forEach(function (it) { if (it.agency && seen.indexOf(it.agency) === -1) seen.push(it.agency); });
         var prev = sel.value;
         var html = '<option value="all">全部</option>';
@@ -9887,7 +9921,7 @@
         if (title) title.textContent = byKind ? '按文件类型' : (key === 'judicial' ? '按法院' : '按机构');
         var groups = {}, total = 0;
         items.forEach(function (it) {
-          var k = byKind ? (it.kind || '其他') : (it.agency || it.source || '未标注机构');
+          var k = byKind ? (congressType(it.kind) || '其他') : (it.agency || it.source || '未标注机构');
           groups[k] = (groups[k] || 0) + 1;
           total++;
         });
@@ -9926,7 +9960,9 @@
       function renderPwChips() {
         var host = document.getElementById('pw-selected');
         if (!host) return;
-        var LAB = { kind: '类型', domain: '领域', agency: '机构' };
+        var agencyLab = document.getElementById('filter-agency-label');
+        var LAB = { kind: '类型', domain: '领域',
+                    agency: (agencyLab && agencyLab.textContent.trim()) || '机构' };
         var chips = [];
         if (filterState.q) chips.push(['关键词：' + filterState.q, 'q']);
         var t = document.getElementById('filter-time');
@@ -9997,17 +10033,17 @@
         var updated = document.getElementById('board-updated');
         var count = document.getElementById('filter-count');
 
-        fillKindOptions(allItems);
+        fillKindOptions(allItems, key);
         fillDomainOptions(allItems);
         // 「部门 / 法院」筛选：白宫、独立机构按部门，司法按法院层级；国会板块隐藏并强制全部
         var agencyGroup = document.getElementById('filter-agency-group');
         var agencySel = document.getElementById('filter-agency');
         var agencyLabel = document.getElementById('filter-agency-label');
-        if (key === 'agencies' || key === 'whitehouse' || key === 'judicial') {
+        if (key === 'agencies' || key === 'whitehouse' || key === 'judicial' || key === 'congress') {
           agencyGroup.hidden = false;
           if (agencyLabel) agencyLabel.textContent = key === 'judicial' ? '法院' : '部门';
           fillAgencyOptions(allItems, key === 'whitehouse' ? 'whitehouse'
-            : (key === 'judicial' ? 'judicial' : ''));
+            : (key === 'judicial' ? 'judicial' : (key === 'congress' ? 'congress' : '')));
         } else {
           agencyGroup.hidden = true;
           if (agencyLabel) agencyLabel.textContent = '部门';
@@ -10017,6 +10053,7 @@
         var thAgency = document.getElementById('pw-th-agency');
         if (thAgency) thAgency.textContent = key === 'congress' ? '来源'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
+        FILTER_BOARD = key;
         renderPwTree(key, allItems);
         syncFilterUI();
         renderCurrentBoard = key;
