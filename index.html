@@ -3217,6 +3217,51 @@
   .pw-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 12px; font-size: 12px; color: #6b7683; }
   .pw-count b { color: #16212e; }
 
+  /* 时间：小日历按钮与弹层 */
+  .pw-cal-wrap { position: relative; display: inline-flex; }
+  .pw-cal-btn {
+    width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid var(--border); border-radius: 7px; background: #fff; color: #5b6673; cursor: pointer;
+    transition: color .16s ease, border-color .16s ease, background-color .16s ease;
+  }
+  .pw-cal-btn:hover, .pw-cal-btn.on { color: #6b4a12; border-color: #a8823c; background: rgba(168, 130, 60, .08); }
+  .pw-cal {
+    position: absolute; top: calc(100% + 8px); left: 0; z-index: 40; width: 248px;
+    background: #fff; border: 1px solid var(--border-light); border-radius: 12px;
+    box-shadow: 0 18px 38px -20px rgba(11, 23, 36, .35), 0 2px 6px rgba(11, 23, 36, .05);
+    padding: 10px 10px 8px;
+  }
+  .pw-cal-h { display: flex; align-items: center; justify-content: space-between; padding: 2px 4px 8px; }
+  .pw-cal-m { font-size: 12.5px; font-weight: 600; color: #16212e; }
+  .pw-cal-nav { display: inline-flex; gap: 2px; }
+  .pw-cal-nav button {
+    width: 22px; height: 22px; border: 0; background: none; border-radius: 6px;
+    color: #6b7683; font-size: 14px; line-height: 1; cursor: pointer;
+  }
+  .pw-cal-nav button:hover { background: rgba(11, 23, 36, .06); color: #16212e; }
+  .pw-cal-w { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; padding-bottom: 4px;
+    font-family: var(--mono, monospace); font-size: 9.5px; color: #98a2ae; text-align: center; }
+  .pw-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+  .pw-cal-d { position: relative; height: 30px; border: 0; background: none; border-radius: 7px;
+    font: inherit; font-size: 11.5px; color: #16212e; cursor: pointer; }
+  .pw-cal-d:hover { background: rgba(11, 23, 36, .06); }
+  .pw-cal-d.empty { cursor: default; }
+  .pw-cal-d.empty:hover { background: none; }
+  .pw-cal-d.has::after {
+    content: ''; position: absolute; left: 50%; bottom: 4px; width: 3px; height: 3px;
+    border-radius: 50%; background: #a8823c; transform: translateX(-50%); opacity: .75;
+  }
+  .pw-cal-d.on { background: #16212e; color: #f7f3ea; }
+  .pw-cal-d.on::after { background: #e8c98a; opacity: 1; }
+  .pw-cal-d.today { box-shadow: inset 0 0 0 1px rgba(168, 130, 60, .55); }
+  .pw-cal-f {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border-light);
+    font-size: 10.5px; color: #6b7683;
+  }
+  .pw-cal-f button { border: 0; background: none; color: #2f6fb8; font: inherit; font-size: 11px; cursor: pointer; padding: 0; }
+  .pw-cal-f button:hover { text-decoration: underline; }
+
   /* 1320 以下：侧栏移到顶部，表格吃满宽度（否则标题列会被挤到 200px 以内） */
   @media (max-width: 1320px) {
     .pw { grid-template-columns: 1fr; }
@@ -5054,9 +5099,16 @@
               <span class="pw-grp"><span class="pw-lab">时间</span>
                 <select class="pw-sel" id="filter-time" aria-label="时间范围">
                   <option value="all">全部</option>
+                  <option value="3">近 3 天</option>
                   <option value="7">近 7 天</option>
                   <option value="30">近 30 天</option>
                 </select>
+                <span class="pw-cal-wrap">
+                  <button type="button" class="pw-cal-btn" id="pw-cal-btn" aria-haspopup="dialog" aria-expanded="false" title="按具体日期筛选" aria-label="按具体日期筛选">
+                    <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="2" y="3.5" width="12" height="10.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2 7h12" stroke="currentColor" stroke-width="1.3"/><path d="M5.2 2v2.6M10.8 2v2.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="pw-cal" id="pw-cal" role="dialog" aria-label="选择具体日期" hidden></div>
+                </span>
               </span>
               <span class="pw-grp"><span class="pw-lab">类型</span>
                 <select class="pw-sel" id="filter-kind" aria-label="文件类型"></select>
@@ -9627,7 +9679,9 @@
       var resetBtn = document.getElementById('filter-reset');
       if (resetBtn) resetBtn.addEventListener('click', function () {
         filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', q: '' };
-        document.getElementById('filter-time').value = 'all';
+        var tSel = document.getElementById('filter-time');
+        [].slice.call(tSel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
+        tSel.value = 'all';
         document.getElementById('filter-agency').value = 'all';
         document.getElementById('filter-kind').value = 'all';
         document.getElementById('filter-domain').value = 'all';
@@ -9738,8 +9792,12 @@
         var now = new Date();
         var out = items.filter(function (it) {
           if (st.time !== 'all') {
-            var d = new Date(it.date || '');
-            if (isNaN(d.getTime()) || (now - d) / 86400000 > parseInt(st.time, 10)) return false;
+            if (st.time.indexOf('date:') === 0) {
+              if ((it.date || '') !== st.time.slice(5)) return false;
+            } else {
+              var d = new Date(it.date || '');
+              if (isNaN(d.getTime()) || (now - d) / 86400000 > parseInt(st.time, 10)) return false;
+            }
           }
           if (st.kind !== 'all') {
             var kv = FILTER_BOARD === 'congress' ? congressType(it.kind) : it.kind;
@@ -9999,6 +10057,120 @@
         };
       }
 
+      // ---------- 按具体日期筛选的小日历 ----------
+      var PW_DATES = {};           // 当前板块：日期 → 条数，用于在日历上打点
+      var pwCalYM = null;          // 日历当前显示的月份
+
+      function pwDatesOf(items) {
+        PW_DATES = {};
+        items.forEach(function (it) {
+          if (!it.date) return;
+          PW_DATES[it.date] = (PW_DATES[it.date] || 0) + 1;
+        });
+      }
+
+      function pwCalRender() {
+        var box = document.getElementById('pw-cal');
+        if (!box) return;
+        var all = Object.keys(PW_DATES).sort();
+        if (!pwCalYM) {
+          var ref = filterState.time.indexOf('date:') === 0 ? filterState.time.slice(5)
+            : (all.length ? all[all.length - 1] : '');
+          var d0 = ref ? new Date(ref + 'T00:00:00') : new Date();
+          pwCalYM = { y: d0.getFullYear(), m: d0.getMonth() };
+        }
+        var y = pwCalYM.y, m = pwCalYM.m;
+        var first = new Date(y, m, 1);
+        var startWd = first.getDay();
+        var days = new Date(y, m + 1, 0).getDate();
+        var cur = filterState.time.indexOf('date:') === 0 ? filterState.time.slice(5) : '';
+        var today = new Date();
+        var todayKey = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' +
+          String(today.getDate()).padStart(2, '0');
+
+        var cells = [];
+        for (var i = 0; i < startWd; i++) cells.push('<button class="pw-cal-d empty" disabled></button>');
+        for (var dd = 1; dd <= days; dd++) {
+          var key = y + '-' + String(m + 1).padStart(2, '0') + '-' + String(dd).padStart(2, '0');
+          var cls = 'pw-cal-d' + (PW_DATES[key] ? ' has' : '') + (key === cur ? ' on' : '') +
+                    (key === todayKey ? ' today' : '');
+          cells.push('<button type="button" class="' + cls + '" data-d="' + key + '" title="' +
+                     key + '（' + (PW_DATES[key] || 0) + ' 条）">' + dd + '</button>');
+        }
+        box.innerHTML =
+          '<div class="pw-cal-h">' +
+            '<span class="pw-cal-m">' + y + ' 年 ' + (m + 1) + ' 月</span>' +
+            '<span class="pw-cal-nav">' +
+              '<button type="button" data-nav="-1" aria-label="上个月">‹</button>' +
+              '<button type="button" data-nav="1" aria-label="下个月">›</button>' +
+            '</span>' +
+          '</div>' +
+          '<div class="pw-cal-w"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span></div>' +
+          '<div class="pw-cal-grid">' + cells.join('') + '</div>' +
+          '<div class="pw-cal-f"><span>' + (all.length ? '共 ' + all.length + ' 个有数据日期' : '本板块暂无日期数据') +
+          '</span><button type="button" data-clear="1">清除日期</button></div>';
+      }
+
+      function pwSetDate(key) {
+        var sel = document.getElementById('filter-time');
+        if (!sel) return;
+        [].slice.call(sel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
+        if (key) {
+          var opt = document.createElement('option');
+          opt.value = 'date:' + key;
+          opt.textContent = key;
+          sel.appendChild(opt);
+          sel.value = opt.value;
+          filterState.time = opt.value;
+        } else {
+          sel.value = 'all';
+          filterState.time = 'all';
+        }
+        boardPage = 0;
+        syncFilterUI();
+        if (renderCurrentBoard) renderBoard(renderCurrentBoard);
+      }
+
+      function pwCalClose() {
+        var box = document.getElementById('pw-cal');
+        var btn = document.getElementById('pw-cal-btn');
+        if (box) box.hidden = true;
+        if (btn) { btn.classList.remove('on'); btn.setAttribute('aria-expanded', 'false'); }
+      }
+
+      function pwCalBind() {
+        var btn = document.getElementById('pw-cal-btn');
+        var box = document.getElementById('pw-cal');
+        if (!btn || !box || btn.dataset.bound) return;
+        btn.dataset.bound = '1';
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (!box.hidden) { pwCalClose(); return; }
+          pwCalRender();
+          box.hidden = false;
+          btn.classList.add('on');
+          btn.setAttribute('aria-expanded', 'true');
+        });
+        box.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var nav = e.target.closest ? e.target.closest('[data-nav]') : null;
+          if (nav) {
+            var step = parseInt(nav.getAttribute('data-nav'), 10);
+            var mm = pwCalYM.m + step, yy = pwCalYM.y;
+            if (mm < 0) { mm = 11; yy--; }
+            if (mm > 11) { mm = 0; yy++; }
+            pwCalYM = { y: yy, m: mm };
+            pwCalRender();
+            return;
+          }
+          if (e.target.closest && e.target.closest('[data-clear]')) { pwSetDate(''); pwCalClose(); return; }
+          var day = e.target.closest ? e.target.closest('[data-d]') : null;
+          if (day) { pwSetDate(day.getAttribute('data-d')); pwCalClose(); }
+        });
+        document.addEventListener('click', function () { pwCalClose(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') pwCalClose(); });
+      }
+
       function syncFilterUI() {
         var defaults = { 'filter-time': 'all', 'filter-agency': 'all', 'filter-kind': 'all', 'filter-domain': 'all' };
         var any = false;
@@ -10054,6 +10226,8 @@
         if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
+        pwDatesOf(allItems);
+        pwCalBind();
         renderPwTree(key, allItems);
         syncFilterUI();
         renderCurrentBoard = key;
