@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "built_at": "2026-11-01T09:28:28+08:00",
-  "source_fetched_at": "2026-11-01 09:24",
+  "built_at": "2026-11-01T09:36:35+08:00",
+  "source_fetched_at": "2026-11-01 09:32",
   "boards": {
     "whitehouse": {
-      "count": 206,
-      "updated_at": "2026-10-31 13:46"
+      "count": 222,
+      "updated_at": "2026-11-01 09:32"
     },
     "congress": {
       "count": 633,
