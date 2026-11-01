@@ -890,11 +890,6 @@
     .ele-map-legend { padding-bottom: 2px; }
   }
 
-  .ele-h2 {
-    font-size: 17px; font-weight: 700; color: var(--text-light); margin: 34px 0 16px;
-    padding-left: 12px; border-left: 4px solid var(--accent-light); line-height: 1.4;
-  }
-
   /* ===== 选举地图：类型 / 图层切换器 ===== */
   .emap-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--border-light); }
   .emap-seg { display: inline-flex; background: #eef2f7; border-radius: 8px; padding: 3px; gap: 2px; }
@@ -939,9 +934,6 @@
   .ele-tab:hover { color: var(--text-light); }
   .ele-tab.on { color: var(--accent-light); }
   .ele-tab.on::after { content: ''; position: absolute; left: 10px; right: 10px; bottom: -2px; height: 2px; background: var(--accent-light); }
-  .ele-sub { font-size: 15px; font-weight: 700; color: var(--text-light); margin: 26px 0 12px; display: flex; align-items: baseline; gap: 10px; }
-  .ele-sub span { font-size: 11.5px; font-weight: 400; color: var(--muted-light); letter-spacing: 0.04em; }
-
   /* ===== 选举程序时间轴 ===== */
   .proc { position: relative; padding-left: 26px; }
   .proc::before { content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; background: var(--border-light); }
@@ -1036,77 +1028,129 @@
   .ele-table .td-sub { display: block; font-size: 11px; color: var(--muted-light); margin-top: 2px; }
   .ele-src { font-size: 11.5px; color: var(--muted-light); margin-top: 12px; line-height: 1.8; }
 
-  /* ===== 动态归档：账簿式条目列表（每页 20 条） =====
-     记录型内容靠三条隐含竖栏定位：日期（等宽、左缘对齐）、类别标签、右端序号；
-     摘要压到 3 行按需展开，一屏可横比同类事件，而不必逐条长滚。 */
+  /* ===== 选举动态：四段式区块标题（01–04） =====
+     同一套骨架（铜金序号 + 宋体中文 + 等宽英文 + 墨线）贯穿全板块，
+     靠编号与英文副题区分章节；动态条目改用墨底反白，作为独立档案区。 */
   #view-election {
     --ele-serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "SimSun", Georgia, "Times New Roman", serif;
     --ele-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
-  /* 区块抬头：与「选举程序」「民调数据」同字号，右端挂口径说明 */
-  #view-election .ea-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 34px 0 10px; }
-  #view-election .ea-h .ea-t { font-size: 15px; font-weight: 700; color: var(--text-light); }
-  #view-election .ea-h .ea-e { font-size: 11.5px; font-weight: 400; color: var(--muted-light); letter-spacing: 0.04em; }
-  #view-election .ea-h .ea-m { margin-left: auto; font-size: 11px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
-  #view-election .ea-h .ea-m b { font-weight: 600; color: var(--text-light); }
-
-  #view-election .ele-ledger { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; }
-  /* 月份搁板：横跨两列，作为长列表的阅读分段 */
-  #view-election .elr-m { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; margin: 20px 0 0; }
-  #view-election .elr-m:first-child { margin-top: 4px; }
-  #view-election .elr-m b { flex: none; font-family: var(--ele-serif); font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #16212e; }
-  #view-election .elr-m i { flex: 1 1 auto; height: 1px; background: var(--border-light); }
-  #view-election .elr-m span { flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.06em; color: #6b7684; }
-
-  #view-election .elr { position: relative; min-width: 0; padding: 15px 0 16px; border-bottom: 1px solid var(--border-light); }
-  #view-election .elr::before {
-    content: ''; position: absolute; left: -16px; top: 15px; bottom: 16px; width: 2px;
-    background: var(--accent-light); opacity: 0; transition: opacity 0.18s ease;
+  #view-election .ele-h {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    margin: 42px 0 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(31, 39, 51, 0.45);
   }
-  #view-election .elr:hover::before { opacity: 0.45; }
-  #view-election .elr-h { display: flex; align-items: baseline; gap: 9px; margin-bottom: 5px; }
-  #view-election .elr-d { flex: none; font-family: var(--ele-mono); font-size: 11px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
-  #view-election .elr-k { flex: none; font-size: 10.5px; font-weight: 600; line-height: 1.55; padding: 1px 7px; border-radius: 2px; letter-spacing: 0.02em; }
-  #view-election .elr-no { margin-left: auto; flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.12em; color: rgba(160, 110, 38, 0.88); }
+  #view-election .ele-h .eh-no {
+    flex: none; font-family: var(--ele-mono); font-size: 10.5px; font-weight: 600;
+    letter-spacing: 0.18em; color: var(--gold-light);
+  }
+  #view-election .ele-h .eh-cn {
+    flex: none; margin: 0; font-family: var(--ele-serif); font-size: 20px; font-weight: 600;
+    letter-spacing: 0.04em; color: #16212e;
+  }
+  #view-election .ele-h .eh-x { flex: none; font-size: 11.5px; color: var(--muted-light); }
+  #view-election .ele-h .eh-en {
+    margin-left: auto; font-family: var(--ele-mono); font-size: 9.5px;
+    letter-spacing: 0.2em; color: var(--muted-light);
+  }
+
+  /* ===== 动态条目：墨底标题带 + 米色档案面，与上方白卡区块明确分层 ===== */
+  #view-election .ea { margin: 42px 0 0; border-radius: 3px; }
+  #view-election .ea-head {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    padding: 11px 22px 13px; background: #16212e; border-radius: 3px 3px 0 0;
+  }
+  #view-election .ea-head .eh-no {
+    flex: none; font-family: var(--ele-mono); font-size: 10.5px; font-weight: 600;
+    letter-spacing: 0.18em; color: #c9962e;
+  }
+  #view-election .ea-head .eh-cn {
+    flex: none; margin: 0; font-family: var(--ele-serif); font-size: 20px; font-weight: 600;
+    letter-spacing: 0.04em; color: #f3f0e8;
+  }
+  #view-election .ea-head .eh-en {
+    flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.2em;
+    color: rgba(243, 240, 232, 0.5);
+  }
+  #view-election .ea-head .ea-count {
+    margin-left: auto; font-family: var(--ele-mono); font-size: 10.5px; letter-spacing: 0.04em;
+    color: rgba(243, 240, 232, 0.62); font-variant-numeric: tabular-nums;
+  }
+  #view-election .ea-head .ea-count b { font-weight: 600; color: #e3b95f; }
+
+  #view-election .ea-body {
+    background: #f4f1e9; border: 1px solid #ddd5c6; border-top: 0;
+    border-radius: 0 0 3px 3px; padding: 4px 24px 16px;
+  }
+
+  /* 月份搁板：档案面的分段标记 */
+  #view-election .ea-month { display: flex; align-items: center; gap: 12px; margin: 18px 0 0; }
+  #view-election .ea-month b {
+    flex: none; font-family: var(--ele-serif); font-size: 14.5px; font-weight: 600;
+    letter-spacing: 0.06em; color: #4a4335;
+  }
+  #view-election .ea-month i { flex: 1 1 auto; height: 1px; background: #ddd5c6; }
+  #view-election .ea-month span {
+    flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.06em; color: #8b8474;
+  }
+
+  /* 单条记录：左轨（日期/类别/序号）· 正文 · 右页边注（来源） */
+  #view-election .elc {
+    display: grid; grid-template-columns: 112px minmax(0, 1fr) 288px; column-gap: 26px;
+    padding: 15px 0 16px; border-bottom: 1px solid #e6dfd1;
+  }
+  #view-election .elc-rail { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
+  #view-election .elc-d { font-family: var(--ele-mono); font-size: 11px; color: #5f6a78; font-variant-numeric: tabular-nums; }
+  #view-election .elc-k { font-size: 10px; font-weight: 600; line-height: 1.55; padding: 1px 7px; border-radius: 2px; letter-spacing: 0.02em; }
+  #view-election .elc-no { font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.12em; color: rgba(160, 110, 38, 0.85); }
   /* 类别基调：蓝＝数据、紫＝司法与立法、橄榄＝选举程序、石板＝日程与资金 */
-  #view-election .elr-k[data-tone="blue"] { color: #2a5f9e; background: rgba(47, 111, 184, 0.1); box-shadow: inset 0 0 0 1px rgba(47, 111, 184, 0.2); }
-  #view-election .elr-k[data-tone="plum"] { color: #6a5a8c; background: rgba(106, 90, 140, 0.1); box-shadow: inset 0 0 0 1px rgba(106, 90, 140, 0.2); }
-  #view-election .elr-k[data-tone="olive"] { color: #5f6f45; background: rgba(122, 140, 90, 0.13); box-shadow: inset 0 0 0 1px rgba(122, 140, 90, 0.24); }
-  #view-election .elr-k[data-tone="slate"] { color: #55637a; background: rgba(85, 99, 122, 0.09); box-shadow: inset 0 0 0 1px rgba(85, 99, 122, 0.18); }
+  #view-election .elc-k[data-tone="blue"] { color: #2a5f9e; background: rgba(47, 111, 184, 0.1); box-shadow: inset 0 0 0 1px rgba(47, 111, 184, 0.2); }
+  #view-election .elc-k[data-tone="plum"] { color: #6a5a8c; background: rgba(106, 90, 140, 0.1); box-shadow: inset 0 0 0 1px rgba(106, 90, 140, 0.2); }
+  #view-election .elc-k[data-tone="olive"] { color: #5f6f45; background: rgba(122, 140, 90, 0.13); box-shadow: inset 0 0 0 1px rgba(122, 140, 90, 0.24); }
+  #view-election .elc-k[data-tone="slate"] { color: #55637a; background: rgba(85, 99, 122, 0.09); box-shadow: inset 0 0 0 1px rgba(85, 99, 122, 0.18); }
 
-  #view-election .elr-t {
-    margin: 0; font-size: 15px; font-weight: 600; line-height: 1.62; letter-spacing: 0.01em;
-    color: var(--text-light); text-wrap: balance; /* 避免标题末行只剩一两个字 */
+  #view-election .elc-main { min-width: 0; }
+  #view-election .elc-t {
+    margin: 0; font-family: var(--ele-serif); font-size: 16px; font-weight: 600;
+    line-height: 1.6; letter-spacing: 0.02em; color: #16212e; text-wrap: balance;
   }
-  #view-election .elr-s {
+  #view-election .elc-s {
     display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
-    margin: 6px 0 0; font-size: 13px; line-height: 1.92; color: var(--muted-light);
+    margin: 5px 0 0; font-size: 13.2px; line-height: 1.9; color: #4f5a68;
   }
-  #view-election .elr.open .elr-s { display: block; overflow: visible; -webkit-line-clamp: unset; }
-  /* 页脚行：来源沉底、展开入口右收，避免每行都多出一条蓝色文字 */
-  #view-election .elr-f { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 9px; }
-  #view-election .elr-more {
-    display: none; flex: none; align-items: center; gap: 4px; margin: 0; padding: 0; border: 0; background: none;
+  #view-election .elc.open .elc-s { display: block; overflow: visible; -webkit-line-clamp: unset; }
+  #view-election .elc-more {
+    display: none; align-items: center; gap: 5px; margin: 7px 0 0; padding: 0; border: 0; background: none;
     font: inherit; font-size: 10.5px; letter-spacing: 0.02em; color: #5f6a78; cursor: pointer;
     transition: color 0.15s ease;
   }
-  #view-election .elr.has-more .elr-more { display: inline-flex; }
-  #view-election .elr-more:hover { color: var(--accent-light); }
+  #view-election .elc.has-more .elc-more { display: inline-flex; }
+  #view-election .elc-more:hover { color: var(--accent-light); }
   /* 展开指示用 CSS 三角形：小字号字形在 1x 屏上会糊成一个点 */
-  #view-election .elr-more i {
+  #view-election .elc-more i {
     display: inline-block; width: 0; height: 0; border-left: 3px solid transparent;
     border-right: 3px solid transparent; border-top: 4px solid currentColor;
     transition: transform 0.18s ease;
   }
-  #view-election .elr.open .elr-more i { transform: rotate(180deg); }
-  #view-election .elr-src { flex: 1 1 auto; min-width: 0; font-size: 11px; line-height: 1.65; color: #5f6a78; overflow-wrap: anywhere; }
-  #view-election .elr-src i { font-style: normal; margin-right: 7px; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.12em; color: #a8762a; }
-  #view-election .elr-empty { grid-column: 1 / -1; margin: 0; padding: 34px 0; text-align: center; font-size: 13px; color: var(--muted-light); }
+  #view-election .elc.open .elc-more i { transform: rotate(180deg); }
+
+  /* 页边注：来源压到右栏，读者可整列跳过 */
+  #view-election .elc-marg {
+    min-width: 0; padding-top: 3px; font-size: 10.5px; line-height: 1.7;
+    color: #6b6252; overflow-wrap: anywhere;
+  }
+  #view-election .elc-marg i {
+    display: block; font-style: normal; font-family: var(--ele-mono); font-size: 9px;
+    letter-spacing: 0.14em; color: #a8762a; margin-bottom: 2px;
+  }
+  #view-election .elc-empty { margin: 0; padding: 34px 0; text-align: center; font-size: 13px; color: #6b6252; }
 
   /* 分页：等宽数字 + 方角按钮，当前页用交互蓝填充 */
-  #view-election .ele-pager { display: flex; align-items: center; justify-content: space-between; gap: 12px 18px; flex-wrap: wrap; margin-top: 26px; }
-  #view-election .ep-info { font-size: 11.5px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
-  #view-election .ep-info b { font-weight: 600; color: var(--text-light); }
+  #view-election .ele-pager {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px 18px;
+    flex-wrap: wrap; margin-top: 20px; padding-top: 14px; border-top: 1px solid #ddd5c6;
+  }
+  #view-election .ep-info { font-size: 11.5px; color: #6b6252; font-variant-numeric: tabular-nums; }
+  #view-election .ep-info b { font-weight: 600; color: #16212e; }
   #view-election .ep-nav { display: flex; align-items: center; gap: 2px; }
   #view-election .ep-btn {
     min-width: 30px; height: 30px; padding: 0 7px; border: 1px solid transparent; border-radius: 2px;
@@ -1114,7 +1158,7 @@
     cursor: pointer; font-variant-numeric: tabular-nums;
     transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
   }
-  #view-election .ep-btn:hover:not(:disabled):not(.on) { color: var(--accent-light); background: #fff; border-color: var(--border-light); }
+  #view-election .ep-btn:hover:not(:disabled):not(.on) { color: var(--accent-light); background: #fff; border-color: #ddd5c6; }
   #view-election .ep-btn.on { color: #fff; background: var(--accent-light); border-color: var(--accent-light); font-weight: 600; }
   #view-election .ep-btn:disabled { opacity: 0.3; cursor: not-allowed; }
   #view-election .ep-btn:focus-visible { outline: 2px solid rgba(47, 111, 184, 0.45); outline-offset: 1px; }
@@ -1123,22 +1167,32 @@
   #view-election .ep-jump { display: inline-flex; align-items: center; gap: 6px; font-family: var(--ele-mono); font-size: 10.5px; letter-spacing: 0.04em; color: #5f6a78; }
   #view-election .ep-in {
     width: 44px; height: 28px; text-align: center; font-family: var(--ele-mono); font-size: 11.5px;
-    color: var(--text-light); background: #fff; border: 1px solid var(--border-light); border-radius: 2px;
+    color: #16212e; background: #fff; border: 1px solid #ddd5c6; border-radius: 2px;
     outline: none; -moz-appearance: textfield; appearance: textfield;
   }
   #view-election .ep-in:focus { border-color: var(--accent-light); }
   #view-election .ep-in::-webkit-outer-spin-button,
   #view-election .ep-in::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
-  @media (max-width: 899px) {
-    #view-election .ele-ledger { grid-template-columns: minmax(0, 1fr); }
-    #view-election .elr { padding: 14px 0 15px; }
-    #view-election .elr::before { display: none; }
-    #view-election .elr-t { font-size: 14.5px; }
-    #view-election .elr-s { font-size: 12.5px; line-height: 1.85; }
+  @media (max-width: 1180px) {
+    #view-election .elc { grid-template-columns: 104px minmax(0, 1fr) 232px; column-gap: 22px; }
   }
-  @media (max-width: 560px) {
-    #view-election .ea-h .ea-m { flex-basis: 100%; margin-left: 0; }
+  @media (max-width: 980px) {
+    #view-election .elc { grid-template-columns: 104px minmax(0, 1fr); row-gap: 8px; }
+    #view-election .elc-marg { grid-column: 2; }
+  }
+  @media (max-width: 760px) {
+    #view-election .ele-h { margin-top: 34px; }
+    #view-election .ele-h .eh-cn, #view-election .ea-head .eh-cn { font-size: 17px; }
+    #view-election .ele-h .eh-en { flex-basis: 100%; margin-left: 0; }
+    #view-election .ea-body { padding: 4px 16px 14px; }
+    #view-election .ea-head { padding: 10px 16px 12px; }
+    #view-election .ea-head .ea-count { flex-basis: 100%; margin-left: 0; }
+    #view-election .elc { grid-template-columns: minmax(0, 1fr); row-gap: 7px; padding: 14px 0 15px; }
+    #view-election .elc-rail { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 8px; }
+    #view-election .elc-no { margin-left: auto; }
+    #view-election .elc-marg { grid-column: 1; }
+    #view-election .elc-s { font-size: 12.5px; line-height: 1.85; }
     #view-election .ele-pager { justify-content: center; }
     #view-election .ep-info, #view-election .ep-jump { flex: 1 1 100%; justify-content: center; text-align: center; }
   }
@@ -5279,7 +5333,7 @@
       <div class="wrap" data-page-node-id="OCNcodu2Hrt1L94i7M6B35">
 
         <!-- ⓪ 各州选情地图：分为「2026 中期选举」「2028 总统大选」两部分，各带图层选项 -->
-        <h2 class="ele-h2" data-page-node-id="vEl7Po7FhYpDao1tD8SuwH">各州选情地图</h2>
+        <div class="ele-h"><span class="eh-no">01</span><h2 class="eh-cn" data-page-node-id="vEl7Po7FhYpDao1tD8SuwH">各州选情地图</h2><span class="eh-en">Election Map</span></div>
         <div class="ele-map-wrap" data-page-node-id="3TlDhllTiS3lTRg5II8Ob1">
           <div class="ele-map-box" data-page-node-id="AH1OMXHigNE600twHAVtbB">
             <div class="emap-bar" data-page-node-id="aQc744rtjf2s3jDCnusEMe">
@@ -11062,7 +11116,8 @@
       function procHtml(sec) {
         var steps = sec.procedure || [];
         if (!steps.length) return '';
-        return '<div class="ele-sub">选举程序 <span>Procedure</span></div>' +
+        return '<div class="ele-h"><span class="eh-no">02</span><h2 class="eh-cn">选举程序</h2>' +
+          '<span class="eh-en">Procedure</span></div>' +
           '<div class="proc">' + steps.map(function (p) {
             return '<div class="proc-item ' + esc(p.state || 'next') + '">' +
               '<span class="proc-dot">' + esc(p.n) + '</span>' +
@@ -11082,7 +11137,9 @@
             '<i class="r" style="width:' + (+q.r) + '%">' + (+q.r) + '</i>' +
             '</div></div>';
         }).join('');
-        var html = '<div class="ele-sub">民调数据 <span>' + esc(polls.source || '') + '</span></div>';
+        var html = '<div class="ele-h"><span class="eh-no">03</span><h2 class="eh-cn">民调数据</h2>' +
+          (polls.source ? '<span class="eh-x">' + esc(polls.source) + '</span>' : '') +
+          '<span class="eh-en">Polling</span></div>';
         if (polls.note) html += '<div class="poll-note">' + esc(polls.note) + '</div>';
         if (series.length) {
           html += '<div class="poll-series">' + bars + '</div>' +
@@ -11141,18 +11198,18 @@
         var date = it.date || '';
         var detail = it.detail || '';
         // 超过约 3 行的正文先给展开入口，渲染后再按实际溢出量校正
-        return '<article class="elr' + (detail.length > 110 ? ' has-more' : '') + '">' +
-          '<div class="elr-h">' +
-            '<time class="elr-d"' + (date ? ' datetime="' + esc(date) + '"' : '') + '>' + esc(date || '—') + '</time>' +
-            (it.kind ? '<span class="elr-k" data-tone="' + tone + '">' + esc(it.kind) + '</span>' : '') +
-            '<span class="elr-no">' + elePad(no, pad) + '</span>' +
+        return '<article class="elc' + (detail.length > 110 ? ' has-more' : '') + '">' +
+          '<div class="elc-rail">' +
+            '<time class="elc-d"' + (date ? ' datetime="' + esc(date) + '"' : '') + '>' + esc(date || '—') + '</time>' +
+            (it.kind ? '<span class="elc-k" data-tone="' + tone + '">' + esc(it.kind) + '</span>' : '') +
+            '<span class="elc-no">' + elePad(no, pad) + '</span>' +
           '</div>' +
-          '<h3 class="elr-t">' + esc(it.title || '') + '</h3>' +
-          (detail ? '<p class="elr-s">' + esc(detail) + '</p>' : '') +
-          '<div class="elr-f">' +
-            (it.source ? '<div class="elr-src"><i>来源</i>' + esc(it.source) + '</div>' : '<span></span>') +
-            (detail ? '<button type="button" class="elr-more" aria-expanded="false"><span>展开全文</span><i></i></button>' : '') +
+          '<div class="elc-main">' +
+            '<h3 class="elc-t">' + esc(it.title || '') + '</h3>' +
+            (detail ? '<p class="elc-s">' + esc(detail) + '</p>' : '') +
+            (detail ? '<button type="button" class="elc-more" aria-expanded="false"><span>展开全文</span><i></i></button>' : '') +
           '</div>' +
+          '<div class="elc-marg">' + (it.source ? '<i>来源</i>' + esc(it.source) : '') + '</div>' +
           '</article>';
       }
       function elePagerHtml(total, pages, cur, from, shown) {
@@ -11175,7 +11232,7 @@
       }
       function eleArchBody(items) {
         var total = items.length;
-        if (!total) return '<div class="ele-ledger"><p class="elr-empty">暂无条目</p></div>';
+        if (!total) return '<p class="elc-empty">暂无条目</p>';
         var pages = elePageTotal(total);
         var cur = Math.min(Math.max(0, ELE_PAGE[ELE_SEC] || 0), pages - 1);
         ELE_PAGE[ELE_SEC] = cur;
@@ -11190,26 +11247,25 @@
           var mk = eleMonthOf(it);
           if (mk && mk !== last) {
             last = mk;
-            rows += '<div class="elr-m"><b>' + esc(eleMonthText(mk)) + '</b><i></i><span>' + (mCount[mk] || 0) + ' 条</span></div>';
+            rows += '<div class="ea-month"><b>' + esc(eleMonthText(mk)) + '</b><i></i><span>' + (mCount[mk] || 0) + ' 条</span></div>';
           }
           rows += eleRecordHtml(it, from + i + 1, pad);
         });
-        return '<div class="ele-ledger">' + rows + '</div>' +
-          elePagerHtml(total, pages, cur, from, pageItems.length);
+        return rows + elePagerHtml(total, pages, cur, from, pageItems.length);
       }
       // 正文未溢出三行时收起「展开」入口
       function eleSyncMore() {
         var host = document.getElementById('ele-arch');
         if (!host) return;
-        [].slice.call(host.querySelectorAll('.elr')).forEach(function (rec) {
+        [].slice.call(host.querySelectorAll('.elc')).forEach(function (rec) {
           if (rec.classList.contains('open')) return;
-          var p = rec.querySelector('.elr-s');
+          var p = rec.querySelector('.elc-s');
           if (!p || !p.clientHeight) return;
           rec.classList.toggle('has-more', p.scrollHeight - p.clientHeight > 2);
         });
       }
       function eleScrollToArch() {
-        var head = document.querySelector('#ele-sec .ea-h');
+        var head = document.querySelector('#ele-sec .ea-head');
         if (!head) return;
         var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         var top = head.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 78;
@@ -11240,9 +11296,9 @@
         host.addEventListener('click', function (e) {
           var t = e.target;
           if (!t || !t.closest) return;
-          var more = t.closest('.elr-more');
+          var more = t.closest('.elc-more');
           if (more) {
-            var rec = more.closest('.elr');
+            var rec = more.closest('.elc');
             var open = rec.classList.toggle('open');
             more.setAttribute('aria-expanded', open ? 'true' : 'false');
             more.querySelector('span').textContent = open ? '收起' : '展开全文';
@@ -11268,12 +11324,16 @@
       function itemsHtml(sec) {
         var items = eleOrderedItems(sec);
         var ed = readElectionData();
-        return '<div class="ea-h">' +
-          '<span class="ea-t">动态条目</span>' +
-          '<span class="ea-e">Latest Updates · ' + items.length + ' 条</span>' +
-          '<span class="ea-m">每页 ' + ELE_PAGE_SIZE + ' 条 · 更新至 <b>' + esc(ed.updated_at || '—') + '</b></span>' +
+        return '<section class="ea">' +
+          '<div class="ea-head">' +
+            '<span class="eh-no">04</span>' +
+            '<h2 class="eh-cn">动态条目</h2>' +
+            '<span class="eh-en">Latest Updates</span>' +
+            '<span class="ea-count">共 <b>' + items.length + '</b> 条 · 每页 ' + ELE_PAGE_SIZE +
+              ' 条 · 更新至 <b>' + esc(ed.updated_at || '—') + '</b></span>' +
           '</div>' +
-          '<div id="ele-arch">' + eleArchBody(items) + '</div>' +
+          '<div class="ea-body" id="ele-arch">' + eleArchBody(items) + '</div>' +
+          '</section>' +
           '<div class="ele-src">本板块条目为人工整理,随重大节点更新;民调与评级均标注发布机构与调查方法。</div>';
       }
       function renderElectionSec() {
