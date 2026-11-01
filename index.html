@@ -2838,8 +2838,26 @@
   }
 </style>
 <style id="v4-parties">
+  /* ---------- 外交动态：建设中占位页 ---------- */
+  #view-parties .pt-todo {
+    max-width: 720px; margin: 8px 0 40px; padding: 44px 40px 40px;
+    background: #fff; border: 1px dashed var(--border); border-radius: 16px;
+  }
+  #view-parties .pt-todo-k {
+    display: inline-block; font-family: var(--mono, monospace); font-size: 10.5px;
+    letter-spacing: .22em; color: #8a6420; background: rgba(168, 130, 60, .13);
+    border-radius: 4px; padding: 4px 10px;
+  }
+  #view-parties .pt-todo-t {
+    margin: 18px 0 10px; font-family: var(--serif, Georgia, serif);
+    font-size: 22px; font-weight: 600; letter-spacing: .04em; color: #16212e;
+  }
+  #view-parties .pt-todo-d {
+    margin: 0; font-size: 13.5px; line-height: 2; color: #5b6673; max-width: 56ch;
+  }
+
   /* =========================================================================
-     v4 · 政党动态看板 —— 作用域严格限定 #view-parties
+     v4 · 外交动态看板 —— 作用域严格限定 #view-parties（旧版政党看板样式，暂时保留）
      ---------------------------------------------------------------------------
      版式语言：对垒式竞选看板
        · 左右对称双栏表达两党对等，中轴只做对比缝
@@ -3980,31 +3998,32 @@
             <div class="us-foot" data-us-foot="election" data-page-node-id="UHFqG1Wbk7hhOyfpA9HzNJ">2026 中期选举 · 2028 总统大选 · 人工整理</div>
           </div>
 
-          <!-- 子板块 06：政党动态（2026-10-28 新增，独立看板；暂无抓取器与定时任务） -->
+          <!-- 子板块 06：外交动态（2026-11-01 由「政党动态」改版；看板搭建中） -->
           <div class="card">
             <div class="visual" aria-hidden="true">
               <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-                <!-- 政党：讲台与旗，取党务发布与路线宣示的意象 -->
+                <!-- 外交：经纬地球 + 外层协调弧，取全球议题与多边机制的意象 -->
                 <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M42 52 L68 52 L73 78 L37 78 Z"/>
-                  <path d="M55 52 V30"/>
-                  <path d="M55 30 H74 L68 37 L74 44 H55"/>
-                  <path d="M28 86 H82"/>
+                  <circle cx="55" cy="55" r="27"/>
+                  <path d="M28 55 H82"/>
+                  <path d="M55 28 C37 39 37 71 55 82 C73 71 73 39 55 28 Z"/>
+                  <path d="M31 43 C43 49 67 49 79 43"/>
+                  <path d="M31 67 C43 61 67 61 79 67"/>
                 </g>
               </svg>
             </div>
-            <div class="meta"><span class="num">Ⅵ</span><span class="branch">政党</span></div>
-            <div class="title">政党动态</div>
-            <div class="title-en">Party Dynamics</div>
-            <p class="desc">拟跟踪民主、共和两党全国委员会、国会党团与州党部的组织人事、纲领路线、竞选资金与初选动态；当前为版式示例，数值待接入真实来源。</p>
-            <div class="tags"><span>全国委员会</span><span>国会党团</span><span>党内派系</span><span>初选</span></div>
+            <div class="meta"><span class="num">Ⅵ</span><span class="branch">外交</span></div>
+            <div class="title">外交动态</div>
+            <div class="title-en">Foreign Affairs</div>
+            <p class="desc">收集美国对外关系的关键节点：双边磋商与高层互访、多边机制与盟友协调、制裁与出口管制、贸易与安全谈判，按国别与议题归档。</p>
+            <div class="tags"><span>双边磋商</span><span>多边机制</span><span>制裁与管制</span><span>高层互访</span></div>
             <a class="btn" href="#" data-enter="parties">进入板块</a>
-            <div class="us-foot" data-us-foot="parties">版式示例 · 数据待接入</div>
+            <div class="us-foot" data-us-foot="parties">建设中 · 数据源待接入</div>
           </div>
 
         </div>
 
-        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;政党动态板块为版式示例,数据待接入。</p>
+        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;外交动态板块建设中,暂为占位页。</p>
 
         <!-- =================================================================
              政治机构导航（Government Directory）
@@ -5430,24 +5449,23 @@
     </section>
   </main>
 
-  <!-- ============ 子页面：政党动态（对垒式看板，示例数据） ============ -->
+  <!-- ============ 子页面：外交动态（看板搭建中，暂为占位页） ============ -->
   <main id="view-parties" class="subview" hidden>
     <div class="subhead pt-head">
       <div class="wrap">
         <a class="back" href="#" id="back-link-parties">← 返回美国板块</a>
-        <h1>政党动态</h1>
-        <div class="suben">Party Dynamics</div>
-        <p class="subdesc">以两党对照的方式呈现支持率、民调走势、政策主张、关键人物与重大活动；当前为版式示例，数值与人物待接入真实来源。</p>
+        <h1>外交动态</h1>
+        <div class="suben">Foreign Affairs</div>
+        <p class="subdesc">收集美国对外关系的关键节点：双边磋商与高层互访、多边机制与盟友协调、制裁与出口管制、贸易与安全谈判，按国别与议题归档。</p>
       </div>
     </div>
     <section class="section pt-section">
       <div class="wrap">
-        <div class="pt-demo">
-          <b>示例版式</b>
-          <span>以下民调、席位与关注度数值仅用于验证排版，不是真实数据；接入来源前不得对外引用。关键人物以职务代称，姓名待补。</span>
+        <div class="pt-todo">
+          <span class="pt-todo-k">建设中</span>
+          <p class="pt-todo-t">本板块正在搭建</p>
+          <p class="pt-todo-d">拟以「国别 / 议题 / 机制」三个维度归集美国对外政策动作，并与大事日历联动；数据源接入与版式确定后开放，时间待定。</p>
         </div>
-        <div id="parties-board" class="pt-board"></div>
-        <p class="pt-foot" id="parties-foot"></p>
       </div>
     </section>
   </main>
@@ -6954,116 +6972,7 @@
 }
 </script>
 
-<script type="application/json" id="parties-data">
-{
-  "updated_at": "2026-10-28",
-  "cycle": "2026 中期选举",
-  "sample": true,
-  "parties": [
-    {
-      "id": "dem",
-      "name": "民主党",
-      "en": "Democratic Party",
-      "chair": "待补",
-      "hq": "华盛顿特区",
-      "founded": "1828",
-      "ideology": ["社会自由主义", "进步主义"],
-      "support": {
-        "value": 47.2,
-        "delta": 0.6,
-        "note": "通用选票 · 7 日均值"
-      },
-      "metrics": [
-        { "label": "好感度", "value": "44", "note": "不赞成 51" },
-        { "label": "参议院", "value": "47", "note": "改选 33 席" },
-        { "label": "州长", "value": "23", "note": "全美 50 州" }
-      ],
-      "figures": [
-        { "initials": "D1", "role": "众议院少数党领袖", "note": "立法议程与党团协调" },
-        { "initials": "D2", "role": "参议院少数党领袖", "note": "拨款与司法提名" },
-        { "initials": "D3", "role": "全国委员会主席", "note": "初选规则与州党部" }
-      ]
-    },
-    {
-      "id": "rep",
-      "name": "共和党",
-      "en": "Republican Party",
-      "chair": "待补",
-      "hq": "华盛顿特区",
-      "founded": "1854",
-      "ideology": ["保守主义", "经济自由主义"],
-      "support": {
-        "value": 45.6,
-        "delta": -0.6,
-        "note": "通用选票 · 7 日均值"
-      },
-      "metrics": [
-        { "label": "好感度", "value": "46", "note": "不赞成 49" },
-        { "label": "参议院", "value": "53", "note": "改选 33 席" },
-        { "label": "州长", "value": "27", "note": "全美 50 州" }
-      ],
-      "figures": [
-        { "initials": "R1", "role": "众议院议长", "note": "议程设置与拨款" },
-        { "initials": "R2", "role": "参议院多数党领袖", "note": "司法提名与预算" },
-        { "initials": "R3", "role": "全国委员会主席", "note": "州党部与筹款" }
-      ]
-    }
-  ],
-  "seats": {
-    "total": 435,
-    "majority": 218,
-    "dem": 205,
-    "rep": 220,
-    "other": 10
-  },
-  "issues": [
-    {
-      "label": "经济与税收",
-      "dem": "对富人加税 / 保留补贴",
-      "rep": "减税永久化 / 关税更强硬",
-      "salience": 34,
-      "tag": "首要议题"
-    },
-    {
-      "label": "移民与边境",
-      "dem": "立法化庇护程序",
-      "rep": "驱逐与边境执法优先",
-      "salience": 28,
-      "tag": "高极化"
-    },
-    {
-      "label": "能源与气候",
-      "dem": "补贴与电网改造",
-      "rep": "放松监管 / 保供化石能源",
-      "salience": 21,
-      "tag": "党内分歧"
-    },
-    {
-      "label": "外交与贸易",
-      "dem": "联盟协调 / 定向关税",
-      "rep": "双边施压 / 普遍关税",
-      "salience": 17,
-      "tag": "低关注"
-    }
-  ],
-  "timeline": [
-    { "date": "2026-11-03", "party": "both", "title": "中期选举投票日" },
-    { "date": "2027-02-15", "party": "dem", "title": "民主党全国委员会冬季会议" },
-    { "date": "2027-02-22", "party": "rep", "title": "共和党全国委员会冬季会议" },
-    { "date": "2027-06-20", "party": "dem", "title": "州党部大会" },
-    { "date": "2027-06-27", "party": "rep", "title": "州党部大会" },
-    { "date": "2027-09-10", "party": "dem", "title": "初选规则听证" },
-    { "date": "2027-09-17", "party": "rep", "title": "初选规则听证" },
-    { "date": "2028-01-15", "party": "both", "title": "总统初选启动" }
-  ],
-  "sources": [
-    { "name": "民调聚合", "note": "示例：7 日均值，样本 1,200，误差 ±3.1" },
-    { "name": "席位与人事", "note": "示例：众议院 435 席、参议院 100 席、州长 50 席" },
-    { "name": "立场文本", "note": "示例：按 2024 党纲与近期表决归纳" }
-  ]
-}
 
-</script>
 
 <!-- 大事日历数据块：日期均经官方来源核实（美联储 / BLS / G20 官网 / IMF 官网 / 中国外交部）
      d = 起始日期（美东）；d2 = 结束日期（多日事件，可选）；t = 美东时刻 HH:MM（可选，无则全日事件）
@@ -10600,129 +10509,6 @@
         target.classList.add('ref-flash');
         return true;
       }
-
-      // ===== 政党动态：对垒式看板（示例数据，取自 #parties-data） =====
-      function renderParties() {
-        var host = document.getElementById('parties-board');
-        var foot = document.getElementById('parties-foot');
-        if (!host) return;
-        var raw = document.getElementById('parties-data');
-        var data;
-        try { data = JSON.parse(raw.textContent); } catch (err) {
-          host.innerHTML = '<p class="placeholder">政党数据解析失败，请检查 #parties-data。</p>';
-          return;
-        }
-        var dem = data.parties[0], rep = data.parties[1];
-        var gapNum = dem.support.value - rep.support.value;
-        var gap = (gapNum >= 0 ? '+' : '') + gapNum.toFixed(1);
-        var leader = gapNum >= 0 ? dem.name + '领先' : rep.name + '领先';
-        var seat = data.seats || { total: 435, majority: 218, dem: 0, rep: 0, other: 0 };
-        var total = seat.total || 435;
-        function pct(n) { return (n / total * 100).toFixed(2) + '%'; }
-        function signed(v) { return (v >= 0 ? '+' : '') + Number(v).toFixed(1); }
-        function hero(p, cls) {
-          return '<div class="pt-hero is-' + cls + '">' +
-            '<div class="pt-hero-name">' + esc(p.name) + '</div>' +
-            '<div><span class="pt-hero-value">' + Number(p.support.value).toFixed(1) + '%</span>' +
-            '<span class="pt-hero-delta">' + signed(p.support.delta) + '</span></div>' +
-            '<div class="pt-hero-note">' + esc(p.support.note) + '</div>' +
-            '</div>';
-        }
-        function partyCard(p, cls) {
-          var metrics = p.metrics.map(function (m) {
-            return '<div class="pt-metric"><span>' + esc(m.label) + '</span><b>' + esc(m.value) +
-              '</b><i>' + esc(m.note) + '</i></div>';
-          }).join('');
-          var figures = p.figures.map(function (f) {
-            return '<div class="pt-figure"><span class="pt-avatar">' + esc(f.initials) + '</span>' +
-              '<div><div class="pt-figure-role">' + esc(f.role) + '</div>' +
-              '<div class="pt-figure-note">' + esc(f.note) + '</div></div></div>';
-          }).join('');
-          var senate = (p.metrics.filter(function (m) { return m.label === '参议院'; })[0] || {}).value || '—';
-          var house = cls === 'dem' ? seat.dem : seat.rep;
-          return '<article class="pt-party is-' + cls + '">' +
-            '<div class="pt-party-head"><div><div class="pt-party-name">' + esc(p.name) + '</div>' +
-            '<div class="pt-party-en">' + esc(p.en) + '</div></div>' +
-            '<span class="pt-party-seat">众院 ' + house + ' · 参院 ' + esc(senate) + '</span></div>' +
-            '<div class="pt-party-meta"><span>主席：<b>' + esc(p.chair) + '</b></span>' +
-            '<span>总部：<b>' + esc(p.hq) + '</b></span><span>成立：<b>' + esc(p.founded) + '</b></span>' +
-            '<span>意识形态：<b>' + p.ideology.map(esc).join(' / ') + '</b></span></div>' +
-            '<div class="pt-metrics">' + metrics + '</div>' +
-            '<div class="pt-figures"><div class="pt-figures-h">关键人物</div>' + figures + '</div>' +
-            '</article>';
-        }
-        var html = '<section class="pt-power">' +
-          '<div class="pt-power-top"><span class="pt-kicker">' + esc(data.cycle) + ' · 两党力量对比</span>' +
-          '<span class="pt-power-note">数据截至 ' + esc(data.updated_at) + ' · 示例</span></div>' +
-          '<div class="pt-power-grid">' + hero(dem, 'dem') +
-          '<div class="pt-gap"><div class="pt-gap-label">两党差距</div>' +
-          '<div class="pt-gap-value">' + gap + '</div><div class="pt-gap-lead">' + esc(leader) + '</div></div>' +
-          hero(rep, 'rep') + '</div>' +
-          '<div class="pt-seat"><div class="pt-seat-head"><span>众议院 ' + total + ' 席</span>' +
-          '<span>过半 ' + seat.majority + ' 席</span></div>' +
-          '<div class="pt-seat-bar"><span class="pt-seat-dem" style="width:' + pct(seat.dem) + '"></span>' +
-          '<span class="pt-seat-rep" style="width:' + pct(seat.rep) + '"></span>' +
-          '<span class="pt-seat-oth" style="width:' + pct(seat.other) + '"></span>' +
-          '<i class="pt-seat-mark" style="left:' + pct(seat.majority) + '"></i></div>' +
-          '<div class="pt-seat-axis"><span style="left:0;transform:none">民主党 ' + seat.dem + '</span>' +
-          '<span style="left:' + pct(seat.majority) + '">过半线 ' + seat.majority + '</span>' +
-          '<span style="left:100%;transform:translateX(-100%)">共和党 ' + seat.rep + '</span></div></div>' +
-          '</section>';
-
-        html += '<div class="pt-columns">' + partyCard(dem, 'dem') + partyCard(rep, 'rep') + '</div>';
-
-        var rows = data.issues.map(function (x) {
-          return '<div class="pt-matrix-row"><div class="pt-matrix-dem">' + esc(x.dem) + '</div>' +
-            '<div class="pt-matrix-issue">' + esc(x.label) + '<small>' + esc(x.tag) + '</small></div>' +
-            '<div class="pt-matrix-rep">' + esc(x.rep) + '</div>' +
-            '<div class="pt-sal"><span class="pt-sal-bar"><i class="pt-sal-fill" style="width:' +
-            Math.min(100, x.salience / 40 * 100).toFixed(1) + '%"></i></span><span>' + x.salience + '%</span></div></div>';
-        }).join('');
-        html += '<section class="pt-panel"><div class="pt-panel-head">' +
-          '<h2 class="pt-panel-title">议题立场对照</h2><span class="pt-panel-sub">同一行 = 同一议题</span></div>' +
-          '<div class="pt-matrix"><div class="pt-matrix-row is-head">' +
-          '<div class="pt-matrix-head-label dem">民主党主张</div>' +
-          '<div class="pt-matrix-head-label" style="text-align:center">议题</div>' +
-          '<div class="pt-matrix-head-label rep">共和党主张</div>' +
-          '<div class="pt-matrix-head-label" style="text-align:right">关注度</div></div>' +
-          rows + '</div></section>';
-
-        var T0 = Date.parse('2026-10-01T00:00:00Z');
-        var T1 = Date.parse('2028-08-31T00:00:00Z');
-        function pos(d) {
-          var t = Date.parse(d + 'T00:00:00Z');
-          return Math.max(2, Math.min(98, (t - T0) / (T1 - T0) * 100)).toFixed(2);
-        }
-        function fmtDate(d) { return d.slice(0, 7).replace('-', '.'); }
-        function evHtml(e, cls) {
-          return '<div class="pt-tl-event ' + cls + '" style="left:' + pos(e.date) + '%">' +
-            '<span class="pt-tl-dot"></span><span class="pt-tl-date">' + fmtDate(e.date) + '</span>' +
-            '<span class="pt-tl-title">' + esc(e.title) + '</span></div>';
-        }
-        var demEv = data.timeline.filter(function (e) { return e.party === 'dem'; });
-        var repEv = data.timeline.filter(function (e) { return e.party === 'rep'; });
-        var bothEv = data.timeline.filter(function (e) { return e.party === 'both'; });
-        html += '<section class="pt-panel"><div class="pt-panel-head">' +
-          '<h2 class="pt-panel-title">重大活动</h2><span class="pt-panel-sub">两党共用一条时间轴 · 截至 ' + esc(data.updated_at) + '</span></div>' +
-          '<div class="pt-timeline"><div class="pt-tl-axis"></div>' +
-          '<div class="pt-tl-lane dem">D 民主党</div><div class="pt-tl-lane rep">R 共和党</div>' +
-          bothEv.map(function (e) {
-            return '<div class="pt-tl-national" style="left:' + pos(e.date) + '%"><i class="pt-tl-flag"></i></div>';
-          }).join('') +
-          demEv.map(function (e) { return evHtml(e, 'dem'); }).join('') +
-          repEv.map(function (e) { return evHtml(e, 'rep'); }).join('') + '</div>' +
-          '<div class="pt-tl-national-list">' + bothEv.map(function (e) {
-            return '<span><b>' + esc(e.date) + '</b>' + esc(e.title) + '</span>';
-          }).join('') + '</div></section>';
-
-        host.innerHTML = html;
-        if (foot) {
-          foot.innerHTML = '<b>数据说明</b>　' + data.sources.map(function (x) {
-            return esc(x.name) + '：' + esc(x.note);
-          }).join('；') + '。当前为示例版式，接入真实民调前不得对外引用。';
-        }
-      }
-
       function showParties(e) {
         if (e) e.preventDefault();
         if (!partiesView) return;
@@ -10732,9 +10518,8 @@
         if (euView) euView.hidden = true;
         if (electionView) electionView.hidden = true;
         partiesView.hidden = false;
-        renderParties();
         window.scrollTo(0, 0);
-        document.title = '政党动态 · 国金证券 政策与战略';
+        document.title = '外交动态 · 国金证券 政策与战略';
       }
 
       function showUs(e) {
