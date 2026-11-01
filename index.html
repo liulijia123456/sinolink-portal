@@ -10051,7 +10051,7 @@
           filterState.agency = 'all';
         }
         var thAgency = document.getElementById('pw-th-agency');
-        if (thAgency) thAgency.textContent = key === 'congress' ? '来源'
+        if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
         renderPwTree(key, allItems);
@@ -10091,8 +10091,12 @@
               '<span class="c-date">' + esc(it.date) + '</span>' +
               '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
                 (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
-              '<span class="c-kind"><span>' + esc(it.kind || '文件') + '</span></span>' +
-              '<span class="c-agency">' + (it.agency && key !== 'congress' ? esc(it.agency) : esc(it.source || '')) + '</span>' +
+              '<span class="c-kind"><span>' +
+                esc(key === 'congress' ? (congressType(it.kind) || it.kind || '文件') : (it.kind || '文件')) +
+                '</span></span>' +
+              '<span class="c-agency">' +
+                (key === 'congress' ? esc(congressChamber(it.kind) || '—')
+                  : (it.agency ? esc(it.agency) : esc(it.source || ''))) + '</span>' +
               '<span class="c-domain">' + (it.domain ? '<span>' + esc(it.domain) + '</span>' : '') + '</span>' +
               '<span class="c-act">' +
                 (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>简报</span><i class="chev">▾</i></button>' : '') +
