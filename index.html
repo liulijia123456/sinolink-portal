@@ -3269,7 +3269,7 @@
   .pw-table { margin-top: 14px; background: #fff; border: 1px solid var(--border-light); border-radius: 14px; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 23, 36, .04); }
   .pw-thead, .pw-r {
     display: grid;
-    grid-template-columns: 92px minmax(0, 1fr) 98px 166px 88px 124px;
+    grid-template-columns: 116px minmax(0, 1fr) 98px 166px 88px 124px;
     gap: 16px; align-items: start;
   }
   .pw-thead {
@@ -3287,6 +3287,12 @@
   .pw-item.open .pw-r { background: #f7f4ee; }
 
   .c-date { font-family: var(--mono, monospace); font-size: 11.5px; color: var(--muted); padding-top: 2px; white-space: nowrap; }
+  /* 预刊登：公报已出具、正式刊登日尚未到达 */
+  .c-pre {
+    display: inline-block; margin-left: 5px; padding: 0 4px; border-radius: 3px;
+    font-style: normal; font-size: 9.5px; line-height: 1.6; vertical-align: 1px;
+    color: #8a6420; background: rgba(168, 130, 60, .14); white-space: nowrap;
+  }
   .c-title .title-main { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; font-weight: 600; line-height: 1.5; color: #16212e; }
   .c-title .title-cn { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 12px; font-weight: 400; line-height: 1.55; color: #6b7683; margin-top: 3px; }
   .c-kind span, .c-domain span {
@@ -3364,6 +3370,9 @@
   }
   .pw-cal-f button { border: 0; background: none; color: #2f6fb8; font: inherit; font-size: 11px; cursor: pointer; padding: 0; }
   .pw-cal-f button:hover { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .c-pre { display: block; width: max-content; margin: 3px 0 0; }
+  }
 
   /* 1320 以下：侧栏移到顶部，表格吃满宽度（否则标题列会被挤到 200px 以内） */
   @media (max-width: 1320px) {
@@ -3374,7 +3383,7 @@
     .pw-tree-g { grid-column: 1 / -1; }
   }
   @media (max-width: 900px) {
-    .pw-thead, .pw-r { grid-template-columns: 84px minmax(0, 1fr) 92px 136px 116px; }
+    .pw-thead, .pw-r { grid-template-columns: 104px minmax(0, 1fr) 92px 136px 116px; }
     .pw-th-dom, .c-domain { display: none; }
   }
   @media (max-width: 760px) {
@@ -5229,7 +5238,7 @@
 
           <div class="pw-table">
             <div class="pw-thead">
-              <span>日期</span>
+              <span title="联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日">刊登日</span>
               <span>标题</span>
               <span>类型</span>
               <span id="pw-th-agency">部门 / 机构</span>
@@ -10361,6 +10370,13 @@
         renderPwChips();
       }
 
+      function pwTodayKey() {
+        var d = new Date();
+        return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' +
+               String(d.getDate()).padStart(2, '0');
+      }
+      var PW_TODAY = pwTodayKey();
+
       function renderBoard(key) {
         var meta = BOARD_META[key] || BOARD_META.whitehouse;
         document.getElementById('board-title').textContent = meta.title;
@@ -10396,6 +10412,7 @@
         if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
+        PW_TODAY = pwTodayKey();
         pwDatesOf(allItems);
         pwCalBind();
         renderPwTree(key, allItems);
@@ -10432,7 +10449,8 @@
           if (hasBrief) nBrief++;
           return '<div class="note pw-item' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '">' +
             '<div class="pw-r">' +
-              '<span class="c-date">' + esc(it.date) + '</span>' +
+              '<span class="c-date">' + esc(it.date) +
+                (it.date && it.date > PW_TODAY ? '<i class="c-pre">预刊登</i>' : '') + '</span>' +
               '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
                 (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
               '<span class="c-kind"><span>' +
