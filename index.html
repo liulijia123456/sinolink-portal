@@ -11552,7 +11552,13 @@
         }).join('');
         for (var i = 0; i < rows * 7; i++) {
           var dayNum = i - firstWd + 1;
-          if (dayNum < 1 || dayNum > daysInMonth) { html += '<div class="uc-cell dim' + (i % 7 === todayCol ? ' tcol' : '') + '"></div>'; continue; }
+          // 跨月留白的空格不能 continue 掉：选中的日期若落在月末那一行，
+          // 该行末尾往往是空格，提前跳过后展开块就永远插不进去（11-30 曾因此打不开）。
+          if (dayNum < 1 || dayNum > daysInMonth) {
+            html += '<div class="uc-cell dim' + (i % 7 === todayCol ? ' tcol' : '') + '"></div>';
+            if (i === selRowEnd) html += usCalExpandHTML(usCalSel, dayMap[usCalSel] || [], selIdx % 7);
+            continue;
+          }
           var key = ymStr + '-' + pad2(dayNum);
           var items = dayMap[key] || [];
           var wkend = (i % 7 === 0 || i % 7 === 6);
