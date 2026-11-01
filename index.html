@@ -1036,16 +1036,112 @@
   .ele-table .td-sub { display: block; font-size: 11px; color: var(--muted-light); margin-top: 2px; }
   .ele-src { font-size: 11.5px; color: var(--muted-light); margin-top: 12px; line-height: 1.8; }
 
-  /* 动态归档列表 */
-  .ele-list { border-top: 1px solid var(--border-light); }
-  .ele-item { padding: 14px 2px; border-bottom: 1px solid var(--border-light); }
-  .ele-item .ei-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
-  .ele-item .ei-date { font-size: 12px; font-weight: 600; color: var(--muted-light); font-variant-numeric: tabular-nums; }
-  .ele-item .ei-kind { font-size: 11px; font-weight: 600; color: #6b7a52; background: rgba(122,140,90,0.13); border-radius: 10px; padding: 1px 8px; }
-  .ele-item .ei-title { font-size: 14px; font-weight: 600; color: var(--text-light); line-height: 1.6; }
-  .ele-item .ei-detail { font-size: 12.5px; color: var(--muted-light); line-height: 1.8; margin-top: 4px; }
-  .ele-item .ei-src { font-size: 11px; color: var(--muted-light); margin-top: 5px; }
-  .ele-item .ei-src::before { content: '来源：'; }
+  /* ===== 动态归档：账簿式条目列表（每页 20 条） =====
+     记录型内容靠三条隐含竖栏定位：日期（等宽、左缘对齐）、类别标签、右端序号；
+     摘要压到 3 行按需展开，一屏可横比同类事件，而不必逐条长滚。 */
+  #view-election {
+    --ele-serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "SimSun", Georgia, "Times New Roman", serif;
+    --ele-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  /* 区块抬头：与「选举程序」「民调数据」同字号，右端挂口径说明 */
+  #view-election .ea-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 34px 0 10px; }
+  #view-election .ea-h .ea-t { font-size: 15px; font-weight: 700; color: var(--text-light); }
+  #view-election .ea-h .ea-e { font-size: 11.5px; font-weight: 400; color: var(--muted-light); letter-spacing: 0.04em; }
+  #view-election .ea-h .ea-m { margin-left: auto; font-size: 11px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
+  #view-election .ea-h .ea-m b { font-weight: 600; color: var(--text-light); }
+
+  #view-election .ele-ledger { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; }
+  /* 月份搁板：横跨两列，作为长列表的阅读分段 */
+  #view-election .elr-m { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; margin: 20px 0 0; }
+  #view-election .elr-m:first-child { margin-top: 4px; }
+  #view-election .elr-m b { flex: none; font-family: var(--ele-serif); font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #16212e; }
+  #view-election .elr-m i { flex: 1 1 auto; height: 1px; background: var(--border-light); }
+  #view-election .elr-m span { flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.06em; color: #6b7684; }
+
+  #view-election .elr { position: relative; min-width: 0; padding: 15px 0 16px; border-bottom: 1px solid var(--border-light); }
+  #view-election .elr::before {
+    content: ''; position: absolute; left: -16px; top: 15px; bottom: 16px; width: 2px;
+    background: var(--accent-light); opacity: 0; transition: opacity 0.18s ease;
+  }
+  #view-election .elr:hover::before { opacity: 0.45; }
+  #view-election .elr-h { display: flex; align-items: baseline; gap: 9px; margin-bottom: 5px; }
+  #view-election .elr-d { flex: none; font-family: var(--ele-mono); font-size: 11px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
+  #view-election .elr-k { flex: none; font-size: 10.5px; font-weight: 600; line-height: 1.55; padding: 1px 7px; border-radius: 2px; letter-spacing: 0.02em; }
+  #view-election .elr-no { margin-left: auto; flex: none; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.12em; color: rgba(160, 110, 38, 0.88); }
+  /* 类别基调：蓝＝数据、紫＝司法与立法、橄榄＝选举程序、石板＝日程与资金 */
+  #view-election .elr-k[data-tone="blue"] { color: #2a5f9e; background: rgba(47, 111, 184, 0.1); box-shadow: inset 0 0 0 1px rgba(47, 111, 184, 0.2); }
+  #view-election .elr-k[data-tone="plum"] { color: #6a5a8c; background: rgba(106, 90, 140, 0.1); box-shadow: inset 0 0 0 1px rgba(106, 90, 140, 0.2); }
+  #view-election .elr-k[data-tone="olive"] { color: #5f6f45; background: rgba(122, 140, 90, 0.13); box-shadow: inset 0 0 0 1px rgba(122, 140, 90, 0.24); }
+  #view-election .elr-k[data-tone="slate"] { color: #55637a; background: rgba(85, 99, 122, 0.09); box-shadow: inset 0 0 0 1px rgba(85, 99, 122, 0.18); }
+
+  #view-election .elr-t {
+    margin: 0; font-size: 15px; font-weight: 600; line-height: 1.62; letter-spacing: 0.01em;
+    color: var(--text-light); text-wrap: balance; /* 避免标题末行只剩一两个字 */
+  }
+  #view-election .elr-s {
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+    margin: 6px 0 0; font-size: 13px; line-height: 1.92; color: var(--muted-light);
+  }
+  #view-election .elr.open .elr-s { display: block; overflow: visible; -webkit-line-clamp: unset; }
+  /* 页脚行：来源沉底、展开入口右收，避免每行都多出一条蓝色文字 */
+  #view-election .elr-f { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 9px; }
+  #view-election .elr-more {
+    display: none; flex: none; align-items: center; gap: 4px; margin: 0; padding: 0; border: 0; background: none;
+    font: inherit; font-size: 10.5px; letter-spacing: 0.02em; color: #5f6a78; cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  #view-election .elr.has-more .elr-more { display: inline-flex; }
+  #view-election .elr-more:hover { color: var(--accent-light); }
+  /* 展开指示用 CSS 三角形：小字号字形在 1x 屏上会糊成一个点 */
+  #view-election .elr-more i {
+    display: inline-block; width: 0; height: 0; border-left: 3px solid transparent;
+    border-right: 3px solid transparent; border-top: 4px solid currentColor;
+    transition: transform 0.18s ease;
+  }
+  #view-election .elr.open .elr-more i { transform: rotate(180deg); }
+  #view-election .elr-src { flex: 1 1 auto; min-width: 0; font-size: 11px; line-height: 1.65; color: #5f6a78; overflow-wrap: anywhere; }
+  #view-election .elr-src i { font-style: normal; margin-right: 7px; font-family: var(--ele-mono); font-size: 9.5px; letter-spacing: 0.12em; color: #a8762a; }
+  #view-election .elr-empty { grid-column: 1 / -1; margin: 0; padding: 34px 0; text-align: center; font-size: 13px; color: var(--muted-light); }
+
+  /* 分页：等宽数字 + 方角按钮，当前页用交互蓝填充 */
+  #view-election .ele-pager { display: flex; align-items: center; justify-content: space-between; gap: 12px 18px; flex-wrap: wrap; margin-top: 26px; }
+  #view-election .ep-info { font-size: 11.5px; color: var(--muted-light); font-variant-numeric: tabular-nums; }
+  #view-election .ep-info b { font-weight: 600; color: var(--text-light); }
+  #view-election .ep-nav { display: flex; align-items: center; gap: 2px; }
+  #view-election .ep-btn {
+    min-width: 30px; height: 30px; padding: 0 7px; border: 1px solid transparent; border-radius: 2px;
+    background: transparent; font-family: var(--ele-mono); font-size: 11.5px; color: #5f6a78;
+    cursor: pointer; font-variant-numeric: tabular-nums;
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  #view-election .ep-btn:hover:not(:disabled):not(.on) { color: var(--accent-light); background: #fff; border-color: var(--border-light); }
+  #view-election .ep-btn.on { color: #fff; background: var(--accent-light); border-color: var(--accent-light); font-weight: 600; }
+  #view-election .ep-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  #view-election .ep-btn:focus-visible { outline: 2px solid rgba(47, 111, 184, 0.45); outline-offset: 1px; }
+  #view-election .ep-step { font-size: 14px; }
+  #view-election .ep-gap { padding: 0 3px; font-size: 11px; letter-spacing: 0.06em; color: #b3bdc9; }
+  #view-election .ep-jump { display: inline-flex; align-items: center; gap: 6px; font-family: var(--ele-mono); font-size: 10.5px; letter-spacing: 0.04em; color: #5f6a78; }
+  #view-election .ep-in {
+    width: 44px; height: 28px; text-align: center; font-family: var(--ele-mono); font-size: 11.5px;
+    color: var(--text-light); background: #fff; border: 1px solid var(--border-light); border-radius: 2px;
+    outline: none; -moz-appearance: textfield; appearance: textfield;
+  }
+  #view-election .ep-in:focus { border-color: var(--accent-light); }
+  #view-election .ep-in::-webkit-outer-spin-button,
+  #view-election .ep-in::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+  @media (max-width: 899px) {
+    #view-election .ele-ledger { grid-template-columns: minmax(0, 1fr); }
+    #view-election .elr { padding: 14px 0 15px; }
+    #view-election .elr::before { display: none; }
+    #view-election .elr-t { font-size: 14.5px; }
+    #view-election .elr-s { font-size: 12.5px; line-height: 1.85; }
+  }
+  @media (max-width: 560px) {
+    #view-election .ea-h .ea-m { flex-basis: 100%; margin-left: 0; }
+    #view-election .ele-pager { justify-content: center; }
+    #view-election .ep-info, #view-election .ep-jump { flex: 1 1 100%; justify-content: center; text-align: center; }
+  }
 
   @media (max-width: 700px) {
     .ele-hero { grid-template-columns: 1fr; }
@@ -11002,23 +11098,183 @@
         }).join('') + '</div>';
         return html;
       }
+      // ===== 选举：动态条目（账簿式列表 + 分页，每页 20 条）=====
+      var ELE_PAGE_SIZE = 20;
+      // 两个子视图各自记忆页码，切回时仍停在原页
+      var ELE_PAGE = { midterm: 0, presidential: 0 };
+      // 类别 → 色彩基调：只分四档，避免七种颜色把版面打散
+      var ELE_TONE = {
+        '民调': 'blue', '评级': 'blue',
+        '裁决': 'plum', '立法': 'plum',
+        '选举规则': 'olive', '选区重划': 'olive',
+        '日程': 'slate', '资金': 'slate'
+      };
+      function elePad(n, w) { var s = String(n); while (s.length < w) s = '0' + s; return s; }
+      function elePageTotal(n) { return Math.max(1, Math.ceil(n / ELE_PAGE_SIZE)); }
+      function eleMonthOf(it) { return String((it && it.date) || '').slice(0, 7); }
+      function eleMonthText(key) {
+        var p = String(key || '').split('-');
+        return p.length < 2 ? String(key || '') : p[0] + ' 年 ' + (+p[1]) + ' 月';
+      }
+      // 稳定倒序：同月条目必须连续，月份搁板才不会被同一月份重复切开
+      function eleOrderedItems(sec) {
+        var list = (sec && sec.items) || [];
+        return list.map(function (it, i) { return { it: it, i: i }; })
+          .sort(function (a, b) {
+            var x = String(a.it.date || ''), y = String(b.it.date || '');
+            return x === y ? a.i - b.i : (x < y ? 1 : -1);
+          })
+          .map(function (o) { return o.it; });
+      }
+      // 页码窗口：≤7 页全列，否则「首页 … 当前段5页 … 末页」
+      function eleNumText(cur, total) {
+        var out = [], i;
+        if (total <= 7) { for (i = 0; i < total; i++) out.push(i); return out; }
+        var s = Math.max(0, Math.min(cur - 2, total - 5));
+        for (i = s; i < s + 5; i++) out.push(i);
+        if (s > 0) { out.unshift(0); if (s > 1) out.splice(1, 0, '…'); }
+        if (s + 5 < total) { if (s + 5 < total - 1) out.push('…'); out.push(total - 1); }
+        return out;
+      }
+      function eleRecordHtml(it, no, pad) {
+        var tone = ELE_TONE[it.kind] || 'slate';
+        var date = it.date || '';
+        var detail = it.detail || '';
+        // 超过约 3 行的正文先给展开入口，渲染后再按实际溢出量校正
+        return '<article class="elr' + (detail.length > 110 ? ' has-more' : '') + '">' +
+          '<div class="elr-h">' +
+            '<time class="elr-d"' + (date ? ' datetime="' + esc(date) + '"' : '') + '>' + esc(date || '—') + '</time>' +
+            (it.kind ? '<span class="elr-k" data-tone="' + tone + '">' + esc(it.kind) + '</span>' : '') +
+            '<span class="elr-no">' + elePad(no, pad) + '</span>' +
+          '</div>' +
+          '<h3 class="elr-t">' + esc(it.title || '') + '</h3>' +
+          (detail ? '<p class="elr-s">' + esc(detail) + '</p>' : '') +
+          '<div class="elr-f">' +
+            (it.source ? '<div class="elr-src"><i>来源</i>' + esc(it.source) + '</div>' : '<span></span>') +
+            (detail ? '<button type="button" class="elr-more" aria-expanded="false"><span>展开全文</span><i></i></button>' : '') +
+          '</div>' +
+          '</article>';
+      }
+      function elePagerHtml(total, pages, cur, from, shown) {
+        if (pages <= 1) return '';
+        return '<nav class="ele-pager" aria-label="动态条目分页">' +
+          '<span class="ep-info">第 <b>' + (from + 1) + '–' + (from + shown) + '</b> 条 · 共 <b>' + total + '</b> 条</span>' +
+          '<span class="ep-nav">' +
+            '<button type="button" class="ep-btn ep-step" data-ep="prev"' + (cur === 0 ? ' disabled' : '') + ' aria-label="上一页">‹</button>' +
+            eleNumText(cur, pages).map(function (k) {
+              if (k === '…') return '<span class="ep-gap">…</span>';
+              var on = k === cur;
+              return '<button type="button" class="ep-btn' + (on ? ' on' : '') + '" data-ep="' + k + '"' +
+                (on ? ' aria-current="page"' : '') + ' aria-label="第 ' + (k + 1) + ' 页">' + (k + 1) + '</button>';
+            }).join('') +
+            '<button type="button" class="ep-btn ep-step" data-ep="next"' + (cur === pages - 1 ? ' disabled' : '') + ' aria-label="下一页">›</button>' +
+          '</span>' +
+          '<span class="ep-jump">跳至 <input class="ep-in" type="number" inputmode="numeric" min="1" max="' + pages +
+            '" value="' + (cur + 1) + '" aria-label="跳至页码，共 ' + pages + ' 页"> / ' + pages + ' 页</span>' +
+          '</nav>';
+      }
+      function eleArchBody(items) {
+        var total = items.length;
+        if (!total) return '<div class="ele-ledger"><p class="elr-empty">暂无条目</p></div>';
+        var pages = elePageTotal(total);
+        var cur = Math.min(Math.max(0, ELE_PAGE[ELE_SEC] || 0), pages - 1);
+        ELE_PAGE[ELE_SEC] = cur;
+        var from = cur * ELE_PAGE_SIZE;
+        var pageItems = items.slice(from, from + ELE_PAGE_SIZE);
+        var pad = String(total).length;
+        // 月份条数按全量统计：跨页时读数仍是整月口径
+        var mCount = {};
+        items.forEach(function (it) { var k = eleMonthOf(it); if (k) mCount[k] = (mCount[k] || 0) + 1; });
+        var last = '', rows = '';
+        pageItems.forEach(function (it, i) {
+          var mk = eleMonthOf(it);
+          if (mk && mk !== last) {
+            last = mk;
+            rows += '<div class="elr-m"><b>' + esc(eleMonthText(mk)) + '</b><i></i><span>' + (mCount[mk] || 0) + ' 条</span></div>';
+          }
+          rows += eleRecordHtml(it, from + i + 1, pad);
+        });
+        return '<div class="ele-ledger">' + rows + '</div>' +
+          elePagerHtml(total, pages, cur, from, pageItems.length);
+      }
+      // 正文未溢出三行时收起「展开」入口
+      function eleSyncMore() {
+        var host = document.getElementById('ele-arch');
+        if (!host) return;
+        [].slice.call(host.querySelectorAll('.elr')).forEach(function (rec) {
+          if (rec.classList.contains('open')) return;
+          var p = rec.querySelector('.elr-s');
+          if (!p || !p.clientHeight) return;
+          rec.classList.toggle('has-more', p.scrollHeight - p.clientHeight > 2);
+        });
+      }
+      function eleScrollToArch() {
+        var head = document.querySelector('#ele-sec .ea-h');
+        if (!head) return;
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var top = head.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 78;
+        window.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });
+      }
+      function eleGoPage(n) {
+        var items = eleOrderedItems((readElectionData().sections || {})[ELE_SEC]);
+        var pages = elePageTotal(items.length);
+        n = Math.max(0, Math.min(pages - 1, n));
+        if (n === (ELE_PAGE[ELE_SEC] || 0)) return;
+        ELE_PAGE[ELE_SEC] = n;
+        eleRenderArch();
+        eleScrollToArch();
+      }
+      function eleRenderArch() {
+        var host = document.getElementById('ele-arch');
+        if (!host) return;
+        var items = eleOrderedItems((readElectionData().sections || {})[ELE_SEC]);
+        host.innerHTML = eleArchBody(items);
+        if (window.requestAnimationFrame) requestAnimationFrame(eleSyncMore);
+        else eleSyncMore();
+      }
+      // 事件委托挂在 #ele-sec 上：切 Tab 只换 innerHTML，监听无需重绑
+      function bindEleArch() {
+        var host = document.getElementById('ele-sec');
+        if (!host || host.__archBound) return;
+        host.__archBound = true;
+        host.addEventListener('click', function (e) {
+          var t = e.target;
+          if (!t || !t.closest) return;
+          var more = t.closest('.elr-more');
+          if (more) {
+            var rec = more.closest('.elr');
+            var open = rec.classList.toggle('open');
+            more.setAttribute('aria-expanded', open ? 'true' : 'false');
+            more.querySelector('span').textContent = open ? '收起' : '展开全文';
+            return;
+          }
+          var btn = t.closest('.ep-btn');
+          if (!btn || btn.disabled) return;
+          var v = btn.getAttribute('data-ep');
+          var cur = ELE_PAGE[ELE_SEC] || 0;
+          eleGoPage(v === 'prev' ? cur - 1 : v === 'next' ? cur + 1 : parseInt(v, 10));
+        });
+        host.addEventListener('keydown', function (e) {
+          if (e.key !== 'Enter' || !e.target.classList || !e.target.classList.contains('ep-in')) return;
+          var n = parseInt(e.target.value, 10);
+          if (!isNaN(n)) eleGoPage(n - 1);
+        });
+        host.addEventListener('change', function (e) {
+          if (!e.target.classList || !e.target.classList.contains('ep-in')) return;
+          var n = parseInt(e.target.value, 10);
+          if (!isNaN(n)) eleGoPage(n - 1);
+        });
+      }
       function itemsHtml(sec) {
-        var items = sec.items || [];
-        var html = '<div class="ele-sub">动态条目 <span>Latest Updates · ' + items.length + ' 条</span></div>';
-        if (!items.length) {
-          html += '<div class="ele-list"><div class="ele-item"><div class="ei-detail">暂无条目</div></div></div>';
-          return html;
-        }
-        html += '<div class="ele-list">' + items.map(function (it) {
-          return '<div class="ele-item">' +
-            '<div class="ei-meta"><span class="ei-date">' + esc(it.date || '') + '</span>' +
-            (it.kind ? '<span class="ei-kind">' + esc(it.kind) + '</span>' : '') + '</div>' +
-            '<div class="ei-title">' + esc(it.title || '') + '</div>' +
-            (it.detail ? '<div class="ei-detail">' + esc(it.detail) + '</div>' : '') +
-            (it.source ? '<div class="ei-src">' + esc(it.source) + '</div>' : '') + '</div>';
-        }).join('') + '</div>' +
-        '<div class="ele-src">本板块条目为人工整理,随重大节点更新;民调与评级均标注发布机构与调查方法。</div>';
-        return html;
+        var items = eleOrderedItems(sec);
+        var ed = readElectionData();
+        return '<div class="ea-h">' +
+          '<span class="ea-t">动态条目</span>' +
+          '<span class="ea-e">Latest Updates · ' + items.length + ' 条</span>' +
+          '<span class="ea-m">每页 ' + ELE_PAGE_SIZE + ' 条 · 更新至 <b>' + esc(ed.updated_at || '—') + '</b></span>' +
+          '</div>' +
+          '<div id="ele-arch">' + eleArchBody(items) + '</div>' +
+          '<div class="ele-src">本板块条目为人工整理,随重大节点更新;民调与评级均标注发布机构与调查方法。</div>';
       }
       function renderElectionSec() {
         var data = readElectionData();
@@ -11026,6 +11282,9 @@
         var host = document.getElementById('ele-sec');
         if (!sec || !host) return;
         host.innerHTML = trackHtml(sec) + procHtml(sec) + pollsHtml(sec) + itemsHtml(sec);
+        bindEleArch();
+        if (window.requestAnimationFrame) requestAnimationFrame(eleSyncMore);
+        else eleSyncMore();
         eleCdRefs = [];
         eleCdRefs.push({
           date: sec.date,
@@ -11036,7 +11295,8 @@
       }
       function initElectionTabs() {
         var bar = document.getElementById('ele-tabs');
-        if (!bar) return;
+        if (!bar || bar.__tabBound) return; // 重复进入板块时不重复绑定
+        bar.__tabBound = true;
         bar.addEventListener('click', function (e) {
           var b = e.target.closest ? e.target.closest('button[data-sec]') : null;
           if (!b) return;
