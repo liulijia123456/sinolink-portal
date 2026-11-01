@@ -11294,7 +11294,10 @@
             ? '美国东部夏令时 EDT（UTC-4）· 每年 3 月第二个周日至 11 月第一个周日'
             : '美国东部冬令时 EST（UTC-5）· 每年 11 月第一个周日至次年 3 月第二个周日';
         }
-        document.getElementById('ucc-et-sub').textContent = (+et.m) + ' 月 ' + (+et.d) + ' 日 周' + et.wd;
+        // 两地表差（夏令时 12 小时、冬令时 13 小时）随时间令自动变，写在美东日期后面
+        var gapH = Math.round((ucClockOffsetMin(ms, 'Asia/Shanghai') - ucClockOffsetMin(ms, 'America/New_York')) / 60);
+        document.getElementById('ucc-et-sub').textContent =
+          (+et.m) + ' 月 ' + (+et.d) + ' 日 周' + et.wd + (gapH ? ' · 比北京慢 ' + gapH + ' 小时' : '');
         document.getElementById('ucc-bj-sub').textContent = (+bj.m) + ' 月 ' + (+bj.d) + ' 日 周' + bj.wd;
         document.getElementById('ucc-hint').textContent =
           et.key === bj.key ? '' : '当前日期相差 1 天';
