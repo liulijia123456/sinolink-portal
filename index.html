@@ -1070,6 +1070,15 @@
     display: block; font-style: normal; font-family: var(--ele-mono); font-size: 9px;
     letter-spacing: 0.14em; color: #a8762a; margin-bottom: 2px;
   }
+  /* 可点来源：细下划线提示可点，悬停转交互蓝；↗ 用铜金标外链 */
+  #view-election .elc-src.is-link {
+    color: inherit; text-decoration: none;
+    border-bottom: 1px solid rgba(95, 106, 120, 0.42);
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  #view-election .elc-src.is-link:hover { color: var(--accent-light); border-bottom-color: var(--accent-light); }
+  #view-election .elc-src.is-link:focus-visible { outline: 2px solid rgba(47, 111, 184, 0.45); outline-offset: 2px; }
+  #view-election .elc-src-ext { margin-left: 3px; font-size: 10px; color: #a8762a; }
   #view-election .elc-empty { margin: 0; padding: 34px 0; text-align: center; font-size: 13px; color: #6b6252; }
 
   /* 分页：等宽数字 + 方角按钮，当前页用交互蓝填充 */
@@ -5672,7 +5681,8 @@
           "kind": "选举规则",
           "title": "全国提前投票累计 5270 万张刷新中期选举纪录：现场 2907 万张、邮寄约 2370 万张",
           "detail": "佛罗里达大学选举实验室数据显示，截至美东 10 月 31 日（周六）晚间，全国提前投票累计 5270 万张，已超过 2022 年中期选举全周期 4590 万张的纪录；其中现场提前投票 2907 万张、邮寄选票约 2370 万张，20 个州的常规提前投票期于当周陆续结束。党派结构（10 月 30 日周五 21:39 美东快照）：登记民主党人占 43%（1030 万张）、共和党 32%（750 万张）、未登记或小党 25%（590 万张）；全美 47 州及哥伦比亚特区允许普遍提前投票，仅阿拉巴马、密西西比、新罕布什尔例外；只有 27 个州按党派登记追踪提前投票，故该结构不能直接等同于投票选择。分州规模：得州 690 万、加州 510 万、佛州 470 万；佐治亚 280 万、北卡 230 万、密歇根 190 万、俄亥俄 150 万。美联社 10 月 30 日分析称，在提供党派登记的 27 个州中民主党提前投票率领先共和党约 12 个百分点；佛罗里达大学选举实验室主任麦克唐纳提示，提前投票者历来更偏民主党，选举日选民构成将明显转向共和党。",
-          "source": "佛罗里达大学选举实验室 / 美联社"
+          "source": "佛罗里达大学选举实验室 / 美联社",
+          "url": "https://election.lab.ufl.edu/early-vote/2026-early-voting"
         },
         {
           "date": "2026-10-31",
@@ -5686,14 +5696,16 @@
           "kind": "裁决",
           "title": "司法部要求法院单独封存阿拉斯加所有排名给 Daniel J. Sullivan 的选票，联邦检察官公开确认刑事调查",
           "detail": "10 月 30 日（周五）司法部在阿拉斯加参院选举诉讼中提出新动议，要求法院下令保全并单独封存所有排名给无党派候选人 Daniel J. Sullivan Jr. 的选票，称其参选「有可能误导选民并使选举程序丧失完整性」，请求 11 月 2 日（周一）前作出裁定，并提交要求 Peltola 阵营与参议院民主党竞选委员会回答的质询清单。阿拉斯加联邦检察官 Michael Heyman 当日记者会上公开确认针对同名候选人的刑事调查已进行数月，称《纽约时报》相关报道导致执法资源「大幅增援」阿拉斯加，并拒绝说明具体罪名与对象。州方反对称选票在票箱中混合、不可能在不破坏选票秘密的前提下分离，要求驳回起诉；Peltola 阵营与 Common Cause（由美国公民自由联盟代理）均申请驳回。此前 10 月 30 日司法部已提交修订诉状并列 40 份传票；特朗普 10 月 30 日晚在佛州集会称应起诉 Peltola 与 Dan Sullivan。",
-          "source": "NPR / 美国司法部阿拉斯加联邦检察官办公室"
+          "source": "NPR / 美国司法部阿拉斯加联邦检察官办公室",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate"
         },
         {
           "date": "2026-10-31",
           "kind": "日程",
           "title": "密歇根参院选前同党争执：Stevens 要求 El-Sayed 道歉，联合投票动员活动取消",
           "detail": "10 月 30 日（周五）前众议员 Haley Stevens 在 X 平台要求民主党参院候选人 Abdul El-Sayed 就其「把医疗成本归咎于以色列」的言论道歉，并要求其谴责 Rebellion PAC 制作的把食品价格与美国对以色列军援挂钩的广告，称「免责声明不等于谴责」；El-Sayed 当日回应称 Stevens 意图重开三个月前结束的初选。两人原定 11 月 1 日在底特律一座教堂参加由众议员 Jim Clyburn 主持的联合投票动员活动，Politico 10 月 30 日晚报道称 El-Sayed 阵营已要求 Stevens 退出此后全部竞选活动，该联合活动取消。此前 10 月 28 日 Stevens 的未婚夫、登记民主党人 Jason Turkish 在 Rogers 竞选活动上表示将投 Rogers 票，Stevens 随后在 CNN 表示仍会投 El-Sayed 一票。",
-          "source": "Politico / WLNS（底特律）"
+          "source": "Politico / WLNS（底特律）",
+          "url": "https://www.politico.com/storyline/live/2026/10/30/2026-midterm-elections-oct-30/stevens-demands-apology-from-el-sayed-ahead-of-rare-joint-appearance"
         },
         {
           "date": "2026-10-31",
@@ -5714,7 +5726,8 @@
           "kind": "评级",
           "title": "Cook Political Report 选前最终评级：12 个众议院选区转向民主党，平局选区增至 18 席，预计民主党最终 227—240 席",
           "detail": "10 月 30 日（周五），Cook Political Report 更新众议院评级，共 12 个选区向民主党方向移动一档以上：由倾向共和党下调为平局的有宾夕法尼亚第 1 选区（Fitzpatrick）、科罗拉多第 5 选区（Crank）与南卡罗来纳第 1 选区开放席位；由平局上调为倾向民主党的有宾州第 8 选区（Bresnahan）与俄亥俄第 9 选区（Kaptur）；由大概率共和党下调为倾向共和党的有佛州第 7 选区开放席位、佛州第 9 选区（Soto）、印第安纳第 5 选区（Spartz）；由稳固共和党下调为大概率共和党的有北卡第 5、第 9 选区、新泽西第 2 选区与华盛顿第 5 选区。更新后民主党阵营或更优 222 席（稳固民主 186、大概率民主 18、倾向民主 18），共和党阵营或更优 195 席，平局 18 席。Cook 称最可能结果是民主党翻转 12—25 席、最终取得 227—240 席。",
-          "source": "Cook Political Report（2026 年 10 月 30 日）、The Daily Beast、Daily Caller、CQ Roll Call"
+          "source": "Cook Political Report（2026 年 10 月 30 日）、The Daily Beast、Daily Caller、CQ Roll Call",
+          "url": "https://dailycaller.com/2026/10/30/12-more-house-seats-shift-in-democrats-favor"
         },
         {
           "date": "2026-10-30",
@@ -11082,6 +11095,16 @@
         if (s + 5 < total) { if (s + 5 < total - 1) out.push('…'); out.push(total - 1); }
         return out;
       }
+      // 来源：有 url 时整条可点，跳原文；无 url 只作文字，不造地址
+      function eleSourceHtml(it) {
+        if (!it.source) return '';
+        if (!it.url) return '<i>来源</i><span class="elc-src">' + esc(it.source) + '</span>';
+        var ext = /^https?:/i.test(it.url);
+        return '<i>来源</i><a class="elc-src is-link" href="' + esc(it.url) + '"' +
+          (ext ? ' target="_blank" rel="noopener noreferrer"' : '') +
+          ' title="打开原文：' + esc(it.source) + '">' + esc(it.source) +
+          '<span class="elc-src-ext">↗</span></a>';
+      }
       function eleRecordHtml(it, no, pad) {
         var tone = ELE_TONE[it.kind] || 'slate';
         var date = it.date || '';
@@ -11098,7 +11121,7 @@
             (detail ? '<p class="elc-s">' + esc(detail) + '</p>' : '') +
             (detail ? '<button type="button" class="elc-more" aria-expanded="false"><span>展开全文</span><i></i></button>' : '') +
           '</div>' +
-          '<div class="elc-marg">' + (it.source ? '<i>来源</i>' + esc(it.source) : '') + '</div>' +
+          '<div class="elc-marg">' + eleSourceHtml(it) + '</div>' +
           '</article>';
       }
       function elePagerHtml(total, pages, cur, from, shown) {
