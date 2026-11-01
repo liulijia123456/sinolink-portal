@@ -1079,6 +1079,7 @@
   #view-election .elc-src.is-link:hover { color: var(--accent-light); border-bottom-color: var(--accent-light); }
   #view-election .elc-src.is-link:focus-visible { outline: 2px solid rgba(47, 111, 184, 0.45); outline-offset: 2px; }
   #view-election .elc-src-ext { margin-left: 3px; font-size: 10px; color: #a8762a; }
+  #view-election .elc-src-more { color: #7c7466; }
   #view-election .elc-empty { margin: 0; padding: 34px 0; text-align: center; font-size: 13px; color: #6b6252; }
 
   /* 分页：等宽数字 + 方角按钮，当前页用交互蓝填充 */
@@ -11124,15 +11125,21 @@
         if (s + 5 < total) { if (s + 5 < total - 1) out.push('…'); out.push(total - 1); }
         return out;
       }
-      // 来源：有 url 时整条可点，跳原文；无 url 只作文字，不造地址
+      // 来源：以「、」拆成主来源与附加来源；只有主来源可点，附加来源保持纯文字
       function eleSourceHtml(it) {
         if (!it.source) return '';
-        if (!it.url) return '<i>来源</i><span class="elc-src">' + esc(it.source) + '</span>';
+        var full = String(it.source);
+        var parts = full.split('、');
+        var head = parts.shift();
+        var more = parts.length ? '<span class="elc-src-more">、' + esc(parts.join('、')) + '</span>' : '';
+        if (!it.url) {
+          return '<i>来源</i><span class="elc-src">' + esc(head) + '</span>' + more;
+        }
         var ext = /^https?:/i.test(it.url);
         return '<i>来源</i><a class="elc-src is-link" href="' + esc(it.url) + '"' +
           (ext ? ' target="_blank" rel="noopener noreferrer"' : '') +
-          ' title="打开原文：' + esc(it.source) + '">' + esc(it.source) +
-          '<span class="elc-src-ext">↗</span></a>';
+          ' title="打开原文：' + esc(head) + '">' + esc(head) +
+          '<span class="elc-src-ext">↗</span></a>' + more;
       }
       function eleRecordHtml(it, no, pad) {
         var tone = ELE_TONE[it.kind] || 'slate';
