@@ -3221,31 +3221,7 @@
 
   /* ================= 政策条目工作区（左分类树 + 检索条 + 条目表） ================= */
   .pw-section { padding: 30px 0 72px; }
-  .pw { display: grid; grid-template-columns: 234px minmax(0, 1fr); gap: 20px; align-items: start; }
-
-  /* 左栏 */
-  .pw-side {
-    position: sticky; top: 78px;
-    background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
-    padding: 14px 12px 10px; box-shadow: 0 1px 2px rgba(11, 23, 36, .04);
-  }
-  .pw-side-h { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 2px 6px 10px; border-bottom: 1px solid var(--border-light); }
-  .pw-side-t { font-size: 13px; font-weight: 700; letter-spacing: .04em; color: #16212e; }
-  .pw-side-n { font-family: var(--mono, "SFMono-Regular", Menlo, monospace); font-size: 11px; color: var(--muted); }
-  .pw-tree { margin-top: 10px; max-height: min(56vh, 620px); overflow-y: auto; }
-  .pw-tree-g { font-family: var(--mono, monospace); font-size: 10px; letter-spacing: .16em; color: var(--muted); padding: 12px 8px 6px; }
-  .pw-tree-i {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 8px; width: 100%;
-    text-align: left; background: none; border: 0; border-radius: 8px; padding: 7px 8px;
-    font: inherit; font-size: 12.5px; color: #16212e; cursor: pointer; line-height: 1.5;
-    transition: background-color .16s ease, color .16s ease;
-  }
-  .pw-tree-i span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .pw-tree-i b { font-family: var(--mono, monospace); font-weight: 500; font-size: 11px; color: var(--muted); }
-  .pw-tree-i:hover { background: rgba(11, 23, 36, .045); }
-  .pw-tree-i.on { background: rgba(168, 130, 60, .13); color: #6b4a12; font-weight: 600; box-shadow: inset 2px 0 0 var(--gold-light, #a8823c); }
-  .pw-tree-i.on b { color: #6b4a12; }
-  .pw-side-foot { margin-top: 10px; padding: 10px 8px 2px; border-top: 1px dashed var(--border-light); font-size: 11px; line-height: 1.7; color: var(--muted); }
+  .pw { display: block; }
 
   /* 右栏工具条 */
   .pw-main { min-width: 0; }
@@ -3392,14 +3368,6 @@
     .c-pre { display: block; width: max-content; margin: 3px 0 0; }
   }
 
-  /* 1320 以下：侧栏移到顶部，表格吃满宽度（否则标题列会被挤到 200px 以内） */
-  @media (max-width: 1320px) {
-    .pw { grid-template-columns: 1fr; }
-    .pw-side { position: static; }
-    /* 侧栏改为多列排布：机构名与条目数不会被拉到两端 */
-    .pw-tree { max-height: 232px; display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 2px 12px; align-content: start; }
-    .pw-tree-g { grid-column: 1 / -1; }
-  }
   @media (max-width: 900px) {
     .pw-thead, .pw-r { grid-template-columns: 104px minmax(0, 1fr) 92px 136px 116px; }
     .pw-th-dom, .c-domain { display: none; }
@@ -5206,19 +5174,6 @@
     <section class="section pw-section" data-page-node-id="FWW3PPr6TLqb8EbKzEZnoz">
       <div class="wrap pw" data-page-node-id="wvTJJl5v7fTgvRDErwIq2W">
 
-        <!-- 左栏：分类树（按机构 / 类型分组，条目数实时统计） -->
-        <aside class="pw-side">
-          <div class="pw-side-h">
-            <span class="pw-side-t" id="pw-tree-title">分类</span>
-            <span class="pw-side-n" id="pw-tree-n"></span>
-          </div>
-          <nav class="pw-tree" id="pw-tree" aria-label="按分类筛选"></nav>
-          <div class="pw-side-foot">
-            <span>条目按发布时间倒序归档，每日增量更新</span>
-          </div>
-        </aside>
-
-        <!-- 右栏：检索条 → 筛选条件 → 已选条件 → 表格 → 分页 -->
         <div class="pw-main">
           <div class="pw-top">
             <div class="pw-search">
@@ -10014,53 +9969,7 @@
         sel.value = domains.indexOf(prev) >= 0 ? prev : 'all';
       }
 
-      // 激活态同步：非默认值的筛选控件蓝色高亮；有筛选时显示「重置」按钮
-      // ---------- 左栏分类树：按机构（国会按类型）分组，带条目数 ----------
-      function renderPwTree(key, items) {
-        var host = document.getElementById('pw-tree');
-        var title = document.getElementById('pw-tree-title');
-        var num = document.getElementById('pw-tree-n');
-        if (!host) return;
-        var byKind = key === 'congress';
-        if (title) title.textContent = byKind ? '按文件类型' : (key === 'judicial' ? '按法院' : '按机构');
-        var groups = {}, total = 0;
-        items.forEach(function (it) {
-          var k = byKind ? (congressType(it.kind) || '其他') : (it.agency || it.source || '未标注机构');
-          groups[k] = (groups[k] || 0) + 1;
-          total++;
-        });
-        var keys = Object.keys(groups).sort(function (a, b) {
-          return groups[b] - groups[a] || a.localeCompare(b, 'zh');
-        });
-        if (num) num.textContent = total + ' 条';
-        var cur = byKind ? filterState.kind : filterState.agency;
-        var html = '<button type="button" class="pw-tree-i' + (!cur || cur === 'all' ? ' on' : '') +
-                   '" data-v="all"><span>全部条目</span><b>' + total + '</b></button>';
-        html += '<div class="pw-tree-g">' + (byKind ? '类型' : (key === 'judicial' ? '法院' : '机构')) +
-                '（' + keys.length + '）</div>';
-        html += keys.map(function (k) {
-          return '<button type="button" class="pw-tree-i' + (cur === k ? ' on' : '') + '" data-v="' + esc(k) + '">' +
-                 '<span>' + esc(k) + '</span><b>' + groups[k] + '</b></button>';
-        }).join('');
-        host.innerHTML = html;
-        host.onclick = function (e) {
-          var b = e.target.closest ? e.target.closest('.pw-tree-i') : null;
-          if (!b) return;
-          var v = b.getAttribute('data-v');
-          if (byKind) {
-            filterState.kind = v;
-            var ks = document.getElementById('filter-kind'); if (ks) ks.value = v;
-          } else {
-            filterState.agency = v;
-            var as = document.getElementById('filter-agency'); if (as) as.value = v;
-          }
-          boardPage = 0;
-          syncFilterUI();
-          if (renderCurrentBoard) renderBoard(renderCurrentBoard);
-        };
-      }
-
-      // ---------- 已选条件 ----------
+      // 激活态同步：非默认值的筛选控件蓝色高亮；有筛选时显示「重置」按钮      // ---------- 已选条件 ----------
       function renderPwChips() {
         var host = document.getElementById('pw-selected');
         if (!host) return;
@@ -10324,7 +10233,6 @@
         PW_TODAY = pwTodayKey();
         pwDatesOf(allItems);
         pwCalBind();
-        renderPwTree(key, allItems);
         syncFilterUI();
         renderCurrentBoard = key;
         // 挂原始索引：研判卡「§」角标跳转依赖 note-{原始索引} 锚点
