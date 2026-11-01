@@ -805,46 +805,6 @@
     .board-pager .pg-btn { min-width: 30px; height: 30px; line-height: 28px; }
   }
   /* ===== 子页面：选举动态 ===== */
-  .ele-hero {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
-    margin-bottom: 36px;
-  }
-  .ele-track {
-    background: var(--card-light); border: 1px solid var(--border-light); border-radius: var(--radius);
-    padding: 20px 22px; box-shadow: 0 1px 3px rgba(23,42,64,0.05);
-    display: flex; flex-direction: column;
-  }
-  .ele-track.now { border-top: 3px solid var(--accent-light); }
-  .ele-track.future { border-top: 3px solid var(--muted-light); }
-  .et-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-  .et-badge {
-    font-size: 11px; font-weight: 700; color: #fff; background: var(--accent-light);
-    border-radius: 10px; padding: 2px 10px; letter-spacing: 0.08em;
-  }
-  .et-badge.grey { background: var(--muted-light); }
-  .et-en { font-size: 10.5px; font-weight: 600; color: var(--muted-light); letter-spacing: 0.12em; }
-  .et-title { font-size: 20px; font-weight: 700; color: var(--text-light); margin-bottom: 12px; }
-  .et-date-row { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
-  .ele-track.future .et-date-row { border-bottom: 1px solid var(--border-light); }
-  .et-cd { display: flex; align-items: baseline; }
-  .et-cd .cd-num { font-family: Georgia, 'Times New Roman', serif; font-size: 46px; font-weight: 700; color: var(--accent-light); line-height: 1; }
-  .ele-track.future .cd-num { color: var(--muted-light); }
-  .cd-tz { font-size: 11px; color: var(--muted-light); margin: -2px 0 10px; letter-spacing: 0.2px; }
-  .et-cd .cd-unit { font-size: 13px; color: var(--muted-light); margin-left: 4px; }
-  .et-date-info { display: flex; flex-direction: column; gap: 2px; }
-  .et-date-info b { font-size: 13.5px; font-weight: 700; color: var(--text-light); }
-  .et-date-info span { font-size: 11.5px; color: var(--muted-light); }
-  .et-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0 10px; }
-  .ele-track.future .et-stats { grid-template-columns: repeat(4, 1fr); }
-  .et-stat {
-    background: rgba(47,111,184,0.05); border: 1px solid rgba(47,111,184,0.12);
-    border-radius: 8px; padding: 9px 10px; text-align: left;
-  }
-  .ele-track.future .et-stat { background: #f4f5f7; border-color: var(--border-light); }
-  .et-stat b { display: block; font-size: 19px; font-weight: 700; color: var(--text-light); line-height: 1.25; }
-  .et-stat span { display: block; font-size: 10.5px; color: var(--muted-light); margin-top: 3px; line-height: 1.5; }
-  .et-updated { font-size: 11px; color: var(--muted-light); margin-top: auto; padding-top: 8px; border-top: 1px dashed var(--border-light); }
-
   /* 各州选情地图 */
   .ele-map-wrap { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(240px, 1fr); gap: 16px; margin-bottom: 40px; }
   .ele-map-box {
@@ -928,61 +888,9 @@
   .st.ev5 { fill: #7799c2; }
   .comp-dot.hide { display: none; }
 
-  /* ===== 中期选举 / 总统大选 切换 Tab ===== */
-  .ele-tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--border-light); margin: 34px 0 20px; }
-  .ele-tab { border: none; background: transparent; font: inherit; font-size: 15px; font-weight: 600; color: var(--muted-light); padding: 10px 18px; cursor: pointer; position: relative; transition: color .15s ease; }
-  .ele-tab:hover { color: var(--text-light); }
-  .ele-tab.on { color: var(--accent-light); }
-  .ele-tab.on::after { content: ''; position: absolute; left: 10px; right: 10px; bottom: -2px; height: 2px; background: var(--accent-light); }
-  /* ===== 选举程序时间轴 ===== */
-  .proc { position: relative; padding-left: 26px; }
-  .proc::before { content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; background: var(--border-light); }
-  .proc-item { position: relative; padding: 0 0 18px 4px; }
-  .proc-item:last-child { padding-bottom: 0; }
-  .proc-dot {
-    position: absolute; left: -26px; top: 2px; width: 18px; height: 18px; border-radius: 50%;
-    background: #fff; border: 2px solid var(--border-light);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 9.5px; font-weight: 700; color: var(--muted-light);
-  }
-  .proc-item.done .proc-dot { background: #e8eaed; border-color: #cdd3db; color: #6b7684; }
-  .proc-item.now .proc-dot { background: var(--accent-light); border-color: var(--accent-light); color: #fff; box-shadow: 0 0 0 4px rgba(47,111,184,0.15); }
-  .proc-hd { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .proc-hd b { font-size: 14.5px; color: var(--text-light); }
-  .proc-hd .proc-en { font-size: 11px; color: var(--muted-light); letter-spacing: 0.03em; }
-  .proc-when { display: inline-block; font-size: 11.5px; font-weight: 600; color: var(--muted-light); background: #eef2f8; border-radius: 4px; padding: 1px 8px; }
-  .proc-item.now .proc-when { background: rgba(47,111,184,0.12); color: var(--accent-light); }
-  .proc-item.done .proc-when::before { content: '已完成 · '; }
-  .proc-item.now .proc-when::before { content: '进行中 · '; }
-  .proc-desc { font-size: 12.5px; color: var(--muted-light); line-height: 1.85; margin-top: 5px; }
-
-  /* 统计块口径标题（盖洛普实时读数） */
-  .et-sub-sm { font-size: 12.5px; font-weight: 600; color: var(--muted-light); margin: 16px 0 10px; display: flex; align-items: baseline; gap: 8px; }
-  .et-sub-sm span { font-size: 11px; font-weight: 400; letter-spacing: 0.04em; }
-  .et-updated b { font-weight: 700; color: var(--text-light); font-variant-numeric: tabular-nums; }
-
-  /* ===== 盖洛普民调 ===== */
-  .poll-note { font-size: 12px; color: var(--muted-light); line-height: 1.85; background: #f6f8fa; border-left: 3px solid var(--border-light); border-radius: 0 6px 6px 0; padding: 10px 14px; margin-bottom: 14px; }
-  .poll-series { display: grid; gap: 9px; margin-bottom: 16px; }
-  .ps-row { display: grid; grid-template-columns: 62px 1fr; align-items: center; gap: 12px; }
-  .ps-row > span { font-size: 12px; font-weight: 600; color: var(--muted-light); font-variant-numeric: tabular-nums; }
-  .ps-bars { display: flex; height: 18px; border-radius: 4px; overflow: hidden; background: #eef2f7; }
-  .ps-bars i { display: block; height: 100%; font-style: normal; font-size: 10.5px; font-weight: 700; color: #fff; line-height: 18px; text-align: center; }
-  .ps-bars .d { background: #7ba0cf; }
-  .ps-bars .r { background: #cf8b7d; }
-  .ps-legend { display: flex; gap: 14px; font-size: 11px; color: var(--muted-light); margin: 6px 0 0 74px; }
-  .poll-items { display: grid; gap: 10px; }
-  .poll-item { border: 1px solid var(--border-light); border-radius: 8px; padding: 12px 14px; }
-  .pi-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  .pi-top b { font-size: 13px; color: var(--text-light); }
-  .pi-top .pi-v { font-size: 15px; font-weight: 700; color: var(--accent-light); font-variant-numeric: tabular-nums; }
-  .pi-sub { font-size: 12px; color: var(--muted-light); line-height: 1.8; margin-top: 5px; }
-  .pi-src { font-size: 11px; color: var(--muted-light); margin-top: 6px; }
-  .pi-src::before { content: '来源：'; }
   @media (max-width: 700px) {
     .emap-bar { flex-direction: column; align-items: stretch; }
     .emap-seg { justify-content: center; }
-    .ps-legend { margin-left: 0; }
   }
 
   /* 选举日历时间线 */
@@ -1198,12 +1106,6 @@
   }
 
   @media (max-width: 700px) {
-    .ele-hero { grid-template-columns: 1fr; }
-    .et-cd .cd-num { font-size: 38px; }
-    .et-stats { grid-template-columns: repeat(4, 1fr); gap: 6px; }
-    .et-stat { padding: 7px 6px; }
-    .et-stat b { font-size: 15px; }
-    .et-stat span { font-size: 9.5px; }
     .ele-table { display: block; overflow-x: auto; }
     .ele-grid3 { grid-template-columns: 1fr; }
   }
@@ -5325,7 +5227,7 @@
         <a class="back" href="#" id="back-link-election" data-page-node-id="8ntXQDW7IAfRm4HFO16Y19">← 返回美国板块</a>
         <h1 data-page-node-id="1LQj8TQaDBdQ4wg3kExJYA">选举动态</h1>
         <div class="suben" data-page-node-id="aue5NdNeRfDyNK3RZuDlnC">Election Dynamics</div>
-        <p class="subdesc" data-page-node-id="a9E4bJRC7vcx4jzYWoJ9kh">各州选情地图与选举倒计时一览：地图可点击各州查看选票情况,时间表并列呈现 2026 中期选举与 2028 总统大选的核心数据,倒计时按美东时间每日更新。</p>
+        <p class="subdesc" data-page-node-id="a9E4bJRC7vcx4jzYWoJ9kh">各州选情地图与动态条目一览：地图可点击各州查看选票情况,动态条目按日期倒序归档 2026 中期选举与 2028 总统大选的进程。</p>
       </div>
     </div>
 
@@ -5480,11 +5382,7 @@
           </aside>
         </div>
 
-        <!-- ① 中期选举 / 总统大选两部分（Tab 切换）：选举程序 · 关键数据 · 盖洛普民调 · 动态条目 -->
-        <div class="ele-tabs" id="ele-tabs" role="tablist" aria-label="选举类别" data-page-node-id="8PJbtZxSMr4jY3Jike0bOS">
-          <button type="button" class="ele-tab on" data-sec="midterm" role="tab" aria-selected="true" data-page-node-id="4nfgqftYNcDjRyVuWoZVv3">2026 中期选举</button>
-          <button type="button" class="ele-tab" data-sec="presidential" role="tab" aria-selected="false" data-page-node-id="Il6QyIx4e3gh81w5flWel4">2028 总统大选</button>
-        </div>
+        <!-- 中期选举 / 总统大选由地图顶部的类型切换统一驱动（地图图层 + 动态条目同源） -->
         <div id="ele-sec" data-page-node-id="tLQy7qe6TNr7BEEZnb0JE7"></div>
 
       </div>
@@ -10894,28 +10792,6 @@
       // 选举动态：两张时间表（数据驱动渲染 + 双时区倒计时）+ 动态归档
       // 倒计时基准：美国选举以美东时间（America/New_York，选举日制度与媒体计票口径均按 ET）为准，
       // 同时给出北京时间（Asia/Shanghai）口径；两者在部分时段相差一天。
-      function daysUntilTZ(dateStr, tz) {
-        try {
-          var fmt = new Intl.DateTimeFormat('en-CA', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit' });
-          var today = fmt.format(new Date()); // YYYY-MM-DD
-          return Math.round((Date.parse(dateStr + 'T00:00:00Z') - Date.parse(today + 'T00:00:00Z')) / 86400000);
-        } catch (err) {
-          return Math.ceil((new Date(dateStr + 'T00:00:00') - new Date()) / 86400000);
-        }
-      }
-      var eleCdRefs = [];
-      function tickElectionCountdown() {
-        eleCdRefs.forEach(function (r) {
-          var et = daysUntilTZ(r.date, 'America/New_York');
-          var bj = daysUntilTZ(r.date, 'Asia/Shanghai');
-          if (r.numEl) r.numEl.textContent = et > 0 ? et : (et === 0 ? '0' : '—');
-          if (r.tzEl) {
-            r.tzEl.textContent = et >= 0
-              ? ('按美东时间（ET）每日更新 · 北京时间计 ' + (bj >= 0 ? bj : '—') + ' 天')
-              : '选举日已过 · 进入计票与权力交接阶段';
-          }
-        });
-      }
       // ===== 选举地图：分为「2026 中期选举」「2028 总统大选」两部分，各带图层选项 =====
       var ELE_MAP = { type: 'midterm', layer: 'senate' };
       // 图层图例：[色值, 说明]
@@ -11063,7 +10939,8 @@
       function initEleMapSwitch() {
         var typeBar = document.getElementById('emap-type');
         var layerBar = document.getElementById('emap-layer');
-        if (typeBar) {
+        if (typeBar && !typeBar.__typeBound) {
+          typeBar.__typeBound = true;
           typeBar.addEventListener('click', function (e) {
             var b = e.target.closest ? e.target.closest('button[data-type]') : null;
             if (!b) return;
@@ -11073,9 +10950,15 @@
             });
             renderMapLayers();
             applyEleMap();
+            // 类型切换同时切换下方动态条目的数据集（原独立 Tab 条已并入此处）
+            if (ELE_SEC !== ELE_MAP.type) {
+              ELE_SEC = ELE_MAP.type;
+              renderElectionSec();
+            }
           });
         }
-        if (layerBar) {
+        if (layerBar && !layerBar.__layerBound) {
+          layerBar.__layerBound = true;
           layerBar.addEventListener('click', function (e) {
             var b = e.target.closest ? e.target.closest('button[data-layer]') : null;
             if (!b) return;
@@ -11095,65 +10978,6 @@
       function readElectionData() {
         try { return JSON.parse(document.getElementById('election-data').textContent) || {}; }
         catch (err) { return {}; }
-      }
-      function trackHtml(sec) {
-        var future = sec.badge !== '进行中';
-        var gu = (readElectionData() || {}).gallup_update || {};
-        return '<div class="ele-track ' + (future ? 'future' : 'now') + '" id="ele-track-cur">' +
-          '<div class="et-head"><span class="et-badge' + (future ? ' grey' : '') + '">' + esc(sec.badge) + '</span>' +
-          '<span class="et-en">' + esc(sec.en) + '</span></div>' +
-          '<div class="et-title">' + esc(sec.title) + '</div>' +
-          '<div class="et-date-row"><div class="et-cd"><span class="cd-num"></span><span class="cd-unit">天 · 美东时间</span></div>' +
-          '<div class="et-date-info"><b>' + esc(sec.date_label) + '</b><span>' + esc(sec.date_sub) + '</span></div></div>' +
-          '<div class="cd-tz"></div>' +
-          '<div class="et-sub-sm">盖洛普实时读数 <span>Gallup · Latest Readings</span></div>' +
-          '<div class="et-stats">' + (sec.stats || []).map(function (x) {
-            return '<div class="et-stat"><b>' + esc(x.num) + '</b><span>' + String(x.label || '') + '</span></div>';
-          }).join('') + '</div>' +
-          '<div class="et-updated">盖洛普数据更新至 <b>' + esc(gu.updated || '—') + '</b> · ' + esc(gu.cadence || '') + '</div>' +
-          '</div>';
-      }
-      function procHtml(sec) {
-        var steps = sec.procedure || [];
-        if (!steps.length) return '';
-        return '<div class="ele-h"><span class="eh-no">02</span><h2 class="eh-cn">选举程序</h2>' +
-          '<span class="eh-en">Procedure</span></div>' +
-          '<div class="proc">' + steps.map(function (p) {
-            return '<div class="proc-item ' + esc(p.state || 'next') + '">' +
-              '<span class="proc-dot">' + esc(p.n) + '</span>' +
-              '<div class="proc-hd"><b>' + esc(p.name) + '</b>' +
-              '<span class="proc-en">' + esc(p.en) + '</span>' +
-              '<span class="proc-when">' + esc(p.when) + '</span></div>' +
-              '<div class="proc-desc">' + esc(p.desc) + '</div></div>';
-          }).join('') + '</div>';
-      }
-      function pollsHtml(sec) {
-        var polls = sec.polls;
-        if (!polls) return '';
-        var series = polls.series || [];
-        var bars = series.map(function (q) {
-          return '<div class="ps-row"><span>' + esc(q.q) + '</span><div class="ps-bars">' +
-            '<i class="d" style="width:' + (+q.d) + '%">' + (+q.d) + '</i>' +
-            '<i class="r" style="width:' + (+q.r) + '%">' + (+q.r) + '</i>' +
-            '</div></div>';
-        }).join('');
-        var html = '<div class="ele-h"><span class="eh-no">03</span><h2 class="eh-cn">民调数据</h2>' +
-          (polls.source ? '<span class="eh-x">' + esc(polls.source) + '</span>' : '') +
-          '<span class="eh-en">Polling</span></div>';
-        if (polls.note) html += '<div class="poll-note">' + esc(polls.note) + '</div>';
-        if (series.length) {
-          html += '<div class="poll-series">' + bars + '</div>' +
-            '<div class="ps-legend"><span><i class="lg" style="background:#7ba0cf"></i>民主党（含倾向者）</span>' +
-            '<span><i class="lg" style="background:#cf8b7d"></i>共和党（含倾向者）</span>' +
-            '<span><i class="lg" style="background:#eef2f7"></i>独立及其他（未计入两党）</span></div>';
-        }
-        html += '<div class="poll-items" style="margin-top:14px">' + (polls.items || []).map(function (it) {
-          return '<div class="poll-item"><div class="pi-top"><b>' + esc(it.k) + '</b>' +
-            '<span class="pi-v">' + esc(it.v) + '</span></div>' +
-            '<div class="pi-sub">' + esc(it.sub) + '</div>' +
-            '<div class="pi-src">' + esc(it.src) + '</div></div>';
-        }).join('') + '</div>';
-        return html;
       }
       // ===== 选举：动态条目（账簿式列表 + 分页，每页 20 条）=====
       var ELE_PAGE_SIZE = 20;
@@ -11326,56 +11150,30 @@
         var ed = readElectionData();
         return '<section class="ea">' +
           '<div class="ea-head">' +
-            '<span class="eh-no">04</span>' +
+            '<span class="eh-no">02</span>' +
             '<h2 class="eh-cn">动态条目</h2>' +
             '<span class="eh-en">Latest Updates</span>' +
-            '<span class="ea-count">共 <b>' + items.length + '</b> 条 · 每页 ' + ELE_PAGE_SIZE +
-              ' 条 · 更新至 <b>' + esc(ed.updated_at || '—') + '</b></span>' +
+            '<span class="ea-count"><b>' + esc(sec.title || '') + '</b> · 共 ' + items.length +
+              ' 条 · 每页 ' + ELE_PAGE_SIZE + ' 条</span>' +
           '</div>' +
           '<div class="ea-body" id="ele-arch">' + eleArchBody(items) + '</div>' +
           '</section>' +
-          '<div class="ele-src">本板块条目为人工整理,随重大节点更新;民调与评级均标注发布机构与调查方法。</div>';
+          '<div class="ele-src">本板块条目为人工整理,随重大节点更新;数据更新至 ' + esc(ed.updated_at || '—') +
+          ',民调与评级均标注发布机构与调查方法。</div>';
       }
       function renderElectionSec() {
         var data = readElectionData();
         var sec = (data.sections || {})[ELE_SEC];
         var host = document.getElementById('ele-sec');
         if (!sec || !host) return;
-        host.innerHTML = trackHtml(sec) + procHtml(sec) + pollsHtml(sec) + itemsHtml(sec);
+        host.innerHTML = itemsHtml(sec);
         bindEleArch();
         if (window.requestAnimationFrame) requestAnimationFrame(eleSyncMore);
         else eleSyncMore();
-        eleCdRefs = [];
-        eleCdRefs.push({
-          date: sec.date,
-          numEl: host.querySelector('.cd-num'),
-          tzEl: host.querySelector('.cd-tz')
-        });
-        tickElectionCountdown();
-      }
-      function initElectionTabs() {
-        var bar = document.getElementById('ele-tabs');
-        if (!bar || bar.__tabBound) return; // 重复进入板块时不重复绑定
-        bar.__tabBound = true;
-        bar.addEventListener('click', function (e) {
-          var b = e.target.closest ? e.target.closest('button[data-sec]') : null;
-          if (!b) return;
-          ELE_SEC = b.getAttribute('data-sec');
-          [].slice.call(bar.querySelectorAll('button')).forEach(function (x) {
-            var on = x === b;
-            x.classList.toggle('on', on);
-            x.setAttribute('aria-selected', on ? 'true' : 'false');
-          });
-          renderElectionSec();
-        });
       }
       function renderElection() {
         initEleMapSwitch();
-        initElectionTabs();
         renderElectionSec();
-        if (!window.__eleCdTimer) {
-          window.__eleCdTimer = setInterval(tickElectionCountdown, 60000); // 每分钟校验，跨零点自动翻页
-        }
       }
 
       // ===== 大事日历（美国政治板块）=====
