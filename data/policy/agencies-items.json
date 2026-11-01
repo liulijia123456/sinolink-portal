@@ -1,9 +1,217 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-10-31 14:05",
-  "count": 82,
+  "updated_at": "2026-11-01 09:24",
+  "count": 95,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22333/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "title_cn": "银行控股公司组建、收购与合并申请（Y 条例·通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "理事会依《1956 年银行控股公司法》与 Y 条例（12 CFR 225）公告收到的银行控股公司组建与收购申请。本批仅一宗：威斯康星州 Random Lake 的 C3 Holdings, Inc. 申请成为银行控股公司，方式为收购 Northern Financial Corporation，并由此间接取得同州的 Independence State Bank。异议须于 2026 年 12 月 2 日前书面提交明尼阿波利斯联储或理事会秘书处。属个案准入审批，未涉及规则条文变更。\n对市场意味着什么：无直接定价影响；反映社区银行股权整合仍在延续，对大型银行竞争格局无实质扰动。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22338/information-collections-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "title_cn": "联邦通信委员会依授权审查的信息采集事项（通告·征求意见）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "依《1995 年文书削减法》要求，委员会就一项信息采集公开征求意见，截止 2027 年 1 月 4 日。征求内容为：采集对履职是否必要、信息是否具有实际效用、负担估计是否准确、信息质量可否提升，以及负担能否进一步降低。属例行审批程序，不改变被采集方的实质监管义务，仅在采集内容新增时才会形成新增报送成本。\n对市场意味着什么：无直接定价影响；若涉及运营商新增报送项，合规成本小幅上行，但不足以改变行业盈利预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Unleashing the Power of Unlicensed Ultra-Wideband Devices; Petition of Robert Bosch LLC for Amendment of the Part 15 Subpart F Ultra-Wideband Rules; and Petition of Alliance for Automative Innovation et al. To Amend Part 15 of the FCC's Rules To Permit the Operation of Certain Ultra-Wideband Devices",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22337/unleashing-the-power-of-unlicensed-ultra-wideband-devices-petition-of-robert-bosch-llc-for-amendment",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "联邦通信委员会 FCC",
+      "title_cn": "免许可超宽带设备：Part 15 F 分部规则修订（拟议规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会拟修订超宽带（UWB）设备规则，现行规则制定于 2002 年。理由是 UWB 已成熟为低功率通用技术，应用于追踪、自动化、精密定位、健康监测、运动表现与公共安全，现行规则滞后于技术演进，豁免申请持续累积。本次同步处理 Robert Bosch LLC 关于 Part 15 F 分部 UWB 规则的修订请愿，以及汽车创新联盟等关于允许特定 UWB 设备运行的请愿。评论截止 2026 年 12 月 2 日，回复评论截止 2027 年 1 月 4 日。\n对市场意味着什么：若规则落地，车载、工业定位与可穿戴场景的 UWB 芯片及模组合规空间扩大，属中期利好；短期仅为程序节点，无定价影响。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Reducing Barriers to Network Improvements and Service Changes, Accelerating Network Modernization; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22334/reducing-barriers-to-network-improvements-and-service-changes-accelerating-network-modernization",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "title_cn": "网络改造与服务变更障碍削减规则：更正及生效日期公告（规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "有线竞争局撤回 2026 年 10 月 1 日生效日期公告中误列的修订指令，并重申 2026 年 4 月 20 日《报告与命令》（FCC 26-19）项下第 7 项修订指令（§63.62）的生效安排：自 2026 年 11 月 2 日生效，并自 2026 年 10 月 15 日起适用。本次更正本身亦于 2026 年 11 月 2 日生效。属技术性更正，未改动网络变更披露与退网规则的实体义务。\n对市场意味着什么：无直接定价影响；确认运营商网络改造与退网披露的合规节点不变，11 月 2 日为关键时点。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Polyester Textured Yarn From Indonesia, Malaysia, Thailand, and Vietnam; Institution of Five-Year Reviews",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22349/polyester-textured-yarn-from-indonesia-malaysia-thailand-and-vietnam-institution-of-five-year",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "聚酯变形纱（印度尼西亚、马来西亚、泰国、越南）五年复审立案（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会依《1930 年关税法》第 751(c) 条，对印度尼西亚、马来西亚、泰国、越南聚酯变形纱反倾销令启动五年复审（731-TA-1550-1553），审查撤销是否可能导致实质损害继续或再度发生。原反倾销令由商务部于 2021 年 12 月 14 日签发（86 FR 71031）。利害关系方答复截止 2026 年 12 月 2 日，对答复充分性的评论截止 2027 年 1 月 12 日。立案不等于裁决，是否继续征税待后续程序。\n对市场意味着什么：无直接定价影响；若终裁肯定，四国对美出口的双反税负延续，美国纺织原料采购成本维持现有水平。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Certain Mobile Access Equipment (MAE) and Subassemblies Thereof From China; Institution of Five-Year Reviews",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22348/certain-mobile-access-equipment-mae-and-subassemblies-thereof-from-china-institution-of-five-year",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "移动式高空作业设备及组件（中国）五年复审立案（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会对华移动式高空作业设备（MAE）及组件双反令启动五年复审（701-TA-665、731-TA-1557）。补贴税令由商务部于 2021 年 12 月 10 日签发（86 FR 70439），反倾销令于 2022 年 4 月 14 日签发（87 FR 22190）。利害关系方答复截止 2026 年 12 月 2 日，对答复充分性的评论截止 2027 年 1 月 12 日。本次仅为立案，未作实体判断。\n对市场意味着什么：无直接定价影响；反之若终裁肯定，双反令再延五年，中国高空作业平台企业对美出口的成本与份额压力延续。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Potassium Permanganate From China; Institution of a Five-Year Review",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22347/potassium-permanganate-from-china-institution-of-a-five-year-review",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "高锰酸钾（中国）第六次五年复审立案（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会对华高锰酸钾反倾销令启动第六次五年复审（731-TA-125）。该令由商务部于 1984 年 1 月 31 日签发（49 FR 3897），此后经五次复审延续。利害关系方答复截止 2026 年 12 月 2 日，对答复充分性的评论截止 2027 年 1 月 12 日。本次仅为立案，撤销与否待后续裁决。\n对市场意味着什么：无直接定价影响；涉案品类规模小（水处理与化工氧化剂），对化工贸易流向影响有限，但肯定性结论将使该令延续至第六个五年周期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Chassis and Subassemblies From China; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22342/chassis-and-subassemblies-from-china-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "底盘及组件（中国）五年复审裁决：肯定性",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会就对华底盘及组件双反令五年复审作出肯定性裁决（701-TA-657、731-TA-1537）：若撤销现行反补贴与反倾销令，实质损害可能在美国产业内继续或再度发生。复审于 2026 年 4 月 1 日立案，7 月 6 日决定采用加速程序，10 月 29 日完成并提交裁决，意见见 USITC 第 5806 号出版物。委员 Samuel T. Negatu 未参与。\n对市场意味着什么：双反令继续有效五年，中国产半挂车底盘对美出口的高关税壁垒延续，美国本土底盘与专用车制造的成本支撑维持。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Utility Scale Wind Towers From India, Malaysia, and Spain; Scheduling of Expedited Five-Year Reviews",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22311/utility-scale-wind-towers-from-india-malaysia-and-spain-scheduling-of-expedited-five-year-reviews",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "公用事业级风塔（印度、马来西亚、西班牙）加速五年复审日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会对印度、马来西亚、西班牙公用事业级风塔双反令五年复审采用加速程序（701-TA-660-661、731-TA-1543-1545）。2026 年 10 月 5 日认定国内产业方答复充分，且不存在应进行全面复审的其他情形。工作人员报告将于 2027 年 1 月 7 日提供给行政保护令名单，非当事方书面陈述截止 2027 年 1 月 14 日。属日程通告，不含实体结论。\n对市场意味着什么：无直接定价影响；加速程序使裁决时点前移，风电塔筒进口成本的不确定性窗口相应收窄。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Certain Dynamic Random Access Memory (DRAM) Devices, Products Containing the Same and Components Thereof (II); Notice of a Commission Determination Not To Review an Initial Determination Granting a Joint Motion To Terminate the Investigation as to All Respondents and To Limit Service of the Settlement Agreement; Termination of the Investigation",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22283/certain-dynamic-random-access-memory-dram-devices-products-containing-the-same-and-components",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "DRAM 器件及含该器件产品（II）337 调查因和解终止（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会决定不复审行政法官第 7 号初裁，该初裁基于和解协议批准全体被申请人退出，调查至此终结（337-TA-1511）。该调查于 2026 年 7 月 20 日依 Netlist, Inc. 申诉立案（91 FR 45286），涉及 DRAM 器件及含该器件产品。因以和解方式终止，未签发排除令或禁止令，亦未形成违规认定。\n对市场意味着什么：无直接定价影响；存储器件进口未受救济措施扰动，但和解条款未公开，相关专利许可成本的变化不可观测。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Twist Ties From China; Scheduling of Full Five-Year Reviews",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22282/twist-ties-from-china-scheduling-of-full-five-year-reviews",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "扭转扎带（中国）全面五年复审日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会对华扭转扎带双反令启动全面五年复审（701-TA-649、731-TA-1523）。2026 年 6 月 5 日认定答复情形应进行全面复审，本次通告确定日程，并行使其职权将复审期延长最多 90 天。当事方须于通告发布后 45 日内提交出庭通知，方可取得当事方地位。属日程通告，不含实体结论。\n对市场意味着什么：无直接定价影响；复审期延长使现行双反令在裁决前持续有效，进口商短期税负不变，观察节点后移。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Shopping Carts and Parts Thereof From China; Institution of Antidumping and Countervailing Duty Investigations and Scheduling of Preliminary Phase Investigations",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22281/shopping-carts-and-parts-thereof-from-china-institution-of-antidumping-and-countervailing-duty",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "购物车及部件（中国）反倾销与反补贴调查立案及初裁阶段日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "依 2026 年 10 月 28 日 Precision Wire Products（加州）与 Wanzl North America（北卡州）提交的申诉，委员会对华购物车及部件启动双反调查（701-TA-811、731-TA-1813）。初裁阶段会议定于 2026 年 11 月 18 日，出席申请须于 11 月 16 日中午前提交。除非商务部延期，委员会须于 2026 年 12 月 14 日前作出初裁，并于 12 月 21 日前将意见送交商务部。\n对市场意味着什么：尚无税率，无直接定价影响；若初裁肯定，美国进口商自 2027 年起将面临保证金与追溯征税风险。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-02",
+      "title": "Certain Wi-Fi Routers, Wi-Fi Devices, Mesh Wi-Fi Network Devices and Components Thereof; Notice of a Commission Determination To Review-in-Part a Final Initial Determination Finding a Violation; Extension of the Target Date for Completion of the Investigation; Request for Written Submissions on the Issues Under Review and on Remedy, the Public Interest, and Bonding",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22280/certain-wi-fi-routers-wi-fi-devices-mesh-wi-fi-network-devices-and-components-thereof-notice-of-a",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "title_cn": "Wi-Fi 路由器及网状网络设备 337 调查部分复审并延长目标完成日（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-01",
+        "body": "委员会对 337-TA-1454 最终初裁作部分复审，该初裁认定 ASUS 与 Plume 违反 337 条款。复审范围限于：'714 专利权利要求 13 前序部分解释及从属认定、ASUS 的间接侵权、'973 专利相关权利要求要素的侵权与国内产业技术要件、'973 的书面描述与显而易见性，以及国内产业经济要件。Linksys、D-Link 已分别因和解与同意令退出。委员会同时征集救济、公共利益与保证金意见，目标完成日延至 2027 年 1 月 14 日。\n对市场意味着什么：若最终维持违规认定，可能对涉台被申请人签发有限排除令，影响美国 Wi-Fi 路由器进口；现阶段为程序节点，无定价影响。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-10-30",
@@ -12,13 +220,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
-      "title_cn": "银行控制权变更通告：银行或银行控股公司股份收购（三宗申请）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-10-31",
         "body": "· 美联储依《银行控制权变更法》（12 U.S.C. 1817(j)）与 Y 条例 §225.41 公布三宗事前通告，均属家族控制集团内部股权归集：收购明尼苏达州 PB Bancshares（Premier Bank 母公司）股份、继续持有北达科他州 Security State Bank Holding Company 与盐湖城 First Utah Bancorporation 股份。\n· 异议意见须于 2026 年 11 月 16 日前送达明尼阿波利斯或旧金山储备银行、或理事会。\n· 属个案批复，不涉及 Y 条例规则文本修订。\n· 对市场意味着什么：无直接定价影响。三家标的均为社区银行控股公司，规模小、无公开流通市场，不改变银行业并购审查尺度。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控制权变更通告：银行或银行控股公司股份收购（三宗申请）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -28,13 +236,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "金刚石锯片及其部件（中国）第三次五年复审裁决：肯定性",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-31",
         "body": "· 国际贸易委员会就中国金刚石锯片及部件（731-TA-1092，第三次五年复审）作出肯定性裁决：撤销现行反倾销令很可能导致实质损害在可预见期间内继续或再度发生。\n· 该复审于 2026 年 3 月 2 日立案，6 月 5 日裁定采用加速程序；裁决 10 月 28 日作出并提交，载于 USITC 第 5807 号出版物，10 月 30 日刊发。\n· 按法定衔接，肯定性裁决将维持现行反倾销令，有效期再延五年。Negatu 委员未参与。\n· 对市场意味着什么：中国出口企业的美国市场准入维持现状，无新增税率；对美本土生产商的边际利好已在市场预期内，无直接定价影响。",
         "tier": "note"
-      }
+      },
+      "title_cn": "金刚石锯片及其部件（中国）第三次五年复审裁决：肯定性",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -44,13 +252,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "铁路罐车及其部件（墨西哥）双反调查初裁日程修订",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-31",
         "body": "· 国际贸易委员会修订墨西哥铁路罐车及部件双反调查（701-TA-809、731-TA-1810）初裁阶段日程。\n· 动因是商务部将立案裁定截止期延长 20 天至 2026 年 11 月 9 日（91 FR 67288），委员会据以顺延自身日程。\n· 委员会须在收到商务部立案通知后 25 日内作出初裁，并在其后 5 个工作日内向商务部提交意见。\n· 本次通告仅涉日程调整，未作任何实体认定。\n· 对市场意味着什么：无直接定价影响。实际影响取决于 11 月 9 日商务部是否立案及随后的初裁结论，罐车进口商与铁路装备板块的时点风险相应后移约三周。",
         "tier": "note"
-      }
+      },
+      "title_cn": "铁路罐车及其部件（墨西哥）双反调查初裁日程修订",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -60,13 +268,13 @@
       "source": "联邦公报",
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
-      "title_cn": "熨衣板及其部件（中国）第四次五年复审（加速）日程通告",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-10-31",
         "body": "· 国际贸易委员会就中国熨衣板及部件（731-TA-1047，第四次五年复审）启动加速复审并公布日程。\n· 2026 年 10 月 5 日委员会认定国内利害关系方答复充分、应诉方答复不充分，且无其他情形需全面复审，故依《1930 年关税法》§751(c)(3) 采用加速程序。\n· 复审标的为撤销现行反倾销令是否可能导致实质损害继续或再度发生；委员会尚未作出结论。Negatu 委员未参与。\n· 对市场意味着什么：无直接定价影响。加速程序不设实地听证与补充问卷，历史结果多为维持现行反倾销令，关注点在裁决公布时点而非税率变动。",
         "tier": "note"
-      }
+      },
+      "title_cn": "熨衣板及其部件（中国）第四次五年复审（加速）日程通告",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
