@@ -990,6 +990,26 @@
     border-radius: 0 0 3px 3px; padding: 4px 24px 16px;
   }
 
+  /* 筛选条：选举范围 + 类别标签，单选；选中态沿用交互蓝 */
+  #view-election .ea-filter {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px;
+    padding: 11px 0 10px; border-bottom: 1px solid #e6dfd1;
+  }
+  #view-election .ef-grp { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+  #view-election .ef-lab {
+    flex: none; margin-right: 3px; font-family: var(--ele-mono); font-size: 9.5px;
+    letter-spacing: 0.16em; color: #8b8474;
+  }
+  #view-election .ef-chip {
+    border: 1px solid #ddd5c6; background: transparent; border-radius: 2px;
+    padding: 1px 9px; font: inherit; font-size: 11px; line-height: 1.7;
+    color: #5f6a78; cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  #view-election .ef-chip:hover:not(.on) { background: #fff; color: var(--accent-light); border-color: #cbc2b0; }
+  #view-election .ef-chip.on { background: var(--accent-light); border-color: var(--accent-light); color: #fff; font-weight: 600; }
+  #view-election .ef-chip:focus-visible { outline: 2px solid rgba(47, 111, 184, 0.45); outline-offset: 1px; }
+
   /* 月份搁板：档案面的分段标记 */
   #view-election .ea-month { display: flex; align-items: center; gap: 12px; margin: 18px 0 0; }
   #view-election .ea-month b {
@@ -1101,6 +1121,8 @@
     #view-election .elc-no { margin-left: auto; }
     #view-election .elc-marg { grid-column: 1; }
     #view-election .elc-s { font-size: 12.5px; line-height: 1.85; }
+    #view-election .ea-filter { gap: 7px 18px; padding: 10px 0 9px; }
+    #view-election .ef-chip { padding: 1px 7px; font-size: 10.5px; }
     #view-election .ele-pager { justify-content: center; }
     #view-election .ep-info, #view-election .ep-jump { flex: 1 1 100%; justify-content: center; text-align: center; }
   }
@@ -10950,11 +10972,6 @@
             });
             renderMapLayers();
             applyEleMap();
-            // 类型切换同时切换下方动态条目的数据集（原独立 Tab 条已并入此处）
-            if (ELE_SEC !== ELE_MAP.type) {
-              ELE_SEC = ELE_MAP.type;
-              renderElectionSec();
-            }
           });
         }
         if (layerBar && !layerBar.__layerBound) {
@@ -10973,16 +10990,19 @@
         applyEleMap();
       }
 
-      // ===== 选举：中期 / 大选两部分内容（程序 · 数据 · 民调 · 条目）=====
-      var ELE_SEC = 'midterm';
+      // ===== 选举：数据读取（地图与动态条目共用同一份内嵌 JSON）=====
       function readElectionData() {
         try { return JSON.parse(document.getElementById('election-data').textContent) || {}; }
         catch (err) { return {}; }
       }
-      // ===== 选举：动态条目（账簿式列表 + 分页，每页 20 条）=====
+      // ===== 选举：动态条目（两级筛选 + 分页，每页 20 条）=====
       var ELE_PAGE_SIZE = 20;
-      // 两个子视图各自记忆页码，切回时仍停在原页
-      var ELE_PAGE = { midterm: 0, presidential: 0 };
+      var ELE_PAGE = 0;
+      // 与地图的类型切换解耦：条目自带「选举范围 + 类别标签」两级筛选
+      var ELE_FILTER = { scope: 'all', kind: '' };
+      var ELE_SCOPE_LABEL = { all: '中期 + 大选', midterm: '2026 年中期选举', presidential: '2028 年总统大选' };
+      // 类别标签的固定展示顺序；数据里出现的新类别排在其后
+      var ELE_KIND_ORDER = ['选举规则', '选区重划', '日程', '民调', '评级', '资金', '裁决', '立法'];
       // 类别 → 色彩基调：只分四档，避免七种颜色把版面打散
       var ELE_TONE = {
         '民调': 'blue', '评级': 'blue',
@@ -10997,15 +11017,60 @@
         var p = String(key || '').split('-');
         return p.length < 2 ? String(key || '') : p[0] + ' 年 ' + (+p[1]) + ' 月';
       }
-      // 稳定倒序：同月条目必须连续，月份搁板才不会被同一月份重复切开
-      function eleOrderedItems(sec) {
-        var list = (sec && sec.items) || [];
-        return list.map(function (it, i) { return { it: it, i: i }; })
+      // 合并 2026 中期选举与 2028 总统大选两个子视图，保留来源标记
+      function eleAllItems(data) {
+        var out = [];
+        ['midterm', 'presidential'].forEach(function (k) {
+          var sec = (data.sections || {})[k];
+          if (!sec) return;
+          (sec.items || []).forEach(function (it) { out.push({ it: it, sec: k }); });
+        });
+        return out;
+      }
+      function eleKindList(data) {
+        var seen = {}, got = [];
+        eleAllItems(data).forEach(function (o) {
+          var k = o.it.kind;
+          if (k && !seen[k]) { seen[k] = 1; got.push(k); }
+        });
+        got.sort(function (a, b) {
+          var ia = ELE_KIND_ORDER.indexOf(a), ib = ELE_KIND_ORDER.indexOf(b);
+          return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+        });
+        return got;
+      }
+      // 按筛选条件取条目；稳定倒序，保证同月连续、月份搁板不被切开
+      function eleFiltered(data) {
+        var rows = eleAllItems(data).filter(function (o) {
+          if (ELE_FILTER.scope !== 'all' && o.sec !== ELE_FILTER.scope) return false;
+          if (ELE_FILTER.kind && o.it.kind !== ELE_FILTER.kind) return false;
+          return true;
+        });
+        return rows.map(function (o, i) { return { o: o, i: i }; })
           .sort(function (a, b) {
-            var x = String(a.it.date || ''), y = String(b.it.date || '');
+            var x = String(a.o.it.date || ''), y = String(b.o.it.date || '');
             return x === y ? a.i - b.i : (x < y ? 1 : -1);
           })
-          .map(function (o) { return o.it; });
+          .map(function (z) { return z.o; });
+      }
+      // 筛选条：选举范围 + 类别标签，各为单选（「全部」即不筛选）
+      function eleFilterHtml(data) {
+        function chip(attr, val, label) {
+          var on = attr === 'data-scope' ? ELE_FILTER.scope === val : ELE_FILTER.kind === val;
+          return '<button type="button" class="ef-chip' + (on ? ' on' : '') + '" ' + attr + '="' + esc(val) +
+            '" aria-pressed="' + (on ? 'true' : 'false') + '">' + esc(label) + '</button>';
+        }
+        return '<div class="ea-filter">' +
+          '<div class="ef-grp"><span class="ef-lab">选举</span>' +
+            chip('data-scope', 'all', '全部') +
+            chip('data-scope', 'midterm', '中期选举') +
+            chip('data-scope', 'presidential', '大选') +
+          '</div>' +
+          '<div class="ef-grp"><span class="ef-lab">类型</span>' +
+            chip('data-kind', '', '全部') +
+            eleKindList(data).map(function (k) { return chip('data-kind', k, k); }).join('') +
+          '</div>' +
+        '</div>';
       }
       // 页码窗口：≤7 页全列，否则「首页 … 当前段5页 … 末页」
       function eleNumText(cur, total) {
@@ -11054,28 +11119,29 @@
             '" value="' + (cur + 1) + '" aria-label="跳至页码，共 ' + pages + ' 页"> / ' + pages + ' 页</span>' +
           '</nav>';
       }
-      function eleArchBody(items) {
-        var total = items.length;
-        if (!total) return '<p class="elc-empty">暂无条目</p>';
+      function eleArchBody(list, data) {
+        var total = list.length;
+        var head = eleFilterHtml(data);
+        if (!total) return head + '<p class="elc-empty">当前筛选条件下暂无条目</p>';
         var pages = elePageTotal(total);
-        var cur = Math.min(Math.max(0, ELE_PAGE[ELE_SEC] || 0), pages - 1);
-        ELE_PAGE[ELE_SEC] = cur;
+        var cur = Math.min(Math.max(0, ELE_PAGE), pages - 1);
+        ELE_PAGE = cur;
         var from = cur * ELE_PAGE_SIZE;
-        var pageItems = items.slice(from, from + ELE_PAGE_SIZE);
+        var pageItems = list.slice(from, from + ELE_PAGE_SIZE);
         var pad = String(total).length;
-        // 月份条数按全量统计：跨页时读数仍是整月口径
+        // 月份条数按当前筛选结果统计：跨页时读数仍是整月口径
         var mCount = {};
-        items.forEach(function (it) { var k = eleMonthOf(it); if (k) mCount[k] = (mCount[k] || 0) + 1; });
+        list.forEach(function (o) { var k = eleMonthOf(o.it); if (k) mCount[k] = (mCount[k] || 0) + 1; });
         var last = '', rows = '';
-        pageItems.forEach(function (it, i) {
-          var mk = eleMonthOf(it);
+        pageItems.forEach(function (o, i) {
+          var mk = eleMonthOf(o.it);
           if (mk && mk !== last) {
             last = mk;
             rows += '<div class="ea-month"><b>' + esc(eleMonthText(mk)) + '</b><i></i><span>' + (mCount[mk] || 0) + ' 条</span></div>';
           }
-          rows += eleRecordHtml(it, from + i + 1, pad);
+          rows += eleRecordHtml(o.it, from + i + 1, pad);
         });
-        return rows + elePagerHtml(total, pages, cur, from, pageItems.length);
+        return head + rows + elePagerHtml(total, pages, cur, from, pageItems.length);
       }
       // 正文未溢出三行时收起「展开」入口
       function eleSyncMore() {
@@ -11096,23 +11162,31 @@
         window.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });
       }
       function eleGoPage(n) {
-        var items = eleOrderedItems((readElectionData().sections || {})[ELE_SEC]);
-        var pages = elePageTotal(items.length);
+        var list = eleFiltered(readElectionData());
+        var pages = elePageTotal(list.length);
         n = Math.max(0, Math.min(pages - 1, n));
-        if (n === (ELE_PAGE[ELE_SEC] || 0)) return;
-        ELE_PAGE[ELE_SEC] = n;
+        if (n === ELE_PAGE) return;
+        ELE_PAGE = n;
         eleRenderArch();
         eleScrollToArch();
       }
+      // 重画列表体与标题带计数（筛选条随列表一起重建，状态由 ELE_FILTER 决定）
       function eleRenderArch() {
         var host = document.getElementById('ele-arch');
         if (!host) return;
-        var items = eleOrderedItems((readElectionData().sections || {})[ELE_SEC]);
-        host.innerHTML = eleArchBody(items);
+        var data = readElectionData();
+        var list = eleFiltered(data);
+        host.innerHTML = eleArchBody(list, data);
+        var cnt = document.getElementById('ea-count');
+        if (cnt) {
+          cnt.innerHTML = '<b>' + esc(ELE_SCOPE_LABEL[ELE_FILTER.scope] || '') + '</b>' +
+            (ELE_FILTER.kind ? ' · ' + esc(ELE_FILTER.kind) : '') +
+            ' · 共 ' + list.length + ' 条 · 每页 ' + ELE_PAGE_SIZE + ' 条';
+        }
         if (window.requestAnimationFrame) requestAnimationFrame(eleSyncMore);
         else eleSyncMore();
       }
-      // 事件委托挂在 #ele-sec 上：切 Tab 只换 innerHTML，监听无需重绑
+      // 事件委托挂在 #ele-sec 上：筛选与翻页只重画列表体，监听无需重绑
       function bindEleArch() {
         var host = document.getElementById('ele-sec');
         if (!host || host.__archBound) return;
@@ -11128,11 +11202,20 @@
             more.querySelector('span').textContent = open ? '收起' : '展开全文';
             return;
           }
+          var chip = t.closest('.ef-chip');
+          if (chip) {
+            var sc = chip.getAttribute('data-scope');
+            var kd = chip.getAttribute('data-kind');
+            if (sc !== null) ELE_FILTER.scope = sc;
+            if (kd !== null) ELE_FILTER.kind = kd;
+            ELE_PAGE = 0;
+            eleRenderArch();
+            return;
+          }
           var btn = t.closest('.ep-btn');
           if (!btn || btn.disabled) return;
           var v = btn.getAttribute('data-ep');
-          var cur = ELE_PAGE[ELE_SEC] || 0;
-          eleGoPage(v === 'prev' ? cur - 1 : v === 'next' ? cur + 1 : parseInt(v, 10));
+          eleGoPage(v === 'prev' ? ELE_PAGE - 1 : v === 'next' ? ELE_PAGE + 1 : parseInt(v, 10));
         });
         host.addEventListener('keydown', function (e) {
           if (e.key !== 'Enter' || !e.target.classList || !e.target.classList.contains('ep-in')) return;
@@ -11145,31 +11228,25 @@
           if (!isNaN(n)) eleGoPage(n - 1);
         });
       }
-      function itemsHtml(sec) {
-        var items = eleOrderedItems(sec);
-        var ed = readElectionData();
+      function archShellHtml(data) {
         return '<section class="ea">' +
           '<div class="ea-head">' +
             '<span class="eh-no">02</span>' +
             '<h2 class="eh-cn">动态条目</h2>' +
             '<span class="eh-en">Latest Updates</span>' +
-            '<span class="ea-count"><b>' + esc(sec.title || '') + '</b> · 共 ' + items.length +
-              ' 条 · 每页 ' + ELE_PAGE_SIZE + ' 条</span>' +
+            '<span class="ea-count" id="ea-count"></span>' +
           '</div>' +
-          '<div class="ea-body" id="ele-arch">' + eleArchBody(items) + '</div>' +
+          '<div class="ea-body" id="ele-arch"></div>' +
           '</section>' +
-          '<div class="ele-src">本板块条目为人工整理,随重大节点更新;数据更新至 ' + esc(ed.updated_at || '—') +
+          '<div class="ele-src">本板块条目为人工整理,随重大节点更新;数据更新至 ' + esc(data.updated_at || '—') +
           ',民调与评级均标注发布机构与调查方法。</div>';
       }
       function renderElectionSec() {
-        var data = readElectionData();
-        var sec = (data.sections || {})[ELE_SEC];
         var host = document.getElementById('ele-sec');
-        if (!sec || !host) return;
-        host.innerHTML = itemsHtml(sec);
+        if (!host) return;
+        host.innerHTML = archShellHtml(readElectionData());
         bindEleArch();
-        if (window.requestAnimationFrame) requestAnimationFrame(eleSyncMore);
-        else eleSyncMore();
+        eleRenderArch();
       }
       function renderElection() {
         initEleMapSwitch();
