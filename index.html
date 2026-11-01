@@ -3232,7 +3232,26 @@
     padding: 10px 10px 8px;
   }
   .pw-cal-h { display: flex; align-items: center; justify-content: space-between; padding: 2px 4px 8px; }
-  .pw-cal-m { font-size: 12.5px; font-weight: 600; color: #16212e; }
+  .pw-cal-m {
+    border: 0; background: none; padding: 2px 4px; border-radius: 6px; cursor: pointer;
+    font: inherit; font-size: 12.5px; font-weight: 600; color: #16212e;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+  .pw-cal-m:hover { background: rgba(11, 23, 36, .06); }
+  .pw-cal-m i { font-style: normal; font-size: 9px; color: #8b96a3; }
+  /* 年月选择视图 */
+  .pw-cal-mos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .pw-cal-mo {
+    position: relative; height: 46px; border: 1px solid transparent; border-radius: 8px;
+    background: rgba(11, 23, 36, .03); font: inherit; font-size: 12px; color: #16212e; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 3px;
+    transition: background-color .14s ease, border-color .14s ease;
+  }
+  .pw-cal-mo:hover { background: rgba(168, 130, 60, .1); border-color: rgba(168, 130, 60, .35); }
+  .pw-cal-mo.on { background: #16212e; color: #f7f3ea; }
+  .pw-cal-mo i { font-style: normal; font-family: var(--mono, monospace); font-size: 9.5px; color: #a8823c; }
+  .pw-cal-mo.on i { color: #e8c98a; }
+  .pw-cal-mo[data-zero] { color: #aab3bd; }
   .pw-cal-nav { display: inline-flex; gap: 2px; }
   .pw-cal-nav button {
     width: 22px; height: 22px; border: 0; background: none; border-radius: 6px;
@@ -10060,6 +10079,7 @@
       // ---------- 按具体日期筛选的小日历 ----------
       var PW_DATES = {};           // 当前板块：日期 → 条数，用于在日历上打点
       var pwCalYM = null;          // 日历当前显示的月份
+      var pwCalPick = false;       // 头部是否处于「选年月」状态
 
       function pwDatesOf(items) {
         PW_DATES = {};
@@ -10080,6 +10100,31 @@
           pwCalYM = { y: d0.getFullYear(), m: d0.getMonth() };
         }
         var y = pwCalYM.y, m = pwCalYM.m;
+        if (pwCalPick) {
+          var mos = '';
+          for (var mi = 0; mi < 12; mi++) {
+            var cnt = 0;
+            Object.keys(PW_DATES).forEach(function (k) {
+              if (parseInt(k.slice(0, 4), 10) === y && parseInt(k.slice(5, 7), 10) === mi + 1) cnt += PW_DATES[k];
+            });
+            mos += '<button type="button" class="pw-cal-mo' + (mi === m ? ' on' : '') +
+                   '" data-m="' + mi + '"' + (cnt ? '' : ' data-zero="1"') + '>' +
+                   (mi + 1) + ' 月' + (cnt ? '<i>' + cnt + '</i>' : '') + '</button>';
+          }
+          box.innerHTML =
+            '<div class="pw-cal-h">' +
+              '<span class="pw-cal-nav">' +
+                '<button type="button" data-ynav="-1" aria-label="上一年">‹</button>' +
+              '</span>' +
+              '<button type="button" class="pw-cal-m" data-back="1">' + y + ' 年 ›</button>' +
+              '<span class="pw-cal-nav">' +
+                '<button type="button" data-ynav="1" aria-label="下一年">›</button>' +
+              '</span>' +
+            '</div>' +
+            '<div class="pw-cal-mos">' + mos + '</div>' +
+            '<div class="pw-cal-f"><span>选择年份与月份</span><button type="button" data-back="1">返回日历</button></div>';
+          return;
+        }
         var first = new Date(y, m, 1);
         var startWd = first.getDay();
         var days = new Date(y, m + 1, 0).getDate();
@@ -10099,7 +10144,7 @@
         }
         box.innerHTML =
           '<div class="pw-cal-h">' +
-            '<span class="pw-cal-m">' + y + ' 年 ' + (m + 1) + ' 月</span>' +
+            '<button type="button" class="pw-cal-m" data-pick="1">' + y + ' 年 ' + (m + 1) + ' 月<i>▾</i></button>' +
             '<span class="pw-cal-nav">' +
               '<button type="button" data-nav="-1" aria-label="上个月">‹</button>' +
               '<button type="button" data-nav="1" aria-label="下个月">›</button>' +
@@ -10132,6 +10177,7 @@
       }
 
       function pwCalClose() {
+        pwCalPick = false;
         var box = document.getElementById('pw-cal');
         var btn = document.getElementById('pw-cal-btn');
         if (box) box.hidden = true;
@@ -10153,6 +10199,21 @@
         });
         box.addEventListener('click', function (e) {
           e.stopPropagation();
+          if (e.target.closest && e.target.closest('[data-pick]')) { pwCalPick = true; pwCalRender(); return; }
+          if (e.target.closest && e.target.closest('[data-back]')) { pwCalPick = false; pwCalRender(); return; }
+          var yn = e.target.closest ? e.target.closest('[data-ynav]') : null;
+          if (yn) {
+            pwCalYM = { y: pwCalYM.y + parseInt(yn.getAttribute('data-ynav'), 10), m: pwCalYM.m };
+            pwCalRender();
+            return;
+          }
+          var mo = e.target.closest ? e.target.closest('[data-m]') : null;
+          if (mo) {
+            pwCalYM = { y: pwCalYM.y, m: parseInt(mo.getAttribute('data-m'), 10) };
+            pwCalPick = false;
+            pwCalRender();
+            return;
+          }
           var nav = e.target.closest ? e.target.closest('[data-nav]') : null;
           if (nav) {
             var step = parseInt(nav.getAttribute('data-nav'), 10);
