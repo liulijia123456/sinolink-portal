@@ -3385,6 +3385,139 @@
     .c-act { justify-content: flex-start; }
     .c-date { padding-top: 0; }
   }
+
+  /* ================= 政策来源侧栏：联邦公报刊登 / 各部门·各机构新闻动态 =================
+     作用域：仅白宫及内阁各部、独立机构两个板块（.pw.has-side）。国会 / 司法保持原单栏布局。
+     两类条目分栏存放：pane-fr 为原有检索/筛选/表格，DOM 与样式原样保留；
+     pane-pr 本次只搭结构与占位，待条目管线接入后填充。 */
+  #view-board { --pw-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+
+  .pw.has-side { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 26px; align-items: start; }
+  .pw-side {
+    position: sticky; top: 78px;
+    background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(11, 23, 36, .04);
+    padding: 15px 13px 13px;
+  }
+  .pw-side-hd {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 8px;
+    padding: 0 4px 10px; border-bottom: 1px solid var(--border-light);
+  }
+  .pw-side-k { font-family: var(--pw-mono); font-size: 10px; letter-spacing: .18em; color: #8b96a3; }
+  .pw-side-e { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #b7c0ca; }
+
+  .pw-tabs { display: grid; gap: 3px; margin-top: 9px; }
+  .pw-tab {
+    position: relative; width: 100%; border: 0; background: none; cursor: pointer;
+    display: grid; grid-template-columns: 17px minmax(0, 1fr) auto;
+    grid-template-areas: "n t c" "n e c";
+    align-items: baseline; column-gap: 7px;
+    padding: 10px 9px 10px 8px; border-radius: 9px;
+    font: inherit; text-align: left; color: #46525f;
+    transition: background-color .16s ease, color .16s ease;
+  }
+  .pw-tab:hover { background: #faf8f3; }
+  .pw-tab.is-on { background: #f7f4ee; color: #16212e; }
+  .pw-tab.is-on::before {
+    content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px;
+    border-radius: 2px; background: var(--gold-light);
+  }
+  .pw-tab:focus-visible { outline: 2px solid rgba(168, 130, 60, .55); outline-offset: 1px; }
+  .pw-pane:focus-visible { outline: 2px solid rgba(47, 111, 184, .45); outline-offset: 3px; border-radius: 14px; }
+  .pw-tab-n { grid-area: n; font-family: var(--pw-mono); font-size: 9.5px; line-height: 1.6; color: #b3a48c; }
+  .pw-tab.is-on .pw-tab-n { color: #a8823c; }
+  .pw-tab-t { grid-area: t; font-size: 13px; font-weight: 600; line-height: 1.45; letter-spacing: .01em; }
+  .pw-tab-e { grid-area: e; margin-top: 2px; font-family: var(--pw-mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: #98a2ae; }
+  .pw-tab-c { grid-area: c; align-self: center; font-family: var(--pw-mono); font-size: 10.5px; color: #9aa5b1; font-variant-numeric: tabular-nums; }
+  .pw-tab.is-on .pw-tab-c { color: #a8823c; }
+  .pw-tab-c.is-wait { font-size: 9px; letter-spacing: .06em; color: #b7c0ca; }
+  /* 选中项里的「待接入」保持弱提示灰，不跟随选中态转金 */
+  .pw-tab.is-on .pw-tab-c.is-wait { color: #b3bcc7; }
+  .pw-side-note {
+    margin-top: 11px; padding: 10px 4px 0; border-top: 1px solid var(--border-light);
+    font-size: 11px; line-height: 1.8; color: #8b96a3;
+  }
+  .pw-side-note b { color: #46525f; font-weight: 600; }
+
+  /* 新闻动态：抬头 + 来源目录占位 */
+  .pr-head {
+    background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
+    padding: 19px 22px 17px; box-shadow: 0 1px 2px rgba(11, 23, 36, .04);
+  }
+  .pr-kick { font-family: var(--pw-mono); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #a8823c; }
+  .pr-kick span { color: #c3ccd6; }
+  .pr-title { margin-top: 8px; font-size: 19px; font-weight: 600; letter-spacing: .01em; color: #16212e; }
+  .pr-desc { margin-top: 8px; max-width: 720px; font-size: 13px; line-height: 1.9; color: #5b6472; }
+  .pr-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 9px 12px;
+    margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border-light);
+  }
+  .pr-badge {
+    font-family: var(--pw-mono); font-size: 10px; letter-spacing: .05em;
+    color: #8a6420; background: rgba(168, 130, 60, .13);
+    border-radius: 4px; padding: 3px 8px; white-space: nowrap;
+  }
+  .pr-meta-t { font-size: 11.5px; color: #8b96a3; }
+
+  .pr-panel {
+    margin-top: 14px; background: #fff; border: 1px solid var(--border-light);
+    border-radius: 14px; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 23, 36, .04);
+  }
+  .pr-panel-hd {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+    padding: 11px 18px; background: #f7f4ee; border-bottom: 1px solid var(--border-light);
+    font-family: var(--pw-mono); font-size: 10.5px; letter-spacing: .16em; color: var(--muted);
+  }
+  .pr-panel-hd .pr-panel-c { letter-spacing: .06em; color: #9aa5b1; }
+  /* 目录用单元格自身的发丝线分栏（不用 gap 背景），行不齐时末行留白不露灰块 */
+  .pr-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #fff; margin-bottom: -1px; }
+  .pr-dept {
+    display: grid; grid-template-columns: 20px minmax(0, 1fr);
+    grid-template-areas: "n t" ". e"; column-gap: 7px;
+    padding: 11px 16px; background: #fff;
+    border-right: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);
+  }
+  .pr-dept:nth-child(4n) { border-right: 0; }
+  .pr-dept-n { grid-area: n; font-family: var(--pw-mono); font-size: 9.5px; line-height: 1.7; color: #b3a48c; }
+  .pr-dept-t { grid-area: t; font-size: 13px; font-weight: 600; line-height: 1.5; color: #26303c; }
+  .pr-dept-e { grid-area: e; margin-top: 1px; font-family: var(--pw-mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: #a2acb7; }
+  .pr-foot { margin-top: 12px; padding: 0 2px; font-size: 11.5px; line-height: 1.85; color: #8b96a3; }
+
+  @media (max-width: 1180px) {
+    .pw.has-side { grid-template-columns: 206px minmax(0, 1fr); gap: 20px; }
+    /* 侧栏占位后主区变窄：领域列提前隐藏，避免标题列被压成单字竖排 */
+    .pw.has-side .pw-thead,
+    .pw.has-side .pw-r { grid-template-columns: 104px minmax(0, 1fr) 100px 140px 116px; }
+    .pw.has-side .pw-th-dom,
+    .pw.has-side .c-domain { display: none; }
+    /* 窄侧栏下英文副标跨满整行，不再被计数列挤成两行 */
+    .pw-tab { grid-template-columns: 15px minmax(0, 1fr) auto; grid-template-areas: "n t c" "n e e"; }
+    .pw-tab-e { white-space: nowrap; }
+    .pr-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pr-dept:nth-child(4n) { border-right: 1px solid var(--border-light); }
+    .pr-dept:nth-child(2n) { border-right: 0; }
+  }
+  @media (max-width: 980px) {
+    .pw.has-side { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .pw-side { position: static; padding: 11px; }
+    .pw-side-hd { display: none; }
+    .pw-tabs { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 0; }
+    .pw-side-note { display: none; }
+    .pw-tab { padding: 9px 10px; }
+  }
+  @media (max-width: 760px) {
+    /* 窄屏条目行回到单列堆叠；上面的 has-side 列宽规则不能沿用 */
+    .pw.has-side .pw-thead,
+    .pw.has-side .pw-r { grid-template-columns: minmax(0, 1fr); }
+    .pw.has-side .pw-r { gap: 6px; padding: 13px 14px; }
+  }
+  @media (max-width: 620px) {
+    .pw-tabs { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+    .pr-head { padding: 16px 16px 14px; }
+    .pr-grid { grid-template-columns: minmax(0, 1fr); }
+    .pr-dept:nth-child(2n) { border-right: 1px solid var(--border-light); }
+    .pr-dept:nth-child(1n) { border-right: 0; }
+  }
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
 
@@ -5179,9 +5312,32 @@
       </div>
     </div>
     <section class="section pw-section" data-page-node-id="FWW3PPr6TLqb8EbKzEZnoz">
-      <div class="wrap pw" data-page-node-id="wvTJJl5v7fTgvRDErwIq2W">
+      <div class="wrap pw" id="pw-shell" data-page-node-id="wvTJJl5v7fTgvRDErwIq2W">
+
+        <aside class="pw-side" id="pw-side" aria-label="政策来源分类" hidden>
+          <div class="pw-side-hd">
+            <span class="pw-side-k">政策来源</span>
+            <span class="pw-side-e">Source</span>
+          </div>
+          <div class="pw-tabs" role="tablist" aria-label="政策来源">
+            <button type="button" class="pw-tab is-on" id="pw-tab-fr" role="tab" aria-selected="true" aria-controls="pw-pane-fr">
+              <span class="pw-tab-n">01</span>
+              <span class="pw-tab-t">联邦公报刊登</span>
+              <span class="pw-tab-e">Federal Register</span>
+              <span class="pw-tab-c" id="pw-tab-count-fr">—</span>
+            </button>
+            <button type="button" class="pw-tab" id="pw-tab-pr" role="tab" aria-selected="false" aria-controls="pw-pane-pr" tabindex="-1">
+              <span class="pw-tab-n">02</span>
+              <span class="pw-tab-t">各部门新闻动态</span>
+              <span class="pw-tab-e">Agency Press</span>
+              <span class="pw-tab-c is-wait">待接入</span>
+            </button>
+          </div>
+          <p class="pw-side-note">两类条目分栏存放、互不混排。点击类别切换：<b>公报</b>保留原有检索、筛选与分页，<b>新闻动态</b>按部门 / 机构归集。</p>
+        </aside>
 
         <div class="pw-main">
+          <div class="pw-pane" id="pw-pane-fr" role="tabpanel" aria-labelledby="pw-tab-fr">
           <div class="pw-top">
             <div class="pw-search">
               <input type="search" id="filter-q" class="pw-q" placeholder="请输入标题、机构、领域或文号关键词" autocomplete="off" aria-label="搜索条目">
@@ -5237,6 +5393,9 @@
           </div>
 
           <div class="board-pager" id="board-pager" hidden=""></div>
+          </div><!-- /pw-pane-fr：联邦公报刊登（原有内容与样式，未作改动） -->
+
+          <div class="pw-pane" id="pw-pane-pr" role="tabpanel" aria-labelledby="pw-tab-pr" tabindex="0" hidden></div>
         </div>
       </div>
     </section>
@@ -10138,6 +10297,18 @@
         judicial: { title: '司法裁判', en: 'Judicial Decisions', desc: '联邦司法体系内的政策相关裁判:美国最高法院的判决与中止申请等命令;13 个联邦巡回上诉法院对行政程序、规章效力、关税与制裁、禁令救济等争点的裁判;以及政策诉讼高发的重点联邦地区法院裁定。按法院层级、裁判类型与政策领域归类,每条附裁判要旨与市场含义;裁判文书原文链接指向 CourtListener 收录页。来源：CourtListener（Free Law Project）检索接口,每日自动更新;最高法院官网与 GovInfo 用于人工复核。' }
       };
 
+      // 新闻动态（侧栏 02）的抬头口径：仅在切到该分类时临时替换 #board-desc，
+      // 切回 01 一律按 BOARD_META 恢复原文，联邦公报视图的文案不受影响。
+      function syncPwTabChrome() {
+        var desc = document.getElementById('board-desc');
+        var prPane = document.getElementById('pw-pane-pr');
+        if (!desc || !prPane) return;
+        var key = renderCurrentBoard || 'whitehouse';
+        var meta = BOARD_META[key] || BOARD_META.whitehouse;
+        var pr = PR_PANEL[key];
+        desc.textContent = (prPane.hidden || !pr) ? meta.desc : pr.boardDesc;
+      }
+
       function esc(s) {
         return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
           return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -10320,6 +10491,76 @@
         '卫生与公众服务部', '住房与城市发展部', '交通部', '能源部', '教育部', '退伍军人事务部', '国土安全部'];
       var EOP_AGENCIES = ['美国总统行政办公室', '管理与预算办公室 OMB', '美国贸易代表办公室 USTR',
         '科技政策办公室 OSTP'];
+
+      // ===== 侧栏 02「新闻动态」：按板块配置抬头文案与二级来源目录 =====
+      // 本次只渲染来源目录作为结构占位，条目管线接入后在此位置渲染列表。
+      // 白宫：白宫 + 15 个内阁部（EOP 各组成机构归入白宫条目）；独立机构：5 家固定机构。
+      var AGENCY_PRESS = ['美联储（Federal Reserve）', '联邦通信委员会 FCC', '国际贸易委员会 USITC',
+        '外国投资委员会 CFIUS', '国际开发署 USAID'];
+
+      var PR_SRC_EN = {
+        '白宫': 'The White House', '国务院': 'State', '财政部': 'Treasury', '国防部': 'Defense',
+        '司法部': 'Justice', '内政部': 'Interior', '农业部': 'Agriculture', '商务部': 'Commerce',
+        '劳工部': 'Labor', '卫生与公众服务部': 'HHS', '住房与城市发展部': 'HUD',
+        '交通部': 'Transportation', '能源部': 'Energy', '教育部': 'Education',
+        '退伍军人事务部': 'VA', '国土安全部': 'DHS',
+        '美联储（Federal Reserve）': 'Federal Reserve', '联邦通信委员会 FCC': 'FCC',
+        '国际贸易委员会 USITC': 'USITC', '外国投资委员会 CFIUS': 'CFIUS', '国际开发署 USAID': 'USAID'
+      };
+
+      var PR_PANEL = {
+        whitehouse: {
+          tab: '各部门新闻动态',
+          title: '各部门新闻动态',
+          desc: '同一部门在两类里各有落点：公报收录依法刊登的规则、通告与拟议规则，本栏收录其对外发布的新闻稿与表态。两类条目分栏存放、各自排序，不合并成一张表。',
+          label: '二级分类 · 按部门',
+          unit: '个来源',
+          foot: '接入后各部门按发布日倒序归集，字段（日期 / 标题 / 部门 / 原文）与公报表一致；部门维度可单独筛选，不与公报条目混合排序。',
+          boardDesc: '白宫与 15 个内阁各部对外发布的新闻稿、部长表态与政策说明，按部门归集，与联邦公报的规则文本分栏呈现。本分类结构已就位，条目管线待接入。',
+          sources: ['白宫'].concat(CABINET_DEPTS)
+        },
+        agencies: {
+          tab: '各机构新闻动态',
+          title: '各机构新闻动态',
+          desc: '同一机构在两类里各有落点：公报收录其规则、通告与拟议规则，本栏收录其对外发布的新闻稿、声明与决定。两类条目分栏存放、各自排序，不合并成一张表。',
+          label: '二级分类 · 按机构',
+          unit: '个机构',
+          foot: '接入后各机构按发布日倒序归集，字段（日期 / 标题 / 机构 / 原文）与公报表一致；机构维度可单独筛选，不与公报条目混合排序。',
+          boardDesc: '美联储、联邦通信委员会、国际贸易委员会、外国投资委员会与国际开发署对外发布的新闻稿、声明与决定，按机构归集，与联邦公报的规则文本分栏呈现。本分类结构已就位，条目管线待接入。',
+          sources: AGENCY_PRESS
+        }
+      };
+
+      function renderPrPanel(key) {
+        var pane = document.getElementById('pw-pane-pr');
+        var meta = PR_PANEL[key];
+        if (!pane || !meta) return;
+        var tabT = document.querySelector('#pw-tab-pr .pw-tab-t');
+        if (tabT) tabT.textContent = meta.tab;
+        pane.innerHTML =
+          '<div class="pr-head">' +
+            '<div class="pr-kick"><span>02</span> / Agency Press Releases</div>' +
+            '<h2 class="pr-title">' + esc(meta.title) + '</h2>' +
+            '<p class="pr-desc">' + esc(meta.desc) + '</p>' +
+            '<div class="pr-meta">' +
+              '<span class="pr-badge">结构占位 · 待接入</span>' +
+              '<span class="pr-meta-t">本次仅搭建分类结构，暂不填充条目</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="pr-panel">' +
+            '<div class="pr-panel-hd"><span>' + esc(meta.label) + '</span>' +
+              '<span class="pr-panel-c">' + meta.sources.length + ' ' + esc(meta.unit) + '</span></div>' +
+            '<div class="pr-grid">' + meta.sources.map(function (name, i) {
+              return '<div class="pr-dept">' +
+                '<span class="pr-dept-n">' + String(i + 1).padStart(2, '0') + '</span>' +
+                '<span class="pr-dept-t">' + esc(name) + '</span>' +
+                '<span class="pr-dept-e">' + esc(PR_SRC_EN[name] || '') + '</span>' +
+                '</div>';
+            }).join('') + '</div>' +
+          '</div>' +
+          '<p class="pr-foot">' + esc(meta.foot) + '</p>';
+      }
+      renderPrPanel('whitehouse');
 
       // 司法板块：法院按层级分组，层级顺序固定；某层级当期 0 条即不出现
       var COURT_GROUPS = ['美国最高法院', '巡回上诉法院', '地区法院', '国际贸易法院'];
@@ -10670,6 +10911,9 @@
         if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
+        // 侧栏读数：联邦公报刊登的条目总数（仅有侧栏的白宫 / 独立机构板块显示）
+        var sideCount = document.getElementById('pw-tab-count-fr');
+        if (sideCount && (key === 'whitehouse' || key === 'agencies')) sideCount.textContent = allItems.length + ' 条';
         PW_TODAY = pwTodayKey();
         pwDatesOf(allItems);
         pwCalBind();
@@ -10761,6 +11005,8 @@
         updated.innerHTML = '最近更新：<b>' + esc(board.updated_at || data.fetched_at || '—') + '</b>';
 
         renderPager(items.length, pageCount);
+        // 若当前停在 02「新闻动态」，renderBoard 的抬头文案需再同步一次
+        syncPwTabChrome();
       }
 
       // ===== 分页：每页 boardPageSize 条 =====
@@ -10883,6 +11129,44 @@
         window.scrollTo(0, 0);
         document.title = '美国政治动态跟踪 · 国金证券 政策与战略';
       }
+      // ===== 政策来源切换：联邦公报刊登 / 各部门·各机构新闻动态 =====
+
+      function setPwTab(name) {
+        var isPr = name === 'pr';
+        var paneFr = document.getElementById('pw-pane-fr');
+        var panePr = document.getElementById('pw-pane-pr');
+        if (paneFr) paneFr.hidden = isPr;
+        if (panePr) panePr.hidden = !isPr;
+        [['pw-tab-fr', !isPr], ['pw-tab-pr', isPr]].forEach(function (pair) {
+          var el = document.getElementById(pair[0]);
+          if (!el) return;
+          el.classList.toggle('is-on', pair[1]);
+          el.setAttribute('aria-selected', pair[1] ? 'true' : 'false');
+          el.tabIndex = pair[1] ? 0 : -1;
+        });
+        syncPwTabChrome();
+      }
+      (function bindPwTabs() {
+        var tabs = [].slice.call(document.querySelectorAll('.pw-tab'));
+        if (!tabs.length) return;
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            setPwTab(tab.id === 'pw-tab-pr' ? 'pr' : 'fr');
+          });
+          // tablist 键盘操作：方向键在两类之间移动，Home / End 跳首末
+          tab.addEventListener('keydown', function (e) {
+            var k = e.key;
+            if (['ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight', 'Home', 'End'].indexOf(k) < 0) return;
+            e.preventDefault();
+            var next = k === 'Home' ? 'fr' : k === 'End' ? 'pr'
+              : (tab.id === 'pw-tab-fr' ? 'pr' : 'fr');
+            setPwTab(next);
+            var nt = document.getElementById(next === 'pr' ? 'pw-tab-pr' : 'pw-tab-fr');
+            if (nt) nt.focus();
+          });
+        });
+      })();
+
       function showBoard(key, e) {
         if (key === 'parties') { showParties(e); return; }
         if (e) e.preventDefault();
@@ -10892,6 +11176,16 @@
         if (electionView) electionView.hidden = true;
         if (partiesView) partiesView.hidden = true;
         boardView.hidden = false;
+        // 政策来源侧栏只属于白宫及内阁各部、独立机构两个板块；国会 / 司法回到原单栏布局
+        var pwSide = document.getElementById('pw-side');
+        var pwShell = document.getElementById('pw-shell');
+        var hasSide = key === 'whitehouse' || key === 'agencies';
+        if (pwSide) pwSide.hidden = !hasSide;
+        if (pwShell) pwShell.classList.toggle('has-side', hasSide);
+        // 侧栏 02 的抬头与来源目录按板块重建（白宫按部门、独立机构按机构）；
+        // 换板块后统一回到 01「联邦公报刊登」，不沿用上一个板块的分类位置
+        if (hasSide) renderPrPanel(key);
+        setPwTab('fr');
         // 头图立面剪影只属于白宫 / 国会板块；司法板块沿用统一深色抬头（无剪影）
         var boardHead = document.querySelector('#view-board .subhead');
         if (boardHead) {
