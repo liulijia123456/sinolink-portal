@@ -1,0 +1,598 @@
+{
+ "board": "whitehouse",
+ "updated_at": "2026-11-02T16:03:36+08:00",
+ "sources": [
+  {
+   "agency": "白宫",
+   "name": "White House",
+   "type": "html",
+   "url": "https://www.whitehouse.gov/news/",
+   "status": "ok",
+   "fetched": 5,
+   "added": 5,
+   "error": ""
+  },
+  {
+   "agency": "国务院",
+   "name": "State Department",
+   "type": "rss",
+   "url": "https://www.state.gov/rss-feed/press-releases/feed/",
+   "status": "ok",
+   "fetched": 10,
+   "added": 10,
+   "error": ""
+  },
+  {
+   "agency": "财政部",
+   "name": "Treasury",
+   "type": "html",
+   "url": "https://home.treasury.gov/news/press-releases",
+   "status": "empty",
+   "fetched": 0,
+   "added": 0,
+   "error": ""
+  },
+  {
+   "agency": "内政部",
+   "name": "Interior",
+   "type": "html",
+   "url": "https://www.doi.gov/news",
+   "status": "empty",
+   "fetched": 0,
+   "added": 0,
+   "error": ""
+  },
+  {
+   "agency": "能源部",
+   "name": "Energy",
+   "type": "html",
+   "url": "https://www.energy.gov/newsroom",
+   "status": "ok",
+   "fetched": 15,
+   "added": 8,
+   "error": ""
+  },
+  {
+   "agency": "退伍军人事务部",
+   "name": "Veterans Affairs",
+   "type": "html",
+   "url": "https://www.va.gov/opa/pressrel/",
+   "status": "ok",
+   "fetched": 10,
+   "added": 10,
+   "error": ""
+  },
+  {
+   "agency": "国土安全部",
+   "name": "Homeland Security",
+   "type": "html",
+   "url": "https://www.dhs.gov/news-releases/press-releases",
+   "status": "ok",
+   "fetched": 10,
+   "added": 10,
+   "error": ""
+  },
+  {
+   "agency": "国防部",
+   "name": "Defense",
+   "type": "html",
+   "url": "https://www.defense.gov/News/Releases/",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "司法部",
+   "name": "Justice",
+   "type": "rss",
+   "url": "https://www.justice.gov/feeds/opa/justice-news.xml",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "连接超时"
+  },
+  {
+   "agency": "农业部",
+   "name": "Agriculture",
+   "type": "html",
+   "url": "https://www.usda.gov/media/press-releases",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "商务部",
+   "name": "Commerce",
+   "type": "html",
+   "url": "https://www.commerce.gov/news/press-releases",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "劳工部",
+   "name": "Labor",
+   "type": "html",
+   "url": "https://www.dol.gov/newsroom/releases",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "卫生与公众服务部",
+   "name": "HHS",
+   "type": "html",
+   "url": "https://www.hhs.gov/news/press-announcements/index.html",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "住房与城市发展部",
+   "name": "HUD",
+   "type": "html",
+   "url": "https://www.hud.gov/press/press_releases_media_advisories",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "交通部",
+   "name": "Transportation",
+   "type": "html",
+   "url": "https://www.transportation.gov/newsroom",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  },
+  {
+   "agency": "教育部",
+   "name": "Education",
+   "type": "html",
+   "url": "https://www.ed.gov/news/press-releases",
+   "status": "skipped",
+   "fetched": 0,
+   "added": 0,
+   "error": "Akamai 403"
+  }
+ ],
+ "items": [
+  {
+   "date": "2026-11-01",
+   "title": "Presidential Message on All Saints’ Day",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-all-saints-day-3b81/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Presidential Message on Reformation Day",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/10/presidential-message-on-reformation-day/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Secretary of State Marco Rubio at the G20 Foreign Ministers’ Meeting Welcome Reception",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-at-the-g20-foreign-ministers-meeting-welcome-reception/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Atlanta, Georgia Georgia Aquarium Secretary of State Marco Rubio at the G20 Foreign Ministers’ Meeting Welcome Reception Remarks October 30, 2026 SECRETARY RUBIO: Thank you. Thank you. Good evening. Well, those lights are bright. Now I can see you. Anyway. But good evening, and thank you all for coming, and welcome to Atlanta. This is what I think has been a very pr"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Secretary of State Marco Rubio at a Press Availability",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-at-a-press-availability-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Atlanta, Georgia Loews Atlanta Secretary of State Marco Rubio at a Press Availability Remarks October 31, 2026 MODERATOR: Thank you, guys. The Secretary of State of the United States, Marco Rubio. SECRETARY RUBIO: Thank you. It’s kind of strange. I think you guys know who I am. You wouldn’t be here if you didn’t know who I was. So – but thank you. Well, I want to th"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Quad Joint Press Release on Economic Prosperity and Security",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/quad-joint-press-release-on-economic-prosperity-and-security/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Quad Joint Press Release on Economic Prosperity and Security Media Note October 31, 2026 The text of the following statement was released by the Secretary of State of the United States, the Foreign Minister of Australia, the External Affairs Minister of India, and the Foreign Minister of Japan. Begin text: The Secretary of State of the United States and the Foreign Minister"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "G20 Chair’s Statement G20 Foreign Ministers’ Meeting",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/g20-chairs-statement-g20-foreign-ministers-meeting/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman G20 Chair’s Statement G20 Foreign Ministers’ Meeting Media Note October 31, 2026 The G20 Foreign Ministers met in Atlanta, Georgia on October 30 and October 31, 2026, in the 250th year of the United States’ independence. The U.S. presidency has pursued taking the G20 back to basics, focusing on its core mission of discussing global economic challenges and proposing solution"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "United States-Japan-Republic of Korea (ROK) Trilateral Foreign Ministers’ Meeting",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/united-states-japan-republic-of-korea-rok-trilateral-foreign-ministers-meeting-2/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman United States-Japan-Republic of Korea (ROK) Trilateral Foreign Ministers’ Meeting Readout October 30, 2026 Secretary of State Marco Rubio met today with Japanese Foreign Minister Motegi Toshimitsu and ROK Foreign Minister Cho Hyun on the margins of the G20 in Atlanta to review progress across the trilateral partnership that advances security and prosperity in a free and ope"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Secretary Rubio’s Meeting with Turkish Foreign Minister Fidan",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-meeting-with-turkish-foreign-minister-fidan-2/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with Turkish Foreign Minister Fidan Readout October 30, 2026 Secretary of State Marco Rubio met today with Turkish Foreign Minister Fidan on the margins of the G20 Foreign Ministers’ Meeting. They discussed ways to advance U.S.-Turkish ties ahead of the upcoming G20 Leaders’ Summit in December. Secretary Rubio emphasized the importance of broad int"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Secretary Rubio’s Meeting with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-meeting-with-saudi-foreign-minister-prince-faisal-bin-farhan-al-saud-3/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud Readout October 30, 2026 Secretary Rubio met today with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud on the sidelines of the G-20 Ministerial in Atlanta, Georgia. They discussed bilateral cooperation on a number of regional issues, including in Iran, Sudan, and Yemen. Secretary"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Secretary Rubio Announces U.S. Participation in World Expo 2030 in Riyadh, Saudi Arabia",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubio-announces-u-s-participation-in-world-expo-2030-in-riyadh-saudi-arabia/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio Announces U.S. Participation in World Expo 2030 in Riyadh, Saudi Arabia Media Note October 30, 2026 Secretary of State Marco Rubio and Saudi Minister of Foreign Affairs Faisal bin Farhan signed the participation contract for Expo 2030 Riyadh today on the sidelines of the G20 Foreign Ministers’ Meeting in Atlanta, Georgia. The signing formalizes U.S. particip"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Secretary of State Marco Rubio and Saudi Foreign Minister Prince Faisal bin Farhan al Saud at an Expo 2030 Riyadh Participation Contract Signing Ceremony",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-and-saudi-foreign-minister-prince-faisal-bin-farhan-al-saud-at-an-expo-2030-riyadh-participation-contract-signing-ceremony/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Prince Faisal bin Farhan al Saud, Saudi Foreign Minister Atlanta, Georgia Loews Atlanta Secretary of State Marco Rubio and Saudi Foreign Minister Prince Faisal bin Farhan al Saud at an Expo 2030 Riyadh Participation Contract Signing Ceremony Readout October 30, 2026 SECRETARY RUBIO: Well, we’re – thank you all for covering this. We’re excited to sign this contract t"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Joint Statement from the International Contact Group for the Great Lakes Region (ICG)",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/joint-statement-from-the-international-contact-group-for-the-great-lakes-region-icg/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement from the International Contact Group for the Great Lakes Region (ICG) Media Note October 30, 2026 The United States, Belgium, Canada, Denmark, the European Union, France, Germany, the Netherlands, Sweden, Switzerland, and the United Kingdom, as members of the International Contact Group (ICG) for the Great Lakes region, chaired by France, issue the following"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "Energy Department Announces Over $230 Million Funding Opportunity to Strengthen America's Grid Supply Chain and Lower Electricity Costs",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-announces-over-230-million-funding-opportunity-strengthen-americas-grid",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-30",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Rapists, and Pedophiles",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/30/worst-worst-ice-arrests-murderers-rapists-and-pedophiles",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-30",
+   "title": "WANTED CRIMINAL RELEASED BY SANCTUARY POLITICIANS: MS-13 Gang Member with Prior Arrests for Attempted Murder and Sexually Assaulting a Minor Released from Jail by Maryland Sanctuary Politicians",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/30/wanted-criminal-released-sanctuary-politicians-ms-13-gang-member-prior-arrests",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-30",
+   "title": "ICE Lodges Detainer for Illegal Alien Charged with Attempted Murder and Kidnapping After Stabbing Teenage Girl",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/30/ice-lodges-detainer-illegal-alien-charged-attempted-murder-and-kidnapping-after",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-30",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in Florida",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/30/dhs-highlights-worst-illegal-aliens-arrested-florida",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "Energy Department Awards Contracts from the Strategic Petroleum Reserve as Part of President Trump’s Emergency Exchange",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/hgeo/opr/articles/energy-department-awards-contracts-strategic-petroleum-reserve-part-president",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Sexual Predators, and Drug Traffickers",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/worst-worst-ice-arrests-murderers-sexual-predators-and-drug-traffickers",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "Under President Trump’s Leadership, USCIS Takes Unprecedented 2.2 Million Enforcement Actions Protecting Americans Across the Nation",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/under-president-trumps-leadership-uscis-takes-unprecedented-22-million-enforcement",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "Trump Administration Suspends Birth Tourism Loophole Threatening National Security",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/trump-administration-suspends-birth-tourism-loophole-threatening-national-security",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "Secretary Mullin Highlights Success of ICE’s Lone Star Mission in Texas, Arresting Over 4,000 Illegal Aliens in Ten Days",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/secretary-mullin-highlights-success-ices-lone-star-mission-texas-arresting-over",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "SANCTUARY INSANITY: ICE Arrests Illegal Alien Released by Sanctuary Politicians in California",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/sanctuary-insanity-ice-arrests-illegal-alien-released-sanctuary-politicians",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in South Carolina",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/10/29/dhs-highlights-worst-illegal-aliens-arrested-south-carolina",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-29",
+   "title": "VA hiring 2,000+ employees to process rising number of Veteran claims",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-hiring-2000-employees-to-process-rising-number-of-veteran-claims/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-28",
+   "title": "ADJUSTING IMPORTS OF ROBOTICS, INDUSTRIAL MACHINERY, AND THEIR PARTS AND COMPONENTS INTO THE UNITED STATES",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/10/adjusting-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-28",
+   "title": "Fact Sheet: President Donald J. Trump Ended the Illegal and Discriminatory Practices of Diversity, Equity, and Inclusion",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-ended-the-illegal-and-discriminatory-practices-of-diversity-equity-and-inclusion/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-28",
+   "title": "Fact Sheet: President Donald J. Trump Adjusts Imports of Robotics, Industrial Machinery, and their Parts and Components into the United States",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-28",
+   "title": "Energy Department Closes $5.1 Billion Loan to Lower Electricity Costs and Strengthen Grid Reliability in Iowa and Wisconsin",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-closes-51-billion-loan-lower-electricity-costs-and-strengthen-grid",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-27",
+   "title": "FACT SHEET: Project Uprise Is Delivering On President Trump's Agenda To Unleash American Nuclear Power",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "事实清单",
+   "url": "https://www.energy.gov/articles/fact-sheet-project-uprise-delivering-president-trumps-agenda-unleash-american-nuclear",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-27",
+   "title": "Energy Department Announces $5 Billion Loan to Boost Nuclear Power and Help Lower Costs in Illinois, Maryland, and Pennsylvania",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-announces-5-billion-loan-boost-nuclear-power-and-help-lower-costs",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-27",
+   "title": "VA awards record high $106.5M in cemetery grants in FY 26",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-awards-record-high-106-5m-in-cemetery-grants-in-fy-26/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-26",
+   "title": "VA deploys electronic health record system to hospitals in Cleveland, Anchorage",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-deploys-electronic-health-record-system-to-hospitals-in-cleveland-anchorage/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-23",
+   "title": "Energy Department Designates Helium as Critical Material to Strengthen American Manufacturing and Supply Chain Security",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-designates-helium-critical-material-strengthen-american-manufacturing",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-21",
+   "title": "FACT SHEET: The Energy Department is Advancing the Constitution Pipeline to Strengthen National Security and Lower Energy Costs in the Northeast",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "事实清单",
+   "url": "https://www.energy.gov/articles/fact-sheet-energy-department-advancing-constitution-pipeline-strengthen-national-security",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Following major reforms, over 300K new Veterans enroll in VA healthcare in 2026",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/following-major-reforms-over-300k-new-veterans-enroll-in-va-healthcare-in-2026/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-15",
+   "title": "VA in FY 2026 processes the most claims ever",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-in-fy-2026-processes-the-most-claims-ever/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-14",
+   "title": "VA announces $2.6B in infrastructure improvements in fourth quarter of FY 2026",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-announces-2-6b-in-infrastructure-improvements-in-fourth-quarter-of-fy-2026/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-09",
+   "title": "FACT SHEET: The Energy Department is Ushering in a Golden Age of American Science",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "事实清单",
+   "url": "https://www.energy.gov/articles/fact-sheet-energy-department-ushering-golden-age-american-science",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-07",
+   "title": "VA launches pilot program to speed Veterans’ access to services, care, benefits",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-launches-pilot-program-to-speed-veterans-access-to-services-care-benefits/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-10-06",
+   "title": "VA awards $16M in grants for adaptive sports programs",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-awards-16m-in-grants-for-adaptive-sports-programs/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-09-30",
+   "title": "VA releases annual Veteran suicide prevention report, updated with 2024 data",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-releases-annual-veteran-suicide-prevention-report-updated-with-2024-data/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-09-29",
+   "title": "VA awards $112M in suicide prevention grants",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-awards-112-million-in-suicide-prevention-grants/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  }
+ ]
+}

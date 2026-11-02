@@ -3439,6 +3439,38 @@
   }
   .pw-side-note b { color: #46525f; font-weight: 600; }
 
+  /* 侧栏二级：新闻动态按部门 / 机构展开 */
+  .pw-sub {
+    grid-column: 1 / -1; display: grid; gap: 1px;
+    margin: 1px 0 3px 4px; padding-left: 9px;
+    border-left: 1px solid var(--border-light);
+    /* 16 个部门时限制高度，避免整栏高过视口导致末尾不可见 */
+    max-height: 322px; overflow-y: auto; overscroll-behavior: contain;
+    scrollbar-width: thin; scrollbar-color: #d9d2c4 transparent;
+  }
+  .pw-sub::-webkit-scrollbar { width: 6px; }
+  .pw-sub::-webkit-scrollbar-thumb { background: #ddd6c9; border-radius: 3px; }
+  .pw-sub::-webkit-scrollbar-track { background: transparent; }
+  .pw-sub-item {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px;
+    width: 100%; border: 0; background: none; border-radius: 6px;
+    padding: 5px 8px; font: inherit; font-size: 12px; line-height: 1.5;
+    color: #46525f; text-align: left; cursor: pointer;
+    transition: background-color .14s ease, color .14s ease;
+  }
+  .pw-sub-item:hover { background: #faf8f3; }
+  .pw-sub-item.is-on { background: rgba(168, 130, 60, .1); color: #16212e; font-weight: 600; }
+  .pw-sub-item[disabled] { color: #b9c1cb; cursor: default; }
+  .pw-sub-item[disabled]:hover { background: none; }
+  .pw-sub-c { font-family: var(--pw-mono); font-size: 10px; color: #9aa5b1; font-variant-numeric: tabular-nums; }
+  .pw-sub-item.is-on .pw-sub-c { color: #a8823c; }
+
+  /* 新闻动态：工具条与五列表格 */
+  .pr-tools { margin-top: 14px; }
+  .pr-thead, .pr-r { grid-template-columns: 108px minmax(0, 1fr) 92px 150px 92px; }
+  .pw-item .pr-r { cursor: default; }
+  .pw-item:hover .pr-r { background: #faf8f3; }
+
   /* 新闻动态：抬头 + 来源目录占位 */
   .pr-head {
     background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
@@ -3504,15 +3536,24 @@
     .pw-tabs { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 0; }
     .pw-side-note { display: none; }
     .pw-tab { padding: 9px 10px; }
+    .pw-sub {
+      grid-template-columns: 1fr 1fr; max-height: 198px; overflow-y: auto;
+      margin: 4px 0 2px 0; padding-left: 0; border-left: 0;
+    }
+    .pr-thead, .pr-r { grid-template-columns: 100px minmax(0, 1fr) 88px 132px 84px; }
   }
   @media (max-width: 760px) {
     /* 窄屏条目行回到单列堆叠；上面的 has-side 列宽规则不能沿用 */
     .pw.has-side .pw-thead,
     .pw.has-side .pw-r { grid-template-columns: minmax(0, 1fr); }
     .pw.has-side .pw-r { gap: 6px; padding: 13px 14px; }
+    .pr-thead, .pr-r { grid-template-columns: minmax(0, 1fr); }
+    .pr-thead { display: none; }
+    .pr-r { gap: 6px; padding: 13px 14px; }
   }
   @media (max-width: 620px) {
     .pw-tabs { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+    .pw-sub { grid-template-columns: minmax(0, 1fr); max-height: 216px; }
     .pr-head { padding: 16px 16px 14px; }
     .pr-grid { grid-template-columns: minmax(0, 1fr); }
     .pr-dept:nth-child(2n) { border-right: 1px solid var(--border-light); }
@@ -5330,8 +5371,9 @@
               <span class="pw-tab-n">02</span>
               <span class="pw-tab-t">各部门新闻动态</span>
               <span class="pw-tab-e">Agency Press</span>
-              <span class="pw-tab-c is-wait">待接入</span>
+              <span class="pw-tab-c" id="pw-tab-count-pr">—</span>
             </button>
+            <div class="pw-sub" id="pw-sub" hidden></div>
           </div>
           <p class="pw-side-note">两类条目分栏存放、互不混排。点击类别切换：<b>公报</b>保留原有检索、筛选与分页，<b>新闻动态</b>按部门 / 机构归集。</p>
         </aside>
@@ -10512,11 +10554,11 @@
         whitehouse: {
           tab: '各部门新闻动态',
           title: '各部门新闻动态',
-          desc: '同一部门在两类里各有落点：公报收录依法刊登的规则、通告与拟议规则，本栏收录其对外发布的新闻稿与表态。两类条目分栏存放、各自排序，不合并成一张表。',
+          desc: '同一部门在两类里各有落点：公报收录依法刊登的规则、通告与拟议规则，本栏收录其对外发布的新闻稿、声明与讲话。两类条目分栏存放、各自排序，不合并成一张表。',
           label: '二级分类 · 按部门',
           unit: '个来源',
-          foot: '接入后各部门按发布日倒序归集，字段（日期 / 标题 / 部门 / 原文）与公报表一致；部门维度可单独筛选，不与公报条目混合排序。',
-          boardDesc: '白宫与 15 个内阁各部对外发布的新闻稿、部长表态与政策说明，按部门归集，与联邦公报的规则文本分栏呈现。本分类结构已就位，条目管线待接入。',
+          foot: '',
+          boardDesc: '白宫与 15 个内阁各部对外发布的新闻稿、部长表态与政策说明，按部门归集；已接入来源每日抓取，源站限制的部门在侧栏灰显。',
           sources: ['白宫'].concat(CABINET_DEPTS)
         },
         agencies: {
@@ -10525,16 +10567,261 @@
           desc: '同一机构在两类里各有落点：公报收录其规则、通告与拟议规则，本栏收录其对外发布的新闻稿、声明与决定。两类条目分栏存放、各自排序，不合并成一张表。',
           label: '二级分类 · 按机构',
           unit: '个机构',
-          foot: '接入后各机构按发布日倒序归集，字段（日期 / 标题 / 机构 / 原文）与公报表一致；机构维度可单独筛选，不与公报条目混合排序。',
-          boardDesc: '美联储、联邦通信委员会、国际贸易委员会、外国投资委员会与国际开发署对外发布的新闻稿、声明与决定，按机构归集，与联邦公报的规则文本分栏呈现。本分类结构已就位，条目管线待接入。',
+          foot: '',
+          boardDesc: '美联储、联邦通信委员会、国际贸易委员会、外国投资委员会与国际开发署对外发布的新闻稿、声明与决定，按机构归集；已接入来源每日抓取。',
           sources: AGENCY_PRESS
         }
       };
+
+      // ===== 02 新闻动态：数据加载、侧栏二级目录、列表与分页 =====
+      var PRESS = { boards: {}, loading: {} };
+      var pressBoard = '';
+      var pressState = { q: '', agency: '', kind: '', time: 'all' };
+      var pressPage = 0;
+      var PRESS_PAGE_SIZE = 15;
+
+      function loadPress(board) {
+        if (PRESS.boards[board]) return Promise.resolve(PRESS.boards[board]);
+        if (PRESS.loading[board]) return PRESS.loading[board];
+        var job = fetch('data/policy/press-' + board + '.json', { cache: 'no-cache' })
+          .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+          .then(function (d) { PRESS.boards[board] = d; delete PRESS.loading[board]; return d; })
+          .catch(function (e) { delete PRESS.loading[board]; throw e; });
+        PRESS.loading[board] = job;
+        return job;
+      }
+
+      function pressOf(board) {
+        var d = PRESS.boards[board];
+        return (d && d.items) || [];
+      }
+
+      // 时间戳只展示到分钟：2026-11-02T16:03:40+08:00 → 2026-11-02 16:03
+      function pressTime(s) {
+        if (!s) return '—';
+        return String(s).replace('T', ' ').slice(0, 16);
+      }
+
+      function pressCounts(items) {
+        var m = {};
+        items.forEach(function (it) { m[it.agency] = (m[it.agency] || 0) + 1; });
+        return m;
+      }
+
+      // 源状态：非 ok / empty 的记为受限，侧栏灰显并给出原因
+      function pressBlocked(board) {
+        var d = PRESS.boards[board];
+        var m = {};
+        ((d && d.sources) || []).forEach(function (s) {
+          if (s.status === 'error' || s.status === 'skipped') m[s.agency] = s.error || s.status;
+        });
+        return m;
+      }
+
+      function pressFiltered() {
+        var items = pressOf(pressBoard);
+        var q = pressState.q.trim().toLowerCase();
+        var cutoff = '';
+        if (pressState.time !== 'all') {
+          var d = new Date(Date.now() - (+pressState.time) * 86400000);
+          cutoff = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' +
+                   String(d.getDate()).padStart(2, '0');
+        }
+        return items.filter(function (it) {
+          if (pressState.agency && it.agency !== pressState.agency) return false;
+          if (pressState.kind && it.kind !== pressState.kind) return false;
+          if (cutoff && (it.date || '') < cutoff) return false;
+          if (q) {
+            var hay = (it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.agency || '');
+            if (hay.toLowerCase().indexOf(q) < 0) return false;
+          }
+          return true;
+        });
+      }
+
+      // 侧栏二级：全部 + 每个来源（有条目的显示条数，受限的灰显）
+      function renderPressSub() {
+        var host = document.getElementById('pw-sub');
+        if (!host) return;
+        var meta = PR_PANEL[pressBoard];
+        if (!meta) { host.hidden = true; return; }
+        var counts = pressCounts(pressOf(pressBoard));
+        var blocked = pressBlocked(pressBoard);
+        var total = pressOf(pressBoard).length;
+        var html = '<button type="button" class="pw-sub-item' + (pressState.agency ? '' : ' is-on') +
+          '" data-agency="">全部' +
+          '<span class="pw-sub-c">' + total + '</span></button>';
+        html += meta.sources.map(function (name) {
+          var n = counts[name] || 0;
+          var why = blocked[name];
+          var dis = (!n && why) ? ' disabled' : '';
+          var tip = dis ? ' title="源站限制：' + esc(why) + '"' : '';
+          return '<button type="button" class="pw-sub-item' + (pressState.agency === name ? ' is-on' : '') +
+            '" data-agency="' + esc(name) + '"' + dis + tip + '>' + esc(name.replace(/\s?\(.*\)$/, '').replace(/\s?(FCC|USITC|CFIUS|USAID)$/, '')) +
+            '<span class="pw-sub-c">' + (n ? n : '—') + '</span></button>';
+        }).join('');
+        host.innerHTML = html;
+        host.hidden = false;
+      }
+
+      function renderPressList() {
+        var list = document.getElementById('press-list');
+        if (!list) return;
+        var d = PRESS.boards[pressBoard];
+        if (!d) {
+          list.innerHTML = '<p class="placeholder">正在加载新闻条目…</p>';
+          return;
+        }
+        var all = pressOf(pressBoard);
+        var items = pressFiltered();
+        var pageCount = Math.max(1, Math.ceil(items.length / PRESS_PAGE_SIZE));
+        if (pressPage > pageCount - 1) pressPage = pageCount - 1;
+        if (pressPage < 0) pressPage = 0;
+        var start = pressPage * PRESS_PAGE_SIZE;
+        var pageItems = items.slice(start, start + PRESS_PAGE_SIZE);
+
+        var empty = document.getElementById('press-empty');
+        if (!items.length) {
+          list.innerHTML = '';
+          if (empty) {
+            empty.textContent = all.length
+              ? '当前筛选条件下没有条目，试试切换部门或放宽时间范围。'
+              : '该分类暂无已接入来源的条目。';
+            empty.hidden = false;
+          }
+        } else {
+          if (empty) empty.hidden = true;
+          list.innerHTML = pageItems.map(function (it) {
+            return '<div class="pw-item">' +
+              '<div class="pw-r pr-r">' +
+                '<span class="c-date">' + esc(it.date) + '</span>' +
+                '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
+                  (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
+                '<span class="c-kind"><span>' + esc(it.kind || '新闻稿') + '</span></span>' +
+                '<span class="c-agency">' + esc(it.agency || '') + '</span>' +
+                '<span class="c-act"><a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></span>' +
+              '</div></div>';
+          }).join('');
+        }
+
+        var cnt = document.getElementById('press-count');
+        if (cnt) {
+          cnt.innerHTML = items.length === all.length
+            ? '共 ' + all.length + ' 条'
+            : '筛选结果：<b>' + items.length + '</b> / ' + all.length + ' 条 · <a href="#" data-press-clear style="color:var(--accent-light)">清除</a>';
+        }
+        var upd = document.getElementById('press-updated');
+        if (upd) upd.innerHTML = '最近更新：<b>' + esc(pressTime(d.updated_at)) + '</b>';
+
+        var c2 = document.getElementById('pw-tab-count-pr');
+        if (c2) c2.textContent = all.length ? all.length + ' 条' : '—';
+        renderPressPager(items.length, pageCount);
+        renderPressSub();
+      }
+
+      function renderPressPager(total, pageCount) {
+        var host = document.getElementById('press-pager');
+        if (!host) return;
+        if (total <= 0) { host.hidden = true; host.innerHTML = ''; return; }
+        var from = pressPage * PRESS_PAGE_SIZE + 1;
+        var to = Math.min(total, (pressPage + 1) * PRESS_PAGE_SIZE);
+        host.hidden = false;
+        host.innerHTML =
+          '<span class="pg-info">共 <b>' + total + '</b> 条 · 第 <b>' + (pressPage + 1) + '</b>/' + pageCount +
+          ' 页 · 本页 ' + from + '–' + to + ' 条</span>' +
+          '<span class="pg-nav">' +
+            '<button type="button" class="pg-btn pg-step" data-pp="prev"' + (pressPage === 0 ? ' disabled' : '') + ' aria-label="上一页">‹</button>' +
+            '<button type="button" class="pg-btn pg-step" data-pp="next"' + (pressPage >= pageCount - 1 ? ' disabled' : '') + ' aria-label="下一页">›</button>' +
+          '</span>';
+      }
+
+      function setPressAgency(name) {
+        pressState.agency = name || '';
+        pressPage = 0;
+        var sel = document.getElementById('press-agency');
+        if (sel) sel.value = pressState.agency;
+        renderPressList();
+      }
+
+      function resetPressFilter() {
+        pressState = { q: '', agency: '', kind: '', time: 'all' };
+        pressPage = 0;
+        var q = document.getElementById('press-q');
+        if (q) q.value = '';
+        ['press-agency', 'press-kind', 'press-time'].forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el) el.value = id === 'press-agency' || id === 'press-kind' ? '' : 'all';
+        });
+        renderPressList();
+      }
+
+      function fillPressSelects() {
+        var items = pressOf(pressBoard);
+        var agencySel = document.getElementById('press-agency');
+        if (agencySel) {
+          var counts = pressCounts(items);
+          agencySel.innerHTML = '<option value="">全部</option>' + PR_PANEL[pressBoard].sources
+            .filter(function (n) { return counts[n]; })
+            .map(function (n) { return '<option value="' + esc(n) + '">' + esc(n) + '</option>'; }).join('');
+          agencySel.value = pressState.agency || '';
+        }
+        var kindSel = document.getElementById('press-kind');
+        if (kindSel) {
+          var kinds = [];
+          items.forEach(function (it) { if (it.kind && kinds.indexOf(it.kind) < 0) kinds.push(it.kind); });
+          kindSel.innerHTML = '<option value="">全部</option>' + kinds.map(function (k) {
+            return '<option value="' + esc(k) + '">' + esc(k) + '</option>';
+          }).join('');
+          kindSel.value = pressState.kind || '';
+        }
+      }
+
+      function bindPressTools() {
+        // 侧栏二级目录在 pane 之外，单独委托一次
+        var side = document.getElementById('pw-side');
+        if (side && side.dataset.bound !== '1') {
+          side.dataset.bound = '1';
+          side.addEventListener('click', function (e) {
+            var sub = e.target.closest ? e.target.closest('[data-agency]') : null;
+            if (sub && !sub.disabled) setPressAgency(sub.getAttribute('data-agency'));
+          });
+        }
+        var pane = document.getElementById('pw-pane-pr');
+        if (!pane || pane.dataset.bound === '1') return;
+        pane.dataset.bound = '1';
+        pane.addEventListener('click', function (e) {
+          if (e.target.id === 'press-reset') { resetPressFilter(); return; }
+          var sub = e.target.closest ? e.target.closest('[data-agency]') : null;
+          if (sub && !sub.disabled) { setPressAgency(sub.getAttribute('data-agency')); return; }
+          var clear = e.target.closest ? e.target.closest('[data-press-clear]') : null;
+          if (clear) { e.preventDefault(); resetPressFilter(); return; }
+          var pg = e.target.closest ? e.target.closest('[data-pp]') : null;
+          if (pg) {
+            pressPage += pg.getAttribute('data-pp') === 'next' ? 1 : -1;
+            renderPressList();
+          }
+        });
+        pane.addEventListener('change', function (e) {
+          var id = e.target.id;
+          if (id === 'press-agency') { pressState.agency = e.target.value; pressPage = 0; renderPressList(); }
+          else if (id === 'press-kind') { pressState.kind = e.target.value; pressPage = 0; renderPressList(); }
+          else if (id === 'press-time') { pressState.time = e.target.value; pressPage = 0; renderPressList(); }
+        });
+        pane.addEventListener('input', function (e) {
+          if (e.target.id !== 'press-q') return;
+          pressState.q = e.target.value;
+          pressPage = 0;
+          renderPressList();
+        });
+      }
 
       function renderPrPanel(key) {
         var pane = document.getElementById('pw-pane-pr');
         var meta = PR_PANEL[key];
         if (!pane || !meta) return;
+        pressBoard = key;
+        pressState = { q: '', agency: '', kind: '', time: 'all' };
+        pressPage = 0;
         var tabT = document.querySelector('#pw-tab-pr .pw-tab-t');
         if (tabT) tabT.textContent = meta.tab;
         pane.innerHTML =
@@ -10542,23 +10829,51 @@
             '<div class="pr-kick"><span>02</span> / Agency Press Releases</div>' +
             '<h2 class="pr-title">' + esc(meta.title) + '</h2>' +
             '<p class="pr-desc">' + esc(meta.desc) + '</p>' +
-            '<div class="pr-meta">' +
-              '<span class="pr-badge">结构占位 · 待接入</span>' +
-              '<span class="pr-meta-t">本次仅搭建分类结构，暂不填充条目</span>' +
+            '<div class="pr-meta" id="press-meta"><span class="pr-badge">正在加载…</span></div>' +
+          '</div>' +
+          '<div class="pw-top pr-tools">' +
+            '<div class="pw-search">' +
+              '<input type="search" id="press-q" class="pw-q" placeholder="搜索标题或部门" autocomplete="off" aria-label="搜索新闻条目">' +
+              '<button type="button" class="pw-reset" id="press-reset">恢复默认</button>' +
+            '</div>' +
+            '<div class="pw-cond">' +
+              '<span class="pw-lab pw-lab-lead">筛选条件</span>' +
+              '<span class="pw-grp"><span class="pw-lab">部门</span><select class="pw-sel" id="press-agency" aria-label="按部门筛选"></select></span>' +
+              '<span class="pw-grp"><span class="pw-lab">类型</span><select class="pw-sel" id="press-kind" aria-label="按类型筛选"></select></span>' +
+              '<span class="pw-grp"><span class="pw-lab">时间</span><select class="pw-sel" id="press-time" aria-label="时间范围">' +
+                '<option value="all">全部</option><option value="7">近 7 天</option><option value="30">近 30 天</option><option value="90">近 90 天</option>' +
+              '</select></span>' +
             '</div>' +
           '</div>' +
-          '<div class="pr-panel">' +
-            '<div class="pr-panel-hd"><span>' + esc(meta.label) + '</span>' +
-              '<span class="pr-panel-c">' + meta.sources.length + ' ' + esc(meta.unit) + '</span></div>' +
-            '<div class="pr-grid">' + meta.sources.map(function (name, i) {
-              return '<div class="pr-dept">' +
-                '<span class="pr-dept-n">' + String(i + 1).padStart(2, '0') + '</span>' +
-                '<span class="pr-dept-t">' + esc(name) + '</span>' +
-                '<span class="pr-dept-e">' + esc(PR_SRC_EN[name] || '') + '</span>' +
-                '</div>';
-            }).join('') + '</div>' +
+          '<div class="pw-table">' +
+            '<div class="pw-thead pr-thead"><span>发布日期</span><span>标题</span><span>类型</span>' +
+              '<span>部门 / 机构</span><span class="pw-th-act">操作</span></div>' +
+            '<div id="press-list" class="pw-tbody"><p class="placeholder">正在加载新闻条目…</p></div>' +
           '</div>' +
-          '<p class="pr-foot">' + esc(meta.foot) + '</p>';
+          '<p class="placeholder" id="press-empty" hidden></p>' +
+          '<div class="pw-foot"><span class="pw-count" id="press-count"></span><span class="pw-updated" id="press-updated"></span></div>' +
+          '<div class="board-pager" id="press-pager" hidden></div>';
+        bindPressTools();
+        renderPressSub();
+        loadPress(key).then(function () {
+          var d = PRESS.boards[key];
+          var all = pressOf(key);
+          var ok = ((d && d.sources) || []).filter(function (s) { return s.status === 'ok'; }).length;
+          var totalSrc = ((d && d.sources) || []).length;
+          var box = document.getElementById('press-meta');
+          if (box) {
+            box.innerHTML = '<span class="pr-badge">已接入 ' + ok + ' / ' + totalSrc + ' 个来源</span>' +
+              '<span class="pr-meta-t">共 ' + all.length + ' 条 · 更新于 ' + esc(pressTime(d.updated_at)) +
+              ' · 未接入来源在侧栏灰显</span>';
+          }
+          fillPressSelects();
+          renderPressList();
+        }).catch(function () {
+          var list = document.getElementById('press-list');
+          if (list) list.innerHTML = '<p class="placeholder">新闻条目加载失败，请确认 data/policy/press-' + key + '.json 存在。</p>';
+          var box = document.getElementById('press-meta');
+          if (box) box.innerHTML = '<span class="pr-badge">数据缺失</span>';
+        });
       }
       renderPrPanel('whitehouse');
 
