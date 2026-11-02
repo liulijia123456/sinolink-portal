@@ -1,9 +1,26 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-10-31 14:13",
-  "count": 36,
+  "updated_at": "2026-11-02 13:09",
+  "count": 37,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-10-31",
+      "title": "Lentini v. Department of Government Efficiency",
+      "url": "https://www.courtlistener.com/opinion/11051763/lentini-v-department-of-government-efficiency/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "President Trump was inaugurated, he issued an Executive Order which “establish[ed] and implement[ed] the",
+      "title_cn": "Lentini 诉政府效率部案（涉 DOGE 是否属《联邦咨询委员会法》所指咨询委员会，法院准予驳回起诉）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "2026 年 10 月 31 日，哥伦比亚特区联邦地区法院就 Lentini 诉政府效率部案作出备忘录意见，准予驳回起诉。\n\n原告主张 DOGE 属《联邦咨询委员会法》所称「咨询委员会」。法院认定起诉状未达第 1001(2) 条：DOGE 非依法律或改组计划设立，亦非由总统或机构设立；原告自认其于 2024 年 11 月由马斯克、拉马斯瓦米与当选总统特朗普创设。\n\n对「被行政部门利用」，起诉状仅有 OMB、OPM、EOP 的结论性陈述，法院认为无可成立事实；亦未就 USDS 等实体另案表态。\n\n对市场意味着什么：无直接定价影响，本案仅审查咨询委员会程序义务，未涉 DOGE 预算与人事权限。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-10-30",
@@ -13,13 +30,13 @@
       "kind": "判决",
       "agency": "第十巡回上诉法院",
       "summary": "2026 WL 352016, *5–8 (10th Cir. 2026) (imposing sanctions on a pro se attorney who used a generative AI",
-      "title_cn": "Flux Drive 诉 Sparks 案（涉商业秘密窃取指控中对伊利诺伊州被告的属人管辖权）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-31",
         "body": "第十巡回上诉法院合并三案，维持对三名伊利诺伊州被告驳回起诉的裁定。原告指控其共谋窃取水冷驱动装置商业秘密并转交中国制造商仿冒生产；法院认定被告虽有对科罗拉多州的有目的联系，但被指控损害与该州行为之间缺乏因果链条，特定属人管辖权不成立。法院并依科州费用转移法维持合计约 18.4 万美元律师费判付。\n商业秘密实体争点未进入审理，片段亦未载明合议庭对《保护商业秘密法》域外适用的判断，以判决书原文为准。\n对市场意味着什么：无直接定价影响。此为管辖程序性裁定，不改变任何企业的责任认定；对涉华技术转移诉讼的原告方提示，仅凭邮件与资金往来难以在被告住所地之外建立管辖。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Flux Drive 诉 Sparks 案（涉商业秘密窃取指控中对伊利诺伊州被告的属人管辖权）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -30,13 +47,13 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "the denial tantamount to the denial of a preliminary injunction.” Babaria v. Blinken, 87 F.4th 963, 976",
-      "title_cn": "美国诉加利福尼亚州案（涉邮寄选票公民身份核验与《至上条款》，第九巡回拒绝在上诉期间发布禁制令）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-31",
         "body": "第九巡回上诉法院以全体法官名义驳回联邦政府的紧急动议，拒绝在上诉期间命令加州与洛杉矶县暂扣并核验被联邦列为「可能非公民」者的邮寄选票。政府主张《至上条款》与 18 U.S.C. § 611 禁止两被告寄送并计读此类选票，地区法院拒发临时限制令，巡回法院认定未满足禁制令门槛，Bumatay 法官持异议。\n法院对政府是否具备原告资格与诉因明示「假定而不裁定」，此前同案另一上诉（26-7070）已因管辖问题被驳回。\n对市场意味着什么：无直接定价影响。距 11 月 3 日中期选举仅数日，该裁定意味着联邦核验要求在本次选举中不生效，选举结果认证争议风险仍在，但尚不构成可定价的资产类别风险。",
         "tier": "note"
-      }
+      },
+      "title_cn": "美国诉加利福尼亚州案（涉邮寄选票公民身份核验与《至上条款》，第九巡回拒绝在上诉期间发布禁制令）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -47,13 +64,13 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "appeal. “[I]f the petition [for a stay pending appeal] has not made a certain threshold showing",
-      "title_cn": "Seyb 诉 Labrador 案（涉爱达荷州健康例外堕胎禁令，上诉期间暂缓执行地区法院禁令）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-10-31",
         "body": "第九巡回上诉法院以 2:1 准许爱达荷州在上诉期间暂缓执行地区法院禁令。该禁令原禁止州方依《生命防卫法》（Idaho Code § 18-622）与《胎儿心跳法》（§ 18-8804）起诉为保护孕妇健康而实施堕胎的医生。多数意见认为州方已较强证明其可能依 Dobbs 胜诉，且州保护胎儿生命的利益超过医生所受损害。\nBerzon 法官异议称 Dobbs 未触及独立的生命健康例外；首份上诉状定于 12 月 18 日提交。\n对市场意味着什么：无直接定价影响。属州法与宪法解释争议，不涉及医药企业产品责任或医保支付政策的直接调整。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Seyb 诉 Labrador 案（涉爱达荷州健康例外堕胎禁令，上诉期间暂缓执行地区法院禁令）",
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
@@ -64,13 +81,13 @@
       "kind": "判决",
       "agency": "第五巡回上诉法院",
       "summary": "ROA.230. Each of these demands was sanctionable when made. Alamrew was given written notice",
-      "title_cn": "Alamrew 诉 Morgan 案（涉移民长期拘留人身保护令，上诉因无实际意义被撤销）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-10-31",
         "body": "第五巡回上诉法院准许将案件更正登记为民事上诉，并以争议已无实际意义为由撤销上诉，其余待决动议一并驳回。案件源于一名埃塞俄比亚公民被长期拘留后提起的 § 2241 人身保护令申请：地区法院认定 Zadvydas 六个月期限已耗尽，于 8 月 28 日命令立即释放并禁止移送。\n巡回法院未就 8 U.S.C. § 1252 管辖排除条款或人身保护令救济范围作实体裁判。Oldham 法官另出具意见批评地区法院命令背离人身保护令本旨，但法院本身未施加任何制裁；检索片段中「可受制裁」一语出自该单独意见，非裁判结论。\n对市场意味着什么：无直接定价影响。属移民拘留程序争议，不改变现行拘留与遣返政策框架。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Alamrew 诉 Morgan 案（涉移民长期拘留人身保护令，上诉因无实际意义被撤销）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -81,13 +98,13 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "moved to compel production and to impose contempt sanctions, asserting that defendants were “actively engaged",
-      "title_cn": "Greenspan 诉联邦检察官执行办公室案（涉《信息自由法》豁免主张与可分割性审查）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-10-31",
         "body": "哥伦比亚特区联邦地区法院就《信息自由法》诉讼第二轮交叉简易判决作出裁定：确认联邦调查局检索方法合理、其对豁免 5（律师工作成果与检控策略）的扣留成立，但认定联邦调查局与缉毒署对豁免 3、6、7(C)—7(E) 的说明不足，尤其未就已见于公开法庭文件的信息履行可分割性审查与「可预见损害」举证。\n法院驳回原告简易判决动议，被告动议部分获准、部分被驳回，并给予其提交补充声明补正的机会。案涉 1990 年代芝加哥洗钱与海洛因贩运侦查档案，介入被告为尼日利亚总统 Tinubu。\n对市场意味着什么：无直接定价影响。属政府信息公开范畴，不产生行业性合规义务变化。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Greenspan 诉联邦检察官执行办公室案（涉《信息自由法》豁免主张与可分割性审查）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -98,13 +115,13 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "that the CDC’s vaccine frameworks are arbitrary and capricious; a declaration that the CDC’s use of",
-      "title_cn": "Thomas 诉 Monarez 案（涉 CDC 儿童疫苗接种时间表，因缺乏诉讼资格被驳回）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-10-31",
         "body": "哥伦比亚特区联邦地区法院依《联邦民事诉讼规则》12(b)(1) 以缺乏宪法第三条诉讼资格为由驳回全案，未触及 12(b)(6) 实体争点。两名医生主张因采用个体化疫苗方案被州医学会吊销执照，法院认定吊销决定基于多项独立于 CDC 建议的理由，且即便胜诉州医学会亦无遵从义务，因果关系与可救济性均不成立。\n原告组织未能证明其核心活动遭直接干预，仅资源转向不构成可认知损害。\n对市场意味着什么：无直接定价影响。CDC 推荐接种时间表未被司法变更，疫苗采购与支付政策不受影响；针对疫苗政策的诉讼仍将持续。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Thomas 诉 Monarez 案（涉 CDC 儿童疫苗接种时间表，因缺乏诉讼资格被驳回）",
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
