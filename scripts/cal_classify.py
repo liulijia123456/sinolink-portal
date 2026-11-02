@@ -175,6 +175,74 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},     # 医保报销规则归财政
     ('2027-02-01', '美国总统向国会提交 2028 财年预算案（法定最迟日）'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},       # 预算案由行政部门提交
+    # —— 2026-11-02 日更新增：本批为联邦公报 09—11 月刊发的监管节点，
+    #    兜底规则会把「意见期/生效」一律判成 money/agency，逐条按所监管对象领域覆盖 ——
+    ('2026-11-03', 'SEC 过户代理人规则拟议规则意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-04', 'FinCEN A7 网络相关交易特别措施意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-04', '美联储 Reg O 内部人贷款规则意见期延长'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
+    ('2026-11-04', 'FDIC 内部人信贷规则意见期延长'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-05', 'EPA 2024 年 PM2.5 标准初始达标指定意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-11-09', 'SEC 投资顾问政治捐款规则废止意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-09', 'USTR 欧盟碳边境调节机制影响意见征询截止'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
+    ('2026-11-09', 'NRC 反应堆许可与退役监管改革意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-11-09', 'FCC 呼叫缓解数据库回复意见截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-11-09', 'IRS 车贷利息扣除最终规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
+    ('2026-11-12', 'EPA 汽油配送设施有害空气污染物标准再审议意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-11-13', 'NRC AP1000 设计认证续期意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-11-18', 'CFTC 事件合约纳入互换定义意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-18', 'FCC 通信基础设施环境审查规则意见期截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-11-23', 'FDIC 银行并购规则改革意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-11-25', 'FCC 太空现代化规则意见期截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-11-25', 'FCC 消费者自动呼叫控制规则意见期截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-11-30', 'CMS GLOBE 药品定价模型生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
+    ('2026-11-30', '美联储 GENIUS 法案实施规则意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
+    ('2026-11-30', '美联储支付稳定币子公司审批程序意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
+    ('2026-11-30', '国务院 ITAR 军品清单审查意见期截止'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'exec'},
+    ('2026-11-30', 'IRS 保费税收抵免拟议规则意见期截止'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
+    ('2026-11-30', 'IRS 特朗普账户拟议规则意见期截止'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
+    ('2026-11-30', 'FTC 冒充政府与企业规则意见期截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-11-30', 'NHTSA CAFE 规则 III 生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-12-02', 'FCC 超宽带设备规则意见期截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
+    ('2026-12-02', 'EPA TSCA 重要新用途规则 26-7 意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-12-14', 'EPA TSCA 重要新用途规则 26-1 生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-12-14', 'EPA 清洁水法设施应急计划合规日延期生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2026-12-14', 'NCUA 中央流动性便利规则意见期截止'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
+    ('2026-12-15', 'CMS 2026 年综合拨款法医保条款实施意见期截止'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
+    ('2026-12-16', 'EPA 油气行业气候规则再审议意见期截止'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
+    ('2027-01-04', '劳工部 PBM 费用披露规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
