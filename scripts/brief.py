@@ -1,38 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-国金门户 · 政策简报工具
+国金门户 · 政策速览工具
 ======================
 
-配合 scripts/fetch_policy.py 使用，为四个政策子板块的条目生成、管理「政策简报」，
+配合 scripts/fetch_policy.py 使用，为四个政策子板块的条目生成、管理「政策速览」，
 写入数据文件（data/policy/*items.json）中条目的 brief 字段。原条目（标题、
 官方原文链接等源文件信息）完整保留。
 
-简报分两层（详见下方「简报分层」说明），**但覆盖率必须是 100%**——
+速览分两层（详见下方「速览分层」说明），**但覆盖率必须是 100%**——
 层级只决定详略，不决定有无：
 
-  full  长简报 800–2000 字，四段结构
-  note  要点速览 150–300 字，3–5 条要点
+  full  详版速览 400–900 字，三段结构
+  note  简版速览 150–350 字，3–5 条要点
 
 三个子命令：
 
 1) 体检覆盖率（发布前必看）：
      python3 brief.py coverage [--board whitehouse]
-   按板块报告总条数 / 有简报 / 缺简报，并列出缺失条目的日期与标题。
+   按板块报告总条数 / 有速览 / 缺速览，并列出缺失条目的日期与标题。
    退出码：0 全覆盖；1 存在缺失。
 
-2) 生成简报队列（供撰写）：
+2) 生成速览队列（供撰写）：
      python3 brief.py queue [--board whitehouse] [--limit 8] [--fresh-ratio 0.5] [--all]
-   输出 scripts/brief_queue.md：按「两头推进」列出尚无简报的条目（最新+最旧），
+   输出 scripts/brief_queue.md：按「两头推进」列出尚无速览的条目（最新+最旧），
    并附上从官方接口抓取的摘要/文本节选（联邦公报 abstract、国会官网 bill summary），
    同时标注每条该写 full 还是 note。
    指定 --all 时列出**全部**待写条目（不等量抽样），每日任务用它做全覆盖。
-   素材节选长度按层级自适应：full 取 1800 字，note 取 600 字（够写 150–300 字概述）。
+   素材节选长度按层级自适应：full 取 1800 字，note 取 600 字（够写 150–350 字概述）。
 
-3) 合并已写好的简报：
+3) 合并已写好的速览：
      python3 brief.py merge scripts/briefs.json [--force]
    briefs.json 格式：{ "<条目url>": { "at": "2026-10-12", "tier": "full|note", "body": "…" }, ... }
-   已有长简报不会被要点速览覆盖（除非 --force）。
+   已有详版速览不会被简版速览覆盖（除非 --force）。
 
 环境变量：CONGRESS_API_KEY（优先级：环境变量 > scripts/.congress_api_key 文件 > DEMO_KEY）
 日志：logs/brief.log（自动轮转）
@@ -59,15 +59,15 @@ INDEX_HTML = os.path.join(BASE_DIR, 'index.html')
 LOG_FILE = os.path.join(BASE_DIR, 'logs', 'brief.log')
 QUEUE_FILE = os.path.join(BASE_DIR, 'scripts', 'brief_queue.md')
 
-# ---------------------------------------------------------------- 简报分层
+# ---------------------------------------------------------------- 速览分层
 #
-# **全覆盖策略：每一条目都必须有简报，不允许空简报。**
+# **全覆盖策略：每一条目都必须有速览，不允许空速览。**
 # 层级只决定篇幅深浅，不决定有无——这是 2026-10-25 从"抽样配额"改过来的核心变化：
-# 旧策略下每轮只写 6–8 份长简报、覆盖率约 3%，缺口单调扩大，条目是研究底稿，
-# 没有简报的条目对读者等于不存在。
+# 旧策略下每轮只写 6–8 份详版速览、覆盖率约 3%，缺口单调扩大，条目是研究底稿，
+# 没有速览的条目对读者等于不存在。
 #
-#   full  长简报 800–2000 字，四段结构（【政策背景】【核心内容】【要点提炼】【对金融市场的预期影响】）
-#   note  要点速览 150–300 字，3–5 条要点，不要求段头
+#   full  详版速览 400–900 字，三段结构（【政策背景】【核心内容】【要点提炼】）
+#   note  简版速览 150–350 字，3–5 条要点，不要求段头
 #
 # full 判据（任一成立）：
 #   - 白宫直接行为：行政令 / 总统备忘录 / 公告
@@ -79,13 +79,13 @@ QUEUE_FILE = os.path.join(BASE_DIR, 'scripts', 'brief_queue.md')
 TIER_FULL = 'full'
 TIER_NOTE = 'note'
 
-# 高市场相关领域：金融资产定价能直接映射到的监管部门/议题
+# 高相关领域：政策影响能直接落到具体行业与监管部门的议题
 HIGH_VALUE_DOMAINS = {
     '金融/保险', '财政/税收', '贸易/关税', '能源/环境',
     '科技/AI', '医疗/医药', '电信/媒体', '国防/安全',
 }
 
-# 白宫直接行为，一律长简报
+# 白宫直接行为，一律详版速览
 WH_DIRECT_KINDS = {'行政令', '总统备忘录', '公告'}
 
 # 法案进入实质程序的行动特征（agency 字段在国会板块存的是"最新行动"文本）
@@ -107,9 +107,9 @@ CEREMONIAL_RE = re.compile(
     r'^(Expressing|Recognizing|Honoring|Congratulat|Commending|Celebrating|'
     r'Designating|Acknowledging|Welcoming|Mourning)', re.I)
 
-# 例行程序性/区域性文件：技术性或属地性安排，无市场定价含义，一律要点。
-# 这类文件常落在"国防/安全""交通"等高价值领域，若只按领域判定会被误升为长简报
-# （实测把海岸警卫队安全区、空域设立、渔业休渔、适航指令更正都判成了长简报）。
+# 例行程序性/区域性文件：技术性或属地性安排，无实质政策影响，一律要点。
+# 这类文件常落在"国防/安全""交通"等高价值领域，若只按领域判定会被误升为详版速览
+# （实测把海岸警卫队安全区、空域设立、渔业休渔、适航指令更正都判成了详版速览）。
 ROUTINE_RE = re.compile(
     r'(Safety Zone|Security Zone|Security Zones|Special Local Regulation|'
     r'Anchorage Grounds|Drawbridge Operation|'
@@ -121,7 +121,7 @@ ROUTINE_RE = re.compile(
 
 # 往届法案：congress.gov 的 updateDate 会因元数据回填而落在近期窗口，
 # 导致第 102—118 届旧案被当作当日新条目收录（实测 35 条）。这类条目不是本届议程，
-# 一律只写要点，且简报须注明所属届次，不得当作当届立法进展叙述。
+# 一律只写要点，且速览须注明所属届次，不得当作当届立法进展叙述。
 CONGRESS_IN_URL_RE = re.compile(r'/(\d+)th-congress/')
 
 
@@ -132,9 +132,9 @@ def _current_congress():
 
 
 def classify_tier(item):
-    """判断条目该写长简报(full)还是要点速览(note)。
+    """判断条目该写详版速览(full)还是简版速览(note)。
 
-    只决定**详略**，不决定有无——每一条目都必须有简报。
+    只决定**详略**，不决定有无——每一条目都必须有速览。
     """
     kind = (item.get('kind') or '').strip()
     domain = (item.get('domain') or '').strip()
@@ -146,7 +146,7 @@ def classify_tier(item):
         return TIER_NOTE
 
     # 司法裁判：裁判文书篇幅长、可核实的机器素材只有检索片段，除最高法院
-    # 实体判决外一律要点速览，避免在素材不足时臆测裁判理由。
+    # 实体判决外一律简版速览，避免在素材不足时臆测裁判理由。
     if item.get('board') == 'judicial':
         if kind == '判决' and (item.get('agency') or '') == '美国最高法院':
             return TIER_FULL
@@ -173,8 +173,8 @@ def classify_tier(item):
 
 
 TIER_DESC = {
-    TIER_FULL: '长简报 800–2000 字，四段结构',
-    TIER_NOTE: '要点速览 150–300 字，3–5 条要点，不写段头',
+    TIER_FULL: '详版速览 400–900 字，三段结构',
+    TIER_NOTE: '简版速览 150–350 字，3–5 条要点，不写段头',
 }
 
 def _load_congress_key():
@@ -386,19 +386,19 @@ def _select_pending(items, limit, fresh_ratio):
     return picked
 
 
-# note 只需 150–300 字概述，取 600 字素材足够；full 需要完整背景，取 1800 字。
+# note 只需 150–350 字概述，取 600 字素材足够；full 需要完整背景，取 1800 字。
 MATERIAL_CHARS = {TIER_FULL: 1800, TIER_NOTE: 600}
 
 
 def cmd_coverage(args):
-    """体检简报覆盖率：每一条目都必须有简报。"""
+    """体检速览覆盖率：每一条目都必须有速览。"""
     _, _, payload = load_payload()
     boards = [args.board] if args.board else ['whitehouse', 'congress', 'agencies', 'judicial']
     total_all = miss_all = 0
     for board in boards:
         items = (payload['boards'].get(board) or {}).get('items', [])
         miss = [it for it in items if not (it.get('brief') or {}).get('body')]
-        # 层级口径与 validate_data.py 一致：无 tier 字段的旧简报按长度推断，
+        # 层级口径与 validate_data.py 一致：无 tier 字段的旧速览按长度推断，
         # 否则同一份数据在两个脚本里会报出不同的「长/要点」计数。
         n_full = sum(1 for it in items
                      if (it.get('brief') or {}).get('body')
@@ -409,7 +409,7 @@ def cmd_coverage(args):
         total_all += len(items)
         miss_all += len(miss)
         pct = (100.0 * (len(items) - len(miss)) / len(items)) if items else 100.0
-        print('%-11s %4d 条 · 已写 %4d（长 %d / 要点 %d）· 缺 %3d · 覆盖 %.1f%%'
+        print('%-11s %4d 条 · 已写 %4d（详 %d / 简 %d）· 缺 %3d · 覆盖 %.1f%%'
               % (board, len(items), len(items) - len(miss), n_full, n_note,
                  len(miss), pct))
         if miss:
@@ -422,12 +422,12 @@ def cmd_coverage(args):
             if len(miss) > 8:
                 print('            · …… 其余 %d 条' % (len(miss) - 8))
     pct_all = (100.0 * (total_all - miss_all) / total_all) if total_all else 100.0
-    print('\n合计 %d 条 · 缺简报 %d 条 · 覆盖 %.1f%%' % (total_all, miss_all, pct_all))
+    print('\n合计 %d 条 · 缺速览 %d 条 · 覆盖 %.1f%%' % (total_all, miss_all, pct_all))
     if miss_all:
-        print('[未通过] 存在 %d 条无简报条目，按全覆盖策略不可发布。'
+        print('[未通过] 存在 %d 条无速览条目，按全覆盖策略不可发布。'
               '运行 brief.py queue --all 生成撰写队列。' % miss_all)
         return 1
-    print('[通过] 简报全覆盖。')
+    print('[通过] 速览全覆盖。')
     return 0
 
 
@@ -437,11 +437,11 @@ def cmd_queue(args):
     mode = ('全量覆盖模式（列出全部待写条目）' if limit <= 0
             else '两头推进抽样：最新 %d%% + 最旧 %d%%'
                  % (round(args.fresh_ratio * 100), round((1 - args.fresh_ratio) * 100)))
-    lines = ['# 简报撰写队列', '',
-             '> 全覆盖策略：**每一条目都必须有简报**，层级只决定详略、不决定有无。',
+    lines = ['# 速览撰写队列', '',
+             '> 全覆盖策略：**每一条目都必须有速览**，层级只决定详略、不决定有无。',
              '> 本队列%s。每条标注待写层级：' % mode,
-             '>   full = 长简报 800–2000 字，四段结构【政策背景】【核心内容】【要点提炼】【对金融市场的预期影响】',
-             '>   note = 要点速览 150–300 字，3–5 条要点，无需段头',
+             '>   full = 详版速览 400–900 字，三段结构【政策背景】【核心内容】【要点提炼】',
+             '>   note = 简版速览 150–350 字，3–5 条要点，无需段头',
              '> 成果写入 scripts/briefs.json（键为条目 url，含 tier 字段）后运行 merge 合并。',
              '> 合并后运行 brief.py coverage 复核覆盖率。', '']
     total = 0
@@ -453,7 +453,7 @@ def cmd_queue(args):
         if not pending:
             continue
         n_full = sum(1 for it in pending if classify_tier(it) == TIER_FULL)
-        lines.append('## %s（%s）待写 %d 条，本次列 %d 条（长简报 %d / 要点 %d）'
+        lines.append('## %s（%s）待写 %d 条，本次列 %d 条（详版 %d / 简版 %d）'
                      % (BOARD_CN.get(board, board), board, len(all_pending),
                         len(pending), n_full, len(pending) - n_full))
         lines.append('')
@@ -486,7 +486,7 @@ def cmd_queue(args):
 # ---------------------------------------------------------------- 合并模式
 
 def _infer_tier(body):
-    """未标 tier 时按长度推断：400 字以下视为要点速览（兼容存量旧简报）。"""
+    """未标 tier 时按长度推断：400 字以下视为简版速览（兼容存量旧速览）。"""
     return TIER_FULL if len(body or '') >= 400 else TIER_NOTE
 
 
@@ -506,7 +506,7 @@ def cmd_merge(args):
             old = it.get('brief') or {}
             if old.get('body'):
                 old_tier = old.get('tier') or _infer_tier(old.get('body'))
-                # 已有长简报不被要点速览覆盖（除非显式 --force）
+                # 已有详版速览不被简版速览覆盖（除非显式 --force）
                 if old_tier == TIER_FULL and new_tier == TIER_NOTE and not args.force:
                     downgrade_skipped += 1
                     continue
@@ -516,27 +516,27 @@ def cmd_merge(args):
             it['brief'] = {'at': b.get('at') or stamp, 'body': body, 'tier': new_tier}
     save_payload(payload)
     target = 'data/policy/*.json' if store.use_json() else 'index.html 数据块'
-    log.info('合并完成：新增简报 %d 份，更新 %d 份，跳过降级 %d 份（已写入 %s）',
+    log.info('合并完成：新增速览 %d 份，更新 %d 份，跳过降级 %d 份（已写入 %s）',
              added, updated, downgrade_skipped, target)
     return 0
 
 
 def main():
-    ap = argparse.ArgumentParser(description='国金门户 · 政策简报工具')
+    ap = argparse.ArgumentParser(description='国金门户 · 政策速览工具')
     sub = ap.add_subparsers(dest='cmd', required=True)
-    q = sub.add_parser('queue', help='生成待写简报队列（含官方摘要素材）')
+    q = sub.add_parser('queue', help='生成待写速览队列（含官方摘要素材）')
     q.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'])
     q.add_argument('--limit', type=int, default=8, help='每个板块最多列出条数（默认 8）')
     q.add_argument('--all', action='store_true',
                    help='列出全部待写条目（全覆盖模式，忽略 --limit；每日任务应使用）')
     q.add_argument('--fresh-ratio', type=float, default=0.5,
                    help='其中最新条目占比（默认 0.5，即一半最新一半最旧，两头推进清欠账）')
-    c = sub.add_parser('coverage', help='体检简报覆盖率（每一条目都必须有简报）')
+    c = sub.add_parser('coverage', help='体检速览覆盖率（每一条目都必须有速览）')
     c.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'])
-    m = sub.add_parser('merge', help='合并简报 JSON 进数据文件')
-    m.add_argument('input', help='简报 JSON 文件路径（键为条目 url）')
+    m = sub.add_parser('merge', help='合并速览 JSON 进数据文件')
+    m.add_argument('input', help='速览 JSON 文件路径（键为条目 url）')
     m.add_argument('--force', action='store_true',
-                   help='允许用要点速览覆盖已有长简报（默认不允许降级）')
+                   help='允许用简版速览覆盖已有详版速览（默认不允许降级）')
     args = ap.parse_args()
     if args.cmd == 'queue':
         return cmd_queue(args)

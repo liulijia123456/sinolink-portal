@@ -40,7 +40,9 @@ DOMAINS = {
     '金融/保险', '电信/媒体', '农业/食品', '教育/劳动', '住房', '交通',
     '司法/执法', '社会保障', '产业/企业', '政府运作', '其他',
 }
-BRIEF_HEADERS = ('【政策背景】', '【核心内容】', '【要点提炼】', '对金融市场的预期影响')
+# 速览只保留事实、程序与法律依据，不含市场影响分析。
+# full（详版速览）须有三段；note（速览）不要求段头。
+BRIEF_HEADERS = ('【政策背景】', '【核心内容】', '【要点提炼】')
 DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
 errors, warns, blocks = [], [], []
@@ -81,6 +83,7 @@ def check_board(path, board):
         err('%s：count=%r 与实际 %d 不符' % (board, d.get('count'), len(items)))
 
     urls, dates, no_cn, no_dom, no_brief, bad_dom, brief_issues = set(), [], 0, 0, 0, [], 0
+    no_no = 0
     for i, it in enumerate(items):
         u = (it.get('url') or '').strip()
         if not u:
@@ -104,25 +107,30 @@ def check_board(path, board):
         elif dom not in DOMAINS:
             bad_dom.append(dom)
 
+        # 官方编号：白宫/独立机构为联邦公报文档号，国会为法案编号；
+        # 司法裁判的数据源没有正式案号，留空属预期。
+        if board != 'judicial' and not (it.get('official_no') or '').strip():
+            no_no += 1
+
         b = it.get('brief') or {}
         body = b.get('body') or ''
         if not body:
             no_brief += 1
         else:
-            # 分层校验：full 需四段结构；note 只求短而实，不要求段头
+            # 分层校验：full（详版速览）需三段结构；note（速览）只求短而实
             tier = b.get('tier') or ('full' if len(body) >= 400 else 'note')
             if tier == 'note':
-                if not (100 <= len(body) <= 900):
-                    warn('%s[%d]：要点速览长度 %d 字，参考区间 100–900'
+                if not (60 <= len(body) <= 900):
+                    warn('%s[%d]：速览长度 %d 字，参考区间 60–900'
                          % (board, i, len(body)))
             else:
                 miss = [h for h in BRIEF_HEADERS if h not in body]
                 if miss:
                     brief_issues += 1
-                    warn('%s[%d]：长简报缺少段头 %s（%s）'
+                    warn('%s[%d]：详版速览缺少段头 %s（%s）'
                          % (board, i, '、'.join(miss), (it.get('title') or '')[:40]))
-                elif not (400 <= len(body) <= 4000):
-                    warn('%s[%d]：长简报长度 %d 字，参考区间 400–4000'
+                elif not (250 <= len(body) <= 2000):
+                    warn('%s[%d]：详版速览长度 %d 字，参考区间 250–2000'
                          % (board, i, len(body)))
 
     if dates != sorted(dates, reverse=True):
@@ -137,16 +145,20 @@ def check_board(path, board):
                       or (not (it.get('brief') or {}).get('tier')
                           and len((it.get('brief') or {}).get('body') or '') < 400)))
     cov = (100.0 * n_brief / len(items)) if items else 100.0
-    print('[%s] %d 条 · 中文标题 %d/%d · 领域 %d/%d · 简报 %d（长 %d / 要点 %d，覆盖 %.1f%%）· 最近 %s'
+    print('[%s] %d 条 · 中文标题 %d/%d · 领域 %d/%d · 编号 %d/%d · '
+          '速览 %d（详 %d / 简 %d，覆盖 %.1f%%）· 最近 %s'
           % (board, len(items), len(items) - no_cn, len(items),
-             len(items) - no_dom, len(items), n_brief, n_brief - n_note, n_note,
+             len(items) - no_dom, len(items), len(items) - no_no, len(items),
+             n_brief, n_brief - n_note, n_note,
              cov, max(dates) if dates else '-'))
     if no_cn:
         block('%s：%d 条缺中文标题（title_cn）' % (board, no_cn))
     if no_dom:
         block('%s：%d 条缺领域标签（domain）' % (board, no_dom))
     if no_brief:
-        block('%s：%d 条缺简报（brief），按全覆盖策略每一条目都必须有简报' % (board, no_brief))
+        block('%s：%d 条缺速览（brief），按全覆盖策略每一条目都必须有速览' % (board, no_brief))
+    if no_no:
+        block('%s：%d 条缺官方编号（official_no）' % (board, no_no))
     return None
 
 

@@ -1183,6 +1183,7 @@
   .subview .note .brief-h { font-size: 13px; font-weight: 700; color: var(--accent-light); margin: 4px 0 8px; letter-spacing: 0.02em; }
   .subview .note .brief-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px dashed var(--border-light); }
   .subview .note .brief-tag { font-size: 11px; font-weight: 700; color: #fff; background: var(--accent-light); padding: 1px 8px; border-radius: 4px; letter-spacing: 0.08em; }
+  .subview .note .brief-no { font-family: var(--mono, monospace); font-size: 10.5px; color: var(--muted-light); letter-spacing: 0.02em; }
   .subview .note .brief-at { font-size: 11px; color: var(--muted-light); }
   .subview .note .brief-src {
     display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent-light);
@@ -3293,6 +3294,12 @@
     display: inline-block; font-size: 11px; line-height: 1.7; padding: 0 7px;
     border-radius: 4px; background: rgba(11, 23, 36, .055); color: #46525f; white-space: nowrap;
   }
+  /* 官方编号：联邦公报文档号 / 法案编号，附在类型徽章下方 */
+  .c-kind .c-no {
+    display: block; margin-top: 4px; font-family: var(--mono, monospace);
+    font-size: 10px; font-style: normal; line-height: 1.5; color: #8a94a0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
   .c-agency { font-size: 12px; line-height: 1.6; color: #46525f; }
   .c-act { display: flex; gap: 8px; justify-content: flex-end; align-items: center; padding-top: 1px; }
   .c-act .brief-toggle, .c-act .src-btn { white-space: nowrap; }
@@ -5214,7 +5221,7 @@
             <div class="pw-thead">
               <span title="联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日">刊登日</span>
               <span>标题</span>
-              <span>类型</span>
+              <span>类型 / 编号</span>
               <span id="pw-th-agency">部门 / 机构</span>
               <span class="pw-th-dom">领域</span>
               <span class="pw-th-act">操作</span>
@@ -10182,7 +10189,7 @@
       function briefHtml(it) {
         var b = it.brief || {};
         var lines = String(b.body || '').split('\n');
-        // 段首导语（2–12 字 + 全角冒号）加粗；「总体判断」段整体高亮
+        // 段首导语（2–12 字 + 全角冒号）加粗
         var LEAD_RE = /^([^，。；：！？、\s「」（）0-9]{2,12})：\s*/;
         var body = '';
         for (var i = 0; i < lines.length; i++) {
@@ -10194,14 +10201,14 @@
             var rest = ln.slice(hm[1].length);
             if (rest.trim()) body += '<p>' + esc(rest) + '</p>';
           } else {
-            var verdict = /^总体判断：/.test(ln);
             var lm = ln.match(LEAD_RE);
-            body += '<p' + (verdict ? ' class="brief-verdict"' : '') + '>' +
+            body += '<p>' +
               (lm ? '<span class="brief-lead">' + esc(lm[1]) + '：</span>' + esc(ln.slice(lm[0].length)) : esc(ln)) +
               '</p>';
           }
         }
-        return '<div class="brief-head"><span class="brief-tag">' + (b.tier === 'note' ? '政策速览' : '政策简报') + '</span>' +
+        return '<div class="brief-head"><span class="brief-tag">政策速览</span>' +
+          (it.official_no ? '<span class="brief-no">' + esc(it.official_no) + '</span>' : '') +
           '<span class="brief-at">' + esc(b.at || '') + '</span>' +
           '<a class="brief-src" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></div>' +
           body;
@@ -10705,13 +10712,15 @@
                 (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
               '<span class="c-kind"><span>' +
                 esc(key === 'congress' ? (congressType(it.kind) || it.kind || '文件') : (it.kind || '文件')) +
-                '</span></span>' +
+                '</span>' +
+                (it.official_no ? '<i class="c-no">' + esc(it.official_no) + '</i>' : '') +
+              '</span>' +
               '<span class="c-agency">' +
                 (key === 'congress' ? esc(congressChamber(it.kind) || '—')
                   : (it.agency ? esc(it.agency) : esc(it.source || ''))) + '</span>' +
               '<span class="c-domain">' + (it.domain ? '<span>' + esc(it.domain) + '</span>' : '') + '</span>' +
               '<span class="c-act">' +
-                (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>简报</span><i class="chev">▾</i></button>' : '') +
+                (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>速览</span><i class="chev">▾</i></button>' : '') +
                 '<a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a>' +
               '</span>' +
             '</div>' +

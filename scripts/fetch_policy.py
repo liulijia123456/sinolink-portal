@@ -305,6 +305,13 @@ CONGRESS_KIND = {
 CONGRESS_CHAMBER_URL = {'S': 'senate', 'HR': 'house', 'SRES': 'senate',
                         'HRES': 'house', 'SJRES': 'senate', 'HJRES': 'house',
                         'SCONRES': 'senate', 'HCONRES': 'house'}
+# 国会类型 → 正式编号前缀（页面「类型 / 编号」与速览引用用）
+CONGRESS_DESIG = {
+    'S': 'S.', 'HR': 'H.R.',
+    'SRES': 'S.Res.', 'HRES': 'H.Res.',
+    'SJRES': 'S.J.Res.', 'HJRES': 'H.J.Res.',
+    'SCONRES': 'S.Con.Res.', 'HCONRES': 'H.Con.Res.',
+}
 # 国会法案类型 → URL 中的路径段。注意：congress.gov 对法案与三类决议使用不同的
 # 路径段（…-bill / …-resolution / …-joint-resolution / …-concurrent-resolution）。
 # 早期版本统一写成 '-bill'，导致决议的编号被当作同号法案解析（如 S.Res.951 错指向
@@ -435,6 +442,8 @@ def _fr_item(board, doc, kind, agency=None):
         'source': '联邦公报',
         'kind': kind,
         'agency': agency or _fr_agency_names(doc),
+        # 联邦公报文档号（官方编号；更正文件形如 C1-2026-20019）
+        'official_no': (doc.get('document_number') or '').strip(),
     }
 
 
@@ -578,6 +587,9 @@ def fetch_congress(since):
                 # 一类关键进展切掉，导致 brief.py 的层级判定失效（实测漏判）。
                 'agency': ('参议院' if chamber == 'senate' else '众议院')
                           + (' · ' + latest[:180] if latest else ''),
+                # 法案/决议正式编号，如 H.R. 8707、S.Res. 310
+                'official_no': ('%s %s' % (CONGRESS_DESIG.get(btype, ''),
+                                           b.get('number') or '')).strip(),
             })
         if reached_old or 'next' not in data.get('pagination', {}):
             break
@@ -793,6 +805,8 @@ def fetch_judicial(since):
                 'kind': _judicial_kind(ctype, en['summary']),
                 'agency': cn,
                 'summary': en['summary'],
+                # 数据源只有意见书链接，无正式案号（docket number），留空不臆造
+                'official_no': '',
             })
             kept += 1
         log.info('[%s] 入库 %d 条（配额 %d；跳过 超窗 %d / 无效 %d / 重复 %d）',
@@ -829,7 +843,7 @@ def merge_items(old_items, new_items):
     仅当 url 缺失时丢弃该条（无 url 无法去重，也无溯源价值）。
     """
     # 人工生成字段：新抓条目不含这些字段，须从旧条目沿用
-    CARRY_FIELDS = ('brief', 'title_cn', 'domain')
+    CARRY_FIELDS = ('brief', 'title_cn', 'domain', 'official_no')
     old_by_url = {it.get('url'): it for it in old_items if it.get('url')}
     merged = {}
     for it in old_items + new_items:

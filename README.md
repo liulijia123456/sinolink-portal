@@ -55,7 +55,7 @@
 | --- | --- |
 | `index.html` | 全站唯一页面：门户首页 + 4 个子视图（`us` / `eu` / `board` / `election`）+ 全部样式与脚本 |
 | `data/policy/` | 政策四板块数据（`whitehouse` / `congress` / `agencies` / `judicial`），已入库 |
-| `scripts/` | 抓取、简报、校验、日历维护等维护工具 |
+| `scripts/` | 抓取、速览、校验、日历维护等维护工具 |
 | `logs/` | `fetch.log` / `brief.log`（运行时产物，已 gitignore） |
 | `scripts/.congress_api_key` | 国会 API 密钥（**已 gitignore，绝不入库**） |
 | `github自动更新部署包.zip` | 早期部署包（含 Actions 工作流，见 §9） |
@@ -69,10 +69,10 @@
   时间下拉提供 全部 / 近 3 天 / 近 7 天 / 近 30 天，右侧日历按钮可展开小月历按具体日期筛选
   （有数据的日期带点标记；点标题可展开年月选择：‹ 年份 › + 3×4 月份格，每月带条数；可清除日期）；
   再下方是「已选条件」标签，逐个可移除。
-- **条目表**：列为 刊登日 / 标题（英文原文 + 中文译名，均最多两行）/ 类型 / 部门·机构 / 领域 / 操作（简报、原文）；
+- **条目表**：列为 刊登日 / 标题（英文原文 + 中文译名，均最多两行）/ 类型·编号 / 部门·机构 / 领域 / 操作（速览、原文）；
   「刊登日」取联邦公报的 publication_date，**可能晚于抓取日**（公报提前一日出具下一工作日号），
   这类条目在日期后加「预刊登」标记；
-  点行内任意位置展开简报，展开区在行下通栏显示。
+  点行内任意位置展开速览，展开区在行下通栏显示。
 - 版式断点：<900 隐藏领域列；<760 行内改单列堆叠。
 - 2026-11-01 起**移除左栏分类树**：筛选统一由检索条的下拉承担，表格吃满整行宽度。
 - **政策研判（每周 / 每月总览卡）已整体移除**：HTML 区块、渲染函数与样式均已删除，
@@ -270,6 +270,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
       "kind": "规则",
       "agency": "联邦通信委员会 FCC",
       "domain": "电信/媒体",
+      "official_no": "2026-22386",
       "brief": { "at": "2026-10-24", "tier": "note", "body": "…" }
     }
   ]
@@ -280,12 +281,15 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 
 - `items` 按 `date` **严格倒序**；`url` 全板块唯一；`date` 为 `YYYY-MM-DD`。
 - `count` 必须等于 `len(items)`；`schema` 为 `1`；`board` 与文件名一致。
-- `domain` 必须在固定词表内（见 §6.3）；`title_cn`、`domain`、`brief` 缺失均在 `--strict` 下拦截发布。
-- **`brief` 为全覆盖要求**：每一条目都必须有简报（`full` 或 `note`），层级只决定详略。
-  缺简报在 `--strict` 下按内容缺失处理（退出码 2），不得发布。
+- `domain` 必须在固定词表内（见 §6.3）；`title_cn`、`domain`、`official_no`、`brief` 缺失均在 `--strict` 下拦截发布。
+- **`official_no` 为官方编号**：白宫/独立机构取联邦公报文档号（如 `2026-22386`、
+  更正文件 `C1-2026-20019`），国会取法案/决议编号（如 `H.R. 8707`、`S.Res. 310`）。
+  两个抓取入口已自动写入；司法裁判的数据源没有正式案号，留空属预期（页面不显示）。
+- **`brief` 为全覆盖要求**：每一条目都必须有速览（`full` 或 `note`），层级只决定详略。
+  缺速览在 `--strict` 下按内容缺失处理（退出码 2），不得发布。
 
 > 司法板块（`judicial`）条目额外带 `summary` 字段（CourtListener 检索片段，≤1200 字），
-> 仅作简报素材，不在列表直接展示；其余字段与上表一致。
+> 仅作速览素材，不在列表直接展示；其余字段与上表一致。
 
 ### 4.2 `data/policy/{board}-overview.json`
 
@@ -331,7 +335,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
 | `fetch_policy.py` | 抓取四板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
-| `brief.py` | 简报覆盖率体检 / 生成队列 / 合并简报（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
+| `brief.py` | 速览覆盖率体检 / 生成队列 / 合并速览（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
 | `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
@@ -403,7 +407,7 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 | 关联 | 联邦公报 | 司法部等部门规则 | 已在白宫板块收录，不重复入库 | 每日 08:00 |
 
 复核源不进入自动入库：只用于核对已抓条目的案号、裁判日期、裁判结果与原文；
-发现不一致时以官方原文为准，修正条目字段并在简报中注明更正。GovInfo 若配置
+发现不一致时以官方原文为准，修正条目字段并在速览中注明更正。GovInfo 若配置
 `GOVINFO_API_KEY`，可在 `fetch_judicial()` 内扩展为补充源，当前未默认开启。
 
 **收录范围**
@@ -427,7 +431,7 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 
 - 日更：每日 09:45 抓一次。巡回/地区法院回看 10 天，最高法院回看 180 天（覆盖整个
   开庭期与夏季命令）。窗口重叠是有意设计：法院补发、修订意见书时仍能捕获。
-- 人工复核：每周研判时抽查 1–2 条，核对裁判结果与简报是否一致。
+- 人工复核：每周研判时抽查 1–2 条，核对裁判结果与速览是否一致。
 
 **去重规则**
 
@@ -446,7 +450,7 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 - 法院必须能映射为中文名；映射失败（州法院、破产法院、专门法院）即丢弃。
 - 检索片段命中刑事/缠讼噪声词（`indictment`、`habeas corpus`、`sentencing guidelines`、
   `plea agreement`、`vexatious litigator` 等）即丢弃。
-- 每条保留 ≤1200 字检索片段（`summary`）作为简报素材；片段为空仍可入库，但简报须
+- 每条保留 ≤1200 字检索片段（`summary`）作为速览素材；片段为空仍可入库，但速览须
   注明「官方摘要未取得」。
 - 配额：最高法院 3 / 巡回法院 7 / 地区法院 4，单轮合计 ≤14 条。超出部分不删除，
   下一轮继续抓（RSS 按日期倒序）。
@@ -456,27 +460,34 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 - CourtListener 检索 RSS 单次最多 20 条。若一个回看窗口内命中超过 20 条，超出部分
   本轮抓不到；10 天窗口可在次日滚入，属可接受的延迟。
 - RSS 只给命中片段，不给完整裁判理由；意见书页对脚本有反爬校验。故司法条目默认
-  写 `note`（要点速览），只有最高法院实体判决才写 `full`，且素材不足时必须注明
+  写 `note`（简版速览），只有最高法院实体判决才写 `full`，且素材不足时必须注明
   「以判决书原文为准」，不得臆测裁判理由。
 - 想让覆盖更全，可在 `fetch_judicial` 里接 CourtListener REST API（需免费 token），
   或接 GovInfo USCOURTS（需 api.data.gov key）；两者都不影响现有 RSS 通道。
 
-### 5.2 `brief.py` — 简报全覆盖与合并
+### 5.2 `brief.py` — 政策速览全覆盖与合并
 
-**核心约束：每一条目都必须有简报，覆盖率 100%，不允许空简报。**
+**核心约束：每一条目都必须有速览，覆盖率 100%，不允许空速览。**
 层级只决定**详略**，不决定有无——这是 2026-10-25 从「抽样配额」改过来的：
-旧策略每轮只写 6–8 份长简报、覆盖率约 3%，缺口单调扩大，条目没有简报等同于不存在。
+旧策略每轮只写 6–8 份长文、覆盖率约 3%，缺口单调扩大，条目没有速览等同于不存在。
+
+2026-11-02 起**速览不再包含市场影响分析**：删除原「【对金融市场的预期影响】」段与
+「对市场意味着什么」结论句，只保留事实、程序与法律依据。存量数据由
+`scripts/strip_market.py` 一次性清洗（963 条，删除市场段 199 处、结论行 765 行）。
 
 | 层级 | 篇幅 | 结构 | 判据 |
 | --- | --- | --- | --- |
-| `full` 长简报 | 800–2000 字 | 四段：`【政策背景】`/`【核心内容】`/`【要点提炼】`/`对金融市场的预期影响` | 白宫直接行为（行政令/备忘录/公告）；终局规则 + 高相关领域；法案已过委员会门槛 + 高相关领域 |
-| `note` 要点速览 | 150–300 字 | 3–5 条要点，无段头，最后一条写清「对市场意味着什么」 | 其余全部：拟议规则、程序性通告、决议、礼仪类、低相关领域、仅提出未审议的法案、例行/属地性文件、往届法案 |
+| `full` 详版速览 | 400–900 字 | 三段：`【政策背景】`/`【核心内容】`/`【要点提炼】` | 白宫直接行为（行政令/备忘录/公告）；终局规则 + 高相关领域；法案已过委员会门槛 + 高相关领域 |
+| `note` 简版速览 | 150–350 字 | 3–5 条要点，无段头 | 其余全部：拟议规则、程序性通告、决议、礼仪类、低相关领域、仅提出未审议的法案、例行/属地性文件、往届法案 |
 
-判据里有三条**降级保护**，防止高价值领域把例行文件误升为长简报：
+两类速览均**不得包含市场影响、投资含义或定价判断**；素材不足时写清信息边界，
+不得凭标题臆测条款。
+
+判据里有三条**降级保护**，防止高价值领域把例行文件误升为详版速览：
 
 - `ROUTINE_RE`：海岸警卫队安全区/安保区、空域设立与撤销、适航指令、渔业休渔、
   吊桥操作规则、`Correction` 等技术性或属地性文件，一律 `note`。
-- 往届法案：URL 中届次不等于当前届次（按年份推算）的一律 `note`，且简报须注明所属届次。
+- 往届法案：URL 中届次不等于当前届次（按年份推算）的一律 `note`，且速览须注明所属届次。
 - 礼仪类决议（`CEREMONIAL_RE`）：一律 `note`。
 
 流程：
@@ -526,7 +537,7 @@ python3 scripts/brief.py merge scripts/briefs.json
 `fetch_policy.py: merge_items()` 现在**只按 url 去重与覆盖，绝不截断**，
 历史条目永久保留。
 
-理由：政策文本是研究底稿，过期不等于无价值；截断会连带丢掉已写好的简报、
+理由：政策文本是研究底稿，过期不等于无价值；截断会连带丢掉已写好的速览、
 译名与领域标签（已付出的加工成本），且删除动作是静默的——历史被清空时
 不会有任何报错，只有事后回看才发现。
 
@@ -558,14 +569,17 @@ commit message 的净增数按实际入库量填写。
 新增标签必须同步改 `validate_data.py: DOMAINS` **和** 定时任务的 prompt 约定，
 否则校验直接报错退出。
 
-### 6.4 简报质量告警的处理口径
+### 6.4 速览质量告警的处理口径
 
-`note` 参考区间 100–900 字，`full` 除四段段头齐全外 400–4000 字。
+`note` 参考区间 60–900 字，`full` 除三段段头齐全外 250–2000 字
+（下限按存量清洗后的实际长度放宽；新写仍按 150–350 / 400–900 的目标区间）。
 区间外只告警不拦截；但**旧条目的历史告警不要为了清零而硬改正文**，
-应记录为遗留项并在下一轮新增时收紧。
+应记录为遗留项并在下一轮新增时收紧。两类速览均不得包含市场影响分析，
+出现「对市场意味着什么」「受益方向」「定价影响」等表述按内容错误处理。
 
-**简报缺失是另一个量级**：缺简报由 `--strict` 拦截发布（退出码 2），
-不属于「告警」——因为读者看到条目却读不到任何判断，等同于条目不存在。
+**速览缺失是另一个量级**：缺速览由 `--strict` 拦截发布（退出码 2），
+不属于「告警」——因为读者看到条目却读不到任何事实梳理，等同于条目不存在。
+缺官方编号同样拦截：白宫/独立机构补联邦公报文档号，国会补法案/决议编号。
 处理次序：`coverage` 定位缺失 → `queue --all` 出队列 → 撰写 → `merge` → 复核。
 
 ### 6.5 日历纪律：准确性优先于完整度
@@ -610,7 +624,7 @@ commit message 的净增数按实际入库量填写。
 | --- | --- | --- |
 | A 抓取 | 只抓本板块 | `python3 scripts/fetch_policy.py --board whitehouse` |
 | B 补字段 | 新增条目的中文标题与领域 | `edit_items.py patch.json` |
-| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率** | `brief.py queue --board whitehouse --all` → `merge` → `coverage --board whitehouse` |
+| C 速览 | 出队列 → 撰写 → 合并 → **复核覆盖率** | `brief.py queue --board whitehouse --all` → `merge` → `coverage --board whitehouse` |
 | E 校验 | 只校验本板块 | `validate_data.py --board whitehouse --strict` |
 | F 提交 | 只加本板块文件与 manifest | `git add data/policy/whitehouse-items.json data/policy/manifest.json && git commit && git push` |
 
@@ -623,8 +637,8 @@ commit message 的净增数按实际入库量填写。
 | --- | --- | --- |
 | A 抓取 | 三路抓取（最高法院 / 巡回法院 / 地区法院），按配额与规则筛后入库 | `python3 scripts/fetch_policy.py --board judicial --days 10` |
 | B 补字段 | 新增条目的中文标题与领域（`title_cn` / `domain`） | `python3 scripts/edit_items.py patch.json` |
-| C 简报 | 出队列 → 撰写 → 合并 → **复核覆盖率到 100%** | `brief.py queue --board judicial --all` → `merge` → `coverage --board judicial` |
-| D 校验 | 只校验本板块，缺简报/译名即失败 | `python3 scripts/validate_data.py --board judicial --strict` |
+| C 速览 | 出队列 → 撰写 → 合并 → **复核覆盖率到 100%** | `brief.py queue --board judicial --all` → `merge` → `coverage --board judicial` |
+| D 校验 | 只校验本板块，缺速览/译名即失败 | `python3 scripts/validate_data.py --board judicial --strict` |
 | E 提交 | 只加本板块文件与 manifest | `git add data/policy/judicial-items.json data/policy/judicial-overview.json data/policy/manifest.json && git commit && git push` |
 
 异常处理（与代码行为一一对应）：
@@ -637,11 +651,11 @@ commit message 的净增数按实际入库量填写。
    不重试（重试无意义），直接判该路失败。
 4. **20 条上限**：RSS 单次最多 20 条；当日志出现「返回 20 条上限，最早仅到 …」时，
    说明窗口可能未覆盖，需在次日窗口内自然滚入，或临时把 `--days` 调大重跑。
-5. **简报缺口**：`coverage` < 100% 时 `validate --strict` 退出码 `2`，任务**不得提交**；
-   如实上报缺口条数与日期，下一轮继续补写，不得用空简报或臆测内容凑数。
+5. **速览缺口**：`coverage` < 100% 时 `validate --strict` 退出码 `2`，任务**不得提交**；
+   如实上报缺口条数与日期，下一轮继续补写，不得用空速览或臆测内容凑数。
 6. **校验失败**：不 commit、不 push，保留工作区改动供人工定位；修好后重跑 D、E。
 7. **同日重跑与改判**：`merge_items()` 按 url 覆盖并保留既有 `brief` / `title_cn` /
-   `domain`；法院补发或修订意见书时，新片段覆盖旧 `summary`，已写简报不丢。
+   `domain`；法院补发或修订意见书时，新片段覆盖旧 `summary`，已写速览不丢。
 
 **大事日历日更**（每日 07:00）：
 
@@ -685,7 +699,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 | `条目未按日期倒序` | 新条目追加到尾部 | 按 `date` 倒序重排后重跑校验 |
 | `出现词表外的领域标签` | 新造标签 | 改回词表值，或同步扩词表 |
 | `url 重复` | 同一文件被两次抓取合并 | 去重保留信息更全的一条 |
-| 简报合并后条数没变 | `briefs.json` 的键 url 不匹配 | 用数据文件里的真实 url 逐条复核 |
+| 速览合并后条数没变 | `briefs.json` 的键 url 不匹配 | 用数据文件里的真实 url 逐条复核 |
 | 国会板块 0 条 | `DEMO_KEY` 限流 | 配置正式 key |
 
 ---
@@ -708,7 +722,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
 
 **分工原则**：
 
-- **按数据区块拆，不按步骤拆**。抓取与译名/简报同属政策板块，合成一个任务；
+- **按数据区块拆，不按步骤拆**。抓取与译名/速览同属政策板块，合成一个任务；
   日历与选举各有独立的数据源与核实逻辑，各自成任务。
 - **发布守门内嵌在各任务**，不做独立发布任务：每个任务结束前自行
   `validate_data.py --strict` → `git commit` → `git push`，校验不通过就不提交。
@@ -758,7 +772,7 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
    FEC 竞选资金等）、收录标准与更新频率，再把示例数据替换为真实数据。
 9. **司法裁判板块的素材与覆盖上限**：CourtListener 检索 RSS 单次最多 20 条，且只返回
    命中片段；最高法院官网对本机返回 403，GovInfo 的 `DEMO_KEY` 配额极低。因此板块
-   目前以 `note` 为主，长简报只覆盖最高法院实体判决。若要提高覆盖与详略，需申请
+   目前以 `note` 为主，详版速览只覆盖最高法院实体判决。若要提高覆盖与详略，需申请
    CourtListener token（REST API）或 api.data.gov key（GovInfo USCOURTS），
    并在 `fetch_judicial()` / `brief.py: fetch_material()` 中接入。
 
