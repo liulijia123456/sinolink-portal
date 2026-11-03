@@ -1,9 +1,117 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-02 13:09",
-  "count": 37,
+  "updated_at": "2026-11-03 12:55",
+  "count": 43,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Estate of Elijah Isham v. Craig Richardson",
+      "url": "https://www.courtlistener.com/opinion/11052175/estate-of-elijah-isham-v-craig-richardson/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "not requiring “dismissal” as a “discretionary” “sanction.” In re IFC Credit Corp., 663 F.3d 315, 320–21",
+      "official_no": "",
+      "title_cn": "伊舍姆遗产诉理查森案（涉 §1983 警员枪击案与非律师代理诉状的事后补正）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "第六巡回上诉法院撤销地区法院驳回起诉的裁定并发回重审。死者伊莱贾·伊舍姆在俄亥俄州莫雷恩市翻车事故现场与警方对峙时被警员击毙，其父、遗产管理人拉尔夫在两年时效届满前未聘律师、自行依 § 1983 起诉。地区法院依 28 U.S.C. § 1654 令其聘请律师，其遵令委托，法院仍以无律师代理的诉状自始无效为由驳回。\n\n拉森法官撰写的判决维持拒绝复议部分，但认定 § 1654 属强制性要求而非管辖权要件（引 Boechler 案），违反该条不当然使诉状失效，驳回仅为裁量处分，及时聘请律师即可治愈，并明确不采第八巡回的无效物规则。\n\n枪击事实与警员责任未作评价，实体争点留待发回后审理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Service Employees International Union v. DOJ - United States Department of Justice",
+      "url": "https://www.courtlistener.com/opinion/11052233/service-employees-international-union-v-doj-united-states-department-of/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "for an immediate administrative stay and a stay pending appeal of the district court’s grant of a temporary",
+      "official_no": "",
+      "title_cn": "服务业雇员国际工会诉司法部案（涉《选举权法》第 11(b) 条私人诉权，上诉期间暂缓执行获准）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "第九巡回上诉法院批准政府在上诉期间暂缓执行地区法院临时限制令的紧急动议，比阿法官撰写，穆尔吉亚首席法官持异议。争议源于司法部与国土安全部 10 月致函加州、华盛顿州选举官员，要求核验并隔离名单上疑似非公民的邮寄选票；相关工会与民权组织 10 月 29 日起诉，加州北区联邦地区法院 10 月 30 日单方签发至 11 月 16 日的限制令。\n\n多数意见认为《选举权法》第 11(b) 条无明示私人诉权，亦不宜就针对行政分支的行为承认默示诉权；联邦官员仅为请求而非强制，州有权拒绝（引 Printz 案）。异议称该结论与加州案判决无法调和，并忽视选举前夕改动规则之风险。\n\n裁定仅及上诉期间的临时效力，非终局实体裁判。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Anderson Federation of Teachers v. Todd Rokita",
+      "url": "https://www.courtlistener.com/opinion/11051945/anderson-federation-of-teachers-v-todd-rokita/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "improperly compelling speech and issued a preliminary injunction to remedy that violation. At the same time",
+      "official_no": "",
+      "title_cn": "安德森教师联合会诉罗基塔案（涉教师会费工资扣除限制的第一修正案审查）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "第七巡回上诉法院维持地区法院禁令，认定印第安纳州仅针对公立学校教师工会会费工资扣除所设的额外要求违反第一修正案，李法官撰写。州 2021 年立法要求教师签署载有指定声明的授权表、每年重新授权并经工作邮箱确认，此类要求不适用于其他公职人员。\n\n法院认为授权表声明属政府告知性言论，不构成强制言论；但仅对教师工会设限、不及其余公共雇员工会，构成观点歧视——州援引 Janus 案之理由不成立，防止误扣之说亦因适用范围过窄而难成立，规制未通过严格审查。\n\n禁止执行两法的禁令得以维持。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Mostafa v. Blanche",
+      "url": "https://www.courtlistener.com/opinion/11051998/mostafa-v-blanche/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十巡回上诉法院",
+      "summary": "other constitutional claims under the Administrative Procedure Act (“APA”), 5 U.S.C. § 551 et seq.; (2)",
+      "official_no": "",
+      "title_cn": "穆斯塔法诉布兰奇案（涉囚犯医疗漠视主张的 Bivens 救济与《行政程序法》审查范围）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "第十巡回上诉法院维持原判，驳回在押囚犯穆斯塔法的上诉，马西森法官撰写。原告因恐怖主义相关罪名在科罗拉多州弗洛伦斯 ADX 服终身监禁，双臂肘部以上截肢、左眼失明，就牙齿与足部护理不足、饮食供应、假肢配备等提起第八修正案医疗漠视之诉，并主张应依《行政程序法》审查。\n\n法院认定其未指控最终机关行为，被告又以个人身份被诉、不属可依该法起诉的机关；医疗漠视主张与既有先例差异超出微小程度，属 Bivens 新语境，监狱行政救济程序构成足以排除该救济的特殊因素。修改诉状未正式动议，笔录费用异议因未及时提出而放弃。\n\n判决未评价监狱医疗条件是否适当。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Trujillo v. U.S. Department of Homeland Security",
+      "url": "https://www.courtlistener.com/opinion/11052182/trujillo-v-us-department-of-homeland-security/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "seek a temporary restraining order and preliminary injunction against the Executive Branch’s actions",
+      "official_no": "",
+      "title_cn": "特鲁希略诉国土安全部案（涉选举条款与选民名单核验，临时限制令部分获准）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "哥伦比亚特区联邦地区法院部分准许原告申请，对司法部与国土安全部发出临时限制令及初步禁令，首席法官博阿斯伯格撰写。原告为移民权利组织 CHIRLA 及成员特鲁希略。法院认定行政分支要求加州选举官员核验名单、隔离疑似非公民邮寄选票的做法很可能违反宪法选举条款：该条款将联邦选举方式规则权赋予各州与国会，行政分支无独立权力，18 U.S.C. § 611(a) 亦不构成授权。\n\n资格方面，专家比对显示至少 22 名会员完全匹配名单、66 名近乎匹配，法院认定风险并非推测；投票权受限即构成不可弥补损害。禁令禁止被告向加州官员提出隔离要求，原告缴纳 1 美元象征性保证金，措辞过宽部分被驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Common Cause v. U.S. Department of Justice",
+      "url": "https://www.courtlistener.com/opinion/11052101/common-cause-v-us-department-of-justice/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "several respects and vacated it under the Administrative Procedure Act (APA). See Common Cause v. DOJ, __ F",
+      "official_no": "",
+      "title_cn": "共同事业诉司法部案（涉选民名单维护政策被撤销后，上诉期间暂缓执行动议被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-02",
+        "body": "哥伦比亚特区联邦地区法院驳回司法部在上诉期间暂缓执行之申请，苏克纳南法官撰写。该院 10 月 9 日已认定司法部选民名单维护政策多处违法并依《行政程序法》撤销；该政策要求 49 州提供未脱敏选民登记名单，据 SAVE 数据库核验资格并敦促 45 日内移除不合格选民。\n\n法院依 Nken 案四要素审查：司法部未证明胜诉可能，其要求函缺少《1960 年民权法》第三章所要求的依据与目的说明，援引 8 U.S.C. § 1373 的隐私法抗辩因未在简易判决阶段提出而放弃，《文书削减法》亦适用；因本判决所致迟延属自我施加损害，不予考量。\n\n裁定仅涉暂缓执行，实体问题已进入上诉审。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-10-31",
@@ -13,14 +121,14 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "President Trump was inaugurated, he issued an Executive Order which “establish[ed] and implement[ed] the",
-      "title_cn": "Lentini 诉政府效率部案（涉 DOGE 是否属《联邦咨询委员会法》所指咨询委员会，法院准予驳回起诉）",
-      "domain": "政府运作",
+      "official_no": "",
       "brief": {
         "at": "2026-11-02",
         "body": "2026 年 10 月 31 日，哥伦比亚特区联邦地区法院就 Lentini 诉政府效率部案作出备忘录意见，准予驳回起诉。\n\n原告主张 DOGE 属《联邦咨询委员会法》所称「咨询委员会」。法院认定起诉状未达第 1001(2) 条：DOGE 非依法律或改组计划设立，亦非由总统或机构设立；原告自认其于 2024 年 11 月由马斯克、拉马斯瓦米与当选总统特朗普创设。\n\n对「被行政部门利用」，起诉状仅有 OMB、OPM、EOP 的结论性陈述，法院认为无可成立事实；亦未就 USDS 等实体另案表态。",
         "tier": "note"
       },
-      "official_no": ""
+      "title_cn": "Lentini 诉政府效率部案（涉 DOGE 是否属《联邦咨询委员会法》所指咨询委员会，法院准予驳回起诉）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -31,14 +139,14 @@
       "kind": "判决",
       "agency": "第十巡回上诉法院",
       "summary": "2026 WL 352016, *5–8 (10th Cir. 2026) (imposing sanctions on a pro se attorney who used a generative AI",
+      "official_no": "",
       "brief": {
         "at": "2026-10-31",
         "body": "第十巡回上诉法院合并三案，维持对三名伊利诺伊州被告驳回起诉的裁定。原告指控其共谋窃取水冷驱动装置商业秘密并转交中国制造商仿冒生产；法院认定被告虽有对科罗拉多州的有目的联系，但被指控损害与该州行为之间缺乏因果链条，特定属人管辖权不成立。法院并依科州费用转移法维持合计约 18.4 万美元律师费判付。\n商业秘密实体争点未进入审理，片段亦未载明合议庭对《保护商业秘密法》域外适用的判断，以判决书原文为准。",
         "tier": "note"
       },
       "title_cn": "Flux Drive 诉 Sparks 案（涉商业秘密窃取指控中对伊利诺伊州被告的属人管辖权）",
-      "domain": "司法/执法",
-      "official_no": ""
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -49,14 +157,14 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "the denial tantamount to the denial of a preliminary injunction.” Babaria v. Blinken, 87 F.4th 963, 976",
+      "official_no": "",
       "brief": {
         "at": "2026-10-31",
         "body": "第九巡回上诉法院以全体法官名义驳回联邦政府的紧急动议，拒绝在上诉期间命令加州与洛杉矶县暂扣并核验被联邦列为「可能非公民」者的邮寄选票。政府主张《至上条款》与 18 U.S.C. § 611 禁止两被告寄送并计读此类选票，地区法院拒发临时限制令，巡回法院认定未满足禁制令门槛，Bumatay 法官持异议。\n法院对政府是否具备原告资格与诉因明示「假定而不裁定」，此前同案另一上诉（26-7070）已因管辖问题被驳回。",
         "tier": "note"
       },
       "title_cn": "美国诉加利福尼亚州案（涉邮寄选票公民身份核验与《至上条款》，第九巡回拒绝在上诉期间发布禁制令）",
-      "domain": "政府运作",
-      "official_no": ""
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -67,14 +175,14 @@
       "kind": "判决",
       "agency": "第九巡回上诉法院",
       "summary": "appeal. “[I]f the petition [for a stay pending appeal] has not made a certain threshold showing",
+      "official_no": "",
       "brief": {
         "at": "2026-10-31",
         "body": "第九巡回上诉法院以 2:1 准许爱达荷州在上诉期间暂缓执行地区法院禁令。该禁令原禁止州方依《生命防卫法》（Idaho Code § 18-622）与《胎儿心跳法》（§ 18-8804）起诉为保护孕妇健康而实施堕胎的医生。多数意见认为州方已较强证明其可能依 Dobbs 胜诉，且州保护胎儿生命的利益超过医生所受损害。\nBerzon 法官异议称 Dobbs 未触及独立的生命健康例外；首份上诉状定于 12 月 18 日提交。",
         "tier": "note"
       },
       "title_cn": "Seyb 诉 Labrador 案（涉爱达荷州健康例外堕胎禁令，上诉期间暂缓执行地区法院禁令）",
-      "domain": "医疗/医药",
-      "official_no": ""
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
@@ -121,14 +229,14 @@
       "kind": "判决",
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "that the CDC’s vaccine frameworks are arbitrary and capricious; a declaration that the CDC’s use of",
+      "official_no": "",
       "brief": {
         "at": "2026-10-31",
         "body": "哥伦比亚特区联邦地区法院依《联邦民事诉讼规则》12(b)(1) 以缺乏宪法第三条诉讼资格为由驳回全案，未触及 12(b)(6) 实体争点。两名医生主张因采用个体化疫苗方案被州医学会吊销执照，法院认定吊销决定基于多项独立于 CDC 建议的理由，且即便胜诉州医学会亦无遵从义务，因果关系与可救济性均不成立。\n原告组织未能证明其核心活动遭直接干预，仅资源转向不构成可认知损害。",
         "tier": "note"
       },
       "title_cn": "Thomas 诉 Monarez 案（涉 CDC 儿童疫苗接种时间表，因缺乏诉讼资格被驳回）",
-      "domain": "医疗/医药",
-      "official_no": ""
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
@@ -625,14 +733,14 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 610 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A476 _________________ FEDERAL COMMUNICATIONS COMMISSION v. SHERROD BROWN, ET AL. ON APPLICATION FOR STAY _________________ No. 26A477 _________________",
+      "official_no": "",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致（per curiam）形式处理 FCC 提出的中止申请（No. 26A476 / 26A477），被申请人为 Sherrod Brown 等。检索片段仅含案件抬头与「中止申请」程序信息。\n最高法院对准予或驳回中止、以及中止范围未在片段中载明，须以裁定原文为准。",
         "tier": "note"
       },
       "title_cn": "FCC 诉 Brown（中止申请，全体一致裁定）",
-      "domain": "电信/媒体",
-      "official_no": ""
+      "domain": "电信/媒体"
     },
     {
       "board": "judicial",
@@ -643,14 +751,14 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A388 _________________ PEOPLE NOT POLITICIANS, ET AL. v. ROBERT ONDER, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. In 2022, the Missouri Legislature enacted a redistricting map for elections",
+      "official_no": "",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致形式处理针对密苏里州 2022 年选区重划地图的中止申请（No. 26A388）。检索片段显示，申请人请求在诉讼期间中止相关地图或下级法院命令的执行。\n最高法院对准驳结果与理由未在片段中载明，以裁定原文为准。",
         "tier": "note"
       },
       "title_cn": "People Not Politicians 诉 Onder（密苏里州选区重划中止申请）",
-      "domain": "政府运作",
-      "official_no": ""
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -661,14 +769,14 @@
       "kind": "裁定",
       "agency": "美国最高法院",
       "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A308 _________________ DEPARTMENT OF HOMELAND SECURITY, ET AL. v. LEAGUE OF WOMEN VOTERS, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. Since 1986, the Systematic Alien Verification for Entitle-",
+      "official_no": "",
       "brief": {
         "at": "2026-10-28",
         "body": "美国最高法院以全体一致形式处理国土安全部提出的中止申请（No. 26A308）。检索片段提及自 1986 年运行的「系统性外国人资格核验系统」（SAVE），争点涉及该系统的使用范围与下级法院禁令。\n最高法院对准驳结果未在片段中载明，以裁定原文为准。",
         "tier": "note"
       },
       "title_cn": "国土安全部诉妇女选民联盟（SAVE 系统中止申请）",
-      "domain": "政府运作",
-      "official_no": ""
+      "domain": "政府运作"
     }
   ]
 }
