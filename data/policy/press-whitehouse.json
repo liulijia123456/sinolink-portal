@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-02T16:03:36+08:00",
+ "updated_at": "2026-11-03T12:44:12+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 5,
-   "added": 5,
+   "fetched": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 10,
+   "added": 3,
    "error": ""
   },
   {
@@ -48,8 +48,8 @@
    "type": "html",
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
-   "fetched": 15,
-   "added": 8,
+   "fetched": 14,
+   "added": 0,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 10,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 10,
+   "added": 5,
    "error": ""
   },
   {
@@ -164,6 +164,86 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-02",
+   "title": "U.S. Department of State Signs Humanitarian Logistics Memorandum of Understanding with UPS to Support Disaster Response Efforts",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "行政行动",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-department-of-state-signs-humanitarian-logistics-memorandum-of-understanding-with-ups-to-support-disaster-response-efforts/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman U.S. Department of State Signs Humanitarian Logistics Memorandum of Understanding with UPS to Support Disaster Response Efforts Media Note November 2, 2026 Today, the Department of State signed a memorandum of understanding (MoU) with the United Parcel Service (UPS). Through this MoU, the Department of State and UPS will leverage UPS’s unrivaled logistics network, cargo tra"
+  },
+  {
+   "date": "2026-11-02",
+   "title": "Secretary Rubio’s Meeting with Venezuelan Foreign Minister Blanco",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-venezuelan-foreign-minister-blanco/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with Venezuelan Foreign Minister Blanco Readout November 2, 2026 Secretary of State Marco Rubio met with Venezuelan Foreign Minister Oliver Blanco at the Department of State today. Secretary Rubio reaffirmed the President’s three-phase plan for Venezuela: stabilization, economic recovery and political reconciliation, and democratic transition. The "
+  },
+  {
+   "date": "2026-11-02",
+   "title": "Federated States of Micronesia National Day",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/federated-states-of-micronesia-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Federated States of Micronesia National Day Press Statement November 2, 2026 On behalf of the United States of America, I offer my congratulations and best wishes to the people of the Federated States of Micronesia as you celebrate the 40th anniversary of your independence. As a fellow Pacific nation, the United States and the Federated States of Micronesia share a "
+  },
+  {
+   "date": "2026-11-02",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Rapists Over the Weekend",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/02/worst-worst-ice-arrests-murderers-pedophiles-and-rapists-over-weekend",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-02",
+   "title": "Secretary Mullin Announces Results of Operation Guardian Crackdown on Illegal Aliens with Commercial Driver’s Licenses",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/02/secretary-mullin-announces-results-operation-guardian-crackdown-illegal-aliens",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-02",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in Kansas",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-02",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in Iowa",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-02",
+   "title": "DHS Blasts California Sanctuary Politicians for Releasing Nearly 24,000 Criminal Illegal Alien Murderers, Child Abusers, Kidnappers, and Gang Members from Jail Back onto the Street",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/02/dhs-blasts-california-sanctuary-politicians-releasing-nearly-24000-criminal-illegal",
+   "source": "Homeland Security",
+   "summary": ""
+  },
   {
    "date": "2026-11-01",
    "title": "Presidential Message on All Saints’ Day",
