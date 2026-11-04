@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-03T12:44:12+08:00",
+ "updated_at": "2026-11-04T13:18:51+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 4,
-   "added": 0,
+   "fetched": 5,
+   "added": 4,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 5,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 3,
    "error": ""
   },
   {
@@ -164,6 +164,126 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-03",
+   "title": "THE AMERICAN DECLARATION OF FREEDOM IN SPACE",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/the-american-declaration-of-freedom-in-space/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "ANTI-COMMUNISM WEEK, 2026",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/anti-communism-week-2026/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "First Lady Melania Trump to Convene Russian and Ukrainian Representatives at the White House",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-to-convene-russian-and-ukrainian-representatives-at-the-white-house/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Congressional Bills H.R. 1744 and H.R. 8205 Signed into Law",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-1744-and-h-r-8205-signed-into-law/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Tonga National Day",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/tonga-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Tonga National Day Press Statement November 3, 2026 On behalf of the United States of America, I wish all Tongans a joyous celebration of your Constitution Day. The past year has raised the U.S.-Tonga relationship to new heights. From cooperation on advancing marine scientific research to joint investment in fuel security and digital infrastructure, the United State"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Panama National Day",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/panama-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Panama National Day Press Statement November 3, 2026 On behalf of the United States of America, I congratulate the people of Panama on the 123rd anniversary of your independence. Panama is one of our most important partners, and we will continue to stand with you as you recover from the recent earthquake. Our strong partnership allowed us to deliver humanitarian, lo"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Joint Statement on United States – Iceland Strategic Dialogue",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-united-states-iceland-strategic-dialogue/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on United States – Iceland Strategic Dialogue Media Note November 3, 2026 The text of the following statement was released by the Governments of the United States of America and Iceland on the occasion of the United States-Iceland Strategic Dialogue. Begin text: The United States and Iceland held the annual bilateral Strategic Dialogue in Reykjavik from Nove"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Joint Statement on the 53rd U.S.-Portugal Standing Bilateral Commission",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-53rd-u-s-portugal-standing-bilateral-commission/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the 53rd U.S.-Portugal Standing Bilateral Commission Media Note November 3, 2026 The text of the following statement was released by the Governments of the United States of America and the Republic of Portugal on the occasion of the 53rd meeting of the U.S.-Portugal Standing Bilateral Commission. Begin Text: The Governments of the United States of America"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Dominica National Day",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/dominica-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Dominica National Day Press Statement November 3, 2026 On behalf of the American people, it is my pleasure to send warm greetings and congratulations to the people and government of Dominica as you celebrate your 48th Independence Day. The United States is proud to count Dominica as a valued friend. Our cooperation on energy security is helping build a better future"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Violent Assailants, and Drunk Drivers",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "SANCTUARY INSANITY: DHS Condemns Sanctuary Politicians in Washington State for Refusing ICE Detainer Against Convicted Child Molester",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/03/sanctuary-insanity-dhs-condemns-sanctuary-politicians-washington-state-refusing-ice",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-03",
+   "title": "MAKING AMERICA SAFE AGAIN: Under President Trump, DHS Delivered the Most Secure Border in History and is Removing Criminal Illegal Aliens at a Record Pace",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/03/making-america-safe-again-under-president-trump-dhs-delivered-most-secure-border",
+   "source": "Homeland Security",
+   "summary": ""
+  },
   {
    "date": "2026-11-02",
    "title": "U.S. Department of State Signs Humanitarian Logistics Memorandum of Understanding with UPS to Support Disaster Response Efforts",
