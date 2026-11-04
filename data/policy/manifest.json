@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "built_at": "2026-11-04T13:16:40+08:00",
-  "source_fetched_at": "2026-11-04 13:14",
+  "built_at": "2026-11-04T13:26:33+08:00",
+  "source_fetched_at": "2026-11-04 13:19",
   "boards": {
     "whitehouse": {
       "count": 230,
       "updated_at": "2026-11-04 13:14"
     },
     "congress": {
-      "count": 703,
-      "updated_at": "2026-11-03 12:45"
+      "count": 781,
+      "updated_at": "2026-11-04 13:19"
     },
     "agencies": {
       "count": 95,
