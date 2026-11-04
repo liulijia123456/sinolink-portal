@@ -364,6 +364,22 @@ def cmd_check(args):
     print('条目 %d 条，规则可归类 %d 条' % (len(evs), len(evs) - len([b for b in bad if b[1] == '无法归类'])))
     print('当前分布：' + ' · '.join('%s=%d' % (CAT_DEF.get(k, k), cur[k])
                                    for k in CAT_DEF if cur.get(k)))
+    # 建议项：格内标签宽度与「对象 + 动作」写法（不拦发布，但会提示补写）
+    import re as _re
+    RE_DOING = _re.compile(r'生效|废止|失效|届满|到期|上调|提交|截止|开幕|计票|就职|审查|期限|上调')
+    tips = []
+    for e in evs:
+        s0 = e.get('s') or ''
+        w0 = sum(10.5 if ord(c) > 127 else 5.5 for c in s0)
+        if w0 > 95:
+            tips.append((e.get('d'), s0, '标签 %.0fpx，超过 95px 会被截断' % w0))
+        elif _re.search(r'生效|废止|届满|期限', e.get('title') or '') and not RE_DOING.search(s0):
+            tips.append((e.get('d'), s0, '规则类标签只写了名词，须补「生效/废止/届满」等动作'))
+    if tips:
+        print('\n[建议] %d 条标签可再明确：' % len(tips))
+        for d, s0, msg in tips[:15]:
+            print('  %s  %-16s %s' % (d, s0, msg))
+
     if bad:
         print('\n[未通过] %d 项问题：' % len(bad))
         for (d, t), msg, frm in bad[:30]:
