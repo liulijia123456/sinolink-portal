@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "built_at": "2026-11-04T13:26:33+08:00",
-  "source_fetched_at": "2026-11-04 13:19",
+  "built_at": "2026-11-04T13:32:27+08:00",
+  "source_fetched_at": "2026-11-04 13:28",
   "boards": {
     "whitehouse": {
       "count": 230,
@@ -12,8 +12,8 @@
       "updated_at": "2026-11-04 13:19"
     },
     "agencies": {
-      "count": 95,
-      "updated_at": "2026-11-03 12:52"
+      "count": 100,
+      "updated_at": "2026-11-04 13:28"
     },
     "judicial": {
       "count": 43,
