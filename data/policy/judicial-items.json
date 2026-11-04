@@ -1,9 +1,81 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-03 12:55",
-  "count": 43,
+  "updated_at": "2026-11-04 13:37",
+  "count": 48,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-03",
+      "title": "National Tps Alliance v. Mullin",
+      "url": "https://www.courtlistener.com/opinion/11052694/national-tps-alliance-v-mullin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "filed a motion to stay the district court’s preliminary injunction pending appeal. See Dkt. 89. The Government",
+      "official_no": "",
+      "title_cn": "全国临时保护身份联盟诉马林案（涉国土安全部终止 TPS，第九巡回驳回上诉期间暂缓执行申请）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第九巡回上诉法院以公开命令驳回政府在上诉期间暂缓执行初步禁令的动议，并一并驳回其至少 21 日行政中止的备选请求；实体问题将另行确定加速审理日程。合议庭由沃德劳、门多萨、约翰斯通三位法官组成。\n\n此前最高法院于 10 月 5 日调卷，撤销第九巡回在 National TPS Alliance 诉 Noem 案（166 F.4th 739）中的裁判，依 Mullin 诉 Doe 案（609 U.S. 324）发回重审；同日政府请求中止自最高法院现行中止令 11 月 6 日到期时即时生效。\n\n起诉方为全国临时保护身份联盟及多名 TPS 受益人，被告为国土安全部长马林与国土安全部；地区法院为北加州联邦地区法院。命令未展开涉案 TPS 国别与实体争点，相关认定以判决书原文为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-03",
+      "title": "Service Employees International Union v. DOJ - United States Department of Justice",
+      "url": "https://www.courtlistener.com/opinion/11052889/service-employees-international-union-v-doj-united-states-department-of/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "for an immediate administrative stay and a stay pending appeal of the district court’s grant of a temporary",
+      "official_no": "",
+      "title_cn": "服务业雇员国际工会诉司法部案（第九巡回全院庭审恢复合议庭中止令，涉选民名单隔离）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第九巡回全院庭审以多数票恢复三法官合议庭 11 月 2 日的命令，批准政府在上诉期间中止地区法院临时限制令。合议庭认定，该命令虽名为临时限制令，但持续 17 天、含强制性义务且逾期将无从救济，可按初步禁令审查。\n\n争议源于联邦官员致函加州与华盛顿州选举官员、要求隔离疑似非公民选票。服务业雇员国际工会等四家原告于 10 月 29 日起诉司法部与国土安全部，主张违反《选举权法》第 11(b) 条与宪法选举条款；地区法院次日未经听证签发单方限制令。\n\n合议庭认为原告两项主张均可能不成立：第 11(b) 条未明文赋予私人诉权，致函与调查属核心行政职能。米勒法官协同；首席法官穆尔吉亚与德赛法官分别异议，认为该等「请求」实以刑事起诉相威胁，且于选举日恢复中止令有违 Purcell 原则。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-03",
+      "title": "Tozer v. Federal Aviation Administration",
+      "url": "https://www.courtlistener.com/opinion/11053200/tozer-v-federal-aviation-administration/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "that the FAA’s decision violated the Administrative Procedure Act. But the Civil Service Reform Act (CSRA)",
+      "official_no": "",
+      "title_cn": "托泽诉联邦航空管理局案（涉《文官制度改革法》专属救济与《行政程序法》管辖，起诉被驳回）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "哥伦比亚特区联邦地区法院麦克法登法官准予联邦航空管理局的驳回起诉动议，以缺乏事项管辖权驳回威廉·托泽的《行政程序法》之诉，且为不带偏见驳回。\n\n托泽自行起诉，称其应聘空中交通管制专员并签署临时录用通知后，因未达「最低心理能力」标准于 2025 年 10 月被认定体检不合格，而神经心理学评估未发现具航空医学意义的神经认知缺陷。他向联邦航空医官上诉未果，另向国家运输安全委员会与平等就业机会委员会求助，均被告知无管辖权。\n\n法院认定撤销录用通知属 5 U.S.C. § 2302(a)(2)(A)(i) 所称「人事行为」，《文官制度改革法》为专属救济渠道；该法虽大体豁免联邦航空管理局，但此种豁免恰表明国会无意提供司法审查，当事人不得改以《行政程序法》重新包装诉请。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-03",
+      "title": "Johnson v. Social Security Administration",
+      "url": "https://www.courtlistener.com/opinion/11052481/johnson-v-social-security-administration/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "limits judicial review to a particular type of agency action, a ‘final decision of the Secretary made after",
+      "official_no": "",
+      "title_cn": "约翰逊诉社会保障局案（涉 SSI 削减未穷尽行政救济，特区法院准予驳回起诉）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "哥伦比亚特区联邦地区法院弗里德曼法官准予社会保障局的驳回动议，依第 12(b)(6) 条驳回贝琳达·约翰逊的诉讼，认定其未穷尽行政救济。\n\n约翰逊自行起诉。社会保障局 2019 年 11 月 2 日发出《计划行动通知》，因她自当年 10 月起每月领取 657 美元退休保险福利，自 12 月 1 日起将其补充保障收入（SSI）削减约九成至 134 美元。法院查明其未在 60 天内申请复议，最早一次迟至 2020 年 10 月 26 日。\n\n依 42 U.S.C. § 405(g) 及其对 SSI 的转致规定，司法审查以局长听证后的「最终决定」为前提，未复议即不构成可审查的最终决定。法院并认定，其首次称从未收到通知属空泛陈述，不足以推翻送达推定；附随性、徒劳性与不可弥补损害三项例外均不成立。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-02",
@@ -14,13 +86,13 @@
       "agency": "第六巡回上诉法院",
       "summary": "not requiring “dismissal” as a “discretionary” “sanction.” In re IFC Credit Corp., 663 F.3d 315, 320–21",
       "official_no": "",
-      "title_cn": "伊舍姆遗产诉理查森案（涉 §1983 警员枪击案与非律师代理诉状的事后补正）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-02",
         "body": "第六巡回上诉法院撤销地区法院驳回起诉的裁定并发回重审。死者伊莱贾·伊舍姆在俄亥俄州莫雷恩市翻车事故现场与警方对峙时被警员击毙，其父、遗产管理人拉尔夫在两年时效届满前未聘律师、自行依 § 1983 起诉。地区法院依 28 U.S.C. § 1654 令其聘请律师，其遵令委托，法院仍以无律师代理的诉状自始无效为由驳回。\n\n拉森法官撰写的判决维持拒绝复议部分，但认定 § 1654 属强制性要求而非管辖权要件（引 Boechler 案），违反该条不当然使诉状失效，驳回仅为裁量处分，及时聘请律师即可治愈，并明确不采第八巡回的无效物规则。\n\n枪击事实与警员责任未作评价，实体争点留待发回后审理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "伊舍姆遗产诉理查森案（涉 §1983 警员枪击案与非律师代理诉状的事后补正）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -32,13 +104,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "for an immediate administrative stay and a stay pending appeal of the district court’s grant of a temporary",
       "official_no": "",
-      "title_cn": "服务业雇员国际工会诉司法部案（涉《选举权法》第 11(b) 条私人诉权，上诉期间暂缓执行获准）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-02",
         "body": "第九巡回上诉法院批准政府在上诉期间暂缓执行地区法院临时限制令的紧急动议，比阿法官撰写，穆尔吉亚首席法官持异议。争议源于司法部与国土安全部 10 月致函加州、华盛顿州选举官员，要求核验并隔离名单上疑似非公民的邮寄选票；相关工会与民权组织 10 月 29 日起诉，加州北区联邦地区法院 10 月 30 日单方签发至 11 月 16 日的限制令。\n\n多数意见认为《选举权法》第 11(b) 条无明示私人诉权，亦不宜就针对行政分支的行为承认默示诉权；联邦官员仅为请求而非强制，州有权拒绝（引 Printz 案）。异议称该结论与加州案判决无法调和，并忽视选举前夕改动规则之风险。\n\n裁定仅及上诉期间的临时效力，非终局实体裁判。",
         "tier": "note"
-      }
+      },
+      "title_cn": "服务业雇员国际工会诉司法部案（涉《选举权法》第 11(b) 条私人诉权，上诉期间暂缓执行获准）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -50,13 +122,13 @@
       "agency": "第七巡回上诉法院",
       "summary": "improperly compelling speech and issued a preliminary injunction to remedy that violation. At the same time",
       "official_no": "",
-      "title_cn": "安德森教师联合会诉罗基塔案（涉教师会费工资扣除限制的第一修正案审查）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-02",
         "body": "第七巡回上诉法院维持地区法院禁令，认定印第安纳州仅针对公立学校教师工会会费工资扣除所设的额外要求违反第一修正案，李法官撰写。州 2021 年立法要求教师签署载有指定声明的授权表、每年重新授权并经工作邮箱确认，此类要求不适用于其他公职人员。\n\n法院认为授权表声明属政府告知性言论，不构成强制言论；但仅对教师工会设限、不及其余公共雇员工会，构成观点歧视——州援引 Janus 案之理由不成立，防止误扣之说亦因适用范围过窄而难成立，规制未通过严格审查。\n\n禁止执行两法的禁令得以维持。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安德森教师联合会诉罗基塔案（涉教师会费工资扣除限制的第一修正案审查）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -68,13 +140,13 @@
       "agency": "第十巡回上诉法院",
       "summary": "other constitutional claims under the Administrative Procedure Act (“APA”), 5 U.S.C. § 551 et seq.; (2)",
       "official_no": "",
-      "title_cn": "穆斯塔法诉布兰奇案（涉囚犯医疗漠视主张的 Bivens 救济与《行政程序法》审查范围）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-02",
         "body": "第十巡回上诉法院维持原判，驳回在押囚犯穆斯塔法的上诉，马西森法官撰写。原告因恐怖主义相关罪名在科罗拉多州弗洛伦斯 ADX 服终身监禁，双臂肘部以上截肢、左眼失明，就牙齿与足部护理不足、饮食供应、假肢配备等提起第八修正案医疗漠视之诉，并主张应依《行政程序法》审查。\n\n法院认定其未指控最终机关行为，被告又以个人身份被诉、不属可依该法起诉的机关；医疗漠视主张与既有先例差异超出微小程度，属 Bivens 新语境，监狱行政救济程序构成足以排除该救济的特殊因素。修改诉状未正式动议，笔录费用异议因未及时提出而放弃。\n\n判决未评价监狱医疗条件是否适当。",
         "tier": "note"
-      }
+      },
+      "title_cn": "穆斯塔法诉布兰奇案（涉囚犯医疗漠视主张的 Bivens 救济与《行政程序法》审查范围）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -86,13 +158,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "seek a temporary restraining order and preliminary injunction against the Executive Branch’s actions",
       "official_no": "",
-      "title_cn": "特鲁希略诉国土安全部案（涉选举条款与选民名单核验，临时限制令部分获准）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-02",
         "body": "哥伦比亚特区联邦地区法院部分准许原告申请，对司法部与国土安全部发出临时限制令及初步禁令，首席法官博阿斯伯格撰写。原告为移民权利组织 CHIRLA 及成员特鲁希略。法院认定行政分支要求加州选举官员核验名单、隔离疑似非公民邮寄选票的做法很可能违反宪法选举条款：该条款将联邦选举方式规则权赋予各州与国会，行政分支无独立权力，18 U.S.C. § 611(a) 亦不构成授权。\n\n资格方面，专家比对显示至少 22 名会员完全匹配名单、66 名近乎匹配，法院认定风险并非推测；投票权受限即构成不可弥补损害。禁令禁止被告向加州官员提出隔离要求，原告缴纳 1 美元象征性保证金，措辞过宽部分被驳回。",
         "tier": "note"
-      }
+      },
+      "title_cn": "特鲁希略诉国土安全部案（涉选举条款与选民名单核验，临时限制令部分获准）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -104,11 +176,29 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "several respects and vacated it under the Administrative Procedure Act (APA). See Common Cause v. DOJ, __ F",
       "official_no": "",
-      "title_cn": "共同事业诉司法部案（涉选民名单维护政策被撤销后，上诉期间暂缓执行动议被驳回）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-02",
         "body": "哥伦比亚特区联邦地区法院驳回司法部在上诉期间暂缓执行之申请，苏克纳南法官撰写。该院 10 月 9 日已认定司法部选民名单维护政策多处违法并依《行政程序法》撤销；该政策要求 49 州提供未脱敏选民登记名单，据 SAVE 数据库核验资格并敦促 45 日内移除不合格选民。\n\n法院依 Nken 案四要素审查：司法部未证明胜诉可能，其要求函缺少《1960 年民权法》第三章所要求的依据与目的说明，援引 8 U.S.C. § 1373 的隐私法抗辩因未在简易判决阶段提出而放弃，《文书削减法》亦适用；因本判决所致迟延属自我施加损害，不予考量。\n\n裁定仅涉暂缓执行，实体问题已进入上诉审。",
+        "tier": "note"
+      },
+      "title_cn": "共同事业诉司法部案（涉选民名单维护政策被撤销后，上诉期间暂缓执行动议被驳回）",
+      "domain": "政府运作"
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-02",
+      "title": "Sintia Nivar Santana v. Todd Blanche",
+      "url": "https://www.courtlistener.com/opinion/11053004/sintia-nivar-santana-v-todd-blanche/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第四巡回上诉法院",
+      "summary": "physical crossing of the border following the sanction and approval of United States authorities",
+      "official_no": "",
+      "title_cn": "尼瓦尔·桑塔纳诉布兰奇案（第四巡回依 Loper Bright 案重审，改按优势证据标准认定准入资格）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第四巡回上诉法院依最高法院发回重审指令重新裁判，准予尼瓦尔·桑塔纳的复审申请，认定移民法官与移民上诉委员会要求以「明确且无可置疑」标准证明准入资格有误。\n\n申请人系多米尼加共和国公民，在遣返程序内申请调整身份。移民法官认定其在就业资格表上虚假声称美国公民身份，因而不具备准入资格，并要求以「明确且无可置疑」标准证明相反事实，认定未达标准后驳回申请，移民上诉委员会 2022 年 10 月维持。\n\n本院原判决曾依 Chevron 尊重移民上诉委员会的解释而驳回申请；最高法院依 Loper Bright 案撤销并发回。重审后本院认为，申请人已经检查获准入境，不属《移民与国籍法》定义的「入境申请人」，证明准入资格只需达到优势证据标准。",
         "tier": "note"
       }
     },
