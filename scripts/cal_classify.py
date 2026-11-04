@@ -206,6 +206,58 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 医保支付与供给准入
     ('2027-01-04', 'HHS 残障歧视规则修订生效'):
         {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 受资助项目用工与准入义务
+    # —— 2026-11-05 日更新增：24 条新条目（20 条联邦监管规则生效节点 + 3 条授权与
+    #    许可到期 + 1 条合规日延期）。兜底规则把含「规则生效」的条目一律判成
+    #    money/agency，标题不含「规则生效」的条目则落空、check 会判为无法归类，
+    #    故逐条按所监管对象领域或事项性质显式覆盖 ——
+    ('2026-11-12', 'EPA 科罗拉多 Class VI 注入井首要权限生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 碳封存与地下注入控制
+    ('2026-11-16', '劳工部失业补偿数据披露规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 失业保险用工与稽核事项
+    ('2026-11-18', 'OPM 行政休假与人员重组规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦雇员休假与用工事项
+    ('2026-11-18', 'OPM 高级专业人员绩效管理规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦雇员考评与任用事项
+    ('2026-11-25', 'FCC 机器人电话同意撤销规则生效'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 电信与外呼管理
+    ('2026-11-27', 'EPA 甲醛复合木制品标准更新生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 室内空气与建材环保标准
+    ('2026-11-27', 'DOJ 枪支经销商雇员背景核查规则生效'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 枪支管理与背景核查
+    ('2026-11-30', 'OPM 战略人力资源管理规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦机构人力资本管理
+    ('2026-11-30', 'HHS 子女抚养执行减负规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 社会福利项目执行与分担
+    ('2026-12-04', 'NCUA 法定留置权移除规则生效'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 信用合作社担保权益
+    ('2026-12-07', 'DOE 商用暖风炉能效测试程序撤回生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 商用暖通设备能效
+    ('2026-12-14', 'OPM 家庭与医疗休假法修订生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦雇员休假资格
+    ('2026-12-14', 'FDA 食盐替代品标准生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 食品与药品监管，循库内健康类归 fiscal 口径
+    ('2026-12-21', 'NRC 核材料许可豁免规则生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核材料许可与豁免
+    ('2026-12-28', 'NRC AP1000 设计认证续期生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核电机组设计认证
+    ('2026-12-28', 'HHS 健康信息技术去监管规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 医疗信息化与支付衔接
+    ('2026-12-28', 'USDA 农宅担保贷款 ADU 条款生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 住房与农村抵押融资
+    ('2026-12-29', 'CPSC 车库门安全标准生效'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 消费产品安全标准
+    ('2027-01-19', 'OPM 取消职级晋升限制规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦职位晋升与用工事项
+    ('2027-07-01', '教育部认证改革规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 学历认证与教育劳动力事项
+    ('2026-12-31', 'EXIM 出口信贷授权与 CTEP 计划届满'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'congress'},    # 须国会重新立法授权
+    ('2026-12-31', '柴油燃油紧急税收减免到期'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},        # 行政部门税收减免期届满
+    ('2027-04-07', 'OFAC 第 135 号通用许可（俄产柴油）到期'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 美方单边制裁许可期限
+    ('2027-03-01', 'DOE 新建筑化石燃料限制废止合规日延期生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 联邦建筑清洁能源合规
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
