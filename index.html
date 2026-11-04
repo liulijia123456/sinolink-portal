@@ -3393,6 +3393,16 @@
   #view-board { --pw-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
 
   .pw.has-side { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 26px; align-items: start; }
+
+  /* 国会板块：立法阶段侧栏（提案 / 审议 / 成法）。
+     只改外层两栏，条目表格的列宽规则沿用国会原有口径，不被 has-side 的窄栏规则覆盖。 */
+  .pw.has-cgside { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 26px; align-items: start; }
+  @media (max-width: 1180px) {
+    .pw.has-cgside { grid-template-columns: 206px minmax(0, 1fr); gap: 20px; }
+  }
+  @media (max-width: 980px) {
+    .pw.has-cgside { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  }
   .pw-side {
     position: sticky; top: 78px;
     background: #fff; border: 1px solid var(--border-light); border-radius: 14px;
@@ -5376,6 +5386,40 @@
             <div class="pw-sub" id="pw-sub" hidden></div>
           </div>
           <p class="pw-side-note">两类条目分栏存放、互不混排。点击类别切换：<b>公报</b>保留原有检索、筛选与分页，<b>新闻动态</b>按部门 / 机构归集。</p>
+        </aside>
+
+        <aside class="pw-side" id="cg-side" aria-label="国会立法阶段分类" hidden>
+          <div class="pw-side-hd">
+            <span class="pw-side-k">立法阶段</span>
+            <span class="pw-side-e">Stage</span>
+          </div>
+          <div class="pw-tabs" role="tablist" aria-label="立法阶段">
+            <button type="button" class="pw-tab is-on" data-cg-stage="all" role="tab" aria-selected="true">
+              <span class="pw-tab-n">00</span>
+              <span class="pw-tab-t">全部条目</span>
+              <span class="pw-tab-e">All</span>
+              <span class="pw-tab-c" id="cg-count-all">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="propose" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">01</span>
+              <span class="pw-tab-t">提案</span>
+              <span class="pw-tab-e">Proposal</span>
+              <span class="pw-tab-c" id="cg-count-propose">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="review" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">02</span>
+              <span class="pw-tab-t">审议</span>
+              <span class="pw-tab-e">Deliberation</span>
+              <span class="pw-tab-c" id="cg-count-review">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="enact" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">03</span>
+              <span class="pw-tab-t">成法</span>
+              <span class="pw-tab-e">Enactment</span>
+              <span class="pw-tab-c" id="cg-count-enact">—</span>
+            </button>
+          </div>
+          <p class="pw-side-note">按 congress.gov「最新行动」归段，一条只归一段：<b>提案</b>为已提出并交付委员会；<b>审议</b>含听证、报告、列入日程、全院表决、两院协调与呈送总统；<b>成法</b>为已成公法（Became Public Law）。</p>
         </aside>
 
         <div class="pw-main">
@@ -10296,7 +10340,7 @@
       // 重置筛选
       var resetBtn = document.getElementById('filter-reset');
       if (resetBtn) resetBtn.addEventListener('click', function () {
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', q: '' };
         var tSel = document.getElementById('filter-time');
         [].slice.call(tSel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
         tSel.value = 'all';
@@ -10306,6 +10350,15 @@
         document.getElementById('filter-q').value = '';
         boardPage = 0;
         if (renderCurrentBoard) renderBoard(renderCurrentBoard);
+      });
+
+      // 国会立法阶段侧栏：点击分段即按其过滤条目列表
+      [].forEach.call(document.querySelectorAll('#cg-side [data-cg-stage]'), function (b) {
+        b.addEventListener('click', function () {
+          filterState.stage = b.getAttribute('data-cg-stage');
+          boardPage = 0;
+          if (renderCurrentBoard) renderBoard(renderCurrentBoard);
+        });
       });
 
       var BOARD_META = {
@@ -10404,7 +10457,7 @@
       }
 
       // 筛选状态
-      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', q: '' };
+      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', q: '' };
       // 分页状态：每页条数可调（默认 20 条/页）
       var boardPageSize = 20;
       var boardPageSizeOpts = [10, 20, 50];
@@ -10438,6 +10491,10 @@
             if (av !== st.agency) return false;
           }
           if (st.domain !== 'all' && (it.domain || '其他') !== st.domain) return false;
+          // 立法阶段（仅国会板块有该维度）
+          if (FILTER_BOARD === 'congress' && st.stage && st.stage !== 'all') {
+            if (congressStage(it) !== st.stage) return false;
+          }
           if (st.q) {
             var q = st.q.toLowerCase();
             var hay = ((it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.kind || '') + ' ' + (it.domain || '') + ' ' + (it.agency || '')).toLowerCase();
@@ -10488,6 +10545,50 @@
       }
       // 去掉院别前缀，只留文种：法案 / 决议 / 联合决议 / 共同决议
       function congressType(k) { return String(k || '').replace(/^(参议院|参院|众议院|众院)/, ''); }
+
+      // ===== 国会板块：立法阶段归段（提案 / 审议 / 成法）=====
+      // 依据条目 agency 字段里的 congress.gov「最新行动」英文原文判定，一条只归一段，取已达的最远节点。
+      // 三段口径（依次递进，不重叠）：
+      //   提案 —— 已提出并交付委员会，尚未有任何审议动作；
+      //   审议 —— 已进入听证、报告、列入日程、全院表决、两院协调或总统环节，但尚未成法；
+      //   成法 —— 已成为公法（Became Public Law / 总统签署 / Became law）。
+      // 判定顺序：先拦议事规则，再判成法，最后判「已过一院」与审议动作。
+      //   · Rule H. Res. … passed House —— 是议事规则通过、非法案通过，先拦下计入审议；
+      //   · Received in the Senate / House —— 另一院已通过（简报亦写「已通过众议院」），属审议而非成法，
+      //     且该文本同时含 referred，必须排在提案之前判，否则会被误计为提案；
+      //   · Held at the desk / Read twice and referred —— 仍在委员会前，计入提案。
+      var CG_ENACT_RE = new RegExp(['Became Public Law', 'Signed by President', 'Became law'].join('|'), 'i');
+      var CG_FLOOR_RE = new RegExp([
+        'Passed (the )?(House|Senate)', 'Resolution agreed to',
+        'agreed to in (the )?(House|Senate)', 'considered,\\s*and agreed to',
+        'Received in the (Senate|House)', 'Presented to President',
+        'Motion to reconsider laid on the table Agreed to',
+        'Message on (Senate|House) action'
+      ].join('|'), 'i');
+      var CG_REVIEW_RE = new RegExp([
+        'Reported', 'Placed on [^.]*Calendar', 'Calendar No\\.',
+        'Hearings held', 'Forwarded by Subcommittee', 'Under consideration',
+        'Discharged from', 'Committee of the Whole', 'Motion to proceed',
+        'Cloture', 'Resumed consideration', 'Rule H\\. Res\\.'
+      ].join('|'), 'i');
+      function congressStage(it) {
+        var a = String((it && it.agency) || '');
+        var act = a.indexOf('·') >= 0 ? a.slice(a.indexOf('·') + 1).trim() : a;
+        if (/^Rule H\. Res\./i.test(act)) return 'review';
+        if (CG_ENACT_RE.test(act)) return 'enact';
+        if (CG_FLOOR_RE.test(act)) return 'review';
+        if (CG_REVIEW_RE.test(act)) return 'review';
+        return 'propose';
+      }
+      function syncCgStageUI() {
+        var cur = filterState.stage || 'all';
+        [].forEach.call(document.querySelectorAll('#cg-side [data-cg-stage]'), function (b) {
+          var on = b.getAttribute('data-cg-stage') === cur;
+          b.classList.toggle('is-on', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+          b.tabIndex = on ? 0 : -1;
+        });
+      }
 
       function fillKindOptions(items, key) {
         var sel = document.getElementById('filter-kind');
@@ -11155,9 +11256,10 @@
           q.classList.toggle('active', !!filterState.q);
           if (filterState.q) any = true;
         }
+        // 国会立法阶段分段同属筛选条件，参与「恢复默认」按钮的显隐
+        if (filterState.stage && filterState.stage !== 'all') any = true;
         var rst = document.getElementById('filter-reset');
-        if (rst) rst.classList.toggle('show', any);
-        renderPwChips();
+        if (rst) rst.classList.toggle('show', any);        renderPwChips();
       }
 
       function pwTodayKey() {
@@ -11205,6 +11307,16 @@
         // 侧栏读数：联邦公报刊登的条目总数（仅有侧栏的白宫 / 独立机构板块显示）
         var sideCount = document.getElementById('pw-tab-count-fr');
         if (sideCount && (key === 'whitehouse' || key === 'agencies')) sideCount.textContent = allItems.length + ' 条';
+        // 国会板块：立法阶段侧栏读数（全部 / 提案 / 审议 / 成法），按板块全量计，不随其它筛选变化
+        if (key === 'congress') {
+          var cgN = { all: allItems.length, propose: 0, review: 0, enact: 0 };
+          allItems.forEach(function (it) { cgN[congressStage(it)] += 1; });
+          ['all', 'propose', 'review', 'enact'].forEach(function (s) {
+            var el = document.getElementById('cg-count-' + s);
+            if (el) el.textContent = cgN[s] + ' 条';
+          });
+          syncCgStageUI();
+        }
         PW_TODAY = pwTodayKey();
         pwDatesOf(allItems);
         pwCalBind();
@@ -11467,15 +11579,22 @@
         if (electionView) electionView.hidden = true;
         if (partiesView) partiesView.hidden = true;
         boardView.hidden = false;
-        // 政策来源侧栏只属于白宫及内阁各部、独立机构两个板块；国会 / 司法回到原单栏布局
+        // 政策来源侧栏只属于白宫及内阁各部、独立机构两个板块；
+        // 国会有自己的「立法阶段」侧栏（提案 / 审议 / 成法），司法回到原单栏布局
         var pwSide = document.getElementById('pw-side');
+        var cgSide = document.getElementById('cg-side');
         var pwShell = document.getElementById('pw-shell');
-        var hasSide = key === 'whitehouse' || key === 'agencies';
-        if (pwSide) pwSide.hidden = !hasSide;
-        if (pwShell) pwShell.classList.toggle('has-side', hasSide);
+        var isCg = key === 'congress';
+        var hasPrSide = key === 'whitehouse' || key === 'agencies';
+        if (pwSide) pwSide.hidden = !hasPrSide;
+        if (cgSide) cgSide.hidden = !isCg;
+        if (pwShell) {
+          pwShell.classList.toggle('has-side', hasPrSide);
+          pwShell.classList.toggle('has-cgside', isCg);
+        }
         // 侧栏 02 的抬头与来源目录按板块重建（白宫按部门、独立机构按机构）；
         // 换板块后统一回到 01「联邦公报刊登」，不沿用上一个板块的分类位置
-        if (hasSide) renderPrPanel(key);
+        if (hasPrSide) renderPrPanel(key);
         setPwTab('fr');
         // 头图立面剪影只属于白宫 / 国会板块；司法板块沿用统一深色抬头（无剪影）
         var boardHead = document.querySelector('#view-board .subhead');
