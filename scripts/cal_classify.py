@@ -127,25 +127,13 @@ POL_RULES = [
 
 # 个别条目的手工归类：规则判错或需要专门口径时在此覆盖，键为 (日期, 标题)
 OVERRIDES = {
-    ('2026-12-07', '美国对外投资安全计划拟议规则公众意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'exec'},
     ('2026-11-02', '美联储压力测试透明度新规生效'):
         {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
     ('2026-12-01', '美联储资本计划规则与压力资本缓冲修订生效'):
         {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
     ('2027-01-18', 'OCC 稳定币发行实施规则生效'):
         {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-10-20', 'SEC 加密资产拟议规则公众意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-13', 'EPA 三氯乙烯合规日期延长意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-12-04', 'EPA 可再生燃料标准豁免再分配意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-11-23', '财政部 ROAD 住房法机构购房禁令意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
     ('2027-01-09', '301 条款造船等行业关税暂停拟延至 1 月 9 日'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
-    ('2027-01-12', 'USMCA 2027 年度联合审查公众意见截止'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
     ('2027-07-01', 'USMCA 2027 年度联合审查'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
@@ -160,103 +148,31 @@ OVERRIDES = {
     ('2027-01-10', '中美关税休战延期期满'):
         {'cat': 'dip', 'topic': 'trade', 'actor': 'exec'},
     # —— 2026-11-01 日更新增：规则兜底会把「意见期/规则生效」一律判成 money，
-    #    但下列条目的主议题并非金融监管，按议题实际归属手工归类 ——
-    ('2026-11-09', 'FCC 直连设备非许可频谱拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},       # 频谱与卫星通信属科技议题
-    ('2026-11-23', 'CMS 医疗保险 Part D 药房合同标准信息征集意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},     # 联邦支付政策归财政
-    ('2026-12-01', 'CBP 供应链可见性进口信息披露加强拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},      # 进口申报规则归贸易
-    ('2026-12-07', 'CBP 低价值货物申报规则拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},      # 免税包裹申报规则归贸易
-    ('2026-12-21', 'FERC 液化天然气厂相关活动授权拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},     # LNG 授权归能源
+    #    但下列条目的主议题并非金融监管，按议题实际归属手工归类 ——       # 频谱与卫星通信属科技议题     # 联邦支付政策归财政      # 进口申报规则归贸易      # 免税包裹申报规则归贸易     # LNG 授权归能源
     ('2027-01-01', 'CMS 2027 日历年度 Medicare 终末期肾病等支付规则生效'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},     # 医保报销规则归财政
     ('2027-02-01', '美国总统向国会提交 2028 财年预算案（法定最迟日）'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},       # 预算案由行政部门提交
     # —— 2026-11-02 日更新增：本批为联邦公报 09—11 月刊发的监管节点，
     #    兜底规则会把「意见期/生效」一律判成 money/agency，逐条按所监管对象领域覆盖 ——
-    ('2026-11-03', 'SEC 过户代理人规则拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-04', 'FinCEN A7 网络相关交易特别措施意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-04', '美联储 Reg O 内部人贷款规则意见期延长'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
-    ('2026-11-04', 'FDIC 内部人信贷规则意见期延长'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-05', 'EPA 2024 年 PM2.5 标准初始达标指定意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-11-09', 'SEC 投资顾问政治捐款规则废止意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-09', 'USTR 欧盟碳边境调节机制影响意见征询截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
-    ('2026-11-09', 'NRC 反应堆许可与退役监管改革意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-11-09', 'FCC 呼叫缓解数据库回复意见截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
     ('2026-11-09', 'IRS 车贷利息扣除最终规则生效'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
-    ('2026-11-12', 'EPA 汽油配送设施有害空气污染物标准再审议意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-11-13', 'NRC AP1000 设计认证续期意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-11-18', 'CFTC 事件合约纳入互换定义意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-18', 'FCC 通信基础设施环境审查规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
-    ('2026-11-23', 'FDIC 银行并购规则改革意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-11-25', 'FCC 太空现代化规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
-    ('2026-11-25', 'FCC 消费者自动呼叫控制规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
     ('2026-11-30', 'CMS GLOBE 药品定价模型生效'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
-    ('2026-11-30', '美联储 GENIUS 法案实施规则意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
-    ('2026-11-30', '美联储支付稳定币子公司审批程序意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
-    ('2026-11-30', '国务院 ITAR 军品清单审查意见期截止'):
-        {'cat': 'pol', 'topic': 'security', 'actor': 'exec'},
-    ('2026-11-30', 'IRS 保费税收抵免拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
-    ('2026-11-30', 'IRS 特朗普账户拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'exec'},
-    ('2026-11-30', 'FTC 冒充政府与企业规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
     ('2026-11-30', 'NHTSA CAFE 规则 III 生效'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-12-02', 'FCC 超宽带设备规则意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},
-    ('2026-12-02', 'EPA TSCA 重要新用途规则 26-7 意见期截止'):
         {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
     ('2026-12-14', 'EPA TSCA 重要新用途规则 26-1 生效'):
         {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
     ('2026-12-14', 'EPA 清洁水法设施应急计划合规日延期生效'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
-    ('2026-12-14', 'NCUA 中央流动性便利规则意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2026-12-15', 'CMS 2026 年综合拨款法医保条款实施意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
-    ('2026-12-16', 'EPA 油气行业气候规则再审议意见期截止'):
         {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},
     ('2027-01-04', '劳工部 PBM 费用披露规则生效'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},
     # —— 2026-11-03 日更新增：6 条监管规则 + 1 条 232 条款总统公告 + 1 条外交节点。
     #    兜底规则把含「意见期/规则生效」的条目一律判成 money/agency，本批按所监管
     #    对象领域逐条覆盖；俄乌会谈、G7 接任、232 报告期限三类标题不匹配任何规则，
-    #    必须显式覆盖，否则 classify() 返回空值、check 判为不一致 ——
-    ('2026-11-10', 'DHS 取消非移民 60 日宽限期拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},      # 非移民雇员身份与居留衔接，属用工议题
-    ('2026-11-20', 'SBA 小企业规模标准拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 联邦采购与扶持项目门槛，归财政
-    ('2026-11-23', 'FDIC 州银行平权规则意见期截止'):
-        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},      # 银行准入与展业规则
+    #    必须显式覆盖，否则 classify() 返回空值、check 判为不一致 ——      # 非移民雇员身份与居留衔接，属用工议题      # 联邦采购与扶持项目门槛，归财政      # 银行准入与展业规则
     ('2026-11-30', 'USCIS EB-5 移民投资费用规则生效'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 政府收费调整
-    ('2027-03-02', 'FDA 婴幼儿配方食品营养要求拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'growth', 'actor': 'agency'},      # 消费品规格标准，归消费
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 政府收费调整      # 消费品规格标准，归消费
     ('2027-04-26', '232 条款机器人与工业机械进口谈判 180 日报告期限'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 美方单边贸易措施程序节点
     ('2026-11-10', '美方斡旋的俄乌工作层级会谈（阿布扎比）'):
@@ -277,39 +193,15 @@ OVERRIDES = {
     ('2027-01-05', '232 条款商用飞机与航发进口谈判 180 日报告期限'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 232 谈判程序节点
     ('2027-04-20', '232 条款风电设备进口谈判 180 日报告期限'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 232 谈判程序节点
-    ('2026-11-12', 'IRS 受控外国公司外币损益拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 跨境资金税务处理，归税收
-    ('2026-11-16', 'OPM 家庭与医疗休假法规则重大反对意见截止'):
-        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦雇员休假资格，属用工议题
-    ('2026-11-23', 'APHIS 高致病性禽流感进口要求修订意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 进口准入与检疫条件
-    ('2026-11-23', 'MARAD 造船建设基金规则修订意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 商船建造与航运扶持
-    ('2026-11-23', 'FDA 食品追溯记录执法政策草案意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 食品供应链记录与进口合规
-    ('2026-11-25', 'NHTSA 车灯安全标准适配自动驾驶意见期截止'):
-        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 自动驾驶车辆认证标准
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 232 谈判程序节点      # 跨境资金税务处理，归税收       # 联邦雇员休假资格，属用工议题       # 进口准入与检疫条件       # 商船建造与航运扶持       # 食品供应链记录与进口合规        # 自动驾驶车辆认证标准
     ('2026-11-25', 'FCC 视频节目闭路字幕规则生效'):
         {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 电信与媒体监管
     ('2026-11-25', 'NRC 采认能源部与战争部既有授权规则生效'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核反应堆许可
-    ('2026-12-01', 'IRS 联邦奖学金税收抵免拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 教育捐赠税收抵免
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核反应堆许可      # 教育捐赠税收抵免
     ('2026-12-01', 'IRS 联邦奖学金税收抵免临时规则生效'):
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 同上，临时规则配套
     ('2026-12-03', 'NRC 许可争议裁决程序简化规则生效'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核设施许可程序
-    ('2026-12-14', 'FMC 西班牙港口限制措施意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 航运救济与进口限制
-    ('2026-12-14', 'CBP 铁路旅客预申报拟议规则意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 跨境运输申报
-    ('2026-12-21', 'APHIS 口蹄疫区牛羊肉熟化温度意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 肉品进口条件
-    ('2026-12-28', 'PHMSA 危险品运输国际标准协调意见期截止'):
-        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 跨境危险品运输规则
-    ('2027-01-04', 'PHMSA 液化天然气设施安全规则意见期截止'):
-        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # LNG 设施安全
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 核设施许可程序       # 航运救济与进口限制       # 跨境运输申报       # 肉品进口条件       # 跨境危险品运输规则      # LNG 设施安全
     ('2027-01-04', 'CMS 器官获取组织覆盖条件修订生效'):
         {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 医保支付与供给准入
     ('2027-01-04', 'HHS 残障歧视规则修订生效'):
