@@ -1,9 +1,145 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-03 12:39",
-  "count": 222,
+  "updated_at": "2026-11-04 13:14",
+  "count": 230,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Notice of Availability of the Record of Decision for the Final Supplemental Environmental Impact Statement for the Mississippi River, Baton Rouge to the Gulf of Mexico, Mississippi River-Gulf Outlet, Louisiana, New Industrial Canal Lock and Connecting Channels Proposed Project, Orleans Parish, Louisiana",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22368/notice-of-availability-of-the-record-of-decision-for-the-final-supplemental-environmental-impact",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-22368",
+      "title_cn": "最终补充环境影响报告书决策记录可获取通知：密西西比河巴吞鲁日至墨西哥湾、密西西比河-墨西哥湾出口航道新工业运河船闸及连接航道工程（路易斯安那州奥尔良堂区）（通告）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：陆军工程兵团（USACE）发布决定记录（ROD）可获取通知，对应密西西比河巴吞鲁日至墨西哥湾、密西西比河-墨西哥湾出口航道新工业运河船闸及连接航道工程的最终补充环境影响报告书（SEIS）。\n· 程序节点：负责土木工程的陆军助理部长已于 2026 年 8 月 27 日签署该 ROD，公告刊发于 11 月 3 日联邦公报（91 FR 69245）。\n· 效力：ROD 是《国家环境政策法》审查程序的收尾文件，签署后项目可推进至实施与许可阶段。\n· 信息边界：官方摘要未列选定替代方案、缓解措施与许可条件，具体以决定记录文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22381/medicare-and-medicaid-programs-organ-procurement-organizations-conditions-for-coverage-revisions-to",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22381",
+      "title_cn": "医保与医疗补助计划：器官获取组织参与条件修订（规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：医疗保险和医疗补助服务中心（CMS）最终规则（CMS-3409-F），修订器官获取组织（OPO）的参与条件，编于 42 CFR。\n· 核心动作：修订相关定义与 OPO 指定要求，明确服务区何时开放竞争，并更新申诉程序；为 OPO 提升器官获取与移植量提供运营灵活性。\n· 未改动部分：以捐赠与移植数量为核心的结果指标，以及再认证与取消认证所用的分档结构维持不变。\n· 生效时点：2027 年 1 月 4 日生效（91 FR 69390）。\n· 信息边界：摘要未列具体条款数值与合规期限，以规则文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Nondiscrimination on the Basis of Disability in Programs or Activities Receiving Federal Financial Assistance",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22380/nondiscrimination-on-the-basis-of-disability-in-programs-or-activities-receiving-federal-financial",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22380",
+      "title_cn": "接受联邦财政援助的项目或活动中基于残疾的歧视禁令：修订《1973年康复法》第504条实施细则（规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：卫生与公众服务部（HHS）最终规则，修订《1973 年康复法》第 504 条实施细则，即 2024 年 5 月 9 日发布的《接受联邦财政援助项目中的残疾歧视禁令》最终规则。\n· 核心动作：明确将该条对「非由身体损伤引起的性别认同障碍」的法定排除，解释为涵盖「非由身体损伤引起的性别烦躁」，从而不纳入「残疾人」与「残疾」的定义。\n· 目的：消除 2024 年最终规则序言引入的歧义，按法条最佳解释执行。\n· 生效时点：2027 年 1 月 4 日生效（91 FR 69207）。\n· 信息边界：摘要未列具体条款编号调整，以规则文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Airworthiness Directives; Airbus Helicopters",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22400/airworthiness-directives-airbus-helicopters",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22400",
+      "title_cn": "适航指令；空客直升机公司直升机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则，拟对空客直升机公司 AS350B2、AS350B3 与 EC130B4 型直升机发布新适航指令。\n· 触发事由：一份关于飞行员脚蹬出现部分卡阻的报告。\n· 拟议要求：改装并重新标识受影响的保险丝罩，禁止在任何直升机上安装受影响保险丝罩。\n· 程序：意见截止 2026 年 12 月 18 日，案卷号 FAA-2026-13795，工程代号 MCAI-2026-00716-R（91 FR 69230）。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Pipeline Safety: Amendments to Liquefied Natural Gas Facilities",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22396/pipeline-safety-amendments-to-liquefied-natural-gas-facilities",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22396",
+      "title_cn": "管道安全：液化天然气设施规定修订（拟议规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：管道与危险材料安全管理局（PHMSA）拟议规则，修订液化天然气（LNG）设施安全规定，编于 49 CFR。\n· 核心动作：以引用方式纳入最新行业安全标准，并作其他修订，以反映二十余年来技术与工艺的进步。\n· 依据：回应国会授权，要求对特定 LNG 设施引入基于风险的监管方法。\n· 程序：意见截止 2027 年 1 月 4 日；将召开法定咨询委员会公开会议，日期另行公告（91 FR 69314，案卷号 PHMSA-2019-0091）。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22383/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22383",
+      "title_cn": "适航指令；波音公司飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则，拟取代第 2024-25-09 号适航指令，适用于部分波音 757 型飞机。\n· 背景：原指令要求安装新继电器并更改通向动力转换装置（PTU）控制阀的线束；FAA 其后认定该指令所依据的要求通告存在错误。\n· 影响：部分错误使原指令要求的措施无法完整执行，另一些则可能允许引入影响安全的新风险。\n· 程序：意见截止 2026 年 12 月 18 日，案卷号 FAA-2026-11821（91 FR 69227）。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Airworthiness Directives; Embraer S.A. (Type Certificate Previously Held by Yaborã Indústria Aeronáutica S.A.; Embraer S.A.) Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22382/airworthiness-directives-embraer-sa-type-certificate-previously-held-by-yabor-indstria-aeronutica-sa",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22382",
+      "title_cn": "适航指令；巴西航空工业公司飞机（型号合格证原由约巴尼亚航空工业公司持有）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则，拟取代第 2024-17-03 号适航指令，适用于 ERJ 190-100 STD、-100 LR、-100 IGW、-100 ECJ 及 ERJ 190-200 STD、-200 LR、-200 IGW 型飞机。\n· 原指令要求：修订维护或检查大纲，纳入新增或更严格的适航限制。\n· 现行动作：FAA 认定需新增或收紧适航限制，本拟议规则延续原指令的相应措施并作更新。\n· 程序：意见截止 2026 年 12 月 18 日，案卷号 FAA-2026-11822（91 FR 69233）。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-03",
+      "title": "Airworthiness Directives; MD Helicopters, LLC Helicopters",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22373/airworthiness-directives-md-helicopters-llc-helicopters",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22373",
+      "title_cn": "适航指令；MD直升机公司直升机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则，拟取代第 90-19-02 号适航指令，适用于装有货钩的 MD 369、369A、369D、369E、369F、369FF、369H、369HE、369HM、369HS 型直升机。\n· 原指令要求：以适航件更换超越离合器组件与楔块组件，并对楔块组件、离合器内外座圈实施重复检查。\n· 现行动作：FAA 进一步分析后认定原要求需更新，本拟议规则据此取代。\n· 程序：意见截止 2026 年 12 月 18 日，案卷号 FAA-2026-11819（91 FR 69225）。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-02",
