@@ -1,9 +1,99 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-04 13:37",
-  "count": 48,
+  "updated_at": "2026-11-05 09:55",
+  "count": 53,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-04",
+      "title": "Whaleco Inc. v. Gluck",
+      "url": "https://www.courtlistener.com/opinion/11054453/whaleco-inc-v-gluck/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第一巡回上诉法院",
+      "summary": "12(b)(2).5 And Gluck additionally sought sanctions against Temu and its lawyers for \"frivolous\"",
+      "official_no": "",
+      "title_cn": "Whaleco 诉 Gluck 案（Temu 指控对方律师虚假陈述诱签和解，第一巡回以对人管辖权未决撤销并发回）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第一巡回上诉法院11月4日就 Whaleco（Temu 运营主体）诉知识产权律师 Jeffrey Gluck 及其律所案作出合并意见，撤销马萨诸塞州联邦地区法院的裁定与判决并发回重审。\n\n案件源于两笔和解：Gluck 代理 Cookies SF 与 Alec Monopoly 同 Temu 达成协议，Temu 主张其在协议中作出的陈述构成虚假陈述与欺诈性诱导，据此提出违约、违反诚信义务等多项请求。\n\n上诉法院认为，地区法院在未先行解决对人管辖权争议的情况下推进实体裁判，超出其裁判权限。发回后，原审法官须先就 Gluck 与 Cookies SF 提出的管辖权动议作出裁定；对 Alec Monopoly 依第 12(b)(6) 条提出的驳回动议，因判断可能取决于管辖权结论，暂不作裁断。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-04",
+      "title": "Thomas v. Leyline Publishing",
+      "url": "https://www.courtlistener.com/opinion/11054286/thomas-v-leyline-publishing/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第五巡回上诉法院",
+      "summary": "moved for a temporary restraining order and preliminary injunction. The district court denied the motion on",
+      "official_no": "",
+      "title_cn": "托马斯诉 Leyline 出版公司案（涉桌面游戏版权许可范围与商标授权，第五巡回维持简易判决）",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第五巡回上诉法院11月4日维持德克萨斯州北区联邦地区法院的简易判决，驳回桌面角色扮演游戏《Realms of Kymoria》创作者 Shawn Thomas 及其公司对出版方 Leyline 的全部上诉主张。\n\n争议围绕双方2022年3月签署的第二份许可协议。上诉人主张该协议未授权对方使用其尚未开票的内容、未涵盖衍生作品与商标，并主张对方在宣传中使用「创始人」「共同创作者」称谓构成诽谤、盗用姓名与虚假代言。\n\n合议庭认定，该协议有效且有约束力，付费承诺一经作出即触发授权，协议文义清晰无须外部解释；上诉人未能指明具体的未经授权衍生作品，未完成简易判决阶段的举证；商标使用系依协议授权；相关称谓属实且经授权。因存在有效合同规范服务与报酬，不当得利请求亦不成立。判决未载明损害赔偿与律师费处理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-04",
+      "title": "Srinivasan v. Milestone Financial, LLC",
+      "url": "https://www.courtlistener.com/opinion/11054158/srinivasan-v-milestone-financial-llc/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "does not set the statutory maximum for such a sanction at 180 days, but rather provides a discrete sanction",
+      "official_no": "",
+      "title_cn": "斯里尼瓦桑诉 Milestone 金融公司案（涉第十三章破产自愿撤诉的绝对权利与一年禁止再申请裁定）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第九巡回上诉法院11月4日就一对母子第十三章破产债务人的上诉作出裁判：撤销破产法院以「未遵守法院命令」为由驳回案件的裁定，指令改按债务人依《破产法典》第1307(b)条提出的自愿撤诉请求处理；同时维持破产法院施加的一年禁止再申请令。\n\n合议庭重申本院先例，认为第1307(b)条赋予债务人绝对的自愿撤诉请求权，即便申请系恶意提出亦然，破产法院须优先处理该请求，故以未提交附表与报表为由驳回案件属裁量滥用；该错误不影响禁止再申请令的期限计算。\n\n就禁止再申请令，合议庭认为第109(g)条的180日并非此类制裁的法定上限，破产法院可依第349(a)条「有正当理由」作出更长期限的禁令。考虑债务人及其家庭此前十余次申请、反复未推进程序、缺席听证等记录，一年期限属合理裁量。判决未涉及债务实体争议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-04",
+      "title": "Logan Riffenburg v. Mark Rice",
+      "url": "https://www.courtlistener.com/opinion/11054075/logan-riffenburg-v-mark-rice/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第八巡回上诉法院",
+      "summary": "the Eighth Circuit (BAP) and moved for a stay pending appeal in the bankruptcy court. The bankruptcy court",
+      "official_no": "",
+      "title_cn": "里芬堡诉赖斯案（涉破产财产出售的终局规则与未在下级质疑买受人善意的失权后果）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第八巡回上诉法院11月4日维持破产上诉庭裁定，以《破产法典》第363(m)条法定无实际意义为由驳回针对破产财产出售的上诉。\n\n案涉阿肯色州不动产，债务人二分之一份额经管理人售予 Blue Sun Capital。异议人未取得上诉期间中止令，出售完成后管理人申请驳回上诉，上诉庭以分歧合议庭支持。\n\n第363(m)条终局规则须满足：批准向善意买受人出售、无人取得中止令、撤销批准将影响出售效力。本案后两项无争议，争点仅在买受人善意。异议人自始未在破产法院质疑善意，依本院 Rodriquez 先例，该争点未获保留，径行驳回。脚注中对 Rodriquez 是否符合文义表示疑虑，但称受先例拘束；对异议法官援引 MOAC 案主张先例已被推翻，认为该判决仅解决第363(m)条是否属管辖条款，未动摇本案结论。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-04",
+      "title": "Liu v. Rubio",
+      "url": "https://www.courtlistener.com/opinion/11054354/liu-v-rubio/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "visa application in violation of the Administrative Procedure Act (“APA”) (5 U.S.C. §§ 555(b) and 706(1))",
+      "official_no": "",
+      "title_cn": "刘诉鲁比奥案（涉 F-1 签证行政审查迟延的执行令状与《行政程序法》请求，特区法院准予驳回起诉）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "哥伦比亚特区联邦地区法院11月4日准予政府驳回起诉的动议，驳回一名中国籍斯坦福大学博士生就 F-1 签证续签长期处于「行政审查」状态提起的诉讼。\n\n原告2025年6月在温哥华总领事馆面谈后，申请先被标注「拒绝」、随即转入行政审查，近六个月无实质进展，遂自行起诉国务卿鲁比奥、驻温哥华总领事及国务院，请求依《行政程序法》与执行令状强制机关在期限内作出裁定。\n\n法院认为，原告未能指出机关依法必须履行的「具体」非裁量性行为，故未陈述可获救济的请求；对领事不可审查原则与迟延是否不合理两项主张，法院明确未予裁断，并指出即便认定存在该义务，本案延迟亦不构成不合理。法院在脚注中批评机关同时使用「拒绝」与「待审」两套表述造成混乱，但表示无权填补该法定空白。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-03",
@@ -14,13 +104,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "filed a motion to stay the district court’s preliminary injunction pending appeal. See Dkt. 89. The Government",
       "official_no": "",
-      "title_cn": "全国临时保护身份联盟诉马林案（涉国土安全部终止 TPS，第九巡回驳回上诉期间暂缓执行申请）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-04",
         "body": "第九巡回上诉法院以公开命令驳回政府在上诉期间暂缓执行初步禁令的动议，并一并驳回其至少 21 日行政中止的备选请求；实体问题将另行确定加速审理日程。合议庭由沃德劳、门多萨、约翰斯通三位法官组成。\n\n此前最高法院于 10 月 5 日调卷，撤销第九巡回在 National TPS Alliance 诉 Noem 案（166 F.4th 739）中的裁判，依 Mullin 诉 Doe 案（609 U.S. 324）发回重审；同日政府请求中止自最高法院现行中止令 11 月 6 日到期时即时生效。\n\n起诉方为全国临时保护身份联盟及多名 TPS 受益人，被告为国土安全部长马林与国土安全部；地区法院为北加州联邦地区法院。命令未展开涉案 TPS 国别与实体争点，相关认定以判决书原文为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "全国临时保护身份联盟诉马林案（涉国土安全部终止 TPS，第九巡回驳回上诉期间暂缓执行申请）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -32,13 +122,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "for an immediate administrative stay and a stay pending appeal of the district court’s grant of a temporary",
       "official_no": "",
-      "title_cn": "服务业雇员国际工会诉司法部案（第九巡回全院庭审恢复合议庭中止令，涉选民名单隔离）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-04",
         "body": "第九巡回全院庭审以多数票恢复三法官合议庭 11 月 2 日的命令，批准政府在上诉期间中止地区法院临时限制令。合议庭认定，该命令虽名为临时限制令，但持续 17 天、含强制性义务且逾期将无从救济，可按初步禁令审查。\n\n争议源于联邦官员致函加州与华盛顿州选举官员、要求隔离疑似非公民选票。服务业雇员国际工会等四家原告于 10 月 29 日起诉司法部与国土安全部，主张违反《选举权法》第 11(b) 条与宪法选举条款；地区法院次日未经听证签发单方限制令。\n\n合议庭认为原告两项主张均可能不成立：第 11(b) 条未明文赋予私人诉权，致函与调查属核心行政职能。米勒法官协同；首席法官穆尔吉亚与德赛法官分别异议，认为该等「请求」实以刑事起诉相威胁，且于选举日恢复中止令有违 Purcell 原则。",
         "tier": "note"
-      }
+      },
+      "title_cn": "服务业雇员国际工会诉司法部案（第九巡回全院庭审恢复合议庭中止令，涉选民名单隔离）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -50,13 +140,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "that the FAA’s decision violated the Administrative Procedure Act. But the Civil Service Reform Act (CSRA)",
       "official_no": "",
-      "title_cn": "托泽诉联邦航空管理局案（涉《文官制度改革法》专属救济与《行政程序法》管辖，起诉被驳回）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-04",
         "body": "哥伦比亚特区联邦地区法院麦克法登法官准予联邦航空管理局的驳回起诉动议，以缺乏事项管辖权驳回威廉·托泽的《行政程序法》之诉，且为不带偏见驳回。\n\n托泽自行起诉，称其应聘空中交通管制专员并签署临时录用通知后，因未达「最低心理能力」标准于 2025 年 10 月被认定体检不合格，而神经心理学评估未发现具航空医学意义的神经认知缺陷。他向联邦航空医官上诉未果，另向国家运输安全委员会与平等就业机会委员会求助，均被告知无管辖权。\n\n法院认定撤销录用通知属 5 U.S.C. § 2302(a)(2)(A)(i) 所称「人事行为」，《文官制度改革法》为专属救济渠道；该法虽大体豁免联邦航空管理局，但此种豁免恰表明国会无意提供司法审查，当事人不得改以《行政程序法》重新包装诉请。",
         "tier": "note"
-      }
+      },
+      "title_cn": "托泽诉联邦航空管理局案（涉《文官制度改革法》专属救济与《行政程序法》管辖，起诉被驳回）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -68,13 +158,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "limits judicial review to a particular type of agency action, a ‘final decision of the Secretary made after",
       "official_no": "",
-      "title_cn": "约翰逊诉社会保障局案（涉 SSI 削减未穷尽行政救济，特区法院准予驳回起诉）",
-      "domain": "社会保障",
       "brief": {
         "at": "2026-11-04",
         "body": "哥伦比亚特区联邦地区法院弗里德曼法官准予社会保障局的驳回动议，依第 12(b)(6) 条驳回贝琳达·约翰逊的诉讼，认定其未穷尽行政救济。\n\n约翰逊自行起诉。社会保障局 2019 年 11 月 2 日发出《计划行动通知》，因她自当年 10 月起每月领取 657 美元退休保险福利，自 12 月 1 日起将其补充保障收入（SSI）削减约九成至 134 美元。法院查明其未在 60 天内申请复议，最早一次迟至 2020 年 10 月 26 日。\n\n依 42 U.S.C. § 405(g) 及其对 SSI 的转致规定，司法审查以局长听证后的「最终决定」为前提，未复议即不构成可审查的最终决定。法院并认定，其首次称从未收到通知属空泛陈述，不足以推翻送达推定；附随性、徒劳性与不可弥补损害三项例外均不成立。",
         "tier": "note"
-      }
+      },
+      "title_cn": "约翰逊诉社会保障局案（涉 SSI 削减未穷尽行政救济，特区法院准予驳回起诉）",
+      "domain": "社会保障"
     },
     {
       "board": "judicial",
