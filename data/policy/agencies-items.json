@@ -1,9 +1,43 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-04 13:28",
-  "count": 100,
+  "updated_at": "2026-11-05 09:14",
+  "count": 102,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-04",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22503/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-22503",
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Ohlin 家族信托及多数股东控制集团，明尼苏达）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "美联储理事会依据《银行控制权变更法》（12 U.S.C. 1817(j)）及 Y 条例 §225.41，公布股份收购通告。\n· 申请人 John Ohlin 以个人身份并作为 Spalj 家族等五项托管信托的受托人，申请保留 Deerwood Bancshares（明尼苏达州巴克斯特）股份，并间接受控 Deerwood Bank（韦特帕克）。\n· Luke Spalj、John R. Spalj、Jennifer Harting、Joel Bauer 与 Ohlin 申请加入「多数股东控制集团」一致行动团体，以保留同一批股份。\n· 审查标准为该法第 7 款；申请材料公开部分可在明尼阿波利斯联储查阅。\n· 意见截止 2026 年 11 月 19 日，送明尼阿波利斯联储或理事会秘书处。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-04",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22502/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-22502",
+      "title_cn": "银行控股公司组建、收购与合并申请（Keweenaw 金融并购 Range Financial）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "美联储理事会依据 1956 年《银行控股公司法》（12 U.S.C. 1841 et seq.）与 Y 条例（12 CFR part 225），公布银行控股公司组建、收购与合并申请通告。\n· 本期仅一宗：Keweenaw Financial Corporation（密歇根州汉考克）申请与 Range Financial Corporation 合并，并间接收购 Range Bank，后两者均位于密歇根州马凯特。\n· 审查标准为《银行控股公司法》12 U.S.C. 1842(c) 所列各项。\n· 申请材料公开部分可在明尼阿波利斯联储及理事会办公室查阅。\n· 书面意见须于 2026 年 12 月 4 日前送达明尼阿波利斯联储或理事会秘书处。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-03",
@@ -13,13 +47,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-22399",
-      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Y 条例 §225.41）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "理事会依《银行控制权变更法》（12 U.S.C. 1817(j)）与 Y 条例 §225.41，公告收到银行控制权变更申请。\n本批一宗：田纳西州 Red Boiling Springs 的 Hugh Wayne Clark 申请增持 Macon Banctrust, Inc. 的有表决权股份，并由此间接取得同州 Lafayette 的 Macon Bank and Trust Company 有表决权股份。\n意见须于 2026 年 11 月 18 日前书面提交亚特兰大联邦储备银行或理事会秘书处（Benjamin W. McDonough），申请公开部分可在该行与理事会查阅。\n属个案准入通告，不涉及规则条文变更；理事会尚未就该申请作出准驳决定。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Y 条例 §225.41）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -30,13 +64,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-22398",
-      "title_cn": "银行控股公司组建、收购与合并申请（Y 条例·通告）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "理事会依《1956 年银行控股公司法》（12 U.S.C. 1841 等）与 Y 条例（12 CFR 225），公告收到的银行控股公司组建、收购与合并申请。\n本批一宗：佐治亚州 Alpharetta 的 Brighton Capital Corporation 申请与 Hazlehurst Investors, Inc. 合并，从而成为银行控股公司，并由此间接取得同州 Hazlehurst 的 Bank of Hazelhurst。\n异议须于 2026 年 12 月 3 日前书面提交亚特兰大联邦储备银行或理事会秘书处；申请公开部分可在该行与理事会查阅。\n属申请阶段通告，理事会尚未作出批准决定，亦不涉及规则条文变更。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控股公司组建、收购与合并申请（Y 条例·通告）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -47,13 +81,13 @@
       "kind": "规则",
       "agency": "联邦通信委员会 FCC",
       "official_no": "2026-22408",
-      "title_cn": "广播与有线电视平等就业机会规则复审：删除 §73.3612 及援引条款（最终规则）",
-      "domain": "电信/媒体",
       "brief": {
         "at": "2026-11-04",
         "body": "FCC 媒体局以最终规则形式，删除第 47 编 §73.3612 及第 73、74 部分对该条的援引，2026 年 11 月 3 日刊登即生效，不改变现行可执行要求。\n被删条款要求广播机构按岗位类别年度报送雇员种族、族裔与性别信息（原 Form 395-B），1969 年制定、2001 年起中止执行，2024 年由委员会恢复。\n依据是第五巡回上诉法院在 National Religious Broadcasters v. FCC（138 F.4th 282，2025）中认定 FCC 缺乏要求报送就业数据的法定权限并撤销 2024 年命令，该条已无法律效力。\n媒体局援引 5 U.S.C. 553(b)(B)、(d) 正当理由例外，认定无需事前通告与评论，且属国会审查法下非重大规则。",
         "tier": "note"
-      }
+      },
+      "title_cn": "广播与有线电视平等就业机会规则复审：删除 §73.3612 及援引条款（最终规则）",
+      "domain": "电信/媒体"
     },
     {
       "board": "agencies",
@@ -64,13 +98,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-22378",
-      "title_cn": "虾及含虾制品：申诉受理与公共利益意见征询（DN 3945）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-04",
         "body": "国际贸易委员会公告收到 337 调查申诉，DN 3945，涉案商品为虾及含虾制品；申诉方 Versaggi Shrimp Corp. 与 W&W Dock LLP 于 2026 年 10 月 28 日提出。\n列名被申请人含印度 Nekkanti Sea Foods Ltd.、美国 Eastern Fish Company、德国 ALDI SÜD 与 ALDI Inc.、荷兰 Koninklijke Ahold Delhaize N.V. 与 Ahold Delhaize USA、Meijer, Inc.。\n申诉方请求有限排除令与停止与终止令，并于 60 天总统审查期内征收保证金。\n书面意见须于 2026 年 11 月 11 日（公告后第 8 日）前提交，限 5 页；委员会尚未决定是否立案。",
         "tier": "note"
-      }
+      },
+      "title_cn": "虾及含虾制品：申诉受理与公共利益意见征询（DN 3945）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -81,13 +115,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-22372",
-      "title_cn": "挤出包覆电磁线（中国）：337 调查立案（337-TA-1527）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-04",
         "body": "国际贸易委员会依 1930 年关税法 §337 立案（337-TA-1527），涉案商品为外层由挤出热塑性树脂构成的挤出包覆电磁线。\n申诉方 Essex Solutions Inc. 与 Essex Solutions USA LLC 于 2026 年 9 月 29 日提出、10 月 13 日补充，主张侵害美国专利 8,847,075、9,224,523、10,210,966 的相关权利要求。\n被申请人为江西赣州 Wellascent Electronic (Ganzhou) Co., Ltd. 与 Wellascent Technologies USA LLC。\n委员会 2026 年 10 月 29 日下令立案；被申请人须于送达后 20 日内答辩，申诉方请求有限排除令与停止与终止令。",
         "tier": "note"
-      }
+      },
+      "title_cn": "挤出包覆电磁线（中国）：337 调查立案（337-TA-1527）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
