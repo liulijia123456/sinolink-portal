@@ -5404,26 +5404,38 @@
             <span class="pw-side-e">Stage</span>
           </div>
           <div class="pw-tabs" role="tablist" aria-label="立法阶段">
-            <button type="button" class="pw-tab is-on" data-cg-stage="propose" role="tab" aria-selected="true">
+            <button type="button" class="pw-tab is-on" data-cg-stage="intro" role="tab" aria-selected="true">
               <span class="pw-tab-n">01</span>
               <span class="pw-tab-t">提案</span>
-              <span class="pw-tab-e">Proposal</span>
-              <span class="pw-tab-c" id="cg-count-propose">—</span>
+              <span class="pw-tab-e">Introduced</span>
+              <span class="pw-tab-c" id="cg-count-intro">—</span>
             </button>
-            <button type="button" class="pw-tab" data-cg-stage="review" role="tab" aria-selected="false" tabindex="-1">
+            <button type="button" class="pw-tab" data-cg-stage="house" role="tab" aria-selected="false" tabindex="-1">
               <span class="pw-tab-n">02</span>
-              <span class="pw-tab-t">审议</span>
-              <span class="pw-tab-e">Deliberation</span>
-              <span class="pw-tab-c" id="cg-count-review">—</span>
+              <span class="pw-tab-t">过众议院</span>
+              <span class="pw-tab-e">Passed House</span>
+              <span class="pw-tab-c" id="cg-count-house">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="senate" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">03</span>
+              <span class="pw-tab-t">过参议院</span>
+              <span class="pw-tab-e">Passed Senate</span>
+              <span class="pw-tab-c" id="cg-count-senate">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="president" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">04</span>
+              <span class="pw-tab-t">呈送总统</span>
+              <span class="pw-tab-e">To President</span>
+              <span class="pw-tab-c" id="cg-count-president">—</span>
             </button>
             <button type="button" class="pw-tab" data-cg-stage="enact" role="tab" aria-selected="false" tabindex="-1">
-              <span class="pw-tab-n">03</span>
+              <span class="pw-tab-n">05</span>
               <span class="pw-tab-t">成法</span>
-              <span class="pw-tab-e">Enactment</span>
+              <span class="pw-tab-e">Enacted</span>
               <span class="pw-tab-c" id="cg-count-enact">—</span>
             </button>
           </div>
-          <p class="pw-side-note">按 congress.gov「最新行动」归段，三段互斥、合计为全部条目：<b>提案</b>为已提出并交付委员会；<b>审议</b>含听证、报告、列入日程、全院表决、两院协调与呈送总统；<b>成法</b>为已成公法（Became Public Law）。</p>
+          <p class="pw-side-note">与 congress.gov 法案进度条同构，按「最新行动」取已达的最远节点，五段互斥、合计为全部条目。<b>提案</b>含交付委员会、听证、报告、列入日程等尚未过院的全部程序；<b>过众议院／过参议院</b>以本院通过为准（另一院出现「Received in」即视为该院已过）；<b>呈送总统</b>为已送签未成法；<b>成法</b>为已成公法或经总统签署。</p>
         </aside>
 
         <div class="pw-main">
@@ -10749,7 +10761,7 @@
       // 重置筛选
       var resetBtn = document.getElementById('filter-reset');
       if (resetBtn) resetBtn.addEventListener('click', function () {
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
         var tSel = document.getElementById('filter-time');
         [].slice.call(tSel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
         tSel.value = 'all';
@@ -10867,7 +10879,7 @@
       }
 
       // 筛选状态
-      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
+      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
       // 分页状态：每页条数可调（默认 20 条/页）
       var boardPageSize = 20;
       var boardPageSizeOpts = [10, 20, 50];
@@ -10960,67 +10972,60 @@
       // 去掉院别前缀，只留文种：法案 / 决议 / 联合决议 / 共同决议
       function congressType(k) { return String(k || '').replace(/^(参议院|参院|众议院|众院)/, ''); }
 
-      // ===== 国会板块：立法阶段归段（提案 / 审议 / 成法）=====
-      // 依据条目 agency 字段里的 congress.gov「最新行动」英文原文判定，一条只归一段，取已达的最远节点。
-      // 三段口径（依次递进，不重叠）：
-      //   提案 —— 已提出并交付委员会，尚未有任何审议动作；
-      //   审议 —— 已进入听证、报告、列入日程、全院表决、两院协调或总统环节，但尚未成法；
-      //   成法 —— 已成为公法（Became Public Law / 总统签署 / Became law）。
-      // 判定顺序：先拦议事规则，再判成法，最后判「已过一院」与审议动作。
-      //   · Rule H. Res. … passed House —— 是议事规则通过、非法案通过，先拦下计入审议；
-      //   · Received in the Senate / House —— 另一院已通过（简报亦写「已通过众议院」），属审议而非成法，
-      //     且该文本同时含 referred，必须排在提案之前判，否则会被误计为提案；
-      //   · Held at the desk / Read twice and referred —— 仍在委员会前，计入提案。
-      var CG_ENACT_RE = new RegExp(['Became Public Law', 'Signed by President', 'Became law'].join('|'), 'i');
-      var CG_FLOOR_RE = new RegExp([
-        'Passed (the )?(House|Senate)', 'Resolution agreed to',
-        'agreed to in (the )?(House|Senate)', 'considered,\\s*and agreed to',
-        'Received in the (Senate|House)', 'Presented to President',
-        'Motion to reconsider laid on the table Agreed to',
-        'Message on (Senate|House) action'
-      ].join('|'), 'i');
-      var CG_REVIEW_RE = new RegExp([
-        'Reported', 'Placed on [^.]*Calendar', 'Calendar No\\.',
-        'Hearings held', 'Forwarded by Subcommittee', 'Under consideration',
-        'Discharged from', 'Committee of the Whole', 'Motion to proceed',
-        'Cloture', 'Resumed consideration', 'Rule H\\. Res\\.'
-      ].join('|'), 'i');
+      // ===== 国会板块：五道立法节点（与 congress.gov 进度条同构）=====
+      // 由「最新行动」文本取已达的最远节点，一条只落一格：
+      //   intro      已提出，含交付委员会、听证、报告、列入日程等尚未过院的全部程序
+      //   house      已过众议院（另一院出现「Received in the Senate」即视为众议院已过）
+      //   senate     已过参议院
+      //   president  已呈送总统、尚未成法
+      //   enact      已成公法，或经总统签署
+      // 已知边界：议事规则通过（Rule H. Res.）计入 intro，不算法案过院。
+      var CG_ENACT_RE = /Became Public Law|Signed by President|Became law/i;
+      var CG_PRES_RE = /Presented to President|Sent to President/i;
+      var CG_SENATE_RE = /Passed Senate|Received in the House|agreed to in (the )?Senate|Resolution agreed to in Senate|considered,\s*and agreed to|Message on Senate action/i;
+      var CG_HOUSE_RE = /Passed House|Received in the Senate|agreed to in (the )?House|Resolution agreed to in House|Message on House action/i;
       function congressStage(it) {
         var a = String((it && it.agency) || '');
         var act = a.indexOf('·') >= 0 ? a.slice(a.indexOf('·') + 1).trim() : a;
-        if (/^Rule H\. Res\./i.test(act)) return 'review';
+        if (/^Rule H\. Res\./i.test(act)) return 'intro';
         if (CG_ENACT_RE.test(act)) return 'enact';
-        if (CG_FLOOR_RE.test(act)) return 'review';
-        if (CG_REVIEW_RE.test(act)) return 'review';
-        return 'propose';
+        if (CG_PRES_RE.test(act)) return 'president';
+        if (CG_SENATE_RE.test(act)) return 'senate';
+        if (CG_HOUSE_RE.test(act)) return 'house';
+        if (/Motion to reconsider laid on the table Agreed to/i.test(act)) {
+          return String(it.kind || '').charAt(0) === '众' ? 'house' : 'senate';
+        }
+        return 'intro';
       }
       // 日期口径随阶段切换：提案看提出日，审议看成法前的最后一步行动日，成法看成法日。
       // 三个值都来自 enrich_congress.py 回填的字段；缺失时回落到记录更新日，避免空白。
       function cgStageDate(it) {
         if (FILTER_BOARD !== 'congress') return it.date || '';
-        var st = filterState.stage || 'propose';
-        if (st === 'review' || st === 'enact') return it.stage_date || it.date || '';
-        return it.introduced || it.date || '';
+        var st = filterState.stage || 'intro';
+        if (st === 'intro') return it.introduced || it.date || '';
+        return it.stage_date || it.date || '';
       }
       function cgDateLabel() {
         if (FILTER_BOARD !== 'congress') return '刊登日';
-        var st = filterState.stage || 'propose';
-        if (st === 'enact') return '成法日';
-        if (st === 'review') return '进入本环节';
-        return '提出日';
+        var st = filterState.stage || 'intro';
+        return { intro: '提出日', house: '过众院日', senate: '过参院日',
+                 president: '呈送日', enact: '成法日' }[st] || '提出日';
       }
       function cgDateTitle() {
         if (FILTER_BOARD !== 'congress') return '联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日';
-        var st = filterState.stage || 'propose';
-        if (st === 'enact') return '成为公法之日（congress.gov 最新行动为 Became Public Law 的日期）';
-        if (st === 'review') return '触发当前阶段的那次行动发生之日（听证、报告、列入日程、表决等）';
-        return '法案向本院提出的日期（congress.gov introducedDate）';
+        var st = filterState.stage || 'intro';
+        if (st === 'intro') return '法案向本院提出的日期（congress.gov introducedDate）';
+        if (st === 'enact') return '成为公法之日（congress.gov 最新行动为 Became Public Law 或总统签署的日期）';
+        if (st === 'president') return '呈送总统之日（Presented to President）';
+        if (st === 'senate') return '参议院通过之日，或参议院行动通知众议院之日';
+        return '众议院通过之日，或众议院行动通知参议院之日';
       }
       // 国会条目的速览抬头：静态基本信息 + 当前阶段，供读者在正文之外快速定位
       function cgMetaHtml(it) {
         if (FILTER_BOARD !== 'congress') return '';
-        var st = filterState.stage || 'propose';
-        var stLabel = { propose: '提案', review: '审议', enact: '成法' }[st] || '—';
+        var st = filterState.stage || 'intro';
+        var stLabel = { intro: '提案', house: '过众议院', senate: '过参议院',
+                        president: '呈送总统', enact: '成法' }[st] || '—';
         var dept = congressChamber(it.kind) || '—';
         if (it.committee) dept += ' · ' + it.committee;
         var who = it.sponsor || '—';
@@ -11036,7 +11041,7 @@
         }).join('') + '</div>';
       }
       function syncCgStageUI() {
-        var cur = filterState.stage || 'propose';
+        var cur = filterState.stage || 'intro';
         [].forEach.call(document.querySelectorAll('#cg-side [data-cg-stage]'), function (b) {
           var on = b.getAttribute('data-cg-stage') === cur;
           b.classList.toggle('is-on', on);
@@ -11766,9 +11771,9 @@
         if (sideCount && (key === 'whitehouse' || key === 'agencies')) sideCount.textContent = allItems.length + ' 条';
         // 国会板块：立法阶段侧栏读数（全部 / 提案 / 审议 / 成法），按板块全量计，不随其它筛选变化
         if (key === 'congress') {
-          var cgN = { all: allItems.length, propose: 0, review: 0, enact: 0 };
+          var cgN = { all: allItems.length, intro: 0, house: 0, senate: 0, president: 0, enact: 0 };
           allItems.forEach(function (it) { cgN[congressStage(it)] += 1; });
-          ['propose', 'review', 'enact'].forEach(function (s) {
+          ['intro', 'house', 'senate', 'president', 'enact'].forEach(function (s) {
             var el = document.getElementById('cg-count-' + s);
             if (el) el.textContent = cgN[s] + ' 条';
           });
@@ -12075,7 +12080,7 @@
           boardHead.classList.toggle('is-judicial', key === 'judicial');
         }
         // 切换板块时重置筛选
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
         document.getElementById('filter-time').value = 'all';
         document.getElementById('filter-agency').value = 'all';
         document.getElementById('filter-kind').value = 'all';
