@@ -258,6 +258,33 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 美方单边制裁许可期限
     ('2027-03-01', 'DOE 新建筑化石燃料限制废止合规日延期生效'):
         {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 联邦建筑清洁能源合规
+    # 2026-11-06 批次：总统公告的行政行为 + 联邦监管规则
+    ('2026-11-05', '美国延续四项国家紧急状态'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'exec'},      # 美方单边制裁与对外投资限制的年度延续
+    ('2026-11-20', '美国消音器出口管制改由 EAR 统一实施'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 军品与两用物项出口管制轨道转换
+    ('2026-12-07', 'FCC 卫星宽带频谱共享现代化规则生效'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 频谱与卫星宽带
+    ('2026-12-28', 'DOE 联邦资助项目反歧视规定废止生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦资助项目用工与合规义务
+    ('2027-01-04', 'EPA 重要新用途规则 25-3.5e 生效'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # TSCA 化学品监管
+    ('2027-01-15', 'FDA 撤销 FD&C 红 3 号色素使用规定生效'):
+        {'cat': 'pol', 'topic': 'growth', 'actor': 'agency'},      # 食品与药品配料规格
+    ('2027-02-01', '交通部航空延误与取消原因分类规则生效'):
+        {'cat': 'pol', 'topic': 'growth', 'actor': 'agency'},      # 航空运输的报送口径
+    ('2027-02-04', 'FDA 非临床试验术语规则生效'):
+        {'cat': 'pol', 'topic': 'growth', 'actor': 'agency'},      # 药品非临床研究提交规范
+    ('2027-07-01', '教育部学生贷款与收入问责规则生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},       # 联邦学生贷款与院校资格
+    ('2027-12-31', '232 条款铝钢铜关税过渡税率届满'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 金属进口关税的阶段性安排
+    ('2028-01-01', '232 条款铝钢铜关税切回基准税率'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 同上，税率切换节点
+    ('2028-01-01', 'FinCEN 投资顾问反洗钱规则生效'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 金融监管（反洗钱）
+    ('2033-03-07', 'FDA 药品国家药品码格式统一规则生效'):
+        {'cat': 'pol', 'topic': 'growth', 'actor': 'agency'},      # 药品标识与追溯编码
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
