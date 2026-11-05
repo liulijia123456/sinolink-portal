@@ -335,6 +335,7 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
 | `fetch_policy.py` | 抓取四板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
+| `enrich_congress.py` | 为国会条目补 `introduced`（提出日）、`stage_date`（进入本环节日）、`sponsor`（提出者）、`committee`（委员会）；可重入，每 20 条落盘 | `python3 scripts/enrich_congress.py [--limit 60] [--dry-run]` |
 | `brief.py` | 速览覆盖率体检 / 生成队列 / 合并速览（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |

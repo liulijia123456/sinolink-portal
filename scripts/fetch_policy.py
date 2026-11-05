@@ -579,6 +579,9 @@ def fetch_congress(since):
             items.append({
                 'board': 'congress',
                 'date': upd or (b.get('introducedDate') or ''),
+                # 立法日期：提出日与「触发当前阶段的那次行动」的日期，前端三段各取其一作时间列
+                'introduced': (b.get('introducedDate') or '')[:10],
+                'stage_date': ((b.get('latestAction') or {}).get('actionDate') or '')[:10],
                 'title': (b.get('title') or '').strip(),
                 'url': url,
                 'source': '国会官网',
@@ -905,6 +908,14 @@ def main():
             board = payload['boards'][key]
             old_n = len(board.get('items', []))
             board['items'] = merge_items(board.get('items', []), new_items)
+            # 国会：列表接口不含 sponsors，逐条查详情补「提出者 / 委员会」。
+            # 每次运行最多 80 条，新条目优先，历史欠账由 enrich_congress.py 单独补。
+            if key == 'congress':
+                try:
+                    from enrich_congress import enrich as _enrich_cg
+                    _enrich_cg(board['items'], CONGRESS_API_KEY, limit=80, sleep=0.6, need='sponsor')
+                except Exception as e:
+                    log.warning('[国会] 补提出者失败（不影响条目入库）：%s', e)
             board['updated_at'] = stamp
             log.info('[%s] 合并完成：旧 %d 条 + 抓取 %d 条 → 共 %d 条（净增 %d）',
                      name, old_n, len(new_items), len(board['items']),

@@ -1191,6 +1191,16 @@
     margin-left: auto; text-decoration: none; white-space: nowrap; transition: all .15s ease;
   }
   .subview .note .brief-src:hover { background: var(--accent-light); color: #fff; }
+  /* 速览抬头的基本信息块：提出日 / 提出者 / 部门 / 当前阶段 */
+  .subview .note .brief-meta {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 20px;
+    margin: 0 0 14px; padding: 11px 14px;
+    background: #faf8f3; border: 1px solid var(--border-light); border-radius: 9px;
+  }
+  .subview .note .brief-meta > div { display: flex; align-items: baseline; gap: 9px; min-width: 0; }
+  .subview .note .bm-k { flex: none; font-size: 11px; color: var(--muted-light); letter-spacing: .02em; }
+  .subview .note .bm-v { min-width: 0; font-size: 12.5px; color: #26303c; line-height: 1.5; }
+  @media (max-width: 760px) { .subview .note .brief-meta { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
 
   /* 栏目标题：研判 / 条目分区 */
   .col-head { display: flex; align-items: baseline; gap: 10px; margin: 4px 0 14px; }
@@ -5455,7 +5465,7 @@
 
           <div class="pw-table">
             <div class="pw-thead">
-              <span title="联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日">刊登日</span>
+              <span id="pw-th-date" title="联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日">刊登日</span>
               <span>标题</span>
               <span>类型 / 编号</span>
               <span id="pw-th-agency">部门 / 机构</span>
@@ -10852,6 +10862,7 @@
           (it.official_no ? '<span class="brief-no">' + esc(it.official_no) + '</span>' : '') +
           '<span class="brief-at">' + esc(b.at || '') + '</span>' +
           '<a class="brief-src" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></div>' +
+          cgMetaHtml(it) +
           body;
       }
 
@@ -10901,8 +10912,12 @@
           }
           return true;
         });
-        // 按日期倒序
-        out.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+        // 按当前口径的日期倒序；同日并列时以编号兜底，保证翻页顺序稳定
+        out.sort(function (a, b) {
+          var d = cgStageDate(b).localeCompare(cgStageDate(a));
+          if (d) return d;
+          return String(b.official_no || '').localeCompare(String(a.official_no || ''));
+        });
         return out;
       }
 
@@ -10978,6 +10993,47 @@
         if (CG_FLOOR_RE.test(act)) return 'review';
         if (CG_REVIEW_RE.test(act)) return 'review';
         return 'propose';
+      }
+      // 日期口径随阶段切换：提案看提出日，审议看成法前的最后一步行动日，成法看成法日。
+      // 三个值都来自 enrich_congress.py 回填的字段；缺失时回落到记录更新日，避免空白。
+      function cgStageDate(it) {
+        if (FILTER_BOARD !== 'congress') return it.date || '';
+        var st = filterState.stage || 'propose';
+        if (st === 'review' || st === 'enact') return it.stage_date || it.date || '';
+        return it.introduced || it.date || '';
+      }
+      function cgDateLabel() {
+        if (FILTER_BOARD !== 'congress') return '刊登日';
+        var st = filterState.stage || 'propose';
+        if (st === 'enact') return '成法日';
+        if (st === 'review') return '进入本环节';
+        return '提出日';
+      }
+      function cgDateTitle() {
+        if (FILTER_BOARD !== 'congress') return '联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日';
+        var st = filterState.stage || 'propose';
+        if (st === 'enact') return '成为公法之日（congress.gov 最新行动为 Became Public Law 的日期）';
+        if (st === 'review') return '触发当前阶段的那次行动发生之日（听证、报告、列入日程、表决等）';
+        return '法案向本院提出的日期（congress.gov introducedDate）';
+      }
+      // 国会条目的速览抬头：静态基本信息 + 当前阶段，供读者在正文之外快速定位
+      function cgMetaHtml(it) {
+        if (FILTER_BOARD !== 'congress') return '';
+        var st = filterState.stage || 'propose';
+        var stLabel = { propose: '提案', review: '审议', enact: '成法' }[st] || '—';
+        var dept = congressChamber(it.kind) || '—';
+        if (it.committee) dept += ' · ' + it.committee;
+        var who = it.sponsor || '—';
+        if (it.sponsor_tag) who += '（' + it.sponsor_tag + '）';
+        var rows = [
+          ['提出日', it.introduced || '—'],
+          ['提出者', who],
+          ['部门', dept],
+          ['当前阶段', stLabel]
+        ];
+        return '<div class="brief-meta">' + rows.map(function (r) {
+          return '<div><span class="bm-k">' + esc(r[0]) + '</span><span class="bm-v">' + esc(r[1]) + '</span></div>';
+        }).join('') + '</div>';
       }
       function syncCgStageUI() {
         var cur = filterState.stage || 'propose';
@@ -11702,6 +11758,9 @@
         if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
           : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
+        // 日期列按板块 / 阶段换口径：白宫等按刊登日，国会三段各自看自己的程序日期
+        var thDate = document.getElementById('pw-th-date');
+        if (thDate) { thDate.textContent = cgDateLabel(); thDate.title = cgDateTitle(); }
         // 侧栏读数：联邦公报刊登的条目总数（仅有侧栏的白宫 / 独立机构板块显示）
         var sideCount = document.getElementById('pw-tab-count-fr');
         if (sideCount && (key === 'whitehouse' || key === 'agencies')) sideCount.textContent = allItems.length + ' 条';
@@ -11738,6 +11797,20 @@
         }
         empty.hidden = true;
 
+        // 某一段当前无条目（如暂无成法）：给出换段提示，而不是留一张空表
+        if (items.length === 0) {
+          list.innerHTML = '';
+          empty.textContent = key === 'congress'
+            ? '该阶段当前没有条目，可在左侧切换到其它阶段。'
+            : (meta.empty || '暂无条目，等待首次定时抓取更新（每日）。');
+          empty.hidden = false;
+          var pager0 = document.getElementById('board-pager');
+          if (pager0) { pager0.hidden = true; pager0.innerHTML = ''; }
+          count.hidden = false;
+          count.textContent = '共 0 条';
+          return;
+        }
+
         // 分页：每页 boardPageSize 条，仅渲染当前页（页码越界时回落到最后一页）
         var pageCount = Math.max(1, Math.ceil(items.length / boardPageSize));
         if (boardPage > pageCount - 1) boardPage = pageCount - 1;
@@ -11751,8 +11824,8 @@
           if (hasBrief) nBrief++;
           return '<div class="note pw-item' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '">' +
             '<div class="pw-r">' +
-              '<span class="c-date">' + esc(it.date) +
-                (it.date && it.date > PW_TODAY ? '<i class="c-pre">预刊登</i>' : '') + '</span>' +
+              '<span class="c-date">' + esc(cgStageDate(it)) +
+                (key !== 'congress' && it.date && it.date > PW_TODAY ? '<i class="c-pre">预刊登</i>' : '') + '</span>' +
               '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
                 (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
               '<span class="c-kind"><span>' +
