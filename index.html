@@ -5394,13 +5394,7 @@
             <span class="pw-side-e">Stage</span>
           </div>
           <div class="pw-tabs" role="tablist" aria-label="立法阶段">
-            <button type="button" class="pw-tab is-on" data-cg-stage="all" role="tab" aria-selected="true">
-              <span class="pw-tab-n">00</span>
-              <span class="pw-tab-t">全部条目</span>
-              <span class="pw-tab-e">All</span>
-              <span class="pw-tab-c" id="cg-count-all">—</span>
-            </button>
-            <button type="button" class="pw-tab" data-cg-stage="propose" role="tab" aria-selected="false" tabindex="-1">
+            <button type="button" class="pw-tab is-on" data-cg-stage="propose" role="tab" aria-selected="true">
               <span class="pw-tab-n">01</span>
               <span class="pw-tab-t">提案</span>
               <span class="pw-tab-e">Proposal</span>
@@ -5419,7 +5413,7 @@
               <span class="pw-tab-c" id="cg-count-enact">—</span>
             </button>
           </div>
-          <p class="pw-side-note">按 congress.gov「最新行动」归段，一条只归一段：<b>提案</b>为已提出并交付委员会；<b>审议</b>含听证、报告、列入日程、全院表决、两院协调与呈送总统；<b>成法</b>为已成公法（Became Public Law）。</p>
+          <p class="pw-side-note">按 congress.gov「最新行动」归段，三段互斥、合计为全部条目：<b>提案</b>为已提出并交付委员会；<b>审议</b>含听证、报告、列入日程、全院表决、两院协调与呈送总统；<b>成法</b>为已成公法（Became Public Law）。</p>
         </aside>
 
         <div class="pw-main">
@@ -10745,7 +10739,7 @@
       // 重置筛选
       var resetBtn = document.getElementById('filter-reset');
       if (resetBtn) resetBtn.addEventListener('click', function () {
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
         var tSel = document.getElementById('filter-time');
         [].slice.call(tSel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
         tSel.value = 'all';
@@ -10862,7 +10856,7 @@
       }
 
       // 筛选状态
-      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', q: '' };
+      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
       // 分页状态：每页条数可调（默认 20 条/页）
       var boardPageSize = 20;
       var boardPageSizeOpts = [10, 20, 50];
@@ -10986,7 +10980,7 @@
         return 'propose';
       }
       function syncCgStageUI() {
-        var cur = filterState.stage || 'all';
+        var cur = filterState.stage || 'propose';
         [].forEach.call(document.querySelectorAll('#cg-side [data-cg-stage]'), function (b) {
           var on = b.getAttribute('data-cg-stage') === cur;
           b.classList.toggle('is-on', on);
@@ -11661,8 +11655,7 @@
           q.classList.toggle('active', !!filterState.q);
           if (filterState.q) any = true;
         }
-        // 国会立法阶段分段同属筛选条件，参与「恢复默认」按钮的显隐
-        if (filterState.stage && filterState.stage !== 'all') any = true;
+        // 立法阶段是国会板块的常驻导航（默认落在「提案」），不算可清除的筛选条件
         var rst = document.getElementById('filter-reset');
         if (rst) rst.classList.toggle('show', any);        renderPwChips();
       }
@@ -11716,7 +11709,7 @@
         if (key === 'congress') {
           var cgN = { all: allItems.length, propose: 0, review: 0, enact: 0 };
           allItems.forEach(function (it) { cgN[congressStage(it)] += 1; });
-          ['all', 'propose', 'review', 'enact'].forEach(function (s) {
+          ['propose', 'review', 'enact'].forEach(function (s) {
             var el = document.getElementById('cg-count-' + s);
             if (el) el.textContent = cgN[s] + ' 条';
           });
@@ -12009,7 +12002,7 @@
           boardHead.classList.toggle('is-judicial', key === 'judicial');
         }
         // 切换板块时重置筛选
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'propose', q: '' };
         document.getElementById('filter-time').value = 'all';
         document.getElementById('filter-agency').value = 'all';
         document.getElementById('filter-kind').value = 'all';
