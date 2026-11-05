@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-04T13:18:51+08:00",
+ "updated_at": "2026-11-05T08:41:04+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 5,
-   "added": 4,
+   "added": 1,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 1,
    "error": ""
   },
   {
@@ -48,8 +48,8 @@
    "type": "html",
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
-   "fetched": 14,
-   "added": 0,
+   "fetched": 15,
+   "added": 1,
    "error": ""
   },
   {
@@ -67,10 +67,10 @@
    "name": "Homeland Security",
    "type": "html",
    "url": "https://www.dhs.gov/news-releases/press-releases",
-   "status": "ok",
-   "fetched": 10,
-   "added": 3,
-   "error": ""
+   "status": "error",
+   "fetched": 0,
+   "added": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "agency": "国防部",
@@ -164,6 +164,36 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-04",
+   "title": "First Lady Melania Trump and LSU Establish $5 Million Fostering the Future Endowment Fund",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-and-lsu-establish-5-million-fostering-the-future-endowment-fund/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-04",
+   "title": "U.S. Sanctions Fraudulent Ship Registries and Aviation Support for Iranian Regime",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-sanctions-fraudulent-ship-registries-and-aviation-support-for-iranian-regime/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman U.S. Sanctions Fraudulent Ship Registries and Aviation Support for Iranian Regime Press Statement November 4, 2026 Today, the United States is acting against a criminal network that sells fraudulent flags to the Iranian regime’s shadow fleet of ships. The United States is also targeting a Türkiye-based company that provides ground services to"
+  },
+  {
+   "date": "2026-11-04",
+   "title": "Energy Department Awards Contracts from Northeast Home Heating Oil Reserve",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/hgeo/opr/articles/energy-department-awards-contracts-northeast-home-heating-oil-reserve",
+   "source": "Energy",
+   "summary": ""
+  },
   {
    "date": "2026-11-03",
    "title": "THE AMERICAN DECLARATION OF FREEDOM IN SPACE",
