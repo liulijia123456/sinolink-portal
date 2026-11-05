@@ -1,9 +1,162 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-04 13:14",
-  "count": 230,
+  "updated_at": "2026-11-05 08:35",
+  "count": 239,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Guidance on Eligible Investments for Trump Accounts; Hearing",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22506/guidance-on-eligible-investments-for-trump-accounts-hearing",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "财政部",
+      "official_no": "2026-22506",
+      "title_cn": "特朗普账户合格投资指引（拟议规则）及听证会公告",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：财政部国内税收署（IRS）就特朗普账户合格投资发布听证会公告，属 2026 年 8 月 21 日拟议规则（案卷 CC-00349938-26）的配套程序文件。\n· 实体内容：该拟议规则界定「合格投资」范围，即受益人在满 18 岁所在日历年首日之前，账户资金可投资的全部资产类别。\n· 时间节点：意见与发言提纲须于 2026 年 11 月 17 日前送达；听证会定于 12 月 16 日美东时间 10:00 举行；旁听申请截止 12 月 11 日 17:00（美东）。\n· 条件条款：若 11 月 17 日前未收到发言提纲，听证会取消。\n· 信息边界：本文件不修改拟议规则文本，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Technical Amendment to the Regulation Regarding Amendments to Applications",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22484/technical-amendment-to-the-regulation-regarding-amendments-to-applications",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "official_no": "2026-22484",
+      "title_cn": "注册申请修正与撤回条款技术性修订（最终规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：司法部缉毒署（DEA）发布最终规则，属技术性修订（案卷 DEA-1303），刊发即生效。\n· 核心动作：将「注册申请的修正与撤回」条款的适用范围明确扩展至注册续期申请，消除原条文的覆盖缺口。\n· 性质：纯澄清性修订，不改变任何实体义务、审批标准或登记类别。\n· 生效时点：2026 年 11 月 4 日。\n· 信息边界：属登记者程序规则，不涉及管制物质列管或配额调整。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Nomenclature Change Related to Assistant General Counsel Titles",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22463/nomenclature-change-related-to-assistant-general-counsel-titles",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "official_no": "2026-22463",
+      "title_cn": "助理总法律顾问职称名称变更（最终规则）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：商务部发布最终规则（案卷 261030-0008），对《联邦法规汇编》第 15 编作名称性修订。\n· 核心动作：删除已废止的职衔「就业、诉讼与信息助理总法律顾问」，统一替换为「诉讼与战略支持助理总法律顾问」或「信息安全与新兴技术助理总法律顾问」。\n· 目的：反映该部现行机构设置与职能分工，使第 15 编条文指向正确的现任官员。\n· 生效时点：2026 年 11 月 4 日。\n· 信息边界：官方明确本规则不对任何规章作实质性变更，不改变许可、执法或贸易救济程序。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Amendment of Domestic Very High Frequency Omnidirectional Range (VOR) Federal Airways V-16, V-35, V-37, V-53, V-133, V-136, V-143, V-259, V-310, V-364, V-409, V-415, V-454, and V-605; Eastern United States",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22497/amendment-of-domestic-very-high-frequency-omnidirectional-range-vor-federal-airways-v-16-v-35-v-37",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-22497",
+      "title_cn": "全向信标（VOR）联邦航路 V-16 等十四条修订（美国东部）更正（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空局（FAA）发布最终规则更正件（案卷 FAA-2026-2452、空域案卷 25-ASO-16）。\n· 核心动作：更正 2026 年 10 月 14 日最终规则前言中 V-37 航路描述的错误。原规则修订东部地区 V-16 至 V-605 等十四条全向信标（VOR）联邦航路。\n· 生效时点：原规则生效日不变，仍为 2026 年 12 月 24 日世界协调时 09:01。\n· 程序要点：该修订属《联邦法规汇编》第 1 编第 51 部分「援引并入」，须随 FAA 第 JO 7400.11 号令年度修订更新。\n· 信息边界：仅更正文本表述，不改变航路走向、使用限制或空域结构。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Airworthiness Directives; Pilatus Aircraft Ltd",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22496/airworthiness-directives-pilatus-aircraft-ltd",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22496",
+      "title_cn": "适航指令：皮拉图斯飞机有限公司（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空局（FAA）发布拟议适航指令（NPRM），适用皮拉图斯飞机有限公司（Pilatus）PC-24 型全部飞机（案卷 FAA-2026-13798，项目标识 MCAI-2026-00797-A）。\n· 核心动作：拟取代现行第 2025-20-02 号适航指令。原指令要求将临时修订纳入飞机飞行手册（AFM）并修改「非正常程序」章节，当时定位为临时措施。\n· 新要求：安装已开发完成的更新软件，并将软件安装后适用的修订版操作说明纳入 AFM。\n· 意见截止：2026 年 12 月 21 日。\n· 信息边界：提案针对既有不安全状态，最终技术要求、符合性时间与生效日以最终规则为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Amendment of Domestic Very High Frequency Omnidirectional Range (VOR) Federal Airways V-44, V-170, and V-312; Eastern United States",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22464/amendment-of-domestic-very-high-frequency-omnidirectional-range-vor-federal-airways-v-44-v-170-and",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22464",
+      "title_cn": "全向信标（VOR）联邦航路 V-44、V-170、V-312 修订（美国东部）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空局（FAA）发布拟议规则（NPRM），修订美国东部地区三条全向信标（VOR）联邦航路 V-44、V-170、V-312（案卷 FAA-2026-14030、空域案卷 26-AEA-12）。\n· 动因：马里兰州安德鲁斯（ADW）VORTAC 导航台计划退役，需相应调整相关航路走向与衔接。\n· 程序阶段：处于征求意见阶段，尚未生效。\n· 意见截止：2026 年 12 月 21 日。\n· 信息边界：官方摘要未列具体航段坐标与里程调整量，最终航路描述以最终规则及后续航行资料汇编为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Update and Clarification of the Passenger Facility Charge Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22450/update-and-clarification-of-the-passenger-facility-charge-regulations",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22450",
+      "title_cn": "旅客设施费（PFC）规章更新与澄清（补充拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：联邦航空局（FAA）发布补充拟议规则（SNPRM），案卷 FAA-2022-1315（第 26-19 号通告），系 2023 年 9 月 27 日旅客设施费（PFC）拟议规则的后续。\n· 背景：《2024 年联邦航空局再授权法》于 2024 年 5 月 16 日成法，多项条款要求修改 PFC 规章或调整原提案，FAA 据此补充征求意见。\n· 六项议题：PFC 返还额度削减、两个新增合格项目、合格项目限制、FAA 对意向通知（NOI）的审查与确认时限、审查简化资格、报送要求。\n· 意见截止：2027 年 1 月 4 日。\n· 信息边界：收费标准仍依现行法规及 DOT 第 14 号令执行，本提案不改变现行收费水平。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Safety Zone; Lake Michigan, Chicago, IL",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22478/safety-zone-lake-michigan-chicago-il",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22478",
+      "title_cn": "安全区：密歇根湖，芝加哥（伊利诺伊州）（临时最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：国土安全部海岸警卫队发布临时最终规则，在伊利诺伊州芝加哥市密歇根湖可航水域设立临时安全区（案卷 USCG-2026-1344）。\n· 动因：为光纤导管安装作业提供人身、船舶与水域环境防护。\n· 生效区间：2026 年 11 月 6 日至 7 日每日 06:00–19:00；备选区间为 11 月 7–8 日、8–9 日、9–10 日、10–11 日，均取同一时段。\n· 管制内容：未经湖密歇根分区港务监督或其指定代表特别授权，禁止船舶与人员进入该区域。\n· 信息边界：属临时性航行管制，不涉及永久性禁航或航道结构调整。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-04",
+      "title": "Special Local Regulation; Atlantic Ocean, Key West, FL",
+      "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22468/special-local-regulation-atlantic-ocean-key-west-fl",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22468",
+      "title_cn": "特别地方规制：大西洋，基韦斯特（佛罗里达州）（临时最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "· 文种与主体：国土安全部海岸警卫队发布临时最终规则，在佛罗里达州基韦斯特附近大西洋水域设立特别地方规制（SLR）（案卷 USCG-2026-1264）。\n· 事由：保障 2026 年 Race World Offshore 世界锦标赛期间水上人命安全，赛事自 11 月 4 日起至 11 月 8 日止。\n· 范围：基韦斯特主航道周边水域，以及 Sunset Key 与 Wisteria Island 之间的水域。\n· 生效时点：2026 年 11 月 4 日 09:00 至 11 月 8 日 18:00。\n· 管制内容：未经基韦斯特港务监督特别授权，禁止人员与船舶进入管制区。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-03",
@@ -13,13 +166,13 @@
       "kind": "通告",
       "agency": "国防部",
       "official_no": "2026-22368",
-      "title_cn": "最终补充环境影响报告书决策记录可获取通知：密西西比河巴吞鲁日至墨西哥湾、密西西比河-墨西哥湾出口航道新工业运河船闸及连接航道工程（路易斯安那州奥尔良堂区）（通告）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：陆军工程兵团（USACE）发布决定记录（ROD）可获取通知，对应密西西比河巴吞鲁日至墨西哥湾、密西西比河-墨西哥湾出口航道新工业运河船闸及连接航道工程的最终补充环境影响报告书（SEIS）。\n· 程序节点：负责土木工程的陆军助理部长已于 2026 年 8 月 27 日签署该 ROD，公告刊发于 11 月 3 日联邦公报（91 FR 69245）。\n· 效力：ROD 是《国家环境政策法》审查程序的收尾文件，签署后项目可推进至实施与许可阶段。\n· 信息边界：官方摘要未列选定替代方案、缓解措施与许可条件，具体以决定记录文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "最终补充环境影响报告书决策记录可获取通知：密西西比河巴吞鲁日至墨西哥湾、密西西比河-墨西哥湾出口航道新工业运河船闸及连接航道工程（路易斯安那州奥尔良堂区）（通告）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -30,13 +183,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-22381",
-      "title_cn": "医保与医疗补助计划：器官获取组织参与条件修订（规则）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：医疗保险和医疗补助服务中心（CMS）最终规则（CMS-3409-F），修订器官获取组织（OPO）的参与条件，编于 42 CFR。\n· 核心动作：修订相关定义与 OPO 指定要求，明确服务区何时开放竞争，并更新申诉程序；为 OPO 提升器官获取与移植量提供运营灵活性。\n· 未改动部分：以捐赠与移植数量为核心的结果指标，以及再认证与取消认证所用的分档结构维持不变。\n· 生效时点：2027 年 1 月 4 日生效（91 FR 69390）。\n· 信息边界：摘要未列具体条款数值与合规期限，以规则文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "医保与医疗补助计划：器官获取组织参与条件修订（规则）",
+      "domain": "医疗/医药"
     },
     {
       "board": "whitehouse",
@@ -47,13 +200,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-22380",
-      "title_cn": "接受联邦财政援助的项目或活动中基于残疾的歧视禁令：修订《1973年康复法》第504条实施细则（规则）",
-      "domain": "社会保障",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：卫生与公众服务部（HHS）最终规则，修订《1973 年康复法》第 504 条实施细则，即 2024 年 5 月 9 日发布的《接受联邦财政援助项目中的残疾歧视禁令》最终规则。\n· 核心动作：明确将该条对「非由身体损伤引起的性别认同障碍」的法定排除，解释为涵盖「非由身体损伤引起的性别烦躁」，从而不纳入「残疾人」与「残疾」的定义。\n· 目的：消除 2024 年最终规则序言引入的歧义，按法条最佳解释执行。\n· 生效时点：2027 年 1 月 4 日生效（91 FR 69207）。\n· 信息边界：摘要未列具体条款编号调整，以规则文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "接受联邦财政援助的项目或活动中基于残疾的歧视禁令：修订《1973年康复法》第504条实施细则（规则）",
+      "domain": "社会保障"
     },
     {
       "board": "whitehouse",
@@ -64,13 +217,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-22400",
-      "title_cn": "适航指令；空客直升机公司直升机（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则，拟对空客直升机公司 AS350B2、AS350B3 与 EC130B4 型直升机发布新适航指令。\n· 触发事由：一份关于飞行员脚蹬出现部分卡阻的报告。\n· 拟议要求：改装并重新标识受影响的保险丝罩，禁止在任何直升机上安装受影响保险丝罩。\n· 程序：意见截止 2026 年 12 月 18 日，案卷号 FAA-2026-13795，工程代号 MCAI-2026-00716-R（91 FR 69230）。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令；空客直升机公司直升机（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -81,13 +234,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-22396",
-      "title_cn": "管道安全：液化天然气设施规定修订（拟议规则）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：管道与危险材料安全管理局（PHMSA）拟议规则，修订液化天然气（LNG）设施安全规定，编于 49 CFR。\n· 核心动作：以引用方式纳入最新行业安全标准，并作其他修订，以反映二十余年来技术与工艺的进步。\n· 依据：回应国会授权，要求对特定 LNG 设施引入基于风险的监管方法。\n· 程序：意见截止 2027 年 1 月 4 日；将召开法定咨询委员会公开会议，日期另行公告（91 FR 69314，案卷号 PHMSA-2019-0091）。",
         "tier": "note"
-      }
+      },
+      "title_cn": "管道安全：液化天然气设施规定修订（拟议规则）",
+      "domain": "能源/环境"
     },
     {
       "board": "whitehouse",
