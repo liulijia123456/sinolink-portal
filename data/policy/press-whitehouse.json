@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-05T08:41:04+08:00",
+ "updated_at": "2026-11-06T08:22:53+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 5,
-   "added": 1,
+   "fetched": 7,
+   "added": 3,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 7,
    "error": ""
   },
   {
@@ -67,10 +67,10 @@
    "name": "Homeland Security",
    "type": "html",
    "url": "https://www.dhs.gov/news-releases/press-releases",
-   "status": "error",
-   "fetched": 0,
-   "added": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "status": "ok",
+   "fetched": 10,
+   "added": 4,
+   "error": ""
   },
   {
    "agency": "国防部",
@@ -165,6 +165,126 @@
  ],
  "items": [
   {
+   "date": "2026-11-05",
+   "title": "ESTABLISHMENT OF THE OVAL OFFICE NATIONAL MONUMENT",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/establishment-of-the-oval-office-national-monument/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Fact Sheet: President Donald J. Trump Establishes the Oval Office as a National Monument",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-establishes-the-oval-office-as-a-national-monument/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "First Lady Melania Trump Unites Russia and Ukraine at The White House Following Historic Ceasefire",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-unites-russia-and-ukraine-at-the-white-house-following-historic-ceasefire/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Secretary Rubio’s Call with Malaysian Prime Minister Anwar",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-malaysian-prime-minister-anwar/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Malaysian Prime Minister Anwar Readout November 5, 2026 Secretary of State Marco Rubio spoke today with Malaysian Prime Minister Anwar Ibrahim. Secretary Rubio and Prime Minister Anwar discussed ways to expand economic cooperation under the upgraded U.S.-Malaysia Comprehensive Strategic Partnership, including through secure, cutting-edge American"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Reward Offers Totaling Up to $50 Million for Information Leading to Arrests and/or Convictions of Leaders of Foreign Terrorist Organization Tren de Aragua",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/reward-offers-totaling-up-to-50-million-for-information-leading-to-arrests-and-or-convictions-of-leaders-of-foreign-terrorist-organization-tren-de-aragua/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Reward Offers Totaling Up to $50 Million for Information Leading to Arrests and/or Convictions of Leaders of Foreign Terrorist Organization Tren de Aragua Press Statement November 5, 2026 Today, the Department of State’s Bureau of International Narcotics and Law Enforcement Affairs, in coordination with the FBI, DEA, and Department of Justice"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks Press Statement November 5, 2026 Cuba’s ruling elite is hoarding the island’s energy, shipping, and technology resources for its own enrichment, leaving the Cuban people to contend with blackouts, shortages, and a stagnant economy. The Marxist regime in Havana relies on a w"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/disrupting-irans-pursuit-of-man-portable-air-defense-systems/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems Press Statement November 4, 2026 Today, the Department of State is imposing sanctions on two individuals and one entity based in Belarus, Russia, and Nigeria, respectively, for their involvement in the Iranian regime’s efforts to procure man-portable air-defense systems (MANPADS). "
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Dismantling the Prince Group Transnational Criminal Organization",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/dismantling-the-prince-group-transnational-criminal-organization/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Dismantling the Prince Group Transnational Criminal Organization Press Statement November 5, 2026 Today, the United States is sanctioning four individuals and 41 entities linked to the Cambodia-based Prince Group Transnational Criminal Organization (TCO), building on the October 2025 and June 2026 designations targeting the organization’s lea"
+  },
+  {
+   "date": "2026-11-05",
+   "title": "U.S. Restores Key Nuclear Weapons Manufacturing Capability After 20 Years",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/nnsa/articles/us-restores-key-nuclear-weapons-manufacturing-capability-after-20-years",
+   "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Sexual Predators, and Drug Traffickers",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/05/worst-worst-ice-arrests-pedophiles-sexual-predators-and-drug-traffickers",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "SANCTUARY INSANITY: Sanctuary Minnesota Refuses to Honor ICE Detainer for Somalian Illegal Alien Convicted for Aggravated Assault and Drug Trafficking",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/05/sanctuary-insanity-sanctuary-minnesota-refuses-honor-ice-detainer-somalian-illegal",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "ICE Lodges Detainer for Illegal Alien Arrested for Rape in New York City",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/05/ice-lodges-detainer-illegal-alien-arrested-rape-new-york-city",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
    "date": "2026-11-04",
    "title": "First Lady Melania Trump and LSU Establish $5 Million Fostering the Future Endowment Fund",
    "title_cn": "",
@@ -186,12 +306,42 @@
   },
   {
    "date": "2026-11-04",
+   "title": "Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks – Fact Sheet",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "事实清单",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks-fact-sheet/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks – Fact Sheet Fact Sheet November 5, 2026 Today, the Department of State is designating eight entities and two individuals, and identifying five vessels as blocked property, to further the Trump Administration’s comprehensive push to end the Cuban regime’s malign activities, both in"
+  },
+  {
+   "date": "2026-11-04",
+   "title": "Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems Fact Sheet",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "事实清单",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/disrupting-irans-pursuit-of-man-portable-air-defense-systems-fact-sheet/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems Fact Sheet Fact Sheet November 4, 2026 Today, the Department of State is designating two individuals and one entity that have been involved in efforts to help the Iranian regime obtain man-portable air-defense systems (MANPADS). These designations continue a sustained U.S. campaign against Iran’s military procure"
+  },
+  {
+   "date": "2026-11-04",
    "title": "Energy Department Awards Contracts from Northeast Home Heating Oil Reserve",
    "title_cn": "",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/hgeo/opr/articles/energy-department-awards-contracts-northeast-home-heating-oil-reserve",
    "source": "Energy",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-04",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested Across the Country on Election Day",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/04/dhs-highlights-worst-illegal-aliens-arrested-across-country-election-day",
+   "source": "Homeland Security",
    "summary": ""
   },
   {
