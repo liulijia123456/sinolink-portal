@@ -1,9 +1,145 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-05 09:14",
-  "count": 102,
+  "updated_at": "2026-11-06 09:13",
+  "count": 110,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22599/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-22599",
+      "title_cn": "银行控股公司组建、收购与合并申请（Pinnacle Bancorp 并购 Southern Bancshares，Y 条例·通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "美联储依《1956 年银行控股公司法》与 Y 条例（12 CFR part 225）发布银行控股公司申请通告，属个案批复程序，不涉及规则修订。\n本批一宗：内布拉斯加州奥马哈 Pinnacle Bancorp 拟与得克萨斯州休斯敦 Southern Bancshares 合并，并借此间接收购得州 Moulton 的 Southstar Bank, S.S.B.。\n申请由堪萨斯城联邦储备银行受理，利害关系人书面意见须于 2026 年 12 月 7 日前送达该行或理事会秘书处，审查标准为《银行控股公司法》12 U.S.C. 1842(c)。\n所收意见可能原样公开，不得包含不宜披露的保密信息。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Video Relay Service Improvements; Incarcerated People's Communication Services; Implementation of the Martha Wright-Reed Act; Rates for Interstate Inmate Calling Services; Access to Video Conferencing",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22601/video-relay-service-improvements-incarcerated-peoples-communication-services-implementation-of-the",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-22601",
+      "title_cn": "视频中继服务改进、被监禁人员通信服务及《Martha Wright-Reed 法》实施：规则生效日期公告（最终规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "FCC 就视频中继服务改进、被监禁人员通信服务、《Martha Wright-Reed 法》实施、州际囚犯通话费率及视频会议接入等规则，发布最终规则的生效日期公告。\n公告确认管理与预算办公室已批准 OMB 控制号 3060-1089 项下新增信息采集要求，相关规则分别源自 FCC 23-116、FCC 24-75、FCC 24-95 三份报告与命令。\n依 2024 年 3 月 21 日、12 月 13 日、9 月 20 日三次刊登的修正指令第 3、6、7、15 项，相关条款自 2026 年 11 月 5 日起生效。\n本次公告不改动实体规则，属文书获批后的生效程序衔接。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Modernizing Spectrum Sharing for Satellite Broadband",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22600/modernizing-spectrum-sharing-for-satellite-broadband",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-22600",
+      "title_cn": "卫星宽带频谱共享现代化：更新静止轨道卫星网络参考链路（最终规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "FCC 空间局更新「卫星宽带频谱共享现代化」报告与命令所确立的静止轨道（GSO）卫星网络参考链路初始清单，属最终规则（SB 案卷 25-157，DA 26-973）。\n该文件于 2026 年 9 月 11 日以公共通告形式先行发布，本次为规则文本刊登入册，自 2026 年 12 月 7 日起生效。\n调整目的在于使参考链路更贴近美国境内典型且广泛部署的 GSO 卫星运行参数，以改善现有宽带卫星系统之间的频谱共用效率。\n文件未改变最终监管弹性分析，亦未新增或修改信息采集要求，无须另行报 OMB 审批；委员会认定其属《国会审查法》下的非重大行动。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Information Collections Being Submitted for Review and Approval to Office of Management and Budget",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22574/information-collections-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-22574",
+      "title_cn": "信息采集事项提交管理与预算办公室（OMB）审查批准（AM 测量数据与《商业广告响度减轻法》）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "FCC 依《1995 年文书削减法》将两项信息采集提交管理与预算办公室审查批准，并公开征求意见。\n其一为控制号 3060-0991「AM 测量数据」，属现行采集延期，受访对象为营利性企业，约 1,800 家、3,135 份响应，单次响应 0.5 至 25 小时。\n其二为控制号 3060-1171「《商业广告响度减轻法》」，涉 47 CFR 73.682(e) 与 76.607(a)，同属延期，约 2,937 家、4,868 份响应。\n意见须于 2026 年 12 月 7 日前经 reginfo.gov 提交并抄送 FCC；另依《2002 年小企业文书减负法》征询对雇员少于 25 人企业的减负办法。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22573/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-22573",
+      "title_cn": "信息采集审查：下一代 911 服务实施与 9-1-1 可靠性（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "FCC 就控制号 3060-1202 项下信息采集的审查公开征求意见，采集主题为「下一代 911 服务（NG911）实施与 9-1-1 可靠性」。\n审查类型为现行已批准采集的修订，受访对象覆盖营利性企业、非营利机构及州、地方与部落政府实体，采用电子方式报送，无专用表格。\n征询内容包括采集必要性、负担估算准确性、信息质量与减轻负担的可行途径。\n书面意见须于 2027 年 1 月 4 日前提交 FCC 指定联系人；如确有困难，应尽早告知。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Metal Lockers From China; Scheduling of Expedited Five-Year Reviews",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22597/metal-lockers-from-china-scheduling-of-expedited-five-year-reviews",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22597",
+      "title_cn": "金属储物柜（中国）双反五年复审：加速复审日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "USITC 就中国金属储物柜双反令（701-TA-656、731-TA-1533）五年复审发布加速复审日程通告。\n委员会于 2026 年 10 月 5 日认定国内利害关系方团体答复充分、应诉方团体答复不充分，且无其他情形须全面复审，遂依《1930 年关税法》§751(c)(3) 加速复审，判断撤销双反令是否可能致实质损害在可预见期间内继续或再度发生。\n工作人员报告于 2027 年 1 月 28 日向行政保护令名单提供，公开版随后发布；书面评论截止 2027 年 2 月 4 日 17:15。\nKearns 委员主张全面复审；List Industries 与 Tennsco 的单独答复被认定充分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Seamless Refined Copper Pipe and Tube From Vietnam; Scheduling of an Expedited Five-Year Review",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22595/seamless-refined-copper-pipe-and-tube-from-vietnam-scheduling-of-an-expedited-five-year-review",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22595",
+      "title_cn": "无缝精炼铜管（越南）反倾销五年复审：加速复审日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "USITC 就越南无缝精炼铜管反倾销令（731-TA-1528）五年复审发布加速复审日程通告。\n委员会于 2026 年 10 月 5 日认定国内利害关系方团体答复充分、应诉方团体答复不充分，且无其他情形须全面复审，遂依《1930 年关税法》§751(c)(3) 加速复审。\n审查问题为撤销该反倾销令是否可能致实质损害在可预见期间内继续或再度发生。\n工作人员报告于 2026 年 12 月 30 日向行政保护令名单提供，公开版随后发布；书面评论截止 2027 年 1 月 7 日，不得含新事实信息。\nNegatu 委员未参与。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-05",
+      "title": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From India, Indonesia, and Laos; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22565/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-indonesia",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22565",
+      "title_cn": "晶体硅光伏电池及组件（印度、印度尼西亚、老挝）双反终裁：产业实质损害肯定性裁决（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "USITC 就印度、印度尼西亚、老挝晶体硅光伏电池及组件双反调查（701-TA-772-774、731-TA-1756-1758）终裁阶段作出肯定性损害裁决。\n委员会认定美国产业因上述三国低于公平价值销售并获补贴的进口产品而受实质损害，涉案产品归入 HTS 8541.42.00 与 8541.43.00。\n肯定性终裁成立后，商务部将据此签发反倾销与反补贴令；委员会另认定印、老两国紧急情况项下进口不大可能严重削弱救济效果，印尼项下则可能严重削弱。\n调查于 2025 年 7 月 17 日启动，申诉方为美国太阳能制造与贸易联盟，听证会于 2026 年 9 月 9 日举行，裁决 11 月 2 日提交，载于 USITC 出版物 5804。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-04",
@@ -13,13 +149,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-22503",
-      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Ohlin 家族信托及多数股东控制集团，明尼苏达）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "美联储理事会依据《银行控制权变更法》（12 U.S.C. 1817(j)）及 Y 条例 §225.41，公布股份收购通告。\n· 申请人 John Ohlin 以个人身份并作为 Spalj 家族等五项托管信托的受托人，申请保留 Deerwood Bancshares（明尼苏达州巴克斯特）股份，并间接受控 Deerwood Bank（韦特帕克）。\n· Luke Spalj、John R. Spalj、Jennifer Harting、Joel Bauer 与 Ohlin 申请加入「多数股东控制集团」一致行动团体，以保留同一批股份。\n· 审查标准为该法第 7 款；申请材料公开部分可在明尼阿波利斯联储查阅。\n· 意见截止 2026 年 11 月 19 日，送明尼阿波利斯联储或理事会秘书处。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Ohlin 家族信托及多数股东控制集团，明尼苏达）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -30,13 +166,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-22502",
-      "title_cn": "银行控股公司组建、收购与合并申请（Keweenaw 金融并购 Range Financial）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "美联储理事会依据 1956 年《银行控股公司法》（12 U.S.C. 1841 et seq.）与 Y 条例（12 CFR part 225），公布银行控股公司组建、收购与合并申请通告。\n· 本期仅一宗：Keweenaw Financial Corporation（密歇根州汉考克）申请与 Range Financial Corporation 合并，并间接收购 Range Bank，后两者均位于密歇根州马凯特。\n· 审查标准为《银行控股公司法》12 U.S.C. 1842(c) 所列各项。\n· 申请材料公开部分可在明尼阿波利斯联储及理事会办公室查阅。\n· 书面意见须于 2026 年 12 月 4 日前送达明尼阿波利斯联储或理事会秘书处。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控股公司组建、收购与合并申请（Keweenaw 金融并购 Range Financial）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
