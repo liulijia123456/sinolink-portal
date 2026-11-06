@@ -1,9 +1,81 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-05 09:55",
-  "count": 53,
+  "updated_at": "2026-11-06 09:54",
+  "count": 57,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-05",
+      "title": "Charbel Consul v. Progressive American Insurance Company",
+      "url": "https://www.courtlistener.com/opinion/11055912/charbel-consul-v-progressive-american-insurance-company/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十一巡回上诉法院",
+      "summary": "amendment to Fed. R. Civ. P. 11 notes that the word “sanctions” in the caption of Rule 11(c) “stresses",
+      "official_no": "",
+      "title_cn": "Consul 诉前进美国保险公司（保险恶意索赔，撤销简易判决并发回）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "美国第十一巡回上诉法院由三名法官组成合议庭，撤销佛罗里达中区联邦地区法院对前进美国保险公司作出的简易判决，发回重审。案件起于一起涉另一车辆的车祸：Consul 在该案中被认定承担责任，其后以保险公司在与受害人和解谈判中未尽善意义务为由另行起诉，主张超额判决系保险人处理失当所致。\n地区法院此前判保险人胜诉，认为不存在需交付陪审团的实质性事实争议。上诉分庭持相反判断，认为整体情形足以构成真正的事实争议，故撤销原判并发回进一步审理。\nTjoflat 法官提出异议，认为依法应维持简易判决，并建议发回后由地区法院依《联邦民事诉讼规则》第 11 条要求原告律师说明是否违反该条(b)款。检索片段出现的「sanctions」字样即出自该异议部分，非本案多数意见的争点。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-05",
+      "title": "Lindsay Hecox v. Madison Kenyon",
+      "url": "https://www.courtlistener.com/opinion/11055705/lindsay-hecox-v-madison-kenyon/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "the panel vacated the district court’s preliminary injunction against the State of Idaho’s enforcement",
+      "official_no": "",
+      "title_cn": "Hecox 诉 Kenyon（爱达荷州女子体育法，发回后认定诉讼已无实际意义）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "美国第九巡回上诉法院就最高法院发回重审的 Hecox 案作出命令：撤销爱达荷州联邦地区法院针对该州《女子体育公平法》执行的初步禁令，发回地区法院以诉讼已无实际意义为由驳回。\n程序脉络为：2026 年 6 月 30 日，最高法院在 West Virginia 诉 B. P. J. 案中推翻第九巡回法院维持上述禁令的判决并发回。发回后争点转为原告 Hecox 是否仍具当事人资格——双方均确认其目前未在博伊西州立大学注册，该校注册处亦出具声明证实。\nHecox 在补充意见中称打算于 2027 年春季重新注册，法院认定该表述属结论性意向，未附具体注册安排或已采取的实际步骤，不足以履行其证明责任。合议庭同时准许补充记录之动议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-05",
+      "title": "Fang v. Rubio",
+      "url": "https://www.courtlistener.com/opinion/11055913/fang-v-rubio/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "or an order compelling agency action under the Administrative Procedure Act (“APA”) based on unreasonable",
+      "official_no": "",
+      "title_cn": "Fang 诉鲁比奥（签证审理迟延，准许驳回起诉）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "美国哥伦比亚特区联邦地区法院（Walton 法官）准许被告的驳回起诉动议，驳回一名 H-1B 签证申请人的履职之诉。\n原告 Peijiao Fang 自行诉讼，被告包括以官方身份列名的国务卿鲁比奥、国务院、美国驻上海总领事馆领事官员、国土安全部部长及国土安全部。其 H-1B 申请于 2023 年 6 月获批，2024 年 12 月在上海面签后被置于「行政处理」状态。原告诉请依履职令与《行政程序法》第 555(b) 条判令被告尽快审理。\n法院假定存在明确、非裁量的义务，并假定领事不可审查原则不阻却诉请，转而适用 TRAC 六因素审查。法院认定截至意见书作出之日约 23 个月的迟延不构成不合理，原告未能提出可获救济的诉请。案件原于北加州联邦地区法院提起，2025 年 9 月移送特区法院。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-05",
+      "title": "Perimetral Oriental De Bogota, S.A.S. v. Agencia Nacional De Infraestructura",
+      "url": "https://www.courtlistener.com/opinion/11055838/perimetral-oriental-de-bogota-sas-v-agencia-nacional-de/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "First, ANI is not entitled to a stay pending appeal. To obtain this “exceptional relief,” ANI",
+      "official_no": "",
+      "title_cn": "波哥大东环线公司诉哥伦比亚国家基础设施局（仲裁裁决执行，驳回中止审理请求）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "美国哥伦比亚特区联邦地区法院（Bates 法官）驳回哥伦比亚国家基础设施局（ANI）的中止审理请求，认定上诉通知不剥夺法院管辖权。\n案件为哥伦比亚仲裁裁决的确认与执行程序：波哥大东环线公司（POB）在波哥大仲裁庭取得针对 ANI 及哥伦比亚共和国的裁决；ANI 已请求该国国务委员会撤销，POB 则申请在美确认与执行。\nANI 曾以缺乏属人管辖权为由请求驳回，未依《外国主权豁免法》主张豁免，该动议 2026 年 8 月被驳回。本轮其主张上诉通知已使法院丧失管辖权，或应暂缓至上诉及外国撤销程序结束。法院认定该命令不可立即上诉，两项请求均不成立。\n法院另定：ANI 于 2026 年 12 月 10 日前提交反对意见并列明《纽约公约》第五条抗辩，POB 于 2027 年 1 月 14 日前回复。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-04",
@@ -14,13 +86,13 @@
       "agency": "第一巡回上诉法院",
       "summary": "12(b)(2).5 And Gluck additionally sought sanctions against Temu and its lawyers for \"frivolous\"",
       "official_no": "",
-      "title_cn": "Whaleco 诉 Gluck 案（Temu 指控对方律师虚假陈述诱签和解，第一巡回以对人管辖权未决撤销并发回）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-04",
         "body": "第一巡回上诉法院11月4日就 Whaleco（Temu 运营主体）诉知识产权律师 Jeffrey Gluck 及其律所案作出合并意见，撤销马萨诸塞州联邦地区法院的裁定与判决并发回重审。\n\n案件源于两笔和解：Gluck 代理 Cookies SF 与 Alec Monopoly 同 Temu 达成协议，Temu 主张其在协议中作出的陈述构成虚假陈述与欺诈性诱导，据此提出违约、违反诚信义务等多项请求。\n\n上诉法院认为，地区法院在未先行解决对人管辖权争议的情况下推进实体裁判，超出其裁判权限。发回后，原审法官须先就 Gluck 与 Cookies SF 提出的管辖权动议作出裁定；对 Alec Monopoly 依第 12(b)(6) 条提出的驳回动议，因判断可能取决于管辖权结论，暂不作裁断。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Whaleco 诉 Gluck 案（Temu 指控对方律师虚假陈述诱签和解，第一巡回以对人管辖权未决撤销并发回）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -32,13 +104,13 @@
       "agency": "第五巡回上诉法院",
       "summary": "moved for a temporary restraining order and preliminary injunction. The district court denied the motion on",
       "official_no": "",
-      "title_cn": "托马斯诉 Leyline 出版公司案（涉桌面游戏版权许可范围与商标授权，第五巡回维持简易判决）",
-      "domain": "产业/企业",
       "brief": {
         "at": "2026-11-04",
         "body": "第五巡回上诉法院11月4日维持德克萨斯州北区联邦地区法院的简易判决，驳回桌面角色扮演游戏《Realms of Kymoria》创作者 Shawn Thomas 及其公司对出版方 Leyline 的全部上诉主张。\n\n争议围绕双方2022年3月签署的第二份许可协议。上诉人主张该协议未授权对方使用其尚未开票的内容、未涵盖衍生作品与商标，并主张对方在宣传中使用「创始人」「共同创作者」称谓构成诽谤、盗用姓名与虚假代言。\n\n合议庭认定，该协议有效且有约束力，付费承诺一经作出即触发授权，协议文义清晰无须外部解释；上诉人未能指明具体的未经授权衍生作品，未完成简易判决阶段的举证；商标使用系依协议授权；相关称谓属实且经授权。因存在有效合同规范服务与报酬，不当得利请求亦不成立。判决未载明损害赔偿与律师费处理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "托马斯诉 Leyline 出版公司案（涉桌面游戏版权许可范围与商标授权，第五巡回维持简易判决）",
+      "domain": "产业/企业"
     },
     {
       "board": "judicial",
@@ -50,13 +122,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "does not set the statutory maximum for such a sanction at 180 days, but rather provides a discrete sanction",
       "official_no": "",
-      "title_cn": "斯里尼瓦桑诉 Milestone 金融公司案（涉第十三章破产自愿撤诉的绝对权利与一年禁止再申请裁定）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "第九巡回上诉法院11月4日就一对母子第十三章破产债务人的上诉作出裁判：撤销破产法院以「未遵守法院命令」为由驳回案件的裁定，指令改按债务人依《破产法典》第1307(b)条提出的自愿撤诉请求处理；同时维持破产法院施加的一年禁止再申请令。\n\n合议庭重申本院先例，认为第1307(b)条赋予债务人绝对的自愿撤诉请求权，即便申请系恶意提出亦然，破产法院须优先处理该请求，故以未提交附表与报表为由驳回案件属裁量滥用；该错误不影响禁止再申请令的期限计算。\n\n就禁止再申请令，合议庭认为第109(g)条的180日并非此类制裁的法定上限，破产法院可依第349(a)条「有正当理由」作出更长期限的禁令。考虑债务人及其家庭此前十余次申请、反复未推进程序、缺席听证等记录，一年期限属合理裁量。判决未涉及债务实体争议。",
         "tier": "note"
-      }
+      },
+      "title_cn": "斯里尼瓦桑诉 Milestone 金融公司案（涉第十三章破产自愿撤诉的绝对权利与一年禁止再申请裁定）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -68,13 +140,13 @@
       "agency": "第八巡回上诉法院",
       "summary": "the Eighth Circuit (BAP) and moved for a stay pending appeal in the bankruptcy court. The bankruptcy court",
       "official_no": "",
-      "title_cn": "里芬堡诉赖斯案（涉破产财产出售的终局规则与未在下级质疑买受人善意的失权后果）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-04",
         "body": "第八巡回上诉法院11月4日维持破产上诉庭裁定，以《破产法典》第363(m)条法定无实际意义为由驳回针对破产财产出售的上诉。\n\n案涉阿肯色州不动产，债务人二分之一份额经管理人售予 Blue Sun Capital。异议人未取得上诉期间中止令，出售完成后管理人申请驳回上诉，上诉庭以分歧合议庭支持。\n\n第363(m)条终局规则须满足：批准向善意买受人出售、无人取得中止令、撤销批准将影响出售效力。本案后两项无争议，争点仅在买受人善意。异议人自始未在破产法院质疑善意，依本院 Rodriquez 先例，该争点未获保留，径行驳回。脚注中对 Rodriquez 是否符合文义表示疑虑，但称受先例拘束；对异议法官援引 MOAC 案主张先例已被推翻，认为该判决仅解决第363(m)条是否属管辖条款，未动摇本案结论。",
         "tier": "note"
-      }
+      },
+      "title_cn": "里芬堡诉赖斯案（涉破产财产出售的终局规则与未在下级质疑买受人善意的失权后果）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -86,13 +158,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "visa application in violation of the Administrative Procedure Act (“APA”) (5 U.S.C. §§ 555(b) and 706(1))",
       "official_no": "",
-      "title_cn": "刘诉鲁比奥案（涉 F-1 签证行政审查迟延的执行令状与《行政程序法》请求，特区法院准予驳回起诉）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-04",
         "body": "哥伦比亚特区联邦地区法院11月4日准予政府驳回起诉的动议，驳回一名中国籍斯坦福大学博士生就 F-1 签证续签长期处于「行政审查」状态提起的诉讼。\n\n原告2025年6月在温哥华总领事馆面谈后，申请先被标注「拒绝」、随即转入行政审查，近六个月无实质进展，遂自行起诉国务卿鲁比奥、驻温哥华总领事及国务院，请求依《行政程序法》与执行令状强制机关在期限内作出裁定。\n\n法院认为，原告未能指出机关依法必须履行的「具体」非裁量性行为，故未陈述可获救济的请求；对领事不可审查原则与迟延是否不合理两项主张，法院明确未予裁断，并指出即便认定存在该义务，本案延迟亦不构成不合理。法院在脚注中批评机关同时使用「拒绝」与「待审」两套表述造成混乱，但表示无权填补该法定空白。",
         "tier": "note"
-      }
+      },
+      "title_cn": "刘诉鲁比奥案（涉 F-1 签证行政审查迟延的执行令状与《行政程序法》请求，特区法院准予驳回起诉）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
