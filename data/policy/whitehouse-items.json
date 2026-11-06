@@ -1,9 +1,162 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-05 08:35",
-  "count": 239,
+  "updated_at": "2026-11-06 08:06",
+  "count": 248,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Medical Devices; Hematology and Pathology Devices; Classification of the Digital Cervical Cytology Slide Imaging System With Artificial Intelligence Algorithm",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22593/medical-devices-hematology-and-pathology-devices-classification-of-the-digital-cervical-cytology",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22593",
+      "title_cn": "医疗器械；血液与病理器械：含人工智能算法的数字化宫颈细胞学玻片成像系统分类（最终规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "【政策背景】\n依《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），1976 年《医疗器械修正案》生效前未进入商业流通的「修正案后器械」由法律自动归入 III 类，须经上市前批准（PMA）。第 513(f)(2) 条的 De Novo 程序允许在缺乏合法上市比对器械时请求重新分类，FDA 须于收到请求后 120 天内以书面命令裁定。归入 II 类须以特殊控制补足一般控制，形成安全与有效的合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 据此将「含人工智能算法的数字化宫颈细胞学玻片成像系统」列为 II 类器械并适用特殊控制，编纂为 21 CFR 864.3900。通用器械名定义为：由自动化数字玻片创建、浏览与管理系统构成的处方类体外诊断器械，用于辅助复核巴氏涂片标本的数字图像，通过选取并呈现感兴趣区域便利阅片判读；其人工智能软件采用机器学习方法，就图像中具临床意义区域的存否、位置或特征提供信息，辅助作出细胞学诊断。该分类源于 Hologic Inc. 2021 年 8 月 27 日提交的 Genius Digital Diagnostics System De Novo 请求；FDA 于 2024 年 1 月 31 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 31 日起适用。案卷 FDA-2026-N-12384，文件号 2026-22593，刊于 91 FR 69687。\n【要点提炼】\n其一，文种为「最终修正；最终命令」，系对既有裁定的法典化编纂，不新设实体义务，特殊控制条目以 21 CFR 864.3900 及原文表 1 为准。其二，经 De Novo 降至 II 类后，该器械可作为后续同型器械的比对器械，后续申报可走负担较轻的 510(k) 通道。其三，含 AI 的细胞学影像辅助判读由此取得明确的 II 类监管路径，合规义务落于处方使用与特殊控制条款，命令未设过渡期。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Medical Devices; Neurological Devices; Classification of the Prognostic Assessment Software of Mild Cognitive Impairment",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22590/medical-devices-neurological-devices-classification-of-the-prognostic-assessment-software-of-mild",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22590",
+      "title_cn": "医疗器械；神经器械：轻度认知障碍预后评估软件分类（最终规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "【政策背景】\n按《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），未被列入 1976 年《医疗器械修正案》前商业流通范围的「修正案后器械」由法律自动归入 III 类并须经上市前批准。第 513(f)(2) 条的 De Novo 通道允许申请人在确认不存在可作为实质等同性判断基础的合法上市器械后直接请求分类，FDA 须在 120 天内以书面命令裁定，该裁定视为器械的初始分类。归入 II 类的门槛是特殊控制与一般控制相结合后足以提供安全与有效的合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 将「轻度认知障碍预后评估软件」列为 II 类器械并适用特殊控制，编纂为 21 CFR 882.1454。通用器械名定义为：仅限处方使用的器械，汇集多个临床数据来源的信息，输出指示「已诊断为轻度认知障碍（MCI）的患者在特定期间内进展为更严重认知障碍或发展为痴呆（如阿尔茨海默病痴呆）」可能性的结果；该器械仅作辅助使用，不构成独立的诊断或预后工具。分类源于 Darmiyan, Inc. 2022 年 9 月 29 日提交的 BrainSee 器械 De Novo 请求；FDA 于 2024 年 1 月 11 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 11 日起适用。案卷 FDA-2026-N-12212，文件号 2026-22590，刊于 91 FR 69690；原文表 1 列明该类器械的健康风险与相应缓解措施。\n【要点提炼】\n其一，本文种为「最终修正；最终命令」，系对 2024 年 1 月裁定的法典化，未改变实体义务。其二，「辅助使用、非独立诊断或预后工具」的定位写入通用器械名，构成该器械类型的固有边界，后续同型产品须在此定位内申报。其三，处方专用与特殊控制共同构成合规框架，具体风险条目与验证要求见 21 CFR 882.1454 及原文表 1。其四，该分类为同型软件提供比对基础，后续可经 510(k) 通道申报。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Medical Devices; Orthopedic Devices; Classification of the Wearable Vibration Device for Orthopedic Use",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22589/medical-devices-orthopedic-devices-classification-of-the-wearable-vibration-device-for-orthopedic",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22589",
+      "title_cn": "医疗器械；骨科器械：骨科用可穿戴振动装置分类（最终规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "【政策背景】\n依《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），1976 年《医疗器械修正案》前未进入商业流通的新器械自动归入 III 类并须经上市前批准。第 513(f)(2) 条的 De Novo 程序允许在无合法上市比对器械时请求分类，FDA 须于 120 天内以书面命令裁定；经此程序列入 I 类或 II 类的器械可作为后续同型器械的比对基础，后续可改用 510(k) 上市前通告程序。归入 II 类须以特殊控制补足一般控制之不足，从而形成合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 将「骨科用可穿戴振动装置」列为 II 类器械并适用特殊控制，编纂为 21 CFR 888.5895。通用器械名定义为：以机械振动定向作用于骨骼特定部位，用以减少骨强度或骨密度流失的可穿戴装置。分类源于 Bone Health Technologies, Inc. 2023 年 2 月 17 日提交的 Osteoboost Belt 器械 De Novo 请求；FDA 于 2024 年 1 月 12 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 12 日起适用。案卷 FDA-2026-N-12211，文件号 2026-22589，刊于 91 FR 69692。原文表 1 列明该类器械已识别的健康风险及缓解措施，其中包括因施加不适当振幅导致骨强度与骨密度加速流失的风险，对应措施涉及临床性能测试与非临床性能测试。\n【要点提炼】\n其一，文种为「最终修正；最终命令」，属对 2024 年 1 月裁定的法典化编纂，实体要求未变。其二，该类器械的适用边界以「机械振动、定向作用于骨骼特定部位、减少骨强度或骨密度流失」为限，超出此范围的振动类产品不当然适用该条目。其三，特殊控制将振幅等参数的安全性验证前移至上市前性能测试环节，具体项目以 21 CFR 888.5895 及原文表 1 为准。其四，该分类为同型器械提供比对基础，后续可经 510(k) 通道申报。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Modification of Class D and Class E Airspace Areas; Roberts Field/Redmond Municipal Airport, Redmond, OR",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22642/modification-of-class-d-and-class-e-airspace-areas-roberts-fieldredmond-municipal-airport-redmond-or",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-22642",
+      "title_cn": "修订 D 类与 E 类空域：俄勒冈州雷德蒙德罗伯茨机场（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：联邦航空管理局（FAA）最终规则，文件号 2026-22642，刊于 91 FR 69685。\n· 核心动作：修订俄勒冈州雷德蒙德罗伯茨机场的 D 类与 E 类空域，涉及地面区、作为 D 类或 E 类地面区延伸的 E 类空域，以及自地面 700 英尺向上延伸的 E 类空域，以支持该机场目视与仪表飞行规则运行的安全与管理。\n· 程序与生效：2027 年 2 月 18 日 0901 UTC 生效；联邦公报主管依 1 CFR 第 51 部分批准该引用并入，受 FAA JO 7400.11 年度修订约束。案卷 FAA-2025-5141；空域案卷 25-ANM-147。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Deepwater Port Application Processing and Licensing",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22617/deepwater-port-application-processing-and-licensing",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22617",
+      "title_cn": "深水港许可申请处理与审批（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：海事管理局（MARAD）拟议规则，文件号 2026-22617，刊于 91 FR 69768。\n· 核心动作：规定深水港许可申请的处理与审批程序，反映《深水港法》下许可申请处理管理权由美国海岸警卫队（USCG）移交 MARAD。\n· 法律依据：依 2026 财年《国防授权法》，MARAD 成为所有深水港许可申请在《国家环境政策法》（NEPA）项下的联邦牵头机构。\n· 权限边界：USCG 对深水港设计、建造、设备、运营及航行安全的职权不受该法修订与本拟议规则影响。\n· 程序阶段：评论截止 2027 年 1 月 4 日，尚无生效日。案卷 MARAD-2026-0728。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Airworthiness Directives; Airbus SAS Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22587/airworthiness-directives-airbus-sas-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22587",
+      "title_cn": "适航指令：空客 SAS 飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则（拟议适航指令），文件号 2026-22587，刊于 91 FR 69732。\n· 适用范围：空客 SAS 的 A318-111、-112；A319-111 至 -115、-131 至 -133；A320-211、-212、-214、-216、-231 至 -233；A321 相应型别。\n· 核心动作：起因是配备特定头顶行李舱（OHSC）的飞机 YZ 轴连接点出现损伤报告，调查显示衬套、保持环与销钉移位；拟要求一次性偏差检查并视结果纠正，禁止安装受影响部件。\n· 程序阶段：评论截止 2026 年 12 月 21 日。案卷 FAA-2026-13800；MCAI-2025-01663-T。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Airworthiness Directives; Costruzioni Aeronautiche Tecnam S.P.A. Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22564/airworthiness-directives-costruzioni-aeronautiche-tecnam-spa-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22564",
+      "title_cn": "适航指令：Tecnam 航空制造公司飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则（拟议适航指令），文件号 2026-22564，刊于 91 FR 69730。\n· 适用范围：Tecnam（Costruzioni Aeronautiche Tecnam S.P.A.）P2006T 型全部飞机。\n· 核心动作：起因是安装不合格发动机减震座导致发动机安装结构损伤的报告；拟要求检查是否安装了不合格减震座，并以经批准部件更换不合格件，同时禁止在任何飞机上安装不合格减震座。\n· 程序阶段：评论截止 2026 年 12 月 21 日，尚未生效。案卷 FAA-2026-13799；MCAI-2026-00336-A。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Proposed Priorities and Definitions-Secretary's Supplemental Priorities and Definitions",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22615/proposed-priorities-and-definitions-secretarys-supplemental-priorities-and-definitions",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "教育部",
+      "official_no": "2026-22615",
+      "title_cn": "拟议优先事项与定义——部长补充优先事项与定义（拟议规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：教育部（ED）拟议优先事项与定义，文件号 2026-22615，刊于 91 FR 69736。\n· 核心动作：拟修订四份既有部长补充优先事项与定义通知（2025 年 90 FR 43514；2026 年 91 FR 6625、18780、18774），并调整若干优先事项子项。\n· 主要变化：拟将「人工智能（AI）」改称「超级智能（SI）」，涉及通知与优先事项名称及 AI 素养定义；SI 定义拟采 2026 年 9 月 29 日第 14344 号行政令表述，即 15 U.S.C. 9401(3) 所定义人工智能涵盖的技术与系统。\n· 程序阶段：属拟议阶段，无生效日；评论截止 2026 年 12 月 7 日。案卷 ED-2026-OS-3169。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Safety Zone; FRL Inaugural Invitational eFoil Exhibition Race, Miami Marine Stadium Basin, Miami, FL; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22614/safety-zone-frl-inaugural-invitational-efoil-exhibition-race-miami-marine-stadium-basin-miami-fl",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22614",
+      "title_cn": "安全区：FRL 首届电动水翼板邀请展演赛（佛罗里达州迈阿密）更正（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-06",
+        "body": "· 文种与主体：美国海岸警卫队（USCG）更正文件，文件号 2026-22614，刊于 91 FR 69736。\n· 核心动作：更正 2026 年 10 月 19 日刊于 91 FR 66033 的拟议规则中评论提交截止日，缩短评论期，使海岸警卫队得以及时审议意见并在活动前决定是否发布最终规则。\n· 标的规则：拟为 FRL 首届电动水翼板邀请展演赛设立临时安全区，位于佛罗里达州迈阿密迈阿密海洋体育场水域。\n· 时点：安全区拟于 2026 年 11 月 15 日执行；更正后评论截止 2026 年 11 月 6 日。案卷 USCG-2026-1162。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-04",
@@ -13,13 +166,13 @@
       "kind": "拟议规则",
       "agency": "财政部",
       "official_no": "2026-22506",
-      "title_cn": "特朗普账户合格投资指引（拟议规则）及听证会公告",
-      "domain": "财政/税收",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：财政部国内税收署（IRS）就特朗普账户合格投资发布听证会公告，属 2026 年 8 月 21 日拟议规则（案卷 CC-00349938-26）的配套程序文件。\n· 实体内容：该拟议规则界定「合格投资」范围，即受益人在满 18 岁所在日历年首日之前，账户资金可投资的全部资产类别。\n· 时间节点：意见与发言提纲须于 2026 年 11 月 17 日前送达；听证会定于 12 月 16 日美东时间 10:00 举行；旁听申请截止 12 月 11 日 17:00（美东）。\n· 条件条款：若 11 月 17 日前未收到发言提纲，听证会取消。\n· 信息边界：本文件不修改拟议规则文本，最终规则尚未发布。",
         "tier": "note"
-      }
+      },
+      "title_cn": "特朗普账户合格投资指引（拟议规则）及听证会公告",
+      "domain": "财政/税收"
     },
     {
       "board": "whitehouse",
@@ -30,13 +183,13 @@
       "kind": "规则",
       "agency": "司法部",
       "official_no": "2026-22484",
-      "title_cn": "注册申请修正与撤回条款技术性修订（最终规则）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：司法部缉毒署（DEA）发布最终规则，属技术性修订（案卷 DEA-1303），刊发即生效。\n· 核心动作：将「注册申请的修正与撤回」条款的适用范围明确扩展至注册续期申请，消除原条文的覆盖缺口。\n· 性质：纯澄清性修订，不改变任何实体义务、审批标准或登记类别。\n· 生效时点：2026 年 11 月 4 日。\n· 信息边界：属登记者程序规则，不涉及管制物质列管或配额调整。",
         "tier": "note"
-      }
+      },
+      "title_cn": "注册申请修正与撤回条款技术性修订（最终规则）",
+      "domain": "司法/执法"
     },
     {
       "board": "whitehouse",
@@ -47,13 +200,13 @@
       "kind": "规则",
       "agency": "商务部",
       "official_no": "2026-22463",
-      "title_cn": "助理总法律顾问职称名称变更（最终规则）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：商务部发布最终规则（案卷 261030-0008），对《联邦法规汇编》第 15 编作名称性修订。\n· 核心动作：删除已废止的职衔「就业、诉讼与信息助理总法律顾问」，统一替换为「诉讼与战略支持助理总法律顾问」或「信息安全与新兴技术助理总法律顾问」。\n· 目的：反映该部现行机构设置与职能分工，使第 15 编条文指向正确的现任官员。\n· 生效时点：2026 年 11 月 4 日。\n· 信息边界：官方明确本规则不对任何规章作实质性变更，不改变许可、执法或贸易救济程序。",
         "tier": "note"
-      }
+      },
+      "title_cn": "助理总法律顾问职称名称变更（最终规则）",
+      "domain": "政府运作"
     },
     {
       "board": "whitehouse",
@@ -64,13 +217,13 @@
       "kind": "规则",
       "agency": "交通部",
       "official_no": "2026-22497",
-      "title_cn": "全向信标（VOR）联邦航路 V-16 等十四条修订（美国东部）更正（最终规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：联邦航空局（FAA）发布最终规则更正件（案卷 FAA-2026-2452、空域案卷 25-ASO-16）。\n· 核心动作：更正 2026 年 10 月 14 日最终规则前言中 V-37 航路描述的错误。原规则修订东部地区 V-16 至 V-605 等十四条全向信标（VOR）联邦航路。\n· 生效时点：原规则生效日不变，仍为 2026 年 12 月 24 日世界协调时 09:01。\n· 程序要点：该修订属《联邦法规汇编》第 1 编第 51 部分「援引并入」，须随 FAA 第 JO 7400.11 号令年度修订更新。\n· 信息边界：仅更正文本表述，不改变航路走向、使用限制或空域结构。",
         "tier": "note"
-      }
+      },
+      "title_cn": "全向信标（VOR）联邦航路 V-16 等十四条修订（美国东部）更正（最终规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -81,13 +234,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-22496",
-      "title_cn": "适航指令：皮拉图斯飞机有限公司（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：联邦航空局（FAA）发布拟议适航指令（NPRM），适用皮拉图斯飞机有限公司（Pilatus）PC-24 型全部飞机（案卷 FAA-2026-13798，项目标识 MCAI-2026-00797-A）。\n· 核心动作：拟取代现行第 2025-20-02 号适航指令。原指令要求将临时修订纳入飞机飞行手册（AFM）并修改「非正常程序」章节，当时定位为临时措施。\n· 新要求：安装已开发完成的更新软件，并将软件安装后适用的修订版操作说明纳入 AFM。\n· 意见截止：2026 年 12 月 21 日。\n· 信息边界：提案针对既有不安全状态，最终技术要求、符合性时间与生效日以最终规则为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：皮拉图斯飞机有限公司（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -132,13 +285,13 @@
       "kind": "规则",
       "agency": "国土安全部",
       "official_no": "2026-22478",
-      "title_cn": "安全区：密歇根湖，芝加哥（伊利诺伊州）（临时最终规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：国土安全部海岸警卫队发布临时最终规则，在伊利诺伊州芝加哥市密歇根湖可航水域设立临时安全区（案卷 USCG-2026-1344）。\n· 动因：为光纤导管安装作业提供人身、船舶与水域环境防护。\n· 生效区间：2026 年 11 月 6 日至 7 日每日 06:00–19:00；备选区间为 11 月 7–8 日、8–9 日、9–10 日、10–11 日，均取同一时段。\n· 管制内容：未经湖密歇根分区港务监督或其指定代表特别授权，禁止船舶与人员进入该区域。\n· 信息边界：属临时性航行管制，不涉及永久性禁航或航道结构调整。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区：密歇根湖，芝加哥（伊利诺伊州）（临时最终规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -149,13 +302,13 @@
       "kind": "规则",
       "agency": "国土安全部",
       "official_no": "2026-22468",
-      "title_cn": "特别地方规制：大西洋，基韦斯特（佛罗里达州）（临时最终规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-04",
         "body": "· 文种与主体：国土安全部海岸警卫队发布临时最终规则，在佛罗里达州基韦斯特附近大西洋水域设立特别地方规制（SLR）（案卷 USCG-2026-1264）。\n· 事由：保障 2026 年 Race World Offshore 世界锦标赛期间水上人命安全，赛事自 11 月 4 日起至 11 月 8 日止。\n· 范围：基韦斯特主航道周边水域，以及 Sunset Key 与 Wisteria Island 之间的水域。\n· 生效时点：2026 年 11 月 4 日 09:00 至 11 月 8 日 18:00。\n· 管制内容：未经基韦斯特港务监督特别授权，禁止人员与船舶进入管制区。",
         "tier": "note"
-      }
+      },
+      "title_cn": "特别地方规制：大西洋，基韦斯特（佛罗里达州）（临时最终规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
