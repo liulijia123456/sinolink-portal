@@ -316,6 +316,37 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 药品关税的阶段性优惠截止
     ('2030-04-02', '232 条款药品关税税率上调至 100%'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 药品关税税率上调节点
+    # 2026-11-08 批次：14 条新节点（联邦公报已公布的规则生效/失效/合规期限 + 一条中美双边通话）。
+    # 兜底规则把含「规则生效 / 新规」的条目一律判 money/agency，且不读条目自带指标，
+    # 故本批 14 条全部手工归类。
+    ('2026-11-06', '中美经贸牵头人视频通话'):
+        {'cat': 'dip', 'topic': 'trade', 'actor': 'exec'},          # 中美经贸磋商机制的双边节点
+    ('2026-12-03', 'BIS 多晶硅囤积限制规则届满'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'agency'},       # 多晶硅进口调整前的囤积监控规则
+    ('2026-12-31', 'BIS 集成电路设计者资格申请截止'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 半导体设计者的出口许可资格
+    ('2027-02-01', 'CMS 保险代理人与经纪商注册临时禁令届满'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 联邦医疗保险市场准入（与库内 CMS 口径一致）
+    ('2027-02-04', 'SEC 投资公司小企业与小组织定义修订生效'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 基金与投资顾问的小实体认定
+    ('2027-03-10', 'EPA 温室气体报告报送期限延至 3 月 10 日'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 温室气体排放数据报送
+    ('2027-06-16', 'CMS 医保认证机构监管与利益冲突规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 医保资质认定与支付链条
+    ('2027-06-21', 'EPA PCE 与 CTC 初始监测合规期限'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # TSCA 化学品工作场所保护计划
+    ('2027-07-04', 'FCC 上层 C 波段竞争性拍卖法定截止日'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},        # 频谱拍卖与 5G 频谱供给
+    ('2027-08-27', 'BIS 黑粉与钨废料销售分配令届满'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 国防生产法下的关键矿产分配与出口限制
+    ('2027-09-20', 'EPA PCE 与 CTC 暴露限值与呼吸防护合规期限'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # TSCA 化学品职业暴露合规
+    ('2027-12-20', 'EPA PCE 暴露控制计划合规期限'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # TSCA 化学品暴露控制计划
+    ('2028-01-01', 'CFPB 小企业贷款数据报送合规期限'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # ECOA 小企业信贷数据报送（金融监管）
+    ('2030-12-31', 'EPA 南加州 PM2.5 达标期限延至'):
+        {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 空气质量达标期限（EPA 规则）
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
