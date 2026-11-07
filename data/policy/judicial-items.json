@@ -1,9 +1,99 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-06 09:54",
-  "count": 57,
+  "updated_at": "2026-11-07 16:32",
+  "count": 63,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-06",
+      "title": "Am. Future Fund, Inc. v. N.Y. Bd. of Elections",
+      "url": "https://www.courtlistener.com/opinion/11056654/am-future-fund-inc-v-ny-bd-of-elections/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "Fund, Inc. (the “Fund”) moved below for a preliminary injunction enjoining Appellees – the New York State",
+      "official_no": "",
+      "title_cn": "美国未来基金诉纽约州选举委员会（独立支出披露法合宪性上诉因诉由消灭被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "美国第二巡回上诉法院11月6日以诉由消灭为由，驳回美国未来基金就初步禁令被拒提起的中间上诉。该基金原计划在2025年纽约市长选举前投放五则广告；纽约州选举委员会依据该州独立支出披露法及其实施规章，认定广告隐含指向一名候选人，触发披露义务。基金主张该规章将一般议题倡导一并纳入规制，违反第一修正案，其初步禁令申请被纽约南区联邦地区法院驳回。\n上诉法院认为，初步禁令请求所指向的损害与已结束的选举绑定，无法再给予实效救济，上诉因此已无实际意义；由于底层诉讼仍在地区法院审理，不适用「可重复却规避审查」的例外。法院同时指令，今后同类初步禁令上诉或紧急救济请求仍回本合议庭审理。\nMenashi 法官持异议，认为上诉并未消灭，至少应适用上述例外，并主张地区法院滥用裁量权、原告很可能在第一修正案主张上胜诉。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-06",
+      "title": "Navarrete v. Blanche",
+      "url": "https://www.courtlistener.com/opinion/11056753/navarrete-v-blanche/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "determine the validity of” certain types of final agency action). Put simply, 8 U.S.C. § 1252(a)(1), “in 5",
+      "official_no": "",
+      "title_cn": "纳瓦雷特诉布兰奇（仅就禁止酷刑救济裁定申请复审，第九巡回以缺乏管辖权驳回）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "美国第九巡回上诉法院11月6日发布修正意见，以缺乏管辖权为由驳回纳瓦雷特的复审申请。申请人原请求审查移民法官维持「合理恐惧」否定认定、进而拒绝《禁止酷刑公约》保护的裁定，但未同时挑战其2003年快速遣返令与2024年恢复生效的遣返令。\n法院指出，依《移民与国籍法》第1252(a)(1)条，其管辖权仅限于「最终遣返令」；确认合理恐惧否定的裁定本身不构成最终遣返令，亦不并入最终遣返令。法院援引最高法院2025年 Riley 诉 Bondi 案，认为仅就禁止酷刑救济裁定单独提出的复审申请不足以启动管辖权，此类主张只能在审查最终遣返令时一并提出。\n合议庭另驳回管辖裁定「仅具前瞻效力」的主张，并认定修改申请以加入对恢复遣返令挑战已属徒劳。该意见标注拟公开出版，具有先例效力。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-06",
+      "title": "Wisne v. NCAA",
+      "url": "https://www.courtlistener.com/opinion/11056717/wisne-v-ncaa/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十巡回上诉法院",
+      "summary": "The district court granted Plaintiffs a preliminary injunction, ordering the NCAA to allow Plaintiffs",
+      "official_no": "",
+      "title_cn": "维斯尼诉全美大学体育协会（撤销参赛年限追溯适用禁令，相关市场界定缺乏证据支持）",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "美国第十巡回上诉法院11月6日撤销科罗拉多州联邦地区法院作出的初步禁令。该禁令原要求全美大学体育协会允许一组已用满四个赛季参赛资格的运动员继续参赛。协会于2026年6月修规，允许符合条件者五年内最多参赛五个赛季，但未追溯适用于已用满旧规上限者。原告以《谢尔曼法》第1条起诉，主张不予追溯适用构成对大学体育劳动力市场的非法贸易限制。\n上诉法院认为，地区法院在合理原则分析第一步即明显错误：原告主张的相关市场为全美一级联赛全部体育项目，缺乏证据支持。协会并非雇主，实际雇主为各校具体运动队，不同项目运动员不具可互换性，雇主之间亦不构成合理替代，该市场界定「明显不合理」。法院据此认定原告未能证明胜诉可能性，撤销禁令。\n集体诉讼认证裁定不在本次上诉范围内；协会其余抗辩，法院未予处理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-06",
+      "title": "Hulley Enterprises Ltd. v. Russian Federation",
+      "url": "https://www.courtlistener.com/opinion/11056830/hulley-enterprises-ltd-v-russian-federation/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "because of its alleged failure to pay awards or sanctions in other cases is not so extreme as to warrant",
+      "official_no": "",
+      "title_cn": "赫利企业等诉俄罗斯联邦（约500亿美元仲裁裁决确认之诉中止审理，待特区巡回就《能源宪章条约》表态）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "美国哥伦比亚特区联邦地区法院11月6日就赫利企业等诉俄罗斯联邦案作出备忘录与命令，将确认约500亿美元仲裁裁决之诉中止审理，至2027年5月6日或哥伦比亚特区巡回上诉法院就尤科斯资本案作出裁判之日，以先到者为准。\n本案围绕《外国主权豁免法》项下的主题事项管辖权已争讼十余年，核心是俄罗斯是否依《能源宪章条约》第45(1)条临时适用仲裁条款，从而落入该法仲裁例外。法院认为，无论是否中止，股东面临的困难相同：即便胜诉，裁决在美国境内仍难执行，须赴多国追索资产；而等待特区巡回就同一问题作出有约束力裁判，可避免裁判冲突与重复诉讼。\n法院同时驳回股东要求俄罗斯提供担保的动议，将加速审理动议视为无实益，并指出在该法与《纽约公约》项下门槛性管辖问题未决前，责令外国主权者提供数百亿美元担保存在重大障碍。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-06",
+      "title": "Greene v. United States Agency for International Development",
+      "url": "https://www.courtlistener.com/opinion/11056870/greene-v-united-states-agency-for-international-development/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "the Civil Rights Act of 1964, and the Administrative Procedure Act. This Court and many others have weighed",
+      "official_no": "",
+      "title_cn": "格林诉美国国际开发署（前多元化办公室雇员挑战裁员，因管辖权与诉状不足被驳回）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "美国哥伦比亚特区联邦地区法院11月6日准许被告驳回起诉动议，驳回三名美国国际开发署前雇员提起的诉讼。原告均在署内多元化办公室任职，机构解散过程中被强制行政休假，最终随全机构裁员被解职，遂依《1964年民权法》第七章、文官改革法、第一修正案与第五修正案正当程序、《行政程序法》等提出七项主张。\n法院分别以缺乏管辖权与未陈述可获救济请求为由驳回。文官改革法对行政休假法、越权及行政程序法主张具有排他性，排除地区法院管辖；原告对白宫管理和预算办公室及其主任缺乏起诉资格。实体层面，第七章报复与差别影响主张缺乏具体事实，仅以职位及所属机构被裁为由不构成第一修正案主张，「虚假裁员」指控与原告自行附具的裁员通知相矛盾，正当程序主张未满足污名加要件。\n法院承认原告「似乎无正当理由被解职」，但无权给予所请求救济。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-05",
@@ -14,13 +104,13 @@
       "agency": "第十一巡回上诉法院",
       "summary": "amendment to Fed. R. Civ. P. 11 notes that the word “sanctions” in the caption of Rule 11(c) “stresses",
       "official_no": "",
-      "title_cn": "Consul 诉前进美国保险公司（保险恶意索赔，撤销简易判决并发回）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-06",
         "body": "美国第十一巡回上诉法院由三名法官组成合议庭，撤销佛罗里达中区联邦地区法院对前进美国保险公司作出的简易判决，发回重审。案件起于一起涉另一车辆的车祸：Consul 在该案中被认定承担责任，其后以保险公司在与受害人和解谈判中未尽善意义务为由另行起诉，主张超额判决系保险人处理失当所致。\n地区法院此前判保险人胜诉，认为不存在需交付陪审团的实质性事实争议。上诉分庭持相反判断，认为整体情形足以构成真正的事实争议，故撤销原判并发回进一步审理。\nTjoflat 法官提出异议，认为依法应维持简易判决，并建议发回后由地区法院依《联邦民事诉讼规则》第 11 条要求原告律师说明是否违反该条(b)款。检索片段出现的「sanctions」字样即出自该异议部分，非本案多数意见的争点。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Consul 诉前进美国保险公司（保险恶意索赔，撤销简易判决并发回）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -32,13 +122,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "the panel vacated the district court’s preliminary injunction against the State of Idaho’s enforcement",
       "official_no": "",
-      "title_cn": "Hecox 诉 Kenyon（爱达荷州女子体育法，发回后认定诉讼已无实际意义）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-06",
         "body": "美国第九巡回上诉法院就最高法院发回重审的 Hecox 案作出命令：撤销爱达荷州联邦地区法院针对该州《女子体育公平法》执行的初步禁令，发回地区法院以诉讼已无实际意义为由驳回。\n程序脉络为：2026 年 6 月 30 日，最高法院在 West Virginia 诉 B. P. J. 案中推翻第九巡回法院维持上述禁令的判决并发回。发回后争点转为原告 Hecox 是否仍具当事人资格——双方均确认其目前未在博伊西州立大学注册，该校注册处亦出具声明证实。\nHecox 在补充意见中称打算于 2027 年春季重新注册，法院认定该表述属结论性意向，未附具体注册安排或已采取的实际步骤，不足以履行其证明责任。合议庭同时准许补充记录之动议。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Hecox 诉 Kenyon（爱达荷州女子体育法，发回后认定诉讼已无实际意义）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -50,13 +140,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "or an order compelling agency action under the Administrative Procedure Act (“APA”) based on unreasonable",
       "official_no": "",
-      "title_cn": "Fang 诉鲁比奥（签证审理迟延，准许驳回起诉）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-06",
         "body": "美国哥伦比亚特区联邦地区法院（Walton 法官）准许被告的驳回起诉动议，驳回一名 H-1B 签证申请人的履职之诉。\n原告 Peijiao Fang 自行诉讼，被告包括以官方身份列名的国务卿鲁比奥、国务院、美国驻上海总领事馆领事官员、国土安全部部长及国土安全部。其 H-1B 申请于 2023 年 6 月获批，2024 年 12 月在上海面签后被置于「行政处理」状态。原告诉请依履职令与《行政程序法》第 555(b) 条判令被告尽快审理。\n法院假定存在明确、非裁量的义务，并假定领事不可审查原则不阻却诉请，转而适用 TRAC 六因素审查。法院认定截至意见书作出之日约 23 个月的迟延不构成不合理，原告未能提出可获救济的诉请。案件原于北加州联邦地区法院提起，2025 年 9 月移送特区法院。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Fang 诉鲁比奥（签证审理迟延，准许驳回起诉）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -73,6 +163,24 @@
       "brief": {
         "at": "2026-11-06",
         "body": "美国哥伦比亚特区联邦地区法院（Bates 法官）驳回哥伦比亚国家基础设施局（ANI）的中止审理请求，认定上诉通知不剥夺法院管辖权。\n案件为哥伦比亚仲裁裁决的确认与执行程序：波哥大东环线公司（POB）在波哥大仲裁庭取得针对 ANI 及哥伦比亚共和国的裁决；ANI 已请求该国国务委员会撤销，POB 则申请在美确认与执行。\nANI 曾以缺乏属人管辖权为由请求驳回，未依《外国主权豁免法》主张豁免，该动议 2026 年 8 月被驳回。本轮其主张上诉通知已使法院丧失管辖权，或应暂缓至上诉及外国撤销程序结束。法院认定该命令不可立即上诉，两项请求均不成立。\n法院另定：ANI 于 2026 年 12 月 10 日前提交反对意见并列明《纽约公约》第五条抗辩，POB 于 2027 年 1 月 14 日前回复。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-05",
+      "title": "Lemmon v. Trump",
+      "url": "https://www.courtlistener.com/opinion/11055963/lemmon-v-trump/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "asserting claims under the Administrative Procedure Act (“APA”), as well as ultra vires and mandamus claims",
+      "official_no": "",
+      "title_cn": "莱蒙诉特朗普（准予临时限制令叫停纪念环岛250英尺拱门，认定缺乏国会授权）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "哥伦比亚特区联邦地区法院11月5日准予特区与弗吉尼亚州申请的临时限制令，禁止在林肯纪念堂与阿灵顿国家公墓之间的纪念环岛动工建设250英尺高的拱门，并暂缓裁定《行政程序法》第705条中止请求、搁置莱蒙案的初步禁令动议。\n特朗普于2025年10月宣布为建国250周年在纪念环岛建拱门。原告主张工程缺乏国会授权，违反《纪念工程法》关于纪念性工程须经国会明示授权的规定，并违反《国家环境政策法》。法院认为原告很可能胜诉：被告未履行该法规定的任何程序，国会亦未通过任何授权建设该拱门的法律；1925年《阿灵顿纪念桥法》仅授权建桥，不能延伸出建造拱门的权力。\n法院认定损害确定：施工将造成持续两三年的交通中断与环境损害，且因主权豁免难以金钱弥补。对政府临讼提出的国家安全抗辩，法院指出既有规划文件全无记载。",
         "tier": "note"
       }
     },
