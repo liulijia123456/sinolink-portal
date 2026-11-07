@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-06T08:22:53+08:00",
+ "updated_at": "2026-11-07T13:40:23+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 7,
-   "added": 3,
+   "fetched": 6,
+   "added": 0,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 4,
+   "added": 3,
    "error": ""
   },
   {
@@ -164,6 +164,106 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-06",
+   "title": "U.S. Sanctions Cripple Financial Networks Sustaining the Iranian Regime",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-sanctions-cripple-financial-networks-sustaining-the-iranian-regime/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman U.S. Sanctions Cripple Financial Networks Sustaining the Iranian Regime Press Statement November 6, 2026 The United States is taking action today against eight digital asset service providers that help the Iranian regime evade sanctions and fund terrorism. The Department of the Treasury is designating these firms, which exchange Iranian rials"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "U.S. Department of State Announces Selection for the 2027 Venice Architecture Biennale",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-department-of-state-announces-selection-for-the-2027-venice-architecture-biennale/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman U.S. Department of State Announces Selection for the 2027 Venice Architecture Biennale Media Note November 6, 2026 Today, the Department of State announced the selection of The University of Miami School of Architecture to represent the United States at the 20th Venice Architecture Biennale. The 2027 U.S. Pavilion exhibition, Earth Craft , is organized by Lead Curator Germa"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Secretary Rubio’s Travel to France",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-travel-to-france-2/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Travel to France Media Note November 6, 2026 Secretary of State Marco Rubio will travel to Paris, France November 8-10. The Secretary will attend the G7 Foreign Ministers Meeting, where he will advance American interests in engagements with his G7 counterparts."
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Joint Statement on the Conviction of Hong Kong Alliance Leaders and Sentencing of Joshua Wong",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/on-the-conviction-of-hong-kong-alliance-leaders-and-sentencing-of-joshua-wong/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the Conviction of Hong Kong Alliance Leaders and Sentencing of Joshua Wong Media Note November 6, 2026 The text of the following statement was released by Governments of the United States of America, Australia, Canada, France, Germany, Italy, Japan, the Netherlands, New Zealand, and the United Kingdom. Begin Text. Joshua Wong was sentenced to 10 years’ im"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Joint Statement on the Second Meeting of the Joint Steering Committee of the U.S.-DRC Strategic Partnership Agreement",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-second-meeting-of-the-joint-steering-committee-of-the-u-s-drc-strategic-partnership-agreement/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the Second Meeting of the Joint Steering Committee of the U.S.-DRC Strategic Partnership Agreement Media Note November 6, 2026 The text of the following statement was released by the Governments of the United States of America and the Democratic Republic of the Congo. Begin text. Representatives from the Government of the United States and the Government "
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Joint Statement on the Launch of Trilateral Technical Planning Groups to Advance the Trump Route for International Peace and Prosperity (TRIPP)",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-launch-of-trilateral-technical-planning-groups-to-advance-the-trump-route-for-international-peace-and-prosperity-tripp/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the Launch of Trilateral Technical Planning Groups to Advance the Trump Route for International Peace and Prosperity (TRIPP) Media Note November 6, 2026 The following text was released by the Governments of the United States of America, Armenia, and Azerbaijan. Begin Text. Today, U.S. Assistant Secretary of State for European and Eurasian Affairs Brendan "
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Congratulating Grenada’s Prime Minister Dickon Mitchell on his Reelection",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/congratulating-grenadas-prime-minister-dickon-mitchell-on-his-reelection/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Congratulating Grenada’s Prime Minister Dickon Mitchell on his Reelection Press Statement November 6, 2026 The United States congratulates Prime Minister Dickon Mitchell on his electoral victory. We look forward to continuing our strong collaboration with the Government of Grenada on our shared priorities, including energy development, growing our transparent and re"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Sexual Assailants, and Drug Traffickers",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/06/worst-worst-ice-arrests-pedophiles-sexual-assailants-and-drug-traffickers",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-06",
+   "title": "U.S. Secret Service Arrests Illegal Alien with Guns in Vehicle Near the White House",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/06/us-secret-service-arrests-illegal-alien-guns-vehicle-near-white-house",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-06",
+   "title": "SANCTUARY INSANITY: New York Sanctuary Politicians Release Illegal Alien Convicted of Robbery and Assault",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/06/sanctuary-insanity-new-york-sanctuary-politicians-release-illegal-alien-convicted",
+   "source": "Homeland Security",
+   "summary": ""
+  },
   {
    "date": "2026-11-05",
    "title": "ESTABLISHMENT OF THE OVAL OFFICE NATIONAL MONUMENT",
