@@ -1,9 +1,298 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-06 08:06",
-  "count": 248,
+  "updated_at": "2026-11-07 13:33",
+  "count": 265,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "The American Declaration of Freedom in Space",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22789/the-american-declaration-of-freedom-in-space",
+      "source": "联邦公报",
+      "kind": "公告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22789",
+      "title_cn": "美国太空自由宣言（总统公告）",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "【政策背景】2026年11月3日，美国总统签署第11079号公告《美国太空自由宣言》，联邦公报于11月6日第91卷第214期刊发（91 FR 70767—70768）。公告以美国航天进程为叙事背景，提及2026年4月\"阿耳忒弥斯2号\"完成载人绕月飞行、2027年夏季将实施\"阿耳忒弥斯3号\"试飞，并重申2028年前重返月球、建立永久性月球存在、实现载人登陆火星的目标；文中称此前签署的行政令与指令已用于重振载人航天、放开商业航天产业并维持美国太空优势。\n\n【核心内容】公告宣告：太阳系及地球以外的全部外层空间属于全人类，并在符合美国法律及美国所承担国际义务的前提下，对美国公民的探索、开发、利用及建立永久性存在开放。该表述与1967年《外层空间条约》第一条\"全人类开发范围\"的措辞相近，但公告未援引该条约条款，亦未就月球资源权属、轨道位置、频谱使用或发射许可设定具体规则。作为总统宣告性文书，公告不创设新的权利义务，不改变现行国内法或联邦机构职权，其落地仍取决于既有行政令与各机构后续规则制定。\n\n【要点提炼】一是文种为总统公告，性质属政策宣示，正文无法条式操作性条款，无生效日期与合规义务；二是核心语义为\"开放\"而非\"确权\"，未涉及月球或其他天体资源归属安排；三是所列时间表为政策目标表述，未附预算科目或机构任务书；四是文本未点名具体行政令编号，也未指定牵头实施机构；五是同日刊发的第11078号公告构成本期总统文件部分，二者互不援引。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Anti-Communism Week, 2026",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22787/anti-communism-week-2026",
+      "source": "联邦公报",
+      "kind": "公告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22787",
+      "title_cn": "2026年反共产主义周（总统公告）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "【政策背景】2026年11月3日，美国总统签署第11078号公告，将2026年11月1日至11月7日定为\"反共产主义周\"，联邦公报11月6日第91卷第214期刊发（91 FR 70765—70766）。公告以意识形态叙事为主轴，称共产主义与社会主义意识形态一个多世纪以来消除个人机会、将个人置于国家之下，并称此类思潮当前在美国国内\"表达有所增加\"，据此呼吁维护建国原则、宪法与自由市场。\n\n【核心内容】公告正文为历史与价值陈述，正式宣告该周为\"反共产主义周\"，并号召全体美国人坚定抵御\"对美国生活方式的任何威胁\"。文本未设立委员会或工作组，未指定牵头机构，未安排联邦纪念活动，未附加拨款、报告或绩效义务，亦未对现行法规、制裁清单、出口管制或对外援助条件作出任何修改。全文不含行政令编号、法定授权条款、生效日期与实施期限等技术性内容，也未要求任何机构采取后续行动。\n\n【要点提炼】一是文种为总统公告，属纪念性、宣示性文件，不产生法律效力，不构成行政令或机构指令；二是无操作性条款，既无生效日也无合规要求，对联邦机构与私人主体均不设新义务；三是公告所称\"思潮表达增加\"为政治判断，未提供数据、文献或统计来源，引用时不宜作为事实性结论；四是与同日刊发的第11079号《美国太空自由宣言》同属本期总统文件部分，两份公告互不援引；五是此类周度公告在联邦公报中按惯例不附摘要，本速览依据公告全文撰写。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Meeting of the U.S. Naval Academy Board of Visitors",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22713/meeting-of-the-us-naval-academy-board-of-visitors",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-22713",
+      "title_cn": "美国海军学院访客委员会会议（国防部通告）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 文种为国防部通告，非规则，属联邦咨询委员会会议安排公告（91 FR 70077）。\n· 会议主体为美国海军学院访客委员会，定于2026年11月30日举行。\n· 09:00—11:00（美东时间）对公众开放，11:00—12:00（美东时间）闭门进行。\n· 通告未涉及政策调整、采购或人事事项，信息边界限于会议时间与公开范围。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Specific Listing for 3-Chloromethcathinone, A Currently Controlled Schedule I Substance",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22717/specific-listing-for-3-chloromethcathinone-a-currently-controlled-schedule-i-substance",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "official_no": "2026-22717",
+      "title_cn": "将3-氯甲卡西酮单列为第一类管制物质并赋予独立药品代码（最终规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 司法部缉毒署（DEA）最终规则，2026年11月6日刊发并同日生效（91 FR 70009，案卷 DEA-1768）。\n· 为1-(3-氯苯基)-2-(甲氨基)丙-1-酮（3-氯甲卡西酮，3-CMC）在第一类管制物质清单中单列，并赋予独立药品代码。\n· 依据是该物质为第一类致幻剂4-氯甲卡西酮的位置异构体，本已受第一类管制；本次仅作清单单列与编码，未新增管制种类。\n· 修订21 CFR 第1308部分；属最终规则，无评论期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Endangered and Threatened Wildlife and Plants; Technical Corrections for 43 Wildlife and Plant Species on the Lists of Endangered and Threatened Wildlife and Plants",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22682/endangered-and-threatened-wildlife-and-plants-technical-corrections-for-43-wildlife-and-plant",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "内政部",
+      "official_no": "2026-22682",
+      "title_cn": "濒危与受威胁野生动植物：43个物种名录及关键栖息地的技术性更正（直接最终规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 内政部鱼类及野生动植物管理局直接最终规则（91 FR 70013，案卷 FWS-R8-ES-2026-0530）。\n· 对43个物种作技术性更正：7种野生动物与30种植物（主要分布于加利福尼亚、内华达两州）按现行分类学与命名更新名录，另对6种美国境内及领地野生动物更正以往刊发错误。\n· 同步修订相关关键栖息地条款；性质为编辑性修订，不改变名录实质或监管要求。\n· 生效日2027年2月4日；若2026年12月7日前收到重大反对意见，相关部分将撤回。修订50 CFR 第17部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC): Online Ordering and Transactions and Food Delivery Revisions To Meet the Needs of a Modern, Data-Driven Program",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22679/special-supplemental-nutrition-program-for-women-infants-and-children-wic-online-ordering-and",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "农业部",
+      "official_no": "2026-22679",
+      "title_cn": "妇女、婴儿和儿童特别补充营养计划（WIC）：网购下单、网上交易与食品配送规则修订（最终规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 农业部食品营养局最终规则并征求意见（91 FR 70250，案卷 FNA-2026-0595）。\n· 回应2023年2月23日拟议规则所收意见，移除妇女、婴儿和儿童特别补充营养计划（WIC）线上订购与互联网交易的障碍，允许各州采用新技术改进购物体验。\n· 配合该计划全面转向电子福利转账（EBT），简化食品配送相关规定，并强调计划完整性。\n· 生效日2026年12月7日；意见须于2027年1月5日前提交。修订7 CFR 第246部分，具体技术标准以文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Amendment 128 to the FMP for Groundfish of the Bering Sea and Aleutian Islands Management Area and Amendment 116 to the FMP for the Groundfish Fisheries of the Gulf of Alaska; Small Sablefish Release",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22695/fisheries-of-the-exclusive-economic-zone-off-alaska-amendment-128-to-the-fmp-for-groundfish-of-the",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "商务部",
+      "official_no": "2026-22695",
+      "title_cn": "阿拉斯加专属经济区渔业：白令海与阿留申群岛管理计划第128号修正案、墨西哥湾管理计划第116号修正案——裸盖鱼放归（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 商务部拟议规则（征求意见通告，91 FR 70041）。\n· 北太平洋渔业管理委员会已向商务部长提交白令海与阿留申群岛底层鱼管理计划第128号修正案、墨西哥湾底层鱼管理计划第116号修正案。\n· 若获批准，将允许个体渔业配额（IFQ）与社区发展配额（CDQ）下使用定置网具的船舶放归裸盖鱼，并修订年度分配程序以计入丢弃量。\n· 意见截止2027年1月5日；须经商务部长批准方生效。修订50 CFR 第679部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Prohibiting Illegal Discrimination in Registered Apprenticeship Programs",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22680/prohibiting-illegal-discrimination-in-registered-apprenticeship-programs",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-22680",
+      "title_cn": "禁止注册学徒计划中的非法歧视：撤销原平权措施要求（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 劳工部最终规则（91 FR 70164，案卷 ETA-2025-0006）。\n· 撤销此前对注册学徒计划主办方设定的平权措施要求，劳工部称其负担过重且法律依据存疑。\n· 简化所有主办方的不歧视义务，同时明确主办方仍须遵守联邦与州反歧视保护并接受问责。\n· 同步对学徒计划注册的劳动标准规定作技术性修改。\n· 生效日2027年1月5日；修订29 CFR 第29、30部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22739",
+      "title_cn": "Medicare医院门诊前瞻性支付系统与门诊手术中心支付系统（2027年度）及质量报告计划（最终规则并征求意见）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 卫生与公众服务部医保中心最终规则并征求意见（91 FR 70284，案卷 CMS-1850-FC），适用2027日历年度。\n· 修订Medicare医院门诊前瞻性支付系统（OPPS）与门诊手术中心（ASC）支付系统的金额与调整因子，更新两套质量报告计划；农村急诊医院质量报告计划未变。\n· 将事前授权要求扩大至更多肉毒毒素注射服务；落实2026年《综合拨款法》关于机构院外门诊部的条款。\n· 明确具认定权的认证机构可在认证调查中评估《紧急医疗与劳动法》部分行政要求（42 CFR 489.20），并公布教学医院关闭通知与名额申请机会。\n· 2027年1月1日生效；支付率具体调整幅度以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Food Additive Petitions; Change of Address",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22663/food-additive-petitions-change-of-address",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22663",
+      "title_cn": "食品添加剂申请：受理地址变更与通知程序简化（最终规则·技术性修订）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 卫生与公众服务部食品药品管理局最终规则·技术性修订（91 FR 70007，案卷 FDA-2026-F-4956）。\n· 更新食品添加剂申请（FAP）的受理地址，简化通知程序。\n· 性质为非实质性修订，不改变申请标准、安全评估要求或审评时限。\n· 2026年11月6日刊发并生效；修订21 CFR 第571部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Medical Devices; Ear, Nose, and Throat Devices; Classification of the External Mechanical Stimulator for the Relief of Congestion",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22657/medical-devices-ear-nose-and-throat-devices-classification-of-the-external-mechanical-stimulator-for",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22657",
+      "title_cn": "医疗器械：耳鼻喉器械——将缓解鼻塞的外部机械刺激器归入第二类（最终命令）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 卫生与公众服务部食品药品管理局最终命令（91 FR 70007，案卷 FDA-2026-N-12125）。\n· 将\"缓解鼻塞的外部机械刺激器\"归入第二类器械，适用特殊控制。\n· 特殊控制要求写入该器械类型的分类法典条文；分类自2023年12月4日起适用，命令2026年11月6日生效。\n· 修订21 CFR 第874部分；FDA 认为归入第二类可在保证安全有效的同时降低监管负担。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Establishment of Class E Airspace, Shelter Cove Airport, Shelter Cove, CA",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22667/establishment-of-class-e-airspace-shelter-cove-airport-shelter-cove-ca",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22667",
+      "title_cn": "设立E类空域：加利福尼亚州谢尔特科夫机场（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 交通部联邦航空管理局拟议规则（91 FR 70038，案卷 FAA-2026-12541 / 空域案卷 26-AWP-11）。\n· 拟在加利福尼亚州谢尔特科夫机场（K0Q5）设立自地表以上700英尺起算的E类空域。\n· 该机场正由目视飞行规则（VFR）转为仪表飞行规则（IFR）运行，拟设管制空域为下降至1,500英尺以下的进近IFR航空器、爬升至1,200英尺以下的离场IFR航空器提供覆盖。\n· 意见截止2026年12月21日；修订14 CFR 第71部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Airworthiness Directives; Airbus SAS Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22665/airworthiness-directives-airbus-sas-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22665",
+      "title_cn": "适航指令：空客A350-941与A350-1041型飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 交通部联邦航空管理局拟议适航指令（91 FR 70031，案卷 FAA-2026-13801，MCAI-2025-01538-T）。\n· 拟取代AD 2024-19-03，适用于空客A350-941与A350-1041型飞机。\n· 要求修订现行维护或检查方案，纳入新增或更严格的适航限制；FAA 认定自原指令发布后需进一步提高限制要求。\n· 意见截止2026年12月21日；修订14 CFR 第39部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22664/airworthiness-directives-dassault-aviation-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-22664",
+      "title_cn": "适航指令：达索猎鹰7X型飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 交通部联邦航空管理局拟议适航指令（91 FR 70034，案卷 FAA-2026-13803，MCAI-2025-01036-T）。\n· 拟取代AD 2024-15-04，适用于达索猎鹰7X型飞机。\n· 要求修订现行维护或检查方案，纳入新增或更严格的适航限制，以处置该机型的不安全状态。\n· 意见截止2026年12月21日；修订14 CFR 第39部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Heightened Requirements for Foreign Importers of Record",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22735/heightened-requirements-for-foreign-importers-of-record",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22735",
+      "title_cn": "提高对外国进口记录人（IOR）的要求并明确报关行责任（临时最终规则并征求意见）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 国土安全部海关与边境保护局临时最终规则并征求意见（91 FR 69977，CBP Dec. 26-19，案卷 USCBP-2026-1387）。\n· 依据第14411号行政令《加强海关执法》第2条，对外国进口记录人（IOR）报关设定新要求，并明确持照报关行对客户的相关责任。\n· 对不合规的外国进口记录人与报关行设定相应后果。\n· 2027年1月5日生效；报关行可就19 CFR 111.29的变更申请延迟合规。修订19 CFR 第110、111、141、142、171部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Drawbridge Operation Regulation; Harlem River, Between the Boroughs of Manhattan and the Bronx, New York City, New York",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22734/drawbridge-operation-regulation-harlem-river-between-the-boroughs-of-manhattan-and-the-bronx-new",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22734",
+      "title_cn": "吊桥操作规则：哈莱姆河曼哈顿与布朗克斯区段——麦康布斯坝桥临时停启（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 国土安全部海岸警卫队拟议规则（91 FR 70039，案卷 USCG-2026-1338）。\n· 拟临时修改哈莱姆河3.2英里处麦康布斯坝桥（曼哈顿与布朗克斯区之间）的操作规则。\n· 桥主纽约市交通局2026年8月31日提出申请，拟于2027年2月1日至11月30日保持关闭状态，以便桥梁结构修复。\n· 意见截止2026年12月7日；修订33 CFR 第117部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-06",
+      "title": "Drawbridge Operation Regulation; Wishkah River, Aberdeen, WA",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22677/drawbridge-operation-regulation-wishkah-river-aberdeen-wa",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-22677",
+      "title_cn": "吊桥操作规则：华盛顿州阿伯丁维什卡河铁路桥（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-07",
+        "body": "· 国土安全部海岸警卫队最终规则（91 FR 70011，案卷 USCG-2026-0562）。\n· 将华盛顿州阿伯丁维什卡河0.1英里处普吉特湾与太平洋铁路桥（PS&P）的开启状态改为完全关闭通航。\n· 所有开启须提前24小时通知，且不再要求现场配备桥工。\n· 2026年12月7日生效；修订33 CFR 第117部分。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-05",
@@ -13,13 +302,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-22593",
-      "title_cn": "医疗器械；血液与病理器械：含人工智能算法的数字化宫颈细胞学玻片成像系统分类（最终规则）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-06",
         "body": "【政策背景】\n依《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），1976 年《医疗器械修正案》生效前未进入商业流通的「修正案后器械」由法律自动归入 III 类，须经上市前批准（PMA）。第 513(f)(2) 条的 De Novo 程序允许在缺乏合法上市比对器械时请求重新分类，FDA 须于收到请求后 120 天内以书面命令裁定。归入 II 类须以特殊控制补足一般控制，形成安全与有效的合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 据此将「含人工智能算法的数字化宫颈细胞学玻片成像系统」列为 II 类器械并适用特殊控制，编纂为 21 CFR 864.3900。通用器械名定义为：由自动化数字玻片创建、浏览与管理系统构成的处方类体外诊断器械，用于辅助复核巴氏涂片标本的数字图像，通过选取并呈现感兴趣区域便利阅片判读；其人工智能软件采用机器学习方法，就图像中具临床意义区域的存否、位置或特征提供信息，辅助作出细胞学诊断。该分类源于 Hologic Inc. 2021 年 8 月 27 日提交的 Genius Digital Diagnostics System De Novo 请求；FDA 于 2024 年 1 月 31 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 31 日起适用。案卷 FDA-2026-N-12384，文件号 2026-22593，刊于 91 FR 69687。\n【要点提炼】\n其一，文种为「最终修正；最终命令」，系对既有裁定的法典化编纂，不新设实体义务，特殊控制条目以 21 CFR 864.3900 及原文表 1 为准。其二，经 De Novo 降至 II 类后，该器械可作为后续同型器械的比对器械，后续申报可走负担较轻的 510(k) 通道。其三，含 AI 的细胞学影像辅助判读由此取得明确的 II 类监管路径，合规义务落于处方使用与特殊控制条款，命令未设过渡期。",
         "tier": "full"
-      }
+      },
+      "title_cn": "医疗器械；血液与病理器械：含人工智能算法的数字化宫颈细胞学玻片成像系统分类（最终规则）",
+      "domain": "医疗/医药"
     },
     {
       "board": "whitehouse",
@@ -30,13 +319,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-22590",
-      "title_cn": "医疗器械；神经器械：轻度认知障碍预后评估软件分类（最终规则）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-06",
         "body": "【政策背景】\n按《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），未被列入 1976 年《医疗器械修正案》前商业流通范围的「修正案后器械」由法律自动归入 III 类并须经上市前批准。第 513(f)(2) 条的 De Novo 通道允许申请人在确认不存在可作为实质等同性判断基础的合法上市器械后直接请求分类，FDA 须在 120 天内以书面命令裁定，该裁定视为器械的初始分类。归入 II 类的门槛是特殊控制与一般控制相结合后足以提供安全与有效的合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 将「轻度认知障碍预后评估软件」列为 II 类器械并适用特殊控制，编纂为 21 CFR 882.1454。通用器械名定义为：仅限处方使用的器械，汇集多个临床数据来源的信息，输出指示「已诊断为轻度认知障碍（MCI）的患者在特定期间内进展为更严重认知障碍或发展为痴呆（如阿尔茨海默病痴呆）」可能性的结果；该器械仅作辅助使用，不构成独立的诊断或预后工具。分类源于 Darmiyan, Inc. 2022 年 9 月 29 日提交的 BrainSee 器械 De Novo 请求；FDA 于 2024 年 1 月 11 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 11 日起适用。案卷 FDA-2026-N-12212，文件号 2026-22590，刊于 91 FR 69690；原文表 1 列明该类器械的健康风险与相应缓解措施。\n【要点提炼】\n其一，本文种为「最终修正；最终命令」，系对 2024 年 1 月裁定的法典化，未改变实体义务。其二，「辅助使用、非独立诊断或预后工具」的定位写入通用器械名，构成该器械类型的固有边界，后续同型产品须在此定位内申报。其三，处方专用与特殊控制共同构成合规框架，具体风险条目与验证要求见 21 CFR 882.1454 及原文表 1。其四，该分类为同型软件提供比对基础，后续可经 510(k) 通道申报。",
         "tier": "full"
-      }
+      },
+      "title_cn": "医疗器械；神经器械：轻度认知障碍预后评估软件分类（最终规则）",
+      "domain": "医疗/医药"
     },
     {
       "board": "whitehouse",
@@ -47,13 +336,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-22589",
-      "title_cn": "医疗器械；骨科器械：骨科用可穿戴振动装置分类（最终规则）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-06",
         "body": "【政策背景】\n依《联邦食品、药品和化妆品法》第 513(f)(1) 条（21 U.S.C. 360c(f)(1)），1976 年《医疗器械修正案》前未进入商业流通的新器械自动归入 III 类并须经上市前批准。第 513(f)(2) 条的 De Novo 程序允许在无合法上市比对器械时请求分类，FDA 须于 120 天内以书面命令裁定；经此程序列入 I 类或 II 类的器械可作为后续同型器械的比对基础，后续可改用 510(k) 上市前通告程序。归入 II 类须以特殊控制补足一般控制之不足，从而形成合理保证（第 513(a)(1)(B) 条）。\n【核心内容】\nFDA 将「骨科用可穿戴振动装置」列为 II 类器械并适用特殊控制，编纂为 21 CFR 888.5895。通用器械名定义为：以机械振动定向作用于骨骼特定部位，用以减少骨强度或骨密度流失的可穿戴装置。分类源于 Bone Health Technologies, Inc. 2023 年 2 月 17 日提交的 Osteoboost Belt 器械 De Novo 请求；FDA 于 2024 年 1 月 12 日作出 II 类裁定，本命令将该裁定编纂入法典。命令 2026 年 11 月 5 日生效，分类自 2024 年 1 月 12 日起适用。案卷 FDA-2026-N-12211，文件号 2026-22589，刊于 91 FR 69692。原文表 1 列明该类器械已识别的健康风险及缓解措施，其中包括因施加不适当振幅导致骨强度与骨密度加速流失的风险，对应措施涉及临床性能测试与非临床性能测试。\n【要点提炼】\n其一，文种为「最终修正；最终命令」，属对 2024 年 1 月裁定的法典化编纂，实体要求未变。其二，该类器械的适用边界以「机械振动、定向作用于骨骼特定部位、减少骨强度或骨密度流失」为限，超出此范围的振动类产品不当然适用该条目。其三，特殊控制将振幅等参数的安全性验证前移至上市前性能测试环节，具体项目以 21 CFR 888.5895 及原文表 1 为准。其四，该分类为同型器械提供比对基础，后续可经 510(k) 通道申报。",
         "tier": "full"
-      }
+      },
+      "title_cn": "医疗器械；骨科器械：骨科用可穿戴振动装置分类（最终规则）",
+      "domain": "医疗/医药"
     },
     {
       "board": "whitehouse",
@@ -64,13 +353,13 @@
       "kind": "规则",
       "agency": "交通部",
       "official_no": "2026-22642",
-      "title_cn": "修订 D 类与 E 类空域：俄勒冈州雷德蒙德罗伯茨机场（最终规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-06",
         "body": "· 文种与主体：联邦航空管理局（FAA）最终规则，文件号 2026-22642，刊于 91 FR 69685。\n· 核心动作：修订俄勒冈州雷德蒙德罗伯茨机场的 D 类与 E 类空域，涉及地面区、作为 D 类或 E 类地面区延伸的 E 类空域，以及自地面 700 英尺向上延伸的 E 类空域，以支持该机场目视与仪表飞行规则运行的安全与管理。\n· 程序与生效：2027 年 2 月 18 日 0901 UTC 生效；联邦公报主管依 1 CFR 第 51 部分批准该引用并入，受 FAA JO 7400.11 年度修订约束。案卷 FAA-2025-5141；空域案卷 25-ANM-147。",
         "tier": "note"
-      }
+      },
+      "title_cn": "修订 D 类与 E 类空域：俄勒冈州雷德蒙德罗伯茨机场（最终规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -81,13 +370,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-22617",
-      "title_cn": "深水港许可申请处理与审批（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-06",
         "body": "· 文种与主体：海事管理局（MARAD）拟议规则，文件号 2026-22617，刊于 91 FR 69768。\n· 核心动作：规定深水港许可申请的处理与审批程序，反映《深水港法》下许可申请处理管理权由美国海岸警卫队（USCG）移交 MARAD。\n· 法律依据：依 2026 财年《国防授权法》，MARAD 成为所有深水港许可申请在《国家环境政策法》（NEPA）项下的联邦牵头机构。\n· 权限边界：USCG 对深水港设计、建造、设备、运营及航行安全的职权不受该法修订与本拟议规则影响。\n· 程序阶段：评论截止 2027 年 1 月 4 日，尚无生效日。案卷 MARAD-2026-0728。",
         "tier": "note"
-      }
+      },
+      "title_cn": "深水港许可申请处理与审批（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -98,13 +387,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-22587",
-      "title_cn": "适航指令：空客 SAS 飞机（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-06",
         "body": "· 文种与主体：联邦航空管理局（FAA）拟议规则（拟议适航指令），文件号 2026-22587，刊于 91 FR 69732。\n· 适用范围：空客 SAS 的 A318-111、-112；A319-111 至 -115、-131 至 -133；A320-211、-212、-214、-216、-231 至 -233；A321 相应型别。\n· 核心动作：起因是配备特定头顶行李舱（OHSC）的飞机 YZ 轴连接点出现损伤报告，调查显示衬套、保持环与销钉移位；拟要求一次性偏差检查并视结果纠正，禁止安装受影响部件。\n· 程序阶段：评论截止 2026 年 12 月 21 日。案卷 FAA-2026-13800；MCAI-2025-01663-T。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：空客 SAS 飞机（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -132,13 +421,13 @@
       "kind": "拟议规则",
       "agency": "教育部",
       "official_no": "2026-22615",
-      "title_cn": "拟议优先事项与定义——部长补充优先事项与定义（拟议规则）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-06",
         "body": "· 文种与主体：教育部（ED）拟议优先事项与定义，文件号 2026-22615，刊于 91 FR 69736。\n· 核心动作：拟修订四份既有部长补充优先事项与定义通知（2025 年 90 FR 43514；2026 年 91 FR 6625、18780、18774），并调整若干优先事项子项。\n· 主要变化：拟将「人工智能（AI）」改称「超级智能（SI）」，涉及通知与优先事项名称及 AI 素养定义；SI 定义拟采 2026 年 9 月 29 日第 14344 号行政令表述，即 15 U.S.C. 9401(3) 所定义人工智能涵盖的技术与系统。\n· 程序阶段：属拟议阶段，无生效日；评论截止 2026 年 12 月 7 日。案卷 ED-2026-OS-3169。",
         "tier": "note"
-      }
+      },
+      "title_cn": "拟议优先事项与定义——部长补充优先事项与定义（拟议规则）",
+      "domain": "教育/劳动"
     },
     {
       "board": "whitehouse",
@@ -149,13 +438,13 @@
       "kind": "拟议规则",
       "agency": "国土安全部",
       "official_no": "2026-22614",
-      "title_cn": "安全区：FRL 首届电动水翼板邀请展演赛（佛罗里达州迈阿密）更正（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-06",
         "body": "· 文种与主体：美国海岸警卫队（USCG）更正文件，文件号 2026-22614，刊于 91 FR 69736。\n· 核心动作：更正 2026 年 10 月 19 日刊于 91 FR 66033 的拟议规则中评论提交截止日，缩短评论期，使海岸警卫队得以及时审议意见并在活动前决定是否发布最终规则。\n· 标的规则：拟为 FRL 首届电动水翼板邀请展演赛设立临时安全区，位于佛罗里达州迈阿密迈阿密海洋体育场水域。\n· 时点：安全区拟于 2026 年 11 月 15 日执行；更正后评论截止 2026 年 11 月 6 日。案卷 USCG-2026-1162。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区：FRL 首届电动水翼板邀请展演赛（佛罗里达州迈阿密）更正（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
