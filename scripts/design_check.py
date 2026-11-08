@@ -327,7 +327,9 @@ def cmd_progress(_args):
     # 1) 工作区
     code, out, _ = git(["status", "--porcelain"])
     dirty = [l for l in out.split("\n") if l.strip()] if code == 0 else []
-    html_dirty = [l for l in dirty if l.endswith("index.html") or "index.html" in l]
+    html_dirty = [l for l in dirty if "index.html" in l]
+    untracked = [l for l in dirty if l.startswith("??")]
+    modified = [l for l in dirty if not l.startswith("??") and "index.html" not in l]
     print("\n[工作区]")
     if not dirty:
         print("  干净")
@@ -337,9 +339,10 @@ def cmd_progress(_args):
             code2, stat, _ = git(["diff", "--shortstat", "HEAD", "--", "index.html"])
             if code2 == 0 and stat.strip():
                 print(f"    {stat.strip()}")
-        others = len(dirty) - len(html_dirty)
-        if others:
-            print(f"  另有 {others} 个非 index.html 改动（多为数据文件或新文件）")
+        if modified:
+            print(f"  其他已修改文件 {len(modified)} 个")
+        if untracked:
+            print(f"  未跟踪文件 {len(untracked)} 个（不影响提交，可忽略）")
 
     # 2) 与远端的关系
     print("\n[与远端]")
@@ -362,20 +365,20 @@ def cmd_progress(_args):
     print("\n[最近设计改动]")
     c3, log_out, _ = git([
         "log", "-12", "--grep=^design(",
-        "--format=%h|%ad|%s", "--date=format:%m-%d %H:%M", "--shortstat",
+        "--format=@@@%h|%ad|%s", "--date=format:%m-%d %H:%M", "--shortstat",
     ])
     if c3 == 0 and log_out.strip():
-        blocks = [b for b in log_out.split("\n\n") if b.strip()]
-        for b in blocks:
-            rows = [r for r in b.strip().split("\n") if r.strip()]
-            head = rows[0]
-            h, when, msg = (head.split("|", 2) + ["", "", ""])[:3]
+        for block in [b for b in log_out.split("@@@") if b.strip()]:
+            first_line = block.strip().split("\n")[0]
+            parts = first_line.split("|", 2)
+            h = parts[0].strip()
+            when = parts[1].strip() if len(parts) > 1 else ""
+            msg = parts[2].strip() if len(parts) > 2 else ""
+            m = re.search(r"(\d+) insertion", block)
+            d = re.search(r"(\d+) deletion", block)
             delta = ""
-            for r in rows[1:]:
-                m = re.search(r"(\d+) insertion", r)
-                d = re.search(r"(\d+) deletion", r)
-                if m or d:
-                    delta = f"+{m.group(1) if m else 0}/-{d.group(1) if d else 0}"
+            if m or d:
+                delta = f"+{m.group(1) if m else 0}/-{d.group(1) if d else 0}"
             print(f"  {h}  {when}  {msg}  {delta}")
     else:
         print("  （暂无 design(*) 提交）")
