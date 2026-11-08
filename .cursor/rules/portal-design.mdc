@@ -1,5 +1,5 @@
 ---
-description: 国金门户页面设计协作规则（多 AI 并行）
+description: 国金门户页面设计协作规则（多 AI 工具接力）
 alwaysApply: true
 ---
 
@@ -19,17 +19,20 @@ alwaysApply: true
 - **不要新增 `data-page-node-id`**：该属性由外部可视化编辑器生成，新增元素一律不加；
   也不要删除既有的。
 
-## 动手前先同步
+## 动手前先看交接
 
-不分工、不认领，谁都能改。但同一文件并行编辑要靠节奏避让：
+同一台电脑上多个 AI 工具共用这个目录，**没有副本要合并，只有接力**。
+唯一要守的是：同一时刻只让一个工具改 `index.html`——两个工具同时编辑，
+后保存的会静默覆盖先保存的，git 检测不到。
 
 ```bash
-git pull --rebase --autostash
-python3 scripts/design_check.py progress     # 看别人刚改了什么
+git log -5 --oneline                       # 上一个 AI 改了什么
+python3 scripts/design_check.py progress   # 已提交改动 + 工作区残留
+git status                                 # 有未提交残留先 commit 或丢弃
 ```
 
-单次改动控制在 150 行 diff 以内，改完立刻提交推送，不要攒。
-需要改位置标签可参考 `AGENTS.md` §2 的锚点对照表。
+单次改动控制在 150 行 diff 以内，完成一个视觉单元就 `git commit`（本地存档）。
+`git push` 只是异地备份，不必每次都推。
 
 ## 改完必须自检
 
@@ -49,7 +52,9 @@ python3 -m http.server 8000
 ## 提交信息
 
 ```
-design(<区块ID>): <一句话说明>
+design(<位置>): <一句话说明>
 ```
 
 例：`design(us): 日历控制台改双列，抬头 470→420`
+
+位置标签仅表示改动位置，不表示归属；锚点对照表见 `AGENTS.md` §2。

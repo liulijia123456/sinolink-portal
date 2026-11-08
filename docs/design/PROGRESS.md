@@ -29,8 +29,8 @@
 （当前无进行中的设计改动）
 ```
 
-> 这一栏是唯一需要手工维护的部分，作用是让其他平台知道「有人正在改，先别动同一处」。
-> 不写也不会出错，只是撞车概率高一点。
+> 这一栏是可选的。作用是标记「这块改到一半」，避免下一个接手的工具以为已经完成，
+> 在旧版本上继续叠改。不写也不会出错，只是出问题时排查范围变大。
 
 ---
 
@@ -61,8 +61,8 @@ curl -s "https://liulijia123456.github.io/sinolink-portal/data/policy/manifest.j
 ## 5. 常用命令
 
 ```bash
-git pull --rebase --autostash                 # 动手前
-python3 scripts/design_check.py progress      # 看别人改了什么
+git log -5 --oneline                          # 上一个接手的人改了什么
+python3 scripts/design_check.py progress      # 已提交 + 未提交总览
 python3 scripts/design_check.py verify        # 越界检查
 python3 scripts/design_check.py regions       # 打印当前区块边界
 python3 -m http.server 8000                   # 本地预览

@@ -17,13 +17,18 @@
 
 ## 工作流
 
+同一台电脑上多个 AI 工具共用这个目录，没有副本要合并。唯一要守的是
+**同一时刻只让一个工具改 `index.html`**（同时编辑会静默覆盖，git 检测不到）。
+
 ```bash
-python3 scripts/design_check.py progress   # 看别人刚改了什么
+git log -5 --oneline                       # 上一个 AI 改了什么
+python3 scripts/design_check.py progress   # 已提交改动 + 工作区残留
 # 改样式与 DOM，单次 ≤150 行 diff
-python3 scripts/design_check.py verify     # 越界检查
-git commit -m "design(<位置标签>): <说明>"
-git push origin main
+python3 scripts/design_check.py verify     # 越界检查，非 0 必须回退
+git commit -m "design(<位置>): <说明>"    # 本地存档即可
 ```
 
+`git push` 只是异地备份，不必每次推。
+
 位置标签：`us` `columns` `coverage` `notes` `about` `eu` `board` `election` `party` `tokens`
-（仅表示改动位置，不表示归属；完整锚点表见 `AGENTS.md` §2）。
+（完整锚点表见 `AGENTS.md` §2）。
