@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-07T13:40:23+08:00",
+ "updated_at": "2026-11-08T08:26:50+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 6,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 7,
+   "added": 0,
    "error": ""
   },
   {
@@ -48,8 +48,8 @@
    "type": "html",
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
-   "fetched": 15,
-   "added": 0,
+   "fetched": 14,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 0,
    "error": ""
   },
   {
@@ -164,6 +164,26 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-07",
+   "title": "First Lady Melania Trump and LSU Establish $7.2 Million Fostering the Future Endowment Fund",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-and-lsu-establish-7-2-million-fostering-the-future-endowment-fund/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-07",
+   "title": "Energy Secretary Builds on Progress to Strengthen Puerto Rico’s Energy Reliability",
+   "title_cn": "",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-secretary-builds-progress-strengthen-puerto-ricos-energy-reliability",
+   "source": "Energy",
+   "summary": ""
+  },
   {
    "date": "2026-11-06",
    "title": "U.S. Sanctions Cripple Financial Networks Sustaining the Iranian Regime",
