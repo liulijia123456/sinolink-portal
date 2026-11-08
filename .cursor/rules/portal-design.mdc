@@ -1,0 +1,55 @@
+---
+description: 国金门户页面设计协作规则（多 AI 并行）
+alwaysApply: true
+---
+
+# 国金门户 · Cursor 设计规则
+
+项目协作约定见根目录 `AGENTS.md`，设计令牌见 `DESIGN.md`，进度备注见 `docs/design/PROGRESS.md`。
+本文件只列 Cursor 场景下最容易踩的几条。
+
+## 硬约束
+
+- **页面只有一个文件**：`index.html`（1.35 MB，14665 行）。不要提议拆分成组件或多个 HTML。
+- **禁止自动格式化**：关掉 `editor.formatOnSave` 对本仓库的 HTML/CSS 生效。
+  Prettier 会重排整个文件，制造上万行 diff 并冲掉定时任务写入的数据块。
+- **两个 JSON 数据块不可改**（按 `id` 锚点定位，不要按行号）：
+  - `<script type="application/json" id="election-data">`
+  - `<script type="application/json" id="us-cal-data">`
+- **不要新增 `data-page-node-id`**：该属性由外部可视化编辑器生成，新增元素一律不加；
+  也不要删除既有的。
+
+## 动手前先同步
+
+不分工、不认领，谁都能改。但同一文件并行编辑要靠节奏避让：
+
+```bash
+git pull --rebase --autostash
+python3 scripts/design_check.py progress     # 看别人刚改了什么
+```
+
+单次改动控制在 150 行 diff 以内，改完立刻提交推送，不要攒。
+需要改位置标签可参考 `AGENTS.md` §2 的锚点对照表。
+
+## 改完必须自检
+
+```bash
+python3 scripts/design_check.py verify
+```
+
+退出码非 0 表示改动落入数据块或脚本区，必须回退重做。
+
+## 预览
+
+```bash
+python3 -m http.server 8000
+```
+不要用 Live Server 的 `file://` 模式——政策板块会全空白。
+
+## 提交信息
+
+```
+design(<区块ID>): <一句话说明>
+```
+
+例：`design(us): 日历控制台改双列，抬头 470→420`
