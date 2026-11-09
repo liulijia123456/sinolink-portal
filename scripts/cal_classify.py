@@ -347,6 +347,16 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # ECOA 小企业信贷数据报送（金融监管）
     ('2030-12-31', 'EPA 南加州 PM2.5 达标期限延至'):
         {'cat': 'pol', 'topic': 'energy', 'actor': 'agency'},      # 空气质量达标期限（EPA 规则）
+    # 2026-11-10 批次：4 条。G7 无对应 DIP_RULES 规则（会被判空），CMS 与 BIS 条目会被兜底判
+    # money/agency 或判空，故逐条手工归类。
+    ('2026-11-09', 'G7 外长会议（巴黎）'):
+        {'cat': 'dip', 'topic': 'security', 'actor': 'intl'},      # 七国集团外长会，美国为成员方
+    ('2026-12-05', 'CMS 联邦医疗保险药品价格谈判规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 医保药价谈判（与库内 CMS 口径一致）
+    ('2027-01-01', 'CMS 2027 年医师费用表支付规则生效'):
+        {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 医师费用表与 B 部分支付规则
+    ('2027-01-11', 'BIS 实体清单关联方规则恢复实施'):
+        {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 出口管制关联方许可要求
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
