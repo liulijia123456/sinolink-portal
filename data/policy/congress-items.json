@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-11-08 09:22",
+  "updated_at": "2026-11-09 13:24",
   "count": 976,
   "items": [
     {
@@ -21,7 +21,11 @@
         "tier": "note"
       },
       "title_cn": "2026年国际宗教自由委员会重新授权法案",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Christopher H. Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NJ-4",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -40,7 +44,11 @@
         "tier": "note"
       },
       "title_cn": "《不要冲弃婴儿法案》",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Sheri Biggs",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-3",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -59,7 +67,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年服装微塑料透明度法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Nancy Mace",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-1",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -78,7 +90,11 @@
         "tier": "note"
       },
       "title_cn": "《PURGE法案》",
-      "domain": "其他"
+      "domain": "其他",
+      "sponsor": "Nancy Mace",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-1",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -97,7 +113,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年印第安卫生服务局人力对等法案》",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Mike Kennedy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT-3",
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -116,7 +136,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年劳动所得税抵免年龄对等法案》",
-      "domain": "财政/税收"
+      "domain": "财政/税收",
+      "sponsor": "Judy Chu",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-28",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -135,7 +159,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年重新参保权法案》",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Andrea Salinas",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR-6",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -154,7 +182,11 @@
         "tier": "note"
       },
       "title_cn": "《留住联邦技术人才法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "James R. Walkinshaw",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-11",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -173,7 +205,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年国际宗教自由委员会重新授权法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Ted Budd",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -192,7 +228,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年RESILIENCE法案》",
-      "domain": "科技/AI"
+      "domain": "科技/AI",
+      "sponsor": "Lauren Underwood",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-14",
+      "committee": "Cybersecurity and Infrastructure Protection"
     },
     {
       "board": "congress",
@@ -211,7 +251,11 @@
         "tier": "note"
       },
       "title_cn": "《共同价值法案》",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Lauren Underwood",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-14",
+      "committee": "Health"
     },
     {
       "board": "congress",
@@ -230,7 +274,11 @@
         "tier": "note"
       },
       "title_cn": "核燃料回收高效许可法案（Nuclear REFUEL Act）",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Robert E. Latta",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-5",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -249,7 +297,11 @@
         "tier": "note"
       },
       "title_cn": "2025年核燃料回收高效许可法案（Nuclear REFUEL Act）",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Jon Husted",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -262,13 +314,17 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Banking, Housing, and Urban Affairs. (Sponsor introductory remarks on measure: CR S511-512)",
       "official_no": "S. 3793",
-      "title_cn": "《消除掠夺性贷款法案》",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-08",
         "body": "文种与主体：第119届国会参议院法案，由罗德岛州民主党参议员里德于2026年2月5日提出。\n核心动作：案名为《消除掠夺性贷款法案》，官方分类为金融与金融部门领域，具体条款须以正式文本为准。\n程序阶段：2026年2月5日二读后交付参议院银行、住房与城市事务委员会，尚未进入院会表决。\n信息边界：官方摘要未取得，队列未提供条款内容，不据案名推定适用范围；下一观察节点为该委员会审议安排。",
         "tier": "note"
-      }
+      },
+      "title_cn": "《消除掠夺性贷款法案》",
+      "domain": "金融/保险",
+      "sponsor": "Jack Reed",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-RI",
+      "committee": "Banking, Housing, and Urban Affairs"
     },
     {
       "board": "congress",
@@ -281,13 +337,17 @@
       "kind": "参议院法案",
       "agency": "参议院 · Held at the desk.",
       "official_no": "S. 1528",
-      "title_cn": "CHILD法案（2025年）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-08",
         "body": "文种与主体：第119届国会参议院法案，由伊利诺伊州民主党参议员德宾于2025年4月30日提出。\n核心动作：案名缩写 CHILD 的全称未在官方素材中列明，官方分类为犯罪与执法领域。\n程序阶段：最新行动为2026年4月22日「Held at the desk」，即暂置于参议院议长案头，尚未安排审议。\n信息边界：官方摘要未取得，条款以 congress.gov 文本为准；下一观察节点为是否列入参议院议程。",
         "tier": "note"
-      }
+      },
+      "title_cn": "CHILD法案（2025年）",
+      "domain": "司法/执法",
+      "sponsor": "Richard J. Durbin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -300,13 +360,17 @@
       "kind": "众议院法案",
       "agency": "众议院 · Placed on the Union Calendar, Calendar No. 770.",
       "official_no": "H.R. 3100",
-      "title_cn": "CHILD法案（2026年）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-08",
         "body": "文种与主体：第119届国会众议院法案，2025年4月30日提出，案名缩写 CHILD 的全称官方素材未列明。\n核心内容：据国会研究服务局摘要，恢复为儿童、老年人及残障人士提供照护或照护安置服务的机构，为承包商及其认证或许可人员申请全国犯罪记录背景核查的权限。\n背景：联邦法律原授权此类照护机构对特定受覆盖人员申请全国背景核查，1994年至2018年覆盖范围包含三类人员。\n程序阶段：2026年11月5日列入众议院联合日程第770号，尚待院会审议；下一观察节点为规则委员会安排辩论。\n信息边界：上述摘要为节选，具体条文以 congress.gov 文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "CHILD法案（2026年）",
+      "domain": "司法/执法",
+      "sponsor": "Russell Fry",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-7",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -325,7 +389,11 @@
         "tier": "note"
       },
       "title_cn": "海员考试现代化法案",
-      "domain": "交通"
+      "domain": "交通",
+      "sponsor": "Salud O. Carbajal",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-24",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -344,7 +412,11 @@
         "tier": "note"
       },
       "title_cn": "业余无线电应急准备法案",
-      "domain": "电信/媒体"
+      "domain": "电信/媒体",
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -363,7 +435,11 @@
         "tier": "full"
       },
       "title_cn": "《农村医疗法案》",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Burgess Owens",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT-4",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -382,7 +458,11 @@
         "tier": "note"
       },
       "title_cn": "《午夜规则救济法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Andy Biggs",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AZ-5",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -401,7 +481,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年“Petfax”法案》",
-      "domain": "农业/食品"
+      "domain": "农业/食品",
+      "sponsor": "Deborah K. Ross",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NC-2",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -420,7 +504,11 @@
         "tier": "note"
       },
       "title_cn": "《终止巴基斯坦“非北约主要盟友”认定法案》",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Andy Biggs",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AZ-5",
+      "committee": "Foreign Affairs"
     },
     {
       "board": "congress",
@@ -439,7 +527,11 @@
         "tier": "note"
       },
       "title_cn": "《哥伦比亚特区法院司法空缺缩减法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Eleanor Holmes Norton",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-DC",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -458,7 +550,11 @@
         "tier": "note"
       },
       "title_cn": "《宠物与家庭团聚法案》",
-      "domain": "农业/食品"
+      "domain": "农业/食品",
+      "sponsor": "Ted Lieu",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-36",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -477,7 +573,11 @@
         "tier": "note"
       },
       "title_cn": "《PATH法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Donald Norcross",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NJ-1",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -496,7 +596,11 @@
         "tier": "note"
       },
       "title_cn": "《评论诚信与管理法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Clay Higgins",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-LA-3",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -515,7 +619,11 @@
         "tier": "note"
       },
       "title_cn": "《被监禁母亲公正法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Ayanna Pressley",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MA-7",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -534,7 +642,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年午夜规则救济法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Ron Johnson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WI",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -553,7 +665,11 @@
         "tier": "note"
       },
       "title_cn": "《拉尔夫·戴维·阿伯纳西国家历史遗址法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Jon Ossoff",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-GA",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -572,7 +688,11 @@
         "tier": "note"
       },
       "title_cn": "《DEEP法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Mike Lee",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT",
+      "committee": "Environment and Public Works"
     },
     {
       "board": "congress",
@@ -591,7 +711,11 @@
         "tier": "full"
       },
       "title_cn": "《滑雪场资源经济发展法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "John Barrasso",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WY",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -610,7 +734,11 @@
         "tier": "note"
       },
       "title_cn": "《社区枪支存放安全增强法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Richard J. Durbin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -629,7 +757,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年地热成本回收授权法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Ruben Gallego",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AZ",
+      "committee": "Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining"
     },
     {
       "board": "congress",
@@ -648,7 +780,11 @@
         "tier": "note"
       },
       "title_cn": "《业余无线电应急准备法案》",
-      "domain": "电信/媒体"
+      "domain": "电信/媒体",
+      "sponsor": "Roger F. Wicker",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MS",
+      "committee": "Commerce, Science, and Transportation"
     },
     {
       "board": "congress",
@@ -667,7 +803,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年职业入门法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Margaret Wood Hassan",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NH",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -686,7 +826,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年犹他野火研究所法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Mike Lee",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT",
+      "committee": "Energy and Natural Resources"
     },
     {
       "board": "congress",
@@ -705,7 +849,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年行政法规须经国会审议法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Rand Paul",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KY",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -724,7 +872,11 @@
         "tier": "full"
       },
       "title_cn": "《TAAP法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Mark Kelly",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AZ",
+      "committee": "Energy and Natural Resources"
     },
     {
       "board": "congress",
@@ -743,7 +895,11 @@
         "tier": "note"
       },
       "title_cn": "《哥伦比亚特区法院司法空缺缩减法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Chris Van Hollen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -762,7 +918,11 @@
         "tier": "note"
       },
       "title_cn": "《CHILD劳工法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Patty Murray",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -781,7 +941,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年木材采伐恢复法案》",
-      "domain": "农业/食品"
+      "domain": "农业/食品",
+      "sponsor": "Mike Rounds",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SD",
+      "committee": "Agriculture, Nutrition, and Forestry"
     },
     {
       "board": "congress",
@@ -800,7 +964,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年白橡树韧性法案》",
-      "domain": "农业/食品"
+      "domain": "农业/食品",
+      "sponsor": "Mitch McConnell",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KY",
+      "committee": "Agriculture, Nutrition, and Forestry"
     },
     {
       "board": "congress",
@@ -819,7 +987,11 @@
         "tier": "note"
       },
       "title_cn": "《2026年朝鲜人权重新授权法案》",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Tim Kaine",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA",
+      "committee": "Foreign Relations"
     },
     {
       "board": "congress",
@@ -838,7 +1010,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年驱逐中国非法警察法案》",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Tom Cotton",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR",
+      "committee": "Foreign Relations"
     },
     {
       "board": "congress",
@@ -857,7 +1033,11 @@
         "tier": "note"
       },
       "title_cn": "《工资盗扣预防与工资追回法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Patty Murray",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -876,7 +1056,11 @@
         "tier": "note"
       },
       "title_cn": "《PATH法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Martin Heinrich",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NM",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -895,7 +1079,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年“证明它”法案》",
-      "domain": "产业/企业"
+      "domain": "产业/企业",
+      "sponsor": "Joni Ernst",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA",
+      "committee": "Small Business and Entrepreneurship"
     },
     {
       "board": "congress",
@@ -914,7 +1102,11 @@
         "tier": "note"
       },
       "title_cn": "《恢复残障成年人就业选择法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Tom Cotton",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -933,7 +1125,11 @@
         "tier": "note"
       },
       "title_cn": "《HEATS法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "John Hoeven",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-ND",
+      "committee": "Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining"
     },
     {
       "board": "congress",
@@ -952,7 +1148,11 @@
         "tier": "note"
       },
       "title_cn": "《增强电网韧性法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Peter Welch",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VT",
+      "committee": "Energy and Natural Resources"
     },
     {
       "board": "congress",
@@ -971,7 +1171,11 @@
         "tier": "note"
       },
       "title_cn": "《司法信息自由法扩展法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Adam B. Schiff",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -990,7 +1194,11 @@
         "tier": "note"
       },
       "title_cn": "《网络设备透明度法案》",
-      "domain": "电信/媒体"
+      "domain": "电信/媒体",
+      "sponsor": "John W. Hickenlooper",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1009,7 +1217,11 @@
         "tier": "note"
       },
       "title_cn": "《大麻管理与机会法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Cory A. Booker",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NJ",
+      "committee": "Finance"
     },
     {
       "board": "congress",
@@ -1028,7 +1240,11 @@
         "tier": "note"
       },
       "title_cn": "指定2026年5月16日为“儿童公园日”的参议院决议",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Ron Wyden",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1047,7 +1263,11 @@
         "tier": "note"
       },
       "title_cn": "支持美元作为世界储备货币并应对中华人民共和国经济影响力的参议院决议",
-      "domain": "金融/保险"
+      "domain": "金融/保险",
+      "sponsor": "Ted Budd",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC",
+      "committee": "Foreign Relations"
     },
     {
       "board": "congress",
@@ -1066,7 +1286,11 @@
         "tier": "note"
       },
       "title_cn": "支持指定2026年5月为“可再生燃料月”的参议院决议",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Pete Ricketts",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NE",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1085,7 +1309,11 @@
         "tier": "note"
       },
       "title_cn": "指定2026年7月为“塑料污染行动月”的参议院决议",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Jeff Merkley",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -1104,7 +1332,11 @@
         "tier": "note"
       },
       "title_cn": "指定7月为“全国反假冒与消费者教育认知月”的参议院决议",
-      "domain": "产业/企业"
+      "domain": "产业/企业",
+      "sponsor": "Chuck Grassley",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1123,7 +1355,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年海藻林保护法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Jared Huffman",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-2",
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -1142,7 +1378,11 @@
         "tier": "note"
       },
       "title_cn": "《气象雷达覆盖改进法案》",
-      "domain": "科技/AI"
+      "domain": "科技/AI",
+      "sponsor": "Eric A. \"Rick\" Crawford",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR-1",
+      "committee": "Science, Space, and Technology"
     },
     {
       "board": "congress",
@@ -1161,7 +1401,11 @@
         "tier": "note"
       },
       "title_cn": "《放牧降低野火风险法案》",
-      "domain": "农业/食品"
+      "domain": "农业/食品",
+      "sponsor": "Doug LaMalfa",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CA-1",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1180,7 +1424,11 @@
         "tier": "note"
       },
       "title_cn": "《科学诚信法案》",
-      "domain": "科技/AI"
+      "domain": "科技/AI",
+      "sponsor": "Paul Tonko",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-20",
+      "committee": "Science, Space, and Technology"
     },
     {
       "board": "congress",
@@ -1199,7 +1447,11 @@
         "tier": "note"
       },
       "title_cn": "《重新授权1994年青少年鸭票保护与设计计划法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Hillary J. Scholten",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-3",
+      "committee": "Environment and Public Works"
     },
     {
       "board": "congress",
@@ -1218,7 +1470,11 @@
         "tier": "note"
       },
       "title_cn": "《社区枪支存放安全增强法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Bradley Scott Schneider",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-10",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -1237,7 +1493,11 @@
         "tier": "note"
       },
       "title_cn": "《负责任预算法案》",
-      "domain": "财政/税收"
+      "domain": "财政/税收",
+      "sponsor": "Scott H. Peters",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-50",
+      "committee": "Rules"
     },
     {
       "board": "congress",
@@ -1256,7 +1516,11 @@
         "tier": "note"
       },
       "title_cn": "《BOWSER法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Andrew Ogles",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN-5",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -1275,7 +1539,11 @@
         "tier": "note"
       },
       "title_cn": "《滑雪场资源经济发展法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Joe Neguse",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO-2",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -1294,7 +1562,11 @@
         "tier": "note"
       },
       "title_cn": "《空间研究创新法案》",
-      "domain": "科技/AI"
+      "domain": "科技/AI",
+      "sponsor": "Andy Biggs",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AZ-5",
+      "committee": "Science, Space, and Technology"
     },
     {
       "board": "congress",
@@ -1313,7 +1585,11 @@
         "tier": "note"
       },
       "title_cn": "《通过先进机制精简热能法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Susie Lee",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NV-3",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -1332,7 +1608,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年最高法院任期限制与定期任命法案》",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Ro Khanna",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-17",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -1351,7 +1631,11 @@
         "tier": "note"
       },
       "title_cn": "《终止绿色补贴法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Mike Flood",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NE-1",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
