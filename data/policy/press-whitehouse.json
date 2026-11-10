@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-10T08:32:44+08:00",
+ "updated_at": "2026-11-10T19:59:04+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 5,
-   "added": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 7,
+   "added": 0,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 0,
    "error": ""
   },
   {
@@ -85,12 +85,12 @@
   {
    "agency": "司法部",
    "name": "Justice",
-   "type": "rss",
-   "url": "https://www.justice.gov/feeds/opa/justice-news.xml",
-   "status": "skipped",
-   "fetched": 0,
+   "type": "html",
+   "url": "https://www.justice.gov/news",
+   "status": "ok",
+   "fetched": 9,
    "added": 0,
-   "error": "连接超时"
+   "error": ""
   },
   {
    "agency": "农业部",
@@ -140,7 +140,7 @@
    "status": "skipped",
    "fetched": 0,
    "added": 0,
-   "error": "Akamai 403"
+   "error": "列表页由前端加载，渲染后仍无条目节点"
   },
   {
    "agency": "交通部",
@@ -243,6 +243,66 @@
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-21/",
    "source": "State Department",
    "summary": "Marco Rubio, Secretary of State Homestead, Florida Homestead Air Reserve Base Secretary of State Marco Rubio Remarks to the Press Remarks November 8, 2026 QUESTION: Mr. Secretary — SECRETARY RUBIO: Yeah. QUESTION: There’s this report out just now that India is going to be investigating CEO Jensen Huang. New York Times reported that you had concerns about his relationship with the Chinese spy. Can "
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Prolific Human Smuggler Extradited from Brazil Pleads Guilty to Smuggling Aliens into the United States",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/prolific-human-smuggler-extradited-brazil-pleads-guilty-smuggling-aliens-united-states",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Justice Department Sues Lyft for Denying Rides to Passengers with Service Dogs, Wheelchairs",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-sues-lyft-denying-rides-passengers-service-dogs-wheelchairs",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Justice Department Sues the City of Glendale, California for Violating Citizens’ Second Amendment Rights Through Unreasonable Fees and Processes for Legal Firearm Permitting",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-sues-city-glendale-california-violating-citizens-second-amendment-rights",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Justice Department Awards St. Louis more than $68M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-awards-st-louis-more-68m-combat-violent-crime-and-restore-law-and-order",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Justice Department Awards Jackson, Mississippi, more than $63M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-awards-jackson-mississippi-more-63m-combat-violent-crime-and-restore-law",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "14 Charged in Deadly Human Smuggling Scheme That Killed 7 Aliens Earlier This Year",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/14-charged-deadly-human-smuggling-scheme-killed-7-aliens-earlier-year",
+   "source": "Justice",
+   "summary": ""
   },
   {
    "date": "2026-11-09",
@@ -403,6 +463,36 @@
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/congratulating-grenadas-prime-minister-dickon-mitchell-on-his-reelection/",
    "source": "State Department",
    "summary": "Marco Rubio, Secretary of State Congratulating Grenada’s Prime Minister Dickon Mitchell on his Reelection Press Statement November 6, 2026 The United States congratulates Prime Minister Dickon Mitchell on his electoral victory. We look forward to continuing our strong collaboration with the Government of Grenada on our shared priorities, including energy development, growing our transparent and re"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Statement of the Department of Justice Antitrust Division on the Closing of Its Investigation of the Merger of FOX and Roku",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "声明",
+   "url": "https://www.justice.gov/opa/pr/statement-department-justice-antitrust-division-closing-its-investigation-merger-fox-and",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Justice Department Awards Jacksonville More Than $73M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-awards-jacksonville-more-73m-combat-violent-crime-and-restore-law-and",
+   "source": "Justice",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-06",
+   "title": "California Laboratory and Its Owner Pay $1.25M to Settle Allegations of Kickbacks to Marketers",
+   "title_cn": "",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/california-laboratory-and-its-owner-pay-125m-settle-allegations-kickbacks-marketers",
+   "source": "Justice",
+   "summary": ""
   },
   {
    "date": "2026-11-06",

@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-10T09:33:32+08:00",
+ "updated_at": "2026-11-10T19:59:16+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {

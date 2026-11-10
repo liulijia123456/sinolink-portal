@@ -34,6 +34,7 @@ import html as htmllib
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -51,22 +52,38 @@ UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
 # 默认直连，不继承系统代理：urllib 走 _scproxy 会握手超时。
 # 需要换出口时用 --proxy 或环境变量 PRESS_PROXY 指定（如 http://127.0.0.1:7890）：
 # 部分部门站点对数据中心 / 非美国 IP 做 Akamai 拦截，换到美国住宅出口才能取到。
-OPENER = None
-
-
-def get_opener():
-    global OPENER
-    if OPENER is None:
-        OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
-    return OPENER
+DIRECT = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+PROXY_OPENER = None
+PROXY_URL = ''
+CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 
 def set_proxy(url):
-    global OPENER
-    if url:
-        OPENER = urllib.request.build_opener(
-            urllib.request.ProxyHandler({'http': url, 'https': url}))
-        log('出口代理：' + url)
+    global PROXY_OPENER, PROXY_URL
+    PROXY_URL = (url or '').strip()
+    if PROXY_URL:
+        PROXY_OPENER = urllib.request.build_opener(
+            urllib.request.ProxyHandler({'http': PROXY_URL, 'https': PROXY_URL}))
+        log('出口代理：' + PROXY_URL)
+
+
+def fetch_render(url):
+    """用无头 Chrome 取 DOM：Akamai Bot Manager 的 JS 校验只有真浏览器能过。"""
+    if not os.path.exists(CHROME):
+        raise RuntimeError('未找到 Chrome，无法渲染')
+    if not PROXY_URL:
+        raise RuntimeError('渲染源需要 --proxy（美国出口）')
+    cmd = [CHROME, '--headless=new', '--no-sandbox', '--disable-gpu',
+           '--proxy-server=' + PROXY_URL, '--virtual-time-budget=15000',
+           '--dump-dom', url]
+    r = subprocess.run(cmd, capture_output=True, timeout=75)
+    html = (r.stdout or b'').decode('utf-8', 'replace')
+    if not html.strip():
+        raise RuntimeError('渲染返回空页面')
+    head = html[:4000]
+    if 'Access Denied' in head or 'bm-verify' in head:
+        raise RuntimeError('源站拒绝了当前出口（Access Denied / 校验页）')
+    return html
 
 TIMEOUT = 20
 MAX_PER_SOURCE = 40          # 单源单轮最多取多少条
@@ -109,9 +126,10 @@ SOURCES = {
          'url': 'https://www.defense.gov/News/Releases/',
          'link_re': r'defense\.gov/News/Releases/Release/',
          'blocked': 'Akamai 403'},
-        {'agency': '司法部', 'name': 'Justice', 'type': 'rss', 'enabled': False,
-         'url': 'https://www.justice.gov/feeds/opa/justice-news.xml',
-         'blocked': '连接超时'},
+        {'agency': '司法部', 'name': 'Justice', 'type': 'html',
+         'url': 'https://www.justice.gov/news',
+         'link_re': r'/opa/pr/', 'require_re': r'/opa/pr/[a-z0-9]',
+         'render': True, 'proxy': True},
         {'agency': '农业部', 'name': 'Agriculture', 'type': 'html', 'enabled': False,
          'url': 'https://www.usda.gov/media/press-releases',
          'link_re': r'usda\.gov/media/press-releases/',
@@ -130,8 +148,8 @@ SOURCES = {
          'blocked': 'Akamai 403'},
         {'agency': '住房与城市发展部', 'name': 'HUD', 'type': 'html', 'enabled': False,
          'url': 'https://www.hud.gov/press/press_releases_media_advisories',
-         'link_re': r'hud\.gov/press/',
-         'blocked': 'Akamai 403'},
+         'link_re': r'/press/press_releases_media_advisories/[a-z]',
+         'blocked': '列表页由前端加载，渲染后仍无条目节点'},
         {'agency': '交通部', 'name': 'Transportation', 'type': 'html', 'enabled': False,
          'url': 'https://www.transportation.gov/newsroom',
          'link_re': r'transportation\.gov/newsroom/',
@@ -181,14 +199,17 @@ def clean_text(s):
     return WS_RE.sub(' ', s).strip()
 
 
-def fetch(url):
+def fetch(url, use_proxy=False, render=False):
+    if render:
+        return fetch_render(url)
+    opener = PROXY_OPENER if (use_proxy and PROXY_OPENER) else DIRECT
     req = urllib.request.Request(url, headers={
         'User-Agent': UA,
         'Accept': 'application/rss+xml,application/xml,text/xml,text/html;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
         'Cache-Control': 'no-cache',
     })
-    with get_opener().open(req, timeout=TIMEOUT) as r:
+    with opener.open(req, timeout=TIMEOUT) as r:
         raw = r.read()
         if r.headers.get('content-encoding') == 'gzip':
             import gzip
@@ -378,7 +399,7 @@ def run_board(board, days, dry_run):
             stats.append(row)
             continue
         try:
-            body = fetch(src['url'])
+            body = fetch(src['url'], src.get('proxy', False), src.get('render', False))
             items = parse_rss(body) if src['type'] == 'rss' else parse_html_list(body, src)
             row['fetched'] = len(items)
             if not items:

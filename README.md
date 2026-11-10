@@ -805,10 +805,12 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
   提取（白宫、能源部、VA、DHS），条目须带 `<time datetime>` 或同卡片内的英文日期。
 - **口径**：按 `url` 去重、纯增量累积不截断；取不到日期的条目不收；`kind` 由标题
   关键词判定为新闻稿 / 声明 / 讲话 / 行政行动 / 事实清单。
-- **源站限制**：国防部、司法部、农业部、商务部、劳工部、HHS、HUD、交通部、教育部、
-  FCC、USITC、USAID 对数据中心 IP 做 Akamai 拦截，直连、系统代理、无头浏览器均返回
-  403。配置中这些源 `enabled=False` 并写明原因，页面侧栏灰显；换到可访问这些域的
-  网络环境时，把 `enabled` 改回 `True` 即可，无需改代码。
+- **源站限制与会话通道**：国防部、农业部、商务部、劳工部、HHS、交通部、教育部、
+  FCC、USITC、USAID 对机房 IP 直接 403（Access Denied），香港与洛杉矶机房出口均被拒，
+  需美国民用住宅出口才可能解，配置中 `enabled=False`。
+  司法部走另一条通道：`render=True` + `proxy=True`，用无头 Chrome 经美国代理过
+  Akamai Bot Manager 的 JS 校验（纯 HTTP 请求只会拿到 `bm-verify` 跳转页）。
+  该通道依赖本机 Chrome 与已开启的美国代理，代理缺失时该源报错、其余源不受影响。
 - **出口要求**：受限的 11 家只认美国出口 IP，且对机房 ASN 敏感。实测香港机房
   （G-Core）走代理仍 403，换美国节点后可用 `--proxy` 或 `PRESS_PROXY` 指定；
   `--only <机构名>` 用于单源验证。GitHub Actions 的 runner 在美国，是可选的云端出口。
