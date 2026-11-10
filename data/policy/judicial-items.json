@@ -1,9 +1,153 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-09 13:30",
-  "count": 63,
+  "updated_at": "2026-11-10 09:48",
+  "count": 71,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "Mullin v. Friends of the Ruidosa Church",
+      "url": "https://www.courtlistener.com/opinion/11057881/mullin-v-friends-of-the-ruidosa-church/",
+      "source": "CourtListener",
+      "kind": "裁定",
+      "agency": "美国最高法院",
+      "summary": "Cite as: 610 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A560 _________________ MARKWAYNE MULLIN, SECRETARY OF HOMELAND SECURITY, ET AL. v. FRIENDS OF THE RUIDOSA CHURCH, ET AL. ON APPLICATION FOR STAY [November 9, 2026] PER CURIAM. Section 102 of the",
+      "official_no": "",
+      "title_cn": "Mullin 诉 Ruidosa 教堂之友会（边境屏障环境法豁免与初审管辖权，中止申请获准）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "2026 年 11 月 9 日，美国最高法院以不署名全体意见（per curiam）准予国土安全部长 Mullin 的暂缓申请，中止得克萨斯西区联邦地区法院 10 月 2 日的初步禁令。该禁令原禁止部长依《1996 年非法移民改革与移民责任法》第 102(c)(1) 条豁免环境法律，在美墨边境「大弯区」修建屏障。\n\n法院认为联邦政府极有可能胜诉：地区法院对原告以「重大问题原则」名义提出的主张本无管辖权，因该主张实质指部长超越法定权限，属制定法争点，不属第 102(c)(2)(A) 条允许受理的宪法争议。法院另认定禁令使政府每日承担近 50 万美元不可回收成本，国会立法亦已表明快速施工优先于环境与游憩利益。\n\n本裁定仅暂缓至调卷令申请处理，未就豁免决定实体效力作出判断；杰克逊大法官表示反对。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "Miracle v. Hush",
+      "url": "https://www.courtlistener.com/opinion/11057878/miracle-v-hush/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十巡回上诉法院",
+      "summary": "the conscience . . . and is patently arbitrary and capricious . . . and is without a rational basis",
+      "official_no": "",
+      "title_cn": "Miracle 诉 Hush（恩波里亚州立大学终身教职中止后解聘与合资格豁免）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "第十巡回上诉法院就堪萨斯州恩波里亚州立大学九名终身教授被解聘一案作出中间上诉裁定。该州中止终身教职保护后，教授们依《美国法典》第 42 编第 1983 条起诉校方管理人员与堪萨斯州评议委员会成员，主张程序性与实体性正当程序、名誉自由利益、结社自由及平等保护受侵害，并称解聘源于其政治信念与活动。\n\n合议庭维持地区法院驳回合资格豁免动议中涉程序性正当程序及相应共谋请求的部分，认为教授对继续任职享有州法创设的财产利益，相关程序保障在行为时已属明显确立。合议庭撤销实体性正当程序请求，认定该权利于行为时未明显确立；并撤销针对评议委员会成员及 Thomas、Lovett、Johnson 三人的非财产利益请求，因其未被指参与解聘人选与通知的拟定。案件发回并指示驳回上述被撤销部分。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "United States of America Chamber of Commerce v. Sanchez",
+      "url": "https://www.courtlistener.com/opinion/11057787/united-states-of-america-chamber-of-commerce-v-sanchez/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "SUMMARY ** First Amendment / Preliminary Injunction The panel affirmed in part and reversed",
+      "official_no": "",
+      "title_cn": "美国商会诉 Sanchez（加州气候披露两法，初步禁令部分维持部分撤销）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "第九巡回上诉法院就加州两项气候披露法律的合宪性作出中间上诉裁定。加州 2023 年通过第 253 号参议院法案《气候企业数据问责法》与第 261 号参议院法案《气候财务风险法》，分别要求达到营收门槛的在加州经营企业披露温室气体排放与气候相关财务风险。美国商会等商业团体主张两法表面违反第一修正案禁止强制言论条款，请求初步禁令，加州中区联邦地区法院驳回。\n\n合议庭维持驳回禁令的部分，即第 253 号法案范围一、范围二排放披露，认定其属商业言论、可通过中间审查；撤销驳回禁令的部分，即第 261 号法案全部及第 253 号法案范围三排放披露，认定其强制非商业言论、难以通过严格审查；并将范围三可否分割发回地区法院先行判断。Nguyen 法官撰写多数意见，Bennett 法官部分协同、部分异议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "GSL Holdings, LLC v. Charter Twp. of Lyon Twp., Mich.",
+      "url": "https://www.courtlistener.com/opinion/11057877/gsl-holdings-llc-v-charter-twp-of-lyon-twp-mich/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "“deprived it of that interest through arbitrary and capricious action.” Golf Vill. N., LLC v. City of",
+      "official_no": "",
+      "title_cn": "GSL Holdings 诉密歇根州里昂镇（建厂许可迟延与平等保护、正当程序之诉）",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "第六巡回上诉法院就密歇根州里昂镇工业园区建厂许可纠纷作出判决，维持地区法院有利于镇方及其主管的简易判决。GSL Holdings 于 2020 年与 Moba Americas 签约，承诺约十个月内在无公共下水道接入的地块建成生产设施，开工前须取得县卫生部门化粪池许可；协商破裂后，该公司依第 1983 条起诉，主张平等保护、正当程序及第一修正案报复。\n\n合议庭认为，镇方延迟发放许可具有合理依据，与原告援引的对照项目差异可作解释，不构成「一人一类」差别对待；原告未在所称许可可领取后实施实质性施工，依密歇根州法未取得受保护的财产利益，实体性正当程序主张亦缺乏任意专断之证；对原告代表群发邮件的限制属内容中立、服务于避免违反州《公开会议法》的利益。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "Gottlieb v. National Student Loan Data System",
+      "url": "https://www.courtlistener.com/opinion/11057796/gottlieb-v-national-student-loan-data-system/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "of Education (“Education”) under the Administrative Procedure Act (“APA”), see 5 U.S.C. §§ 701 et seq",
+      "official_no": "",
+      "title_cn": "Gottlieb 诉全国学生贷款数据系统（助学贷款终身限额计算的《行政程序法》审查）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "哥伦比亚特区联邦地区法院就一名借款人对教育部及全国学生贷款数据系统提起的《行政程序法》之诉作出简易判决，支持被告。原告主张其贷款总额被错误计入资本化利息，致其被认定已达终身限额而不能再获贷款，认为该认定任意专断。\n\n法院指出，行政诉讼中的简易判决仅用于判断机关行为是否有行政记录支持，而非解决事实争议。法院审查经认证的行政记录后认为，教育部依 34 C.F.R. § 685.203(d)(2) 计算时未计入资本化利息，与规定一致；原告对记录完整性与事后合理化的质疑仅属推测，不足以推翻机关决定所享有的合法性推定。法院据此认定该终局行政行为并非任意专断。\n\n本判决针对个案限额认定，未触及贷款限额规则本身的效力。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "Center for Biological Diversity v. Burgum",
+      "url": "https://www.courtlistener.com/opinion/11057883/center-for-biological-diversity-v-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "(proposed Nov. 23, 2021). It then published its final rule classifying the Turtle as threatened on July",
+      "official_no": "",
+      "title_cn": "生物多样性中心诉内政部长伯古姆（珍珠河地图龟关键栖息地时限，驳回介入动议）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "哥伦比亚特区联邦地区法院就密西西比州兰金—欣兹珍珠河防洪排水控制区申请介入《濒危物种法》之诉作出裁定，驳回其介入动议。生物多样性中心于 2026 年 7 月起诉，主张鱼类及野生动植物管理局 2024 年 7 月将珍珠河地图龟列为「受威胁」时认定关键栖息地「审慎但目前不可确定」，此后未按期发布指定规则，未履行法定非裁量职责。\n\n法院认为，介入区主张的损害取决于管理局日后的裁量决定而非本案判决，因而不满足《联邦民事诉讼规则》第 24(a) 条直接且即时的要件，亦不具备第三条意义上的现实损害；许可介入方面，介入区意在争辩物种独特性、种群计数与经济成本权衡等实体问题，与本案法定时限争点不同，准许介入更可能迟延诉讼。\n\n被告尚未答辩，法院未就关键栖息地指定作出实体判断。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "True the Vote, Inc. v. Internal Revenue Service",
+      "url": "https://www.courtlistener.com/opinion/11057792/true-the-vote-inc-v-internal-revenue-service/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Code, 26 U.S.C. §§ 1–9834; and the Administrative Procedure Act, 5 U.S.C. §§ 701–706. See First Amended",
+      "official_no": "",
+      "title_cn": "True the Vote 诉美国国税局（律师费留置权与《平等司法法》酬金分配）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "哥伦比亚特区联邦地区法院就一件 2013 年提起的涉免税申请诉讼中的律师费分配争议作出裁定，部分准许、部分驳回 Bopp 律师事务所的执行留置权申请。原告 True the Vote 曾依第一修正案、税法与《行政程序法》起诉国税局及官员；法院 2023 年依《平等司法法》判给律师费 788,539.30 美元，并确认前代理律师享有有效留置权。\n\n本次争点为后任律所能否就其主张的 505,003.38 美元对上述酬金执行衡平留置权。法院依印第安纳州法确认该留置权有效，但将可执行范围限于法院判归该所自身服务所对应的 150,018.98 美元部分，其余请求不予支持。\n\n裁定仅处理律师费在各代理机构之间的分配，未涉及原案实体争点。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-09",
+      "title": "Kerr v. National Railroad Passenger Corporation (Amtrak)",
+      "url": "https://www.courtlistener.com/opinion/11057795/kerr-v-national-railroad-passenger-corporation-amtrak/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Supp. 3d 46, 52 (D.D.C. 2019) (treating RLA preemption as jurisdictional in a suit against a rail carrier)",
+      "official_no": "",
+      "title_cn": "Kerr 诉美国国家铁路客运公司（种族歧视解雇与《铁路劳工法》优先适用）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-09",
+        "body": "哥伦比亚特区联邦地区法院就三名前 Amtrak 维修班组主管提起的种族歧视之诉作出裁定，驳回被告缺乏事项管辖权的动议，同时准许其简易判决动议。三名原告 2024 年被解聘，依哥伦比亚特区《人权法》主张解聘出于种族歧视；Amtrak 称分别因提交虚假安全记录、违反蓝灯信号保护规程及未上报该违规而解聘。\n\n法院认为《铁路劳工法》不优先适用，因原告主张的是独立于集体谈判协议的法定权利，解决争点无需解释协议，故有管辖权。经适用 McDonnell Douglas 框架审查对照证据与调查程序后，法院认定记录不足以使合理陪审团认定种族因素影响解聘决定，Amtrak 就其陈述的合法非歧视理由已完成举证。法院同时准许原告提交有限补充答辩。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-06",
