@@ -167,47 +167,67 @@
   {
    "date": "2026-11-09",
    "title": "Nominations and Withdrawals Sent to the Senate",
-   "title_cn": "",
+   "title_cn": "向参议院提交人事提名与撤回名单",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/presidential-actions/2026/11/nominations-and-withdrawals-sent-to-the-senate-ba2b/",
    "source": "White House",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 白宫向参议院提交司法与外交人事提名：北卡罗来纳州 Philip Lawrence Aubart 拟任该州中区联邦地区法院法官，接替退休的 William Lindsay Osteen, Jr.。\n· 密西西比州 Gregory Todd Butler 拟任第五巡回上诉法院法官，接替退休的 Leslie Southwick。\n· 得克萨斯州资深外交官 Natalie Baker 拟任驻巴基斯坦大使。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Presidential Message on National American History and Founders Month",
-   "title_cn": "",
+   "title_cn": "总统就「全国美国历史与建国者月」发表文告",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-american-history-and-founders-month/",
    "source": "White House",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 特朗普发布文告，将 11 月定为「全国美国历史与建国者月」，纪念建国先贤。\n· 文告称美国历史是「人类历史上最伟大的自由叙事」，并列举从独立战争到航天成就的进程。\n· 文告呼吁把这些「勇气、信仰与爱国精神」延续到下一阶段。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Under Secretary Helberg’s Travel to Singapore, Indonesia, and Japan",
-   "title_cn": "",
+   "title_cn": "副国务卿赫尔伯格访问新加坡、印度尼西亚与日本",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/under-secretary-helbergs-travel-to-singapore-indonesia-and-japan/",
    "source": "State Department",
-   "summary": "Office of the Spokesman Under Secretary Helberg’s Travel to Singapore, Indonesia, and Japan Media Note November 9, 2026 Under Secretary of State for Economic Affairs Jacob S. Helberg traveled to Singapore, Indonesia, and Japan October 28 to November 7 to connect American technological leadership with the capital, industrial capabilities, and ambitions of U.S. partners in the Indo-Pacific. In Singa"
+   "summary": "Office of the Spokesman Under Secretary Helberg’s Travel to Singapore, Indonesia, and Japan Media Note November 9, 2026 Under Secretary of State for Economic Affairs Jacob S. Helberg traveled to Singapore, Indonesia, and Japan October 28 to November 7 to connect American technological leadership with the capital, industrial capabilities, and ambitions of U.S. partners in the Indo-Pacific. In Singa",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 经济事务副国务卿赫尔伯格 10 月 28 日至 11 月 7 日访问新加坡、印度尼西亚与日本。\n· 在新加坡与政商界会晤，推动美国「超级智能」（SI）技术在东南亚公共服务与商业场景落地，同时强调能力安全。\n· 此行目的是把美国技术优势与印太伙伴的资本、产业能力对接。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Secretary Rubio’s Meeting with German Foreign Minister Wadephul",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥会见德国外长瓦德富尔",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-german-foreign-minister-wadephul-4/",
    "source": "State Department",
-   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with German Foreign Minister Wadephul Readout November 9, 2026 Secretary of State Marco Rubio met with German Foreign Minister Johann Wadephul during the G7 Foreign Ministers Meeting in Paris, France. The two leaders discussed bilateral efforts to secure freedom of navigation, strengthen defense industrial cooperation, and deepen our trade relation"
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with German Foreign Minister Wadephul Readout November 9, 2026 Secretary of State Marco Rubio met with German Foreign Minister Johann Wadephul during the G7 Foreign Ministers Meeting in Paris, France. The two leaders discussed bilateral efforts to secure freedom of navigation, strengthen defense industrial cooperation, and deepen our trade relation",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 鲁比奥在巴黎 G7 外长会期间会见德国外长瓦德富尔。\n· 议题包括航行自由、国防工业合作与双边贸易。\n· 鲁比奥另就德国对海地「帮派压制部队」的近期投入表示肯定。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Secretary Rubio’s Meeting with French Foreign Minister Barrot",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥会见法国外长巴罗",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-french-foreign-minister-barrot-2/",
@@ -217,7 +237,7 @@
   {
    "date": "2026-11-09",
    "title": "Secretary Rubio’s Call with Paraguayan President Alliana",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥与巴拉圭总统阿利安娜通话",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-paraguayan-president-alliana/",
@@ -227,7 +247,7 @@
   {
    "date": "2026-11-09",
    "title": "Secretary of State Marco Rubio Remarks to the Press",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥对媒体发表讲话",
    "agency": "国务院",
    "kind": "讲话",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-22/",
@@ -237,7 +257,7 @@
   {
    "date": "2026-11-09",
    "title": "Secretary of State Marco Rubio Remarks to the Press",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥对媒体发表讲话（第二场）",
    "agency": "国务院",
    "kind": "讲话",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-21/",
@@ -247,7 +267,7 @@
   {
    "date": "2026-11-09",
    "title": "Prolific Human Smuggler Extradited from Brazil Pleads Guilty to Smuggling Aliens into the United States",
-   "title_cn": "",
+   "title_cn": "从巴西引渡的蛇头认罪：承认向美国走私外国人",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/prolific-human-smuggler-extradited-brazil-pleads-guilty-smuggling-aliens-united-states",
@@ -257,7 +277,7 @@
   {
    "date": "2026-11-09",
    "title": "Justice Department Sues Lyft for Denying Rides to Passengers with Service Dogs, Wheelchairs",
-   "title_cn": "",
+   "title_cn": "司法部起诉 Lyft：拒绝搭载携服务犬、使用轮椅的乘客",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-sues-lyft-denying-rides-passengers-service-dogs-wheelchairs",
@@ -267,7 +287,7 @@
   {
    "date": "2026-11-09",
    "title": "Justice Department Sues the City of Glendale, California for Violating Citizens’ Second Amendment Rights Through Unreasonable Fees and Processes for Legal Firearm Permitting",
-   "title_cn": "",
+   "title_cn": "司法部起诉加州格伦代尔市：合法持枪许可收费与流程不合理，侵犯第二修正案权利",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-sues-city-glendale-california-violating-citizens-second-amendment-rights",
@@ -277,7 +297,7 @@
   {
    "date": "2026-11-09",
    "title": "Justice Department Awards St. Louis more than $68M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
-   "title_cn": "",
+   "title_cn": "司法部向圣路易斯拨款逾 6800 万美元，以「模范城市」计划打击暴力犯罪",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-awards-st-louis-more-68m-combat-violent-crime-and-restore-law-and-order",
@@ -287,7 +307,7 @@
   {
    "date": "2026-11-09",
    "title": "Justice Department Awards Jackson, Mississippi, more than $63M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
-   "title_cn": "",
+   "title_cn": "司法部向密西西比州杰克逊市拨款逾 6300 万美元，以「模范城市」计划打击暴力犯罪",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-awards-jackson-mississippi-more-63m-combat-violent-crime-and-restore-law",
@@ -297,7 +317,7 @@
   {
    "date": "2026-11-09",
    "title": "14 Charged in Deadly Human Smuggling Scheme That Killed 7 Aliens Earlier This Year",
-   "title_cn": "",
+   "title_cn": "今年致 7 名外国人死亡的走私案：14 人被起诉",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/14-charged-deadly-human-smuggling-scheme-killed-7-aliens-earlier-year",
@@ -307,47 +327,67 @@
   {
    "date": "2026-11-09",
    "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Sexual Predators",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕杀人犯、恋童癖与性侵犯",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/09/worst-worst-ice-arrests-murderers-pedophiles-and-sexual-predators",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· ICE 在周末逮捕多名有重罪定罪的非法移民，罪名包括加重车辆过失杀人、对儿童实施猥亵性行为、性侵等。\n· 国土安全部长马林称 ICE「全天候」行动，将其定位为保护社区安全。\n· 属 DHS「最恶劣者」系列通报，本条未披露具体人数与地点。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Trump Administration Deepens Interagency Collaboration to Protect the Nation’s Skies From Unmanned Threats",
-   "title_cn": "",
+   "title_cn": "特朗普政府深化跨部门协作，防范无人机对国家空域的威胁",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/09/trump-administration-deepens-interagency-collaboration-protect-nations-skies",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· DHS 与交通部、国防部、能源部、司法部宣布扩大跨部门反无人机（CUAS）协作。\n· 协作内容包括探测、跟踪与安全处置未经授权或危险的无人机。\n· 官方称此为「全政府」路径，用于保卫本土空域。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "Meet One of the Media’s ‘Non-Criminals’: ICE Arrests MS-13 Member in Idaho Charged with Terrorism in El Salvador",
-   "title_cn": "",
+   "title_cn": "媒体所称「非罪犯」之一：ICE 在爱达荷州逮捕在萨尔瓦多被控恐怖主义的 MS-13 成员",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/09/meet-one-medias-non-criminals-ice-arrests-ms-13-member-idaho-charged-terrorism-el",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· ICE 盐湖城执法与遣返办公室 11 月 5 日在爱达荷州维克多逮捕萨尔瓦多籍非法移民 Danny Jose Parada-Mendez。\n· DHS 称其犯罪记录显示与 MS-13 有关联，并在萨尔瓦多面临恐怖组织指控。\n· DHS 借此批评媒体称其为「非罪犯」，理由是其在美国境内无犯罪记录。"
+   }
   },
   {
    "date": "2026-11-09",
    "title": "VA opens 47th new healthcare facility under President Trump",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部在特朗普任内启用第 47 家新医疗设施",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-opens-47th-new-healthcare-facility-under-president-trump/",
    "source": "Veterans Affairs",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 退伍军人事务部在艾奥瓦州西伯灵顿启用新门诊诊所，为 2025 年以来第 47 家新设施。\n· 新址近 1.8 万平方英尺，是 2021 年旧诊所的五倍多，新增放射、理疗与听力服务。\n· 官方将其归入特朗普任内的医疗设施扩建。"
+   }
   },
   {
    "date": "2026-11-08",
    "title": "Presidential Message on Diwali",
-   "title_cn": "",
+   "title_cn": "总统就排灯节发表文告",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-diwali-1f71/",
@@ -357,7 +397,7 @@
   {
    "date": "2026-11-08",
    "title": "Cambodia National Day",
-   "title_cn": "",
+   "title_cn": "祝贺柬埔寨国庆日",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/cambodia-national-day-2/",
@@ -367,7 +407,7 @@
   {
    "date": "2026-11-07",
    "title": "Presidential Message on Honoring the American Flag",
-   "title_cn": "",
+   "title_cn": "总统就「致敬美国国旗」发表文告",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-honoring-the-american-flag/",
@@ -377,7 +417,7 @@
   {
    "date": "2026-11-07",
    "title": "First Lady Melania Trump and LSU Establish $7.2 Million Fostering the Future Endowment Fund",
-   "title_cn": "",
+   "title_cn": "第一夫人梅拉尼娅与路易斯安那州立大学设立 720 万美元「培育未来」捐赠基金",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-and-lsu-establish-7-2-million-fostering-the-future-endowment-fund/",
@@ -387,7 +427,7 @@
   {
    "date": "2026-11-07",
    "title": "Energy Secretary Builds on Progress to Strengthen Puerto Rico’s Energy Reliability",
-   "title_cn": "",
+   "title_cn": "能源部长推进波多黎各能源可靠性建设",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-secretary-builds-progress-strengthen-puerto-ricos-energy-reliability",
@@ -397,7 +437,7 @@
   {
    "date": "2026-11-06",
    "title": "U.S. Sanctions Cripple Financial Networks Sustaining the Iranian Regime",
-   "title_cn": "",
+   "title_cn": "美国制裁打击支撑伊朗政权的金融网络",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-sanctions-cripple-financial-networks-sustaining-the-iranian-regime/",
@@ -407,7 +447,7 @@
   {
    "date": "2026-11-06",
    "title": "U.S. Department of State Announces Selection for the 2027 Venice Architecture Biennale",
-   "title_cn": "",
+   "title_cn": "国务院公布 2027 年威尼斯建筑双年展美国参展方案",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-department-of-state-announces-selection-for-the-2027-venice-architecture-biennale/",
@@ -417,7 +457,7 @@
   {
    "date": "2026-11-06",
    "title": "Secretary Rubio’s Travel to France",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥访问法国",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-travel-to-france-2/",
@@ -427,7 +467,7 @@
   {
    "date": "2026-11-06",
    "title": "Joint Statement on the Conviction of Hong Kong Alliance Leaders and Sentencing of Joshua Wong",
-   "title_cn": "",
+   "title_cn": "关于香港相关案件定罪与判刑的联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/on-the-conviction-of-hong-kong-alliance-leaders-and-sentencing-of-joshua-wong/",
@@ -437,7 +477,7 @@
   {
    "date": "2026-11-06",
    "title": "Joint Statement on the Second Meeting of the Joint Steering Committee of the U.S.-DRC Strategic Partnership Agreement",
-   "title_cn": "",
+   "title_cn": "关于美刚（民主刚果）战略伙伴关系协定联合指导委员会第二次会议的联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-second-meeting-of-the-joint-steering-committee-of-the-u-s-drc-strategic-partnership-agreement/",
@@ -447,7 +487,7 @@
   {
    "date": "2026-11-06",
    "title": "Joint Statement on the Launch of Trilateral Technical Planning Groups to Advance the Trump Route for International Peace and Prosperity (TRIPP)",
-   "title_cn": "",
+   "title_cn": "关于启动三方技术规划小组推进「特朗普国际和平与繁荣之路」的联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-launch-of-trilateral-technical-planning-groups-to-advance-the-trump-route-for-international-peace-and-prosperity-tripp/",
@@ -457,7 +497,7 @@
   {
    "date": "2026-11-06",
    "title": "Congratulating Grenada’s Prime Minister Dickon Mitchell on his Reelection",
-   "title_cn": "",
+   "title_cn": "祝贺格林纳达总理米切尔连任",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/congratulating-grenadas-prime-minister-dickon-mitchell-on-his-reelection/",
@@ -467,7 +507,7 @@
   {
    "date": "2026-11-06",
    "title": "Statement of the Department of Justice Antitrust Division on the Closing of Its Investigation of the Merger of FOX and Roku",
-   "title_cn": "",
+   "title_cn": "司法部反垄断司就结束 FOX 与 Roku 合并调查发表声明",
    "agency": "司法部",
    "kind": "声明",
    "url": "https://www.justice.gov/opa/pr/statement-department-justice-antitrust-division-closing-its-investigation-merger-fox-and",
@@ -477,7 +517,7 @@
   {
    "date": "2026-11-06",
    "title": "Justice Department Awards Jacksonville More Than $73M to Combat Violent Crime and Restore Law and Order Through Model Cities Initiative",
-   "title_cn": "",
+   "title_cn": "司法部向杰克逊维尔拨款逾 7300 万美元，以「模范城市」计划打击暴力犯罪",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-awards-jacksonville-more-73m-combat-violent-crime-and-restore-law-and",
@@ -487,7 +527,7 @@
   {
    "date": "2026-11-06",
    "title": "California Laboratory and Its Owner Pay $1.25M to Settle Allegations of Kickbacks to Marketers",
-   "title_cn": "",
+   "title_cn": "加州实验室及其业主支付 125 万美元，了结向营销商支付回扣的指控",
    "agency": "司法部",
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/california-laboratory-and-its-owner-pay-125m-settle-allegations-kickbacks-marketers",
@@ -497,37 +537,52 @@
   {
    "date": "2026-11-06",
    "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Sexual Assailants, and Drug Traffickers",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕恋童癖、性侵犯与毒品贩运者",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/06/worst-worst-ice-arrests-pedophiles-sexual-assailants-and-drug-traffickers",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-06",
+    "tier": "news",
+    "body": "· ICE 前一日逮捕多名有重罪定罪的非法移民，涉及对儿童的猥亵、性侵与持有并意图分销冰毒。\n· 马林称 DHS「每天都在通过逮捕与遣返拯救美国人的生命」。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-06",
    "title": "U.S. Secret Service Arrests Illegal Alien with Guns in Vehicle Near the White House",
-   "title_cn": "",
+   "title_cn": "特勤局在白宫附近逮捕车内携枪的非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/06/us-secret-service-arrests-illegal-alien-guns-vehicle-near-white-house",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-06",
+    "tier": "news",
+    "body": "· 特勤局 11 月 5 日晚在白宫附近宪法大道逮捕一名委内瑞拉籍非法移民，其车内有多支枪械。\n· DHS 称该人威胁杀害特朗普，并称其听到「声音」指使。\n· 官方称该人由拜登政府释放入境。"
+   }
   },
   {
    "date": "2026-11-06",
    "title": "SANCTUARY INSANITY: New York Sanctuary Politicians Release Illegal Alien Convicted of Robbery and Assault",
-   "title_cn": "",
+   "title_cn": "纽约庇护政策放走因抢劫与袭击被定罪的非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/06/sanctuary-insanity-new-york-sanctuary-politicians-release-illegal-alien-convicted",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-06",
+    "tier": "news",
+    "body": "· DHS 批评纽约市在 ICE 发出拘留令后，仍释放墨西哥籍非法移民 Alonzo Reyes-Garcia（化名 Alberto Tellez）。\n· 其犯罪记录包括三级抢劫与三级袭击。\n· ICE 于 10 月 30 日提出拘留请求，未被采纳。"
+   }
   },
   {
    "date": "2026-11-05",
    "title": "ESTABLISHMENT OF THE OVAL OFFICE NATIONAL MONUMENT",
-   "title_cn": "",
+   "title_cn": "设立「椭圆形办公室」国家纪念地",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/presidential-actions/2026/11/establishment-of-the-oval-office-national-monument/",
@@ -537,7 +592,7 @@
   {
    "date": "2026-11-05",
    "title": "Fact Sheet: President Donald J. Trump Establishes the Oval Office as a National Monument",
-   "title_cn": "",
+   "title_cn": "事实清单：特朗普将椭圆形办公室设为国家级纪念地",
    "agency": "白宫",
    "kind": "事实清单",
    "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-establishes-the-oval-office-as-a-national-monument/",
@@ -547,7 +602,7 @@
   {
    "date": "2026-11-05",
    "title": "First Lady Melania Trump Unites Russia and Ukraine at The White House Following Historic Ceasefire",
-   "title_cn": "",
+   "title_cn": "历史性停火后，第一夫人梅拉尼娅在白宫促成俄乌会面",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-unites-russia-and-ukraine-at-the-white-house-following-historic-ceasefire/",
@@ -557,7 +612,7 @@
   {
    "date": "2026-11-05",
    "title": "Secretary Rubio’s Call with Malaysian Prime Minister Anwar",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥与马来西亚总理安瓦尔通话",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-malaysian-prime-minister-anwar/",
@@ -567,7 +622,7 @@
   {
    "date": "2026-11-05",
    "title": "Reward Offers Totaling Up to $50 Million for Information Leading to Arrests and/or Convictions of Leaders of Foreign Terrorist Organization Tren de Aragua",
-   "title_cn": "",
+   "title_cn": "悬赏最高 5000 万美元征集「阿拉瓜火车」头目落网或定罪线索",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/reward-offers-totaling-up-to-50-million-for-information-leading-to-arrests-and-or-convictions-of-leaders-of-foreign-terrorist-organization-tren-de-aragua/",
@@ -577,7 +632,7 @@
   {
    "date": "2026-11-05",
    "title": "Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks",
-   "title_cn": "",
+   "title_cn": "进一步制裁古巴政权的对外军事支持与非法收入网络",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks/",
@@ -587,7 +642,7 @@
   {
    "date": "2026-11-05",
    "title": "Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems",
-   "title_cn": "",
+   "title_cn": "阻断伊朗获取便携式防空系统",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/disrupting-irans-pursuit-of-man-portable-air-defense-systems/",
@@ -597,7 +652,7 @@
   {
    "date": "2026-11-05",
    "title": "Dismantling the Prince Group Transnational Criminal Organization",
-   "title_cn": "",
+   "title_cn": "瓦解「太子集团」跨国犯罪组织",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/dismantling-the-prince-group-transnational-criminal-organization/",
@@ -607,7 +662,7 @@
   {
    "date": "2026-11-05",
    "title": "U.S. Restores Key Nuclear Weapons Manufacturing Capability After 20 Years",
-   "title_cn": "",
+   "title_cn": "美国恢复中断 20 年的关键核武器制造能力",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/nnsa/articles/us-restores-key-nuclear-weapons-manufacturing-capability-after-20-years",
@@ -617,37 +672,52 @@
   {
    "date": "2026-11-05",
    "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Sexual Predators, and Drug Traffickers",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕恋童癖、性侵犯与毒品贩运者",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/05/worst-worst-ice-arrests-pedophiles-sexual-predators-and-drug-traffickers",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-05",
+    "tier": "news",
+    "body": "· ICE 逮捕多名非法移民，罪名包括对儿童的猥亵、性侵与持有冰毒意图分销。\n· 马林称「非法移民不应留在美国」，表示执法将持续。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-05",
    "title": "SANCTUARY INSANITY: Sanctuary Minnesota Refuses to Honor ICE Detainer for Somalian Illegal Alien Convicted for Aggravated Assault and Drug Trafficking",
-   "title_cn": "",
+   "title_cn": "明尼苏达庇护政策拒绝配合 ICE 拘留令：涉重罪袭击与毒品贩运的索马里非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/05/sanctuary-insanity-sanctuary-minnesota-refuses-honor-ice-detainer-somalian-illegal",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-05",
+    "tier": "news",
+    "body": "· DHS 批评明尼苏达州拒绝执行 ICE 对索马里籍非法移民 Mustafa Abdirahman Abdi 的拘留令。\n· 该人犯罪记录包括加重袭击与毒品贩运。\n· ICE 于 10 月 24 日提出拘留请求，当时其在亨内平县监狱羁押。"
+   }
   },
   {
    "date": "2026-11-05",
    "title": "ICE Lodges Detainer for Illegal Alien Arrested for Rape in New York City",
-   "title_cn": "",
+   "title_cn": "ICE 对在纽约市因强奸被捕的非法移民发出拘留令",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/05/ice-lodges-detainer-illegal-alien-arrested-rape-new-york-city",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-05",
+    "tier": "news",
+    "body": "· ICE 对秘鲁籍非法移民 Reynaldo Hoel Mayna 发出拘留令，要求纽约市不予释放。\n· 该人因强奸一名 28 岁女性被纽约警方逮捕。\n· 其犯罪记录包括强奸、持械袭击等。"
+   }
   },
   {
    "date": "2026-11-04",
    "title": "First Lady Melania Trump and LSU Establish $5 Million Fostering the Future Endowment Fund",
-   "title_cn": "",
+   "title_cn": "第一夫人梅拉尼娅与路易斯安那州立大学设立 500 万美元「培育未来」捐赠基金",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-and-lsu-establish-5-million-fostering-the-future-endowment-fund/",
@@ -657,7 +727,7 @@
   {
    "date": "2026-11-04",
    "title": "U.S. Sanctions Fraudulent Ship Registries and Aviation Support for Iranian Regime",
-   "title_cn": "",
+   "title_cn": "美国制裁为伊朗政权提供虚假船舶登记与航空支持的网络",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-sanctions-fraudulent-ship-registries-and-aviation-support-for-iranian-regime/",
@@ -667,7 +737,7 @@
   {
    "date": "2026-11-04",
    "title": "Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks – Fact Sheet",
-   "title_cn": "",
+   "title_cn": "进一步制裁古巴政权对外军事支持与非法收入网络（事实清单）",
    "agency": "国务院",
    "kind": "事实清单",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks-fact-sheet/",
@@ -677,7 +747,7 @@
   {
    "date": "2026-11-04",
    "title": "Disrupting Iran’s Pursuit of Man-Portable Air-Defense Systems Fact Sheet",
-   "title_cn": "",
+   "title_cn": "阻断伊朗获取便携式防空系统（事实清单）",
    "agency": "国务院",
    "kind": "事实清单",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/disrupting-irans-pursuit-of-man-portable-air-defense-systems-fact-sheet/",
@@ -687,7 +757,7 @@
   {
    "date": "2026-11-04",
    "title": "Energy Department Awards Contracts from Northeast Home Heating Oil Reserve",
-   "title_cn": "",
+   "title_cn": "能源部从东北家庭取暖油储备中授予合同",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/hgeo/opr/articles/energy-department-awards-contracts-northeast-home-heating-oil-reserve",
@@ -697,17 +767,22 @@
   {
    "date": "2026-11-04",
    "title": "DHS Highlights Worst Illegal Aliens Arrested Across the Country on Election Day",
-   "title_cn": "",
+   "title_cn": "国土安全部通报选举日全国范围内逮捕的严重非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/04/dhs-highlights-worst-illegal-aliens-arrested-across-country-election-day",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-04",
+    "tier": "news",
+    "body": "· DHS 通报选举日当天 ICE 在全国逮捕的多名严重非法移民，涉及谋杀未遂、持械加重袭击与儿童猥亵。\n· 马林称 ICE 全年 365 天执法。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-03",
    "title": "THE AMERICAN DECLARATION OF FREEDOM IN SPACE",
-   "title_cn": "",
+   "title_cn": "《美国太空自由宣言》",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/presidential-actions/2026/11/the-american-declaration-of-freedom-in-space/",
@@ -717,7 +792,7 @@
   {
    "date": "2026-11-03",
    "title": "ANTI-COMMUNISM WEEK, 2026",
-   "title_cn": "",
+   "title_cn": "2026 年「反共产主义周」",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/presidential-actions/2026/11/anti-communism-week-2026/",
@@ -727,7 +802,7 @@
   {
    "date": "2026-11-03",
    "title": "First Lady Melania Trump to Convene Russian and Ukrainian Representatives at the White House",
-   "title_cn": "",
+   "title_cn": "第一夫人梅拉尼娅将在白宫召集俄乌代表",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-to-convene-russian-and-ukrainian-representatives-at-the-white-house/",
@@ -737,7 +812,7 @@
   {
    "date": "2026-11-03",
    "title": "Congressional Bills H.R. 1744 and H.R. 8205 Signed into Law",
-   "title_cn": "",
+   "title_cn": "H.R. 1744 与 H.R. 8205 两法案签署成法",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-1744-and-h-r-8205-signed-into-law/",
@@ -747,7 +822,7 @@
   {
    "date": "2026-11-03",
    "title": "Tonga National Day",
-   "title_cn": "",
+   "title_cn": "祝贺汤加国庆日",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/tonga-national-day-2/",
@@ -757,7 +832,7 @@
   {
    "date": "2026-11-03",
    "title": "Panama National Day",
-   "title_cn": "",
+   "title_cn": "祝贺巴拿马国庆日",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/panama-national-day-2/",
@@ -767,7 +842,7 @@
   {
    "date": "2026-11-03",
    "title": "Joint Statement on United States – Iceland Strategic Dialogue",
-   "title_cn": "",
+   "title_cn": "关于美国—冰岛战略对话的联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-united-states-iceland-strategic-dialogue/",
@@ -777,7 +852,7 @@
   {
    "date": "2026-11-03",
    "title": "Joint Statement on the 53rd U.S.-Portugal Standing Bilateral Commission",
-   "title_cn": "",
+   "title_cn": "关于第 53 届美葡常设双边委员会会议的联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-53rd-u-s-portugal-standing-bilateral-commission/",
@@ -787,7 +862,7 @@
   {
    "date": "2026-11-03",
    "title": "Dominica National Day",
-   "title_cn": "",
+   "title_cn": "祝贺多米尼克国庆日",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/dominica-national-day-2/",
@@ -797,37 +872,52 @@
   {
    "date": "2026-11-03",
    "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Violent Assailants, and Drunk Drivers",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕恋童癖、暴力袭击者与醉驾者",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-03",
+    "tier": "news",
+    "body": "· ICE 逮捕多名非法移民，涉及对儿童的不当行为、持械袭击与醉驾。\n· 马林称 ICE 在特朗普支持下恢复执法。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-03",
    "title": "SANCTUARY INSANITY: DHS Condemns Sanctuary Politicians in Washington State for Refusing ICE Detainer Against Convicted Child Molester",
-   "title_cn": "",
+   "title_cn": "国土安全部谴责华盛顿州庇护政策拒绝配合 ICE 拘留令：涉儿童性侵定罪",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/03/sanctuary-insanity-dhs-condemns-sanctuary-politicians-washington-state-refusing-ice",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-03",
+    "tier": "news",
+    "body": "· DHS 批评华盛顿州拒绝执行 ICE 对委内瑞拉籍非法移民 Leomar Alexander Lopez Zambrano 的拘留令。\n· 该人因两项三级儿童猥亵罪被定罪。\n· ICE 于 10 月 14 日提出拘留请求。"
+   }
   },
   {
    "date": "2026-11-03",
    "title": "MAKING AMERICA SAFE AGAIN: Under President Trump, DHS Delivered the Most Secure Border in History and is Removing Criminal Illegal Aliens at a Record Pace",
-   "title_cn": "",
+   "title_cn": "特朗普任内国土安全部实现历史最严边境管控，并以创纪录速度遣返犯罪非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/03/making-america-safe-again-under-president-trump-dhs-delivered-most-secure-border",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-03",
+    "tier": "news",
+    "body": "· DHS 阶段性总结特朗普任内边境执法：称实现「史上最安全边境」，并加快遣返有犯罪记录的非法移民。\n· 马林称边境管控与遣返是核心承诺。\n· 本条为总体表述，未列具体统计口径。"
+   }
   },
   {
    "date": "2026-11-02",
    "title": "U.S. Department of State Signs Humanitarian Logistics Memorandum of Understanding with UPS to Support Disaster Response Efforts",
-   "title_cn": "",
+   "title_cn": "国务院与 UPS 签署人道主义物流谅解备忘录，支持灾害响应",
    "agency": "国务院",
    "kind": "行政行动",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-department-of-state-signs-humanitarian-logistics-memorandum-of-understanding-with-ups-to-support-disaster-response-efforts/",
@@ -837,7 +927,7 @@
   {
    "date": "2026-11-02",
    "title": "Secretary Rubio’s Meeting with Venezuelan Foreign Minister Blanco",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥会见委内瑞拉外长布兰科",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-venezuelan-foreign-minister-blanco/",
@@ -847,7 +937,7 @@
   {
    "date": "2026-11-02",
    "title": "Federated States of Micronesia National Day",
-   "title_cn": "",
+   "title_cn": "祝贺密克罗尼西亚联邦国庆日",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/federated-states-of-micronesia-national-day-2/",
@@ -857,57 +947,82 @@
   {
    "date": "2026-11-02",
    "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Rapists Over the Weekend",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 周末逮捕杀人犯、恋童癖与强奸犯",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/02/worst-worst-ice-arrests-murderers-pedophiles-and-rapists-over-weekend",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-02",
+    "tier": "news",
+    "body": "· ICE 周末逮捕多名非法移民，罪名包括车辆过失杀人、对儿童实施强奸与一级强奸。\n· 马林称 ICE 在周末持续行动。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-02",
    "title": "Secretary Mullin Announces Results of Operation Guardian Crackdown on Illegal Aliens with Commercial Driver’s Licenses",
-   "title_cn": "",
+   "title_cn": "国土安全部长马林公布「守护者行动」结果：查处持商业驾照的非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/02/secretary-mullin-announces-results-operation-guardian-crackdown-illegal-aliens",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-02",
+    "tier": "news",
+    "body": "· 马林在俄克拉何马州召开记者会，公布「守护者行动」结果：三天内逮捕 230 余名非法移民，其中 40 余人持商业驾照。\n· 行动由 ICE 与州、地方执法伙伴于 10 月 26—28 日实施，覆盖 15 个州。\n· 目标是持商业驾照的非法移民。"
+   }
   },
   {
    "date": "2026-11-02",
    "title": "DHS Highlights Worst Illegal Aliens Arrested in Kansas",
-   "title_cn": "",
+   "title_cn": "国土安全部通报堪萨斯州逮捕的严重非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-02",
+    "tier": "news",
+    "body": "· DHS 通报堪萨斯州近期逮捕的严重非法移民，涉及对儿童的不当行为、加重殴打、毒品分销与入室盗窃。\n· 马林称 ICE 每天在全国执法。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-02",
    "title": "DHS Highlights Worst Illegal Aliens Arrested in Iowa",
-   "title_cn": "",
+   "title_cn": "国土安全部通报艾奥瓦州逮捕的严重非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-02",
+    "tier": "news",
+    "body": "· DHS 通报艾奥瓦州近期逮捕的非法移民，涉及家庭暴力、毒品贩运与醉驾。\n· 马林称拜登时期的边境与庇护政策使「每个州都成为边境州」。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-11-02",
    "title": "DHS Blasts California Sanctuary Politicians for Releasing Nearly 24,000 Criminal Illegal Alien Murderers, Child Abusers, Kidnappers, and Gang Members from Jail Back onto the Street",
-   "title_cn": "",
+   "title_cn": "国土安全部批评加州庇护政策：近 2.4 万名涉杀人、虐童、绑架与帮派的犯罪非法移民被释放",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/11/02/dhs-blasts-california-sanctuary-politicians-releasing-nearly-24000-criminal-illegal",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-02",
+    "tier": "news",
+    "body": "· DHS 批评加州拒绝执行 ICE 拘留令，释放有杀人、虐童与绑架等犯罪记录的非法移民。\n· 官方称自 1 月以来释放人数近 2.4 万。\n· 本条为对加州庇护政策的集中批评。"
+   }
   },
   {
    "date": "2026-11-01",
    "title": "Presidential Message on All Saints’ Day",
-   "title_cn": "",
+   "title_cn": "总统就诸圣节发表文告",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-all-saints-day-3b81/",
@@ -917,7 +1032,7 @@
   {
    "date": "2026-10-31",
    "title": "Presidential Message on Reformation Day",
-   "title_cn": "",
+   "title_cn": "总统就宗教改革纪念日发表文告",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/10/presidential-message-on-reformation-day/",
@@ -927,7 +1042,7 @@
   {
    "date": "2026-10-31",
    "title": "Secretary of State Marco Rubio at the G20 Foreign Ministers’ Meeting Welcome Reception",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥出席 G20 外长会欢迎招待会",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-at-the-g20-foreign-ministers-meeting-welcome-reception/",
@@ -937,7 +1052,7 @@
   {
    "date": "2026-10-31",
    "title": "Secretary of State Marco Rubio at a Press Availability",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥举行媒体吹风会",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-at-a-press-availability-2/",
@@ -947,7 +1062,7 @@
   {
    "date": "2026-10-31",
    "title": "Quad Joint Press Release on Economic Prosperity and Security",
-   "title_cn": "",
+   "title_cn": "四方安全对话关于经济繁荣与安全的联合新闻稿",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/quad-joint-press-release-on-economic-prosperity-and-security/",
@@ -957,7 +1072,7 @@
   {
    "date": "2026-10-31",
    "title": "G20 Chair’s Statement G20 Foreign Ministers’ Meeting",
-   "title_cn": "",
+   "title_cn": "G20 外长会主席声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/g20-chairs-statement-g20-foreign-ministers-meeting/",
@@ -967,7 +1082,7 @@
   {
    "date": "2026-10-30",
    "title": "United States-Japan-Republic of Korea (ROK) Trilateral Foreign Ministers’ Meeting",
-   "title_cn": "",
+   "title_cn": "美日韩三国外长会议",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/united-states-japan-republic-of-korea-rok-trilateral-foreign-ministers-meeting-2/",
@@ -977,7 +1092,7 @@
   {
    "date": "2026-10-30",
    "title": "Secretary Rubio’s Meeting with Turkish Foreign Minister Fidan",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥会见土耳其外长费丹",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-meeting-with-turkish-foreign-minister-fidan-2/",
@@ -987,7 +1102,7 @@
   {
    "date": "2026-10-30",
    "title": "Secretary Rubio’s Meeting with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥会见沙特外交大臣费萨尔亲王",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-meeting-with-saudi-foreign-minister-prince-faisal-bin-farhan-al-saud-3/",
@@ -997,7 +1112,7 @@
   {
    "date": "2026-10-30",
    "title": "Secretary Rubio Announces U.S. Participation in World Expo 2030 in Riyadh, Saudi Arabia",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥宣布美国参加 2030 年利雅得世博会",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubio-announces-u-s-participation-in-world-expo-2030-in-riyadh-saudi-arabia/",
@@ -1007,7 +1122,7 @@
   {
    "date": "2026-10-30",
    "title": "Secretary of State Marco Rubio and Saudi Foreign Minister Prince Faisal bin Farhan al Saud at an Expo 2030 Riyadh Participation Contract Signing Ceremony",
-   "title_cn": "",
+   "title_cn": "国务卿鲁比奥与沙特外交大臣出席 2030 年利雅得世博会参展合同签署仪式",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-and-saudi-foreign-minister-prince-faisal-bin-farhan-al-saud-at-an-expo-2030-riyadh-participation-contract-signing-ceremony/",
@@ -1017,7 +1132,7 @@
   {
    "date": "2026-10-30",
    "title": "Joint Statement from the International Contact Group for the Great Lakes Region (ICG)",
-   "title_cn": "",
+   "title_cn": "大湖地区国际联络小组联合声明",
    "agency": "国务院",
    "kind": "声明",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/10/joint-statement-from-the-international-contact-group-for-the-great-lakes-region-icg/",
@@ -1027,7 +1142,7 @@
   {
    "date": "2026-10-30",
    "title": "Energy Department Announces Over $230 Million Funding Opportunity to Strengthen America's Grid Supply Chain and Lower Electricity Costs",
-   "title_cn": "",
+   "title_cn": "能源部宣布逾 2.3 亿美元资助机会，强化电网供应链并降低电价",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-department-announces-over-230-million-funding-opportunity-strengthen-americas-grid",
@@ -1037,47 +1152,67 @@
   {
    "date": "2026-10-30",
    "title": "WORST OF THE WORST: ICE Arrests Murderers, Rapists, and Pedophiles",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕杀人犯、强奸犯与恋童癖",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/30/worst-worst-ice-arrests-murderers-rapists-and-pedophiles",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-30",
+    "tier": "news",
+    "body": "· ICE 前一日逮捕多名非法移民，罪名包括杀人、药物致强奸与对 14 岁以下儿童的持续性侵。\n· 马林称这些人「本不应在美国」。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-10-30",
    "title": "WANTED CRIMINAL RELEASED BY SANCTUARY POLITICIANS: MS-13 Gang Member with Prior Arrests for Attempted Murder and Sexually Assaulting a Minor Released from Jail by Maryland Sanctuary Politicians",
-   "title_cn": "",
+   "title_cn": "马里兰庇护政策释放被通缉的 MS-13 成员：此前曾因谋杀未遂与性侵未成年人被捕",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/30/wanted-criminal-released-sanctuary-politicians-ms-13-gang-member-prior-arrests",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-30",
+    "tier": "news",
+    "body": "· DHS 称马里兰庇护政策释放 MS-13 成员 Allan Adonay Contreras-Vasquez，该人此前因谋杀未遂被捕。\n· 释放后又涉嫌性侵未成年人。\n· ICE 于 2025 年 12 月 16 日提出拘留请求。"
+   }
   },
   {
    "date": "2026-10-30",
    "title": "ICE Lodges Detainer for Illegal Alien Charged with Attempted Murder and Kidnapping After Stabbing Teenage Girl",
-   "title_cn": "",
+   "title_cn": "ICE 对刺伤少女后涉谋杀未遂与绑架的非法移民发出拘留令",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/30/ice-lodges-detainer-illegal-alien-charged-attempted-murder-and-kidnapping-after",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-30",
+    "tier": "news",
+    "body": "· ICE 对塞拉利昂籍非法移民 Abubakarr Barrie 发出拘留令，要求马里兰不予释放。\n· 该人涉嫌 10 月 22 日在巴尔的摩绑架并刺伤一名 15 岁女孩。\n· 案情据当地报道，属 DHS 系列通报。"
+   }
   },
   {
    "date": "2026-10-30",
    "title": "DHS Highlights Worst Illegal Aliens Arrested in Florida",
-   "title_cn": "",
+   "title_cn": "国土安全部通报佛罗里达州逮捕的严重非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/30/dhs-highlights-worst-illegal-aliens-arrested-florida",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-30",
+    "tier": "news",
+    "body": "· DHS 通报佛罗里达州近期逮捕的非法移民，涉及车辆过失杀人、性侵、家庭暴力与纵火。\n· 马林称 ICE 在特朗普支持下「被放开手脚」。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "Energy Department Awards Contracts from the Strategic Petroleum Reserve as Part of President Trump’s Emergency Exchange",
-   "title_cn": "",
+   "title_cn": "能源部从战略石油储备授予合同，落实特朗普紧急交换计划",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/hgeo/opr/articles/energy-department-awards-contracts-strategic-petroleum-reserve-part-president",
@@ -1087,77 +1222,112 @@
   {
    "date": "2026-10-29",
    "title": "WORST OF THE WORST: ICE Arrests Murderers, Sexual Predators, and Drug Traffickers",
-   "title_cn": "",
+   "title_cn": "「最恶劣者」行动：ICE 逮捕杀人犯、性侵犯与毒品贩运者",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/worst-worst-ice-arrests-murderers-sexual-predators-and-drug-traffickers",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· ICE 前一日逮捕多名非法移民，涉及杀人、一级性侵与毒品贩运。\n· 马林称针对 ICE 执法人员的袭击增加逾 1600%。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "Under President Trump’s Leadership, USCIS Takes Unprecedented 2.2 Million Enforcement Actions Protecting Americans Across the Nation",
-   "title_cn": "",
+   "title_cn": "特朗普任内美国公民及移民服务局实施 220 万次执法行动",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/under-president-trumps-leadership-uscis-takes-unprecedented-22-million-enforcement",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· USCIS 称自 2025 年 1 月 20 日以来实施约 220 万次移民执法行动，为拜登任期最后两年合计的近七倍。\n· 行动包括撤销或终止相关移民福利。\n· 官方称目的是恢复移民体系秩序。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "Trump Administration Suspends Birth Tourism Loophole Threatening National Security",
-   "title_cn": "",
+   "title_cn": "特朗普政府暂停危及国家安全的「生育旅游」漏洞",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/trump-administration-suspends-birth-tourism-loophole-threatening-national-security",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· DHS 暂停中国公民经北马里亚纳群岛免签入境（EVS-TAP 计划）。\n· 官方称该计划被用于「生育旅游」并带来国家安全风险。\n· 措施即刻生效，具体实施细则未在本条说明。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "Secretary Mullin Highlights Success of ICE’s Lone Star Mission in Texas, Arresting Over 4,000 Illegal Aliens in Ten Days",
-   "title_cn": "",
+   "title_cn": "国土安全部长马林通报得州「孤星行动」：十天内逮捕逾 4000 名非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/secretary-mullin-highlights-success-ices-lone-star-mission-texas-arresting-over",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· 马林 10 月 29 日在达拉斯记者会上公布得州「孤星行动」结果：十天内逮捕逾 4000 名非法移民。\n· 行动由 ICE 执法与遣返办公室在得州各外勤办公室实施。\n· 多名外勤办公室主任出席记者会。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "SANCTUARY INSANITY: ICE Arrests Illegal Alien Released by Sanctuary Politicians in California",
-   "title_cn": "",
+   "title_cn": "加州庇护政策释放的非法移民被 ICE 逮捕",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/sanctuary-insanity-ice-arrests-illegal-alien-released-sanctuary-politicians",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· ICE 洛杉矶 10 月 19 日逮捕危地马拉籍非法移民 Juan Jose Leonardo De Leon。\n· 该人此前被加州释放，犯罪记录包括毒品贩运与重大盗窃。\n· DHS 借此批评加州庇护政策。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "DHS Highlights Worst Illegal Aliens Arrested in South Carolina",
-   "title_cn": "",
+   "title_cn": "国土安全部通报南卡罗来纳州逮捕的严重非法移民",
    "agency": "国土安全部",
    "kind": "新闻稿",
    "url": "https://www.dhs.gov/news/2026/10/29/dhs-highlights-worst-illegal-aliens-arrested-south-carolina",
    "source": "Homeland Security",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· DHS 通报南卡罗来纳州近期逮捕的非法移民，涉及过失杀人、袭击、入室盗窃与毒品贩运。\n· 马林称 ICE 在「纠正拜登四年边境政策的后果」。\n· 属「最恶劣者」系列通报。"
+   }
   },
   {
    "date": "2026-10-29",
    "title": "VA hiring 2,000+ employees to process rising number of Veteran claims",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部招聘逾 2000 人，加快处理不断增加的索赔申请",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-hiring-2000-employees-to-process-rising-number-of-veteran-claims/",
    "source": "Veterans Affairs",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· 退伍军人事务部计划 2027 财年招聘逾 2000 人，处理预计增加的福利申请。\n· 现有逾 1.3 万人负责理赔；2026 财年处理 310 万件补偿与养老金申请，创历史新高。\n· 2026 财年批准率 60.1%，准确率 93.88%，仅 3.2% 上诉。"
+   }
   },
   {
    "date": "2026-10-28",
    "title": "ADJUSTING IMPORTS OF ROBOTICS, INDUSTRIAL MACHINERY, AND THEIR PARTS AND COMPONENTS INTO THE UNITED STATES",
-   "title_cn": "",
+   "title_cn": "调整机器人、工业机械及其零部件的进口",
    "agency": "白宫",
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/presidential-actions/2026/10/adjusting-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
@@ -1167,7 +1337,7 @@
   {
    "date": "2026-10-28",
    "title": "Fact Sheet: President Donald J. Trump Ended the Illegal and Discriminatory Practices of Diversity, Equity, and Inclusion",
-   "title_cn": "",
+   "title_cn": "事实清单：特朗普终结多元化、公平与包容政策的违法歧视做法",
    "agency": "白宫",
    "kind": "事实清单",
    "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-ended-the-illegal-and-discriminatory-practices-of-diversity-equity-and-inclusion/",
@@ -1177,7 +1347,7 @@
   {
    "date": "2026-10-28",
    "title": "Fact Sheet: President Donald J. Trump Adjusts Imports of Robotics, Industrial Machinery, and their Parts and Components into the United States",
-   "title_cn": "",
+   "title_cn": "事实清单：特朗普调整机器人、工业机械及零部件进口",
    "agency": "白宫",
    "kind": "事实清单",
    "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
@@ -1187,7 +1357,7 @@
   {
    "date": "2026-10-28",
    "title": "Energy Department Closes $5.1 Billion Loan to Lower Electricity Costs and Strengthen Grid Reliability in Iowa and Wisconsin",
-   "title_cn": "",
+   "title_cn": "能源部完成 51 亿美元贷款，降低艾奥瓦与威斯康星电价并强化电网可靠性",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-department-closes-51-billion-loan-lower-electricity-costs-and-strengthen-grid",
@@ -1197,7 +1367,7 @@
   {
    "date": "2026-10-27",
    "title": "FACT SHEET: Project Uprise Is Delivering On President Trump's Agenda To Unleash American Nuclear Power",
-   "title_cn": "",
+   "title_cn": "事实清单：「Uprise 项目」落实特朗普释放美国核能的议程",
    "agency": "能源部",
    "kind": "事实清单",
    "url": "https://www.energy.gov/articles/fact-sheet-project-uprise-delivering-president-trumps-agenda-unleash-american-nuclear",
@@ -1207,7 +1377,7 @@
   {
    "date": "2026-10-27",
    "title": "Energy Department Announces $5 Billion Loan to Boost Nuclear Power and Help Lower Costs in Illinois, Maryland, and Pennsylvania",
-   "title_cn": "",
+   "title_cn": "能源部宣布 50 亿美元贷款，支持伊利诺伊、马里兰与宾州核电并降低成本",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-department-announces-5-billion-loan-boost-nuclear-power-and-help-lower-costs",
@@ -1217,7 +1387,7 @@
   {
    "date": "2026-10-27",
    "title": "VA awards record high $106.5M in cemetery grants in FY 26",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部 2026 财年发放创纪录的 1.065 亿美元公墓补助",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-awards-record-high-106-5m-in-cemetery-grants-in-fy-26/",
@@ -1227,7 +1397,7 @@
   {
    "date": "2026-10-26",
    "title": "VA deploys electronic health record system to hospitals in Cleveland, Anchorage",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部在克利夫兰与安克雷奇医院部署电子健康记录系统",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-deploys-electronic-health-record-system-to-hospitals-in-cleveland-anchorage/",
@@ -1237,7 +1407,7 @@
   {
    "date": "2026-10-23",
    "title": "Energy Department Designates Helium as Critical Material to Strengthen American Manufacturing and Supply Chain Security",
-   "title_cn": "",
+   "title_cn": "能源部将氦列为关键材料，强化美国制造业与供应链安全",
    "agency": "能源部",
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-department-designates-helium-critical-material-strengthen-american-manufacturing",
@@ -1247,7 +1417,7 @@
   {
    "date": "2026-10-21",
    "title": "FACT SHEET: The Energy Department is Advancing the Constitution Pipeline to Strengthen National Security and Lower Energy Costs in the Northeast",
-   "title_cn": "",
+   "title_cn": "事实清单：能源部推进「宪法管道」项目，强化国家安全并降低东北部能源成本",
    "agency": "能源部",
    "kind": "事实清单",
    "url": "https://www.energy.gov/articles/fact-sheet-energy-department-advancing-constitution-pipeline-strengthen-national-security",
@@ -1257,7 +1427,7 @@
   {
    "date": "2026-10-21",
    "title": "Following major reforms, over 300K new Veterans enroll in VA healthcare in 2026",
-   "title_cn": "",
+   "title_cn": "重大改革后，2026 年逾 30 万退伍军人新加入 VA 医疗",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/following-major-reforms-over-300k-new-veterans-enroll-in-va-healthcare-in-2026/",
@@ -1267,7 +1437,7 @@
   {
    "date": "2026-10-15",
    "title": "VA in FY 2026 processes the most claims ever",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部 2026 财年处理索赔数量创历史新高",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-in-fy-2026-processes-the-most-claims-ever/",
@@ -1277,7 +1447,7 @@
   {
    "date": "2026-10-14",
    "title": "VA announces $2.6B in infrastructure improvements in fourth quarter of FY 2026",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部宣布 2026 财年第四季度 26 亿美元基础设施改造",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-announces-2-6b-in-infrastructure-improvements-in-fourth-quarter-of-fy-2026/",
@@ -1287,7 +1457,7 @@
   {
    "date": "2026-10-09",
    "title": "FACT SHEET: The Energy Department is Ushering in a Golden Age of American Science",
-   "title_cn": "",
+   "title_cn": "事实清单：能源部开启美国科学黄金时代",
    "agency": "能源部",
    "kind": "事实清单",
    "url": "https://www.energy.gov/articles/fact-sheet-energy-department-ushering-golden-age-american-science",
@@ -1297,7 +1467,7 @@
   {
    "date": "2026-10-07",
    "title": "VA launches pilot program to speed Veterans’ access to services, care, benefits",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部启动试点，加快退伍军人获得服务、医疗与福利",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-launches-pilot-program-to-speed-veterans-access-to-services-care-benefits/",
@@ -1307,7 +1477,7 @@
   {
    "date": "2026-10-06",
    "title": "VA awards $16M in grants for adaptive sports programs",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部发放 1600 万美元适应性体育项目补助",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-awards-16m-in-grants-for-adaptive-sports-programs/",
@@ -1317,7 +1487,7 @@
   {
    "date": "2026-09-30",
    "title": "VA releases annual Veteran suicide prevention report, updated with 2024 data",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部发布年度退伍军人自杀预防报告（更新至 2024 年数据）",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-releases-annual-veteran-suicide-prevention-report-updated-with-2024-data/",
@@ -1327,7 +1497,7 @@
   {
    "date": "2026-09-29",
    "title": "VA awards $112M in suicide prevention grants",
-   "title_cn": "",
+   "title_cn": "退伍军人事务部发放 1.12 亿美元自杀预防补助",
    "agency": "退伍军人事务部",
    "kind": "新闻稿",
    "url": "https://news.va.gov/press-room/va-awards-112-million-in-suicide-prevention-grants/",

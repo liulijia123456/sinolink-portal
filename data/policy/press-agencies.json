@@ -57,17 +57,22 @@
   {
    "date": "2026-11-09",
    "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-   "title_cn": "",
+   "title_cn": "美联储批准 Mutual Federal Bancorp 与 MFB Bancorp 的两项申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc."
+   "summary": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 美联储批准芝加哥 Mutual Federal Bancorp, MHC 与 MFB Bancorp, Inc. 的两项申请。\n· 获批后 MFB Bancorp 将成为新的顶层控股公司，并通过收购 Mutual Federal Bank 成为储贷控股公司。\n· 决定以新闻稿形式于当日下午 4 时（美东）发布。"
+   }
   },
   {
    "date": "2026-11-05",
    "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-   "title_cn": "",
+   "title_cn": "美联储终止对 Allegiant United Holdings、Nano Financial Holdings 与 Nano Banc 的执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
@@ -77,7 +82,7 @@
   {
    "date": "2026-10-29",
    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-   "title_cn": "",
+   "title_cn": "美联储批准加拿大丰业银行的申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
@@ -87,17 +92,22 @@
   {
    "date": "2026-10-28",
    "title": "Federal Reserve issues FOMC statement",
-   "title_cn": "",
+   "title_cn": "美联储发布 FOMC 声明",
    "agency": "美联储（Federal Reserve）",
    "kind": "声明",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve issues FOMC statement"
+   "summary": "Federal Reserve issues FOMC statement",
+   "brief": {
+    "at": "2026-10-28",
+    "tier": "news",
+    "body": "· 联邦公开市场委员会以 10 票赞成、2 票反对通过声明，维持联邦基金利率目标区间在 3.75%–4%。\n· 委员会表示将继续维持银行体系充足储备的政策。\n· 声明称经济活动以强劲步伐扩张，但地缘政治等因素使不确定性仍高。"
+   }
   },
   {
    "date": "2026-10-16",
    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-   "title_cn": "",
+   "title_cn": "美联储终止对 Gardner Bancshares 与 Small Business Bank 的执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
@@ -107,7 +117,7 @@
   {
    "date": "2026-10-13",
    "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-   "title_cn": "",
+   "title_cn": "美联储公布 8 月 17 日、9 月 9 日与 9 月 16 日贴现率会议纪要",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
@@ -117,7 +127,7 @@
   {
    "date": "2026-10-09",
    "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-   "title_cn": "",
+   "title_cn": "美联储发布 2025 年消费者财务调查结果",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
@@ -127,7 +137,7 @@
   {
    "date": "2026-10-08",
    "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-   "title_cn": "",
+   "title_cn": "美联储对美国运通采取执法行动：未充分识别与报告涉洗钱可疑活动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
@@ -137,7 +147,7 @@
   {
    "date": "2026-10-07",
    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-   "title_cn": "",
+   "title_cn": "美联储公布 9 月 15—16 日 FOMC 会议纪要",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
@@ -147,7 +157,7 @@
   {
    "date": "2026-10-05",
    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-   "title_cn": "",
+   "title_cn": "美联储批准 Isabella Bank Corporation 的申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
@@ -157,7 +167,7 @@
   {
    "date": "2026-10-02",
    "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
-   "title_cn": "",
+   "title_cn": "美联储批准 Fleur Capital Corporation 的申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
@@ -167,7 +177,7 @@
   {
    "date": "2026-10-02",
    "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-   "title_cn": "",
+   "title_cn": "美联储对 Ontario Bancorporation 采取执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
@@ -177,7 +187,7 @@
   {
    "date": "2026-10-02",
    "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
-   "title_cn": "",
+   "title_cn": "美联储将 O 条例现代化提案的意见征询期延长至 11 月 4 日",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
@@ -187,7 +197,7 @@
   {
    "date": "2026-09-30",
    "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-   "title_cn": "",
+   "title_cn": "美联储完成压力测试改革：提升透明度与问责、降低资本要求波动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
@@ -197,7 +207,7 @@
   {
    "date": "2026-09-29",
    "title": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-   "title_cn": "",
+   "title_cn": "多家监管机构发布 15 家银行机构处置计划反馈函",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
@@ -207,7 +217,7 @@
   {
    "date": "2026-09-25",
    "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
-   "title_cn": "",
+   "title_cn": "美联储批准 Peoples Bancorp 的申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
@@ -217,7 +227,7 @@
   {
    "date": "2026-09-24",
    "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
-   "title_cn": "",
+   "title_cn": "美联储对 Sandy Spring Bank 前员工采取执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
@@ -227,7 +237,7 @@
   {
    "date": "2026-09-24",
    "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
-   "title_cn": "",
+   "title_cn": "美联储就《GENIUS 法案》下支付稳定币发行人监管框架的两项提案征求公众意见",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
@@ -237,7 +247,7 @@
   {
    "date": "2026-09-22",
    "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
-   "title_cn": "",
+   "title_cn": "美联储批准 BancFirst Corporation 的申请",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
@@ -247,7 +257,7 @@
   {
    "date": "2026-09-18",
    "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
-   "title_cn": "",
+   "title_cn": "美联储终止对 SNB Bancshares 与 Bank of Eufaula 的执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
@@ -257,7 +267,7 @@
   {
    "date": "2026-09-18",
    "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
-   "title_cn": "",
+   "title_cn": "美联储对 Northstar Bank、美国运通旅行相关服务公司与 Regions Bank 前员工采取执法行动",
    "agency": "美联储（Federal Reserve）",
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",

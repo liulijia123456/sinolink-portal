@@ -11954,7 +11954,7 @@
               '</p>';
           }
         }
-        return '<div class="brief-head"><span class="brief-tag">政策速览</span>' +
+        return '<div class="brief-head"><span class="brief-tag">' + (b.tier === 'news' ? '新闻速览' : '政策速览') + '</span>' +
           (it.official_no ? '<span class="brief-no">' + esc(it.official_no) + '</span>' : '') +
           '<span class="brief-at">' + esc(b.at || '') + '</span>' +
           '<a class="brief-src" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></div>' +
@@ -12278,17 +12278,38 @@
         } else {
           if (empty) empty.hidden = true;
           list.innerHTML = pageItems.map(function (it) {
-            return '<div class="pw-item">' +
+            var hasBrief = !!(it.brief && it.brief.body);
+            return '<div class="note pw-item' + (hasBrief ? ' has-brief' : '') + '">' +
               '<div class="pw-r pr-r">' +
                 '<span class="c-date">' + esc(it.date) + '</span>' +
                 '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
                   (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
                 '<span class="c-kind"><span>' + esc(it.kind || '新闻稿') + '</span></span>' +
                 '<span class="c-agency">' + esc(it.agency || '') + '</span>' +
-                '<span class="c-act"><a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></span>' +
-              '</div></div>';
+                '<span class="c-act">' +
+                  (hasBrief ? '<button type="button" class="toggle-btn brief-toggle"><span>速览</span><i class="chev">▾</i></button>' : '') +
+                  '<a class="src-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener"><span>原文</span> ↗</a></span>' +
+              '</div>' +
+              (hasBrief ? '<div class="brief" hidden>' + briefHtml(it) + '</div>' : '') +
+              '</div>';
           }).join('');
         }
+
+        // 展开 / 收起速览：点按钮或整行，点「原文」不触发
+        [].slice.call(list.querySelectorAll('.note.has-brief')).forEach(function (row) {
+          var toggle = function () {
+            var panel = row.querySelector('.brief');
+            if (!panel) return;
+            panel.hidden = !panel.hidden;
+            row.classList.toggle('open', !panel.hidden);
+          };
+          var btn = row.querySelector('.brief-toggle');
+          if (btn) btn.addEventListener('click', function (e) { e.stopPropagation(); toggle(); });
+          row.addEventListener('click', function (e) {
+            if (e.target.closest && e.target.closest('a')) return;
+            toggle();
+          });
+        });
 
         var cnt = document.getElementById('press-count');
         if (cnt) {
