@@ -3459,32 +3459,6 @@
   }
   .pw-side-note b { color: #46525f; font-weight: 600; }
 
-  /* 侧栏二级：新闻动态按部门 / 机构展开 */
-  .pw-sub {
-    grid-column: 1 / -1; display: grid; gap: 1px;
-    margin: 1px 0 3px 4px; padding-left: 9px;
-    border-left: 1px solid var(--border-light);
-    /* 16 个部门时限制高度，避免整栏高过视口导致末尾不可见 */
-    max-height: 322px; overflow-y: auto; overscroll-behavior: contain;
-    scrollbar-width: thin; scrollbar-color: #d9d2c4 transparent;
-  }
-  .pw-sub::-webkit-scrollbar { width: 6px; }
-  .pw-sub::-webkit-scrollbar-thumb { background: #ddd6c9; border-radius: 3px; }
-  .pw-sub::-webkit-scrollbar-track { background: transparent; }
-  .pw-sub-item {
-    display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px;
-    width: 100%; border: 0; background: none; border-radius: 6px;
-    padding: 5px 8px; font: inherit; font-size: 12px; line-height: 1.5;
-    color: #46525f; text-align: left; cursor: pointer;
-    transition: background-color .14s ease, color .14s ease;
-  }
-  .pw-sub-item:hover { background: #faf8f3; }
-  .pw-sub-item.is-on { background: rgba(168, 130, 60, .1); color: #16212e; font-weight: 600; }
-  .pw-sub-item[disabled] { color: #b9c1cb; cursor: default; }
-  .pw-sub-item[disabled]:hover { background: none; }
-  .pw-sub-c { font-family: var(--pw-mono); font-size: 10px; color: #9aa5b1; font-variant-numeric: tabular-nums; }
-  .pw-sub-item.is-on .pw-sub-c { color: #a8823c; }
-
   /* 新闻动态：工具条与五列表格 */
   .pr-tools { margin-top: 14px; }
   .pr-thead, .pr-r { grid-template-columns: 108px minmax(0, 1fr) 92px 150px 92px; }
@@ -3556,10 +3530,6 @@
     .pw-tabs { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 0; }
     .pw-side-note { display: none; }
     .pw-tab { padding: 9px 10px; }
-    .pw-sub {
-      grid-template-columns: 1fr 1fr; max-height: 198px; overflow-y: auto;
-      margin: 4px 0 2px 0; padding-left: 0; border-left: 0;
-    }
     .pr-thead, .pr-r { grid-template-columns: 100px minmax(0, 1fr) 88px 132px 84px; }
   }
   @media (max-width: 760px) {
@@ -3573,7 +3543,6 @@
   }
   @media (max-width: 620px) {
     .pw-tabs { grid-template-columns: minmax(0, 1fr); gap: 6px; }
-    .pw-sub { grid-template-columns: minmax(0, 1fr); max-height: 216px; }
     .pr-head { padding: 16px 16px 14px; }
     .pr-grid { grid-template-columns: minmax(0, 1fr); }
     .pr-dept:nth-child(2n) { border-right: 1px solid var(--border-light); }
@@ -5393,7 +5362,6 @@
               <span class="pw-tab-e">Agency Press</span>
               <span class="pw-tab-c" id="pw-tab-count-pr">—</span>
             </button>
-            <div class="pw-sub" id="pw-sub" hidden></div>
           </div>
           <p class="pw-side-note">两类条目分栏存放、互不混排。点击类别切换：<b>公报</b>保留原有检索、筛选与分页，<b>新闻动态</b>按部门 / 机构归集。</p>
         </aside>
@@ -12211,7 +12179,7 @@
           label: '二级分类 · 按部门',
           unit: '个来源',
           foot: '',
-          boardDesc: '白宫与 15 个内阁各部对外发布的新闻稿、部长表态与政策说明，按部门归集；已接入来源每日抓取，源站限制的部门在侧栏灰显。',
+          boardDesc: '白宫与 15 个内阁各部对外发布的新闻稿、部长表态与政策说明，按部门归集；已接入来源每日抓取，其余部门受源站限制暂未接入。',
           sources: ['白宫'].concat(CABINET_DEPTS)
         },
         agencies: {
@@ -12261,16 +12229,6 @@
         return m;
       }
 
-      // 源状态：非 ok / empty 的记为受限，侧栏灰显并给出原因
-      function pressBlocked(board) {
-        var d = PRESS.boards[board];
-        var m = {};
-        ((d && d.sources) || []).forEach(function (s) {
-          if (s.status === 'error' || s.status === 'skipped') m[s.agency] = s.error || s.status;
-        });
-        return m;
-      }
-
       function pressFiltered() {
         var items = pressOf(pressBoard);
         var q = pressState.q.trim().toLowerCase();
@@ -12290,31 +12248,6 @@
           }
           return true;
         });
-      }
-
-      // 侧栏二级：全部 + 每个来源（有条目的显示条数，受限的灰显）
-      function renderPressSub() {
-        var host = document.getElementById('pw-sub');
-        if (!host) return;
-        var meta = PR_PANEL[pressBoard];
-        if (!meta) { host.hidden = true; return; }
-        var counts = pressCounts(pressOf(pressBoard));
-        var blocked = pressBlocked(pressBoard);
-        var total = pressOf(pressBoard).length;
-        var html = '<button type="button" class="pw-sub-item' + (pressState.agency ? '' : ' is-on') +
-          '" data-agency="">全部' +
-          '<span class="pw-sub-c">' + total + '</span></button>';
-        html += meta.sources.map(function (name) {
-          var n = counts[name] || 0;
-          var why = blocked[name];
-          var dis = (!n && why) ? ' disabled' : '';
-          var tip = dis ? ' title="源站限制：' + esc(why) + '"' : '';
-          return '<button type="button" class="pw-sub-item' + (pressState.agency === name ? ' is-on' : '') +
-            '" data-agency="' + esc(name) + '"' + dis + tip + '>' + esc(name.replace(/\s?\(.*\)$/, '').replace(/\s?(FCC|USITC|CFIUS|USAID)$/, '')) +
-            '<span class="pw-sub-c">' + (n ? n : '—') + '</span></button>';
-        }).join('');
-        host.innerHTML = html;
-        host.hidden = false;
       }
 
       function renderPressList() {
@@ -12369,7 +12302,6 @@
         var c2 = document.getElementById('pw-tab-count-pr');
         if (c2) c2.textContent = all.length ? all.length + ' 条' : '—';
         renderPressPager(items.length, pageCount);
-        renderPressSub();
       }
 
       function renderPressPager(total, pageCount) {
@@ -12430,15 +12362,6 @@
       }
 
       function bindPressTools() {
-        // 侧栏二级目录在 pane 之外，单独委托一次
-        var side = document.getElementById('pw-side');
-        if (side && side.dataset.bound !== '1') {
-          side.dataset.bound = '1';
-          side.addEventListener('click', function (e) {
-            var sub = e.target.closest ? e.target.closest('[data-agency]') : null;
-            if (sub && !sub.disabled) setPressAgency(sub.getAttribute('data-agency'));
-          });
-        }
         var pane = document.getElementById('pw-pane-pr');
         if (!pane || pane.dataset.bound === '1') return;
         pane.dataset.bound = '1';
@@ -12507,7 +12430,6 @@
           '<div class="pw-foot"><span class="pw-count" id="press-count"></span><span class="pw-updated" id="press-updated"></span></div>' +
           '<div class="board-pager" id="press-pager" hidden></div>';
         bindPressTools();
-        renderPressSub();
         loadPress(key).then(function () {
           var d = PRESS.boards[key];
           var all = pressOf(key);
@@ -12517,7 +12439,7 @@
           if (box) {
             box.innerHTML = '<span class="pr-badge">已接入 ' + ok + ' / ' + totalSrc + ' 个来源</span>' +
               '<span class="pr-meta-t">共 ' + all.length + ' 条 · 更新于 ' + esc(pressTime(d.updated_at)) +
-              ' · 未接入来源在侧栏灰显</span>';
+              ' · 其余部门受源站限制未接入</span>';
           }
           fillPressSelects();
           renderPressList();
