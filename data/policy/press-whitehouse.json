@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-08T08:26:50+08:00",
+ "updated_at": "2026-11-10T08:32:44+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 6,
-   "added": 1,
+   "fetched": 5,
+   "added": 4,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 7,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 14,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -164,6 +164,156 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-09",
+   "title": "Nominations and Withdrawals Sent to the Senate",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/nominations-and-withdrawals-sent-to-the-senate-ba2b/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Presidential Message on National American History and Founders Month",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-american-history-and-founders-month/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Under Secretary Helberg’s Travel to Singapore, Indonesia, and Japan",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/under-secretary-helbergs-travel-to-singapore-indonesia-and-japan/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Under Secretary Helberg’s Travel to Singapore, Indonesia, and Japan Media Note November 9, 2026 Under Secretary of State for Economic Affairs Jacob S. Helberg traveled to Singapore, Indonesia, and Japan October 28 to November 7 to connect American technological leadership with the capital, industrial capabilities, and ambitions of U.S. partners in the Indo-Pacific. In Singa"
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Secretary Rubio’s Meeting with German Foreign Minister Wadephul",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-german-foreign-minister-wadephul-4/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with German Foreign Minister Wadephul Readout November 9, 2026 Secretary of State Marco Rubio met with German Foreign Minister Johann Wadephul during the G7 Foreign Ministers Meeting in Paris, France. The two leaders discussed bilateral efforts to secure freedom of navigation, strengthen defense industrial cooperation, and deepen our trade relation"
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Secretary Rubio’s Meeting with French Foreign Minister Barrot",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-french-foreign-minister-barrot-2/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with French Foreign Minister Barrot Readout November 9, 2026 Secretary of State Marco Rubio met today with French Foreign Minister Jean-Noël Barrot. The Secretary and Foreign Minister discussed U.S. fundamental concerns about the International Criminal Court. The Secretary and Foreign Minister also addressed the situation in the Middle East, reaffi"
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Secretary Rubio’s Call with Paraguayan President Alliana",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-paraguayan-president-alliana/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Paraguayan President Alliana Readout November 9, 2026 Secretary of State Marco Rubio spoke yesterday with President Pedro Alliana of Paraguay to congratulate him on assuming the presidency and reaffirm U.S. commitment to a strong and enduring partnership with the Paraguayan people."
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Secretary of State Marco Rubio Remarks to the Press",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "讲话",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-22/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Paris, France InterContinental Paris Le Grand Secretary of State Marco Rubio Remarks to the Press Remarks November 9, 2026 SECRETARY RUBIO: Let’s go. QUESTION: How were your talks today, Mr. Secretary? SECRETARY RUBIO: Which one? We talked a lot today. (Laughter.) QUESTION: No, but did you mention at all the Ukraine issue with your – the other ministers? SECRETARY R"
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Secretary of State Marco Rubio Remarks to the Press",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "讲话",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-21/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Homestead, Florida Homestead Air Reserve Base Secretary of State Marco Rubio Remarks to the Press Remarks November 8, 2026 QUESTION: Mr. Secretary — SECRETARY RUBIO: Yeah. QUESTION: There’s this report out just now that India is going to be investigating CEO Jensen Huang. New York Times reported that you had concerns about his relationship with the Chinese spy. Can "
+  },
+  {
+   "date": "2026-11-09",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Sexual Predators",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/09/worst-worst-ice-arrests-murderers-pedophiles-and-sexual-predators",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Trump Administration Deepens Interagency Collaboration to Protect the Nation’s Skies From Unmanned Threats",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/09/trump-administration-deepens-interagency-collaboration-protect-nations-skies",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Meet One of the Media’s ‘Non-Criminals’: ICE Arrests MS-13 Member in Idaho Charged with Terrorism in El Salvador",
+   "title_cn": "",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/09/meet-one-medias-non-criminals-ice-arrests-ms-13-member-idaho-charged-terrorism-el",
+   "source": "Homeland Security",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-09",
+   "title": "VA opens 47th new healthcare facility under President Trump",
+   "title_cn": "",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-opens-47th-new-healthcare-facility-under-president-trump/",
+   "source": "Veterans Affairs",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-08",
+   "title": "Presidential Message on Diwali",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-diwali-1f71/",
+   "source": "White House",
+   "summary": ""
+  },
+  {
+   "date": "2026-11-08",
+   "title": "Cambodia National Day",
+   "title_cn": "",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/cambodia-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Cambodia National Day Press Statement November 8, 2026 On behalf of the United States of America, I congratulate the Kingdom of Cambodia as it celebrates its 73rd Independence Day. The United States and Cambodia have built a close relationship based on trust, mutual respect, and shared interest for more than 75 years. President Trump’s leadership in helping broker t"
+  },
+  {
+   "date": "2026-11-07",
+   "title": "Presidential Message on Honoring the American Flag",
+   "title_cn": "",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-honoring-the-american-flag/",
+   "source": "White House",
+   "summary": ""
+  },
   {
    "date": "2026-11-07",
    "title": "First Lady Melania Trump and LSU Establish $7.2 Million Fostering the Future Endowment Fund",
