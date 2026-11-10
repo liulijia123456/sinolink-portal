@@ -809,6 +809,9 @@ python3 scripts/validate_data.py --strict   # 严格：新增条目缺 title_cn 
   FCC、USITC、USAID 对数据中心 IP 做 Akamai 拦截，直连、系统代理、无头浏览器均返回
   403。配置中这些源 `enabled=False` 并写明原因，页面侧栏灰显；换到可访问这些域的
   网络环境时，把 `enabled` 改回 `True` 即可，无需改代码。
+- **出口要求**：受限的 11 家只认美国出口 IP，且对机房 ASN 敏感。实测香港机房
+  （G-Core）走代理仍 403，换美国节点后可用 `--proxy` 或 `PRESS_PROXY` 指定；
+  `--only <机构名>` 用于单源验证。GitHub Actions 的 runner 在美国，是可选的云端出口。
 - **定时任务**：每日 08:15 抓白宫及内阁各部、09:25 抓独立机构；有新增才提交，
   全部来源失败则不提交并如实上报。
 - **写盘**：press 文件结构独立于政策四板块，不含 manifest 与计数，因此沿用脚本内的

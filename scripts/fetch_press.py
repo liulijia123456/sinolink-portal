@@ -48,8 +48,25 @@ BEIJING = timezone(timedelta(hours=8))
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36')
 
-# 直连，不继承系统代理：本机 7890 代理常未启动，urllib 走 _scproxy 会握手超时
-OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+# 默认直连，不继承系统代理：urllib 走 _scproxy 会握手超时。
+# 需要换出口时用 --proxy 或环境变量 PRESS_PROXY 指定（如 http://127.0.0.1:7890）：
+# 部分部门站点对数据中心 / 非美国 IP 做 Akamai 拦截，换到美国住宅出口才能取到。
+OPENER = None
+
+
+def get_opener():
+    global OPENER
+    if OPENER is None:
+        OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    return OPENER
+
+
+def set_proxy(url):
+    global OPENER
+    if url:
+        OPENER = urllib.request.build_opener(
+            urllib.request.ProxyHandler({'http': url, 'https': url}))
+        log('出口代理：' + url)
 
 TIMEOUT = 20
 MAX_PER_SOURCE = 40          # 单源单轮最多取多少条
@@ -171,7 +188,7 @@ def fetch(url):
         'Accept-Language': 'en-US,en;q=0.9',
         'Cache-Control': 'no-cache',
     })
-    with OPENER.open(req, timeout=TIMEOUT) as r:
+    with get_opener().open(req, timeout=TIMEOUT) as r:
         raw = r.read()
         if r.headers.get('content-encoding') == 'gzip':
             import gzip
@@ -426,10 +443,19 @@ def main():
     ap.add_argument('--board', choices=['whitehouse', 'agencies', 'all'], default='all')
     ap.add_argument('--days', type=int, default=45, help='入库日期窗口，默认 45 天')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--proxy', default=os.environ.get('PRESS_PROXY', ''),
+                    help='HTTP 代理，如 http://127.0.0.1:7890；默认直连')
+    ap.add_argument('--only', default='', help='只抓指定机构（填 agency 名，用于单源验证）')
     args = ap.parse_args()
     if args.days < 1 or args.days > 3650:
         print('--days 应在 1–3650 之间', file=sys.stderr)
         return 2
+    set_proxy(args.proxy.strip())
+    if args.only:
+        # 单源验证：目标源强制启用，其余全部跳过
+        for b in SOURCES:
+            for src in SOURCES[b]:
+                src['enabled'] = (src['agency'] == args.only)
     boards = ['whitehouse', 'agencies'] if args.board == 'all' else [args.board]
     total_ok = 0
     for b in boards:
