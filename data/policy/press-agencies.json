@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-10T19:59:16+08:00",
+ "updated_at": "2026-11-11T18:13:21+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -77,7 +77,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc"
+   "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+   "brief": {
+    "at": "2026-11-05",
+    "tier": "news",
+    "body": "· 美联储 11 月 5 日终止 Allegiant United Holdings 等的执法行动。\n· 另两家为 Nano Financial Holdings 与 Nano Banc，同在加州尔湾。\n· 该行动源于 2021 年 2 月 24 日书面协议，终止于 2026 年 10 月 21 日。"
+   }
   },
   {
    "date": "2026-10-29",
@@ -87,7 +92,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia"
+   "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+   "brief": {
+    "at": "2026-10-29",
+    "tier": "news",
+    "body": "· 美联储 10 月 29 日批准加拿大丰业银行的银行控股公司申请。\n· 该行通过收购达拉斯的 Maple Financial Holdings 成为银行控股公司。\n· 交易同时使其间接持有俄克拉何马州塔尔萨的 MapleMark Bank。"
+   }
   },
   {
    "date": "2026-10-28",
