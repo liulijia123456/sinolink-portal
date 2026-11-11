@@ -1,9 +1,621 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-10 08:06",
-  "count": 283,
+  "updated_at": "2026-11-11 17:29",
+  "count": 319,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Establishment of the Oval Office National Monument",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23113/establishment-of-the-oval-office-national-monument",
+      "source": "联邦公报",
+      "kind": "公告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-23113",
+      "title_cn": "设立椭圆形办公室国家纪念地（公告）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "【政策背景】\n白宫及其园区属国家公园管理局管理的总统公园，整体已列为国家历史地标。本公告认定椭圆形办公室作为独立且具全国意义的历史建筑，需要专门的认定与保护管理。第 11080 号公告由总统于 2026 年 11 月 5 日签署，11 月 12 日刊发（91 FR 73135），依据 54 U.S.C. 320301（《文物法》）。该法授权总统以公告形式，将联邦所有或控制土地上的历史地标、历史与史前建筑及其他具历史或科学价值之物宣布为国家纪念地，并划留管理所需的最小面积。\n\n【核心内容】\n纪念地范围限于椭圆形办公室本体（110 室）、外椭圆形办公室（106、108 室）与内阁室（105 室）；公告认定该边界即为妥善保护与管理所需的最小面积。内政部长经国家公园管理局实施管理，并须履行四项义务：制定并执行管理计划，优先保护建筑结构与重要建筑特征，制定时与白宫行政办公室及其他相关行政部门协商；对任何实质性改变或拆除纪念地及其核心建筑要素的行动，要求先行记录、审查并考虑替代方案；评估涉及历史特征的变更是否与国家意义相符；与白宫保护委员会等咨询机构协调。部长应采行一切必要步骤落实本公告。\n\n【要点提炼】\n公告同时明确三项保留：其一，不限制总统对纪念地重新装饰、选配家具，以及作出不实质损害历史结构或建筑特色的日常运营与安保调整；其二，不改变《国家历史保护法》下适用于白宫的现有法定豁免；其三，不减损国会对联邦财产的权限。文件性质为认定与管理性公告，未设新的行政许可、资金拨付或处罚条款，也未改变白宫作为总统办公与居住场所的既有使用方式。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Federal Scholarship Tax Credit; Hearing",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23032/federal-scholarship-tax-credit-hearing",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "财政部",
+      "official_no": "2026-23032",
+      "title_cn": "联邦奖学金税收抵免：听证会公告（拟议规则）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "财政部通告：原定 2026 年 12 月 15 日美东时间 10 时就 REG-117199-25 举行的公开听证会，改为仅以电话方式举行\n该拟议规则于 2026 年 10 月 2 日刊发，就向奖学金授予组织的合格捐赠提供不可退还联邦税收抵免、用于资助中小学教育奖学金作出指引\n本件仅调整听证形式与安排，未改拟议规则内容；刊于 91 FR 72837",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "TRICARE; Calendar Year (CY) 2027 TRICARE Prime and TRICARE Select Out-of-Pocket Expenses",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23035/tricare-calendar-year-cy-2027-tricare-prime-and-tricare-select-out-of-pocket-expenses",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-23035",
+      "title_cn": "TRICARE：2027 年度 Prime 与 Select 计划自付费用（通告）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "国防部通告，公布 2027 日历年 TRICARE Prime 与 TRICARE Select 的自付费用标准\nTRICARE 为国防部面向军人、退休人员及其家属的医疗保险计划，Prime 与 Select 是其两个主要选项\n新费率 2027 年 1 月 1 日生效；属年度费率公布类通告，未经评论程序\n摘要未列具体费率与分档，数额以联邦公报文本（91 FR 72858）为准",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Schedules of Controlled Substances: Placement of Oveporexton in Schedule IV",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23075/schedules-of-controlled-substances-placement-of-oveporexton-in-schedule-iv",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "official_no": "2026-23075",
+      "title_cn": "受控物质目录：将 Oveporexton 列入附表四（最终规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FDA 于 2026 年 8 月 5 日批准 Orzeyful（oveporexton）用于成人 1 型发作性睡病，HHS 据此向 DEA 提出列管建议\nDEA 以临时最终规则将 oveporexton 列入《受控物质法》附表四\n2026 年 11 月 12 日生效，评论截止 2026 年 12 月 14 日，刊于 91 FR 72775",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Rangeland Management",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23033/rangeland-management",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "农业部",
+      "official_no": "2026-23033",
+      "title_cn": "牧场管理（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "农业部拟修订国家森林系统放牧与牲畜使用条例，以现代化放牧管理、提高规则清晰度、编纂现行政策并扩大管护与准入机会\n拟更新许可发放、资格与资质条款；建立针对干旱、野火等扰动事件的适应性应对框架；扩大以管护为导向的牲畜使用权限\n拟议规则，评论截止 2026 年 12 月 14 日，刊于 91 FR 73034",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Coral, Coral Reefs, and Live/Hardbottom Habitats of the South Atlantic and the Shrimp Fishery of the South Atlantic Region; Amendments 11/12",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23020/coral-coral-reefs-and-livehardbottom-habitats-of-the-south-atlantic-and-the-shrimp-fishery-of-the",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "商务部",
+      "official_no": "2026-23020",
+      "title_cn": "南大西洋珊瑚、珊瑚礁与活体/硬底生境及南大西洋对虾渔业：第 11/12 号修正案（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "NMFS 拟实施南大西洋珊瑚、珊瑚礁与活体/硬底生境渔业管理计划第 11 号修正案，以及南大西洋对虾渔业管理计划第 12 号修正案（合称 11/12）\n两份修正案由南大西洋渔业管理委员会编制提交；拟在 Oculina 岸栖息地特别关注区北延段东界设立对虾渔业准入区\n拟议规则，评论截止 2026 年 12 月 14 日，刊于 91 FR 72841",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Reallocation of Pacific Cod in the Bering Sea and Aleutian Islands Management Area",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23002/fisheries-of-the-exclusive-economic-zone-off-alaska-reallocation-of-pacific-cod-in-the-bering-sea",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "official_no": "2026-23002",
+      "title_cn": "阿拉斯加外海专属经济区渔业：白令海与阿留申群岛管理区太平洋鳕鱼重新分配（最终规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "NMFS 临时规则，将白令海与阿留申群岛管理区太平洋鳕鱼预计未使用的配额，从拖网捕捞船重新分配给 A80 拖网加工船\nA80 计划覆盖该海域的拖网加工船队；调剂目的是使该区 2026 年总可捕量得以完成\n重新分配不改变该区总可捕量，属年度配额管理中的常规操作\n2026 年 11 月 12 日生效，刊于 91 FR 72817",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Mining of Pillars",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23053/mining-of-pillars",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23053",
+      "title_cn": "矿柱回采（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "劳工部矿山安全与健康管理局（MSHA）最终规则，删除矿柱最终回采的过时要求\n属 MSHA 同日成组发布的多项法规清理文件之一\n理由：单一井口最终回采矿柱的作业方式因安全问题已不再为业界采用，条款失去保留必要\n条款自生效日起从 MSHA 法规中删除，属减轻合规负担的清理性修订\n2026 年 12 月 14 日生效，刊于 91 FR 72784",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Electrical Equipment for Coal Seams Above the Water Table",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23052/electrical-equipment-for-coal-seams-above-the-water-table",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23052",
+      "title_cn": "水位以上煤层电气设备（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "MSHA 最终规则，删除水位以上煤层使用允许型电气工作面设备的要求\n原条款就水位以上煤层设定差别化的设备要求；MSHA 现认定所有煤矿无论相对水位位置均属瓦斯矿井\n差异化条款因此失去适用基础，自生效日起从法规中删除\n2026 年 12 月 14 日生效，刊于 91 FR 72790\n属 MSHA 同日成组发布的多项法规清理文件之一，适用对象限于井下矿山",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Improving and Eliminating Regulations; Installation of Foam Generator Systems in Underground Coal Mines",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23051/improving-and-eliminating-regulations-installation-of-foam-generator-systems-in-underground-coal",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23051",
+      "title_cn": "法规优化与废止：井下煤矿泡沫发生器系统安装（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "MSHA 最终规则，删除井下煤矿泡沫发生器系统安装的过时要求\n属 MSHA 同日成组发布的多项法规清理文件之一\n理由：相关规定已不再适用，属「法规优化与废止」系列的组成文件\n该系列同日成组发布，共同清理 MSHA 法规中的过时与重复条款\n条款自生效日起删除，2026 年 12 月 14 日生效；刊于 91 FR 72793",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Improving and Eliminating Regulations; Limit on Exposure to Diesel Particulate Matter in Underground Metal and Nonmetal Mines",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23050/improving-and-eliminating-regulations-limit-on-exposure-to-diesel-particulate-matter-in-underground",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23050",
+      "title_cn": "法规优化与废止：井下金属与非金属矿柴油颗粒物暴露限值（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "MSHA 最终规则，取消井下金属与非金属矿柴油颗粒物（DPM）个体暴露限值的过时要求\n属 MSHA 同日成组发布的多项法规清理文件之一\n理由：相关条款载有过时生效日与不再适用的暴露限值，无法对应现行执业标准\n条款自生效日起从 MSHA 法规中删除\n2026 年 12 月 14 日生效，刊于 91 FR 72781",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Improving and Eliminating Regulations; Permissible Lamps in Underground Coal Mines",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23049/improving-and-eliminating-regulations-permissible-lamps-in-underground-coal-mines",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23049",
+      "title_cn": "法规优化与废止：井下煤矿许可灯具（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "MSHA 最终规则，删除井下煤矿电帽灯及其他电灯的重复性要求\n属 MSHA 同日成组发布的多项法规清理文件之一\n理由：该条款与其他现行照明设备规定内容重叠，删除不降低对矿工的保护水平\n条款自生效日起从 MSHA 法规中删除，属清理性修订\n2026 年 12 月 14 日生效，刊于 91 FR 72787",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Respirable Crystalline Silica and Respiratory Protection",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23048/respirable-crystalline-silica-and-respiratory-protection",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "劳工部",
+      "official_no": "2026-23048",
+      "title_cn": "可吸入结晶二氧化硅与呼吸防护（拟议规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "MSHA 拟议规则，澄清并修改 2024 年最终规则确立的可吸入结晶二氧化硅与呼吸防护标准\n涉及合规方法、暴露监测、呼吸防护、医学监护与记录保存要求，并含相关一致性修订\nMSHA 称提案在提高可操作性的同时维持对矿工的保护\n同时安排公开听证；评论截止 2027 年 1 月 11 日，刊于 91 FR 73062",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Hematology and Pathology Devices; Reclassification of Immunohistochemistry Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23005/hematology-and-pathology-devices-reclassification-of-immunohistochemistry-test-systems-for-use-with",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-23005",
+      "title_cn": "血液学与病理学器械：配合已批准肿瘤治疗产品使用的免疫组化检测系统重新分类（拟议规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FDA 拟将配合已批准肿瘤治疗产品使用的免疫组化（IHC）检测系统（产品代码 MVC、NKF、QQT、NQF、PLS、PKW、QUL、QNH、QZJ、SBL、SER、SHF）由三类（上市前批准）重新分类为二类（特殊控制），适用上市前通知\n拟对现有分类条例作小幅修订，并新增一项器械分类条例及配套特殊控制\n评论截止 2027 年 1 月 11 日，刊于 91 FR 72825",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Housing and Community Development Act of 1980: Verification of Eligible Status",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "住房与城市发展部",
+      "official_no": "2026-23003",
+      "title_cn": "1980 年住房与社区发展法：合格身份核验（最终规则）",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "HUD 最终规则，修订第 214 条条例，要求对受覆盖项目全部申请人与受助人不分年龄核验美国公民身份或合格移民身份\n将按比例援助改为全体家庭成员身份核验完成前的临时状态，改变现行规则下按比例援助可无限期延续的做法\nHUD 称修订使条例与第 214 条措辞及目的更为一致\n2026 年 12 月 14 日生效，刊于 91 FR 72978",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23074/airworthiness-directives-dassault-aviation-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23074",
+      "title_cn": "适航指令：达索航空飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 拟对全部达索 Mystère-Falcon 50、Falcon 2000 与 Falcon 2000EX 飞机发布新适航指令\n起因：报告一起制造质量逃逸，主起落架上、下扭力连杆可能在制造中发生高温氧化\n拟要求以可用件更换受影响主起落架，并在特定条件下限制受影响部件安装；评论截止 2026 年 12 月 28 日，刊于 91 FR 72823",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Standard Instrument Approach Procedures, and Takeoff Minimums and Obstacle Departure Procedures; Miscellaneous Amendments",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23073/standard-instrument-approach-procedures-and-takeoff-minimums-and-obstacle-departure-procedures",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23073",
+      "title_cn": "标准仪表进近程序、起飞最低标准与障碍物离场程序：杂项修订（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 最终规则，修订、暂停或删除部分机场的标准仪表进近程序（SIAP）及相关起飞最低标准与障碍物离场程序\n起因：采用新订或修订标准，或国家空域系统变化，如新导航设施投用、新增障碍物、空中交通要求调整\n此类修订依 14 CFR 第 97 部分发布，属例行维护性更新，具体机场与程序清单载于规则附件\n刊于 91 FR 72773",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Standard Instrument Approach Procedures, and Takeoff Minimums and Obstacle Departure Procedures; Miscellaneous Amendments",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23072/standard-instrument-approach-procedures-and-takeoff-minimums-and-obstacle-departure-procedures",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23072",
+      "title_cn": "标准仪表进近程序、起飞最低标准与障碍物离场程序：杂项修订（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 最终规则，设立、修订、暂停或删除部分机场的标准仪表进近程序（SIAP）及起飞最低标准与障碍物离场程序\n本件与同日另一份同题规则（2026-23073）为并行发布的两份文件，两者适用机场清单不同\n起因同为标准修订或国家空域系统变化，属例行维护性更新\n具体机场与程序清单载于附件；刊于 91 FR 72774",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Airworthiness Directives; Diamond Aircraft Industries GmbH Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23068/airworthiness-directives-diamond-aircraft-industries-gmbh-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23068",
+      "title_cn": "适航指令：钻石飞机工业有限公司飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 拟对全部钻石飞机工业（DAI）DA 50 C 飞机发布新适航指令\n起因：多起襟翼作动器失效报告\n拟要求检查黑色滑套垫圈是否位移、检查杆端轴承与襟翼作动器配合是否紧固，并改装襟翼作动器，随后对锁紧螺母处作动器扭矩封条作重复检查；评论截止 2026 年 12 月 28 日，刊于 91 FR 72819",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Amendment of Jet Route J-21 in the Vicinity of Laredo, TX",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23017/amendment-of-jet-route-j-21-in-the-vicinity-of-laredo-tx",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23017",
+      "title_cn": "得克萨斯州拉雷多附近 J-21 喷气航路修订（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 拟修订 J-21 喷气航路，消除得克萨斯州拉雷多附近一处 1.47 度不必要转弯\nJ-21 为美国境内高空喷气航路，本次修订以拉直航迹、提升运行效率为目的\n修订后航路走向以规则图示为准，未涉及空域类别调整\n文种为拟议规则（NPRM），评论截止 2026 年 12 月 28 日；刊于 91 FR 72821",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23007/airworthiness-directives-bell-textron-canada-limited-helicopters",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23007",
+      "title_cn": "适航指令：贝尔德事隆加拿大有限公司直升机（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FAA 以新指令替代 AD 2022-20-11，适用于部分贝尔德事隆加拿大 429 型直升机\n原指令要求目视检查尾桨齿轮箱支撑组件外表面、对尾梁内部作内窥镜或目视检查并作触觉检查，视结果拆换铆钉或按批准方法修补缝隙\n制造商认定原重复检查要求需调整；最终规则，2026 年 12 月 17 日生效，刊于 91 FR 72770",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Special Local Regulation; Southern California Annual Marine Events for the San Diego Captain of the Port Zone, San Diego Fleet Week Veterans Day Boat Parade, San Diego Bay, San Diego, CA",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23047/special-local-regulation-southern-california-annual-marine-events-for-the-san-diego-captain-of-the",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23047",
+      "title_cn": "特别地方规制：南加州年度海上活动——圣迭戈舰队周退伍军人节船艇游行（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "海岸警卫队将于 2026 年 11 月 11 日 10:45 至 13:00 在圣迭戈湾执行特别地方规制，保障舰队周退伍军人节船艇游行期间水上生命安全\n规制区依西南海岸警卫队区海上活动条例（33 CFR 100.1101 表 1 第 17 项）确定\n执行期内区域内船舶须服从巡逻指挥官或悬挂海岸警卫队旗的官方巡逻艇指令；刊于 91 FR 72796",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-12",
+      "title": "Safety Zone; Sector Mobile Captain of the Port Zone, Mobile, AL",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23027/safety-zone-sector-mobile-captain-of-the-port-zone-mobile-al",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23027",
+      "title_cn": "安全区：亚拉巴马州莫比尔港区指挥官辖区（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "海岸警卫队设立两个临时固定安全区，配合 EX ENTERPRISE（原企业号航母 CVN-65）抵达与拆解作业\n安全区覆盖该船抵达与拆解期间的周边水域；未经莫比尔港区指挥官许可，人员与船舶不得进入\n规则依 33 CFR 第 165 部分（安全区）发布\n属临时最终规则，2026 年 11 月 11 日生效\n刊于 91 FR 72796",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Notice of Product Exclusion Extensions: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美国贸易代表办公室 USTR",
+      "official_no": "2026-22925",
+      "title_cn": "产品排除延期通告：中国技术转让、知识产权与创新相关行为（第 301 条）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "USTR 决定将现行全部 178 项对华第 301 条关税排除进一步延期，延至 2027 年 1 月 9 日美东时间 23:59\n背景：此前多轮排除多数已到期，仍有部分排除继续有效，本次为对存量排除的整体续期\n178 项排除对应的产品与税目载于通告附件，本摘要未逐一列明\n属通告类文件，刊于 91 FR 72610",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Notice of Determination To Extend Section 301 Investigation of Vietnam's Acts, Policies, and Practices Related to Intellectual Property Protection and Enforcement",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22868/notice-of-determination-to-extend-section-301-investigation-of-vietnams-acts-policies-and-practices",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美国贸易代表办公室 USTR",
+      "official_no": "2026-22868",
+      "title_cn": "延长对越南知识产权保护与执法第 301 条调查的认定通告",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "美国贸易代表（USTR）决定将对越南政府知识产权保护与执法相关做法政策的第 301 条调查再延长三个月\n该调查针对越南在知识产权保护与执法方面的法律、政策与做法，目前仍在进行\n通告未宣布任何贸易行动，也未调整现行措施范围；延期自 2026 年 11 月 3 日美东时间 00:01 起生效\n后续程序安排与时限以联邦公报文本（91 FR 72609）为准",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Notice of Modification of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22867/notice-of-modification-of-section-301-action-chinas-targeting-of-the-maritime-logistics-and",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美国贸易代表办公室 USTR",
+      "official_no": "2026-22867",
+      "title_cn": "第 301 条措施修改通告：中国主导海运、物流与造船业的相关做法",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "USTR 修改对华海事、物流与造船业第 301 条调查所采取的行动，将暂停期再延两个月\n本项调查针对中国在上述三个领域谋求主导地位的政策与做法，此前相关措施已处于暂停状态\n按通告日期栏，行动暂停至 2027 年 1 月 9 日美东时间 23:59，理由是便于与中方继续磋商\n属程序性调整，未新增或改动措施内容；刊于 91 FR 72608",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Imposition of Special Measure Prohibiting the Transmittal of Funds Involving MEXC Global",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-22962",
+      "title_cn": "对 MEXC Global 实施禁止资金划转特别措施（最终规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "【政策背景】\n本件为财政部金融犯罪执法局（FinCEN）依《打击俄罗斯洗钱法》第 9714(a) 条（Pub. L. 116-283，经 2022 财年《国防授权法》第 6106(b) 条即 Pub. L. 117-81 修订，编为 31 U.S.C. 5318A 注）发布的命令。该条授权财政部长在认定美国境外金融机构涉俄罗斯非法金融且属「首要洗钱关注」时，以命令禁止或附条件限制受涵盖金融机构涉该机构的资金划转。相关职权经财政部第 180-01 号令授予 FinCEN 局长。命令刊于 2026 年 11 月 10 日联邦公报（91 FR 72420），12 月 10 日生效，未设终止日。\n\n【核心内容】\nFinCEN 认定 MEXC Global（可兑换虚拟货币交易所，含其美国境外各司法辖区的子公司、分支及承继实体）为涉俄罗斯非法金融的「首要洗钱关注」金融机构，并禁止受涵盖金融机构与 MEXC Global 之间任何方向的资金划转。命令列举的关联实体包括 MEXC Global Ltd／MX Global Ltd（塞舌尔）、MEXC Estonia OÜ（爱沙尼亚）、GIDA Technology AG（瑞士）、MXC Global Ltd（英国），以及原在新加坡注册的 MEXC Global Foundation Ltd 与 MEXC Singapore Pte Ltd。\n\n【要点提炼】\n命令所载事实：截至 2026 年 6 月，日交易额逾 10 亿美元、储备资产约 50 亿美元，按交易量居全球中心化交易所前 20，2025 年 12 月约占全球市场 9%；与美国、欧盟、英国制裁实体直接交易 2.32 亿美元；与 Garantex 交易约 1.29 亿美元、与其承继实体 Grinex 约 410 万美元；与至少四家被英国制裁的高风险交易所累计逾 130 亿美元；涉伊朗行为体或恐怖组织近 20 亿美元。程序上，FinCEN 保留附加条件与豁免权；命令不影响《银行保密法》下可疑活动报告义务及 OFAC 制裁；故意违反可依 31 U.S.C. 5321、5322 处罚。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Information Reporting Regarding Qualified Opportunity Zones and Updated Qualified Opportunity Fund Certification and Decertification Procedures; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22859/information-reporting-regarding-qualified-opportunity-zones-and-updated-qualified-opportunity-fund",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "财政部",
+      "official_no": "2026-22859",
+      "title_cn": "合格机会区信息申报及合格机会基金认证与撤销认证程序更新（更正）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "财政部对 2026 年 9 月 11 日刊发的拟议规则（REG-116506-25）作技术性更正\n该拟议规则落实合格机会基金向国税局报送信息申报表、向处置投资的投资者提供声明的法定要求，以及合格机会区企业向持有其权益的基金提供声明的要求\n更正内容为文本性修改，未改变实质要求；刊于 91 FR 72493",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Notice of Removal of Designated Chinese Military Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22840/notice-of-removal-of-designated-chinese-military-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-22840",
+      "title_cn": "指定中国军工企业移出名单通告（通告）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "国防部（通告中称「战争部」）副部长决定将某实体从「在美国运营的中国军工企业清单」（1260H 清单）中移除\n移除不构成对以其他或补充理由重新列名的限制（without prejudice to relisting）\n具体企业名称与决定理由载于通告补充信息部分\n属通告类文件，摘要未载生效日期，以 91 FR 72536 文本为准",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "President's Military Spouse Commission; Notice of Federal Advisory Committee Meeting; Amendment",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22839/presidents-military-spouse-commission-notice-of-federal-advisory-committee-meeting-amendment",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-22839",
+      "title_cn": "总统军属委员会联邦咨询委员会会议通告（更正）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "国防部（通告中称「战争部」）就 2026 年 10 月 19 日通告作出更正，调整总统军属委员会下次联邦咨询委员会会议的时间与议程\n通告明确原通告中除会议时间与议程外的其余信息继续有效\n总统军属委员会系国防部所属联邦咨询委员会，其会议依《联邦咨询委员会法》向公众开放\n属程序性会议安排通告，不涉及政策内容；刊于 91 FR 72535",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Revision of Regulations for Planning, Programming, Budgeting",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22860/revision-of-regulations-for-planning-programming-budgeting",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "内政部",
+      "official_no": "2026-22860",
+      "title_cn": "规划、计划与预算条例修订（拟议规则）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "内政部土地管理局（BLM）拟议修订依《联邦土地政策与管理法》（FLPMA）确立的土地利用规划编制、修订与更改程序条例\n该程序对应「规划、计划与预算」（PPB）环节，规范资源管理规划的制定与更新流程\n文种为拟议规则（NPRM），就提案全部内容公开征求意见，评论截止 2027 年 1 月 11 日\n摘要未列具体条款改动，条文以联邦公报文本（91 FR 72495）为准",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Modification to Work Requirements for Able-Bodied Adults",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22944/modification-to-work-requirements-for-able-bodied-adults",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "农业部",
+      "official_no": "2026-22944",
+      "title_cn": "健全成年受助人工作要求修订（拟议规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "农业部拟议规则，将《2025 年一大美丽法案》（OBBB）中补充营养援助计划（SNAP）工作要求条款落地为行政法规\n修改三个月时限的适用人群例外清单\n更新地区申请时限豁免的资格条件，并为阿拉斯加与夏威夷增设临时善意豁免\n收紧豁免申请要求；评论截止 2026 年 12 月 10 日，刊于 91 FR 72439",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Supplemental Nutrition Assistance Program: Reforming Categorical Eligibility",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "农业部",
+      "official_no": "2026-22936",
+      "title_cn": "补充营养援助计划：类别资格改革（拟议规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "农业部拟议规则，修订 SNAP 类别资格。依《2008 年食品与营养法》第 5(a) 条，全员领取州 TANF 资助项目福利的家庭可类别性取得 SNAP 资格\n现行条例将 TANF 现金援助与非现金、实物福利或服务一并计入；提案限缩为仅 45 CFR 260.31 定义的 TANF「援助」\n拟议规则，评论截止 2026 年 12 月 10 日，刊于 91 FR 72454",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Color Additive Petition From the International Association of Color Manufacturers; Request To Amend the Color Additive Regulations To Remove the Solvents Methylene Chloride, Trichloroethylene, and Ethylene Dichloride",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22866/color-additive-petition-from-the-international-association-of-color-manufacturers-request-to-amend",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22866",
+      "title_cn": "国际色彩制造商协会着色添加剂申请：修订着色添加剂条例以删除二氯甲烷、三氯乙烯与二氯乙烷溶剂（最终规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FDA 部分批准国际色彩制造商协会（IACM）着色添加剂申请，以相关用途「已废弃」为由，将二氯甲烷、三氯乙烯、二氯乙烷从胭脂树橙提取物、辣椒红树脂与姜黄树脂的许可提取溶剂清单中删除\n申请人提交数据证明上述用途已永久废弃；FDA 以无实益为由驳回其余请求\n最终规则，2027 年 1 月 11 日生效，异议截止 2026 年 12 月 10 日，刊于 91 FR 72410",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Color Additive Petition From Environmental Defense Fund et al.; Request To Amend the Color Additive Regulations To Remove the Solvents Ethylene Dichloride, Methylene Chloride, and Trichloroethylene",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22865/color-additive-petition-from-environmental-defense-fund-et-al-request-to-amend-the-color-additive",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22865",
+      "title_cn": "环境保护基金等着色添加剂申请：修订着色添加剂条例以删除二氯乙烷、二氯甲烷与三氯乙烯溶剂（最终规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "FDA 部分批准环境保护基金等提出的着色添加剂申请，依《德莱尼条款》删除二氯甲烷作为果蔬标记油墨中着色添加剂混合物稀释剂的许可用途\n申请人提交数据表明该添加剂可在实验动物中致癌\n其余关于删除二氯乙烷、二氯甲烷与三氯乙烯的请求被驳回\n最终规则，2027 年 1 月 11 日生效，异议截止 2026 年 12 月 10 日，刊于 91 FR 72413",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-10",
+      "title": "Medicare and Medicaid Programs; Cutting Administrative Requirements for Excellence in Patient Care",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22812/medicare-and-medicaid-programs-cutting-administrative-requirements-for-excellence-in-patient-care",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-22812",
+      "title_cn": "联邦医疗保险与医疗补助计划：削减行政管理要求以提升患者照护质量（拟议规则）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "CMS 拟议规则（CMS-3484-P，RIN 0938-AW04），涉及 42 CFR 第 403、416、418、438、442、460、482、483、485、494 部分\n目标是清理被视为过时或过度负担的联邦医疗保险与医疗补助法规，降低提供方与供应商合规成本\n涉及医院呼吸道疾病数据报告、产科服务质量改进与全员培训、长期照护机构员工疫苗接种教育、《生命安全法典》等条款\n评论截止 2027 年 1 月 11 日，案卷 CMS-2026-3631，刊于 91 FR 72634",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-09",
@@ -2034,7 +2646,7 @@
       "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21849/subsistence-management-regulations-for-public-lands-in-alaska-2026-27-and-2027-28-subsistence-taking",
       "source": "联邦公报",
       "kind": "规则",
-      "agency": "农业部",
+      "agency": "内政部",
       "official_no": "2026-21849",
       "brief": {
         "at": "2026-10-28",
