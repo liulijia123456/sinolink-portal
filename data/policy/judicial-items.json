@@ -1,9 +1,207 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-10 09:48",
-  "count": 71,
+  "updated_at": "2026-11-11 18:16",
+  "count": 82,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Holland-Thielen v. Spacex",
+      "url": "https://www.courtlistener.com/opinion/11058892/holland-thielen-v-spacex/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "defendant would instead have to pursue Rule 11 sanctions at great expense with long odds that such sanctions",
+      "official_no": "",
+      "title_cn": "Holland-Thielen 诉太空探索技术公司（涉性骚扰争议可否排除强制仲裁）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第九巡回上诉法院维持加州中区联邦地区法院裁定，驳回太空探索技术公司要求八名前员工强制仲裁的动议。原告在致公司管理层的公开信中就高管社交媒体帖文提出性骚扰关切后被解职，依加州法主张敌意工作环境性骚扰、性别歧视与报复性解雇。争点为《2022 年终止性骚扰强制仲裁法》所称「被主张构成性骚扰的行为」是否要求原告达到起诉标准。合议庭按文义解释认定，该法仅要求提出主张，无须先行证明成立；因每名原告的解雇诉求均与所指性骚扰争议相关，整案不受仲裁协议约束。Tung 法官持异议，主张应审查相关事实性主张后再撤销发回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Mills v. New York City",
+      "url": "https://www.courtlistener.com/opinion/11058782/mills-v-new-york-city/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "particularly when a plaintiff moves for a preliminary injunction, see Giambalvo v. Suffolk Cnty., 155 F",
+      "official_no": "",
+      "title_cn": "Mills 诉纽约市（涉手枪购置、登记与携带规则的第二修正案审查）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第二巡回上诉法院部分维持、部分撤销纽约南区联邦地区法院的驳回裁定。三名纽约市居民依第二修正案挑战该市关于手枪购置、销售、登记与携带的多项规则，地区法院部分以缺乏起诉资格、部分以未满足布鲁恩案第一步（所涉行为不受第二修正案文本涵盖）为由驳回。上诉法院认为第二修正案保障持有与携带复数「武器」的权利，单枪携带限制、两枪登记上限与九十天购枪等待期均构成对受保护行为的实质约束，应在第二步依历史传统审查；对许可费与指纹费的诉请，则依本院既有先例维持驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Michael Abramowitz v. Kari Lake",
+      "url": "https://www.courtlistener.com/opinion/11058790/michael-abramowitz-v-kari-lake/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区巡回上诉法院",
+      "summary": "the Broadcasting Board. He then issued an executive order directing that the Agency’s “non-statutory",
+      "official_no": "",
+      "title_cn": "Abramowitz 诉莱克（涉美国全球媒体署台长免职程序与第二条权限）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "哥伦比亚特区巡回上诉法院维持特区联邦地区法院 2025 年 8 月 28 日命令，禁止在未经国际广播咨询委员会多数批准的情况下解除原告美国之音台长职务。原告于 2024 年 4 月经该委员会一致同意获任；2025 年 1 月总统免去委员会七名成员中的六名，并依第 14238 号行政令要求最大限度削减该署非法定职能，其后将其免职。法院先认定此类争议不受《文官制度改革法》复审通道约束，地区法院有管辖权；继而认定《美国法典》第 22 编第 6205(e) 条将免职权赋予该委员会，属宪法第二条允许的下级官员任免安排，故免职行为违法。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Reach Community Development v. United States Department of Homeland Security",
+      "url": "https://www.courtlistener.com/opinion/11058891/reach-community-development-v-united-states-department-of-homeland/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "SUMMARY* Preliminary Injunction / Constitutional Rights The panel",
+      "official_no": "",
+      "title_cn": "Reach Community Development 诉国土安全部（涉波特兰移民设施外催泪瓦斯使用）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第九巡回上诉法院撤销俄勒冈联邦地区法院的初步禁令。该禁令禁止若干联邦机构在波特兰移民与海关执法局设施外以催泪瓦斯驱散数百名示威者。原告为设施对面公寓租户，主张化学气体飘入住宅侵害第五修正案实体正当程序权利。合议庭认为原告未能证明胜诉可能性：其所主张的免于暴露于非致命人群控制装置的权利，既不见于宪法文本与结构，也未深植于历史传统，地区法院未将该权利锚定于历史，分析存在缺陷。法院并认为挑战行政行为须同时满足「震撼良知」与基本权利两项要件，因历史要件不成立，未再判断前者。de Alba 法官持异议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Tyrelle Henderson, Jr. v. Kent Cnty., Mich.",
+      "url": "https://www.courtlistener.com/opinion/11059116/tyrelle-henderson-jr-v-kent-cnty-mich/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "to state a claim, this ruling would have been ultra vires. See Steel Co. v. Citizens for a Better Env’t",
+      "official_no": "",
+      "title_cn": "Henderson 诉肯特县（涉囚犯免付费诉讼「三振」规则认定）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第六巡回上诉法院撤销并发回密歇根西区联邦地区法院裁定。原告为在押人员，地区法院认定其依《囚犯诉讼改革法》第 1915(g) 条已累计三次「三振」，不符合免缴诉讼费资格，因未缴费而驳回起诉。上诉法院认为，以第十一修正案豁免为由驳回的先前诉讼不属于该条列举的三类情形，除非原审法院明确以轻率或恶意为由；其中一件虽同时出现「未陈述诉请」表述，但原审仅就豁免问题展开论述，且豁免属真正管辖障碍，不能视为备位实体裁判。两次驳回均不计入三振，案件发回重审。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Stefanie Boone v. Lowell Area Schools",
+      "url": "https://www.courtlistener.com/opinion/11059117/stefanie-boone-v-lowell-area-schools/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "“convince” someone to stop speaking but does not sanction efforts to “coerce” silence (quoting Okwedy v",
+      "official_no": "",
+      "title_cn": "Boone 诉洛厄尔学区（涉学区限制家长批评言论的第一修正案审查）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第六巡回上诉法院部分维持、部分撤销密歇根西区联邦地区法院的驳回裁定。原告为三名在校学生的母亲及持证教师，长期在社交媒体批评学区课程与图书馆藏书。2024 年 1 月高中校长致函，要求其立即停止在社交平台提及学区雇员，并规定未经许可不得接触教职员工。上诉法院认为，前项要求虽以「请求」措辞表述，但使用「停止并终止」等法律术语并提及一切可得法律救济，在驳回动议阶段足以构成可诉的事前限制；后项仅规范沟通对象，属内容中立的时间、地点、方式限制，维持驳回。模糊性与第九编法定资格主张亦维持驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Dickinson v. Trump",
+      "url": "https://www.courtlistener.com/opinion/11058953/dickinson-v-trump/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "SUMMARY * Preliminary Injunction / First Amendment The panel vacated",
+      "official_no": "",
+      "title_cn": "Dickinson 诉特朗普（涉波特兰移民设施外非致命弹药使用与临时集体认证）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "第九巡回上诉法院撤销俄勒冈联邦地区法院的初步禁令及临时集体认证。原告为五名在波特兰移民与海关执法局设施外示威的抗议者与独立记者，主张联邦执法人员因其行使第一修正案权利而针对性使用催泪瓦斯与胡椒球。地区法院禁令要求仅在面临迫在眉睫人身伤害威胁时方可使用非致命弹药，并责令更改执法人员制服标识。上诉法院认为，依本院先例，执法机关可在骚乱等紧迫违法状态下使用非致命武力，无须等待人身伤害威胁；原告未能证明存在报复性政策、模式或惯例。禁令救济扩及非当事人、要求重新设计制服超出法院权限，临时集体亦不符合共同性要求。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Gupta v. Noem",
+      "url": "https://www.courtlistener.com/opinion/11059151/gupta-v-noem/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "compel their adjudication under the Administrative Procedure Act (“APA”), 5 U.S.C. § 701 et seq., and",
+      "official_no": "",
+      "title_cn": "Gupta 诉诺姆（涉 EB-5 投资移民申请审理迟延的司法审查排除）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "特区联邦地区法院准许被告驳回起诉。六名来自印度与中国的原告各在目标就业区投资 80 万美元，于 2023 年 1 月至 12 月间提交 EB-5 投资移民 I-526E 申请，至裁判时已逾 35 个月未获审理，遂依《行政程序法》与《曼达马斯法》请求强制裁决。法院认为，《移民与国籍法》第 1252(a)(2)(B)(ii) 条禁止对属于部长裁量范围的「决定或行为」进行司法审查，而《2022 年 EB-5 改革与诚信法》授权部长自行确定审理方式与顺序，故审理顺序之争属裁量事项，法院无标的管辖权，未进入实体审查。两名原告的申请在诉讼中获批，其诉请依合意以无实际意义驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Du v. Bondi",
+      "url": "https://www.courtlistener.com/opinion/11059153/du-v-bondi/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "1361, and injunctive relief under the Administrative Procedure Act (APA), 5 U.S.C. § 706(1). Compl. ¶¶",
+      "official_no": "",
+      "title_cn": "Du 诉邦迪（涉 L-1 签证行政审查迟延的 TRAC 因素审查）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "特区联邦地区法院准许被告驳回起诉。原告为中国公民、居留新加坡，2025 年 1 月申请 L-1 跨国公司经理签证并接受面谈，同年 4 月被告知申请因《移民与国籍法》第 221(g) 条行政审查被列为「拒绝」，此后未再推进，遂请求强制裁决。法院依巡回区 TRAC 六因素审查：自最后一项政府行为至起诉仅约五个月，处于本区法院通常认定合理的区间；国会设定的 180 天期限仅为宣示性，不构成硬性截止；加速审理将挤占其他申请人顺位，且起诉状未载明对其他申请人的影响。第三、五因素略利于原告，第六因素中立，综合有利于政府。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Yaghoobi v. U.S. Department of Health and Human Services",
+      "url": "https://www.courtlistener.com/opinion/11059147/yaghoobi-v-us-department-of-health-and-human-services/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "claim for declaratory relief on the Administrative Procedure Act (“APA”), 5 U.S.C. § 702, and her claim",
+      "official_no": "",
+      "title_cn": "Yaghoobi 诉卫生与公众服务部监察长办公室（涉举报人投诉结案与材料返还）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "特区联邦地区法院以缺乏标的管辖权为由，无偏见驳回原告经二次修正的起诉。原告自行诉讼，依《2013 财年国防授权法》第 4712 条向卫生与公众服务部监察长办公室提出举报人报复投诉，该办公室决定结案；原告不请求重新调查，仅请求宣告性救济与强制返还其提交的材料，用于在马萨诸塞州联邦地区法院进行的另一诉讼。法院认定原告具备第三条意义上的起诉资格，但未能指出任何要求该办公室返还材料的法律、法规或承诺，故不满足《曼达马斯法》所要求的明确且不可裁量的义务；按《行政程序法》第 706(1) 条理解，结论相同。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-10",
+      "title": "Akerman v. Merit Systems Protection Board",
+      "url": "https://www.courtlistener.com/opinion/11059155/akerman-v-merit-systems-protection-board/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "further denied Plaintiff’s motion for a preliminary injunction, which had no relation to the pending",
+      "official_no": "",
+      "title_cn": "Akerman 诉绩效制度保护委员会（涉《信息自由法》与《隐私法》请求及回避动议）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-10",
+        "body": "特区联邦地区法院就一系列程序性动议作出意见与命令。原告自行诉讼，依《信息自由法》与《隐私法》起诉绩效制度保护委员会、特别检察官办公室、平等就业机会委员会、国防部监察长办公室与劳工部，请求强制制作并更正与其联邦雇佣有关的文件，修正起诉状追加陆军部与空军部。法院准许提交回避誓章但剔除誓章、驳回回避动议，认为法官在司法会议辩护人服务委员会任职不构成合理怀疑其公正性的理由；记录保全、补充证据、调卷令通知等动议分别驳回或准许。对被告的驳回起诉动议，法院将其视为关于行政救济穷尽的即决判决动议，定于 11 月 24 日前完成最后举证，尚未作实体裁判。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-09",
@@ -14,13 +212,13 @@
       "agency": "美国最高法院",
       "summary": "Cite as: 610 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A560 _________________ MARKWAYNE MULLIN, SECRETARY OF HOMELAND SECURITY, ET AL. v. FRIENDS OF THE RUIDOSA CHURCH, ET AL. ON APPLICATION FOR STAY [November 9, 2026] PER CURIAM. Section 102 of the",
       "official_no": "",
-      "title_cn": "Mullin 诉 Ruidosa 教堂之友会（边境屏障环境法豁免与初审管辖权，中止申请获准）",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-11-09",
         "body": "2026 年 11 月 9 日，美国最高法院以不署名全体意见（per curiam）准予国土安全部长 Mullin 的暂缓申请，中止得克萨斯西区联邦地区法院 10 月 2 日的初步禁令。该禁令原禁止部长依《1996 年非法移民改革与移民责任法》第 102(c)(1) 条豁免环境法律，在美墨边境「大弯区」修建屏障。\n\n法院认为联邦政府极有可能胜诉：地区法院对原告以「重大问题原则」名义提出的主张本无管辖权，因该主张实质指部长超越法定权限，属制定法争点，不属第 102(c)(2)(A) 条允许受理的宪法争议。法院另认定禁令使政府每日承担近 50 万美元不可回收成本，国会立法亦已表明快速施工优先于环境与游憩利益。\n\n本裁定仅暂缓至调卷令申请处理，未就豁免决定实体效力作出判断；杰克逊大法官表示反对。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Mullin 诉 Ruidosa 教堂之友会（边境屏障环境法豁免与初审管辖权，中止申请获准）",
+      "domain": "国防/安全"
     },
     {
       "board": "judicial",
