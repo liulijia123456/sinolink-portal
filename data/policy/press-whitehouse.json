@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-10T19:59:04+08:00",
+ "updated_at": "2026-11-11T17:37:41+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 5,
-   "added": 0,
+   "fetched": 9,
+   "added": 9,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 14,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 6,
    "error": ""
   },
   {
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 9,
-   "added": 0,
+   "fetched": 11,
+   "added": 11,
    "error": ""
   },
   {
@@ -164,6 +164,456 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-11",
+   "title": "Angola National Day",
+   "title_cn": "美国国务院祝贺安哥拉独立51周年",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/angola-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Angola National Day Press Statement November 11, 2026 The United States congratulates the people of Angola as you commemorate 51 years of independence. We appreciate Angola’s leading role in regional peace and reconciliation efforts and economic progress that is critical to development across the continent. The United States is proud to partner with Angola and suppo",
+   "brief": {
+    "at": "2026-11-11",
+    "tier": "news",
+    "body": "· 国务院就安哥拉独立51周年发表声明，向安哥拉人民致贺。\n· 美方表示赞赏安哥拉在地区和平与和解进程中发挥的主导作用。\n· 两国合作涵盖洛比托走廊、能源、基础设施、私营部门投资与防务。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "VETERANS DAY, 2026",
+   "title_cn": "特朗普发布2026年退伍军人节公告",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/veterans-day-2026/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普发布2026年退伍军人节公告，向全体退伍军人致意。\n· 公告称退伍军人事务部今年处理310万件伤残索赔，创历史新高。\n· 公告称积压削减逾70%、新开47家医疗机构，去年安置近5.2万无家可归老兵。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Presidential Determination Concerning Wildfire Suppression Activities in the United States",
+   "title_cn": "总统决定：豁免野火扑救活动部分水污染限制",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/presidential-determination-concerning-wildfire-suppression-activities-in-the-united-states/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普签署总统决定，豁免野火扑救活动适用部分水污染管制要求。\n· 豁免依据《联邦水污染控制法》第313条作出，涵盖空中投放阻燃剂。\n· 适用对象为林务局、内政部等机构及承包商，期限一年至2027年11月10日。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Nominations and Withdrawals Sent to the Senate",
+   "title_cn": "总统向参议院提交新一批提名与撤回名单",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/nominations-and-withdrawals-sent-to-the-senate-b6a4/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 白宫向参议院提交新一批提名，涉及交通、外交与索赔委员会职位。\n· 提名佛罗里达州马克·埃施出任联邦公共交通管理局局长。\n· 提名米哈伊尔·博加切克为驻科索沃大使、约翰·伯恩斯为驻刚果（金）大使。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Fact Sheet: President Donald J. Trump Advances Wildfire Suppression",
+   "title_cn": "情况说明：特朗普推进野火扑救能力建设",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-advances-wildfire-suppression/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 白宫发布情况说明，介绍特朗普推进野火扑救能力建设的举措。\n· 说明称相关备忘录旨在为即将到来的野火季备足扑救工具与资源。\n· 该备忘录延续此前保护森林、牧场与休闲景观的一系列行政行动。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Presidential Message on the Birthday of the United States Marine Corps",
+   "title_cn": "总统就美国海军陆战队建军节发表致辞",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-the-birthday-of-the-united-states-marine-corps/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普就美国海军陆战队建军节发表致辞，回顾其历史战绩。\n· 致辞提及独立战争攻占拿骚港及二战太平洋战场瓜岛、硫磺岛等战役。\n· 致辞称正通过导弹防御、造舰与新一代能力建设为陆战队提供资源。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Presidential Message on National Diabetes Month",
+   "title_cn": "总统就全国糖尿病宣传月发表致辞",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-diabetes-month-a726/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普就全国糖尿病宣传月发表致辞，称美国逾4000万成年人患病。\n· 致辞称约四分之一患者不知自己患病，政府已设“让美国再次健康”委员会。\n· 致辞称经TrumpRx购买胰岛素每月不超过35美元，GLP-1用药者今年省1800美元。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Presidential Message on National Alzheimer’s Disease Awareness Month",
+   "title_cn": "总统就全国阿尔茨海默病关注月发表致辞",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-alzheimers-disease-awareness-month-59dc/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普就全国阿尔茨海默病关注月发表致辞，向患者与照护者致意。\n· 致辞称政府通过“让美国再次健康”议程追溯慢性病的根本成因。\n· 致辞提出恢复科研诚信，并把预防性创新置于国家任务的核心位置。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Presidential Message on Critical Infrastructure Security and Resilience Month",
+   "title_cn": "总统就关键基础设施安全与韧性月发表致辞",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-critical-infrastructure-security-and-resilience-month-aa39/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普就全国关键基础设施安全与韧性月发表致辞，援引美国优先韧性战略。\n· 致辞援引“美国优先韧性战略”，称正升级老化的技术与基础设施。\n· 提及宣布国家能源紧急状态、签署释放美国能源行政令并设能源主导委员会。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Congressional Bills H.R. 997, H.R. 1703, H.R. 1945, and H.R. 7730 Signed into Law",
+   "title_cn": "特朗普签署H.R. 997等四项法案成法",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-997-h-r-1703-h-r-1945-and-h-r-7730-signed-into-law/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 特朗普签署H.R. 997、H.R. 1703、H.R. 1945与H.R. 7730四项法案。\n· H.R. 997扩大国家纳税人辩护人用人权限，H.R. 1703调整轮椅医保支付规则。\n· H.R. 1945将丘吉尔博物馆列为国家历史地标，H.R. 7730永久提高破产门槛。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Secretary Rubio’s Meeting with Ukrainian Foreign Minister Sybiha",
+   "title_cn": "国务卿鲁比奥会见乌克兰外长瑟比加",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-ukrainian-foreign-minister-sybiha/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with Ukrainian Foreign Minister Sybiha Readout November 10, 2026 Secretary of State Marco Rubio met today with Ukrainian Foreign Minister Andrii Sybiha. They discussed negotiations to end the Russia-Ukraine war, energy resilience, and defense cooperation.",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥在华盛顿会见乌克兰外长瑟比加，双方为外长级会晤。\n· 双方讨论了结束俄乌战争的谈判进展、能源韧性与双边防务合作。\n· 相关内容由国务院发言人办公室以简短新闻稿形式对外发布。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Secretary of State Marco Rubio Remarks to the Press",
+   "title_cn": "国务卿鲁比奥在G7会后向媒体发表讲话",
+   "agency": "国务院",
+   "kind": "讲话",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-23/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Paris, France The George C. Marshall Center in the Hôtel de Talleyrand Secretary of State Marco Rubio Remarks to the Press Remarks November 10, 2026 SECRETARY RUBIO: All right. You guys ready? So we had a good G7 meeting, obviously hosted by some partners as well that came from Saudi Arabia and Brazil and Egypt and South Korea. We talked about a couple things today,",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 鲁比奥在七国集团会议后向媒体介绍中东局势与俄乌谈判进展。\n· 他称对伊朗的经济封锁与制裁已见效，目前无需发动重大作战行动。\n· 他称阿布扎比会谈富有成效，欧洲方面已参与，目标是扩大为多方磋商。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Three Iranian-Backed Operatives Indicted for Their Roles in Nearly 20 Terrorist Attacks and Attempted Attacks Across Europe and the United States",
+   "title_cn": "三名伊朗支持人员因近20起恐怖袭击被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/three-iranian-backed-operatives-indicted-their-roles-nearly-20-terrorist-attacks-and",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 司法部公布八项罪名替代起诉书，指控三名嫌疑人支持恐怖组织。\n· 三人被指为真主党旅与伊朗革命卫队效力，涉欧美近20起袭击或未遂袭击。\n· 起诉书还涉2026年9月英国费尔福德皇家空军基地的袭击图谋。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Social Adult Day Care Program Director Pleads Guilty to $127M Medicare and Medicaid Fraud Scheme",
+   "title_cn": "日间照护机构负责人就1.27亿美元医保欺诈认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/social-adult-day-care-program-director-pleads-guilty-127m-medicare-and-medicaid-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 纽约东区联邦法院：日间照护项目负责人丹尼尔·李就欺诈指控认罪。\n· 其被指十余年间以从未提供的处方药与日间照护服务向医保体系申报。\n· 涉案金额约1.27亿美元，作案方式包括向他人支付回扣。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "New Jersey Tax Preparer Pleads Guilty to Filing False Tax Returns for Clients",
+   "title_cn": "新泽西报税员为客户虚假申报税务认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/new-jersey-tax-preparer-pleads-guilty-filing-false-tax-returns-clients",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 新泽西霍博肯报税员德米特里厄斯·哈格罗夫就协助虚假申报认罪。\n· 其将客户个人开支虚列为可扣除商业支出，并虚报经营亏损与坏账。\n· 其同意向国税局赔偿25万5378美元，量刑定于2027年4月13日。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Multi-State Homeland Security Task Force Investigation Leads to 36 Indicted for Drug Trafficking and Money Laundering",
+   "title_cn": "跨州工作组调查致36人因贩毒与洗钱被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/multi-state-homeland-security-task-force-investigation-leads-36-indicted-drug-trafficking",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 跨州国土安全工作组调查后，36人因贩毒与洗钱被起诉。\n· 缉毒局缴获346公斤芬太尼、23公斤冰毒、70公斤可卡因及43支枪械。\n· 另没收15辆豪车并对17处房产启动没收程序，涉案现金逾280万美元。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Illinois Tax Preparer Sentenced for Stealing More than $11M from Taxpayers in COVID-19 Assistance Fraud Scheme",
+   "title_cn": "伊利诺伊州报税员骗领1100万美元失业金获刑",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/illinois-tax-preparer-sentenced-stealing-more-11m-taxpayers-covid-19-assistance-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 伊利诺伊州奥兰帕克54岁的希亚姆·赫迈丹因疫情失业金欺诈被判刑。\n· 2020年5月至2022年12月，其与同伙提交近700份虚假失业金申请。\n· 造成逾1100万美元损失，其中约280万美元经自动取款机提现。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Idaho Man Sentenced to 18 Years in Prison for Attempting to Provide Material Support to ISIS in Plot to Attack Churches",
+   "title_cn": "爱达荷州男子图谋袭击教堂支持ISIS获刑18年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/idaho-man-sentenced-18-years-prison-attempting-provide-material-support-isis-plot-attack",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 爱达荷州男子亚历山大·斯科特·默库里奥因图谋袭击教堂被判18年监禁。\n· 其计划用金属管击伤父亲夺取枪械，并以刀具、爆炸物袭击多座教堂。\n· 联邦调查局于2024年4月6日、即预定袭击前一天将其逮捕。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Dual Kazakhstani-Tajikistani Citizen Extradited from Egypt for Role in Alien Smuggling Conspiracy",
+   "title_cn": "哈塔双重国籍人员因组织偷渡自埃及被引渡",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/dual-kazakhstani-tajikistani-citizen-extradited-egypt-role-alien-smuggling-conspiracy",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 一名哈萨克斯坦与塔吉克斯坦双重国籍人员自埃及被引渡至美国。\n· 其被控共谋将俄罗斯与中亚人员偷运入境，起诉书于2025年12月作出。\n· 罪名包括为牟利运送非法移民入境，案件由亚利桑那州联邦法院审理。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Court Permanently Bars Florida Tax Return Preparer and Tax Preparation Business and Orders Disgorgement of More Than $550,000",
+   "title_cn": "法院永久禁止佛州报税员执业并追缴55.8万美元",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/court-permanently-bars-florida-tax-return-preparer-and-tax-preparation-business-and-orders",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 佛罗里达州联邦法院永久禁止报税员加西亚及其公司代他人报税。\n· 法院同时判令其交出55万8520美元，即2021至2024年所收报税服务费。\n· 法院此前于2026年2月13日下达初步禁令，另有被告被禁业两年。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Court Orders Atlanta Area Tax Return Preparer to Permanently Shut Down Tax Preparation Business",
+   "title_cn": "法院令亚特兰大地区报税员永久关停报税业务",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/court-orders-atlanta-area-tax-return-preparer-permanently-shut-down-tax-preparation-business",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 法院判令亚特兰大地区报税员霍利斯永久关停其报税业务。\n· 法院认定其虚报商业与教育支出，并为客户虚增劳动所得税抵免。\n· 2022至2025年其经手报税表中90%含虚假项目，须交出56.7万美元。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Bergen County Orthopedic Surgeon Pleads Guilty to Employment Tax Crime",
+   "title_cn": "伯根县骨科医生就拖欠雇佣税认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/bergen-county-orthopedic-surgeon-pleads-guilty-employment-tax-crime",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 新泽西哈肯萨克61岁骨科医生布赖恩·梅林就雇佣税犯罪认罪。\n· 其2014至2018年间多个季度未将代扣税款足额上缴国税局。\n· 造成税收损失逾150万美元，其同意赔偿152万6281美元，量刑定于2027年3月16日。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Arizona Federal Court Denies Request to Halt Hermosa Critical Minerals Project",
+   "title_cn": "亚利桑那联邦法院驳回暂停埃尔莫萨锰矿项目请求",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/arizona-federal-court-denies-request-halt-hermosa-critical-minerals-project",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 亚利桑那联邦法院驳回环保团体暂停埃尔莫萨关键矿产项目的请求。\n· 法院认定原告未能证明胜诉可能，也未证明将受不可弥补损害。\n· 该项目2026年7月获林务局批准，另获国防生产法2000万美元与能源部1.662亿美元。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Energy Department Closes $480 Million Loan to Expand American Energy Production and Strengthen Offshore Infrastructure in the Gulf of America",
+   "title_cn": "能源部完成4.8亿美元贷款支持美洲湾油气开发",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-closes-480-million-loan-expand-american-energy-production-and-strengthen",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 能源部能源主导融资办公室完成对Arena Energy埃尔克霍恩项目4.8亿美元贷款。\n· 贷款资金用于改造路易斯安那州外海的22座海上油气生产平台。\n· 达产后预计每日新增最多3.86万桶原油与7700万立方英尺天然气。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Sexual Predators, and Drug Traffickers",
+   "title_cn": "ICE逮捕涉嫌谋杀、性侵与贩毒的非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/worst-worst-ice-arrests-murderers-sexual-predators-and-drug-traffickers",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国土安全部通报移民与海关执法局近日逮捕多名有重罪前科的非法移民。\n· 通报所列罪名包括二级谋杀、性侵与管制药物贩运等重罪。\n· 通报举例称一名墨西哥籍非法移民在爱达荷州被判二级谋杀等罪。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Secretary Mullin Joins White House Task Force at Drone Security Forum to Protect the Homeland From Unauthorized Drone Threats",
+   "title_cn": "马林出席无人机安全论坛，商讨反无人机威胁",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/secretary-mullin-joins-white-house-task-force-drone-security-forum-protect-homeland",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国安部长马林出席第二届无人机安全论坛，地点在马里兰州国家港。\n· 论坛由白宫2028年奥运会工作组主办，商讨反无人机系统优先事项。\n· 议题包括关键基础设施防护与大型活动安保规划，借鉴2026年世界杯经验。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "SANCTUARY INSANITY: DHS Condemns Sanctuary Politicians in Illinois for Releasing a Violent Criminal Rather Than Honoring ICE Detainer",
+   "title_cn": "国安部谴责伊利诺伊州释放暴力重罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/sanctuary-insanity-dhs-condemns-sanctuary-politicians-illinois-releasing-violent",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国安部发表声明，谴责伊利诺伊州未遵守针对一名非法移民的羁押请求。\n· 该土库曼斯坦籍人员因持致命武器加重殴打罪在芝加哥被判两年监禁。\n· 移民与海关执法局5月28日提出羁押请求，地方未通知即将其释放。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "DHS is Taking Down Asylum Fraudsters",
+   "title_cn": "国安部通报打击庇护申请欺诈的执法进展",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/dhs-taking-down-asylum-fraudsters",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国安部通报美国公民及移民服务局协助多起庇护欺诈刑事案件的起诉。\n· 国安部5月发布指令，要求移民与海关执法局加强打击虚假庇护申请。\n· 2026年10月29日，佛罗里达州法院对五名古巴籍人员与一名美国公民判刑。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in Austin, Texas",
+   "title_cn": "国安部通报在得州奥斯汀逮捕的严重犯罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/dhs-highlights-worst-illegal-aliens-arrested-austin-texas",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国安部通报移民与海关执法局在得州奥斯汀逮捕的多名严重犯罪非法移民。\n· 通报所列涉案罪名包括二级谋杀、强奸与纵火等多项重罪。\n· 通报举例称一名洪都拉斯籍人员10月29日被捕，有二级谋杀定罪记录。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "DHS Calls on Sanctuary Politicians in Mecklenburg County, North Carolina to Honor ICE Detainer and Not Release a Previously-Deported Rapist",
+   "title_cn": "国安部促北卡梅克伦堡县遵守ICE羁押请求",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/10/dhs-calls-sanctuary-politicians-mecklenburg-county-north-carolina-honor-ice",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 国安部呼吁北卡罗来纳州梅克伦堡县遵守针对一名非法移民的羁押请求。\n· 该洪都拉斯籍人员因一级入室盗窃与二级强奸被逮捕，请求于10月19日提出。\n· 国安部称2025年1月以来该州未遵守381份羁押请求，其中该县占63%。"
+   }
+  },
   {
    "date": "2026-11-09",
    "title": "Nominations and Withdrawals Sent to the Senate",
