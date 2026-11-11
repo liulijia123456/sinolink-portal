@@ -1,9 +1,162 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-10 09:13",
-  "count": 115,
+  "updated_at": "2026-11-11 18:08",
+  "count": 124,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "Federal Reserve Bank Capital Stock",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23060/federal-reserve-bank-capital-stock",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23060",
+      "title_cn": "I 条例：储备银行股本合并资产门槛通胀调整至 137.12 亿美元（规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：终规，修订 I 条例（12 CFR Part 209）。\n· 核心动作：依《联邦储备法》第 7(a)(1) 条，按 GDP 价格指数年度调整储备银行股本股息分档的合并资产门槛，由 100 亿美元上调至 137.12 亿美元，适用于 2027 年 12 月 31 日前。\n· 计算依据：2026 年第二季度 GDP 价格指数估计值 133.416，较 2015 年基期 97.302 上升 37.12%。\n· 规则含义：门槛以上股东适用股息为 6% 与最近一次十年期国债拍卖高收益率中的较低者，门槛及以下固定为 6%。\n· 时点：2026 年 12 月 14 日生效。官方摘要未列个别机构适用结果，具体以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23042/information-collection-being-submitted-for-review-and-approval-to-office-of-management-and-budget",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23042",
+      "title_cn": "第 25 部分空间站与地球站牌照信息采集报送白宫预算局（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：通告并征求意见，属《文书工作削减法》报送白宫预算局审查环节。\n· 标的：OMB 控制号 3060-0678，即第 25 部分商业地球站与空间站牌照及频谱使用规则，涉 FCC 312、312-EZ、312-R 表及附表 A、B、S。\n· 规模：4,171 家申报主体、4,223 份回复，单份耗时 0.5 至 78 小时，年负担 37,129 小时，年成本 715.9 万美元。\n· 性质：对现行已批准采集的修订，非新增采集；依据为 2025 年 8 月 8 日发布的第二次报告与命令（FCC 25-48）。\n· 时点：意见须于 2026 年 12 月 14 日前经 reginfo.gov 提交，并抄送 FCC。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "Television Broadcasting Services, St. George, Utah",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23041/television-broadcasting-services-st-george-utah",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23041",
+      "title_cn": "犹他州圣乔治电视台改回 VHF 9 频道（规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：终规，修订 FCC 电视分配表（47 CFR Part 73）。\n· 核心动作：将犹他州圣乔治的 UHF 21 频道改回 VHF 9 频道。\n· 程序脉络：媒体局此前已应 KUTV 持牌公司申请，批准以 UHF 21 替换 VHF 9；该公司新建频道施工许可因工程问题未决，现撤回改造计划，请求恢复原频道按原许可参数运营。\n· 结论：工作人员工程分析认定该方案符合主要社区覆盖、技术与干扰保护要求；持牌人承诺采取一切必要步骤落实替换。\n· 时点：2026 年 11 月 12 日生效。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "National Television Multiple Ownership Rule",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23040/national-television-multiple-ownership-rule",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23040",
+      "title_cn": "废除全国电视观众覆盖率 39% 上限（规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：终规（报告与命令），MB 案卷 17-318，FCC 26-53，2026 年 8 月 6 日通过、10 月 1 日发布。\n· 核心动作：废除 47 CFR 73.3555(e) 全国电视多重所有权规则，即商业电视持牌人持有电视台的全国观众覆盖率合计不得超过 39% 的上限。\n· 替代机制：改为逐案审查，判断交易是否符合本地主义、竞争与观点多样性三项媒体所有权目标，不再要求先证明特殊情形方可豁免。\n· 权限依据：委员会认为 2004 年《综合拨款法》仅指示其「修改规则」，未撤回《通信法》公共利益标准下的规则变更权，并援引哥伦比亚特区巡回法院 Fox I 判决。\n· 时点：2027 年 1 月 11 日生效；若无及时提出的复议申请或司法复审申请，该案卷终止。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23043/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23043",
+      "title_cn": "器官保存系统及部件 337 调查申诉受理（加拿大）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：通告，337 调查申诉受理并征求公共利益意见，案号 DN 3949。\n· 申诉方：Paragonix Technologies，2026 年 11 月 6 日提交申诉及规则第 210.8(b) 条项下材料。\n· 被申请人：加拿大 Traferox Technologies。\n· 标的与主张：器官保存系统及部件，指称在进口、为进口销售及进口后销售环节违反《1930 年关税法》第 337 条。\n· 请求救济：有限排除令、停止令，并在总统 60 天审查期内对涉诉产品课以保证金。\n· 时点：公共利益书面意见须于公告后 8 个日历日（2026 年 11 月 20 日）前提交；是否立案尚未公布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-12",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-22967/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22967",
+      "title_cn": "手持三维绘画装置 337 调查申诉受理（中国、新加坡）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：通告，337 调查申诉受理并征求公共利益意见，案号 DN 3948。\n· 申诉方：WobbleWorks，2026 年 11 月 6 日提交申诉及规则第 210.8(b) 条项下材料。\n· 被申请人：中国广州 JER Education、美国 MyFirst USA（加州工业城）、新加坡 MyFirst Tech Asia。\n· 标的与主张：手持三维绘画装置，指称在进口、为进口销售及进口后销售环节违反《1930 年关税法》第 337 条。\n· 请求救济：有限排除令、停止令，并在总统 60 天审查期内课以保证金。\n· 时点：公共利益书面意见须于公告后 8 个日历日（2026 年 11 月 20 日）前提交；是否立案尚未公布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-10",
+      "title": "Prestressed Concrete Steel Wire Strand From China; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22923/prestressed-concrete-steel-wire-strand-from-china-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22923",
+      "title_cn": "预应力混凝土钢绞线（中国）第三次五年复审肯定性裁决",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：裁决通告，第三次五年复审（加速程序），案号 701-TA-464、731-TA-1160。\n· 程序脉络：2026 年 4 月 1 日立案，7 月 6 日决定适用加速复审，11 月 6 日完成并提交裁决，意见载于 USITC 出版物 5809。\n· 结论：撤销对中国预应力混凝土钢绞线的反倾销与反补贴令，可能导致美国产业实质损害在合理可预见期间内继续或再度发生，即肯定性裁决。\n· 效果：现行双反令继续有效五年。\n· 备注：依《1930 年关税法》第 751(c) 条作出；Negatu 委员未参与。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-10",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22911/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22911",
+      "title_cn": "电子控制单元及含该产品 337 调查申诉受理（美国）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：通告，337 调查申诉受理并征求公共利益意见，DN 3947。\n· 申诉方：Honeywell Aerospace US，2026 年 11 月 5 日提交申诉及规则第 210.8(b) 条材料。\n· 被申请人：美国 Lucid Group、Lucid USA、Lucid Group USA 与 Rivian Automotive、Rivian Automotive LLC。\n· 标的与主张：电子控制单元及含该产品，指称在进口、为进口销售及进口后销售环节违反《1930 年关税法》第 337 条。\n· 请求救济：有限排除令、停止令，并在总统 60 天审查期内课以保证金。\n· 时点：公共利益书面意见须于公告后 8 个日历日（2026 年 11 月 18 日）前提交；是否立案尚未公布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-10",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22904/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-22904",
+      "title_cn": "DRAM 与 NAND 闪存器件 337 调查申诉受理（中国、中国台湾、美国）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "· 文种：通告，337 调查申诉受理并征求公共利益意见，案号 DN 3946。\n· 申诉方：Netlist，2026 年 11 月 5 日提交申诉及规则第 210.8(b) 条项下材料。\n· 被申请人：金士顿系（美国、中国台湾、中国）、联想系（中国、中国香港、美国）及 CDW、Ingram Micro、Insight、Zones 共 18 家。\n· 标的与主张：DRAM 与 NAND 闪存器件及含该产品、其部件，指称在进口、为进口销售及进口后销售环节违反《1930 年关税法》第 337 条。\n· 请求救济：有限排除令、停止令，并在总统 60 天审查期内课以保证金。\n· 时点：公共利益书面意见须于公告后 8 个日历日（2026 年 11 月 18 日）前提交；是否立案尚未公布。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-09",
