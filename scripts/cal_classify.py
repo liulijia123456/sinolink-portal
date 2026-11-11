@@ -133,7 +133,7 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'money', 'actor': 'fed'},
     ('2027-01-18', 'OCC 稳定币发行实施规则生效'):
         {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},
-    ('2027-01-09', '301 条款造船等行业关税暂停拟延至 1 月 9 日'):
+    ('2027-01-09', '301 条款造船等行业关税暂停届满'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
     ('2027-07-01', 'USMCA 2027 年度联合审查'):
         {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},
@@ -357,6 +357,14 @@ OVERRIDES = {
         {'cat': 'pol', 'topic': 'fiscal', 'actor': 'agency'},      # 医师费用表与 B 部分支付规则
     ('2027-01-11', 'BIS 实体清单关联方规则恢复实施'):
         {'cat': 'pol', 'topic': 'security', 'actor': 'agency'},    # 出口管制关联方许可要求
+    # 2026-11-11 批次：3 条。三项指标均无对应规则可判（301 豁免与 AGOA 不匹配现有 trade 模式、
+    # FinCEN 条目不以「规则生效」表述），故逐条手工归类。
+    ('2026-12-10', 'FinCEN 对 MEXC Global 特别措施生效'):
+        {'cat': 'pol', 'topic': 'money', 'actor': 'agency'},       # 反洗钱特别措施，监管对象为金融机构
+    ('2027-01-01', '终止卢旺达与南非 AGOA 优惠待遇生效'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 美方单边贸易优惠的终止
+    ('2027-01-09', '对华 178 项 301 关税豁免期满'):
+        {'cat': 'pol', 'topic': 'trade', 'actor': 'exec'},         # 301 产品排除措施到期，恢复加征
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分
