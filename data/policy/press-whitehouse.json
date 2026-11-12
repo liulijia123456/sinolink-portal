@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-11T17:37:41+08:00",
+ "updated_at": "2026-11-12T08:23:53+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 9,
-   "added": 9,
+   "added": 1,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 0,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 14,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 6,
+   "added": 0,
    "error": ""
   },
   {
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 11,
-   "added": 11,
+   "fetched": 12,
+   "added": 1,
    "error": ""
   },
   {
@@ -166,6 +166,21 @@
  "items": [
   {
    "date": "2026-11-11",
+   "title": "Presidential Message on Victory Day for World War I",
+   "title_cn": "总统就第一次世界大战胜利日发表致辞",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-victory-day-for-world-war-i-dd1e/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-11",
+    "tier": "news",
+    "body": "· 公告纪念1918年11月11日停战协定生效、一战结束。\n· 约200万美军官兵跨越大西洋赴欧参战，逾32万人伤亡。\n· 公告称本届政府已恢复军队求胜精神，随时准备击退任何对手。"
+   }
+  },
+  {
+   "date": "2026-11-11",
    "title": "Angola National Day",
    "title_cn": "美国国务院祝贺安哥拉独立51周年",
    "agency": "国务院",
@@ -177,6 +192,21 @@
     "at": "2026-11-11",
     "tier": "news",
     "body": "· 国务院就安哥拉独立51周年发表声明，向安哥拉人民致贺。\n· 美方表示赞赏安哥拉在地区和平与和解进程中发挥的主导作用。\n· 两国合作涵盖洛比托走廊、能源、基础设施、私营部门投资与防务。"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "title": "Sec. Collins highlights VA accomplishments, pledges additional improvements ahead of Veterans Day",
+   "title_cn": "科林斯在退伍军人节通报成效并承诺继续改进",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/sec-collins-highlights-va-accomplishments-pledges-additional-improvements-ahead-of-veterans-day/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-11",
+    "tier": "news",
+    "body": "· 部长科林斯在2026年退伍军人节发表声明，向退伍军人致敬。\n· 声明称该部提供照护与福利比以往任何时候都更快、更高效。\n· 科林斯表示工作尚未完成，期待近期推出更多改进举措。"
    }
   },
   {
@@ -402,6 +432,21 @@
     "at": "2026-11-10",
     "tier": "news",
     "body": "· 跨州国土安全工作组调查后，36人因贩毒与洗钱被起诉。\n· 缉毒局缴获346公斤芬太尼、23公斤冰毒、70公斤可卡因及43支枪械。\n· 另没收15辆豪车并对17处房产启动没收程序，涉案现金逾280万美元。"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Justice Department Issues Fact Sheets About Lease Terminations for Servicemembers and their Dependents",
+   "title_cn": "司法部发布军人及家属租约终止两份情况说明",
+   "agency": "司法部",
+   "kind": "事实清单",
+   "url": "https://www.justice.gov/opa/pr/justice-department-issues-fact-sheets-about-lease-terminations-servicemembers-and-their",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-10",
+    "tier": "news",
+    "body": "· 司法部民权司发布两份情况说明，助军人避免额外租金与费用。\n· 说明依据《军人公民救济法》，允许因调防提前终止住房与车辆租约。\n· 说明强调退役令与分离令亦属可解约军令，房东与放贷方应予认可。"
    }
   },
   {
@@ -677,12 +722,17 @@
   {
    "date": "2026-11-09",
    "title": "Secretary Rubio’s Meeting with French Foreign Minister Barrot",
-   "title_cn": "国务卿鲁比奥会见法国外长巴罗",
+   "title_cn": "国务卿鲁比奥会见法国外交部长巴罗",
    "agency": "国务院",
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-french-foreign-minister-barrot-2/",
    "source": "State Department",
-   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with French Foreign Minister Barrot Readout November 9, 2026 Secretary of State Marco Rubio met today with French Foreign Minister Jean-Noël Barrot. The Secretary and Foreign Minister discussed U.S. fundamental concerns about the International Criminal Court. The Secretary and Foreign Minister also addressed the situation in the Middle East, reaffi"
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with French Foreign Minister Barrot Readout November 9, 2026 Secretary of State Marco Rubio met today with French Foreign Minister Jean-Noël Barrot. The Secretary and Foreign Minister discussed U.S. fundamental concerns about the International Criminal Court. The Secretary and Foreign Minister also addressed the situation in the Middle East, reaffi",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥当日会见法国外长巴罗，讨论美国对国际刑事法院的关切。\n· 双方谈及中东局势，重申霍尔木兹海峡航行自由的重要性。\n· 鲁比奥要求欧盟停止针对美国企业的优惠措施与过度监管。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -722,7 +772,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/prolific-human-smuggler-extradited-brazil-pleads-guilty-smuggling-aliens-united-states",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 被告参与跨巴西、南美、中美与墨西哥的外国人走私组织。\n· 其对一项共谋运送外国人及两项运送外国人指控认罪。\n· 量刑定于2027年2月17日，法定最低刑期为三年监禁。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -732,7 +787,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-sues-lyft-denying-rides-passengers-service-dogs-wheelchairs",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 司法部在加州北区法院起诉 Lyft 违反《美国残疾人法》第三章。\n· 诉状指 Lyft 及司机常拒载残障乘客，并违规收取取消费等附加费用。\n· 诉请法院令其停止歧视、修改政策、培训员工并支付赔偿与民事罚款。"
+   }
   },
   {
    "date": "2026-11-09",
