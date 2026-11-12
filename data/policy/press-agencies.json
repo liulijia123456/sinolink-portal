@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-11T18:13:21+08:00",
+ "updated_at": "2026-11-12T09:42:32+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -122,7 +122,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank"
+   "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+   "brief": {
+    "at": "2026-10-16",
+    "tier": "news",
+    "body": "· 美联储 10 月 16 日宣布终止对堪萨斯州两家银行的执法行动。\n· 两家机构分别为 Gardner Bancshares 与 Small Business Bank。\n· 三项行动含两份停止令与一份立即纠正措施，均于 10 月 13 日终止。"
+   }
   },
   {
    "date": "2026-10-13",
@@ -132,7 +137,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
    "source": "Federal Reserve",
-   "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026"
+   "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+   "brief": {
+    "at": "2026-10-13",
+    "tier": "news",
+    "body": "· 美联储公布 8 月 17 日、9 月 9 日与 9 月 16 日贴现率会议纪要。\n· 纪要记录理事会审议并确定贴现窗口向存款机构提供贴现率的过程。\n· 美联储指出，贴现率设定程序与 FOMC 确定联邦基金利率目标区间的程序不同。"
+   }
   },
   {
    "date": "2026-10-09",
