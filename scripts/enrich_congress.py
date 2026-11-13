@@ -6,13 +6,15 @@
 进程无关。本脚本按条目 url 逐条调用 congress.gov 详情接口，取回
 introducedDate、latestAction.actionDate 与 sponsors，写回 items。
 
-可重入：只处理缺 introduced 的条目，每处理 20 条落盘一次，中断后重跑即可。
+可重入：按 --need 选择缺 introduced 或缺 sponsor 的条目，每处理 20 条落盘一次，
+中断后重跑即可。日常增量用 --need sponsor，可一并补齐提案人、政党标签与委员会。
 限速：默认 1.05 秒/条（官方建议 5000 次/小时），838 条约 15 分钟。
 
 用法：
-    python3 scripts/enrich_congress.py                # 补齐全部缺失条目
-    python3 scripts/enrich_congress.py --limit 60     # 只补 60 条（增量用）
-    python3 scripts/enrich_congress.py --dry-run      # 只统计缺多少
+    python3 scripts/enrich_congress.py                     # 补齐缺 introduced 的条目
+    python3 scripts/enrich_congress.py --need sponsor      # 补齐缺提案人的条目（日常增量）
+    python3 scripts/enrich_congress.py --limit 80          # 只补 80 条（增量用）
+    python3 scripts/enrich_congress.py --dry-run           # 只统计缺多少
 """
 import argparse
 import json
@@ -208,8 +210,16 @@ def save(items):
     os.replace(tmp, ITEMS_PATH)
 
 
+def todo_count(items, need='introduced'):
+    if need == 'sponsor':
+        return sum(1 for it in items if not it.get('sponsor') and it.get('url'))
+    return sum(1 for it in items if not it.get('introduced'))
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument('--need', choices=['introduced', 'sponsor'], default='introduced',
+                    help='补哪类缺失：introduced=提出日/阶段日期，sponsor=提案人/委员会')
     ap.add_argument('--limit', type=int, default=None)
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--sleep', type=float, default=1.05)
@@ -222,9 +232,9 @@ def main():
     key = load_key()
 
     # 每 20 条落盘，中断不丢进度
-    todo_n = sum(1 for it in items if not it.get('introduced'))
+    todo_n = todo_count(items, args.need)
     if todo_n == 0:
-        print('无需补齐，全部条目已有 introduced 字段')
+        print('无需补齐，全部条目已有 %s 字段' % ('sponsor' if args.need == 'sponsor' else 'introduced'))
         return 0
     done = 0
     chunk = 20 if not args.limit else min(20, args.limit)
@@ -233,7 +243,8 @@ def main():
         step = chunk if remaining is None else min(chunk, remaining)
         if step <= 0:
             break
-        n = enrich(items, key, limit=step, sleep=args.sleep, dry_run=args.dry_run, workers=args.workers)
+        n = enrich(items, key, limit=step, sleep=args.sleep, dry_run=args.dry_run,
+                   workers=args.workers, need=args.need)
         if args.dry_run:
             break
         done += n
@@ -241,10 +252,11 @@ def main():
             remaining -= n
         save(items)
         print('已保存，累计完成 %d 条' % done, flush=True)
-        todo_n = sum(1 for it in items if not it.get('introduced'))
+        todo_n = todo_count(items, args.need)
         if n == 0:
             break
-    print('完成：本次补齐 %d 条，仍缺 %d 条' % (done, sum(1 for it in items if not it.get('introduced'))))
+    print('完成：本次补齐 %d 条，仍缺 %d 条（%s）'
+          % (done, todo_count(items, args.need), args.need))
     return 0
 
 

@@ -335,8 +335,8 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | 脚本 | 用途 | 常用命令 |
 | --- | --- | --- |
 | `fetch_policy.py` | 抓取四板块政策条目并合并入库（纯增量，无留置上限） | `python3 scripts/fetch_policy.py --days 10 [--dry-run]` |
-| `enrich_congress.py` | 为国会条目补 `introduced`（提出日）、`stage_date`（进入本环节日）、`sponsor`（提出者）、`committee`（委员会）；可重入，每 20 条落盘 | `python3 scripts/enrich_congress.py [--limit 60] [--dry-run]` |
-| `brief.py` | 速览覆盖率体检 / 生成队列 / 合并速览（全覆盖） | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
+| `enrich_congress.py` | 为国会条目补 `introduced`（提出日）、`stage_date`（进入本环节日）、`sponsor`（提出者）、`committee`（委员会）；可重入，每 20 条落盘。日常增量用 `--need sponsor` 补新增条目的提案人/委员会 | `python3 scripts/enrich_congress.py --need sponsor --limit 80`<br>`python3 scripts/enrich_congress.py [--limit 60] [--dry-run]` |
+| `brief.py` | 速览覆盖率体检 / 生成队列 / 合并速览（全覆盖）。`--stale` 把阶段已变化的国会速览一并入队；merge 自动写入 `brief.stage` 基线 | `python3 scripts/brief.py coverage`<br>`python3 scripts/brief.py queue --all --stale`<br>`python3 scripts/brief.py stamp-stage --board congress`<br>`python3 scripts/brief.py merge scripts/briefs.json` |
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
 | `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
@@ -498,7 +498,7 @@ HTTP_TIMEOUT, HTTP_RETRIES = 20, 3
 python3 scripts/brief.py coverage
 
 # 1) 出队列（含官方摘要素材，标注每条该写 full 还是 note）
-python3 scripts/brief.py queue --all      # 全量待写条目（每日任务用这个）
+python3 scripts/brief.py queue --all --stale  # 全量待写 + 阶段变化重写（每日任务用这个）
 python3 scripts/brief.py queue --limit 8  # 两头推进抽样（人工补写时可用）
 #    输出 scripts/brief_queue.md（已 gitignore），素材长度按层级自适应
 #    （full 取 1800 字、note 取 600 字，避免为写概述而拉全文）

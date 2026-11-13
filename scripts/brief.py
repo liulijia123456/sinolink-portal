@@ -130,6 +130,62 @@ def _current_congress():
     y = datetime.now(timezone(timedelta(hours=8))).year
     return (y - 1789) // 2 + 1
 
+# 国会六段：与 index.html / congressStage 同口径，用于判断速览是否停留在旧阶段
+CG_STAGE_LABELS = {
+    'introduced': '提出', 'committee': '委员会审议', 'first': '一院通过',
+    'both': '两院通过', 'president': '呈送总统', 'enact': '成法',
+}
+
+
+def _cg_action_parts(item):
+    a = str(item.get('agency') or '')
+    if '·' in a:
+        prefix, action = a.split('·', 1)
+        return prefix.strip(), action.strip()
+    return a.strip(), a.strip()
+
+
+def _cg_origin(item):
+    return '参议院' if '参' in str(item.get('kind') or '') else '众议院'
+
+
+def _cg_where(action, prefix):
+    if re.search(r'Passed House|agreed to in (the )?House|Resolution agreed to in House', action, re.I):
+        return '众议院'
+    if re.search(r'Passed Senate|agreed to in (the )?Senate|Resolution agreed to in Senate', action, re.I):
+        return '参议院'
+    if re.search(r'Received in the Senate|Message on Senate action', action, re.I):
+        return '参议院'
+    if re.search(r'Received in the House|Message on House action', action, re.I):
+        return '众议院'
+    return prefix if prefix in ('众议院', '参议院') else '众议院'
+
+
+def congress_stage(item):
+    prefix, action = _cg_action_parts(item)
+    origin = _cg_origin(item)
+    where = _cg_where(action, prefix)
+    if re.search(r'Became Public Law|Signed by President|Became law', action, re.I):
+        return 'enact'
+    if re.search(r'Presented to President|Sent to President', action, re.I):
+        return 'president'
+    if re.search(r'Passed House|Passed Senate|agreed to in (the )?House|agreed to in (the )?Senate|'
+                 r'Resolution agreed to|considered,\s*and agreed to|'
+                 r'Motion to reconsider laid on the table Agreed to', action, re.I):
+        return 'first' if where == origin else 'both'
+    if re.search(r'Received in the (Senate|House)|Held at the desk|Message on (Senate|House) action', action, re.I):
+        return 'both' if where == origin else 'first'
+    if re.search(r'Reported by|Ordered to be reported|Placed on .*Calendar|Hearings|Markup|'
+                 r'Committee consideration|Subcommittee', action, re.I):
+        return 'committee'
+    return 'introduced'
+
+
+def _brief_is_stale(item):
+    """已有速览、且写入时阶段与当前阶段不一致。没有 stage 基线的旧速览不误报。"""
+    b = item.get('brief') or {}
+    return bool(b.get('body') and b.get('stage') and b.get('stage') != congress_stage(item))
+
 
 def classify_tier(item):
     """判断条目该写详版速览(full)还是简版速览(note)。
@@ -364,14 +420,19 @@ def fetch_material(item):
 
 # ---------------------------------------------------------------- 队列模式
 
-def _select_pending(items, limit, fresh_ratio):
+def _select_pending(items, limit, fresh_ratio, include_stale=False):
     """两头推进选取：一部分取最新（保时效），一部分取最旧（清欠账）。
 
     items 已按日期倒序。若只取头部，新条目会持续把未写的旧条目压到队尾，
     造成存量永久饥饿——实测缺口在时间上呈"最新一段全空白"即由此而来。
     limit <= 0 时返回全部待写条目（``--all`` 全覆盖模式）。
+    include_stale=True 时，把「已有速览但阶段已变化」的条目一并列入。
     """
-    pending = [it for it in items if not (it.get('brief') or {}).get('body')]
+    def _pending(it):
+        if not (it.get('brief') or {}).get('body'):
+            return True
+        return bool(include_stale and it.get('board') == 'congress' and _brief_is_stale(it))
+    pending = [it for it in items if _pending(it)]
     if limit <= 0 or len(pending) <= limit:
         return pending
     n_fresh = max(1, int(round(limit * fresh_ratio))) if limit > 1 else limit
@@ -439,7 +500,8 @@ def cmd_queue(args):
                  % (round(args.fresh_ratio * 100), round((1 - args.fresh_ratio) * 100)))
     lines = ['# 速览撰写队列', '',
              '> 全覆盖策略：**每一条目都必须有速览**，层级只决定详略、不决定有无。',
-             '> 本队列%s。每条标注待写层级：' % mode,
+             '> 本队列%s。%s每条标注待写层级：' % (
+                 mode, '含阶段已变化的速览，须重写正文。' if getattr(args, 'stale', False) else ''),
              '>   full = 详版速览 400–900 字，三段结构【政策背景】【核心内容】【要点提炼】',
              '>   note = 简版速览 150–350 字，3–5 条要点，无需段头',
              '> 成果写入 scripts/briefs.json（键为条目 url，含 tier 字段）后运行 merge 合并。',
@@ -449,7 +511,7 @@ def cmd_queue(args):
     for board in boards:
         items = (payload['boards'].get(board) or {}).get('items', [])
         all_pending = [it for it in items if not (it.get('brief') or {}).get('body')]
-        pending = _select_pending(items, limit, args.fresh_ratio)
+        pending = _select_pending(items, limit, args.fresh_ratio, getattr(args, 'stale', False))
         if not pending:
             continue
         n_full = sum(1 for it in pending if classify_tier(it) == TIER_FULL)
@@ -466,6 +528,10 @@ def cmd_queue(args):
             lines.append('- url: `%s`' % it.get('url'))
             lines.append('- agency: %s' % it.get('agency', ''))
             lines.append('- 待写层级：**%s**（%s）' % (tier, TIER_DESC[tier]))
+            if _brief_is_stale(it):
+                lines.append('- 状态：**阶段已变化，需重写**（旧阶段 %s → 当前 %s）'
+                             % (CG_STAGE_LABELS.get((it.get('brief') or {}).get('stage'), '未知'),
+                                CG_STAGE_LABELS.get(congress_stage(it), '未知')))
             lines.append('')
             mat = fetch_material(it)
             if mat:
@@ -513,11 +579,32 @@ def cmd_merge(args):
                 updated += 1
             else:
                 added += 1
-            it['brief'] = {'at': b.get('at') or stamp, 'body': body, 'tier': new_tier}
+            brief = {'at': b.get('at') or stamp, 'body': body, 'tier': new_tier}
+            if it.get('board') == 'congress':
+                brief['stage'] = b.get('stage') or congress_stage(it)
+            it['brief'] = brief
     save_payload(payload)
     target = 'data/policy/*.json' if store.use_json() else 'index.html 数据块'
     log.info('合并完成：新增速览 %d 份，更新 %d 份，跳过降级 %d 份（已写入 %s）',
              added, updated, downgrade_skipped, target)
+    return 0
+
+
+def cmd_stamp(args):
+    """为存量速览补写阶段基线；只补缺失，不覆盖已有 stage。"""
+    _, _, payload = load_payload()
+    boards = [args.board] if args.board else ['congress']
+    n = 0
+    for board in boards:
+        for it in (payload['boards'].get(board) or {}).get('items', []):
+            b = it.get('brief') or {}
+            if not b.get('body') or b.get('stage'):
+                continue
+            b['stage'] = congress_stage(it)
+            it['brief'] = b
+            n += 1
+    store.save_policy(payload, boards)
+    print('已补阶段基线 %d 条（%s）' % (n, '、'.join(boards)))
     return 0
 
 
@@ -531,8 +618,12 @@ def main():
                    help='列出全部待写条目（全覆盖模式，忽略 --limit；每日任务应使用）')
     q.add_argument('--fresh-ratio', type=float, default=0.5,
                    help='其中最新条目占比（默认 0.5，即一半最新一半最旧，两头推进清欠账）')
+    q.add_argument('--stale', action='store_true',
+                   help='同时列入已有速览但阶段已变化的条目（国会板块）')
     c = sub.add_parser('coverage', help='体检速览覆盖率（每一条目都必须有速览）')
     c.add_argument('--board', choices=['whitehouse', 'congress', 'agencies', 'judicial'])
+    st = sub.add_parser('stamp-stage', help='为存量速览补写阶段基线（国会）')
+    st.add_argument('--board', choices=['congress'], default='congress')
     m = sub.add_parser('merge', help='合并速览 JSON 进数据文件')
     m.add_argument('input', help='速览 JSON 文件路径（键为条目 url）')
     m.add_argument('--force', action='store_true',
@@ -542,6 +633,8 @@ def main():
         return cmd_queue(args)
     if args.cmd == 'coverage':
         return cmd_coverage(args)
+    if args.cmd == 'stamp-stage':
+        return cmd_stamp(args)
     return cmd_merge(args)
 
 
