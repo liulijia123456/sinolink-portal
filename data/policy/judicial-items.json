@@ -1,9 +1,81 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-12 09:49",
-  "count": 82,
+  "updated_at": "2026-11-13 09:55",
+  "count": 86,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-12",
+      "title": "Naumann v. Meink",
+      "url": "https://www.courtlistener.com/opinion/11060396/naumann-v-meink/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Shapiro, alleging violations of the Administrative Procedure Act (APA) and the Due Process Clause of",
+      "official_no": "",
+      "title_cn": "Naumann 诉 Meink（涉国民警卫队失能津贴政策的移送管辖）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "宾夕法尼亚国民警卫队成员 Andrew J. Naumann 于 2025 年 11 月在全职 AGR 服役期间受伤，2026 年 1 月中止服役并申请失能津贴，随后被告知前 AGR 成员被一律排除在该津贴资格之外、须另行申请例外。2026 年 2 月他以违反《行政程序法》与第五修正案正当程序条款为由，起诉空军部长 Meink 与宾州州长 Shapiro，请求宣告相关政策违法。\n\n两被告分别提出驳回动议。空军部长依《联邦民事诉讼规则》请求驳回，或请求移送至弗吉尼亚东区或马里兰地区法院。\n\n法院认定本地区管辖不当，准予移送，将全案移送至弗吉尼亚东区联邦地区法院。州长未争管辖、抗辩视为弃权，但法院为使全案在同一地区审理一并移送。本裁定未触及津贴政策本身的合法性。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-12",
+      "title": "Doe v. Department of Defense",
+      "url": "https://www.courtlistener.com/opinion/11060197/doe-v-department-of-defense/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "therefore vacated the district court’s preliminary injunction. See id. at 291, 295. On justiciability",
+      "official_no": "",
+      "title_cn": "Doe 诉国防部（涉安全许可撤销决定的司法审查性）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "原告系国防情报局（DIA）前情报官员，以化名起诉国防部长，主张其因种族与投诉歧视待遇遭报复：安全办公室对其展开密集安全审查与测谎，最终暂停并撤销安全许可，致其停职、解雇。她据此提出种族歧视、报复、敌对工作环境三项诉请。\n\n法院准予被告对种族歧视与报复两项的简易判决动议。核心理由是此类诉请挑战安全许可决定的实质依据，依最高法院 Egan 案判例属不可司法审查事项，法院不得事后评判安全专家关于何人可信赖接触机密的判断，亦不得审查该判断背后的动机或是否为借口；哥伦比亚特区巡回法院判例进一步将保护扩及启动安全调查的前置决定。原告援引的「安全办公室之外人员明知虚假报告」例外因证据不足不适用。\n\n敌对工作环境一项因双方尚未就该争点是否可司法审查展开辩论，法院无偏驳回。判决未涉及安全许可制度本身的合法性。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-12",
+      "title": "Gu v. United States Department of the Treasury",
+      "url": "https://www.courtlistener.com/opinion/11060397/gu-v-united-states-department-of-the-treasury/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Ding Gu brings this action under the Administrative Procedure Act (“APA”) against the U.S. Department",
+      "official_no": "",
+      "title_cn": "Gu 诉美国财政部（涉规则制定请愿答复迟延的起诉资格）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "原告自行诉讼，于 2025 年 10 月向财政部与商务部提交规则制定请愿书，请求采纳「带配额制度的平衡自由贸易模式」作为关税型贸易政策的替代方案。其主张两部门负有及时确认并作出附理由答复的非裁量义务，未予回应构成《行政程序法》下的机构不作为与不合理迟延，请求法院宣告违法、命令限期答复并保留管辖权监督履行。\n\n法院准予被告的驳回起诉动议，以缺乏宪法第三条起诉资格为由驳回起诉状，并驳回原告的加速审理动议。核心理由是程序性损害不能单独成立，须附着于具体的实体利益；原告未主张本案存在经济损害，其信息性损害主张亦不成立，在起诉资格三要素的第一步即告失败。\n\n法院未就前案争点排除问题作出裁定，认为无须触及。判决未涉及关税政策本身的评价。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-12",
+      "title": "Chandane v. Rubio",
+      "url": "https://www.courtlistener.com/opinion/11060398/chandane-v-rubio/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "“unreasonable delay” in violation of the Administrative Procedure Act, 5 U.S.C. § 706(1). Specifically, Chandane",
+      "official_no": "",
+      "title_cn": "Chandane 诉 Rubio（涉 H-4 签证审理迟延）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "原告系印度公民，配偶现持 H-1B 签证在美工作。他于 2026 年 4 月申请 H-4 家属签证，因无法预约面谈与生物采集，于同年 5 月起诉国务卿 Rubio、驻海得拉巴总领事等官员，主张签证审理不合理迟延违反《行政程序法》第 706(1) 条，请求命令其提供必要程序步骤或完成审理。\n\n诉讼期间领事馆已对原告完成面谈，政府随后告知面谈以拒签结束、附加审查仍在进行。法院就原告已获程序性救济的部分以无实际意义为由驳回，就仍存争议部分依《联邦民事诉讼规则》第 12(b)(6) 条以未能陈述诉请驳回，并按 TRAC 六因素权衡迟延主张。\n\n判决脚注点名政府在本案中的重大错误：先称领事数据库无 H-4 申请记录并附宣誓声明，后又「澄清」承认确有 H-1B 申请并提交新声明。判决未评价拒签决定本身。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-10",
