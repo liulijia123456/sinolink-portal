@@ -3631,6 +3631,7 @@
   .cg-meta .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: var(--muted); }
   .cg-meta .v { margin-top: 3px; font-size: 12.5px; line-height: 1.6; color: #0b1724; }
   .cg-meta .pt { font-family: var(--pw-mono); font-size: 10px; color: #a8823c; margin-left: 4px; }
+  .cg-meta .cg-cen { display: block; margin-top: 2px; font-size: 10.5px; line-height: 1.5; color: var(--muted); }
   .cg-sech { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0 10px; }
   .cg-sech h3 { margin: 0; font-size: 13px; font-weight: 600; color: #0b1724; }
   .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .14em; color: var(--muted); }
@@ -12658,6 +12659,92 @@
       // 去掉院别前缀，只留文种：法案 / 决议 / 联合决议 / 共同决议
       function congressType(k) { return String(k || '').replace(/^(参议院|参院|众议院|众院)/, ''); }
 
+      // ===== 国会委员会中文名 =====
+      // 采用美国国会各委员会正式名称的通行中文译名；详情保留英文原名，列表以中文为主。
+      var CG_COMMITTEE_CN = {
+        'Appropriations': '拨款委员会',
+        'Armed Services': '军事委员会',
+        'Agriculture': '农业委员会',
+        'Agriculture, Nutrition, and Forestry': '农业、营养和林业委员会',
+        'Banking, Housing, and Urban Affairs': '银行、住房和城市事务委员会',
+        'Budget': '预算委员会',
+        'Commerce, Science, and Transportation': '商务、科学和交通委员会',
+        'Education and Workforce': '教育和劳动力委员会',
+        'Education and the Workforce': '教育和劳动力委员会',
+        'Energy and Commerce': '能源和商业委员会',
+        'Energy and Natural Resources': '能源和自然资源委员会',
+        'Environment and Public Works': '环境与公共工程委员会',
+        'Ethics': '道德委员会',
+        'Finance': '财政委员会',
+        'Financial Services': '金融服务委员会',
+        'Foreign Affairs': '外交事务委员会',
+        'Foreign Relations': '外交关系委员会',
+        'Health, Education, Labor, and Pensions': '卫生、教育、劳工和养老金委员会',
+        'Homeland Security': '国土安全委员会',
+        'Homeland Security and Governmental Affairs': '国土安全与政府事务委员会',
+        'House Administration': '众议院行政委员会',
+        'Indian Affairs': '印第安人事务委员会',
+        'Intelligence': '情报委员会',
+        'Judiciary': '司法委员会',
+        'Natural Resources': '自然资源委员会',
+        'Oversight and Government Reform': '监督和政府改革委员会',
+        'Rules': '规则委员会',
+        'Rules and Administration': '规则和行政委员会',
+        'Science, Space, and Technology': '科学、太空和技术委员会',
+        'Small Business': '小企业委员会',
+        'Small Business and Entrepreneurship': '小企业和创业委员会',
+        'Transportation and Infrastructure': '交通和基础设施委员会',
+        "Veterans' Affairs": '退伍军人事务委员会',
+        'Ways and Means': '筹款委员会'
+      };
+      // 只给小组委员会名时，按所属母委员会补全
+      var CG_SUB_ONLY_CN = {
+        'Economic Opportunity': '退伍军人事务委员会 · 经济机会小组委员会',
+        'Disability Assistance and Memorial Affairs': '退伍军人事务委员会 · 残疾援助和纪念事务小组委员会',
+        'Oversight and Investigations': '退伍军人事务委员会 · 监督和调查小组委员会',
+        'Health': '能源和商业委员会 · 卫生小组委员会',
+        'Nutrition and Foreign Agriculture': '农业委员会 · 营养和对外农业小组委员会',
+        'Forestry and Horticulture': '农业委员会 · 林业和园艺小组委员会',
+        'Livestock, Dairy, and Poultry': '农业委员会 · 牲畜、乳制品和家禽小组委员会',
+        'Commodity Markets, Digital Assets, and Rural Development': '农业委员会 · 商品市场、数字资产和农村发展小组委员会',
+        'Crime, Terrorism, and Homeland Security': '司法委员会 · 犯罪、恐怖主义和国土安全小组委员会',
+        'Intellectual Property': '司法委员会 · 知识产权小组委员会',
+        'Oversight, Investigations, and Accountability': '国土安全委员会 · 监督、调查和问责小组委员会',
+        'Coast Guard and Maritime Transportation': '交通和基础设施委员会 · 海岸警卫队和海上运输小组委员会',
+        'Highways and Transit': '交通和基础设施委员会 · 公路和公共交通小组委员会',
+        'Water Resources and Environment': '交通和基础设施委员会 · 水资源和环境小组委员会',
+        'Railroads, Pipelines, and Hazardous Materials': '交通和基础设施委员会 · 铁路、管道和危险材料小组委员会',
+        'Economic Development, Public Buildings, and Emergency Management': '交通和基础设施委员会 · 经济发展、公共建筑和应急管理小组委员会',
+        'Cybersecurity and Infrastructure Protection': '国土安全委员会 · 网络安全和基础设施保护小组委员会',
+        'Transportation and Maritime Security': '国土安全委员会 · 运输和海上安全小组委员会'
+      };
+      var CG_SUB_CN = {
+        'Public Lands, Forests, and Mining': '公共土地、森林和采矿小组委员会',
+        'National Parks': '国家公园小组委员会',
+        'Transportation and Infrastructure': '交通和基础设施小组委员会',
+        'Conservation, Forestry, Natural Resources, and Biotechnology': '保护、林业、自然资源和生物技术小组委员会'
+      };
+      function cgCleanCommittee(raw) {
+        return String(raw || '')
+          .replace(/\s+under authority of the order of the Senate of[\s\S]*$/i, '')
+          .replace(/^the\s+/i, '')
+          .replace(/\s+Senate$/i, '')
+          .trim();
+      }
+      function cgCommitteeEn(raw) { return cgCleanCommittee(raw); }
+      function cgCommitteeCn(raw) {
+        var s = cgCleanCommittee(raw);
+        if (!s) return '';
+        if (CG_SUB_ONLY_CN[s]) return CG_SUB_ONLY_CN[s];
+        var m = s.match(/^(.*?)\s+(?:Senate\s+)?Subcommittee on\s+(.+)$/i);
+        if (m) {
+          var parent = CG_COMMITTEE_CN[m[1].trim()] || m[1].trim();
+          var sub = CG_SUB_CN[m[2].trim()] || (m[2].trim() + '小组委员会');
+          return parent + ' · ' + sub;
+        }
+        return CG_COMMITTEE_CN[s] || s;
+      }
+
       // ===== 国会板块：六段立法节点 =====
       // 以最新行动的语义与发生院别判定；一条只落一格，阶段推进只更新原记录。
       var CG_STAGES = [
@@ -12752,7 +12839,8 @@
         if (FILTER_BOARD !== 'congress') return '';
         var stLabel = CG_STAGE_LABELS[congressStage(it)] || '—';
         var dept = congressChamber(it.kind) || '—';
-        if (it.committee) dept += ' · ' + it.committee;
+        var cmCn = cgCommitteeCn(it.committee);
+        if (cmCn) dept += ' · ' + cmCn;
         var who = it.sponsor || '—';
         if (it.sponsor_tag) who += '（' + it.sponsor_tag + '）';
         var rows = [
@@ -13632,7 +13720,9 @@
         var changed = cgHasStageChange(it);
         var who = it.sponsor || '—';
         if (it.sponsor_tag) who += ' · ' + it.sponsor_tag;
-        var sub = (it.committee || '—') + ' · ' + (it.domain || '其他');
+        var committeeCn = cgCommitteeCn(it.committee) || '—';
+        var committeeEn = cgCommitteeEn(it.committee);
+        var sub = committeeCn + ' · ' + (it.domain || '其他');
         return '<div class="note pw-item" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '" data-cg-no="' + esc(no) + '" tabindex="0">' +
           '<div class="pw-r">' +
             '<span class="c-date">' + esc(no) + '</span>' +
@@ -13640,7 +13730,8 @@
               (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
             '<span class="c-kind"><span class="cg-stage st-' + st + '">' + esc(CG_STAGE_LABELS[st]) + '</span></span>' +
             '<span class="c-agency"><span class="cg-ld">' + esc(cgActionDate(it)) + '</span><span class="cg-lt">' + esc(cgActionParts(it).action || '—') + '</span></span>' +
-            '<span class="c-domain"><div class="cg-who-main">' + esc(who) + '</div><div class="cg-who-sub">' + esc(sub) + '</div></span>' +
+            '<span class="c-domain"><div class="cg-who-main">' + esc(who) + '</div><div class="cg-who-sub"' +
+              (committeeEn ? ' title="原始英文：' + esc(committeeEn) + '"' : '') + '>' + esc(sub) + '</div></span>' +
             '<span class="c-act">' + (changed ? '<i class="cg-dot" title="阶段有更新"></i>' : '') +
               '<button type="button" class="cg-star' + (followed ? ' on' : '') + '" data-cg-follow="' + esc(no) + '" aria-label="' + (followed ? '取消关注' : '关注') + '">' + (followed ? '★' : '☆') + '</button></span>' +
           '</div>' +
@@ -13679,10 +13770,16 @@
         var p = cgActionParts(it);
         var latestDate = cgActionDate(it);
         var sponsor = esc(it.sponsor || '—') + (it.sponsor_tag ? '<span class="pt">' + esc(it.sponsor_tag) + '</span>' : '');
+        var committeeCn = cgCommitteeCn(it.committee);
+        var committeeEn = cgCommitteeEn(it.committee);
+        var committeeVal = committeeCn
+          ? esc(committeeCn) + (committeeEn && committeeEn !== committeeCn
+              ? '<span class="cg-cen">' + esc(committeeEn) + '</span>' : '')
+          : '—';
         var metas = [
           ['提出日', esc(it.introduced || '—')],
           ['提案人', sponsor],
-          ['委员会', esc(it.committee || '—')],
+          ['委员会', committeeVal],
           ['议题', esc(it.domain || '其他')],
           ['当前阶段', esc(CG_STAGE_LABELS[st])],
           ['最新行动日', esc(latestDate || '—')],
@@ -13715,7 +13812,7 @@
             '<div class="cg-sech"><h3>第一动态</h3><span>FIRST ACTION</span></div>' +
             '<div class="cg-first"><div class="k">提出</div><div class="v">' + esc(it.introduced || '—') +
               ' · 提出法案' + (it.sponsor ? ' · ' + esc(it.sponsor) : '') + '</div>' +
-              (it.committee ? '<div class="sub">交付委员会：' + esc(it.committee) + '</div>' : '') + '</div>' +
+              (it.committee ? '<div class="sub">交付委员会：' + esc(cgCommitteeCn(it.committee)) + '</div>' : '') + '</div>' +
             '<div class="cg-sech"><h3>行动时间线</h3><span>TIMELINE</span></div>' +
             '<div class="cg-timeline">' + tl + '</div>' +
             '<div class="cg-note">当前条目保留已入库的第一动态与最新行动；完整中间行动需接入 congress.gov /actions 接口。</div>' +
