@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-12T09:42:32+08:00",
+ "updated_at": "2026-11-13T09:26:22+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -54,6 +54,51 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-12",
+   "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+   "title_cn": "美联储公布2027年支付服务定价并调整支票服务收费",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+   "source": "Federal Reserve",
+   "summary": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 美联储理事会11月12日公布2027年1月1日起实施的支付服务收费表。\n· 收费表覆盖支票清算、自动清算所、即时支付及批发支付结算服务。\n· 美联储预计2027年收回实际与推算成本的101.5%，成熟服务均价上调1.4%。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+   "title_cn": "美联储公布2027年联邦公开市场委员会会议修订日程",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+   "source": "Federal Reserve",
+   "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 美联储11月12日公布2027年联邦公开市场委员会八次会议的修订暂定日程。\n· 会议集中在周二至周三举行，政策决定照例于第二日公布。\n· 10月26日至27日会议为例外，专门讨论货币政策战略等广泛议题。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+   "title_cn": "美联储发布对联合社区银行前雇员的禁止令",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+   "source": "Federal Reserve",
+   "summary": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 美联储理事会11月12日宣布对联合社区银行前雇员执行执法行动。\n· 当事人 Katilyn M. Robinson 曾任职于南卡罗来纳州格林维尔的联合社区银行。\n· 美联储以挪用客户资金为由作出同意禁止令，禁止其从事银行业务。"
+   }
+  },
   {
    "date": "2026-11-09",
    "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
