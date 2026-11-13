@@ -1,9 +1,1435 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-11-12 08:52",
-  "count": 1190,
+  "updated_at": "2026-11-13 08:37",
+  "count": 1246,
   "items": [
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2025-05-22",
+      "title": "Crime Victims Fund Stabilization Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1892",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 1892",
+      "brief": {
+        "at": "2026-11-12",
+        "body": "1. 文种与主体：参议院法案 S. 1892，案名《2025年犯罪受害者基金稳定法案》，由共和党参议员 Lisa Murkowski 于 2025 年 5 月 22 日 提出。\n2. 核心动作：案名指向稳定犯罪受害者基金的资金来源；征收与分配机制待文本确认。\n3. 程序阶段：最新行动日期为 2025-05-22，已二读并交付参议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note"
+      },
+      "title_cn": "《2025年犯罪受害者基金稳定法案》",
+      "domain": "司法/执法",
+      "sponsor": "Lisa Murkowski",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AK",
+      "committee": "the Judiciary"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-01-27",
+      "stage_date": "2026-10-29",
+      "title": "To amend the National Trails System Act to direct the Secretary of the Interior to conduct a study on the feasibility of designating the Bay Area Ridge National Scenic Trail, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7254",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 752.",
+      "official_no": "H.R. 7254",
+      "brief": {
+        "at": "2026-10-17",
+        "body": "【政策背景】\n《国家步道系统法》规定了国家风景步道的指定程序，新增指定需先完成可行性研究。本法案要求内政部长就指定湾区山脊国家风景步道（Bay Area Ridge National Scenic Trail）的可行性开展研究。\n\n【核心内容】\n法案于 2026 年 1 月提出，已于 2026 年 9 月 15 日经一致同意以修正版获得委员会报告通过（Ordered to be Reported (Amended)）。政策领域为公共土地与自然资源。\n\n【要点提炼】\n1. 性质为可行性研究授权，是步道正式指定的前置程序，不涉及实际拨款或土地管制变化；\n2. 委员会已通过修正版，程序进度良好；\n3. 属地方性的自然保护与游憩议题。",
+        "tier": "note"
+      },
+      "title_cn": "修订《国家步道系统法》指示内政部长就指定湾区山脊国家风景步道可行性开展研究的法案",
+      "domain": "能源/环境",
+      "sponsor": "Jared Huffman",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-2",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-04-02",
+      "stage_date": "2026-10-29",
+      "title": "Responsible Cormorant Management and Control Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8195",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 754.",
+      "official_no": "H.R. 8195",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "【政策背景】\n双冠鸬鹚在北美内陆水域种群数量自二十世纪后期显著回升，其在五大湖及内陆水产养殖区的捕食行为与渔业资源、养殖存量的矛盾持续存在。由于鸬鹚属受联邦保护的迁徙鸟类，种群控制措施须依托《候鸟条约法》框架下的许可与管理安排，由联邦鱼类与野生动物管理机构与州政府协同实施。相关的授权依据、许可条件与责任划分，历来是国会渔业与野生动物议题的争点。\n\n【核心内容】\n本法案题为《2026 年负责任鸬鹚管理与控制法案》，由共和党众议员 Tim Walberg（密歇根州第 5 选区）于 2026 年 4 月 2 日提出，政策领域列为动物议题。2026 年 10 月 29 日，法案列入众议院 Union Calendar 第 754 号，即已获委员会报告、进入全院审议排队序列。\n\n需要明确的是，官方摘要本轮未取得，congress.gov 仅提供标题、提案人、政策领域与程序状态等元数据。法案拟授权的管理主体、控制措施类型、与州政府的权限划分以及是否设定种群目标，均无法据现有素材核实，本速览不作推定。上述背景仅说明该议题的制度框架，不构成对本法条款的转述。\n\n下一观察节点为众议院全院表决。若获通过，尚需参议院通过对应文本并完成两院协调，方可送总统签署；鉴于两院目前仅众议院版本进入日程，参议院配套版本 S. 5514 仍停留在委员会交付阶段，立法周期尚长。\n\n【要点提炼】\n1. 程序位置明确：已获委员会报告并列入 Union Calendar 第 754 号，处于全院审议前的排队阶段，成案概率高于仅交付委员会的同类提案，但仍受全院日程安排制约。\n2. 内容确定性低：仅具元数据，条款细节无法核实，凡涉及许可条件、控制额度与联邦州分工的表述均须以正式文本为准。\n3. 议题属性为野生动物管理与渔业利益的平衡，与水产养殖、休闲垂钓及州级野生动物管理事权相关。\n4. 属第 119 届国会当届立法进展；参议院同名版本 S. 5514 进度落后，两院尚未形成一致文本。",
+        "tier": "full"
+      },
+      "title_cn": "负责任鸬鹚管理与控制法案",
+      "domain": "能源/环境",
+      "sponsor": "Tim Walberg",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MI-5",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-07-20",
+      "stage_date": "2026-10-29",
+      "title": "South Dakota Water Feasibility Studies Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9785",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 760.",
+      "official_no": "H.R. 9785",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "第119届国会众议院法案（H.R.9785），2026年7月20日由众议员达斯蒂·约翰逊（共和党，南达科他州全州选区）提出，2026年10月29日列入联合日历第760号，本轮因元数据回填更新重新进入抓取窗口。\n法案要求对南达科他州相关水利项目开展可行性研究。队列未提供官方摘要，涉及的具体项目清单、研究标准与授权额度无法确认，不作推测。\ncongress.gov 标注政策领域为水资源开发。\n已列入联合日历，待众议院院会排期表决。",
+        "tier": "note"
+      },
+      "title_cn": "南达科他州水利可行性研究法案",
+      "domain": "能源/环境",
+      "sponsor": "Dusty Johnson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SD",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-07-06",
+      "stage_date": "2026-10-29",
+      "title": "Common Sense 250 Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9600",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 757.",
+      "official_no": "H.R. 9600",
+      "brief": {
+        "at": "2026-11-04",
+        "body": "1. 文种与主体：众议院法案 H.R. 9600，由民主党众议员 Jamie Raskin（马里兰州第 8 选区）于 2026 年 7 月 6 日提出。\n2. 核心动作：案名《2026 年常识 250 法案》，政策领域列为公共土地与自然资源；案名中「250」的确切所指官方摘要未说明，不作推定。\n3. 程序阶段：2026 年 10 月 29 日列入众议院 Union Calendar 第 757 号，已获委员会报告，等待全院审议。\n4. 信息边界：官方摘要未取得，具体条款以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note"
+      },
+      "title_cn": "「常识 250」法案",
+      "domain": "其他",
+      "sponsor": "Jamie Raskin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD-8",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-10-22",
+      "stage_date": "2026-10-22",
+      "title": "Strong American Wood Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10906",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, Transportation and Infrastructure, Oversight and Government Reform, Science, ",
+      "official_no": "H.R. 10906",
+      "brief": {
+        "at": "2026-10-26",
+        "body": "《强化美国木材法案》（H.R.10906）由共和党众议员 Bruce Westerman（阿肯色州第4选区）于2026年10月22日提出，同日交付众议院筹款委员会并追加能源与商业、交通与基础设施、监督与政府改革、科学空间技术、农业、金融服务、武装部队与自然资源委员会审议。\n法案名称指向美国木材供给与竞争力的政策安排，官方摘要未取得，具体条款以法案文本为准；联合移送本身不代表跨委员会认可。",
+        "tier": "note"
+      },
+      "title_cn": "强化美国木材法案",
+      "domain": "农业/食品",
+      "sponsor": "Bruce Westerman",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR-4",
+      "committee": "Ways and Means"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-07-16",
+      "stage_date": "2026-07-16",
+      "title": "Biomass Facility Construction Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9746",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "official_no": "H.R. 9746",
+      "sponsor": "Kevin Kiley",
+      "sponsor_party": "I",
+      "sponsor_tag": "I-CA-3",
+      "committee": "Ways and Means",
+      "title_cn": "《生物质设施建设法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 9746《生物质设施建设法案》，独立议员 Kevin Kiley 2026-07-16 提出，属第 119 届国会。\n案名指向生物质发电设施的建设与运营支持。因交付众议院筹款委员会，议题落在税收激励范畴，具体激励方式与适用门槛尚未公布，无法核实。\n最新行动 2026-07-16：交付众议院筹款委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-08",
+      "stage_date": "2025-05-08",
+      "title": "National Taxpayer Advocate Enhancement Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1704",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Finance.",
+      "official_no": "S. 1704",
+      "sponsor": "Amy Klobuchar",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MN",
+      "committee": "Finance",
+      "title_cn": "《2025年纳税人权益倡导者增强法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1704《2025年纳税人权益倡导者增强法案》，民主党议员 Amy Klobuchar 2025-05-08 提出，属第 119 届国会。\n授权国家纳税人权益倡导者在纳税人权益服务局内聘任法律顾问，并由其直接领导；同时把人事处置权限由各州地方纳税人权益倡导者扩展至该局全体雇员。\n最新行动 2025-05-08：参议院二读后交付财政委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-05",
+      "stage_date": "2026-11-10",
+      "title": "National Taxpayer Advocate Enhancement Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Signed by President.",
+      "official_no": "H.R. 997",
+      "sponsor": "Randy Feenstra",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA-4",
+      "committee": "",
+      "title_cn": "《2025年纳税人权益倡导者增强法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 997《2025年纳税人权益倡导者增强法案》，共和党议员 Randy Feenstra 2025-02-05 提出，属第 119 届国会。\n众议院对应版本，内容与参议院版本一致，授权国家纳税人权益倡导者聘任直属法律顾问并扩大其人事处置权限。该案已完成总统签署环节。\n最新行动 2026-11-10：总统签署，已完成全部立法程序，该案自签署之日起具直接执行效力。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-04-16",
+      "stage_date": "2026-04-16",
+      "title": "Ending the Carried Interest Loophole Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4330",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Finance.",
+      "official_no": "S. 4330",
+      "sponsor": "Ron Wyden",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": "Finance",
+      "title_cn": "《终止附带权益税收漏洞法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4330《终止附带权益税收漏洞法案》，民主党议员 Ron Wyden 2026-04-16 提出，属第 119 届国会。\n案名指向取消私募基金附带权益适用的资本利得优惠税率。CRS 将本条政策领域标注为环境保护，与案名所涉税制议题不符；本条按税收议题归类，条文未公布。\n最新行动 2026-04-16：参议院二读后交付财政委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-05",
+      "stage_date": "2025-02-05",
+      "title": "Fort Ontario Holocaust Refugee Shelter National Historical Park Establishment Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/432",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Energy and Natural Resources.",
+      "official_no": "S. 432",
+      "sponsor": "Kirsten E. Gillibrand",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY",
+      "committee": "Energy and Natural Resources",
+      "title_cn": "《安大略堡大屠杀难民收容所国家历史公园设立法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 432《安大略堡大屠杀难民收容所国家历史公园设立法案》，民主党议员 Kirsten E. Gillibrand 2025-02-05 提出，属第 119 届国会。\n案名指向将纽约州安大略堡大屠杀难民收容所旧址设为国家历史公园，涉内政部与国家公园管理局的土地权属与管理边界调整，条文未公布。\n最新行动 2025-02-05：参议院二读后交付能源与自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-04-15",
+      "stage_date": "2026-04-15",
+      "title": "Safer Prisons Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4305",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 4305",
+      "sponsor": "Marsha Blackburn",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN",
+      "committee": "the Judiciary",
+      "title_cn": "《2026年更安全监狱法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4305《2026年更安全监狱法案》，共和党议员 Marsha Blackburn 2026-04-15 提出，属第 119 届国会。\n案名指向联邦监狱安全条件与在押人员管理，由参议院司法委员会管辖。具体措施、适用范围与授权规模均未公布，无法核实。\n最新行动 2026-04-15：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-09",
+      "stage_date": "2025-01-09",
+      "title": "Skinny Labels, Big Savings Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/43",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 43",
+      "sponsor": "John W. Hickenlooper",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO",
+      "committee": "the Judiciary",
+      "title_cn": "《窄标签节约法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 43《窄标签节约法案》，民主党议员 John W. Hickenlooper 2025-01-09 提出，属第 119 届国会。\n为仿制药与生物类似药厂商就窄标签申请或获批提供专利侵权的法定安全港。该案回应的是 GSK 诉 Teva 案后窄标签被认定构成诱导侵权的司法分歧。\n最新行动 2025-01-09：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-04-14",
+      "stage_date": "2026-04-14",
+      "title": "Preparing Superfund for Climate Change Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4289",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Environment and Public Works.",
+      "official_no": "S. 4289",
+      "sponsor": "Adam B. Schiff",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA",
+      "committee": "Environment and Public Works",
+      "title_cn": "《2026年使超级基金适应气候变化法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4289《2026年使超级基金适应气候变化法案》，民主党议员 Adam B. Schiff 2026-04-14 提出，属第 119 届国会。\n案名指向调整超级基金场地修复标准，将气候变化影响纳入修复目标与时限的设定，涉环保署依《综合环境反应、赔偿与责任法》实施的清理程序，条文未公布。\n最新行动 2026-04-14：参议院二读后交付环境与公共工程委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-05",
+      "stage_date": "2025-09-29",
+      "title": "SAFE Orbit Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/428",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 170.",
+      "official_no": "S. 428",
+      "sponsor": "John Cornyn",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX",
+      "committee": "",
+      "title_cn": "《轨道飞行要素态势感知（SAFE Orbit）法案》",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 428《轨道飞行要素态势感知（SAFE Orbit）法案》，共和党议员 John Cornyn 2025-02-05 提出，属第 119 届国会。\n为商务部太空商务办公室正在建设的太空交通协调系统提供法定授权，并将该办公室升格为商务部直属局，同时确立太空态势感知数据与服务的提供方式。\n最新行动 2025-09-29：列入参议院立法日程（Calendar No. 170）。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-03-26",
+      "stage_date": "2026-07-15",
+      "title": "Plug Offshore Wells Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4239",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.",
+      "official_no": "S. 4239",
+      "sponsor": "Peter Welch",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VT",
+      "committee": "Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining",
+      "title_cn": "《封堵海上油井法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4239《封堵海上油井法案》，民主党议员 Peter Welch 2026-03-26 提出，属第 119 届国会。\n案名指向联邦海域废弃油气井的封堵与退役责任划分，涉内政部海洋能源管理局的许可与担保要求。公共土地、森林与矿业小组委员会已就此举行听证。\n最新行动 2026-07-15：能源与自然资源委员会公共土地、森林与矿业小组委员会举行听证。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-03-26",
+      "stage_date": "2026-03-26",
+      "title": "Healthy Watersheds, Healthy Communities Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4234",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry.",
+      "official_no": "S. 4234",
+      "sponsor": "Michael F. Bennet",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO",
+      "committee": "Agriculture, Nutrition, and Forestry",
+      "title_cn": "《2026年健康流域与健康社区法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4234《2026年健康流域与健康社区法案》，民主党议员 Michael F. Bennet 2026-03-26 提出，属第 119 届国会。\n案名指向流域健康与社区供水保障，交付参议院农业、营养与林业委员会。CRS 将政策领域标注为水资源开发，具体授权项目与资金规模未公布。\n最新行动 2026-03-26：参议院二读后交付农业、营养与林业委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-05",
+      "stage_date": "2025-05-20",
+      "title": "Reauthorizing Support and Treatment for Officers in Crisis Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/419",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 79.",
+      "official_no": "S. 419",
+      "sponsor": "Josh Hawley",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO",
+      "committee": "",
+      "title_cn": "《2025年重新授权危机中执法人员支持与治疗法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 419《2025年重新授权危机中执法人员支持与治疗法案》，共和党议员 Josh Hawley 2025-02-05 提出，属第 119 届国会。\n将州与地方执法机构及其他组织为执法人员提供家庭支持服务与心理健康服务的拨款，重新授权至 2029 财年。\n最新行动 2025-05-20：列入参议院立法日程（Calendar No. 79）。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-03-24",
+      "stage_date": "2026-03-24",
+      "title": "Plastic Pellet Free Waters Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4181",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Environment and Public Works. (text: CR S1583)",
+      "official_no": "S. 4181",
+      "sponsor": "Richard J. Durbin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL",
+      "committee": "Environment and Public Works",
+      "title_cn": "《无塑料颗粒水体法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 4181《无塑料颗粒水体法案》，民主党议员 Richard J. Durbin 2026-03-24 提出，属第 119 届国会。\n案名指向禁止塑料颗粒排入水体，涉《清洁水法》许可条件与塑料生产环节的排放标准设定。具体管控手段与执法主体未公布。\n最新行动 2026-03-24：参议院二读后交付环境与公共工程委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-12",
+      "stage_date": "2026-02-12",
+      "title": "BE HEARD in the Workplace Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3865",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 3865",
+      "sponsor": "Patty Murray",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《职场发声（BE HEARD）法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3865《职场发声（BE HEARD）法案》，民主党议员 Patty Murray 2026-02-12 提出，属第 119 届国会。\n案名指向职场骚扰与歧视的投诉处理机制，交付参议院卫生、教育、劳工与养老金委员会。案名缩写全称未在队列素材中列明，条文亦未公布。\n最新行动 2026-02-12：参议院二读后交付卫生、教育、劳工与养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-12",
+      "stage_date": "2026-02-12",
+      "title": "Advanced Weather Model Computing Development Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3854",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+      "official_no": "S. 3854",
+      "sponsor": "Ben Ray Luján",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NM",
+      "committee": "Commerce, Science, and Transportation",
+      "title_cn": "《先进天气模型计算开发法案》",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3854《先进天气模型计算开发法案》，民主党议员 Ben Ray Luján 2026-02-12 提出，属第 119 届国会。\n案名指向提升数值天气预报模型的高性能计算能力，涉商务部国家海洋与大气管理局的算力采购与模型开发。授权规模与实施期限未公布。\n最新行动 2026-02-12：参议院二读后交付商务、科学与交通委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-11",
+      "stage_date": "2026-02-11",
+      "title": "Effective Assistance of Counsel in the Digital Era Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3850",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 3850",
+      "sponsor": "Ron Wyden",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": "the Judiciary",
+      "title_cn": "《数字时代有效律师协助法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3850《数字时代有效律师协助法案》，民主党议员 Ron Wyden 2026-02-11 提出，属第 119 届国会。\n要求司法部就羁押人员与其法律代理人之间的特权电子通信制定规则、建立或改造收发系统，确保该类通信内容不被监控，并向国会提交报告。\n最新行动 2026-02-11：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-11",
+      "stage_date": "2026-02-11",
+      "title": "Employer-Directed Skills Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3846",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 3846",
+      "sponsor": "Ted Budd",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《雇主主导技能法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3846《雇主主导技能法案》，共和党议员 Ted Budd 2026-02-11 提出，属第 119 届国会。\n案名指向由雇主主导的技能培训与资格认定，涉《劳动力创新与机会法》框架下培训资金的使用条件。具体条款与适用对象未公布。\n最新行动 2026-02-11：参议院二读后交付卫生、教育、劳工与养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-11",
+      "stage_date": "2026-02-11",
+      "title": "CLEAN SMART Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3828",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Energy and Natural Resources.",
+      "official_no": "S. 3828",
+      "sponsor": "Ben Ray Luján",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NM",
+      "committee": "Energy and Natural Resources",
+      "title_cn": "《2026年清洁（CLEAN SMART）法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3828《2026年清洁（CLEAN SMART）法案》，民主党议员 Ben Ray Luján 2026-02-11 提出，属第 119 届国会。\n案名指向清洁能源技术与制造业的部署支持，交付参议院能源与自然资源委员会。案名缩写全称未在队列素材中列明，条文与授权规模亦未公布。\n最新行动 2026-02-11：参议院二读后交付能源与自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-10",
+      "stage_date": "2026-02-10",
+      "title": "Workforce Development Modernization Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3825",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 3825",
+      "sponsor": "Ted Budd",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《劳动力发展现代化法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3825《劳动力发展现代化法案》，共和党议员 Ted Budd 2026-02-10 提出，属第 119 届国会。\n案名指向联邦劳动力发展体系的现代化改造，涉职业培训项目的绩效衡量与问责安排。具体条款未公布，与现行法案的衔接方式无法核实。\n最新行动 2026-02-10：参议院二读后交付卫生、教育、劳工与养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-10",
+      "stage_date": "2026-03-19",
+      "title": "WORK to Save Lives Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3812",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Health, Education, Labor, and Pensions. Hearings held.",
+      "official_no": "S. 3812",
+      "sponsor": "Jeff Merkley",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《以工作挽救生命（WORK to Save Lives）法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3812《以工作挽救生命（WORK to Save Lives）法案》，民主党议员 Jeff Merkley 2026-02-10 提出，属第 119 届国会。\n案名指向以就业服务降低特定人群的死亡风险，卫生、教育、劳工与养老金委员会已于 2026-03-19 就此举行听证。案名缩写全称与具体条款均未列明。\n最新行动 2026-03-19：卫生、教育、劳工与养老金委员会举行听证。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-02-09",
+      "stage_date": "2026-02-09",
+      "title": "AI Grand Challenges Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3809",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+      "official_no": "S. 3809",
+      "sponsor": "Cory A. Booker",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NJ",
+      "committee": "Commerce, Science, and Transportation",
+      "title_cn": "《2026年人工智能重大挑战法案》",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3809《2026年人工智能重大挑战法案》，民主党议员 Cory A. Booker 2026-02-09 提出，属第 119 届国会。\n案名指向设立人工智能领域的重大挑战项目与跨部门协调机制，交付参议院商务、科学与交通委员会。项目设置方式与授权规模未公布。\n最新行动 2026-02-09：参议院二读后交付商务、科学与交通委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-09",
+      "stage_date": "2025-01-09",
+      "title": "Preserving Safe Communities by Ending Swatting Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/38",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 38",
+      "sponsor": "Rick Scott",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL",
+      "committee": "the Judiciary",
+      "title_cn": "《2025年终止虚假报警以维护社区安全法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 38《2025年终止虚假报警以维护社区安全法案》，共和党议员 Rick Scott 2025-01-09 提出，属第 119 届国会。\n将故意传递虚假或误导信息、且该信息可合理预期引发紧急响应并显示存在犯罪或健康安全威胁的行为入罪，即通常所称的虚假报警，并规定相应刑事处罚。\n最新行动 2025-01-09：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-01-29",
+      "stage_date": "2026-01-29",
+      "title": "Cost of Police Misconduct Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3731",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 3731",
+      "sponsor": "Tim Kaine",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA",
+      "committee": "the Judiciary",
+      "title_cn": "《2026年警察不当行为成本法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 3731《2026年警察不当行为成本法案》，民主党议员 Tim Kaine 2026-01-29 提出，属第 119 届国会。\n案名指向执法不当行为所生赔偿与和解支出的统计、公开与资金追偿，涉司法部对地方执法机构联邦拨款附加条件的设定，条文未公布。\n最新行动 2026-01-29：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-03",
+      "stage_date": "2025-02-03",
+      "title": "BLOCK Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/368",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
+      "official_no": "S. 368",
+      "sponsor": "John Kennedy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-LA",
+      "committee": "Homeland Security and Governmental Affairs",
+      "title_cn": "《阻断（BLOCK）法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 368《阻断（BLOCK）法案》，共和党议员 John Kennedy 2025-02-03 提出，属第 119 届国会。\n案名缩写全称未在队列素材中列明，条文亦未公布。交付参议院国土安全与政府事务委员会，议题落在联邦行政程序与政府运作范畴。\n最新行动 2025-02-03：参议院二读后交付国土安全与政府事务委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2025-05-22",
+      "title": "Public Service Worker Protection Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1881",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 1881",
+      "sponsor": "Edward J. Markey",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MA",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《公共服务工作者保护法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1881《公共服务工作者保护法案》，民主党议员 Edward J. Markey 2025-05-22 提出，属第 119 届国会。\n案名指向公共服务岗位从业者的就业保护，交付参议院卫生、教育、劳工与养老金委员会。适用人群界定与保护手段均未公布。\n最新行动 2025-05-22：参议院二读后交付卫生、教育、劳工与养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-21",
+      "stage_date": "2025-05-21",
+      "title": "Second Chance Reauthorization Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1843",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 1843",
+      "sponsor": "Shelley Moore Capito",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WV",
+      "committee": "the Judiciary",
+      "title_cn": "《2025年第二次机会重新授权法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1843《2025年第二次机会重新授权法案》，共和党议员 Shelley Moore Capito 2025-05-21 提出，属第 119 届国会。\n将成人及青少年重返社会示范项目、家庭为本药物滥用治疗、监狱与看守所教育方法评估、职业培训教育等多项联邦拨款，重新授权至 2030 财年。\n最新行动 2025-05-21：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2025-05-22",
+      "title": "A bill to amend the Omnibus Crime Control and Safe Streets Act of 1968 to establish the Adverse Childhood Experiences Response Team grant program, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1897",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 1897",
+      "sponsor": "Jeanne Shaheen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NH",
+      "committee": "the Judiciary",
+      "title_cn": "《修订〈1968年综合犯罪控制与安全街道法〉设立童年不良经历应对小组拨款计划的法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1897《修订〈1968年综合犯罪控制与安全街道法〉设立童年不良经历应对小组拨款计划的法案》，民主党议员 Jeanne Shaheen 2025-05-22 提出，属第 119 届国会。\n要求司法部会同卫生与公众服务部，向州、部落、地方及社区组织拨款，设立应对童年不良经历与创伤暴露的响应小组。拨款条件与配套要求未公布。\n最新行动 2025-05-22：参议院二读后交付司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2026-06-15",
+      "title": "Carla Walker Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1890",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Held at the desk.",
+      "official_no": "S. 1890",
+      "sponsor": "John Cornyn",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX",
+      "committee": "",
+      "title_cn": "《卡拉·沃克法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1890《卡拉·沃克法案》，共和党议员 John Cornyn 2025-05-22 提出，属第 119 届国会。\n授权司法部向州与地方试点项目拨款，支持法医遗传系谱 DNA 分析，用于在停滞的刑事侦查中生成线索；首批针对在联邦 DNA 索引系统中未能比中的样本开展全基因组测序。\n最新行动 2026-06-15：留在参议院议席待处理。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-22",
+      "stage_date": "2025-01-22",
+      "title": "CONSTRUCTS Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/189",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 189",
+      "sponsor": "Jacky Rosen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NV",
+      "committee": "Health, Education, Labor, and Pensions",
+      "title_cn": "《2025年建设（CONSTRUCTS）法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 189《2025年建设（CONSTRUCTS）法案》，民主党议员 Jacky Rosen 2025-01-22 提出，属第 119 届国会。\n案名缩写全称未在队列素材中列明，条文未公布。交付参议院卫生、教育、劳工与养老金委员会，议题落在建筑与施工行业劳动力供给范畴。\n最新行动 2025-01-22：参议院二读后交付卫生、教育、劳工与养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2025-10-27",
+      "title": "Stratton Ridge Air Force Memorial Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1876",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 215.",
+      "official_no": "S. 1876",
+      "sponsor": "Thomas Tillis",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC",
+      "committee": "",
+      "title_cn": "《斯特拉顿岭空军纪念碑法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1876《斯特拉顿岭空军纪念碑法案》，共和党议员 Thomas Tillis 2025-05-22 提出，属第 119 届国会。\n授权林务局迁移北卡罗来纳州一座纪念碑，纪念 1982 年 8 月 31 日训练任务坠机中罹难的九名空军机组人员；迁移以现址私营业主同意为前提，迁至切罗基与南塔哈拉国家森林内的斯特拉顿岭休息区。\n最新行动 2025-10-27：列入参议院立法日程（Calendar No. 215）。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-04-09",
+      "stage_date": "2025-04-09",
+      "title": "Setting the Table for Transition Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2780",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "official_no": "H.R. 2780",
+      "sponsor": "Timothy M. Kennedy",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-26",
+      "committee": "Agriculture",
+      "title_cn": "《为过渡期备餐法案》",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 2780《为过渡期备餐法案》，民主党议员 Timothy M. Kennedy 2025-04-09 提出，属第 119 届国会。\n扩大补充营养援助计划对含近期退役军人的家庭在资格与待遇上的适用范围。现行法律按家庭单位计算资格与月度待遇，该案对含此类成员的家庭另设计算口径。\n最新行动 2025-04-09：交付众议院农业委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-22",
+      "stage_date": "2025-12-09",
+      "title": "Rim of the Valley Corridor Preservation Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1870",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Committee on Energy and Natural Resources Subcommittee on National Parks. Hearings held. With printed Hearing: S.Hrg. 119-238.",
+      "official_no": "S. 1870",
+      "sponsor": "Adam B. Schiff",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA",
+      "committee": "Energy and Natural Resources Subcommittee on National Parks",
+      "title_cn": "《谷缘走廊保护法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1870《谷缘走廊保护法案》，民主党议员 Adam B. Schiff 2025-05-22 提出，属第 119 届国会。\n案名指向调整洛杉矶附近谷缘走廊区域与圣莫尼卡山国家游憩区的边界关系，涉国家公园管理局的土地管理权限。国家公园小组委员会已于 2025-12-09 举行听证并印发听证记录。\n最新行动 2025-12-09：能源与自然资源委员会国家公园小组委员会举行听证。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-21",
+      "stage_date": "2025-05-21",
+      "title": "Fuel Choice and Deregulation Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1841",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Environment and Public Works.",
+      "official_no": "S. 1841",
+      "sponsor": "Rand Paul",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KY",
+      "committee": "Environment and Public Works",
+      "title_cn": "《2025年燃料选择与放松管制法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1841《2025年燃料选择与放松管制法案》，共和党议员 Rand Paul 2025-05-21 提出，属第 119 届国会。\n案名指向放松车用燃料与燃料设备的联邦管制，涉环保署排放规则与《清洁空气法》适用范围的调整。具体放松事项与生效时点未公布。\n最新行动 2025-05-21：参议院二读后交付环境与公共工程委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-15",
+      "stage_date": "2026-05-15",
+      "title": "Extinction Prevention Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8850",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Natural Resources.",
+      "official_no": "H.R. 8850",
+      "sponsor": "Adelita S. Grijalva",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AZ-7",
+      "committee": "Natural Resources",
+      "title_cn": "《2026年防止物种灭绝法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8850《2026年防止物种灭绝法案》，民主党议员 Adelita S. Grijalva 2026-05-15 提出，属第 119 届国会。\n案名指向濒危物种保护，涉《濒危物种法》下的栖息地管理与恢复计划安排。交付众议院自然资源委员会，条文与授权规模均未公布。\n最新行动 2026-05-15：交付众议院自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-31",
+      "stage_date": "2025-06-11",
+      "title": "To prohibit individuals who are not citizens of the United States from voting in elections in the District of Columbia and to repeal the Local Resident Voting Rights Amendment Act of 2022.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/884",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
+      "official_no": "H.R. 884",
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "Homeland Security and Governmental Affairs",
+      "title_cn": "《禁止非美国公民在哥伦比亚特区选举中投票并废止2022年地方居民投票权修正案的法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 884《禁止非美国公民在哥伦比亚特区选举中投票并废止2022年地方居民投票权修正案的法案》，共和党议员 August Pfluger 2025-01-31 提出，属第 119 届国会。\n禁止非美国公民在哥伦比亚特区选举中投票，并废止特区 2022 年允许符合条件的非公民参加地方选举的法律，该法于 2023-02-23 生效。众议院通过后已送参议院。\n最新行动 2025-06-11：众议院通过后送参议院，二读交付国土安全与政府事务委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-14",
+      "stage_date": "2026-05-14",
+      "title": "Supporting Women COPS Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8832",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 8832",
+      "sponsor": "Deborah K. Ross",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NC-2",
+      "committee": "the Judiciary",
+      "title_cn": "《2026年支持女性社区警务法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8832《2026年支持女性社区警务法案》，民主党议员 Deborah K. Ross 2026-05-14 提出，属第 119 届国会。\n案名指向在司法部社区导向警务服务办公室框架下支持女性警员的招募与留任，交付众议院司法委员会。拨款额度与使用条件未公布。\n最新行动 2026-05-14：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-31",
+      "stage_date": "2025-01-31",
+      "title": "Counter SNIPER Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/883",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 883",
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "the Judiciary",
+      "title_cn": "《反狙击（Counter SNIPER）法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 883《反狙击（Counter SNIPER）法案》，共和党议员 August Pfluger 2025-01-31 提出，属第 119 届国会。\n案名缩写全称未在队列素材中列明，条文未公布。交付众议院司法委员会，议题落在狙击袭击的防范与执法应对范畴。\n最新行动 2025-01-31：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-03-27",
+      "stage_date": "2026-09-30",
+      "title": "Pit River Land Transfer Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2400",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)",
+      "official_no": "H.R. 2400",
+      "sponsor": "Doug LaMalfa",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CA-1",
+      "committee": "",
+      "title_cn": "《2026年皮特河土地移交法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 2400《2026年皮特河土地移交法案》，共和党议员 Doug LaMalfa 2025-03-27 提出，属第 119 届国会。\n将加州沙斯塔县约 557 英亩联邦土地纳入为皮特河部落设立的信托：行政管辖权由林务局转至内政部，土地成为部落保留地的一部分，并禁止在该地块经营博彩。参议院已以一致同意通过修正案。\n最新行动 2026-09-30：参议院以一致同意方式通过修正案。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-12",
+      "stage_date": "2026-05-12",
+      "title": "Designating the Chinese Communist Party as a Transnational Organized Crime Group Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8760",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 8760",
+      "sponsor": "Scott Perry",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-10",
+      "committee": "the Judiciary",
+      "title_cn": "《将中国共产党列为跨国有组织犯罪集团法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8760《将中国共产党列为跨国有组织犯罪集团法案》，共和党议员 Scott Perry 2026-05-12 提出，属第 119 届国会。\n案名指向将中国共产党列为跨国有组织犯罪集团，交付众议院司法委员会。该案系对中国执政党的政治定性提案，其指控与事实不符，中方坚决反对；条文未公布。\n最新行动 2026-05-12：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-31",
+      "stage_date": "2025-01-31",
+      "title": "To amend the Defense Base Act to exclude Guam.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/876",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.R. 876",
+      "sponsor": "James C. Moylan",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-GU",
+      "committee": "Education and Workforce",
+      "title_cn": "《修订〈国防基地法〉将关岛排除在适用范围之外的法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 876《修订〈国防基地法〉将关岛排除在适用范围之外的法案》，共和党议员 James C. Moylan 2025-01-31 提出，属第 119 届国会。\n修订《国防基地法》，将关岛排除在该法适用范围之外。该法为海外联邦承包与基地相关雇员提供工伤补偿，交付众议院教育与劳动力委员会，条文未公布。\n最新行动 2025-01-31：交付众议院教育与劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-12",
+      "stage_date": "2026-05-12",
+      "title": "Protecting Our Second Amendment Data Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8758",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 8758",
+      "sponsor": "Scott Perry",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-10",
+      "committee": "the Judiciary",
+      "title_cn": "《保护第二修正案数据法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8758《保护第二修正案数据法案》，共和党议员 Scott Perry 2026-05-12 提出，属第 119 届国会。\n案名指向限制联邦机构对枪支持有者相关数据的收集、留存与共享，交付众议院司法委员会。适用机构范围与例外情形未公布。\n最新行动 2026-05-12：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-12",
+      "stage_date": "2026-05-21",
+      "title": "Restoration of Employment Choice for Adults with Disabilities Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8736",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported (Amended) by the Yeas and Nays: 18 - 15.",
+      "official_no": "H.R. 8736",
+      "sponsor": "Glenn Grothman",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WI-6",
+      "committee": "",
+      "title_cn": "《恢复残障成年人就业选择法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8736《恢复残障成年人就业选择法案》，共和党议员 Glenn Grothman 2026-05-12 提出，属第 119 届国会。\n放宽特殊工资证书持有人向残障人士支付低于最低工资的要求：取消 24 岁及以下残障人士上岗前须接受就业过渡服务并满足职业康复条件的限制，同时放宽职业咨询与服务转介要求。\n最新行动 2026-05-21：以 18 票对 15 票表决通过修正后报送全院。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-07",
+      "stage_date": "2026-05-07",
+      "title": "Assault Weapon Financing Accountability Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8694",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 8694",
+      "sponsor": "John B. Larson",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CT-1",
+      "committee": "the Judiciary",
+      "title_cn": "《攻击性武器融资问责法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8694《攻击性武器融资问责法案》，民主党议员 John B. Larson 2026-05-07 提出，属第 119 届国会。\n案名指向攻击性武器销售融资环节的问责机制，涉消费金融与枪支销售的责任划分。交付众议院司法委员会，条文未公布，具体义务主体无法核实。\n最新行动 2026-05-07：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-07",
+      "stage_date": "2026-05-08",
+      "title": "Pregnant Women in Custody Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8690",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Oversight, Investigations, and Accountability.",
+      "official_no": "H.R. 8690",
+      "sponsor": "Sydney Kamlager-Dove",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-37",
+      "committee": "Oversight, Investigations, and Accountability",
+      "title_cn": "《羁押中孕妇法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8690《羁押中孕妇法案》，民主党议员 Sydney Kamlager-Dove 2026-05-07 提出，属第 119 届国会。\n案名指向联邦羁押中孕妇的医疗照护与羁押条件，已交付众议院司法委员会下属监督、调查与问责小组委员会。条文与适用标准未公布。\n最新行动 2026-05-08：交付监督、调查与问责小组委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-31",
+      "stage_date": "2025-01-31",
+      "title": "Prison Staff Safety Enhancement Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/868",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 868",
+      "sponsor": "Laurel M. Lee",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-15",
+      "committee": "the Judiciary",
+      "title_cn": "《监狱工作人员安全增强法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 868《监狱工作人员安全增强法案》，共和党议员 Laurel M. Lee 2025-01-31 提出，属第 119 届国会。\n要求司法部就在押人员对惩教人员及监狱局其他雇员的性骚扰与性侵害行为，制定预防、减少与惩处的全国标准。\n最新行动 2025-01-31：交付众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2026-05-04",
+      "stage_date": "2026-05-04",
+      "title": "Fair Pay Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8663",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.R. 8663",
+      "sponsor": "Eleanor Holmes Norton",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-DC",
+      "committee": "Education and Workforce",
+      "title_cn": "《2026年公平薪酬法案》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 8663《2026年公平薪酬法案》，民主党议员 Eleanor Holmes Norton 2026-05-04 提出，属第 119 届国会。\n案名指向薪酬公平，交付众议院教育与劳动力委员会。条文未公布，所涉薪酬比较口径、举证责任与救济方式均无法核实。\n最新行动 2026-05-04：交付众议院教育与劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-01-31",
+      "stage_date": "2025-04-29",
+      "title": "ROUTERS Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/866",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate.",
+      "official_no": "H.R. 866",
+      "sponsor": "Robert E. Latta",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-5",
+      "committee": "",
+      "title_cn": "《移除不安全技术以确保可靠与安全（ROUTERS）法案》",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 866《移除不安全技术以确保可靠与安全（ROUTERS）法案》，共和党议员 Robert E. Latta 2025-01-31 提出，属第 119 届国会。\n要求国家电信与信息管理局就消费级路由器与调制解调器的国家安全风险开展研究并向国会提交结果。研究须覆盖由中国、伊朗、朝鲜、俄罗斯拥有、控制或受其影响的实体所开发、制造或供应的设备。众议院通过后已送参议院。\n最新行动 2025-04-29：众议院通过后送参议院。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2025-02-24",
+      "title": "Pay Our Coast Guard Parity Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1542",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Coast Guard and Maritime Transportation.",
+      "official_no": "H.R. 1542",
+      "sponsor": "Hillary J. Scholten",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-3",
+      "committee": "Coast Guard and Maritime Transportation",
+      "title_cn": "《2025年海岸警卫队薪酬对等法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1542《2025年海岸警卫队薪酬对等法案》，民主党议员 Hillary J. Scholten 2025-02-24 提出，属第 119 届国会。\n在海岸警卫队出现专项拨款中断时为其薪酬与福利提供继续拨款。触发条件为财年开始前未通过海警拨款法案且无相关继续决议生效，同时国防部拨款法案已生效。\n最新行动 2025-02-24：交付海岸警卫队与海上运输小组委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2025-02-24",
+      "title": "Wireless Broadband Competition and Efficient Deployment Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1541",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Natural Resources, for a period to be subsequently determined by the Speaker, in each case for",
+      "official_no": "H.R. 1541",
+      "sponsor": "Michael A. Rulli",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-6",
+      "committee": "Energy and Commerce",
+      "title_cn": "《无线宽带竞争与高效部署法案》",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1541《无线宽带竞争与高效部署法案》，共和党议员 Michael A. Rulli 2025-02-24 提出，属第 119 届国会。\n将符合条件的无线通信设施安装或改造项目豁免于联邦环境与历史保护审查，包括在既有合格个人无线服务设施上加装或安装同类设施等情形。豁免范围以条文列举为准。\n最新行动 2025-02-24：交付能源与商业委员会，并同时交付自然资源委员会审议。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2025-05-06",
+      "title": "Falun Gong Protection Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1540",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Foreign Relations.",
+      "official_no": "H.R. 1540",
+      "sponsor": "Scott Perry",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-10",
+      "committee": "Foreign Relations",
+      "title_cn": "《法轮功保护法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1540《法轮功保护法案》，共和党议员 Scott Perry 2025-02-24 提出，属第 119 届国会。\n要求总统对明知并直接参与或协助在中国境内实施非自愿器官摘取的外国人实施签证与财产冻结制裁，人道援助相关进口与转让可获豁免，制裁授权自生效起五年后失效。该案涉华内容系不实指控，构成对中国内政的干涉，中方不予认可。\n最新行动 2025-05-06：众议院通过后送参议院，二读交付外交委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2025-02-24",
+      "title": "District of Columbia Superior Court Jury Duty for Seniors Opt Out Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1537",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.R. 1537",
+      "sponsor": "Eleanor Holmes Norton",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-DC",
+      "committee": "Oversight and Government Reform",
+      "title_cn": "《2025年哥伦比亚特区高等法院老年人陪审义务豁免法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1537《2025年哥伦比亚特区高等法院老年人陪审义务豁免法案》，民主党议员 Eleanor Holmes Norton 2025-02-24 提出，属第 119 届国会。\n案名指向哥伦比亚特区高等法院陪审义务对老年人的豁免安排，交付众议院监督与政府改革委员会。年龄门槛与申请程序未公布。\n最新行动 2025-02-24：交付众议院监督与政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条款以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2025-03-26",
+      "title": "IMPACT Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1534",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.",
+      "official_no": "H.R. 1534",
+      "sponsor": "Max L. Miller",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-7",
+      "committee": "Energy and Natural Resources",
+      "title_cn": "《沥青与混凝土技术创新减排伙伴关系（IMPACT）法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1534《沥青与混凝土技术创新减排伙伴关系（IMPACT）法案》，共和党议员 Max L. Miller 2025-02-24 提出，属第 119 届国会。\n要求能源部设立临时计划，支持低排放水泥、混凝土与沥青的先进生产，重点覆盖碳捕集、能效提升等工艺的研发与商业应用。计划期限与拨款规模以条文为准。\n最新行动 2025-03-26：众议院通过后送参议院，二读交付能源与自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-04-02",
+      "stage_date": "2025-04-02",
+      "title": "Renewable Natural Gas Incentive Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2596",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "official_no": "H.R. 2596",
+      "sponsor": "Brian K. Fitzpatrick",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-1",
+      "committee": "Ways and Means",
+      "title_cn": "《2025年可再生天然气激励法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 2596《2025年可再生天然气激励法案》，共和党议员 Brian K. Fitzpatrick 2025-04-02 提出，属第 119 届国会。\n设立联邦税收抵免，适用至 2035 年，按每加仑可再生天然气或非液态可再生天然气的汽油加仑当量 1 美元计，适用于车用、船用与航空燃料，并规定登记等适用条件。\n最新行动 2025-04-02：交付众议院筹款委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-05-01",
+      "stage_date": "2025-05-01",
+      "title": "Nurse Corps Tax Parity Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1548",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Finance.",
+      "official_no": "S. 1548",
+      "sponsor": "Roger F. Wicker",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MS",
+      "committee": "Finance",
+      "title_cn": "《2025年护士团税收对等法案》",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "参议院法案 S. 1548《2025年护士团税收对等法案》，共和党议员 Roger F. Wicker 2025-05-01 提出，属第 119 届国会。\n将护士团奖学金与学生贷款偿还项目的金额从联邦应税总收入中排除。上述两个项目由卫生与公众服务部管理，面向在护士短缺机构服务或担任教职的护士。\n最新行动 2025-05-01：参议院二读后交付财政委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2026-02-11",
+      "title": "PROTECT Taiwan Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1531",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Foreign Relations.",
+      "official_no": "H.R. 1531",
+      "sponsor": "Frank D. Lucas",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OK-3",
+      "committee": "Foreign Relations",
+      "title_cn": "《通过施压监管机构终止中国对台湾地区威胁（PROTECT Taiwan）法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1531《通过施压监管机构终止中国对台湾地区威胁（PROTECT Taiwan）法案》，共和党议员 Frank D. Lucas 2025-02-24 提出，属第 119 届国会。\n要求总统认定中国相关行动对台湾地区构成威胁并危及美国利益时，联邦机构应设法将中国代表排除在六家国际金融组织的活动之外。该案涉台条款违背一个中国原则与中美三个联合公报，属对中国内政的干涉，中方不予认可。\n最新行动 2026-02-11：众议院通过后送参议院，二读交付外交委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-12",
+      "introduced": "2025-02-24",
+      "stage_date": "2026-01-15",
+      "title": "Public Safety Communications Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1519",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Forwarded by Subcommittee to Full Committee by Voice Vote.",
+      "official_no": "H.R. 1519",
+      "sponsor": "Kat Cammack",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-3",
+      "committee": "",
+      "title_cn": "《公共安全通信法案》",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 1519《公共安全通信法案》，共和党议员 Kat Cammack 2025-02-24 提出，属第 119 届国会。\n为国家电信与信息管理局公共安全通信办公室提供法定授权，职责包括管理下一代 9-1-1 系统联邦拨款，以及管理与审计第一响应者网络管理局所运营的应急通信网络。\n最新行动 2026-01-15：小组委员会口头表决转交全院委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note"
+      }
+    },
     {
       "board": "congress",
       "date": "2026-11-11",
@@ -2183,7 +3609,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 507，案名《退伍军人会员商业贷款法案》，由提案人（本轮元数据未列明） 于 2025年1月16日 提出。\n2. 核心动作：将向退伍军人发放的会员商业贷款排除在信用合作社贷款总额限制之外。\n3. 程序阶段：最新行动 2025年1月16日，已提交众议院金融服务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Vicente Gonzalez",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-TX-34",
+      "committee": "Financial Services"
     },
     {
       "board": "congress",
@@ -2202,7 +3632,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10946，案名《国会技术改进与提升办公室法案》，由提案人（本轮元数据未列明） 于 2026年10月29日 提出。\n2. 核心动作：设立国会技术改进与提升办公室，为议员及委员会提供技术评估支持；队列未提供官方摘要，机构设置细节无法确认。\n3. 程序阶段：最新行动 2026年10月29日，已提交众议院众议院管理委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Mark Takano",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-39",
+      "committee": "House Administration"
     },
     {
       "board": "congress",
@@ -2221,7 +3655,11 @@
         "tier": "note"
       },
       "title_cn": "要求国防部报告露天焚烧坑使用情况法案",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Raul Ruiz",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-25",
+      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -2240,7 +3678,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 6069，案名《RIDER安全法案》，由提案人（本轮元数据未列明） 于 2025年11月17日 提出。\n2. 核心动作：案名「RIDER」全称未在队列素材中给出，仅载明交付公路与公共交通小组委员会；具体规制对象无法确认。\n3. 程序阶段：最新行动 2025年11月18日，已转交公路与公共交通小组委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Lateefah Simon",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-12",
+      "committee": "Highways and Transit"
     },
     {
       "board": "congress",
@@ -2259,7 +3701,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10640，案名《2026年城市健康转型法案》，由提案人（本轮元数据未列明） 于 2026年10月1日 提出。\n2. 核心动作：围绕城市地区健康服务供给与资源配置设定条款；队列未提供官方摘要，具体项目无法确认。\n3. 程序阶段：最新行动 2026年10月1日，已提交众议院能源与商务委员会，并同时提交筹款委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Maxine Waters",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-43",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2278,7 +3724,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9712，案名《母亲优先法案》，由提案人（本轮元数据未列明） 于 2026年7月15日 提出。\n2. 核心动作：要求各州医疗补助计划覆盖导乐、助产士与哺乳支持人员提供的产前、分娩及产后服务。\n3. 程序阶段：最新行动 2026年7月15日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Gwen Moore",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WI-4",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2297,7 +3747,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 5156，案名《COUNT法案》，由提案人（本轮元数据未列明） 于 2025年9月4日 提出。\n2. 核心动作：涉及移民身份核查与统计事项，委员会为监督与政府改革委员会并同时提交司法等五个委员会；「COUNT」全称未在素材中列明。\n3. 程序阶段：最新行动 2025年9月4日，已提交众议院监督与政府改革委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2316,7 +3770,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众院联合决议 H.J.Res. 63，案名「将罗伯特·E·李纪念地重新指定为「阿灵顿宅邸国家历史遗址」的联合决议」，由提案人（本轮元数据未列明） 于 2025年2月27日 提出。\n2. 核心动作：将阿灵顿国家公墓内的罗伯特·E·李纪念地重新指定为「阿灵顿宅邸国家历史遗址」，属纪念地名称变更事项。\n3. 程序阶段：最新行动 2025年2月27日，已提交众议院退伍军人事务委员会，并同时提交军事委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Donald S. Beyer",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-8",
+      "committee": "Veterans' Affairs"
     },
     {
       "board": "congress",
@@ -2335,7 +3793,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10223，案名《2026年终结结核病法案》，由提案人（本轮元数据未列明） 于 2026年9月2日 提出。\n2. 核心动作：围绕全球结核病防治设定对外援助与项目条款；队列未提供官方摘要，具体授权额度无法确认。\n3. 程序阶段：最新行动 2026年9月2日，已提交众议院外交事务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Ami Bera",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-6",
+      "committee": "Foreign Affairs"
     },
     {
       "board": "congress",
@@ -2354,7 +3816,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院决议 H.Res. 1655，案名「以重罪与轻罪弹劾国防部长彼得·布赖恩·赫格塞思的决议」，由提案人（本轮元数据未列明） 于 2026年11月10日 提出。\n2. 核心动作：以「重罪与轻罪」为由弹劾国防部长彼得·布赖恩·赫格塞思，属弹劾条款提交；须经众议院表决后送参议院审理。\n3. 程序阶段：最新行动 2026年11月10日，复议动议经一致同意搁置，原表决结果维持。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Thomas Massie",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KY-4",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2373,7 +3839,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 3277，案名《确保持久笑容法案》，由提案人（本轮元数据未列明） 于 2025年5月8日 提出。\n2. 核心动作：要求医保计划覆盖先天性颅面异常等疾病的修复治疗及相关服务；队列未提供官方摘要，覆盖范围无法确认。\n3. 程序阶段：最新行动 2025年5月8日，已提交众议院能源与商务委员会，并同时提交教育与劳动力委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Neal P. Dunn",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-2",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2392,7 +3862,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 8105，案名「将洛杉矶西华盛顿大道819号邮政设施命名为「杰里·T·霍奇斯二世邮政大楼」法案」，由提案人（本轮元数据未列明） 于 2026年3月26日 提出。\n2. 核心动作：将洛杉矶西华盛顿大道 819 号的邮政设施命名为「杰里·T·霍奇斯二世邮政大楼」。\n3. 程序阶段：最新行动 2026年3月26日，已提交众议院监督与政府改革委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Sydney Kamlager-Dove",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-37",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2411,7 +3885,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10250，案名《禁止偏好法案》，由提案人（本轮元数据未列明） 于 2026年9月3日 提出。\n2. 核心动作：涉及联邦人事录用中的偏好政策调整，委员会为监督与政府改革委员会并同时提交军事委员会；具体条款未列明。\n3. 程序阶段：最新行动 2026年9月3日，已提交众议院监督与政府改革委员会，并同时提交军事委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Stephanie I. Bice",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OK-5",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2430,7 +3908,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9482，案名《2026年健康与位置数据保护法案》，由提案人（本轮元数据未列明） 于 2026年6月25日 提出。\n2. 核心动作：针对健康数据与位置数据的收集、使用与转让设定限制；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年6月25日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Mary Gay Scanlon",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-PA-5",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2449,7 +3931,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 2094，案名《2025年HELPER法案》，由提案人（本轮元数据未列明） 于 2025年3月14日 提出。\n2. 核心动作：为执法人员、中小学教师、消防员及其他一线应急人员设立首次购房抵押贷款援助计划，允许零首付并以一次性预付保险费替代。\n3. 程序阶段：最新行动 2025年3月14日，已提交众议院金融服务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "John H. Rutherford",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-5",
+      "committee": "Financial Services"
     },
     {
       "board": "congress",
@@ -2468,7 +3954,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 8604，案名《2026年语言无障碍委员会法案》，由提案人（本轮元数据未列明） 于 2026年4月30日 提出。\n2. 核心动作：设立语言无障碍委员会，统筹联邦机构的语言服务标准；队列未提供官方摘要，机构层级与职责无法确认。\n3. 程序阶段：最新行动 2026年4月30日，已提交众议院监督与政府改革委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Judy Chu",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-28",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2487,7 +3977,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 1037，案名《2025年选民资格核验法案》，由提案人（本轮元数据未列明） 于 2025年2月5日 提出。\n2. 核心动作：要求国土安全部在收到州官员关于潜在选民名单中个人移民身份的查询后 15 日内答复。\n3. 程序阶段：最新行动 2025年2月5日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Beth Van Duyne",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-24",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2506,7 +4000,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10612，案名《2026年BASIC法案》，由提案人（本轮元数据未列明） 于 2026年9月24日 提出。\n2. 核心动作：涉及教育领域的基本资助或课程安排，委员会为教育与劳动力委员会；「BASIC」全称未在素材中列明。\n3. 程序阶段：最新行动 2026年9月24日，已提交众议院教育与劳动力委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Norma J. Torres",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-35",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -2525,7 +4023,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 5306，案名《2025年枪支自杀预防法案》，由提案人（本轮元数据未列明） 于 2025年9月11日 提出。\n2. 核心动作：围绕枪支自杀预防设定研究、筛查或存放安全条款；队列未提供官方摘要，具体措施无法确认。\n3. 程序阶段：最新行动 2025年9月11日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Julia Brownley",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-26",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2544,7 +4046,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 6951，案名《制止医疗补助不当追偿法案》，由提案人（本轮元数据未列明） 于 2026年1月6日 提出。\n2. 核心动作：禁止州医疗补助计划通过遗产追偿收回已发放待遇的成本，并要求在法案生效后 90 日内解除相关财产留置、通知受影响个人。\n3. 程序阶段：最新行动 2026年1月6日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Janice D. Schakowsky",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-9",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2563,7 +4069,11 @@
         "tier": "note"
       },
       "title_cn": "限制未经州与地方批准建设运营数据中心使用联邦资金法案",
-      "domain": "科技/AI"
+      "domain": "科技/AI",
+      "sponsor": "Tim Burchett",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN-2",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2582,7 +4092,11 @@
         "tier": "note"
       },
       "title_cn": "禁止联邦资金用于协助安乐死法案",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Abraham J. Hamadeh",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AZ-8",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2601,7 +4115,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9938，案名《SCREEN法案》，由提案人（本轮元数据未列明） 于 2026年7月23日 提出。\n2. 核心动作：涉及税收领域的筛查或抵免安排，委员会为筹款委员会；「SCREEN」全称未在素材中列明。\n3. 程序阶段：最新行动 2026年7月23日，已提交众议院筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Claudia Tenney",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NY-24",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -2620,7 +4138,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院决议 H.Res. 1385，案名「纪念1972年《教育修正案》第九编成就的决议」，由提案人（本轮元数据未列明） 于 2026年6月24日 提出。\n2. 核心动作：纪念 1972 年《教育修正案》第九编（帕齐·塔克莫托·明克平等教育机会法）的实施成就，并主张继续推进女性与女童教育机会；属意向性决议。\n3. 程序阶段：最新行动 2026年6月24日，已提交众议院教育与劳动力委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Adelita S. Grijalva",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AZ-7",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -2639,7 +4161,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 7100，案名《2026年锡克裔美国人反歧视法案》，由提案人（本轮元数据未列明） 于 2026年1月15日 提出。\n2. 核心动作：针对针对锡克裔美国人的歧视行为设定禁止与救济条款；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年1月15日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Josh Gottheimer",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NJ-5",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2658,7 +4184,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 1522，案名《联邦退休公平法案》，由提案人（本轮元数据未列明） 于 2025年2月24日 提出。\n2. 核心动作：调整联邦雇员退休待遇计算规则；首位提案人已依一致同意变更，具体条款未在摘要中列明。\n3. 程序阶段：最新行动 2025年7月22日，首位提案人依一致同意变更；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Gerald E. Connolly",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-11",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2677,7 +4207,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9298，案名《制止有害与恶劣侵权行为法案》，由提案人（本轮元数据未列明） 于 2026年6月11日 提出。\n2. 核心动作：针对特定类型的侵权诉讼设定限制；队列未提供官方摘要，适用诉讼类型无法确认。\n3. 程序阶段：最新行动 2026年6月11日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Derek Schmidt",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KS-2",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2696,7 +4230,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10705，案名《打击SIM卡盒诈骗法案》，由提案人（本轮元数据未列明） 于 2026年10月1日 提出。\n2. 核心动作：打击利用「SIM 卡盒」设备实施诈骗的行为，涉及通信网络接入与执法配合条款。\n3. 程序阶段：最新行动 2026年10月1日，已提交众议院能源与商务委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Jefferson Shreve",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-6",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2715,7 +4253,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 8201，案名「修订《公共卫生服务法》要求社区卫生中心提供行为健康与物质使用障碍服务法案」，由提案人（本轮元数据未列明） 于 2026年4月6日 提出。\n2. 核心动作：修订《公共卫生服务法》，要求社区卫生中心提供行为健康、心理健康与物质使用障碍服务。\n3. 程序阶段：最新行动 2026年6月25日，小组委员会口头表决通过并转交全体委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Susie Lee",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NV-3",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2734,7 +4276,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 1845，案名《退役军人过渡援助计划促进法案》，由提案人（本轮元数据未列明） 于 2025年3月5日 提出。\n2. 核心动作：要求退役军人过渡援助计划的离队前咨询包含退伍军人事务部待遇介绍，并要求该部每年就介绍情况提交报告。\n3. 程序阶段：最新行动 2025年3月27日，已转交经济机会小组委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Derrick Van Orden",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WI-3",
+      "committee": "Economic Opportunity"
     },
     {
       "board": "congress",
@@ -2753,7 +4299,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 6997，案名《社区护照服务可及法案》，由提案人（本轮元数据未列明） 于 2026年1月9日 提出。\n2. 核心动作：扩大社区层面护照办理服务的可及性；队列未提供官方摘要，具体措施无法确认。\n3. 程序阶段：最新行动 2026年1月9日，已提交众议院外交事务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "John Joyce",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-13",
+      "committee": "Foreign Affairs"
     },
     {
       "board": "congress",
@@ -2772,7 +4322,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9849，案名《2026年塔斯克基飞行员纪念法案》，由提案人（本轮元数据未列明） 于 2026年7月22日 提出。\n2. 核心动作：设立塔斯克基飞行员纪念设施，委员会为自然资源委员会并同时提交预算委员会；具体选址与授权额度未列明。\n3. 程序阶段：最新行动 2026年7月22日，已提交众议院自然资源委员会，并同时提交预算委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Shomari Figures",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AL-2",
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -2791,7 +4345,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 7，案名《2025年禁止纳税人资助堕胎及堕胎保险全面披露法案》，由提案人（本轮元数据未列明） 于 2025年1月22日 提出。\n2. 核心动作：禁止联邦资金用于堕胎或包含堕胎的健康保险，限制范围延伸至哥伦比亚特区预算，并禁止在联邦医疗机构或由联邦雇员实施堕胎；此类限制此前多以年度拨款条款形式出现。\n3. 程序阶段：最新行动 2025年1月22日，已提交众议院能源与商务委员会，并同时提交筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Christopher H. Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NJ-4",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2810,7 +4368,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院决议 H.Res. 1642，案名「主张国会不得向因人工智能领域压力陷入资不抵债的金融企业提供额外资金或特殊监管支持的决议」，由提案人（本轮元数据未列明） 于 2026年10月29日 提出。\n2. 核心动作：主张国会不得向因人工智能领域压力陷入资不抵债的金融企业提供额外资金或特殊监管支持，而应将支持用于受影响民众；属意向性决议。\n3. 程序阶段：最新行动 2026年10月29日，已提交众议院金融服务委员会，并同时提交教育与劳动力委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Greg Casar",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-TX-35",
+      "committee": "Financial Services"
     },
     {
       "board": "congress",
@@ -2829,7 +4391,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 4299，案名《保护患者获得癌症与复杂疗法法案》，由提案人（本轮元数据未列明） 于 2025年7月7日 提出。\n2. 核心动作：保障癌症与复杂疗法患者的用药可及性，涉及医保支付与流通环节；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2025年7月7日，已提交众议院能源与商务委员会，并同时提交筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Gregory F. Murphy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC-3",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2848,7 +4414,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10616，案名《2026年卫生与公众服务部健康数据公开法案》，由提案人（本轮元数据未列明） 于 2026年9月28日 提出。\n2. 核心动作：要求卫生与公众服务部扩大健康数据向公众开放的范围与方式；队列未提供官方摘要，具体数据范围无法确认。\n3. 程序阶段：最新行动 2026年9月28日，已提交众议院能源与商务委员会，并同时提交教育与劳动力委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Cliff Bentz",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OR-2",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2867,7 +4437,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 7411，案名《2025年退伍军人乳腺摄影可及法案》，由提案人（本轮元数据未列明） 于 2026年2月5日 提出。\n2. 核心动作：扩大退伍军人获得乳腺摄影筛查的渠道，涉及退伍军人事务部采购与转诊安排；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年2月5日，已提交众议院退伍军人事务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Glenn Thompson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-15",
+      "committee": "Veterans' Affairs"
     },
     {
       "board": "congress",
@@ -2886,7 +4460,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 5113，案名《PRICE法案》，由提案人（本轮元数据未列明） 于 2025年9月3日 提出。\n2. 核心动作：案名「PRICE」全称未在队列素材中给出，仅载明交付司法委员会；具体规制对象与条款内容无法据案名确认。\n3. 程序阶段：最新行动 2025年9月3日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Ashley Hinson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA-2",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2905,7 +4483,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10443，案名《2026年美国采购改进法案》，由提案人（本轮元数据未列明） 于 2026年9月16日 提出。\n2. 核心动作：改进联邦采购规则，涉及采购来源与程序要求；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年9月16日，已提交众议院监督与政府改革委员会，并同时提交军事委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Steny H. Hoyer",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD-5",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2924,7 +4506,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 2381，案名《2025年癌症筛查覆盖法案》，由提案人（本轮元数据未列明） 于 2025年3月26日 提出。\n2. 核心动作：扩大癌症筛查的医保覆盖范围与项目；「SCREENS」全称未在素材中列明。\n3. 程序阶段：最新行动 2025年3月26日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Joseph D. Morelle",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-25",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2943,7 +4529,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 7230，案名《2026年购买美国棉花法案》，由提案人（本轮元数据未列明） 于 2026年1月22日 提出。\n2. 核心动作：以税收措施支持美国棉花采购与使用；队列未提供官方摘要，具体优惠形式无法确认。\n3. 程序阶段：最新行动 2026年1月22日，已提交众议院筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Gregory F. Murphy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC-3",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -2962,7 +4552,11 @@
         "at": "2026-11-11",
         "body": "【政策背景】403(b) 计划面向公立学校、慈善机构与教会雇员，其可配置的资产类别长期限于年金合同与共同基金，与 401(k) 计划可使用的集合信托等工具存在差异。法案最新行动为众议院通过为其安排审议程序的规则决议 H.Res. 1650，属程序性推进，尚未完成全院表决。\n\n【核心内容】法案允许 403(b) 退休计划购入集合信托份额，即由银行或信托公司持有的一组集合管理资产，并允许配置保险公司独立账户产品。据国会研究服务局摘要，法案的调整集中于计划可配置的资产类别，未改变 403(b) 计划的缴费限额、领取年龄与税收递延结构。\n\n【要点提炼】其一，法案处理的是计划可选工具的平等问题，使 403(b) 与 401(k) 在集合信托、独立账户等类别上趋于一致。其二，程序上规则决议已获通过，下一观察节点为全院表决；若众议院通过，参议院是否引入对应版本、两院文本能否协调一致仍待观察，法案在参议院尚无行动记录。其三，条款表述以国会研究服务局摘要为据，摘要未列明托管、披露与受托责任的具体衔接安排，相关细节以 congress.gov 公布文本为准。其四，法案不涉及联邦支出，属监管与税收规则调整。",
         "tier": "full"
-      }
+      },
+      "sponsor": "Frank D. Lucas",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OK-3",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2981,7 +4575,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10547，案名《PACE可及性改进法案》，由提案人（本轮元数据未列明） 于 2026年9月24日 提出。\n2. 核心动作：改进全包式老年人照护计划的准入与运营规则；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年9月24日，已提交众议院能源与商务委员会，并同时提交筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Debbie Dingell",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-6",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3000,7 +4598,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 3885，案名《2025年社区TEAMS法案》，由提案人（本轮元数据未列明） 于 2025年6月10日 提出。\n2. 核心动作：围绕社区层面的团队化照护模式设定资助或覆盖条款；「TEAMS」全称未在素材中列明。\n3. 程序阶段：最新行动 2025年6月10日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Carol D. Miller",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WV-1",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3019,7 +4621,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9096，案名《2026年驱逐恐怖分子法案》，由提案人（本轮元数据未列明） 于 2026年6月2日 提出。\n2. 核心动作：对被认定涉恐的非公民设定强制递解条款；队列未提供官方摘要，认定标准无法确认。\n3. 程序阶段：最新行动 2026年6月2日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Bill Huizenga",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MI-4",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3038,7 +4644,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 492，案名《拯救公务员制度法案》，由提案人（本轮元数据未列明） 于 2025年1月16日 提出。\n2. 核心动作：原则上禁止变更竞争性服务与例外服务职位的分类，除非满足特定条件；首位提案人已依一致同意变更。\n3. 程序阶段：最新行动 2025年9月16日，首位提案人依一致同意变更；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Gerald E. Connolly",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-11",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -3057,7 +4667,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 7333，案名《2026年家庭暴力预防与服务改进法案》，由提案人（本轮元数据未列明） 于 2026年2月3日 提出。\n2. 核心动作：重新授权并改进《家庭暴力预防与服务法》相关计划；队列未提供官方摘要，授权额度无法确认。\n3. 程序阶段：最新行动 2026年2月3日，已提交众议院教育与劳动力委员会，并同时提交能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Lucy McBath",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-GA-6",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -3076,7 +4690,11 @@
         "tier": "note"
       },
       "title_cn": "撤销《一项宏大美好法案》向移民与海关执法局及海关与边境保护局拨付经费法案",
-      "domain": "财政/税收"
+      "domain": "财政/税收",
+      "sponsor": "Lauren Underwood",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-14",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3095,7 +4713,11 @@
         "tier": "note"
       },
       "title_cn": "要求国土安全部长为黎巴嫩指定临时保护身份法案",
-      "domain": "司法/执法"
+      "domain": "司法/执法",
+      "sponsor": "Rashida Tlaib",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-12",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3114,7 +4736,11 @@
         "tier": "note"
       },
       "title_cn": "修订《小企业法》取消特定小企业合同书面论证与批准要求法案",
-      "domain": "产业/企业"
+      "domain": "产业/企业",
+      "sponsor": "Gilbert Ray Cisneros",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-31",
+      "committee": "Small Business"
     },
     {
       "board": "congress",
@@ -3133,7 +4759,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院决议 H.Res. 159，案名「支持将2025年2月24日至28日定为「公立学校周」的决议」，由提案人（本轮元数据未列明） 于 2025年2月24日 提出。\n2. 核心动作：支持将 2025 年 2 月 24 日至 28 日定为「公立学校周」；属纪念类决议，不具法律效力。\n3. 程序阶段：最新行动 2025年2月24日，已提交众议院监督与政府改革委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Mark Pocan",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WI-2",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -3152,7 +4782,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 10557，案名《社会保障待遇保护恢复法案》，由提案人（本轮元数据未列明） 于 2026年9月24日 提出。\n2. 核心动作：恢复《社会保障法》相关条款下被扣减的待遇保护；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2026年9月24日，已提交众议院司法委员会，并同时提交筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Adelita S. Grijalva",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AZ-7",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3171,7 +4805,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 4157，案名《已婚纳税人平等尊严法案》，由提案人（本轮元数据未列明） 于 2025年6月26日 提出。\n2. 核心动作：使已婚纳税人在联邦税收中享有平等对待，涉及《国内税收法典》中婚姻状态的适用规则；队列未提供官方摘要，具体条款无法确认。\n3. 程序阶段：最新行动 2025年6月26日，已提交众议院筹款委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Becca Balint",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VT",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -3190,7 +4828,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 9264，案名《非公民投票零例外法案》，由提案人（本轮元数据未列明） 于 2026年6月11日 提出。\n2. 核心动作：取消非公民登记投票的例外情形，并设定相应刑事与核查条款；队列未提供官方摘要，具体罚则无法确认。\n3. 程序阶段：最新行动 2026年6月11日，已提交众议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Eric Burlison",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO-7",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3209,7 +4851,11 @@
         "at": "2026-11-11",
         "body": "1. 文种与主体：众议院法案 H.R. 6191，案名《禁止纳税人资助非法移民堕胎出行法案》，由提案人（本轮元数据未列明） 于 2025年11月20日 提出。\n2. 核心动作：禁止联邦资金用于为无合法身份外国人支付堕胎相关出行费用。\n3. 程序阶段：最新行动 2025年11月20日，已提交众议院能源与商务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
-      }
+      },
+      "sponsor": "Mark Harris",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NC-8",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3228,7 +4874,11 @@
         "tier": "note"
       },
       "title_cn": "《CHILD劳工法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Patty Murray",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -3247,7 +4897,11 @@
         "tier": "note"
       },
       "title_cn": "阿尔茨海默病筛查与预防法案（ASAP法案）",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Susan M. Collins",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-ME",
+      "committee": "Finance"
     },
     {
       "board": "congress",
@@ -3266,7 +4920,11 @@
         "tier": "note"
       },
       "title_cn": "对协助以色列在约旦河西岸E1地区建设定居点的外国人实施制裁的法案",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Christopher A. Coons",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-DE",
+      "committee": "Banking, Housing, and Urban Affairs"
     },
     {
       "board": "congress",
@@ -3285,7 +4943,11 @@
         "tier": "note"
       },
       "title_cn": "为肌萎缩侧索硬化症退伍军人伸张正义法案",
-      "domain": "社会保障"
+      "domain": "社会保障",
+      "sponsor": "Lisa Murkowski",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AK",
+      "committee": "Veterans' Affairs"
     },
     {
       "board": "congress",
@@ -3304,7 +4966,11 @@
         "tier": "note"
       },
       "title_cn": "美国学员护士团服务认定法案",
-      "domain": "社会保障"
+      "domain": "社会保障",
+      "sponsor": "Elizabeth Warren",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MA",
+      "committee": "Veterans' Affairs"
     },
     {
       "board": "congress",
@@ -3323,7 +4989,11 @@
         "tier": "note"
       },
       "title_cn": "指定2026年9月为“全国婴儿死亡率关注月”的参议院决议",
-      "domain": "医疗/医药"
+      "domain": "医疗/医药",
+      "sponsor": "Cindy Hyde-Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MS",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -3342,7 +5012,11 @@
         "tier": "note"
       },
       "title_cn": "指定2026年9月14日至18日为“全国清洁能源周”的参议院决议",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Susan M. Collins",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-ME",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -3870,29 +5544,6 @@
       "brief": {
         "at": "2026-11-12",
         "body": "1. 文种与主体：参议院法案 S. 4281，案名《硬件技术管制多边协调（MATCH）法案》，由共和党参议员 Pete Ricketts 于 2026 年 4 月 13 日 提出。\n2. 核心动作：案名指向硬件类技术管制的多边对齐；协调机制、管制清单与第三国协作方式待文本确认。\n3. 程序阶段：最新行动日期为 2026-04-13，已二读并交付参议院银行、住房与城市事务委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
-      "introduced": "2025-05-22",
-      "stage_date": "2025-05-22",
-      "title": "Crime Victims Fund Stabilization Act of 2025",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1892",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
-      "official_no": "S. 1892",
-      "sponsor": "Lisa Murkowski",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-AK",
-      "committee": "the Judiciary",
-      "title_cn": "《2025年犯罪受害者基金稳定法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-12",
-        "body": "1. 文种与主体：参议院法案 S. 1892，案名《2025年犯罪受害者基金稳定法案》，由共和党参议员 Lisa Murkowski 于 2025 年 5 月 22 日 提出。\n2. 核心动作：案名指向稳定犯罪受害者基金的资金来源；征收与分配机制待文本确认。\n3. 程序阶段：最新行动日期为 2025-05-22，已二读并交付参议院司法委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note"
       }
     },
@@ -6006,7 +7657,11 @@
         "tier": "note"
       },
       "title_cn": "《午夜规则救济法案》",
-      "domain": "政府运作"
+      "domain": "政府运作",
+      "sponsor": "Andy Biggs",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AZ-5",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -6531,7 +8186,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年驱逐中国非法警察法案》",
-      "domain": "国防/安全"
+      "domain": "国防/安全",
+      "sponsor": "Tom Cotton",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR",
+      "committee": "Foreign Relations"
     },
     {
       "board": "congress",
@@ -6596,7 +8255,11 @@
         "tier": "note"
       },
       "title_cn": "《2025年“证明它”法案》",
-      "domain": "产业/企业"
+      "domain": "产业/企业",
+      "sponsor": "Joni Ernst",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA",
+      "committee": "Small Business and Entrepreneurship"
     },
     {
       "board": "congress",
@@ -6615,7 +8278,11 @@
         "tier": "note"
       },
       "title_cn": "《恢复残障成年人就业选择法案》",
-      "domain": "教育/劳动"
+      "domain": "教育/劳动",
+      "sponsor": "Tom Cotton",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AR",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -6634,7 +8301,11 @@
         "tier": "note"
       },
       "title_cn": "《HEATS法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "John Hoeven",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-ND",
+      "committee": "Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining"
     },
     {
       "board": "congress",
@@ -6653,7 +8324,11 @@
         "tier": "note"
       },
       "title_cn": "《增强电网韧性法案》",
-      "domain": "能源/环境"
+      "domain": "能源/环境",
+      "sponsor": "Peter Welch",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VT",
+      "committee": "Energy and Natural Resources"
     },
     {
       "board": "congress",
@@ -7298,29 +8973,6 @@
       "sponsor_party": "D",
       "sponsor_tag": "D-CT-3",
       "committee": "Energy and Commerce"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-05",
-      "introduced": "2026-01-27",
-      "stage_date": "2026-10-29",
-      "title": "To amend the National Trails System Act to direct the Secretary of the Interior to conduct a study on the feasibility of designating the Bay Area Ridge National Scenic Trail, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/7254",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 752.",
-      "official_no": "H.R. 7254",
-      "brief": {
-        "at": "2026-10-17",
-        "body": "【政策背景】\n《国家步道系统法》规定了国家风景步道的指定程序，新增指定需先完成可行性研究。本法案要求内政部长就指定湾区山脊国家风景步道（Bay Area Ridge National Scenic Trail）的可行性开展研究。\n\n【核心内容】\n法案于 2026 年 1 月提出，已于 2026 年 9 月 15 日经一致同意以修正版获得委员会报告通过（Ordered to be Reported (Amended)）。政策领域为公共土地与自然资源。\n\n【要点提炼】\n1. 性质为可行性研究授权，是步道正式指定的前置程序，不涉及实际拨款或土地管制变化；\n2. 委员会已通过修正版，程序进度良好；\n3. 属地方性的自然保护与游憩议题。",
-        "tier": "note"
-      },
-      "title_cn": "修订《国家步道系统法》指示内政部长就指定湾区山脊国家风景步道可行性开展研究的法案",
-      "domain": "能源/环境",
-      "sponsor": "Jared Huffman",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-2",
-      "committee": ""
     },
     {
       "board": "congress",
@@ -9027,29 +10679,6 @@
     {
       "board": "congress",
       "date": "2026-11-04",
-      "title": "Responsible Cormorant Management and Control Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8195",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 754.",
-      "official_no": "H.R. 8195",
-      "brief": {
-        "at": "2026-11-04",
-        "body": "【政策背景】\n双冠鸬鹚在北美内陆水域种群数量自二十世纪后期显著回升，其在五大湖及内陆水产养殖区的捕食行为与渔业资源、养殖存量的矛盾持续存在。由于鸬鹚属受联邦保护的迁徙鸟类，种群控制措施须依托《候鸟条约法》框架下的许可与管理安排，由联邦鱼类与野生动物管理机构与州政府协同实施。相关的授权依据、许可条件与责任划分，历来是国会渔业与野生动物议题的争点。\n\n【核心内容】\n本法案题为《2026 年负责任鸬鹚管理与控制法案》，由共和党众议员 Tim Walberg（密歇根州第 5 选区）于 2026 年 4 月 2 日提出，政策领域列为动物议题。2026 年 10 月 29 日，法案列入众议院 Union Calendar 第 754 号，即已获委员会报告、进入全院审议排队序列。\n\n需要明确的是，官方摘要本轮未取得，congress.gov 仅提供标题、提案人、政策领域与程序状态等元数据。法案拟授权的管理主体、控制措施类型、与州政府的权限划分以及是否设定种群目标，均无法据现有素材核实，本速览不作推定。上述背景仅说明该议题的制度框架，不构成对本法条款的转述。\n\n下一观察节点为众议院全院表决。若获通过，尚需参议院通过对应文本并完成两院协调，方可送总统签署；鉴于两院目前仅众议院版本进入日程，参议院配套版本 S. 5514 仍停留在委员会交付阶段，立法周期尚长。\n\n【要点提炼】\n1. 程序位置明确：已获委员会报告并列入 Union Calendar 第 754 号，处于全院审议前的排队阶段，成案概率高于仅交付委员会的同类提案，但仍受全院日程安排制约。\n2. 内容确定性低：仅具元数据，条款细节无法核实，凡涉及许可条件、控制额度与联邦州分工的表述均须以正式文本为准。\n3. 议题属性为野生动物管理与渔业利益的平衡，与水产养殖、休闲垂钓及州级野生动物管理事权相关。\n4. 属第 119 届国会当届立法进展；参议院同名版本 S. 5514 进度落后，两院尚未形成一致文本。",
-        "tier": "full"
-      },
-      "title_cn": "负责任鸬鹚管理与控制法案",
-      "domain": "能源/环境",
-      "introduced": "2026-04-02",
-      "stage_date": "2026-10-29",
-      "sponsor": "Tim Walberg",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-MI-5",
-      "committee": ""
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-04",
       "title": "Ending PUSHOUT Act of 2025",
       "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1338",
       "source": "国会官网",
@@ -9894,29 +11523,6 @@
       "introduced": "2026-01-29",
       "stage_date": "2026-09-17",
       "sponsor": "John Thune",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-SD",
-      "committee": ""
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-04",
-      "title": "South Dakota Water Feasibility Studies Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9785",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 760.",
-      "official_no": "H.R. 9785",
-      "title_cn": "南达科他州水利可行性研究法案",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-04",
-        "body": "第119届国会众议院法案（H.R.9785），2026年7月20日由众议员达斯蒂·约翰逊（共和党，南达科他州全州选区）提出，2026年10月29日列入联合日历第760号，本轮因元数据回填更新重新进入抓取窗口。\n法案要求对南达科他州相关水利项目开展可行性研究。队列未提供官方摘要，涉及的具体项目清单、研究标准与授权额度无法确认，不作推测。\ncongress.gov 标注政策领域为水资源开发。\n已列入联合日历，待众议院院会排期表决。",
-        "tier": "note"
-      },
-      "introduced": "2026-07-20",
-      "stage_date": "2026-10-29",
-      "sponsor": "Dusty Johnson",
       "sponsor_party": "R",
       "sponsor_tag": "R-SD",
       "committee": ""
@@ -11231,29 +12837,6 @@
       "sponsor_party": "D",
       "sponsor_tag": "D-VT",
       "committee": "Commerce, Science, and Transportation"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-03",
-      "title": "Common Sense 250 Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9600",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Placed on the Union Calendar, Calendar No. 757.",
-      "official_no": "H.R. 9600",
-      "brief": {
-        "at": "2026-11-04",
-        "body": "1. 文种与主体：众议院法案 H.R. 9600，由民主党众议员 Jamie Raskin（马里兰州第 8 选区）于 2026 年 7 月 6 日提出。\n2. 核心动作：案名《2026 年常识 250 法案》，政策领域列为公共土地与自然资源；案名中「250」的确切所指官方摘要未说明，不作推定。\n3. 程序阶段：2026 年 10 月 29 日列入众议院 Union Calendar 第 757 号，已获委员会报告，等待全院审议。\n4. 信息边界：官方摘要未取得，具体条款以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note"
-      },
-      "title_cn": "「常识 250」法案",
-      "domain": "其他",
-      "introduced": "2026-07-06",
-      "stage_date": "2026-10-29",
-      "sponsor": "Jamie Raskin",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MD-8",
-      "committee": ""
     },
     {
       "board": "congress",
@@ -25111,29 +26694,6 @@
       "sponsor_party": "R",
       "sponsor_tag": "R-SC-1",
       "committee": "Oversight and Government Reform"
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-23",
-      "title": "To strengthen American wood, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10906",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, Transportation and Infrastructure, Oversight and Government Reform, Science, ",
-      "title_cn": "强化美国木材法案",
-      "domain": "农业/食品",
-      "brief": {
-        "at": "2026-10-26",
-        "body": "《强化美国木材法案》（H.R.10906）由共和党众议员 Bruce Westerman（阿肯色州第4选区）于2026年10月22日提出，同日交付众议院筹款委员会并追加能源与商业、交通与基础设施、监督与政府改革、科学空间技术、农业、金融服务、武装部队与自然资源委员会审议。\n法案名称指向美国木材供给与竞争力的政策安排，官方摘要未取得，具体条款以法案文本为准；联合移送本身不代表跨委员会认可。",
-        "tier": "note"
-      },
-      "official_no": "H.R. 10906",
-      "introduced": "2026-10-22",
-      "stage_date": "2026-10-22",
-      "sponsor": "Bruce Westerman",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-AR-4",
-      "committee": "Ways and Means"
     },
     {
       "board": "congress",
