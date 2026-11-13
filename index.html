@@ -3628,7 +3628,15 @@
   .cg-step.current .bar { background: #a8823c; }
   .cg-step.current { color: #a8823c; font-weight: 600; }
   .cg-metas { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; padding: 14px 0 15px; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
-  .cg-meta .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: var(--muted); }
+  .cg-meta .k {
+    display: flex; align-items: center; gap: 5px;
+    font-family: var(--cg-sans); font-size: 10.5px; font-weight: 600;
+    letter-spacing: .06em; line-height: 1.4; color: #a8823c;
+  }
+  .cg-meta .k::before {
+    content: ''; flex: none; width: 4px; height: 4px; border-radius: 1px;
+    background: #c9a86a;
+  }
   .cg-meta .v { margin-top: 3px; font-family: var(--cg-sans); font-size: 13px; font-weight: 500; line-height: 1.55; color: #0b1724; }
   .cg-meta .pt { font-family: var(--pw-mono); font-size: 10px; color: #a8823c; margin-left: 4px; }
   .cg-meta .cg-cen { display: block; margin-top: 2px; font-family: var(--v2-serif); font-size: 10.5px; font-style: italic; line-height: 1.5; color: var(--muted); }
