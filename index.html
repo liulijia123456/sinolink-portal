@@ -2849,7 +2849,7 @@
   }
 </style>
 <style id="v4-parties">
-  /* ---------- 外交动态：建设中占位页 ---------- */
+  /* ---------- 宏观数据：建设中占位页 ---------- */
   #view-parties .pt-todo {
     max-width: 720px; margin: 8px 0 40px; padding: 44px 40px 40px;
     background: #fff; border: 1px dashed var(--border); border-radius: 16px;
@@ -2868,7 +2868,7 @@
   }
 
   /* =========================================================================
-     v4 · 外交动态看板 —— 作用域严格限定 #view-parties（旧版政党看板样式，暂时保留）
+     v4 · 宏观数据看板 —— 作用域严格限定 #view-parties（沿用旧版政党看板样式，暂时保留）
      ---------------------------------------------------------------------------
      版式语言：对垒式竞选看板
        · 左右对称双栏表达两党对等，中轴只做对比缝
@@ -4271,32 +4271,32 @@
             <div class="us-foot" data-us-foot="election" data-page-node-id="UHFqG1Wbk7hhOyfpA9HzNJ">2026 中期选举 · 2028 总统大选 · 人工整理</div>
           </div>
 
-          <!-- 子板块 06：外交动态（2026-11-01 由「政党动态」改版；看板搭建中） -->
+          <!-- 子板块 06：宏观数据（2026-11-01 由「政党动态」改版；2026-11-13 由「外交动态」改版；看板搭建中） -->
           <div class="card">
             <div class="visual" aria-hidden="true">
               <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-                <!-- 外交：经纬地球 + 外层协调弧，取全球议题与多边机制的意象 -->
+                <!-- 宏观：指标轴 + 基准虚线 + 起伏上行的读数折线，末端带箭头 -->
                 <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="55" cy="55" r="27"/>
-                  <path d="M28 55 H82"/>
-                  <path d="M55 28 C37 39 37 71 55 82 C73 71 73 39 55 28 Z"/>
-                  <path d="M31 43 C43 49 67 49 79 43"/>
-                  <path d="M31 67 C43 61 67 61 79 67"/>
+                  <path d="M28 24 V84 H86"/>
+                  <path d="M33 57 H81" stroke-dasharray="7 6"/>
+                  <path d="M33 75 L49 62 L60 68 L75 44"/>
+                  <path d="M75 44 L66.2 48.7"/>
+                  <path d="M75 44 L74.7 54"/>
                 </g>
               </svg>
             </div>
-            <div class="meta"><span class="num">Ⅵ</span><span class="branch">外交</span></div>
-            <div class="title">外交动态</div>
-            <div class="title-en">Foreign Affairs</div>
-            <p class="desc">收集美国对外关系的关键节点：双边磋商与高层互访、多边机制与盟友协调、制裁与出口管制、贸易与安全谈判，按国别与议题归档。</p>
-            <div class="tags"><span>双边磋商</span><span>多边机制</span><span>制裁与管制</span><span>高层互访</span></div>
+            <div class="meta"><span class="num">Ⅵ</span><span class="branch">经济</span></div>
+            <div class="title">宏观数据</div>
+            <div class="title-en">Macro Data</div>
+            <p class="desc">汇集美国宏观运行的核心读数：GDP 与产出、就业与失业、CPI 与 PCE 物价、基准利率与国债收益率、消费与投资、财政与国际收支，按指标口径与发布节奏归档。</p>
+            <div class="tags"><span>GDP</span><span>就业</span><span>通胀</span><span>利率</span></div>
             <a class="btn" href="#" data-enter="parties">进入板块</a>
             <div class="us-foot" data-us-foot="parties">建设中 · 数据源待接入</div>
           </div>
 
         </div>
 
-        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;外交动态板块建设中,暂为占位页。</p>
+        <p class="placeholder" style="margin-top: 24px;" data-page-node-id="tUxXGGEigVb4CPiHJZYIWv">白宫、国会、独立机构、司法裁判四个子板块条目由外部数据源（联邦公报、国会官网、CourtListener）定时抓取,每日自动更新;选举动态板块为人工整理,随重大节点更新;宏观数据板块建设中,暂为占位页。</p>
 
         <!-- =================================================================
              政治机构导航（Government Directory）
@@ -5779,14 +5779,14 @@
     </section>
   </main>
 
-  <!-- ============ 子页面：外交动态（看板搭建中，暂为占位页） ============ -->
+  <!-- ============ 子页面：宏观数据（看板搭建中，暂为占位页） ============ -->
   <main id="view-parties" class="subview" hidden>
     <div class="subhead pt-head">
       <div class="wrap">
         <a class="back" href="#" id="back-link-parties">← 返回美国板块</a>
-        <h1>外交动态</h1>
-        <div class="suben">Foreign Affairs</div>
-        <p class="subdesc">收集美国对外关系的关键节点：双边磋商与高层互访、多边机制与盟友协调、制裁与出口管制、贸易与安全谈判，按国别与议题归档。</p>
+        <h1>宏观数据</h1>
+        <div class="suben">Macro Data</div>
+        <p class="subdesc">汇集美国宏观运行的核心读数：GDP 与产出、就业与失业、CPI 与 PCE 物价、基准利率与国债收益率、消费与投资、财政与国际收支，按指标口径与发布节奏归档。</p>
       </div>
     </div>
     <section class="section pt-section">
@@ -5794,7 +5794,7 @@
         <div class="pt-todo">
           <span class="pt-todo-k">建设中</span>
           <p class="pt-todo-t">本板块正在搭建</p>
-          <p class="pt-todo-d">拟以「国别 / 议题 / 机制」三个维度归集美国对外政策动作，并与大事日历联动；数据源接入与版式确定后开放，时间待定。</p>
+          <p class="pt-todo-d">拟以「指标 / 口径 / 发布节奏」三个维度归集美国宏观运行数据，并与大事日历联动；数据源接入与版式确定后开放，时间待定。</p>
         </div>
       </div>
     </section>
@@ -13980,7 +13980,7 @@
         if (electionView) electionView.hidden = true;
         partiesView.hidden = false;
         window.scrollTo(0, 0);
-        document.title = '外交动态 · 国金证券 政策与战略';
+        document.title = '宏观数据 · 国金证券 政策与战略';
       }
 
       function showUs(e) {
