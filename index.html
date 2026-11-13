@@ -3400,7 +3400,7 @@
      作用域：仅白宫及内阁各部、独立机构两个板块（.pw.has-side）。国会 / 司法保持原单栏布局。
      两类条目分栏存放：pane-fr 为原有检索/筛选/表格，DOM 与样式原样保留；
      pane-pr 本次只搭结构与占位，待条目管线接入后填充。 */
-  #view-board { --pw-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  #view-board { --pw-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; --cg-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
 
   .pw.has-side { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 26px; align-items: start; }
 
@@ -3610,51 +3610,52 @@
   .cg-close { position: absolute; top: 13px; right: 15px; border: 0; background: none; font-size: 22px; line-height: 1; color: var(--muted); padding: 4px; cursor: pointer; }
   .cg-close:hover { color: #0b1724; }
   .cg-dno { font-family: var(--pw-mono); font-size: 11px; letter-spacing: .1em; color: #a8823c; }
-  .cg-dtitle { margin: 7px 0 0; font-size: 21px; line-height: 1.45; font-weight: 400; color: #0b1724; }
+  .cg-dtitle { margin: 8px 0 0; font-family: var(--v2-serif); font-size: 22px; line-height: 1.42; font-weight: 600; letter-spacing: .005em; color: #0b1724; }
   .cg-title-src {
     display: inline-block; margin-left: 10px; vertical-align: 2px;
     padding: 3px 10px; border: 1px solid rgba(47,111,184,.24); border-radius: 999px;
-    background: #e7eef8; font-family: var(--sans); font-size: 11.5px; font-weight: 600;
+    background: #e7eef8; font-family: var(--cg-sans); font-size: 11.5px; font-weight: 600;
     line-height: 1.35; letter-spacing: 0; color: #2f6fb8; text-decoration: none;
     white-space: nowrap; transition: background-color .15s, border-color .15s, color .15s;
   }
   .cg-title-src:hover { background: #2f6fb8; border-color: #2f6fb8; color: #fff; text-decoration: none; }
-  .cg-dcn { margin-top: 5px; font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+  .cg-dcn { margin-top: 6px; font-family: var(--cg-sans); font-size: 12.5px; font-weight: 400; letter-spacing: .02em; color: var(--muted); line-height: 1.65; }
   .cg-dbody { padding: 18px 24px max(80px, calc(52px + env(safe-area-inset-bottom))); }
   .cg-steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 4px 0 16px; }
-  .cg-step { font-size: 9px; text-align: center; color: var(--muted); line-height: 1.4; }
+  .cg-step { font-family: var(--cg-sans); font-size: 9.5px; text-align: center; color: var(--muted); line-height: 1.4; }
   .cg-step .bar { height: 3px; border-radius: 2px; background: #ece7dc; margin-bottom: 6px; }
   .cg-step.done .bar { background: #c9a86a; }
   .cg-step.current .bar { background: #a8823c; }
   .cg-step.current { color: #a8823c; font-weight: 600; }
   .cg-metas { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; padding: 14px 0 15px; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
   .cg-meta .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: var(--muted); }
-  .cg-meta .v { margin-top: 3px; font-size: 12.5px; line-height: 1.6; color: #0b1724; }
+  .cg-meta .v { margin-top: 3px; font-family: var(--cg-sans); font-size: 13px; font-weight: 500; line-height: 1.55; color: #0b1724; }
   .cg-meta .pt { font-family: var(--pw-mono); font-size: 10px; color: #a8823c; margin-left: 4px; }
-  .cg-meta .cg-cen { display: block; margin-top: 2px; font-size: 10.5px; line-height: 1.5; color: var(--muted); }
+  .cg-meta .cg-cen { display: block; margin-top: 2px; font-family: var(--v2-serif); font-size: 10.5px; font-style: italic; line-height: 1.5; color: var(--muted); }
   .cg-sech { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0 10px; }
-  .cg-sech h3 { margin: 0; font-size: 13px; font-weight: 600; color: #0b1724; }
-  .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .14em; color: var(--muted); }
-  .cg-first { background: #fbf9f4; border: 1px solid var(--border-light); border-radius: 9px; padding: 11px 14px; font-size: 12px; line-height: 1.7; color: #0b1724; }
+  .cg-sech h3 { margin: 0; padding-left: 9px; border-left: 2px solid #c9a86a; font-family: var(--v2-serif); font-size: 16px; font-weight: 600; letter-spacing: .04em; line-height: 1.3; color: #0b1724; }
+  .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .18em; color: #a8823c; }
+  .cg-first { background: #fbf9f4; border: 1px solid var(--border-light); border-left: 3px solid #c9a86a; border-radius: 0 9px 9px 0; padding: 12px 15px; font-size: 12px; line-height: 1.7; color: #0b1724; }
   .cg-first .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: #a8823c; }
-  .cg-first .v { margin-top: 3px; }
-  .cg-first .sub { margin-top: 3px; color: var(--muted); font-size: 11px; }
+  .cg-first .v { margin-top: 4px; font-family: var(--v2-serif); font-size: 13.5px; line-height: 1.6; letter-spacing: .005em; }
+  .cg-first .cg-date { font-family: var(--pw-mono); font-size: 12px; letter-spacing: .02em; color: var(--muted); }
+  .cg-first .sub { margin-top: 4px; font-family: var(--cg-sans); color: var(--muted); font-size: 11.5px; line-height: 1.6; }
   .cg-timeline { border-left: 1px solid var(--border-light); margin-left: 6px; padding-left: 16px; }
   .cg-tl { position: relative; padding: 0 0 16px; }
   .cg-tl:last-child { padding-bottom: 0; }
   .cg-tl::before { content: ''; position: absolute; left: -21px; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: #ece7dc; border: 2px solid #fff; }
   .cg-tl.now::before { background: #a8823c; box-shadow: 0 0 0 3px rgba(168,130,60,.13); }
   .cg-tld { font-family: var(--pw-mono); font-size: 10px; color: var(--muted); }
-  .cg-tlt { margin-top: 3px; font-size: 12.5px; line-height: 1.65; color: #0b1724; }
-  .cg-tltag { display: inline-block; margin-left: 6px; font-size: 9px; padding: 1px 5px; border-radius: 3px; background: rgba(168,130,60,.13); color: #a8823c; vertical-align: 1px; }
-  .cg-brief { background: #fbf9f4; border: 1px solid var(--border-light); border-radius: 10px; padding: 14px 16px; font-size: 12.5px; line-height: 1.9; color: #0b1724; }
-  .cg-brief p { margin: 0 0 8px; }
+  .cg-tlt { margin-top: 4px; font-family: var(--v2-serif); font-size: 13.5px; line-height: 1.7; letter-spacing: .005em; color: #0b1724; }
+  .cg-tltag { display: inline-block; margin-left: 6px; font-family: var(--cg-sans); font-size: 9px; padding: 1px 5px; border-radius: 3px; background: rgba(168,130,60,.13); color: #a8823c; vertical-align: 1px; }
+  .cg-brief { background: #fbf9f4; border: 1px solid var(--border-light); border-radius: 10px; padding: 15px 18px; font-family: var(--v2-serif); font-size: 14px; line-height: 2.0; letter-spacing: .01em; color: #0b1724; }
+  .cg-brief p { margin: 0 0 10px; }
   .cg-brief p:last-child { margin-bottom: 0; }
-  .cg-brief b, .cg-brief .brief-lead { color: #0b1724; font-weight: 600; }
-  .cg-brief .brief-h { font-size: 13px; font-weight: 700; color: #a8823c; margin: 4px 0 8px; }
-  .cg-note { margin-top: 10px; font-size: 10.5px; line-height: 1.7; color: var(--muted); }
+  .cg-brief b, .cg-brief .brief-lead { font-family: var(--cg-sans); font-size: 12.5px; font-weight: 600; letter-spacing: .02em; color: #0b1724; }
+  .cg-brief .brief-h { font-family: var(--cg-sans); font-size: 12px; font-weight: 700; letter-spacing: .06em; color: #a8823c; margin: 4px 0 8px; }
+  .cg-note { margin-top: 10px; font-family: var(--pw-mono); font-size: 9.5px; line-height: 1.85; letter-spacing: .01em; color: var(--muted); }
   .cg-dfoot { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
-  .cg-follow-btn { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #0b1724; cursor: pointer; }
+  .cg-follow-btn { border: 1px solid var(--border); background: #fff; border-radius: 999px; padding: 8px 14px; font-family: var(--cg-sans); font-size: 12.5px; color: #0b1724; cursor: pointer; }
   .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
 
   @media (max-width: 1180px) {
@@ -13810,7 +13811,8 @@
           '<div class="cg-dbody"><div class="cg-steps">' + steps + '</div>' +
             '<div class="cg-metas">' + metas + '</div>' +
             '<div class="cg-sech"><h3>第一动态</h3><span>FIRST ACTION</span></div>' +
-            '<div class="cg-first"><div class="k">提出</div><div class="v">' + esc(it.introduced || '—') +
+            '<div class="cg-first"><div class="k">提出</div><div class="v">' +
+              '<span class="cg-date">' + esc(it.introduced || '—') + '</span>' +
               ' · 提出法案' + (it.sponsor ? ' · ' + esc(it.sponsor) : '') + '</div>' +
               (it.committee ? '<div class="sub">交付委员会：' + esc(cgCommitteeCn(it.committee)) + '</div>' : '') + '</div>' +
             '<div class="cg-sech"><h3>行动时间线</h3><span>TIMELINE</span></div>' +
