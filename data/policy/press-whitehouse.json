@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-12T08:23:53+08:00",
+ "updated_at": "2026-11-13T08:22:15+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 9,
-   "added": 1,
+   "fetched": 8,
+   "added": 6,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 5,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 5,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 12,
-   "added": 1,
+   "added": 7,
    "error": ""
   },
   {
@@ -164,6 +164,366 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-12",
+   "title": "Nominations Sent to the Senate",
+   "title_cn": "白宫向参议院提交新一批联邦人事提名",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/nominations-sent-to-the-senate-16a6/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 总统向参议院提交四名金融监管机构人选提名，待参议院确认。\n· 人选包括商品期货交易委员会与证券交易委员会各两名委员。\n· 弗吉尼亚州阿诺尼克拟任商品期货交易委员会委员，任期至2031年6月19日。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Presidential Message on National Native American Heritage Month",
+   "title_cn": "总统发表全国美洲原住民传统月文告",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-native-american-heritage-month-39c4/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 文告肯定美洲原住民在商业、医疗与执法等各领域的贡献。\n· 文告提及去年向北达科他州斯皮里特湖部落归还680英亩联邦土地。\n· 文告重申家庭、信仰与自由等共同价值观并承诺保障机会。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Presidential Message on National Military Families Month",
+   "title_cn": "总统发表全国军人家庭月文告并致敬军属",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-military-families-month/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 文告称军人家庭在部署期间独力持家，并频繁搬迁至海外驻地。\n· 文告提及今年8月签署行政令，设立首个军人配偶委员会。\n· 文告称军属关切集中于住房、就业、教育与托育等四方面问题。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Presidential Message on National Entrepreneurship Month",
+   "title_cn": "总统发表全国创业精神月文告强调减轻监管负担",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-entrepreneurship-month-bfcb/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 文告称《工薪家庭减税法案》使小企业税收扣除永久化并降低税负。\n· 文告称本届政府已削减逾1500项法规，节省逾1.5万亿美元。\n· 文告称政府将继续降低监管负担，并应对不公平的外国贸易做法。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "First Lady Melania Trump Honors America’s Fallen Heroes at the Tomb of The Unknown Soldier",
+   "title_cn": "第一夫人梅拉尼娅赴无名战士墓悼念阵亡将士",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-honors-americas-fallen-heroes-at-the-tomb-of-the-unknown-soldier/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 第一夫人梅拉尼娅发表声明回顾日前赴无名战士墓的祭奠之行。\n· 声明称无名战士代表来自不同背景、种族与信仰的美国军人群体。\n· 声明赞扬守墓士兵全年无休坚守，呼吁后代传承其奉献精神。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "First Lady Melania Trump Honors America’s Elite Soldiers and the Sacrifices of Military Families",
+   "title_cn": "第一夫人梅拉尼娅致敬精锐部队与军人家庭奉献",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-honors-americas-elite-soldiers-and-the-sacrifices-of-military-families/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 第一夫人梅拉尼娅向军人家属致谢，称其在家中的角色意义深远。\n· 声明称感恩节临近时，军人家庭对亲人缺席的感受尤为深切。\n· 声明称军人使命在于捍卫宪法，以及言论、集会与信仰自由。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Under Secretary for Arms Control and International Security Thomas G. DiNanno Advances Security Cooperation with Peru and Colombia",
+   "title_cn": "军控与国际安全事务副国务卿迪南诺访问秘鲁、哥伦比亚",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/under-secretary-for-arms-control-and-international-security-thomas-g-dinanno-advances-security-cooperation-with-peru-and-colombia/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Under Secretary for Arms Control and International Security Thomas G. DiNanno Advances Security Cooperation with Peru and Colombia Media Note November 12, 2026 Under Secretary for Arms Control and International Security Thomas G. DiNanno traveled to Peru and Colombia from November 1–7, 2026, advancing U.S. security cooperation with both countries against drug trafficking an",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 迪南诺于11月1日至7日访问秘鲁与哥伦比亚，推进安全合作。\n· 美方向秘鲁提供2026财年2000万美元外国军事融资，用于F-16战力建设。\n· 美秘签署核合作备忘录，美方另提供100万美元支持小堆技术合作。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "The USA Pavilion at Specialized Expo 2027 in Belgrade, Serbia, Announces Theme",
+   "title_cn": "美国宣布2027年贝尔格莱德专业类世博会美国馆主题",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-usa-pavilion-at-specialized-expo-2027-in-belgrade-serbia-announces-theme/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman The USA Pavilion at Specialized Expo 2027 in Belgrade, Serbia, Announces Theme Media Note November 12, 2026 In May 2026, the United States confirmed its participation in Specialized Expo 2027 in Belgrade, Serbia. The theme of Expo 2027 is “Play for Humanity – Sports and Music for All” and asks international participants to highlight sports and music in their pavilions. As i",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 美国馆主题定为「自由竞技」，呼应世博会体育与音乐主题。\n· 美国馆将设六个展区、一个现场演出舞台及公路旅店风格空间。\n· 美国于2026年5月确认参展，世博会主题为「为人类而赛」。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Secretary Rubio’s Call with China’s Director of the Office of the CCP Central Foreign Affairs Commission and Foreign Minister Wang",
+   "title_cn": "国务卿鲁比奥应约同中国外长王毅通电话",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-chinas-director-of-the-office-of-the-ccp-central-foreign-affairs-commissionand-foreign-minister-wang/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with China’s Director of the Office of the CCP Central Foreign Affairs Commission and Foreign Minister Wang Readout November 11, 2026 At China’s request, Secretary of State and National Security Advisor Marco Rubio spoke today with Director of the Office of the CCP Central Foreign Affairs Commission, Politburo Member, and Foreign Minister Wang Yi. The",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥应中方要求与中共中央外事工作委员会办公室主任兼外长王毅通话。\n· 双方谈及特朗普总统将赴华出席亚太经合组织领导人会议。\n· 双方还谈及习近平主席将赴佛罗里达出席二十国集团峰会，并回顾元首共识。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Joint Statement on U.S.-Japan Seabed Mineral Resource Development",
+   "title_cn": "美日发表关于海底矿产资源开发的联合声明",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-u-s-japan-seabed-mineral-resource-development/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on U.S.-Japan Seabed Mineral Resource Development Media Note November 12, 2026 The text of the following statement was released by the Governments of the United States of America and Japan on the occasion of a visit to Japan by a U.S. interagency delegation focused on seabed minerals development. Begin Text. The Governments of the United States and Japan rea",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 声明由美日两国政府在美国跨部门代表团访问日本之际发布。\n· 双方称经济安全合作是美日同盟不可或缺部分，关键矿产供应链须多元化。\n· 合作承接2025年10月两国领导人签署的关键矿产与稀土供应链框架。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Assistant Secretary Weiland Delivers New Tools to Counter Narcoterrorism in Ecuador",
+   "title_cn": "助理国务卿韦兰访问厄瓜多尔并提供反毒恐新工具",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/assistant-secretary-weiland-delivers-new-tools-to-counter-narcoterrorism-in-ecuador/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Assistant Secretary Weiland Delivers New Tools to Counter Narcoterrorism in Ecuador Media Note November 12, 2026 Assistant Secretary of State for International Narcotics and Law Enforcement Affairs (INL) F. Cartwright Weiland traveled to Ecuador November 2–7, 2026, to deepen cooperation against the narcoterrorists and transnational criminal organizations that threaten both ",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 助理国务卿韦兰11月2日至7日访问厄瓜多尔，深化反毒恐合作。\n· 美方向厄海军移交一艘38英尺拦截艇，属14艘拦截艇交付计划之列。\n· 美厄签署协议，允许厄金融分析部门使用美国企业数据分析技术。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "New York Doctor Charged in $6.8M Medicare Fraud Scheme",
+   "title_cn": "纽约医生被控涉680万美元联邦医保欺诈案",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/new-york-doctor-charged-68m-medicare-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 纽约医生萨拉查被控合谋实施医疗欺诈及五项医疗欺诈罪名。\n· 起诉书称其为一远程医疗公司签署预填处方，未诊治病患。\n· 该公司经营者哈伍德今年3月认罪，被判20年监禁并赔1790万美元。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Minnesota Man Pleads Guilty to Conspiring to Defraud IRS",
+   "title_cn": "明尼苏达州男子认罪承认合谋欺诈国税局",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/minnesota-man-pleads-guilty-conspiring-defraud-irs",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 明尼苏达州佩勒姆急流城居民科萨阿尔承认合谋欺诈国税局。\n· 其与他人为2020至2021年度协助编制逾150份虚假纳税申报表。\n· 申报含疫情期间病假与家庭假税收抵免，最高可判五年监禁。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Justice Department Announces Actions to Disrupt North Korea’s Massive Theft of Cryptocurrency",
+   "title_cn": "司法部宣布行动打击朝鲜大规模窃取加密货币",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 司法部宣布采取措施打击朝鲜以加密货币盗窃资助政权的行为。\n· 美方已冻结并扣押朝鲜窃取的逾12亿美元数字资产，含币安平台资产。\n· 案件由国家安全司、刑事司计算机犯罪科会同两州联邦检察官办理。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "International Law Enforcement Operation Targeting Opioid and Fentanyl Traffickers on the Dark Web Results in over 350 Arrests Worldwide and the Seizure of Drugs, Weapons, and over $234 Million",
+   "title_cn": "国际执法行动打击暗网阿片与芬太尼贩运 全球逮捕逾350人",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/international-law-enforcement-operation-targeting-opioid-and-fentanyl-traffickers-dark-web",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 司法部联合欧洲刑警组织通报打击暗网毒品贩运的「龙卷风行动」成果。\n· 行动在全球范围内逮捕354名暗网毒品贩运及欺诈人员。\n· 缴获现金与虚拟货币逾2.34亿美元、毒品约5.7吨、枪支209支。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Gootloader Malware Disrupted in International Cyber Operation",
+   "title_cn": "司法部联合国际伙伴捣毁Gootloader僵尸网络",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/gootloader-malware-disrupted-international-cyber-operation",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 司法部与联邦调查局会同国际伙伴经法院授权开展线上行动。\n· 行动从100余台服务器清除恶意软件，瘫痪Gootloader僵尸网络。\n· 该恶意软件经被入侵网站感染全球数千台计算机，波及美国国防工业基础。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Florida Missionary Indicted for Child Exploitation Crimes in Haiti",
+   "title_cn": "佛罗里达州传教士因在海地性侵儿童被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/florida-missionary-indicted-child-exploitation-crimes-haiti",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 佛罗里达州传教士奥斯贝克被控在海地实施儿童性剥削犯罪。\n· 起诉书指其2004至2008年间性侵一名约8至12岁海地男童。\n· 其于2026年9月底在海地被捕，10月被移送回美国。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Florida Man Sentenced for Stealing Millions of Dollars from Lenders Using Sham Cosmetic Surgery Clinics and Stolen Identities",
+   "title_cn": "佛州男子设虚假医美诊所并冒用身份骗贷被判刑",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/florida-man-sentenced-stealing-millions-dollars-lenders-using-sham-cosmetic-surgery-clinics",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 佛罗里达州42岁男子塔利斯因设虚假医美诊所骗贷被判刑。\n· 2018年4月至2024年2月间，其团伙设六家不提供实际诊疗的诊所。\n· 团伙冒用逾100人身份向贷款机构申请约310万美元。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Drug Traffickers",
+   "title_cn": "「最恶劣之最」：移民执法局再捕杀人犯与毒贩",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/12/worst-worst-ice-arrests-murderers-pedophiles-and-drug-traffickers",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 移民执法局在退伍军人节次日通报多地抓捕重罪非法移民情况。\n· 被捕者罪名含谋杀、与未成年人发生性行为及意图分销可卡因。\n· 通报点名来自特立尼达和多巴哥的琼斯，因在纽约市谋杀被定罪。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "ICE Requests Local Authorities Not Release Criminal Illegal Alien Who Attempted To Hijack a Plane",
+   "title_cn": "移民执法局要求地方勿释放企图劫机的外籍罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/12/ice-requests-local-authorities-not-release-criminal-illegal-alien-who-attempted",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 11月9日洪都拉斯籍男子戈麦斯-阿尔贝托在航班上试图冲击驾驶舱。\n· 其声称携带炸弹，航班降落后被拘押并面临重罪炸弹威胁等指控。\n· 其此前两次被遣返，第三次入境后申请庇护并获法官批准。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "ICE Breaks Records in Fiscal Year 2026, With Most Arrests and Deportations in Agency’s History",
+   "title_cn": "移民执法局2026财年逮捕与遣返人数均创机构新高",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/12/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 2026财年移民执法局实施逾49.1万次移民逮捕、逾48.3万次遣返。\n· 遣返人数超过2025财年44.26万人的此前纪录，为机构历史最高。\n· 逮捕总数中含近47.5万次行政逮捕，为该机构历史最高水平。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "ICE Arrests Illegal Alien Who Intentionally Ran Over and Dragged Officer with Vehicle in Chicago",
+   "title_cn": "芝加哥一外籍人员驾车撞伤并拖拽执法人员被捕",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/12/ice-arrests-illegal-alien-who-intentionally-ran-over-and-dragged-officer-vehicle",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 11月10日执法人员在芝加哥高地拦停墨西哥籍男子加尼卡-纳兰霍。\n· 其拒绝熄火，加速逃离时将车内执法人员甩出并碾压，致其腿部受伤。\n· 受伤执法人员送医后已出院，该男子于当日稍晚被执法人员抓获。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "DHS Highlights Worst Illegal Aliens Arrested in Houston, Texas",
+   "title_cn": "国土安全部通报休斯敦抓获的多名重罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/12/dhs-highlights-worst-illegal-aliens-arrested-houston-texas",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 国土安全部通报移民执法局在休斯敦抓获的多名重罪非法移民。\n· 其中墨西哥籍阿尔孔因持械故意杀害警察等罪名被定罪，曾被两次遣返。\n· 通报另列墨西哥籍阿韦利亚内亚谋杀与醉驾定罪、萨尔瓦多籍男子儿童猥亵定罪。"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "title": "VA houses nearly 49,000 homeless Veterans in FY 2026",
+   "title_cn": "退伍军人事务部2026财年安置近4.9万名无家可归老兵",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-houses-nearly-49000-homeless-veterans-in-fy-2026/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-12",
+    "tier": "news",
+    "body": "· 2026财年退伍军人事务部为48968名无家可归老兵提供永久住房。\n· 该数字为开始统计以来第二高，2025财年51936人为最高纪录。\n· 部长柯林斯称平均每月安置逾4000人，助其恢复自立。"
+   }
+  },
   {
    "date": "2026-11-11",
    "title": "Presidential Message on Victory Day for World War I",
