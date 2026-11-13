@@ -3611,6 +3611,12 @@
   .cg-close:hover { color: #0b1724; }
   .cg-dno { font-family: var(--pw-mono); font-size: 11px; letter-spacing: .1em; color: #a8823c; }
   .cg-dtitle { margin: 7px 0 0; font-size: 21px; line-height: 1.45; font-weight: 400; color: #0b1724; }
+  .cg-title-src {
+    display: inline-block; margin-left: 10px; vertical-align: 3px;
+    font-family: var(--sans); font-size: 11px; font-weight: 500; line-height: 1.3;
+    letter-spacing: 0; color: #2f6fb8; text-decoration: none; white-space: nowrap;
+  }
+  .cg-title-src:hover { text-decoration: underline; }
   .cg-dcn { margin-top: 5px; font-size: 12.5px; color: var(--muted); line-height: 1.6; }
   .cg-dbody { padding: 18px 24px max(80px, calc(52px + env(safe-area-inset-bottom))); }
   .cg-steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 4px 0 16px; }
@@ -3647,8 +3653,6 @@
   .cg-dfoot { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
   .cg-follow-btn { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #0b1724; cursor: pointer; }
   .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
-  .cg-src { font-size: 12px; color: #2f6fb8; text-decoration: none; }
-  .cg-src:hover { text-decoration: underline; }
 
   @media (max-width: 1180px) {
     #view-board.is-cg .pw-thead, #view-board.is-cg .pw-r { grid-template-columns: 90px minmax(0, 1fr) 100px 190px 40px; }
@@ -13701,7 +13705,8 @@
         var followed = cgIsFollowed(no);
         document.getElementById('cg-drawer-inner').innerHTML =
           '<div class="cg-drawer-head"><button type="button" class="cg-close" aria-label="关闭">×</button>' +
-            '<div class="cg-dno">' + esc(no) + '</div><h2 class="cg-dtitle">' + esc(it.title) + '</h2>' +
+            '<div class="cg-dno">' + esc(no) + '</div><h2 class="cg-dtitle">' + esc(it.title) +
+              '<a class="cg-title-src" href="' + esc(it.url) + '" target="_blank" rel="noopener">congress.gov 原文 ↗</a></h2>' +
             (it.title_cn ? '<div class="cg-dcn">' + esc(it.title_cn) + '</div>' : '') + '</div>' +
           '<div class="cg-dbody"><div class="cg-steps">' + steps + '</div>' +
             '<div class="cg-metas">' + metas + '</div>' +
@@ -13714,8 +13719,7 @@
             '<div class="cg-note">当前条目保留已入库的第一动态与最新行动；完整中间行动需接入 congress.gov /actions 接口。</div>' +
             '<div class="cg-sech"><h3>政策速览</h3><span>BRIEF</span></div>' + brief +
             '<div class="cg-dfoot"><button type="button" class="cg-follow-btn' + (followed ? ' on' : '') + '" id="cg-detail-follow">' +
-              (followed ? '★ 已关注' : '☆ 关注此法案') + '</button>' +
-              '<a class="cg-src" href="' + esc(it.url) + '" target="_blank" rel="noopener">congress.gov 原文 ↗</a></div>' +
+              (followed ? '★ 已关注' : '☆ 关注此法案') + '</button></div>' +
           '</div>';
         document.getElementById('cg-overlay').hidden = false;
         var drawerEl = document.getElementById('cg-drawer');
