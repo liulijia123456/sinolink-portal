@@ -3548,6 +3548,116 @@
     .pr-dept:nth-child(2n) { border-right: 1px solid var(--border-light); }
     .pr-dept:nth-child(1n) { border-right: 0; }
   }
+
+  /* ===== 国会板块：六段立法工作区（原型迁入；抬头沿用原站，不使用 DEMO 顶栏） ===== */
+  #view-board.is-cg .pw-thead,
+  #view-board.is-cg .pw-r {
+    grid-template-columns: 92px minmax(0, 1fr) 104px 224px 148px 40px;
+    gap: 12px; align-items: start;
+  }
+  #view-board.is-cg .pw-thead {
+    padding: 10px 16px 9px; background: #fbf9f4;
+    border-bottom: 1px solid rgba(168, 130, 60, .32);
+    font-size: 10px; font-weight: 600; letter-spacing: .12em; color: #0b1724; line-height: 1.2;
+  }
+  #view-board.is-cg .pw-thead span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #view-board.is-cg .pw-r { padding: 13px 16px; }
+  #view-board.is-cg .c-date { font-size: 11.5px; color: #a8823c; padding-top: 2px; }
+  #view-board.is-cg .c-kind .cg-stage { padding: 2px 7px; font-size: 10.5px; line-height: 1.7; }
+  #view-board.is-cg .c-kind .st-introduced { background: #ece7dc; color: #0b1724; }
+  #view-board.is-cg .c-kind .st-committee { background: rgba(168,130,60,.13); color: #a8823c; }
+  #view-board.is-cg .c-kind .st-first { background: #e7eef8; color: #2f6fb8; }
+  #view-board.is-cg .c-kind .st-both { background: #e7eef8; color: #2f5d8a; }
+  #view-board.is-cg .c-kind .st-president { background: #ece7dc; color: #2f5d8a; }
+  #view-board.is-cg .c-kind .st-enact { background: #e7eef8; color: #0b1724; }
+  #view-board.is-cg .c-agency { font-size: 11.5px; line-height: 1.55; color: #0b1724; }
+  #view-board.is-cg .cg-ld { display: block; font-family: var(--pw-mono); font-size: 10px; color: var(--muted); white-space: nowrap; }
+  #view-board.is-cg .cg-lt {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    margin-top: 3px; line-height: 1.55;
+  }
+  #view-board.is-cg .c-domain { font-size: 11.5px; line-height: 1.55; color: #0b1724; }
+  #view-board.is-cg .cg-who-main { display: block; }
+  #view-board.is-cg .cg-who-sub { display: block; margin-top: 2px; font-size: 10.5px; line-height: 1.55; color: var(--muted); }
+  #view-board.is-cg .c-act { gap: 4px; }
+  #view-board.is-cg .cg-star { border: 0; background: none; font-size: 18px; line-height: 1; color: #ece7dc; padding: 0; cursor: pointer; }
+  #view-board.is-cg .cg-star:hover, #view-board.is-cg .cg-star.on { color: #a8823c; }
+  #view-board.is-cg .cg-dot { width: 6px; height: 6px; border-radius: 50%; background: #9a4a3c; display: inline-block; }
+  .cg-watch-toggle {
+    border: 1px solid var(--border); background: #fff; border-radius: 7px; height: 32px;
+    padding: 0 10px; font-size: 12px; color: #0b1724; cursor: pointer; white-space: nowrap;
+  }
+  .cg-watch-toggle:hover { border-color: #c9a86a; }
+  .cg-watch-toggle.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
+  .cg-watch-toggle b { font-family: var(--pw-mono); font-weight: 500; margin-left: 3px; color: #a8823c; }
+
+  .cg-overlay { position: fixed; inset: 0; background: rgba(11,23,36,.34); z-index: 80; }
+  .cg-overlay[hidden], .cg-drawer[hidden] { display: none; }
+  .cg-drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(620px, 94vw);
+    background: #fff; z-index: 90; box-shadow: -12px 0 40px rgba(11,23,36,.18);
+    overflow-y: auto; animation: cgDrawerIn .2s ease;
+  }
+  @keyframes cgDrawerIn { from { transform: translateX(24px); opacity: .4; } to { transform: none; opacity: 1; } }
+  .cg-drawer-head { padding: 20px 24px 15px; border-bottom: 1px solid var(--border-light); background: #fbf9f4; position: sticky; top: 0; z-index: 2; }
+  .cg-close { position: absolute; top: 13px; right: 15px; border: 0; background: none; font-size: 22px; line-height: 1; color: var(--muted); padding: 4px; cursor: pointer; }
+  .cg-close:hover { color: #0b1724; }
+  .cg-dno { font-family: var(--pw-mono); font-size: 11px; letter-spacing: .1em; color: #a8823c; }
+  .cg-dtitle { margin: 7px 0 0; font-size: 21px; line-height: 1.45; font-weight: 400; color: #0b1724; }
+  .cg-dcn { margin-top: 5px; font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+  .cg-dbody { padding: 18px 24px 44px; }
+  .cg-steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 4px 0 16px; }
+  .cg-step { font-size: 9px; text-align: center; color: var(--muted); line-height: 1.4; }
+  .cg-step .bar { height: 3px; border-radius: 2px; background: #ece7dc; margin-bottom: 6px; }
+  .cg-step.done .bar { background: #c9a86a; }
+  .cg-step.current .bar { background: #a8823c; }
+  .cg-step.current { color: #a8823c; font-weight: 600; }
+  .cg-metas { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; padding: 14px 0 15px; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+  .cg-meta .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: var(--muted); }
+  .cg-meta .v { margin-top: 3px; font-size: 12.5px; line-height: 1.6; color: #0b1724; }
+  .cg-meta .pt { font-family: var(--pw-mono); font-size: 10px; color: #a8823c; margin-left: 4px; }
+  .cg-sech { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0 10px; }
+  .cg-sech h3 { margin: 0; font-size: 13px; font-weight: 600; color: #0b1724; }
+  .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .14em; color: var(--muted); }
+  .cg-first { background: #fbf9f4; border: 1px solid var(--border-light); border-radius: 9px; padding: 11px 14px; font-size: 12px; line-height: 1.7; color: #0b1724; }
+  .cg-first .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: #a8823c; }
+  .cg-first .v { margin-top: 3px; }
+  .cg-first .sub { margin-top: 3px; color: var(--muted); font-size: 11px; }
+  .cg-timeline { border-left: 1px solid var(--border-light); margin-left: 6px; padding-left: 16px; }
+  .cg-tl { position: relative; padding: 0 0 16px; }
+  .cg-tl:last-child { padding-bottom: 0; }
+  .cg-tl::before { content: ''; position: absolute; left: -21px; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: #ece7dc; border: 2px solid #fff; }
+  .cg-tl.now::before { background: #a8823c; box-shadow: 0 0 0 3px rgba(168,130,60,.13); }
+  .cg-tld { font-family: var(--pw-mono); font-size: 10px; color: var(--muted); }
+  .cg-tlt { margin-top: 3px; font-size: 12.5px; line-height: 1.65; color: #0b1724; }
+  .cg-tltag { display: inline-block; margin-left: 6px; font-size: 9px; padding: 1px 5px; border-radius: 3px; background: rgba(168,130,60,.13); color: #a8823c; vertical-align: 1px; }
+  .cg-brief { background: #fbf9f4; border: 1px solid var(--border-light); border-radius: 10px; padding: 14px 16px; font-size: 12.5px; line-height: 1.9; color: #0b1724; }
+  .cg-brief p { margin: 0 0 8px; }
+  .cg-brief p:last-child { margin-bottom: 0; }
+  .cg-brief b, .cg-brief .brief-lead { color: #0b1724; font-weight: 600; }
+  .cg-brief .brief-h { font-size: 13px; font-weight: 700; color: #a8823c; margin: 4px 0 8px; }
+  .cg-note { margin-top: 10px; font-size: 10.5px; line-height: 1.7; color: var(--muted); }
+  .cg-dfoot { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
+  .cg-follow-btn { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #0b1724; cursor: pointer; }
+  .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
+  .cg-src { font-size: 12px; color: #2f6fb8; text-decoration: none; }
+  .cg-src:hover { text-decoration: underline; }
+
+  @media (max-width: 1180px) {
+    #view-board.is-cg .pw-thead, #view-board.is-cg .pw-r { grid-template-columns: 90px minmax(0, 1fr) 100px 190px 40px; }
+    #view-board.is-cg .pw-th-dom, #view-board.is-cg .c-domain { display: none; }
+  }
+  @media (max-width: 760px) {
+    #view-board.is-cg .pw-thead { display: none; }
+    #view-board.is-cg .pw-r { grid-template-columns: minmax(0,1fr) 36px; gap: 7px; }
+    #view-board.is-cg .c-date { grid-column: 1; grid-row: 1; }
+    #view-board.is-cg .c-title { grid-column: 1; grid-row: 2; }
+    #view-board.is-cg .c-kind { grid-column: 1; grid-row: 3; }
+    #view-board.is-cg .c-agency { grid-column: 1; grid-row: 4; }
+    #view-board.is-cg .c-act { grid-column: 2; grid-row: 1 / span 3; align-items: flex-start; }
+    .cg-metas { grid-template-columns: 1fr; }
+    .cg-steps { grid-template-columns: repeat(3, 1fr); row-gap: 8px; }
+  }
 </style></head>
 <body data-page-node-id="KIdYWsWUGPGOCm7UiXPT2s" style="">
 
@@ -5372,38 +5482,29 @@
             <span class="pw-side-e">Stage</span>
           </div>
           <div class="pw-tabs" role="tablist" aria-label="立法阶段">
-            <button type="button" class="pw-tab is-on" data-cg-stage="intro" role="tab" aria-selected="true">
-              <span class="pw-tab-n">01</span>
-              <span class="pw-tab-t">提案</span>
-              <span class="pw-tab-e">Introduced</span>
-              <span class="pw-tab-c" id="cg-count-intro">—</span>
+            <button type="button" class="pw-tab is-on" data-cg-stage="all" role="tab" aria-selected="true">
+              <span class="pw-tab-n">00</span><span class="pw-tab-t">全部</span><span class="pw-tab-e">All</span><span class="pw-tab-c" id="cg-count-all">—</span>
             </button>
-            <button type="button" class="pw-tab" data-cg-stage="house" role="tab" aria-selected="false" tabindex="-1">
-              <span class="pw-tab-n">02</span>
-              <span class="pw-tab-t">过众议院</span>
-              <span class="pw-tab-e">Passed House</span>
-              <span class="pw-tab-c" id="cg-count-house">—</span>
+            <button type="button" class="pw-tab" data-cg-stage="introduced" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">01</span><span class="pw-tab-t">提出</span><span class="pw-tab-e">Introduced</span><span class="pw-tab-c" id="cg-count-introduced">—</span>
             </button>
-            <button type="button" class="pw-tab" data-cg-stage="senate" role="tab" aria-selected="false" tabindex="-1">
-              <span class="pw-tab-n">03</span>
-              <span class="pw-tab-t">过参议院</span>
-              <span class="pw-tab-e">Passed Senate</span>
-              <span class="pw-tab-c" id="cg-count-senate">—</span>
+            <button type="button" class="pw-tab" data-cg-stage="committee" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">02</span><span class="pw-tab-t">委员会审议</span><span class="pw-tab-e">Committee</span><span class="pw-tab-c" id="cg-count-committee">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="first" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">03</span><span class="pw-tab-t">一院通过</span><span class="pw-tab-e">First Chamber</span><span class="pw-tab-c" id="cg-count-first">—</span>
+            </button>
+            <button type="button" class="pw-tab" data-cg-stage="both" role="tab" aria-selected="false" tabindex="-1">
+              <span class="pw-tab-n">04</span><span class="pw-tab-t">两院通过</span><span class="pw-tab-e">Both Chambers</span><span class="pw-tab-c" id="cg-count-both">—</span>
             </button>
             <button type="button" class="pw-tab" data-cg-stage="president" role="tab" aria-selected="false" tabindex="-1">
-              <span class="pw-tab-n">04</span>
-              <span class="pw-tab-t">呈送总统</span>
-              <span class="pw-tab-e">To President</span>
-              <span class="pw-tab-c" id="cg-count-president">—</span>
+              <span class="pw-tab-n">05</span><span class="pw-tab-t">呈送总统</span><span class="pw-tab-e">To President</span><span class="pw-tab-c" id="cg-count-president">—</span>
             </button>
             <button type="button" class="pw-tab" data-cg-stage="enact" role="tab" aria-selected="false" tabindex="-1">
-              <span class="pw-tab-n">05</span>
-              <span class="pw-tab-t">成法</span>
-              <span class="pw-tab-e">Enacted</span>
-              <span class="pw-tab-c" id="cg-count-enact">—</span>
+              <span class="pw-tab-n">06</span><span class="pw-tab-t">成法</span><span class="pw-tab-e">Enacted</span><span class="pw-tab-c" id="cg-count-enact">—</span>
             </button>
           </div>
-          <p class="pw-side-note">与 congress.gov 法案进度条同构，按「最新行动」取已达的最远节点，五段互斥、合计为全部条目。<b>提案</b>含交付委员会、听证、报告、列入日程等尚未过院的全部程序；<b>过众议院／过参议院</b>以本院通过为准（另一院出现「Received in」即视为该院已过）；<b>呈送总统</b>为已送签未成法；<b>成法</b>为已成公法或经总统签署。</p>
+          <p class="pw-side-note">六段互斥、合计为全部条目。列表只展示当前状态与最新行动；首次行动、完整过程与速览收进详情。</p>
         </aside>
 
         <div class="pw-main">
@@ -5439,6 +5540,17 @@
                 <span class="pw-lab" id="filter-agency-label">部门</span>
                 <select class="pw-sel" id="filter-agency" aria-label="按机构筛选"></select>
               </span>
+              <span class="pw-grp" id="filter-party-group" hidden>
+                <span class="pw-lab">政党</span>
+                <select class="pw-sel" id="filter-party" aria-label="提案人政党">
+                  <option value="all">全部政党</option>
+                  <option value="R">共和党 R</option>
+                  <option value="D">民主党 D</option>
+                  <option value="I">独立 I</option>
+                  <option value="ID">独立 ID</option>
+                </select>
+              </span>
+              <button type="button" class="cg-watch-toggle" id="cg-watch-only" hidden>☆ 我的跟踪 <b id="cg-watch-count">0</b></button>
             </div>
             <div class="pw-selcond" id="pw-selected" hidden></div>
           </div>
@@ -5469,6 +5581,8 @@
         </div>
       </div>
     </section>
+    <div class="cg-overlay" id="cg-overlay" hidden></div>
+    <aside class="cg-drawer" id="cg-drawer" role="dialog" aria-modal="true" aria-label="法案详情" hidden><div id="cg-drawer-inner"></div></aside>
   </main>
 
   <!-- ============ 子页面：选举动态（人工整理，重大节点更新） ============ -->
@@ -12282,7 +12396,7 @@
       var renderCurrentBoard = null;  // 当前展示的板块（供筛选事件重渲染）
 
       // 筛选事件绑定
-      ['filter-time', 'filter-agency', 'filter-kind', 'filter-domain'].forEach(function (id) {
+      ['filter-time', 'filter-agency', 'filter-kind', 'filter-domain', 'filter-party'].forEach(function (id) {
         var el = document.getElementById(id);
         if (el) el.addEventListener('change', function () {
           filterState[el.id.replace('filter-', '')] = el.value;
@@ -12306,13 +12420,15 @@
       // 重置筛选
       var resetBtn = document.getElementById('filter-reset');
       if (resetBtn) resetBtn.addEventListener('click', function () {
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', party: 'all', q: '' };
+        cgWatchOnly = false;
         var tSel = document.getElementById('filter-time');
         [].slice.call(tSel.querySelectorAll('option[value^="date:"]')).forEach(function (o) { o.remove(); });
         tSel.value = 'all';
         document.getElementById('filter-agency').value = 'all';
         document.getElementById('filter-kind').value = 'all';
         document.getElementById('filter-domain').value = 'all';
+        document.getElementById('filter-party').value = 'all';
         document.getElementById('filter-q').value = '';
         boardPage = 0;
         if (renderCurrentBoard) renderBoard(renderCurrentBoard);
@@ -12325,6 +12441,13 @@
           boardPage = 0;
           if (renderCurrentBoard) renderBoard(renderCurrentBoard);
         });
+      });
+
+      var watchBtn = document.getElementById('cg-watch-only');
+      if (watchBtn) watchBtn.addEventListener('click', function () {
+        cgWatchOnly = !cgWatchOnly;
+        boardPage = 0;
+        if (renderCurrentBoard === 'congress') renderBoard('congress');
       });
 
       var BOARD_META = {
@@ -12424,7 +12547,7 @@
       }
 
       // 筛选状态
-      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
+      var filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', party: 'all', q: '' };
       // 分页状态：每页条数可调（默认 20 条/页）
       var boardPageSize = 20;
       var boardPageSizeOpts = [10, 20, 50];
@@ -12442,10 +12565,11 @@
         var now = new Date();
         var out = items.filter(function (it) {
           if (st.time !== 'all') {
+            var dayKey = FILTER_BOARD === 'congress' ? cgActionDate(it) : (it.date || '');
             if (st.time.indexOf('date:') === 0) {
-              if ((it.date || '') !== st.time.slice(5)) return false;
+              if (dayKey !== st.time.slice(5)) return false;
             } else {
-              var d = new Date(it.date || '');
+              var d = new Date(dayKey);
               if (isNaN(d.getTime()) || (now - d) / 86400000 > parseInt(st.time, 10)) return false;
             }
           }
@@ -12457,14 +12581,16 @@
             var av = FILTER_BOARD === 'congress' ? congressChamber(it.kind) : (it.agency || '');
             if (av !== st.agency) return false;
           }
+          if (FILTER_BOARD === 'congress' && st.party && st.party !== 'all' && (it.sponsor_party || '') !== st.party) return false;
           if (st.domain !== 'all' && (it.domain || '其他') !== st.domain) return false;
           // 立法阶段（仅国会板块有该维度）
           if (FILTER_BOARD === 'congress' && st.stage && st.stage !== 'all') {
             if (congressStage(it) !== st.stage) return false;
           }
+          if (FILTER_BOARD === 'congress' && cgWatchOnly && !cgIsFollowed(it.official_no)) return false;
           if (st.q) {
             var q = st.q.toLowerCase();
-            var hay = ((it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.kind || '') + ' ' + (it.domain || '') + ' ' + (it.agency || '')).toLowerCase();
+            var hay = ((it.title || '') + ' ' + (it.title_cn || '') + ' ' + (it.kind || '') + ' ' + (it.domain || '') + ' ' + (it.agency || '') + ' ' + (it.official_no || '') + ' ' + (it.sponsor || '') + ' ' + (it.committee || '')).toLowerCase();
             if (hay.indexOf(q) === -1) return false;
           }
           return true;
@@ -12517,76 +12643,133 @@
       // 去掉院别前缀，只留文种：法案 / 决议 / 联合决议 / 共同决议
       function congressType(k) { return String(k || '').replace(/^(参议院|参院|众议院|众院)/, ''); }
 
-      // ===== 国会板块：五道立法节点（与 congress.gov 进度条同构）=====
-      // 由「最新行动」文本取已达的最远节点，一条只落一格：
-      //   intro      已提出，含交付委员会、听证、报告、列入日程等尚未过院的全部程序
-      //   house      已过众议院（另一院出现「Received in the Senate」即视为众议院已过）
-      //   senate     已过参议院
-      //   president  已呈送总统、尚未成法
-      //   enact      已成公法，或经总统签署
-      // 已知边界：议事规则通过（Rule H. Res.）计入 intro，不算法案过院。
-      var CG_ENACT_RE = /Became Public Law|Signed by President|Became law/i;
-      var CG_PRES_RE = /Presented to President|Sent to President/i;
-      var CG_SENATE_RE = /Passed Senate|Received in the House|agreed to in (the )?Senate|Resolution agreed to in Senate|considered,\s*and agreed to|Message on Senate action/i;
-      var CG_HOUSE_RE = /Passed House|Received in the Senate|agreed to in (the )?House|Resolution agreed to in House|Message on House action/i;
-      function congressStage(it) {
+      // ===== 国会板块：六段立法节点 =====
+      // 以最新行动的语义与发生院别判定；一条只落一格，阶段推进只更新原记录。
+      var CG_STAGES = [
+        { id: 'introduced', label: '提出', rank: 0 },
+        { id: 'committee', label: '委员会审议', rank: 1 },
+        { id: 'first', label: '一院通过', rank: 2 },
+        { id: 'both', label: '两院通过', rank: 3 },
+        { id: 'president', label: '呈送总统', rank: 4 },
+        { id: 'enact', label: '成法', rank: 5 }
+      ];
+      var CG_STAGE_LABELS = {};
+      CG_STAGES.forEach(function (x) { CG_STAGE_LABELS[x.id] = x.label; });
+      function cgActionParts(it) {
         var a = String((it && it.agency) || '');
-        var act = a.indexOf('·') >= 0 ? a.slice(a.indexOf('·') + 1).trim() : a;
-        if (/^Rule H\. Res\./i.test(act)) return 'intro';
-        if (CG_ENACT_RE.test(act)) return 'enact';
-        if (CG_PRES_RE.test(act)) return 'president';
-        if (CG_SENATE_RE.test(act)) return 'senate';
-        if (CG_HOUSE_RE.test(act)) return 'house';
-        if (/Motion to reconsider laid on the table Agreed to/i.test(act)) {
-          return String(it.kind || '').charAt(0) === '众' ? 'house' : 'senate';
+        var i = a.indexOf('·');
+        return { prefix: (i >= 0 ? a.slice(0, i) : a).trim(),
+                 action: (i >= 0 ? a.slice(i + 1) : a).trim() };
+      }
+      function cgOriginChamber(it) {
+        return /参/.test((it && it.kind) || '') ? '参议院' : '众议院';
+      }
+      function cgActionChamber(action, prefix) {
+        if (/Passed House|agreed to in (the )?House|Resolution agreed to in House/i.test(action)) return '众议院';
+        if (/Passed Senate|agreed to in (the )?Senate|Resolution agreed to in Senate/i.test(action)) return '参议院';
+        if (/Received in the Senate|Message on Senate action/i.test(action)) return '参议院';
+        if (/Received in the House|Message on House action/i.test(action)) return '众议院';
+        return prefix === '参议院' ? '参议院' : '众议院';
+      }
+      function congressStage(it) {
+        var p = cgActionParts(it), act = p.action;
+        var origin = cgOriginChamber(it), where = cgActionChamber(act, p.prefix);
+        if (/Became Public Law|Signed by President|Became law/i.test(act)) return 'enact';
+        if (/Presented to President|Sent to President/i.test(act)) return 'president';
+        if (/Passed House|Passed Senate|agreed to in (the )?House|agreed to in (the )?Senate|Resolution agreed to|considered,\s*and agreed to|Motion to reconsider laid on the table Agreed to/i.test(act)) {
+          return where === origin ? 'first' : 'both';
         }
-        return 'intro';
+        if (/Received in the (Senate|House)|Held at the desk|Message on (Senate|House) action/i.test(act)) {
+          return where === origin ? 'both' : 'first';
+        }
+        if (/Reported by|Ordered to be reported|Placed on .*Calendar|Hearings|Markup|Committee consideration|Subcommittee/i.test(act)) return 'committee';
+        return 'introduced';
       }
-      // 日期口径随阶段切换：提案看提出日，审议看成法前的最后一步行动日，成法看成法日。
-      // 三个值都来自 enrich_congress.py 回填的字段；缺失时回落到记录更新日，避免空白。
+      // 列表与日期筛选统一看「最新立法行动日」；档案更新日只在详情中单独呈现。
+      function cgActionDate(it) {
+        return (it && (it.stage_date || it.date || it.introduced)) || '';
+      }
+
+      var CG_FOLLOW_KEY = 'sinolink.congress.follows.v1';
+      var cgFollows = (function () {
+        try { return JSON.parse(localStorage.getItem(CG_FOLLOW_KEY) || '{}') || {}; }
+        catch (e) { return {}; }
+      })();
+      var cgWatchOnly = false;
+      var cgCurrent = null;
+      var cgLastFocus = null;
+      function cgSaveFollows() {
+        try { localStorage.setItem(CG_FOLLOW_KEY, JSON.stringify(cgFollows)); } catch (e) {}
+      }
+      function cgIsFollowed(no) { return !!cgFollows[no]; }
+      function cgHasStageChange(it) {
+        var f = cgFollows[it.official_no];
+        return !!(f && f.stage && f.stage !== congressStage(it));
+      }
+      function cgToggleFollow(no) {
+        var items = currentBoardItems('congress').items || [];
+        var it = null;
+        for (var i = 0; i < items.length; i++) { if (items[i].official_no === no) { it = items[i]; break; } }
+        if (!it) return;
+        if (cgFollows[no]) delete cgFollows[no];
+        else cgFollows[no] = { stage: congressStage(it), date: cgActionDate(it), added: pwTodayKey() };
+        cgSaveFollows();
+        if (renderCurrentBoard === 'congress') renderBoard('congress');
+      }
+      function cgMarkSeen(it) {
+        var no = it.official_no;
+        if (!cgFollows[no]) return;
+        cgFollows[no].stage = congressStage(it);
+        cgFollows[no].date = cgActionDate(it);
+        cgSaveFollows();
+      }
       function cgStageDate(it) {
-        if (FILTER_BOARD !== 'congress') return it.date || '';
-        var st = filterState.stage || 'intro';
-        if (st === 'intro') return it.introduced || it.date || '';
-        return it.stage_date || it.date || '';
+        return FILTER_BOARD === 'congress' ? cgActionDate(it) : (it.date || '');
       }
-      function cgDateLabel() {
-        if (FILTER_BOARD !== 'congress') return '刊登日';
-        var st = filterState.stage || 'intro';
-        return { intro: '提出日', house: '过众院日', senate: '过参院日',
-                 president: '呈送日', enact: '成法日' }[st] || '提出日';
-      }
+      function cgDateLabel() { return FILTER_BOARD === 'congress' ? '最新行动日' : '刊登日'; }
       function cgDateTitle() {
-        if (FILTER_BOARD !== 'congress') return '联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日';
-        var st = filterState.stage || 'intro';
-        if (st === 'intro') return '法案向本院提出的日期（congress.gov introducedDate）';
-        if (st === 'enact') return '成为公法之日（congress.gov 最新行动为 Became Public Law 或总统签署的日期）';
-        if (st === 'president') return '呈送总统之日（Presented to President）';
-        if (st === 'senate') return '参议院通过之日，或参议院行动通知众议院之日';
-        return '众议院通过之日，或众议院行动通知参议院之日';
+        return FILTER_BOARD === 'congress'
+          ? '最近一次立法行动日期（congress.gov latestAction.actionDate）；档案 updateDate 在详情单列'
+          : '联邦公报官方刊登日；公报会在刊登前一日（含周末）先行出具，因此可能晚于抓取日';
       }
-      // 国会条目的速览抬头：静态基本信息 + 当前阶段，供读者在正文之外快速定位
+      // 速览抬头按条目自身阶段，而不是当前列表选中的阶段，避免筛选切换后错配
       function cgMetaHtml(it) {
         if (FILTER_BOARD !== 'congress') return '';
-        var st = filterState.stage || 'intro';
-        var stLabel = { intro: '提案', house: '过众议院', senate: '过参议院',
-                        president: '呈送总统', enact: '成法' }[st] || '—';
+        var stLabel = CG_STAGE_LABELS[congressStage(it)] || '—';
         var dept = congressChamber(it.kind) || '—';
         if (it.committee) dept += ' · ' + it.committee;
         var who = it.sponsor || '—';
         if (it.sponsor_tag) who += '（' + it.sponsor_tag + '）';
         var rows = [
-          ['提出日', it.introduced || '—'],
-          ['提出者', who],
-          ['部门', dept],
-          ['当前阶段', stLabel]
+          ['提出日', it.introduced || '—'], ['提出者', who],
+          ['部门', dept], ['当前阶段', stLabel]
         ];
         return '<div class="brief-meta">' + rows.map(function (r) {
           return '<div><span class="bm-k">' + esc(r[0]) + '</span><span class="bm-v">' + esc(r[1]) + '</span></div>';
         }).join('') + '</div>';
       }
+      function syncBoardTableHead(key) {
+        var isCg = key === 'congress';
+        var ths = document.querySelectorAll('#view-board .pw-thead > span');
+        var labels = isCg
+          ? ['编号', '标题', '阶段', '最新行动', '提案人 / 委员会', '关注']
+          : [cgDateLabel(), '标题', '类型 / 编号', key === 'judicial' ? '法院' : '部门 / 机构', '领域', '操作'];
+        [].forEach.call(ths, function (el, i) { el.textContent = labels[i] || ''; });
+        if (ths[0]) {
+          ths[0].title = isCg
+            ? '法案 / 决议正式编号；点击条目可看提出日、首次行动、最新行动与原文链接'
+            : cgDateTitle();
+        }
+        var timeSel = document.getElementById('filter-time');
+        if (timeSel && timeSel.options[0]) timeSel.options[0].textContent = isCg ? '全部日期' : '全部';
+        var pg = document.getElementById('filter-party-group');
+        if (pg) pg.hidden = !isCg;
+        var watch = document.getElementById('cg-watch-only');
+        if (watch) watch.hidden = !isCg;
+      }
+
       function syncCgStageUI() {
-        var cur = filterState.stage || 'intro';
+        var cur = filterState.stage || 'all';
         [].forEach.call(document.querySelectorAll('#cg-side [data-cg-stage]'), function (b) {
           var on = b.getAttribute('data-cg-stage') === cur;
           b.classList.toggle('is-on', on);
@@ -13027,18 +13210,19 @@
         var host = document.getElementById('pw-selected');
         if (!host) return;
         var agencyLab = document.getElementById('filter-agency-label');
-        var LAB = { kind: '类型', domain: '领域',
+        var LAB = { kind: '类型', domain: '领域', party: '政党',
                     agency: (agencyLab && agencyLab.textContent.trim()) || '机构' };
         var chips = [];
         if (filterState.q) chips.push(['关键词：' + filterState.q, 'q']);
         var t = document.getElementById('filter-time');
         if (t && t.value !== 'all') chips.push(['时间：' + t.options[t.selectedIndex].text, 'time']);
-        ['kind', 'domain', 'agency'].forEach(function (k) {
+        ['kind', 'domain', 'agency', 'party'].forEach(function (k) {
           var el = document.getElementById('filter-' + k);
           if (!el || el.value === 'all') return;
           if (el.parentElement && el.parentElement.hidden) return;
           chips.push([LAB[k] + '：' + el.options[el.selectedIndex].text, k]);
         });
+        if (FILTER_BOARD === 'congress' && cgWatchOnly) chips.push(['我的跟踪', 'watch']);
         if (!chips.length) { host.hidden = true; host.innerHTML = ''; return; }
         host.hidden = false;
         host.innerHTML = '<span class="pw-lab">已选条件</span>' +
@@ -13055,6 +13239,8 @@
           if (k === 'q') {
             var q = document.getElementById('filter-q'); if (q) q.value = '';
             filterState.q = '';
+          } else if (k === 'watch') {
+            cgWatchOnly = false;
           } else {
             var el = document.getElementById('filter-' + k);
             if (el) { el.value = 'all'; filterState[k] = 'all'; }
@@ -13073,8 +13259,9 @@
       function pwDatesOf(items) {
         PW_DATES = {};
         items.forEach(function (it) {
-          if (!it.date) return;
-          PW_DATES[it.date] = (PW_DATES[it.date] || 0) + 1;
+          var dayKey = FILTER_BOARD === 'congress' ? cgActionDate(it) : it.date;
+          if (!dayKey) return;
+          PW_DATES[dayKey] = (PW_DATES[dayKey] || 0) + 1;
         });
       }
 
@@ -13222,7 +13409,7 @@
       }
 
       function syncFilterUI() {
-        var defaults = { 'filter-time': 'all', 'filter-agency': 'all', 'filter-kind': 'all', 'filter-domain': 'all' };
+        var defaults = { 'filter-time': 'all', 'filter-agency': 'all', 'filter-kind': 'all', 'filter-domain': 'all', 'filter-party': 'all' };
         var any = false;
         Object.keys(defaults).forEach(function (id) {
           var el = document.getElementById(id);
@@ -13236,7 +13423,8 @@
           q.classList.toggle('active', !!filterState.q);
           if (filterState.q) any = true;
         }
-        // 立法阶段是国会板块的常驻导航（默认落在「提案」），不算可清除的筛选条件
+        if (FILTER_BOARD === 'congress' && cgWatchOnly) any = true;
+        // 立法阶段是国会板块的常驻导航，默认「全部」
         var rst = document.getElementById('filter-reset');
         if (rst) rst.classList.toggle('show', any);        renderPwChips();
       }
@@ -13279,21 +13467,16 @@
           agencySel.value = 'all';
           filterState.agency = 'all';
         }
-        var thAgency = document.getElementById('pw-th-agency');
-        if (thAgency) thAgency.textContent = key === 'congress' ? '部门'
-          : (key === 'judicial' ? '法院' : '部门 / 机构');
         FILTER_BOARD = key;
-        // 日期列按板块 / 阶段换口径：白宫等按刊登日，国会三段各自看自己的程序日期
-        var thDate = document.getElementById('pw-th-date');
-        if (thDate) { thDate.textContent = cgDateLabel(); thDate.title = cgDateTitle(); }
+        syncBoardTableHead(key);
         // 侧栏读数：联邦公报刊登的条目总数（仅有侧栏的白宫 / 独立机构板块显示）
         var sideCount = document.getElementById('pw-tab-count-fr');
         if (sideCount && (key === 'whitehouse' || key === 'agencies')) sideCount.textContent = allItems.length + ' 条';
         // 国会板块：立法阶段侧栏读数（全部 / 提案 / 审议 / 成法），按板块全量计，不随其它筛选变化
         if (key === 'congress') {
-          var cgN = { all: allItems.length, intro: 0, house: 0, senate: 0, president: 0, enact: 0 };
+          var cgN = { all: allItems.length, introduced: 0, committee: 0, first: 0, both: 0, president: 0, enact: 0 };
           allItems.forEach(function (it) { cgN[congressStage(it)] += 1; });
-          ['intro', 'house', 'senate', 'president', 'enact'].forEach(function (s) {
+          Object.keys(cgN).forEach(function (s) {
             var el = document.getElementById('cg-count-' + s);
             if (el) el.textContent = cgN[s] + ' 条';
           });
@@ -13326,7 +13509,7 @@
         if (items.length === 0) {
           list.innerHTML = '';
           empty.textContent = key === 'congress'
-            ? '该阶段当前没有条目，可在左侧切换到其它阶段。'
+            ? (cgWatchOnly ? '还没有关注的法案。点条目右侧 ☆ 即可加入跟踪。' : '当前筛选条件下没有条目，可在左侧切换阶段或调整筛选。')
             : (meta.empty || '暂无条目，等待首次定时抓取更新（每日）。');
           empty.hidden = false;
           var pager0 = document.getElementById('board-pager');
@@ -13345,6 +13528,7 @@
 
         var nBrief = 0;
         list.innerHTML = pageItems.map(function (it, idx) {
+          if (key === 'congress') return cgRowHtml(it, idx, pageStart);
           var hasBrief = !!(it.brief && it.brief.body);
           if (hasBrief) nBrief++;
           return '<div class="note pw-item' + (hasBrief ? ' has-brief' : '') + '" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '">' +
@@ -13370,6 +13554,23 @@
             (hasBrief ? '<div class="brief" hidden>' + briefHtml(it) + '</div>' : '') +
             '</div>';
         }).join('');
+
+        if (key === 'congress') {
+          [].slice.call(list.querySelectorAll('.pw-item[data-cg-no]')).forEach(function (row) {
+            var it = null;
+            var no = row.getAttribute('data-cg-no');
+            for (var i = 0; i < allItems.length; i++) { if (allItems[i].official_no === no) { it = allItems[i]; break; } }
+            if (!it) return;
+            row.addEventListener('click', function (e) {
+              var star = e.target.closest ? e.target.closest('[data-cg-follow]') : null;
+              if (star) { e.stopPropagation(); cgToggleFollow(no); return; }
+              cgOpenDetail(it, true);
+            });
+            row.addEventListener('keydown', function (e) {
+              if (e.key === 'Enter') { e.preventDefault(); cgOpenDetail(it, true); }
+            });
+          });
+        }
 
         // 展开/收起简报：点「简报」按钮或条目行均可（点「原文」链接不触发）
         [].slice.call(list.querySelectorAll('.note.has-brief')).forEach(function (row) {
@@ -13406,7 +13607,148 @@
         renderPager(items.length, pageCount);
         // 若当前停在 02「新闻动态」，renderBoard 的抬头文案需再同步一次
         syncPwTabChrome();
+        if (key === 'congress') cgOpenDeepLink();
       }
+
+      function cgRowHtml(it, idx, pageStart) {
+        var st = congressStage(it);
+        var no = it.official_no || '—';
+        var followed = cgIsFollowed(no);
+        var changed = cgHasStageChange(it);
+        var who = it.sponsor || '—';
+        if (it.sponsor_tag) who += ' · ' + it.sponsor_tag;
+        var sub = (it.committee || '—') + ' · ' + (it.domain || '其他');
+        return '<div class="note pw-item" id="note-' + (it.__oi != null ? it.__oi : idx) + '" data-idx="' + (pageStart + idx) + '" data-cg-no="' + esc(no) + '" tabindex="0">' +
+          '<div class="pw-r">' +
+            '<span class="c-date">' + esc(no) + '</span>' +
+            '<span class="c-title"><span class="title-main">' + esc(it.title) + '</span>' +
+              (it.title_cn ? '<span class="title-cn">' + esc(it.title_cn) + '</span>' : '') + '</span>' +
+            '<span class="c-kind"><span class="cg-stage st-' + st + '">' + esc(CG_STAGE_LABELS[st]) + '</span></span>' +
+            '<span class="c-agency"><span class="cg-ld">' + esc(cgActionDate(it)) + '</span><span class="cg-lt">' + esc(cgActionParts(it).action || '—') + '</span></span>' +
+            '<span class="c-domain"><div class="cg-who-main">' + esc(who) + '</div><div class="cg-who-sub">' + esc(sub) + '</div></span>' +
+            '<span class="c-act">' + (changed ? '<i class="cg-dot" title="阶段有更新"></i>' : '') +
+              '<button type="button" class="cg-star' + (followed ? ' on' : '') + '" data-cg-follow="' + esc(no) + '" aria-label="' + (followed ? '取消关注' : '关注') + '">' + (followed ? '★' : '☆') + '</button></span>' +
+          '</div>' +
+        '</div>';
+      }
+
+      function cgBriefBodyHtml(it) {
+        var lines = String((it.brief || {}).body || '').split('\n');
+        var out = '';
+        lines.forEach(function (ln) {
+          if (!ln.trim()) return;
+          var h = ln.match(/^(【[^】]+】)/);
+          if (h) { out += '<div class="brief-h">' + esc(h[1]) + '</div>'; return; }
+          var n = ln.match(/^(\d+\.)\s*([^：:]{2,20})[：:]\s*(.*)$/);
+          if (n) { out += '<p><b>' + esc(n[1]) + ' ' + esc(n[2]) + '：</b>' + esc(n[3]) + '</p>'; return; }
+          var lead = ln.match(/^([^，。；：！？、\s「」（）0-9]{2,12})：\s*/);
+          out += '<p>' + (lead ? '<span class="brief-lead">' + esc(lead[1]) + '：</span>' + esc(ln.slice(lead[0].length)) : esc(ln)) + '</p>';
+        });
+        return out;
+      }
+      function cgMeta(k, v) {
+        return '<div class="cg-meta"><div class="k">' + esc(k) + '</div><div class="v">' + v + '</div></div>';
+      }
+      function cgOpenDetail(it, setHash) {
+        if (!it || FILTER_BOARD !== 'congress') return;
+        cgLastFocus = document.activeElement;
+        cgCurrent = it;
+        var no = it.official_no || '—';
+        var st = congressStage(it);
+        var rank = 0;
+        CG_STAGES.forEach(function (x) { if (x.id === st) rank = x.rank; });
+        var steps = CG_STAGES.map(function (x, i) {
+          return '<div class="cg-step' + (i < rank ? ' done' : '') + (i === rank ? ' current' : '') + '">' +
+            '<div class="bar"></div>' + esc(x.label) + '</div>';
+        }).join('');
+        var p = cgActionParts(it);
+        var latestDate = cgActionDate(it);
+        var sponsor = esc(it.sponsor || '—') + (it.sponsor_tag ? '<span class="pt">' + esc(it.sponsor_tag) + '</span>' : '');
+        var metas = [
+          ['提出日', esc(it.introduced || '—')],
+          ['提案人', sponsor],
+          ['委员会', esc(it.committee || '—')],
+          ['议题', esc(it.domain || '其他')],
+          ['当前阶段', esc(CG_STAGE_LABELS[st])],
+          ['最新行动日', esc(latestDate || '—')],
+          ['文种', esc(it.kind || '—')],
+          ['记录更新于', esc(it.date || '—') + '（档案更新，非行动日）'],
+          ['来源', esc(it.source || '国会官网') + ' · congress.gov']
+        ].map(function (r) { return cgMeta(r[0], r[1]); }).join('');
+        var timeline = [{ date: latestDate, text: p.action || '—', tag: CG_STAGE_LABELS[st], now: true }];
+        if (it.introduced && it.introduced !== latestDate) {
+          timeline.push({ date: it.introduced, text: '提出法案' + (it.sponsor ? '，由 ' + it.sponsor + ' 提出' : '') +
+            (it.committee ? '；交付 ' + it.committee : ''), tag: '第一动态', now: false });
+        }
+        var tl = timeline.map(function (x) {
+          return '<div class="cg-tl' + (x.now ? ' now' : '') + '"><div class="cg-tld">' + esc(x.date) + '</div>' +
+            '<div class="cg-tlt">' + esc(x.text) + '<span class="cg-tltag">' + esc(x.tag) + '</span></div></div>';
+        }).join('');
+        var b = it.brief || {};
+        var brief = b.body
+          ? '<div class="cg-brief">' + cgBriefBodyHtml(it) + '</div>' +
+            '<div class="cg-note">速览写于 ' + esc(b.at || '—') + '；阶段推进后应重写，不追加第二份。</div>'
+          : '<div class="cg-note">暂无速览。</div>';
+        var followed = cgIsFollowed(no);
+        document.getElementById('cg-drawer-inner').innerHTML =
+          '<div class="cg-drawer-head"><button type="button" class="cg-close" aria-label="关闭">×</button>' +
+            '<div class="cg-dno">' + esc(no) + '</div><h2 class="cg-dtitle">' + esc(it.title) + '</h2>' +
+            (it.title_cn ? '<div class="cg-dcn">' + esc(it.title_cn) + '</div>' : '') + '</div>' +
+          '<div class="cg-dbody"><div class="cg-steps">' + steps + '</div>' +
+            '<div class="cg-metas">' + metas + '</div>' +
+            '<div class="cg-sech"><h3>第一动态</h3><span>FIRST ACTION</span></div>' +
+            '<div class="cg-first"><div class="k">提出</div><div class="v">' + esc(it.introduced || '—') +
+              ' · 提出法案' + (it.sponsor ? ' · ' + esc(it.sponsor) : '') + '</div>' +
+              (it.committee ? '<div class="sub">交付委员会：' + esc(it.committee) + '</div>' : '') + '</div>' +
+            '<div class="cg-sech"><h3>行动时间线</h3><span>TIMELINE</span></div>' +
+            '<div class="cg-timeline">' + tl + '</div>' +
+            '<div class="cg-note">当前条目保留已入库的第一动态与最新行动；完整中间行动需接入 congress.gov /actions 接口。</div>' +
+            '<div class="cg-sech"><h3>政策速览</h3><span>BRIEF</span></div>' + brief +
+            '<div class="cg-dfoot"><button type="button" class="cg-follow-btn' + (followed ? ' on' : '') + '" id="cg-detail-follow">' +
+              (followed ? '★ 已关注' : '☆ 关注此法案') + '</button>' +
+              '<a class="cg-src" href="' + esc(it.url) + '" target="_blank" rel="noopener">congress.gov 原文 ↗</a></div>' +
+          '</div>';
+        document.getElementById('cg-overlay').hidden = false;
+        document.getElementById('cg-drawer').hidden = false;
+        document.body.style.overflow = 'hidden';
+        if (setHash && no) history.replaceState(null, '', '#bill=' + encodeURIComponent(no));
+        cgMarkSeen(it);
+        document.querySelector('#cg-drawer .cg-close').onclick = function () { cgCloseDetail(true); };
+        document.getElementById('cg-overlay').onclick = function () { cgCloseDetail(true); };
+        document.getElementById('cg-detail-follow').onclick = function () {
+          cgToggleFollow(no);
+          cgOpenDetail(it, true);
+        };
+        document.querySelector('#cg-drawer .cg-close').focus();
+      }
+      function cgCloseDetail(resetHash) {
+        var overlay = document.getElementById('cg-overlay');
+        var drawer = document.getElementById('cg-drawer');
+        if (overlay) overlay.hidden = true;
+        if (drawer) drawer.hidden = true;
+        document.body.style.overflow = '';
+        cgCurrent = null;
+        if (resetHash && /^#bill=/.test(location.hash)) history.replaceState(null, '', '#board-congress');
+        if (resetHash && renderCurrentBoard === 'congress') renderBoard('congress');
+        if (cgLastFocus && cgLastFocus.focus) cgLastFocus.focus();
+        cgLastFocus = null;
+      }
+      function cgOpenDeepLink() {
+        if (FILTER_BOARD !== 'congress') return;
+        var m = location.hash.match(/^#bill=(.+)$/);
+        if (!m) return;
+        var target = decodeURIComponent(m[1]).replace(/\s+/g, '').toUpperCase();
+        var items = currentBoardItems('congress').items || [];
+        for (var i = 0; i < items.length; i++) {
+          var it = items[i];
+          if (String(it.official_no || '').replace(/\s+/g, '').toUpperCase() !== target) continue;
+          if (!cgCurrent || cgCurrent.official_no !== it.official_no) cgOpenDetail(it, false);
+          return;
+        }
+      }
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && cgCurrent) cgCloseDetail(true);
+      });
 
       // ===== 分页：每页 boardPageSize 条 =====
       // 页码窗口：总页数 ≤ 7 全列；否则「首页 … 当前±1 … 末页」
@@ -13588,6 +13930,12 @@
           pwShell.classList.toggle('has-side', hasPrSide);
           pwShell.classList.toggle('has-cgside', isCg);
         }
+        boardView.classList.toggle('is-cg', isCg);
+        if (!isCg) cgCloseDetail(false);
+        var partyGroup = document.getElementById('filter-party-group');
+        if (partyGroup) partyGroup.hidden = !isCg;
+        var watchToggle = document.getElementById('cg-watch-only');
+        if (watchToggle) { watchToggle.hidden = !isCg; watchToggle.classList.remove('on'); }
         // 侧栏 02 的抬头与来源目录按板块重建（白宫按部门、独立机构按机构）；
         // 换板块后统一回到 01「联邦公报刊登」，不沿用上一个板块的分类位置
         if (hasPrSide) renderPrPanel(key);
@@ -13600,7 +13948,9 @@
           boardHead.classList.toggle('is-judicial', key === 'judicial');
         }
         // 切换板块时重置筛选
-        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'intro', q: '' };
+        filterState = { time: 'all', agency: 'all', kind: 'all', domain: 'all', stage: 'all', party: 'all', q: '' };
+        cgWatchOnly = false;
+        document.getElementById('filter-party').value = 'all';
         document.getElementById('filter-time').value = 'all';
         document.getElementById('filter-agency').value = 'all';
         document.getElementById('filter-kind').value = 'all';
@@ -14714,10 +15064,12 @@
       // 支持链接带 #us / #eu / #board-whitehouse / #election 等直达；运行中改 hash 也可切换
       function applyHash() {
         var h = location.hash;
+        if (h.indexOf('#bill=') !== 0) cgCloseDetail(false);
         if (h === '#us') showUs();
         else if (h === '#eu') showEu();
         else if (h === '#election') showElection();
         else if (h === '#parties' || h === '#board-parties') showParties();
+        else if (h.indexOf('#bill=') === 0) showBoard('congress');
         else if (h.indexOf('#board-') === 0) showBoard(h.slice(7));
         else {
           // 回到门户：只恢复显隐与标题，不滚动，页内锚点仍照常跳转。
