@@ -3693,35 +3693,6 @@
   .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
   .cg-steps .cg-step { font-family: var(--v2-serif); font-size: 11px; letter-spacing: .04em; }
   .cg-steps .cg-step .bar { height: 5px; border-radius: 3px; margin-bottom: 7px; }
-  .cg-steps .cg-step.current .bar {
-    position: relative; height: 8px; overflow: visible;
-    animation: cgStepGlow 3s ease-out infinite;
-  }
-  .cg-steps .cg-step.current .bar::before {
-    content: ''; position: absolute; inset: 0; border-radius: inherit;
-    background: radial-gradient(circle at 20% 50%, #e3b95f 1px, transparent 2px),
-                radial-gradient(circle at 60% 50%, #e3b95f 1px, transparent 2px),
-                radial-gradient(circle at 85% 50%, #e3b95f 1px, transparent 2px);
-    background-size: 65% 100%; pointer-events: none; animation: cgStepDrift 4s ease-in-out infinite alternate;
-  }
-  .cg-steps .cg-step.current .bar::after {
-    content: ''; position: absolute; inset: -12px -8px;
-    background: radial-gradient(circle at 50% 50%, rgba(201,168,106,.4), transparent 48%),
-                radial-gradient(circle at 24% 24%, #c9a86a 1px, transparent 2px),
-                radial-gradient(circle at 72% 78%, #c9a86a 1px, transparent 2px),
-                radial-gradient(circle at 82% 18%, #c9a86a 1px, transparent 2px);
-    pointer-events: none; transform-origin: center; animation: cgStepSpark 3s ease-out infinite;
-  }
-  @keyframes cgStepSpark { 0% { opacity: .9; transform: scale(.25); } 100% { opacity: 0; transform: scale(1.35); } }
-  @keyframes cgStepGlow {
-    0%, 100% { box-shadow: 0 0 7px 1px rgba(201,168,106,.55), inset 0 0 3px #e3b95f; }
-    25% { box-shadow: 0 0 16px 5px rgba(201,168,106,.9), 0 0 28px 7px rgba(168,130,60,.5), inset 0 0 6px 2px #e3b95f; }
-  }
-  @keyframes cgStepDrift { from { background-position: 0 0; opacity: .45; } to { background-position: 100% 0; opacity: .9; } }
-  @media (prefers-reduced-motion: reduce) {
-    .cg-steps .cg-step.current .bar, .cg-steps .cg-step.current .bar::before, .cg-steps .cg-step.current .bar::after { animation: none; }
-    .cg-steps .cg-step.current .bar::after { opacity: .6; }
-  }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
   .cg-metas + .cg-sech { border-top: 0; padding-top: 0; }
