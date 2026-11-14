@@ -5567,7 +5567,7 @@
               <span class="pw-tab-n">06</span><span class="pw-tab-t">成法</span><span class="pw-tab-e">Enacted</span><span class="pw-tab-c" id="cg-count-enact">—</span>
             </button>
           </div>
-          <p class="pw-side-note">六段互斥、合计为全部条目。列表展示当前状态与最新行动；详情收录提出记录、关键行动与政策速览。</p>
+          <p class="pw-side-note">六段互斥、合计为全部条目。列表展示当前状态与最新行动；详情收录提出记录、关键行动与条目速览。</p>
         </aside>
 
         <div class="pw-main">
@@ -13946,6 +13946,7 @@
             '<div class="cg-tlt">' + esc(x.text) + '<span class="cg-tltag">' + esc(x.tag) + '</span></div></div>';
         }).join('');
         var b = it.brief || {};
+        var briefTitle = String(it.kind || '条目').replace(/^(众议院|参议院|众院|参院)/, '') + '速览';
         var brief = b.body
           ? (b.stale ? '<div class="cg-note">此速览尚未按最新行动改写，当前进展请以行动时间线为准。</div>' : '') +
             '<div class="cg-brief">' + cgBriefBodyHtml(it) + '</div>' +
@@ -13963,7 +13964,7 @@
             '<div class="cg-timeline" id="cg-timeline">' + tl + '</div>' +
             (timeline.length > 1 ? '<button type="button" class="cg-tl-toggle" aria-controls="cg-timeline" aria-expanded="false">展开其余 ' + (timeline.length - 1) + ' 条行动 ↓</button>' : '') +
             (!it.actions ? '<div class="cg-note">此条目尚未补齐官方行动记录，当前显示最新行动与提出日。</div>' : '') +
-            '<div class="cg-sech"><h3>政策速览</h3><span>BRIEF</span></div>' + brief +
+            '<div class="cg-sech"><h3>' + esc(briefTitle) + '</h3><span>BRIEF</span></div>' + brief +
             '<div class="cg-dfoot"><button type="button" class="cg-follow-btn' + (followed ? ' on' : '') + '" id="cg-detail-follow">' +
               (followed ? '★ 已关注' : '☆ 关注此法案') + '</button></div>' +
           '</div>';
