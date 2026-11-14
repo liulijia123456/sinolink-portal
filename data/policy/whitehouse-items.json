@@ -1,9 +1,281 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-13 08:16",
-  "count": 319,
+  "updated_at": "2026-11-14 09:25",
+  "count": 335,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Publication of Iran-Related Web General Licenses EE and FF",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23197/publication-of-iran-related-web-general-licenses-ee-and-ff",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23197",
+      "title_cn": "发布伊朗相关网络通用许可 EE 与 FF（规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "财政部海外资产控制办公室（OFAC）在联邦公报刊登两份伊朗相关通用许可，属此前已在官方网站发布文本的正式补登，载于 91 FR 73140。\n第 EE 号许可依第 13846 号行政令签发，授权清盘涉及 Samudra Marine Services Private Limited 的交易，2026 年 10 月 8 日签发、10 月 23 日到期。\n第 FF 号许可依《伊朗交易与制裁条例》（31 CFR 第 560 部分）签发，授权清盘涉及 International Development Bank for Investment and Finance 的交易，2026 年 10 月 15 日签发、10 月 30 日到期。\n两份许可在刊登时均已失效，本次发布不产生新的授权，现行制裁不变。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55F and 115D",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23196/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-licenses-55f-and",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23196",
+      "title_cn": "发布俄罗斯有害对外活动制裁条例网络通用许可 55F 与 115D（规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "财政部海外资产控制办公室（OFAC）刊登两份依《俄罗斯有害对外活动制裁条例》（31 CFR 第 587 部分）签发的通用许可，均为官方网站已发布文本的补登，载于 91 FR 73140—73141。\n第 55F 号许可授权与「萨哈林-2」项目有关的特定服务，依据 2022 年 11 月 21 日的认定作出，自 2026 年 6 月 11 日起全面取代 2025 年 12 月 17 日的第 55E 号许可。\n第 115D 号许可授权与民用核能有关的特定交易，依第 14024 号行政令作出，同日取代 2025 年 12 月 17 日的第 115C 号许可。\n两份许可均于 2026 年 6 月 11 日签发、2026 年 12 月 18 日到期，授权范围较前版未见扩充；具体条款以公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Publication of a Cuba Sanctions Regulations Web General License",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23195/publication-of-a-cuba-sanctions-regulations-web-general-license",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23195",
+      "title_cn": "发布古巴制裁条例网络通用许可第 1 号（规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "财政部海外资产控制办公室（OFAC）刊登古巴制裁项目第 1 号通用许可，属官方网站已发布文本的补登，载于 91 FR 73139—73140。\n该许可于 2026 年 5 月 7 日依第 14404 号行政令（2026 年 5 月 1 日《对古巴镇压责任人及对美国国家安全与外交政策构成威胁者实施制裁》）签发，授权该行政令与相关条例本应禁止的特定交易。\n2026 年 9 月 30 日，OFAC 已将第 14404 号行政令的禁止性规定并入《古巴制裁条例》（31 CFR 第 516 部分），许可的适用依据随之调整。\n本次刊登为文本正式化，未改变授权范围；具体条款以公报文本与 OFAC 网站为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Publication of Iran-Related Web General License W",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23193/publication-of-iran-related-web-general-license-w",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23193",
+      "title_cn": "发布伊朗相关网络通用许可 W（规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "财政部海外资产控制办公室（OFAC）刊登伊朗相关第 W 号通用许可，属官方网站已发布文本的补登，载于 91 FR 73142。\n该许可于 2026 年 5 月 1 日依第 13846 号行政令签发，授权清盘涉及 2026 年 5 月 1 日被列名的特定人员与实体的交易，适用对象限于许可正文所列范围。\n许可已于 2026 年 5 月 31 日到期，本次刊登不恢复任何授权，亦不改变现行制裁的禁止性规定。\n条目归入「规则」类但性质属文本公布，程序上不设评论期；具体条款以公报所载文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Final Deauthorization List of Water Resources Projects",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23190/final-deauthorization-list-of-water-resources-projects",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国防部",
+      "official_no": "2026-23190",
+      "title_cn": "水资源开发项目最终去授权清单（通告）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "陆军工程兵团依 2020 年《水资源开发法》第 301 条（经 2024 年该法第 1301 条修订、编于 33 U.S.C. 579d-2）公布水资源开发项目最终去授权清单，载于 91 FR 73217，案卷号 COE-2026-0034。\n清单在审议 2026 年 5 月 21 日拟议清单（91 FR 29946）所收公众意见后定稿，涉及被认定应予去授权的项目以及项目的可分割要素。\n最终清单已报送众议院运输与基础设施委员会与参议院环境与公共工程委员会，属法定通报程序。\n刊登本身不直接变更具体项目的授权状态，项目范围与要素构成以清单正文为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Oil and Gas and Sulfur Operations in the Outer Continental Shelf-Revisions to the Requirements for Exploratory Drilling on the Arctic Outer Continental Shelf; Reopening of Comment Period",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23145/oil-and-gas-and-sulfur-operations-in-the-outer-continental-shelf-revisions-to-the-requirements-for",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "内政部",
+      "official_no": "2026-23145",
+      "title_cn": "外大陆架油气与硫磺作业——北极外大陆架勘探钻井要求修订：评论期重开（拟议规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "内政部经海洋矿产管理局（MMA）重开一项拟议规则的评论期，载于 91 FR 73192，案卷号 BSEE-2026-0133 EEAA021000-278E1700D2-ET1SF0000.EAQ000。\n被重开评论的拟议规则于 2026 年 8 月 6 日刊登（91 FR 50998），内容为修订外大陆架油气与硫磺作业中关于北极外大陆架勘探钻井的要求。\n评论提交截止日延至 2026 年 12 月 14 日，规章识别号 RIN 1082-AA05，可经联邦电子规则制定门户提交。\n评论期重开不改变拟议规则的实体内容，最终规则尚未发布；修订条款以原拟议规则文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Common Crop Insurance Regulations; Apple Crop Insurance Provisions; Withdrawal",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23123/common-crop-insurance-regulations-apple-crop-insurance-provisions-withdrawal",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "农业部",
+      "official_no": "2026-23123",
+      "title_cn": "通用作物保险条例；苹果作物保险条款：撤回（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦作物保险公司（FCIC）撤回 2021 年 12 月 16 日刊登的拟议规则《通用作物保险条例；苹果作物保险条款》，载于 91 FR 73174，案卷号 FCIC-21-0007。\n撤回理由为：根据就该提案收到的公众意见，FCIC 认定现阶段无需或不宜推进该项规则制定。\n若 FCIC 今后决定就该议题采取监管行动，将另行发布新的拟议规则。\n现行苹果作物保险条款维持不变，本次刊登属程序性撤回，不调整保险责任、承保条件或费率。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Horse Protection",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23086/horse-protection",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "农业部",
+      "official_no": "2026-23086",
+      "title_cn": "马匹保护（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "农业部动植物卫生检验局（APHIS）提出修订《马匹保护法》实施条例，载于 91 FR 73380，案卷号 APHIS-2026-0067。\n针对 2024 年 5 月 8 日最终规则，APHIS 拟删除其中已被法院裁决撤销的条款，并撤回其余未被撤销的条款，理由是确保条例符合正当程序并与《马匹保护法》本意一致。\n同时拟修订指定合格人员（DQP）培训与执照的认证要求，改进 DQP 检查程序，以及在对其实施资格取消前对 APHIS 检查结果提出申诉的程序。\n拟明确：马匹一经判定为「疼痛」（sore），仅取消其参加当次检查所在场次的资格，而非整个赛事。\n评论截止 2026 年 12 月 14 日，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Revocation of the Color Additive Listing for Use of Orange B on Casings or Surfaces of Frankfurters and Sausages; Confirmation of Effective Date",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23112/revocation-of-the-color-additive-listing-for-use-of-orange-b-on-casings-or-surfaces-of-frankfurters",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-23112",
+      "title_cn": "撤销橙色 B 用于法兰克福香肠与香肠肠衣或表面的着色添加剂许可；确认生效日（规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "食品药品管理局（FDA）确认 2026 年 7 月 23 日刊登的最终命令自 2026 年 9 月 8 日起生效，载于 91 FR 73139，案卷号 FDA-2025-C-3543。\n该最终命令废止允许橙色 B（Orange B）用于法兰克福香肠与香肠肠衣或表面着色的着色添加剂条例。\n生效后，该用途不再具备着色添加剂许可依据，相关食品不得再以该物质着色。\n本次刊登仅作生效日确认，不新增实质要求，亦不设评论期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23198/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23198",
+      "title_cn": "适航指令：波音公司飞机（787-8 机翼蒙皮穿透紧固件与油箱检查）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）拟对特定波音 787-8 型飞机发布新适航指令，载于 91 FR 73181，案卷号 FAA-2026-13802，项目号 AD-2026-00597-T。\n起因是有报告指出，部分机翼蒙皮外模线（OML）穿透紧固件以无封盖螺纹螺母安装，在承受直接附着闪电电流时无法可靠防护潜在点火源。\n拟要求检查左右机翼特定肋间邻近电磁效应（EME）套筒的螺纹螺母紧固件；检查左右机翼燃油箱、通气油箱与干舱内穿透上下机翼蒙皮的紧固件螺母；执行特定适航限制（AWL）检查及相应状态性措施。\n另拟要求执行并行要求，并修订维修方案以纳入该适航限制任务。\n评论截止 2026 年 12 月 28 日，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Amendment of Class C Airspace; Laughlin Air Force Base, Del Rio, TX",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23194/amendment-of-class-c-airspace-laughlin-air-force-base-del-rio-tx",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23194",
+      "title_cn": "修订 C 类空域：得克萨斯州德尔里奥劳克林空军基地（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）对得克萨斯州德尔里奥劳克林空军基地 C 类空域的法律描述作行政性修订，载于 91 FR 73137，案卷号 FAA-2026-13961、空域案卷号 26-AWA-7。\n修订内容三项：将机场基准点（ARP）地理坐标更新为与 FAA 国家空域系统资源库（NASR）一致；修正标题格式以符合现行政策；将「机场/设施名录」的旧称更新为「航图补充资料」。\n该行动不改变 C 类空域的横向边界、高度与运行要求。\n2027 年 2 月 18 日 0901 UTC 生效；机关援引正当理由免除通告与评论程序。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23134/airworthiness-directives-the-boeing-company-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23134",
+      "title_cn": "适航指令：波音公司飞机（747-400/747-400F 主起落架轮舱交流电动泵过热起火）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）拟对全部波音 747-400 与 747-400F 系列飞机发布新适航指令，载于 91 FR 73176，案卷号 FAA-2026-13810，项目号 AD-2026-00233-T。\n起因是有报告称一台交流电动泵（ACMP）过热，导致主起落架（MLG）轮舱起火。\n拟要求对装机 ACMP 进行维修记录核查或检查，确认是否装用特定件号产品，并执行相应状态性措施。\n另拟禁止安装受影响部件，以防止同类不安全状态再现。\n评论截止 2026 年 12 月 28 日，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Airworthiness Directives; Pratt & Whitney Canada Corp. Engines",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23118/airworthiness-directives-pratt-and-whitney-canada-corp-engines",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23118",
+      "title_cn": "适航指令：普惠加拿大公司发动机（PW814GA/PW815GA 适航限制章更新）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）拟对全部普惠加拿大公司（P&WC）PW814GA 与 PW815GA 型发动机发布新适航指令，载于 91 FR 73179，案卷号 FAA-2026-13811，项目号 MCAI-2025-01888-E。\n起因是制造商修订现适航限制手册（ALM）的适航限制章（ALS），对寿命限制件引入新的或更严格的适航限制及相应阈值与间隔。\n拟要求更新 ALM 或持续适航说明（ICA）中的 ALS，并相应更新已批准的维修或检查方案，以纳入上述限制与间隔。\n该行动系对加拿大民航当局措施的对应动作，项目号标识显示其源自外国民航当局适航指令。\n评论截止 2026 年 12 月 28 日，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Airworthiness Directives; General Electric Company Engines",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23116/airworthiness-directives-general-electric-company-engines",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23116",
+      "title_cn": "适航指令：通用电气公司发动机（Passport 系列起动引气活门燃油管更换）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）拟对特定通用电气公司 Passport 系列发动机（GE Passport 20-17BB1A、20-18BB1A、20-19BB1A、20-19BB1B）发布新适航指令，载于 91 FR 73174，案卷号 FAA-2026-13813，项目号 AD-2026-00061-E。\n起因是核心机舱内燃油泄漏引发火情，造成一台发动机空中停车（IFSD）。\n拟要求以重新设计的起动引气活门（SBV）燃油管替换原燃油管，消除泄漏与起火隐患。\n评论截止 2026 年 12 月 28 日，最终规则尚未发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Amendment of Class C Airspace; President Donald J. Trump International Airport, FL",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23109/amendment-of-class-c-airspace-president-donald-j-trump-international-airport-fl",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23109",
+      "title_cn": "修订 C 类空域：佛罗里达州西棕榈滩唐纳德·J·特朗普总统国际机场（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦航空管理局（FAA）拟修订佛罗里达州西棕榈滩唐纳德·J·特朗普国际机场（DJT）的 C 类空域，载于 91 FR 73184，案卷号 FAA-2026-5281、空域案卷号 26-AWA-1。\n目的为提升该终端区空中交通运行管理效率，降低空中相撞风险。\n本次为拟议规则阶段，评论截止 2027 年 1 月 12 日，现行空域在此期间继续有效。\n具体边界、高度层与运行要求的调整幅度，以拟议规则文本及其空域描述为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Safety Zone; Massachusetts Bay, Boston, MA",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23148/safety-zone-massachusetts-bay-boston-ma",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23148",
+      "title_cn": "安全区：马萨诸塞州波士顿马萨诸塞湾（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "海岸警卫队在马萨诸塞湾波士顿东北约 22 海里的部分可航水域设立临时移动安全区，载于 91 FR 73142，案卷号 USCG-2026-1071。\n设立目的为保护人员、船舶与海上公众免受海底拆除作业产生的潜在危害。\n未经波士顿分区港务监督或其指定代表特别授权，禁止船舶或人员进入该区域。\n生效期为 2027 年 2 月 28 日 23 时 59 分至 2027 年 9 月 30 日 8 时（当地时）；作业按阶段推进，具体坐标与执行时段经航海通告发布。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-12",
