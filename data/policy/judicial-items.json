@@ -1,9 +1,207 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-13 09:55",
-  "count": 86,
+  "updated_at": "2026-11-14 09:58",
+  "count": 97,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Green v. MSPB",
+      "url": "https://www.courtlistener.com/opinion/11060598/green-v-mspb/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "联邦巡回上诉法院",
+      "summary": "injuries allegedly sus- tained because of agency action, (3) a grievance for arbitra- tion of the validity",
+      "official_no": "",
+      "title_cn": "格林诉美国功绩制保护委员会（涉联邦雇员残疾退休是否属非自愿退休）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦巡回上诉法院以全体一致意见维持功绩制保护委员会（MSPB）的终局决定，驳回复审请求。原告原为国内税务局拉斯维加斯办事处税务稽查员，2006 年因涉嫌提交虚假纳税申报表被无限期停职；停职生效前后，他申请残疾退休并依集体谈判协议提起仲裁，人事管理办公室 2007 年 1 月批准退休，仲裁员同年 3 月认定停职无效但未判补发工资。\n\n2023 年原告向该委员会主张该退休系非自愿。行政法官以缺乏管辖权驳回，2025 年 9 月成为终局决定。法院认定，原告明确放弃歧视主张后案件不再属混合案件，联邦巡回法院方取得复审管辖权；实体上原告未能非轻率地主张退休出于胁迫或错误信息，且关于机构未履行仲裁裁决、未予复职的主张因未在下级充分提出而丧失。\n\n判决维持原判，双方各自承担费用。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "John Doe A v. Gretchen Whitmer",
+      "url": "https://www.courtlistener.com/opinion/11061127/john-doe-a-v-gretchen-whitmer/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "#2978–80). The plaintiffs moved for a preliminary injunction, R. 7 (Pls.’ Prelim. Inj. Mot. at 1–67)",
+      "official_no": "",
+      "title_cn": "无名氏甲诉密歇根州长惠特默（涉性犯罪者登记法溯及适用的合宪性）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "第六巡回上诉法院就密歇根州 2021 年修订的《性犯罪者登记法》合宪性诉讼作出部分维持、部分撤销并发回重审的判决。原告为须依该法登记的被定罪人员及其群体，主张修订版仍构成溯及惩罚，违反宪法禁止溯及既往条款，并另提正当程序、平等保护与含义模糊等多项主张。\n\n地区法院此前认定：该法溯及适用违反禁止溯及既往条款；州警察局对在密歇根州以外被定罪者的处理侵犯程序性正当程序；但驳回针对按罪行分级、以及对部分登记人申请除名之限制的平等保护主张，亦驳回针对若干报告义务的含义模糊主张。\n\n判决由摩尔法官撰写，一名合议法官部分协同、部分异议。上诉法院未全盘接受或推翻原判，各项主张的分项处置以判决书原文为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "John Does v. Mich. State Police",
+      "url": "https://www.courtlistener.com/opinion/11061126/john-does-v-mich-state-police/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "to appear in person by the threat of criminal sanction if one fails to do so. And, if anything",
+      "official_no": "",
+      "title_cn": "无名氏等诉密歇根州警察局（涉登记法本人到场报告义务是否构成第四修正案扣押）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "第六巡回上诉法院维持地区法院驳回起诉的裁定，认定密歇根州《性犯罪者登记法》的本人到场报告义务不构成第四修正案意义上的扣押。原告为须依该法登记的人员，主张该法要求其在初次登记、按等级定期报告（每年一至四次），以及在搬家、换工作、改名等生活事件发生后三个工作日内亲自到场，未报告即面临刑事追诉威胁，构成以权力展示方式实施的扣押。\n\n法院未就关联判例在本巡回是否具有约束力作出裁定，而是独立认定：报告义务允许当事人自行选择到场时间、可中断会面，较大陪审团传票与刑事传唤更为宽松，故不属扣押。\n\n原告另提的溯及既往、正当程序、平等保护与第一修正案主张在关联案件中审理，不在本案范围，法院未判予任何救济。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Cemen Tech, Inc. v. G.W. Van Keppel Company",
+      "url": "https://www.courtlistener.com/opinion/11060862/cemen-tech-inc-v-gw-van-keppel-company/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第八巡回上诉法院",
+      "summary": "appeals the district court’s 1 entry of a preliminary injunction in favor of Cemen Tech, Inc. Having jurisdiction",
+      "official_no": "",
+      "title_cn": "Cemen Tech 诉 G.W. Van Keppel 公司（涉经销商协议终止后初步禁令之上诉）",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "第八巡回上诉法院受理一起经销商协议纠纷的中间上诉。Cemen Tech 为艾奥瓦州混凝土搅拌车与现场搅拌设备制造商，G.W. Van Keppel 自 2016 年起为其在俄克拉何马、堪萨斯、密苏里等州的独家经销商。\n\nCemen Tech 于 2025 年 9 月发出终止通知、2026 年 1 月终止协议后，经销商依三州经销商保护法在俄克拉何马北区联邦地区法院起诉；该院依协议中的管辖条款裁定移送艾奥瓦南区联邦地区法院。地区法院经 2026 年 3 月 12 日听审后作出支持 Cemen Tech 的初步禁令，经销商随后提起上诉并申请中止禁令。\n\n检索片段仅载明上诉系针对该初步禁令、法院已确认管辖，未载明合议庭组成、争点分析与最终处置，以判决书原文为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "State of New York v. U.S. Department of Transportation",
+      "url": "https://www.courtlistener.com/opinion/11060585/state-of-new-york-v-us-department-of-transportation/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "late September 2025, FMCSA issued an interim final rule requiring states to “ensure that the period of",
+      "official_no": "",
+      "title_cn": "纽约州诉美国交通部（涉非定居商用驾照有效期匹配规则之撤销）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "第二巡回上诉法院批准纽约州的复审申请，撤销联邦汽车运输安全管理局认定该州未实质遵守商用驾照发放规定的终局决定。争议源于 2025 年 9 月的临时最终规则与 2026 年 2 月的最终规则，二者要求各州确保发给非定居申请人的商用学习许可与驾照，有效期不超过其移民文件载明的准入截止日期。该局据此扣留纽约州 2027 财年百分之四的公路与交通资金。\n\n法院认为，该局承认当时有效的法规文本中并无此项到期日匹配要求；相关条款仅规定非定居许可程序至少须与定居程序同等，且已明确列举的例外不应再推定增加。2011 年制定规则时该局曾审议并拒绝采纳同类要求，此前亦从未据此认定任何州不合规。\n\n因该要求是终局决定的唯一依据，决定不能成立。一名合议法官仅同意结论。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Building Resilient Infrastructure & Developing Greater Equity, Inc. v. Consumer Financial Protection Bureau",
+      "url": "https://www.courtlistener.com/opinion/11061194/building-resilient-infrastructure-developing-greater-equity-inc-v/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十一巡回上诉法院",
+      "summary": "regulation. The district court denied a preliminary injunction to stop enforcing the rule and",
+      "official_no": "",
+      "title_cn": "建设韧性基础设施与促进公平公司诉消费者金融保护局（涉 PACE 房屋改造贷款纳入 Z 条例）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "第十一巡回上诉法院维持地区法院支持消费者金融保护局的简易判决，并以已无实际意义为由驳回对拒绝初步禁令裁定提起的上诉。争议规则为 2025 年 1 月发布、2026 年 3 月生效的 Z 条例修正，将地方政府提供的 PACE 房屋改造贷款（由居民随房产税偿还）认定为《诚实借贷法》下的消费者信贷交易，从而使该法及房地产结算程序法、安全公平抵押贷款许可法等要求适用于此类贷款。\n\n原告行业协会依《行政程序法》提出四项主张：未提交小企业审查小组审议、超越法定授权、武断反复无常、侵犯州征税权并构成征用。法院认定，第一项因未在初始上诉状提出而视为放弃；PACE 贷款符合消费者信贷交易定义，该局可依一般规则制定权规制；方法论选择属合理裁量；贷款属债务而非税收，规则对州与私人主体均等适用，不构成征用。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Kaptan Demir Celik Endustrisi Ve Ticaret A.S. v. United States",
+      "url": "https://www.courtlistener.com/opinion/11060595/kaptan-demir-celik-endustrisi-ve-ticaret-as-v-united-states/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "联邦巡回上诉法院",
+      "summary": "A Under the Tariff Act of 1930, 19 U.S.C. § 1202 et seq., Commerce",
+      "official_no": "",
+      "title_cn": "Kaptan Demir Çelik 诉美国（涉土耳其钢筋反倾销复审中销售日期之认定）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "联邦巡回上诉法院维持国际贸易法院判决，认可商务部在土耳其钢筋反倾销行政复审中以发票日期而非合同日期作为销售日期。涉案产品为原产于土耳其的钢制混凝土用钢筋，复审期为 2021 年 7 月至 2022 年 6 月，源自 2017 年的反倾销令。商务部据此计算倾销幅度，初裁为百分之二十九点三，终裁降至百分之二十五点八六。\n\n上诉人主张，联邦最高法院 2024 年推翻谢弗林遵从的判例要求重新审视销售日期规则。法院认为，双方对销售日期的含义并无实质分歧，该规则是确定销售日期的起点而非推定，故不涉遵从问题；并认定商务部以发票日期为准有实质性证据支持，因合同条款允许签约后变更装运期、规格构成与数量。\n\n判决维持原判，双方各自承担费用。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Williams v. Bondi",
+      "url": "https://www.courtlistener.com/opinion/11061384/williams-v-bondi/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "designation as a suit challenging a final agency action results in a different path to the federal courts",
+      "official_no": "",
+      "title_cn": "威廉姆斯诉邦迪（涉 EEOC 命令执行之诉的诉讼路径选择）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "哥伦比亚特区联邦地区法院准予被告驳回起诉的动议，以未陈述可获救济的请求为由无偏驳回起诉状。原告为联邦调查局前情报分析师，经平等就业机会委员会行政程序获得认定其前雇主存在种族与性别歧视及报复的裁定，联邦运营办公室 2024 年 1 月维持该裁定；但联邦调查局在合规报告中拒绝复职，该办公室 2025 年 6 月驳回其执行申请。原告遂起诉请求法院强制执行该命令。\n\n法院将被告依规则 12(b)(1) 提出的动议改按 12(b)(6) 处理，认定联邦雇员就此类处置只有执行之诉与重新审理之诉两条路径，二者不可混合；原告既否认仅寻求执行，又否认请求重新审查责任认定，且未主张该办公室决定违法或越权，故未能陈述可行请求。\n\n法院同时驳回其在异议书中提出的修改诉状请求。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "International Association of Sheet Metal Air Rail Transportation Workers v. Office and Professional Employees International Union, Local 2",
+      "url": "https://www.courtlistener.com/opinion/11061318/international-association-of-sheet-metal-air-rail-transportation-workers-v/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Breach of Collective Bargaining Agreement under Section 301 of the Labor Management Relations Act, 29 U",
+      "official_no": "",
+      "title_cn": "钣金航空铁路运输工人国际协会诉办公室与专业雇员国际工会第二地方分会（涉复职仲裁裁决之执行）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "哥伦比亚特区联邦地区法院驳回雇主撤销仲裁裁决的请求，准许工会的强制执行交叉申请。钣金航空铁路运输工人国际协会以一名行政助理向同事群发邮件、将某同事获批的远程办公便利比作退休为由将其解雇；其工会依集体谈判协议提出申诉，仲裁员认定邮件造成的损害不算严重，下令雇主在十四日内恢复其原职，但不判补发工资，并要求在人事记录中注明解雇至复职的二十一个月为无薪纪律停职。\n\n雇主拒绝复职并诉请撤销裁决，唯一理由是裁决与禁止职场残疾歧视的公共政策相冲突。法院指出，劳动仲裁裁决受极为尊让的审查标准约束，只要裁决可从协议推导出即应维持；雇主未能指出任何使其复职即为违法的法律或判例，公共政策抗辩不成立。\n\n关于补发工资、利息与律师费等救济，双方须于 2026 年 11 月 20 日前提交联合状况报告。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "American Federation of Labor and Congress of Industrial Organizations v. Sonderling",
+      "url": "https://www.courtlistener.com/opinion/11061319/american-federation-of-labor-and-congress-of-industrial-organizations-v/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "that went through notice and comment? And does the Administrative Procedure Act have any qualms about",
+      "official_no": "",
+      "title_cn": "美国劳工联合会—产业工会联合会诉桑德林（涉工会财务报告规则撤回后重启的通告评论程序）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "哥伦比亚特区联邦地区法院准予政府简易判决动议，维持劳工部 2026 年 6 月 1 日发布的工会财务报告规则，驳回美国劳工联合会—产业工会联合会的主张。该规则修改《劳动管理报告与披露法》下大型工会的报表义务：新设适用于年收入四千万美元以上工会的长表类别，取消职能工时申报而保留按职能类别申报支出，拆分原有职能类别，并要求披露缴纳五千美元以上会费者的名称。\n\n规则源自 2020 年 10 月的拟议规则通告，劳工部 2021 年在统一议程中将其标注为已撤回，2026 年 6 月却将原提案与另一项门槛调整提案合并定稿，未重新进行通告评论。\n\n法院认定，统一议程中的撤回标注属行政性记录，不具《行政程序法》上的法律效力，原通告评论仍然有效；规则未超出法定授权，职能报告与会费披露的变更亦非武断反复无常。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-13",
+      "title": "Vlsi Technology LLC v. United States Patent and Trademark Office",
+      "url": "https://www.courtlistener.com/opinion/11061087/vlsi-technology-llc-v-united-states-patent-and-trademark-office/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Errata to Pl.’s Mot., Ex. 2, PTO Decision Issuing Sanctions in OpenSky v. VLSI (Oct. 4, 2022) (“PTO OSI Decision”)",
+      "official_no": "",
+      "title_cn": "VLSI 技术公司诉美国专利商标局（涉检举报告涂黑部分的信息自由法豁免之争）",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "哥伦比亚特区联邦地区法院就一起《信息自由法》诉讼作出部分准予、部分驳回双方交叉动议的裁定。VLSI 技术公司申请公开商务部和专利商标局的一份四十页检举报告，该报告指控英特尔法务部门设立空壳公司提起多方复审，以规避其被判侵权后不得再提复审的限制；该局 2026 年 5 月公开时对约半数内容作涂黑处理，援引豁免 4、6、7(C)。\n\n法院认定，该局可继续涂黑个人姓名、银行账号、社会安全号、公民身份及教育与就业经历；但须公开所谓成员的实体名称、投资金额与日期、银行名称及各涂黑账号间的交易活动，涉个人的关联信息须以唯一标识符替代后公开。\n\n法院驳回被告关于不存在公共利益的主张，认定报告涉及复审程序公正性、公共利益重大。该局须于 2026 年 12 月 21 日前公开不当涂黑部分。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-12",
