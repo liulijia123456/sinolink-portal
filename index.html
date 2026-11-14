@@ -3695,13 +3695,14 @@
   .cg-steps .cg-step .bar { height: 5px; border-radius: 3px; margin-bottom: 7px; }
   .cg-steps .cg-step.current .bar { position: relative; box-shadow: 0 0 9px rgba(168,130,60,.5); }
   .cg-steps .cg-step.current .bar::after {
-    content: ''; position: absolute; inset: -6px 0;
-    background: radial-gradient(circle at 18% 30%, #c9a86a 1px, transparent 2px),
-                radial-gradient(circle at 54% 75%, #c9a86a 1px, transparent 2px),
-                radial-gradient(circle at 84% 25%, #c9a86a 1px, transparent 2px);
-    pointer-events: none; animation: cgStepSpark 3s ease-in-out infinite;
+    content: ''; position: absolute; inset: -12px -8px;
+    background: radial-gradient(circle at 50% 50%, rgba(201,168,106,.4), transparent 48%),
+                radial-gradient(circle at 24% 24%, #c9a86a 1px, transparent 2px),
+                radial-gradient(circle at 72% 78%, #c9a86a 1px, transparent 2px),
+                radial-gradient(circle at 82% 18%, #c9a86a 1px, transparent 2px);
+    pointer-events: none; transform-origin: center; animation: cgStepSpark 3s ease-out infinite;
   }
-  @keyframes cgStepSpark { 0%, 100% { opacity: .25; transform: translateY(2px); } 50% { opacity: 1; transform: translateY(-2px); } }
+  @keyframes cgStepSpark { 0% { opacity: .9; transform: scale(.25); } 100% { opacity: 0; transform: scale(1.35); } }
   @media (prefers-reduced-motion: reduce) { .cg-steps .cg-step.current .bar::after { animation: none; opacity: .6; } }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
