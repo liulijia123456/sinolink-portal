@@ -3667,15 +3667,20 @@
   .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
 
   /* 法案详情：外框定界，章节以规则线分组，保留正文留白。 */
-  .cg-drawer { box-sizing: border-box; border-top: 18px solid #2f6fb8; border-bottom: 0; border-radius: 18px 0 0 18px; }
-  .cg-drawer-head { border-bottom-color: var(--us-line); }
+  .cg-drawer { box-sizing: border-box; border-top: 0; border-bottom: 0; border-radius: 18px 0 0 18px; }
+  .cg-drawer-head { padding-top: 48px; border-bottom-color: var(--us-line); border-radius: 18px 0 0 0; overflow: hidden; }
+  .cg-drawer .cg-close { top: 41px; }
   .cg-drawer-head::before {
-    content: ''; position: absolute; top: -18px; left: 0; width: 38%; height: 18px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.62), transparent);
-    pointer-events: none; animation: cgBeam 4s ease-in-out infinite;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 28px;
+    background: #2f6fb8; pointer-events: none;
   }
-  @keyframes cgBeam { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
-  @media (prefers-reduced-motion: reduce) { .cg-drawer-head::before { animation: none; opacity: .35; } }
+  .cg-drawer-head::after {
+    content: ''; position: absolute; top: 0; left: 0; width: 45%; height: 28px;
+    background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,.12) 20%, rgba(255,255,255,.7) 48%, rgba(255,255,255,.18) 68%, transparent 100%);
+    transform: skewX(-18deg); pointer-events: none; animation: cgBeam 4.8s ease-in-out infinite;
+  }
+  @keyframes cgBeam { from { left: -50%; } to { left: 105%; } }
+  @media (prefers-reduced-motion: reduce) { .cg-drawer-head::after { animation: none; left: 25%; opacity: .35; } }
   .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
