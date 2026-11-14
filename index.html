@@ -3691,6 +3691,18 @@
   @keyframes cgBeam { from { left: -50%; } to { left: 105%; } }
   @media (prefers-reduced-motion: reduce) { .cg-drawer-head::after { animation: none; left: 25%; opacity: .35; } }
   .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
+  .cg-steps .cg-step { font-family: var(--v2-serif); font-size: 11px; letter-spacing: .04em; }
+  .cg-steps .cg-step .bar { height: 5px; border-radius: 3px; margin-bottom: 7px; }
+  .cg-steps .cg-step.current .bar { position: relative; box-shadow: 0 0 9px rgba(168,130,60,.5); }
+  .cg-steps .cg-step.current .bar::after {
+    content: ''; position: absolute; inset: -6px 0;
+    background: radial-gradient(circle at 18% 30%, #c9a86a 1px, transparent 2px),
+                radial-gradient(circle at 54% 75%, #c9a86a 1px, transparent 2px),
+                radial-gradient(circle at 84% 25%, #c9a86a 1px, transparent 2px);
+    pointer-events: none; animation: cgStepSpark 3s ease-in-out infinite;
+  }
+  @keyframes cgStepSpark { 0%, 100% { opacity: .25; transform: translateY(2px); } 50% { opacity: 1; transform: translateY(-2px); } }
+  @media (prefers-reduced-motion: reduce) { .cg-steps .cg-step.current .bar::after { animation: none; opacity: .6; } }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
   .cg-metas + .cg-sech { border-top: 0; padding-top: 0; }
