@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-13T09:26:22+08:00",
+ "updated_at": "2026-11-14T09:45:23+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 3,
+   "added": 1,
    "error": ""
   },
   {
@@ -54,6 +54,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-13",
+   "title": "Agencies extend comment period for proposed third-party risk management guidance",
+   "title_cn": "美联储等四家监管机构延长第三方风险管理指引征求意见期",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+   "source": "Federal Reserve",
+   "summary": "Agencies extend comment period for proposed third-party risk management guidance",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 联邦存款保险公司、美联储、全国信用合作社管理局与货币监理署联合宣布延长征求意见期。\n· 提案截止日由11月16日延至12月16日；美联储同日单独延长社区银行专用指南意见期。\n· 指引以原则为基础且不具约束力，定稿后拟废止现行第三方风险管理指引。"
+   }
+  },
   {
    "date": "2026-11-12",
    "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
@@ -197,7 +212,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families"
+   "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+   "brief": {
+    "at": "2026-10-09",
+    "tier": "news",
+    "body": "· 美联储10月9日发布2025年消费者财务状况调查结果，样本覆盖全美119个地理区域。\n· 实际家庭收入中位数增7%至8.22万美元，实际净资产中位数增2%至21.59万美元。\n· 住房自有率66%与2022年基本持平，债务偿付比超40%的家庭占比由6.5%升至8.6%。"
+   }
   },
   {
    "date": "2026-10-08",
@@ -207,7 +227,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering"
+   "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+   "brief": {
+    "at": "2026-10-08",
+    "tier": "news",
+    "body": "· 美联储10月8日宣布对运通公司采取执法行动，指其未充分识别并报告涉洗钱可疑活动。\n· 美联储同时认定该公司全企业反洗钱计划落实存在重大缺陷，尤其在其国民银行子公司。\n· 货币监理署作为该国民银行主监管机构，已另行对该行发布单独执法行动。"
+   }
   },
   {
    "date": "2026-10-07",
