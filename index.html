@@ -3675,12 +3675,16 @@
     background: #2f6fb8; pointer-events: none;
   }
   .cg-drawer-head::after {
-    content: ''; position: absolute; top: 0; left: 0; width: 45%; height: 28px;
-    background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,.12) 20%, rgba(255,255,255,.7) 48%, rgba(255,255,255,.18) 68%, transparent 100%);
-    transform: skewX(-18deg); pointer-events: none; animation: cgBeam 4.8s ease-in-out infinite;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 28px;
+    background: radial-gradient(ellipse 38% 62% at 32% 30%, rgba(255,255,255,.58), transparent 85%),
+                radial-gradient(ellipse 42% 70% at 68% 80%, rgba(255,255,255,.38), transparent 88%);
+    pointer-events: none; animation: cgBeam 8s ease-in-out infinite;
   }
-  @keyframes cgBeam { from { left: -50%; } to { left: 105%; } }
-  @media (prefers-reduced-motion: reduce) { .cg-drawer-head::after { animation: none; left: 25%; opacity: .35; } }
+  @keyframes cgBeam {
+    0%, 100% { transform: translateX(-2%) scaleX(.96); opacity: .55; }
+    50% { transform: translateX(2%) scaleX(1.04); opacity: .95; }
+  }
+  @media (prefers-reduced-motion: reduce) { .cg-drawer-head::after { animation: none; opacity: .55; } }
   .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
