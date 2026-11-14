@@ -3644,6 +3644,14 @@
   .cg-sech h3 { margin: 0; padding-left: 9px; border-left: 2px solid #c9a86a; font-family: var(--v2-serif); font-size: 16px; font-weight: 600; letter-spacing: .04em; line-height: 1.3; color: #0b1724; }
   .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .18em; color: #a8823c; }
   .cg-timeline { border-left: 1px solid var(--border-light); margin-left: 6px; padding-left: 16px; }
+  .cg-timeline:not(.is-expanded) .cg-tl:not(:first-child) { display: none; }
+  .cg-tl-toggle {
+    margin: 11px 0 0 22px; padding: 5px 0; border: 0; background: none;
+    color: #2f6fb8; font-family: var(--cg-sans); font-size: 11.5px; font-weight: 600;
+    cursor: pointer;
+  }
+  .cg-tl-toggle:hover { text-decoration: underline; }
+  .cg-tl-toggle:focus-visible { outline: 2px solid #2f6fb8; outline-offset: 3px; }
   .cg-tl { position: relative; padding: 0 0 16px; }
   .cg-tl:last-child { padding-bottom: 0; }
   .cg-tl::before { content: ''; position: absolute; left: -21px; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: #ece7dc; border: 2px solid #fff; }
@@ -13949,7 +13957,8 @@
           '<div class="cg-dbody"><div class="cg-steps">' + steps + '</div>' +
             '<div class="cg-metas">' + metas + '</div>' +
             '<div class="cg-sech"><h3>行动时间线</h3><span>TIMELINE</span></div>' +
-            '<div class="cg-timeline">' + tl + '</div>' +
+            '<div class="cg-timeline" id="cg-timeline">' + tl + '</div>' +
+            (timeline.length > 1 ? '<button type="button" class="cg-tl-toggle" aria-controls="cg-timeline" aria-expanded="false">展开其余 ' + (timeline.length - 1) + ' 条行动 ↓</button>' : '') +
             (!it.actions ? '<div class="cg-note">此条目尚未补齐官方行动记录，当前显示最新行动与提出日。</div>' : '') +
             '<div class="cg-sech"><h3>政策速览</h3><span>BRIEF</span></div>' + brief +
             '<div class="cg-dfoot"><button type="button" class="cg-follow-btn' + (followed ? ' on' : '') + '" id="cg-detail-follow">' +
@@ -13963,6 +13972,12 @@
         if (setHash && no) history.replaceState(null, '', '#bill=' + encodeURIComponent(no));
         cgMarkSeen(it);
         document.querySelector('#cg-drawer .cg-close').onclick = function () { cgCloseDetail(true); };
+        var tlToggle = document.querySelector('#cg-drawer .cg-tl-toggle');
+        if (tlToggle) tlToggle.onclick = function () {
+          var expanded = document.getElementById('cg-timeline').classList.toggle('is-expanded');
+          tlToggle.setAttribute('aria-expanded', String(expanded));
+          tlToggle.textContent = expanded ? '收起时间线 ↑' : '展开其余 ' + (timeline.length - 1) + ' 条行动 ↓';
+        };
         document.getElementById('cg-overlay').onclick = function () { cgCloseDetail(true); };
         document.getElementById('cg-detail-follow').onclick = function () {
           cgToggleFollow(no);
