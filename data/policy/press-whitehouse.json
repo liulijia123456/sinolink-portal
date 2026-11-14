@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-13T08:22:15+08:00",
+ "updated_at": "2026-11-14T09:13:08+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 8,
-   "added": 6,
+   "fetched": 7,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 0,
    "error": ""
   },
   {
@@ -48,8 +48,8 @@
    "type": "html",
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
-   "fetched": 14,
-   "added": 0,
+   "fetched": 15,
+   "added": 1,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 2,
    "error": ""
   },
   {
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 12,
-   "added": 7,
+   "fetched": 11,
+   "added": 4,
    "error": ""
   },
   {
@@ -164,6 +164,111 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-13",
+   "title": "Mexican Cartel Leader Known As “Tony Montana” Sentenced for Armed Drug Trafficking as Part of Homeland Security Task Force Initiative",
+   "title_cn": "墨西哥卡特尔头目“托尼·蒙塔纳”因武装贩毒被判270个月",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/mexican-cartel-leader-known-tony-montana-sentenced-armed-drug-trafficking-part-homeland",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 安东尼奥·奥塞格拉·塞尔万特斯，67岁，墨西哥米却肯州人，长期为多个墨西哥卡特尔贩毒。\n· 司法部13日宣布，其因国际贩毒与枪支犯罪被判处270个月监禁。\n· 其为前卡特尔头目“埃尔·门乔”之弟，量刑属国土安全特别工作组行动。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "HVAC Supplier Johnson Controls Inc. and Two Subsidiaries Agree to Pay $5 Million to Settle Cybersecurity Fraud Allegations",
+   "title_cn": "江森自控及两家子公司付500万美元和解网络安全欺诈指控",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/hvac-supplier-johnson-controls-inc-and-two-subsidiaries-agree-pay-5-million-settle",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 江森自控公司及两家子公司同意支付500万美元，了结网络安全欺诈指控。\n· 政府指其未按联邦合同要求落实网络安全标准，违反《虚假申报法》。\n· 和解涉及楼宇产品与服务（含暖通空调）合同，由司法部民事司办理。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Florida Man Pleads Guilty to $42M Durable Medical Equipment and Cancer Genetic Testing Fraud on Medicare",
+   "title_cn": "佛罗里达州一男子承认4200万美元医疗设备与基因检测欺诈",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/florida-man-pleads-guilty-42m-durable-medical-equipment-and-cancer-genetic-testing-fraud",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 佛州塔彭斯普林斯48岁的查德·门罗对4200万美元联邦医保欺诈指控认罪。\n· 其开设三家医疗设备公司，提交逾2600万美元虚假理赔，涉支具与癌症基因检测。\n· 另以回扣换取医生处方、向实验室转售检测订单获逾1500万美元，并骗取3万余美元贷款。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Federal Court in San Diego, California, Enters Permanent Injunction Barring Criminally Prosecuted Tax Preparer from Preparing Federal Tax Returns for Others",
+   "title_cn": "圣迭戈联邦法院永久禁止一名被刑事起诉的报税人代办税表",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/federal-court-san-diego-california-enters-permanent-injunction-barring-criminally-prosecuted",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 加州南区联邦地区法院对奥拉达波·奥拉格贝米下达永久禁令，其已同意该民事禁令。\n· 禁止其为除本人以外的任何人代办联邦税表，亦不得拥有相关业务或培训报税人员。\n· 其于2026年6月4日就四项协助填报虚假税表认罪，被判18个月监禁并赔偿约192万美元。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Dow, X-energy Receive Construction Permit for Advanced Nuclear Project in Texas",
+   "title_cn": "陶氏与X-energy获准在得州建设先进核电机组",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/ne/articles/dow-x-energy-receive-construction-permit-advanced-nuclear-project-texas",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 核管会11月9日批准陶氏与X-energy在得州厂区建 Long Mott 电站。\n· 这是首个获准建于美国工业场址的先进核设施，也是50多年来首份高温气冷堆建设许可。\n· 许可同时为核管会首次批准球床堆芯设计，项目获能源部先进反应堆示范计划支持。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "SANCTUARY INSANITY: DHS Blasts Sanctuary California for Releasing Illegal Alien Gang Member Arrested for Assault and Robbery",
+   "title_cn": "国土安全部批评加州庇护政策释放黑帮成员非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/13/sanctuary-insanity-dhs-blasts-sanctuary-california-releasing-illegal-alien-gang",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 国土安全部发表声明，批评加州圣地亚哥释放一名墨西哥籍黑帮成员非法移民。\n· 该人名为胡利奥·塞萨尔·巴斯克斯·埃尔南德斯，系洛根海茨帮活跃成员，有抢劫等前科。\n· 移民局11月5日提出羁押请求，地方拒绝配合后将其释放，目前该人仍在逃。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "ICE Arrests Illegal Alien Responsible for Fatal DUI After Illinois Sanctuary Politicians Released Him",
+   "title_cn": "移民局逮捕一名致死酒驾非法移民，此前已四次因醉驾被捕",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/13/ice-arrests-illegal-alien-responsible-fatal-dui-after-illinois-sanctuary",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 移民局在伊利诺伊州沃康达逮捕墨西哥籍非法移民维森特·托雷斯·巴斯克斯。\n· 其2011年7月24日醉驾撞死55岁的海军陆战队退伍军人格雷戈里·霍莫拉，另致两人受伤。\n· 2012年因加重醉驾致死等三项罪名被判25年监禁，此前已四次因醉驾被捕。"
+   }
+  },
   {
    "date": "2026-11-12",
    "title": "Nominations Sent to the Senate",
