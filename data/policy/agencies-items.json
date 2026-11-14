@@ -1,9 +1,60 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-13 09:21",
-  "count": 124,
+  "updated_at": "2026-11-14 09:41",
+  "count": 127,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-13",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23147/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company-correction",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23147",
+      "title_cn": "银行控制权变更通告：BankGuam 控股 2024 年表决权协议参与方名单更正（Y 条例 §225.41·更正通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "美联储就 2026 年 6 月 29 日刊登的银行控制权变更通告（FR Doc. 2026-13067，91 FR 39100）发布更正，订正 B.1 段参与方名单。\n该段涉及 BankGuam Holding Company（关岛阿加尼亚）2024 年表决权协议：Joaquin P. L. G. Cook 以管理人身份，连同协议现行各方，作为一致行动集团申请收购该公司追加表决权股份，并间接收购 Bank of Guam 的追加表决权股份。\n参与方包括 Leon Guerrero、Ada、Sablan 等家族成员及其家族信托、未成年子女托管账户与若干个人。\n更正仅替换 B.1 段全文，不涉及新申请，不改变既有审查程序，亦未设新的意见征询截止日；具体名单以联邦公报更正文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-13",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23178/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23178",
+      "title_cn": "流媒体设备及组件：337 调查申诉受理与公共利益意见征询（DN 3950，中国、中国台湾、美国等）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "美国国际贸易委员会 2026 年 11 月 9 日收到 Truesight Communications, LLC 申诉，案名「流媒体设备及组件」，案号 DN 3950，指控相关产品进口与在美销售违反 1937 年关税法第 337 条。\n列名被申请人 19 家，含 Apple、Google、Walmart、BLU Products、ASUS 系（中国台湾、美国）、海信系（中国、美国、墨西哥）、OnePlus（深圳）、深圳天珑移动与小米系（开曼、中国香港、中国、荷兰、英国）。\n申诉人请求签发有限排除令与停止令，并对涉案产品在 60 日总统审查期内收取保证金。\n公共利益书面意见须于公告后 8 个日历日（2026-11-21）前提交，答复截止 11-24，限 5 页；委员会尚未就是否立案作出决定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-13",
+      "title": "Freight Rail Couplers and Parts Thereof From Czech Republic and India; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23108/freight-rail-couplers-and-parts-thereof-from-czech-republic-and-india-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23108",
+      "title_cn": "货运铁路车钩及部件（捷克、印度）双反终裁：产业实质损害肯定性裁决（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-14",
+        "body": "美国国际贸易委员会就货运铁路车钩及部件（freight rail couplers）对捷克、印度的双反调查作出终裁，认定美国产业因相关进口受到实质损害。\n调查号 701-TA-775 与 731-TA-1759-1760（终裁）。损害认定所涉进口包括捷克、印度以低于公平价值销售的产品，以及印度的补贴产品，即反倾销覆盖两国、反补贴仅涉印度。\n程序上，调查于 2025 年 7 月 23 日应货运车钩生产商联盟（McConway & Torley 与钢铁工人联合会组成）申请启动，2026 年 9 月 15 日举行听证，11 月 9 日提交裁决，理由书为 USITC Publication 5805；Negatu 委员未参与。\n肯定性终裁后，商务部将据以签发反倾销令与反补贴令。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-12",
