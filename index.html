@@ -3669,7 +3669,14 @@
   /* 法案详情：外框定界，章节以规则线分组，保留正文留白。 */
   .cg-drawer { box-sizing: border-box; border-top: 0; border-bottom: 0; border-radius: 18px 0 0 18px; }
   .cg-drawer-head { padding-top: 54px; border-bottom-color: var(--us-line); border-radius: 18px 0 0 0; overflow: hidden; }
-  .cg-drawer .cg-close { top: 47px; }
+  .cg-drawer .cg-close {
+    top: 43px; right: 18px; display: grid; place-items: center; width: 32px; height: 32px;
+    padding: 0; border: 2px solid #9a4a3c; border-radius: 50%;
+    color: #9a4a3c; font-size: 24px; font-weight: 700;
+  }
+  .cg-drawer .cg-close:hover { color: #9a4a3c; background: rgba(154,74,60,.08); }
+  .cg-drawer .cg-dcn { margin-top: 9px; color: #0b1724; font-size: 14px; font-weight: 500; line-height: 1.6; }
+  .cg-drawer .cg-dbody { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
   .cg-drawer-head::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 34px;
     background: #2f6fb8; pointer-events: none;
