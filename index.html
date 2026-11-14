@@ -3666,6 +3666,15 @@
   .cg-follow-btn { border: 1px solid var(--border); background: #fff; border-radius: 999px; padding: 8px 14px; font-family: var(--cg-sans); font-size: 12.5px; color: #0b1724; cursor: pointer; }
   .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
 
+  /* 法案详情：外框定界，章节以规则线分组，保留正文留白。 */
+  .cg-drawer { border-top: 2px solid #a8823c; border-bottom: 2px solid #a8823c; }
+  .cg-drawer-head { border-bottom-color: var(--us-line); }
+  .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
+  .cg-metas { border-top: 0; padding-top: 4px; }
+  .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
+  .cg-metas + .cg-sech { border-top: 0; padding-top: 0; }
+  .cg-first, .cg-brief { border-radius: 0 6px 6px 0; }
+
   @media (max-width: 1180px) {
     #view-board.is-cg .pw-thead, #view-board.is-cg .pw-r { grid-template-columns: 90px minmax(0, 1fr) 100px 190px 40px; }
     #view-board.is-cg .pw-th-dom, #view-board.is-cg .c-domain { display: none; }
