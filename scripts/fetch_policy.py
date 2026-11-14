@@ -846,7 +846,7 @@ def merge_items(old_items, new_items):
     仅当 url 缺失时丢弃该条（无 url 无法去重，也无溯源价值）。
     """
     # 人工生成字段：新抓条目不含这些字段，须从旧条目沿用
-    CARRY_FIELDS = ('brief', 'title_cn', 'domain', 'official_no')
+    CARRY_FIELDS = ('brief', 'title_cn', 'domain', 'official_no', 'actions')
     old_by_url = {it.get('url'): it for it in old_items if it.get('url')}
     merged = {}
     for it in old_items + new_items:
@@ -856,7 +856,8 @@ def merge_items(old_items, new_items):
             # 新抓的同一条目：沿用已生成的简报、中文翻译与领域标签
             old = old_by_url[it['url']]
             carried = {f: old[f] for f in CARRY_FIELDS
-                       if old.get(f) and not it.get(f)}
+                       if old.get(f) and not it.get(f)
+                       and (f != 'actions' or old.get('stage_date') == it.get('stage_date'))}
             if carried:
                 it = dict(it)
                 it.update(carried)
@@ -916,6 +917,13 @@ def main():
                     _enrich_cg(board['items'], CONGRESS_API_KEY, limit=80, sleep=0.6, need='sponsor')
                 except Exception as e:
                     log.warning('[国会] 补提出者失败（不影响条目入库）：%s', e)
+                try:
+                    from enrich_congress_actions import load_actions as _load_actions, apply_actions as _apply_actions
+                    missing = [it for it in board['items'] if not it.get('actions')]
+                    for it in missing[:80]:
+                        _apply_actions(it, _load_actions(it, CONGRESS_API_KEY))
+                except Exception as e:
+                    log.warning('[国会] 补行动时间线失败（不影响条目入库）：%s', e)
             board['updated_at'] = stamp
             log.info('[%s] 合并完成：旧 %d 条 + 抓取 %d 条 → 共 %d 条（净增 %d）',
                      name, old_n, len(new_items), len(board['items']),

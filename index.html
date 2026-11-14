@@ -3643,11 +3643,6 @@
   .cg-sech { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0 10px; }
   .cg-sech h3 { margin: 0; padding-left: 9px; border-left: 2px solid #c9a86a; font-family: var(--v2-serif); font-size: 16px; font-weight: 600; letter-spacing: .04em; line-height: 1.3; color: #0b1724; }
   .cg-sech span { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .18em; color: #a8823c; }
-  .cg-first { background: #fbf9f4; border: 1px solid var(--border-light); border-left: 3px solid #c9a86a; border-radius: 0 9px 9px 0; padding: 12px 15px; font-size: 12px; line-height: 1.7; color: #0b1724; }
-  .cg-first .k { font-family: var(--pw-mono); font-size: 9px; letter-spacing: .12em; color: #a8823c; }
-  .cg-first .v { margin-top: 4px; font-family: var(--v2-serif); font-size: 13.5px; line-height: 1.6; letter-spacing: .005em; }
-  .cg-first .cg-date { font-family: var(--pw-mono); font-size: 12px; letter-spacing: .02em; color: var(--muted); }
-  .cg-first .sub { margin-top: 4px; font-family: var(--cg-sans); color: var(--muted); font-size: 11.5px; line-height: 1.6; }
   .cg-timeline { border-left: 1px solid var(--border-light); margin-left: 6px; padding-left: 16px; }
   .cg-tl { position: relative; padding: 0 0 16px; }
   .cg-tl:last-child { padding-bottom: 0; }
@@ -3696,7 +3691,7 @@
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
   .cg-metas + .cg-sech { border-top: 0; padding-top: 0; }
-  .cg-first, .cg-brief { border-radius: 0 6px 6px 0; }
+  .cg-brief { border-radius: 0 6px 6px 0; }
 
   @media (max-width: 1180px) {
     #view-board.is-cg .pw-thead, #view-board.is-cg .pw-r { grid-template-columns: 90px minmax(0, 1fr) 100px 190px 40px; }
@@ -5561,7 +5556,7 @@
               <span class="pw-tab-n">06</span><span class="pw-tab-t">成法</span><span class="pw-tab-e">Enacted</span><span class="pw-tab-c" id="cg-count-enact">—</span>
             </button>
           </div>
-          <p class="pw-side-note">六段互斥、合计为全部条目。列表只展示当前状态与最新行动；首次行动、完整过程与速览收进详情。</p>
+          <p class="pw-side-note">六段互斥、合计为全部条目。列表展示当前状态与最新行动；详情收录提出记录、关键行动与政策速览。</p>
         </aside>
 
         <div class="pw-main">
@@ -13928,10 +13923,12 @@
           ['记录更新于', esc(it.date || '—') + '（档案更新，非行动日）'],
           ['来源', esc(it.source || '国会官网') + ' · congress.gov']
         ].map(function (r) { return cgMeta(r[0], r[1]); }).join('');
-        var timeline = [{ date: latestDate, text: p.action || '—', tag: CG_STAGE_LABELS[st], now: true }];
-        if (it.introduced && it.introduced !== latestDate) {
+        var timeline = Array.isArray(it.actions) && it.actions.length
+          ? it.actions.map(function (a, i) { return { date: a.date, text: a.text, tag: a.tag || '', now: i === 0 }; })
+          : [{ date: latestDate, text: p.action || '—', tag: CG_STAGE_LABELS[st], now: true }];
+        if (!it.actions && it.introduced && it.introduced !== latestDate) {
           timeline.push({ date: it.introduced, text: '提出法案' + (it.sponsor ? '，由 ' + it.sponsor + ' 提出' : '') +
-            (it.committee ? '；交付 ' + it.committee : ''), tag: '第一动态', now: false });
+            (it.committee ? '；交付 ' + it.committee : ''), tag: '提出', now: false });
         }
         var tl = timeline.map(function (x) {
           return '<div class="cg-tl' + (x.now ? ' now' : '') + '"><div class="cg-tld">' + esc(x.date) + '</div>' +
@@ -13939,7 +13936,8 @@
         }).join('');
         var b = it.brief || {};
         var brief = b.body
-          ? '<div class="cg-brief">' + cgBriefBodyHtml(it) + '</div>' +
+          ? (b.stale ? '<div class="cg-note">此速览尚未按最新行动改写，当前进展请以行动时间线为准。</div>' : '') +
+            '<div class="cg-brief">' + cgBriefBodyHtml(it) + '</div>' +
             '<div class="cg-note">速览写于 ' + esc(b.at || '—') + '；阶段推进后应重写，不追加第二份。</div>'
           : '<div class="cg-note">暂无速览。</div>';
         var followed = cgIsFollowed(no);
@@ -13950,14 +13948,9 @@
             (it.title_cn ? '<div class="cg-dcn">' + esc(it.title_cn) + '</div>' : '') + '</div>' +
           '<div class="cg-dbody"><div class="cg-steps">' + steps + '</div>' +
             '<div class="cg-metas">' + metas + '</div>' +
-            '<div class="cg-sech"><h3>第一动态</h3><span>FIRST ACTION</span></div>' +
-            '<div class="cg-first"><div class="k">提出</div><div class="v">' +
-              '<span class="cg-date">' + esc(it.introduced || '—') + '</span>' +
-              ' · 提出法案' + (it.sponsor ? ' · ' + esc(it.sponsor) : '') + '</div>' +
-              (it.committee ? '<div class="sub">交付委员会：' + esc(cgCommitteeCn(it.committee)) + '</div>' : '') + '</div>' +
             '<div class="cg-sech"><h3>行动时间线</h3><span>TIMELINE</span></div>' +
             '<div class="cg-timeline">' + tl + '</div>' +
-            '<div class="cg-note">当前条目保留已入库的第一动态与最新行动；完整中间行动需接入 congress.gov /actions 接口。</div>' +
+            (!it.actions ? '<div class="cg-note">此条目尚未补齐官方行动记录，当前显示最新行动与提出日。</div>' : '') +
             '<div class="cg-sech"><h3>政策速览</h3><span>BRIEF</span></div>' + brief +
             '<div class="cg-dfoot"><button type="button" class="cg-follow-btn' + (followed ? ' on' : '') + '" id="cg-detail-follow">' +
               (followed ? '★ 已关注' : '☆ 关注此法案') + '</button></div>' +
