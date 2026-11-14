@@ -3668,16 +3668,16 @@
 
   /* 法案详情：外框定界，章节以规则线分组，保留正文留白。 */
   .cg-drawer { box-sizing: border-box; border-top: 0; border-bottom: 0; border-radius: 18px 0 0 18px; }
-  .cg-drawer-head { padding-top: 48px; border-bottom-color: var(--us-line); border-radius: 18px 0 0 0; overflow: hidden; }
-  .cg-drawer .cg-close { top: 41px; }
+  .cg-drawer-head { padding-top: 54px; border-bottom-color: var(--us-line); border-radius: 18px 0 0 0; overflow: hidden; }
+  .cg-drawer .cg-close { top: 47px; }
   .cg-drawer-head::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 28px;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 34px;
     background: #2f6fb8; pointer-events: none;
   }
   .cg-drawer-head::after {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 28px;
-    background: radial-gradient(ellipse 38% 62% at 32% 30%, rgba(255,255,255,.58), transparent 85%),
-                radial-gradient(ellipse 42% 70% at 68% 80%, rgba(255,255,255,.38), transparent 88%);
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 34px;
+    background: radial-gradient(ellipse 38% 36% at 32% 42%, rgba(255,255,255,.58), transparent 85%),
+                radial-gradient(ellipse 42% 40% at 68% 60%, rgba(255,255,255,.38), transparent 88%);
     pointer-events: none; animation: cgBeam 8s ease-in-out infinite;
   }
   @keyframes cgBeam {
