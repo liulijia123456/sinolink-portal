@@ -3667,8 +3667,15 @@
   .cg-follow-btn.on { border-color: #a8823c; background: rgba(168,130,60,.10); color: #a8823c; }
 
   /* 法案详情：外框定界，章节以规则线分组，保留正文留白。 */
-  .cg-drawer { box-sizing: border-box; border-top: 12px solid #2f6fb8; border-bottom: 12px solid #2f6fb8; border-radius: 18px 0 0 18px; }
+  .cg-drawer { box-sizing: border-box; border-top: 18px solid #2f6fb8; border-bottom: 0; border-radius: 18px 0 0 18px; }
   .cg-drawer-head { border-bottom-color: var(--us-line); }
+  .cg-drawer-head::before {
+    content: ''; position: absolute; top: -18px; left: 0; width: 38%; height: 18px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.62), transparent);
+    pointer-events: none; animation: cgBeam 4s ease-in-out infinite;
+  }
+  @keyframes cgBeam { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+  @media (prefers-reduced-motion: reduce) { .cg-drawer-head::before { animation: none; opacity: .35; } }
   .cg-steps { padding-bottom: 14px; border-bottom: 1px solid var(--us-line); }
   .cg-metas { border-top: 0; padding-top: 4px; }
   .cg-sech { margin: 24px 0 12px; padding-top: 16px; border-top: 1px solid var(--us-line); }
