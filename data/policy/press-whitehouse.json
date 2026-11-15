@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-14T09:13:08+08:00",
+ "updated_at": "2026-11-15T18:39:56+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 6,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 2,
+   "added": 1,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -164,6 +164,111 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-14",
+   "title": "Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention",
+   "title_cn": "国务卿鲁比奥在联邦党人学会2026年全国律师大会演讲",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-at-the-federalist-societys-2026-national-lawyers-convention/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Washington, D.C. Mayflower Hotel Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention Remarks November 13, 2026 SECRETARY RUBIO: Thank you. Thank you. Thank you very much. Thank you. Thank you. Thank you. Thank you very much. Thank you. Thank you. Thank you. Was that cool or what? (Laughter.) My kids, I used to bring them on st",
+   "brief": {
+    "at": "2026-11-14",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥在联邦党人学会2026年全国律师大会发表演讲。\n· 讲话称特朗普政府已制裁国际刑事法院，拒绝其裁决约束美国人。\n· 演讲批评激进法官与全球官僚体系，主张以实力维护美国主权。"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "title": "Energy Secretary Keeps Critical, Coal-Fired Generation Operational Ahead of Winter in the Midwest",
+   "title_cn": "能源部长发布紧急令维持中西部关键燃煤机组运行",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-secretary-keeps-critical-coal-fired-generation-operational-ahead-winter-midwest",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-14",
+    "tier": "news",
+    "body": "· 能源部针对中西部电网可靠性问题发布紧急命令，确保冬季供电。\n· 命令要求中大陆独立系统运营商协同消费者能源公司保障坎贝尔燃煤电厂运行。\n· 该电厂位于密歇根州西奥利夫，原定2025年5月31日关停，比设计寿命提前15年。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "United States Welcomes Re-Election of Doreen Bogdan-Martin as Secretary-General of the International Telecommunication Union",
+   "title_cn": "美国欢迎博格丹-马丁连任国际电信联盟秘书长",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/united-states-welcomes-re-election-of-doreen-bogdan-martin-as-secretary-general-of-the-international-telecommunication-union/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman United States Welcomes Re-Election of Doreen Bogdan-Martin as Secretary-General of the International Telecommunication Union Media Note November 13, 2026 The United States welcomes the re-election of Doreen Bogdan-Martin as Secretary-General of the International Telecommunication Union (ITU). Ms. Bogdan-Martin received 164 votes out of 164 countries present and voting, demo",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 美国国务院发表声明，欢迎多琳·博格丹-马丁连任国际电信联盟秘书长。\n· 她在有表决权的164个国家中获得164票，为全票当选。\n· 首任期内该联盟动员超800亿美元公私部门连接承诺，并推进机构改革。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Secretary Rubio’s Meeting with President of Honduras Asfura",
+   "title_cn": "国务卿鲁比奥会见洪都拉斯总统阿斯富拉",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-president-of-honduras-asfura/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with President of Honduras Asfura Readout November 13, 2026 Secretary of State Marco Rubio met today with Honduran President Nasry Asfura in Washington and thanked him for Honduras’ steadfast partnership on shared defense, security, and immigration priorities. The Secretary commended President Asfura’s leadership in the Shield of the Americas and t",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 鲁比奥在华盛顿会见洪都拉斯总统阿斯富拉，感谢其在防务、安全与移民上的合作。\n· 美方赞扬洪都拉斯近期将MS-13与第18街黑帮列为恐怖组织。\n· 双方讨论扩大双边贸易与美对洪投资，美方表示支持洪方应对厄尔尼诺干旱。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Joint Statement on the G7 Foreign Ministers Meeting in Paris",
+   "title_cn": "七国集团外长巴黎会议发表联合声明",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-g7-foreign-ministers-meeting-in-paris/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the G7 Foreign Ministers Meeting in Paris Media Note November 13, 2026 The following statement was released by the G7 Foreign Ministers of Canada, France, Germany, Italy, Japan, the United Kingdom, the United States of America and the High Representative of the European Union. Begin Text: Joint declaration following the G7 Foreign Ministers Meeting in Par",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 七国集团外长于2026年11月9日至10日在巴黎举行会议，发表联合声明。\n· 声明重申对乌克兰领土完整与主权的支持，谴责俄方袭击民用设施。\n· 声明支持美方主导的促和谈判，主张达成全面互惠停火安排。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Foreign Terrorist Designations of Guatemalan Groups",
+   "title_cn": "美国将三个危地马拉团伙列为外国恐怖组织",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/foreign-terrorist-designations-of-guatemalan-groups/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Foreign Terrorist Designations of Guatemalan Groups Press Statement November 13, 2026 Today, the Trump Administration is imposing terrorist designations against Los Lorenzanas, Los Huistas, and Los Mendoza. These three Guatemala-based groups have deep ties with Mexican cartels, helping to move and export illicit drugs to fund terrorism and criminal activity. The Dep",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 美国对危地马拉的洛伦萨纳斯、维斯塔斯、门多萨三个团伙实施恐怖认定。\n· 国务院将洛伦萨纳斯列为外国恐怖组织及特别认定全球恐怖分子。\n· 认定依据《移民与国籍法》第219条及13224、14059号行政令，联邦公报刊登后生效。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Deputy Secretary Landau’s Meeting with Singapore Minister of Digital Development and Information Teo",
+   "title_cn": "副国务卿兰多会见新加坡数字发展与信息部长杨莉明",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/deputy-secretary-landaus-meeting-with-singapore-minister-of-digital-development-and-information-teo/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Deputy Secretary Landau’s Meeting with Singapore Minister of Digital Development and Information Teo Readout November 13, 2026 Deputy Secretary of State Christopher Landau met today with Singapore Minister for Digital Development and Information Josephine Teo. The Deputy Secretary expressed the U.S. desire to cooperate closely with Singapore as it prepares to assume the ASE",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 副国务卿兰多会见新加坡数字发展与信息部长杨莉明，重申战略伙伴关系。\n· 美方表示愿在新加坡2027年出任东盟轮值主席国期间密切合作。\n· 双方讨论可信数字基础设施、超级智能、网络安全与安全技术供应链。"
+   }
+  },
   {
    "date": "2026-11-13",
    "title": "Mexican Cartel Leader Known As “Tony Montana” Sentenced for Armed Drug Trafficking as Part of Homeland Security Task Force Initiative",
@@ -252,6 +357,21 @@
     "at": "2026-11-13",
     "tier": "news",
     "body": "· 国土安全部发表声明，批评加州圣地亚哥释放一名墨西哥籍黑帮成员非法移民。\n· 该人名为胡利奥·塞萨尔·巴斯克斯·埃尔南德斯，系洛根海茨帮活跃成员，有抢劫等前科。\n· 移民局11月5日提出羁押请求，地方拒绝配合后将其释放，目前该人仍在逃。"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "title": "ICYMI: Secretary Mullin and Secretary Duffy Address Nationwide FAA Ground Stop of All Flights",
+   "title_cn": "国土安全部长与交通部长就全国航班停飞举行简报",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/13/icymi-secretary-mullin-and-secretary-duffy-address-nationwide-faa-ground-stop-all",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-13",
+    "tier": "news",
+    "body": "· 因电信服务临时中断，全美航班一度全面停飞，两部长在白宫举行简报会。\n· 国土安全部长马林称无证据显示为网络攻击，指空管系统老化构成安全风险。\n· 两位部长呼吁国会采取行动，更新并现代化美国空中交通管制系统。"
    }
   },
   {
