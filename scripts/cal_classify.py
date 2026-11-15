@@ -466,7 +466,11 @@ def fix_holiday(ev):
     raw_title = ev.get('title') or ''
     name = re.sub(r'（[^）]*）', '', raw_title).strip()
     name = name.replace('华盛顿诞辰日', '总统日').replace('美国独立日', '独立日')
-    new_title = '%s（联邦假日%s）' % (name, '，美股休市' if closed else '')
+    # 耶稣受难日不在 OPM 联邦假日表内，只是纽交所休市日，标题不得写「联邦假日」。
+    if '耶稣受难' in name:
+        new_title = '%s（美股休市）' % name
+    else:
+        new_title = '%s（联邦假日%s）' % (name, '，美股休市' if closed else '')
 
     segs = [x.strip() for x in re.split(r'\s*·\s*', ev.get('note') or '') if x.strip()]
     body, src = [], ''
