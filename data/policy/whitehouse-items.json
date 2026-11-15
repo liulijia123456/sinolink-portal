@@ -1,9 +1,230 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-14 09:25",
-  "count": 335,
+  "updated_at": "2026-11-15 18:33",
+  "count": 353,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Veterans Day, 2026",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23348/veterans-day-2026",
+      "source": "联邦公报",
+      "kind": "公告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-23348",
+      "title_cn": "2026年退伍军人节（公告）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】\n2026年11月10日，总统签署第11081号公告，将2026年11月11日定为退伍军人节，联邦公报于11月16日刊发（91 FR 73643）。美国自1954年起以11月11日纪念武装部队服役人员，该日期由《美国法典》第5编第6103(a)条规定为联邦法定公共假日。此类年度公告属例行文种，与既有假日制度相衔接，本身不创设新的权利义务。\n\n【核心内容】\n公告以纪念性表述为主，回顾退伍军人在独立战争、第二次世界大战及当前安全行动中的作用，并列举本届政府任内的相关举措与数据：本年度处理残疾赔偿申请310万件，为历史最高；第二任期内将申请积压减少逾七成；新开设47家医疗卫生设施；设立\"勇士独立国家中心\"，目标为在2028年前为最多6000名无家可归退伍军人提供住房；上一年度安置约5.2万名无家可归退伍军人，为七年来最高。公告另提及9月签署的行政令，通过改进退伍军人事务部与战争部之间的数据管理与共享，加快退伍军人获取福利与就业机会。\n公告号召联邦、州与地方官员于当日悬挂国旗并在社区参与纪念活动，鼓励公众以公共仪式与私人祈祷表达敬意。\n\n【要点提炼】\n其一，文种为总统公告，法律效果限于宣示与号召；11月11日的法定假日地位由成文法确定，并非由公告设定。\n其二，公告所引数据与举措均为对既有行政行为的回顾，未设立新项目、新拨款或新监管要求，亦未援引新的行政令编号。\n其三，文中以\"战争部\"（Department of War）指称国防部门，与9月行政令表述一致，属现政府用语口径，与部门法定名称存在差异。\n其四，公告不含采购、预算或人员编制等可执行条款；跟踪退伍军人政策的实体动作，应以退伍军人事务部的规则与通告为准。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Castle Mountains National Monument and Craters of the Moon National Monument; Hunting",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23228/castle-mountains-national-monument-and-craters-of-the-moon-national-monument-hunting",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "内政部",
+      "official_no": "2026-23228",
+      "title_cn": "城堡山与月球坑国家纪念地开放狩猎（拟议规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：国家公园管理局拟议规则，2026年11月16日刊发（91 FR 73488），落实第14429号行政令关于重振美国狩猎的要求。\n· 核心动作：为城堡山国家纪念地与月球坑国家纪念地制定专门规章，允许在两处纪念地内开展狩猎。\n· 权责划分：规章承认各州管理野生动物的权限，同时保留公园管理局出于公共健康与安全、纪念地设立所保护的历史与科学对象、以及濒危和受威胁物种保护需要进行管理的权力。\n· 程序阶段：评论截止2026年12月16日；案卷号 NPS-CAMO-CRMO-NPS0043954，RIN 1024-AF13。\n· 信息边界：猎期、配额、许可与武器限制由各州规则及公园管理局配套管理决定确定，拟议规则未作统一规定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Fisheries of the Exclusive Economic Zone off Alaska; Pelagic Trawl Gear Definition",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23251/fisheries-of-the-exclusive-economic-zone-off-alaska-pelagic-trawl-gear-definition",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "商务部",
+      "official_no": "2026-23251",
+      "title_cn": "阿拉斯加专属经济区渔业：中层拖网渔具定义（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：国家海洋渔业局拟议规则，2026年11月16日刊发（91 FR 73505）。\n· 核心动作：修订阿拉斯加专属经济区作业渔船的授权渔具定义，重点调整中层拖网定义及其网具限制。\n· 具体调整：明确允许在网囊与副渔获减少装置中使用若干通用部件，并删除对平行线拖网的过时限制。\n· 目的：为网具设计提供更大灵活性、鼓励技术创新，以期降低环境影响（按官方摘要表述）。\n· 程序阶段：评论截止2026年12月16日；案卷号 261109-0002，RIN 0648-BO04。\n· 信息边界：摘要未提及配额或作业准入调整，相关事项以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Restoring Flexibility To Support Head Start Program Access",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23279/restoring-flexibility-to-support-head-start-program-access",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-23279",
+      "title_cn": "恢复灵活性以支持“启智计划”服务可及性（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：儿童与家庭管理局最终规则，2026年11月16日刊发（91 FR 73470）。\n· 核心动作：从启智计划绩效标准（45 CFR 1302.90）中删除教职工工资与福利要求，撤销2024年规则设定的相关条款，将薪酬与福利决定权交回各项目。\n· 依据与理由：该局认为上述要求超出《启智计划法》条文原意、成本高且过度规定，并提前于2031年合规截止日之前予以撤销。\n· 成本估算：该局估计未来可为启智项目节省逾20亿美元成本，属机构自身估算。\n· 程序阶段：2027年1月15日生效；RIN 0970-AD21。规则不禁止项目自行维持或提高工资福利。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23239/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23239",
+      "title_cn": "联邦机动车安全标准第108号现代化以适应自动驾驶车辆：评论期延长（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：国家公路交通安全管理局评论期延长通知，2026年11月16日刊发（91 FR 73504）。\n· 核心动作：将2026年10月26日刊发的拟议规则（91 FR 67243，修订联邦机动车安全标准第108号\"灯具、反光装置及相关设备\"）的评论期延长15天，由2026年11月25日延至2026年12月10日。\n· 请求方：汽车创新联盟、国际自动机工程师学会与 Gatik AI；前两者及 Gatik 请求延长15天，该学会请求20天，管理局仅批准15天。\n· 实体内容：该拟议规则区分有、无手动驾驶操纵装置的车辆适用不同要求，以适应配备自动驾驶系统的车辆。\n· 案卷号 NHTSA-2026-1519，RIN 2127-AM70。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23229/airworthiness-directives-dassault-aviation-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23229",
+      "title_cn": "适航指令：达索航空飞机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：联邦航空管理局拟议适航指令，2026年11月16日刊发（91 FR 73483）。\n· 适用范围：特定达索航空 FALCON 6X 型飞机。\n· 核心动作：因判定需增设新的或更严格的适航限制，拟要求修订现有维修或检查大纲，纳入新增限制。\n· 依据：拟议指令旨在处置上述产品的不安全状况，具体限制条目以文本所列为准。\n· 程序阶段：评论截止2026年12月31日；案卷号 FAA-2026-13815，项目编号 MCAI-2026-00009-T。\n· 信息边界：最终适用机型清单与合规时限以定稿指令为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23213/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23213",
+      "title_cn": "适航指令：空客直升机德国公司（AHD）直升机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：联邦航空管理局拟议适航指令，2026年11月16日刊发（91 FR 73486）。\n· 适用范围：所有按联邦航空管理局补充型号合格证 SR00601DE 安装特定空调系统的空客直升机德国公司 MBB-BK 117 C-1 与 C-2 型直升机。\n· 触发原因：冷凝器进气道出现腐蚀，致内部支撑钢丝螺旋体碰擦尾桨传动轴。\n· 核心动作：拟要求重复检查尾桨传动轴，并重复检查 Air Comm 公司空调系统外部。\n· 程序阶段：评论截止2026年12月31日；案卷号 FAA-2026-13816，项目编号 AD-2026-00521-R。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Airworthiness Directives; Airbus Helicopters",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23212/airworthiness-directives-airbus-helicopters",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23212",
+      "title_cn": "适航指令：空客直升机（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：联邦航空管理局拟议适航指令，2026年11月16日刊发（91 FR 73481）。\n· 适用范围：所有空客直升机 EC 155 B 与 EC 155 B1 型直升机。\n· 现行要求：第2025-24-01号适航指令要求更换左右两侧滑动门与固定面板上的可抛弃式舷窗及密封件，并加装新标牌。\n· 核心动作：拟取代上述指令。因制造商发现适用服务信息缺少着色舷窗的操作程序，新指令在保留原有要求的同时增加新动作。\n· 程序阶段：评论截止2026年12月31日；案卷号 FAA-2026-13814，项目编号 MCAI-2026-00037-R。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Dole State and Tribal Outreach Grant Program",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23220/dole-state-and-tribal-outreach-grant-program",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "退伍军人事务部",
+      "official_no": "2026-23220",
+      "title_cn": "多尔州与部落外展补助计划（拟议规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：退伍军人事务部拟议规则，2026年11月16日刊发（91 FR 73493）。\n· 核心动作：落实《参议员伊丽莎白·多尔21世纪退伍军人医疗与福利改进法》授权的多尔州与部落外展补助计划，向符合条件的组织提供资金开展外展与协助。\n· 政策目标：使退伍军人及其家庭充分了解并顺利申请各类退伍军人福利与项目，含各州退伍军人项目。\n· 程序阶段：评论截止2026年12月16日；案卷号 VA-2026-VBA-0397，RIN 2900-AS68。\n· 信息边界：补助额度、资格条件与申请程序以最终规则为准。该部此前长期只发通告，本条为其本期唯一规则类文件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Safety Zone; Huron River, Huron, OH",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23304/safety-zone-huron-river-huron-oh",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23304",
+      "title_cn": "安全区：俄亥俄州休伦市休伦河（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：海岸警卫队临时最终规则，2026年11月16日刊发（91 FR 73447）。\n· 核心动作：在俄亥俄州休伦市休伦河可航水域，以北纬41度23分34.6秒、西经82度33分07.7秒为圆心、半径150码范围内设立临时安全区，用于水上烟花表演期间的人员、船舶与环境保护。\n· 管制要求：未经底特律港区指挥官或其指定代表许可，禁止船舶与人员进入该区域。\n· 生效时段：2026年12月5日18时至18时30分（原文 DATES 所载）。\n· 案卷号 USCG-2026-1337，RIN 1625-AA00。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Special Local Regulation: Marine Events Within the Captain of the Port Miami, Seminole Hard Rock Winterfest Holiday Boat Parade",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23230/special-local-regulation-marine-events-within-the-captain-of-the-port-miami-seminole-hard-rock",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23230",
+      "title_cn": "特别地方规制：迈阿密港区海事活动——塞米诺尔硬石冬季节日游船巡游（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：海岸警卫队规则执行通知，2026年11月16日刊发（91 FR 73444）。\n· 核心动作：就塞米诺尔硬石冬季节日游船巡游，执行第33编第100.702节表1第11项所定管制水域，位于佛罗里达州劳德代尔堡新河与大西洋沿岸内航道。\n· 执行时段：2026年12月12日13时30分至23时30分。\n· 管制要求：执行期间禁止非参与人员与船舶进入、通行、锚泊或停留于管制区，除非获迈阿密港区指挥官或其指定代表许可。\n· 程序特点：属既有规则的执行通知，不新设规则；海岸警卫队将提前至少24小时经本地航海通告与海事信息广播发布。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Safety Zone; FRL Inaugural Invitational eFoil Exhibition Race, Miami Marine Stadium Basin, Miami, FL",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23215/safety-zone-frl-inaugural-invitational-efoil-exhibition-race-miami-marine-stadium-basin-miami-fl",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23215",
+      "title_cn": "安全区：迈阿密海洋体育场水域FRL首届邀请赛电动水翼板表演赛（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：海岸警卫队临时最终规则，2026年11月16日刊发（91 FR 73445）。\n· 核心动作：为 FRL 首届邀请赛电动水翼板表演赛，在迈阿密海洋体育场水域设立临时安全区。\n· 管制要求：未经迈阿密港区指挥官或其指定代表许可，禁止船舶与人员进入该安全区。\n· 生效时段：2026年11月15日8时至21时（原文 DATES 所载），早于刊发日一天，系就该日赛事先行生效。\n· 案卷号 USCG-2026-1162，RIN 1625-AA00。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-16",
+      "title": "Presidential Determination Concerning Wildfire Suppression Activities in the United States",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23349/presidential-determination-concerning-wildfire-suppression-activities-in-the-united-states",
+      "source": "联邦公报",
+      "kind": "总统决定",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-23349",
+      "title_cn": "关于美国野火扑救活动的总统决定：依《联邦水污染控制法》第313条给予豁免（总统决定）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：第2027-03号总统决定，2026年11月10日签署，11月16日刊发（91 FR 73645）。\n· 法律依据：《联邦水污染控制法》第313条（33 U.S.C. 1323）。\n· 核心动作：认定豁免符合美国最高利益，对林务局、内政部及其他行政部门及其承包商的消防活动（含灭火剂的空中使用、投放与喷洒）给予豁免，使其不受联邦、州、州际与地方在水污染控制与治理方面的要求、行政权限、程序与制裁约束。\n· 关联诉讼：相关活动系林业局雇员环境伦理诉美国林务局案（蒙大拿联邦地区法院，No. CV-22-168-M-DLC）标的。\n· 期限与例外：豁免期为2026年11月10日至2027年11月10日；不豁免 33 U.S.C. 1316 与 1317 的要求。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-13",
@@ -13,13 +234,13 @@
       "kind": "规则",
       "agency": "财政部",
       "official_no": "2026-23197",
-      "title_cn": "发布伊朗相关网络通用许可 EE 与 FF（规则）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-14",
         "body": "财政部海外资产控制办公室（OFAC）在联邦公报刊登两份伊朗相关通用许可，属此前已在官方网站发布文本的正式补登，载于 91 FR 73140。\n第 EE 号许可依第 13846 号行政令签发，授权清盘涉及 Samudra Marine Services Private Limited 的交易，2026 年 10 月 8 日签发、10 月 23 日到期。\n第 FF 号许可依《伊朗交易与制裁条例》（31 CFR 第 560 部分）签发，授权清盘涉及 International Development Bank for Investment and Finance 的交易，2026 年 10 月 15 日签发、10 月 30 日到期。\n两份许可在刊登时均已失效，本次发布不产生新的授权，现行制裁不变。",
         "tier": "note"
-      }
+      },
+      "title_cn": "发布伊朗相关网络通用许可 EE 与 FF（规则）",
+      "domain": "金融/保险"
     },
     {
       "board": "whitehouse",
@@ -30,13 +251,13 @@
       "kind": "规则",
       "agency": "财政部",
       "official_no": "2026-23196",
-      "title_cn": "发布俄罗斯有害对外活动制裁条例网络通用许可 55F 与 115D（规则）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-14",
         "body": "财政部海外资产控制办公室（OFAC）刊登两份依《俄罗斯有害对外活动制裁条例》（31 CFR 第 587 部分）签发的通用许可，均为官方网站已发布文本的补登，载于 91 FR 73140—73141。\n第 55F 号许可授权与「萨哈林-2」项目有关的特定服务，依据 2022 年 11 月 21 日的认定作出，自 2026 年 6 月 11 日起全面取代 2025 年 12 月 17 日的第 55E 号许可。\n第 115D 号许可授权与民用核能有关的特定交易，依第 14024 号行政令作出，同日取代 2025 年 12 月 17 日的第 115C 号许可。\n两份许可均于 2026 年 6 月 11 日签发、2026 年 12 月 18 日到期，授权范围较前版未见扩充；具体条款以公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "发布俄罗斯有害对外活动制裁条例网络通用许可 55F 与 115D（规则）",
+      "domain": "金融/保险"
     },
     {
       "board": "whitehouse",
@@ -47,13 +268,13 @@
       "kind": "规则",
       "agency": "财政部",
       "official_no": "2026-23195",
-      "title_cn": "发布古巴制裁条例网络通用许可第 1 号（规则）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-14",
         "body": "财政部海外资产控制办公室（OFAC）刊登古巴制裁项目第 1 号通用许可，属官方网站已发布文本的补登，载于 91 FR 73139—73140。\n该许可于 2026 年 5 月 7 日依第 14404 号行政令（2026 年 5 月 1 日《对古巴镇压责任人及对美国国家安全与外交政策构成威胁者实施制裁》）签发，授权该行政令与相关条例本应禁止的特定交易。\n2026 年 9 月 30 日，OFAC 已将第 14404 号行政令的禁止性规定并入《古巴制裁条例》（31 CFR 第 516 部分），许可的适用依据随之调整。\n本次刊登为文本正式化，未改变授权范围；具体条款以公报文本与 OFAC 网站为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "发布古巴制裁条例网络通用许可第 1 号（规则）",
+      "domain": "金融/保险"
     },
     {
       "board": "whitehouse",
@@ -64,13 +285,13 @@
       "kind": "规则",
       "agency": "财政部",
       "official_no": "2026-23193",
-      "title_cn": "发布伊朗相关网络通用许可 W（规则）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-14",
         "body": "财政部海外资产控制办公室（OFAC）刊登伊朗相关第 W 号通用许可，属官方网站已发布文本的补登，载于 91 FR 73142。\n该许可于 2026 年 5 月 1 日依第 13846 号行政令签发，授权清盘涉及 2026 年 5 月 1 日被列名的特定人员与实体的交易，适用对象限于许可正文所列范围。\n许可已于 2026 年 5 月 31 日到期，本次刊登不恢复任何授权，亦不改变现行制裁的禁止性规定。\n条目归入「规则」类但性质属文本公布，程序上不设评论期；具体条款以公报所载文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "发布伊朗相关网络通用许可 W（规则）",
+      "domain": "金融/保险"
     },
     {
       "board": "whitehouse",
@@ -81,13 +302,13 @@
       "kind": "通告",
       "agency": "国防部",
       "official_no": "2026-23190",
-      "title_cn": "水资源开发项目最终去授权清单（通告）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-14",
         "body": "陆军工程兵团依 2020 年《水资源开发法》第 301 条（经 2024 年该法第 1301 条修订、编于 33 U.S.C. 579d-2）公布水资源开发项目最终去授权清单，载于 91 FR 73217，案卷号 COE-2026-0034。\n清单在审议 2026 年 5 月 21 日拟议清单（91 FR 29946）所收公众意见后定稿，涉及被认定应予去授权的项目以及项目的可分割要素。\n最终清单已报送众议院运输与基础设施委员会与参议院环境与公共工程委员会，属法定通报程序。\n刊登本身不直接变更具体项目的授权状态，项目范围与要素构成以清单正文为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "水资源开发项目最终去授权清单（通告）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -98,13 +319,13 @@
       "kind": "拟议规则",
       "agency": "内政部",
       "official_no": "2026-23145",
-      "title_cn": "外大陆架油气与硫磺作业——北极外大陆架勘探钻井要求修订：评论期重开（拟议规则）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-14",
         "body": "内政部经海洋矿产管理局（MMA）重开一项拟议规则的评论期，载于 91 FR 73192，案卷号 BSEE-2026-0133 EEAA021000-278E1700D2-ET1SF0000.EAQ000。\n被重开评论的拟议规则于 2026 年 8 月 6 日刊登（91 FR 50998），内容为修订外大陆架油气与硫磺作业中关于北极外大陆架勘探钻井的要求。\n评论提交截止日延至 2026 年 12 月 14 日，规章识别号 RIN 1082-AA05，可经联邦电子规则制定门户提交。\n评论期重开不改变拟议规则的实体内容，最终规则尚未发布；修订条款以原拟议规则文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "外大陆架油气与硫磺作业——北极外大陆架勘探钻井要求修订：评论期重开（拟议规则）",
+      "domain": "能源/环境"
     },
     {
       "board": "whitehouse",
@@ -115,13 +336,13 @@
       "kind": "拟议规则",
       "agency": "农业部",
       "official_no": "2026-23123",
-      "title_cn": "通用作物保险条例；苹果作物保险条款：撤回（拟议规则）",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-11-14",
         "body": "联邦作物保险公司（FCIC）撤回 2021 年 12 月 16 日刊登的拟议规则《通用作物保险条例；苹果作物保险条款》，载于 91 FR 73174，案卷号 FCIC-21-0007。\n撤回理由为：根据就该提案收到的公众意见，FCIC 认定现阶段无需或不宜推进该项规则制定。\n若 FCIC 今后决定就该议题采取监管行动，将另行发布新的拟议规则。\n现行苹果作物保险条款维持不变，本次刊登属程序性撤回，不调整保险责任、承保条件或费率。",
         "tier": "note"
-      }
+      },
+      "title_cn": "通用作物保险条例；苹果作物保险条款：撤回（拟议规则）",
+      "domain": "农业/食品"
     },
     {
       "board": "whitehouse",
@@ -132,13 +353,13 @@
       "kind": "拟议规则",
       "agency": "农业部",
       "official_no": "2026-23086",
-      "title_cn": "马匹保护（拟议规则）",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-11-14",
         "body": "农业部动植物卫生检验局（APHIS）提出修订《马匹保护法》实施条例，载于 91 FR 73380，案卷号 APHIS-2026-0067。\n针对 2024 年 5 月 8 日最终规则，APHIS 拟删除其中已被法院裁决撤销的条款，并撤回其余未被撤销的条款，理由是确保条例符合正当程序并与《马匹保护法》本意一致。\n同时拟修订指定合格人员（DQP）培训与执照的认证要求，改进 DQP 检查程序，以及在对其实施资格取消前对 APHIS 检查结果提出申诉的程序。\n拟明确：马匹一经判定为「疼痛」（sore），仅取消其参加当次检查所在场次的资格，而非整个赛事。\n评论截止 2026 年 12 月 14 日，最终规则尚未发布。",
         "tier": "note"
-      }
+      },
+      "title_cn": "马匹保护（拟议规则）",
+      "domain": "农业/食品"
     },
     {
       "board": "whitehouse",
@@ -149,13 +370,13 @@
       "kind": "规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-23112",
-      "title_cn": "撤销橙色 B 用于法兰克福香肠与香肠肠衣或表面的着色添加剂许可；确认生效日（规则）",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-11-14",
         "body": "食品药品管理局（FDA）确认 2026 年 7 月 23 日刊登的最终命令自 2026 年 9 月 8 日起生效，载于 91 FR 73139，案卷号 FDA-2025-C-3543。\n该最终命令废止允许橙色 B（Orange B）用于法兰克福香肠与香肠肠衣或表面着色的着色添加剂条例。\n生效后，该用途不再具备着色添加剂许可依据，相关食品不得再以该物质着色。\n本次刊登仅作生效日确认，不新增实质要求，亦不设评论期。",
         "tier": "note"
-      }
+      },
+      "title_cn": "撤销橙色 B 用于法兰克福香肠与香肠肠衣或表面的着色添加剂许可；确认生效日（规则）",
+      "domain": "农业/食品"
     },
     {
       "board": "whitehouse",
@@ -166,13 +387,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-23198",
-      "title_cn": "适航指令：波音公司飞机（787-8 机翼蒙皮穿透紧固件与油箱检查）（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-14",
         "body": "联邦航空管理局（FAA）拟对特定波音 787-8 型飞机发布新适航指令，载于 91 FR 73181，案卷号 FAA-2026-13802，项目号 AD-2026-00597-T。\n起因是有报告指出，部分机翼蒙皮外模线（OML）穿透紧固件以无封盖螺纹螺母安装，在承受直接附着闪电电流时无法可靠防护潜在点火源。\n拟要求检查左右机翼特定肋间邻近电磁效应（EME）套筒的螺纹螺母紧固件；检查左右机翼燃油箱、通气油箱与干舱内穿透上下机翼蒙皮的紧固件螺母；执行特定适航限制（AWL）检查及相应状态性措施。\n另拟要求执行并行要求，并修订维修方案以纳入该适航限制任务。\n评论截止 2026 年 12 月 28 日，最终规则尚未发布。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：波音公司飞机（787-8 机翼蒙皮穿透紧固件与油箱检查）（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -183,13 +404,13 @@
       "kind": "规则",
       "agency": "交通部",
       "official_no": "2026-23194",
-      "title_cn": "修订 C 类空域：得克萨斯州德尔里奥劳克林空军基地（规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-14",
         "body": "联邦航空管理局（FAA）对得克萨斯州德尔里奥劳克林空军基地 C 类空域的法律描述作行政性修订，载于 91 FR 73137，案卷号 FAA-2026-13961、空域案卷号 26-AWA-7。\n修订内容三项：将机场基准点（ARP）地理坐标更新为与 FAA 国家空域系统资源库（NASR）一致；修正标题格式以符合现行政策；将「机场/设施名录」的旧称更新为「航图补充资料」。\n该行动不改变 C 类空域的横向边界、高度与运行要求。\n2027 年 2 月 18 日 0901 UTC 生效；机关援引正当理由免除通告与评论程序。",
         "tier": "note"
-      }
+      },
+      "title_cn": "修订 C 类空域：得克萨斯州德尔里奥劳克林空军基地（规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -268,11 +489,28 @@
       "kind": "规则",
       "agency": "国土安全部",
       "official_no": "2026-23148",
-      "title_cn": "安全区：马萨诸塞州波士顿马萨诸塞湾（规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-14",
         "body": "海岸警卫队在马萨诸塞湾波士顿东北约 22 海里的部分可航水域设立临时移动安全区，载于 91 FR 73142，案卷号 USCG-2026-1071。\n设立目的为保护人员、船舶与海上公众免受海底拆除作业产生的潜在危害。\n未经波士顿分区港务监督或其指定代表特别授权，禁止船舶或人员进入该区域。\n生效期为 2027 年 2 月 28 日 23 时 59 分至 2027 年 9 月 30 日 8 时（当地时）；作业按阶段推进，具体坐标与执行时段经航海通告发布。",
+        "tier": "note"
+      },
+      "title_cn": "安全区：马萨诸塞州波士顿马萨诸塞湾（规则）",
+      "domain": "交通"
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-13",
+      "title": "Presidential Determination Pursuant to Section 1245(d)(4)(B) and (C) of the National Defense Authorization Act for Fiscal Year 2012",
+      "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23233/presidential-determination-pursuant-to-section-1245d4b-and-c-of-the-national-defense-authorization",
+      "source": "联邦公报",
+      "kind": "总统决定",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-23233",
+      "title_cn": "依据《2012财年国防授权法案》第1245(d)(4)(B)和(C)条作出的总统决定（总统决定）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：第2027-02号总统决定，2026年10月28日签署，11月13日刊发（91 FR 73425）。\n· 法律依据：《2012财年国防授权法案》第1245(d)(4)(B)和(C)条（公法112-81）。\n· 核心认定：在审议能源信息署提交国会的报告（含2026年10月报告）、全球经济状况与战略储备可得性后，认定除伊朗外各国石油及石油产品供应充足，足以支持外国金融机构大幅减少自伊朗采购的数量。\n· 程序：决定致国务卿、财政部长与能源部长，由国务卿刊发。\n· 制度含义：按第1245(d)条设计，供应充足认定成立是相关制裁措施得以适用的前提条件之一；具体适用以文本及后续主管部门措施为准。",
         "tier": "note"
       }
     },
@@ -1635,6 +1873,74 @@
       },
       "title_cn": "安全区：FRL 首届电动水翼板邀请展演赛（佛罗里达州迈阿密）更正（拟议规则）",
       "domain": "交通"
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Continuation of the National Emergency With Respect to the Threat From Securities Investments That Finance Certain Companies of the People's Republic of China",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22688/continuation-of-the-national-emergency-with-respect-to-the-threat-from-securities-investments-that",
+      "source": "联邦公报",
+      "kind": "总统通告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22688",
+      "title_cn": "关于为中华人民共和国特定公司提供融资的证券投资所构成威胁的国家紧急状态继续有效（总统通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：总统通告，2026年11月3日签署，11月5日刊发（91 FR 69953）。\n· 对象：2020年11月12日第13959号行政令宣布的、针对为中华人民共和国特定公司提供融资的证券投资所构成威胁的国家紧急状态；该状态经2021年6月3日第14032号行政令扩大范围，第13974号行政令已被第14032号整体废止。\n· 核心动作：依《国家紧急状态法》第202(d)条（50 U.S.C. 1622(d)），将该紧急状态自2026年11月12日之后继续有效1年。\n· 认定理由：相关证券投资与中国监控技术的开发和使用，继续对美国国家安全、外交政策与经济构成异常且特殊的威胁。\n· 程序：通告刊登于联邦公报并送交国会；不新增制裁名单或授权。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Continuation of the National Emergency With Respect to the Situation in Nicaragua",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22687/continuation-of-the-national-emergency-with-respect-to-the-situation-in-nicaragua",
+      "source": "联邦公报",
+      "kind": "总统通告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22687",
+      "title_cn": "关于尼加拉瓜局势的国家紧急状态继续有效（总统通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：总统通告，2026年11月3日签署，11月5日刊发（91 FR 69951）。\n· 对象：2018年11月27日第13851号行政令依《国际紧急经济权力法》宣布的尼加拉瓜局势国家紧急状态；2022年10月24日第14088号行政令追加措施。\n· 核心动作：依《国家紧急状态法》第202(d)条（50 U.S.C. 1622(d)），将该紧急状态自2026年11月27日之后继续有效1年。\n· 认定理由：尼加拉瓜政府对2018年4月抗议的暴力回应、对民主制度与法治的系统性破坏、对平民的无差别暴力与镇压手段，以及腐败导致的经济不稳定，继续构成异常且特殊的威胁。\n· 程序：通告刊登于联邦公报并送交国会。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Continuation of the National Emergency With Respect to the Proliferation of Weapons of Mass Destruction",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22686/continuation-of-the-national-emergency-with-respect-to-the-proliferation-of-weapons-of-mass",
+      "source": "联邦公报",
+      "kind": "总统通告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22686",
+      "title_cn": "关于大规模杀伤性武器扩散的国家紧急状态继续有效（总统通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：总统通告，2026年11月3日签署，11月5日刊发（91 FR 69949）。\n· 对象：1994年11月14日第12938号行政令宣布的、关于大规模杀伤性武器及其运载工具扩散的国家紧急状态；该状态经1998年7月28日第13094号、2005年6月28日第13382号行政令修订。\n· 核心动作：依《国家紧急状态法》第202(d)条（50 U.S.C. 1622(d)），将该紧急状态自2026年11月14日之后继续有效1年。\n· 认定理由：大规模杀伤性武器及其运载工具的扩散，继续对美国国家安全、外交政策与经济构成异常且特殊的威胁。\n· 程序：通告刊登于联邦公报并送交国会。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-05",
+      "title": "Continuation of the National Emergency With Respect to Iran",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22685/continuation-of-the-national-emergency-with-respect-to-iran",
+      "source": "联邦公报",
+      "kind": "总统通告",
+      "agency": "美国总统行政办公室",
+      "official_no": "2026-22685",
+      "title_cn": "关于伊朗的国家紧急状态继续有效（总统通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "· 文种与主体：总统通告，2026年11月3日签署，11月5日刊发（91 FR 69947）。\n· 对象：1979年11月14日第12170号行政令依《国际紧急经济权力法》宣布的伊朗国家紧急状态。\n· 核心动作：依《国家紧急状态法》第202(d)条（50 U.S.C. 1622(d)），将该紧急状态自2026年11月14日之后继续有效1年。\n· 认定理由：美伊关系尚未正常化，1981年1月19日协议的执行进程仍在进行。\n· 区分说明：第12170号紧急状态与1995年3月15日第12957号行政令所宣布者不同，本次续期与2026年3月2日的续期亦相互独立。",
+        "tier": "note"
+      }
     },
     {
       "board": "whitehouse",
