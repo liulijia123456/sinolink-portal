@@ -3605,7 +3605,7 @@
   .cg-drawer::-webkit-scrollbar-track { background: #f2eee6; }
   .cg-drawer::-webkit-scrollbar-thumb { background: #c9a86a; border-radius: 6px; border: 2px solid #f2eee6; }
   .cg-drawer::-webkit-scrollbar-thumb:hover { background: #a8823c; }
-  @keyframes cgDrawerIn { from { transform: translateX(24px); opacity: .4; } to { transform: none; opacity: 1; } }
+  @keyframes cgDrawerIn { from { right: -24px; opacity: .4; } to { right: 0; opacity: 1; } }
   .cg-drawer-head { padding: 20px 24px 15px; border-bottom: 1px solid var(--border-light); background: #fbf9f4; position: relative; }
   .cg-close { position: absolute; top: 13px; right: 15px; border: 0; background: none; font-size: 22px; line-height: 1; color: var(--muted); padding: 4px; cursor: pointer; }
   .cg-close:hover { color: #0b1724; }
@@ -3676,7 +3676,8 @@
   .cg-drawer { box-sizing: border-box; border-top: 0; border-bottom: 0; border-radius: 18px 0 0 18px; }
   .cg-drawer-head { padding-top: 54px; border-bottom-color: var(--us-line); border-radius: 18px 0 0 0; overflow: hidden; }
   .cg-drawer .cg-close {
-    top: 43px; right: 18px; display: grid; place-items: center; width: 32px; height: 32px;
+    position: fixed; top: 111px; right: 18px; z-index: 3; background: #fff;
+    display: grid; place-items: center; width: 32px; height: 32px;
     padding: 0; border: 2px solid #9a4a3c; border-radius: 50%;
     color: #9a4a3c; font-size: 24px; font-weight: 700;
   }
@@ -3711,6 +3712,7 @@
   @media (max-width: 760px) {
     .cg-overlay { top: 60px; }
     .cg-drawer { top: 60px; width: 100vw; height: calc(100dvh - 60px); max-height: calc(100dvh - 60px); }
+    .cg-drawer .cg-close { top: 103px; right: 18px; }
     #view-board.is-cg .pw-thead { display: none; }
     #view-board.is-cg .pw-r { grid-template-columns: minmax(0,1fr) 36px; gap: 7px; }
     #view-board.is-cg .c-date { grid-column: 1; grid-row: 1; }
