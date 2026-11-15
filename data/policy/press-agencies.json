@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-14T09:45:23+08:00",
+ "updated_at": "2026-11-15T19:01:38+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -242,7 +242,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
    "source": "Federal Reserve",
-   "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026"
+   "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+   "brief": {
+    "at": "2026-10-07",
+    "tier": "news",
+    "body": "· 美联储10月7日发布9月15—16日联邦公开市场委员会会议纪要。\n· 纪要按惯例在政策决定日约三周后公布，本次发布与既定安排一致。\n· 纪要内容仅依据会议召开时可得信息，全文已于理事会网站以HTML与PDF发布。"
+   }
   },
   {
    "date": "2026-10-05",
@@ -252,7 +257,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation"
+   "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+   "brief": {
+    "at": "2026-10-05",
+    "tier": "news",
+    "body": "· 美联储10月5日批准密歇根州伊莎贝拉银行公司收购Grand River Commerce。\n· 交易完成后，该公司将间接持有同处密歇根州格兰维尔的Grand River Bank。\n· 理事会同时批准伊莎贝拉银行与Grand River Bank合并，并在其营业地点设立分支机构。"
+   }
   },
   {
    "date": "2026-10-02",
