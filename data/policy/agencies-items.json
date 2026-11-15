@@ -1,9 +1,128 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-14 09:41",
-  "count": 127,
+  "updated_at": "2026-11-15 18:57",
+  "count": 134,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Federal Reserve Bank Services",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23289/federal-reserve-bank-services",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23289",
+      "title_cn": "美联储 2027 年定价服务收费表与私营部门调整系数（通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：美联储理事会通告（Docket No. OP-1883）。\n● 核心动作：核定 2027 年私营部门调整系数（PSAF）为 3,530 万美元，并公布 2027 年美联储定价服务与电子接入收费表。\n● 法律依据：《1980 年货币控制法》要求定价服务收费在长期内覆盖全部直接与间接成本，PSAF 系其中一项成本要素。\n● 生效时点：新收费表自 2027 年 1 月 1 日起施行。\n● 信息边界：通告本身不载具体费率，各项收费表全文须在美联储金融服务（FRFS）网站查阅。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23245/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23245",
+      "title_cn": "银行控股公司组建、收购与合并申请（通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：美联储理事会依《1956 年银行控股公司法》（12 U.S.C. 1841 及以下）与 Y 条例（12 CFR 第 225 部分）发布的受理申请通告。\n● 本期一项申请：得克萨斯州 Humble 的 Third Coast Bancshares 收购俄克拉何马州 Elk City 的 Great Plains Bancshares，并间接收购 Great Plains National Bank。\n● 受理辖区：达拉斯联邦储备银行。\n● 程序节点：公众意见须于 2026 年 12 月 16 日前送达该储备银行或理事会秘书处，审查标准为《银行控股公司法》第 4(c) 条（12 U.S.C. 1842(c)）。\n● 说明：本通告属个案申请披露，不构成批准决定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23244/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23244",
+      "title_cn": "银行控制权变更申请：银行或银行控股公司股份收购（通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：美联储理事会依《银行控制权变更法》（12 U.S.C. 1817(j)）与 Y 条例 §225.41 发布的受理通告。\n● 两项申请，均由明尼阿波利斯联邦储备银行受理。\n● 其一：明尼苏达州 Hutchinson 的 Citizens 股东协议控制集团以一致行动方式保留 Citizens Bancshares of Hutchinson 表决权，并间接保留 Citizens Bank & Trust 表决权。\n● 其二：蒙大拿州 Helena 的 Grove 家族控制集团收购 Countricorp 表决权，并间接收购 Bank of the Rockies 表决权。\n● 意见截止：2026 年 12 月 1 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Review of Submarine Cable Landing License Rules and Procedures To Assess Evolving National Security, Law Enforcement, Foreign Policy, and Trade Policy Risks",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23255/review-of-submarine-cable-landing-license-rules-and-procedures-to-assess-evolving-national-security",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23255",
+      "title_cn": "海底光缆登陆许可规则（国家安全等风险评估）生效日期更正（规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：FCC 最终规则更正（OI Docket No. 24-523、MD Docket No. 24-524；FCC 25-49）。\n● 更正事项：2026 年 7 月 8 日生效日期公告遗漏第 13、17、19 项修订指示的生效日期，本件予以补正。\n● 涉及义务（均以 2026 年 7 月 8 日为起算点）：既有登陆牌照持有人须于 60 日内提交路由位置清单（§1.70007(x)）；6 个月内提交首份外国对手年度报告（§1.70017(d)）；60 日内提交覆盖清单认证（§1.70023）；30 日内提交网络安全与物理安全认证（§1.70024）。\n● 生效时点：本更正自 2026 年 11 月 16 日生效。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23217/information-collections-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23217",
+      "title_cn": "广播业平等就业机会示范项目报告（FCC 396-A 表）信息采集征询意见（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：FCC 依《1995 年文书削减法》就信息采集征询公众意见的通告。\n● 采集项：广播业平等就业机会示范项目报告，FCC 396-A 表（OMB 控制号 3060-0120）。\n● 审查类型：现行已批准采集的延期；填报主体为营利与非营利机构，约 5,000 家、5,000 份，单次约 1 小时，年度总负担约 5,000 小时。\n● 用途：申请人新建广播电台、受让建设许可或执照、或取得持照实体控制权时随案填报，用以建立电台平等就业机会项目。\n● 意见截止：2027 年 1 月 15 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23216/information-collections-being-reviewed-by-the-federal-communications-commission-under-delegated",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23216",
+      "title_cn": "有线电视市场界定与 A 类电视台信息采集征询意见（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：FCC 依授权就两项信息采集征询公众意见的通告。\n● 其一：《有线电视强制转播信号携带规则》第 76.59 条市场界定（OMB 3060-0546），约 120 家填报、130 份，年度负担约 958 小时，年度成本约 64.0 万美元。\n● 其二：A 类电视台与《低功率保护法》（OMB 3060-1326），约 50 家填报、250 份。\n● 两项均属现行已批准采集的延期，用途是允许委员会依书面请求增删电视台本地市场的社区。\n● 意见截止：2027 年 1 月 15 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-16",
+      "title": "Certain Spectral Flow Cytometry Systems and Components Thereof; Notice of Institution of Investigation",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23254/certain-spectral-flow-cytometry-systems-and-components-thereof-notice-of-institution-of",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23254",
+      "title_cn": "频谱流式细胞仪系统及组件 337 调查立案（美国、中国）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "文种与主体：USITC 依《1930 年关税法》第 337 条发出的立案通告（调查号 337-TA-1528）。\n● 申诉方：加利福尼亚州 Fremont 的 Cytek Biosciences；申诉于 2026 年 10 月 8 日提出，10 月 26 日补充。\n● 被申请人：Beckman Coulter（美国加州 Brea）与 Beckman Coulter Biotechnology（苏州）（中国）。\n● 涉案产品与权利：频谱流式细胞仪系统及组件（含 mosaic 88、mosaic 63），主张侵害 '128、'167、'245 三项专利。\n● 请求救济：有限排除令与停止令。委员会 2026 年 11 月 10 日立案，被申请人须于送达后 20 日内答复。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-13",
@@ -13,13 +132,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23147",
-      "title_cn": "银行控制权变更通告：BankGuam 控股 2024 年表决权协议参与方名单更正（Y 条例 §225.41·更正通告）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-14",
         "body": "美联储就 2026 年 6 月 29 日刊登的银行控制权变更通告（FR Doc. 2026-13067，91 FR 39100）发布更正，订正 B.1 段参与方名单。\n该段涉及 BankGuam Holding Company（关岛阿加尼亚）2024 年表决权协议：Joaquin P. L. G. Cook 以管理人身份，连同协议现行各方，作为一致行动集团申请收购该公司追加表决权股份，并间接收购 Bank of Guam 的追加表决权股份。\n参与方包括 Leon Guerrero、Ada、Sablan 等家族成员及其家族信托、未成年子女托管账户与若干个人。\n更正仅替换 B.1 段全文，不涉及新申请，不改变既有审查程序，亦未设新的意见征询截止日；具体名单以联邦公报更正文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控制权变更通告：BankGuam 控股 2024 年表决权协议参与方名单更正（Y 条例 §225.41·更正通告）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -30,13 +149,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-23178",
-      "title_cn": "流媒体设备及组件：337 调查申诉受理与公共利益意见征询（DN 3950，中国、中国台湾、美国等）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-14",
         "body": "美国国际贸易委员会 2026 年 11 月 9 日收到 Truesight Communications, LLC 申诉，案名「流媒体设备及组件」，案号 DN 3950，指控相关产品进口与在美销售违反 1937 年关税法第 337 条。\n列名被申请人 19 家，含 Apple、Google、Walmart、BLU Products、ASUS 系（中国台湾、美国）、海信系（中国、美国、墨西哥）、OnePlus（深圳）、深圳天珑移动与小米系（开曼、中国香港、中国、荷兰、英国）。\n申诉人请求签发有限排除令与停止令，并对涉案产品在 60 日总统审查期内收取保证金。\n公共利益书面意见须于公告后 8 个日历日（2026-11-21）前提交，答复截止 11-24，限 5 页；委员会尚未就是否立案作出决定。",
         "tier": "note"
-      }
+      },
+      "title_cn": "流媒体设备及组件：337 调查申诉受理与公共利益意见征询（DN 3950，中国、中国台湾、美国等）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -47,13 +166,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-23108",
-      "title_cn": "货运铁路车钩及部件（捷克、印度）双反终裁：产业实质损害肯定性裁决（通告）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-14",
         "body": "美国国际贸易委员会就货运铁路车钩及部件（freight rail couplers）对捷克、印度的双反调查作出终裁，认定美国产业因相关进口受到实质损害。\n调查号 701-TA-775 与 731-TA-1759-1760（终裁）。损害认定所涉进口包括捷克、印度以低于公平价值销售的产品，以及印度的补贴产品，即反倾销覆盖两国、反补贴仅涉印度。\n程序上，调查于 2025 年 7 月 23 日应货运车钩生产商联盟（McConway & Torley 与钢铁工人联合会组成）申请启动，2026 年 9 月 15 日举行听证，11 月 9 日提交裁决，理由书为 USITC Publication 5805；Negatu 委员未参与。\n肯定性终裁后，商务部将据以签发反倾销令与反补贴令。",
         "tier": "note"
-      }
+      },
+      "title_cn": "货运铁路车钩及部件（捷克、印度）双反终裁：产业实质损害肯定性裁决（通告）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
