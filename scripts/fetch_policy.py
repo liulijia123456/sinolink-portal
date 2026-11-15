@@ -450,8 +450,9 @@ def _fr_item(board, doc, kind, agency=None):
 def fetch_whitehouse(since):
     """白宫政策：联邦公报总统文件 + USTR 文件。"""
     items = []
-    # 1) 总统文件：按子类型分次查询，精确标注 行政令/总统备忘录/公告
-    for ptype in ('executive_order', 'memorandum', 'proclamation'):
+    # 1) 总统文件：按子类型分次查询，精确标注 行政令/总统备忘录/公告/总统决定/总统通告
+    #    子类型清单以 PRESDOCU_KIND 为准（此前循环硬写前三种，漏抓总统决定与总统通告）
+    for ptype in PRESDOCU_KIND:
         params = _fr_params({
             'conditions[type][]': ['PRESDOCU'],
             'conditions[presidential_document_type][]': [ptype],
