@@ -1568,6 +1568,17 @@
   .ud-tags { display: flex; flex-wrap: wrap; gap: 3px 14px; margin-top: 1px; }
   .ud-tag { display: inline-flex; align-items: baseline; gap: 4px; font-size: 10px; color: var(--text-light); }
   .ud-tag i { font-style: normal; color: #b3bec9; letter-spacing: .04em; }
+  /* 来源链接：每条最多 3 个，做成可点标签，窄屏放大到 30px 高便于触摸 */
+  .ud-links { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+  .ud-a {
+    display: inline-flex; align-items: center; gap: 3px; min-height: 24px;
+    padding: 2px 8px; font-size: 10.5px; line-height: 1.5;
+    color: var(--accent-light); background: #fff; border: 1px solid var(--border-light);
+    border-radius: 3px; text-decoration: none; transition: background .12s ease, border-color .12s ease;
+  }
+  .ud-a:hover { background: #f2f8ff; border-color: var(--accent-light); }
+  .ud-a:focus-visible { outline: 2px solid var(--accent-light); outline-offset: 1px; }
+  .ud-a span { font-size: 9px; opacity: .75; }
   .ud-src i { font-style: normal; margin-right: 6px; letter-spacing: .04em; color: #a7b3bf; }
   /* 进行中：标题不再染成琥珀色（那会和「政治」的暖色撞成一片），改用整圈细描边 + 既有徽章表达 */
   .ud-item.live { box-shadow: inset 0 0 0 1.5px rgba(201,150,46,0.5); }
@@ -1606,6 +1617,7 @@
     .uc-month { min-width: 100px; font-size: 15px; }
     .uc-expand { padding: 10px 10px 11px 11px; }
     .ue-list { grid-template-columns: 1fr; gap: 8px; }
+    .ud-a { min-height: 30px; padding: 4px 10px; font-size: 11px; }
   }
   @media (max-width: 700px) { .uc-bar { flex-direction: column; align-items: stretch; } .uc-tz { width: 100%; display: flex; } .uc-tz button { flex: 1; } .uc-picker { width: min(262px, calc(100vw - 72px)); } }
 
@@ -2373,6 +2385,12 @@
   #view-us .uc-pend-m { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; min-width: 0; text-align: right; }
   #view-us .uc-pend-w { font-family: var(--us-mono); font-size: 10.5px; color: rgba(11, 23, 36, .55); line-height: 1.5; }
   #view-us .uc-pend-p { font-size: 10.5px; color: rgba(11, 23, 36, .4); line-height: 1.5; }
+  #view-us .uc-pend-l { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; margin-top: 2px; }
+  #view-us .uc-pend-l a {
+    font-family: var(--us-mono); font-size: 9.5px; color: var(--us-blue);
+    text-decoration: none; min-height: 20px; display: inline-flex; align-items: center;
+  }
+  #view-us .uc-pend-l a:hover { text-decoration: underline; }
   #view-us .uc-pend-foot {
     margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--us-line-soft);
     font-size: 10.5px; color: rgba(11, 23, 36, .4);
@@ -2427,6 +2445,11 @@
   #view-us .ud-f, #view-us .ud-f i { font-family: var(--us-mono); }
   #view-us .ud-f i { letter-spacing: .08em; }
   #view-us .ud-tag, #view-us .ud-tag i { font-family: var(--us-mono); }
+  #view-us .ud-a {
+    font-family: var(--us-mono); border-radius: 2px; border-color: var(--us-line-soft);
+    color: var(--us-blue); background: #fff;
+  }
+  #view-us .ud-a:hover { background: #eef4fc; border-color: var(--us-blue); }
   #view-us .ud-tag.hi { color: var(--us-ink); }
   #view-us .ud-tag.hi b { color: var(--us-blue); font-weight: 700; }
   #view-us .ud-src { border-top-color: var(--us-line-soft); font-size: 10px; }
@@ -9107,7 +9130,13 @@
       "s": "哥伦布日",
       "note": "美股正常交易：纽交所/纳斯达克不因哥伦布日休市 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2026-10-12",
@@ -9117,7 +9146,17 @@
       "note": "泰国曼谷 · 全年会期（2026 年会于 10-18 在曼谷闭幕）· 2029 年会东道主 10-18 签署承办协议，世界银行集团已公布会期为 10 月 1—7 日、举办地阿布扎比 · 来源：世界银行集团 2026-10-18 新闻稿 / IMF Connect",
       "s": "IMF年会",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "IMF 会议",
+          "u": "https://www.imf.org/en/meetings"
+        },
+        {
+          "t": "世行活动",
+          "u": "https://www.worldbank.org/en/events"
+        }
+      ]
     },
     {
       "d": "2026-10-14",
@@ -9127,7 +9166,17 @@
       "note": "劳工统计局（BLS）· 08:30 美东时间 · 参考期 2026 年 9 月 · 来源：BLS 官方发布日程（bls.gov/schedule/2026/10_sched.htm）",
       "s": "CPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+        },
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-10-15",
@@ -9137,7 +9186,17 @@
       "note": "劳工统计局（BLS）· 08:30 美东时间 · 参考期 2026 年 9 月 · 来源：BLS 官方发布日程（bls.gov/schedule/2026/10_sched.htm）",
       "s": "PPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+        },
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-10-15",
@@ -9146,7 +9205,17 @@
       "note": "泰国曼谷 · 配合 IMF / 世界银行 2026 年会 · 来源：G20 官方活动日程（g20.org/events）",
       "s": "G20财长会",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "g20 页面",
+          "u": "https://g20.org/events"
+        },
+        {
+          "t": "G20 官网",
+          "u": "https://g20.org/"
+        }
+      ]
     },
     {
       "d": "2026-10-15",
@@ -9156,7 +9225,17 @@
       "s": "零售销售",
       "note": "普查局（Census）· 08:30 美东时间 · 参考期 2026 年 9 月 · 与 PPI 同日公布 · 来源：普查局零售销售发布日程（census.gov/retail/release_schedule.html）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/release_schedule.html"
+        },
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2026-10-16",
@@ -9166,7 +9245,17 @@
       "s": "9月进出口价格",
       "note": "劳工统计局（BLS）· 08:30 美东时间 · 参考期 2026 年 9 月 · 来源：BLS 官方发布日程（bls.gov/schedule/2026/10_sched.htm）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+        },
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-10-19",
@@ -9175,7 +9264,21 @@
       "s": "三项紧急状态延续",
       "note": "白宫 · 总统 10 月 15 日签署三份公告，依《国家紧急状态法》50 U.S.C. § 1622(d) 各延续一年：以哥伦比亚为基地的重大贩毒集团（行政令 12978，延续至 2027 年 10 月 21 日后）、苏丹局势（行政令 13761，延续至 2027 年 11 月 3 日后）、刚果（金）局势（行政令 13413、13671，延续至 2027 年 10 月 27 日后） · 传导路径：制裁与出口管制授权继续有效，影响涉相关国家的金融、能源与合规安排 · 来源：联邦公报 2026-21430 / 2026-21431 / 2026-21432（91 FR 66277、66279、66281，2026-10-19 刊发）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-21430",
+          "u": "https://www.federalregister.gov/d/2026-21430"
+        },
+        {
+          "t": "联邦公报 2026-21431",
+          "u": "https://www.federalregister.gov/d/2026-21431"
+        },
+        {
+          "t": "联邦公报 2026-21432",
+          "u": "https://www.federalregister.gov/d/2026-21432"
+        }
+      ]
     },
     {
       "d": "2026-10-27",
@@ -9184,7 +9287,13 @@
       "note": "120 席 · 近 40 年首次按期改选（路透社 / 以官方领事通知）· 与美对伊政策联动观察节点",
       "s": "以色列大选",
       "topic": "election",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "以色列政府",
+          "u": "https://www.gov.il/en"
+        }
+      ]
     },
     {
       "d": "2026-10-27",
@@ -9195,7 +9304,13 @@
       "note": "决议于 10 月 28 日 14:00 公布 · 会后主席记者会 14:30 · 本次会议不含经济预测摘要（美联储日程页该次未附星号）· 来源：美联储 FOMC 会议日程页（federalreserve.gov/monetarypolicy/fomccalendars.htm）",
       "s": "FOMC",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2026-10-29",
@@ -9205,7 +9320,13 @@
       "s": "GDP初值",
       "note": "经济分析局（BEA）· 08:30 美东时间 · 与 PCE 同日、FOMC 决议次日 · 来源：BEA 2026 年发布日程（bea.gov/news/schedule）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-10-29",
@@ -9215,7 +9336,13 @@
       "s": "PCE",
       "note": "经济分析局（BEA）· 08:30 美东时间 · 美联储偏好的通胀指标 · 来源：BEA 2026 年发布日程（bea.gov/news/schedule）",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-10-30",
@@ -9225,7 +9352,13 @@
       "s": "三季度ECI",
       "note": "劳工统计局（BLS）· 参考期为 2026 年第三季度 · 08:30 美东时间 · 来源：BLS 官方发布日程（bls.gov/schedule/2026）",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-10-30",
@@ -9235,7 +9368,21 @@
       "note": "美国亚特兰大 · 国务卿鲁比奥主持 · 为 12 月 14—15 日迈阿密领导人峰会定议程，是峰会前最后一次 G20 部长级会议 · 10-31 主席声明涉及能源安全、供应链韧性、霍尔木兹海峡与曼德海峡航行自由，并主张不将食品与农产品供应链用作经济胁迫工具 · 同期举行四方安全对话外长会 · 来源：美国国务院 2026-05-18 公告 / 印度外交部 2026-10-28 / G20 外长会主席声明 2026-10-31",
       "s": "G20外长会",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "G20 官网",
+          "u": "https://g20.org/"
+        },
+        {
+          "t": "国务院",
+          "u": "https://www.state.gov/"
+        },
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        }
+      ]
     },
     {
       "d": "2026-10-30",
@@ -9245,7 +9392,17 @@
       "s": "Quad外长会",
       "note": "美国亚特兰大 · G20 外长会期间举行，四国外长 10-31 举行会谈并发表联合声明 · 联合声明聚焦经济安全与供应链：反对经济胁迫、产能过剩与非市场做法，关注关键矿产供应链脱钩；美国承诺出资 1000 万美元支持印度及东盟建设关键矿产回收设施，并提出「硅和平计划」与逾 8500 万美元的人工智能加速器援助，双方将在半导体、先进通信网络、人工智能及海底电缆等领域识别供应链瓶颈 · 传导路径：关键矿产与半导体供应链安排直接影响中国相关出口与产业链政策预期 · 鲁比奥 10-31 确认 11 月马尼拉领导人峰会安排 · 来源：印度外交部（MEA）2026-10-28 / 四国外长联合声明 2026-10-31",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        },
+        {
+          "t": "印度外交部",
+          "u": "https://www.mea.gov.in/"
+        }
+      ]
     },
     {
       "d": "2026-11-01",
@@ -9254,7 +9411,13 @@
       "note": "美东 11 月 1 日 02:00 拨回 01:00（北京时间同日 14:00） · 美股交易时段对应北京时间后移 1 小时（22:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "s": "冬令时开始",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2026-11-02",
@@ -9263,7 +9426,13 @@
       "s": "压力测试规则生效",
       "note": "美联储通过最终规则修订《联邦储备条例》Y、LL、YY，提升压力测试模型与情景设定的透明度与问责，并公布 2027 年压力测试模型 · 对大型银行资本测算与披露口径有直接影响 · 来源：联邦公报 2026-20247（2026-10-02 刊发）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "联邦公报 2026-20247",
+          "u": "https://www.federalregister.gov/d/2026-20247"
+        }
+      ]
     },
     {
       "d": "2026-11-02",
@@ -9272,7 +9441,17 @@
       "s": "银行监管规则生效",
       "note": "货币监理署（OCC）与联邦存款保险公司（FDIC）最终规则界定《联邦存款保险法》第 8 条下「不安全或不稳健经营行为」的范围，并修订「需关注事项」等监管函件的签发框架 · 传导路径：收紧银行经营行为的认定标准，影响银行监管处罚预期、资本配置节奏与并购审查尺度 · 来源：联邦公报 2026-17823（2026-09-01 刊发，更正件 2026-19312）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-17823",
+          "u": "https://www.federalregister.gov/d/2026-17823"
+        },
+        {
+          "t": "联邦公报 2026-19312",
+          "u": "https://www.federalregister.gov/d/2026-19312"
+        }
+      ]
     },
     {
       "d": "2026-11-03",
@@ -9281,7 +9460,17 @@
       "note": "改选产生第 120 届国会，全部 435 席众议院与 35 席参议院 · 计票测算显示民主党取得参众两院控制权：美联社测算参议院 54 席、众议院 228 席，全国广播公司（NBC）预计众议院最终可达 255 席 · 杰弗里斯将成为美国首位非裔众议长，舒默重掌参议院多数党领袖地位 · 特朗普 10 月 8 日称选举前不会对伊朗动武 · 各州认证自 11 月 10 日起、最晚 12 月 18 日完成 · 来源：美联社（AP）与全国广播公司（NBC）计票测算（2026-11-04）/ Ballotpedia 2026 年各州认证日历 / 3 U.S.C. § 1",
       "s": "中期选举日",
       "topic": "election",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Ballotpedia",
+          "u": "https://ballotpedia.org/"
+        },
+        {
+          "t": "美联社",
+          "u": "https://apnews.com/"
+        }
+      ]
     },
     {
       "d": "2026-11-04",
@@ -9291,7 +9480,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2026 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-11-05",
@@ -9300,7 +9495,21 @@
       "s": "四项紧急状态延续",
       "note": "白宫 · 总统 11 月 3 日签署四份公告，依《国家紧急状态法》50 U.S.C. § 1622(d) 各延续一年：对伊朗（1979 年行政令 12170）、武器大规模扩散（行政令 12938 及 13382）、尼加拉瓜（行政令 13851）、对中国某些公司证券投资（行政令 13959，经 13974 修订） · 传导路径：制裁与对外投资限制框架继续有效，影响伊朗能源与金融交易、对华证券投资审查及相关合规安排 · 来源：联邦公报 2026-22685 / 2026-22686 / 2026-22687 / 2026-22688（91 FR 69947、91 FR 69949、91 FR 69951、91 FR 69953，2026-11-05 刊发）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-22685",
+          "u": "https://www.federalregister.gov/d/2026-22685"
+        },
+        {
+          "t": "联邦公报 2026-22686",
+          "u": "https://www.federalregister.gov/d/2026-22686"
+        },
+        {
+          "t": "联邦公报 2026-22687",
+          "u": "https://www.federalregister.gov/d/2026-22687"
+        }
+      ]
     },
     {
       "d": "2026-11-06",
@@ -9310,7 +9519,13 @@
       "note": "劳工统计局（BLS）",
       "s": "非农",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-11-06",
@@ -9319,7 +9534,13 @@
       "s": "中美经贸视频通话",
       "note": "线上 · 中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特及贸易代表格里尔举行视频通话，双方围绕落实中美元首北京与华盛顿会晤共识及经贸磋商成果坦诚交流，中方就近期美对华经贸限制措施表达严正关切，双方同意继续发挥中美经贸磋商机制作用 · 来源：中国外交部（2026-11-07 公布）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        }
+      ]
     },
     {
       "d": "2026-11-09",
@@ -9328,7 +9549,13 @@
       "s": "车贷扣除规则生效",
       "note": "IRS 最终规则落实合格乘用车贷款利息最高 1 万美元扣除，并规定年息 600 美元以上贷款的信息申报义务 · 传导路径：提振汽车消费信贷需求，金融机构需改造申报系统 · 来源：联邦公报 2026-18219（2026-09-08 刊发）",
       "topic": "fiscal",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-18219",
+          "u": "https://www.federalregister.gov/d/2026-18219"
+        }
+      ]
     },
     {
       "d": "2026-11-09",
@@ -9338,7 +9565,13 @@
       "s": "G7外长会议",
       "note": "巴黎 · 七国集团外长会议，会址于会前由马赛临时改至巴黎；议程涵盖乌克兰危机、伊朗局势、霍尔木兹海峡与红海航行自由、粮食与能源安全、人工智能与印太局势，法国另邀巴西、埃及、沙特阿拉伯与乌克兰参加部分讨论，会后未发表联合公报；系国务卿鲁比奥在中期选举后首次出访 · 来源：美国国务院（State Department）2026-11-09 公开日程、路透社",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "国务院",
+          "u": "https://www.state.gov/"
+        }
+      ]
     },
     {
       "d": "2026-11-09",
@@ -9348,7 +9581,17 @@
       "s": "COP31",
       "note": "土耳其安塔利亚 Soğucaksu 会场 · 会期 11 月 9—20 日 · 世界领导人气候行动峰会 11 月 11—12 日 · 来源：UNFCCC 官方通知 ISCP/NOTIF/COP31/UN/JUL 26（2026-07-17）",
       "topic": "energy",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "UNFCCC 官网",
+          "u": "https://unfccc.int/"
+        },
+        {
+          "t": "FCC 新闻",
+          "u": "https://www.fcc.gov/news-events"
+        }
+      ]
     },
     {
       "d": "2026-11-10",
@@ -9358,7 +9601,13 @@
       "note": "劳工统计局（BLS）",
       "s": "CPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-11-10",
@@ -9368,7 +9617,13 @@
       "note": "原定 2026-11-10，已调整至 2027-01-11 · 华盛顿 · 商务部工业与安全局（BIS）2025 年 9 月 29 日生效的「扩大终端用户管制至部分列名实体关联方」规则（50% 股权穿透）自 2025 年 11 月 10 日起暂停一年，原定本日届满并恢复实施；BIS 已于 2026 年 11 月 9 日以终局规则（91 FR 70789）把暂停期延长至 2027 年 1 月 10 日，故本节点不再生效 · 传导路径：恢复对半导体、先进计算等物项的关联方许可约束，直接影响对华出口管制合规与供应链尽调 · 来源：联邦公报 2025-19846（90 FR 50857，2025-11-12 刊发）",
       "topic": "security",
       "actor": "agency",
-      "stale": true
+      "stale": true,
+      "links": [
+        {
+          "t": "联邦公报 2025-19846",
+          "u": "https://www.federalregister.gov/d/2025-19846"
+        }
+      ]
     },
     {
       "d": "2026-11-10",
@@ -9378,7 +9633,13 @@
       "s": "俄乌会谈",
       "note": "阿联酋阿布扎比 · 美国总统特使威特科夫与库什纳率美方代表团，俄方由总统助理梅金斯基率领、副外长里亚布科夫首次参加，乌方由对外情报局局长乌梅罗夫率领；议题含结束冲突、战后安全安排、局势降级与人道主义行动（战俘交换、送返乌克兰儿童），法德英三国与欧盟、北约代表到场出席相关活动 · 本次为工作层级而非首脑会谈，俄方定性为技术性磋商并称安全议题是核心；首日会谈后三方于次日继续磋商，乌方提交黑海与能源领域专项停火方案，俄方表示在局势不明前不再同意停火 · 来源：美国总统特使威特科夫社交媒体声明（2026-11-02）、路透社（2026-11-09）、央视新闻（2026-11-11）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "国务院",
+          "u": "https://www.state.gov/"
+        }
+      ]
     },
     {
       "d": "2026-11-11",
@@ -9387,7 +9648,17 @@
       "note": "美股正常交易：纽交所/纳斯达克不因退伍军人节休市 · 来源：美国人事管理局（OPM）联邦假日安排 / NYSE 2026—2028 交易日历",
       "s": "退伍军人节",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2026-11-12",
@@ -9396,7 +9667,13 @@
       "s": "注入井授权生效",
       "note": "环保署（EPA）批准科罗拉多州依《安全饮用水法》第 1422 条提出的地下注入控制（UIC）计划首要权限申请，科罗拉多能源与碳管理委员会（ECMC）自本日起负责 Class VI 碳封存注入井的许可发放与执行 · 传导路径：碳封存井许可权由联邦下放至州层，影响科罗拉多州项目审批节奏与碳捕集基础设施投资 · 来源：联邦公报 2026-20846（2026-10-13 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20846",
+          "u": "https://www.federalregister.gov/d/2026-20846"
+        }
+      ]
     },
     {
       "d": "2026-11-13",
@@ -9406,7 +9683,13 @@
       "note": "劳工统计局（BLS）",
       "s": "PPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-11-14",
@@ -9416,7 +9699,21 @@
       "s": "东盟峰会",
       "note": "马尼拉 · 东盟秘书处公告：14 日先行举行经济共同体理事会、外长会、政治安全共同体理事会与协调理事会，15 日领导人峰会开幕，16—17 日与对话伙伴举行系列峰会，17 日举行第 29 届东盟加三、第 21 届东亚峰会及东盟—美国特别峰会（特朗普出席），并交接主席国予新加坡；菲总统府第 1447 号公告所列 11-16~18 为大马尼拉特别非工作日，属安保与交通管制期间，与会议日程不矛盾 · 来源：东盟秘书处（ASEAN Secretariat）/ 菲律宾外交部（DFA）",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "东盟官网",
+          "u": "https://asean.org/"
+        },
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        },
+        {
+          "t": "菲总统府",
+          "u": "https://pco.gov.ph/"
+        }
+      ]
     },
     {
       "d": "2026-11-16",
@@ -9425,7 +9722,13 @@
       "s": "碳标准部分废止",
       "note": "美国环保署（EPA）最终规则废止 2024 年化石燃料电厂碳污染标准的大部分条款，包括现役燃煤蒸汽机组排放导则、重大改建燃煤机组的碳捕集与封存要求，以及新建基荷机组的碳捕集要求 · 传导路径：降低电力行业脱碳合规成本，影响燃煤电厂运行安排、CCUS 投资决策与天然气发电需求预期 · 来源：联邦公报 2026-19071（2026-09-17 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-19071",
+          "u": "https://www.federalregister.gov/d/2026-19071"
+        }
+      ]
     },
     {
       "d": "2026-11-16",
@@ -9434,7 +9737,13 @@
       "s": "失业补偿披露生效",
       "note": "劳工部（Department of Labor）最终规则要求各州失业补偿机构向联邦官员披露机密失业补偿信息，以供联邦项目监督与审计，涉及监察长办公室的核查权限 · 传导路径：扩大州级失业保险数据的联邦调取范围，影响州失业保险系统的数据报送负担与合规安排 · 来源：联邦公报 2026-18978（2026-09-16 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-18978",
+          "u": "https://www.federalregister.gov/d/2026-18978"
+        }
+      ]
     },
     {
       "d": "2026-11-16",
@@ -9445,7 +9754,17 @@
       "note": "原定 2026-11-16 ~ 2026-11-17，已调整至 2026-11-17 · 菲律宾马尼拉 · 与第 49 届东盟峰会（11 月 14—17 日）同期举行 · 印度外交部发言人 10-28 确认会期为 11 月 16—17 日 · 国务卿鲁比奥 10-20 确认在马尼拉举行（当时称具体日期尚未确定）· 议题：海上安全、关键供应链与新兴技术合作、印太与全球问题 · 上次领导人峰会为 2024 年 9 月威尔明顿 · 来源：印度外交部（MEA）2026-10-28",
       "topic": "security",
       "actor": "intl",
-      "stale": true
+      "stale": true,
+      "links": [
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        },
+        {
+          "t": "印度外交部",
+          "u": "https://www.mea.gov.in/"
+        }
+      ]
     },
     {
       "d": "2026-11-16",
@@ -9456,7 +9775,13 @@
       "s": "东盟峰会",
       "topic": "security",
       "actor": "intl",
-      "stale": true
+      "stale": true,
+      "links": [
+        {
+          "t": "东盟官网",
+          "u": "https://asean.org/"
+        }
+      ]
     },
     {
       "d": "2026-11-17",
@@ -9466,7 +9791,13 @@
       "s": "零售销售",
       "note": "普查局（Census）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2026-11-17",
@@ -9476,7 +9807,13 @@
       "s": "进出口价格",
       "note": "劳工统计局（BLS）· 08:30 美东时间 · 来源：BLS 官方发布日程（bls.gov/schedule/2026）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-11-17",
@@ -9485,7 +9822,17 @@
       "s": "Quad峰会",
       "note": "菲律宾马尼拉 · 日本内阁官房副长官 11-13 记者会称四国正安排于 11 月 17 日（周二）举行领导人会议，会后衔接东亚峰会；印度外交部 10-28 曾表述为 16—17 日，以日方最新表态为准 · 议题：经济安全、人工智能、关键供应链与印太安全 · 上次领导人峰会为 2024 年 9 月威尔明顿 · 来源：日本内阁官房 2026-11-13 / 印度外交部（MEA）2026-10-28",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        },
+        {
+          "t": "印度外交部",
+          "u": "https://www.mea.gov.in/"
+        }
+      ]
     },
     {
       "d": "2026-11-17",
@@ -9495,7 +9842,13 @@
       "s": "APEC工商峰会",
       "note": "中国深圳 · 与 APEC 第三十三次领导人非正式会议（11 月 18—19 日）同期 · 来源：APEC 官网 2026 年活动日程",
       "topic": "trade",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "APEC 官网",
+          "u": "https://www.apec.org/"
+        }
+      ]
     },
     {
       "d": "2026-11-18",
@@ -9505,7 +9858,13 @@
       "s": "FOMC纪要",
       "note": "对应 10 月 27—28 日议息会议 · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2026-11-18",
@@ -9514,7 +9873,13 @@
       "s": "行政休假规则生效",
       "note": "人事管理局（OPM）修订联邦雇员行政休假的适用情形，明确与延期辞职计划、机构人员重组等安排相关的使用条件，并界定行政休假期间的待遇处理 · 传导路径：改变联邦雇员行政休假的适用边界与成本承担，影响机构缩编与人员调整的执行方式 · 来源：联邦公报 2026-21320（2026-10-19 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21320",
+          "u": "https://www.federalregister.gov/d/2026-21320"
+        }
+      ]
     },
     {
       "d": "2026-11-18",
@@ -9523,7 +9888,13 @@
       "s": "绩管规则生效",
       "note": "人事管理局（OPM）与管理和预算办公室（OMB）联合发布最终规则，强化高级行政人员（SL）与科学专业岗位（ST）的绩效考评，新设专用于高级专业人员考评的子部分并与高级行政人员考评体系对齐 · 传导路径：改变联邦高级专业岗位的考评标准与晋升依据，影响相关人员的考核与任用节奏 · 来源：联邦公报 2026-21316（2026-10-19 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21316",
+          "u": "https://www.federalregister.gov/d/2026-21316"
+        }
+      ]
     },
     {
       "d": "2026-11-18",
@@ -9533,7 +9904,17 @@
       "note": "中国深圳 · 第三十三次 · 白宫 2026-11-13 公布行程：特朗普 11 月 18 日由马尼拉转抵深圳，19 日出席领导人非正式会议 · 配套会议：APEC 高官会（CSOM）11 月 14—15 日、工商领导人峰会 11 月 17—18 日，均在深圳 · 来源：APEC 官网 2026 年活动日程 / 白宫新闻办公室（White House Press Office）",
       "s": "APEC峰会",
       "topic": "trade",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "APEC 官网",
+          "u": "https://www.apec.org/"
+        },
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        }
+      ]
     },
     {
       "d": "2026-11-19",
@@ -9543,7 +9924,13 @@
       "s": "零售电商",
       "note": "普查局（Census）· 季度零售电商报告（Quarterly Retail E-Commerce Report）· 2026 年官方发布日程 · 10:00 美东时间 · 来源：普查局零售发布日程（census.gov/retail）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2026-11-19",
@@ -9552,7 +9939,13 @@
       "s": "中美元首会晤",
       "note": "中国深圳 · 白宫 2026-11-13 宣布特朗普当日与习近平举行双边会晤及工作午餐，为两人 2026 年第三次会面（5 月北京、9 月华盛顿之后）；美方称重点为贸易协议落实情况与稀土供应，出口管制不纳入谈判 · 来源：白宫新闻办公室（White House Press Office）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        }
+      ]
     },
     {
       "d": "2026-11-19",
@@ -9561,7 +9954,13 @@
       "s": "中美俄三方会",
       "note": "中国深圳 · 白宫 2026-11-13 宣布特朗普、习近平与普京将在 APEC 期间举行首次三方领导人会晤，美方称议题包括削减全球核武库与美伊冲突；特朗普此行不与普京单独举行双边会晤 · 来源：白宫新闻办公室（White House Press Office）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        }
+      ]
     },
     {
       "d": "2026-11-20",
@@ -9570,7 +9969,17 @@
       "s": "消音器管制转轨生效",
       "note": "华盛顿 · 国务院以临时终局规则把非自动与半自动枪械用消音器、抑制器移出《美国军品清单》（ITAR 第 I 类），商务部工业与安全局同步在《出口管理条例》与《商业管制清单》下对其设立出口管制，两份规则同日生效 · 传导路径：出口许可与最终用户申报义务由 ITAR 转入 EAR 体系，影响消音器出口商合规安排与执法口径 · 来源：联邦公报 2026-14943 / 2026-14942（91 FR 46279、91 FR 46252，2026-07-23 刊发）",
       "topic": "security",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-14943",
+          "u": "https://www.federalregister.gov/d/2026-14943"
+        },
+        {
+          "t": "联邦公报 2026-14942",
+          "u": "https://www.federalregister.gov/d/2026-14942"
+        }
+      ]
     },
     {
       "d": "2026-11-25",
@@ -9580,7 +9989,13 @@
       "s": "PCE",
       "note": "经济分析局（BEA）· 与三季度 GDP 二次估计同日公布",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-11-25",
@@ -9590,7 +10005,13 @@
       "s": "GDP修正值",
       "note": "BEA 2026 年发布日程，三季度 GDP 第二次估计值。来源：美国经济分析局（BEA）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-11-25",
@@ -9599,7 +10020,13 @@
       "s": "字幕规则生效",
       "note": "美国联邦通信委员会修订闭路字幕规则，对仅向豁免字幕要求的公共、教育与政府（PEG）频道提供节目的视频节目商，免除向委员会注册与提交字幕合规证明的义务；PEG 节目提供者在非豁免频道管理者不承担相关申报时亦免除申报义务 · 涉及 47 CFR 79.1 的两项条款生效日另行公告、暂缓执行 · 传导路径：减轻地方公共频道与有线运营商的合规负担，影响媒体运营成本结构 · 来源：联邦公报 2026-21808（2026-10-26 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21808",
+          "u": "https://www.federalregister.gov/d/2026-21808"
+        }
+      ]
     },
     {
       "d": "2026-11-25",
@@ -9608,7 +10035,13 @@
       "s": "核授权采认生效",
       "note": "美国核管理委员会修订规章，允许商用反应堆许可申请直接引用能源部或战争部此前对示范反应堆的授权，作为证明安全功能的额外途径，以提升许可审查效率 · 规则对接先进核能部署立法与第 14300 号行政令对 NRC 的改革要求 · 传导路径：缩短先进反应堆与小型模块化反应堆的许可周期，影响核能项目开发节奏与相关设备订单 · 来源：联邦公报 2026-21801（2026-10-26 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21801",
+          "u": "https://www.federalregister.gov/d/2026-21801"
+        }
+      ]
     },
     {
       "d": "2026-11-25",
@@ -9617,7 +10050,13 @@
       "s": "语音同意撤销生效",
       "note": "联邦通信委员会（FCC）修订规则，使消费者可以撤销不再愿意接收的骚扰电话同意，并为呼叫方提供清晰、简化的同意撤销处理流程，同时放宽撤销回执的时限要求 · 传导路径：抬高外呼营销的同意管理与撤销响应成本，影响呼叫中心、语音外呼与营销服务商的操作规范 · 来源：联邦公报 2026-21821（2026-10-26 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21821",
+          "u": "https://www.federalregister.gov/d/2026-21821"
+        }
+      ]
     },
     {
       "d": "2026-11-26",
@@ -9626,7 +10065,13 @@
       "note": "美股休市 · 次日 11 月 27 日（周五）13:00 提前收市 · 来源：NYSE 2026—2028 交易日历",
       "s": "感恩节",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2026-11-27",
@@ -9635,7 +10080,13 @@
       "s": "甲醛标准更新生效",
       "note": "环保署（EPA）发布最终规则，更新《有毒物质控制法》（TSCA）复合木制品甲醛标准中对自愿共识标准的援引，涉及检测方法与生产要求的修订 · 传导路径：影响复合木制品的检测认证与生产合规安排，作用于家具、建材与室内装饰产业链 · 来源：联邦公报 2026-21963（2026-10-28 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21963",
+          "u": "https://www.federalregister.gov/d/2026-21963"
+        }
+      ]
     },
     {
       "d": "2026-11-27",
@@ -9644,7 +10095,13 @@
       "s": "枪店雇员核查生效",
       "note": "司法部（DOJ）修订联邦枪支许可证持有人（FPL）相关规章，授权其对现任与拟任雇员自愿开展国家即时犯罪背景调查系统（NICS）核查 · 传导路径：扩大枪支经销商的雇员背景核查自主权限，影响经销商用工合规成本与销售系统接入安排 · 来源：联邦公报 2026-21920（2026-10-27 刊发）",
       "topic": "security",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21920",
+          "u": "https://www.federalregister.gov/d/2026-21920"
+        }
+      ]
     },
     {
       "d": "2026-11-27",
@@ -9654,7 +10111,13 @@
       "s": "提前收市",
       "note": "纽约 · 感恩节翌日，纽交所与纳斯达克提前收市，期权市场同步提前，债券市场按惯例提前收市 · 来源：纽约证券交易所（NYSE）2026 年交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2026-11-30",
@@ -9663,7 +10126,13 @@
       "s": "药价模型生效",
       "note": "CMS 最终规则设立 GLOBE 强制型 Medicare Part B 药品支付模型，以替代方法计算通胀返还款 · 传导路径：影响 Part B 药品定价、药企返还款规模与生物类似药竞争格局 · 来源：联邦公报 2026-20281（2026-10-02 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20281",
+          "u": "https://www.federalregister.gov/d/2026-20281"
+        }
+      ]
     },
     {
       "d": "2026-11-30",
@@ -9672,7 +10141,13 @@
       "s": "CAFE 标准生效",
       "note": "NHTSA 重校准 2022—2031 车型年乘用车与轻型卡车企业平均燃油经济性标准，撤销此前导致设计扭曲的条款 · 传导路径：影响车企产品组合、合规积分交易与电动车投放节奏 · 来源：联邦公报 2026-19964（2026-09-30 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-19964",
+          "u": "https://www.federalregister.gov/d/2026-19964"
+        }
+      ]
     },
     {
       "d": "2026-11-30",
@@ -9681,7 +10156,13 @@
       "s": "EB-5 费用生效",
       "note": "美国公民及移民局（USCIS）最终规则调整 EB-5 就业类移民的申请与请求费用，并将 2022 年《EB-5 改革与诚信法》的相关条款编入规章，11 月 30 日起适用 · 传导路径：改变投资移民的政府收费水平，影响相关基金设立成本与境外申请人节奏 · 来源：联邦公报 2026-20016（2026-09-30 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20016",
+          "u": "https://www.federalregister.gov/d/2026-20016"
+        }
+      ]
     },
     {
       "d": "2026-11-30",
@@ -9690,7 +10171,13 @@
       "s": "战略人力规则生效",
       "note": "人事管理局（OPM）发布最终规则，现代化联邦机构人事管理与战略人力资本管理框架，精简人力资本规划与报告要求、强化机构首席人力资本官（CHCO）权限并更新雇员分类 · 传导路径：改变联邦机构人力资本计划的申报口径与编制约束，影响机构编制规划与招聘节奏 · 来源：联邦公报 2026-22093（2026-10-29 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22093",
+          "u": "https://www.federalregister.gov/d/2026-22093"
+        }
+      ]
     },
     {
       "d": "2026-11-30",
@@ -9699,7 +10186,13 @@
       "s": "抚养执行减负生效",
       "note": "卫生与公众服务部（HHS）修订子女抚养费执行相关规章，删除州计划审批与批准、州计划要求、项目运行标准、联邦财政分担、绩效指标、计算机化执行系统与年度自我评估等章节中已无必要或已过时的规定 · 传导路径：降低州级子女抚养执行项目的联邦合规负担与系统改造要求，影响相关行政支出与执行标准 · 来源：联邦公报 2026-22116（2026-10-29 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22116",
+          "u": "https://www.federalregister.gov/d/2026-22116"
+        }
+      ]
     },
     {
       "d": "2026-12-01",
@@ -9708,7 +10201,13 @@
       "s": "资本缓冲规则生效",
       "note": "美联储最终规则修改资本计划规则与压力资本缓冲要求（SCB），改用历次预测 CET1 资本比率最大降幅的均值以降低 SCB 波动；影响大型银行资本释放节奏与信贷供给 · 来源：联邦公报 2026-20246（2026-10-02 刊发）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "联邦公报 2026-20246",
+          "u": "https://www.federalregister.gov/d/2026-20246"
+        }
+      ]
     },
     {
       "d": "2026-12-01",
@@ -9717,7 +10216,13 @@
       "s": "奖学金抵免生效",
       "note": "美国财政部与国税局发布联邦奖学金税收抵免临时规则，适用于 2027 及以后纳税年度作出的合格捐赠，明确各州选择参与的程序与组织获州认证后的资格要求，与同日发布的拟议规则配套 · 传导路径：使税收抵免自 2027 纳税年度起可实际适用，影响教育捐赠资金的组织形式与时点安排 · 来源：联邦公报 2026-20264（2026-10-02 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20264",
+          "u": "https://www.federalregister.gov/d/2026-20264"
+        }
+      ]
     },
     {
       "d": "2026-12-03",
@@ -9726,7 +10231,13 @@
       "s": "裁决程序简化生效",
       "note": "美国核管理委员会修订执业与程序规则，简化许可程序中的争议裁决，适用于生效日及之后公告受理的争议程序，以落实 2024 年 ADVANCE 法与第 14300 号行政令对 NRC 的改革要求 · 传导路径：压缩核设施许可的听证与抗辩环节，影响核电项目审批时限与建设进度 · 来源：联邦公报 2026-22443（2026-11-03 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22443",
+          "u": "https://www.federalregister.gov/d/2026-22443"
+        }
+      ]
     },
     {
       "d": "2026-12-03",
@@ -9735,7 +10246,13 @@
       "s": "多晶硅囤积令届满",
       "note": "华盛顿 · 商务部工业与安全局（BIS）依总统公告 11052 发布的临时终局规则，自 2026 年 9 月 22 日起施行至本日终止；该规则用于识别在进口调整生效前囤积多晶硅及其衍生品的企业，并规定新建进口商的囤积限制与进口禁止程序，次日 12 月 4 日最低进口价与 15% 从价税即行生效 · 传导路径：直接作用于多晶硅供应链的库存节奏与进口商准入 · 来源：联邦公报 2026-19537（91 FR 60505，2026-09-24 刊发）",
       "topic": "trade",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-19537",
+          "u": "https://www.federalregister.gov/d/2026-19537"
+        }
+      ]
     },
     {
       "d": "2026-12-04",
@@ -9745,7 +10262,13 @@
       "note": "劳工统计局（BLS）",
       "s": "非农",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-04",
@@ -9754,7 +10277,13 @@
       "s": "多晶硅关税生效",
       "note": "美国对进口多晶硅及衍生品实施最低进口价并加征 15% 从价税：多晶硅 21 美元/公斤、多晶硅锭与硅片 100 美元/公斤、太阳能电池 0.22 美元/瓦、组件 0.38 美元/瓦，同时取代 2026 年 2 月到期的太阳能电池与组件保障关税 · 依《1962 年贸易扩展法》第 232 条，公告认定多晶硅产能外移与库存高企削弱国防与半导体供应链；日、韩、台、瑞士、列支敦士登与欧盟产品合计税率不超过 15%，英国产品为 10% · 传导路径：抬升美国光伏组件与半导体级多晶硅的进口成本，影响公用事业级光伏项目造价与本土晶圆厂原料采购 · 来源：总统公告 11052（91 FR 51975，2026-08-11 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 51975",
+          "u": "https://www.federalregister.gov/citation/91-FR-51975"
+        }
+      ]
     },
     {
       "d": "2026-12-04",
@@ -9763,7 +10292,13 @@
       "s": "留置权移除生效",
       "note": "全国信用合作社管理局（NCUA）发布最终规则，删除联邦信用合作社规章中关于法定留置权（statutory lien）的授权条款，不再允许合作社以法定留置权对抗债务人 · 传导路径：收紧信用合作社的担保权益主张方式，影响合作社资产处置程序与会员债权实现路径 · 来源：联邦公报 2026-22536（2026-11-04 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22536",
+          "u": "https://www.federalregister.gov/d/2026-22536"
+        }
+      ]
     },
     {
       "d": "2026-12-05",
@@ -9772,7 +10307,13 @@
       "s": "药价谈判规则生效",
       "note": "华盛顿 · 美国医疗保险与 Medicaid 服务中心（CMS）最终规则把《2022 年通胀削减法》设立的联邦医疗保险药品价格谈判计划成文化，并为谈判计划与 D 部分处方药计划确立新政策，同时敲定特定固定复方新剂型药品的处理口径 · 传导路径：谈判价格的适用范围与 D 部分给付设计决定药企在美定价周期与品种布局 · 来源：联邦公报 2026-22792（91 FR 72176，2026-11-09 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22792",
+          "u": "https://www.federalregister.gov/d/2026-22792"
+        }
+      ]
     },
     {
       "d": "2026-12-07",
@@ -9781,7 +10322,13 @@
       "s": "药价透明度生效",
       "note": "美国财政部、劳工部与卫生与公众服务部联合发布最终规则，修订《公共卫生服务法》《雇员退休收入保障法》与税法下的价格透明度报告要求，提升非祖父条款团体健康计划及团体、个人健康保险发行人披露数据的标准化、准确性与可获取性 · 传导路径：增加保险公司与计划发起人的数据报送与系统改造负担，同时提高医疗服务价格的公开可比性 · 来源：联邦公报 2026-20447（2026-10-06 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20447",
+          "u": "https://www.federalregister.gov/d/2026-20447"
+        }
+      ]
     },
     {
       "d": "2026-12-07",
@@ -9790,7 +10337,13 @@
       "s": "暖风炉撤回生效",
       "note": "能源部（DOE）撤回依《能源政策与节约法》制定的商用暖风炉能效测试程序，即附录 B「商用暖风炉热效率二统一测试方法」，理由是该程序带来的代表性收益不确定 · 传导路径：商用暖风炉失去统一热效率测试方法，相关产品的合规测试与认证安排面临重做 · 来源：联邦公报 2026-20517（2026-10-07 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20517",
+          "u": "https://www.federalregister.gov/d/2026-20517"
+        }
+      ]
     },
     {
       "d": "2026-12-07",
@@ -9799,7 +10352,13 @@
       "s": "频谱共享规则生效",
       "note": "美国联邦通信委员会（FCC）航天局更新《卫星宽带频谱共享现代化》报告与命令采用的地球静止轨道卫星网络参考链路，使其反映美国境内该类卫星的典型与普遍运营情况 · 传导路径：影响卫星宽带与地面蜂窝网络共享频谱的技术条件与频谱使用申请口径 · 来源：联邦公报 2026-22600（91 FR 69725，2026-11-05 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22600",
+          "u": "https://www.federalregister.gov/d/2026-22600"
+        }
+      ]
     },
     {
       "d": "2026-12-07",
@@ -9808,7 +10367,13 @@
       "s": "WIC订购规则生效",
       "note": "华盛顿 · 农业部（USDA）食品与营养管理局（FNS）最终规则修订「妇女、婴儿与儿童特别补充营养计划」（WIC）的线上订购、交易与食品配送规定，配合 WIC 电子券系统现代化改造 · 传导路径：改变 WIC 参与商的电子订购与配送流程，影响食品零售与物流商户的合规安排 · 来源：联邦公报 2026-22679（91 FR 70250，2026-11-06 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22679",
+          "u": "https://www.federalregister.gov/d/2026-22679"
+        }
+      ]
     },
     {
       "d": "2026-12-08",
@@ -9818,7 +10383,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2026 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-12-08",
@@ -9829,7 +10400,13 @@
       "note": "决议于 12 月 9 日公布 · 含经济预测摘要（点阵图）",
       "s": "FOMC",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-10",
@@ -9839,7 +10416,13 @@
       "note": "劳工统计局（BLS）",
       "s": "CPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-10",
@@ -9848,7 +10431,13 @@
       "s": "MEXC 措施生效",
       "note": "华盛顿 · 金融犯罪执法网络（FinCEN）依《打击俄罗斯洗钱法》第 9714(a) 条认定在境外经营的加密货币交易所 MEXC Global 及其子公司、分支、办事处与继承实体为「主要洗钱关注金融机构」，禁止涉及该平台的特定资金传输 · 传导路径：涉及 MEXC 的美元清算与代理行通道收紧，影响加密资产交易平台的合规准入与跨境资金路径 · 来源：联邦公报 2026-22962（91 FR 72420，2026-11-10 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22962",
+          "u": "https://www.federalregister.gov/d/2026-22962"
+        }
+      ]
     },
     {
       "d": "2026-12-10",
@@ -9858,7 +10447,13 @@
       "s": "G20Sherpa会",
       "note": "美国迈阿密 · G20 领导人峰会前的筹备代表会议 · 来源：G20 官方网站 2026 年日程",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "G20 官网",
+          "u": "https://g20.org/"
+        }
+      ]
     },
     {
       "d": "2026-12-11",
@@ -9867,7 +10462,13 @@
       "s": "拨款截止",
       "note": "H.R.6500《2027 财年持续拨款与延期法》2026-09-02 签署生效，联邦政府资金维持至 12 月 11 日（参院 90-6、众院 370-48）· 届满前须通过全年拨款案或新 CR，否则再度停摆 · 跛脚鸭国会关键节点",
       "topic": "fiscal",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "国会拨款法案",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9876,7 +10477,13 @@
       "s": "TSCA 新规生效",
       "note": "EPA 重要新用途规则 26-1 生效，涉及光刻工艺用物质（P-25-106、P-25-107），已完全反应或附着于半导体晶圆表面的部分不适用 · 传导路径：半导体光刻材料新用途须提前 90 天申报，影响材料供应链合规安排 · 来源：联邦公报 2026-21051（2026-10-15 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21051",
+          "u": "https://www.federalregister.gov/d/2026-21051"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9885,7 +10492,13 @@
       "s": "应急计划延期生效",
       "note": "EPA 最终规则延长《清洁水法》危险物质设施应急计划合规日，并删除气候相关表述 · 传导路径：为化工、炼化与储运设施留出改造窗口，短期降低合规资本开支压力 · 来源：联邦公报 2026-20849（2026-10-13 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20849",
+          "u": "https://www.federalregister.gov/d/2026-20849"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9894,7 +10507,13 @@
       "s": "FMLA 修订生效",
       "note": "人事管理局（OPM）以直接终局规则修订《家庭与医疗休假法》（FMLA）规章，将几乎所有联邦文职人员及部分荣誉现役军人的服役期间计入离职年限认定，并明确年假与病假在 FMLA 资格计算中的处理方式；若 11 月 16 日前收到重大异议将撤回相关条款 · 传导路径：扩大 FMLA 资格认定范围，影响联邦雇员的休假计算、连续服务年限与雇佣留任成本 · 来源：联邦公报 2026-21104（2026-10-15 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21104",
+          "u": "https://www.federalregister.gov/d/2026-21104"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9903,7 +10522,13 @@
       "s": "食盐标准生效",
       "note": "食品药品监督管理局（FDA）最终规则修订以氯化钠为必需或可选成分的标准食品身份规定，允许在标准化食品中使用食盐替代品以降低钠含量，并对乳制品标准身份（21 CFR 131 与 133 部分）的相关修改设定异议截止日 11 月 12 日 · 传导路径：放宽低钠盐在标准化食品中的使用条件，影响食品企业的配方设计与标签合规 · 来源：联邦公报 2026-20848（2026-10-13 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20848",
+          "u": "https://www.federalregister.gov/d/2026-20848"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9912,7 +10537,13 @@
       "s": "住房援助核验生效",
       "note": "华盛顿 · 住房与城市发展部修订《1980 年住房与社区发展法》第 214 条实施细则，要求受资助住房项目的申请人及受助人不分年龄核验美国公民或合格移民身份，按比例援助改为身份核验完成前的临时安排 · 来源：美国住房与城市发展部（HUD）最终规则（91 FR 72978，2026-11-12 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72978",
+          "u": "https://www.federalregister.gov/citation/91-FR-72978"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9921,7 +10552,17 @@
       "s": "矿山规章废止生效",
       "note": "阿灵顿 · 劳工部矿山安全与健康管理局一次性废止五项地下矿山安全规章，涉及矿灯重复要求、金属与非金属矿柴油颗粒物个体暴露限值、泡沫发生器系统安装、水位以上煤层电气设备与矿柱回采 · 来源：美国劳工部矿山安全与健康管理局（MSHA）91 FR 72781、72784、72787、72790、72793（2026-11-12 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72781",
+          "u": "https://www.federalregister.gov/citation/91-FR-72781"
+        },
+        {
+          "t": "劳工部新闻",
+          "u": "https://www.dol.gov/newsroom"
+        }
+      ]
     },
     {
       "d": "2026-12-14",
@@ -9931,7 +10572,17 @@
       "note": "美国迈阿密 Trump National Doral · 第 21 届 G20 领导人峰会 · 特朗普主办 · 特朗普与习近平预计在此再次会晤 · 来源：G20 官网日程 g20.org / 美国国务院（2025-12-18）",
       "s": "G20峰会",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "G20 官网",
+          "u": "https://g20.org/"
+        },
+        {
+          "t": "国务院",
+          "u": "https://www.state.gov/"
+        }
+      ]
     },
     {
       "d": "2026-12-15",
@@ -9941,7 +10592,13 @@
       "note": "劳工统计局（BLS）",
       "s": "PPI",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-16",
@@ -9951,7 +10608,13 @@
       "s": "零售销售",
       "note": "普查局（Census）· 假日购物季首轮官方数据",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2026-12-16",
@@ -9961,7 +10624,13 @@
       "s": "雇主薪酬成本",
       "note": "劳工统计局（BLS）· 雇主雇员薪酬成本年度调查（Employer Costs for Employee Compensation，ECEC），参考期为 2026 年 9 月 · 10:00 美东时间发布 · 与季度就业成本指数（ECI，08:30 发布）为不同序列 · 来源：BLS 官方发布日程（bls.gov/schedule/2026）",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-17",
@@ -9971,7 +10640,13 @@
       "s": "进出口价格",
       "note": "劳工统计局（BLS）· 08:30 美东时间 · 来源：BLS 官方发布日程（bls.gov/schedule/2026）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-18",
@@ -9981,7 +10656,13 @@
       "s": "国际收支",
       "note": "含三季度经常账户余额与期末国际投资头寸，BEA 官网标注 Next Release: December 18, 2026。来源：美国经济分析局（BEA）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-12-21",
@@ -9990,7 +10671,13 @@
       "s": "核材料豁免生效",
       "note": "核管会（NRC）以直接终局规则修订副产品材料、源材料与特殊核材料的相关规章，扩大特定核材料在无须取得许可证情形下的使用范围，属放松监管性质的修订 · 传导路径：降低部分核材料的许可门槛，影响核材料使用主体的合规义务与申报安排 · 来源：联邦公报 2026-20336（2026-10-05 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20336",
+          "u": "https://www.federalregister.gov/d/2026-20336"
+        }
+      ]
     },
     {
       "d": "2026-12-23",
@@ -10000,7 +10687,13 @@
       "s": "PCE",
       "note": "经济分析局（BEA）· 与三季度 GDP 终值同日公布",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-12-23",
@@ -10010,7 +10703,13 @@
       "s": "GDP终值",
       "note": "与 11 月个人收入与支出（PCE）报告同日发布，为 2026 年最后一次 GDP 发布。来源：美国经济分析局（BEA）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2026-12-24",
@@ -10020,7 +10719,13 @@
       "s": "提前收市",
       "note": "纽约 · 圣诞前夜，纽交所与纳斯达克提前收市，期权市场同步提前；次日圣诞节全天休市 · 来源：纽约证券交易所（NYSE）2026 年交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2026-12-25",
@@ -10029,7 +10734,13 @@
       "note": "美股休市 · 前一日 12 月 24 日（周四）13:00 提前收市 · 来源：NYSE 2026—2028 交易日历",
       "s": "圣诞节",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2026-12-28",
@@ -10038,7 +10749,13 @@
       "s": "AP1000 续期生效",
       "note": "核管会（NRC）批准西屋公司 AP1000 机组设计认证续期，并纳入 AP1000 设计控制文件第 20 版，使设计基线与 Vogtle 3、4 号机组建设运行中的实际变更保持一致；若 11 月 13 日前收到重大异议将撤回 · 传导路径：延长 AP1000 机型在美销售与部署的许可基础，影响核电设备订单与新建项目推进 · 来源：联邦公报 2026-21030（2026-10-14 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21030",
+          "u": "https://www.federalregister.gov/d/2026-21030"
+        }
+      ]
     },
     {
       "d": "2026-12-28",
@@ -10047,7 +10764,13 @@
       "s": "医疗IT去监管生效",
       "note": "卫生与公众服务部（HHS）下属国家卫生信息技术协调办公室（ONC）发布最终规则，就健康信息技术标准、实施规范与认证标准及认证项目采取去监管措施，通过取消与修订部分认证要求减轻开发方与提供方负担，其中三项修订性指令自 2027 年 1 月 1 日起生效 · 传导路径：放宽健康信息技术产品的认证门槛，影响医疗信息化厂商的合规成本与产品上市节奏 · 来源：联邦公报 2026-21943（2026-10-28 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21943",
+          "u": "https://www.federalregister.gov/d/2026-21943"
+        }
+      ]
     },
     {
       "d": "2026-12-28",
@@ -10056,7 +10779,13 @@
       "s": "农宅ADU条款生效",
       "note": "农业部（USDA）农村住房服务局（RHS）修订单户住宅担保贷款计划（SFHGLP）规章，允许为附带产生收入用途的附属住宅单元（ADU）的单户住宅提供融资，并明确适配居家经营类设施的房产资格条件 · 传导路径：扩大农宅抵押融资的可承保范围，影响农村住房供给与家庭农场附属经营用房建设 · 来源：联邦公报 2026-22038（2026-10-29 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22038",
+          "u": "https://www.federalregister.gov/d/2026-22038"
+        }
+      ]
     },
     {
       "d": "2026-12-28",
@@ -10065,7 +10794,21 @@
       "s": "反歧视规定废止生效",
       "note": "美国能源部（DOE）再次延后 2025 年 5 月 16 日三份直接终局规则的生效日，联邦资助项目与活动中新建工程、通用规定及性别歧视条款的废止安排统一延至 12 月 28 日 · 传导路径：DOE 资助接受方的合规义务与申诉处理流程随之变动，影响受资助项目的用工与采购管理 · 来源：联邦公报 2026-13347 / 2026-13305 / 2026-13304（91 FR 39850、91 FR 39851，2026-07-01 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-13347",
+          "u": "https://www.federalregister.gov/d/2026-13347"
+        },
+        {
+          "t": "联邦公报 2026-13305",
+          "u": "https://www.federalregister.gov/d/2026-13305"
+        },
+        {
+          "t": "联邦公报 2026-13304",
+          "u": "https://www.federalregister.gov/d/2026-13304"
+        }
+      ]
     },
     {
       "d": "2026-12-29",
@@ -10074,7 +10817,13 @@
       "s": "车库门标准生效",
       "note": "消费品安全委员会（CPSC）以直接终局规则修订自动式住宅车库门操作器安全标准，纳入 UL 325 标准的夹手防护条款修订；若 11 月 30 日前收到重大异议将在生效前撤回并另行公告 · 传导路径：抬高车库门与开门机制造商的强制安全标准与测试认证要求，作用于建材安装与产品准入环节 · 来源：联邦公报 2026-22213（2026-10-30 刊发）",
       "topic": "security",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22213",
+          "u": "https://www.federalregister.gov/d/2026-22213"
+        }
+      ]
     },
     {
       "d": "2026-12-30",
@@ -10084,7 +10833,13 @@
       "s": "FOMC纪要",
       "note": "对应 12 月 8—9 日议息会议（含经济预测摘要）· 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2026-12-31",
@@ -10093,7 +10848,13 @@
       "s": "EXIM 授权届满",
       "note": "美国华盛顿 · 进出口银行（EXIM）的一般法定授权依 12 U.S.C. § 635f 于 2026 年 12 月 31 日营业结束时届满，中国与转型出口计划（CTEP）依 12 U.S.C. § 635(l)(3)(C) 同日到期，未经国会重新授权则无法批准新交易 · 传导路径：涉及人工智能、半导体、5G 与量子计算的出口信贷工具在 2027 年初面临中断风险，影响关键矿产与出口项目融资安排 · 来源：美国国会研究服务处（CRS）IF10017（2026-08-20 更新）",
       "topic": "fiscal",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2026-12-31",
@@ -10102,7 +10863,21 @@
       "s": "柴油税收减免到期",
       "note": "美国 · 第 14435 号行政命令（EO 14435）授权财政部依 26 U.S.C. § 7508A 递延 2026 年 10 月 5 日至 12 月 31 日期间依 26 U.S.C. § 4041 征收的柴油燃油消费税并免于罚息，国税局对染化柴油的免罚期同步至 12 月 31 日 · 传导路径：减免期届满后车队与农业用油主体的燃油税负恢复，影响公路运输、农产品运输与农机作业成本 · 来源：白宫第 14435 号行政命令（EO 14435）/ 联邦公报 91 FR 64747（2026-10-09 刊发）/ 美国国税局（IRS）2026-10-14 公告",
       "topic": "fiscal",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 64747",
+          "u": "https://www.federalregister.gov/citation/91-FR-64747"
+        },
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        },
+        {
+          "t": "IRS 新闻室",
+          "u": "https://www.irs.gov/newsroom"
+        }
+      ]
     },
     {
       "d": "2026-12-31",
@@ -10111,7 +10886,13 @@
       "s": "后量子迁移期限",
       "note": "华盛顿 · 总统 2026 年 6 月 22 日签署行政令，要求商务部通过国家标准与技术研究院（NIST）在其部分信息系统中启动后量子密码迁移试点并于 2027 年 12 月 31 日前完成；命令另要求高价值资产系统于 2030 年 12 月 31 日前完成密钥建立迁移、2031 年 12 月 31 日前完成数字签名迁移 · 传导路径：为美国联邦信息系统后量子密码改造设定时间表 · 来源：联邦公报 2026-12909（91 FR 38483，2026-06-25 刊发）",
       "topic": "tech",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-12909",
+          "u": "https://www.federalregister.gov/d/2026-12909"
+        }
+      ]
     },
     {
       "d": "2026-12-31",
@@ -10120,7 +10901,13 @@
       "s": "IC设计者申请截止",
       "note": "华盛顿 · 商务部工业与安全局（BIS）修订《出口管理条例》补充清单第 774 部分 ECCN 3A090 注 1，把「授权集成电路设计者」身份的触发日期与申请成为「获批集成电路设计者」的截止日延至本日；逾截止日受理的申请仍可被视作授权设计者 180 日 · 传导路径：影响无晶圆厂企业取得半导体出口许可资格的时间窗口 · 来源：联邦公报 2026-06851（91 FR 17851，2026-04-09 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-06851",
+          "u": "https://www.federalregister.gov/d/2026-06851"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10129,7 +10916,17 @@
       "s": "元旦",
       "note": "美股休市（纽交所/纳斯达克休市） · 来源：OPM 联邦假日安排（holidays.ics）/ NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10138,7 +10935,13 @@
       "s": "医保支付规则生效",
       "note": "美国医疗保险与 Medicaid 服务中心（CMS）发布 2027 日历年度 Medicare 支付规则，涵盖终末期肾病（ESRD）前瞻付费制度、急性肾损伤等年度费率调整，2027 年 1 月 1 日起施行 · 传导路径：直接决定医疗机构相关服务的报销价格，影响美国医院与透析服务企业的盈利水平及医疗板块定价 · 来源：联邦公报 2026-22194（2026-10-30 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22194",
+          "u": "https://www.federalregister.gov/d/2026-22194"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10147,7 +10950,13 @@
       "s": "G7主席国",
       "note": "美国 · 美国自 2027 年 1 月 1 日起接任 G7 主席国（法国 2026 年主席任期届满），财政部与美联储共同承办财长与央行行长轨 · 美方文件称主席国任期持续至 2027 年 12 月该届 G7 峰会，但峰会日期与举办地尚未由美方公布：主席国网站称 6 月 12 日至 14 日却通篇不写主办国与城市，其他来源记为日期待定，本条只取已确认的接任日 · 传导路径：2027 年美国在 G20 之后连续主持 G7，关税与出口管制协调、关键矿产联盟与人工智能治理等议题的议程权重上升 · 来源：美国财政部 G7 财长轨采购公告（SAM.gov）",
       "topic": "money",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10156,7 +10965,13 @@
       "s": "木材关税上调",
       "note": "美国将软包家具关税由 25% 上调至 30%、厨房橱柜与盥洗台由 25% 上调至 50%，适用于 2025 年 9 月第 232 条木材与木制品措施原定 2026 年 1 月 1 日提税、经修订推迟一年后的新时点 · 与美方达成协议的国家可按协议税率执行，其余国家适用上调后税率 · 传导路径：抬升家居、建材与装修相关进口成本，影响家具零售商采购结构与住宅建筑成本 · 来源：总统公告 11000（91 FR 1039，2026-01-09 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 1039",
+          "u": "https://www.federalregister.gov/citation/91-FR-1039"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10165,7 +10980,13 @@
       "s": "国防豁免终止",
       "note": "华盛顿 · 总统 2026 年 7 月 20 日签署行政令，要求自 2027 年 1 月 1 日起战争部长与各军种部长停止依据《国防生产法》10 U.S.C. § 4872 签发豁免，并每六个月向总统国家安全事务助理提交报告至 2028 年 1 月 1 日 · 传导路径：国防工业基础材料的采购豁免通道收紧，影响供应商准入与关键矿产保障安排 · 来源：联邦公报 2026-15003（91 FR 46693，2026-07-23 刊发）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-15003",
+          "u": "https://www.federalregister.gov/d/2026-15003"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10174,7 +10995,13 @@
       "s": "门诊支付规则生效",
       "note": "华盛顿 · 美国医疗保险与 Medicaid 服务中心（CMS）发布 2027 日历年度医院门诊预期支付制度与门诊手术中心支付制度最终规则及质量报告项目修订，自 2027 年 1 月 1 日起适用 · 传导路径：调整医院门诊与门诊手术中心的 Medicare 支付费率与质量报告口径，影响医疗机构收入结构与服务组合 · 来源：联邦公报 2026-22739（91 FR 70284，2026-11-06 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22739",
+          "u": "https://www.federalregister.gov/d/2026-22739"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10183,7 +11010,13 @@
       "s": "医师费用表生效",
       "note": "华盛顿 · 美国医疗保险与 Medicaid 服务中心（CMS）发布 2027 日历年度医师费用表与 B 部分支付政策最终规则，涵盖相对价值尺度调整、B 部分药品与生物制品支付、共享节约计划与质量支付计划要求，并把《2022 年通胀削减法》处方药通胀返款计划成文化 · 传导路径：医师服务与 B 部分药品的支付标准决定门诊服务收入与药企返款规模 · 来源：联邦公报 2026-22743（91 FR 70992，2026-11-09 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22743",
+          "u": "https://www.federalregister.gov/d/2026-22743"
+        }
+      ]
     },
     {
       "d": "2027-01-01",
@@ -10192,7 +11025,13 @@
       "s": "AGOA 待遇失效",
       "note": "华盛顿 · 特朗普总统 2026 年 11 月 2 日通知国会及卢旺达、南非政府，拟自 2027 年 1 月 1 日起终止两国在《非洲增长与机遇法案》（AGOA）项下的贸易优惠待遇，认定理由包括贸易与投资壁垒、法治、政治多元化、劳工权利及对美国国家安全与外交利益的威胁 · 传导路径：两国对美出口的免税准入终止，影响纺织、农产品与矿产出口商及在非美企的采购安排 · 来源：美国贸易代表办公室（USTR）声明（2026-11-02）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-01-03",
@@ -10201,7 +11040,13 @@
       "s": "新国会开幕",
       "note": "美国华盛顿 · 中期选举后新一届国会议员宣誓就职并选举众议院议长，民主党取得两院控制权，杰弗里斯将出任首位非裔众议长、舒默出任参议院多数党领袖 · 来源：《宪法》第二十修正案第二条 / 美联社计票测算（2026-11-04）",
       "topic": "election",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "美联社",
+          "u": "https://apnews.com/"
+        }
+      ]
     },
     {
       "d": "2027-01-04",
@@ -10210,7 +11055,13 @@
       "s": "PBM 披露生效",
       "note": "劳工部最终规则要求 PBM 及关联经纪咨询机构向大型自保团体健康计划受托人披露薪酬信息，适用于 2027 年 7 月 1 日及以后开始的计划年度 · 传导路径：提高 PBM 收费透明度，影响雇主医疗成本与 PBM 合约定价 · 来源：联邦公报 2026-22306（2026-11-02 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22306",
+          "u": "https://www.federalregister.gov/d/2026-22306"
+        }
+      ]
     },
     {
       "d": "2027-01-04",
@@ -10219,7 +11070,13 @@
       "s": "器官覆盖修订生效",
       "note": "美国医疗保险和医疗补助服务中心修订器官获取组织（OPO）的覆盖条件，厘清遗留程序问题、增加运营灵活性，并修订定义、指定要求、服务区域开放竞争的条件与申诉流程 · 传导路径：改变 OPO 的指定与再指定竞争格局，影响器官获取与移植服务供给及相关支付安排 · 来源：联邦公报 2026-22381（2026-11-03 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22381",
+          "u": "https://www.federalregister.gov/d/2026-22381"
+        }
+      ]
     },
     {
       "d": "2027-01-04",
@@ -10228,7 +11085,13 @@
       "s": "残障规则修订生效",
       "note": "美国卫生与公众服务部修订《1973 年康复法》第 504 条实施规章，明确对「非身体损伤所致性别认同障碍」这一法定排除项的解释，适用于接受 HHS 资助的项目与活动，修订 2024 年 5 月发布的同名最终规则 · 传导路径：改变医疗机构、教育机构与州政府受资助项目的合规义务，影响其政策调整与联邦资金资格 · 来源：联邦公报 2026-22380（2026-11-03 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22380",
+          "u": "https://www.federalregister.gov/d/2026-22380"
+        }
+      ]
     },
     {
       "d": "2027-01-04",
@@ -10237,7 +11100,13 @@
       "s": "化学品新规生效",
       "note": "环保署（EPA）依《有毒物质控制法》就特定化学品发布重要新用途规则，要求制造或在进口、加工前至少 90 日向 EPA 报送 · 传导路径：新增受限化学品的生产与进口须提前申报合规，影响相关材料供应链与研发项目时间表 · 来源：联邦公报 2026-22576（91 FR 69704，2026-11-05 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22576",
+          "u": "https://www.federalregister.gov/d/2026-22576"
+        }
+      ]
     },
     {
       "d": "2027-01-05",
@@ -10246,7 +11115,13 @@
       "s": "飞机谈判期限",
       "note": "美国商务部与贸易代表须在公告签署后 180 日内向总统提交与外国贸易伙伴谈判进展的更新，谈判内容为商用飞机、喷气发动机及零部件的进口限制安排；若未达成协议、协议未执行或无效，总统可依 19 U.S.C. 1862(c)(3)(A) 采取进一步进口调整措施 · 公告于 2026 年 7 月 9 日签署，报告期限即 2027 年 1 月 5 日 · 传导路径：结果决定进口商用飞机与航发是否加征关税，影响航空制造供应链与航司采购成本 · 来源：总统公告 11040（91 FR 43507，2026-07-15 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 43507",
+          "u": "https://www.federalregister.gov/citation/91-FR-43507"
+        }
+      ]
     },
     {
       "d": "2027-01-05",
@@ -10255,7 +11130,13 @@
       "s": "进口商合规生效",
       "note": "华盛顿 · 美国海关与边境保护局（CBP）临时终局规则对外国进口记录人提出强化要求并修订 19 CFR 第 111 章，自 2027 年 1 月 5 日生效；报关行可在此前申请延迟合规，全体报关行最迟须于 2027 年 5 月 6 日全面合规 · 传导路径：抬高境外卖家委托申报的记录人责任与信息留存要求，影响跨境电商与进口代理链条 · 来源：联邦公报 2026-22735（91 FR 69977，2026-11-06 刊发）",
       "topic": "trade",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22735",
+          "u": "https://www.federalregister.gov/d/2026-22735"
+        }
+      ]
     },
     {
       "d": "2027-01-05",
@@ -10264,7 +11145,13 @@
       "s": "学徒反歧视生效",
       "note": "华盛顿 · 劳工部（Department of Labor）最终规则禁止在注册学徒计划中实施非法歧视，自 2027 年 1 月 5 日起生效 · 传导路径：统一注册学徒计划的反歧视合规口径，影响雇主学徒项目的招录与赞助资格 · 来源：联邦公报 2026-22680（91 FR 70164，2026-11-06 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22680",
+          "u": "https://www.federalregister.gov/d/2026-22680"
+        }
+      ]
     },
     {
       "d": "2027-01-07",
@@ -10274,7 +11161,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-01-08",
@@ -10284,7 +11177,13 @@
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "s": "非农",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-01-09",
@@ -10293,7 +11192,17 @@
       "s": "301 关税暂停届满",
       "note": "华盛顿 · 美国贸易代表办公室 2026 年 11 月 10 日公告确认将针对中国海事、物流与造船行业的 301 条款行动再暂停两个月，至 2027 年 1 月 9 日；本轮暂停自 2025 年 11 月 10 日起算，原定 2026 年 11 月 9 日届满，经 2026 年 10 月 23 日提议并完成意见程序后延长 · 传导路径：直接影响中国造船与港口设备企业对美出口，及航运板块订单预期 · 来源：美国贸易代表办公室（USTR）公告（91 FR 72608，2026-11-10 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72608",
+          "u": "https://www.federalregister.gov/citation/91-FR-72608"
+        },
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-01-09",
@@ -10302,7 +11211,17 @@
       "s": "301 豁免届满",
       "note": "华盛顿 · 美国贸易代表办公室 2026 年 11 月 10 日公告将 178 项中国输美产品排除措施延长至 2027 年 1 月 9 日，到期后清单内商品恢复 7.5% 至 25% 的附加关税；清单以泵类部件、电子元件、电机、医疗用品与太阳能制造设备等中间品及资本品为主，不含家电与消费电子整机 · 传导路径：相关中间品对美出口成本回升，影响电子、医疗与光伏设备供应链报价 · 来源：美国贸易代表办公室（USTR）公告（91 FR 72610，2026-11-10 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72610",
+          "u": "https://www.federalregister.gov/citation/91-FR-72610"
+        },
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-01-10",
@@ -10311,7 +11230,21 @@
       "note": "吉隆坡经贸磋商联合安排的暂停期届满（原定 2026-11-10，第八轮磋商延至 2027-01-10）· 美方 2026 年 11 月 9—10 日将 178 项 301 关税豁免与海事、物流及造船 301 行动暂停期延至 2027 年 1 月 9 日，中方 2026 年 11 月 9 日公告将对美加征关税暂停措施同步续期至 2027 年 1 月 10 日，双方时点衔接 · 同批成果：设立中美贸易理事会与投资理事会、成立农业工作组（首次会议拟于 2026 年底前举行）、建立人工智能对话（下一轮拟于 2026 年 11 月底前举行）· 来源：美国贸易代表办公室（USTR）公告（91 FR 72608、91 FR 72610）/ 中国商务部公告（2026-11-09）",
       "s": "关税休战到期",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72608",
+          "u": "https://www.federalregister.gov/citation/91-FR-72608"
+        },
+        {
+          "t": "联邦公报 91 FR 72610",
+          "u": "https://www.federalregister.gov/citation/91-FR-72610"
+        },
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-01-11",
@@ -10320,7 +11253,13 @@
       "s": "BIS关联方规则恢复",
       "note": "华盛顿 · 商务部工业与安全局（BIS）把「扩大终端用户管制至部分列名实体关联方」临时终局规则的暂停期由 2026 年 11 月 9 日延长至 2027 年 1 月 10 日（含当日），本日为恢复实施首日；该规则 2025 年 9 月 30 日刊发、2025 年 11 月 12 日经终局规则暂停一年，届时第一阶段的《出口管理条例》条款加回，关联方许可要求重新实施 · 传导路径：关联方 50% 股权穿透的许可约束恢复，直接影响对华半导体与先进计算物项的出口合规与供应链尽调 · 来源：联邦公报 2026-22793（91 FR 70789，2026-11-09 刊发）",
       "topic": "security",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22793",
+          "u": "https://www.federalregister.gov/d/2026-22793"
+        }
+      ]
     },
     {
       "d": "2027-01-11",
@@ -10329,7 +11268,17 @@
       "s": "电视所有权上限废止",
       "note": "华盛顿 · 联邦通信委员会废止全国电视所有权上限，原规则禁止商业电视台持有合计覆盖全国逾 39% 受众的电视台的可认知利益；委员会认定流媒体竞争已使该上限失去事实基础 · 来源：美国联邦通信委员会（FCC）最终规则（91 FR 72799，2026-11-12 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72799",
+          "u": "https://www.federalregister.gov/citation/91-FR-72799"
+        },
+        {
+          "t": "FCC 新闻",
+          "u": "https://www.fcc.gov/news-events"
+        }
+      ]
     },
     {
       "d": "2027-01-11",
@@ -10338,7 +11287,21 @@
       "s": "色素溶剂撤销生效",
       "note": "银泉 · 食品药品监督管理局依据《联邦食品、药品与化妆品法》Delaney 条款部分批准两份着色剂申请，撤销二氯乙烷、二氯甲烷与三氯乙烯作为着色剂溶剂的使用许可；若收到合规异议，相关条款可能延迟或中止生效 · 来源：美国食品药品监督管理局（FDA）91 FR 72410 与 91 FR 72413（2026-11-10 刊发）",
       "topic": "growth",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72410",
+          "u": "https://www.federalregister.gov/citation/91-FR-72410"
+        },
+        {
+          "t": "联邦公报 91 FR 72413",
+          "u": "https://www.federalregister.gov/citation/91-FR-72413"
+        },
+        {
+          "t": "FDA 新闻",
+          "u": "https://www.fda.gov/news-events"
+        }
+      ]
     },
     {
       "d": "2027-01-13",
@@ -10348,7 +11311,13 @@
       "s": "12月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-01-14",
@@ -10358,7 +11327,13 @@
       "s": "12月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-01-15",
@@ -10368,7 +11343,13 @@
       "s": "进出口价格",
       "note": "来源：美国劳工统计局（BLS）2027 年 1 月发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-01-15",
@@ -10378,7 +11359,13 @@
       "s": "12月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-01-15",
@@ -10387,7 +11374,13 @@
       "s": "红 3 号撤销生效",
       "note": "食品药品监督管理局（FDA）解除 2025 年 2 月 18 日异议程序造成的行政中止，确认 2025 年 1 月 16 日发布的着色剂申请（3C0323）命令生效，即撤销允许 FD&C 红 3 号在食品中安全使用的规定，并确认 2027 年 1 月 15 日与 2028 年 1 月 18 日两个生效日 · 传导路径：食品与药品配料企业须在生效日前完成配方与标签调整 · 来源：联邦公报 2026-15920（91 FR 50475，2026-08-05 刊发）",
       "topic": "growth",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-15920",
+          "u": "https://www.federalregister.gov/d/2026-15920"
+        }
+      ]
     },
     {
       "d": "2027-01-18",
@@ -10396,7 +11389,17 @@
       "s": "MLK 纪念日",
       "note": "美股休市（纽交所/纳斯达克休市） · 来源：OPM 联邦假日安排（holidays.ics）/ NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-01-18",
@@ -10405,7 +11408,13 @@
       "s": "稳定币规则生效",
       "note": "货币监理署（OCC）发布《GENIUS 稳定币法》实施规则，就受其监管实体发行支付型稳定币及相关活动作出规定 · 传导路径：稳定币储备、赎回与托管要求将影响加密资产市场结构、商业银行负债端成本与支付清算格局 · 来源：联邦公报 2026-21706（2026-10-23 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21706",
+          "u": "https://www.federalregister.gov/d/2026-21706"
+        }
+      ]
     },
     {
       "d": "2027-01-18",
@@ -10415,7 +11424,13 @@
       "s": "达沃斯论坛",
       "note": "瑞士达沃斯 · 第 57 届年会",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "WEF 活动",
+          "u": "https://www.weforum.org/events"
+        }
+      ]
     },
     {
       "d": "2027-01-19",
@@ -10424,7 +11439,13 @@
       "s": "晋升限制取消生效",
       "note": "人事管理局（OPM）取消《联邦职位分类制度》（GS）竞争性职位晋升中的职级停留年限（TIG）限制，此前候选人通常须先在低一职级岗位满 52 周方可晋升至 GS-6 及以上职位 · 传导路径：放宽联邦雇员内部晋升条件，影响机构招聘配置、晋升节奏与关键岗位留任 · 来源：联邦公报 2026-21319（2026-10-19 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21319",
+          "u": "https://www.federalregister.gov/d/2026-21319"
+        }
+      ]
     },
     {
       "d": "2027-01-20",
@@ -10433,7 +11454,13 @@
       "s": "邮政小额合规延期",
       "note": "华盛顿 · 美国海关与边境保护局（CBP）2026 年 6 月 24 日生效的「无限期暂停邮政货物小额豁免」规则建立新的邮政非正式报关程序，本规则将 19 CFR 145.12(a)(2)(v) 与 (vi) 项下须正式报关的合规期限延至 2027 年 1 月 20 日 · 传导路径：跨境直邮小额包裹的正式报关义务再度后延，影响美国电商进口与邮政渠道 · 来源：联邦公报 2026-21600（91 FR 66638，2026-10-22 刊发）",
       "topic": "trade",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21600",
+          "u": "https://www.federalregister.gov/d/2026-21600"
+        }
+      ]
     },
     {
       "d": "2027-01-26",
@@ -10444,7 +11471,13 @@
       "s": "FOMC",
       "note": "决议于 1 月 27 日公布 · 会后主席记者会 14:30",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-01-28",
@@ -10454,7 +11487,13 @@
       "s": "GDP初值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程· 同时公布 2026 年全年 GDP 初值",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-01-28",
@@ -10464,7 +11503,13 @@
       "s": "12月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-01-29",
@@ -10474,7 +11519,13 @@
       "s": "就业成本指数",
       "note": "来源：美国劳工统计局（BLS）2027 年 1 月发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-01",
@@ -10483,7 +11534,13 @@
       "s": "预算案提交",
       "note": "按 31 U.S.C. § 1105(a)，总统须在每年 1 月第一个周一之后、2 月第一个周一之前向国会提交下一财年预算，2027 年 2 月第一个周一为 2 月 1 日 · 该法定日无逾期后果，实务中总统常晚于该日提交 · 传导路径：预算案是国会审议 2028 财年预算决议与拨款案的起点，影响联邦支出预期、国防与基建板块订单能见度及国债供给节奏 · 来源：31 U.S.C. § 1105(a) / 国会研究服务处（CRS）报告 R47235",
       "topic": "fiscal",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2027-02-01",
@@ -10492,7 +11549,13 @@
       "s": "航空延误分类生效",
       "note": "交通部（DOT）将依《2024 年 FAA 再授权法》第 511(b) 条制定航空延误与取消原因分类的最终规则生效日，由 2026 年 9 月 3 日公布之日起延至 2 月 1 日 · 传导路径：航空公司与承运人须按统一分类口径报送延误与取消原因，影响航班正常率披露与运营报表口径 · 来源：联邦公报 2026-21058（91 FR 65456，2026-10-15 刊发）",
       "topic": "growth",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-21058",
+          "u": "https://www.federalregister.gov/d/2026-21058"
+        }
+      ]
     },
     {
       "d": "2027-02-01",
@@ -10501,7 +11564,13 @@
       "s": "经纪注册禁令届满",
       "note": "华盛顿 · 美国医疗保险与 Medicaid 服务中心（CMS）对未持当期联邦便利交易所注册资格的保险代理人与经纪商实施注册临时禁令，禁令自 2026 年 9 月 22 日起施行、本日届满，除非 CMS 提前解除 · 传导路径：决定代理人能否进入 2027 计划年度联邦医疗保险市场展销，影响承保结构与费率竞争 · 来源：联邦公报 2026-19493（91 FR 60317，2026-09-23 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-19493",
+          "u": "https://www.federalregister.gov/d/2026-19493"
+        }
+      ]
     },
     {
       "d": "2027-02-04",
@@ -10511,7 +11580,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 含 2026 年全年数据 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-02-04",
@@ -10520,7 +11595,13 @@
       "s": "非临床术语生效",
       "note": "食品药品监督管理局（FDA）以直接终局规则把法规中「动物试验」「动物研究」的表述改为「非临床试验」「非临床研究」并新增术语定义，同步调整安全性与报告章节的相应引用；若在 12 月 7 日前收到重大异议，FDA 将在意见期结束后 30 日内撤回该规则 · 传导路径：统一申报文本与审评口径，影响药品与生物制品非临床研究资料的提交形式 · 来源：联邦公报 2026-19350（91 FR 59988，2026-09-22 刊发）",
       "topic": "growth",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-19350",
+          "u": "https://www.federalregister.gov/d/2026-19350"
+        }
+      ]
     },
     {
       "d": "2027-02-04",
@@ -10529,7 +11610,13 @@
       "s": "小企业定义生效",
       "note": "华盛顿 · 美国证券交易委员会（SEC）修订《1940 年投资公司法》规则 0-10、0-7 与《投资顾问法》规则 203-3 及 Form ADV，把用于《弹性监管法》（RFA）分析的「小企业」「小组织」定义现代化；规则 0-10 与 0-7 自本日生效，规则 203-3 与 Form ADV 的修订自本日同时为生效日与合规日 · 传导路径：改变注册投资公司、封闭式基金与投资顾问在小实体监管分析中的规模认定口径 · 来源：联邦公报 2026-22741（91 FR 69955，2026-11-06 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22741",
+          "u": "https://www.federalregister.gov/d/2026-22741"
+        }
+      ]
     },
     {
       "d": "2027-02-05",
@@ -10539,7 +11626,13 @@
       "s": "1月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-09",
@@ -10548,7 +11641,13 @@
       "s": "无人机关税生效",
       "note": "美国对公告附件三所列无人机关键零部件加征 25% 从价税；整机与其余零部件已于 2026 年 9 月 3 日起分别适用 100%（起飞重量逾 25 公斤、集成热像仪、无人机停靠站等）与 25%（25 公斤及以下）税率，关键零部件部分设临时延迟以留出本土扩产时间 · 依第 232 条，公告认定无人机及其零部件进口威胁国家安全 · 传导路径：抬升美国无人机整机与关键部件采购成本，影响商用无人机、公共安全与国防承包商的供应链安排 · 来源：总统公告 11055（91 FR 53699，2026-08-19 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 53699",
+          "u": "https://www.federalregister.gov/citation/91-FR-53699"
+        }
+      ]
     },
     {
       "d": "2027-02-11",
@@ -10558,7 +11657,13 @@
       "s": "1月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-12",
@@ -10568,7 +11673,13 @@
       "s": "1月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-12",
@@ -10578,7 +11689,13 @@
       "note": "德国慕尼黑 · 施托尔滕贝格与施密德担任联合主席",
       "s": "慕安会",
       "topic": "security",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "慕安会官网",
+          "u": "https://securityconference.org/en/"
+        }
+      ]
     },
     {
       "d": "2027-02-15",
@@ -10587,7 +11704,17 @@
       "s": "总统日休市",
       "note": "美股休市（纽交所/纳斯达克休市） · 法定名称为华盛顿诞辰日（Washington's Birthday） · 来源：OPM 联邦假日安排（holidays.ics）/ NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-02-17",
@@ -10597,7 +11724,13 @@
       "s": "1月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-17",
@@ -10607,7 +11740,13 @@
       "s": "1月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-02-17",
@@ -10617,7 +11756,13 @@
       "s": "FOMC纪要",
       "note": "对应 1 月 26—27 日议息会议 · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-02-19",
@@ -10627,7 +11772,13 @@
       "s": "零售电商",
       "note": "普查局（Census）· 季度零售电商报告（Quarterly Retail E-Commerce Report）· 2026 年官方发布日程 · 10:00 美东时间 · 来源：普查局零售发布日程（census.gov/retail）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-02-25",
@@ -10637,7 +11788,13 @@
       "s": "GDP修正值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程· 同时公布 2026 年全年 GDP 修正值",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-02-25",
@@ -10647,7 +11804,13 @@
       "s": "1月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-02-28",
@@ -10656,7 +11819,17 @@
       "s": "越南301裁定期限",
       "note": "华盛顿 · 美国贸易代表署以调查涉及复杂问题、需要更多时间为由，将越南知识产权保护与执法 301 调查延长三个月，裁定须不迟于该日作出 · 来源：美国贸易代表署（USTR）91 FR 72609（2026-11-10 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 72609",
+          "u": "https://www.federalregister.gov/citation/91-FR-72609"
+        },
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-03-01",
@@ -10665,7 +11838,13 @@
       "s": "合规日延期生效",
       "note": "美国 · 联邦公报 2026-17979 将 10 CFR 433 分部 B 与 10 CFR 435 分部 B 关于联邦新建筑与重大改造清洁能源要求的合规日自 2026 年 9 月 1 日再延至 2027 年 3 月 1 日，等待能源部完成实施指引审查 · 传导路径：延后联邦机构建筑清洁能源合规义务的落地时点，暂缓联邦建筑改造投资节奏 · 来源：联邦公报 2026-17979（2026-09-02 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-17979",
+          "u": "https://www.federalregister.gov/d/2026-17979"
+        }
+      ]
     },
     {
       "d": "2027-03-05",
@@ -10675,7 +11854,13 @@
       "s": "2月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-03-09",
@@ -10685,7 +11870,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-03-10",
@@ -10695,7 +11886,13 @@
       "s": "2月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-03-10",
@@ -10704,7 +11901,13 @@
       "s": "温室气体报送期限",
       "note": "华盛顿 · 美国环保署（EPA）以临时终局规则把《温室气体报告计划》2025 报告年度的年度报送期限由 2026 年 10 月 30 日延至本日，此为 2026 年 2 月 27 日延至 10 月 30 日之后的再次调整 · 传导路径：推迟受监管排放设施 2025 年度排放数据的报送时点 · 来源：联邦公报 2026-20982（91 FR 65112，2026-10-14 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20982",
+          "u": "https://www.federalregister.gov/d/2026-20982"
+        }
+      ]
     },
     {
       "d": "2027-03-12",
@@ -10714,7 +11917,13 @@
       "s": "2月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-03-14",
@@ -10723,7 +11932,13 @@
       "s": "夏令时开始",
       "note": "美东 3 月 14 日 02:00 拨至 03:00（北京时间同日 15:00） · 美股交易时段对应北京时间前移 1 小时（21:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-03-16",
@@ -10733,7 +11948,13 @@
       "s": "2月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-03-16",
@@ -10744,7 +11965,13 @@
       "s": "FOMC 3月",
       "note": "美联储 2027 年初步日程；次日 14:00 发布声明、14:30 主席记者会",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-03-17",
@@ -10754,7 +11981,13 @@
       "s": "2月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-03-17",
@@ -10763,7 +11996,13 @@
       "s": "702 授权届满",
       "note": "华盛顿 · 《涉外情报监视法》第 702 条法定授权已于 2026-06-12 失效（Pub. L. 119-87 为末次短期延期）；外国情报监视法院 2026-03-17 批准的年度认证使既有收集与指令继续有效一年，国会须在此前完成续期方能避免断档 · 来源：国会研究服务处（CRS）/ 布伦南司法中心（Brennan Center）",
       "topic": "security",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2027-03-24",
@@ -10773,7 +12012,13 @@
       "s": "国际收支",
       "note": "经济分析局（BEA）· 2027 年官方发布日程· 含 2026 年全年数据",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-03-26",
@@ -10782,7 +12027,13 @@
       "s": "耶稣受难日",
       "note": "纽约 · 复活节前的星期五，纽交所与纳斯达克全天休市；该日不是美国联邦假日，联邦机构照常办公 · 来源：纽约证券交易所（NYSE）2026—2028 年假日与交易时段表",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-03-31",
@@ -10792,7 +12043,13 @@
       "s": "GDP终值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-03-31",
@@ -10802,7 +12059,13 @@
       "s": "2月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-04-02",
@@ -10812,7 +12075,13 @@
       "s": "3月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-02",
@@ -10821,7 +12090,13 @@
       "s": "仿制药复审期限",
       "note": "华盛顿 · 依 2026 年 4 月 2 日签署的药品进口调整公告，仿制药及其原料药当时暂不适用《贸易法》第 232 条关税，商务部长须在公告签署满一年（2027 年 4 月 2 日）前向总统报告是否存在需对仿制药进口采取调整措施的情形 · 传导路径：仿制药与生物类似药是否纳入 232 关税进入决策窗口，影响全球仿制药供应链预期 · 来源：联邦公报 2026-06956（91 FR 18183，2026-04-09 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-06956",
+          "u": "https://www.federalregister.gov/d/2026-06956"
+        }
+      ]
     },
     {
       "d": "2027-04-06",
@@ -10831,7 +12106,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-04-07",
@@ -10841,7 +12122,13 @@
       "s": "FOMC纪要",
       "note": "对应 3 月 16—17 日议息会议（含经济预测摘要） · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-07",
@@ -10850,7 +12137,13 @@
       "s": "俄油许可到期",
       "note": "美国纽约 · 财政部海外资产控制办公室（OFAC）第 135 号通用许可自 2026 年 10 月 9 日起授权俄罗斯原产柴油的销售、交付、卸货与进口（含进口美国）相关交易，授权于 2027 年 4 月 7 日 00:01（美东夏令时）终止 · 传导路径：到期后相关交易须另行申请许可，涉俄柴油供应与美国能源进口成本、航运与保险安排直接相关 · 来源：美国财政部海外资产控制办公室（OFAC）通用许可 GL 135（2026-10-09）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        }
+      ]
     },
     {
       "d": "2027-04-12",
@@ -10860,7 +12153,13 @@
       "s": "IMF春季会议",
       "note": "美国华盛顿 · 世界银行与 IMF 春季年会及系列会议 · 来源：世界银行集团 Meetings 官方日程",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "世行活动",
+          "u": "https://www.worldbank.org/en/events"
+        }
+      ]
     },
     {
       "d": "2027-04-13",
@@ -10870,7 +12169,13 @@
       "s": "3月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-14",
@@ -10880,7 +12185,13 @@
       "s": "3月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-16",
@@ -10890,7 +12201,13 @@
       "s": "3月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-16",
@@ -10900,7 +12217,13 @@
       "s": "3月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-04-20",
@@ -10909,7 +12232,13 @@
       "s": "风电谈判期限",
       "note": "美国商务部与贸易代表须在公告签署后 180 日内至少提交一次谈判进展更新，谈判对象为风电整机、部件与子部件的外国贸易伙伴；若 180 日内未达成协议或协议未执行、无效，总统可采取进一步进口调整措施 · 公告于 2026 年 10 月 22 日签署，报告期限即 2027 年 4 月 20 日 · 传导路径：结果决定风电设备进口关税走向，影响美国陆上与海上风电项目的设备成本与装机进度 · 来源：总统公告 11074（91 FR 68001，2026-10-28 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 68001",
+          "u": "https://www.federalregister.gov/citation/91-FR-68001"
+        }
+      ]
     },
     {
       "d": "2027-04-26",
@@ -10918,7 +12247,13 @@
       "s": "机器人谈判期限",
       "note": "白宫 · 依《贸易法》第 232 条，总统 2026 年 10 月 28 日签署公告启动针对机器人、工业机械及其零部件进口的国家安全程序，要求商务部长与贸易代表自公告日起 180 日内向总统提交谈判进展报告；公告本身未加征关税，但授权总统在谈判未果或无效时另行考虑加征关税、配额与费用，并可推动对美本土生产的投资激励计划 · 传导路径：决定机器人与工业机械产业链是否进入加税与投资审查轨道，影响工业设备进口成本与产能布局 · 来源：总统公告第 11077 号（Federal Register，91 FR 69199，2026-11-02 刊登）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 69199",
+          "u": "https://www.federalregister.gov/citation/91-FR-69199"
+        }
+      ]
     },
     {
       "d": "2027-04-27",
@@ -10929,7 +12264,13 @@
       "s": "FOMC 4月",
       "note": "决议于 4 月 28 日 14:00 公布 · 会后主席记者会 14:30",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-04-29",
@@ -10939,7 +12280,13 @@
       "s": "GDP初值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-04-29",
@@ -10949,7 +12296,13 @@
       "s": "3月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-04-30",
@@ -10959,7 +12312,13 @@
       "s": "一季度ECI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-05",
@@ -10969,7 +12328,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-05-07",
@@ -10979,7 +12344,13 @@
       "s": "4月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-12",
@@ -10989,7 +12360,13 @@
       "s": "4月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-13",
@@ -10999,7 +12376,13 @@
       "s": "4月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-14",
@@ -11009,7 +12392,13 @@
       "s": "4月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-14",
@@ -11019,7 +12408,13 @@
       "s": "4月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-05-18",
@@ -11029,7 +12424,13 @@
       "s": "零售电商",
       "note": "普查局（Census）· 季度零售电商报告（Quarterly Retail E-Commerce Report）· 2027 年官方发布日程 · 10:00 美东时间 · 来源：普查局零售发布日程（census.gov/retail）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-05-19",
@@ -11039,7 +12440,13 @@
       "s": "FOMC纪要",
       "note": "对应 4 月 27—28 日议息会议 · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-05-27",
@@ -11049,7 +12456,13 @@
       "s": "GDP修正值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-05-27",
@@ -11059,7 +12472,13 @@
       "s": "4月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-05-31",
@@ -11068,7 +12487,17 @@
       "s": "阵亡将士纪念日休市",
       "note": "联邦法定假日为 5 月最后一个周一 · 美股休市（纽交所/纳斯达克休市） · 来源：5 U.S.C. 6103 / OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-06-04",
@@ -11078,7 +12507,13 @@
       "s": "5月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-06-08",
@@ -11089,7 +12524,13 @@
       "s": "FOMC 6月",
       "note": "决议于 6 月 09 日 14:00 公布 · 会后主席记者会 14:30 · 含经济预测摘要（点阵图）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-06-09",
@@ -11099,7 +12540,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 含年度更新 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-06-10",
@@ -11109,7 +12556,13 @@
       "s": "5月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-06-11",
@@ -11119,7 +12572,13 @@
       "s": "5月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-06-16",
@@ -11129,7 +12588,13 @@
       "s": "5月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-06-16",
@@ -11139,7 +12604,13 @@
       "s": "5月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-06-16",
@@ -11148,7 +12619,13 @@
       "s": "认证机构规则生效",
       "note": "华盛顿 · 美国医疗保险与 Medicaid 服务中心（CMS）最终规则强化对 Medicare 全国认证组织的监管，规定利益冲突处理、统一标准与验证和绩效标准体系，并修订精神科医院审查流程、限制已终止的「视为合格」提供者与供应商重新进入计划 · 传导路径：影响医院与门诊机构资质认定及 Medicare 付款链条的可信度审查 · 来源：联邦公报 2026-12069（91 FR 36370，2026-06-16 刊发）",
       "topic": "fiscal",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-12069",
+          "u": "https://www.federalregister.gov/d/2026-12069"
+        }
+      ]
     },
     {
       "d": "2027-06-18",
@@ -11157,7 +12634,13 @@
       "s": "六月节",
       "note": "纪念 1865 年《第 13 修正案》通过 · 2022 年起为美股休市日 · 来源：美国人事管理局（OPM）联邦假日安排",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-06-21",
@@ -11166,7 +12649,13 @@
       "s": "PCE初始监测期限",
       "note": "华盛顿 · 美国环保署（EPA）把《有毒物质控制法》（TSCA）下全氯乙烯（PCE）与四氯化碳（CTC）工作场所化学品保护计划对非联邦业主与经营者的初始吸入暴露监测合规期限延至本日 · 传导路径：PCE 与 CTC 是半导体与电子制造常用的清洗与刻蚀溶剂，期限延后直接影响晶圆厂与精密零部件厂商的合规投入节奏 · 来源：联邦公报 2026-15192（91 FR 47145，2026-07-28 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-15192",
+          "u": "https://www.federalregister.gov/d/2026-15192"
+        }
+      ]
     },
     {
       "d": "2027-06-24",
@@ -11176,7 +12665,13 @@
       "s": "国际收支",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-06-25",
@@ -11186,7 +12681,13 @@
       "s": "GDP终值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-06-25",
@@ -11196,7 +12697,13 @@
       "s": "5月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-06-30",
@@ -11206,7 +12713,13 @@
       "s": "FOMC纪要",
       "note": "对应 6 月 8—9 日议息会议（含经济预测摘要） · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-01",
@@ -11215,7 +12728,17 @@
       "s": "USMCA 审查",
       "note": "美墨加自由贸易委员会年度联合审查 · 美方 2026 年 7 月未同意延长 16 年期限，此后每年审查 · 来源：USTR 联邦公报 91 FR 63379",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 63379",
+          "u": "https://www.federalregister.gov/citation/91-FR-63379"
+        },
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        }
+      ]
     },
     {
       "d": "2027-07-01",
@@ -11224,7 +12747,13 @@
       "s": "学历认证改革生效",
       "note": "教育部（Department of Education）修订认证机构认可规章以落实第 14279 号行政令关于改革认证制度的要求，调整《1965 年高等教育法》项下院校资格与学生资助一般规定，压缩认证程序负担 · 传导路径：改变院校认证与联邦资助资格认定规则，影响高等教育机构合规成本与招生资质审核 · 来源：联邦公报 2026-22174（2026-10-30 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-22174",
+          "u": "https://www.federalregister.gov/d/2026-22174"
+        }
+      ]
     },
     {
       "d": "2027-07-01",
@@ -11233,7 +12762,13 @@
       "s": "学生贷款问责生效",
       "note": "教育部（Department of Education）修订联邦学生贷款与院校资格规章，落实 2025 年 7 月 4 日签署的《工薪家庭减税法案》，引入以毕业生收入基准约束联邦直接贷款资格的问责框架 · 传导路径：影响高校招生与专业设置决策，以及学生贷款机构的合规与信息披露安排 · 来源：联邦公报 2026-13286（91 FR 40136，2026-07-01 刊发）",
       "topic": "labor",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-13286",
+          "u": "https://www.federalregister.gov/d/2026-13286"
+        }
+      ]
     },
     {
       "d": "2027-07-02",
@@ -11243,7 +12778,13 @@
       "s": "6月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-04",
@@ -11252,7 +12793,13 @@
       "s": "C波段拍卖截止",
       "note": "华盛顿 · 美国联邦通信委员会（FCC）须依《大而美法案》（One Big Beautiful Bill Act）于本日之前完成 3.98 至 4.2 GHz 上层 C 波段至少 100 MHz 频谱的竞争性拍卖；该规则 2026 年 9 月 29 日生效，现有卫星业务在本土 75 个重点经济区的迁移主期限为 2030 年 12 月 30 日 · 传导路径：决定 5G 频谱供给节奏与运营商资本开支窗口 · 来源：联邦公报 2026-15598（91 FR 48700，2026-07-31 刊发）",
       "topic": "tech",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-15598",
+          "u": "https://www.federalregister.gov/d/2026-15598"
+        }
+      ]
     },
     {
       "d": "2027-07-05",
@@ -11261,7 +12808,13 @@
       "s": "独立日",
       "note": "美股休市 · 名义日期 7 月 4 日（周日）顺延至 7 月 5 日 · 来源：美国人事管理局（OPM）联邦假日安排",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-07-07",
@@ -11271,7 +12824,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-07-08",
@@ -11281,7 +12840,13 @@
       "s": "G20财长会",
       "note": "英国爱丁堡 · G20 财长与央行行长会议，在爱丁堡国际会议中心（EICC）举行，为英国 2027 年 G20 主席国任期的核心财长轨会议 · 来源：英国财政部 2026-10-15 公告 / 爱丁堡国际会议中心（EICC）",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        }
+      ]
     },
     {
       "d": "2027-07-14",
@@ -11291,7 +12856,13 @@
       "s": "6月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-15",
@@ -11301,7 +12872,13 @@
       "s": "6月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-16",
@@ -11311,7 +12888,13 @@
       "s": "6月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-16",
@@ -11321,7 +12904,13 @@
       "s": "6月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-07-27",
@@ -11332,7 +12921,13 @@
       "s": "FOMC 7月",
       "note": "决议于 7 月 28 日 14:00 公布 · 会后主席记者会 14:30",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-07-29",
@@ -11342,7 +12937,13 @@
       "s": "GDP初值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-07-29",
@@ -11352,7 +12953,13 @@
       "s": "6月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-07-30",
@@ -11362,7 +12969,13 @@
       "s": "二季度ECI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-05",
@@ -11372,7 +12985,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-08-06",
@@ -11382,7 +13001,13 @@
       "s": "7月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-10",
@@ -11392,7 +13017,13 @@
       "s": "7月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-11",
@@ -11402,7 +13033,13 @@
       "s": "7月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-13",
@@ -11412,7 +13049,13 @@
       "s": "7月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-16",
@@ -11422,7 +13065,13 @@
       "s": "7月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-08-18",
@@ -11432,7 +13081,13 @@
       "s": "FOMC纪要",
       "note": "对应 7 月 27—28 日议息会议 · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-08-18",
@@ -11442,7 +13097,13 @@
       "s": "零售电商",
       "note": "普查局（Census）· 季度零售电商报告（Quarterly Retail E-Commerce Report）· 2027 年官方发布日程 · 10:00 美东时间 · 来源：普查局零售发布日程（census.gov/retail）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-08-25",
@@ -11452,7 +13113,13 @@
       "s": "GDP修正值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-08-25",
@@ -11462,7 +13129,13 @@
       "s": "7月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-08-27",
@@ -11471,7 +13144,13 @@
       "s": "黑粉分配令届满",
       "note": "华盛顿 · 商务部工业与安全局（BIS）依《1950 年国防生产法》第 101 条总统决定发布的可回收关键矿产与材料指令分配令，自 2026 年 8 月 27 日起施行、本日届满；该令要求从事黑粉与钨废料及废料销售的美国人把每月销售额的 100% 分配给美国人，例外须事先取得 BIS 批准 · 传导路径：黑粉是锂电正极材料的关键前驱体，分配令同时约束其出口与流向 · 来源：联邦公报 2026-16078（91 FR 50701，2026-08-06 刊发）",
       "topic": "security",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-16078",
+          "u": "https://www.federalregister.gov/d/2026-16078"
+        }
+      ]
     },
     {
       "d": "2027-09-03",
@@ -11481,7 +13160,13 @@
       "s": "8月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-09-06",
@@ -11490,7 +13175,13 @@
       "s": "劳工节",
       "note": "美股休市 · 来源：美国人事管理局（OPM）联邦假日安排",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-09-08",
@@ -11500,7 +13191,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-09-10",
@@ -11510,7 +13207,13 @@
       "s": "8月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-09-14",
@@ -11520,7 +13223,13 @@
       "s": "8月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-09-14",
@@ -11529,7 +13238,13 @@
       "s": "古巴制裁延续届满",
       "note": "华盛顿 · 总统 2026 年 8 月 20 日签署公告，依《敌国贸易法》101(b) 条延续对古巴的相关授权一年至 2027 年 9 月 14 日 · 传导路径：涉及古巴的美国人资产冻结与交易授权框架继续有效，影响相关金融机构与合规安排 · 来源：联邦公报 2026-17374（91 FR 54935，2026-08-25 刊发）",
       "topic": "security",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-17374",
+          "u": "https://www.federalregister.gov/d/2026-17374"
+        }
+      ]
     },
     {
       "d": "2027-09-14",
@@ -11540,7 +13255,13 @@
       "s": "FOMC 9月",
       "note": "决议于 9 月 15 日 14:00 公布 · 会后主席记者会 14:30 · 含经济预测摘要（点阵图）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-09-16",
@@ -11550,7 +13271,13 @@
       "s": "8月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-09-17",
@@ -11560,7 +13287,13 @@
       "s": "8月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-09-20",
@@ -11569,7 +13302,13 @@
       "s": "暴露限值合规期限",
       "note": "华盛顿 · 美国环保署（EPA）把《有毒物质控制法》（TSCA）下 PCE 与 CTC 工作场所化学品保护计划中满足既有化学品暴露限值（ECEL）、设立管制区域、实施工作场所信息与培训计划、配发呼吸防护个体防护装备并建立呼吸防护计划等义务的合规期限延至本日 · 传导路径：PCE 与 CTC 广泛用于电子与半导体制造，延后期间产线职业防护改造可分期推进 · 来源：联邦公报 2026-15192（91 FR 47145，2026-07-28 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-15192",
+          "u": "https://www.federalregister.gov/d/2026-15192"
+        }
+      ]
     },
     {
       "d": "2027-09-21",
@@ -11578,7 +13317,13 @@
       "s": "H-1B 限制届满",
       "note": "华盛顿 · 总统 2026 年 9 月 18 日签署公告 11069，将 2025 年 9 月 19 日发布的 H-1B 非移民工人入境限制公告延长 12 个月，至美东夏令时时间 2027 年 9 月 21 日零时；该限制要求除极有限例外外，H-1B 申请须随附或补交 10 万美元款项 · 传导路径：外籍技术劳工的准入成本与不确定性延续，影响科技、医疗与建筑业用工供给 · 来源：联邦公报 2026-19554（91 FR 60497，2026-09-23 刊发）",
       "topic": "labor",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-19554",
+          "u": "https://www.federalregister.gov/d/2026-19554"
+        }
+      ]
     },
     {
       "d": "2027-09-22",
@@ -11588,7 +13333,13 @@
       "s": "国际收支",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-09-30",
@@ -11598,7 +13349,13 @@
       "s": "GDP终值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-09-30",
@@ -11608,7 +13365,13 @@
       "s": "8月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-10-04",
@@ -11618,7 +13381,13 @@
       "s": "IMF年会",
       "note": "美国华盛顿 · 三方董事会年会及系列会议 · 巴基斯坦担任 2027 年董事会主席 · 来源：世界银行集团 Meetings 官方日程",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "世行活动",
+          "u": "https://www.worldbank.org/en/events"
+        }
+      ]
     },
     {
       "d": "2027-10-06",
@@ -11628,7 +13397,13 @@
       "s": "FOMC纪要",
       "note": "对应 9 月 14—15 日议息会议（含经济预测摘要） · 按美联储惯例于政策决定后三周公布（美东 14:00），官方页面尚未列出具体日期 · 来源：美国联邦储备委员会 FOMC 会议安排",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-06",
@@ -11638,7 +13413,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-10-08",
@@ -11648,7 +13429,13 @@
       "s": "9月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-11",
@@ -11657,7 +13444,17 @@
       "s": "哥伦布日",
       "note": "美股正常交易：纽交所/纳斯达克不因哥伦布日休市 · 原条目标注「美股休市」有误，据 NYSE 2026—2028 交易日历更正 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-10-14",
@@ -11667,7 +13464,13 @@
       "s": "9月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-15",
@@ -11677,7 +13480,13 @@
       "s": "9月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-15",
@@ -11687,7 +13496,13 @@
       "s": "9月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-10-19",
@@ -11697,7 +13512,13 @@
       "s": "9月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-26",
@@ -11708,7 +13529,13 @@
       "s": "FOMC战略会",
       "note": "美联储 · 据 2026-11-12 修订日程，本次会议专议货币政策战略议题，不发布政策决定 · 来源：美国联邦储备委员会（Federal Reserve）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-10-28",
@@ -11718,7 +13545,13 @@
       "s": "GDP初值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-10-28",
@@ -11728,7 +13561,13 @@
       "s": "9月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-10-29",
@@ -11738,7 +13577,13 @@
       "s": "三季度ECI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-04",
@@ -11748,7 +13593,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-11-05",
@@ -11758,7 +13609,13 @@
       "s": "10月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-07",
@@ -11767,7 +13624,13 @@
       "s": "冬令时开始",
       "note": "美东 11 月 7 日 02:00 拨回 01:00（北京时间同日 14:00） · 美股交易时段对应北京时间后移 1 小时（22:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-11-08",
@@ -11777,7 +13640,17 @@
       "s": "COP32",
       "note": "埃塞俄比亚亚的斯亚贝巴 · 《联合国气候变化框架公约》缔约方第三十二次会议 · 来源：UNFCCC 决定文件 CP2025/12/A02C",
       "topic": "energy",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "UNFCCC 官网",
+          "u": "https://unfccc.int/"
+        },
+        {
+          "t": "FCC 新闻",
+          "u": "https://www.fcc.gov/news-events"
+        }
+      ]
     },
     {
       "d": "2027-11-10",
@@ -11787,7 +13660,13 @@
       "s": "10月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-11",
@@ -11796,7 +13675,17 @@
       "s": "退伍军人节",
       "note": "美股正常交易：纽交所/纳斯达克不因退伍军人节休市 · 原条目标注「美股休市」有误，据 NYSE 2026—2028 交易日历更正 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-11-12",
@@ -11806,7 +13695,13 @@
       "s": "10月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-16",
@@ -11816,7 +13711,13 @@
       "s": "10月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-16",
@@ -11826,7 +13727,13 @@
       "s": "10月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-11-16",
@@ -11837,7 +13744,13 @@
       "s": "FOMC 11月",
       "note": "美联储 · 据 2026-11-12 修订日程新增的 11 月例会，决议于次日公布 · 来源：美国联邦储备委员会（Federal Reserve）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-17",
@@ -11847,7 +13760,13 @@
       "s": "FOMC纪要",
       "note": "美联储 · 对应 10 月 26—27 日货币政策战略会议，该次会议不发布政策决定；官方尚未列出纪要日期，按会议后三周惯例推算 · 来源：美国联邦储备委员会（Federal Reserve）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-11-18",
@@ -11857,7 +13776,13 @@
       "s": "零售电商",
       "note": "普查局（Census）· 季度零售电商报告（Quarterly Retail E-Commerce Report）· 2027 年官方发布日程 · 10:00 美东时间 · 来源：普查局零售发布日程（census.gov/retail）",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-11-24",
@@ -11867,7 +13792,13 @@
       "s": "GDP修正值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-11-24",
@@ -11877,7 +13808,13 @@
       "s": "10月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-11-25",
@@ -11886,7 +13823,13 @@
       "s": "感恩节",
       "note": "美股休市 · 来源：美国人事管理局（OPM）联邦假日安排",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-11-26",
@@ -11896,7 +13839,13 @@
       "s": "提前收市",
       "note": "纽约 · 感恩节翌日，纽交所与纳斯达克提前收市，期权市场同步提前至 13:15，债券市场按惯例提前收市 · 来源：纽约证券交易所（NYSE）2027 年假日与交易时段表",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-11-27",
@@ -11906,7 +13855,13 @@
       "s": "G20峰会",
       "note": "英国曼彻斯特 · Manchester Central Convention Centre · 第 22 届 G20 领导人峰会 · 来源：英国政府公告 / BBC",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "G20 官网",
+          "u": "https://g20.org/"
+        }
+      ]
     },
     {
       "d": "2027-12-03",
@@ -11916,7 +13871,13 @@
       "s": "11月非农",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "labor",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-07",
@@ -11926,7 +13887,13 @@
       "s": "贸易差额",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 08:30 美东时间 · 来源：BEA 官方发布日程（bea.gov/news/schedule）",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "www 页面",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-12-07",
@@ -11938,7 +13905,13 @@
       "note": "原定 2027-12-07 ~ 2027-12-08，已调整至 2027-11-16 ~ 2027-11-17 · 美联储 2026-11-12 修订 2027 年日程，取消原定 12 月会议、增设 11 月 16—17 日例会，并把 10 月 26—27 日会议改为货币政策战略专题讨论；本条目所述 12 月议息会议不再举行 · 来源：美国联邦储备委员会（Federal Reserve）",
       "topic": "money",
       "actor": "fed",
-      "stale": true
+      "stale": true,
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-08",
@@ -11948,7 +13921,13 @@
       "s": "FOMC纪要",
       "note": "美联储 · 对应 11 月 16—17 日议息会议；官方尚未列出纪要日期，按政策决定后三周惯例推算 · 来源：美国联邦储备委员会（Federal Reserve）",
       "topic": "money",
-      "actor": "fed"
+      "actor": "fed",
+      "links": [
+        {
+          "t": "美联储日程",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-10",
@@ -11958,7 +13937,13 @@
       "s": "11月CPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-15",
@@ -11968,7 +13953,13 @@
       "s": "11月PPI",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-15",
@@ -11978,7 +13969,13 @@
       "s": "11月零售销售",
       "note": "普查局（Census）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "普查局零售日程",
+          "u": "https://www.census.gov/retail/index.html"
+        }
+      ]
     },
     {
       "d": "2027-12-16",
@@ -11988,7 +13985,13 @@
       "s": "11月进出口价格",
       "note": "劳工统计局（BLS）· 2027 年官方发布日程",
       "topic": "trade",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BLS 发布日程",
+          "u": "https://www.bls.gov/schedule/2027/home.htm"
+        }
+      ]
     },
     {
       "d": "2027-12-17",
@@ -11998,7 +14001,13 @@
       "s": "国际收支",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-12-20",
@@ -12007,7 +14016,13 @@
       "s": "暴露控制计划期限",
       "note": "华盛顿 · 美国环保署（EPA）把全氯乙烯（PCE）工作场所化学品保护计划中制定并实施暴露控制计划的合规期限由 2027 年 6 月 7 日延至本日，联邦实体的培训计划期限同步延至 2027 年 9 月 20 日 · 传导路径：PCE 是半导体与精密制造常用的清洗溶剂，期限延后影响相关产线合规改造节奏 · 来源：联邦公报 2026-15192（91 FR 47145，2026-07-28 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-15192",
+          "u": "https://www.federalregister.gov/d/2026-15192"
+        }
+      ]
     },
     {
       "d": "2027-12-22",
@@ -12017,7 +14032,13 @@
       "s": "GDP终值",
       "note": "经济分析局（BEA）· 2027 年官方发布日程",
       "topic": "growth",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-12-22",
@@ -12027,7 +14048,13 @@
       "s": "11月PCE",
       "note": "经济分析局（BEA）· 2027 年官方发布日程 · 美联储偏好的通胀指标",
       "topic": "price",
-      "actor": "stats"
+      "actor": "stats",
+      "links": [
+        {
+          "t": "BEA 发布日程",
+          "u": "https://www.bea.gov/news/schedule"
+        }
+      ]
     },
     {
       "d": "2027-12-24",
@@ -12036,7 +14063,13 @@
       "s": "圣诞节",
       "note": "美股休市 · 名义日期 12 月 25 日（周六）提前至 12 月 24 日 · 来源：美国人事管理局（OPM）联邦假日安排",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2027-12-31",
@@ -12045,7 +14078,17 @@
       "s": "元旦",
       "note": "名义日期 2028 年 1 月 1 日（周六），联邦雇员于 12 月 31 日（周五）观察休假日 · 美股正常交易：纽交所 2028 年日历不设元旦休市，12 月 31 日照常交易 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2027-12-31",
@@ -12054,7 +14097,13 @@
       "s": "铝钢铜关税届满",
       "note": "白宫 · 依 2026 年 6 月 1 日签署的金属关税公告，公告附件 I-C 所列铝钢等金属产品自 2026 年 6 月 8 日起适用 25% 的附加从价关税过渡安排，该安排于 2027 年 12 月 31 日 24 时届满 · 传导路径：决定此后金属进口的税率基线，影响钢铁与铝材到岸成本及下游制造业成本传导 · 来源：总统公告第 11032 号（91 FR 34085，2026-06-04 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 34085",
+          "u": "https://www.federalregister.gov/citation/91-FR-34085"
+        }
+      ]
     },
     {
       "d": "2028-01-01",
@@ -12063,7 +14112,13 @@
       "s": "铝钢铜关税切回",
       "note": "白宫 · 同一公告规定，自 2028 年 1 月 1 日起附件 I-C 所列产品的第 232 条附加从价关税恢复适用 2026 年 4 月 2 日公告第 (3) 条款所定税率，过渡期 25% 税率随之终止 · 传导路径：金属进口税率重回基准安排，影响钢铁与铝材到岸成本及制造业定价 · 来源：总统公告第 11032 号（91 FR 34085，2026-06-04 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 91 FR 34085",
+          "u": "https://www.federalregister.gov/citation/91-FR-34085"
+        }
+      ]
     },
     {
       "d": "2028-01-01",
@@ -12072,7 +14127,13 @@
       "s": "投资顾问反洗钱生效",
       "note": "美国金融犯罪执法局（FinCEN）把 2024 年 9 月 4 日公布的「注册投资顾问与豁免报告顾问反洗钱与反恐怖融资计划及可疑活动报告申报规则」生效日推迟两年至 2028 年 1 月 1 日，并同步调整顾问制定与实施反洗钱计划的期限 · 传导路径：延长资产管理与券商等受约束机构的合规准备期，影响反洗钱制度化投入节奏 · 来源：联邦公报 2025-24184（91 FR 36，2026-01-02 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2025-24184",
+          "u": "https://www.federalregister.gov/d/2025-24184"
+        }
+      ]
     },
     {
       "d": "2028-01-01",
@@ -12081,7 +14142,13 @@
       "s": "小贷报送合规期限",
       "note": "华盛顿 · 美国消费者金融保护局（CFPB）修订《平等信贷机会法》（ECOA）实施规则 Regulation B 的 B 分部，涉及信贷交易与金融机构覆盖范围、小企业定义、数据点填报方式及合规日期；规则 2026 年 6 月 30 日生效，本日为合规日 · 传导路径：小企业信贷数据报送义务的落地时点决定中小银行与消费金融机构的系统改造与合规成本节奏 · 来源：联邦公报 2026-08494（91 FR 23530，2026-05-01 刊发）",
       "topic": "money",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-08494",
+          "u": "https://www.federalregister.gov/d/2026-08494"
+        }
+      ]
     },
     {
       "d": "2028-01-17",
@@ -12090,7 +14157,17 @@
       "s": "MLK 纪念日",
       "note": "美股休市（纽交所/纳斯达克休市） · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-02-21",
@@ -12099,7 +14176,17 @@
       "s": "总统日休市",
       "note": "美股休市（纽交所/纳斯达克休市） · 法定名称为华盛顿诞辰日（Washington's Birthday） · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-03-12",
@@ -12108,7 +14195,13 @@
       "s": "夏令时开始",
       "note": "美东 3 月 12 日 02:00 拨至 03:00（北京时间同日 15:00） · 美股交易时段对应北京时间前移 1 小时（21:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2028-04-14",
@@ -12117,7 +14210,13 @@
       "s": "耶稣受难日",
       "note": "纽约 · 复活节前的星期五，纽交所与纳斯达克全天休市；该日不是美国联邦假日，联邦机构照常办公 · 来源：纽约证券交易所（NYSE）2026—2028 年假日与交易时段表",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-04-17",
@@ -12127,7 +14226,13 @@
       "s": "IMF春季会议",
       "note": "美国华盛顿 · 春季年会及系列会议 · 来源：IMF Connect 未来会议表（IMF 官方）",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "IMF 会议",
+          "u": "https://www.imf.org/en/meetings"
+        }
+      ]
     },
     {
       "d": "2028-05-29",
@@ -12136,7 +14241,17 @@
       "s": "阵亡将士纪念日休市",
       "note": "联邦法定假日为 5 月最后一个周一 · 美股休市（纽交所/纳斯达克休市） · 来源：5 U.S.C. 6103 / OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-06-19",
@@ -12145,7 +14260,17 @@
       "s": "六月节",
       "note": "纪念 1865 年《第 13 修正案》通过 · 2022 年起为美股休市日 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-07-03",
@@ -12155,7 +14280,13 @@
       "s": "提前收市",
       "note": "纽约 · 独立日（7 月 4 日，周二）前一日，纽交所与纳斯达克提前收市，期权市场同步提前至 13:15 · 来源：纽约证券交易所（NYSE）2028 年假日与交易时段表",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-07-04",
@@ -12164,7 +14295,17 @@
       "s": "独立日",
       "note": "美股休市（名义日期即当日，7 月 4 日周二） · 前一日 7 月 3 日（周一）13:00 提前收市 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-09-04",
@@ -12173,7 +14314,17 @@
       "s": "劳工节",
       "note": "美股休市（纽交所/纳斯达克休市） · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-10-09",
@@ -12182,7 +14333,17 @@
       "s": "哥伦布日",
       "note": "美股正常交易：纽交所/纳斯达克不因哥伦布日休市 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-10-16",
@@ -12192,7 +14353,17 @@
       "s": "IMF年会",
       "note": "美国华盛顿 · 三方董事会年会及系列会议 · 世界银行理事会决议第 711 号定于 2028 年 10 月 20 日（周五）开幕 · 来源：世界银行 IBRD 理事会决议第 711 号（2025-01-27）/ IMF Connect 未来会议表",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "IMF 会议",
+          "u": "https://www.imf.org/en/meetings"
+        },
+        {
+          "t": "世行活动",
+          "u": "https://www.worldbank.org/en/events"
+        }
+      ]
     },
     {
       "d": "2028-11-05",
@@ -12201,7 +14372,13 @@
       "s": "冬令时开始",
       "note": "美东 11 月 5 日 02:00 拨回 01:00（北京时间同日 14:00） · 美股交易时段对应北京时间后移 1 小时（22:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2028-11-07",
@@ -12210,7 +14387,13 @@
       "s": "2028 大选日",
       "note": "总统、副总统与联邦参众议员选举日（3 U.S.C. § 21：11 月第一个周一之后的星期二）· 同日改选 34 席参议员与全部众议员 · 来源：3 U.S.C. § 21 / 2 U.S.C. § 1、§ 7 / 国会研究服务处（CRS）报告 R48309",
       "topic": "election",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2028-11-10",
@@ -12219,7 +14402,17 @@
       "s": "退伍军人节",
       "note": "名义日期 11 月 11 日（周六），于 11 月 10 日（周五）观察休假日 · 美股正常交易：纽交所/纳斯达克不因退伍军人节休市 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-11-23",
@@ -12228,7 +14421,17 @@
       "s": "感恩节",
       "note": "美股休市 · 次日 11 月 24 日（周五）13:00 提前收市 · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-11-24",
@@ -12238,7 +14441,13 @@
       "s": "提前收市",
       "note": "纽约 · 感恩节翌日，纽交所与纳斯达克提前收市，期权市场同步提前至 13:15，债券市场按惯例提前收市 · 来源：纽约证券交易所（NYSE）2028 年假日与交易时段表",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2028-12-13",
@@ -12247,7 +14456,13 @@
       "s": "选举人证书截止",
       "note": "选举结果终局安全港日（3 U.S.C. § 5：选举人会议前六日）· 州长须在此前将选举人任命与计票结果证书报送州务卿与联邦档案官 · 来源：3 U.S.C. § 5 / CRS 报告 R48309",
       "topic": "election",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2028-12-19",
@@ -12256,7 +14471,13 @@
       "s": "选举人会议投票",
       "note": "各州选举人按 3 U.S.C. § 7 于 12 月第二个周三之后的第一个周二集会投票 · 来源：3 U.S.C. § 7 / CRS 报告 R48309",
       "topic": "election",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2028-12-25",
@@ -12265,7 +14486,17 @@
       "s": "圣诞节",
       "note": "美股休市（名义日期即当日，12 月 25 日周一） · 来源：OPM 联邦假日安排 / NYSE 2026—2028 交易日历",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        },
+        {
+          "t": "NYSE 交易日历",
+          "u": "https://www.nyse.com/markets/hours-calendars"
+        }
+      ]
     },
     {
       "d": "2029-01-01",
@@ -12274,7 +14505,13 @@
       "s": "元旦",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-01-03",
@@ -12283,7 +14520,13 @@
       "s": "新国会开幕",
       "note": "国会每年至少集会一次，会期于 1 月 3 日中午开始（《宪法》第二十修正案第二条）· 2028 年 11 月 7 日选举产生的 121 届国会议员任期自 1 月 3 日起算（2 U.S.C. § 1）· 来源：《宪法》第二十修正案第二条 / 2 U.S.C. § 1",
       "topic": "election",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2029-01-06",
@@ -12292,7 +14535,13 @@
       "s": "选举人票计票",
       "note": "国会于选举年 1 月 6 日举行联席会议计点选举人票（3 U.S.C. § 15）· 本日为周六，按惯例可能顺延至下一工作日 · 来源：3 U.S.C. § 15 / CRS 报告 R48309",
       "topic": "election",
-      "actor": "congress"
+      "actor": "congress",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2029-01-15",
@@ -12301,7 +14550,13 @@
       "s": "MLK 纪念日",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-01-20",
@@ -12310,7 +14565,13 @@
       "s": "总统就职典礼",
       "note": "《宪法》第二十修正案第一条：总统与副总统任期于 1 月 20 日中午届满，新任就职典礼同日举行 · 本日为周六 · 来源：《宪法》第二十修正案第一条 / CRS 报告 R48309",
       "topic": "election",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "d": "2029-01-20",
@@ -12319,7 +14580,13 @@
       "s": "药品零税率截止",
       "note": "华盛顿 · 依 2026 年 4 月 2 日签署的药品进口调整公告第 3 条 (e) 项，已与卫生与公众服务部长签订最惠国药品定价协议并符合经批准本土化计划的企业，其专利药与原料药从价税率为零，该零税率适用至 2029 年 1 月 20 日 · 传导路径：决定美方药企零关税待遇的存续期限，影响美国药品定价谈判与本土产能布局节奏 · 来源：联邦公报 2026-06956（91 FR 18183，2026-04-09 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-06956",
+          "u": "https://www.federalregister.gov/d/2026-06956"
+        }
+      ]
     },
     {
       "d": "2029-02-19",
@@ -12328,7 +14595,13 @@
       "s": "总统日休市",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 法定名称为华盛顿诞辰日（Washington's Birthday） · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-03-11",
@@ -12337,7 +14610,13 @@
       "s": "夏令时开始",
       "note": "美东 3 月 11 日 02:00 拨至 03:00（北京时间同日 15:00） · 美股交易时段对应北京时间前移 1 小时（21:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-04-16",
@@ -12347,7 +14626,13 @@
       "s": "IMF春季会议",
       "note": "美国华盛顿 · 春季年会及系列会议 · 来源：IMF Connect 未来会议表（IMF 官方）",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "IMF 会议",
+          "u": "https://www.imf.org/en/meetings"
+        }
+      ]
     },
     {
       "d": "2029-05-28",
@@ -12356,7 +14641,13 @@
       "s": "阵亡将士纪念日休市",
       "note": "联邦法定假日为 5 月最后一个周一 · 美股休市（纽交所/纳斯达克休市） · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 5 U.S.C. 6103 / 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-06-19",
@@ -12365,7 +14656,13 @@
       "s": "六月节",
       "note": "纪念 1865 年《第 13 修正案》通过 · 2022 年起为美股休市日 · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-07-04",
@@ -12374,7 +14671,13 @@
       "s": "独立日",
       "note": "美股休市（名义日期即当日，7 月 4 日周三） · 前一日 7 月 3 日（周二）13:00 提前收市 · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-09-03",
@@ -12383,7 +14686,13 @@
       "s": "劳工节",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-10-01",
@@ -12393,7 +14702,13 @@
       "s": "IMF年会",
       "note": "阿联酋阿布扎比 · 三方董事会年会及系列会议 · 世界银行集团已公布会期为 10 月 1—7 日，东道主承办协议于 2025 年 10 月 18 日签署，此前为待定 · 来源：世界银行集团 Future Meeting Dates",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "世行活动",
+          "u": "https://www.worldbank.org/en/events"
+        }
+      ]
     },
     {
       "d": "2029-10-08",
@@ -12402,7 +14717,13 @@
       "s": "哥伦布日",
       "note": "美股正常交易：纽交所/纳斯达克不因哥伦布日休市 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-11-04",
@@ -12411,7 +14732,13 @@
       "s": "冬令时开始",
       "note": "美东 11 月 4 日 02:00 拨回 01:00（北京时间同日 14:00） · 美股交易时段对应北京时间后移 1 小时（22:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-11-12",
@@ -12420,7 +14747,13 @@
       "s": "退伍军人节",
       "note": "名义日期 11 月 11 日（周日），于 11 月 12 日（周一）观察休假日 · 美股正常交易：纽交所/纳斯达克不因退伍军人节休市 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-11-22",
@@ -12429,7 +14762,13 @@
       "s": "感恩节",
       "note": "美股休市 · 次日 11 月 23 日（周五）13:00 提前收市 · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2029-12-25",
@@ -12438,7 +14777,13 @@
       "s": "圣诞节",
       "note": "美股休市（名义日期即当日，12 月 25 日周二） · 前一日 12 月 24 日（周一）13:00 提前收市 · 纽交所 2029 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-01-01",
@@ -12447,7 +14792,13 @@
       "s": "元旦",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-01-21",
@@ -12456,7 +14807,13 @@
       "s": "MLK 纪念日",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-02-18",
@@ -12465,7 +14822,13 @@
       "s": "华盛顿诞辰日",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 法定名称为华盛顿诞辰日（Washington's Birthday） · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-03-10",
@@ -12474,7 +14837,13 @@
       "s": "夏令时开始",
       "note": "美东 3 月 10 日 02:00 拨至 03:00（北京时间同日 15:00） · 美股交易时段对应北京时间前移 1 小时（21:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-04-02",
@@ -12483,7 +14852,13 @@
       "s": "药品关税上调",
       "note": "华盛顿 · 依同一药品进口调整公告第 3 条 (b) 项，已获商务部长批准本土化计划的企业适用 20% 从价税率，该税率自公告签署四年后（2030 年 4 月 2 日）上调至 100% · 传导路径：设定美方药企本土化的最终关税节点，影响在美建厂的投资时点与协议安排 · 来源：联邦公报 2026-06956（91 FR 18183，2026-04-09 刊发）",
       "topic": "trade",
-      "actor": "exec"
+      "actor": "exec",
+      "links": [
+        {
+          "t": "联邦公报 2026-06956",
+          "u": "https://www.federalregister.gov/d/2026-06956"
+        }
+      ]
     },
     {
       "d": "2030-04-08",
@@ -12493,7 +14868,13 @@
       "s": "IMF春季会议",
       "note": "美国华盛顿 · 春季年会及系列会议 · 来源：IMF Connect 未来会议表（IMF 官方）",
       "topic": "money",
-      "actor": "intl"
+      "actor": "intl",
+      "links": [
+        {
+          "t": "IMF 会议",
+          "u": "https://www.imf.org/en/meetings"
+        }
+      ]
     },
     {
       "d": "2030-05-27",
@@ -12502,7 +14883,13 @@
       "s": "阵亡将士纪念日",
       "note": "联邦法定假日为 5 月最后一个周一 · 美股休市（纽交所/纳斯达克休市） · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 5 U.S.C. 6103 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-06-19",
@@ -12511,7 +14898,13 @@
       "s": "六月节",
       "note": "纪念 1865 年《第 13 修正案》通过 · 2022 年起为美股休市日 · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-07-04",
@@ -12520,7 +14913,13 @@
       "s": "美国独立日",
       "note": "美股休市（名义日期即当日，7 月 4 日周四） · 前一日 7 月 3 日（周四）13:00 提前收市 · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-09-02",
@@ -12529,7 +14928,13 @@
       "s": "劳工节",
       "note": "美股休市（纽交所/纳斯达克休市） · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-10-14",
@@ -12538,7 +14943,13 @@
       "s": "哥伦布日",
       "note": "美股正常交易：纽交所/纳斯达克不因哥伦布日休市 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-11-03",
@@ -12547,7 +14958,13 @@
       "s": "冬令时开始",
       "note": "美东 11 月 3 日 02:00 拨回 01:00（北京时间同日 14:00） · 美股交易时段对应北京时间后移 1 小时（22:30 开盘） · 依据 15 U.S.C. 260a（夏令时自 3 月第二个周日 2 时起至 11 月第一个周日 2 时止）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-11-11",
@@ -12556,7 +14973,13 @@
       "s": "退伍军人节",
       "note": "名义日期 11 月 11 日（周一），当日观察休假日 · 美股正常交易：纽交所/纳斯达克不因退伍军人节休市 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-11-28",
@@ -12565,7 +14988,13 @@
       "s": "感恩节",
       "note": "美股休市 · 次日 11 月 29 日（周五）13:00 提前收市 · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-12-25",
@@ -12574,7 +15003,13 @@
       "s": "圣诞节",
       "note": "美股休市（名义日期即当日，12 月 25 日周三） · 前一日 12 月 24 日（周二）13:00 提前收市 · 纽交所 2030 年交易日历尚未公布，美股休市/正常交易按 2026—2028 年惯例预填，以官方日历为准 · 来源：OPM 联邦假日安排（holidays.ics）",
       "topic": "calendar",
-      "actor": "none"
+      "actor": "none",
+      "links": [
+        {
+          "t": "OPM 联邦假日",
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+        }
+      ]
     },
     {
       "d": "2030-12-31",
@@ -12583,7 +15018,13 @@
       "s": "PM2.5达标期限",
       "note": "华盛顿 · 美国环保署（EPA）批准加利福尼亚州申请，把洛杉矶—南海岸空气盆地对 2012 年度 PM2.5 国家环境空气质量标准的「严重」不达标区达标期限由 2025 年 12 月 31 日延至本日 · 传导路径：延长加州南部的工业与交通排放治理周期 · 来源：联邦公报 2026-20097（91 FR 62316，2026-10-01 刊发）",
       "topic": "energy",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-20097",
+          "u": "https://www.federalregister.gov/d/2026-20097"
+        }
+      ]
     },
     {
       "d": "2033-03-07",
@@ -12592,7 +15033,13 @@
       "s": "药品码格式生效",
       "note": "食品药品监督管理局（FDA）统一国家药品码格式，要求所有由 FDA 分配的药品代码改为 12 位三段式（6 位标签码、4 位产品码、2 位包装码），并修订药品标签条码要求以允许使用符合该规则的其他数据载体 · 传导路径：药品标识与追溯系统须按新编码改造，影响医药供应链信息化改造周期与成本 · 来源：联邦公报 2026-04368（91 FR 10749，2026-03-05 刊发）",
       "topic": "growth",
-      "actor": "agency"
+      "actor": "agency",
+      "links": [
+        {
+          "t": "联邦公报 2026-04368",
+          "u": "https://www.federalregister.gov/d/2026-04368"
+        }
+      ]
     }
   ],
   "pending": [
@@ -12602,7 +15049,21 @@
       "to": "2026-12-31",
       "win": "年底前",
       "place": "USTR / 商务部",
-      "src": "商务部第八轮磋商成果解读 · 李成钢 11-02 在北京会见美国农产品贸易代表团，双方就中美经贸关系与农产品贸易合作交换意见（商务部 2026-11-02） · 商务部发言人黄玲 11-05 例行发布会：扩大自美农产品采购持开放态度，但前提是「300 亿对 300 亿」对等降税安排落地；工作组首次会议的具体日期仍未公布（新华社 2026-11-05）"
+      "src": "商务部第八轮磋商成果解读 · 李成钢 11-02 在北京会见美国农产品贸易代表团，双方就中美经贸关系与农产品贸易合作交换意见（商务部 2026-11-02） · 商务部发言人黄玲 11-05 例行发布会：扩大自美农产品采购持开放态度，但前提是「300 亿对 300 亿」对等降税安排落地；工作组首次会议的具体日期仍未公布（新华社 2026-11-05）",
+      "links": [
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        },
+        {
+          "t": "商务部",
+          "u": "https://www.commerce.gov/"
+        },
+        {
+          "t": "中国商务部",
+          "u": "http://www.mofcom.gov.cn/"
+        }
+      ]
     },
     {
       "title": "中美对等降税清单落地",
@@ -12610,7 +15071,13 @@
       "to": "2026-12-31",
       "win": "清单已公布，实施日待定",
       "place": "USTR / 财政部",
-      "src": "商务部 2026-09-28 公布中美贸易理事会与「300 亿对 300 亿」对等降税框架及双方降税产品清单，美方清单同步发布（玩具、家电、婴儿用品、厨卫用品、节日礼物等约 300 亿美元自华进口商品；中方含农产品、个人护理用品、医疗器械、煤炭等约 300 亿美元自美进口商品），逾 90% 产品降至最惠国税率；双方将在履行各自国内法律程序后同步实施，实施日期未公布 · 商务部发言人黄玲 11-05：扩大自美采购农产品以对等降税安排落地为前提，反证实施日尚未确定（新华社 2026-11-05）"
+      "src": "商务部 2026-09-28 公布中美贸易理事会与「300 亿对 300 亿」对等降税框架及双方降税产品清单，美方清单同步发布（玩具、家电、婴儿用品、厨卫用品、节日礼物等约 300 亿美元自华进口商品；中方含农产品、个人护理用品、医疗器械、煤炭等约 300 亿美元自美进口商品），逾 90% 产品降至最惠国税率；双方将在履行各自国内法律程序后同步实施，实施日期未公布 · 商务部发言人黄玲 11-05：扩大自美采购农产品以对等降税安排落地为前提，反证实施日尚未确定（新华社 2026-11-05）",
+      "links": [
+        {
+          "t": "商务部",
+          "u": "https://www.commerce.gov/"
+        }
+      ]
     },
     {
       "title": "美印贸易协议签署",
@@ -12618,7 +15085,21 @@
       "to": "2026-12-15",
       "win": "最终阶段（印方倾向中期选举后签署）",
       "place": "华盛顿 / 新德里",
-      "src": "国务卿鲁比奥 10-20 在孟买称谈判完成约 99%，希望很快签署；印度商工部长戈亚尔 10-29 称谈判进入最终阶段，印方倾向在 11 月 3 日中期选举后签署；美贸易代表格里尔 10 月初称不会很快签署 · AirNews 引印方口径称正式签署仪式拟于 11 月 5 日在新德里举行、随后交国会表决，但无美方官方公告佐证；11-02 印方分析仍称协议未落地 · 印度财政部长称谈判「已进入平台期」，再进一步让步或索取都非常困难（10 月慕尼黑领袖会议）；鲁比奥 6-04 已说过「距达成协议只有几周」，至今 20 周未落地 · 美方两人代表团 11-02~03 访新德里，与印度商务部就海关程序、数字海关对接与供应链安全举行磋商，双方称继续推进第一阶段；截至 11-11 仍未公布签署日、替代关税安排与农业乳制品最终承诺（路透社 2026-11-10、Asia Daily 2026-11-11）"
+      "src": "国务卿鲁比奥 10-20 在孟买称谈判完成约 99%，希望很快签署；印度商工部长戈亚尔 10-29 称谈判进入最终阶段，印方倾向在 11 月 3 日中期选举后签署；美贸易代表格里尔 10 月初称不会很快签署 · AirNews 引印方口径称正式签署仪式拟于 11 月 5 日在新德里举行、随后交国会表决，但无美方官方公告佐证；11-02 印方分析仍称协议未落地 · 印度财政部长称谈判「已进入平台期」，再进一步让步或索取都非常困难（10 月慕尼黑领袖会议）；鲁比奥 6-04 已说过「距达成协议只有几周」，至今 20 周未落地 · 美方两人代表团 11-02~03 访新德里，与印度商务部就海关程序、数字海关对接与供应链安全举行磋商，双方称继续推进第一阶段；截至 11-11 仍未公布签署日、替代关税安排与农业乳制品最终承诺（路透社 2026-11-10、Asia Daily 2026-11-11）",
+      "links": [
+        {
+          "t": "USTR",
+          "u": "https://ustr.gov/"
+        },
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        },
+        {
+          "t": "商务部",
+          "u": "https://www.commerce.gov/"
+        }
+      ]
     },
     {
       "title": "副总统万斯访问阿根廷",
@@ -12626,7 +15107,13 @@
       "to": "2026-11-30",
       "win": "11 月内（筹备中）",
       "place": "布宜诺斯艾利斯",
-      "src": "阿根廷媒体（TN / 华人头条 10-01、10-02）引美方官员：副总统万斯将于 11 月访阿、在总统府玫瑰宫会见米莱，预计行程两到三天，系美方主动提出的区域巡访 · 副国务卿兰道访阿期间（11 月初）确认双方仍在筹备万斯 11 月来访，美方同期推进 1500 万美元对阿网络援助项目 · 具体日期与议程未公布 · 上一次美副总统访阿为 2017 年彭斯"
+      "src": "阿根廷媒体（TN / 华人头条 10-01、10-02）引美方官员：副总统万斯将于 11 月访阿、在总统府玫瑰宫会见米莱，预计行程两到三天，系美方主动提出的区域巡访 · 副国务卿兰道访阿期间（11 月初）确认双方仍在筹备万斯 11 月来访，美方同期推进 1500 万美元对阿网络援助项目 · 具体日期与议程未公布 · 上一次美副总统访阿为 2017 年彭斯",
+      "links": [
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        }
+      ]
     },
     {
       "title": "中美 AI 政府间对话（第二轮）",
@@ -12634,7 +15121,21 @@
       "to": "2026-11-30",
       "win": "11 月底前",
       "place": "财政部 / 商务部",
-      "src": "中美 9 月华盛顿会晤八点共识：双方同意建立人工智能对话，何立峰与贝森特为各自牵头人，首次对话已于 9 月 20 日完成，下次对话于 11 月举行；白宫 9 月事实清单称第二轮对话于 11 月举行，商务部称双方约定 11 月底前举行 · 《外交官》10 月：人工智能将列入深圳 APEC 正式议程；港媒称双方拟将对话成果纳入 APEC 期间中美元首会晤 · 商务部 10-24 就美财政部对外投资新规表态时敦促「用好中美人工智能对话机制，增进互信、管控分歧」· 中美元首均已确认出席 11 月 18—19 日深圳 APEC 领导人非正式会议，但第二轮 AI 对话的具体日期与形式仍未公布 · 中文研究机构 11-05 分析称本轮 APEC 期间双方重点议题是延长 BIS 关联方规则、301 海事物流造船措施与稀土出口管制的阶段性暂停，该说法非官方公告，仅供跟踪参考 · 11-06 中美经贸牵头人何立峰与贝森特、格里尔举行视频通话（外交部 11-07 公布），是 9-20 首轮之后牵头人渠道的又一次直接沟通，但人工智能对话是否在该轮通话中完成仍无官方说明 · 财政部长贝森特 11-10 在美中关系全国委员会演讲称，双方将在 11 月 18—19 日深圳 APEC 领导人会议期间推进新的「超智能」（SI）双边对话，交换先进模型发布前的评测与测试做法、建立重大事故直接通报渠道；具体日期、层级与牵头人未公布（海峡时报 2026-11-10 转引）"
+      "src": "中美 9 月华盛顿会晤八点共识：双方同意建立人工智能对话，何立峰与贝森特为各自牵头人，首次对话已于 9 月 20 日完成，下次对话于 11 月举行；白宫 9 月事实清单称第二轮对话于 11 月举行，商务部称双方约定 11 月底前举行 · 《外交官》10 月：人工智能将列入深圳 APEC 正式议程；港媒称双方拟将对话成果纳入 APEC 期间中美元首会晤 · 商务部 10-24 就美财政部对外投资新规表态时敦促「用好中美人工智能对话机制，增进互信、管控分歧」· 中美元首均已确认出席 11 月 18—19 日深圳 APEC 领导人非正式会议，但第二轮 AI 对话的具体日期与形式仍未公布 · 中文研究机构 11-05 分析称本轮 APEC 期间双方重点议题是延长 BIS 关联方规则、301 海事物流造船措施与稀土出口管制的阶段性暂停，该说法非官方公告，仅供跟踪参考 · 11-06 中美经贸牵头人何立峰与贝森特、格里尔举行视频通话（外交部 11-07 公布），是 9-20 首轮之后牵头人渠道的又一次直接沟通，但人工智能对话是否在该轮通话中完成仍无官方说明 · 财政部长贝森特 11-10 在美中关系全国委员会演讲称，双方将在 11 月 18—19 日深圳 APEC 领导人会议期间推进新的「超智能」（SI）双边对话，交换先进模型发布前的评测与测试做法、建立重大事故直接通报渠道；具体日期、层级与牵头人未公布（海峡时报 2026-11-10 转引）",
+      "links": [
+        {
+          "t": "APEC 官网",
+          "u": "https://www.apec.org/"
+        },
+        {
+          "t": "白宫简报室",
+          "u": "https://www.whitehouse.gov/briefing-room/"
+        },
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        }
+      ]
     },
     {
       "title": "G7 领导人峰会（美国主办）",
@@ -12642,7 +15143,13 @@
       "to": "2027-12-31",
       "win": "日期与地点待定（网传 6 月中旬，未获官方确认）",
       "place": "美国（地点未定）",
-      "src": "美国财政部 G7 财长轨采购公告（SAM.gov）：美国自 2027 年 1 月 1 日接任 G7 主席国，主席国任期持续至 2027 年 12 月该届峰会 · 主席国网站 g7-forum.com 称峰会为 6 月 12—14 日，但通篇不写主办国与举办城市，来源不可核验；groupofnations 与 mdwiki 均记为日期待定 · 网传「6 月 10—12 日、多拉尔」出自 2019 年为 2020 年峰会发布的公告，非 2027 年安排 · 美方尚未公布日期与地点，暂不写入正式日程"
+      "src": "美国财政部 G7 财长轨采购公告（SAM.gov）：美国自 2027 年 1 月 1 日接任 G7 主席国，主席国任期持续至 2027 年 12 月该届峰会 · 主席国网站 g7-forum.com 称峰会为 6 月 12—14 日，但通篇不写主办国与举办城市，来源不可核验；groupofnations 与 mdwiki 均记为日期待定 · 网传「6 月 10—12 日、多拉尔」出自 2019 年为 2020 年峰会发布的公告，非 2027 年安排 · 美方尚未公布日期与地点，暂不写入正式日程",
+      "links": [
+        {
+          "t": "财政部",
+          "u": "https://home.treasury.gov/"
+        }
+      ]
     },
     {
       "title": "2026 年中期选举结果公布",
@@ -12650,7 +15157,21 @@
       "to": "2026-12-18",
       "win": "结果已测算，待各州认证",
       "place": "各州选举机构",
-      "src": "美国没有统一的全国结果公布日：11-03 投票结束后由媒体按测算陆续判定胜者，随后由县、州逐级核计并认证。计票测算显示民主党取得参众两院控制权（美联社测算参院 54 席、众院 228 席，全国广播公司预计众院最终可达 255 席），杰弗里斯将成为美国首位非裔众议长，舒默重掌参议院多数党领袖地位。各州认证期限自 11-10 起至 12-18 不等（Ballotpedia 2026 年各州认证日历：佐治亚 11-20、纽约 12-09、俄勒冈 12-10、加州 12-11、阿肯色 12-18 最晚）；胶着席位可能因重新计票或诉讼延后。第 120 届国会议员 2027-01-03 宣誓就职。中期选举不涉及选举人团，不适用总统选举的「安全港」规则"
+      "src": "美国没有统一的全国结果公布日：11-03 投票结束后由媒体按测算陆续判定胜者，随后由县、州逐级核计并认证。计票测算显示民主党取得参众两院控制权（美联社测算参院 54 席、众院 228 席，全国广播公司预计众院最终可达 255 席），杰弗里斯将成为美国首位非裔众议长，舒默重掌参议院多数党领袖地位。各州认证期限自 11-10 起至 12-18 不等（Ballotpedia 2026 年各州认证日历：佐治亚 11-20、纽约 12-09、俄勒冈 12-10、加州 12-11、阿肯色 12-18 最晚）；胶着席位可能因重新计票或诉讼延后。第 120 届国会议员 2027-01-03 宣誓就职。中期选举不涉及选举人团，不适用总统选举的「安全港」规则",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        },
+        {
+          "t": "Ballotpedia",
+          "u": "https://ballotpedia.org/"
+        },
+        {
+          "t": "美联社",
+          "u": "https://apnews.com/"
+        }
+      ]
     },
     {
       "title": "EXIM 重新授权立法进程",
@@ -12658,7 +15179,13 @@
       "to": "2026-12-31",
       "win": "12-31 前表决（未获授权则授权日落）",
       "place": "华盛顿",
-      "src": "进出口银行（EXIM）一般法定授权依 12 U.S.C. § 635f 于 2026-12-31 届满，中国与转型出口计划（CTEP）依 12 U.S.C. § 635(l)(3)(C) 同日到期；众议院金融服务委员会已于 2026-03 发布延长授权的讨论稿，两院有多项重新授权法案在审，具体通过时间未定 · 未获重新授权则自 2027-01-01 起该行不得批准新交易，只能处置存量义务并有序清算 · 来源：美国国会研究服务处（CRS）IF10017（2026-08-20 更新）"
+      "src": "进出口银行（EXIM）一般法定授权依 12 U.S.C. § 635f 于 2026-12-31 届满，中国与转型出口计划（CTEP）依 12 U.S.C. § 635(l)(3)(C) 同日到期；众议院金融服务委员会已于 2026-03 发布延长授权的讨论稿，两院有多项重新授权法案在审，具体通过时间未定 · 未获重新授权则自 2027-01-01 起该行不得批准新交易，只能处置存量义务并有序清算 · 来源：美国国会研究服务处（CRS）IF10017（2026-08-20 更新）",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "title": "美伊新一轮间接谈判（工作级技术性会议）",
@@ -12666,16 +15193,27 @@
       "to": "2026-12-31",
       "win": "未来数日（未定）",
       "place": "地点待定",
-      "src": "阿克西奥斯 11-06 引两名知情人士：副总统万斯近两周直接参与对伊间接谈判，与卡塔尔首相阿勒萨尼、巴基斯坦陆军参谋长穆尼尔等斡旋方沟通，讨论未来数日举行工作级技术性会议的可能性，尚未落实（参考消息 2026-11-07）· 伊朗外交部发言人巴加埃 11-09 称伊方方案把重启准备期由七天压缩至最快两天，前提是美方先停止敌对行动、解除海上封锁并撤销制裁（路透社）· 鲁比奥 11-08 称间接谈判进展有限、伊方部分要求不切实际 · 迄今无双方确认的会谈日期与地点"
+      "src": "阿克西奥斯 11-06 引两名知情人士：副总统万斯近两周直接参与对伊间接谈判，与卡塔尔首相阿勒萨尼、巴基斯坦陆军参谋长穆尼尔等斡旋方沟通，讨论未来数日举行工作级技术性会议的可能性，尚未落实（参考消息 2026-11-07）· 伊朗外交部发言人巴加埃 11-09 称伊方方案把重启准备期由七天压缩至最快两天，前提是美方先停止敌对行动、解除海上封锁并撤销制裁（路透社）· 鲁比奥 11-08 称间接谈判进展有限、伊方部分要求不切实际 · 迄今无双方确认的会谈日期与地点",
+      "links": [
+        {
+          "t": "中国外交部",
+          "u": "https://www.mfa.gov.cn/"
+        }
+      ]
     },
-
     {
       "title": "2027 财年国防授权法（NDAA）跛脚鸭会期表决",
       "from": "2026-11-09",
       "to": "2026-12-31",
       "win": "12 月底前（军事薪酬与合同授权到期）",
       "place": "华盛顿",
-      "src": "FY2027 国防授权法授权约 1.15 万亿美元，众院已于 2026-07-22 通过 H.R. 8800，参院 S. 4784 尚未提交院会，两院领袖争取在 12 月底前完成协商文本并表决，以避免军事薪酬与合同授权到期；民主党在中期选举获胜后以伊朗战事与开支规模为条件施压（Bloomberg Government 2026-11-06、NPR 2026-11-09）· 具体表决日期未定"
+      "src": "FY2027 国防授权法授权约 1.15 万亿美元，众院已于 2026-07-22 通过 H.R. 8800，参院 S. 4784 尚未提交院会，两院领袖争取在 12 月底前完成协商文本并表决，以避免军事薪酬与合同授权到期；民主党在中期选举获胜后以伊朗战事与开支规模为条件施压（Bloomberg Government 2026-11-06、NPR 2026-11-09）· 具体表决日期未定",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     },
     {
       "title": "2027 财年拨款与新一轮临时拨款",
@@ -12683,7 +15221,13 @@
       "to": "2026-12-11",
       "win": "12 月 11 日前（现有 CR 到期）",
       "place": "华盛顿",
-      "src": "现行临时拨款法维持联邦政府运转至 2026-12-11；第 119 届国会 11-09 复会进入跛脚鸭会期，共和党领导层计划以又一份短期持续决议（CR）延长拨款，而非在会期内完成 12 项年度拨款法案（NPR 2026-11-09）· 美属萨摩亚众议员拉德瓦根（Aumua Amata Coleman Radewagen）11 月新闻稿确认「现有 CR 于 12 月 11 日到期，国会须通过全年拨款、另一份 CR 或混合方案以避免部分政府停摆」（radewagen.house.gov 2026-11）· 中方研究机构 11-10 亦按「12 月 11 日到期、或再启两党博弈」口径评述 · 参议院拨款委员会本年度未通过任何一项年度拨款法案，两党资深议员已启动磋商，争取在截止日前拿出折中方案；中期选举后民主党妥协意愿下降，停摆风险上升（华盛顿邮报 2026-11-09）· 参众两院的具体 CR 表决日程、延长期限与是否捆绑其他立法均未公布"
+      "src": "现行临时拨款法维持联邦政府运转至 2026-12-11；第 119 届国会 11-09 复会进入跛脚鸭会期，共和党领导层计划以又一份短期持续决议（CR）延长拨款，而非在会期内完成 12 项年度拨款法案（NPR 2026-11-09）· 美属萨摩亚众议员拉德瓦根（Aumua Amata Coleman Radewagen）11 月新闻稿确认「现有 CR 于 12 月 11 日到期，国会须通过全年拨款、另一份 CR 或混合方案以避免部分政府停摆」（radewagen.house.gov 2026-11）· 中方研究机构 11-10 亦按「12 月 11 日到期、或再启两党博弈」口径评述 · 参议院拨款委员会本年度未通过任何一项年度拨款法案，两党资深议员已启动磋商，争取在截止日前拿出折中方案；中期选举后民主党妥协意愿下降，停摆风险上升（华盛顿邮报 2026-11-09）· 参众两院的具体 CR 表决日程、延长期限与是否捆绑其他立法均未公布",
+      "links": [
+        {
+          "t": "Congress.gov",
+          "u": "https://www.congress.gov/"
+        }
+      ]
     }
   ]
 }
@@ -15010,6 +17554,10 @@
                  '<span class="uc-pend-m">' +
                    (p.win ? '<span class="uc-pend-w">' + esc(p.win) + '</span>' : '') +
                    (p.place ? '<span class="uc-pend-p">' + esc(p.place) + '</span>' : '') +
+                   ((p.links && p.links.length) ? '<span class="uc-pend-l">' + p.links.map(function (l) {
+                     return '<a href="' + esc(l.u) + '" target="_blank" rel="noopener noreferrer"' +
+                            ' title="' + esc(l.u) + '">' + esc(l.t) + ' ↗</a>';
+                   }).join('') + '</span>' : '') +
                  '</span></li>';
         }).join('');
       }
@@ -15349,6 +17897,10 @@
               return '<span class="ud-tag"><i>' + t[0] + '</i><b>' + t[1] + '</b></span>';
             }).join('') + '</div>' : '') +
             (parts.src ? '<p class="ud-src"><i>来源</i>' + esc(parts.src) + '</p>' : '') +
+            ((ev.links && ev.links.length) ? '<div class="ud-links">' + ev.links.map(function (l) {
+              return '<a class="ud-a" href="' + esc(l.u) + '" target="_blank" rel="noopener noreferrer"' +
+                     ' title="' + esc(l.u) + '">' + esc(l.t) + '<span aria-hidden="true">↗</span></a>';
+            }).join('') + '</div>' : '') +
             '</div>';
         }).join('');
         return '<div class="uc-expand" role="region" aria-label="当日安排" style="--ue-col:' + (col || 0) + '">' +

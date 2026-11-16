@@ -519,6 +519,9 @@ python3 scripts/brief.py merge scripts/briefs.json
 - `cal_update.py`：键为 `(d, d2, title)`，命中即跳过，**绝无删除分支**；
   写回前用 `(d, title)` 键集合做兜底断言；只改 `us-cal-data` 一个数据块。
   需要「待定 → 官方确认」精化时加 `--update-notes`。
+- `cal_links.py`：日历来源链接。按「联邦公报文件号 → 正文域名 → 机构官方页 → 事项类型兜底」
+  四级顺序给每条事件补 `links`（最多 3 条），`apply` 写入、`check` 校验数量与协议、
+  `stats --urls` 列出唯一 URL 供批量验活。见 docs §3.5。
 - `cal_classify.py`：日历分类与口径规范化。按规则给每条补 `cat/topic/actor`
   三项指标，`check` 校验覆盖与一致性、`apply` 写入（幂等，支持 `--fix-holiday` 统一假日口径）、
   `report --csv` 导出清单。规则判错时在 `OVERRIDES` 里按 `(日期, 标题)` 覆盖。定义见
