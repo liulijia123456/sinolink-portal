@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-11-15 18:42",
+  "updated_at": "2026-11-16 08:36",
   "count": 1342,
   "items": [
     {
@@ -1945,10 +1945,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Rules Committee Resolution H. Res. 916 Reported to House. Rule provides for consideration of H.R. 4312, H.R. 1005, H.R. 1049, H.R. 1069, H.R. 2965 and H.R. 4305. The resolution pro",
       "official_no": "H.R. 4312",
-      "sponsor": "Gus M. Bilirakis",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-FL-12",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 4312·《SCORE法案》｜众议院法案·第119届国会｜提案人 Gus M. Bilirakis（R-FL-12）｜提出 2025-07-10\n为高校学生运动员的姓名、形象与肖像（NIL）补偿建立法定框架，落实「House 和解」相关要素，禁止高校、联盟与校际体育协会限制学生就 NIL 达成协议。\n最新行动 2025-12-01：众议院规则委员会第 916 号决议报送全院，为包括本法案在内的六项法案设定封闭规则、一小时一般性辩论与一项发回重审议动。\n信息边界：本法案于 2025 年 7 月 10 日提出，最新行动发生于 2025 年 12 月 1 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《SCORE法案》",
+      "domain": "教育/劳动",
       "actions": [
         {
           "date": "2025-12-01",
@@ -1986,14 +1990,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《SCORE法案》",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 4312·《SCORE法案》｜众议院法案·第119届国会｜提案人 Gus M. Bilirakis（R-FL-12）｜提出 2025-07-10\n为高校学生运动员的姓名、形象与肖像（NIL）补偿建立法定框架，落实「House 和解」相关要素，禁止高校、联盟与校际体育协会限制学生就 NIL 达成协议。\n最新行动 2025-12-01：众议院规则委员会第 916 号决议报送全院，为包括本法案在内的六项法案设定封闭规则、一小时一般性辩论与一项发回重审议动。\n信息边界：本法案于 2025 年 7 月 10 日提出，最新行动发生于 2025 年 12 月 1 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Gus M. Bilirakis",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-12",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2006,10 +2006,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Natural Resources.",
       "official_no": "H.R. 11004",
-      "sponsor": "Celeste Maloy",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-UT-2",
-      "committee": "Natural Resources",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11004·《授权在犹他州国会礁国家公园特定区域使用越野车法案》｜众议院法案·第119届国会｜提案人 Celeste Maloy（R-UT-2）｜提出 2026-11-11\n法案为标题式立法，直接授权在犹他州国会礁国家公园的特定区域使用越野车（OHV），适用路段范围与使用条件由条文界定，官方摘要尚未发布。\n最新行动 2026-11-11：交付众议院自然资源委员会审议。\n信息边界：法案于 2026-11-11 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《授权在犹他州国会礁国家公园特定区域使用越野车法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-11",
@@ -2022,14 +2026,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《授权在犹他州国会礁国家公园特定区域使用越野车法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11004·《授权在犹他州国会礁国家公园特定区域使用越野车法案》｜众议院法案·第119届国会｜提案人 Celeste Maloy（R-UT-2）｜提出 2026-11-11\n法案为标题式立法，直接授权在犹他州国会礁国家公园的特定区域使用越野车（OHV），适用路段范围与使用条件由条文界定，官方摘要尚未发布。\n最新行动 2026-11-11：交付众议院自然资源委员会审议。\n信息边界：法案于 2026-11-11 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Celeste Maloy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT-2",
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -2042,10 +2042,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 702.",
       "official_no": "S. 2970",
-      "sponsor": "Mike Lee",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-UT",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】国会礁国家公园位于犹他州中南部，园内有 24 号公路等多条穿越道路，机动车与越野车（OHV）的使用长期受联邦规则约束，与州、县主张的管理权限存在分歧。本法案为第 119 届国会参议院法案，由犹他州共和党参议员 Mike Lee 于 2025 年 10 月 3 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 702。\n\n【核心内容】依据国会研究服务局摘要，法案将犹他州州法适用于园内若干道路上的机动车（含越野车）使用：Burr Trail Road、Cathedral Road、Hartnet Road、24 号公路、Notom Bullfrog Road、Polk Creek Road、Oil Well Bench Road、Baker Ranch Road、South Desert Overlook Road、Temple of the Sun and Moon Road、Gypsum Sinkhole Road 与 Sulphur Creek Road 位于公园边界内的路段。摘要未列明对园内野生生物保护、通行时段或车辆登记的具体衔接条款。\n\n【要点提炼】其一，法案处理的是园内道路的适用法问题，把州法而非联邦公园规则置于优先位置，属管辖权重置而非新增授权。其二，适用对象限于摘要列明的十二类路段，未及全园。其三，程序上已列入参议院立法日程，下一观察节点为参议院院会审议；同届众议院存在同题法案（H.R. 11004），2026 年 11 月 11 日刚交付自然资源委员会，两院进度差距较大。其四，本届国会法案成案率通常在 5%–10% 区间，摘要未列明条款细节，文本以 congress.gov 公布版本为准。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《授权在犹他州国会礁国家公园特定区域使用越野车法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2073,14 +2077,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《授权在犹他州国会礁国家公园特定区域使用越野车法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "【政策背景】国会礁国家公园位于犹他州中南部，园内有 24 号公路等多条穿越道路，机动车与越野车（OHV）的使用长期受联邦规则约束，与州、县主张的管理权限存在分歧。本法案为第 119 届国会参议院法案，由犹他州共和党参议员 Mike Lee 于 2025 年 10 月 3 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 702。\n\n【核心内容】依据国会研究服务局摘要，法案将犹他州州法适用于园内若干道路上的机动车（含越野车）使用：Burr Trail Road、Cathedral Road、Hartnet Road、24 号公路、Notom Bullfrog Road、Polk Creek Road、Oil Well Bench Road、Baker Ranch Road、South Desert Overlook Road、Temple of the Sun and Moon Road、Gypsum Sinkhole Road 与 Sulphur Creek Road 位于公园边界内的路段。摘要未列明对园内野生生物保护、通行时段或车辆登记的具体衔接条款。\n\n【要点提炼】其一，法案处理的是园内道路的适用法问题，把州法而非联邦公园规则置于优先位置，属管辖权重置而非新增授权。其二，适用对象限于摘要列明的十二类路段，未及全园。其三，程序上已列入参议院立法日程，下一观察节点为参议院院会审议；同届众议院存在同题法案（H.R. 11004），2026 年 11 月 11 日刚交付自然资源委员会，两院进度差距较大。其四，本届国会法案成案率通常在 5%–10% 区间，摘要未列明条款细节，文本以 congress.gov 公布版本为准。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "Mike Lee",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2093,10 +2093,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Ways and Means.",
       "official_no": "H.R. 11033",
-      "sponsor": "Nicole Malliotakis",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-NY-11",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11033·《修订1986年国内税收法典将合格本土影视制作纳入合格生产财产特殊扣除范围法案》｜众议院法案·第119届国会｜提案人 Nicole Malliotakis（R-NY-11）｜提出 2026-11-13\n修订1986年国内税收法典，将「合格本土影视制作」纳入「合格生产财产特殊扣除」的适用范围，即把现行面向合格生产财产的税收待遇扩展至本土影视制作活动。\n最新行动 2026-11-13：交付众议院筹款委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《修订1986年国内税收法典将合格本土影视制作纳入合格生产财产特殊扣除范围法案》",
+      "domain": "财政/税收",
       "actions": [
         {
           "date": "2026-11-13",
@@ -2109,14 +2113,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《修订1986年国内税收法典将合格本土影视制作纳入合格生产财产特殊扣除范围法案》",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11033·《修订1986年国内税收法典将合格本土影视制作纳入合格生产财产特殊扣除范围法案》｜众议院法案·第119届国会｜提案人 Nicole Malliotakis（R-NY-11）｜提出 2026-11-13\n修订1986年国内税收法典，将「合格本土影视制作」纳入「合格生产财产特殊扣除」的适用范围，即把现行面向合格生产财产的税收待遇扩展至本土影视制作活动。\n最新行动 2026-11-13：交付众议院筹款委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Nicole Malliotakis",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NY-11",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -2129,10 +2129,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11035",
-      "sponsor": "Rick Larsen",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-WA-2",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11035·《修订公共卫生服务法授权资助社区减害服务拨款法案》｜众议院法案·第119届国会｜提案人 Rick Larsen（D-WA-2）｜提出 2026-11-13\n修订公共卫生服务法，要求卫生与公众服务部经由精神健康与药物滥用助理部长，向面向物质使用者的社区减害服务项目提供拨款。\n最新行动 2026-11-13：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《修订公共卫生服务法授权资助社区减害服务拨款法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-13",
@@ -2145,14 +2149,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《修订公共卫生服务法授权资助社区减害服务拨款法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11035·《修订公共卫生服务法授权资助社区减害服务拨款法案》｜众议院法案·第119届国会｜提案人 Rick Larsen（D-WA-2）｜提出 2026-11-13\n修订公共卫生服务法，要求卫生与公众服务部经由精神健康与药物滥用助理部长，向面向物质使用者的社区减害服务项目提供拨款。\n最新行动 2026-11-13：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Rick Larsen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA-2",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2165,10 +2165,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
       "official_no": "H.R. 11036",
-      "sponsor": "James R. Walkinshaw",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-VA-11",
-      "committee": "Oversight and Government Reform",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11036·《要求联邦机构负责人就信息技术合同人员配置提交年度评估法案》｜众议院法案·第119届国会｜提案人 James R. Walkinshaw（D-VA-11）｜提出 2026-11-13\n要求联邦机构负责人每年就信息技术合同官与合同官代表的编制需求提交评估，并据此提交信息技术采购队伍的编制与培养计划。\n最新行动 2026-11-13：交付众议院监督和政府改革委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《要求联邦机构负责人就信息技术合同人员配置提交年度评估法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-11-13",
@@ -2181,14 +2185,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《要求联邦机构负责人就信息技术合同人员配置提交年度评估法案》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11036·《要求联邦机构负责人就信息技术合同人员配置提交年度评估法案》｜众议院法案·第119届国会｜提案人 James R. Walkinshaw（D-VA-11）｜提出 2026-11-13\n要求联邦机构负责人每年就信息技术合同官与合同官代表的编制需求提交评估，并据此提交信息技术采购队伍的编制与培养计划。\n最新行动 2026-11-13：交付众议院监督和政府改革委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "James R. Walkinshaw",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-11",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2201,10 +2201,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Natural Resources.",
       "official_no": "H.R. 11034",
-      "sponsor": "Lizzie Fletcher",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-TX-7",
-      "committee": "Natural Resources",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11034·《设立国家鱼类与野生动物基金会沿海州基金法案》｜众议院法案·第119届国会｜提案人 Lizzie Fletcher（D-TX-7）｜提出 2026-11-13\n设立国家鱼类与野生动物基金会沿海州基金，作为该基金会项下的专项基金；资金来源、分配标准与用途由条文规定，官方摘要尚未发布。\n最新行动 2026-11-13：交付众议院自然资源委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《设立国家鱼类与野生动物基金会沿海州基金法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-13",
@@ -2217,14 +2221,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《设立国家鱼类与野生动物基金会沿海州基金法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11034·《设立国家鱼类与野生动物基金会沿海州基金法案》｜众议院法案·第119届国会｜提案人 Lizzie Fletcher（D-TX-7）｜提出 2026-11-13\n设立国家鱼类与野生动物基金会沿海州基金，作为该基金会项下的专项基金；资金来源、分配标准与用途由条文规定，官方摘要尚未发布。\n最新行动 2026-11-13：交付众议院自然资源委员会审议。\n信息边界：法案于 2026-11-13 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Lizzie Fletcher",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-TX-7",
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -2237,10 +2237,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Ways and Means.",
       "official_no": "H.R. 11018",
-      "sponsor": "Timothy M. Kennedy",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NY-26",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11018·《2026年通过税收抵免促进动物救助法案》｜众议院法案·第119届国会｜提案人 Timothy M. Kennedy（D-NY-26）｜提出 2026-11-12\n以税收抵免方式支持动物救助活动，具体抵免对象、额度与适用条件由条文规定，官方摘要尚未发布，不作推定。\n最新行动 2026-11-12：交付众议院筹款委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年通过税收抵免促进动物救助法案》",
+      "domain": "财政/税收",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2253,14 +2257,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年通过税收抵免促进动物救助法案》",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11018·《2026年通过税收抵免促进动物救助法案》｜众议院法案·第119届国会｜提案人 Timothy M. Kennedy（D-NY-26）｜提出 2026-11-12\n以税收抵免方式支持动物救助活动，具体抵免对象、额度与适用条件由条文规定，官方摘要尚未发布，不作推定。\n最新行动 2026-11-12：交付众议院筹款委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Timothy M. Kennedy",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-26",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -2273,10 +2273,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 10763",
-      "sponsor": "Julia Letlow",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-LA-5",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 10763·《了解你的风险法案》｜众议院法案·第119届国会｜提案人 Julia Letlow（R-LA-5）｜提出 2026-10-06\n法案名为「了解你的风险法案」，政策领域为卫生；标题未披露具体制度设计，条款内容待文本公布后确认。\n最新行动 2026-10-06：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-10-06 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《了解你的风险法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-10-06",
@@ -2289,14 +2293,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《了解你的风险法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 10763·《了解你的风险法案》｜众议院法案·第119届国会｜提案人 Julia Letlow（R-LA-5）｜提出 2026-10-06\n法案名为「了解你的风险法案」，政策领域为卫生；标题未披露具体制度设计，条款内容待文本公布后确认。\n最新行动 2026-10-06：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-10-06 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Julia Letlow",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-LA-5",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2309,10 +2309,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on the Judiciary.",
       "official_no": "H.R. 3115",
-      "sponsor": "Lucy McBath",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-GA-6",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 3115·《2025年攻击性武器禁令法案》｜众议院法案·第119届国会｜提案人 Lucy McBath（D-GA-6）｜提出 2025-04-30\n将明知而进口、销售、制造、转让或持有半自动攻击性武器与大容量供弹装置定为犯罪，并列举手动枪械、古董枪、边缘发火枪械及按型号列名的长枪等豁免，另对特定情形设例外。\n最新行动 2025-04-30：交付众议院司法委员会审议。\n信息边界：本法案于 2025 年 4 月 30 日提出，最新行动同日发生，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2025年攻击性武器禁令法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2025-04-30",
@@ -2325,14 +2329,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2025年攻击性武器禁令法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 3115·《2025年攻击性武器禁令法案》｜众议院法案·第119届国会｜提案人 Lucy McBath（D-GA-6）｜提出 2025-04-30\n将明知而进口、销售、制造、转让或持有半自动攻击性武器与大容量供弹装置定为犯罪，并列举手动枪械、古董枪、边缘发火枪械及按型号列名的长枪等豁免，另对特定情形设例外。\n最新行动 2025-04-30：交付众议院司法委员会审议。\n信息边界：本法案于 2025 年 4 月 30 日提出，最新行动同日发生，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Lucy McBath",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-GA-6",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2345,10 +2345,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
       "official_no": "H.R. 10937",
-      "sponsor": "Doris O. Matsui",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-7",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 10937·《2026年保护340B药品折扣计划法案》｜众议院法案·第119届国会｜提案人 Doris O. Matsui（D-CA-7）｜提出 2026-10-29\n法案名为「保护 340B 法案」，指向 340B 药品折扣计划的规则调整或保护；官方摘要尚未发布，具体条款以文本为准。\n最新行动 2026-10-29：交付众议院能源和商业委员会审议，并同时交付筹款委员会。\n信息边界：法案于 2026-10-29 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年保护340B药品折扣计划法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-10-29",
@@ -2361,14 +2365,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年保护340B药品折扣计划法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 10937·《2026年保护340B药品折扣计划法案》｜众议院法案·第119届国会｜提案人 Doris O. Matsui（D-CA-7）｜提出 2026-10-29\n法案名为「保护 340B 法案」，指向 340B 药品折扣计划的规则调整或保护；官方摘要尚未发布，具体条款以文本为准。\n最新行动 2026-10-29：交付众议院能源和商业委员会审议，并同时交付筹款委员会。\n信息边界：法案于 2026-10-29 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Doris O. Matsui",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-7",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2381,10 +2381,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
       "official_no": "H.R. 11001",
-      "sponsor": "Brendan F. Boyle",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-PA-2",
-      "committee": "Oversight and Government Reform",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11001·《保护社区邮政服务可及性法案》｜众议院法案·第119届国会｜提案人 Brendan F. Boyle（D-PA-2）｜提出 2026-11-11\n法案名为「保护社区邮政服务可及性法案」，指向邮政网点与投递服务的可及性；网点调整审批、服务标准等具体措施待文本公布，不作推定。\n最新行动 2026-11-11：交付众议院监督和政府改革委员会审议。\n信息边界：法案于 2026-11-11 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《保护社区邮政服务可及性法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-11-11",
@@ -2397,14 +2401,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《保护社区邮政服务可及性法案》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11001·《保护社区邮政服务可及性法案》｜众议院法案·第119届国会｜提案人 Brendan F. Boyle（D-PA-2）｜提出 2026-11-11\n法案名为「保护社区邮政服务可及性法案」，指向邮政网点与投递服务的可及性；网点调整审批、服务标准等具体措施待文本公布，不作推定。\n最新行动 2026-11-11：交付众议院监督和政府改革委员会审议。\n信息边界：法案于 2026-11-11 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Brendan F. Boyle",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-PA-2",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -2417,10 +2417,14 @@
       "kind": "众议院决议",
       "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
       "official_no": "H.Res. 1660",
-      "sponsor": "Robert B. Aderholt",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-AL-4",
-      "committee": "Education and Workforce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.Res. 1660·《支持全国收养日与全国收养月目标决议》｜众议院决议·第119届国会｜提案人 Robert B. Aderholt（R-AL-4）｜提出 2026-11-12\n表达对全国收养日与全国收养月目标的支持，倡导提升公众对收养及待安置儿童的认识，并鼓励为儿童提供安全、稳定与福祉保障。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：本决议属意向性表态，不具立法约束力，亦不产生新的联邦支出；官方摘要尚未发布，文本以 congress.gov 为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《支持全国收养日与全国收养月目标决议》",
+      "domain": "社会保障",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2433,14 +2437,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《支持全国收养日与全国收养月目标决议》",
-      "domain": "社会保障",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.Res. 1660·《支持全国收养日与全国收养月目标决议》｜众议院决议·第119届国会｜提案人 Robert B. Aderholt（R-AL-4）｜提出 2026-11-12\n表达对全国收养日与全国收养月目标的支持，倡导提升公众对收养及待安置儿童的认识，并鼓励为儿童提供安全、稳定与福祉保障。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：本决议属意向性表态，不具立法约束力，亦不产生新的联邦支出；官方摘要尚未发布，文本以 congress.gov 为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Robert B. Aderholt",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AL-4",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -2453,10 +2453,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Foreign Affairs.",
       "official_no": "H.R. 6527",
-      "sponsor": "Young Kim",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-CA-40",
-      "committee": "Foreign Affairs",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 6527·《为洛克比事件在世受害者伸张正义法案》｜众议院法案·第119届国会｜提案人 Young Kim（R-CA-40）｜提出 2025-12-09\n法案名为「为洛克比事件在世受害者伸张正义法案」，指向 1988 年洛克比空难在世受害者的救济与追责安排；官方摘要尚未发布，具体机制以文本为准。\n最新行动 2025-12-09：交付众议院外交事务委员会审议。\n信息边界：本轮系元数据更新重新进入抓取窗口，最新行动发生于 2025-12-09，非近日新增立法行动；队列未提供条款级官方摘要，条文以 congress.gov 公布文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《为洛克比事件在世受害者伸张正义法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2025-12-09",
@@ -2469,14 +2473,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《为洛克比事件在世受害者伸张正义法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 6527·《为洛克比事件在世受害者伸张正义法案》｜众议院法案·第119届国会｜提案人 Young Kim（R-CA-40）｜提出 2025-12-09\n法案名为「为洛克比事件在世受害者伸张正义法案」，指向 1988 年洛克比空难在世受害者的救济与追责安排；官方摘要尚未发布，具体机制以文本为准。\n最新行动 2025-12-09：交付众议院外交事务委员会审议。\n信息边界：本轮系元数据更新重新进入抓取窗口，最新行动发生于 2025-12-09，非近日新增立法行动；队列未提供条款级官方摘要，条文以 congress.gov 公布文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Young Kim",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CA-40",
+      "committee": "Foreign Affairs"
     },
     {
       "board": "congress",
@@ -2489,10 +2489,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Presented to President.",
       "official_no": "H.R. 8352",
-      "sponsor": "Derek Schmidt",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-KS-2",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 8352·《2026年犯罪记录查阅法案》｜众议院法案·第119届国会｜提案人 Derek Schmidt（R-KS-2）｜提出 2026-04-16\n授权「执法人员标准与培训机构」这一新类型主体查阅联邦调查局维护的犯罪历史记录；该类机构指经州、哥伦比亚特区或美国属地授权，通过认证、许可等方式为执法人员设定录用、培训、操守与留任标准的机构。\n最新行动 2026-11-12：呈送总统签署。\n信息边界：法案已完成两院程序并呈送总统，签署前不产生法律效力；摘要为国会研究服务局要点，具体文本以 congress.gov 公布版本为准。",
+        "tier": "note",
+        "stage": "president"
+      },
+      "title_cn": "《2026年犯罪记录查阅法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2540,14 +2544,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年犯罪记录查阅法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 8352·《2026年犯罪记录查阅法案》｜众议院法案·第119届国会｜提案人 Derek Schmidt（R-KS-2）｜提出 2026-04-16\n授权「执法人员标准与培训机构」这一新类型主体查阅联邦调查局维护的犯罪历史记录；该类机构指经州、哥伦比亚特区或美国属地授权，通过认证、许可等方式为执法人员设定录用、培训、操守与留任标准的机构。\n最新行动 2026-11-12：呈送总统签署。\n信息边界：法案已完成两院程序并呈送总统，签署前不产生法律效力；摘要为国会研究服务局要点，具体文本以 congress.gov 公布版本为准。",
-        "tier": "note",
-        "stage": "president"
-      }
+      "sponsor": "Derek Schmidt",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KS-2",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2560,10 +2560,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Ways and Means.",
       "official_no": "H.R. 10846",
-      "sponsor": "Laura Friedman",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-30",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 10846·《2026年Pay Your TAB法案》｜众议院法案·第119届国会｜提案人 Laura Friedman（D-CA-30）｜提出 2026-10-19\n法案名为「Pay Your TAB 法案」，交付众议院筹款委员会；案名缩写 TAB 的全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-10-19：交付众议院筹款委员会审议。\n信息边界：法案于 2026-10-19 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年Pay Your TAB法案》",
+      "domain": "财政/税收",
       "actions": [
         {
           "date": "2026-10-19",
@@ -2576,14 +2580,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年Pay Your TAB法案》",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 10846·《2026年Pay Your TAB法案》｜众议院法案·第119届国会｜提案人 Laura Friedman（D-CA-30）｜提出 2026-10-19\n法案名为「Pay Your TAB 法案」，交付众议院筹款委员会；案名缩写 TAB 的全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-10-19：交付众议院筹款委员会审议。\n信息边界：法案于 2026-10-19 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Laura Friedman",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-30",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -2596,10 +2596,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Armed Services.",
       "official_no": "H.R. 10848",
-      "sponsor": "Maggie Goodlander",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NH-2",
-      "committee": "Armed Services",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 10848·《2026年造船厂现代化维持法案》｜众议院法案·第119届国会｜提案人 Maggie Goodlander（D-NH-2）｜提出 2026-10-19\n法案名为「造船厂现代化维持法案」，交付众议院军事委员会，指向海军造船厂设施现代化与维持的安排；具体条款待文本公布。\n最新行动 2026-10-19：交付众议院军事委员会审议。\n信息边界：法案于 2026-10-19 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年造船厂现代化维持法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2026-10-19",
@@ -2612,14 +2616,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年造船厂现代化维持法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 10848·《2026年造船厂现代化维持法案》｜众议院法案·第119届国会｜提案人 Maggie Goodlander（D-NH-2）｜提出 2026-10-19\n法案名为「造船厂现代化维持法案」，交付众议院军事委员会，指向海军造船厂设施现代化与维持的安排；具体条款待文本公布。\n最新行动 2026-10-19：交付众议院军事委员会审议。\n信息边界：法案于 2026-10-19 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Maggie Goodlander",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NH-2",
+      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -2632,10 +2632,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Agriculture.",
       "official_no": "H.R. 11022",
-      "sponsor": "April McClain Delaney",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MD-6",
-      "committee": "Agriculture",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11022·《农业防洪韧性与基础设施法案》｜众议院法案·第119届国会｜提案人 April McClain Delaney（D-MD-6）｜提出 2026-11-12\n法案名为「农业防洪韧性与基础设施法案」，交付众议院农业委员会，指向农业领域洪涝韧性与基础设施建设；缩写全称未在官方素材中列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《农业防洪韧性与基础设施法案》",
+      "domain": "农业/食品",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2648,14 +2652,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《农业防洪韧性与基础设施法案》",
-      "domain": "农业/食品",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11022·《农业防洪韧性与基础设施法案》｜众议院法案·第119届国会｜提案人 April McClain Delaney（D-MD-6）｜提出 2026-11-12\n法案名为「农业防洪韧性与基础设施法案」，交付众议院农业委员会，指向农业领域洪涝韧性与基础设施建设；缩写全称未在官方素材中列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "April McClain Delaney",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD-6",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -2668,10 +2668,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Foreign Affairs.",
       "official_no": "H.R. 11028",
-      "sponsor": "Keith Self",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TX-3",
-      "committee": "Foreign Affairs",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11028·《2026年DesigNAIT法案》｜众议院法案·第119届国会｜提案人 Keith Self（R-TX-3）｜提出 2026-11-12\n法案名为「DesigNAIT 法案」，交付众议院外交事务委员会；案名缩写 NAIT 的全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院外交事务委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年DesigNAIT法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2684,14 +2688,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年DesigNAIT法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11028·《2026年DesigNAIT法案》｜众议院法案·第119届国会｜提案人 Keith Self（R-TX-3）｜提出 2026-11-12\n法案名为「DesigNAIT 法案」，交付众议院外交事务委员会；案名缩写 NAIT 的全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院外交事务委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Keith Self",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-3",
+      "committee": "Foreign Affairs"
     },
     {
       "board": "congress",
@@ -2704,10 +2704,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consi",
       "official_no": "H.R. 11016",
-      "sponsor": "Maxwell Frost",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-FL-10",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11016·《禁止以儿童为诱饵法案》｜众议院法案·第119届国会｜提案人 Maxwell Frost（D-FL-10）｜提出 2026-11-12\n法案名为「禁止以儿童为诱饵法案」，标题指向将利用儿童作为诱饵的行为入罪；具体罪名、构成要件与刑度待文本公布。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付国土安全委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《禁止以儿童为诱饵法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2720,14 +2724,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《禁止以儿童为诱饵法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11016·《禁止以儿童为诱饵法案》｜众议院法案·第119届国会｜提案人 Maxwell Frost（D-FL-10）｜提出 2026-11-12\n法案名为「禁止以儿童为诱饵法案」，标题指向将利用儿童作为诱饵的行为入罪；具体罪名、构成要件与刑度待文本公布。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付国土安全委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Maxwell Frost",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-FL-10",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -2740,10 +2740,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Science, Space, and Technology, for a period to be subsequently determined by the Speaker, in ",
       "official_no": "H.R. 11012",
-      "sponsor": "Kathy Castor",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-FL-14",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11012·《ON-DEMAND法案》｜众议院法案·第119届国会｜提案人 Kathy Castor（D-FL-14）｜提出 2026-11-12\n法案名为「ON-DEMAND 法案」，同时交付能源和商业委员会与科学、太空和技术委员会；缩写全称未在官方素材中列明，条款内容待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议，并同时交付科学、太空和技术委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《ON-DEMAND法案》",
+      "domain": "其他",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2756,14 +2760,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《ON-DEMAND法案》",
-      "domain": "其他",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11012·《ON-DEMAND法案》｜众议院法案·第119届国会｜提案人 Kathy Castor（D-FL-14）｜提出 2026-11-12\n法案名为「ON-DEMAND 法案」，同时交付能源和商业委员会与科学、太空和技术委员会；缩写全称未在官方素材中列明，条款内容待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议，并同时交付科学、太空和技术委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Kathy Castor",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-FL-14",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -2776,10 +2776,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Agriculture.",
       "official_no": "H.R. 11014",
-      "sponsor": "Veronica Escobar",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-TX-16",
-      "committee": "Agriculture",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11014·《鸭与鹅保护法案》｜众议院法案·第119届国会｜提案人 Veronica Escobar（D-TX-16）｜提出 2026-11-12\n法案名为「鸭与鹅保护法案」，交付众议院农业委员会；狩猎季设置、许可管理或栖息地措施等具体条款待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《鸭与鹅保护法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2792,14 +2796,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《鸭与鹅保护法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11014·《鸭与鹅保护法案》｜众议院法案·第119届国会｜提案人 Veronica Escobar（D-TX-16）｜提出 2026-11-12\n法案名为「鸭与鹅保护法案」，交付众议院农业委员会；狩猎季设置、许可管理或栖息地措施等具体条款待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Veronica Escobar",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-TX-16",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -2812,10 +2812,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 700.",
       "official_no": "S. 1254",
-      "sponsor": "James E. Risch",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-ID",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】《含水层补给灵活性法》为联邦土地上的含水层人工补给提供通行与用地安排，实践中对「转让」（conveyance）条款的适用范围存在解释分歧，涉及联邦土地管理机关与地方水利机构之间的权责划分。本法案为第 119 届国会参议院法案，由爱达荷州共和党参议员 James E. Risch 于 2025 年 4 月 2 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 700。\n\n【核心内容】据法案标题，本法案仅修订《含水层补给灵活性法》中与含水层补给用途相关的转让条款，属澄清性修正，不新设项目、不改变该法的整体框架。队列未提供国会研究服务局摘要，澄清所涉的具体权属类型、适用土地范围与审批程序无法据现有素材核实，不作推定；条款内容以 congress.gov 公布文本为准。\n\n【要点提炼】其一，法案为技术性澄清修正，立法体量小，争议面通常限于解释口径。其二，程序上已完成委员会环节并列入参议院立法日程，下一观察节点为参议院院会审议与表决。其三，未见同题众议院版本进入本期抓取窗口，若参议院通过，需众议院引入对应文本方可推进。其四，官方摘要未取得，本条不涉具体授权额度与适用地块，相关判断须待文本公布。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《修订含水层补给灵活性法澄清含水层补给用途转让条款法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2843,14 +2847,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《修订含水层补给灵活性法澄清含水层补给用途转让条款法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "【政策背景】《含水层补给灵活性法》为联邦土地上的含水层人工补给提供通行与用地安排，实践中对「转让」（conveyance）条款的适用范围存在解释分歧，涉及联邦土地管理机关与地方水利机构之间的权责划分。本法案为第 119 届国会参议院法案，由爱达荷州共和党参议员 James E. Risch 于 2025 年 4 月 2 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 700。\n\n【核心内容】据法案标题，本法案仅修订《含水层补给灵活性法》中与含水层补给用途相关的转让条款，属澄清性修正，不新设项目、不改变该法的整体框架。队列未提供国会研究服务局摘要，澄清所涉的具体权属类型、适用土地范围与审批程序无法据现有素材核实，不作推定；条款内容以 congress.gov 公布文本为准。\n\n【要点提炼】其一，法案为技术性澄清修正，立法体量小，争议面通常限于解释口径。其二，程序上已完成委员会环节并列入参议院立法日程，下一观察节点为参议院院会审议与表决。其三，未见同题众议院版本进入本期抓取窗口，若参议院通过，需众议院引入对应文本方可推进。其四，官方摘要未取得，本条不涉具体授权额度与适用地块，相关判断须待文本公布。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "James E. Risch",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-ID",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2863,10 +2863,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 701.",
       "official_no": "S. 2262",
-      "sponsor": "John Barrasso",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-WY",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】土地管理局（BLM）在土地规划、租约与资源开发许可中依《国家环境政策法》等规定设置公示与公众评论环节，评论量大、身份难以核验，近年出现自动化程序批量提交意见的情形。本法案为第 119 届国会参议院法案，由怀俄明州共和党参议员 John Barrasso 于 2025 年 7 月 10 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 701。\n\n【核心内容】依据国会研究服务局摘要，法案要求 BLM 修改其公众评论系统：一是仅采纳美国公民提交的公众意见；二是通过设置全自动区分计算机与人类的图灵测试（CAPTCHA），遏制以人工智能机器人等方式进行的参与行为。摘要仅列上述两项，未涉及评论期限、意见权重或司法审查标准的调整，亦未说明公民身份的核验方式与例外情形。\n\n【要点提炼】其一，法案把公众评论的适格主体限定为美国公民，改变现行以「任何利害关系人」为基础的参与结构。其二，技术性防伪措施（CAPTCHA）被写入法定要求，指向自动化意见提交。其三，程序上已列入参议院立法日程，下一观察节点为院会审议；未见同题众议院版本进入本期窗口。其四，公民身份核验与意见效力认定的具体规则摘要未列明，条文以 congress.gov 文本为准；本届国会法案成案率通常在 5%–10% 区间。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《联邦土地上的美国声音法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2894,14 +2898,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《联邦土地上的美国声音法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "【政策背景】土地管理局（BLM）在土地规划、租约与资源开发许可中依《国家环境政策法》等规定设置公示与公众评论环节，评论量大、身份难以核验，近年出现自动化程序批量提交意见的情形。本法案为第 119 届国会参议院法案，由怀俄明州共和党参议员 John Barrasso 于 2025 年 7 月 10 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 701。\n\n【核心内容】依据国会研究服务局摘要，法案要求 BLM 修改其公众评论系统：一是仅采纳美国公民提交的公众意见；二是通过设置全自动区分计算机与人类的图灵测试（CAPTCHA），遏制以人工智能机器人等方式进行的参与行为。摘要仅列上述两项，未涉及评论期限、意见权重或司法审查标准的调整，亦未说明公民身份的核验方式与例外情形。\n\n【要点提炼】其一，法案把公众评论的适格主体限定为美国公民，改变现行以「任何利害关系人」为基础的参与结构。其二，技术性防伪措施（CAPTCHA）被写入法定要求，指向自动化意见提交。其三，程序上已列入参议院立法日程，下一观察节点为院会审议；未见同题众议院版本进入本期窗口。其四，公民身份核验与意见效力认定的具体规则摘要未列明，条文以 congress.gov 文本为准；本届国会法案成案率通常在 5%–10% 区间。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "John Barrasso",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WY",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2914,10 +2914,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 706.",
       "official_no": "S. 4116",
-      "sponsor": "John W. Hickenlooper",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CO",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】地热发电的勘探与开发涉及联邦土地租约、井下作业许可与电网接入等环节，项目周期长、前期风险高，联邦层面长期以定向税收与担保工具支持。本法案为第 119 届国会参议院法案，由科罗拉多州民主党参议员 John W. Hickenlooper 于 2026 年 3 月 17 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 706。\n\n【核心内容】法案名称为「Geo POWER 法案」，缩写全称未在队列素材中列明。队列未提供国会研究服务局摘要，法案的激励工具类型（税收抵免、贷款担保或授权拨款）、适用技术范围与额度均无法据现有素材核实，不作推定；条款内容以 congress.gov 公布文本为准。可确认的程序事实为：法案已通过委员会环节并列入参议院立法日程，具备提交院会审议的排程资格。\n\n【要点提炼】其一，法案指向地热发电，属能源政策中的技术路线支持类立法，与油气、核能等议题并列。其二，程序位置为参议院立法日程，下一观察节点为院会审议与表决安排。其三，本届国会尚无同题众议院版本进入本期抓取窗口，两院协调尚无基础。其四，官方摘要缺失，本条对支持力度与财政成本不作判断，相关数据须待文本与后续评分公布。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《地热发电（Geo POWER）法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2945,14 +2949,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《地热发电（Geo POWER）法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "【政策背景】地热发电的勘探与开发涉及联邦土地租约、井下作业许可与电网接入等环节，项目周期长、前期风险高，联邦层面长期以定向税收与担保工具支持。本法案为第 119 届国会参议院法案，由科罗拉多州民主党参议员 John W. Hickenlooper 于 2026 年 3 月 17 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 706。\n\n【核心内容】法案名称为「Geo POWER 法案」，缩写全称未在队列素材中列明。队列未提供国会研究服务局摘要，法案的激励工具类型（税收抵免、贷款担保或授权拨款）、适用技术范围与额度均无法据现有素材核实，不作推定；条款内容以 congress.gov 公布文本为准。可确认的程序事实为：法案已通过委员会环节并列入参议院立法日程，具备提交院会审议的排程资格。\n\n【要点提炼】其一，法案指向地热发电，属能源政策中的技术路线支持类立法，与油气、核能等议题并列。其二，程序位置为参议院立法日程，下一观察节点为院会审议与表决安排。其三，本届国会尚无同题众议院版本进入本期抓取窗口，两院协调尚无基础。其四，官方摘要缺失，本条对支持力度与财政成本不作判断，相关数据须待文本与后续评分公布。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "John W. Hickenlooper",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -2965,10 +2965,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Armed Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for conside",
       "official_no": "H.R. 11026",
-      "sponsor": "August Pfluger",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TX-11",
-      "committee": "Armed Services",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11026·《授权国防部长向继续服役军人「特朗普账户」缴款法案》｜众议院法案·第119届国会｜提案人 August Pfluger（R-TX-11）｜提出 2026-11-12\n修订美国法典第37编，授权国防部长向承诺继续服役的军人「特朗普账户」缴款作为奖励，并修订1986年国内税收法典，使该缴款适用雇主「特朗普账户」缴款计划的税务处理。\n最新行动 2026-11-12：交付众议院军事委员会审议，并同时交付筹款委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《授权国防部长向继续服役军人「特朗普账户」缴款法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2026-11-12",
@@ -2981,14 +2985,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《授权国防部长向继续服役军人「特朗普账户」缴款法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11026·《授权国防部长向继续服役军人「特朗普账户」缴款法案》｜众议院法案·第119届国会｜提案人 August Pfluger（R-TX-11）｜提出 2026-11-12\n修订美国法典第37编，授权国防部长向承诺继续服役的军人「特朗普账户」缴款作为奖励，并修订1986年国内税收法典，使该缴款适用雇主「特朗普账户」缴款计划的税务处理。\n最新行动 2026-11-12：交付众议院军事委员会审议，并同时交付筹款委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -3001,10 +3001,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Transportation and Infrastructure.",
       "official_no": "H.R. 11031",
-      "sponsor": "David J. Taylor",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-OH-2",
-      "committee": "Transportation and Infrastructure",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11031·《商业驾驶执照欺诈举报热线法案》｜众议院法案·第119届国会｜提案人 David J. Taylor（R-OH-2）｜提出 2026-11-12\n法案名为「商业驾驶执照欺诈举报热线法案」，指向设立针对商业驾驶执照申领欺诈的举报渠道；热线承设主体、受理范围与后续处置待文本公布。\n最新行动 2026-11-12：交付众议院交通和基础设施委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《商业驾驶执照欺诈举报热线法案》",
+      "domain": "交通",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3017,14 +3021,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《商业驾驶执照欺诈举报热线法案》",
-      "domain": "交通",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11031·《商业驾驶执照欺诈举报热线法案》｜众议院法案·第119届国会｜提案人 David J. Taylor（R-OH-2）｜提出 2026-11-12\n法案名为「商业驾驶执照欺诈举报热线法案」，指向设立针对商业驾驶执照申领欺诈的举报渠道；热线承设主体、受理范围与后续处置待文本公布。\n最新行动 2026-11-12：交付众议院交通和基础设施委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "David J. Taylor",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-2",
+      "committee": "Transportation and Infrastructure"
     },
     {
       "board": "congress",
@@ -3037,10 +3037,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for co",
       "official_no": "H.R. 11029",
-      "sponsor": "Adrian Smith",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-NE-3",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11029·《居家照护衔接法案》｜众议院法案·第119届国会｜提案人 Adrian Smith（R-NE-3）｜提出 2026-11-12\n法案名为「居家照护衔接法案」，交付筹款委员会并同时交付能源和商业委员会，指向居家照护服务的衔接与支付安排；缩写全称未列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院筹款委员会审议，并同时交付能源和商业委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《居家照护衔接法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3053,14 +3057,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《居家照护衔接法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11029·《居家照护衔接法案》｜众议院法案·第119届国会｜提案人 Adrian Smith（R-NE-3）｜提出 2026-11-12\n法案名为「居家照护衔接法案」，交付筹款委员会并同时交付能源和商业委员会，指向居家照护服务的衔接与支付安排；缩写全称未列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院筹款委员会审议，并同时交付能源和商业委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Adrian Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NE-3",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -3073,10 +3073,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Agriculture, Energy and Commerce, Ways and Means, and Education and Workforce, for a period to be s",
       "official_no": "H.R. 11020",
-      "sponsor": "Michael Lawler",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-NY-17",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11020·《卫生与公众服务人力签证法案》｜众议院法案·第119届国会｜提案人 Michael Lawler（R-NY-17）｜提出 2026-11-12\n法案名为「卫生与公众服务人力签证法案」，以签证渠道补充卫生人力；具体签证类别、配额与劳工条件待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付农业、能源和商业、筹款、教育和劳动力四个委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《卫生与公众服务人力签证法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3089,14 +3093,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《卫生与公众服务人力签证法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11020·《卫生与公众服务人力签证法案》｜众议院法案·第119届国会｜提案人 Michael Lawler（R-NY-17）｜提出 2026-11-12\n法案名为「卫生与公众服务人力签证法案」，以签证渠道补充卫生人力；具体签证类别、配额与劳工条件待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付农业、能源和商业、筹款、教育和劳动力四个委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Michael Lawler",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NY-17",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -3109,10 +3109,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
       "official_no": "H.R. 11015",
-      "sponsor": "Vince Fong",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-CA-20",
-      "committee": "Education and Workforce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11015·《2026年博士人才法案》｜众议院法案·第119届国会｜提案人 Vince Fong（R-CA-20）｜提出 2026-11-12\n法案名为「博士人才法案」，交付众议院教育和劳动力委员会，指向博士层次人才的培养、留用或签证衔接；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年博士人才法案》",
+      "domain": "教育/劳动",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3125,14 +3129,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年博士人才法案》",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11015·《2026年博士人才法案》｜众议院法案·第119届国会｜提案人 Vince Fong（R-CA-20）｜提出 2026-11-12\n法案名为「博士人才法案」，交付众议院教育和劳动力委员会，指向博士层次人才的培养、留用或签证衔接；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Vince Fong",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CA-20",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -3145,10 +3145,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Veterans' Affairs.",
       "official_no": "H.R. 11021",
-      "sponsor": "Nancy Mace",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-SC-1",
-      "committee": "Veterans' Affairs",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11021·《2026年为退伍军人提供准确癌症筛查法案》｜众议院法案·第119届国会｜提案人 Nancy Mace（R-SC-1）｜提出 2026-11-12\n法案名为「为退伍军人提供准确癌症筛查法案」，交付众议院退伍军人事务委员会，指向退伍军人癌症筛查的准确性与覆盖安排；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院退伍军人事务委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年为退伍军人提供准确癌症筛查法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3161,14 +3165,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年为退伍军人提供准确癌症筛查法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11021·《2026年为退伍军人提供准确癌症筛查法案》｜众议院法案·第119届国会｜提案人 Nancy Mace（R-SC-1）｜提出 2026-11-12\n法案名为「为退伍军人提供准确癌症筛查法案」，交付众议院退伍军人事务委员会，指向退伍军人癌症筛查的准确性与覆盖安排；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院退伍军人事务委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Nancy Mace",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-1",
+      "committee": "Veterans' Affairs"
     },
     {
       "board": "congress",
@@ -3181,10 +3181,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11013",
-      "sponsor": "Maxine Dexter",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-OR-3",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11013·《保护美国预防服务工作组独立性法案》｜众议院法案·第119届国会｜提案人 Maxine Dexter（D-OR-3）｜提出 2026-11-12\n法案名为「保护美国预防服务工作组独立性法案」；该工作组负责对临床预防服务作出分级推荐，法案所指的保护机制待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《保护美国预防服务工作组独立性法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3197,14 +3201,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《保护美国预防服务工作组独立性法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11013·《保护美国预防服务工作组独立性法案》｜众议院法案·第119届国会｜提案人 Maxine Dexter（D-OR-3）｜提出 2026-11-12\n法案名为「保护美国预防服务工作组独立性法案」；该工作组负责对临床预防服务作出分级推荐，法案所指的保护机制待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Maxine Dexter",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR-3",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3217,10 +3217,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11023",
-      "sponsor": "Kevin Mullin",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-15",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11023·《2026年RATES法案》｜众议院法案·第119届国会｜提案人 Kevin Mullin（D-CA-15）｜提出 2026-11-12\n法案名为「RATES 法案」，交付众议院能源和商业委员会；缩写全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年RATES法案》",
+      "domain": "其他",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3233,14 +3237,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年RATES法案》",
-      "domain": "其他",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11023·《2026年RATES法案》｜众议院法案·第119届国会｜提案人 Kevin Mullin（D-CA-15）｜提出 2026-11-12\n法案名为「RATES 法案」，交付众议院能源和商业委员会；缩写全称未在官方素材中列明，条款内容待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Kevin Mullin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-15",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3253,10 +3253,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11024",
-      "sponsor": "Robert F. Onder",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-MO-3",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11024·《2026年过敏与哮喘患者保护法案》｜众议院法案·第119届国会｜提案人 Robert F. Onder（R-MO-3）｜提出 2026-11-12\n法案名为「过敏与哮喘患者保护法案」，交付众议院能源和商业委员会，指向过敏与哮喘患者的治疗可及性或支付保障；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年过敏与哮喘患者保护法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3269,14 +3273,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年过敏与哮喘患者保护法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11024·《2026年过敏与哮喘患者保护法案》｜众议院法案·第119届国会｜提案人 Robert F. Onder（R-MO-3）｜提出 2026-11-12\n法案名为「过敏与哮喘患者保护法案」，交付众议院能源和商业委员会，指向过敏与哮喘患者的治疗可及性或支付保障；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Robert F. Onder",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO-3",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3289,10 +3289,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Agriculture.",
       "official_no": "H.R. 11030",
-      "sponsor": "Eric Sorensen",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-IL-17",
-      "committee": "Agriculture",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11030·《农民公平保费法案》｜众议院法案·第119届国会｜提案人 Eric Sorensen（D-IL-17）｜提出 2026-11-12\n法案名为「农民公平保费法案」，交付众议院农业委员会，指向农业保险保费负担的调整；险种范围、补贴比例与适用条件待文本公布。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《农民公平保费法案》",
+      "domain": "农业/食品",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3305,14 +3309,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《农民公平保费法案》",
-      "domain": "农业/食品",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11030·《农民公平保费法案》｜众议院法案·第119届国会｜提案人 Eric Sorensen（D-IL-17）｜提出 2026-11-12\n法案名为「农民公平保费法案」，交付众议院农业委员会，指向农业保险保费负担的调整；险种范围、补贴比例与适用条件待文本公布。\n最新行动 2026-11-12：交付众议院农业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Eric Sorensen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-17",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -3325,10 +3325,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Small Business.",
       "official_no": "H.R. 11027",
-      "sponsor": "Hillary J. Scholten",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MI-3",
-      "committee": "Small Business",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11027·《增强合同订单竞争法案》｜众议院法案·第119届国会｜提案人 Hillary J. Scholten（D-MI-3）｜提出 2026-11-12\n法案名为「增强合同订单竞争法案」，交付众议院小企业委员会，指向联邦采购订单环节的竞争性要求；适用门槛与例外情形待文本公布。\n最新行动 2026-11-12：交付众议院小企业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《增强合同订单竞争法案》",
+      "domain": "产业/企业",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3341,14 +3345,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《增强合同订单竞争法案》",
-      "domain": "产业/企业",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11027·《增强合同订单竞争法案》｜众议院法案·第119届国会｜提案人 Hillary J. Scholten（D-MI-3）｜提出 2026-11-12\n法案名为「增强合同订单竞争法案」，交付众议院小企业委员会，指向联邦采购订单环节的竞争性要求；适用门槛与例外情形待文本公布。\n最新行动 2026-11-12：交付众议院小企业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Hillary J. Scholten",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-3",
+      "committee": "Small Business"
     },
     {
       "board": "congress",
@@ -3361,10 +3361,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 699.",
       "official_no": "S. 789",
-      "sponsor": "John Cornyn",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TX",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "【政策背景】关键矿产与稀土元素的全球供应集中度较高，美国地质调查局按「关键」标准认定矿产清单，内政部在资源评估、海外资产处置与技术合作方面承担相应职能。本法案为第 119 届国会参议院法案，由得克萨斯州共和党参议员 John Cornyn 于 2025 年 2 月 27 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 699。\n\n【核心内容】依据国会研究服务局摘要，法案为内政部设定三项要求：其一，就全球关键矿产与稀土资源（含可回收或再生材料）提交报告，内容包括全球所有权与供应状况评估，报告须在一年内提交、此后每两年一次。其二，建立程序，协助美国主体（美国公民、合法永久居民或依美国法设立的实体）为其在外国经营的矿产开采、加工或回收业务股份寻找不受朝鲜、中国、俄罗斯或伊朗控制的买方。其三，制定与盟友及伙伴合作开发先进开采、精炼、分离、加工与回收技术的战略，并建立知识产权共享方法，使相关国家可获许可、开发本国资源。\n\n【要点提炼】其一，法案以报告、资产处置协助与技术合作三支点构建供应链安全工具，未直接设置进口限制或关税。其二，稀土元素按摘要列明的十七种元素界定，与关键矿产清单并列为适用对象。其三，程序上已列入参议院立法日程，下一观察节点为院会审议；未见同题众议院版本进入本期窗口。其四，报告与战略均属行政程序义务，实施效果取决于拨款与部门执行，本届国会法案成案率通常在5%–10% 区间。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《2025年关键矿产安全法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-12",
@@ -3392,14 +3396,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2025年关键矿产安全法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "【政策背景】关键矿产与稀土元素的全球供应集中度较高，美国地质调查局按「关键」标准认定矿产清单，内政部在资源评估、海外资产处置与技术合作方面承担相应职能。本法案为第 119 届国会参议院法案，由得克萨斯州共和党参议员 John Cornyn 于 2025 年 2 月 27 日提出，2026 年 11 月 12 日列入参议院立法日程（General Orders），日历编号 699。\n\n【核心内容】依据国会研究服务局摘要，法案为内政部设定三项要求：其一，就全球关键矿产与稀土资源（含可回收或再生材料）提交报告，内容包括全球所有权与供应状况评估，报告须在一年内提交、此后每两年一次。其二，建立程序，协助美国主体（美国公民、合法永久居民或依美国法设立的实体）为其在外国经营的矿产开采、加工或回收业务股份寻找不受朝鲜、中国、俄罗斯或伊朗控制的买方。其三，制定与盟友及伙伴合作开发先进开采、精炼、分离、加工与回收技术的战略，并建立知识产权共享方法，使相关国家可获许可、开发本国资源。\n\n【要点提炼】其一，法案以报告、资产处置协助与技术合作三支点构建供应链安全工具，未直接设置进口限制或关税。其二，稀土元素按摘要列明的十七种元素界定，与关键矿产清单并列为适用对象。其三，程序上已列入参议院立法日程，下一观察节点为院会审议；未见同题众议院版本进入本期窗口。其四，报告与战略均属行政程序义务，实施效果取决于拨款与部门执行，本届国会法案成案率通常在5%–10% 区间。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "John Cornyn",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -3412,6 +3412,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Held at the desk.",
       "official_no": "S. 872",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "S. 872·《2025年停止秘密支出法案》｜参议院法案·第119届国会｜提案人 Joni Ernst（R-IA）｜提出 2025-03-05\n将联邦机构在 USAspending.gov 上的支出报告义务扩展至「其他交易协议」（OTA）支出；OTA 指采购合同、赠款与合作协议之外的合同工具，豁免多项联邦采购法律法规。\n最新行动 2026-06-15：参议院收到众议院文本后置于议席（Held at the desk），未交付委员会。\n信息边界：本法案于 2025 年 3 月 5 日提出，最新行动发生于 2026 年 6 月 15 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "both"
+      },
+      "title_cn": "《2025年停止秘密支出法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-06-15",
@@ -3459,18 +3467,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2025年停止秘密支出法案》",
-      "domain": "政府运作",
       "sponsor": "Joni Ernst",
       "sponsor_party": "R",
       "sponsor_tag": "R-IA",
-      "committee": "",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "S. 872·《2025年停止秘密支出法案》｜参议院法案·第119届国会｜提案人 Joni Ernst（R-IA）｜提出 2025-03-05\n将联邦机构在 USAspending.gov 上的支出报告义务扩展至「其他交易协议」（OTA）支出；OTA 指采购合同、赠款与合作协议之外的合同工具，豁免多项联邦采购法律法规。\n最新行动 2026-06-15：参议院收到众议院文本后置于议席（Held at the desk），未交付委员会。\n信息边界：本法案于 2025 年 3 月 5 日提出，最新行动发生于 2026 年 6 月 15 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "both"
-      }
+      "committee": ""
     },
     {
       "board": "congress",
@@ -3483,6 +3483,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Natural Resources, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for",
       "official_no": "H.R. 133",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 133·《保护美国能源生产法案》｜众议院法案·第119届国会｜提案人 Lauren Boebert（R-CO-3）｜提出 2025-01-03\n禁止总统未经国会授权宣布暂停水力压裂，并表达国会意见，认为各州应保留对州与私人土地上油气水力压裂的监管主导权。\n最新行动 2025-01-03：交付众议院自然资源委员会审议，并同时交付能源和商业委员会。\n信息边界：本法案于 2025 年 1 月 3 日提出，最新行动同日发生，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《保护美国能源生产法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2025-01-03",
@@ -3495,18 +3503,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《保护美国能源生产法案》",
-      "domain": "能源/环境",
       "sponsor": "Lauren Boebert",
       "sponsor_party": "R",
       "sponsor_tag": "R-CO-3",
-      "committee": "Natural Resources",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 133·《保护美国能源生产法案》｜众议院法案·第119届国会｜提案人 Lauren Boebert（R-CO-3）｜提出 2025-01-03\n禁止总统未经国会授权宣布暂停水力压裂，并表达国会意见，认为各州应保留对州与私人土地上油气水力压裂的监管主导权。\n最新行动 2025-01-03：交付众议院自然资源委员会审议，并同时交付能源和商业委员会。\n信息边界：本法案于 2025 年 1 月 3 日提出，最新行动同日发生，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "committee": "Natural Resources"
     },
     {
       "board": "congress",
@@ -3519,6 +3519,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation.",
       "official_no": "H.R. 1325",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 1325·《2025年商业遥感修正法案》｜众议院法案·第119届国会｜提案人 Frank D. Lucas（R-OK-3）｜提出 2025-02-13\n调整私营遥感空间系统许可制度，将国家海洋和大气管理局审查并处理许可申请的期限由 120 天缩短至 60 天，并对许可条件作其他修改。\n最新行动 2025-03-25：参议院接收并二读，交付商务、科学和交通委员会审议。\n信息边界：本法案于 2025 年 2 月 13 日提出，最新行动发生于 2025 年 3 月 25 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "first"
+      },
+      "title_cn": "《2025年商业遥感修正法案》",
+      "domain": "科技/AI",
       "actions": [
         {
           "date": "2025-03-25",
@@ -3541,18 +3549,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2025年商业遥感修正法案》",
-      "domain": "科技/AI",
       "sponsor": "Frank D. Lucas",
       "sponsor_party": "R",
       "sponsor_tag": "R-OK-3",
-      "committee": "Commerce, Science, and Transportation",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 1325·《2025年商业遥感修正法案》｜众议院法案·第119届国会｜提案人 Frank D. Lucas（R-OK-3）｜提出 2025-02-13\n调整私营遥感空间系统许可制度，将国家海洋和大气管理局审查并处理许可申请的期限由 120 天缩短至 60 天，并对许可条件作其他修改。\n最新行动 2025-03-25：参议院接收并二读，交付商务、科学和交通委员会审议。\n信息边界：本法案于 2025 年 2 月 13 日提出，最新行动发生于 2025 年 3 月 25 日，本轮系元数据更新重新进入抓取窗口，非近日新增立法行动；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "first"
-      }
+      "committee": "Commerce, Science, and Transportation"
     },
     {
       "board": "congress",
