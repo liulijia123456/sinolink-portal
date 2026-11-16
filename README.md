@@ -340,6 +340,9 @@ export CONGRESS_API_KEY=你的密钥          # 推荐：不落盘
 | `edit_items.py` | 受控补写 `title_cn` / `domain` | `python3 scripts/edit_items.py patch.json [--overwrite] [--dry-run]` |
 | `validate_data.py` | 发布前机器体检 | `python3 scripts/validate_data.py [--strict]` |
 | `cal_update.py` | 大事日历安全增量合并 | `python3 scripts/cal_update.py merge cand.json [--dry-run]`<br>`python3 scripts/cal_update.py check` |
+| `cal_classify.py` | 日历分类指标（`cat/topic/actor`）判定、写入与体检 | `python3 scripts/cal_classify.py check`<br>`python3 scripts/cal_classify.py apply [--fix-holiday]`<br>`python3 scripts/cal_classify.py report --csv` |
+| `cal_links.py` | 日历来源链接补全（分级取前 3）与校验 | `python3 scripts/cal_links.py stats --urls`<br>`python3 scripts/cal_links.py apply`<br>`python3 scripts/cal_links.py check` |
+| `cal_fetch.py` | 日历候选**半自动**采集：只产收件箱，不改数据 | `python3 scripts/cal_fetch.py fetch [--days 30] [--horizon 150]`<br>`python3 scripts/cal_fetch.py report` |
 | `cal_audit.py` | 日历事实审计 + 受控删除（就职/选举人团年度规则、休市口径、会期长度、相关性） | `python3 scripts/cal_audit.py check`<br>`python3 scripts/cal_audit.py prune del.json [--dry-run]` |
 | `gen_updates_json.py` | 生成 `updates.json` 增量清单 | `python3 scripts/gen_updates_json.py --days 10 --out updates.json` |
 | `fix_congress_urls.py` | 修正决议类条目的错误 URL | `python3 scripts/fix_congress_urls.py [--dry-run]` |
@@ -530,6 +533,33 @@ python3 scripts/brief.py merge scripts/briefs.json
   `-bill` 曾导致跳错。脚本按 `kind` 推候选类型、查官方标题、`title` 比对一致才改。
 - `gen_updates_json.py`：把新增条目导出为前端自动更新模块消费的清单，**只写 `updates.json`**，
   不碰 `data/policy/`。缺 `CONGRESS_API_KEY` 时跳过国会板块，不失败。
+
+### 5.4 `cal_fetch.py` — 日历候选采集（半自动）
+
+定位是**收窄盲区，不替代判断**：官方源给的是英文标题与生效日，日历要的是中文标题 + 分类 +
+体例化 note，这一步必须过一遍人。脚本只回答「有没有漏」，不写 `us-cal-data`。
+
+| 源 | 接口 | 产出 | 备注 |
+| --- | --- | --- | --- |
+| 联邦公报 | `/api/v1/documents.json`，`type=RULE` | 生效日在窗口内的最终规则 | 免 key；**`effective_on` 不是合法过滤字段**，只能用 `publication_date` 过滤、本地再按生效日筛 |
+| OPM | `holidays.ics` | 联邦假日 | 该文件是**滚动全量**（当前 2021—2030 共 112 条），必须按日期窗口截断 |
+| 美联储 | `fomccalendars.htm` | FOMC 会期 | 页面形态含 `17-18*`（星号＝附经济预测摘要）、`Apr/May 30-1`（跨月）、`22 (notation vote)`（非议息，丢弃） |
+
+三条判定闸，顺序不可颠倒（`keep_rule()`）：**主题词优先收**（关税/出口管制/制裁/半导体/AI/
+加密/医保/频谱/关键矿产等，命中即收）→ **例行模式弃**（空域修订、州级环保实施计划、矿安设备、
+FOIA、行政听证程序等）→ **机构白/黑名单**。丢弃量分「窗口外 / 例行 / 机构」三类记入
+`logs/cal.log`，便于回看是不是滤过头。
+
+日期口径：**议息记会期首日**（`d`=2027-01-26 对应 Jan 26-27，决议落在 `e`），与库内既有
+21 条议息条目一致；改口径须全量迁移，不能只改脚本。去重也按源分流：规则认联邦公报文件号，
+议息与假日认日期是否已有同类条目，其余才回落到 `(d, 标题)`。
+
+产出 `scripts/cal_inbox.json`（含 `is_new`、`src`、窗口参数），**不入库**。实测（2026-11-16）：
+抓 212 条规则 → 保留 15，加 5 条假日、3 场议息，合计 23 条、其中新 2 条。
+
+已知盲区（脚本抓不到，仍靠日更人工补）：纽交所假日与联邦假日不完全重合（耶稣受难日只休市）；
+财政部 OFAC 与国债拍卖、BLS/BEA/Census 发布日历、国会表决均为网页或 PDF，无稳定接口；
+会议纪要发布日由 `cal_audit.py` 按决议日 +21 天推得。
 
 ---
 
