@@ -2450,6 +2450,8 @@
     color: var(--us-blue); background: #fff;
   }
   #view-us .ud-a:hover { background: #eef4fc; border-color: var(--us-blue); }
+  /* 非一手来源（通讯社/媒体转述）降一档灰度，读者一眼能分辨是否原文 */
+  #view-us .ud-a[data-k="w"], #view-us .ud-a[data-k="m"] { color: #5d6f80; border-style: dashed; }
   #view-us .ud-tag.hi { color: var(--us-ink); }
   #view-us .ud-tag.hi b { color: var(--us-blue); font-weight: 700; }
   #view-us .ud-src { border-top-color: var(--us-line-soft); font-size: 10px; }
@@ -9182,7 +9184,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -9198,11 +9201,13 @@
       "links": [
         {
           "t": "IMF 会议",
-          "u": "https://www.imf.org/en/meetings"
+          "u": "https://www.imf.org/en/meetings",
+          "k": "p"
         },
         {
           "t": "世行活动",
-          "u": "https://www.worldbank.org/en/events"
+          "u": "https://www.worldbank.org/en/events",
+          "k": "p"
         }
       ]
     },
@@ -9217,12 +9222,14 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+          "t": "bls.gov",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm",
+          "k": "p"
         },
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9237,12 +9244,14 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+          "t": "bls.gov",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm",
+          "k": "p"
         },
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9256,12 +9265,14 @@
       "actor": "intl",
       "links": [
         {
-          "t": "g20 页面",
-          "u": "https://g20.org/events"
+          "t": "g20.org",
+          "u": "https://g20.org/events",
+          "k": "p"
         },
         {
           "t": "G20 官网",
-          "u": "https://g20.org/"
+          "u": "https://g20.org/",
+          "k": "p"
         }
       ]
     },
@@ -9276,12 +9287,14 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/release_schedule.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/release_schedule.html",
+          "k": "p"
         },
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -9296,12 +9309,14 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bls.gov/schedule/2026/10_sched.htm"
+          "t": "bls.gov",
+          "u": "https://www.bls.gov/schedule/2026/10_sched.htm",
+          "k": "p"
         },
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9316,15 +9331,18 @@
       "links": [
         {
           "t": "联邦公报 2026-21430",
-          "u": "https://www.federalregister.gov/d/2026-21430"
+          "u": "https://www.federalregister.gov/d/2026-21430",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-21431",
-          "u": "https://www.federalregister.gov/d/2026-21431"
+          "u": "https://www.federalregister.gov/d/2026-21431",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-21432",
-          "u": "https://www.federalregister.gov/d/2026-21432"
+          "u": "https://www.federalregister.gov/d/2026-21432",
+          "k": "p"
         }
       ]
     },
@@ -9339,7 +9357,8 @@
       "links": [
         {
           "t": "以色列政府",
-          "u": "https://www.gov.il/en"
+          "u": "https://www.gov.il/en",
+          "k": "p"
         }
       ]
     },
@@ -9355,8 +9374,9 @@
       "actor": "fed",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "t": "federalreserve.gov",
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -9371,8 +9391,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -9387,8 +9408,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -9404,7 +9426,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9420,15 +9443,18 @@
       "links": [
         {
           "t": "G20 官网",
-          "u": "https://g20.org/"
+          "u": "https://g20.org/",
+          "k": "p"
         },
         {
           "t": "国务院",
-          "u": "https://www.state.gov/"
+          "u": "https://www.state.gov/",
+          "k": "p"
         },
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         }
       ]
     },
@@ -9444,11 +9470,13 @@
       "links": [
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         },
         {
           "t": "印度外交部",
-          "u": "https://www.mea.gov.in/"
+          "u": "https://www.mea.gov.in/",
+          "k": "p"
         }
       ]
     },
@@ -9463,7 +9491,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -9478,7 +9507,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20247",
-          "u": "https://www.federalregister.gov/d/2026-20247"
+          "u": "https://www.federalregister.gov/d/2026-20247",
+          "k": "p"
         }
       ]
     },
@@ -9493,11 +9523,13 @@
       "links": [
         {
           "t": "联邦公报 2026-17823",
-          "u": "https://www.federalregister.gov/d/2026-17823"
+          "u": "https://www.federalregister.gov/d/2026-17823",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-19312",
-          "u": "https://www.federalregister.gov/d/2026-19312"
+          "u": "https://www.federalregister.gov/d/2026-19312",
+          "k": "p"
         }
       ]
     },
@@ -9511,12 +9543,14 @@
       "actor": "exec",
       "links": [
         {
-          "t": "Ballotpedia",
-          "u": "https://ballotpedia.org/"
+          "t": "美联社",
+          "u": "https://apnews.com/",
+          "k": "w"
         },
         {
-          "t": "美联社",
-          "u": "https://apnews.com/"
+          "t": "Ballotpedia",
+          "u": "https://ballotpedia.org/",
+          "k": "m"
         }
       ]
     },
@@ -9531,8 +9565,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -9547,15 +9582,18 @@
       "links": [
         {
           "t": "联邦公报 2026-22685",
-          "u": "https://www.federalregister.gov/d/2026-22685"
+          "u": "https://www.federalregister.gov/d/2026-22685",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-22686",
-          "u": "https://www.federalregister.gov/d/2026-22686"
+          "u": "https://www.federalregister.gov/d/2026-22686",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-22687",
-          "u": "https://www.federalregister.gov/d/2026-22687"
+          "u": "https://www.federalregister.gov/d/2026-22687",
+          "k": "p"
         }
       ]
     },
@@ -9571,7 +9609,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9586,7 +9625,8 @@
       "links": [
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         }
       ]
     },
@@ -9601,7 +9641,8 @@
       "links": [
         {
           "t": "联邦公报 2026-18219",
-          "u": "https://www.federalregister.gov/d/2026-18219"
+          "u": "https://www.federalregister.gov/d/2026-18219",
+          "k": "p"
         }
       ]
     },
@@ -9617,7 +9658,8 @@
       "links": [
         {
           "t": "国务院",
-          "u": "https://www.state.gov/"
+          "u": "https://www.state.gov/",
+          "k": "p"
         }
       ]
     },
@@ -9633,7 +9675,8 @@
       "links": [
         {
           "t": "UNFCCC 官网",
-          "u": "https://unfccc.int/"
+          "u": "https://unfccc.int/",
+          "k": "p"
         }
       ]
     },
@@ -9649,7 +9692,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9665,7 +9709,8 @@
       "links": [
         {
           "t": "联邦公报 2025-19846",
-          "u": "https://www.federalregister.gov/d/2025-19846"
+          "u": "https://www.federalregister.gov/d/2025-19846",
+          "k": "p"
         }
       ]
     },
@@ -9681,15 +9726,18 @@
       "links": [
         {
           "t": "新华网 11-11",
-          "u": "https://app.xinhuanet.com/news/article.html?articleId=20261111fb7fddb9800143049a87e50522c9b217"
+          "u": "https://app.xinhuanet.com/news/article.html?articleId=20261111fb7fddb9800143049a87e50522c9b217",
+          "k": "w"
         },
         {
           "t": "央广网 11-11",
-          "u": "https://www.cnr.cn/china/news/20261111/t20261111_527868594.shtml"
+          "u": "https://www.cnr.cn/china/news/20261111/t20261111_527868594.shtml",
+          "k": "w"
         },
         {
           "t": "央视新闻 11-10",
-          "u": "https://ysxw.cctv.cn/article.html?item_id=7107679433075922306"
+          "u": "https://ysxw.cctv.cn/article.html?item_id=7107679433075922306",
+          "k": "w"
         }
       ]
     },
@@ -9704,11 +9752,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -9723,7 +9773,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20846",
-          "u": "https://www.federalregister.gov/d/2026-20846"
+          "u": "https://www.federalregister.gov/d/2026-20846",
+          "k": "p"
         }
       ]
     },
@@ -9739,7 +9790,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9755,15 +9807,18 @@
       "links": [
         {
           "t": "东盟官网",
-          "u": "https://asean.org/"
+          "u": "https://asean.org/",
+          "k": "p"
         },
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         },
         {
           "t": "菲总统府",
-          "u": "https://pco.gov.ph/"
+          "u": "https://pco.gov.ph/",
+          "k": "p"
         }
       ]
     },
@@ -9778,7 +9833,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19071",
-          "u": "https://www.federalregister.gov/d/2026-19071"
+          "u": "https://www.federalregister.gov/d/2026-19071",
+          "k": "p"
         }
       ]
     },
@@ -9793,7 +9849,8 @@
       "links": [
         {
           "t": "联邦公报 2026-18978",
-          "u": "https://www.federalregister.gov/d/2026-18978"
+          "u": "https://www.federalregister.gov/d/2026-18978",
+          "k": "p"
         }
       ]
     },
@@ -9810,11 +9867,13 @@
       "links": [
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         },
         {
           "t": "印度外交部",
-          "u": "https://www.mea.gov.in/"
+          "u": "https://www.mea.gov.in/",
+          "k": "p"
         }
       ]
     },
@@ -9831,7 +9890,8 @@
       "links": [
         {
           "t": "东盟官网",
-          "u": "https://asean.org/"
+          "u": "https://asean.org/",
+          "k": "p"
         }
       ]
     },
@@ -9847,7 +9907,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -9863,7 +9924,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -9878,11 +9940,13 @@
       "links": [
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         },
         {
           "t": "印度外交部",
-          "u": "https://www.mea.gov.in/"
+          "u": "https://www.mea.gov.in/",
+          "k": "p"
         }
       ]
     },
@@ -9898,7 +9962,8 @@
       "links": [
         {
           "t": "APEC 官网",
-          "u": "https://www.apec.org/"
+          "u": "https://www.apec.org/",
+          "k": "p"
         }
       ]
     },
@@ -9914,7 +9979,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -9929,7 +9995,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21320",
-          "u": "https://www.federalregister.gov/d/2026-21320"
+          "u": "https://www.federalregister.gov/d/2026-21320",
+          "k": "p"
         }
       ]
     },
@@ -9944,7 +10011,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21316",
-          "u": "https://www.federalregister.gov/d/2026-21316"
+          "u": "https://www.federalregister.gov/d/2026-21316",
+          "k": "p"
         }
       ]
     },
@@ -9960,11 +10028,13 @@
       "links": [
         {
           "t": "APEC 官网",
-          "u": "https://www.apec.org/"
+          "u": "https://www.apec.org/",
+          "k": "p"
         },
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         }
       ]
     },
@@ -9979,8 +10049,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/index.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -9995,7 +10066,8 @@
       "links": [
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         }
       ]
     },
@@ -10010,7 +10082,8 @@
       "links": [
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         }
       ]
     },
@@ -10025,11 +10098,13 @@
       "links": [
         {
           "t": "联邦公报 2026-14943",
-          "u": "https://www.federalregister.gov/d/2026-14943"
+          "u": "https://www.federalregister.gov/d/2026-14943",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-14942",
-          "u": "https://www.federalregister.gov/d/2026-14942"
+          "u": "https://www.federalregister.gov/d/2026-14942",
+          "k": "p"
         }
       ]
     },
@@ -10045,7 +10120,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10061,7 +10137,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10076,7 +10153,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21808",
-          "u": "https://www.federalregister.gov/d/2026-21808"
+          "u": "https://www.federalregister.gov/d/2026-21808",
+          "k": "p"
         }
       ]
     },
@@ -10091,7 +10169,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21801",
-          "u": "https://www.federalregister.gov/d/2026-21801"
+          "u": "https://www.federalregister.gov/d/2026-21801",
+          "k": "p"
         }
       ]
     },
@@ -10106,7 +10185,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21821",
-          "u": "https://www.federalregister.gov/d/2026-21821"
+          "u": "https://www.federalregister.gov/d/2026-21821",
+          "k": "p"
         }
       ]
     },
@@ -10121,7 +10201,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -10136,7 +10217,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21963",
-          "u": "https://www.federalregister.gov/d/2026-21963"
+          "u": "https://www.federalregister.gov/d/2026-21963",
+          "k": "p"
         }
       ]
     },
@@ -10151,7 +10233,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21920",
-          "u": "https://www.federalregister.gov/d/2026-21920"
+          "u": "https://www.federalregister.gov/d/2026-21920",
+          "k": "p"
         }
       ]
     },
@@ -10167,7 +10250,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -10182,7 +10266,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20281",
-          "u": "https://www.federalregister.gov/d/2026-20281"
+          "u": "https://www.federalregister.gov/d/2026-20281",
+          "k": "p"
         }
       ]
     },
@@ -10197,7 +10282,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19964",
-          "u": "https://www.federalregister.gov/d/2026-19964"
+          "u": "https://www.federalregister.gov/d/2026-19964",
+          "k": "p"
         }
       ]
     },
@@ -10212,7 +10298,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20016",
-          "u": "https://www.federalregister.gov/d/2026-20016"
+          "u": "https://www.federalregister.gov/d/2026-20016",
+          "k": "p"
         }
       ]
     },
@@ -10227,7 +10314,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22093",
-          "u": "https://www.federalregister.gov/d/2026-22093"
+          "u": "https://www.federalregister.gov/d/2026-22093",
+          "k": "p"
         }
       ]
     },
@@ -10242,7 +10330,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22116",
-          "u": "https://www.federalregister.gov/d/2026-22116"
+          "u": "https://www.federalregister.gov/d/2026-22116",
+          "k": "p"
         }
       ]
     },
@@ -10257,7 +10346,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20246",
-          "u": "https://www.federalregister.gov/d/2026-20246"
+          "u": "https://www.federalregister.gov/d/2026-20246",
+          "k": "p"
         }
       ]
     },
@@ -10272,7 +10362,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20264",
-          "u": "https://www.federalregister.gov/d/2026-20264"
+          "u": "https://www.federalregister.gov/d/2026-20264",
+          "k": "p"
         }
       ]
     },
@@ -10287,7 +10378,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22443",
-          "u": "https://www.federalregister.gov/d/2026-22443"
+          "u": "https://www.federalregister.gov/d/2026-22443",
+          "k": "p"
         }
       ]
     },
@@ -10302,7 +10394,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19537",
-          "u": "https://www.federalregister.gov/d/2026-19537"
+          "u": "https://www.federalregister.gov/d/2026-19537",
+          "k": "p"
         }
       ]
     },
@@ -10318,7 +10411,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -10333,7 +10427,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 51975",
-          "u": "https://www.federalregister.gov/citation/91-FR-51975"
+          "u": "https://www.federalregister.gov/citation/91-FR-51975",
+          "k": "p"
         }
       ]
     },
@@ -10348,7 +10443,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22536",
-          "u": "https://www.federalregister.gov/d/2026-22536"
+          "u": "https://www.federalregister.gov/d/2026-22536",
+          "k": "p"
         }
       ]
     },
@@ -10363,7 +10459,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22792",
-          "u": "https://www.federalregister.gov/d/2026-22792"
+          "u": "https://www.federalregister.gov/d/2026-22792",
+          "k": "p"
         }
       ]
     },
@@ -10378,7 +10475,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20447",
-          "u": "https://www.federalregister.gov/d/2026-20447"
+          "u": "https://www.federalregister.gov/d/2026-20447",
+          "k": "p"
         }
       ]
     },
@@ -10393,7 +10491,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20517",
-          "u": "https://www.federalregister.gov/d/2026-20517"
+          "u": "https://www.federalregister.gov/d/2026-20517",
+          "k": "p"
         }
       ]
     },
@@ -10408,7 +10507,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22600",
-          "u": "https://www.federalregister.gov/d/2026-22600"
+          "u": "https://www.federalregister.gov/d/2026-22600",
+          "k": "p"
         }
       ]
     },
@@ -10423,7 +10523,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22679",
-          "u": "https://www.federalregister.gov/d/2026-22679"
+          "u": "https://www.federalregister.gov/d/2026-22679",
+          "k": "p"
         }
       ]
     },
@@ -10438,8 +10539,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10456,7 +10558,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -10472,7 +10575,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -10487,7 +10591,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22962",
-          "u": "https://www.federalregister.gov/d/2026-22962"
+          "u": "https://www.federalregister.gov/d/2026-22962",
+          "k": "p"
         }
       ]
     },
@@ -10503,7 +10608,8 @@
       "links": [
         {
           "t": "G20 官网",
-          "u": "https://g20.org/"
+          "u": "https://g20.org/",
+          "k": "p"
         }
       ]
     },
@@ -10518,7 +10624,8 @@
       "links": [
         {
           "t": "国会拨款法案",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -10533,7 +10640,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21051",
-          "u": "https://www.federalregister.gov/d/2026-21051"
+          "u": "https://www.federalregister.gov/d/2026-21051",
+          "k": "p"
         }
       ]
     },
@@ -10548,7 +10656,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20849",
-          "u": "https://www.federalregister.gov/d/2026-20849"
+          "u": "https://www.federalregister.gov/d/2026-20849",
+          "k": "p"
         }
       ]
     },
@@ -10563,7 +10672,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21104",
-          "u": "https://www.federalregister.gov/d/2026-21104"
+          "u": "https://www.federalregister.gov/d/2026-21104",
+          "k": "p"
         }
       ]
     },
@@ -10578,7 +10688,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20848",
-          "u": "https://www.federalregister.gov/d/2026-20848"
+          "u": "https://www.federalregister.gov/d/2026-20848",
+          "k": "p"
         }
       ]
     },
@@ -10593,7 +10704,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72978",
-          "u": "https://www.federalregister.gov/citation/91-FR-72978"
+          "u": "https://www.federalregister.gov/citation/91-FR-72978",
+          "k": "p"
         }
       ]
     },
@@ -10608,11 +10720,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72781",
-          "u": "https://www.federalregister.gov/citation/91-FR-72781"
+          "u": "https://www.federalregister.gov/citation/91-FR-72781",
+          "k": "p"
         },
         {
           "t": "劳工部新闻",
-          "u": "https://www.dol.gov/newsroom"
+          "u": "https://www.dol.gov/newsroom",
+          "k": "p"
         }
       ]
     },
@@ -10628,11 +10742,13 @@
       "links": [
         {
           "t": "G20 官网",
-          "u": "https://g20.org/"
+          "u": "https://g20.org/",
+          "k": "p"
         },
         {
           "t": "国务院",
-          "u": "https://www.state.gov/"
+          "u": "https://www.state.gov/",
+          "k": "p"
         }
       ]
     },
@@ -10648,7 +10764,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -10664,7 +10781,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -10680,7 +10798,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -10696,7 +10815,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2026/home.htm"
+          "u": "https://www.bls.gov/schedule/2026/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -10712,7 +10832,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10727,7 +10848,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20336",
-          "u": "https://www.federalregister.gov/d/2026-20336"
+          "u": "https://www.federalregister.gov/d/2026-20336",
+          "k": "p"
         }
       ]
     },
@@ -10743,7 +10865,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10759,7 +10882,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -10775,7 +10899,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -10790,7 +10915,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -10805,7 +10931,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21030",
-          "u": "https://www.federalregister.gov/d/2026-21030"
+          "u": "https://www.federalregister.gov/d/2026-21030",
+          "k": "p"
         }
       ]
     },
@@ -10820,7 +10947,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21943",
-          "u": "https://www.federalregister.gov/d/2026-21943"
+          "u": "https://www.federalregister.gov/d/2026-21943",
+          "k": "p"
         }
       ]
     },
@@ -10835,7 +10963,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22038",
-          "u": "https://www.federalregister.gov/d/2026-22038"
+          "u": "https://www.federalregister.gov/d/2026-22038",
+          "k": "p"
         }
       ]
     },
@@ -10850,15 +10979,18 @@
       "links": [
         {
           "t": "联邦公报 2026-13347",
-          "u": "https://www.federalregister.gov/d/2026-13347"
+          "u": "https://www.federalregister.gov/d/2026-13347",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-13305",
-          "u": "https://www.federalregister.gov/d/2026-13305"
+          "u": "https://www.federalregister.gov/d/2026-13305",
+          "k": "p"
         },
         {
           "t": "联邦公报 2026-13304",
-          "u": "https://www.federalregister.gov/d/2026-13304"
+          "u": "https://www.federalregister.gov/d/2026-13304",
+          "k": "p"
         }
       ]
     },
@@ -10873,7 +11005,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22213",
-          "u": "https://www.federalregister.gov/d/2026-22213"
+          "u": "https://www.federalregister.gov/d/2026-22213",
+          "k": "p"
         }
       ]
     },
@@ -10889,7 +11022,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -10904,7 +11038,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -10919,15 +11054,18 @@
       "links": [
         {
           "t": "联邦公报 91 FR 64747",
-          "u": "https://www.federalregister.gov/citation/91-FR-64747"
+          "u": "https://www.federalregister.gov/citation/91-FR-64747",
+          "k": "p"
         },
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         },
         {
           "t": "IRS 新闻室",
-          "u": "https://www.irs.gov/newsroom"
+          "u": "https://www.irs.gov/newsroom",
+          "k": "p"
         }
       ]
     },
@@ -10942,7 +11080,8 @@
       "links": [
         {
           "t": "联邦公报 2026-12909",
-          "u": "https://www.federalregister.gov/d/2026-12909"
+          "u": "https://www.federalregister.gov/d/2026-12909",
+          "k": "p"
         }
       ]
     },
@@ -10957,7 +11096,8 @@
       "links": [
         {
           "t": "联邦公报 2026-06851",
-          "u": "https://www.federalregister.gov/d/2026-06851"
+          "u": "https://www.federalregister.gov/d/2026-06851",
+          "k": "p"
         }
       ]
     },
@@ -10972,11 +11112,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -10991,7 +11133,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22194",
-          "u": "https://www.federalregister.gov/d/2026-22194"
+          "u": "https://www.federalregister.gov/d/2026-22194",
+          "k": "p"
         }
       ]
     },
@@ -11006,7 +11149,8 @@
       "links": [
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11021,7 +11165,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 1039",
-          "u": "https://www.federalregister.gov/citation/91-FR-1039"
+          "u": "https://www.federalregister.gov/citation/91-FR-1039",
+          "k": "p"
         }
       ]
     },
@@ -11036,7 +11181,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15003",
-          "u": "https://www.federalregister.gov/d/2026-15003"
+          "u": "https://www.federalregister.gov/d/2026-15003",
+          "k": "p"
         }
       ]
     },
@@ -11051,7 +11197,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22739",
-          "u": "https://www.federalregister.gov/d/2026-22739"
+          "u": "https://www.federalregister.gov/d/2026-22739",
+          "k": "p"
         }
       ]
     },
@@ -11066,7 +11213,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22743",
-          "u": "https://www.federalregister.gov/d/2026-22743"
+          "u": "https://www.federalregister.gov/d/2026-22743",
+          "k": "p"
         }
       ]
     },
@@ -11081,7 +11229,8 @@
       "links": [
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11096,7 +11245,8 @@
       "links": [
         {
           "t": "美联社",
-          "u": "https://apnews.com/"
+          "u": "https://apnews.com/",
+          "k": "w"
         }
       ]
     },
@@ -11111,7 +11261,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22306",
-          "u": "https://www.federalregister.gov/d/2026-22306"
+          "u": "https://www.federalregister.gov/d/2026-22306",
+          "k": "p"
         }
       ]
     },
@@ -11126,7 +11277,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22381",
-          "u": "https://www.federalregister.gov/d/2026-22381"
+          "u": "https://www.federalregister.gov/d/2026-22381",
+          "k": "p"
         }
       ]
     },
@@ -11141,7 +11293,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22380",
-          "u": "https://www.federalregister.gov/d/2026-22380"
+          "u": "https://www.federalregister.gov/d/2026-22380",
+          "k": "p"
         }
       ]
     },
@@ -11156,7 +11309,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22576",
-          "u": "https://www.federalregister.gov/d/2026-22576"
+          "u": "https://www.federalregister.gov/d/2026-22576",
+          "k": "p"
         }
       ]
     },
@@ -11171,7 +11325,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 43507",
-          "u": "https://www.federalregister.gov/citation/91-FR-43507"
+          "u": "https://www.federalregister.gov/citation/91-FR-43507",
+          "k": "p"
         }
       ]
     },
@@ -11186,7 +11341,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22735",
-          "u": "https://www.federalregister.gov/d/2026-22735"
+          "u": "https://www.federalregister.gov/d/2026-22735",
+          "k": "p"
         }
       ]
     },
@@ -11201,7 +11357,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22680",
-          "u": "https://www.federalregister.gov/d/2026-22680"
+          "u": "https://www.federalregister.gov/d/2026-22680",
+          "k": "p"
         }
       ]
     },
@@ -11216,8 +11373,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11233,7 +11391,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11248,11 +11407,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72608",
-          "u": "https://www.federalregister.gov/citation/91-FR-72608"
+          "u": "https://www.federalregister.gov/citation/91-FR-72608",
+          "k": "p"
         },
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11267,11 +11428,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72610",
-          "u": "https://www.federalregister.gov/citation/91-FR-72610"
+          "u": "https://www.federalregister.gov/citation/91-FR-72610",
+          "k": "p"
         },
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11286,15 +11449,18 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72608",
-          "u": "https://www.federalregister.gov/citation/91-FR-72608"
+          "u": "https://www.federalregister.gov/citation/91-FR-72608",
+          "k": "p"
         },
         {
           "t": "联邦公报 91 FR 72610",
-          "u": "https://www.federalregister.gov/citation/91-FR-72610"
+          "u": "https://www.federalregister.gov/citation/91-FR-72610",
+          "k": "p"
         },
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11309,7 +11475,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22793",
-          "u": "https://www.federalregister.gov/d/2026-22793"
+          "u": "https://www.federalregister.gov/d/2026-22793",
+          "k": "p"
         }
       ]
     },
@@ -11324,11 +11491,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72799",
-          "u": "https://www.federalregister.gov/citation/91-FR-72799"
+          "u": "https://www.federalregister.gov/citation/91-FR-72799",
+          "k": "p"
         },
         {
           "t": "FCC 新闻",
-          "u": "https://www.fcc.gov/news-events"
+          "u": "https://www.fcc.gov/news-events",
+          "k": "p"
         }
       ]
     },
@@ -11343,15 +11512,18 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72410",
-          "u": "https://www.federalregister.gov/citation/91-FR-72410"
+          "u": "https://www.federalregister.gov/citation/91-FR-72410",
+          "k": "p"
         },
         {
           "t": "联邦公报 91 FR 72413",
-          "u": "https://www.federalregister.gov/citation/91-FR-72413"
+          "u": "https://www.federalregister.gov/citation/91-FR-72413",
+          "k": "p"
         },
         {
           "t": "FDA 新闻",
-          "u": "https://www.fda.gov/news-events"
+          "u": "https://www.fda.gov/news-events",
+          "k": "p"
         }
       ]
     },
@@ -11367,7 +11539,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11383,7 +11556,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11399,7 +11573,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11415,7 +11590,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -11430,7 +11606,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15920",
-          "u": "https://www.federalregister.gov/d/2026-15920"
+          "u": "https://www.federalregister.gov/d/2026-15920",
+          "k": "p"
         }
       ]
     },
@@ -11445,11 +11622,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -11464,7 +11643,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21706",
-          "u": "https://www.federalregister.gov/d/2026-21706"
+          "u": "https://www.federalregister.gov/d/2026-21706",
+          "k": "p"
         }
       ]
     },
@@ -11480,7 +11660,8 @@
       "links": [
         {
           "t": "WEF 活动",
-          "u": "https://www.weforum.org/events"
+          "u": "https://www.weforum.org/events",
+          "k": "m"
         }
       ]
     },
@@ -11495,7 +11676,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21319",
-          "u": "https://www.federalregister.gov/d/2026-21319"
+          "u": "https://www.federalregister.gov/d/2026-21319",
+          "k": "p"
         }
       ]
     },
@@ -11510,7 +11692,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21600",
-          "u": "https://www.federalregister.gov/d/2026-21600"
+          "u": "https://www.federalregister.gov/d/2026-21600",
+          "k": "p"
         }
       ]
     },
@@ -11527,7 +11710,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -11543,7 +11727,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11559,7 +11744,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11575,7 +11761,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11590,7 +11777,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11605,7 +11793,8 @@
       "links": [
         {
           "t": "联邦公报 2026-21058",
-          "u": "https://www.federalregister.gov/d/2026-21058"
+          "u": "https://www.federalregister.gov/d/2026-21058",
+          "k": "p"
         }
       ]
     },
@@ -11620,7 +11809,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19493",
-          "u": "https://www.federalregister.gov/d/2026-19493"
+          "u": "https://www.federalregister.gov/d/2026-19493",
+          "k": "p"
         }
       ]
     },
@@ -11635,8 +11825,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11651,7 +11842,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19350",
-          "u": "https://www.federalregister.gov/d/2026-19350"
+          "u": "https://www.federalregister.gov/d/2026-19350",
+          "k": "p"
         }
       ]
     },
@@ -11666,7 +11858,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22741",
-          "u": "https://www.federalregister.gov/d/2026-22741"
+          "u": "https://www.federalregister.gov/d/2026-22741",
+          "k": "p"
         }
       ]
     },
@@ -11682,7 +11875,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11697,7 +11891,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 53699",
-          "u": "https://www.federalregister.gov/citation/91-FR-53699"
+          "u": "https://www.federalregister.gov/citation/91-FR-53699",
+          "k": "p"
         }
       ]
     },
@@ -11713,7 +11908,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11729,7 +11925,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11745,7 +11942,8 @@
       "links": [
         {
           "t": "慕安会官网",
-          "u": "https://securityconference.org/en/"
+          "u": "https://securityconference.org/en/",
+          "k": "m"
         }
       ]
     },
@@ -11760,11 +11958,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -11780,7 +11980,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11796,7 +11997,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -11812,7 +12014,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -11827,8 +12030,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/index.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -11844,7 +12048,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11860,7 +12065,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11875,11 +12081,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 72609",
-          "u": "https://www.federalregister.gov/citation/91-FR-72609"
+          "u": "https://www.federalregister.gov/citation/91-FR-72609",
+          "k": "p"
         },
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -11894,7 +12102,8 @@
       "links": [
         {
           "t": "联邦公报 2026-17979",
-          "u": "https://www.federalregister.gov/d/2026-17979"
+          "u": "https://www.federalregister.gov/d/2026-17979",
+          "k": "p"
         }
       ]
     },
@@ -11910,7 +12119,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11925,8 +12135,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -11942,7 +12153,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11957,7 +12169,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20982",
-          "u": "https://www.federalregister.gov/d/2026-20982"
+          "u": "https://www.federalregister.gov/d/2026-20982",
+          "k": "p"
         }
       ]
     },
@@ -11973,7 +12186,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -11988,7 +12202,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -12004,7 +12219,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12021,7 +12237,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12037,7 +12254,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12052,7 +12270,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -12068,7 +12287,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12083,7 +12303,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -12099,7 +12320,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12115,7 +12337,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12131,7 +12354,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12146,7 +12370,8 @@
       "links": [
         {
           "t": "联邦公报 2026-06956",
-          "u": "https://www.federalregister.gov/d/2026-06956"
+          "u": "https://www.federalregister.gov/d/2026-06956",
+          "k": "p"
         }
       ]
     },
@@ -12161,8 +12386,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12178,7 +12404,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12193,7 +12420,8 @@
       "links": [
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         }
       ]
     },
@@ -12209,7 +12437,8 @@
       "links": [
         {
           "t": "世行活动",
-          "u": "https://www.worldbank.org/en/events"
+          "u": "https://www.worldbank.org/en/events",
+          "k": "p"
         }
       ]
     },
@@ -12225,7 +12454,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12241,7 +12471,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12257,7 +12488,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12273,7 +12505,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12288,7 +12521,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 68001",
-          "u": "https://www.federalregister.gov/citation/91-FR-68001"
+          "u": "https://www.federalregister.gov/citation/91-FR-68001",
+          "k": "p"
         }
       ]
     },
@@ -12303,7 +12537,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 69199",
-          "u": "https://www.federalregister.gov/citation/91-FR-69199"
+          "u": "https://www.federalregister.gov/citation/91-FR-69199",
+          "k": "p"
         }
       ]
     },
@@ -12320,7 +12555,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12336,7 +12572,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12352,7 +12589,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12368,7 +12606,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12383,8 +12622,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12400,7 +12640,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12416,7 +12657,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12432,7 +12674,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12448,7 +12691,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12464,7 +12708,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12479,8 +12724,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/index.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12496,7 +12742,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12512,7 +12759,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12528,7 +12776,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12543,11 +12792,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -12563,7 +12814,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12580,7 +12832,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12595,8 +12848,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12612,7 +12866,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12628,7 +12883,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12644,7 +12900,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12660,7 +12917,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12675,7 +12933,8 @@
       "links": [
         {
           "t": "联邦公报 2026-12069",
-          "u": "https://www.federalregister.gov/d/2026-12069"
+          "u": "https://www.federalregister.gov/d/2026-12069",
+          "k": "p"
         }
       ]
     },
@@ -12690,7 +12949,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -12705,7 +12965,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15192",
-          "u": "https://www.federalregister.gov/d/2026-15192"
+          "u": "https://www.federalregister.gov/d/2026-15192",
+          "k": "p"
         }
       ]
     },
@@ -12721,7 +12982,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12737,7 +12999,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12753,7 +13016,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12769,7 +13033,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12784,11 +13049,13 @@
       "links": [
         {
           "t": "联邦公报 91 FR 63379",
-          "u": "https://www.federalregister.gov/citation/91-FR-63379"
+          "u": "https://www.federalregister.gov/citation/91-FR-63379",
+          "k": "p"
         },
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         }
       ]
     },
@@ -12803,7 +13070,8 @@
       "links": [
         {
           "t": "联邦公报 2026-22174",
-          "u": "https://www.federalregister.gov/d/2026-22174"
+          "u": "https://www.federalregister.gov/d/2026-22174",
+          "k": "p"
         }
       ]
     },
@@ -12818,7 +13086,8 @@
       "links": [
         {
           "t": "联邦公报 2026-13286",
-          "u": "https://www.federalregister.gov/d/2026-13286"
+          "u": "https://www.federalregister.gov/d/2026-13286",
+          "k": "p"
         }
       ]
     },
@@ -12834,7 +13103,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12849,7 +13119,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15598",
-          "u": "https://www.federalregister.gov/d/2026-15598"
+          "u": "https://www.federalregister.gov/d/2026-15598",
+          "k": "p"
         }
       ]
     },
@@ -12864,7 +13135,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -12879,8 +13151,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -12896,7 +13169,8 @@
       "links": [
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         }
       ]
     },
@@ -12912,7 +13186,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12928,7 +13203,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12944,7 +13220,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -12960,7 +13237,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -12977,7 +13255,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -12993,7 +13272,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13009,7 +13289,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13025,7 +13306,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13040,8 +13322,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13057,7 +13340,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13073,7 +13357,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13089,7 +13374,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13105,7 +13391,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13121,7 +13408,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13137,7 +13425,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13152,8 +13441,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/index.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13169,7 +13459,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13185,7 +13476,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13200,7 +13492,8 @@
       "links": [
         {
           "t": "联邦公报 2026-16078",
-          "u": "https://www.federalregister.gov/d/2026-16078"
+          "u": "https://www.federalregister.gov/d/2026-16078",
+          "k": "p"
         }
       ]
     },
@@ -13216,7 +13509,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13231,7 +13525,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -13246,8 +13541,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13263,7 +13559,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13279,7 +13576,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13294,7 +13592,8 @@
       "links": [
         {
           "t": "联邦公报 2026-17374",
-          "u": "https://www.federalregister.gov/d/2026-17374"
+          "u": "https://www.federalregister.gov/d/2026-17374",
+          "k": "p"
         }
       ]
     },
@@ -13311,7 +13610,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13327,7 +13627,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13343,7 +13644,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13358,7 +13660,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15192",
-          "u": "https://www.federalregister.gov/d/2026-15192"
+          "u": "https://www.federalregister.gov/d/2026-15192",
+          "k": "p"
         }
       ]
     },
@@ -13373,7 +13676,8 @@
       "links": [
         {
           "t": "联邦公报 2026-19554",
-          "u": "https://www.federalregister.gov/d/2026-19554"
+          "u": "https://www.federalregister.gov/d/2026-19554",
+          "k": "p"
         }
       ]
     },
@@ -13389,7 +13693,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13405,7 +13710,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13421,7 +13727,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13437,7 +13744,8 @@
       "links": [
         {
           "t": "世行活动",
-          "u": "https://www.worldbank.org/en/events"
+          "u": "https://www.worldbank.org/en/events",
+          "k": "p"
         }
       ]
     },
@@ -13453,7 +13761,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13468,8 +13777,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13485,7 +13795,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13500,11 +13811,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -13520,7 +13833,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13536,7 +13850,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13552,7 +13867,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13568,7 +13884,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13585,7 +13902,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13601,7 +13919,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13617,7 +13936,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13633,7 +13953,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13648,8 +13969,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13665,7 +13987,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13680,7 +14003,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -13696,7 +14020,8 @@
       "links": [
         {
           "t": "UNFCCC 官网",
-          "u": "https://unfccc.int/"
+          "u": "https://unfccc.int/",
+          "k": "p"
         }
       ]
     },
@@ -13712,7 +14037,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13727,11 +14053,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -13747,7 +14075,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13763,7 +14092,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13779,7 +14109,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13796,7 +14127,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13812,7 +14144,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13827,8 +14160,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.census.gov/retail/index.html"
+          "t": "census.gov",
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -13844,7 +14178,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13860,7 +14195,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13875,7 +14211,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -13891,7 +14228,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -13907,7 +14245,8 @@
       "links": [
         {
           "t": "G20 官网",
-          "u": "https://g20.org/"
+          "u": "https://g20.org/",
+          "k": "p"
         }
       ]
     },
@@ -13923,7 +14262,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -13938,8 +14278,9 @@
       "actor": "stats",
       "links": [
         {
-          "t": "www 页面",
-          "u": "https://www.bea.gov/news/schedule"
+          "t": "bea.gov",
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -13957,7 +14298,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13973,7 +14315,8 @@
       "links": [
         {
           "t": "美联储日程",
-          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          "u": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "k": "p"
         }
       ]
     },
@@ -13989,7 +14332,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -14005,7 +14349,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -14021,7 +14366,8 @@
       "links": [
         {
           "t": "普查局零售日程",
-          "u": "https://www.census.gov/retail/index.html"
+          "u": "https://www.census.gov/retail/index.html",
+          "k": "p"
         }
       ]
     },
@@ -14037,7 +14383,8 @@
       "links": [
         {
           "t": "BLS 发布日程",
-          "u": "https://www.bls.gov/schedule/2027/home.htm"
+          "u": "https://www.bls.gov/schedule/2027/home.htm",
+          "k": "p"
         }
       ]
     },
@@ -14053,7 +14400,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -14068,7 +14416,8 @@
       "links": [
         {
           "t": "联邦公报 2026-15192",
-          "u": "https://www.federalregister.gov/d/2026-15192"
+          "u": "https://www.federalregister.gov/d/2026-15192",
+          "k": "p"
         }
       ]
     },
@@ -14084,7 +14433,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -14100,7 +14450,8 @@
       "links": [
         {
           "t": "BEA 发布日程",
-          "u": "https://www.bea.gov/news/schedule"
+          "u": "https://www.bea.gov/news/schedule",
+          "k": "p"
         }
       ]
     },
@@ -14115,7 +14466,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14130,11 +14482,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14149,7 +14503,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 34085",
-          "u": "https://www.federalregister.gov/citation/91-FR-34085"
+          "u": "https://www.federalregister.gov/citation/91-FR-34085",
+          "k": "p"
         }
       ]
     },
@@ -14164,7 +14519,8 @@
       "links": [
         {
           "t": "联邦公报 91 FR 34085",
-          "u": "https://www.federalregister.gov/citation/91-FR-34085"
+          "u": "https://www.federalregister.gov/citation/91-FR-34085",
+          "k": "p"
         }
       ]
     },
@@ -14179,7 +14535,8 @@
       "links": [
         {
           "t": "联邦公报 2025-24184",
-          "u": "https://www.federalregister.gov/d/2025-24184"
+          "u": "https://www.federalregister.gov/d/2025-24184",
+          "k": "p"
         }
       ]
     },
@@ -14194,7 +14551,8 @@
       "links": [
         {
           "t": "联邦公报 2026-08494",
-          "u": "https://www.federalregister.gov/d/2026-08494"
+          "u": "https://www.federalregister.gov/d/2026-08494",
+          "k": "p"
         }
       ]
     },
@@ -14209,11 +14567,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14228,11 +14588,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14247,7 +14609,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14262,7 +14625,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14278,7 +14642,8 @@
       "links": [
         {
           "t": "IMF 会议",
-          "u": "https://www.imf.org/en/meetings"
+          "u": "https://www.imf.org/en/meetings",
+          "k": "p"
         }
       ]
     },
@@ -14293,11 +14658,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14312,11 +14679,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14332,7 +14701,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14347,11 +14717,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14366,11 +14738,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14385,11 +14759,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14405,11 +14781,13 @@
       "links": [
         {
           "t": "IMF 会议",
-          "u": "https://www.imf.org/en/meetings"
+          "u": "https://www.imf.org/en/meetings",
+          "k": "p"
         },
         {
           "t": "世行活动",
-          "u": "https://www.worldbank.org/en/events"
+          "u": "https://www.worldbank.org/en/events",
+          "k": "p"
         }
       ]
     },
@@ -14424,7 +14802,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14439,7 +14818,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14454,11 +14834,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14473,11 +14855,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14493,7 +14877,8 @@
       "links": [
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14508,7 +14893,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14523,7 +14909,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14538,11 +14925,13 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         },
         {
           "t": "NYSE 交易日历",
-          "u": "https://www.nyse.com/markets/hours-calendars"
+          "u": "https://www.nyse.com/markets/hours-calendars",
+          "k": "p"
         }
       ]
     },
@@ -14557,7 +14946,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14572,7 +14962,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14587,7 +14978,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14602,7 +14994,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14617,7 +15010,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -14632,7 +15026,8 @@
       "links": [
         {
           "t": "联邦公报 2026-06956",
-          "u": "https://www.federalregister.gov/d/2026-06956"
+          "u": "https://www.federalregister.gov/d/2026-06956",
+          "k": "p"
         }
       ]
     },
@@ -14647,7 +15042,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14662,7 +15058,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14678,7 +15075,8 @@
       "links": [
         {
           "t": "IMF 会议",
-          "u": "https://www.imf.org/en/meetings"
+          "u": "https://www.imf.org/en/meetings",
+          "k": "p"
         }
       ]
     },
@@ -14693,7 +15091,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14708,7 +15107,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14723,7 +15123,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14738,7 +15139,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14754,7 +15156,8 @@
       "links": [
         {
           "t": "世行活动",
-          "u": "https://www.worldbank.org/en/events"
+          "u": "https://www.worldbank.org/en/events",
+          "k": "p"
         }
       ]
     },
@@ -14769,7 +15172,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14784,7 +15188,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14799,7 +15204,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14814,7 +15220,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14829,7 +15236,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14844,7 +15252,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14859,7 +15268,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14874,7 +15284,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14889,7 +15300,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14904,7 +15316,8 @@
       "links": [
         {
           "t": "联邦公报 2026-06956",
-          "u": "https://www.federalregister.gov/d/2026-06956"
+          "u": "https://www.federalregister.gov/d/2026-06956",
+          "k": "p"
         }
       ]
     },
@@ -14920,7 +15333,8 @@
       "links": [
         {
           "t": "IMF 会议",
-          "u": "https://www.imf.org/en/meetings"
+          "u": "https://www.imf.org/en/meetings",
+          "k": "p"
         }
       ]
     },
@@ -14935,7 +15349,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14950,7 +15365,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14965,7 +15381,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14980,7 +15397,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -14995,7 +15413,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -15010,7 +15429,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -15025,7 +15445,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -15040,7 +15461,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -15055,7 +15477,8 @@
       "links": [
         {
           "t": "OPM 联邦假日",
-          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+          "u": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+          "k": "p"
         }
       ]
     },
@@ -15070,7 +15493,8 @@
       "links": [
         {
           "t": "联邦公报 2026-20097",
-          "u": "https://www.federalregister.gov/d/2026-20097"
+          "u": "https://www.federalregister.gov/d/2026-20097",
+          "k": "p"
         }
       ]
     },
@@ -15085,7 +15509,8 @@
       "links": [
         {
           "t": "联邦公报 2026-04368",
-          "u": "https://www.federalregister.gov/d/2026-04368"
+          "u": "https://www.federalregister.gov/d/2026-04368",
+          "k": "p"
         }
       ]
     }
@@ -15101,15 +15526,18 @@
       "links": [
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         },
         {
           "t": "商务部",
-          "u": "https://www.commerce.gov/"
+          "u": "https://www.commerce.gov/",
+          "k": "p"
         },
         {
           "t": "中国商务部",
-          "u": "http://www.mofcom.gov.cn/"
+          "u": "http://www.mofcom.gov.cn/",
+          "k": "p"
         }
       ]
     },
@@ -15123,11 +15551,13 @@
       "links": [
         {
           "t": "商务部",
-          "u": "https://www.commerce.gov/"
+          "u": "https://www.commerce.gov/",
+          "k": "p"
         },
         {
           "t": "新华网",
-          "u": "http://www.news.cn/"
+          "u": "http://www.news.cn/",
+          "k": "w"
         }
       ]
     },
@@ -15141,15 +15571,18 @@
       "links": [
         {
           "t": "USTR",
-          "u": "https://ustr.gov/"
+          "u": "https://ustr.gov/",
+          "k": "p"
         },
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         },
         {
           "t": "商务部",
-          "u": "https://www.commerce.gov/"
+          "u": "https://www.commerce.gov/",
+          "k": "p"
         }
       ]
     },
@@ -15163,7 +15596,8 @@
       "links": [
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         }
       ]
     },
@@ -15177,15 +15611,18 @@
       "links": [
         {
           "t": "APEC 官网",
-          "u": "https://www.apec.org/"
+          "u": "https://www.apec.org/",
+          "k": "p"
         },
         {
           "t": "白宫简报室",
-          "u": "https://www.whitehouse.gov/briefing-room/"
+          "u": "https://www.whitehouse.gov/briefing-room/",
+          "k": "p"
         },
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         }
       ]
     },
@@ -15199,7 +15636,8 @@
       "links": [
         {
           "t": "财政部",
-          "u": "https://home.treasury.gov/"
+          "u": "https://home.treasury.gov/",
+          "k": "p"
         }
       ]
     },
@@ -15213,15 +15651,18 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
-        },
-        {
-          "t": "Ballotpedia",
-          "u": "https://ballotpedia.org/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         },
         {
           "t": "美联社",
-          "u": "https://apnews.com/"
+          "u": "https://apnews.com/",
+          "k": "w"
+        },
+        {
+          "t": "Ballotpedia",
+          "u": "https://ballotpedia.org/",
+          "k": "m"
         }
       ]
     },
@@ -15235,7 +15676,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -15249,7 +15691,8 @@
       "links": [
         {
           "t": "中国外交部",
-          "u": "https://www.mfa.gov.cn/"
+          "u": "https://www.mfa.gov.cn/",
+          "k": "p"
         }
       ]
     },
@@ -15263,7 +15706,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     },
@@ -15277,7 +15721,8 @@
       "links": [
         {
           "t": "Congress.gov",
-          "u": "https://www.congress.gov/"
+          "u": "https://www.congress.gov/",
+          "k": "p"
         }
       ]
     }
@@ -17950,7 +18395,8 @@
             }).join('') + '</div>' : '') +
             (parts.src ? '<p class="ud-src"><i>来源</i>' + esc(parts.src) + '</p>' : '') +
             ((ev.links && ev.links.length) ? '<div class="ud-links">' + ev.links.map(function (l) {
-              return '<a class="ud-a" href="' + esc(l.u) + '" target="_blank" rel="noopener noreferrer"' +
+              return '<a class="ud-a" data-k="' + esc(l.k || 'p') + '" href="' + esc(l.u) + '"' +
+                     ' target="_blank" rel="noopener noreferrer"' +
                      ' title="' + esc(l.u) + '">' + esc(l.t) + '<span aria-hidden="true">↗</span></a>';
             }).join('') + '</div>' : '') +
             '</div>';

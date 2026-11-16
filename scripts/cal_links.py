@@ -168,7 +168,7 @@ def explicit_domain(text):
             path = 'retail/index.html'
         if 'bls.gov/schedule/' in host + '/' + path and not path.endswith('.htm'):
             continue                     # BLS 月份页必须以 .htm 结尾
-        out.append((host.split('.')[0] + ' 页面', 'https://' + host + '/' + path))
+        out.append((host[4:] if host.startswith('www.') else host, 'https://' + host + '/' + path))
     return out[:MAX_LINKS]
 
 
@@ -183,40 +183,63 @@ OVERRIDES = {
 }
 
 
+# 来源等级：p = 一手（政府/国际组织/主办方），w = 通讯社与公共广播，m = 媒体/聚合。
+# 排序时 p > w > m，最多取前 3 条——「能点到原文时不要给转述」。
+WIRE_HOSTS = ('xinhuanet.com', 'news.cn', 'cnr.cn', 'cctv.cn', 'cctv.com', 'news.cctv.com',
+              'people.com.cn', 'apnews.com', 'reuters.com', 'chinanews.com.cn', 'ce.cn')
+OFFICIAL_TLDS = ('.gov', '.gov.', '.mil', '.int', '.europa.eu', 'un.org', 'imf.org',
+                 'worldbank.org', 'oecd.org', 'wto.org', 'g20.org', 'apec.org', 'asean.org',
+                 'unfccc.int', 'wam.ae', 'gov.uk', 'gov.cn',
+                 'nyse.com', 'uscode.house.gov')
+
+
+def link_tier(url):
+    host = url.split('/')[2].lower() if '://' in url else ''
+    if host in WIRE_HOSTS or any(host.endswith('.' + h) or host == h for h in WIRE_HOSTS):
+        return 'w'
+    if any(host.endswith(t) or t in host for t in OFFICIAL_TLDS):
+        return 'p'
+    return 'm'
+
+
+def sort_by_tier(links):
+    order = {'p': 0, 'w': 1, 'm': 2}
+    return sorted(links, key=lambda x: order.get(x[2], 3))
+
+
 def classify_links(ev):
-    """返回 [(label, url)]，最多 3 条。"""
+    """返回 [(label, url, tier)]，按来源等级排序后取前 3 条。"""
     ov = OVERRIDES.get((ev.get('d') or '', ev.get('title') or ''))
     if ov:
-        return ov[:MAX_LINKS]
+        cand = [(t, u) for t, u in ov]
+        return sort_by_tier([(t, u, link_tier(u)) for t, u in cand])[:MAX_LINKS]
+
     text = note_source(ev)
     year = year_of(ev)
-    got, seen = [], set()
+    cand, seen = [], set()
 
     def add(label, url):
         url = url.replace('{year}', year)
-        if url in seen or len(got) >= MAX_LINKS:
+        if url in seen:
             return
         seen.add(url)
-        got.append((label, url))
+        cand.append((label, url, link_tier(url)))
 
+    # 先收集全部候选，再按 p > w > m 排序取前三条——
+    # 若边收边截，排在后面的机构官网会被前面的媒体挤掉。
     for label, url in fr_links(text):
         add(label, url)
     for label, url in explicit_domain(text):
-        if 'federalregister.gov' in url and got:
-            continue
         add(label, url)
-    if len(got) < MAX_LINKS:
-        for pat, label, url in PUBLISHERS:
-            if re.search(pat, text):
-                add(label, url)
-                if len(got) >= MAX_LINKS:
-                    break
-    if not got:
+    for pat, label, url in PUBLISHERS:
+        if re.search(pat, text):
+            add(label, url)
+    if not cand:
         for pat, label, url in FALLBACK_BY_TITLE:
             if re.search(pat, ev.get('title') or ''):
                 add(label, url)
                 break
-    return got
+    return sort_by_tier(cand)[:MAX_LINKS]
 
 
 # ---------------------------------------------------------------- 读写
@@ -239,7 +262,7 @@ def cmd_stats(args):
         links = classify_links(e)
         if not links:
             none.append((e.get('d'), e.get('title')))
-        for _l, u in links:
+        for _l, u, _k in links:
             urls[u] += 1
         total += len(links)
     print('事件 %d 条，链接 %d 条，唯一 URL %d 个' % (len(evs), total, len(urls)))
@@ -258,7 +281,7 @@ def cmd_apply(args):
     n = 0
     for e in data['events']:
         links = classify_links(e)
-        arr = [collections.OrderedDict([('t', l), ('u', u)]) for l, u in links]
+        arr = [collections.OrderedDict([('t', t), ('u', u), ('k', k)]) for t, u, k in links]
         if e.get('links') != arr:
             e['links'] = arr
             n += 1
@@ -267,7 +290,7 @@ def cmd_apply(args):
     for p in data.get('pending', []):
         links = classify_links({'d': p.get('from', ''), 'title': p.get('title', ''),
                                 'note': '来源：' + (p.get('src') or '')})
-        arr = [collections.OrderedDict([('t', l), ('u', u)]) for l, u in links]
+        arr = [collections.OrderedDict([('t', t), ('u', u), ('k', k)]) for t, u, k in links]
         if p.get('links') != arr:
             p['links'] = arr
             np += 1
