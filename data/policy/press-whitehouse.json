@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-15T18:39:56+08:00",
+ "updated_at": "2026-11-16T08:21:50+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,7 +8,7 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 7,
+   "fetched": 6,
    "added": 0,
    "error": ""
   },
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 6,
+   "added": 0,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -1327,7 +1327,12 @@
    "kind": "新闻稿",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-paraguayan-president-alliana/",
    "source": "State Department",
-   "summary": "Office of the Spokesman Secretary Rubio’s Call with Paraguayan President Alliana Readout November 9, 2026 Secretary of State Marco Rubio spoke yesterday with President Pedro Alliana of Paraguay to congratulate him on assuming the presidency and reaffirm U.S. commitment to a strong and enduring partnership with the Paraguayan people."
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Paraguayan President Alliana Readout November 9, 2026 Secretary of State Marco Rubio spoke yesterday with President Pedro Alliana of Paraguay to congratulate him on assuming the presidency and reaffirm U.S. commitment to a strong and enduring partnership with the Paraguayan people.",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 美国国务卿鲁比奥与巴拉圭总统佩德罗·阿利亚纳通电话。\n· 鲁比奥在通话中祝贺阿利亚纳就任巴拉圭总统，通话于前一日进行。\n· 美方重申致力于同巴拉圭人民保持牢固而持久的伙伴关系。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -1387,7 +1392,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-sues-city-glendale-california-violating-citizens-second-amendment-rights",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 司法部起诉加州格伦代尔市，指其隐蔽持枪许可收费与审批流程违宪。\n· 该市首次申请费为 1971 至 2106 美元，每两年一次的续期费为 1271 至 1406 美元。\n· 上一财年首次申请费仅 100 美元、续期 25 美元，诉讼援引 2022 年布鲁恩案判例。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -1397,7 +1407,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-awards-st-louis-more-68m-combat-violent-crime-and-restore-law-and-order",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 司法部依据「模范城市」计划向圣路易斯市拨款逾 6800 万美元。\n· 圣路易斯为该计划四个入选城市之一，遴选依据为当地暴力犯罪治理进展。\n· 该市警局今年凶杀案下降 21%、抢劫下降 25%、汽车盗窃下降 14%。"
+   }
   },
   {
    "date": "2026-11-09",
