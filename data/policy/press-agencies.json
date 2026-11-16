@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-15T19:01:38+08:00",
+ "updated_at": "2026-11-16T09:26:33+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -272,7 +272,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation"
+   "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+   "brief": {
+    "at": "2026-10-02",
+    "tier": "news",
+    "body": "· 美联储 10 月 2 日批准 Fleur Capital Corporation 的收购申请。\n· 该申请为收购 Simmesport State Bank，两家机构均位于路易斯安那州。\n· 公告于美东时间当日下午 4 时 45 分发布，批准令另以 PDF 随附。"
+   }
   },
   {
    "date": "2026-10-02",
@@ -282,7 +287,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc."
+   "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+   "brief": {
+    "at": "2026-10-02",
+    "tier": "news",
+    "body": "· 美联储 10 月 2 日对 Ontario Bancorporation 采取执法行动。\n· 该机构位于威斯康星州，执法形式为书面协议，签署日期为 9 月 24 日。\n· 公告于美东时间当日上午 11 时发布，协议文本以附件 PDF 形式公布。"
+   }
   },
   {
    "date": "2026-10-02",
