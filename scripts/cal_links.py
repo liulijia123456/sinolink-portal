@@ -73,7 +73,7 @@ PUBLISHERS = [
     (r'FDIC', 'FDIC 新闻', 'https://www.fdic.gov/news'),
     (r'OCC|货币监理', 'OCC 新闻', 'https://www.occ.treas.gov/news-issuances/news-releases.html'),
     (r'NCUA', 'NCUA 新闻', 'https://ncua.gov/newsroom'),
-    (r'FCC|联邦通信委员会', 'FCC 新闻', 'https://www.fcc.gov/news-events'),
+    (r'(?<!UN)FCC|联邦通信委员会', 'FCC 新闻', 'https://www.fcc.gov/news-events'),
     (r'NRC|核管理委员会', 'NRC 新闻', 'https://www.nrc.gov/reading-rm/doc-collections/news/'),
     (r'EPA|环保署', 'EPA 新闻', 'https://www.epa.gov/newsreleases'),
     (r'FDA|食品药品', 'FDA 新闻', 'https://www.fda.gov/news-events'),
@@ -92,6 +92,10 @@ PUBLISHERS = [
     (r'ITAR|军品清单', '国务院 DDTC', 'https://www.pmddtc.state.gov/'),
     # 外国与媒体
     (r'中国商务部|商务部.*磋商|MOFCOM', '中国商务部', 'http://www.mofcom.gov.cn/'),
+    (r'新华社|新华网', '新华网', 'http://www.news.cn/'),
+    (r'央视|中央广播电视总台|CCTV', '央视新闻', 'https://news.cctv.com/'),
+    (r'央广网|中国之声', '央广网', 'https://www.cnr.cn/'),
+    (r'人民网', '人民网', 'http://www.people.com.cn/'),
     (r'中国外交部|外交部', '中国外交部', 'https://www.mfa.gov.cn/'),
     (r'印度外交部|MEA', '印度外交部', 'https://www.mea.gov.in/'),
     (r'菲律宾|PCO|DFA', '菲总统府', 'https://pco.gov.ph/'),
@@ -168,8 +172,22 @@ def explicit_domain(text):
     return out[:MAX_LINKS]
 
 
+# 人工回填的精确链接：按 (日期, 标题) 命中后直接采用，规则不再覆盖。
+# 用于「已找到原文、且原文不是机构首页」的条目——回填时把 URL 与出处日期写进标签。
+OVERRIDES = {
+    ('2026-11-10', '美方斡旋的俄乌工作层级会谈（阿布扎比）'): [
+        ('新华网 11-11', 'https://app.xinhuanet.com/news/article.html?articleId=20261111fb7fddb9800143049a87e50522c9b217'),
+        ('央广网 11-11', 'https://www.cnr.cn/china/news/20261111/t20261111_527868594.shtml'),
+        ('央视新闻 11-10', 'https://ysxw.cctv.cn/article.html?item_id=7107679433075922306'),
+    ],
+}
+
+
 def classify_links(ev):
     """返回 [(label, url)]，最多 3 条。"""
+    ov = OVERRIDES.get((ev.get('d') or '', ev.get('title') or ''))
+    if ov:
+        return ov[:MAX_LINKS]
     text = note_source(ev)
     year = year_of(ev)
     got, seen = [], set()
