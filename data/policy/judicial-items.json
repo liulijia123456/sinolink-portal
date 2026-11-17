@@ -1,9 +1,117 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-16 09:50",
-  "count": 99,
+  "updated_at": "2026-11-17 14:53",
+  "count": 105,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-16",
+      "title": "Traxcell Technologies, LLC v. Cellco Partnership",
+      "url": "https://www.courtlistener.com/opinion/11062678/traxcell-technologies-llc-v-cellco-partnership/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "联邦巡回上诉法院",
+      "summary": "December 5, 2024, Traxcell moved for a preliminary injunction in the Western District to bar Verizon",
+      "official_no": "",
+      "title_cn": "Traxcell 诉 Verizon 无线（专利侵权律师费另案，因无管辖权撤销发回）",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "联邦巡回上诉法院11月16日就专利侵权诉讼衍生的律师费执行争议作出判决：确认本院有上诉管辖权，但认定西得克萨斯联邦地区法院对本案缺乏管辖权，撤销其判决并发回，指令驳回起诉。\n案件源于 Traxcell 于2017年在东得克萨斯联邦地区法院起诉 Verizon 专利侵权。权利要求解释阶段部分权利要求被认定不清楚，2020年地区法院对其余权利要求作出不侵权简易判决，2022年又依《专利法》第285条判由 Traxcell 承担 Verizon 律师费。两次上诉均被维持，调卷令亦被驳回。\n此后 Traxcell 转而在西得州提起独立诉讼，请求禁止执行该律师费裁定。初步禁令申请被驳回后，双方合意作出终局判决。上诉法院的处理表明，此类请求实为对原判决的间接攻击。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-16",
+      "title": "Holy Trinity Ukrainian Catholic Church v. Township of Collier",
+      "url": "https://www.courtlistener.com/opinion/11062963/holy-trinity-ukrainian-catholic-church-v-township-of-collier/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第三巡回上诉法院",
+      "summary": "quo, constitutes irreparable harm, and a preliminary injunction should have been entered in this case to",
+      "official_no": "",
+      "title_cn": "圣三一乌克兰天主教堂诉科利尔镇（RLUIPA 分区案，驳回全院庭审复审）",
+      "domain": "住房",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "第三巡回上诉法院11月16日驳回圣三一乌克兰天主教堂的全院庭审复审请求，维持合议庭10月19日的裁定。合议庭认为科利尔镇拒绝教堂为圣玛丽圣殿项目重新分区，很可能构成《宗教土地使用与机构人员法》（RLUIPA）下的实质性负担，但未认定该负担达到不可弥补损害的程度，故维持地区法院驳回初步禁令申请的处理。\nPhipps 法官（Matey、Bove、Mascott 三位法官联署）发表反对意见，认为 RLUIPA 下对宗教活动的实质性负担本身即构成不可弥补损害，合议庭另创「时间敏感的宗教损害」标准缺乏先例支持，且与本院 Anash 案相悖，故应准许全院复审。\n该命令以多数意见驳回复审请求，四位法官持异议。本次裁定为程序性处置，不构成对教堂实体主张的终局判断。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-16",
+      "title": "American Bar Association v. Executive Office of the President",
+      "url": "https://www.courtlistener.com/opinion/11062965/american-bar-association-v-executive-office-of-the-president/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "adopted an unlawful, coordinated policy of sanctioning law firms and their lawyers for engaging in",
+      "official_no": "",
+      "title_cn": "美国律师协会诉总统行政办公室（挑战制裁律所行政令的取证争议）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区联邦地区法院11月16日就美国律师协会诉总统行政办公室一案作出备忘录意见与命令，部分准许、部分驳回原告的强制取证动议。该裁定属取证阶段的中间处置，未涉及被诉行政令的合法性。\n美国律师协会于2025年6月起诉，主张行政部门针对其不认可的言论，对律所及律师形成一套协同的制裁政策；起诉状以十四周内密集发布的系列行政令为据。政府方援引 Cheney 案所确立的总统办公室自主权与通讯保密利益，反对向其送达的取证请求。\n法院逐项权衡取证必要性与行政部门利益后作出分项处理：第3、4、5、6、11、12项因已无实际意义驳回；第8、10、14、15、16项无偏驳回；第1、2、7、9、13项按收窄后的范围准许。政府提出的中止请求因时机未到被驳回。双方须于12月4日前协商检索词并提交联合进展报告。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-16",
+      "title": "American Fuel & Petrochemical Manufacturers v. Regan",
+      "url": "https://www.courtlistener.com/opinion/11062995/american-fuel-petrochemical-manufacturers-v-regan/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "(Dec. 30, 2022). Subsequently, the EPA issued a final rule on July 12, 2023, “establish[ing] an applicable",
+      "official_no": "",
+      "title_cn": "美国燃料与石化制造商协会诉 Zeldin（纤维质生物燃料豁免之诉被驳回）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区联邦地区法院11月16日部分准许政府方的驳回动议、驳回原告的简易判决动议，以缺乏事项管辖权为由整体驳回美国燃料与石化制造商协会的起诉。判决未触及可再生燃料标准实体规则本身的合法性。\n原告于2024年8月15日依《清洁空气法》公民诉讼条款起诉，主张环保署未按第211(o)条对2023年度纤维质生物燃料要求作部分豁免，亦未提供相应信用额度。\n法院认定原告未证明其成员遭受具体、特定化的实际损害，缺乏起诉资格；即便具备资格，该豁免条款亦非「明确的、非裁量的、附确定期限」的义务，公民诉讼途径不能成立；至于信用额度，仅在署长下调最低量时才触发，而哥伦比亚特区巡回法院已维持2023年度量，故无此义务。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-16",
+      "title": "Natural Resources Defense Council, Inc. v. Burgum",
+      "url": "https://www.courtlistener.com/opinion/11062964/natural-resources-defense-council-inc-v-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "reasonable and prudent alternatives to the agency action”; (2) “the benefits of such action clearly",
+      "official_no": "",
+      "title_cn": "自然资源保护委员会诉伯古姆（濒危物种委员会豁免决定的管辖权）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区联邦地区法院11月16日准许联邦被告的驳回动议，以缺乏管辖权为由驳回自然资源保护委员会对濒危物种委员会豁免决定的起诉，并驳回原告提交补充答辩状的申请。\n案件针对国防部长依《濒危物种法》第7条认定国家安全需要、委员会据此对墨西哥湾油气活动授予豁免。原告主张委员会未履行法定申请与咨询程序，故其决定不受第1536(n)条排他审查条款约束，地区法院有管辖权。\n法院认定：所有豁免均须依第(h)款作出，(j)款仅是「必须授予」的裁决规则而非独立授权路径；第(n)款将审查权排他性交予联邦上诉法院，程序瑕疵不改变管辖归属。原告未单独抗辩的国家安全认定与《国家环境政策法》主张视为放弃。委员会是否实际遵行程序，法院未予置评。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-15",
+      "title": "Wilson v. Brent",
+      "url": "https://www.courtlistener.com/opinion/11062604/wilson-v-brent/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "refund, id. at 14–15; claims under the Administrative Procedure Act (“APA”), 5 U.S.C. § 706(2), against",
+      "official_no": "",
+      "title_cn": "Wilson 诉 Brent（退税与专利费退款之诉，部分驳回部分准许）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区联邦地区法院11月15日部分准许、部分驳回政府的驳回动议，同时驳回原告的交叉简易判决动议。原告系自行诉讼，就两笔小额退款起诉：国税局驳回其1,800美元《新冠病毒援助、救济与经济安全法》抵免退款申请，专利商标局驳回其200美元申请费退款请求。\n法院认定：退税请求适用第6511条三年时效，原告就2020纳税年度迟至2025年4月才申报，已逾期，外国税收十年特别时效不适用，故缺乏事项管辖权；《国内税收法》第7422条已提供充分救济，行政程序法请求不能成立；消费者保护请求未指明诉因。\n专利费退款一项因行政记录不足、政府论证不充分，双方动议均无偏驳回，该请求仍待审理；十名未识别被告的请求依职权驳回。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-14",
