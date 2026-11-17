@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-16T08:21:50+08:00",
+ "updated_at": "2026-11-17T14:28:33+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 6,
-   "added": 0,
+   "fetched": 4,
+   "added": 1,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 7,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -164,6 +164,231 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-16",
+   "title": "Nominations Sent to the Senate",
+   "title_cn": "白宫向参议院提交五项人事提名，含驻玻利维亚大使",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/nominations-sent-to-the-senate-a864/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 白宫 11 月 16 日向参议院提交五项人事提名，含驻玻利维亚大使卡拉·弗雷德里克。\n· 提名弗吉尼亚州埃里克·尤兰出任美国政府问责局主计长，任期十五年。\n· 另提三名联邦地区法官人选，分属得州北区、南卡州与得州西区法院。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "United States Welcomes Election of Jennifer Warren to the International Telecommunication Union Radio Regulations Board",
+   "title_cn": "美国欢迎沃伦当选国际电信联盟无线电规则委员会委员",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/united-states-welcomes-election-of-jennifer-warren-to-the-international-telecommunication-union-radio-regulations-board/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman United States Welcomes Election of Jennifer Warren to the International Telecommunication Union Radio Regulations Board Media Note November 16, 2026 The United States welcomes the election of Jennifer Warren to the International Telecommunication Union (ITU) Radio Regulations Board (RRB). Ms. Warren brings more than 30 years of regulatory experience spanning government, the",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 美国 11 月 16 日欢迎珍妮弗·沃伦当选国际电信联盟无线电规则委员会委员。\n· 沃伦有逾 30 年监管经验，覆盖政府、私营部门、学术界与行业协会。\n· 国务院表示，沃伦将推动提升该委员会决策的独立性与公信力。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity",
+   "title_cn": "美国与九方签署《旧金山宣言》，确立超级智能供应链安全原则",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman The San Francisco Declaration on the Secure Foundations of Enduring Prosperity Media Note November 15, 2026 On November 15, the United States and nine Pax Silica participants signed the San Francisco Declaration on the Secure Foundations of Enduring Prosperity at the Pax Silica Founders Retreat, convened by Under Secretary of State for Economic Affairs Jacob Helberg. The De",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 美国与澳大利亚、印度、以色列、日本等九方 11 月 15 日签署《旧金山宣言》。\n· 宣言认定经济安全是国家安全基础，界定超级智能供应链依赖的敏感技术与关键设施。\n· 各方同意设立五个工作组，将共同原则转为具体实践并确立共同基线。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Secretary Rubio’s Call with Thai Deputy Prime Minister and Foreign Minister Sihasak",
+   "title_cn": "国务卿鲁比奥与泰国副总理兼外长西哈萨通话",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-thai-deputy-prime-minister-and-foreign-minister-sihasak/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Thai Deputy Prime Minister and Foreign Minister Sihasak Readout November 16, 2026 Secretary of State Marco Rubio spoke today with Thai Deputy Prime Minister and Foreign Minister Sihasak Phuangketkeow. They discussed bilateral economic and security issues and reaffirmed the U.S.-Thai alliance and their shared commitment to a free and open Indo-Pac",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥 11 月 16 日与泰国副总理兼外长西哈萨·蓬吉考通话。\n· 双方就双边经济与安全议题交换意见，并重申美泰同盟关系。\n· 双方重申对自由开放印太地区的共同承诺，并同意在同盟框架下协调。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Secretary Rubio’s Call with Bahraini Foreign Minister Al Zayani",
+   "title_cn": "国务卿鲁比奥与巴林外交大臣扎亚尼通话，谴责伊朗袭击",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-bahraini-foreign-minister-al-zayani/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Bahraini Foreign Minister Al Zayani Readout November 16, 2026 Secretary of State Marco Rubio spoke today with Bahraini Foreign Minister Abdullatif bin Rashid Al Zayani. The Secretary condemned Iran’s attacks on Bahrain and reaffirmed the commitment of the United States to the security of Bahrain and all our Gulf partners. The Secretary and the Fo",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥 11 月 16 日与巴林外交大臣阿卜杜勒拉蒂夫·扎亚尼通话。\n· 鲁比奥谴责伊朗对巴林的袭击，重申美国对巴林及海湾伙伴的安全承诺。\n· 双方重申以巴林「主要非北约盟友」地位为基础的战略伙伴关系。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Reward Offers Totaling Up to $20 Million for Information Leading to Arrests and/or Convictions of Guatemalan Narcoterrorists",
+   "title_cn": "美国悬赏最高 2000 万美元征集两名危地马拉毒枭线索",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/reward-offers-totaling-up-to-20-million-for-information-leading-to-arrests-and-or-convictions-of-guatemalan-narcoterrorists/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Reward Offers Totaling Up to $20 Million for Information Leading to Arrests and/or Convictions of Guatemalan Narcoterrorists Press Statement November 16, 2026 Today, the Department of State’s Bureau of International Narcotics and Law Enforcement Affairs is announcing reward offers under the Narcotics Rewards Program (NRP) of up to $10 million",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 国务院 11 月 16 日悬赏各至多 1000 万美元，征集两名危地马拉毒枭线索。\n· 对象为蒙特霍·萨恩斯与卡尔德龙-卡尔德龙，涉贩毒、勒索、武器与人口贩运及谋杀。\n· 二人与哈利斯科新生代卡特尔关联，2018 与 2019 年已在加州南区法院被起诉。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Deputy Secretary Landau’s Travel to Tajikistan, Türkiye, and Turkmenistan",
+   "title_cn": "常务副国务卿兰道访问塔吉克斯坦、土耳其与土库曼斯坦",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/deputy-secretary-landaus-travel-to-tajikistan-turkiye-and-turkmenistan/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Deputy Secretary Landau’s Travel to Tajikistan, Türkiye, and Turkmenistan Media Note November 16, 2026 Deputy Secretary of State Christopher Landau will travel to Dushanbe, Tajikistan; Istanbul, Türkiye; and Ashgabat, Turkmenistan from November 16-24. In Dushanbe, Deputy Secretary Landau will meet with senior Tajik government officials and private sector leaders to further ",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 常务副国务卿兰道 11 月 16 日至 24 日访问塔吉克斯坦、土耳其与土库曼斯坦。\n· 杜尚别行程聚焦区域联通、经济增长与超级智能技术合作。\n· 伊斯坦布尔谈商业与能源供应链安全，阿什加巴特谈跨里海能源出口多元化。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Deputy Secretary Landau’s Meeting with Federated States of Micronesia President Simina",
+   "title_cn": "常务副国务卿兰道会见密克罗尼西亚总统西米纳",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/deputy-secretary-landaus-meeting-with-federated-states-of-micronesia-president-simina/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Deputy Secretary Landau’s Meeting with Federated States of Micronesia President Simina Readout November 16, 2026 Deputy Secretary of State Christopher Landau met today with Federated States of Micronesia (FSM) President Wesley Simina to continue discussions on the bilateral relationship, which is based on a Compact of Free Association. The Deputy Secretary reaffirmed that t",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 常务副国务卿兰道 11 月 16 日会见密克罗尼西亚联邦总统西米纳。\n· 双方就以《自由联系协定》为基础的双边关系进展交换意见。\n· 兰道称该协定仍是美国在太平洋地区伙伴关系的「黄金标准」。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Former Honduran Consul General Charged and 3 Others Arrested in Alleged Bribery and Money Laundering Scheme",
+   "title_cn": "洪都拉斯前总领事因受贿与洗钱被诉，另有三人被捕",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/former-honduran-consul-general-charged-and-3-others-arrested-alleged-bribery-and-money",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 洪都拉斯前总领事塞拉诺因涉嫌受贿与洗钱被起诉，另有三人被捕。\n· 本案系《反海外勒索法》生效后首例起诉，由佐治亚州北区联邦检察官办公室办理。\n· 检方称 2024 年 8 月至 2026 年 3 月，其以安排领事预约换取现金贿赂。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Chiropractor and Former CEO Sentenced for Using Abusive Tax Shelter",
+   "title_cn": "脊椎按摩师兼前首席执行官因滥用避税工具获刑 15 个月",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/chiropractor-and-former-ceo-sentenced-using-abusive-tax-shelter",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 连锁脊椎按摩诊所前首席执行官伯恩森被判 15 个月监禁。\n· 其以约 2.5 万美元购入非法避税方案，借信托与虚假慈善基金会隐匿收入。\n· 另判一年监督释放，并赔偿 129.5 万美元、利息 42.9 万美元。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Alleged Member of “8-Digits Team” Ransomware Group Extradited from Italy for Role in Major Data Extortion Campaign Against U.S. Hospitals, Healthcare Entities, and Schools",
+   "title_cn": "勒索团伙成员自意大利引渡至美国，涉医院与学校数据勒索案",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/alleged-member-8-digits-team-ransomware-group-extradited-italy-role-major-data-extortion",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 意大利应美方请求，将「8-Digits Team」成员赫利诺夫斯基引渡至美国。\n· 该团伙与 INC、Lynx 勒索软件关联，攻击至少六个州的医院与学校。\n· 联邦调查局称该勒索活动索要赎金逾 5 亿美元，涉多起医疗数据泄露。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "WORST OF THE WORST: Over the Weekend, ICE Arrests Murderers, Pedophiles, and Child Abusers",
+   "title_cn": "「最恶劣之最」：移民执法局周末逮捕多名重罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/16/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-child-abusers",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 移民执法局上周末在全国逮捕多名有重罪定罪的非法移民。\n· 涉案人员定罪包括过失杀人、一级儿童强奸与虐待儿童等重罪。\n· 国土安全部长马林称边境越境处历史低位、遣返处历史高位。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Under President Trump and Secretary Mullin, CBP’s Nationwide Encounters in October Were the Lowest Ever to Start a Fiscal Year",
+   "title_cn": "海关与边境保护局：10 月执法接触人次创财年开局最低",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/16/under-president-trump-and-secretary-mullin-cbps-nationwide-encounters-october-were",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 海关与边境保护局称 10 月全国执法接触 27,890 人次，为财年开局最低。\n· 这是连续第 18 个月边境「零释放」，西南边境单日逮捕量同比降 95%。\n· 10 月西南边境巡逻队逮捕 8,288 人，为拜登政府月均值的 5%。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Secretary Mullin Attends Event Demonstrating Technology for Countering Hostile Drones",
+   "title_cn": "国土安全部长马林出席反无人机技术测试与演示活动",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/16/secretary-mullin-attends-event-demonstrating-technology-countering-hostile-drones",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 国土安全部长马林 11 月 12 日在俄克拉何马州斯特林敦出席反无人机技术测试。\n· 活动由乔克托族新兴航空技术中心承办，演示动能拦截与网捕等技术。\n· 马林称正与州、地方、部落及产业界合作评估应对无人机威胁的技术。"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "title": "VA sets new record on outreach to recently separated Veterans",
+   "title_cn": "退伍军人事务部「稳健起步」项目联系率升至 84% 创新高",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-sets-new-record-on-outreach-to-recently-separated-veterans/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-16",
+    "tier": "news",
+    "body": "· 退伍军人事务部「稳健起步」项目 2025 年联系率达 84%，创历史新高。\n· 该比例高于 2024 年的 82% 和 2023 年的 78%，呈连续提升。\n· 项目在退伍后约 90 天、180 天、360 天通过电话与邮件联系退役人员。"
+   }
+  },
   {
    "date": "2026-11-14",
    "title": "Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention",
