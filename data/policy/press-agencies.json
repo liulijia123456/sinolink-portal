@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-16T09:26:33+08:00",
+ "updated_at": "2026-11-17T14:50:20+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -302,7 +302,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O"
+   "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+   "brief": {
+    "at": "2026-10-02",
+    "tier": "news",
+    "body": "· 美联储10月2日宣布，将O条例现代化提案的意见征询期延长至11月4日。\n· 该提案原定10月5日截止，延期意在让相关方有更多时间分析议题并准备意见。\n· O条例是规范银行向高管、董事及主要股东等内部人发放信贷的规则。"
+   }
   },
   {
    "date": "2026-09-30",
@@ -312,7 +317,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements"
+   "summary": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+   "brief": {
+    "at": "2026-09-30",
+    "tier": "news",
+    "body": "· 美联储9月30日敲定两项终版规则，以提升压力测试的透明度与公共问责。\n· 首项规则要求每年就压力情景与重大模型变更征求公众意见，并确定2027年测试所用模型。\n· 第二项规则要求以最近两次年度测试结果均值计算压力资本缓冲，2028年起执行。"
+   }
   },
   {
    "date": "2026-09-29",
