@@ -1,12 +1,68 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-11-16 08:36",
-  "count": 1342,
+  "updated_at": "2026-11-17 14:34",
+  "count": 1382,
   "items": [
     {
       "board": "congress",
-      "date": "2026-11-14",
+      "date": "2026-11-17",
+      "introduced": "2026-07-09",
+      "stage_date": "2026-11-10",
+      "title": "Nuclear Advisory Committee Reform Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9613",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Environment and Public Works.",
+      "official_no": "H.R. 9613",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：众议院法案 H.R. 9613，案名《核咨询委员会改革法案》，由共和党众议员 Diana Harshbarger 于 2026年7月9日 提出。\n2. 核心动作：修改核管理委员会反应堆安全保护咨询委员会的职责要求，允许该委员会对部分许可申请（如商业核电站申请）不予审查。\n3. 程序阶段：最新行动 2026-11-10，参议院二读后转交环境与公共工程委员会；此前众议院于 2026-11-09 搁置复议动议，表决结果维持。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "first"
+      },
+      "title_cn": "《核咨询委员会改革法案》",
+      "domain": "能源/环境",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H6102-6103)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-05",
+          "text": "Placed on the Union Calendar, Calendar No. 774.",
+          "tag": "议事日程"
+        },
+        {
+          "date": "2026-07-09",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-07-09",
+          "text": "Referred to the Subcommittee on Energy.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2026-07-09",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Diana Harshbarger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN-1",
+      "committee": "Environment and Public Works"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
       "introduced": "2026-04-30",
       "stage_date": "2026-11-12",
       "title": "Providing for consideration of the bill (H.R. 2102) to amend title 10, United States Code, to provide for concurrent receipt of veterans' disability compensation and retired pay for disability retirees with combat-related disabilities, and for other purposes.",
@@ -64,6 +120,2218 @@
       "sponsor_party": "D",
       "sponsor_tag": "D-CA-39",
       "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-10",
+      "stage_date": "2026-11-10",
+      "title": "HERO Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5704",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 5704",
+      "brief": {
+        "at": "2026-11-12",
+        "body": "1. 文种与主体：参议院法案 S. 5704，案名《公共安全人员行为健康法案》，由民主党参议员 Jacky Rosen 于 2026 年 11 月 10 日 提出。\n2. 核心动作：要求卫生与公众服务部长改进公共安全人员行为健康问题的识别、预防与治疗。\n3. 程序阶段：最新行动日期为 2026-11-10，已二读并交付参议院卫生、教育、劳工与养老金委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《公共安全人员行为健康法案》",
+      "domain": "医疗/医药",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Jacky Rosen",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NV",
+      "committee": "Health, Education, Labor, and Pensions"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-14",
+      "stage_date": "2026-11-12",
+      "title": "Major Richard Star Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2102",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Armed Services.",
+      "official_no": "H.R. 2102",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 2102·理查德·斯塔尔少校法案｜众议院法案·第119届国会｜提案人 Gus M. Bilirakis（R-FL-12）｜提出 2025-03-14\n允许有战斗相关残疾但服役年限不足 20 年的退伍军人，在不扣减退役金的情况下同时领取伤残补偿，取消现行的并行领取抵扣安排。\n最新行动 2026-11-12：参议院接收并二读，交付军事委员会审议。\n信息边界：最新行动 2026 年 11 月 12 日属本轮实质进展，法案已获众议院通过、转参议院委员会；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "first"
+      },
+      "title_cn": "理查德·斯塔尔少校法案",
+      "domain": "国防/安全",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Received in the Senate and Read twice and referred to the Committee on Armed Services.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 392 - 18 (Roll no. 323). (text: CR H6195)",
+          "tag": "院会"
+        },
+        {
+          "date": "2025-04-04",
+          "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-03-14",
+          "text": "Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-14",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Gus M. Bilirakis",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-12",
+      "committee": "Armed Services"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "No Kids as Bait Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11016",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consi",
+      "official_no": "H.R. 11016",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11016·《禁止以儿童为诱饵法案》｜众议院法案·第119届国会｜提案人 Maxwell Frost（D-FL-10）｜提出 2026-11-12\n法案名为「禁止以儿童为诱饵法案」，标题指向将利用儿童作为诱饵的行为入罪；具体罪名、构成要件与刑度待文本公布。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付国土安全委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《禁止以儿童为诱饵法案》",
+      "domain": "司法/执法",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Maxwell Frost",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-FL-10",
+      "committee": "the Judiciary"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "CDL Fraud Tipline Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11031",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Transportation and Infrastructure.",
+      "official_no": "H.R. 11031",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11031·《商业驾驶执照欺诈举报热线法案》｜众议院法案·第119届国会｜提案人 David J. Taylor（R-OH-2）｜提出 2026-11-12\n法案名为「商业驾驶执照欺诈举报热线法案」，指向设立针对商业驾驶执照申领欺诈的举报渠道；热线承设主体、受理范围与后续处置待文本公布。\n最新行动 2026-11-12：交付众议院交通和基础设施委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《商业驾驶执照欺诈举报热线法案》",
+      "domain": "交通",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the House Committee on Transportation and Infrastructure.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "David J. Taylor",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH-2",
+      "committee": "Transportation and Infrastructure"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "BRIDGE Care at Home Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11029",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for co",
+      "official_no": "H.R. 11029",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11029·《居家照护衔接法案》｜众议院法案·第119届国会｜提案人 Adrian Smith（R-NE-3）｜提出 2026-11-12\n法案名为「居家照护衔接法案」，交付筹款委员会并同时交付能源和商业委员会，指向居家照护服务的衔接与支付安排；缩写全称未列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院筹款委员会审议，并同时交付能源和商业委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《居家照护衔接法案》",
+      "domain": "医疗/医药",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Adrian Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NE-3",
+      "committee": "Ways and Means"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "Health and Human Services Workforce Visa Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11020",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Agriculture, Energy and Commerce, Ways and Means, and Education and Workforce, for a period to be s",
+      "official_no": "H.R. 11020",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11020·《卫生与公众服务人力签证法案》｜众议院法案·第119届国会｜提案人 Michael Lawler（R-NY-17）｜提出 2026-11-12\n法案名为「卫生与公众服务人力签证法案」，以签证渠道补充卫生人力；具体签证类别、配额与劳工条件待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付农业、能源和商业、筹款、教育和劳动力四个委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《卫生与公众服务人力签证法案》",
+      "domain": "医疗/医药",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the Committee on the Judiciary, and in addition to the Committees on Agriculture, Energy and Commerce, Ways and Means, and Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Michael Lawler",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NY-17",
+      "committee": "the Judiciary"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "PHD Talent Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11015",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.R. 11015",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11015·《2026年博士人才法案》｜众议院法案·第119届国会｜提案人 Vince Fong（R-CA-20）｜提出 2026-11-12\n法案名为「博士人才法案」，交付众议院教育和劳动力委员会，指向博士层次人才的培养、留用或签证衔接；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年博士人才法案》",
+      "domain": "教育/劳动",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the House Committee on Education and Workforce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Vince Fong",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CA-20",
+      "committee": "Education and Workforce"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "Protect U.S. Preventive Services Task Force Integrity Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11013",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 11013",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11013·《保护美国预防服务工作组独立性法案》｜众议院法案·第119届国会｜提案人 Maxine Dexter（D-OR-3）｜提出 2026-11-12\n法案名为「保护美国预防服务工作组独立性法案」；该工作组负责对临床预防服务作出分级推荐，法案所指的保护机制待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《保护美国预防服务工作组独立性法案》",
+      "domain": "医疗/医药",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Maxine Dexter",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR-3",
+      "committee": "Energy and Commerce"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "Allergy & Asthma Patient Protection Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11024",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 11024",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11024·《2026年过敏与哮喘患者保护法案》｜众议院法案·第119届国会｜提案人 Robert F. Onder（R-MO-3）｜提出 2026-11-12\n法案名为「过敏与哮喘患者保护法案」，交付众议院能源和商业委员会，指向过敏与哮喘患者的治疗可及性或支付保障；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年过敏与哮喘患者保护法案》",
+      "domain": "医疗/医药",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Robert F. Onder",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO-3",
+      "committee": "Energy and Commerce"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-12",
+      "stage_date": "2026-11-12",
+      "title": "Enhancing Competition in Contracting Orders Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11027",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Small Business.",
+      "official_no": "H.R. 11027",
+      "brief": {
+        "at": "2026-11-15",
+        "body": "H.R. 11027·《增强合同订单竞争法案》｜众议院法案·第119届国会｜提案人 Hillary J. Scholten（D-MI-3）｜提出 2026-11-12\n法案名为「增强合同订单竞争法案」，交付众议院小企业委员会，指向联邦采购订单环节的竞争性要求；适用门槛与例外情形待文本公布。\n最新行动 2026-11-12：交付众议院小企业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《增强合同订单竞争法案》",
+      "domain": "产业/企业",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Referred to the House Committee on Small Business.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Hillary J. Scholten",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-3",
+      "committee": "Small Business"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-05",
+      "stage_date": "2026-11-10",
+      "title": "National Taxpayer Advocate Enhancement Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-139.",
+      "official_no": "H.R. 997",
+      "brief": {
+        "at": "2026-11-13",
+        "body": "众议院法案 H.R. 997《2025年纳税人权益倡导者增强法案》，共和党议员 Randy Feenstra 2025-02-05 提出，属第 119 届国会。\n众议院对应版本，内容与参议院版本一致，授权国家纳税人权益倡导者聘任直属法律顾问并扩大其人事处置权限。该案已完成总统签署环节。\n最新行动 2026-11-10：总统签署，已完成全部立法程序，该案自签署之日起具直接执行效力。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "enact"
+      },
+      "title_cn": "《2025年纳税人权益倡导者增强法案》",
+      "domain": "财政/税收",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Became Public Law No: 119-139.",
+          "tag": "总统"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Signed by President.",
+          "tag": "总统"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Presented to President.",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-09-28",
+          "text": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)",
+          "tag": "院会"
+        },
+        {
+          "date": "2025-04-01",
+          "text": "Received in the Senate and Read twice and referred to the Committee on Finance.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-31",
+          "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 385 - 0 (Roll no. 85). (text: CR H1349-1350)",
+          "tag": "院会"
+        },
+        {
+          "date": "2025-03-27",
+          "text": "Placed on the Union Calendar, Calendar No. 33.",
+          "tag": "议事日程"
+        },
+        {
+          "date": "2025-02-12",
+          "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 43 - 0.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-02-05",
+          "text": "Referred to the House Committee on Ways and Means.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-05",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Randy Feenstra",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IA-4",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-10",
+      "stage_date": "2026-11-10",
+      "title": "Providing for consideration of the bill (H.R. 6731) to amend chapter 131 of title 5 to prohibit Members of Congress, the President, Vice President, and their spouses and dependents from owning or trading stocks, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1656",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Rules.",
+      "official_no": "H.Res. 1656",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "1. 文种与主体：众议院决议 H.Res. 1656，案名「就H.R.6731（禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票）作出审议安排的决议」，由共和党众议员 Anna Paulina Luna 于 2026年11月10日 提出。\n2. 核心动作：为 H.R. 6731 安排全院审议程序；该法案修订《美国法典》第 5 编第 131 章，禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票。\n3. 程序阶段：最新行动 2026年11月10日，已提交众议院规则委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "就H.R.6731（禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票）作出审议安排的决议",
+      "domain": "政府运作",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Referred to the House Committee on Rules.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Anna Paulina Luna",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL-13",
+      "committee": "Rules"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-09",
+      "stage_date": "2026-11-10",
+      "title": "Providing for consideration of the bill (H.R. 1013) to amend the Federal securities laws to enhance 403(b) plans, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1650",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Motion to reconsider laid on the table Agreed to without objection.",
+      "official_no": "H.Res. 1650",
+      "brief": {
+        "at": "2026-11-11",
+        "body": "1. 文种与主体：众议院决议 H.Res. 1650，案名「就H.R.1013（修订联邦证券法以完善403(b)退休计划）作出审议安排的决议」，由共和党众议员 H. Morgan Griffith 于 2026年11月9日 提出。\n2. 核心动作：为 H.R. 1013 安排全院审议程序；该法案修订联邦证券法，扩大 403(b) 退休计划的合规空间。\n3. 程序阶段：最新行动 2026年11月10日，复议动议经一致同意搁置，原表决结果维持。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "first"
+      },
+      "title_cn": "就H.R.1013（修订联邦证券法以完善403(b)退休计划）作出审议安排的决议",
+      "domain": "政府运作",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Motion to reconsider laid on the table Agreed to without objection.",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "On agreeing to the resolution Agreed to by recorded vote: 215 - 209 (Roll no. 319). (text: CR H6122-6123)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Passed/agreed to in House: On agreeing to the resolution Agreed to by recorded vote: 215 - 209 (Roll no. 319).",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Placed on the House Calendar, Calendar No. 92.",
+          "tag": "议事日程"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "The House Committee on Rules reported an original measure, H. Rept. 119-878, by Mr. Griffith.",
+          "tag": "委员会"
+        }
+      ],
+      "sponsor": "H. Morgan Griffith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-VA-9",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-08-06",
+      "stage_date": "2026-08-06",
+      "title": "GHOST Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5278",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+      "official_no": "S. 5278",
+      "brief": {
+        "at": "2026-11-12",
+        "body": "1. 文种与主体：参议院法案 S. 5278，案名《GHOST法案》，由民主党参议员 Ben Ray Luján 于 2026 年 8 月 6 日 提出。\n2. 核心动作：案名以缩写呈现，队列未提供官方摘要，规制对象与手段无法据案名确认。\n3. 程序阶段：最新行动日期为 2026-08-06，已二读并交付参议院商业、科学与交通委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《GHOST法案》",
+      "domain": "其他",
+      "actions": [
+        {
+          "date": "2026-08-06",
+          "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-06",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Ben Ray Luján",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NM",
+      "committee": "Commerce, Science, and Transportation"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-10-29",
+      "stage_date": "2026-11-10",
+      "title": "A resolution supporting the designation of October 30 as the \"International Day of Political Prisoners\".",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/472",
+      "source": "国会官网",
+      "kind": "参议院决议",
+      "agency": "参议院 · Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)",
+      "official_no": "S.Res. 472",
+      "brief": {
+        "at": "2026-11-12",
+        "body": "1. 文种与主体：参议院决议 S.Res. 472，案名《支持将10月30日定为“国际政治犯日”决议》，由共和党参议员 Roger F. Wicker 于 2025 年 10 月 29 日 提出。\n2. 核心动作：支持将 10 月 30 日定为「国际政治犯日」，属表态性决议，不创设权利义务。\n3. 程序阶段：最新行动日期为 2026-11-10，参议院以一致同意方式通过，未作修正并保留序言；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "first"
+      },
+      "title_cn": "《支持将10月30日定为“国际政治犯日”决议》",
+      "domain": "政府运作",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Passed/agreed to in Senate: Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
+          "tag": "院会"
+        },
+        {
+          "date": "2025-10-29",
+          "text": "Referred to the Committee on Foreign Relations. (text: CR S7829)",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-10-29",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Roger F. Wicker",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MS",
+      "committee": ""
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-10-15",
+      "stage_date": "2026-10-15",
+      "title": "Foreign Government-Owned Media FARA Registration Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5682",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Foreign Relations under authority of the order of the Senate of 09/30/2026.",
+      "official_no": "S. 5682",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "第119届国会参议院法案（S.5682），2026年10月15日由参议员里克·斯科特（共和党，佛罗里达州）提出，经参议院9月30日命令二读后交付外交关系委员会。\n标题指向要求外国政府所有的媒体机构依《外国代理人登记法》登记，官方摘要未取得，登记主体范围与豁免条件以 congress.gov 文本为准。\n处于提出阶段，未安排听证。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "外国政府所有媒体依《外国代理人登记法》登记法案",
+      "domain": "电信/媒体",
+      "actions": [
+        {
+          "date": "2026-10-15",
+          "text": "Read twice and referred to the Committee on Foreign Relations under authority of the order of the Senate of 09/30/2026.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-10-15",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Rick Scott",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-FL",
+      "committee": "Foreign Relations under authority of the order of the Senate of 09/30/2026"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-10-15",
+      "stage_date": "2026-10-15",
+      "title": "RECLAIM Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5689",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Finance under authority of the order of the Senate of 09/30/2026.",
+      "official_no": "S. 5689",
+      "brief": {
+        "at": "2026-10-27",
+        "body": "第119届国会参议院法案（S.5689），2026年10月15日由参议员伯尼·莫雷诺（共和党，俄亥俄州）提出，经参议院9月30日命令二读后交付财政委员会。\n法案仅有简称，官方摘要未取得，政策领域标注为税收，具体条款内容以 congress.gov 文本为准，不作推测。\n处于提出阶段；财政委员会本会期以拨款与和解法案为主。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "RECLAIM法案",
+      "domain": "财政/税收",
+      "actions": [
+        {
+          "date": "2026-10-15",
+          "text": "Read twice and referred to the Committee on Finance under authority of the order of the Senate of 09/30/2026.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-10-15",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Bernie Moreno",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-OH",
+      "committee": "Finance under authority of the order of the Senate of 09/30/2026"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-06",
+      "stage_date": "2026-11-10",
+      "title": "America's National Churchill Museum National Historic Landmark Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Became Public Law No: 119-141.",
+      "official_no": "H.R. 1945",
+      "sponsor": "Robert Onder",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO-3",
+      "committee": "",
+      "actions": [
+        {
+          "date": "2026-11-10",
+          "text": "Became Public Law No: 119-141.",
+          "tag": "总统"
+        },
+        {
+          "date": "2026-11-10",
+          "text": "Signed by President.",
+          "tag": "总统"
+        },
+        {
+          "date": "2026-11-05",
+          "text": "Presented to President.",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-09-29",
+          "text": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-03-04",
+          "text": "Received in the Senate, read twice.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-03-03",
+          "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2356)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-02-24",
+          "text": "Placed on the Union Calendar, Calendar No. 442.",
+          "tag": "议事日程"
+        },
+        {
+          "date": "2026-02-24",
+          "text": "Reported by the Committee on Natural Resources. H. Rept. 119-517.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2026-02-11",
+          "text": "Ordered to be Reported by Unanimous Consent.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-07-09",
+          "text": "Referred to the Subcommittee on Federal Lands.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-03-06",
+          "text": "Referred to the House Committee on Natural Resources.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-06",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《美国国家丘吉尔博物馆国家历史地标法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "【政策背景】\n美国国家历史地标制度由内政部依《国家历史保护法》管理，被指定对象须具备全国性历史意义。位于密苏里州富尔顿市威斯敏斯特学院的美国国家丘吉尔博物馆，藏有 1946 年英国前首相温斯顿·丘吉尔在该校发表“和平的肌理”（通称“铁幕演说”）的场所遗存与相关纪念物。将该馆升格为国家历史地标，属于在既有纪念设施基础上追加保护层级与联邦协作机制的一类立法，程序上须经众议院自然资源委员会报告、两院通过后由总统签署。\n\n【核心内容】\n法案由共和党众议员 Robert Onder（R-MO-3）于 2025 年 3 月 6 日提出，2026 年 2 月 24 日由众议院自然资源委员会报告（H. Rept. 119-517）并列入联合日程第 442 号，2026 年 3 月 3 日经暂停议事规则以口头表决通过，3 月 4 日送参议院二读，9 月 29 日由参议院以一致同意方式无修正通过，11 月 5 日呈送总统，11 月 10 日签署成为第 119-141 号公法。\n\n依国会研究服务局摘要，法案将美国国家丘吉尔博物馆（含丘吉尔纪念堂）指定为“美国国家丘吉尔博物馆国家历史地标”；授权内政部与公私实体签订合作协议，用于保护该地标的历史资源并向公众提供教育与解说设施，内政部可向合作方提供技术与资金援助；同时要求内政部开展特别资源研究，评估该地标的国家意义，并判断将其指定为国家公园体系组成单元的适宜性与可行性。研究须比较替代方案，并列出各方案的成本估算。\n\n【要点提炼】\n1. 法律效力：已由总统签署成为第 119-141 号公法，自签署之日起具直接执行效力，不再处于待议状态。\n2. 制度性质：核心是追加地标认定与建立联邦—地方协作机制，并为后续是否纳入国家公园体系预留研究程序；纳入国家公园体系本身须另经认定，不在本法案直接授权范围。\n3. 财政含义：法案授权技术与资金援助并规定研究报告须列成本估算，但摘要未列明具体授权额度。\n4. 文本状态：条款依据为国会研究服务局摘要，公法正式文本以政府出版局刊印版本为准。",
+        "tier": "full",
+        "stage": "enact"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-20",
+      "stage_date": "2025-02-20",
+      "title": "America's National Churchill Museum National Historic Landmark Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/650",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Energy and Natural Resources.",
+      "official_no": "S. 650",
+      "sponsor": "Josh Hawley",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-MO",
+      "committee": "Energy and Natural Resources",
+      "actions": [
+        {
+          "date": "2025-02-20",
+          "text": "Read twice and referred to the Committee on Energy and Natural Resources.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-20",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《美国国家丘吉尔博物馆国家历史地标法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "S. 650·《美国国家丘吉尔博物馆国家历史地标法案》｜参议院法案·第119届国会｜提案人 Josh Hawley（R-MO）｜提出 2025-02-20\n将位于密苏里州富尔顿市威斯敏斯特学院的美国国家丘吉尔博物馆（含丘吉尔纪念堂）指定为“美国国家丘吉尔博物馆国家历史地标”；授权内政部与公私机构签订合作协议以保护该地标历史资源、提供公众教育与解说设施，并可提供技术与资金援助，同时要求开展特别资源研究，评估其国家意义及纳入国家公园体系的适宜性与可行性。\n最新行动 2025-02-20：参议院二读后转交能源和自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-03-19",
+      "stage_date": "2026-03-19",
+      "title": "ISLET Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8018",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 8018",
+      "sponsor": "Ralph Norman",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-5",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2026-03-19",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-03-19",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《增加对救命内分泌移植的支持（ISLET）法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 8018·《增加对救命内分泌移植的支持（ISLET）法案》｜众议院法案·第119届国会｜提案人 Ralph Norman（R-SC-5）｜提出 2026-03-19\n将取自人类遗体的胰岛排除在食品药物管理局的药品或生物制品监管之外。胰岛移植目前被视为针对 1 型糖尿病等疾病的实验性治疗，现行 FDA 指南将胰岛按生物制品管理，须经生物制品许可申请程序并符合相关生产标准。\n最新行动 2026-03-19：转交众议院能源和商业委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-14",
+      "stage_date": "2025-04-09",
+      "title": "Law Enforcement Support and Counter Transnational Repression Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2116",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Ordered to be Reported by Voice Vote.",
+      "official_no": "H.R. 2116",
+      "sponsor": "Gabe Evans",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-CO-8",
+      "committee": "",
+      "actions": [
+        {
+          "date": "2025-04-09",
+          "text": "Ordered to be Reported by Voice Vote.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-03-14",
+          "text": "Referred to the Subcommittee on Counterterrorism and Intelligence.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-03-14",
+          "text": "Referred to the Committee on Homeland Security, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-14",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《执法支持与反跨国镇压法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 2116·《执法支持与反跨国镇压法案》｜众议院法案·第119届国会｜提案人 Gabe Evans（R-CO-8）｜提出 2025-03-14\n要求国土安全部采取措施应对美国境内的跨国镇压，具体包括由伙伴关系与参与办公室开展公众宣传、与州及地方执法机构和国际盟友协作；法案将“跨国镇压”界定为外国政府或其代理人针对美国境内个人实施的伤害、恐吓、威胁、骚扰或胁迫行为。\n最新行动 2025-04-09：以口头表决方式获令报送，委员会阶段取得进展。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "committee"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-05-08",
+      "stage_date": "2025-05-08",
+      "title": "To prohibit the reduction, elimination, or suspension of funding for land-grant colleges and universities.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3281",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Agriculture, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for c",
+      "official_no": "H.R. 3281",
+      "sponsor": "Shomari Figures",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-AL-2",
+      "committee": "Agriculture",
+      "actions": [
+        {
+          "date": "2025-05-08",
+          "text": "Referred to the Committee on Agriculture, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-05-08",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《禁止削减、取消或暂停赠地学院和大学拨款的法案》",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 3281·《禁止削减、取消或暂停赠地学院和大学拨款的法案》｜众议院法案·第119届国会｜提案人 Shomari Figures（D-AL-2）｜提出 2025-05-08\n禁止农业部或任何联邦官员在未获国会专门授权的情况下，削减、取消或暂停对赠地学院和大学的拨款。赠地院校依 1862 年与 1890 年《莫里尔法》取得拨款资格，两法推动建立了以农业与机械技艺为重点的高等院校体系。\n最新行动 2025-05-08：转交众议院农业委员会，并一并转交教育和劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-04-23",
+      "stage_date": "2026-04-23",
+      "title": "Expressing support for the staff of public, school, academic, and special libraries in the United States and the essential services those libraries provide to communities, recognizing the need for funding commensurate with the broad scope of social service and community supports provided by libraries, preserving the right of all citizens of the United States to freely access information and resources in their communities, supporting a strong union voice for library workers, and defending the civil rights of library staff.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1212",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.Res. 1212",
+      "sponsor": "Pramila Jayapal",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA-7",
+      "committee": "Education and Workforce",
+      "actions": [
+        {
+          "date": "2026-04-23",
+          "text": "Referred to the House Committee on Education and Workforce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-04-23",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持公共、学校、学术及专门图书馆工作人员决议》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 1212·《支持公共、学校、学术及专门图书馆工作人员决议》｜众议院决议·第119届国会｜提案人 Pramila Jayapal（D-WA-7）｜提出 2026-04-23\n表达对公共、学校、学术及专门图书馆工作人员的支持，主张拨款规模应与图书馆承担的社会服务与社区支持职能相匹配，维护公众自由获取社区信息资源的权利，支持图书馆员工的工会代表性，并主张保障图书馆工作人员的公民权利。\n最新行动 2026-04-23：转交众议院教育和劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-21",
+      "stage_date": "2025-02-21",
+      "title": "Honoring the legacy of the Harlem Renaissance, a cultural, social, and political movement in American history.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/146",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 146",
+      "sponsor": "Adriano Espaillat",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-13",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-02-21",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-21",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《纪念哈莱姆文艺复兴遗产决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 146·《纪念哈莱姆文艺复兴遗产决议》｜众议院决议·第119届国会｜提案人 Adriano Espaillat（D-NY-13）｜提出 2025-02-21\n纪念哈莱姆文艺复兴这一在美国历史上兼具文化、社会与政治属性的运动之遗产。\n最新行动 2025-02-21：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-08-20",
+      "stage_date": "2026-08-20",
+      "title": "Expressing support for the designation of August 22, 2026, as \"Chuck Brown Day\", and honoring Chuck Brown's contributions to music and to the District of Columbia.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1485",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 1485",
+      "sponsor": "Eleanor Holmes Norton",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-DC",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2026-08-20",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-20",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2026年8月22日定为“查克·布朗日”决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 1485·《支持将2026年8月22日定为“查克·布朗日”决议》｜众议院决议·第119届国会｜提案人 Eleanor Holmes Norton（D-DC）｜提出 2026-08-20\n支持将 2026 年 8 月 22 日定为“查克·布朗日”，并表彰其对音乐艺术及哥伦比亚特区文化生活的贡献。\n最新行动 2026-08-20：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-04-14",
+      "stage_date": "2026-04-14",
+      "title": "Cardiovascular Disease Early Detection and Prevention Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8260",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "official_no": "H.R. 8260",
+      "sponsor": "Sheila Cherfilus-McCormick",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-FL-20",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2026-04-14",
+          "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-04-14",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年心血管疾病早期发现与预防法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 8260·《2026年心血管疾病早期发现与预防法案》｜众议院法案·第119届国会｜提案人 Sheila Cherfilus-McCormick（D-FL-20）｜提出 2026-04-14\n案名指向心血管疾病的早期发现与预防，转交能源和商业委员会及筹款委员会。具体条款（筛查覆盖范围、拨款授权、适用人群）未取得官方摘要，不作推定。\n最新行动 2026-04-14：转交众议院能源和商业委员会，并一并转交筹款委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-09",
+      "stage_date": "2026-11-09",
+      "title": "Cardiovascular Disease Early Detection and Prevention Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10970",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for co",
+      "official_no": "H.R. 10970",
+      "sponsor": "Eugene Simon Vindman",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-VA-7",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2026-11-09",
+          "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年心血管疾病早期发现与预防法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 10970·《2026年心血管疾病早期发现与预防法案》｜众议院法案·第119届国会｜提案人 Eugene Simon Vindman（D-VA-7）｜提出 2026-11-09\n与 H.R. 8260 同名，由另一提案人于 2026 年 11 月 9 日另行提出，两案在众议院并列进入委员会审议；具体条款未取得官方摘要，不作推定。\n最新行动 2026-11-09：转交众议院能源和商业委员会，并一并转交筹款委员会。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-08-24",
+      "stage_date": "2026-08-24",
+      "title": "Recognizing the significance of \"Chicano/Chicana Heritage Month\" in August as an important time to celebrate the significant contributions of Mexican Americans to the history of the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1488",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 1488",
+      "sponsor": "J. Luis Correa",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-46",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2026-08-24",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-24",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可“奇卡诺与奇卡纳传统月”意义决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 1488·《认可“奇卡诺与奇卡纳传统月”意义决议》｜众议院决议·第119届国会｜提案人 J. Luis Correa（D-CA-46）｜提出 2026-08-24\n认可 8 月“奇卡诺与奇卡纳传统月”的意义，将其视为表彰墨西哥裔美国人对美国历史贡献的重要时点。\n最新行动 2026-08-24：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-21",
+      "stage_date": "2025-02-21",
+      "title": "Supporting the goals and ideals of International Mother Language Day in bringing attention to the importance of preserving linguistic and cultural heritage through education.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/149",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 149",
+      "sponsor": "Grace Meng",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-6",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-02-21",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-21",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持国际母语日目标与理念决议》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 149·《支持国际母语日目标与理念决议》｜众议院决议·第119届国会｜提案人 Grace Meng（D-NY-6）｜提出 2025-02-21\n支持国际母语日的目标与理念，强调通过教育保护语言与文化遗产的重要性。\n最新行动 2025-02-21：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-09-08",
+      "stage_date": "2026-09-08",
+      "title": "Expressing support for the recognition of September 7, 2026, as \"Liturgical Dance Day\" and the International Dance Commission, and for other purposes.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1517",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 1517",
+      "sponsor": "Henry C. \"Hank\" Johnson",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-GA-4",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2026-09-08",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-09-08",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2026年9月7日定为“礼仪舞蹈日”决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 1517·《支持将2026年9月7日定为“礼仪舞蹈日”决议》｜众议院决议·第119届国会｜提案人 Henry C. \"Hank\" Johnson（D-GA-4）｜提出 2026-09-08\n支持将 2026 年 9 月 7 日认定为“礼仪舞蹈日”，并提及国际舞蹈委员会。\n最新行动 2026-09-08：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-25",
+      "stage_date": "2025-02-25",
+      "title": "Expressing support for the designation of February 28, 2025, as Community Arts Education Day.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/165",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 165",
+      "sponsor": "Nydia M. Velázquez",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-7",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-02-25",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-25",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2025年2月28日定为社区艺术教育日决议》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 165·《支持将2025年2月28日定为社区艺术教育日决议》｜众议院决议·第119届国会｜提案人 Nydia M. Velázquez（D-NY-7）｜提出 2025-02-25\n支持将 2025 年 2 月 28 日定为社区艺术教育日。\n最新行动 2025-02-25：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-02-27",
+      "stage_date": "2025-02-27",
+      "title": "Recognizing the Dominican community's presence and contributions to Washington Heights and Inwood.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/169",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Natural Resources, for a period to be subsequently determined by the Speaker, in e",
+      "official_no": "H.Res. 169",
+      "sponsor": "Adriano Espaillat",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-13",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-02-27",
+          "text": "Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Natural Resources, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-27",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可多米尼加裔社区对华盛顿高地和因伍德贡献决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 169·《认可多米尼加裔社区对华盛顿高地和因伍德贡献决议》｜众议院决议·第119届国会｜提案人 Adriano Espaillat（D-NY-13）｜提出 2025-02-27\n认可多米尼加裔社区在纽约华盛顿高地和因伍德地区的存在与贡献。\n最新行动 2025-02-27：转交众议院监督和政府改革委员会，并一并转交自然资源委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-03",
+      "stage_date": "2025-03-03",
+      "title": "Supporting the designation of March as National CHamoru Heritage and Culture Month.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/183",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 183",
+      "sponsor": "James C. Moylan",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-GU",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将3月定为全国查莫罗传统与文化月决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 183·《支持将3月定为全国查莫罗传统与文化月决议》｜众议院决议·第119届国会｜提案人 James C. Moylan（R-GU）｜提出 2025-03-03\n支持将 3 月定为全国查莫罗传统与文化月，以表彰查莫罗人的传统与文化。\n最新行动 2025-03-03：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-08-06",
+      "stage_date": "2026-11-12",
+      "title": "A resolution honoring and commending the 100th anniversary of the Golf Course Superintendents Association of America.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/834",
+      "source": "国会官网",
+      "kind": "参议院决议",
+      "agency": "参议院 · Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)",
+      "official_no": "S.Res. 834",
+      "sponsor": "Jerry Moran",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KS",
+      "committee": "",
+      "actions": [
+        {
+          "date": "2026-11-12",
+          "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-12",
+          "text": "Passed/agreed to in Senate: Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-08-06",
+          "text": "Referred to the Committee on the Judiciary. (text: CR S4523)",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-06",
+          "text": "Submitted in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《表彰美国高尔夫球场管理者协会成立100周年决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "S.Res. 834·《表彰美国高尔夫球场管理者协会成立100周年决议》｜参议院决议·第119届国会｜提案人 Jerry Moran（R-KS）｜提出 2026-08-06\n表彰并祝贺美国高尔夫球场管理者协会成立 100 周年。该决议为礼仪性文本，不含授权或拨款条款。\n最新行动 2026-11-12：参议院以一致同意方式通过，无修正案并附序言。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "first"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Recognizing and commemorating the contributions of contemporary Latinas in the State of Illinois.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/207",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 207",
+      "sponsor": "Delia C. Ramirez",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-3",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可并纪念伊利诺伊州当代拉丁裔女性贡献决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 207·《认可并纪念伊利诺伊州当代拉丁裔女性贡献决议》｜众议院决议·第119届国会｜提案人 Delia C. Ramirez（D-IL-3）｜提出 2025-03-10\n认可并纪念伊利诺伊州当代拉丁裔女性的贡献。决议为表态性文本，不含授权或拨款条款。\n最新行动 2025-03-10：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-27",
+      "stage_date": "2025-03-27",
+      "title": "Recognizing the heritage, culture, and contributions of Latinas in the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/261",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 261",
+      "sponsor": "J. Luis Correa",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-46",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-03-27",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-27",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可美国拉丁裔女性传统、文化与贡献决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 261·《认可美国拉丁裔女性传统、文化与贡献决议》｜众议院决议·第119届国会｜提案人 J. Luis Correa（D-CA-46）｜提出 2025-03-27\n认可美国拉丁裔女性的传统、文化与贡献。\n最新行动 2025-03-27：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-04-01",
+      "stage_date": "2025-04-01",
+      "title": "Expressing the sense that there should be established a \"National Garifuna Immigrant Heritage Month\" in April to celebrate the great contributions of Americans of Garifuna immigrant heritage in the United States who have enriched the history of the Nation.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/288",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 288",
+      "sponsor": "Ritchie Torres",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-15",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-04-01",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-01",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《关于设立“全国加里富纳移民传统月”的意向决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 288·《关于设立“全国加里富纳移民传统月”的意向决议》｜众议院决议·第119届国会｜提案人 Ritchie Torres（D-NY-15）｜提出 2025-04-01\n表达应设立 4 月“全国加里富纳移民传统月”的意向，以表彰加里富纳移民后裔对美国历史的贡献。\n最新行动 2025-04-01：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-04-10",
+      "stage_date": "2025-04-10",
+      "title": "Expressing support for the staff of public, school, academic, and special libraries in the United States and the essential services those libraries provide to communities, recognizing the need for funding commensurate with the broad scope of social service and community supports provided by libraries, preserving the right of all citizens of the United States to freely access information and resources in their communities, supporting a strong union voice for library workers, and defending the civil rights of library staff.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/328",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.Res. 328",
+      "sponsor": "Pramila Jayapal",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA-7",
+      "committee": "Education and Workforce",
+      "actions": [
+        {
+          "date": "2025-04-10",
+          "text": "Referred to the House Committee on Education and Workforce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持公共、学校、学术及专门图书馆工作人员决议》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 328·《支持公共、学校、学术及专门图书馆工作人员决议》｜众议院决议·第119届国会｜提案人 Pramila Jayapal（D-WA-7）｜提出 2025-04-10\n文本与 H.Res. 1212 一致，表达对图书馆工作人员及其社区服务职能的支持，主张拨款与职能相匹配并保障其工会代表性；同届国会内由同一提案人重复提出。\n最新行动 2025-04-10：转交众议院教育和劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-04-24",
+      "stage_date": "2025-04-24",
+      "title": "Expressing support for the recognition of April as \"National Arab American Heritage Month\" (NAAHM) and celebrating the heritage and culture of Arab Americans in the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/351",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 351",
+      "sponsor": "Rashida Tlaib",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-12",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-04-24",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-24",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将4月定为“全国阿拉伯裔美国人传统月”决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 351·《支持将4月定为“全国阿拉伯裔美国人传统月”决议》｜众议院决议·第119届国会｜提案人 Rashida Tlaib（D-MI-12）｜提出 2025-04-24\n支持将 4 月认定为“全国阿拉伯裔美国人传统月”，并表彰阿拉伯裔美国人的传统与文化。\n最新行动 2025-04-24：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-04-28",
+      "stage_date": "2025-04-28",
+      "title": "Expressing support for the designation of April 13, 2025, through April 26, 2025, as \"National Young Audiences Arts for Learning Week\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/356",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.Res. 356",
+      "sponsor": "Nydia M. Velázquez",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-7",
+      "committee": "Education and Workforce",
+      "actions": [
+        {
+          "date": "2025-04-28",
+          "text": "Referred to the House Committee on Education and Workforce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-28",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2025年4月13日至26日定为“全国青少年艺术学习周”决议》",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 356·《支持将2025年4月13日至26日定为“全国青少年艺术学习周”决议》｜众议院决议·第119届国会｜提案人 Nydia M. Velázquez（D-NY-7）｜提出 2025-04-28\n支持将 2025 年 4 月 13 日至 26 日定为“全国青少年艺术学习周”。\n最新行动 2025-04-28：转交众议院教育和劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-04-30",
+      "stage_date": "2025-04-30",
+      "title": "Expressing the sense of the House of Representatives that the House should recognize Robert Aitken's Bible as a historical document of the United States Congress.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/365",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on House Administration.",
+      "official_no": "H.Res. 365",
+      "sponsor": "Andrew Ogles",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN-5",
+      "committee": "House Administration",
+      "actions": [
+        {
+          "date": "2025-04-30",
+          "text": "Referred to the House Committee on House Administration.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-30",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《关于众议院应承认艾特肯圣经为国会历史文件的意向决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 365·《关于众议院应承认艾特肯圣经为国会历史文件的意向决议》｜众议院决议·第119届国会｜提案人 Andrew Ogles（R-TN-5）｜提出 2025-04-30\n表达众议院应承认罗伯特·艾特肯圣经为美国国会历史文件的意向。艾特肯圣经指 1782 年在费城印制的首部英文圣经，相关收藏与国会历史陈列有关。\n最新行动 2025-04-30：转交众议院众议院行政委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-06-12",
+      "stage_date": "2025-06-12",
+      "title": "Expressing support for the designation of June 2025 as \"Black Music Month\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/509",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
+      "official_no": "H.Res. 509",
+      "sponsor": "Shontel M. Brown",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OH-11",
+      "committee": "Education and Workforce",
+      "actions": [
+        {
+          "date": "2025-06-12",
+          "text": "Referred to the House Committee on Education and Workforce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-06-12",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2025年6月定为“黑人音乐月”决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 509·《支持将2025年6月定为“黑人音乐月”决议》｜众议院决议·第119届国会｜提案人 Shontel M. Brown（D-OH-11）｜提出 2025-06-12\n支持将 2025 年 6 月定为“黑人音乐月”。\n最新行动 2025-06-12：转交众议院教育和劳动力委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-06-26",
+      "stage_date": "2025-06-26",
+      "title": "Recognizing the significance of \"National Caribbean American Heritage Month\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/547",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 547",
+      "sponsor": "André Carson",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IN-7",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-06-26",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-06-26",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-06-26",
+          "text": "Sponsor introductory remarks on measure. (CR E628)",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可“全国加勒比裔美国人传统月”意义决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 547·《认可“全国加勒比裔美国人传统月”意义决议》｜众议院决议·第119届国会｜提案人 André Carson（D-IN-7）｜提出 2025-06-26\n认可“全国加勒比裔美国人传统月”的意义，表彰加勒比裔美国人的文化贡献。\n最新行动 2025-06-26：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-07-21",
+      "stage_date": "2025-07-21",
+      "title": "Recognizing the immense capacity of the popular arts to bring people together, inspire creativity and imagination, promote critical thinking, and instill the universal values of truth, justice, and equality.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/599",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 599",
+      "sponsor": "Robert Garcia",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-42",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-07-21",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-07-21",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《认可大众艺术凝聚社会与培育批判思维作用决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 599·《认可大众艺术凝聚社会与培育批判思维作用决议》｜众议院决议·第119届国会｜提案人 Robert Garcia（D-CA-42）｜提出 2025-07-21\n认可大众艺术在凝聚人群、激发创造力与想象力、促进批判性思维方面的作用，并主张其承载真实、正义与平等等普遍价值。\n最新行动 2025-07-21：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-01-23",
+      "stage_date": "2025-01-23",
+      "title": "Expressing support for the recognition of January as \"Muslim-American Heritage Month\" and celebrating the heritage and culture of Muslim Americans in the United States.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/61",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.Res. 61",
+      "sponsor": "André Carson",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IN-7",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-01-23",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-01-23",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-01-23",
+          "text": "Sponsor introductory remarks on measure. (CR E64)",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将1月定为“穆斯林裔美国人传统月”决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 61·《支持将1月定为“穆斯林裔美国人传统月”决议》｜众议院决议·第119届国会｜提案人 André Carson（D-IN-7）｜提出 2025-01-23\n支持将 1 月定为“穆斯林裔美国人传统月”，并表彰穆斯林裔美国人在美国经济、文化与国家认同方面的贡献。\n最新行动 2025-01-23：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Stop Shackling and Detaining Pregnant Women Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/916",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on the Judiciary.",
+      "official_no": "S. 916",
+      "sponsor": "Patty Murray",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WA",
+      "committee": "the Judiciary",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Read twice and referred to the Committee on the Judiciary.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《禁止对怀孕女性使用械具与羁押法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "S. 916·《禁止对怀孕女性使用械具与羁押法案》｜参议院法案·第119届国会｜提案人 Patty Murray（D-WA）｜提出 2025-03-10\n案名指向禁止对怀孕女性使用械具与羁押。官方摘要未提供条款要点，具体适用范围、适用场所与例外情形须以法案文本为准，不作推定。\n最新行动 2025-03-10：参议院二读后转交司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Supporting the goals and ideals of National Women and Girls HIV/AIDS Awareness Day.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/210",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for c",
+      "official_no": "H.Res. 210",
+      "sponsor": "Maxine Waters",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-43",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持全国女性与女童艾滋病防治宣传日目标决议》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 210·《支持全国女性与女童艾滋病防治宣传日目标决议》｜众议院决议·第119届国会｜提案人 Maxine Waters（D-CA-43）｜提出 2025-03-10\n认可美国及全球在终结艾滋病流行方面取得的进展，呼吁进一步加大努力，重点降低女性与女童在艾滋病方面的脆弱性。\n最新行动 2025-03-10：转交众议院能源和商业委员会，并一并转交外交事务委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Expressing support for the designation of April 5, 2025, as \"Barth Syndrome Awareness Day\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/209",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.Res. 209",
+      "sponsor": "Paul Tonko",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-20",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2025年4月5日定为“巴思综合征关注日”决议》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 209·《支持将2025年4月5日定为“巴思综合征关注日”决议》｜众议院决议·第119届国会｜提案人 Paul Tonko（D-NY-20）｜提出 2025-03-10\n支持设立“巴思综合征关注日”。巴思综合征是一种主要影响男性的罕见遗传性脂质代谢障碍，可危及生命。\n最新行动 2025-03-10：转交众议院能源和商业委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Expressing support for the recognition of March 10, 2025, as \"Abortion Provider Appreciation Day\".",
+      "url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/18",
+      "source": "国会官网",
+      "kind": "众院共同决议",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for con",
+      "official_no": "H.Con.Res. 18",
+      "sponsor": "Ayanna Pressley",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MA-7",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支持将2025年3月10日定为“堕胎服务提供者表彰日”决议》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Con.Res. 18·《支持将2025年3月10日定为“堕胎服务提供者表彰日”决议》｜众院共同决议·第119届国会｜提案人 Ayanna Pressley（D-MA-7）｜提出 2025-03-10\n认可设立“堕胎服务提供者表彰日”，属表态性共同决议，不含授权或拨款条款。\n最新行动 2025-03-10：转交众议院能源和商业委员会，并一并转交司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "BODEGA Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2018",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.R. 2018",
+      "sponsor": "Ritchie Torres",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-15",
+      "committee": "the Judiciary",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the House Committee on the Judiciary.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2025年BODEGA法案》",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 2018·《2025年BODEGA法案》｜众议院法案·第119届国会｜提案人 Ritchie Torres（D-NY-15）｜提出 2025-03-10\n案名缩写 BODEGA 的全称未在官方摘要中列明，不能据案名推定其内容；据委员会管辖与国会图书馆政策领域标注，属刑法与执法事项，具体条款须以法案文本为准。\n最新行动 2025-03-10：转交众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Protect Our Probationary Employees Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1989",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.R. 1989",
+      "sponsor": "Sarah Elfreth",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD-3",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《保护试用期雇员法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 1989·《保护试用期雇员法案》｜众议院法案·第119届国会｜提案人 Sarah Elfreth（D-MD-3）｜提出 2025-03-10\n案名指向保护试用期联邦雇员。官方摘要未提供条款要点，适用人员范围、救济方式与追溯效力须以法案文本为准，不作推定。\n最新行动 2025-03-10：转交众议院监督和政府改革委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-10",
+      "stage_date": "2025-03-10",
+      "title": "Pay Federal Workers and Servicemembers Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1988",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "official_no": "H.R. 1988",
+      "sponsor": "Debbie Dingell",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-6",
+      "committee": "Ways and Means",
+      "actions": [
+        {
+          "date": "2025-03-10",
+          "text": "Referred to the House Committee on Ways and Means.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-10",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《支付联邦雇员与军人薪酬法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 1988·《支付联邦雇员与军人薪酬法案》｜众议院法案·第119届国会｜提案人 Debbie Dingell（D-MI-6）｜提出 2025-03-10\n使政府停摆期间免于停薪留职的联邦文职人员与军人有资格领取失业补偿金。此类人员在拨款中断期间须照常上班履职，薪酬延后至拨款法案通过后发放；劳工部现行指引对“免于停薪留职”人员的失业补偿资格设有条件。\n最新行动 2025-03-10：转交众议院筹款委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-03-06",
+      "stage_date": "2025-03-06",
+      "title": "Peer to Peer Mental Health Support Act",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/906",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "official_no": "S. 906",
+      "sponsor": "John W. Hickenlooper",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CO",
+      "committee": "Health, Education, Labor, and Pensions",
+      "actions": [
+        {
+          "date": "2025-03-06",
+          "text": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-06",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《同伴心理健康支持法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "S. 906·《同伴心理健康支持法案》｜参议院法案·第119届国会｜提案人 John W. Hickenlooper（D-CO）｜提出 2025-03-06\n案名指向建立同伴心理健康支持机制。官方摘要未提供条款要点，项目设立方式、资金来源与实施主体须以法案文本为准，不作推定。\n最新行动 2025-03-06：参议院二读后转交卫生、教育、劳工和养老金委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-09",
+      "stage_date": "2026-11-09",
+      "title": "A resolution authorizing the use of the atrium in the Philip A. Hart Senate Office Building for the commemoration and reunification of Alexander Calder's Mountains and Clouds on November 18, 2026.",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/952",
+      "source": "国会官网",
+      "kind": "参议院决议",
+      "agency": "参议院 · Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5377; text: CR S5359)",
+      "official_no": "S.Res. 952",
+      "sponsor": "Alex Padilla",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA",
+      "committee": "",
+      "actions": [
+        {
+          "date": "2026-11-09",
+          "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5377; text: CR S5359)",
+          "tag": "院会"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent.",
+          "tag": "院会"
+        }
+      ],
+      "title_cn": "《授权使用哈特参议院办公楼中庭举行考尔德〈山与云〉重聚纪念活动决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "S.Res. 952·《授权使用哈特参议院办公楼中庭举行考尔德〈山与云〉重聚纪念活动决议》｜参议院决议·第119届国会｜提案人 Alex Padilla（D-CA）｜提出 2026-11-09\n授权使用菲利普·A·哈特参议院办公楼中庭，用于 2026 年 11 月 18 日举行亚历山大·考尔德雕塑《山与云》的纪念与重装重聚活动。\n最新行动 2026-11-09：参议院提出、审议并以一致同意方式通过，无修正案并附序言。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "first"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2026-11-09",
+      "stage_date": "2026-11-09",
+      "title": "Diwali Day Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10967",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.R. 10967",
+      "sponsor": "Grace Meng",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-6",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2026-11-09",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-11-09",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《排灯节法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 10967·《排灯节法案》｜众议院法案·第119届国会｜提案人 Grace Meng（D-NY-6）｜提出 2026-11-09\n案名指向设立“排灯节日”。官方摘要未提供条款要点，指定形式与适用年度须以法案文本为准，不作推定。\n最新行动 2026-11-09：转交众议院监督和政府改革委员会。\n信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-06-11",
+      "stage_date": "2025-06-11",
+      "title": "Foreign Animal Disease Prevention, Surveillance, and Rapid Response Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3915",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Agriculture.",
+      "official_no": "H.R. 3915",
+      "sponsor": "Ronny Jackson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-13",
+      "committee": "Agriculture",
+      "actions": [
+        {
+          "date": "2025-06-11",
+          "text": "Referred to the House Committee on Agriculture.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-06-11",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2025年外来动物疫病预防、监测与快速响应法案》",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.R. 3915·《2025年外来动物疫病预防、监测与快速响应法案》｜众议院法案·第119届国会｜提案人 Ronny Jackson（R-TX-13）｜提出 2025-06-11\n为动植物卫生检验局的动物疫病预防与管理项目追加资金，并将相关项目重新授权至 2030 财年，涵盖国家动物卫生实验室网络等联邦、州与大学联合实验室体系。\n最新行动 2025-06-11：转交众议院农业委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-16",
+      "introduced": "2025-12-09",
+      "stage_date": "2025-12-09",
+      "title": "Impeaching Peter B. Hegseth, Secretary of Defense of the United States, for high crimes and misdemeanors.",
+      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/935",
+      "source": "国会官网",
+      "kind": "众议院决议",
+      "agency": "众议院 · Referred to the House Committee on the Judiciary.",
+      "official_no": "H.Res. 935",
+      "sponsor": "Shri Thanedar",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-13",
+      "committee": "the Judiciary",
+      "actions": [
+        {
+          "date": "2025-12-09",
+          "text": "Referred to the House Committee on the Judiciary.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-12-09",
+          "text": "Submitted in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《弹劾国防部长彼得·B·赫格塞思决议》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "H.Res. 935·《弹劾国防部长彼得·B·赫格塞思决议》｜众议院决议·第119届国会｜提案人 Shri Thanedar（D-MI-13）｜提出 2025-12-09\n提出针对国防部长彼得·B·赫格塞思的两项弹劾条款，指控事项为谋杀与共谋谋杀、以及鲁莽且违法处理机密信息，指其犯有重罪与轻罪。弹劾条款须经众议院表决通过后方可提交参议院审理。\n最新行动 2025-12-09：转交众议院司法委员会。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n信息边界：摘要据国会研究服务局要点整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      }
     },
     {
       "board": "congress",
@@ -1316,11 +3584,10 @@
       "agency": "众议院 · Cloture motion on the measure presented in Senate. (CR S5568)",
       "official_no": "H.R. 2347",
       "brief": {
-        "at": "2026-11-12",
-        "body": "1. 文种与主体：众议院法案 H.R. 2347，案名《幸存者司法税收防范法案》，由共和党众议员 Lloyd Smucker 于 2025 年 3 月 25 日 提出。\n2. 核心动作：将个人因性行为或性接触取得的赔偿金排除在总收入之外，并就在税务定性争议中的举证责任作出规定。\n3. 程序阶段：最新行动日期为 2026-11-10，参议院同意由参议员图恩动议将法案交付参议院财政委员会，并附指示须即刻就修正案（SA 6888）报送；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：以上依据 CRS 摘要，条款细节以 congress.gov 公布文本为准；属第 119 届国会。",
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：众议院法案 H.R. 2347，案名《幸存者司法税收防范法案》，由共和党众议员 Lloyd Smucker 于 2025 年 3 月 25 日 提出。\n2. 核心动作：将个人因性行为或性接触取得的赔偿金排除在总收入之外，并就在税务定性争议中的举证责任作出规定。\n3. 程序阶段：最新行动 2026-11-11，参议院就法案提出终结辩论动议（cloture motion，CR S5568），尚待表决；此前 2026-11-10 参议院同意将法案交付财政委员会并附指示即刻就修正案 SA 6888 报送。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：以上依据 CRS 摘要，条款细节以 congress.gov 公布文本为准；属第 119 届国会。",
         "tier": "note",
-        "stage": "introduced",
-        "stale": true
+        "stage": "introduced"
       },
       "title_cn": "《幸存者司法税收防范法案》",
       "domain": "财政/税收",
@@ -1568,42 +3835,6 @@
     {
       "board": "congress",
       "date": "2026-11-14",
-      "introduced": "2026-11-10",
-      "stage_date": "2026-11-10",
-      "title": "HERO Act",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5704",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
-      "official_no": "S. 5704",
-      "brief": {
-        "at": "2026-11-12",
-        "body": "1. 文种与主体：参议院法案 S. 5704，案名《公共安全人员行为健康法案》，由民主党参议员 Jacky Rosen 于 2026 年 11 月 10 日 提出。\n2. 核心动作：要求卫生与公众服务部长改进公共安全人员行为健康问题的识别、预防与治疗。\n3. 程序阶段：最新行动日期为 2026-11-10，已二读并交付参议院卫生、教育、劳工与养老金委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《公共安全人员行为健康法案》",
-      "domain": "医疗/医药",
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "Introduced in Senate",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Jacky Rosen",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NV",
-      "committee": "Health, Education, Labor, and Pensions"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
       "introduced": "2026-11-05",
       "stage_date": "2026-11-05",
       "title": "PURGE Act",
@@ -1649,11 +3880,10 @@
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 708.",
       "official_no": "S. 4846",
       "brief": {
-        "at": "2026-11-07",
-        "body": "【政策背景】\n参议院能源与自然资源委员会管辖公共土地、水利与能源开发类提案。该委员会对争议较小的地区性水利与资源项目提案，常以\"无修正通过并报告\"（Ordered to be reported without amendment favorably）方式推进，程序成本较低。本法案缩写为 TAAP，官方摘要库未给出全称，其具体指向须以法案文本为准。\n\n【核心内容】\n法案由民主党参议员 Mark Kelly（D-AZ）于 2026 年 6 月 22 日提出，2026 年 9 月 30 日由能源与自然资源委员会以无修正方式通过并报告。国会图书馆将政策领域标注为水资源开发。截至本条目撰写时，队列未提供官方条款摘要，也未取得由政府出版局发布的全文本，因此授权规模、适用对象与项目范围均无法核实。案名缩写 TAAP 在官方摘要库中未列明，不能据案名推定其为特定水利项目、技术援助计划或拨款授权。\n\n【要点提炼】\n1. 程序位置：委员会已无修正通过并报告，委员会阶段完成，下一观察节点为列入参议院立法日程（General Orders）后由全院安排审议。\n2. 文本状态：委员会报告通常附报告文本（Senate Report），报告号未在队列素材中列明；法案正文与委员会报告是核实条款的下一手材料。\n3. 不确定性：政策领域标注为水资源开发，但缩写全称与条款要点均无官方摘要支撑，实际管辖是否兼及能源或公共土地，须待文本确认。\n4. 同类参照：该委员会对地区性水利项目多以组合式授权法案集中推进，单独成案者通常依赖一致同意程序或热线程序加速，排期受会期容量约束。",
+        "at": "2026-11-17",
+        "body": "【政策背景】\n参议院能源与自然资源委员会管辖公共土地、水利与能源开发类提案。该委员会对争议较小的地区性水利与资源项目提案，常以「无修正通过并报告」（Ordered to be reported without amendment favorably）方式推进，程序成本较低。本法案缩写为 TAAP，官方摘要库未给出全称，其具体指向须以法案文本为准。\n\n【核心内容】\n法案由民主党参议员 Mark Kelly（D-AZ）于 2026 年 6 月 22 日提出，2026 年 9 月 30 日由能源与自然资源委员会以无修正方式通过并报告，2026 年 11 月 12 日列入参议院立法日程（General Orders），日程编号第 708 号。国会图书馆将政策领域标注为水资源开发。截至本条目撰写时，队列未提供官方条款摘要，也未取得由政府出版局发布的全文本，因此授权规模、适用对象与项目范围均无法核实。案名缩写 TAAP 在官方摘要库中未列明，不能据案名推定其为特定水利项目、技术援助计划或拨款授权。\n\n【要点提炼】\n1. 程序位置：已列入参议院立法日程第 708 号，委员会阶段完成，下一观察节点为全院审议排期，通常依赖一致同意或热线程序推进。\n2. 文本状态：委员会报告通常附报告文本，报告号未在队列素材中列明；法案正文与委员会报告是核实条款的下一手材料。\n3. 不确定性：政策领域标注为水资源开发，但缩写全称与条款要点均无官方摘要支撑，实际管辖是否兼及能源或公共土地，须待文本确认。\n4. 同类参照：该委员会对地区性水利项目多以组合式授权法案集中推进，单独成案者的排期受会期容量约束。",
         "tier": "full",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "title_cn": "《TAAP法案》",
       "domain": "能源/环境",
@@ -1882,57 +4112,6 @@
       "sponsor_party": "R",
       "sponsor_tag": "R-OK-1",
       "committee": ""
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2025-03-14",
-      "stage_date": "2026-11-12",
-      "title": "Major Richard Star Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2102",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Armed Services.",
-      "official_no": "H.R. 2102",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 2102·理查德·斯塔尔少校法案｜众议院法案·第119届国会｜提案人 Gus M. Bilirakis（R-FL-12）｜提出 2025-03-14\n允许有战斗相关残疾但服役年限不足 20 年的退伍军人，在不扣减退役金的情况下同时领取伤残补偿，取消现行的并行领取抵扣安排。\n最新行动 2026-11-12：参议院接收并二读，交付军事委员会审议。\n信息边界：最新行动 2026 年 11 月 12 日属本轮实质进展，法案已获众议院通过、转参议院委员会；摘要为国会研究服务局要点，条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "first"
-      },
-      "title_cn": "理查德·斯塔尔少校法案",
-      "domain": "国防/安全",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Received in the Senate and Read twice and referred to the Committee on Armed Services.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 392 - 18 (Roll no. 323). (text: CR H6195)",
-          "tag": "院会"
-        },
-        {
-          "date": "2025-04-04",
-          "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs.",
-          "tag": "委员会"
-        },
-        {
-          "date": "2025-03-14",
-          "text": "Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2025-03-14",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Gus M. Bilirakis",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-FL-12",
-      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -2698,42 +4877,6 @@
       "date": "2026-11-14",
       "introduced": "2026-11-12",
       "stage_date": "2026-11-12",
-      "title": "No Kids as Bait Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11016",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consi",
-      "official_no": "H.R. 11016",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11016·《禁止以儿童为诱饵法案》｜众议院法案·第119届国会｜提案人 Maxwell Frost（D-FL-10）｜提出 2026-11-12\n法案名为「禁止以儿童为诱饵法案」，标题指向将利用儿童作为诱饵的行为入罪；具体罪名、构成要件与刑度待文本公布。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付国土安全委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《禁止以儿童为诱饵法案》",
-      "domain": "司法/执法",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Maxwell Frost",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-FL-10",
-      "committee": "the Judiciary"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
       "title": "ON–DEMAND Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/11012",
       "source": "国会官网",
@@ -2995,150 +5138,6 @@
       "date": "2026-11-14",
       "introduced": "2026-11-12",
       "stage_date": "2026-11-12",
-      "title": "CDL Fraud Tipline Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11031",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Transportation and Infrastructure.",
-      "official_no": "H.R. 11031",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11031·《商业驾驶执照欺诈举报热线法案》｜众议院法案·第119届国会｜提案人 David J. Taylor（R-OH-2）｜提出 2026-11-12\n法案名为「商业驾驶执照欺诈举报热线法案」，指向设立针对商业驾驶执照申领欺诈的举报渠道；热线承设主体、受理范围与后续处置待文本公布。\n最新行动 2026-11-12：交付众议院交通和基础设施委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《商业驾驶执照欺诈举报热线法案》",
-      "domain": "交通",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the House Committee on Transportation and Infrastructure.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "David J. Taylor",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-OH-2",
-      "committee": "Transportation and Infrastructure"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
-      "title": "BRIDGE Care at Home Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11029",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for co",
-      "official_no": "H.R. 11029",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11029·《居家照护衔接法案》｜众议院法案·第119届国会｜提案人 Adrian Smith（R-NE-3）｜提出 2026-11-12\n法案名为「居家照护衔接法案」，交付筹款委员会并同时交付能源和商业委员会，指向居家照护服务的衔接与支付安排；缩写全称未列明，条款待文本公布。\n最新行动 2026-11-12：交付众议院筹款委员会审议，并同时交付能源和商业委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《居家照护衔接法案》",
-      "domain": "医疗/医药",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Adrian Smith",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-NE-3",
-      "committee": "Ways and Means"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
-      "title": "Health and Human Services Workforce Visa Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11020",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Agriculture, Energy and Commerce, Ways and Means, and Education and Workforce, for a period to be s",
-      "official_no": "H.R. 11020",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11020·《卫生与公众服务人力签证法案》｜众议院法案·第119届国会｜提案人 Michael Lawler（R-NY-17）｜提出 2026-11-12\n法案名为「卫生与公众服务人力签证法案」，以签证渠道补充卫生人力；具体签证类别、配额与劳工条件待文本公布，不作推定。\n最新行动 2026-11-12：交付众议院司法委员会审议，并同时交付农业、能源和商业、筹款、教育和劳动力四个委员会。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《卫生与公众服务人力签证法案》",
-      "domain": "医疗/医药",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the Committee on the Judiciary, and in addition to the Committees on Agriculture, Energy and Commerce, Ways and Means, and Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Michael Lawler",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-NY-17",
-      "committee": "the Judiciary"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
-      "title": "PHD Talent Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11015",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
-      "official_no": "H.R. 11015",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11015·《2026年博士人才法案》｜众议院法案·第119届国会｜提案人 Vince Fong（R-CA-20）｜提出 2026-11-12\n法案名为「博士人才法案」，交付众议院教育和劳动力委员会，指向博士层次人才的培养、留用或签证衔接；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院教育和劳动力委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《2026年博士人才法案》",
-      "domain": "教育/劳动",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the House Committee on Education and Workforce.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Vince Fong",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-CA-20",
-      "committee": "Education and Workforce"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
       "title": "Accurate Cancer Screenings for our Veterans Act of 2026",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/11021",
       "source": "国会官网",
@@ -3169,42 +5168,6 @@
       "sponsor_party": "R",
       "sponsor_tag": "R-SC-1",
       "committee": "Veterans' Affairs"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
-      "title": "Protect U.S. Preventive Services Task Force Integrity Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11013",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
-      "official_no": "H.R. 11013",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11013·《保护美国预防服务工作组独立性法案》｜众议院法案·第119届国会｜提案人 Maxine Dexter（D-OR-3）｜提出 2026-11-12\n法案名为「保护美国预防服务工作组独立性法案」；该工作组负责对临床预防服务作出分级推荐，法案所指的保护机制待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《保护美国预防服务工作组独立性法案》",
-      "domain": "医疗/医药",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the House Committee on Energy and Commerce.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Maxine Dexter",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-OR-3",
-      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -3247,42 +5210,6 @@
       "date": "2026-11-14",
       "introduced": "2026-11-12",
       "stage_date": "2026-11-12",
-      "title": "Allergy & Asthma Patient Protection Act of 2026",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11024",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
-      "official_no": "H.R. 11024",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11024·《2026年过敏与哮喘患者保护法案》｜众议院法案·第119届国会｜提案人 Robert F. Onder（R-MO-3）｜提出 2026-11-12\n法案名为「过敏与哮喘患者保护法案」，交付众议院能源和商业委员会，指向过敏与哮喘患者的治疗可及性或支付保障；具体条款待文本公布。\n最新行动 2026-11-12：交付众议院能源和商业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《2026年过敏与哮喘患者保护法案》",
-      "domain": "医疗/医药",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the House Committee on Energy and Commerce.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Robert F. Onder",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-MO-3",
-      "committee": "Energy and Commerce"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
       "title": "Fair Premiums for Farmers Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/11030",
       "source": "国会官网",
@@ -3313,42 +5240,6 @@
       "sponsor_party": "D",
       "sponsor_tag": "D-IL-17",
       "committee": "Agriculture"
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-14",
-      "introduced": "2026-11-12",
-      "stage_date": "2026-11-12",
-      "title": "Enhancing Competition in Contracting Orders Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/11027",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the House Committee on Small Business.",
-      "official_no": "H.R. 11027",
-      "brief": {
-        "at": "2026-11-15",
-        "body": "H.R. 11027·《增强合同订单竞争法案》｜众议院法案·第119届国会｜提案人 Hillary J. Scholten（D-MI-3）｜提出 2026-11-12\n法案名为「增强合同订单竞争法案」，交付众议院小企业委员会，指向联邦采购订单环节的竞争性要求；适用门槛与例外情形待文本公布。\n最新行动 2026-11-12：交付众议院小企业委员会审议。\n信息边界：法案于 2026-11-12 提出，尚无委员会审议行动与国会研究服务局摘要，条款以 congress.gov 公布文本为准；本届国会法案成案率通常在 5%–10% 区间，本阶段不作条款推定。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "《增强合同订单竞争法案》",
-      "domain": "产业/企业",
-      "actions": [
-        {
-          "date": "2026-11-12",
-          "text": "Referred to the House Committee on Small Business.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-12",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "sponsor": "Hillary J. Scholten",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MI-3",
-      "committee": "Small Business"
     },
     {
       "board": "congress",
@@ -5554,82 +7445,6 @@
         {
           "date": "2025-05-08",
           "text": "Introduced in Senate",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-12",
-      "introduced": "2025-02-05",
-      "stage_date": "2026-11-10",
-      "title": "National Taxpayer Advocate Enhancement Act of 2025",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Signed by President.",
-      "official_no": "H.R. 997",
-      "sponsor": "Randy Feenstra",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-IA-4",
-      "committee": "",
-      "title_cn": "《2025年纳税人权益倡导者增强法案》",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-11-13",
-        "body": "众议院法案 H.R. 997《2025年纳税人权益倡导者增强法案》，共和党议员 Randy Feenstra 2025-02-05 提出，属第 119 届国会。\n众议院对应版本，内容与参议院版本一致，授权国家纳税人权益倡导者聘任直属法律顾问并扩大其人事处置权限。该案已完成总统签署环节。\n最新行动 2026-11-10：总统签署，已完成全部立法程序，该案自签署之日起具直接执行效力。\nCRS 摘要已列明上述内容，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "enact"
-      },
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Became Public Law No: 119-139.",
-          "tag": "总统"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "Signed by President.",
-          "tag": "总统"
-        },
-        {
-          "date": "2026-11-09",
-          "text": "Presented to President.",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-09-28",
-          "text": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)",
-          "tag": "院会"
-        },
-        {
-          "date": "2025-04-01",
-          "text": "Received in the Senate and Read twice and referred to the Committee on Finance.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2025-03-31",
-          "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 385 - 0 (Roll no. 85). (text: CR H1349-1350)",
-          "tag": "院会"
-        },
-        {
-          "date": "2025-03-27",
-          "text": "Placed on the Union Calendar, Calendar No. 33.",
-          "tag": "议事日程"
-        },
-        {
-          "date": "2025-02-12",
-          "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 43 - 0.",
-          "tag": "委员会"
-        },
-        {
-          "date": "2025-02-05",
-          "text": "Referred to the House Committee on Ways and Means.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2025-02-05",
-          "text": "Introduced in House",
           "tag": "提出/转交"
         }
       ]
@@ -8896,8 +10711,8 @@
       "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
       "official_no": "H.R. 9614",
       "brief": {
-        "at": "2026-11-11",
-        "body": "1. 文种与主体：众议院法案 H.R. 9614，案名《核管理委员会职员薪酬对齐法案》，由民主党众议员 Robert Menendez 于 2026年7月9日 提出。\n2. 核心动作：允许核管理委员会将职业任命人员的年薪提高至该委员会高级行政职位基本工资上限的 110%，且不受任命时间限制。\n3. 程序阶段：最新行动 2026年11月9日，复议动议经一致同意搁置，原表决结果维持；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：众议院法案 H.R. 9614，案名《核管理委员会职员薪酬对齐法案》，由民主党众议员 Robert Menendez 于 2026年7月9日 提出。\n2. 核心动作：允许核管理委员会将职业任命人员的年薪提高至该委员会高级行政职位基本工资上限的 110%，且不受任命时间限制。\n3. 程序阶段：最新行动 2026-11-10，参议院二读后转交国土安全与政府事务委员会；此前众议院于 2026-11-09 搁置复议动议，表决结果维持。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note",
         "stage": "first"
       },
@@ -8948,62 +10763,6 @@
     {
       "board": "congress",
       "date": "2026-11-11",
-      "introduced": "2026-07-09",
-      "stage_date": "2026-11-10",
-      "title": "Nuclear Advisory Committee Reform Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9613",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Received in the Senate and Read twice and referred to the Committee on Environment and Public Works.",
-      "official_no": "H.R. 9613",
-      "brief": {
-        "at": "2026-11-11",
-        "body": "1. 文种与主体：众议院法案 H.R. 9613，案名《核咨询委员会改革法案》，由共和党众议员 Diana Harshbarger 于 2026年7月9日 提出。\n2. 核心动作：修改核管理委员会反应堆安全保护咨询委员会的职责要求，允许该委员会对部分许可申请（如商业核电站申请）不予审查。\n3. 程序阶段：最新行动 2026年11月9日，复议动议经一致同意搁置，原表决结果维持；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "first"
-      },
-      "title_cn": "《核咨询委员会改革法案》",
-      "domain": "能源/环境",
-      "sponsor": "Diana Harshbarger",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TN-1",
-      "committee": "Environment and Public Works",
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-09",
-          "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H6102-6103)",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-11-05",
-          "text": "Placed on the Union Calendar, Calendar No. 774.",
-          "tag": "议事日程"
-        },
-        {
-          "date": "2026-07-09",
-          "text": "Referred to the House Committee on Energy and Commerce.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-07-09",
-          "text": "Referred to the Subcommittee on Energy.",
-          "tag": "委员会"
-        },
-        {
-          "date": "2026-07-09",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
       "introduced": "2026-04-28",
       "stage_date": "2026-11-12",
       "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2026",
@@ -9013,11 +10772,10 @@
       "agency": "众议院 · Message on Senate action sent to the House.",
       "official_no": "H.R. 8552",
       "brief": {
-        "at": "2026-11-11",
-        "body": "1. 文种与主体：众议院法案 H.R. 8552，案名《2026年退伍军人补偿生活成本调整法案》，由共和党众议员 Morgan Luttrell 于 2026年4月28日 提出。\n2. 核心动作：要求退伍军人事务部按 2026 年 12 月 1 日生效的社会保障待遇生活成本调整幅度，同步上调战时伤残补偿、受抚养人附加补偿、服装津贴与遗属抚恤金。\n3. 程序阶段：最新行动 2026年11月9日，复议动议经一致同意搁置，原表决结果维持；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：众议院法案 H.R. 8552，案名《2026年退伍军人补偿生活成本调整法案》，由共和党众议员 Morgan Luttrell 于 2026年4月28日 提出。\n2. 核心动作：要求退伍军人事务部按 2026 年 12 月 1 日生效的社会保障待遇生活成本调整幅度，同步上调战时伤残补偿、受抚养人附加补偿、服装津贴与遗属抚恤金。\n3. 程序阶段：最新行动 2026-11-12，参议院行动结果的通知送达众议院，众议院后续处理以院会议程为准；此前 2026-11-09 复议动议经一致同意搁置。本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：据国会研究服务局摘要整理，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note",
-        "stage": "first",
-        "stale": true
+        "stage": "first"
       },
       "title_cn": "《2026年退伍军人补偿生活成本调整法案》",
       "domain": "社会保障",
@@ -9217,42 +10975,6 @@
       "date": "2026-11-11",
       "introduced": "2026-11-10",
       "stage_date": "2026-11-10",
-      "title": "Providing for consideration of the bill (H.R. 6731) to amend chapter 131 of title 5 to prohibit Members of Congress, the President, Vice President, and their spouses and dependents from owning or trading stocks, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1656",
-      "source": "国会官网",
-      "kind": "众议院决议",
-      "agency": "众议院 · Referred to the House Committee on Rules.",
-      "official_no": "H.Res. 1656",
-      "brief": {
-        "at": "2026-11-11",
-        "body": "1. 文种与主体：众议院决议 H.Res. 1656，案名「就H.R.6731（禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票）作出审议安排的决议」，由共和党众议员 Anna Paulina Luna 于 2026年11月10日 提出。\n2. 核心动作：为 H.R. 6731 安排全院审议程序；该法案修订《美国法典》第 5 编第 131 章，禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票。\n3. 程序阶段：最新行动 2026年11月10日，已提交众议院规则委员会。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "title_cn": "就H.R.6731（禁止国会议员、总统、副总统及其配偶与受抚养人持有或交易股票）作出审议安排的决议",
-      "domain": "政府运作",
-      "sponsor": "Anna Paulina Luna",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-FL-13",
-      "committee": "Rules",
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Referred to the House Committee on Rules.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "Submitted in House",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
-      "introduced": "2026-11-10",
-      "stage_date": "2026-11-10",
       "title": "For the relief of Paula Valentina Albornoz Hernández, Eliana Karina Hernández Peranquive, Nicole Alejandra Albornoz Hernández, and Leonardo Albornoz Rodríguez.",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10990",
       "source": "国会官网",
@@ -9430,57 +11152,6 @@
           "date": "2026-10-01",
           "text": "Introduced in House",
           "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
-      "introduced": "2026-11-09",
-      "stage_date": "2026-11-10",
-      "title": "Providing for consideration of the bill (H.R. 1013) to amend the Federal securities laws to enhance 403(b) plans, and for other purposes.",
-      "url": "https://www.congress.gov/bill/119th-congress/house-resolution/1650",
-      "source": "国会官网",
-      "kind": "众议院决议",
-      "agency": "众议院 · Motion to reconsider laid on the table Agreed to without objection.",
-      "official_no": "H.Res. 1650",
-      "brief": {
-        "at": "2026-11-11",
-        "body": "1. 文种与主体：众议院决议 H.Res. 1650，案名「就H.R.1013（修订联邦证券法以完善403(b)退休计划）作出审议安排的决议」，由共和党众议员 H. Morgan Griffith 于 2026年11月9日 提出。\n2. 核心动作：为 H.R. 1013 安排全院审议程序；该法案修订联邦证券法，扩大 403(b) 退休计划的合规空间。\n3. 程序阶段：最新行动 2026年11月10日，复议动议经一致同意搁置，原表决结果维持。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "first"
-      },
-      "title_cn": "就H.R.1013（修订联邦证券法以完善403(b)退休计划）作出审议安排的决议",
-      "domain": "政府运作",
-      "sponsor": "H. Morgan Griffith",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-VA-9",
-      "committee": "",
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Motion to reconsider laid on the table Agreed to without objection.",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "On agreeing to the resolution Agreed to by recorded vote: 215 - 209 (Roll no. 319). (text: CR H6122-6123)",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "Passed/agreed to in House: On agreeing to the resolution Agreed to by recorded vote: 215 - 209 (Roll no. 319).",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-11-09",
-          "text": "Placed on the House Calendar, Calendar No. 92.",
-          "tag": "议事日程"
-        },
-        {
-          "date": "2026-11-09",
-          "text": "The House Committee on Rules reported an original measure, H. Rept. 119-878, by Mr. Griffith.",
-          "tag": "委员会"
         }
       ]
     },
@@ -12576,11 +14247,10 @@
       "title_cn": "《2025年慈善与教育机构退休公平法案》",
       "domain": "金融/保险",
       "brief": {
-        "at": "2026-11-11",
-        "body": "【政策背景】403(b) 计划面向公立学校、慈善机构与教会雇员，其可配置的资产类别长期限于年金合同与共同基金，与 401(k) 计划可使用的集合信托等工具存在差异。法案最新行动为众议院通过为其安排审议程序的规则决议 H.Res. 1650，属程序性推进，尚未完成全院表决。\n\n【核心内容】法案允许 403(b) 退休计划购入集合信托份额，即由银行或信托公司持有的一组集合管理资产，并允许配置保险公司独立账户产品。据国会研究服务局摘要，法案的调整集中于计划可配置的资产类别，未改变 403(b) 计划的缴费限额、领取年龄与税收递延结构。\n\n【要点提炼】其一，法案处理的是计划可选工具的平等问题，使 403(b) 与 401(k) 在集合信托、独立账户等类别上趋于一致。其二，程序上规则决议已获通过，下一观察节点为全院表决；若众议院通过，参议院是否引入对应版本、两院文本能否协调一致仍待观察，法案在参议院尚无行动记录。其三，条款表述以国会研究服务局摘要为据，摘要未列明托管、披露与受托责任的具体衔接安排，相关细节以 congress.gov 公布文本为准。其四，法案不涉及联邦支出，属监管与税收规则调整。",
+        "at": "2026-11-17",
+        "body": "【政策背景】403(b) 计划面向公立学校、慈善机构与教会雇员，其可配置的资产类别长期限于年金合同与共同基金，与 401(k) 计划可使用的集合信托等工具存在差异。法案经众议院通过为其安排审议程序的规则决议 H.Res. 1650 后完成院会表决，并已于 2026 年 11 月 12 日送参议院二读。\n\n【核心内容】法案允许 403(b) 退休计划购入集合信托份额，即由银行或信托公司持有的一组集合管理资产，并允许配置保险公司独立账户产品。据国会研究服务局摘要，法案的调整集中于计划可配置的资产类别，未改变 403(b) 计划的缴费限额、领取年龄与税收递延结构。\n\n【要点提炼】其一，法案处理的是计划可选工具的平等问题，使 403(b) 与 401(k) 在集合信托、独立账户等类别上趋于一致。其二，程序上众议院已完成表决，2026 年 11 月 12 日经参议院二读转交银行、住房和城市事务委员会，下一观察节点为该委员会审议与参议院排期，两院文本能否协调一致仍待观察。其三，条款表述以国会研究服务局摘要为据，摘要未列明托管、披露与受托责任的具体衔接安排，相关细节以 congress.gov 公布文本为准。其四，法案不涉及联邦支出，属监管与税收规则调整。",
         "tier": "full",
-        "stage": "first",
-        "stale": true
+        "stage": "first"
       },
       "sponsor": "Frank D. Lucas",
       "sponsor_party": "R",
@@ -13294,8 +14964,8 @@
       "agency": "参议院 · Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
       "official_no": "S.Res. 951",
       "brief": {
-        "at": "2026-10-17",
-        "body": "【政策背景】\n婴儿死亡率是美国公共卫生的长期短板，国会常以「指定纪念月/周」的决议形式提高议题能见度。本决议指定 2026 年 9 月为「全国婴儿死亡率关注月」。\n\n【核心内容】\n决议由参议院于 2026 年 10 月 15 日提出，内容为指定 2026 年 9 月为全国婴儿死亡率关注月，提高对该问题的认识并加大降低婴儿死亡率的努力。已交付司法委员会审议。\n\n【要点提炼】\n1. 性质为纪念性/宣示性决议，不创设法律义务、不涉及拨款；\n2. 属国会常见的议题倡导工具；\n3. 已交付委员会，后续可能以一致同意方式通过。",
+        "at": "2026-11-17",
+        "body": "【政策背景】\n婴儿死亡率是美国公共卫生的长期短板，国会常以指定纪念月或纪念周的决议形式提高议题能见度。\n\n【核心内容】\n决议由参议院于 2026 年 10 月 15 日提出，指定 2026 年 9 月为全国婴儿死亡率关注月，以提高对该问题的认识并推动降低婴儿死亡率的努力。2026 年 11 月 10 日，参议院以一致同意方式通过该决议，无修正案并附序言。\n\n【要点提炼】\n1. 性质为纪念性、宣示性决议，不创设法律义务、不涉及拨款；\n2. 参议院决议仅需本院通过，无须总统签署，通过即生效；\n3. 属国会常见的议题倡导工具，实质约束力有限。",
         "tier": "note",
         "stage": "first"
       },
@@ -13340,8 +15010,8 @@
       "agency": "参议院 · Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
       "official_no": "S.Res. 950",
       "brief": {
-        "at": "2026-10-17",
-        "body": "【政策背景】\n国会常以指定「全国清洁能源周」的决议形式表达对该产业的政策支持姿态，属宣示性工具。\n\n【核心内容】\n决议指定 2026 年 9 月 14 日至 18 日为「全国清洁能源周」，由共和党参议员 Susan Collins（R-ME）于 2026 年 10 月 15 日提出，已交付司法委员会审议。\n\n【要点提炼】\n1. 纯宣示性决议，不创设义务、不涉及拨款或税收优惠；\n2. 由共和党议员提出，说明清洁能源议题在两党均有一定共识面；\n3. 信号意义大于实质。",
+        "at": "2026-11-17",
+        "body": "【政策背景】\n国会常以指定「全国清洁能源周」的决议形式表达对该产业的政策支持姿态，属宣示性工具。\n\n【核心内容】\n决议由共和党参议员 Susan Collins（R-ME）于 2026 年 10 月 15 日提出，指定 2026 年 9 月 14 日至 18 日为「全国清洁能源周」。2026 年 11 月 10 日，参议院以一致同意方式通过该决议，无修正案并附序言。\n\n【要点提炼】\n1. 纯宣示性决议，不创设义务、不涉及拨款或税收优惠；\n2. 参议院决议仅需本院通过，无须总统签署，通过即生效；\n3. 由共和党议员提出，说明清洁能源议题在两党均有一定共识面。",
         "tier": "note",
         "stage": "first"
       },
@@ -13513,42 +15183,6 @@
         {
           "date": "2025-05-08",
           "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
-      "introduced": "2026-08-06",
-      "stage_date": "2026-08-06",
-      "title": "GHOST Act",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5278",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Read twice and referred to the Committee on Commerce, Science, and Transportation.",
-      "official_no": "S. 5278",
-      "sponsor": "Ben Ray Luján",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NM",
-      "committee": "Commerce, Science, and Transportation",
-      "title_cn": "《GHOST法案》",
-      "domain": "其他",
-      "brief": {
-        "at": "2026-11-12",
-        "body": "1. 文种与主体：参议院法案 S. 5278，案名《GHOST法案》，由民主党参议员 Ben Ray Luján 于 2026 年 8 月 6 日 提出。\n2. 核心动作：案名以缩写呈现，队列未提供官方摘要，规制对象与手段无法据案名确认。\n3. 程序阶段：最新行动日期为 2026-08-06，已二读并交付参议院商业、科学与交通委员会；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "actions": [
-        {
-          "date": "2026-08-06",
-          "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-08-06",
-          "text": "Introduced in Senate",
           "tag": "提出/转交"
         }
       ]
@@ -14771,52 +16405,6 @@
     {
       "board": "congress",
       "date": "2026-11-11",
-      "introduced": "2025-10-29",
-      "stage_date": "2026-11-10",
-      "title": "A resolution supporting the designation of October 30 as the \"International Day of Political Prisoners\".",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/472",
-      "source": "国会官网",
-      "kind": "参议院决议",
-      "agency": "参议院 · Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
-      "official_no": "S.Res. 472",
-      "sponsor": "Roger F. Wicker",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-MS",
-      "committee": "",
-      "title_cn": "《支持将10月30日定为“国际政治犯日”决议》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-12",
-        "body": "1. 文种与主体：参议院决议 S.Res. 472，案名《支持将10月30日定为“国际政治犯日”决议》，由共和党参议员 Roger F. Wicker 于 2025 年 10 月 29 日 提出。\n2. 核心动作：支持将 10 月 30 日定为「国际政治犯日」，属表态性决议，不创设权利义务。\n3. 程序阶段：最新行动日期为 2026-11-10，参议院以一致同意方式通过，未作修正并保留序言；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "first"
-      },
-      "actions": [
-        {
-          "date": "2026-11-10",
-          "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)",
-          "tag": "院会"
-        },
-        {
-          "date": "2026-11-10",
-          "text": "Passed/agreed to in Senate: Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.",
-          "tag": "院会"
-        },
-        {
-          "date": "2025-10-29",
-          "text": "Referred to the Committee on Foreign Relations. (text: CR S7829)",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2025-10-29",
-          "text": "Introduced in Senate",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-11",
       "introduced": "2026-07-30",
       "stage_date": "2026-07-30",
       "title": "A bill to amend title 10, United States Code, and the National Defense Authorization Act for Fiscal Year 1994, to codify and clarify gender neutral standards for members of certain Armed Forces, and for other purposes.",
@@ -15582,8 +17170,8 @@
       "agency": "众议院 · Became Public Law No: 119-137.",
       "official_no": "H.R. 1744",
       "brief": {
-        "at": "2026-11-04",
-        "body": "第119届国会众议院法案（H.R.1744），已获总统签署，本轮因元数据回填更新重新进入抓取窗口；提出日期与提案人在队列中未列明。\n官方摘要显示，法案将美国国际宗教自由委员会重新授权至2028年。该委员会为独立联邦委员会，职责为监测国际宗教自由状况、审议美国政府政策并提出政策建议。\n现行法下该委员会授权至2026年12月11日届满，本法案将授权期后延，以避免机构中断。\n数据源显示已由总统签署，公法编号尚未在素材中列明；签署后即具法律效力。",
+        "at": "2026-11-17",
+        "body": "第119届国会众议院法案（H.R. 1744），已由总统签署，本轮因元数据回填更新重新进入抓取窗口；提出日期与提案人在队列中未列明。\n官方摘要显示，法案将美国国际宗教自由委员会重新授权至2028年。该委员会为独立联邦委员会，职责为监测国际宗教自由状况、审议美国政府政策并提出政策建议。\n现行法下该委员会授权至2026年12月11日届满，本法案将授权期后延，以避免机构中断。\n程序状态：2026 年 11 月 3 日签署成为第 119-137 号公法，自签署之日起具直接执行效力，不再处于待议状态。",
         "tier": "note",
         "stage": "enact"
       },
@@ -15812,8 +17400,8 @@
       "agency": "众议院 · Became Public Law No: 119-138.",
       "official_no": "H.R. 8205",
       "brief": {
-        "at": "2026-10-29",
-        "body": "· 官方摘要：将支持肌萎缩侧索硬化（ALS）及其他神经退行性疾病药物研发的项目重新授权至 2031 财年，并作修订。\n· 具体包括重新授权国立卫生研究院面向不符合临床试验条件患者的在研药物科研赠款，以及食品药品监督管理局的相关研究赠款。\n· 进度关键：已呈送总统，处于签署成法前的最后环节，是本批次中程序位置最靠前的法案之一。",
+        "at": "2026-11-17",
+        "body": "· 官方摘要：将支持肌萎缩侧索硬化（ALS）及其他神经退行性疾病药物研发的项目重新授权至 2031 财年，并作修订。\n· 具体包括重新授权国立卫生研究院面向不符合临床试验条件患者的在研药物科研赠款，以及食品药品监督管理局的相关研究赠款。\n· 程序状态：2026 年 11 月 3 日经总统签署成为第 119-138 号公法，自签署之日起具直接执行效力。",
         "tier": "note",
         "stage": "enact"
       },
@@ -16463,11 +18051,10 @@
       "title_cn": "灾害通信协调与准备法案",
       "domain": "电信/媒体",
       "brief": {
-        "at": "2026-11-10",
-        "body": "1. 文种与主体：参议院法案 S. 4691，由共和党议员 Tim Sheehy（R-MT）于 2026 年 6 月 4 日提出。\n2. 核心动作：官方摘要显示，法案要求联邦通信委员会评估其应对影响通信服务的灾害与紧急状态的程序，改进与官员及服务提供商的协调；委员会须审查并酌情更新灾害信息报告系统启动与终止的通知程序。\n3. 程序阶段：最新行动日期为 2026 年 7 月 22 日，商务、科学与交通委员会审议后无修正通过并向参议院报送；下一观察节点为全院审议排期。\n4. 信息边界：条款以官方摘要为据，细节以 congress.gov 文本为准；属第 119 届国会。",
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：参议院法案 S. 4691，由共和党议员 Tim Sheehy（R-MT）于 2026 年 6 月 4 日提出。\n2. 核心动作：官方摘要显示，法案要求联邦通信委员会评估其应对影响通信服务的灾害与紧急状态的程序，改进与官员及服务提供商的协调；委员会须审查并酌情更新灾害信息报告系统启动与终止的通知程序。\n3. 程序阶段：最新行动 2026-11-09，法案列入参议院立法日程（General Orders），日程编号第 692 号；此前 2026-07-22 经商务、科学与交通委员会无修正通过并报送。下一观察节点为全院审议排期。\n4. 信息边界：条款以官方摘要为据，细节以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "actions": [
         {
@@ -28263,11 +29850,10 @@
       "title_cn": "美国战场保护计划修正法案",
       "domain": "政府运作",
       "brief": {
-        "at": "2026-11-04",
-        "body": "1. 文种与主体：参议院法案 S. 3524，由共和党参议员 David McCormick（宾夕法尼亚州）于 2025 年 12 月 17 日提出。\n2. 核心动作：修订「美国战场保护计划」，该计划为内战、独立战争与 1812 年战争等历史战场的保护与研究提供联邦支持。\n3. 程序阶段：2026 年 9 月 30 日经参议院能源与自然资源委员会以替代性修正案通过并获有利报告，下一节点为参议院全院审议。\n4. 信息边界：官方摘要未取得，授权额度与项目遴选标准以委员会报告文本为准。",
+        "at": "2026-11-17",
+        "body": "1. 文种与主体：参议院法案 S. 3524，由共和党参议员 David McCormick（宾夕法尼亚州）于 2025 年 12 月 17 日提出。\n2. 核心动作：修订「美国战场保护计划」，该计划为内战、独立战争与 1812 年战争等历史战场的保护与研究提供联邦支持。\n3. 程序阶段：最新行动 2026-11-12，法案列入参议院立法日程（General Orders），日程编号第 704 号；此前 2026-09-30 经能源与自然资源委员会以替代性修正案通过并获有利报告。下一观察节点为全院审议排期。\n4. 信息边界：官方摘要未取得，授权额度与项目遴选标准以委员会报告文本为准。",
         "tier": "note",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "introduced": "2025-12-17",
       "stage_date": "2026-11-12",
@@ -37405,11 +38991,10 @@
       "title_cn": "2026年美国战场保护计划修正法案",
       "domain": "能源/环境",
       "brief": {
-        "at": "2026-10-31",
-        "body": "· 参议院能源与自然资源委员会无修正案通过并报送（Ordered to be reported without amendment favorably）。\n· 将国家公园管理局三项战场保护赠款计划（战场收购、解说现代化与修复）授权延长至 2036 财年（现行法至 2028 财年），并要求对更多地点开展研究。\n· 属授权延期条款，另要求就法印战争等重大事件相关地点编制或认证研究报告。",
+        "at": "2026-11-17",
+        "body": "· 2026 年 11 月 12 日列入参议院立法日程（General Orders），日程编号第 715 号；此前经参议院能源与自然资源委员会无修正案通过并报送。\n· 将国家公园管理局三项战场保护赠款计划（战场收购、解说现代化与修复）授权延长至 2036 财年（现行法至 2028 财年），并要求对更多地点开展研究。\n· 属授权延期条款，另要求就法印战争等重大事件相关地点编制或认证研究报告。",
         "tier": "note",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "official_no": "H.R. 7618",
       "introduced": "2026-02-20",
@@ -37482,11 +39067,10 @@
       "title_cn": "国家盲人运动博物馆法案",
       "domain": "教育/劳动",
       "brief": {
-        "at": "2026-10-31",
-        "body": "· 参议院能源与自然资源委员会以修正案通过并报送（Ordered to be reported with an amendment favorably）。\n· 官方摘要未取得，案名指向设立或认定「国家盲人运动博物馆」，是否涉及场地、管理主体与联邦支持方式，以 congress.gov 文本为准。\n· 由参议员范霍伦（民主党，马里兰州）于 2025 年 12 月 4 日提出。",
+        "at": "2026-11-17",
+        "body": "· 2026 年 11 月 12 日列入参议院立法日程（General Orders），日程编号第 703 号；此前经参议院能源与自然资源委员会以修正案通过并报送。\n· 官方摘要未取得，案名指向设立或认定「国家盲人运动博物馆」，是否涉及场地、管理主体与联邦支持方式，以 congress.gov 文本为准。\n· 由参议员范霍伦（民主党，马里兰州）于 2025 年 12 月 4 日提出。",
         "tier": "note",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "official_no": "S. 3371",
       "introduced": "2025-12-04",
@@ -47740,42 +49324,6 @@
     {
       "board": "congress",
       "date": "2026-10-26",
-      "title": "Foreign Government-Owned Media FARA Registration Act",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5682",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Under authority of the order of the Senate of September 30, 2026, ordered read twice and referred to the Committee on Foreign Relations.",
-      "title_cn": "外国政府所有媒体依《外国代理人登记法》登记法案",
-      "domain": "电信/媒体",
-      "brief": {
-        "at": "2026-10-27",
-        "body": "第119届国会参议院法案（S.5682），2026年10月15日由参议员里克·斯科特（共和党，佛罗里达州）提出，经参议院9月30日命令二读后交付外交关系委员会。\n标题指向要求外国政府所有的媒体机构依《外国代理人登记法》登记，官方摘要未取得，登记主体范围与豁免条件以 congress.gov 文本为准。\n处于提出阶段，未安排听证。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "official_no": "S. 5682",
-      "introduced": "2026-10-15",
-      "stage_date": "2026-10-15",
-      "sponsor": "Rick Scott",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-FL",
-      "committee": "Foreign Relations under authority of the order of the Senate of 09/30/2026",
-      "actions": [
-        {
-          "date": "2026-10-15",
-          "text": "Read twice and referred to the Committee on Foreign Relations under authority of the order of the Senate of 09/30/2026.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-10-15",
-          "text": "Introduced in Senate",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-26",
       "title": "Mass Timber Growth and Innovation Act",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10852",
       "source": "国会官网",
@@ -47805,42 +49353,6 @@
         {
           "date": "2026-10-19",
           "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ]
-    },
-    {
-      "board": "congress",
-      "date": "2026-10-26",
-      "title": "RECLAIM Act",
-      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5689",
-      "source": "国会官网",
-      "kind": "参议院法案",
-      "agency": "参议院 · Under authority of the order of the Senate of September 30, 2026, ordered read twice and referred to the Committee on Finance.",
-      "title_cn": "RECLAIM法案",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-10-27",
-        "body": "第119届国会参议院法案（S.5689），2026年10月15日由参议员伯尼·莫雷诺（共和党，俄亥俄州）提出，经参议院9月30日命令二读后交付财政委员会。\n法案仅有简称，官方摘要未取得，政策领域标注为税收，具体条款内容以 congress.gov 文本为准，不作推测。\n处于提出阶段；财政委员会本会期以拨款与和解法案为主。",
-        "tier": "note",
-        "stage": "introduced"
-      },
-      "official_no": "S. 5689",
-      "introduced": "2026-10-15",
-      "stage_date": "2026-10-15",
-      "sponsor": "Bernie Moreno",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-OH",
-      "committee": "Finance under authority of the order of the Senate of 09/30/2026",
-      "actions": [
-        {
-          "date": "2026-10-15",
-          "text": "Read twice and referred to the Committee on Finance under authority of the order of the Senate of 09/30/2026.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-10-15",
-          "text": "Introduced in Senate",
           "tag": "提出/转交"
         }
       ]
@@ -49582,11 +51094,10 @@
       "kind": "参议院法案",
       "agency": "参议院 · Placed on Senate Legislative Calendar under General Orders. Calendar No. 705.",
       "brief": {
-        "at": "2026-10-26",
-        "body": "【政策背景】\n《蒙大拿猎人与渔民保护法案》（Montana Sportsmen Conservation Act，S.3527）由共和党参议员 Steve Daines（蒙大拿州）于2025年12月17日在第119届国会提出，政策领域为「公共土地与自然资源」。2026年3月4日，参议院能源与自然资源委员会以「以替代性修正案形式同意报告」（Ordered to be reported with an amendment in the nature of a substitute favorably）的形式通过，这在本批次公共土地立法中属于推进程度较高的一类——委员会不仅表态支持，还给出了实质替代文本。\n\n【核心内容】\n截至本简报撰写时，国会官网未提供 CRS 官方摘要，官方渠道仅公布标题、最新行动、政策领域、提出日期与首席提案人。官方摘要未取得，具体条款以联邦公报文本为准。从法案名称可确认其指向蒙大拿州公共土地上的狩猎与渔民权益保护，即在联邦土地与水域的使用规则中为垂钓、狩猎等使用者设定保护安排；具体保护形式（季节性关闭、面积保留、准入条件调整或联邦水域权属安排）未公开。委员会以替代性修正案形式通过这一事实本身说明，原始文本在委员会层面被实质性改写，最终上报文本与提出版本可能存在差异。\n\n【要点提炼】\n一、程序上已获委员会以替代性修正案形式同意报告，是本批次收录公共土地类法案中少数进入「可报告」状态的条目，下一步为全院议程排期。\n二、替代性修正案的通过意味着最终文本由委员会主导，这与参议院能源与自然资源委员会在公共土地立法中的惯例一致，但具体条款走向须待上报文本公布。\n三、提案人为共和党参议员 Steve Daines，与同批公共土地法案中民主党提案人主导的版本（如红山山脉保护法案、布法罗地块保护法案）构成同议题多版本并行格局。\n四、蒙大拿州公共土地在联邦预算中的占比高，狩猎与渔民权益安排往往与联邦土地放牧、租赁及州方补充管理的责任划分相关，最终文本的影响面可能大于州内事务本身。",
+        "at": "2026-11-17",
+        "body": "【政策背景】\n《蒙大拿猎人与渔民保护法案》（Montana Sportsmen Conservation Act，S.3527）由共和党参议员 Steve Daines（蒙大拿州）于2025年12月17日在第119届国会提出，政策领域为「公共土地与自然资源」。2026年3月4日，参议院能源与自然资源委员会以「以替代性修正案形式同意报告」的形式通过，这在本批次公共土地立法中属于推进程度较高的一类——委员会不仅表态支持，还给出了实质替代文本。\n\n【核心内容】\n截至本简报撰写时，国会官网未提供 CRS 官方摘要，官方渠道仅公布标题、最新行动、政策领域、提出日期与首席提案人。官方摘要未取得，具体条款以 congress.gov 文本为准。从法案名称可确认其指向蒙大拿州公共土地上的狩猎与渔民权益保护，即在联邦土地与水域的使用规则中为垂钓、狩猎等使用者设定保护安排；具体保护形式（季节性关闭、面积保留、准入条件调整或联邦水域权属安排）未公开。委员会以替代性修正案形式通过这一事实本身说明，原始文本在委员会层面被实质性改写，最终上报文本与提出版本可能存在差异。\n\n【要点提炼】\n一、程序上已获委员会以替代性修正案形式同意报告，并于 2026 年 11 月 12 日列入参议院立法日程第 705 号，下一步为全院审议排期。\n二、替代性修正案的通过意味着最终文本由委员会主导，这与参议院能源与自然资源委员会在公共土地立法中的惯例一致，但具体条款走向须待上报文本公布。\n三、提案人为共和党参议员 Steve Daines，与同批公共土地法案中民主党提案人主导的版本构成同议题多版本并行格局。\n四、蒙大拿州公共土地在联邦预算中占比高，狩猎与渔民权益安排往往与联邦土地放牧、租赁及州方补充管理的责任划分相关，最终文本的影响面可能大于州内事务本身。",
         "tier": "full",
-        "stage": "committee",
-        "stale": true
+        "stage": "committee"
       },
       "title_cn": "蒙大拿猎人与渔民保护法案",
       "domain": "能源/环境",
