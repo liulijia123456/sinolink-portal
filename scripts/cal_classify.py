@@ -385,6 +385,12 @@ OVERRIDES = {
         {'cat': 'dip', 'topic': 'security', 'actor': 'exec'},       # 议题为核武库与地区冲突，归安全
     ('2027-03-17', 'FISA 第 702 条既有监控授权届满'):
         {'cat': 'pol', 'topic': 'security', 'actor': 'congress'},   # 情报授权续期属国会程序，归政治与治理
+    # 2026-11-17 批次：2 条。BIS 规则含「规则生效」会被兜底判 money/agency；
+    # Head Start 的「修订生效」不在 POL_RULES 关键词表内，classify() 返回空值。
+    ('2026-11-19', 'BIS 远程访问先进半导体规则生效'):
+        {'cat': 'pol', 'topic': 'tech', 'actor': 'agency'},         # 出口管制所监管对象为先进计算，归科技与投资安全
+    ('2027-01-15', 'HHS Head Start 绩效标准修订生效'):
+        {'cat': 'pol', 'topic': 'labor', 'actor': 'agency'},        # 实质删除的是员工工资与福利要求，归就业与薪酬
 }
 
 # 统计发布的市场传导强度：同一指标族内部按「初值 > 修正 > 终值」「总量 > 分项」区分

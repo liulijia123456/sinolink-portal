@@ -180,6 +180,11 @@ OVERRIDES = {
         ('央广网 11-11', 'https://www.cnr.cn/china/news/20261111/t20261111_527868594.shtml'),
         ('央视新闻 11-10', 'https://ysxw.cctv.cn/article.html?item_id=7107679433075922306'),
     ],
+    ('2026-11-19', 'BIS 远程访问先进半导体规则生效'): [
+        ('BIS 新闻稿 11-16', 'https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology'),
+        ('规则原文（RIN 0694-AK50）', 'https://www.bis.gov/media/documents/rin-0694-ak50.pdf'),
+        ('新加坡贸工部联合声明 11-16', 'https://www.mti.gov.sg/newsroom/mddi-meti-joint-media-statement-on-us-interim-final-rule-on-addressing-remote-access-to-advanced-semiconductors'),
+    ],
 }
 
 
