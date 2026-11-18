@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-17T14:50:20+08:00",
+ "updated_at": "2026-11-18T09:34:55+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -332,7 +332,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
    "source": "Federal Reserve",
-   "summary": "Agencies publish resolution plan feedback letters for 15 banking organizations"
+   "summary": "Agencies publish resolution plan feedback letters for 15 banking organizations",
+   "brief": {
+    "at": "2026-09-29",
+    "tier": "news",
+    "body": "美联储与联邦存款保险公司联合公布 15 家银行机构处置计划反馈函。\n这些计划于 2025 年 10 月提交，涉及资产规模超 2500 亿美元的机构。\n两机构未发现短板或缺陷，并认定法巴银行 2021 年问题已整改到位。"
+   }
   },
   {
    "date": "2026-09-25",
@@ -342,7 +347,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc."
+   "summary": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+   "brief": {
+    "at": "2026-09-25",
+    "tier": "news",
+    "body": "美联储批准俄亥俄州 Peoples Bancorp 与 Citizens National 合并。\n该交易将使前者间接收购肯塔基州 Citizens Bank of Kentucky。\n美联储同时批准 Peoples Bank 与其合并，并在原址设立分支机构。"
+   }
   },
   {
    "date": "2026-09-24",
