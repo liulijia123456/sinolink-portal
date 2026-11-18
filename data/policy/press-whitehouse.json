@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-17T14:28:33+08:00",
+ "updated_at": "2026-11-18T08:23:59+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 4,
-   "added": 1,
+   "fetched": 5,
+   "added": 3,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 7,
+   "added": 2,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 2,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 3,
+   "added": 9,
    "error": ""
   },
   {
@@ -164,6 +164,276 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-17",
+   "title": "Quad Leaders’ Summit Joint Press Release",
+   "title_cn": "四方安全对话领导人马尼拉峰会联合新闻公报",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 2026年11月17日，美澳印日领导人在马尼拉举行四方安全对话峰会。\n· 四国重申支持东盟中心地位与团结，共同维护自由开放的印太秩序。\n· 声明称今年是四方机制复兴近十年、印太愿景提出十周年。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Presidential Message on American Education Week",
+   "title_cn": "特朗普就美国教育周发表总统公告",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-american-education-week-ddcb/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 特朗普11月17日就美国教育周发表公告，称教育是对未来的最重要投资。\n· 公告称教育部自1979年成立以来耗费逾3万亿美元，未直接教育学生。\n· 公告称已签行政令扩大教育选择，并要求教育部长推动关闭教育部。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Joint Statement on an Agreement Between the United States of America and the Kingdom of Thailand on Reciprocal Trade",
+   "title_cn": "美泰发表对等贸易协定谈判联合声明",
+   "agency": "白宫",
+   "kind": "声明",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/joint-statement-on-an-agreement-between-the-united-states-of-america-and-the-kingdom-of-thailand-on-reciprocal-trade/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 11月17日，特朗普与泰国总理阿努廷在马尼拉确认对等贸易协定谈判达成实质结论。\n· 协定将建立在1966年友好与经济关系条约、2002年贸易投资框架协定基础之上。\n· 双方将启动各自国内必要程序，为协定签署与生效作准备。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "First Lady Melania Trump’s Fostering the Future Together Convenes Caribbean Leaders at Inaugural International Summit Hosted by St. Kitts and Nevis First Lady Diani Prince-Drew",
+   "title_cn": "梅拉尼娅倡议在圣基茨举办首届加勒比教育峰会",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/first-lady-melania-trumps-fostering-the-future-together-convenes-caribbean-leaders-at-inaugural-international-summit-hosted-by-st-kitts-and-nevis-first-lady-diani-prince-drew/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman First Lady Melania Trump’s Fostering the Future Together Convenes Caribbean Leaders at Inaugural International Summit Hosted by St. Kitts and Nevis First Lady Diani Prince-Drew Media Note November 17, 2026 Last week, First Lady Melania Trump’s Fostering the Future Together initiative convened leaders in St. Kitts and Nevis for its inaugural Fostering the Future Together Car",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 梅拉尼娅发起的“共育未来”倡议在圣基茨和尼维斯举办首届加勒比峰会。\n· 峰会汇集多国第一配偶、部长、科技伙伴与学生，SpaceX、英特尔、谷歌参与。\n· 与会加勒比国家通过《巴斯特尔宣言》，聚焦数字教育与儿童网络安全。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Department of State Completes 90-Day ITAR Reform Sprint, Delivering Historic Reforms to Strengthen American Export Dominance",
+   "title_cn": "国务院完成武器出口管制ITAR九十天改革冲刺",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/department-of-state-completes-90-day-itar-reform-sprint-delivering-historic-reforms-to-strengthen-american-export-dominance/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Department of State Completes 90-Day ITAR Reform Sprint, Delivering Historic Reforms to Strengthen American Export Dominance Press Statement November 17, 2026 The Department of State hereby announces the completion of a 90-day sprint to reform the International Traffic in Arms Regulations (ITAR) initiated by the Under Secretary for Arms Contr",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 国务院宣布完成7月30日启动、10月28日结束的ITAR九十天改革冲刺。\n· 期间推进十余项监管行动，已有八份联邦公报通知发布。\n· 将设立ITAR通用许可，许可审批时限由60天缩短至50天。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Tajik National Convicted of Providing Material Support to ISIS and Firearms Offenses",
+   "title_cn": "塔吉克斯坦公民因支持ISIS及非法持枪被定罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/tajik-national-convicted-providing-material-support-isis-and-firearms-offenses",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 塔吉克斯坦公民马努切赫里经审判被认定向ISIS提供物质支持并非法持有枪支。\n· 2021年12月至2023年6月，他向土耳其、叙利亚的ISIS同伙转移约7万美元。\n· 其2016年持旅游签证入境，签证到期后非法滞留美国。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Salinas Man Sentenced to Over 11 Years in Prison for Attempted Sexual Exploitation of a 12-Year-Old and Distributing Child Pornography",
+   "title_cn": "加州萨利纳斯男子因性剥削儿童被判逾11年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/salinas-man-sentenced-over-11-years-prison-attempted-sexual-exploitation-12-year-old-and",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 加州萨利纳斯男子拉米雷斯因企图性剥削12岁儿童、传播儿童色情被判逾11年。\n· 他通过Snapchat向该儿童发送不雅照片，并反复要求其拍摄色情内容。\n· 他还利用Telegram、Wickr等平台传播儿童性虐待材料，由国土安全调查局侦办。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "PACE Organization InnovAge Agrees to Pay $36M to Resolve False Claims Act Allegations of Failing to Provide Comprehensive Medical Services and Timely Specialist Referrals to Seniors",
+   "title_cn": "PACE机构InnovAge以3600万美元和解虚假索赔指控",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/pace-organization-innovage-agrees-pay-36m-resolve-false-claims-act-allegations-failing",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· PACE机构InnovAge同意支付3600万美元，了结虚假索赔法相关指控。\n· 其被指2016年5月至2022年10月未按需及时安排专科转诊与全面医疗服务。\n· 其中约2570万美元付联邦，1030万美元分付科罗拉多等四州。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Mississippi Businessman Sentenced to 10 Years in Prison for $19M Medicare Fraud",
+   "title_cn": "密西西比商人因1900万美元医保欺诈获刑十年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/mississippi-businessman-sentenced-10-years-prison-19m-medicare-fraud",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 密西西比州商人威利·德·吉布斯因1.9亿美元医保欺诈被判10年监禁。\n· 他通过七家耐用医疗设备公司行贿获取医生订单，虚报矫形支具费用。\n· 联邦医保据此支付约946万美元，法院判令其全额赔偿。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Justice Department, VA, and VA OIG Announce Enforcement Actions Against 15 Defendants for Defrauding Veterans Benefits Programs",
+   "title_cn": "司法部与退伍军人事务部起诉15名福利欺诈被告",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-va-and-va-oig-announce-enforcement-actions-against-15-defendants",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 司法部欺诈司与17个联邦检察官办公室开展首次全国退伍军人福利欺诈集中行动。\n· 2026年9月1日以来对15名被告提出指控，涉及预期损失逾340万美元。\n· 同期判决、认罪与审判定案合计涉及预期损失逾1900万美元。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Justice Department Surpasses $1B In Awards Under Reauthorized Radiation Exposure Compensation Act",
+   "title_cn": "司法部辐射暴露补偿赔付总额突破10亿美元",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-surpasses-1b-awards-under-reauthorized-radiation-exposure-compensation",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 司法部宣布重新授权后的《辐射暴露补偿法》赔付总额突破10亿美元。\n· 该法1990年制定，2024年到期失效，2025年经法案重新授权并扩大覆盖。\n· 2025年7月4日以来收到逾6.7万份申请，已批准逾1.4万份。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "JOINT STATEMENT FROM DEPARTMENT OF COMMERCE AND DEPARTMENT OF JUSTICE ON MEGASPEED INVESTIGATION",
+   "title_cn": "商务部与司法部就Megaspeed芯片调查发联合声明",
+   "agency": "司法部",
+   "kind": "声明",
+   "url": "https://www.justice.gov/opa/pr/joint-statement-department-commerce-and-department-justice-megaspeed-investigation",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 商务部2024年因疑似敏感芯片转运对Megaspeed启动出口管制调查。\n· 2025年6月，工业与安全局会同新加坡执法部门赴当地进行最终用途核查。\n· 案件其后由司法部主导刑事调查，两部门称将依法追究相关刑责。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Iranian Intelligence Agent Sentenced to Over 27 Years in Prison for Foiled Plot to Assassinate U.S. Government Officials",
+   "title_cn": "伊朗情报人员因策划暗杀美官员被判逾27年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/iranian-intelligence-agent-sentenced-over-27-years-prison-foiled-plot-assassinate-us",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 伊朗伊斯兰革命卫队特工阿西夫·麦钱特因策划暗杀美官员被判逾27年监禁。\n· 其2022年前后被招募，2024年4月赴美物色杀手，目标包括特朗普等人。\n· 暗杀图谋旨在为苏莱曼尼之死复仇，因其熟人向联调局举报而败露。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Child Predator Deemed “Extreme Danger” Sentenced to Life in Prison For Relentlessly Sexually Exploiting Multiple Minors in Hawaii",
+   "title_cn": "夏威夷连环性侵未成年人的惯犯被判终身监禁",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/child-predator-deemed-extreme-danger-sentenced-life-prison-relentlessly-sexually-exploiting",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 夏威夷男子达伦·莱利因长期性侵多名未成年人被判终身监禁。\n· 他通过约会软件接触14至16岁少年，以下药、金钱与电子产品诱骗受害者。\n· 法院认定其拍摄并传播性侵视频，且庭审期间多次妨碍司法程序。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
+   "title_cn": "能源部向怀俄明电网互联项目提供28亿美元贷款",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 能源部能源主导融资办公室宣布向Grid United怀俄明互联项目提供至多28亿美元有条件贷款。\n· 项目将新增约1.8吉瓦输电能力，翻倍提升SPP与WECC区间输送容量。\n· 能源部估算17州用户至多可节省390亿美元电费，贷款须满足技术财务等条件。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "WORST OF THE WORST: ICE Arrests Violent Assailants, Drug Traffickers, and Burglars",
+   "title_cn": "移民执法局逮捕多名暴力袭击与毒品走私罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/17/worst-worst-ice-arrests-violent-assailants-drug-traffickers-and-burglars",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 移民与海关执法局逮捕多名有严重犯罪定罪的非法移民。\n· 其中包括因加重袭击、走私冰毒与可卡因、入室盗窃被定罪者。\n· 被捕者分别来自墨西哥与委内瑞拉，案件涉宾夕法尼亚、加州等地。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "SANCTUARY INSANITY: DHS Calls Out Sanctuary Politicians in New York for Releasing Illegal Alien Arrested for Attempted Murder, Assault, and Other Crimes",
+   "title_cn": "国土安全部批评纽约庇护政策释放暴力罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/17/sanctuary-insanity-dhs-calls-out-sanctuary-politicians-new-york-releasing-illegal",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 国土安全部称纽约当局拒绝执行移民拘留令，释放一名暴力犯罪非法移民。\n· 该男子为圭亚那籍，因谋杀未遂、袭击与非法持枪在布鲁克林被捕。\n· 移民拘留令于2026年4月29日发出，该男子11月7日获释后仍在逃。"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "title": "VA proposes ending life insurance premiums for thousands of World War II, Korean War-era Veterans, saving them millions",
+   "title_cn": "退伍军人事务部拟免除二战与朝鲜战争老兵寿险保费",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-proposes-ending-life-insurance-premiums-for-thousands-of-world-war-ii-korean-war-era-veterans-saving-them-millions/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-17",
+    "tier": "news",
+    "body": "· 退伍军人事务部在联邦公报发布拟议规则，拟停止向部分老兵收取寿险保费。\n· 约1万名二战与朝鲜战争时期参加国民服务寿险计划的老兵将免缴保费。\n· 预计十年为老兵节省约400万美元，为该部节省约100万美元行政成本。"
+   }
+  },
   {
    "date": "2026-11-16",
    "title": "Nominations Sent to the Senate",
