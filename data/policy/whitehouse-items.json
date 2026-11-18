@@ -1,9 +1,162 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-17 14:12",
-  "count": 353,
+  "updated_at": "2026-11-18 08:18",
+  "count": 362,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Appellate Procedures for the Board of Immigration Appeals",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23320/appellate-procedures-for-the-board-of-immigration-appeals",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "司法部",
+      "official_no": "2026-23320",
+      "title_cn": "移民上诉委员会上诉程序（最终规则）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：司法部（移民审查执行办公室 EOIR）最终规则，91 FR 73876，修订 8 CFR 第 1003、1208、1240 部分。\n· 核心动作：将 2026 年 2 月发布的临时最终规则（IFR）定稿。该 IFR 旨在简化移民上诉委员会（BIA）程序；本次最终规则回应征求意见期内收到的评论，并以小幅修改定稿。\n· 程序节点：IFR 于 2026 年 3 月 9 日生效，评论期 2026 年 4 月 8 日截止；本最终规则 2026 年 12 月 17 日生效。案卷号 EOIR-26-AB37、主任令第 12-2026 号，规章标识号 1125-AB37。\n· 信息边界：官方摘要未逐条列明所采纳的修改内容，具体条款以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Takes of Marine Mammals Incidental to Specified Activities; Taking Marine Mammals Incidental to the Washington State Parks and Recreation Commission's Marine Facilities Replacement Program in North Puget Sound, Washington",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23365/takes-of-marine-mammals-incidental-to-specified-activities-taking-marine-mammals-incidental-to-the",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "official_no": "2026-23365",
+      "title_cn": "华盛顿州北普吉特海湾海洋设施更换项目附带性捕获海洋哺乳动物（最终规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：商务部国家海洋渔业局（NMFS）最终规则，91 FR 73685，修订 50 CFR 第 217 部分。\n· 核心动作：依《海洋哺乳动物保护法》（MMPA）应华盛顿州公园与游憩委员会申请，就该州北普吉特海湾海洋设施更换项目（MFRP）建设活动中的附带性捕获签发最终规则及配套五年期授权书（LOA）。\n· 规则内容：规定可允许的捕获方式、将对海洋哺乳动物物种及其栖息地的不利影响降至最低可行程度的措施，并设定捕获监测与报告要求；授权覆盖期为五年。\n· 程序节点：2026 年 11 月 17 日生效；案卷号 261112-0006，规章标识号 0648-BO18。\n· 信息边界：官方摘要未列明各物种的捕获配额与具体监测频次，以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Respirable Crystalline Silica and Respiratory Protection",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23390/respirable-crystalline-silica-and-respiratory-protection",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "劳工部",
+      "official_no": "2026-23390",
+      "title_cn": "可吸入结晶二氧化硅与呼吸防护：更正（拟议规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：劳工部矿山安全与健康管理局（MSHA）拟议规则更正，91 FR 73726，涉及 30 CFR 第 71 部分。\n· 核心动作：对 2026 年 11 月 12 日刊发的「可吸入结晶二氧化硅与呼吸防护」拟议规则作勘误，更正其中的一处错误；该拟议规则本身旨在澄清并修订 MSHA 的结晶二氧化硅与呼吸防护标准条款。\n· 程序节点：本更正 2026 年 11 月 17 日生效。案卷号 MSHA-2026-0200，规章标识号 1219-AC22。\n· 关联条目：原始拟议规则（文档号 2026-23048，2026 年 11 月 12 日刊发）为独立文件，与本更正分别入库。\n· 信息边界：官方摘要未说明所更正的具体字句，以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "劳工部",
+      "official_no": "2026-23370",
+      "title_cn": "PERM 移民签证项目劳动力市场测试现代化与本国工人保护强化（拟议规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：劳工部拟议规则（NPRM），91 FR 73916，修订 20 CFR 第 656 部分永久劳工证（PERM）法规。\n· 核心动作：提高永久劳工证受理与审查标准，保护同类岗位美国工人的工资与就业机会。主要修订：取消附表 A（Schedule A）继续执行，该类别原可豁免法定劳动力市场测试；强化最低招聘标准，要求雇主接触尽可能广泛的合格美国劳动力。\n· 其他修订：加强裁员情形下美国工人保障，含第三方派遣裁员的申报义务；扩大劳工证申请（NOF）告知要求；将劳工部电子受理与审理做法条文化。\n· 程序节点：评论截止 2027 年 1 月 19 日。案卷号 ETA-2026-0133，规章标识号 1205-AC29。\n· 信息边界：本件为拟议规则，尚未生效；最终形态以定稿文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Rulemaking To Provide That N-acetyl-L-cysteine Is Not Excluded From the Dietary Supplement Definition",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23351/rulemaking-to-provide-that-n-acetyl-l-cysteine-is-not-excluded-from-the-dietary-supplement",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "卫生与公众服务部",
+      "official_no": "2026-23351",
+      "title_cn": "规定 N-乙酰-L-半胱氨酸不排除于膳食补充剂定义之外（拟议规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：卫生与公众服务部食品药品管理局（FDA）拟议规则，91 FR 73717，涉及 21 CFR 第 190 部分。\n· 核心动作：拟制定法规，认定 N-乙酰-L-半胱氨酸（NAC）不属于《联邦食品、药品和化妆品法》（FD&C Act）膳食补充剂定义所排除的物质。\n· 法律效果：若定稿，含 NAC 的产品可在不违反该法的前提下合法作为膳食补充剂销售；FDA 同时拟规定，向膳食补充剂中添加 NAC 不构成该法第 301(ll) 条项下的禁止行为。\n· 程序节点：评论截止 2027 年 1 月 19 日。案卷号 FDA-2025-N-2699，规章标识号 0910-AI91。\n· 信息边界：本件为拟议规则，尚未生效；NAC 产品的合规判断仍以该法其他条款为限。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Modernizing to Electronic Payments",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23397/modernizing-to-electronic-payments",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23397",
+      "title_cn": "联邦航空管理局支付系统现代化：强制电子支付（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：交通部联邦航空管理局（FAA）拟议规则，91 FR 73705，涉及 14 CFR 第 13、47、49、61、63、65、187、406 部分。\n· 核心动作：拟改造 FAA 收费体系，要求以电子方式付款，取消现金、汇票、纸质支票等纸质支付方式的可选性。\n· 政策依据：落实第 14247 号行政令《使美国政府账户收付现代化》，该命令要求逐步取消纸质收付、强制联邦机构收付款项采用电子方式，以提高联邦政府运行效率。\n· 程序节点：评论截止 2027 年 1 月 4 日。案卷号 FAA-2026-3538（通告号 27-01），规章标识号 2120-AM16。\n· 信息边界：本件为拟议规则，尚未生效；具体适用费用项目与豁免安排以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Airworthiness Directives; Daher Aircraft, SAS",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23372/airworthiness-directives-daher-aircraft-sas",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23372",
+      "title_cn": "适航指令：Daher Aircraft, SAS（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：交通部联邦航空管理局（FAA）拟议适航指令（AD），91 FR 73714，涉及 14 CFR 第 39 部分。\n· 适用范围：部分 SOCATA TBM 700 型飞机（型号合格证现由 Daher Aircraft, SAS 持有）。\n· 核心动作：拟以新指令取代 AD 2015-17-10。原指令要求对主起落架（MLG）锻件重复检查裂纹并视情纠正，允许更换强化起落架终止检查。\n· 本次变更：保留原动作，新增可用起落架部件，取消着色渗透检测（已不再被授权）。\n· 程序节点：评论截止 2027 年 1 月 4 日。案卷号 FAA-2026-13817，项目标识 MCAI-2026-00492-A。\n· 信息边界：本件为拟议指令，尚未生效；适用序列号清单以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Discontinuing Premium Collection From Policyholders on Certain National Service Life Insurance Policies",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23364/discontinuing-premium-collection-from-policyholders-on-certain-national-service-life-insurance",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "退伍军人事务部",
+      "official_no": "2026-23364",
+      "title_cn": "部分国家服务人寿保险保单停止向保单持有人收取保费（拟议规则）",
+      "domain": "社会保障",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：退伍军人事务部（VA）拟议规则，91 FR 73726，修订 38 CFR 第 8 部分国家服务人寿保险（NSLI）法规。\n· 核心动作：拟停止向持有保单前缀为「V」「J」「JR」的 NSLI 保单的退伍军人收取保费。\n· 依据：VA 认定现有资金足以覆盖剩余有效保单，据此保单可继续有效而投保人无需缴纳后续保费。上述保单所涉人群以二战时期退伍军人为主。\n· 程序节点：评论截止 2026 年 12 月 17 日。案卷号 VA-2026-VBA-0430，规章标识号 2900-AS98。\n· 信息边界：本件为拟议规则，尚未生效；停收保费的生效时点与溯及安排以定稿文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-17",
+      "title": "Safety Zone; Monongahela River, Pittsburgh, PA",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23405/safety-zone-monongahela-river-pittsburgh-pa",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23405",
+      "title_cn": "安全区：宾夕法尼亚州匹兹堡莫农加希拉河（临时最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "· 文种与主体：国土安全部海岸警卫队临时最终规则，91 FR 73670，依据 33 CFR 第 165 部分。\n· 核心动作：在莫农加希拉河 15 至 16 英里标之间可航水域设临时安全区，保障跨河架空线缆安装作业期间人员与船舶安全。\n· 管制要求：未经匹兹堡海事安全单位港务长或其指定代表特别许可，禁止船舶或人员进入该区域。\n· 程序节点：2026 年 11 月 17 日至 19 日免实际公告生效；执法以 11 月 16 日至 17 日实际公告为准；每日 7 时至 17 时执行。案卷号 USCG-2026-1407。\n· 信息边界：海岸警卫队认定时间紧迫无法征求意见，依 5 U.S.C. 553(d)(3) 认定正当理由成立，缩短 30 日生效期。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-16",
