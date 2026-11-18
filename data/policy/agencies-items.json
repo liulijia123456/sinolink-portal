@@ -1,9 +1,77 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-17 14:47",
-  "count": 134,
+  "updated_at": "2026-11-18 09:29",
+  "count": 138,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-17",
+      "title": "Protecting Consumers From SIM-Swap and Port-Out Fraud",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23400/protecting-consumers-from-sim-swap-and-port-out-fraud",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23400",
+      "title_cn": "SIM 换卡与携号转网欺诈防护规则：生效与合规日期公告",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "美国联邦通信委员会有线竞争局就 SIM 换卡与携号转网欺诈防护规则发布生效与合规日期公告（WC 卷宗 21-341，FCC 23-95）。\n白宫管理与预算办公室已于 2025 年 1 月 15 日核准该规则项下客户专有网络信息采集要求，控制编号 3060-0715，有效期三年。\n据此，2023 年 12 月 8 日刊登的 47 CFR 64.2010(h) 第（2）至（6）项及第（8）项修订于 2026 年 11 月 17 日生效，受涵盖运营商须于 2026 年 12 月 17 日前完成合规。\n公告同时修改第 64.2010(h)(9) 项，写入合规日期并删除等待预算办公室核准的过渡表述。\n本件为生效日期公告，规则实体内容见 2023 年原命令，未作新的义务设定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-17",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23388/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23388",
+      "title_cn": "付费电话补偿规则信息采集审查通告（OMB 3060-1046）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "美国联邦通信委员会依《文书削减法》就一项现行信息采集公开征求意见，控制编号 3060-1046，主题为第 64 编付费电话补偿规则现代化等（WC 卷宗 17-141）。\n本次属既有采集的延期审查，非新设报送义务。应答方为营利性企业，共 215 家、1,467 份答复，单次用时 0.5 至 30 小时，年度总负担 22,606 小时，无直接成本。\n采集依据为《通信法》第 276 条，要求确保付费电话服务商就每通完成呼叫获得公平补偿；2018 年报告与命令（FCC 18-21）已取消通话追踪系统审计等要求。\n书面意见截止 2027 年 1 月 19 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-17",
+      "title": "Modernizing the Commission's National Environmental Policy Act Rules",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23385/modernizing-the-commissions-national-environmental-policy-act-rules",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23385",
+      "title_cn": "委员会《国家环境政策法》规则现代化最终规则",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "美国联邦通信委员会发布《国家环境政策法》实施规则现代化最终规则（WT 卷宗 25-217，FCC 26-64，2026 年 9 月 30 日通过）。\n规则重构审查顺序：先判断拟议行动是否构成重大联邦行动，仅在构成时才适用绝对排除；并明确频谱牌照核发本身、无委员会资金投入的私人建设、地球站与空间站牌照核发、无需天线结构登记的通用区域牌照部署四类不构成重大联邦行动。\n委员会保留现行宽口径绝对排除及例外清单，未采纳按行动类型分设排除的建议，另增采纳其他机构绝对排除的程序条款。\n环境评估加设 75 页上限与一年完成期限，公开通告期由 30 日缩至 20 日；历史保存审查与《国家历史保存法》第 106 条程序脱钩。\n规则 2026 年 12 月 17 日生效，涉文书削减法的数十项修订无限期延迟。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-17",
+      "title": "Corrugated Die-Cut Cardboard Boxes From China, Malaysia, and Turkey; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23401/corrugated-die-cut-cardboard-boxes-from-china-malaysia-and-turkey-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23401",
+      "title_cn": "瓦楞模切纸箱（中国、马来西亚、土耳其）初裁：肯定性产业损害认定",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "美国国际贸易委员会就中国、马来西亚、土耳其瓦楞模切纸箱双反调查作出初裁（701-TA-806、731-TA-1805 至 1807），认定有合理迹象表明美国产业因低于公平价值进口（三国）及土耳其补贴进口而受到实质损害。\n涉案产品归入 HTS 税号 4819.10.00。申请方为美国披萨盒制造商联盟（Smurfit Westrock、Pratt Industries）与美国钢铁纸业等工会，2026 年 9 月 9 日立案，9 月 30 日举行调查庭，11 月 13 日完成表决并报送。\n案件转入终局阶段，委员会将在商务部初裁或终裁为肯定性后发布终局日程公告；已参加初裁阶段答辩的当事人无须另行登记。\n委员 Negatu 未参与本案。完整意见见委员会出版物 5810。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-16",
