@@ -1,9 +1,81 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-17 14:53",
-  "count": 105,
+  "updated_at": "2026-11-18 10:04",
+  "count": 109,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-17",
+      "title": "Sean Nealy v. John Phelan",
+      "url": "https://www.courtlistener.com/opinion/11063174/sean-nealy-v-john-phelan/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区巡回上诉法院",
+      "summary": "his rating, the ten-percent rating was arbitrary and capricious. The district court rejected those arguments",
+      "official_no": "",
+      "title_cn": "尼利 诉 费伦（涉海军伤残评级调整与退役待遇，维持原判）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区巡回上诉法院11月17日维持地区法院判决，驳回海军退伍军人尼利（Sean Nealy）的诉求。尼利1996年至2008年在海军服役，因创伤后应激障碍申请伤残退役待遇，海军初评其伤残等级为10%，仅可获一次性离职补偿。海军伤残复审委员会其后追溯认定其六个月内为50%临时伤残，永久等级仍为10%，海军采纳该建议。尼利主张海军未先行体检即下调等级属越权，且10%评级任意专断。合议庭认为，第1554a条授权复审委员会依服役记录与既有证据提出等级修改建议，伤残评定表第4.129条的体检要求不适用于追溯调整，第1210条于本案不适用；10%评级有实质证据支持。判决强调对军方评级决定适用高度尊重审查标准，并援引第四巡回法院Coleman案。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-17",
+      "title": "Dolan v. Federal Emergency Management Agency",
+      "url": "https://www.courtlistener.com/opinion/11063172/dolan-v-federal-emergency-management-agency/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第十巡回上诉法院",
+      "summary": "noneconomic damages under the Act was arbitrary and capricious and contrary to law. Dolan v. FEMA, 760",
+      "official_no": "",
+      "title_cn": "多兰 诉 联邦应急管理署（涉野火赔偿法非经济损失的主权豁免范围，撤销并发回）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "第十巡回上诉法院11月17日撤销新墨西哥联邦地区法院判决并发回。2022年4月，美国林务局在新墨西哥州实施的两处计划烧除失控合并为「隐士峰／卡尔夫峡谷」野火，国会随后通过专项赔偿法，授权联邦应急管理署（FEMA）制定规则并赔付受灾者。FEMA在最终规则中解释该法不允许赔偿非经济损失，多名受灾者依《行政程序法》起诉。地区法院认定该解释任意专断且违法，撤销最终规则并命FEMA受理非经济损失请求。上诉法院认为争点在于该法是否以明确无疑的方式放弃主权豁免，结论为否定：豁免放弃范围不及于非经济损失，故撤销并发回。McHugh法官持异议，认为该法援引《联邦侵权索赔法》的「损害」定义，已涵盖依州侵权法的非经济损害，应维持原判。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-17",
+      "title": "Miller v. McDonald",
+      "url": "https://www.courtlistener.com/opinion/11063165/miller-v-mcdonald/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "district court dismissed the motion for a preliminary injunction as moot and dismissed the complaint under",
+      "official_no": "",
+      "title_cn": "米勒 诉 麦克唐纳（涉学校疫苗强制令宗教豁免，驳回全院重审）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "第二巡回上诉法院11月17日作出命令，驳回对米勒诉麦克唐纳案进行全院庭审复审的请求。该案由纽约州老派阿米什家长与三所阿米什学校提起，挑战纽约州《公共卫生法》第2164条：该条要求学龄儿童接种疫苗方可入学，2019年州议会取消宗教豁免后，州卫生厅审计认定原告不合规并按每生每日2000美元计罚。地区法院以起诉状未陈述可救济主张为由驳回，合议庭维持；联邦最高法院其后准予调卷、撤销并发回，要求依Mahmoud诉Taylor案重新审理。发回后合议庭再次维持原判，认为该先例不适用。本次全院复审投票未获多数，重审请求被驳回；Park与Menashi两位法官分别发表异议，主张应适用严格审查，并指出与其他巡回法院存在分歧。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-17",
+      "title": "National Review Inc. v. Domestic Policy Council",
+      "url": "https://www.courtlistener.com/opinion/11063684/national-review-inc-v-domestic-policy-council/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "C. Sept. 24, 2021) (same under the Administrative Procedure Act) (citing Democracy Forward Found., 356",
+      "official_no": "",
+      "title_cn": "《国家评论》公司 诉 国内政策委员会（涉白宫办公室是否属《信息自由法》机关，准予驳回起诉）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-17",
+        "body": "哥伦比亚特区联邦地区法院11月17日准予被告驳回起诉动议，驳回《国家评论》公司依《信息自由法》提出的诉讼。原告向白宫国内政策委员会提交信息公开请求后起诉，被告以起诉状未陈述可救济主张为由请求驳回。法院认为本案争点单一：国内政策委员会是否属于《信息自由法》所称「机关」。依最高法院Kissinger案与哥伦比亚特区巡回法院Meyer案、Judicial Watch案的脉络，白宫办公室内的总统直属幕僚单位不属于该法定义的机关，无需再逐一审查其职能；法院并指出，即便按原告主张适用职能标准，该委员会亦未独立于总统行使实质权限。据此，被告无《信息自由法》上的披露义务，起诉被驳回。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-16",
@@ -14,13 +86,13 @@
       "agency": "联邦巡回上诉法院",
       "summary": "December 5, 2024, Traxcell moved for a preliminary injunction in the Western District to bar Verizon",
       "official_no": "",
-      "title_cn": "Traxcell 诉 Verizon 无线（专利侵权律师费另案，因无管辖权撤销发回）",
-      "domain": "科技/AI",
       "brief": {
         "at": "2026-11-17",
         "body": "联邦巡回上诉法院11月16日就专利侵权诉讼衍生的律师费执行争议作出判决：确认本院有上诉管辖权，但认定西得克萨斯联邦地区法院对本案缺乏管辖权，撤销其判决并发回，指令驳回起诉。\n案件源于 Traxcell 于2017年在东得克萨斯联邦地区法院起诉 Verizon 专利侵权。权利要求解释阶段部分权利要求被认定不清楚，2020年地区法院对其余权利要求作出不侵权简易判决，2022年又依《专利法》第285条判由 Traxcell 承担 Verizon 律师费。两次上诉均被维持，调卷令亦被驳回。\n此后 Traxcell 转而在西得州提起独立诉讼，请求禁止执行该律师费裁定。初步禁令申请被驳回后，双方合意作出终局判决。上诉法院的处理表明，此类请求实为对原判决的间接攻击。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Traxcell 诉 Verizon 无线（专利侵权律师费另案，因无管辖权撤销发回）",
+      "domain": "科技/AI"
     },
     {
       "board": "judicial",
@@ -32,13 +104,13 @@
       "agency": "第三巡回上诉法院",
       "summary": "quo, constitutes irreparable harm, and a preliminary injunction should have been entered in this case to",
       "official_no": "",
-      "title_cn": "圣三一乌克兰天主教堂诉科利尔镇（RLUIPA 分区案，驳回全院庭审复审）",
-      "domain": "住房",
       "brief": {
         "at": "2026-11-17",
         "body": "第三巡回上诉法院11月16日驳回圣三一乌克兰天主教堂的全院庭审复审请求，维持合议庭10月19日的裁定。合议庭认为科利尔镇拒绝教堂为圣玛丽圣殿项目重新分区，很可能构成《宗教土地使用与机构人员法》（RLUIPA）下的实质性负担，但未认定该负担达到不可弥补损害的程度，故维持地区法院驳回初步禁令申请的处理。\nPhipps 法官（Matey、Bove、Mascott 三位法官联署）发表反对意见，认为 RLUIPA 下对宗教活动的实质性负担本身即构成不可弥补损害，合议庭另创「时间敏感的宗教损害」标准缺乏先例支持，且与本院 Anash 案相悖，故应准许全院复审。\n该命令以多数意见驳回复审请求，四位法官持异议。本次裁定为程序性处置，不构成对教堂实体主张的终局判断。",
         "tier": "note"
-      }
+      },
+      "title_cn": "圣三一乌克兰天主教堂诉科利尔镇（RLUIPA 分区案，驳回全院庭审复审）",
+      "domain": "住房"
     },
     {
       "board": "judicial",
@@ -50,13 +122,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "adopted an unlawful, coordinated policy of sanctioning law firms and their lawyers for engaging in",
       "official_no": "",
-      "title_cn": "美国律师协会诉总统行政办公室（挑战制裁律所行政令的取证争议）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-17",
         "body": "哥伦比亚特区联邦地区法院11月16日就美国律师协会诉总统行政办公室一案作出备忘录意见与命令，部分准许、部分驳回原告的强制取证动议。该裁定属取证阶段的中间处置，未涉及被诉行政令的合法性。\n美国律师协会于2025年6月起诉，主张行政部门针对其不认可的言论，对律所及律师形成一套协同的制裁政策；起诉状以十四周内密集发布的系列行政令为据。政府方援引 Cheney 案所确立的总统办公室自主权与通讯保密利益，反对向其送达的取证请求。\n法院逐项权衡取证必要性与行政部门利益后作出分项处理：第3、4、5、6、11、12项因已无实际意义驳回；第8、10、14、15、16项无偏驳回；第1、2、7、9、13项按收窄后的范围准许。政府提出的中止请求因时机未到被驳回。双方须于12月4日前协商检索词并提交联合进展报告。",
         "tier": "note"
-      }
+      },
+      "title_cn": "美国律师协会诉总统行政办公室（挑战制裁律所行政令的取证争议）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -68,13 +140,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "(Dec. 30, 2022). Subsequently, the EPA issued a final rule on July 12, 2023, “establish[ing] an applicable",
       "official_no": "",
-      "title_cn": "美国燃料与石化制造商协会诉 Zeldin（纤维质生物燃料豁免之诉被驳回）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-17",
         "body": "哥伦比亚特区联邦地区法院11月16日部分准许政府方的驳回动议、驳回原告的简易判决动议，以缺乏事项管辖权为由整体驳回美国燃料与石化制造商协会的起诉。判决未触及可再生燃料标准实体规则本身的合法性。\n原告于2024年8月15日依《清洁空气法》公民诉讼条款起诉，主张环保署未按第211(o)条对2023年度纤维质生物燃料要求作部分豁免，亦未提供相应信用额度。\n法院认定原告未证明其成员遭受具体、特定化的实际损害，缺乏起诉资格；即便具备资格，该豁免条款亦非「明确的、非裁量的、附确定期限」的义务，公民诉讼途径不能成立；至于信用额度，仅在署长下调最低量时才触发，而哥伦比亚特区巡回法院已维持2023年度量，故无此义务。",
         "tier": "note"
-      }
+      },
+      "title_cn": "美国燃料与石化制造商协会诉 Zeldin（纤维质生物燃料豁免之诉被驳回）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -86,13 +158,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "reasonable and prudent alternatives to the agency action”; (2) “the benefits of such action clearly",
       "official_no": "",
-      "title_cn": "自然资源保护委员会诉伯古姆（濒危物种委员会豁免决定的管辖权）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-17",
         "body": "哥伦比亚特区联邦地区法院11月16日准许联邦被告的驳回动议，以缺乏管辖权为由驳回自然资源保护委员会对濒危物种委员会豁免决定的起诉，并驳回原告提交补充答辩状的申请。\n案件针对国防部长依《濒危物种法》第7条认定国家安全需要、委员会据此对墨西哥湾油气活动授予豁免。原告主张委员会未履行法定申请与咨询程序，故其决定不受第1536(n)条排他审查条款约束，地区法院有管辖权。\n法院认定：所有豁免均须依第(h)款作出，(j)款仅是「必须授予」的裁决规则而非独立授权路径；第(n)款将审查权排他性交予联邦上诉法院，程序瑕疵不改变管辖归属。原告未单独抗辩的国家安全认定与《国家环境政策法》主张视为放弃。委员会是否实际遵行程序，法院未予置评。",
         "tier": "note"
-      }
+      },
+      "title_cn": "自然资源保护委员会诉伯古姆（濒危物种委员会豁免决定的管辖权）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -1864,9 +1936,9 @@
       "title": "People Not Politicians v. Onder",
       "url": "https://www.courtlistener.com/opinion/10984030/people-not-politicians-v-onder/",
       "source": "CourtListener",
-      "kind": "裁定",
+      "kind": "判决",
       "agency": "美国最高法院",
-      "summary": "Cite as: 609 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 26A388 _________________ PEOPLE NOT POLITICIANS, ET AL. v. ROBERT ONDER, ET AL. ON APPLICATION FOR STAY [September 25, 2026] PER CURIAM. In 2022, the Missouri Legislature enacted a redistricting map for elections",
+      "summary": "PER CURIAM.In 2022, the Missouri Legislature enacted a redistricting map for elections to the U. S. House of Representatives. In 2025, the Missouri Legislature enacted a new map. But under the Missouri Constitution as interpreted by the Supreme Court of Missouri, a new law such as the 2025 map does not take effect unless and until approved by voters in a referendum in the next election—at least where, as here, the number of voter signatures on the petition suffices to trigger a referendum. Therefore",
       "official_no": "",
       "brief": {
         "at": "2026-10-28",
