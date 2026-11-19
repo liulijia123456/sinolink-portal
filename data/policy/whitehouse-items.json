@@ -1,9 +1,213 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-18 08:18",
-  "count": 362,
+  "updated_at": "2026-11-19 09:48",
+  "count": 374,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Applications for Inclusion on the Binational Panels Roster Under the United States-Mexico-Canada Agreement",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23412/applications-for-inclusion-on-the-binational-panels-roster-under-the-united-states-mexico-canada",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美国贸易代表办公室 USTR",
+      "official_no": "2026-23412",
+      "title_cn": "《美墨加协定》双边专家组名册申请（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：美国贸易代表办公室（USTR）通告，案卷号 USTR-2026-0562，91 FR 74270。\n· 核心动作：依《美墨加协定》双边专家组机制，公开征集拟列入 2027 年 4 月 1 日至 2028 年 3 月 31 日名册的合格人选申请。\n· 机制用途：该名册供审理反倾销、反补贴终裁以及协定一方相关法律修订争议的双边专家组选用；美国每年更新其名册人选，本次属年度例行征集。\n· 信息边界：申请截止日期未见于官方摘要，具体以联邦公报文本为准；通告仅涉人员遴选，不涉及任何在审案件的裁决。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Racial Nondiscrimination in Private Schools; Hearing",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23533/racial-nondiscrimination-in-private-schools-hearing",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "财政部",
+      "official_no": "2026-23533",
+      "title_cn": "私立学校种族非歧视规则：补充听证会公告（拟议规则）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：财政部（国税局）拟议规则程序文件，案卷 REG-119986-25，RIN 1545-BS05，91 FR 74132。\n· 核心动作：为 2026 年 9 月 4 日刊发的同名拟议规则增设一场公众听证会日期。\n· 规则实体内容：私立学校若在办学、招生、奖助学金、体育或其他政策的管理中基于种族、肤色、民族或族裔出身实施歧视，即不属于联邦所得税免税组织；依据为美国反对此类做法的基本公共政策。\n· 程序阶段：仍处拟议阶段，本件仅调整听证安排，未修改提案文本。\n· 信息边界：新增听证会的具体日期未见于官方摘要，以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Automatic Enrollment Requirements Under Section 414A",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23530/automatic-enrollment-requirements-under-section-414a",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23530",
+      "title_cn": "《国内收入法典》第 414A 条自动加入要求（最终规则）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "【政策背景】\n2022 年 12 月 29 日，《2022 年综合拨款法》T 编《SECURE 2.0 法案》（Public Law 117-328）第 101 条在《1986 年国内收入法典》中新增第 414A 条，要求特定退休计划必须为雇员自动加入缴费安排，将「自动加入 + 逐年递增缴费率」确立为多数新设缴费确定型计划的默认框架。财政部与国税局据此制定实施细则，2026 年 11 月 18 日以 TD 10061（RIN 1545-BR08）刊发最终规则，修订 26 CFR 第 1 部与第 602 部；规则同时修订 1.414(w)-1 条，以衔接第 414(w) 条允许性提取与第 414(bb) 条「未加入参与者」通知豁免（SECURE 2.0 第 320 条）。\n\n【核心内容】\n适用范围上，规则不适用于 2022 年 12 月 29 日之前设立的 401(k) 与 403(b) 计划，亦不适用于 SIMPLE 401(k)、政府计划与教会计划。受覆盖计划须采用「合格自动缴费安排」（EACA），并满足第 414A(b)(2) 至 (4) 条的要求：允许雇员作出允许性提取；初始默认缴费率不低于 3%、不高于 10%；默认缴费率在每个计划年度开始后按 1 个百分点递增，上限不低于 10%、不高于 15%；未作投资选择的缴费须按 29 CFR 2550.404c-5 投资，即符合合格默认投资替代方案要求。存续不足三年、或通常雇员不超过 10 人的小型与新设雇主享有过渡性豁免，该豁免在雇主通常雇员超过 10 人的首个纳税年度结束满一年时终止。\n\n【要点提炼】\n生效日为 2027 年 1 月 19 日，一般适用于 2027 年 12 月 31 日之后开始的计划年度，1.414A-1(f)(2) 另设适用日期细则。合规底线为三项条件：3% 至 10% 的初始默认费率、每年递增 1 个百分点至 10% 至 15% 的上限、默认投资符合合格默认投资替代方案，计划发起人与管理人须据此修改计划文件与自动加入流程。小企业与新设企业豁免以人数与存续年限双重标准界定，可因人数跨越而失效。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Income Taxes",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23514/income-taxes",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "财政部",
+      "official_no": "2026-23514",
+      "title_cn": "所得税（《联邦法规汇编》技术更正）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "【政策背景】\n该文件由联邦公报办公室刊发，属《联邦法规汇编》年度修订中编辑或技术错误的更正，不涉及实质性规则变更，非财政部或国税局作出的政策决定。被更正的条文为 26 CFR 第 1 部（1.0 至 1.60 节）2026 年 4 月 1 日修订版中的 1.36B-2 条。该条属《平价医疗法案》保费税收抵免实施规则体系，规定纳税人取得保费税收抵免的资格条件；其中 (c)(3)(v) 项处理「健康补偿安排（HRA）及其他账户型团体健康计划」与个人市场覆盖的整合问题，(c)(5) 项则具体规定 HRA 或账户型团体健康计划在某一月份对「关联 HRA 个人」是否构成可负担。\n\n【核心内容】\n更正包含两项。第一，恢复 (c)(3)(v)(A)(2) 项第三句的表述，内容为「关于本节 (c)(3)(i)(B) 项所述 HRA 或其他账户型团体健康计划在某一月份对关联 HRA 个人是否可负担的规则，见本节 (c)(5)」；该句在年度修订版中缺失，恢复后使条内交叉指引重新完整。第二，将 (c)(3)(v)(D)(13) 项的标题补正为「示例 13：健康计划激励」，即在原有标题「健康计划激励」前加注「示例 13：」，使其与同项下其他示例的编号体例保持一致。两项更正均不增加、不删除、不修改任何实体义务，亦不改变纳税人的申报义务或抵免计算方式。\n\n【要点提炼】\n性质上，本件系联邦公报办公室依编辑职责作出的技术更正，无评论程序，亦无独立生效日，随更正文本刊发即行适用。影响范围限于汇编文本的条内交叉指引与示例标题，实体规则仍以现行 1.36B-2 条及 (c)(5) 项规定为准。实务意义在于，条文交叉指引的缺失可能影响查阅者对「关联 HRA 个人可负担性」判断依据的定位，更正后该指引恢复完整；示例标题补正则便于引用与检索。以上依据联邦公报所刊更正文本归纳，具体适用以《联邦法规汇编》正式文本为准。",
+        "tier": "full"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Atlantic Highly Migratory Species; Atlantic Bluefin Tuna Fisheries; General Category December Quota Transfer",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23477/atlantic-highly-migratory-species-atlantic-bluefin-tuna-fisheries-general-category-december-quota",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "official_no": "2026-23477",
+      "title_cn": "大西洋高度洄游物种；大西洋蓝鳍金枪鱼渔业：一般类别 12 月配额划转（规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：商务部国家海洋渔业局（NMFS）最终规则，91 FR 74128。\n· 核心动作：从储备类别划转 26 公吨配额至大西洋蓝鳍金枪鱼「一般类别」2026 年 12 月时段子配额，调整后该时段子配额为 42.4 公吨，储备类别余 1 公吨。\n· 适用对象：持大西洋金枪鱼一般类别（商业）许可的船舶，以及持高度洄游物种包船／头船许可并具商业销售背书、从事商业捕捞的船舶。\n· 生效时点：2026 年 12 月 1 日。\n· 信息边界：属配额管理性调整，未改变渔业管理框架或许可条件。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Pacific Island Fisheries; Longline Retention Prohibition; Striped Marlin in the Western and Central Pacific Ocean North of the Equator",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23475/pacific-island-fisheries-longline-retention-prohibition-striped-marlin-in-the-western-and-central",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "商务部",
+      "official_no": "2026-23475",
+      "title_cn": "太平洋岛屿渔业：赤道以北中西太平洋条纹枪鱼延绳钓留持禁令（规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：商务部国家海洋渔业局（NMFS）最终规则，91 FR 74129。\n· 核心动作：自刊发日起至 2026 年底，禁止持夏威夷延绳钓有限进入许可的船舶留持赤道以北、西经 150 度以西中西太平洋水域的条纹枪鱼。\n· 触发原因：该延绳钓渔业已达到 2026 年留持上限。\n· 政策目的：防止美国超出中西太平洋渔业委员会（WCPFC）决议所设捕捞限额，确保国内实施规则合规。\n· 信息边界：系年度限额触顶后的常规管理措施，不涉及许可条件或作业区域的普遍变更。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Takes of Marine Mammals Incidental to Specified Activities; Taking Marine Mammals Incidental to Military Readiness Activities in the Mariana Islands Training and Testing Study Area",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23450/takes-of-marine-mammals-incidental-to-specified-activities-taking-marine-mammals-incidental-to",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "商务部",
+      "official_no": "2026-23450",
+      "title_cn": "特定活动附带捕获海洋哺乳动物：马里亚纳群岛训练与试验区军事战备活动（拟议规则）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：商务部国家海洋渔业局（NMFS）拟议规则，RIN 0648-BO60，91 FR 74284。\n· 核心动作：就海军（含海军陆战队）代表海岸警卫队、陆军、空军提出的《海洋哺乳动物保护法》附带捕获条例与授权书申请，公开征求意见。\n· 适用范围：马里亚纳群岛训练与试验区内的训练、试验活动及靶场现代化与维护，拟覆盖 2027 年 7 月至 2034 年 7 月共七年。\n· 程序节点：评论截止 2026 年 12 月 18 日，此后由 NMFS 决定是否发布最终规则。\n· 信息边界：仍处拟议阶段，是否授权及具体捕获额度由 NMFS 后续决定。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Proposed QPAM Re-Eligibility Options After Disqualification (QROAD) Class Prohibited Transaction Exemption",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23465/proposed-qpam-re-eligibility-options-after-disqualification-qroad-class-prohibited-transaction",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "劳工部",
+      "official_no": "2026-23465",
+      "title_cn": "合格专业资产管理人失格后重获资格选项（QROAD）类别禁止交易豁免（拟议规则）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：劳工部拟议类别禁止交易豁免，申请号 D-12126，91 FR 74434。\n· 核心动作：拟设「失格后重获资格选项」（QROAD）类别豁免，允许特定合格专业资产管理人（QPAM）在发生本会致其依 PTE 84-14 第 I(g) 条失格的事件后，继续适用 QPAM 类别豁免。\n· 适用条件：管理人须遵守该拟议豁免所列保护性条件，方可使用这一替代路径。\n· 边界：不改变 ERISA 第 404 条项下的受托义务，亦不扩大 PTE 84-14 现有的豁免范围。\n· 程序节点：评论截止 2027 年 1 月 19 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Airworthiness Directives; BRP-Rotax GmbH & Co KG (Formerly BRP-POWERTRAIN GMBH & CO KG and Bombardier-Rotax GmbH) Engines",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/C1-2026-22307/airworthiness-directives-brp-rotax-gmbh-and-co-kg-formerly-brp-powertrain-gmbh-and-co-kg-and",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "C1-2026-22307",
+      "title_cn": "适航指令；BRP-Rotax 有限公司发动机（更正）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：交通部联邦航空管理局（FAA）更正件，91 FR 74086，案卷 FAA-2026-11820，适航指令 AD 2026-22-03。\n· 更正对象：2026 年 11 月 2 日刊发、起始于 91 FR 68882 的适航指令（FR 文件号 2026-22307），涉 BRP-Rotax 有限公司（原 BRP-POWERTRAIN、庞巴迪-罗泰克斯）发动机。\n· 更正内容：第 68882 页第三栏 DATES 部分的「2026 年 11 月 23 日」应为「2026 年 11 月 4 日」。\n· 性质：属技术性更正，不改变指令的适用范围与技术性要求，仅修正日期表述。\n· 关联说明：原始指令条目已于 2026 年 11 月 2 日入库，本条为独立更正文件，两者并存。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Accepted Means of Compliance; Airworthiness Standards: Normal Category Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23525/accepted-means-of-compliance-airworthiness-standards-normal-category-airplanes",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23525",
+      "title_cn": "可接受符合性方法；适航标准：正常类飞机（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：交通部联邦航空管理局（FAA）规则，91 FR 74070，案卷 FAA-2026-6604。\n· 核心动作：认定 ASTM F3264-25《正常类飞机认证标准规范》可作为正常类飞机适航标准的 FAA 可接受符合性方法，并载明本文件所列出的修改之处。\n· 适用场景：正常类飞机型号合格审定中，申请人可选用该共识标准作为表明符合适航要求的方法之一。\n· 生效时点：2026 年 11 月 18 日。\n· 信息边界：属符合性方法认可，不改变适航标准本身的实体要求，亦不影响其他可接受的符合性路径。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Amendment of Class D and Class E Airspace; Naples, FL",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23437/amendment-of-class-d-and-class-e-airspace-naples-fl",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23437",
+      "title_cn": "D 类与 E 类空域修订：佛罗里达州那不勒斯（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：交通部联邦航空管理局（FAA）拟议规则，RIN 2120-AA66，案卷 FAA-2026-13869、空域案卷 26-ASO-18，91 FR 74131。\n· 核心动作：修订佛罗里达州那不勒斯的 D 类地面空域，以完整包容仪表飞行规则程序。\n· 配套调整：删除不再需要的 E 类过渡空域延伸区；缩减自地面 700 英尺向上的 E 类空域，理由为仪表进近程序更新后已降低空域需求；并对空域法律描述作行政性更新。\n· 程序节点：评论截止 2027 年 1 月 4 日，尚未生效。\n· 信息边界：拟议阶段，最终空域边界与生效日期以最终规则为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-18",
+      "title": "Safety Zone; Mississippi River, New Orleans, LA",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23452/safety-zone-mississippi-river-new-orleans-la",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23452",
+      "title_cn": "安全区；密西西比河新奥尔良段（规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-19",
+        "body": "· 文种与主体：国土安全部海岸警卫队规则，91 FR 74109，案卷 USCG-2026-0466，RIN 1625-AA00。\n· 核心动作：在新奥尔良附近密西西比河可航水域设立临时安全区。\n· 设立事由：应对船舶碰撞并沉没后的处置作业，保护人员、船舶与海洋环境免受相关潜在危险。\n· 管制内容：未经新奥尔良分区港务长或其指定代表特别许可，禁止船舶或人员进入该安全区。\n· 生效时点：2026 年 11 月 18 日。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-17",
@@ -13,13 +217,13 @@
       "kind": "规则",
       "agency": "司法部",
       "official_no": "2026-23320",
-      "title_cn": "移民上诉委员会上诉程序（最终规则）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：司法部（移民审查执行办公室 EOIR）最终规则，91 FR 73876，修订 8 CFR 第 1003、1208、1240 部分。\n· 核心动作：将 2026 年 2 月发布的临时最终规则（IFR）定稿。该 IFR 旨在简化移民上诉委员会（BIA）程序；本次最终规则回应征求意见期内收到的评论，并以小幅修改定稿。\n· 程序节点：IFR 于 2026 年 3 月 9 日生效，评论期 2026 年 4 月 8 日截止；本最终规则 2026 年 12 月 17 日生效。案卷号 EOIR-26-AB37、主任令第 12-2026 号，规章标识号 1125-AB37。\n· 信息边界：官方摘要未逐条列明所采纳的修改内容，具体条款以联邦公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "移民上诉委员会上诉程序（最终规则）",
+      "domain": "司法/执法"
     },
     {
       "board": "whitehouse",
@@ -30,13 +234,13 @@
       "kind": "规则",
       "agency": "商务部",
       "official_no": "2026-23365",
-      "title_cn": "华盛顿州北普吉特海湾海洋设施更换项目附带性捕获海洋哺乳动物（最终规则）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：商务部国家海洋渔业局（NMFS）最终规则，91 FR 73685，修订 50 CFR 第 217 部分。\n· 核心动作：依《海洋哺乳动物保护法》（MMPA）应华盛顿州公园与游憩委员会申请，就该州北普吉特海湾海洋设施更换项目（MFRP）建设活动中的附带性捕获签发最终规则及配套五年期授权书（LOA）。\n· 规则内容：规定可允许的捕获方式、将对海洋哺乳动物物种及其栖息地的不利影响降至最低可行程度的措施，并设定捕获监测与报告要求；授权覆盖期为五年。\n· 程序节点：2026 年 11 月 17 日生效；案卷号 261112-0006，规章标识号 0648-BO18。\n· 信息边界：官方摘要未列明各物种的捕获配额与具体监测频次，以联邦公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "华盛顿州北普吉特海湾海洋设施更换项目附带性捕获海洋哺乳动物（最终规则）",
+      "domain": "能源/环境"
     },
     {
       "board": "whitehouse",
@@ -47,13 +251,13 @@
       "kind": "拟议规则",
       "agency": "劳工部",
       "official_no": "2026-23390",
-      "title_cn": "可吸入结晶二氧化硅与呼吸防护：更正（拟议规则）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：劳工部矿山安全与健康管理局（MSHA）拟议规则更正，91 FR 73726，涉及 30 CFR 第 71 部分。\n· 核心动作：对 2026 年 11 月 12 日刊发的「可吸入结晶二氧化硅与呼吸防护」拟议规则作勘误，更正其中的一处错误；该拟议规则本身旨在澄清并修订 MSHA 的结晶二氧化硅与呼吸防护标准条款。\n· 程序节点：本更正 2026 年 11 月 17 日生效。案卷号 MSHA-2026-0200，规章标识号 1219-AC22。\n· 关联条目：原始拟议规则（文档号 2026-23048，2026 年 11 月 12 日刊发）为独立文件，与本更正分别入库。\n· 信息边界：官方摘要未说明所更正的具体字句，以联邦公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "可吸入结晶二氧化硅与呼吸防护：更正（拟议规则）",
+      "domain": "教育/劳动"
     },
     {
       "board": "whitehouse",
@@ -64,13 +268,13 @@
       "kind": "拟议规则",
       "agency": "劳工部",
       "official_no": "2026-23370",
-      "title_cn": "PERM 移民签证项目劳动力市场测试现代化与本国工人保护强化（拟议规则）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：劳工部拟议规则（NPRM），91 FR 73916，修订 20 CFR 第 656 部分永久劳工证（PERM）法规。\n· 核心动作：提高永久劳工证受理与审查标准，保护同类岗位美国工人的工资与就业机会。主要修订：取消附表 A（Schedule A）继续执行，该类别原可豁免法定劳动力市场测试；强化最低招聘标准，要求雇主接触尽可能广泛的合格美国劳动力。\n· 其他修订：加强裁员情形下美国工人保障，含第三方派遣裁员的申报义务；扩大劳工证申请（NOF）告知要求；将劳工部电子受理与审理做法条文化。\n· 程序节点：评论截止 2027 年 1 月 19 日。案卷号 ETA-2026-0133，规章标识号 1205-AC29。\n· 信息边界：本件为拟议规则，尚未生效；最终形态以定稿文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "PERM 移民签证项目劳动力市场测试现代化与本国工人保护强化（拟议规则）",
+      "domain": "教育/劳动"
     },
     {
       "board": "whitehouse",
@@ -81,13 +285,13 @@
       "kind": "拟议规则",
       "agency": "卫生与公众服务部",
       "official_no": "2026-23351",
-      "title_cn": "规定 N-乙酰-L-半胱氨酸不排除于膳食补充剂定义之外（拟议规则）",
-      "domain": "农业/食品",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：卫生与公众服务部食品药品管理局（FDA）拟议规则，91 FR 73717，涉及 21 CFR 第 190 部分。\n· 核心动作：拟制定法规，认定 N-乙酰-L-半胱氨酸（NAC）不属于《联邦食品、药品和化妆品法》（FD&C Act）膳食补充剂定义所排除的物质。\n· 法律效果：若定稿，含 NAC 的产品可在不违反该法的前提下合法作为膳食补充剂销售；FDA 同时拟规定，向膳食补充剂中添加 NAC 不构成该法第 301(ll) 条项下的禁止行为。\n· 程序节点：评论截止 2027 年 1 月 19 日。案卷号 FDA-2025-N-2699，规章标识号 0910-AI91。\n· 信息边界：本件为拟议规则，尚未生效；NAC 产品的合规判断仍以该法其他条款为限。",
         "tier": "note"
-      }
+      },
+      "title_cn": "规定 N-乙酰-L-半胱氨酸不排除于膳食补充剂定义之外（拟议规则）",
+      "domain": "农业/食品"
     },
     {
       "board": "whitehouse",
@@ -98,13 +302,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-23397",
-      "title_cn": "联邦航空管理局支付系统现代化：强制电子支付（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：交通部联邦航空管理局（FAA）拟议规则，91 FR 73705，涉及 14 CFR 第 13、47、49、61、63、65、187、406 部分。\n· 核心动作：拟改造 FAA 收费体系，要求以电子方式付款，取消现金、汇票、纸质支票等纸质支付方式的可选性。\n· 政策依据：落实第 14247 号行政令《使美国政府账户收付现代化》，该命令要求逐步取消纸质收付、强制联邦机构收付款项采用电子方式，以提高联邦政府运行效率。\n· 程序节点：评论截止 2027 年 1 月 4 日。案卷号 FAA-2026-3538（通告号 27-01），规章标识号 2120-AM16。\n· 信息边界：本件为拟议规则，尚未生效；具体适用费用项目与豁免安排以联邦公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "联邦航空管理局支付系统现代化：强制电子支付（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -115,13 +319,13 @@
       "kind": "拟议规则",
       "agency": "交通部",
       "official_no": "2026-23372",
-      "title_cn": "适航指令：Daher Aircraft, SAS（拟议规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：交通部联邦航空管理局（FAA）拟议适航指令（AD），91 FR 73714，涉及 14 CFR 第 39 部分。\n· 适用范围：部分 SOCATA TBM 700 型飞机（型号合格证现由 Daher Aircraft, SAS 持有）。\n· 核心动作：拟以新指令取代 AD 2015-17-10。原指令要求对主起落架（MLG）锻件重复检查裂纹并视情纠正，允许更换强化起落架终止检查。\n· 本次变更：保留原动作，新增可用起落架部件，取消着色渗透检测（已不再被授权）。\n· 程序节点：评论截止 2027 年 1 月 4 日。案卷号 FAA-2026-13817，项目标识 MCAI-2026-00492-A。\n· 信息边界：本件为拟议指令，尚未生效；适用序列号清单以联邦公报文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "适航指令：Daher Aircraft, SAS（拟议规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
@@ -132,13 +336,13 @@
       "kind": "拟议规则",
       "agency": "退伍军人事务部",
       "official_no": "2026-23364",
-      "title_cn": "部分国家服务人寿保险保单停止向保单持有人收取保费（拟议规则）",
-      "domain": "社会保障",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：退伍军人事务部（VA）拟议规则，91 FR 73726，修订 38 CFR 第 8 部分国家服务人寿保险（NSLI）法规。\n· 核心动作：拟停止向持有保单前缀为「V」「J」「JR」的 NSLI 保单的退伍军人收取保费。\n· 依据：VA 认定现有资金足以覆盖剩余有效保单，据此保单可继续有效而投保人无需缴纳后续保费。上述保单所涉人群以二战时期退伍军人为主。\n· 程序节点：评论截止 2026 年 12 月 17 日。案卷号 VA-2026-VBA-0430，规章标识号 2900-AS98。\n· 信息边界：本件为拟议规则，尚未生效；停收保费的生效时点与溯及安排以定稿文本为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "部分国家服务人寿保险保单停止向保单持有人收取保费（拟议规则）",
+      "domain": "社会保障"
     },
     {
       "board": "whitehouse",
@@ -149,13 +353,13 @@
       "kind": "规则",
       "agency": "国土安全部",
       "official_no": "2026-23405",
-      "title_cn": "安全区：宾夕法尼亚州匹兹堡莫农加希拉河（临时最终规则）",
-      "domain": "交通",
       "brief": {
         "at": "2026-11-18",
         "body": "· 文种与主体：国土安全部海岸警卫队临时最终规则，91 FR 73670，依据 33 CFR 第 165 部分。\n· 核心动作：在莫农加希拉河 15 至 16 英里标之间可航水域设临时安全区，保障跨河架空线缆安装作业期间人员与船舶安全。\n· 管制要求：未经匹兹堡海事安全单位港务长或其指定代表特别许可，禁止船舶或人员进入该区域。\n· 程序节点：2026 年 11 月 17 日至 19 日免实际公告生效；执法以 11 月 16 日至 17 日实际公告为准；每日 7 时至 17 时执行。案卷号 USCG-2026-1407。\n· 信息边界：海岸警卫队认定时间紧迫无法征求意见，依 5 U.S.C. 553(d)(3) 认定正当理由成立，缩短 30 日生效期。",
         "tier": "note"
-      }
+      },
+      "title_cn": "安全区：宾夕法尼亚州匹兹堡莫农加希拉河（临时最终规则）",
+      "domain": "交通"
     },
     {
       "board": "whitehouse",
