@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-18T08:23:59+08:00",
+ "updated_at": "2026-11-19T09:55:35+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 5,
-   "added": 3,
+   "added": 1,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 2,
+   "added": 5,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 2,
+   "added": 4,
    "error": ""
   },
   {
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 11,
-   "added": 9,
+   "fetched": 12,
+   "added": 6,
    "error": ""
   },
   {
@@ -164,6 +164,276 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-18",
+   "title": "Fact Sheet: President Donald J. Trump Secures Historic Economic Deals for American Workers and Strengthens America’s Leadership in Asia",
+   "title_cn": "事实清单：特朗普访亚达成历史性经济与投资协议",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-secures-historic-economic-deals-for-american-workers-and-strengthens-americas-leadership-in-asia/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 2026年11月，特朗普对菲律宾进行国事访问，在马尼拉与马科斯宣布多项同盟与经贸协议。\n· 双方承诺通过菲方增购美国能源与农产品，消除美菲之间的贸易逆差。\n· 特朗普在东盟峰会宣布与泰国达成贸易协议实质结论，并推进对泰军售。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "U.S. Sanctions Hizballah Front Organization and Iran-Backed Financial Network",
+   "title_cn": "美国制裁真主党外围组织与伊朗支持金融网络",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/u-s-sanctions-hizballah-front-organization-and-iran-backed-financial-network/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman U.S. Sanctions Hizballah Front Organization and Iran-Backed Financial Network Press Statement November 18, 2026 Today, the United States is taking action against a Hizballah-affiliated front organization and smuggling network that supports the terrorist group’s activities. The front organization, Wa Ta’awanu Association, claims to only delive",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 美国依据第13224号行政令，制裁真主党外围组织瓦塔瓦努协会及其走私网络。\n· 美方指该组织以黎巴嫩南部救援为名，实际转运真主党人员、储存武器并输送捐款。\n· 同日制裁凯申兄弟，指其经黎巴嫩与土耳其黄金公司转移伊朗圣城旅资金。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "The United States’ Participation in the 2026 East Asia Summit",
+   "title_cn": "美国发布参与2026年东亚峰会情况说明",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-united-states-participation-in-the-2026-east-asia-summit/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman The United States’ Participation in the 2026 East Asia Summit Fact Sheet November 18, 2026 At the East Asia Summit in Manila, Philippines on November 17, the United States reaffirmed its commitment to a free and open Indo-Pacific, expressed support for ASEAN centrality, and underscored the United States as the region’s preferred partner for energy and technology. To advance",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 2026年11月17日，东亚峰会在菲律宾马尼拉举行，美国重申自由开放印太承诺。\n· 美国与东盟通过2026至2030年落实领导人联合愿景声明的综合工作计划。\n· 美方称截至2025年对东盟直接投资逾5570亿美元，支撑约53.2万个美国岗位。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "The United States – Germany Workshop Strengthens International Cooperation Against Far-Left Terrorism",
+   "title_cn": "美德联合举办反极左恐怖主义执法研讨会",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-united-states-germany-workshop-strengthens-international-cooperation-against-far-left-terrorism/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman The United States – Germany Workshop Strengthens International Cooperation Against Far-Left Terrorism Press Statement November 18, 2026 Delivering on Secretary Rubio’s announcement at the July Ministerial on the Resurgence of Political Terrorism, the U.S. Department of State and the German Federal Ministry of the Interior brought together law",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 美国国务院与德国联邦内政部本月联合举办为期两天的反恐研讨会。\n· 来自31个国家的执法与反恐人员参会，聚焦改进情报共享与协调行动。\n· 会议落实国务卿鲁比奥7月政治恐怖主义部长级会议上的宣布事项。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Secretary of State Marco Rubio Remarks to the Press",
+   "title_cn": "国务卿鲁比奥就近期技术故障事件答记者问",
+   "agency": "国务院",
+   "kind": "讲话",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-24",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Manila, Philippines Secretary of State Marco Rubio Remarks to the Press Remarks November 17, 2026 SECRETARY RUBIO: I wanted to come here today, this morning, to offer just full transparency on what we know as a government and how we view these events. The first thing I want to make very clear is that we have zero evidence whatsoever, we have no indication, no eviden",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 鲁比奥就微软、联邦航空局与银行近期接连出现的技术故障向媒体表态。\n· 他表示政府没有任何证据显示这些事件彼此关联，也无迹象指向恶意行为体。\n· 他称美国主要银行、医院与公用事业企业均设有专职网络安全团队。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Latvia National Day",
+   "title_cn": "美国就拉脱维亚独立108周年发表贺词",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/latvia-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Latvia National Day Press Statement November 18, 2026 On behalf of the United States of America, I extend my warmest congratulations to the people of Latvia in commemorating the 108th anniversary of your Proclamation of Independence. Our two nations share a longstanding and uninterrupted friendship, rooted in a commitment to freedom and sovereignty. The United State",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 美国就拉脱维亚宣布独立108周年向拉脱维亚人民致贺。\n· 声明称拉脱维亚今年成为首个立法承诺国防开支达国内生产总值百分之五的盟国。\n· 美方表示两国在贸易、能源、超级智能与地区安全领域合作不断扩大。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Texas-Based Company Pleads Guilty to Trafficking Deadly Synthetic Opioids",
+   "title_cn": "得州电商平台承认共谋贩运合成阿片类药物",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/texas-based-company-pleads-guilty-trafficking-deadly-synthetic-opioids",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 得州在线交易平台eWorldTrade LLC承认共谋分销合成阿片类药物用于非法进口。\n· 该公司同意缴纳135万美元刑事罚金，金额依其支付能力确定。\n· 2024年3月至2025年3月，其网站向付费会员提供芬太尼等产品并对接中国卖家。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Russian National Indicted for Acting as a Foreign Agent of Russia to Target Silicon Valley Technology and Defense Company",
+   "title_cn": "俄籍人员被控充任外国代理人监视硅谷企业员工",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/russian-national-indicted-acting-foreign-agent-russia-target-silicon-valley-technology-and",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 联邦大陪审团起诉俄籍人员伊戈尔·迪乌，指其共谋充任外国政府代理人。\n· 起诉书称其2026年夏经墨西哥非法入境，受俄方指使监视帕洛阿尔托科技与国防企业员工。\n· 其11月2日首次出庭后一直羁押，定于11月24日再次出庭。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Pharmacy Owner Sentenced to 82 Months in Prison for $5.6M Health Care Fraud Scheme and Illegal Distribution of Oxycodone",
+   "title_cn": "密歇根药房业主因560万美元医保欺诈获刑82个月",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/pharmacy-owner-sentenced-82-months-prison-56m-health-care-fraud-scheme-and-illegal",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 密歇根州迪尔伯恩海茨32岁药房业主纳塞尔丁被判82个月监禁及三年监督释放。\n· 其2019至2022年以伪造处方向联邦医保、医疗补助及密歇根蓝十字蓝盾虚假申报逾560万美元。\n· 同期他向毒品贩子非法分销羟考酮换取现金，目前自10月7日起被羁押。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Peruvian National Sentenced in Transnational Government Imposter Scheme that Defrauded Thousands of U.S. Consumers",
+   "title_cn": "秘鲁籍女子因冒充政府官员诈骗获刑八年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/peruvian-national-sentenced-transnational-government-imposter-scheme-defrauded-thousands-us",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 秘鲁利马45岁女子阿尔塞多·门多萨被判八年监禁及三年监督释放。\n· 其运营利马呼叫中心，冒充政府与法院人员恐吓西班牙语裔消费者实施诈骗与勒索。\n· 该案已有14名被告定罪量刑，其中10人自秘鲁引渡，属司法部网络诈骗专项行动。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Maryland Man Sentenced to 27 Years in Prison for Sex Trafficking Two Adult Women",
+   "title_cn": "马里兰州男子因贩运两名成年女性获刑27年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/maryland-man-sentenced-27-years-prison-sex-trafficking-two-adult-women",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 马里兰州乔治王子县33岁男子布兰登·萨托被判27年监禁，并赔偿23.98万美元。\n· 2024年12月至2025年4月，他以暴力、性侵与断供毒品手段强迫两名女性在六州卖淫。\n· 每名受害者每日被迫接待多达10名男子，所得款项均被其占有。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "“Lows” Gang Member Sentenced to 10 Years in Prison For His Participation in a RICO Conspiracy",
+   "title_cn": "明尼阿波利斯黑帮成员因参与RICO共谋获刑十年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/lows-gang-member-sentenced-12-years-prison-his-participation-rico-conspiracy",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 明尼阿波利斯37岁男子德翁泰·杰克逊因参与RICO共谋被判10年监禁。\n· 其为洛氏帮派成员，2023年2月至2024年5月参与分销逾1.2公斤芬太尼。\n· 警方在明尼苏达与北达科他两处查获M-30芬太尼药片合计逾3500粒。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
+   "title_cn": "能源部长发布紧急命令保障中大西洋电网",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 能源部长赖特签署紧急命令，允许PJM公司运行马里兰州瓦格纳电站4号机组。\n· 命令覆盖13个州与哥伦比亚特区，旨在降低停电风险、保障电网可靠性。\n· 该命令依PJM 2026年10月23日申请作出，有效期至同年12月31日。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Sexual Predators, and Violent Assailants",
+   "title_cn": "移民与海关执法局逮捕多名杀人及性侵罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/18/worst-worst-ice-arrests-murderers-sexual-predators-and-violent-assailants",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 移民与海关执法局宣布逮捕多名因杀人、性侵智障受害者、持械攻击等获罪的外籍人员。\n· 名单包括洪都拉斯籍贝拉斯克斯-苏亚雷斯（纽约杀人罪）与墨西哥籍加西亚-利拉（新泽西加重过失杀人）。\n· 另有赞比亚籍马兰博（明尼阿波利斯性侵）与墨西哥籍巴斯克斯-汉特斯（得州持械攻击）。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "SANCTUARY INSANITY: DHS Condemns Sanctuary Politicians in Minneapolis for Releasing Illegal Alien Arrested for Domestic Assault",
+   "title_cn": "国土安全部批评明尼阿波利斯庇护政策释放家暴嫌犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/18/sanctuary-insanity-dhs-condemns-sanctuary-politicians-minneapolis-releasing-illegal",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 国土安全部声明批评明尼苏达州庇护政策官员拒绝配合执法，释放一名家暴案嫌犯。\n· 厄瓜多尔籍罗达斯-弗洛尔11月2日被捕，移民与海关执法局当日向明尼阿波利斯警方发出拘留令。\n· 警方拒绝执行拘留令将其释放，该人目前仍在逃；其2023年6月经加州非法入境。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "ICE Lodges Detainer for Alien Arrested in Oklahoma for Kidnapping and Raping a Minor",
+   "title_cn": "ICE就俄克拉何马绑架强奸未成年人案发出拘留令",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/18/ice-lodges-detainer-alien-arrested-oklahoma-kidnapping-and-raping-minor",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 移民与海关执法局10月26日向塔尔萨县监狱发出拘留令，要求不得释放危地马拉籍佩雷斯·巴勃罗。\n· 该人涉嫌10月17日绑架并强奸一名16岁男孩，被控一级强奸、强迫鸡奸与绑架。\n· 其此前有三次醉驾及两项危害儿童被捕记录，2014年12月经亚利桑那非法入境。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "DHS Denounces Texas Officials for Allegedly Planning to End Cooperation with ICE",
+   "title_cn": "国土安全部谴责得州官员拟终止与ICE合作",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/18/dhs-denounces-texas-officials-allegedly-planning-end-cooperation-ice",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 国土安全部发表声明，谴责得州官员计划在欣奥霍萨就任州长后终止与执法部门合作。\n· 部长马林称若得州成为庇护州，将是长期以来最严重的失职之一。\n· 声明列举近期案例，包括阿富汗籍恐怖分子驱逐案与委内瑞拉籍儿童性贩运定罪案。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "VA completes record-high direct care, community care appointments in FY 2026",
+   "title_cn": "退伍军人事务部2026财年门诊预约量创新高",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-completes-record-high-direct-care-community-care-appointments-in-fy-2026/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 退伍军人事务部2026财年完成直接医疗预约8270万次，较2024财年增长4.9%。\n· 同期社区医疗预约完成6810万次，较2024财年增长26.7%，两项均创历史新高。\n· 该部自2025年1月以来新开47家诊所，并提供逾350万次非正常时段预约。"
+   }
+  },
   {
    "date": "2026-11-17",
    "title": "Quad Leaders’ Summit Joint Press Release",
