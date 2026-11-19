@@ -185,6 +185,14 @@ OVERRIDES = {
         ('BIS 新闻稿 11-16', 'https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology'),
         ('规则原文（RIN 0694-AK50）', 'https://www.bis.gov/media/documents/rin-0694-ak50.pdf'),
     ],
+    ('2027-01-18', 'HHS HIPAA 隐私规则修订生效'): [
+        ('联邦公报 2026-23429', 'https://www.federalregister.gov/d/2026-23429'),
+        ('HHS 事实清单 11-16', 'https://www.hhs.gov/hipaa/for-professionals/privacy/changes-support-coordinated-care-individual-engagement-reduce-regulatory-burdens-final-rule.html'),
+        ('HHS 新闻稿 11-16', 'https://www.hhs.gov/press-room/hhs-issues-new-final-rule-modernize-hipaa-privacy-rule-support-coordinated-care-individual-engagement-reduce-regulatory-burdens.html'),
+    ],
+    ('2027-01-19', 'IRS 退休计划自动加入规则生效'): [
+        ('联邦公报 2026-23530', 'https://www.federalregister.gov/d/2026-23530'),
+    ],
 }
 
 
