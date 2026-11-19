@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-18T09:34:55+08:00",
+ "updated_at": "2026-11-19T10:25:41+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -54,6 +54,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-18",
+   "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+   "title_cn": "美联储发布10月27日至28日联邦公开市场委员会会议纪要",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+   "source": "Federal Reserve",
+   "summary": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 美联储11月18日（周三）发布10月27日至28日联邦公开市场委员会会议纪要。\n· 例会纪要按惯例在政策决定作出约三周后公布，本次会议跨10月27日至28日两日。\n· 纪要中经济与金融状况的描述仅基于会议当时可得信息，不含会后数据。"
+   }
+  },
   {
    "date": "2026-11-13",
    "title": "Agencies extend comment period for proposed third-party risk management guidance",
@@ -362,7 +377,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank"
+   "summary": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+   "brief": {
+    "at": "2026-09-24",
+    "tier": "news",
+    "body": "· 美联储理事会9月24日宣布执行执法行动，对一名银行前雇员作出处罚。\n· 被处分人为 Sandy Spring Bank 前雇员 Renee Nicole Brown。\n· 处罚形式为同意禁止令，公告列明事由为银行雇员侵占资金。"
+   }
   },
   {
    "date": "2026-09-24",
@@ -372,7 +392,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act"
+   "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+   "brief": {
+    "at": "2026-09-24",
+    "tier": "news",
+    "body": "· 美联储理事会9月24日就《GENIUS 法案》下支付稳定币发行人监管框架两项提案征求意见。\n· 首项提案要求以短期国债等合格流动资产全额支撑稳定币，并设资本与风险管理标准。\n· 第二项提案设定发行业务申请与审批流程，意见期为《联邦公报》刊载后 60 天。"
+   }
   },
   {
    "date": "2026-09-22",
