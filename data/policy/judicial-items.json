@@ -1,9 +1,135 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-18 10:04",
-  "count": 109,
+  "updated_at": "2026-11-19 10:29",
+  "count": 116,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "United States v. State of Illinois",
+      "url": "https://www.courtlistener.com/opinion/11065395/united-states-v-state-of-illinois/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "(3) denied the Alliance’s motion for a preliminary injunction; and (4) denied the United States’ motion",
+      "official_no": "",
+      "title_cn": "美国诉伊利诺伊州（涉慈善机构董事多元化信息强制披露法，撤销诉请驳回并发回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "第七巡回上诉法院11月18日就伊利诺伊州《参议院第2930号法案》作出判决，撤销地区法院以缺乏起诉资格为由驳回联邦政府起诉的裁定，并撤销其驳回相关请求、拒绝初步禁令的处理，发回重审。该法自2025年1月1日起要求年度对外捐赠达100万美元以上的慈善组织，在本机构网站公布董事与高管的汇总人口统计数据，涵盖种族、族裔、性别、残障状况、退伍军人身份、性取向与性别认同，信息须留存三年；个人可拒绝披露，州人权部负责发布标准化分类清单。地区法院此前认定，美国就数据收集与公布两部分均不具备起诉资格，并整体驳回其修正起诉状。上诉法院认为该资格分析有误，联邦政府就两项内容均具备起诉资格。判决明确不触及实体争点，包括第一与第十四修正案的审查标准，留待重审处理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Salazar v. Driver Provider Phoenix, LLC",
+      "url": "https://www.courtlistener.com/opinion/11065397/salazar-v-driver-provider-phoenix-llc/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "PROVIDER PHOENIX, LLC permissibly raised a federal preemption defense for the first time in its motion for",
+      "official_no": "",
+      "title_cn": "萨拉查诉凤凰城司机服务公司（涉 FLSA 对亚利桑那州加班法的优先效力，撤销并发回）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "第九巡回上诉法院11月18日就豪华轿车司机薪酬集体诉讼作出判决，撤销地区法院三项裁定并发回：就亚利桑那州工资法（AWA）加班费请求作出的被告胜诉判决、拒绝集体认证的裁定、就亚利桑那州最低工资法（AMWA）民事罚款请求作出的被告胜诉判决；另以缺乏管辖权驳回被告的交叉上诉。核心认定是《公平劳动标准法》（FLSA）不优先于AWA加班费请求：FLSA设定的是下限而非上限，明文允许州法提供更高保护；AWA借用其关于应付工资的实体标准，但规制支付时点，三倍赔偿与可选择退出式集体诉讼等更优救济不构成障碍。集体认证部分，法院认定地区法院以司机主观理解判断合理期待，适用了错误法律标准，构成裁量滥用。AMWA部分，法院依条文文义认定受害私人可就记录保存违规主张民事罚款。Collins法官部分协同、部分异议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "American Alliance for Equal Rights v. State of Illinois",
+      "url": "https://www.courtlistener.com/opinion/11065396/american-alliance-for-equal-rights-v-state-of-illinois/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "(3) denied the Alliance’s motion for a preliminary injunction; and (4) denied the United States’ motion",
+      "official_no": "",
+      "title_cn": "美国平等权利联盟诉伊利诺伊州（涉 SB 2930 强制披露法的组织起诉资格，撤销驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "第七巡回上诉法院11月18日就美国平等权利联盟挑战伊利诺伊州《参议院第2930号法案》一案作出判决，撤销地区法院驳回起诉的裁定与拒绝初步禁令的处理，发回重审。该法要求达到一定捐赠规模的慈善组织在网站公布董事与高管的汇总人口统计数据。联盟代表两家匿名成员组织提起预防性诉讼，主张该法强制言论违反第一修正案、诱导非法歧视违反第十四修正案平等保护条款；地区法院认定联盟就数据收集部分具备资格、就公布部分不具备资格，据此驳回该部分请求并拒绝禁令。上诉法院认为，联盟以匿名方式指代成员不构成组织性起诉资格的障碍，并援引其他巡回法院在诉答阶段允许匿名诉讼的做法。判决未就法案实体合法性作出判断。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Ahuruonye v. Department of the Interior",
+      "url": "https://www.courtlistener.com/opinion/11065402/ahuruonye-v-department-of-the-interior/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "under Title VII. Omnibus Motion for Terminating Sanctions and Default Judgment Pursuant to the Court’s",
+      "official_no": "",
+      "title_cn": "Ahuruonye 诉内政部（涉联邦雇员合理便利与报复之诉，简易判决支持被告）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "哥伦比亚特区联邦地区法院11月18日就内政部前雇员诉请作出判决，准许被告简易判决动议，驳回原告简易判决动议，并驳回其更正行政记录动议及制裁、缺席判决动议。原告自行诉讼，主张2013年8月申请每周两天远程办公作为合理便利遭主管拒绝，至同年12月由新任主管批准，构成《康复法》下的合理便利拒绝；另主张主管就其平等就业机会申诉的询问构成《民权法案》第七章报复。法院认为，约四个月的审批延迟依本巡回区先例不属不合理，且便利最终获批，合理便利请求不成立；就报复请求，主管的询问未使原告遭受客观可触的雇佣条件损害，不符合不利雇佣行为要件。法院另认定原告关于行政记录被污染的指称缺乏事实依据。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Lu v. Mullin",
+      "url": "https://www.courtlistener.com/opinion/11065585/lu-v-mullin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Program Office (“IPO”)— pursuant to the Administrative Procedure Act (“APA”), 5 U.S.C. §§ 555(b), 706(1)",
+      "official_no": "",
+      "title_cn": "Lu 诉马林（涉 EB-5 投资移民申请审理迟延的 TRAC 因素审查，准许驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "哥伦比亚特区联邦地区法院11月18日就EB-5投资移民申请人诉国土安全部一案作出判决，准许被告驳回起诉动议，驳回原告交叉简易判决动议。原告为台湾国民，2024年3月22日递交I-526E投资移民申请，主张移民局投资者项目办公室逾两年八个月未作裁决，构成《行政程序法》下的不合理延迟，请求法院命令该机关处理。法院未就管辖权争议作终局判断，而是按可审查性推定假定本院有管辖权。实体审查适用TRAC六要素：本巡回区先例通常以五至七年为不合理延迟门槛，两至三年不构成不合理；2022年《EB-5改革与诚信法》设定的120天处理目标置于法条注释，属愿景性表述而非强制性期限；批准原告诉请将使同类申请人顺位后移，无净收益。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Christian v. Mullin",
+      "url": "https://www.courtlistener.com/opinion/11065640/christian-v-mullin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "complaint, asserting claims under the Administrative Procedure Act (“APA”), 5 U.S.C. §§ 701, et seq.,",
+      "official_no": "",
+      "title_cn": "克里斯蒂安诉马林（涉亚当·沃尔什法案“无风险”认定的证据标准，撤销拒批并发回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "哥伦比亚特区联邦地区法院11月18日就美国公民为外籍配偶申请亲属移民被拒一案作出判决，驳回被告简易判决动议，部分准许原告交叉简易判决动议，撤销移民局2026年2月25日的拒批决定并发回重审。原告系残疾退伍军人，自行诉讼，此前多次提交亲属移民申请均被拒。依《亚当·沃尔什法案》，曾因针对未成年人的性犯罪被定罪的美国公民，其亲属移民申请原则上应予拒批，除移民局以排他且不可审查的裁量认定该公民对受益人「不构成风险」。原告主张移民局实际适用「排除一切合理怀疑」标准，违反移民上诉委员会在Matter of Chawathe中确立的优势证据默认标准及遵行自身先例原则。法院认定该法仅规定「无风险」的实体标准、未规定证据标准，内部备忘录不具约束力，据此撤销拒批发回；原告的宣告性救济等其余请求被驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Egolf v. Georgetown University",
+      "url": "https://www.courtlistener.com/opinion/11065639/egolf-v-georgetown-university/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "consider “the most serious academic and employment sanctions,” issue a no-contact directive between Egolf and",
+      "official_no": "",
+      "title_cn": "埃戈尔夫诉乔治敦大学（涉校方违约反诉的驳回动议，动议被驳回）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "哥伦比亚特区联邦地区法院11月18日就乔治敦大学终身副教授诉校方及数名管理人员一案作出裁定，驳回原告针对校方两项反诉的驳回动议。原告为该校物理学终身副教授。2015年，校方在调查一名学生投诉后与其达成和解协议，以行为规范换取继续聘用；2023年因一名近期毕业生再次举报，校方完成第二轮调查。原告诉称第二轮调查违反《教育法修正案第九条》、学校教师手册及2015年协议，共提出六项请求；校方反诉原告违反该协议及诚信与公平交易默示条款，请求损害赔偿与宣告性判决。法院认为，依哥伦比亚特区法律，违约之诉在驳回动议阶段无需主张损害，反诉已具体列明协议条款与违约行为；违反默示条款亦同。法院并指出，协议明文允许就违约提起诉讼或申请禁令，表明后果性损害未超出双方订约预期。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-17",
@@ -14,13 +140,13 @@
       "agency": "哥伦比亚特区巡回上诉法院",
       "summary": "his rating, the ten-percent rating was arbitrary and capricious. The district court rejected those arguments",
       "official_no": "",
-      "title_cn": "尼利 诉 费伦（涉海军伤残评级调整与退役待遇，维持原判）",
-      "domain": "国防/安全",
       "brief": {
         "at": "2026-11-17",
         "body": "哥伦比亚特区巡回上诉法院11月17日维持地区法院判决，驳回海军退伍军人尼利（Sean Nealy）的诉求。尼利1996年至2008年在海军服役，因创伤后应激障碍申请伤残退役待遇，海军初评其伤残等级为10%，仅可获一次性离职补偿。海军伤残复审委员会其后追溯认定其六个月内为50%临时伤残，永久等级仍为10%，海军采纳该建议。尼利主张海军未先行体检即下调等级属越权，且10%评级任意专断。合议庭认为，第1554a条授权复审委员会依服役记录与既有证据提出等级修改建议，伤残评定表第4.129条的体检要求不适用于追溯调整，第1210条于本案不适用；10%评级有实质证据支持。判决强调对军方评级决定适用高度尊重审查标准，并援引第四巡回法院Coleman案。",
         "tier": "note"
-      }
+      },
+      "title_cn": "尼利 诉 费伦（涉海军伤残评级调整与退役待遇，维持原判）",
+      "domain": "国防/安全"
     },
     {
       "board": "judicial",
@@ -32,13 +158,13 @@
       "agency": "第十巡回上诉法院",
       "summary": "noneconomic damages under the Act was arbitrary and capricious and contrary to law. Dolan v. FEMA, 760",
       "official_no": "",
-      "title_cn": "多兰 诉 联邦应急管理署（涉野火赔偿法非经济损失的主权豁免范围，撤销并发回）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-17",
         "body": "第十巡回上诉法院11月17日撤销新墨西哥联邦地区法院判决并发回。2022年4月，美国林务局在新墨西哥州实施的两处计划烧除失控合并为「隐士峰／卡尔夫峡谷」野火，国会随后通过专项赔偿法，授权联邦应急管理署（FEMA）制定规则并赔付受灾者。FEMA在最终规则中解释该法不允许赔偿非经济损失，多名受灾者依《行政程序法》起诉。地区法院认定该解释任意专断且违法，撤销最终规则并命FEMA受理非经济损失请求。上诉法院认为争点在于该法是否以明确无疑的方式放弃主权豁免，结论为否定：豁免放弃范围不及于非经济损失，故撤销并发回。McHugh法官持异议，认为该法援引《联邦侵权索赔法》的「损害」定义，已涵盖依州侵权法的非经济损害，应维持原判。",
         "tier": "note"
-      }
+      },
+      "title_cn": "多兰 诉 联邦应急管理署（涉野火赔偿法非经济损失的主权豁免范围，撤销并发回）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -50,13 +176,13 @@
       "agency": "第二巡回上诉法院",
       "summary": "district court dismissed the motion for a preliminary injunction as moot and dismissed the complaint under",
       "official_no": "",
-      "title_cn": "米勒 诉 麦克唐纳（涉学校疫苗强制令宗教豁免，驳回全院重审）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-17",
         "body": "第二巡回上诉法院11月17日作出命令，驳回对米勒诉麦克唐纳案进行全院庭审复审的请求。该案由纽约州老派阿米什家长与三所阿米什学校提起，挑战纽约州《公共卫生法》第2164条：该条要求学龄儿童接种疫苗方可入学，2019年州议会取消宗教豁免后，州卫生厅审计认定原告不合规并按每生每日2000美元计罚。地区法院以起诉状未陈述可救济主张为由驳回，合议庭维持；联邦最高法院其后准予调卷、撤销并发回，要求依Mahmoud诉Taylor案重新审理。发回后合议庭再次维持原判，认为该先例不适用。本次全院复审投票未获多数，重审请求被驳回；Park与Menashi两位法官分别发表异议，主张应适用严格审查，并指出与其他巡回法院存在分歧。",
         "tier": "note"
-      }
+      },
+      "title_cn": "米勒 诉 麦克唐纳（涉学校疫苗强制令宗教豁免，驳回全院重审）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
