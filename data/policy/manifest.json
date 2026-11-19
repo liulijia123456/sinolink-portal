@@ -1,23 +1,23 @@
 {
   "schema": 1,
-  "built_at": "2026-11-19T10:17:25+08:00",
-  "source_fetched_at": "2026-11-19 10:02",
+  "built_at": "2026-11-19T10:23:13+08:00",
+  "source_fetched_at": "2026-11-19 10:19",
   "boards": {
     "whitehouse": {
       "count": 374,
       "updated_at": "2026-11-19 09:48"
     },
+    "congress": {
+      "count": 1538,
+      "updated_at": "2026-11-19 10:02"
+    },
     "agencies": {
-      "count": 138,
-      "updated_at": "2026-11-18 09:29"
+      "count": 149,
+      "updated_at": "2026-11-19 10:19"
     },
     "judicial": {
       "count": 109,
       "updated_at": "2026-11-18 10:04"
-    },
-    "congress": {
-      "count": 1538,
-      "updated_at": "2026-11-19 10:02"
     }
   }
 }
