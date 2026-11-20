@@ -1,9 +1,111 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-19 10:19",
-  "count": 149,
+  "updated_at": "2026-11-20 15:43",
+  "count": 155,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-20",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23627/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23627",
+      "title_cn": "乳腺摄影系统及部件 337 调查（DN 3952）申诉受理与公共利益意见征询（美国）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· 美国国际贸易委员会受理西门子医疗美国公司（Siemens Medical Solutions USA）于 11 月 16 日提交的申诉，指控进口、为进口销售及进口后在美销售特定乳腺摄影系统及部件违反 1937 年《关税法》第 337 条（19 U.S.C. 1337）。\n· 列名被申请人为 Hologic, Inc.（马萨诸塞州马尔伯勒），请求签发有限排除令、停止令，并在 60 日总统审查期内对涉案产品征收保证金。\n· 公共利益书面意见须于本通告刊登后 8 个日历日（11 月 28 日）前提交，含附件限 5 页；申诉方可在提交截止后 3 个日历日内答复。\n· 案件编号 DN 3952。本通告为申诉受理与意见征集，委员会是否立案另行决定，最终初裁后另设公共利益评论环节。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-20",
+      "title": "Polytetramethylene Ether Glycol (PTMEG) From China, South Korea, Taiwan, and Vietnam; Scheduling of the Final Phase of Antidumping Duty Investigations",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23624/polytetramethylene-ether-glycol-ptmeg-from-china-south-korea-taiwan-and-vietnam-scheduling-of-the",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23624",
+      "title_cn": "聚四亚甲基醚二醇（PTMEG，中国、韩国、中国台湾、越南）反倾销终局阶段日程（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· 委员会就聚四亚甲基醚二醇（PTMEG，中国、韩国、中国台湾、越南）反倾销调查（731-TA-1782-1785，终局阶段）作出日程安排。商务部已初裁认定四国产品以低于公平价值在美销售。\n· 涉案产品归入 HTS 税号 3907.29.00、2932.11.00、3404.91.51；申诉由 BASF 公司于 2026 年 4 月 8 日提出。\n· 听证会定于 2027 年 1 月 20 日 9:30 举行，出庭申请截至 1 月 14 日，预听证简报 1 月 13 日，庭后简报及非当事人意见截至 1 月 27 日。\n· 委员会将于 2 月 11 日向当事人提供其未及评论的材料，最终评论截至 2 月 16 日。本通告只安排程序节点，不含损害认定结论。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-20",
+      "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23619/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23619",
+      "title_cn": "乳腺摄影系统焦斑补偿技术及部件（含 X 射线管）337 调查（DN 3951）申诉受理与公共利益意见征询（德国、美国）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· 委员会受理 Hologic, Inc. 于 11 月 16 日提交的申诉，指控进口及在美销售特定乳腺摄影系统焦斑补偿技术及部件（含 X 射线管）违反 1937 年《关税法》第 337 条。\n· 被申请人三家：西门子医疗股份公司（Siemens Healthineers AG，德国）、西门子医疗有限公司（Siemens Healthcare GmbH，德国）、西门子医疗美国公司（Siemens Medical Solutions USA，宾州马尔文）。\n· 请求签发有限排除令、停止令及 60 日总统审查期保证金；公共利益意见时限与 DN 3952 一致，为刊登后 8 个日历日。\n· 案件编号 DN 3951，与 DN 3952 系双方同日在乳腺摄影设备专利上的互诉，两案均待决定是否立案。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-19",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding Companies",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23594/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23594",
+      "title_cn": "银行控股公司组建、收购与合并申请（纽约辖区两宗·通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· 美联储就两宗银行控股公司组建与收购申请征求公众意见，均属纽约联邦储备银行辖区，意见截止 2026 年 12 月 21 日。\n· BCB Bancorp, Inc.（新泽西州贝永）申请成为银行控股公司，间接收购同地 BCB Community Bank。\n· Dime Commercial Bancshares, Inc.（纽约州哈帕克）申请收购 ES Bancshares, Inc.，间接收购纽约州斯塔滕岛 Empire State Bank。\n· 法律依据为 1956 年《银行控股公司法》及 Y 条例，审查标准见 12 U.S.C. 1842(c)。属个案申请通告，非规则修订。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-19",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23593/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23593",
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（Leake 家族控制集团·Y 条例 §225.41）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· 依《银行控制权变更法》（12 U.S.C. 1817(j)）及 Y 条例 §225.41，Leake 家族三名成员申请加入一致行动集团，保留 PriorityOne Capital Corporation 表决权股份，并间接保留该公司旗下 PriorityOne Bank（均位于密西西比州马吉）股份。\n· 申请人为 Ellen Elizabeth Leake（密西西比州杰克逊）、Susan Blair Leake Wunderlich（华盛顿特区）、Elizabeth Eason Leake Keckler（新奥尔良）。\n· 属亚特兰大联邦储备银行辖区，意见截止 2026 年 12 月 4 日；审查因素见 12 U.S.C. 1817(j)(7)。\n· 个案通告，不涉规则修订。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-19",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission Delegated Authority",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23562/information-collection-being-reviewed-by-the-federal-communications-commission-delegated-authority",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23562",
+      "title_cn": "有线电视费率裁定书面决定（第 76.936 条）信息采集延期审查通告（OMB 3060-0668）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "· FCC 就第 76.936 条「书面决定」信息采集的延期审查征求公众意见，书面意见截止 2027 年 1 月 19 日。\n· 该条要求特许机构在费率制定程序中，全部或部分否决基本服务档及关联设备初始费率、否决费率上调申请，或在有利害关系方反对下批准上调时，须作出书面决定，以便有线电视运营商与公众知悉程序结果。\n· OMB 控制编号 3060-0668，属现行批准的延期；年响应方 150 家、150 份，每份约 1 小时，年负担 150 小时，无成本。\n· 通告为信息采集程序性审查，不构成规则实体变更；未显示有效 OMB 编号时当事人不受处罚。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-18",
@@ -13,13 +115,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23459",
-      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（通告）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-18",
         "body": "美联储依据《银行控制权变更法》（12 U.S.C. 1817(j)）及 Y 条例 §225.41 发布银行控制权变更通告，明尼阿波利斯联邦储备银行辖区受理一宗申请，意见截止 2026 年 12 月 3 日。\n· Hugh Welle 以个人及 2009 年 6 月 30 日设立的 Eugene Joseph Welle 不可撤销信托受托人身份，申请保留 First Bemidji Holding 表决权股份，并间接收购 First National Bank of Bemidji 表决权股份，均在明尼苏达州贝米吉。\n· Hugh Welle 与 Paul Welle 另申请以共同受托人身份取得该行员工持股计划表决权股份。\n· 属个案批复通告，不涉规则修订。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控制权变更通告：收购银行或银行控股公司股份（通告）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -30,13 +132,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23458",
-      "title_cn": "银行控股公司设立、收购与合并申请（通告）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-18",
         "body": "美联储理事会依据《1956 年银行控股公司法》（12 U.S.C. 1841 及以下）与 Y 条例发布银行控股公司设立、收购与合并申请通告，意见截止 2026 年 12 月 18 日。\n· 芝加哥辖区：伊利诺伊州马顿的 First Mid Bancshares 申请与密苏里州圣路易斯的 Evergreen Bancshares 合并，并间接收购密苏里州韦尔斯维尔的 American Bank of Freedom。\n· 圣路易斯辖区：阿肯色州绿森林的 First National Bancorp 申请增持 Legacy Bancshares 表决权股份至多 8.1%，并间接收购同州斯普林代尔的 Legacy Bank 相应股份。\n· 属个案批复通告，未载审查结论。",
         "tier": "note"
-      }
+      },
+      "title_cn": "银行控股公司设立、收购与合并申请（通告）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -47,13 +149,13 @@
       "kind": "规则",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23453",
-      "title_cn": "存款机构准备金要求：2027 年度指数化调整（D 条例最终规则）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-18",
         "body": "【政策背景】美联储理事会依据《联邦储备法》对存款准备金制度中的两项门槛金额实行年度指数化，相关规则编纂于 D 条例（12 CFR part 204）。该项指数化为法定要求，即使理事会已于 2020 年 3 月将所有准备金比率调整为零，仍须逐年完成。本次修订即针对 2027 年度的豁免额与低准备金档金额，属例行年度调整，不涉及准备金比率本身或计算方法的变更。\n\n【核心内容】最终规则修订 D 条例，将 2027 年存款准备金豁免额维持 3,920 万美元，与 2026 年持平；将低准备金档（low reserve tranche）由 2026 年的 6.741 亿美元上调至 6.885 亿美元。豁免额维持不变系依《联邦储备法》条文所得结果，低准备金档的调整则按该法明定的公式推算。规则的生效日期为 2026 年 12 月 18 日。美联储在规则中说明，两项金额的年度指数化虽为法定要求，但不改变存款机构的实际准备金要求，该要求仍为零。\n\n【要点提炼】一、本次为 D 条例 2027 年度指数化修订，属法定例行调整，非政策取向变化。二、豁免额 3,920 万美元不变，低准备金档由 6.741 亿美元升至 6.885 亿美元。三、生效日期 2026 年 12 月 18 日。四、理事会明确指数化不影响存款机构准备金要求，该要求维持为零。",
         "tier": "full"
-      }
+      },
+      "title_cn": "存款机构准备金要求：2027 年度指数化调整（D 条例最终规则）",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -64,13 +166,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23417",
-      "title_cn": "传统社区银行机构第三方风险管理指南（拟议）：评论期延长",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-18",
         "body": "美联储理事会宣布延长其《传统社区银行机构第三方风险管理指南（拟议）》的评论期。该指南于 2026 年 9 月 15 日刊登（91 FR 58438），原定评论期于 2026 年 11 月 16 日截止。\n· 本次将评论期延长 30 日，新的截止日为 2026 年 12 月 16 日。\n· 文件性质为拟议指南（proposed guidance）而非规则修订，适用于传统社区银行机构管理与第三方关系相关风险。\n· 该指南由理事会单独发布，与同期由 OCC、理事会、FDIC、NCUA 联合发布的跨机构第三方风险管理指南（91 FR 58536）并行推进。\n· 公告未修改指南实体内容，仅调整意见征询时限。",
         "tier": "note"
-      }
+      },
+      "title_cn": "传统社区银行机构第三方风险管理指南（拟议）：评论期延长",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -81,13 +183,13 @@
       "kind": "通告",
       "agency": "美联储（Federal Reserve）",
       "official_no": "2026-23416",
-      "title_cn": "第三方风险管理跨机构指南（拟议）：评论期延长",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-18",
         "body": "货币监理署、美联储理事会、联邦存款保险公司与全国信用合作社管理局联合发布通告，延长跨机构《第三方风险管理指南（拟议）》的评论期。该拟议指南于 2026 年 9 月 15 日刊登（91 FR 58536），原定意见截止日为 2026 年 11 月 16 日。\n· 评论期延长至 2026 年 12 月 16 日。\n· 拟议指南以四家机构在检查银行机构第三方风险管理实践中的监管经验为基础，并讨论银行机构按各类第三方关系的评估风险水平统一管理做法可能产生的益处。\n· 四家机构认定延长评论期适当，公告未改动指南实体内容。\n· 本条与美联储同日发布的社区银行专用指南评论期延长（2026-23417）为并行的两份文件，适用对象不同。",
         "tier": "note"
-      }
+      },
+      "title_cn": "第三方风险管理跨机构指南（拟议）：评论期延长",
+      "domain": "金融/保险"
     },
     {
       "board": "agencies",
@@ -98,13 +200,13 @@
       "kind": "规则",
       "agency": "联邦通信委员会 FCC",
       "official_no": "2026-23522",
-      "title_cn": "防范消费者遭受 SIM 卡换卡与携号转网欺诈（最终规则）：合规日期公告",
-      "domain": "电信/媒体",
       "brief": {
         "at": "2026-11-18",
         "body": "【政策背景】2023 年 11 月 16 日，联邦通信委员会通过《SIM 换卡与携号转网欺诈防范令》（SIM Swap and Port-Out Fraud Order，88 FR 85794，2023 年 12 月 8 日刊），在 47 CFR part 52 下新增 §52.37，为无线用户免受欺诈性转网设定基线保护措施。该令同时新增若干信息采集要求，依《减少文书工作法》须经管理与预算办公室（OMB）核准后方可执行，委员会并责成有线竞争局在《联邦公报》刊登合规日期公告。\n\n【核心内容】本次公告由有线竞争局发布，载明 OMB 已于 2025 年 1 月 15 日完成对上述规则信息采集的审查并核准三年，据此确定 §52.37 的合规日期。公告明确：2023 年 12 月 8 日刊出的修正指示第 2 项（47 CFR 52.37）自 2026 年 11 月 18 日起生效；商业移动无线电服务提供者须自 2026 年 12 月 18 日起遵守该条修订。规则要求无线提供者：在实施转网请求前即时通知用户；就所提供的账户保护措施向用户事先告知；向全体用户免费提供锁定或冻结账户以阻止 SIM 变更请求的选项；建立清晰的欺诈转网举报流程，并及时向用户提供涉及其账户的欺诈转网书面记录。上述义务受《安全连接法》规定须采用替代程序的情形除外。公告同时对 88 FR 85794 的规则文本作技术性修改，写入合规日期并删除有关信息采集尚待 OMB 核准的表述，所涉 OMB 控制编号为 3060-0742。\n\n【要点提炼】一、文件性质为合规日期公告，非新立规则，实体义务源自 2023 年《SIM 换卡与携号转网欺诈防范令》。二、§52.37 于 2026 年 11 月 18 日生效，商业移动无线电服务提供者的合规时点为 2026 年 12 月 18 日。三、核心义务为转网前即时通知、账户保护措施事先告知、免费锁定或冻结账户选项、欺诈举报流程与书面记录四项。四、OMB 审查于 2025 年 1 月 15 日完成，控制编号 3060-0742；《安全连接法》要求替代程序的情形不适用上述规则。",
         "tier": "full"
-      }
+      },
+      "title_cn": "防范消费者遭受 SIM 卡换卡与携号转网欺诈（最终规则）：合规日期公告",
+      "domain": "电信/媒体"
     },
     {
       "board": "agencies",
@@ -115,13 +217,13 @@
       "kind": "通告",
       "agency": "联邦通信委员会 FCC",
       "official_no": "2026-23481",
-      "title_cn": "固定电话与多线电话系统 E911 合规信息采集（OMB 3060-1280）报送审查",
-      "domain": "电信/媒体",
       "brief": {
         "at": "2026-11-18",
         "body": "联邦通信委员会依《1995 年减少文书工作法》就一项信息采集向管理与预算办公室（OMB）报送审查并征求意见，意见截止 2026 年 12 月 18 日。\n· 采集事项为「固定电话与多线电话系统 E911 合规」，OMB 控制编号 3060-1280，审查类型为现行已核准采集的延期。\n· 受访者 1,423,960 家，年响应 47,526,905 次，单次估计用时 1 分钟，年度总负担 792,576 小时，年度总成本 2,057,691 美元；响应具强制性。\n· 法定依据含《RAY BAUM'S 法案》第 506 条，该条要求委员会考虑制定规则以确保 911 呼叫随附可派警位置信息。\n· 意见须经 reginfo.gov 提交。",
         "tier": "note"
-      }
+      },
+      "title_cn": "固定电话与多线电话系统 E911 合规信息采集（OMB 3060-1280）报送审查",
+      "domain": "电信/媒体"
     },
     {
       "board": "agencies",
@@ -132,13 +234,13 @@
       "kind": "通告",
       "agency": "联邦通信委员会 FCC",
       "official_no": "2026-23467",
-      "title_cn": "阳光法：11 月 19 日委员会公开会议议程（通告）",
-      "domain": "电信/媒体",
       "brief": {
         "at": "2026-11-18",
         "body": "联邦通信委员会依《阳光法》公告，11 月 19 日公开会议审议六项议题。\n· 无线通信局：GN 13-111，授权惩教设施内非联邦主体运营射频干扰设备，另发通告征求意见。\n· 无线通信局：GN 26-74、WT 24-629，修订 450 MHz、24.45–24.65 GHz、849–851/894–896 MHz 频段规则，支持无人机与航空宽带。\n· 有线竞争局：WC 13-97、07-243、20-67 号码资源保护（第四次报告与命令）；WC 26-96、10-90，A-CAM I 支持延至 2028 年底，涉九家运营商。\n· 消费者与政府事务局：CG 03-123 中继服务补偿拟议规则；空间局：IB 17-95、18-315，28.35–28.6 GHz 动中通地球站扩容。",
         "tier": "note"
-      }
+      },
+      "title_cn": "阳光法：11 月 19 日委员会公开会议议程（通告）",
+      "domain": "电信/媒体"
     },
     {
       "board": "agencies",
@@ -149,13 +251,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-23507",
-      "title_cn": "磷酸钾盐（中国）加速五年复审日程（通告）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-18",
         "body": "美国国际贸易委员会就中国输美磷酸钾盐反倾销与反补贴税令的第三次五年复审发布加速复审日程通告（案号 701-TA-473、731-TA-1173）。\n· 复审问题为撤销现行双反令是否可能导致实质损害在可预见期间内继续或再度发生。\n· 程序沿革：2026 年 6 月 1 日立案（91 FR 32445）；2026 年 9 月 4 日认定国内利害关系方群体答复充分、应诉方群体答复不充分，且无其他情形须进行全面复审，遂依该法第 751(c)(3) 条采用加速程序。\n· 工作人员报告于 2026 年 11 月 17 日向行政保护令名单提供，公开版此后发布；当事人书面评论截止 2026 年 11 月 24 日，且不得含新的事实信息。\n· 本条为日程通告，属程序性文件，尚未作出裁决，不得据以推断复审结论。",
         "tier": "note"
-      }
+      },
+      "title_cn": "磷酸钾盐（中国）加速五年复审日程（通告）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -166,13 +268,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-23420",
-      "title_cn": "胺类化合物（中国）初裁：肯定性损害认定（通告）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-18",
         "body": "美国国际贸易委员会就中国输美胺类化合物反补贴与反倾销调查作出肯定性初裁（案号 701-TA-808、731-TA-1809）。\n· 委员会认定，有合理迹象表明美国产业因中国涉案产品以低于公平价值销售并获中国政府补贴的进口而遭受实质损害。\n· 涉案产品归入 HTS 税目 2921.29.00、2922.19.96、2934.99.90；申诉方为 Evonik Corporation 与 Huntsman International LLC，2026 年 9 月 29 日提出申诉。\n· 委员会同时启动终局阶段调查，将在收到商务部肯定性初裁通知后另行发布终局阶段日程通告。\n· 初裁为损害认定，税率与最终救济由商务部程序另行确定。",
         "tier": "note"
-      }
+      },
+      "title_cn": "胺类化合物（中国）初裁：肯定性损害认定（通告）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
@@ -183,13 +285,13 @@
       "kind": "通告",
       "agency": "国际贸易委员会 USITC",
       "official_no": "2026-23407",
-      "title_cn": "钢格栅板（中国）第三次五年复审：肯定性裁决（通告）",
-      "domain": "贸易/关税",
       "brief": {
         "at": "2026-11-18",
         "body": "美国国际贸易委员会就中国输美钢格栅板反倾销与反补贴税令第三次五年复审作出肯定性裁决（案号 701-TA-465、731-TA-1161）。\n· 委员会认定，撤销现行双反令可能导致实质损害在美国产业内于可预见期间继续或再度发生，现行两项税令继续有效。\n· 程序沿革：2026 年 5 月 1 日立案（91 FR 23456）；8 月 4 日决定采用加速复审（91 FR 54881）；裁决于 11 月 13 日作出并提交，载于委员会第 5812 号出版物。\n· 委员 David Johanson 主张全面复审；委员 David Foley、Samuel Negatu、Bart Thanhauser 未参加充分性表决。\n· 依该法第 751(c) 条（19 U.S.C. 1675(c)）作出。",
         "tier": "note"
-      }
+      },
+      "title_cn": "钢格栅板（中国）第三次五年复审：肯定性裁决（通告）",
+      "domain": "贸易/关税"
     },
     {
       "board": "agencies",
