@@ -193,6 +193,19 @@ OVERRIDES = {
     ('2027-01-19', 'IRS 退休计划自动加入规则生效'): [
         ('联邦公报 2026-23530', 'https://www.federalregister.gov/d/2026-23530'),
     ],
+    ('2026-11-13', '中美贸易理事会首次会议'): [
+        ('商务部新闻发言人栏目', 'https://www.mofcom.gov.cn/xwfb/xwfyrth/'),
+    ],
+    ('2026-11-19', '中美元首双边会晤（深圳）'): [
+        ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/zyxw/202611/t20261119_12062924.shtml'),
+        ('中国外交部英文通稿 11-19', 'https://www.mfa.gov.cn/eng/xw/zyxw/202611/t20261119_12063139.html'),
+        ('人民网转新华社 11-19', 'https://cpc.people.com.cn/n1/2026/1119/c64094-40837158.html'),
+    ],
+    ('2026-11-19', '美中俄三方领导人会晤（深圳）'): [
+        ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/eng/xw/zyxw/202611/t20261119_12063266.html'),
+        ('新华社《和平宣言》全文 11-19', 'https://www.news.cn/politics/leaders/20261119/52ee3a20593f4b3db7642db2a7ece1a7/c.html'),
+        ('王毅介绍会晤情况 11-19', 'https://www.mfa.gov.cn/wjbzhd/202611/t20261120_12063432.shtml'),
+    ],
 }
 
 
