@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-19T10:25:41+08:00",
+ "updated_at": "2026-11-20T15:48:26+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -54,6 +54,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-19",
+   "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+   "title_cn": "美联储对 First Security Bancorp 前雇员签发同意禁止令",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+   "source": "Federal Reserve",
+   "summary": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 美联储11月19日对 First Security Bancorp 前雇员签发同意禁止令。\n· 被采取措施者为该机构前雇员 Rush F. Harding III，理由为违反忠实义务与 W 条例。\n· 该公告11月19日经修订，执法类型由误写的「同意禁止」更正为「同意禁止令」，另附 PDF。"
+   }
+  },
   {
    "date": "2026-11-18",
    "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
@@ -351,7 +366,7 @@
    "brief": {
     "at": "2026-09-29",
     "tier": "news",
-    "body": "美联储与联邦存款保险公司联合公布 15 家银行机构处置计划反馈函。\n这些计划于 2025 年 10 月提交，涉及资产规模超 2500 亿美元的机构。\n两机构未发现短板或缺陷，并认定法巴银行 2021 年问题已整改到位。"
+    "body": "· 美联储与联邦存款保险公司联合公布 15 家银行机构处置计划反馈函。\n· 这些计划于 2025 年 10 月提交，涉及资产规模超 2500 亿美元的机构。\n· 两机构未发现短板或缺陷，并认定法巴银行 2021 年问题已整改到位。"
    }
   },
   {
@@ -366,7 +381,7 @@
    "brief": {
     "at": "2026-09-25",
     "tier": "news",
-    "body": "美联储批准俄亥俄州 Peoples Bancorp 与 Citizens National 合并。\n该交易将使前者间接收购肯塔基州 Citizens Bank of Kentucky。\n美联储同时批准 Peoples Bank 与其合并，并在原址设立分支机构。"
+    "body": "· 美联储批准俄亥俄州 Peoples Bancorp 与 Citizens National 合并。\n· 该交易将使前者间接收购肯塔基州 Citizens Bank of Kentucky。\n· 美联储同时批准 Peoples Bank 与其合并，并在原址设立分支机构。"
    }
   },
   {
@@ -407,7 +422,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces approval of application by BancFirst Corporation"
+   "summary": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+   "brief": {
+    "at": "2026-09-22",
+    "tier": "news",
+    "body": "· 美联储9月22日批准俄克拉何马州 BancFirst Corporation 的收购合并申请。\n· 标的为同州 Spirit BankCorp，交易完成后将间接取得其子公司 SpiritBank。\n· 并批准两机构合并，在 SpiritBank 各营业网点设立分支机构。"
+   }
   },
   {
    "date": "2026-09-18",
@@ -417,7 +437,12 @@
    "kind": "新闻稿",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
    "source": "Federal Reserve",
-   "summary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula"
+   "summary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+   "brief": {
+    "at": "2026-09-18",
+    "tier": "news",
+    "body": "· 美联储9月18日终止对两家俄克拉何马州银行的执法行动，涉及书面协议一项。\n· 对象为 SNB Bancshares 与 Bank of Eufaula，同属俄克拉何马州。\n· 所涉书面协议签署于2024年8月7日，美联储于2026年9月3日终止该行动。"
+   }
   },
   {
    "date": "2026-09-18",
