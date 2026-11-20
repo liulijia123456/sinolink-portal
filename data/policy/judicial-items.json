@@ -1,9 +1,135 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-19 10:29",
-  "count": 116,
+  "updated_at": "2026-11-20 15:51",
+  "count": 124,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "United States v. State of Illinois",
+      "url": "https://www.courtlistener.com/opinion/11066891/united-states-v-state-of-illinois/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "(3) denied the Alliance’s motion for a preliminary injunction; and (4) denied the United States’ motion",
+      "official_no": "",
+      "title_cn": "美国诉伊利诺伊州（涉 SB 2930 强制披露法合宪性，撤销驳回并发回重审）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "第七巡回上诉法院11月19日入库的这份意见，与本站11月18日收录的同名条目系同一份合并判决，属数据源重复建目。该判决由Kirsch法官主笔，Hamilton、Maldonado法官参加，就第25-2461、25-2487号两案合并审理，裁判日期为11月18日。伊利诺伊州《参议院第2930号法案》要求年度对外捐赠达100万美元以上的慈善组织在网站公布董事与高管的汇总人口统计信息，联邦政府依42 U.S.C. § 2000h-2介入，主张其违反第十四修正案。地区法院以缺乏起诉资格驳回两份起诉并否决初步禁令，上诉法院撤销上述处理并发回重审，未触及实体争点。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "American Alliance for Equal Rights v. State of Illinois",
+      "url": "https://www.courtlistener.com/opinion/11066894/american-alliance-for-equal-rights-v-state-of-illinois/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "(3) denied the Alliance’s motion for a preliminary injunction; and (4) denied the United States’ motion",
+      "official_no": "",
+      "title_cn": "美国平等权利联盟诉伊利诺伊州（涉 SB 2930 披露法的起诉资格，撤销驳回并发回重审）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "本条与本站11月18日收录的「美国平等权利联盟诉伊利诺伊州」系同一份合并判决的另一条数据记录，由第七巡回Kirsch法官主笔，2026年11月18日作出。联盟以第一修正案禁止强制言论、第十四修正案禁止诱导歧视为由挑战伊利诺伊州《参议院第2930号法案》，并申请初步禁令；州方以缺乏起诉资格及未提出可救济诉请为由请求驳回。地区法院认定联盟部分诉请缺乏资格、联邦政府整体缺乏资格，据此否决禁令救济。上诉法院认为该资格分析有误，撤销两份起诉的驳回、撤销禁令否决并发回。实体争点未予处理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "TexasChemistry Council v. EPA",
+      "url": "https://www.courtlistener.com/opinion/11067002/texaschemistry-council-v-epa/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第五巡回上诉法院",
+      "summary": "21993 (Mar. 28, 2024) (“Final Rule”). After EPA issued the Final Rule, a slew of petitions for",
+      "official_no": "",
+      "title_cn": "得克萨斯化学理事会诉环保署（涉温石棉禁令最终规则，因缺乏诉讼资格驳回复审请愿）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "第五巡回上诉法院11月19日由Engelhardt法官主笔，Clement、Southwick法官参加，就第24-60193、24-60281号合并复审请愿作出裁判。争议对象为环保署依《有毒物质控制法》对温石棉若干用途发布的最终规则（89 Fed. Reg. 21970，2024年3月28日）。产业方请愿人主张禁令过宽、程序违法，工会与公共卫生团体则主张保护不足。法院未进入实体审查，认定各请愿人均未在开庭陈述阶段完成资格举证：产业方仅一句带过且原共同请愿人已撤诉，工会未指明受损成员，倡导团体所述损害属推测。法院遂以缺乏管辖权驳回全部请愿。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "NetChoice v. Fitch",
+      "url": "https://www.courtlistener.com/opinion/11066835/netchoice-v-fitch/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第五巡回上诉法院",
+      "summary": "Judge: This appeal concerns a renewed preliminary injunction enjoining the State of Mississippi and",
+      "official_no": "",
+      "title_cn": "NetChoice 诉菲奇（涉密西西比州未成年人上网保护法，撤销初步禁令并发回）",
+      "domain": "科技/AI",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "第五巡回上诉法院11月19日由Wilson法官主笔，Richman、Engelhardt法官参加，就第25-60348号上诉作出裁判。密西西比州2024年《沃克·蒙哥马利保护儿童上网法》对受规制网络平台设定相应义务，NetChoice以第一修正案为由提出挑战。本院此前依Moody案撤销首份初步禁令并发回，NetChoice改以个案适用违宪重新主张，地区法院再次发出覆盖九家会员平台的整体禁令。上诉法院认定NetChoice未能证明该法适用于各会员网站时违宪，地区法院亦未对救济作适当限定，遂撤销禁令并发回继续审理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "Niagen Bioscience Inc. v. U.S. Food and Drug Administration",
+      "url": "https://www.courtlistener.com/opinion/11067005/niagen-bioscience-inc-v-us-food-and-drug-administration/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Niagen’s claims, brought under the Administrative Procedure Act, arguing that Niagen has not shown Article",
+      "official_no": "",
+      "title_cn": "Niagen 生物科学公司诉美国食品药品监督管理局（涉 NMN 膳食补充剂认定，驳回政府驳回动议）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "哥伦比亚特区联邦地区法院11月19日由Ali法官就第26-309号案作出裁定。Niagen依《行政程序法》挑战食品药品监督管理局2025年9月将NMN认定为膳食补充成分的解释，主张依21 U.S.C. § 321(ff)(3)(B)的药物排除条款，NMN此前未经新膳食成分通知程序上市，不应纳入膳食补充剂定义。政府以缺乏第三条起诉资格与审慎资格为由请求驳回。法院认定Niagen举证的本公司销售增速放缓、竞争对手销量显著上升足以构成事实上的损害，其利益亦落入法条保护区间的宽松标准，驳回动议不成立。实体解释争议未在本裁定中处理。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "Genentech, Inc. v. Fink",
+      "url": "https://www.courtlistener.com/opinion/11066957/genentech-inc-v-fink/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "of final judgment in these complex Administrative Procedure Act cases in favor of Plaintiff pharmaceutical",
+      "official_no": "",
+      "title_cn": "基因泰克诉芬克（涉 340B 药品折扣计划，驳回案外人迟延介入申请）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "哥伦比亚特区联邦地区法院首席法官Boasberg于11月19日就第25-290号案作出裁定，该案与第24-3571号安进等案一并管理。安进、礼来、优时比与基因泰克四家药企依《公共卫生服务法》第340B条起诉，质疑卫生资源与服务管理局将Sagebrush的九家关联诊所认证为合格实体，法院此前已作出支持原告的终局判决。Sagebrush在判决后申请介入并请求重新考虑。法院认定其在诉讼期间已知悉相关争点却未及时申请，准许介入将引入新的事实与法律主张、造成额外负担与迟延，故以逾期为由驳回全部申请。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-19",
+      "title": "Amsurg Ec Washington, Inc. v. Mgg Group Company, Inc.",
+      "url": "https://www.courtlistener.com/opinion/11066848/amsurg-ec-washington-inc-v-mgg-group-company-inc/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "2024, the plaintiff filed a motion for preliminary injunction, seeking to have the Court prohibit the",
+      "official_no": "",
+      "title_cn": "AmSurg 华盛顿公司诉 MGG 集团（涉门诊手术中心合伙协议与竞业争议，部分准许部分驳回起诉）",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "哥伦比亚特区联邦地区法院11月19日由Walton法官就第23-2416号案作出裁定。AmSurg与MGG及三名医生就门诊手术中心合伙协议产生争议，诉由包括违约、违反诚信与公平交易默示义务、违反信义义务、不当退出、民事共谋、协助教唆及侵权干预。被告以缺乏事项管辖权与未提出可救济诉请为由请求驳回。法院驳回管辖抗辩，对诉请部分准许部分驳回：违约与信义义务之诉继续审理，诚信义务之诉、不当退出之诉与民事共谋之诉整体驳回，协助教唆之诉对District Endoscopy驳回，侵权干预之诉除对Daher医生外均予驳回。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-18",
@@ -14,13 +140,13 @@
       "agency": "第七巡回上诉法院",
       "summary": "(3) denied the Alliance’s motion for a preliminary injunction; and (4) denied the United States’ motion",
       "official_no": "",
-      "title_cn": "美国诉伊利诺伊州（涉慈善机构董事多元化信息强制披露法，撤销诉请驳回并发回）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-18",
         "body": "第七巡回上诉法院11月18日就伊利诺伊州《参议院第2930号法案》作出判决，撤销地区法院以缺乏起诉资格为由驳回联邦政府起诉的裁定，并撤销其驳回相关请求、拒绝初步禁令的处理，发回重审。该法自2025年1月1日起要求年度对外捐赠达100万美元以上的慈善组织，在本机构网站公布董事与高管的汇总人口统计数据，涵盖种族、族裔、性别、残障状况、退伍军人身份、性取向与性别认同，信息须留存三年；个人可拒绝披露，州人权部负责发布标准化分类清单。地区法院此前认定，美国就数据收集与公布两部分均不具备起诉资格，并整体驳回其修正起诉状。上诉法院认为该资格分析有误，联邦政府就两项内容均具备起诉资格。判决明确不触及实体争点，包括第一与第十四修正案的审查标准，留待重审处理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "美国诉伊利诺伊州（涉慈善机构董事多元化信息强制披露法，撤销诉请驳回并发回）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
@@ -32,13 +158,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "PROVIDER PHOENIX, LLC permissibly raised a federal preemption defense for the first time in its motion for",
       "official_no": "",
-      "title_cn": "萨拉查诉凤凰城司机服务公司（涉 FLSA 对亚利桑那州加班法的优先效力，撤销并发回）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-18",
         "body": "第九巡回上诉法院11月18日就豪华轿车司机薪酬集体诉讼作出判决，撤销地区法院三项裁定并发回：就亚利桑那州工资法（AWA）加班费请求作出的被告胜诉判决、拒绝集体认证的裁定、就亚利桑那州最低工资法（AMWA）民事罚款请求作出的被告胜诉判决；另以缺乏管辖权驳回被告的交叉上诉。核心认定是《公平劳动标准法》（FLSA）不优先于AWA加班费请求：FLSA设定的是下限而非上限，明文允许州法提供更高保护；AWA借用其关于应付工资的实体标准，但规制支付时点，三倍赔偿与可选择退出式集体诉讼等更优救济不构成障碍。集体认证部分，法院认定地区法院以司机主观理解判断合理期待，适用了错误法律标准，构成裁量滥用。AMWA部分，法院依条文文义认定受害私人可就记录保存违规主张民事罚款。Collins法官部分协同、部分异议。",
         "tier": "note"
-      }
+      },
+      "title_cn": "萨拉查诉凤凰城司机服务公司（涉 FLSA 对亚利桑那州加班法的优先效力，撤销并发回）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -68,13 +194,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "under Title VII. Omnibus Motion for Terminating Sanctions and Default Judgment Pursuant to the Court’s",
       "official_no": "",
-      "title_cn": "Ahuruonye 诉内政部（涉联邦雇员合理便利与报复之诉，简易判决支持被告）",
-      "domain": "教育/劳动",
       "brief": {
         "at": "2026-11-18",
         "body": "哥伦比亚特区联邦地区法院11月18日就内政部前雇员诉请作出判决，准许被告简易判决动议，驳回原告简易判决动议，并驳回其更正行政记录动议及制裁、缺席判决动议。原告自行诉讼，主张2013年8月申请每周两天远程办公作为合理便利遭主管拒绝，至同年12月由新任主管批准，构成《康复法》下的合理便利拒绝；另主张主管就其平等就业机会申诉的询问构成《民权法案》第七章报复。法院认为，约四个月的审批延迟依本巡回区先例不属不合理，且便利最终获批，合理便利请求不成立；就报复请求，主管的询问未使原告遭受客观可触的雇佣条件损害，不符合不利雇佣行为要件。法院另认定原告关于行政记录被污染的指称缺乏事实依据。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Ahuruonye 诉内政部（涉联邦雇员合理便利与报复之诉，简易判决支持被告）",
+      "domain": "教育/劳动"
     },
     {
       "board": "judicial",
@@ -127,6 +253,24 @@
       "brief": {
         "at": "2026-11-18",
         "body": "哥伦比亚特区联邦地区法院11月18日就乔治敦大学终身副教授诉校方及数名管理人员一案作出裁定，驳回原告针对校方两项反诉的驳回动议。原告为该校物理学终身副教授。2015年，校方在调查一名学生投诉后与其达成和解协议，以行为规范换取继续聘用；2023年因一名近期毕业生再次举报，校方完成第二轮调查。原告诉称第二轮调查违反《教育法修正案第九条》、学校教师手册及2015年协议，共提出六项请求；校方反诉原告违反该协议及诚信与公平交易默示条款，请求损害赔偿与宣告性判决。法院认为，依哥伦比亚特区法律，违约之诉在驳回动议阶段无需主张损害，反诉已具体列明协议条款与违约行为；违反默示条款亦同。法院并指出，协议明文允许就违约提起诉讼或申请禁令，表明后果性损害未超出双方订约预期。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-18",
+      "title": "Kalshiex LLC v. John Martin",
+      "url": "https://www.courtlistener.com/opinion/11066946/kalshiex-llc-v-john-martin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第四巡回上诉法院",
+      "summary": "presents a narrow question of federal preemption. The Commodity Exchange Act (“CEA” or “the Act”)",
+      "official_no": "",
+      "title_cn": "KalshiEx 诉马丁（涉《商品交易法》对州博彩法的优先效力，维持驳回初步禁令）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-20",
+        "body": "第四巡回上诉法院11月18日就第25-1892号案作出公开发表的意见，正文由全体法官一句维持原判，Gregory、Thacker法官分别出具协同意见，Benjamin法官持异议。争点为《商品交易法》授予商品期货交易委员会的专属管辖是否优先于马里兰州体育博彩法，Kalshi请求禁止州方对其体育赛事合约执法。地区法院认定其未证明胜诉可能性而驳回初步禁令，未再审查其余要件。Gregory法官认为，即便该等合约属互换，相关条文亦未明确排除州博彩执法权，Kalshi未能证明优先适用；异议意见主张属领域优先，应撤销并发回。",
         "tier": "note"
       }
     },
