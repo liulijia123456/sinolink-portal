@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-19T09:55:35+08:00",
+ "updated_at": "2026-11-20T15:32:54+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,7 +8,7 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 5,
+   "fetched": 6,
    "added": 1,
    "error": ""
   },
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 4,
    "error": ""
   },
   {
@@ -57,10 +57,10 @@
    "name": "Veterans Affairs",
    "type": "html",
    "url": "https://www.va.gov/opa/pressrel/",
-   "status": "ok",
-   "fetched": 10,
-   "added": 1,
-   "error": ""
+   "status": "error",
+   "fetched": 0,
+   "added": 0,
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "agency": "国土安全部",
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 4,
+   "added": 3,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 12,
-   "added": 6,
+   "added": 9,
    "error": ""
   },
   {
@@ -164,6 +164,261 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-20",
+   "title": "Oman National Day",
+   "title_cn": "美国国务院就阿曼国庆日发表祝贺声明",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/oman-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Oman National Day Press Statement November 20, 2026 On behalf of the United States of America, I extend congratulations to His Majesty Sultan Haitham bin Tarik and to the people of the Sultanate of Oman on the occasion of your National Day. As the United States marks 250 years of independence, we commemorate a partnership with Oman that dates back nearly as far, to ",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 国务院就阿曼国庆日发表声明，向苏丹海赛姆·本·塔里克及阿曼人民致贺。\n· 声明称美阿伙伴关系可追溯至华盛顿总统时期，始于海上贸易，现扩展至能源与技术。\n· 声明提及阿曼今年加入《阿尔忒弥斯协定》，两国合作扩展至太空探索领域。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "U.S.-Russia-China Heads of State Declaration toward Peace",
+   "title_cn": "白宫发布美俄中三国元首促进和平联合声明",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 白宫发布美俄中三国元首联合声明，称三人 11 月 19 日在深圳举行会晤。\n· 声明称三国作为安理会常任理事国承诺推动联合国改革以应对全球挑战。\n· 声明还称三国将增加成品油生产与供应，并就降低核风险开展对话。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Targeting Cyber Scam Center Enablers in Southeast Asia",
+   "title_cn": "美国制裁东南亚网络诈骗园区五名关联方",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/targeting-cyber-scam-center-enablers-in-southeast-asia/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Targeting Cyber Scam Center Enablers in Southeast Asia Press Statement November 19, 2026 Today, the United States is sanctioning five individuals and entities that own, operate, and enable cyber scam centers in Cambodia and Burma. These criminal enterprises steal billions of dollars from victims around the world, including Americans. The Depa",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 美国宣布制裁柬埔寨与缅甸网络诈骗园区的五名个人和实体。\n· 财政部制裁运营柬埔寨园区的赵辉及两家柬埔寨公司，另制裁 DKBA 两名高层。\n· 声明称东南亚诈骗园区 2025 年致美国人损失约 182 亿美元。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Sanctioning Major International Drug Trafficking Organizations Linked to Foreign Terrorist Organizations",
+   "title_cn": "美国制裁两家关联外国恐怖组织的国际贩毒组织",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/sanctioning-major-international-drug-trafficking-organizations-linked-to-foreign-terrorist-organizations/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Sanctioning Major International Drug Trafficking Organizations Linked to Foreign Terrorist Organizations Press Statement November 19, 2026 Today, the United States is sanctioning two international drug trafficking organizations (DTOs): the Australia-headquartered Comanchero Outlaw Motorcycle Gang (Comancheros) and the Italy-based ‘Ndrangheta.",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 美国宣布制裁澳大利亚科曼奇罗摩托车帮与意大利光荣会两个贩毒组织。\n· 声明称两组织为锡那罗亚等三个外国恐怖组织提供运毒、洗钱等后勤支持。\n· 本轮制裁依据第 14059 号行政令，由财政部外国资产控制办公室执行。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "First Lady Melania Trump’s Fostering the Future Together Gathers ASEAN First Spouses For Event Hosted by Philippine First Lady Louise Araneta-Marcos",
+   "title_cn": "梅拉尼娅在马尼拉出席东盟配偶儿童保护活动",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/first-lady-melania-trumps-fostering-the-future-together-gathers-asean-first-spouses-for-event-hosted-by-philippine-first-lady-louise-araneta-marcos/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman First Lady Melania Trump’s Fostering the Future Together Gathers ASEAN First Spouses For Event Hosted by Philippine First Lady Louise Araneta-Marcos Media Note November 19, 2026 On November 16, First Lady Melania Trump’s Fostering the Future Together initiative brought leaders together in Manila for an event focused on child online protection, hosted by Philippine First Lad",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 11 月 16 日，梅拉尼娅发起的「共育未来」倡议在马尼拉举办儿童网络保护活动。\n· 活动由菲律宾第一夫人阿拉内塔-马科斯与菲儿童保护网络共同主办。\n· 约 150 名政府、民间与私营部门代表出席，谷歌、英特尔、Meta、微软参会。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Northeast Georgia Man Charged with International Money Laundering and Destroying Evidence Tied to ISIS",
+   "title_cn": "佐治亚州男子被控资助ISIS及销毁证据",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/northeast-georgia-man-charged-international-money-laundering-and-destroying-evidence-tied-0",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 佐治亚州拉沃尼亚居民尤尼斯·穆斯塔法·尤尼斯（34 岁）被刑事起诉。\n· 其被控国际洗钱与销毁证据各一项，涉向 ISIS 关联个人与团体转账逾 2.6 万美元。\n· 起诉书称 2025 年 12 月至 2026 年 6 月经加密货币转出 16807 美元。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Michigan Home Health Care Agency Owner Sentenced to 4 Years in Prison for $1.6M Medicare Fraud Scheme Fueled by Illegal Kickbacks",
+   "title_cn": "密歇根州家庭护理机构业主因骗保160万获刑四年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/michigan-home-health-care-agency-owner-sentenced-4-years-prison-16m-medicare-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 密歇根州法明顿希尔斯 55 岁的鲁比·斯科特因 160 万美元医保欺诈获刑四年。\n· 法院责令其向联邦医保赔付 1652130.67 美元，并作同额没收。\n· 2018 至 2021 年她按每名病人 270 至 300 美元贿赂医院出院护士获取资料。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Louisiana Woman Convicted of Fraud, Obstruction, and Money Laundering in Nearly $10M Tax Refund Scheme",
+   "title_cn": "路易斯安那州女子因千万美元退税欺诈被定罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/louisiana-woman-convicted-fraud-obstruction-and-money-laundering-17m-tax-refund-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 路易斯安那州博伊斯 64 岁的简·皮尔斯被联邦陪审团裁定邮件欺诈等罪名成立。\n· 其通过自控信托虚假申报近 1000 万美元退税，实际取得逾 100 万美元。\n· 量刑定于 2027 年 2 月 16 日，邮件欺诈罪最高可判 20 年监禁。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Kansas Realtor Indicted for Tax Evasion, Failure to File Tax Returns, and Pandemic Relief Fraud",
+   "title_cn": "堪萨斯州房产经纪人被起诉逃税与疫情救助欺诈",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/kansas-realtor-indicted-tax-evasion-failure-file-tax-returns-and-pandemic-relief-fraud",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 堪萨斯城都会区房产经纪米歇尔·奥康纳（又名 Michelle Yi Lee）被追加起诉。\n· 其被控一项逃税、两项电汇欺诈及十四项未申报税表罪名。\n· 起诉书称其 2020 年提交 34 份虚假 EIDL 申请，获取近 30 万美元。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Justice Department’s Statement on the Closing of Its Investigation of NextEra’s Acquisition of Dominion",
+   "title_cn": "司法部宣布结束对NextEra收购Dominion的调查",
+   "agency": "司法部",
+   "kind": "声明",
+   "url": "https://www.justice.gov/opa/pr/justice-departments-statement-closing-its-investigation-nexteras-acquisition-dominion",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 司法部反垄断局宣布结束对 NextEra 收购 Dominion 交易的调查。\n· 两公司 5 月 18 日宣布以 668 亿美元合并，资产分布于 PJM 与新英格兰电网区域。\n· 因双方就 ISO-NE 内部市场监测机构的关切向 FERC 作出承诺，反垄断局决定结案。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Justice Department Secures Permanent Injunction Against California Laws Restricting Federal Law Enforcement Operations",
+   "title_cn": "司法部获永久禁令阻止加州限制联邦执法",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-secures-permanent-injunction-against-california-laws-restricting-federal",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 联邦法院就加州限制联邦执法人员保护身份等法律作出永久禁令。\n· 法院禁止加州对联邦政府及联邦执法人员执行相关州法，并保留执行管辖权。\n· 该案依双方诉讼最终解决方案，以有偏袒驳回方式结案。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Federal Jury Convicts Fifth Defendant for Scheme to Assassinate Haitian President Jovenel Moïse in Homeland Security Task Force Investigation",
+   "title_cn": "海地总统遇刺案第五名被告被联邦陪审团定罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/federal-jury-convicts-fifth-defendant-scheme-assassinate-haitian-president-jovenel-moise",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 迈阿密联邦陪审团裁定 67 岁的克里斯蒂安·埃马纽埃尔·萨农罪名成立。\n· 其被认定参与 2021 年 7 月 7 日海地总统莫伊兹遇刺案，系第五名被定罪被告。\n· 其面临的最高刑罚为终身监禁，刑期由联邦地区法院法官裁定。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Federal Court Dismisses Challenge to National Security Exemption for Energy Development in Gulf of America",
+   "title_cn": "法院驳回对美湾油气开发国安豁免的起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/federal-court-dismisses-challenge-national-security-exemption-energy-development-gulf",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 联邦地区法院以缺乏管辖权为由，驳回环保团体就濒危物种委员会豁免提起的诉讼。\n· 该豁免由六名联邦高级官员组成、内政部长主持的委员会于 3 月 31 日一致通过。\n· 司法部称该豁免保障美国 15% 的石油产量，美湾油气活动豁免继续有效。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "3 Mexican Nationals Plead Guilty to Laundering Millions of Dollars in Drug Proceeds from the United States to Mexico",
+   "title_cn": "三名墨西哥公民认罪承认洗钱贩毒所得",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/3-mexican-nationals-plead-guilty-laundering-millions-dollars-drug-proceeds-united-states",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 三名墨西哥公民认罪承认共谋洗钱，涉贩毒所得经加密货币与电汇转移。\n· 37 岁塞古拉·托雷斯以合同雇佣「资金经纪人」在肯塔基州列克星敦等地收取现金。\n· 两人定于 2027 年 2 月 18 日、一人于 3 月 4 日量刑，最高刑罚均为 20 年监禁。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "WORST OF THE WORST: ICE Arrests Sexual Deviants, Violent Assailants, Drug Dealers, and Other Public Safety Threats",
+   "title_cn": "移民执法局逮捕多名有暴力犯罪前科的非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/19/worst-worst-ice-arrests-sexual-deviants-violent-assailants-drug-dealers-and-other",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 移民与海关执法局于前一日逮捕多名有暴力犯罪定罪的非法移民。\n· 通报列名墨西哥、利比里亚、危地马拉、洪都拉斯籍共五人及其所犯罪名。\n· 国土安全部长马克韦恩·马林称将继续逮捕并递解有犯罪记录的非法移民。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "White House Task Force to Eliminate Fraud Initiative Results in DHS and GSA Identifying Potentially $53 Billion in Federal Contracts that are Noncompliant with E-Verify",
+   "title_cn": "国土安全部与总务署查出530亿合同涉E-Verify违规",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/19/white-house-task-force-eliminate-fraud-initiative-results-dhs-and-gsa-identifying",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 两部门认定 1500 余家企业持有的逾 530 亿美元联邦合同可能违反 E-Verify 要求。\n· 1579 家承包商已收到通知，须在 30 日内提交合规证明。\n· 两部门并向各机构高级采购主管致函，要求加强合规筛查与违规识别。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "SANCTUARY INSANITY: ICE Arrests Previously-Deported Pedophile After He was RELEASED by California Sanctuary Politicians",
+   "title_cn": "加州释放的已递解性侵罪犯再被移民执法局逮捕",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/19/sanctuary-insanity-ice-arrests-previously-deported-pedophile-after-he-was-released",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 移民与海关执法局逮捕墨西哥籍非法移民罗纳尔多·巴尔博萨·奥尔蒂斯。\n· 该人 11 月 10 日被加州里弗赛德县当局释放，未执行移民拘留令。\n· 其 2009 年 3 月 4 日已获最终递解令，此后四次被递解出境。"
+   }
+  },
   {
    "date": "2026-11-18",
    "title": "Fact Sheet: President Donald J. Trump Secures Historic Economic Deals for American Workers and Strengthens America’s Leadership in Asia",
@@ -342,6 +597,21 @@
     "at": "2026-11-18",
     "tier": "news",
     "body": "· 明尼阿波利斯37岁男子德翁泰·杰克逊因参与RICO共谋被判10年监禁。\n· 其为洛氏帮派成员，2023年2月至2024年5月参与分销逾1.2公斤芬太尼。\n· 警方在明尼苏达与北达科他两处查获M-30芬太尼药片合计逾3500粒。"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "title": "NLR Researcher Gregg Beckham Receives U.S. Department of Energy Ernest Orlando Lawrence Award",
+   "title_cn": "能源部授予落基山国家实验室研究员劳伦斯奖",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/cmei/fuels/articles/nlr-researcher-gregg-beckham-receives-us-department-energy-ernest-orlando",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-18",
+    "tier": "news",
+    "body": "· 落基山国家实验室的格雷格·贝克姆获能源部欧内斯特·劳伦斯奖。\n· 他是本年度九名获奖者之一，因生物质转化与废塑料回收研究受表彰。\n· 贝克姆创建并领导 BOTTLE 联盟，已孵化三家初创企业、培养逾 170 名青年研究者。"
    }
   },
   {
