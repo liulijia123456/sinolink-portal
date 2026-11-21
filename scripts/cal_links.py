@@ -196,6 +196,10 @@ OVERRIDES = {
     ('2026-11-13', '中美贸易理事会首次会议'): [
         ('商务部新闻发言人栏目', 'https://www.mofcom.gov.cn/xwfb/xwfyrth/'),
     ],
+    ('2026-12-14', 'G20 领导人峰会'): [
+        ('G20 官网（美国主席国）', 'https://g20.org/'),
+        ('政治报 11-18（多拉尔筹备通报）', 'https://www.politico.com/news/2026/11/18/florida-g20-doral-prep-traffic-protests-trump-01173712'),
+    ],
     ('2026-11-19', '中美元首双边会晤（深圳）'): [
         ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/zyxw/202611/t20261119_12062924.shtml'),
         ('中国外交部英文通稿 11-19', 'https://www.mfa.gov.cn/eng/xw/zyxw/202611/t20261119_12063139.html'),
