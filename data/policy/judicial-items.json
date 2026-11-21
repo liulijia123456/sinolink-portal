@@ -1,9 +1,153 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-20 15:51",
-  "count": 124,
+  "updated_at": "2026-11-21 09:52",
+  "count": 132,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Alzokari v. Mullin",
+      "url": "https://www.courtlistener.com/opinion/11067688/alzokari-v-mullin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第二巡回上诉法院",
+      "summary": "removal proceeding; and also under (2) the Administrative Procedure Act (“APA”), 5 U.S.C. § 701 et seq., due",
+      "official_no": "",
+      "title_cn": "Alzokari 诉 Mullin（公民身份主张与遣返也门的 APA 审查）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第二巡回上诉法院由沃克（Walker）法官主笔，就 Alzokari 家族四名原告主张美国公民身份、挑战政府将其遣返也门的诉讼，作出部分维持、部分撤销并发回的裁判。\n\n地区法院此前依《移民与国籍法》第 1503(a) 条与《行政程序法》驳回全部请求：公民身份已构成遣返程序争点时，该条排除宣告性判决之诉；APA 请求因存在充分替代救济且受该法排除而不成立；第五修正案正当程序、第一修正案请愿权及三权分立请求亦被认定未陈述请求。\n\n上诉法院维持上述驳回，但认定两名 Zokari 兄弟在 USCIS 驳回其 N-600 申请后并无其他充分救济，第 1503(a) 条亦不排除 APA 审查，故地区法院对该项请求有事项管辖权，撤销并发回。Sullivan 法官就 APA 部分持异议。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Shilling v. County of San Diego",
+      "url": "https://www.courtlistener.com/opinion/11067793/shilling-v-county-of-san-diego/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "at 185. The government cannot impose “criminal sanctions or deny[] rights and privileges solely because",
+      "official_no": "",
+      "title_cn": "Shilling 诉圣地亚哥县（持枪许可因社团关联被吊销）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第九巡回上诉法院由 Bumatay 法官主笔，撤销地区法院驳回起诉的裁定并发回。原告 Shilling 系圣地亚哥居民、摩托车俱乐部成员，2022 年依「良好道德品格」要求取得隐蔽持枪（CCW）许可，2023 年 12 月县治安官以他与被认定为「犯罪街头帮派」的俱乐部有关联为由吊销许可，事前未给予申辩机会。\n\n上诉法院分四项认定：县治安官依加州法律属县官员而非「州之臂膀」，不享有第十一修正案豁免；吊销许可属县政策，县可依第 1983 条担责；2024 年加州改采「shall issue」制度后，第二修正案请求未失去诉讼系属，可命令销毁吊销记录以提供救济；第一修正案结社自由请求已充分主张，仅因加入合法社团而剥夺利益属违宪的「连带归罪」。\n\n案件发回重审，实体主张未作终局判断。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Brown v. Adamson",
+      "url": "https://www.courtlistener.com/opinion/11067834/brown-v-adamson/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "of worsening symptoms. Brown moved for a preliminary injunction in 8 BROWN V. ADAMSON",
+      "official_no": "",
+      "title_cn": "Brown 诉 Adamson（监狱医疗延迟转诊与医生合格豁免）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第九巡回上诉法院由 Milan Smith 法官主笔，撤销地区法院拒绝给予合格豁免的裁定并发回，指令给予两名内华达州监狱医生豁免。\n\n原告 Brown 系在押囚犯，依第八修正案与第 1983 条起诉监狱医生 Adamson 与 Marks，主张二人延迟安排院外神经科、耳鼻喉科转诊，构成对医疗需求的「故意漠视」。地区法院驳回医生的豁免抗辩后，医生依附随命令原则提起中间上诉。\n\n上诉法院认为，依 2026 年最高法院 Zorn 诉 Linton 案确立的高具体性标准，现有判例未界定「延迟院外转诊至何种程度构成故意漠视」；Hoptowit 案仅提出应寻求外部专科的一般原则，Stewart 与 Snow 事实亦不相似，故医生未获充分通知。判决为公开发表。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Juana Elizalde Castillo v. Todd W. Blanche",
+      "url": "https://www.courtlistener.com/opinion/11067988/juana-elizalde-castillo-v-todd-w-blanche/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第七巡回上诉法院",
+      "summary": "AI-generated material and seeking a response as to why sanctions are not warranted. We will not repeat those de-",
+      "official_no": "",
+      "title_cn": "Elizalde Castillo 诉 Blanche（庇护复审驳回与律师 AI 文书说明命令）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第七巡回上诉法院由首席法官 Brennan 主笔，驳回 Castillo 及其两名子女的庇护复审申请。\n\n申请人系墨西哥公民，主张曾汇款供养家人、被视为富有而遭敲诈，据此申请庇护、禁止遣返及《禁止酷刑公约》保护。移民法官以威胁未达迫害程度、拟议社会群体不成立、未证明政府不愿或不能保护、可境内迁移为由拒绝；委员会驳回重开与复议动议。\n\n法院认定：复议动议不得仅以案件不应被无意见维持为由提出，且未指明先前决定的事实或法律错误；重开动议未确立初步表面证据；将施害团伙列为外国恐怖组织，既不能说明施害者身份，也不能解释何以单独针对申请人。\n\n法院另指出律师文书存在大量生成式人工智能生成迹象：错误陈述动议内容、引用并不含所述主张的判例与联邦公报公告、将认定归于法官未曾作出，已令其说明为何不应受制裁。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Promier Products Inc v. Gearoz",
+      "url": "https://www.courtlistener.com/opinion/11067824/promier-products-inc-v-gearoz/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第三巡回上诉法院",
+      "summary": "personal jurisdic- tion and thus denied a preliminary injunction. But we will va- cate the District",
+      "official_no": "",
+      "title_cn": "Promier 产品公司诉 Gearoz 等（跨境电商虚假广告与属人管辖）",
+      "domain": "产业/企业",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第三巡回上诉法院由 Bibas 法官主笔，撤销地区法院驳回初步禁令的命令并发回。\n\n原告 Promier 系伊利诺伊州手电筒电商，依《兰汉姆法》第 43(a) 条与宾州普通法起诉 153 家亚马逊平台卖家虚假广告（流明数虚标）。地区法院先签发临时限制令，后在对抗性简报后重新审视属人管辖，认定原告律师的「测试购买」不能制造管辖权，且合并 153 名被告可能不当，遂驳回初步禁令申请。\n\n上诉法院认可「虚假广告请求须源于受欺骗消费者的购买，而非律师取证式购买」这一判断，认为相关销售除表明被告愿意向全美发货外别无证明力。但地区法院漏审部分已应诉被告是否在未解决管辖前请求积极救济、从而放弃管辖异议，故撤销并发回，要求就此审理并允许管辖权证据开示。\n\n本案为商事虚假广告纠纷，不涉专利。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "A. M. A. S. v. Mullin",
+      "url": "https://www.courtlistener.com/opinion/11068114/a-m-a-s-v-mullin/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "the “government”) move for an emergency stay pending appeal pursuant to Circuit Rule 27-3 (Dkt. No. 9)",
+      "official_no": "",
+      "title_cn": "A.M.A.S. 诉 Mullin（第三国遣返与紧急暂缓动议）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "第九巡回上诉法院以全体一致形式（per curiam）准予政府的紧急暂缓动议，暂停执行地区法院要求协助原告返美的命令。\n\n原告系埃及籍永久居民，2024 年因加重伤害与持有合成毒品定罪后进入遣返程序。移民法官认定其返埃面临酷刑的明确概率，依《禁止酷刑公约》给予暂缓遣返。2026 年 4 月 28 日，政府未通知原告、未给予质疑目的地的机会，即将其遣送至赤道几内亚，原告在当地遭逮捕、单独关押并遭殴打。地区法院于 10 月 6 日认定该遣返违反第五修正案正当程序与《行政程序法》，命令政府协助其返美。\n\n上诉法院适用 Nken 四要素标准认定其支持暂缓。Graber 法官异议，认为命令未造成不可弥补损害、政府未证明上诉胜诉可能，仅在超出 Abrego Garcia 案救济范围时方应部分暂缓。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Nicholas Voegeli v. Hung Cao",
+      "url": "https://www.courtlistener.com/opinion/11067693/nicholas-voegeli-v-hung-cao/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区巡回上诉法院",
+      "summary": "deferential standard of review required by the Administrative Procedure Act. I",
+      "official_no": "",
+      "title_cn": "Voegeli 诉 Hung Cao（海军勋章提名的目击证人要求）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "哥伦比亚特区巡回上诉法院由沃克（Walker）法官主笔，维持地区法院准予海军部长简易判决的裁定，驳回 Voegeli 的上诉。\n\nVoegeli 因 1990 年代一次救人行为寻求「海军与海军陆战队勋章」，但提名材料无法提供海军政策要求的两名目击证人宣誓证词。海军作战部长办公室据此否决提名；海军记录更正委员会将事项提交勋章与奖章委员会，后者认为申请人除本人陈述外未提供目击证词，其上级 Lipinski 的说明不构成充分替代。\n\nVoegeli 依《行政程序法》主张该决定任意专断。上诉法院认为，对军事记录更正决定的审查本已狭窄，须适用「异常尊重」标准；委员会拒绝豁免两名目击证人要求有政策依据，所提证据既非功能性等同亦非充分替代，故不属任意专断。Edwards 资深法官同意判决结果。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-20",
+      "title": "Center for Biological Diversity v. Burgum",
+      "url": "https://www.courtlistener.com/opinion/11068099/center-for-biological-diversity-v-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "reasonable and prudent alternatives to the agency action”; (2) “the benefits of such action clearly",
+      "official_no": "",
+      "title_cn": "生物多样性中心诉 Burgum（墨西哥湾油气 ESA 豁免的管辖归属）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-21",
+        "body": "哥伦比亚特区联邦地区法院法官 Contreras 准予联邦被告的驳回动议，全案驳回生物多样性中心的起诉。\n\n原告挑战濒危物种委员会 2026 年 3 月 31 日一致表决授予的《濒危物种法》豁免：此前国防部长以国家安全为由通知内政部长，认为须豁免墨西哥湾油气勘探开发活动。原告主张该豁免将危及莱斯鲸、抹香鲸及多种海龟与海湾鲟，并指委员会未公开记录、未在表决前举行听证。\n\n法院认定，该法第 1536(n) 条已将针对委员会依第 1536(h) 条所作决定的复审专属赋予联邦上诉法院，地区法院无管辖权；不公开记录、不开听证不构成最终机构行动；国防部长的国家安全认定同样非最终机构行动；执行令请求因《信息自由法》已提供充分替代救济而不可用。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-19",
@@ -86,13 +230,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "Niagen’s claims, brought under the Administrative Procedure Act, arguing that Niagen has not shown Article",
       "official_no": "",
-      "title_cn": "Niagen 生物科学公司诉美国食品药品监督管理局（涉 NMN 膳食补充剂认定，驳回政府驳回动议）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-20",
         "body": "哥伦比亚特区联邦地区法院11月19日由Ali法官就第26-309号案作出裁定。Niagen依《行政程序法》挑战食品药品监督管理局2025年9月将NMN认定为膳食补充成分的解释，主张依21 U.S.C. § 321(ff)(3)(B)的药物排除条款，NMN此前未经新膳食成分通知程序上市，不应纳入膳食补充剂定义。政府以缺乏第三条起诉资格与审慎资格为由请求驳回。法院认定Niagen举证的本公司销售增速放缓、竞争对手销量显著上升足以构成事实上的损害，其利益亦落入法条保护区间的宽松标准，驳回动议不成立。实体解释争议未在本裁定中处理。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Niagen 生物科学公司诉美国食品药品监督管理局（涉 NMN 膳食补充剂认定，驳回政府驳回动议）",
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
@@ -104,13 +248,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "of final judgment in these complex Administrative Procedure Act cases in favor of Plaintiff pharmaceutical",
       "official_no": "",
-      "title_cn": "基因泰克诉芬克（涉 340B 药品折扣计划，驳回案外人迟延介入申请）",
-      "domain": "医疗/医药",
       "brief": {
         "at": "2026-11-20",
         "body": "哥伦比亚特区联邦地区法院首席法官Boasberg于11月19日就第25-290号案作出裁定，该案与第24-3571号安进等案一并管理。安进、礼来、优时比与基因泰克四家药企依《公共卫生服务法》第340B条起诉，质疑卫生资源与服务管理局将Sagebrush的九家关联诊所认证为合格实体，法院此前已作出支持原告的终局判决。Sagebrush在判决后申请介入并请求重新考虑。法院认定其在诉讼期间已知悉相关争点却未及时申请，准许介入将引入新的事实与法律主张、造成额外负担与迟延，故以逾期为由驳回全部申请。",
         "tier": "note"
-      }
+      },
+      "title_cn": "基因泰克诉芬克（涉 340B 药品折扣计划，驳回案外人迟延介入申请）",
+      "domain": "医疗/医药"
     },
     {
       "board": "judicial",
@@ -122,13 +266,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "2024, the plaintiff filed a motion for preliminary injunction, seeking to have the Court prohibit the",
       "official_no": "",
-      "title_cn": "AmSurg 华盛顿公司诉 MGG 集团（涉门诊手术中心合伙协议与竞业争议，部分准许部分驳回起诉）",
-      "domain": "产业/企业",
       "brief": {
         "at": "2026-11-20",
         "body": "哥伦比亚特区联邦地区法院11月19日由Walton法官就第23-2416号案作出裁定。AmSurg与MGG及三名医生就门诊手术中心合伙协议产生争议，诉由包括违约、违反诚信与公平交易默示义务、违反信义义务、不当退出、民事共谋、协助教唆及侵权干预。被告以缺乏事项管辖权与未提出可救济诉请为由请求驳回。法院驳回管辖抗辩，对诉请部分准许部分驳回：违约与信义义务之诉继续审理，诚信义务之诉、不当退出之诉与民事共谋之诉整体驳回，协助教唆之诉对District Endoscopy驳回，侵权干预之诉除对Daher医生外均予驳回。",
         "tier": "note"
-      }
+      },
+      "title_cn": "AmSurg 华盛顿公司诉 MGG 集团（涉门诊手术中心合伙协议与竞业争议，部分准许部分驳回起诉）",
+      "domain": "产业/企业"
     },
     {
       "board": "judicial",
