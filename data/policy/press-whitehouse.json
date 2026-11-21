@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-20T15:32:54+08:00",
+ "updated_at": "2026-11-21T08:27:32+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 6,
-   "added": 1,
+   "fetched": 5,
+   "added": 3,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -57,10 +57,10 @@
    "name": "Veterans Affairs",
    "type": "html",
    "url": "https://www.va.gov/opa/pressrel/",
-   "status": "error",
-   "fetched": 0,
-   "added": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "status": "ok",
+   "fetched": 10,
+   "added": 1,
+   "error": ""
   },
   {
    "agency": "国土安全部",
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 12,
-   "added": 9,
+   "fetched": 11,
+   "added": 4,
    "error": ""
   },
   {
@@ -166,6 +166,36 @@
  "items": [
   {
    "date": "2026-11-20",
+   "title": "President Trump Brings Home Billions in Economic Growth and Strengthens America’s Security",
+   "title_cn": "白宫发布印太成果清单：逾170亿美元协议与美泰贸易协定",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/president-trump-brings-home-billions-in-economic-growth-and-strengthens-americas-security/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 本周印太之行在贸易、能源、经济增长与打击犯罪四方面取得成果。\n· 累计达成逾170亿美元协议，覆盖农民、制造商与国防工业基础。\n· 与泰国达成贸易协定，泰方取消99%美国出口商品关税，年增购26亿美元农产品。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "H.R. 10167 – Common Cents Act",
+   "title_cn": "特朗普签署《分币常识法案》 停止铸造一美分硬币",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/h-r-10167-common-cents-act/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 特朗普签署H.R. 10167《分币常识法案》，要求财政部停止铸造一美分硬币。\n· 除满足收藏需求外停铸一美分，并为现金交易提供取整指引。\n· 允许五分镍币采用节约成本的材质，并规定停铸流通硬币的程序。"
+   }
+  },
+  {
+   "date": "2026-11-20",
    "title": "Oman National Day",
    "title_cn": "美国国务院就阿曼国庆日发表祝贺声明",
    "agency": "国务院",
@@ -177,6 +207,111 @@
     "at": "2026-11-20",
     "tier": "news",
     "body": "· 国务院就阿曼国庆日发表声明，向苏丹海赛姆·本·塔里克及阿曼人民致贺。\n· 声明称美阿伙伴关系可追溯至华盛顿总统时期，始于海上贸易，现扩展至能源与技术。\n· 声明提及阿曼今年加入《阿尔忒弥斯协定》，两国合作扩展至太空探索领域。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Law Firm Owner Indicted for Willful Failure to File Tax Returns",
+   "title_cn": "科罗拉多律所业主因故意不申报纳税被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/law-firm-owner-indicted-willful-failure-file-tax-returns",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 科罗拉多州联邦地区法院解封起诉书，被告为科罗拉多斯普林斯居民特里·菲尔德。\n· 指控其2020至2025年故意不申报个人与公司纳税申报表。\n· 2018至2025年国税局发出逾20份通知，每项罪名最高可判一年监禁。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Justice Department Announces Recipients of Honor the Honorable: The Attorney General’s Award for Distinguished Service in Policing",
+   "title_cn": "司法部公布检察总长杰出警务服务奖获奖名单",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-announces-recipients-honor-honorable-attorney-generals-award",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 司法部长布兰奇20日公布“致敬荣誉”杰出警务服务奖获奖名单。\n· 奖项面向州、地方、部落与属地执法机构的基层警员及团队。\n· 表彰分刑事侦查、现场行动、社区参与三类，每类设个人与团队奖。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Indian National Sentenced to Over 19 Years in Prison for Plotting to Assassinate U.S. Citizen In New York City",
+   "title_cn": "印度公民因策划纽约刺杀案被判逾19年监禁",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/indian-national-sentenced-over-19-years-prison-plotting-assassinate-us-citizen-new-york-city",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 印度公民尼基尔·古普塔55岁，20日被判处235个月监禁。\n· 其参与由印度政府雇员指使、在纽约刺杀一名律师兼政治活动人士的计划。\n· 2026年2月已认罪，罪名含雇凶杀人及共谋洗钱，同案被告为亚达夫。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "DOJ Scores Key Victory in Precedent-Setting Military Attorney Licensing Case",
+   "title_cn": "司法部在新墨西哥州军人律师执照案中获胜",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/doj-scores-key-victory-precedent-setting-military-attorney-licensing-case",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 11月19日新墨西哥州联邦地区法院驳回该州最高法院与律师考试委员会的动议。\n· 此案系司法部首次依《军人民事救济法》执照便携条款提起诉讼，6月11日立案。\n· 2011年以来司法部依该法为逾15.3万名军人争取逾4.9亿美元救济。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "WORST OF THE WORST: ICE Protects American Families by Arresting Child Sex Offenders, Violent Assailants, and Drug Traffickers",
+   "title_cn": "国土安全部通报移民局逮捕多名重罪无证移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/20/worst-worst-ice-protects-american-families-arresting-child-sex-offenders-violent",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 移民与海关执法局前一日逮捕多名因重罪被定罪的无证移民。\n· 涉及儿童加重性侵、一级伤害、海洛因与可卡因贩运等罪名。\n· 通报列出五名被捕者，分别来自墨西哥、萨尔瓦多、老挝与洪都拉斯。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "SANCTUARY INSANITY: DHS Slams Minnesota Sanctuary Politicians for Releasing Illegal Alien Sex Offender from Jail",
+   "title_cn": "国土安全部批评明尼阿波利斯释放性侵嫌犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/20/sanctuary-insanity-dhs-slams-minnesota-sanctuary-politicians-releasing-illegal",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 11月11日移民局对厄瓜多尔籍男子松巴纳在亨内平县监狱发出拘留令。\n· 该监狱未执行拘留令，且未通知移民局即将其释放，此人目前仍在逃。\n· 该男子2021年非法入境，因刑事性行为被捕，国土安全部据此批评庇护政策。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "ICE HSI, Nebraska State Patrol Secure 50-Year Sentence for Child Exploitation Offender",
+   "title_cn": "内布拉斯加涉儿童性剥削者获刑50年",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/20/ice-hsi-nebraska-state-patrol-secure-50-year-sentence-child-exploitation-offender",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 国土安全部就内布拉斯加州奥马哈一起儿童性剥削案发表声明。\n· 该男子因制作与持有儿童性虐待材料被联邦法院判处50年监禁。\n· 案件由移民局国土安全调查处与内布拉斯加州巡逻队联合侦办。"
    }
   },
   {
@@ -192,6 +327,21 @@
     "at": "2026-11-19",
     "tier": "news",
     "body": "· 白宫发布美俄中三国元首联合声明，称三人 11 月 19 日在深圳举行会晤。\n· 声明称三国作为安理会常任理事国承诺推动联合国改革以应对全球挑战。\n· 声明还称三国将增加成品油生产与供应，并就降低核风险开展对话。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Presidential Message on National Rural Health Day",
+   "title_cn": "特朗普发表全国乡村健康日总统公告",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-national-rural-health-day/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 特朗普发布全国乡村健康日总统公告，称乡村社区长期被联邦政策忽视。\n· 《工薪家庭减税法案》设立500亿美元乡村健康转型计划，为期五年，覆盖50州。\n· 资金用于充实医护队伍、改造医院诊所、扩大远程医疗与早期筛查。"
    }
   },
   {
@@ -376,6 +526,21 @@
   },
   {
    "date": "2026-11-19",
+   "title": "Joint Statement from U.S. Energy Secretary Chris Wright and Polish Energy Minister Miłosz Motyka Regarding Seventh P-TEC",
+   "title_cn": "美波能源部长在华沙发布第七届P-TEC主席声明",
+   "agency": "能源部",
+   "kind": "声明",
+   "url": "https://www.energy.gov/articles/joint-statement-us-energy-secretary-chris-wright-and-polish-energy-minister-milosz-motyka",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 美国能源部长赖特与波兰能源部长莫蒂卡在华沙举行第七届P-TEC部长级会议。\n· 会后发布2026年主席声明，强调跨大西洋能源合作与供应来源多元化。\n· 声明支持民用核能与长期液化天然气合作，并认可煤电气电的可靠性作用。"
+   }
+  },
+  {
+   "date": "2026-11-19",
    "title": "WORST OF THE WORST: ICE Arrests Sexual Deviants, Violent Assailants, Drug Dealers, and Other Public Safety Threats",
    "title_cn": "移民执法局逮捕多名有暴力犯罪前科的非法移民",
    "agency": "国土安全部",
@@ -417,6 +582,21 @@
     "at": "2026-11-19",
     "tier": "news",
     "body": "· 移民与海关执法局逮捕墨西哥籍非法移民罗纳尔多·巴尔博萨·奥尔蒂斯。\n· 该人 11 月 10 日被加州里弗赛德县当局释放，未执行移民拘留令。\n· 其 2009 年 3 月 4 日已获最终递解令，此后四次被递解出境。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "VA Community Care contributed more than $44B to local economies in FY 2026",
+   "title_cn": "退伍军人事务部2026财年社区护理支出448亿美元",
+   "agency": "退伍军人事务部",
+   "kind": "新闻稿",
+   "url": "https://news.va.gov/press-room/va-community-care-contributed-more-than-44b-to-local-economies-in-fy-2026/",
+   "source": "Veterans Affairs",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 退伍军人事务部2026财年依《VA MISSION法案》支付社区护理费用448亿美元。\n· 较2025财年增加逾70亿美元，较2024财年增加逾110亿美元。\n· 该社区护理项目为美国第四大医疗支付项目，覆盖符合条件的老兵。"
    }
   },
   {
