@@ -1,9 +1,162 @@
 {
   "schema": 1,
   "board": "whitehouse",
-  "updated_at": "2026-11-21 08:07",
-  "count": 399,
+  "updated_at": "2026-11-22 08:07",
+  "count": 408,
   "items": [
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Horse Protection Amendments; Extension of Postponement of Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23818/horse-protection-amendments-extension-of-postponement-of-regulations",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "农业部",
+      "official_no": "2026-23818",
+      "title_cn": "马匹保护规则修订：再度推迟生效日期（最终规则）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：农业部动植物卫生检验局（APHIS）最终规则，91 FR 75439，案卷 APHIS-2022-0004。\n· 核心动作：将 2024 年 5 月 8 日马匹保护最终规则（89 FR 39194）中 9 CFR 11.1 至 11.18 的生效日期再延至 2027 年 12 月 31 日。该组条款此前已多次推迟，最近一次将期限推至 2026 年 12 月 31 日。\n· 程序关联：第 11.19 条已于 2024 年 6 月 7 日生效，不在本次推迟范围。11 月 13 日该部另发拟议规则，拟删除被法院判决撤销的部分、撤回未撤销部分并改写条例。\n· 信息边界：本次仅调整生效时点，不改变实体义务；后续处置取决于 11 月 13 日拟议规则的定稿结果。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23777/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "劳工部",
+      "official_no": "2026-23777",
+      "title_cn": "《公平劳动标准法》《家庭与医疗休假法》及《移民与季节性农业工人保护法》项下雇员或独立承包商身份认定（最终规则）",
+      "domain": "教育/劳动",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：劳工部工资与工时司（WHD）最终规则，91 FR 75646，案卷 WHD-2026-0001。\n· 核心动作：撤销现行条例中关于雇员或独立承包商身份认定的分析框架，改采与该部 2021 年最终规则相近的多因素分析，并作若干修改与强化。\n· 适用范围：同步修订《家庭与医疗休假法》（FMLA）与《移民与季节性农业工人保护法》（MSPA）实施条例，明确两法项下身份认定沿用《公平劳动标准法》的分析，理由为两法均援引该法的雇佣范围。\n· 生效时点：2027 年 1 月 22 日；无评论期，属直接定稿。\n· 信息边界：各因素权重与具体适用例外以联邦公报文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Establishment of Class E Airspace; Columbus, TX",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23838/establishment-of-class-e-airspace-columbus-tx",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23838",
+      "title_cn": "设立 E 类空域：德克萨斯州哥伦布（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）拟议规则，91 FR 75459。\n· 核心动作：拟在德克萨斯州哥伦布市哥伦布社区医院直升机场设立 E 类空域，以支撑新增仪表进近程序与仪表飞行规则（IFR）运行。\n· 程序阶段：处于拟议阶段，评论截止 2027 年 1 月 7 日；案卷号 FAA-2026-15115，空域案卷 26-ASW-18。\n· 信息边界：空域边界与生效日期待定稿规则确定，本件不含最终坐标与实施时点。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Amendment of Class E Airspace; Del Rio, TX",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23836/amendment-of-class-e-airspace-del-rio-tx",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23836",
+      "title_cn": "修订 E 类空域：德克萨斯州德尔里奥（最终规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）最终规则，91 FR 75449。\n· 核心动作：修订德克萨斯州德尔里奥 E 类空域，系对劳克林空军基地（Laughlin AFB）周边空域两年一度复核的结果。\n· 附带修订：按航空数据库更新该基地名称与地理坐标；使空域符合联邦航空局相关指令，支撑仪表飞行规则程序与运行。\n· 生效时点：2027 年 2 月 18 日；案卷号 FAA-2026-12310，空域案卷 26-ASW-15。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Amendment of Class D and E Airspace and Removal of Class E Airspace Over Lebanon, NH",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23824/amendment-of-class-d-and-e-airspace-and-removal-of-class-e-airspace-over-lebanon-nh",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23824",
+      "title_cn": "修订 D、E 类空域并撤销新罕布什尔州黎巴嫩上空 E 类空域（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）拟议规则，91 FR 75460。\n· 核心动作：拟扩大新罕布什尔州黎巴嫩 D 类空域的横向范围，以容纳黎巴嫩市政机场的仪表飞行规则运行，并按现行指南更新 D 类空域法定描述用语。\n· 结构调整：更新 D 类与 E5 类空域法定描述中的机场地理坐标；删除相邻 E5 类空域的排除条款；撤销该机场已不再需要的 E4 类空域。\n· 程序阶段：评论截止 2027 年 1 月 7 日；案卷号 FAA-2026-14224，空域案卷 26-ANE-8。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Miscellaneous Technical Amendments; Technical Amendment",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23786/miscellaneous-technical-amendments-technical-amendment",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "交通部",
+      "official_no": "2026-23786",
+      "title_cn": "联邦航空条例杂项技术性修订（技术性修订）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）技术性修订，91 FR 75441，案卷号 FAA-2026-4853。\n· 核心动作：对联邦航空条例多个部分作非实质性更正，处理排版错误、编辑错误以及过时或错误的引用。\n· 修订范围：涉及 14 CFR 第 1、5、13、15、16、17、21、23、25、27、29、33、34、39、43、61、71、91、97 等多个部分的修订号。\n· 生效时点：2026 年 11 月 23 日即时生效。\n· 信息边界：本件不改变实体监管要求，仅为文本与引用校订，不产生新的合规义务。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23752/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23752",
+      "title_cn": "适航指令：ATR-GIE 支线飞机（系留载荷与维护程序）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）拟议适航指令（AD），91 FR 75456，适用所有 ATR-GIE ATR42 与 ATR72 型飞机。\n· 触发原因：对系留载荷的复核显示，现行风廓线范围内的风速在飞机系留状态下可能使前起落架与主起落架载荷超出取证限制。\n· 核心动作：拟要求修订现行维护或检查大纲，纳入经修订的系留维护程序（MP）。\n· 程序阶段：评论截止 2027 年 1 月 7 日；案卷号 FAA-2026-13826，MCAI 项目号 MCAI-2025-01613-T。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23749/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+      "source": "联邦公报",
+      "kind": "拟议规则",
+      "agency": "交通部",
+      "official_no": "2026-23749",
+      "title_cn": "适航指令：ATR-GIE 支线飞机（综合空气系统控制软件）（拟议规则）",
+      "domain": "交通",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：联邦航空局（FAA）拟议适航指令，91 FR 75454，适用 ATR42-500 与 ATR72-212A 型飞机。\n· 触发原因：两起起飞阶段的在役事件，综合空气系统控制（IASC）软件的模数转换器内部失效产生错误压力数字值，导致外流活门非指令全速关闭、座舱高度变化率大幅为负。\n· 核心动作：拟要求安装改进版 IASC 软件，并在特定条件下禁止安装受影响软件版本。\n· 程序阶段：评论截止 2027 年 1 月 7 日；案卷号 FAA-2026-13823，MCAI 项目号 MCAI-2026-00203-T。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "whitehouse",
+      "date": "2026-11-23",
+      "title": "Extension of Import Restrictions Imposed on Archaeological and Ethnological Material of Egypt",
+      "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23795/extension-of-import-restrictions-imposed-on-archaeological-and-ethnological-material-of-egypt",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "国土安全部",
+      "official_no": "2026-23795",
+      "title_cn": "延长对埃及考古与民族学材料进口限制（最终规则）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-22",
+        "body": "· 文种与主体：国土安全部海关与边境保护局（CBP）最终规则，91 FR 75451，CBP Dec. 26-21。\n· 核心动作：修订 CBP 条例，将针对埃及特定类别考古与民族学材料的进口限制延长至 2031 年 11 月 30 日。\n· 沿革：该限制最初由 CBP Dec. 16-23 设立，其后经 CBP Dec. 21-17 延长并修订，本次为进一步延长。\n· 生效时点：2026 年 11 月 30 日。\n· 信息边界：属文化财产进口管制措施，不涉及关税税率或税目调整。",
+        "tier": "note"
+      }
+    },
     {
       "board": "whitehouse",
       "date": "2026-11-20",
