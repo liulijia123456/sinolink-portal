@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-21T08:27:32+08:00",
+ "updated_at": "2026-11-22T08:18:18+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 5,
-   "added": 3,
+   "fetched": 6,
+   "added": 4,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 3,
    "error": ""
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.va.gov/opa/pressrel/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 0,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 4,
+   "added": 1,
    "error": ""
   },
   {
@@ -165,6 +165,51 @@
  ],
  "items": [
   {
+   "date": "2026-11-21",
+   "title": "Senior Leader of the Sinaloa Cartel and One of FBI’s Ten Most Wanted Fugitives Arrested in Mexico Following a Homeland Security Task Force Investigation",
+   "title_cn": "锡那罗亚集团头目、FBI十大通缉犯在墨西哥被捕",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/senior-leader-sinaloa-cartel-and-one-fbis-ten-most-wanted-fugitives-arrested-mexico",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-21",
+    "tier": "news",
+    "body": "· 墨西哥军方11月20日在锡那罗亚州瓜萨韦抓获该集团头目梅萨·弗洛雷斯。\n· 行动同时抓获被指为集团头目的加尔韦斯·梅萨，绰号「塞拉芬」。\n· 其被控毒品恐怖主义等六项罪名，最高可判死刑或强制终身监禁。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "PROTECTING THE EXECUTIVE’S PRIVILEGES AND ENHANCING EFFICIENCIES IN FEDERAL CONTRACTING",
+   "title_cn": "特朗普签署行政令保护行政特权并提升联邦合同效率",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 行政令要求联邦承包商收到国会索取资料要求时，立即通知白宫与签约机构。\n· 承包商须按白宫或机构指示，对认定受行政特权保护的通信用不予披露。\n· 令适用于联邦合同项下分包商，违规者可被终止合同或取消承包资格。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "NATIONAL ADOPTION MONTH, 2026",
+   "title_cn": "特朗普宣布2026年11月为全国收养月",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/national-adoption-month-2026/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 公告于11月20日签署，宣布2026年11月为全国收养月。\n· 公告称上届任内扩大了收养税收抵免适用范围，并调整儿童税收抵免。\n· 公告提及第一夫人推出的「培育未来账户」与配套政府网站。"
+   }
+  },
+  {
    "date": "2026-11-20",
    "title": "President Trump Brings Home Billions in Economic Growth and Strengthens America’s Security",
    "title_cn": "白宫发布印太成果清单：逾170亿美元协议与美泰贸易协定",
@@ -177,6 +222,21 @@
     "at": "2026-11-20",
     "tier": "news",
     "body": "· 本周印太之行在贸易、能源、经济增长与打击犯罪四方面取得成果。\n· 累计达成逾170亿美元协议，覆盖农民、制造商与国防工业基础。\n· 与泰国达成贸易协定，泰方取消99%美国出口商品关税，年增购26亿美元农产品。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Fact Sheet: President Donald J. Trump Protects the Executive’s Privileges and Enhances Efficiencies in Federal Contracting",
+   "title_cn": "事实清单：特朗普保护行政特权并提升联邦合同效率",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-protects-the-executives-privileges-and-enhances-efficiencies-in-federal-contracting/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 清单称令旨在防止承包商未经协调即向国会披露行政分支的机密信息。\n· 承包商须就国会索取资料与白宫及签约机构协调应对并遵守保密指示。\n· 清单称国会无有效立法目的时，不得向行政机构、雇员或承包商索取信息。"
    }
   },
   {
@@ -196,6 +256,51 @@
   },
   {
    "date": "2026-11-20",
+   "title": "Congressional Bills H.R. 5284, H.R. 8352, and H.R. 10159 Signed into Law",
+   "title_cn": "特朗普签署H.R. 5284等三项法案成法",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-5284-h-r-8352-and-h-r-10159-signed-into-law/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 总统于11月20日签署三项国会法案，涉社保术语与跨州刑事记录共享。\n· H.R. 5284调整社会保障署使用的部分术语表述。\n· H.R. 8352授权司法部与各州执法人员标准与培训机构交换刑事身份记录。\n· H.R. 10159授权陆军部长向北卡罗来纳州移交布拉格堡地块建退伍军人之家。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Secretary Rubio’s Call with UAE Deputy Prime Minister and Foreign Minister Sheikh Abdullah bin Zayed Al Nahyan",
+   "title_cn": "国务卿鲁比奥与阿联酋副总理兼外长阿卜杜拉通话",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-uae-deputy-prime-minister-and-foreign-minister-sheikh-abdullah-bin-zayed-al-nahyan-6/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with UAE Deputy Prime Minister and Foreign Minister Sheikh Abdullah bin Zayed Al Nahyan Readout November 20, 2026 Secretary of State Marco Rubio spoke today with UAE Deputy Prime Minister and Foreign Minister Sheikh Abdullah bin Zayed Al Nahyan. The two discussed the need to end the war in Sudan, while Secretary Rubio also emphasized the importance of",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥11月20日与阿联酋副总理兼外长阿卜杜拉·本·扎耶德通话。\n· 双方讨论结束苏丹战争的必要性，通话由国务院发言人办公室发布。\n· 鲁比奥强调人道停火、持久和平与向文官政府过渡的重要性。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Sanctioning Iranian Regime Insiders Who Profit from Stolen Oil Wealth",
+   "title_cn": "美国制裁四名靠盗卖石油牟利的伊朗政权内部人士",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/sanctioning-iranian-regime-insiders-who-profit-from-stolen-oil-wealth/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Sanctioning Iranian Regime Insiders Who Profit from Stolen Oil Wealth Press Statement November 20, 2026 Today, the United States took action against four corrupt Iranian regime insiders who illicitly sell oil to help fund the regime’s military and its support for terrorism. Those designated include a former Islamic Revolutionary Guard Corps (",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 美国11月20日对四名伊朗政权内部人士采取制裁行动。\n· 被列名者包括一名伊斯兰革命卫队前情报官员，以及马汉航空负责人的儿子。\n· 制裁依据第13902号行政令（石油、石化、航空）与第13224号反恐行政令。\n· 国务院称该行动属「经济弃儿行动」全政府切断伊朗资金流的campaign。"
+   }
+  },
+  {
+   "date": "2026-11-20",
    "title": "Oman National Day",
    "title_cn": "美国国务院就阿曼国庆日发表祝贺声明",
    "agency": "国务院",
@@ -207,6 +312,21 @@
     "at": "2026-11-20",
     "tier": "news",
     "body": "· 国务院就阿曼国庆日发表声明，向苏丹海赛姆·本·塔里克及阿曼人民致贺。\n· 声明称美阿伙伴关系可追溯至华盛顿总统时期，始于海上贸易，现扩展至能源与技术。\n· 声明提及阿曼今年加入《阿尔忒弥斯协定》，两国合作扩展至太空探索领域。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Joint Statement on the Sixth U.S.-Germany Joint Committee Meeting on Science and Technology Cooperation",
+   "title_cn": "美德发表第六届科技合作联合委员会会议联合声明",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-sixth-u-s-germany-joint-committee-meeting-on-science-and-technology-cooperation/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the Sixth U.S.-Germany Joint Committee Meeting on Science and Technology Cooperation Media Note November 20, 2026 The text of the following statement was released by the Governments of the United States of America and Germany. Begin Text The United States hosted the Federal Republic of Germany in Washington, DC, on November 19-20, 2026, for the 6th U.S.-G",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 美国于11月19日至20日在华盛顿主办第六届美德科技合作联合委员会会议。\n· 国务院助理国务卿汉拉汉与德方总司长赫利奥蒂共同主持。\n· 双方决定深化机器人、聚变能、生物技术与关键矿产回收领域合作。\n· 双方将借德国国家研究安全平台加强信息共享与风险分析合作。"
    }
   },
   {
@@ -267,6 +387,21 @@
     "at": "2026-11-20",
     "tier": "news",
     "body": "· 11月19日新墨西哥州联邦地区法院驳回该州最高法院与律师考试委员会的动议。\n· 此案系司法部首次依《军人民事救济法》执照便携条款提起诉讼，6月11日立案。\n· 2011年以来司法部依该法为逾15.3万名军人争取逾4.9亿美元救济。"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Energy Secretary Keeps Critical Generation Available in Mid-Atlantic",
+   "title_cn": "能源部长发布紧急命令维持中大西洋地区关键发电",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/energy-secretary-keeps-critical-generation-available-mid-atlantic-0",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-20",
+    "tier": "news",
+    "body": "· 能源部长赖特11月20日签发紧急命令，应对中大西洋地区电网可靠性问题。\n· 命令要求PJM与星座能源确保宾州埃迪斯通电站3、4号机组继续可用。\n· 两机组原定2025年5月31日退役，部长此前已多次下令延期。\n· 本命令有效期自2026年11月21日至2027年2月18日。"
    }
   },
   {
