@@ -199,6 +199,19 @@ OVERRIDES = {
     ('2026-12-14', 'G20 领导人峰会'): [
         ('G20 官网（美国主席国）', 'https://g20.org/'),
         ('政治报 11-18（多拉尔筹备通报）', 'https://www.politico.com/news/2026/11/18/florida-g20-doral-prep-traffic-protests-trump-01173712'),
+        ('阿纳多卢通讯社 11-22（领导人出席表态）', 'https://aa.com.tr/en/americas/trump-says-all-the-top-20-leaders-will-attend-next-months-g20-summit-in-florida/4132632'),
+    ],
+    ('2026-11-29', '西班牙议会选举'): [
+        ('西班牙国家公报 皇家法令 806/2026', 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742'),
+        ('新华社 11-12（选举与罢工背景）', 'https://world.people.com.cn/n1/2026/1112/c1002-40832555.html'),
+    ],
+    ('2026-12-01', '参议院民主党领袖选举'): [
+        ('ABC News 刊美联社电 11-21（选情与 12-01 投票）', 'https://abcnews.com/Politics/wireStory/democrats-swept-senate-promised-change-leadership-vote-testing-138342385'),
+        ('路透社 11-22（55 人投票与 28 票门槛，经 Internazionale 转载）', 'https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/schumer-led-democrats-to-big-senate-win-now-some-say-they-need-a-new-leader'),
+    ],
+    ('2026-12-11', '联邦政府拨款截止日'): [
+        ('公法 119-103 全文（govinfo）', 'https://www.govinfo.gov/content/pkg/PLAW-119publ103/pdf/PLAW-119publ103.pdf'),
+        ('H.R.6500 立法进程（congress.gov）', 'https://www.congress.gov/bill/119th-congress/house-bill/6500'),
     ],
     ('2026-11-19', '中美元首双边会晤（深圳）'): [
         ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/zyxw/202611/t20261119_12062924.shtml'),
@@ -216,10 +229,11 @@ OVERRIDES = {
 # 来源等级：p = 一手（政府/国际组织/主办方），w = 通讯社与公共广播，m = 媒体/聚合。
 # 排序时 p > w > m，最多取前 3 条——「能点到原文时不要给转述」。
 WIRE_HOSTS = ('xinhuanet.com', 'news.cn', 'cnr.cn', 'cctv.cn', 'cctv.com', 'news.cctv.com',
-              'people.com.cn', 'apnews.com', 'reuters.com', 'chinanews.com.cn', 'ce.cn')
+              'people.com.cn', 'apnews.com', 'reuters.com', 'chinanews.com.cn', 'ce.cn',
+              'aa.com.tr')
 OFFICIAL_TLDS = ('.gov', '.gov.', '.mil', '.int', '.europa.eu', 'un.org', 'imf.org',
                  'worldbank.org', 'oecd.org', 'wto.org', 'g20.org', 'apec.org', 'asean.org',
-                 'unfccc.int', 'wam.ae', 'gov.uk', 'gov.cn',
+                 'unfccc.int', 'wam.ae', 'gov.uk', 'gov.cn', 'boe.es',
                  'nyse.com', 'uscode.house.gov')
 
 
@@ -227,7 +241,10 @@ def link_tier(url):
     host = url.split('/')[2].lower() if '://' in url else ''
     if host in WIRE_HOSTS or any(host.endswith('.' + h) or host == h for h in WIRE_HOSTS):
         return 'w'
-    if any(host.endswith(t) or t in host for t in OFFICIAL_TLDS):
+    # 域名边界匹配：'.int' 这类后缀须落在「主域标签结束」处，
+    # 否则 internazionale.it 之类主机名会被误判为国际组织（一手）。
+    if any(host.endswith(t) or re.search(re.escape(t) + r'(?=[./]|$)', host)
+           for t in OFFICIAL_TLDS):
         return 'p'
     return 'm'
 
