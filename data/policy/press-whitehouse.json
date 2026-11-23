@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-22T08:18:18+08:00",
+ "updated_at": "2026-11-23T15:38:42+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 6,
-   "added": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 1,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -164,6 +164,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-22",
+   "title": "Lebanon National Day",
+   "title_cn": "美国祝贺黎巴嫩独立83周年，重申支持其主权",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/lebanon-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Lebanon National Day Press Statement November 22, 2026 The United States of America extends its congratulations to the people of Lebanon on the 83rd anniversary of their independence. The Lebanese people have shown extraordinary talent and resilience, both at home and across their global diaspora. On this occasion, the United States reaffirms its support for a fully",
+   "brief": {
+    "at": "2026-11-22",
+    "tier": "news",
+    "body": "· 美国国务院11月22日发表新闻声明，祝贺黎巴嫩独立83周年。\n· 声明称黎巴嫩人民在本国与海外侨民中展现非凡才能与韧性。\n· 美方重申支持完全主权、与邻国和平相处且只对本国公民负责的黎巴嫩。"
+   }
+  },
   {
    "date": "2026-11-21",
    "title": "Senior Leader of the Sinaloa Cartel and One of FBI’s Ten Most Wanted Fugitives Arrested in Mexico Following a Homeland Security Task Force Investigation",
@@ -2772,7 +2787,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/justice-department-awards-jackson-mississippi-more-63m-combat-violent-crime-and-restore-law",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 司法部11月9日通过「模范城市」计划向密西西比州杰克逊市拨款逾6300万美元。\n· 该计划2026年6月启动，向四个辖区投入近3亿美元联邦资源。\n· 杰克逊年度凶杀案由2021年的156起降至2025年的75起，降幅过半。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -2782,7 +2802,12 @@
    "kind": "新闻稿",
    "url": "https://www.justice.gov/opa/pr/14-charged-deadly-human-smuggling-scheme-killed-7-aliens-earlier-year",
    "source": "Justice",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 得州西区联邦大陪审团替代起诉书指控14人共谋牟利运送外国人入境。\n· 14名被告含7名非法移民、3名非公民与4名美国公民，走私活动自2023年4月起。\n· 5月10日拉雷多铁路车场集装箱内发现6人死亡，该案共7人死亡，箱内气温88至92华氏度。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -2882,7 +2907,12 @@
    "kind": "新闻稿",
    "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-and-lsu-establish-7-2-million-fostering-the-future-endowment-fund/",
    "source": "White House",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-07",
+    "tier": "news",
+    "body": "· 第一夫人梅拉尼娅与路易斯安那州立大学筹得720万美元，设立永久性奖学金捐赠基金。\n· MMR集团出资500万美元，其余由路州大学基金会捐赠者提供。\n· 现有路州大学14名、阿拉巴马大学9名学者，全国26所高校资助100名学者。"
+   }
   },
   {
    "date": "2026-11-07",
