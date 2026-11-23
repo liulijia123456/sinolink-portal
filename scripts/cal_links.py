@@ -185,7 +185,7 @@ OVERRIDES = {
         ('BIS 新闻稿 11-16', 'https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology'),
         ('规则原文（RIN 0694-AK50）', 'https://www.bis.gov/media/documents/rin-0694-ak50.pdf'),
     ],
-    ('2027-01-18', 'HHS HIPAA 隐私规则修订生效'): [
+    ('2027-01-19', 'HHS HIPAA 隐私规则修订生效'): [
         ('联邦公报 2026-23429', 'https://www.federalregister.gov/d/2026-23429'),
         ('HHS 事实清单 11-16', 'https://www.hhs.gov/hipaa/for-professionals/privacy/changes-support-coordinated-care-individual-engagement-reduce-regulatory-burdens-final-rule.html'),
         ('HHS 新闻稿 11-16', 'https://www.hhs.gov/press-room/hhs-issues-new-final-rule-modernize-hipaa-privacy-rule-support-coordinated-care-individual-engagement-reduce-regulatory-burdens.html'),
@@ -206,12 +206,14 @@ OVERRIDES = {
         ('新华社 11-12（选举与罢工背景）', 'https://world.people.com.cn/n1/2026/1112/c1002-40832555.html'),
     ],
     ('2026-12-01', '参议院民主党领袖选举'): [
+        ('The Hill 11-21（逐人表态统计 15:5、34 人未表态）', 'https://thehill.com/homenews/senate/6235600-van-hollen-schumer-senate-race'),
         ('ABC News 刊美联社电 11-21（选情与 12-01 投票）', 'https://abcnews.com/Politics/wireStory/democrats-swept-senate-promised-change-leadership-vote-testing-138342385'),
         ('路透社 11-22（55 人投票与 28 票门槛，经 Internazionale 转载）', 'https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/schumer-led-democrats-to-big-senate-win-now-some-say-they-need-a-new-leader'),
     ],
     ('2026-12-11', '联邦政府拨款截止日'): [
         ('公法 119-103 全文（govinfo）', 'https://www.govinfo.gov/content/pkg/PLAW-119publ103/pdf/PLAW-119publ103.pdf'),
         ('H.R.6500 立法进程（congress.gov）', 'https://www.congress.gov/bill/119th-congress/house-bill/6500'),
+        ('华盛顿邮报 11-23（参院共和党对切断伊朗战事经费松口）', 'https://washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding'),
     ],
     ('2026-11-19', '中美元首双边会晤（深圳）'): [
         ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/zyxw/202611/t20261119_12062924.shtml'),
@@ -222,6 +224,18 @@ OVERRIDES = {
         ('中国外交部通稿 11-19', 'https://www.mfa.gov.cn/eng/xw/zyxw/202611/t20261119_12063266.html'),
         ('新华社《和平宣言》全文 11-19', 'https://www.news.cn/politics/leaders/20261119/52ee3a20593f4b3db7642db2a7ece1a7/c.html'),
         ('王毅介绍会晤情况 11-19', 'https://www.mfa.gov.cn/wjbzhd/202611/t20261120_12063432.shtml'),
+    ],
+    ('2027-01-03', '第 120 届国会开幕'): [
+        ('《宪法》第二十修正案（Constitution Annotated）', 'https://constitution.congress.gov/browse/amendment-20/'),
+    ],
+    ('2027-03-17', 'FISA 第 702 条既有监控授权届满'): [
+        ('众议院书记官表决记录第 142 号（2026-04-29）', 'https://clerk.house.gov/Votes/2026142'),
+        ('S. 1318 立法进程（congress.gov）', 'https://www.congress.gov/bill/119th-congress/senate-bill/1318'),
+        ('布伦南司法中心 11-16（3 月 17 日前完成续期即不断档）', 'https://www.brennancenter.org/our-work/research-reports/section-702-surveillance-will-not-lapse-if-reauthorized-march-17-2027'),
+    ],
+    ('2027-01-10', '中美关税休战延期期满'): [
+        ('联邦公报 91 FR 72608（造船 301 暂停延至 2027-01-09）', 'https://www.federalregister.gov/citation/91-FR-72608'),
+        ('联邦公报 91 FR 72610（178 项豁免延至 2027-01-09）', 'https://www.federalregister.gov/citation/91-FR-72610'),
     ],
 }
 
