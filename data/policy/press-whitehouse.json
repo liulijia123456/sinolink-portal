@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-23T15:38:42+08:00",
+ "updated_at": "2026-11-24T08:34:12+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 6,
-   "added": 0,
+   "fetched": 7,
+   "added": 4,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 3,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 5,
    "error": ""
   },
   {
@@ -88,8 +88,8 @@
    "type": "html",
    "url": "https://www.justice.gov/news",
    "status": "ok",
-   "fetched": 11,
-   "added": 0,
+   "fetched": 10,
+   "added": 7,
    "error": ""
   },
   {
@@ -164,6 +164,306 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-23",
+   "title": "Expeditious Enforcement of Capital Sentences and the Pursuit of Justice for Victims of Heinous Crimes",
+   "title_cn": "特朗普签署备忘录，加快死刑执行并扩大死刑罪名范围",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/expeditious-enforcement-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous-crimes/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 特朗普 11 月 23 日签署备忘录，要求司法部对恶劣联邦死刑罪寻求死刑。\n· 新增覆盖强奸、性侵儿童、性贩运及绑架或人口贩运过程中实施的谋杀。\n· 指示司法部长优先处理直接上诉与人身保护令申请，推动死刑尽快执行。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Fact Sheet: President Donald J. Trump Ensures Expeditious Enforcements of Capital Sentences and the Pursuit of Justice for Victims of Heinous Crimes",
+   "title_cn": "事实清单：特朗普扩大死刑适用范围并加速执行",
+   "agency": "白宫",
+   "kind": "事实清单",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-ensures-expeditious-enforcements-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous-crimes/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 白宫发布事实清单，说明当日签署的死刑执行备忘录要点。\n· 备忘录将谋杀未成年人、强奸或性贩运中谋杀等纳入寻求死刑的罪名。\n· 清单称暴力犯罪逮捕量在特朗普任内前 20 个月增长 90%。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "First Lady Melania Trump Hails America’s Armed Forces",
+   "title_cn": "第一夫人梅拉尼娅在安德鲁斯联合基地慰问美军官兵",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-hails-americas-armed-forces/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 感恩节前夕，第一夫人梅拉尼娅在安德鲁斯联合基地向美军官兵发表讲话。\n· 她称美军力量源于人员，精准表现来自反复训练与严格节奏。\n· 她与军属一同打包节日慰问包，由美国红十字会送往海外部署部队。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Congressional Bills H.R. 1550, H.R. 4930, and H.R. 8552 Signed into Law",
+   "title_cn": "特朗普签署三项法案，涉公园更名与退伍军人待遇调整",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-1550-h-r-4930-and-h-r-8552-signed-into-law/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 11 月 23 日签署 H.R. 1550，将萨拉托加国家历史公园更名国家战场公园。\n· 签署 H.R. 4930，扩大海关与边境保护局与权利人共享侵权进口信息权限。\n· 签署 H.R. 8552，退伍军人伤残补偿按社会保障生活成本调整幅度同步上调。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Severing the Financial Lifelines of Iran’s Shadow Banking Network",
+   "title_cn": "美国制裁伊朗影子银行网络，涉阿联酋土耳其与香港实体",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/severing-the-financial-lifelines-of-irans-shadow-banking-network/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Severing the Financial Lifelines of Iran’s Shadow Banking Network Press Statement November 23, 2026 Today, the United States is taking action against more than two dozen exchange houses, front companies, and individuals in Iran, the United Arab Emirates, Türkiye, and Hong Kong that support Iran’s shadow banking system. This action is part of ",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 美国 11 月 23 日对伊朗影子银行网络采取行动，涉逾二十家兑换所与公司。\n· 对象分布于伊朗、阿联酋、土耳其与中国香港，属「经济弃儿」行动。\n· 行动依据行政令 13902、13224 与 13871，具体名单见财政部公告。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Secretary Rubio’s Meeting with Qatari Prime Minister and Minister of Foreign Affairs Al Thani",
+   "title_cn": "国务卿鲁比奥会见卡塔尔首相，启动第八轮美卡战略对话",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-qatari-prime-minister-and-minister-of-foreign-affairs-al-thani-3/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Meeting with Qatari Prime Minister and Minister of Foreign Affairs Al Thani Readout November 23, 2026 Secretary of State Marco Rubio met with Qatari Prime Minister and Minister of Foreign Affairs Mohammed bin Abdulrahman Al Thani to launch the eighth U.S.-Qatar Strategic Dialogue in Washington, D.C. The Secretary and the Prime Minister reaffirmed the stren",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 鲁比奥 11 月 23 日在华盛顿会见卡塔尔首相兼外交大臣阿勒萨尼。\n· 双方启动第八轮美卡战略对话，重申伙伴关系并讨论经济与安全合作。\n· 鲁比奥感谢卡塔尔斡旋努力，强调协同应对威胁、维护中东稳定。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "First Lady Melania Trump’s Fostering the Future Together Gathers European Leaders for Summit Hosted by Poland’s First Lady Marta Nawrocka",
+   "title_cn": "第一夫人「共育未来」倡议在华沙举行欧洲峰会",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/first-lady-melania-trumps-fostering-the-future-together-gathers-european-leaders-for-summit-hosted-by-polands-first-lady-marta-nawrocka/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman First Lady Melania Trump’s Fostering the Future Together Gathers European Leaders for Summit Hosted by Poland’s First Lady Marta Nawrocka Media Note November 23, 2026 On November 18-19, First Lady Melania Trump’s Fostering the Future Together initiative brought leaders together in Warsaw for the “Their Future. Our Responsibility.” Summit, hosted by Poland’s First Lady, Mrs.",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 11 月 18 至 19 日，「共育未来」倡议在华沙举行欧洲峰会。\n· 峰会由波兰第一夫人纳夫罗茨卡主办，波、立、罗、斯洛文尼亚、乌五国第一夫人出席。\n· 梅拉尼娅以视频致辞，特使华莱士代为出席，讨论儿童教育与网络保护。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "United States Files Action to Recover More Than $1 Billion in Cryptocurrency Assets Stolen by North Korean Cyber Actors in Binance Hack",
+   "title_cn": "司法部提起没收之诉，追缴朝鲜窃取的 11 亿美元加密资产",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/united-states-files-action-recover-more-1-billion-cryptocurrency-assets-stolen-north-korean",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 司法部 11 月 23 日提起民事没收之诉，标的为逾 11 亿美元 USDC。\n· 该资产系朝鲜行为体约 10 月 29 日从币安窃取，此前已被法院限制令冻结。\n· 美方称已协助冻结、扣押或返还逾 29 亿美元，币安被盗总额逾 60 亿美元。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "North Carolina Return Preparers Sentenced to Prison in Pandemic-Relief Fraud Scheme",
+   "title_cn": "北卡罗来纳州两名报税代理人因疫情救助欺诈被判监禁",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/north-carolina-return-preparers-sentenced-prison-pandemic-relief-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 北卡州两名女子因合谋填报虚假疫情税收抵免退税申报被判监禁。\n· 利奇获刑 43 个月并赔偿 1389 万美元，内格龙获刑 6 个月并赔偿 7.3 万美元。\n· 涉案期间为 2022 年 4 月至 2023 年 5 月，业务点位于伦伯顿与霍普米尔斯。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "ISIS Supporter Sentenced to 15 Years in Prison for Concealing His Role in Creating and Disseminating Terrorist Propaganda Via Social Media",
+   "title_cn": "休斯敦一名 ISIS 支持者因隐瞒恐怖宣传角色获刑 15 年",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/isis-supporter-sentenced-15-years-prison-concealing-his-role-creating-and-disseminating-0",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 休斯敦 30 岁男子阿纳斯·赛义德被判 15 年监禁及终身监督释放。\n· 其隐瞒向外国恐怖组织提供物质支持并向联邦调查局作虚假陈述。\n· 他制作美化 ISIS 的视频与海报，经 Telegram 与哈里发之塔媒体发布。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Florida Doctor and Medical Research Employees Convicted of Falsifying Data in Clinical Trials of New Drug Treatments",
+   "title_cn": "佛罗里达医生及研究员工因伪造新药临床试验数据被定罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/florida-doctor-and-medical-research-employees-convicted-falsifying-data-clinical-trials-new",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 佛州联邦陪审团裁定医生莫亚及三名研究协调员伪造试验数据罪名成立。\n· 涉案机构为彭布罗克派恩斯 Pines Care 研究中心，造假始于 2019 年前后。\n· 量刑定于 2027 年 2 月 9 日，莫亚等三人最高 80 年，库萨最高 20 年。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Federal Court Dismisses Second and Third Challenges to National Security Exemption for Energy Development in Gulf of America",
+   "title_cn": "联邦法院驳回对美洲湾能源开发国安豁免的第二、第三项挑战",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/federal-court-dismisses-second-and-third-challenges-national-security-exemption-energy",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 哥伦比亚特区联邦地区法院先后驳回针对濒危物种委员会国安豁免的诉讼。\n· 法院认定此类挑战只能由联邦上诉法院受理，11 月 16 日已驳回同类诉讼。\n· 该豁免由委员会 3 月 31 日一致通过，涉美洲湾油气作业，目前仍然有效。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Adult Day Care Owner Sentenced to 15 Months in Prison for Medicare Fraud",
+   "title_cn": "密歇根州成人日托中心业主因联邦医保欺诈被判 15 个月",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/adult-day-care-owner-sentenced-15-months-prison-medicare-fraud",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 密歇根州 58 岁女子约兰达·马修斯因医保欺诈被判 15 个月监禁。\n· 其经营的底特律日托中心为未提供的心理治疗服务申报逾 53.9 万美元。\n· 法院判令其赔偿并没收同额 53.93 万美元，其已于 2026 年 7 月认罪。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "9 Illegal Aliens from Venezuela Sentenced for Roles in Nashville Sex Trafficking Organization as Part of Homeland Security Task Force Initiative",
+   "title_cn": "九名委内瑞拉非法移民因纳什维尔性贩运组织角色被判刑",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/9-illegal-aliens-venezuela-sentenced-roles-nashville-sex-trafficking-organization-part",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 九名委内瑞拉籍非法移民因人口贩运与偷渡罪名在田纳西中区联邦法院被判刑。\n· 该团伙以招工为名招募委内瑞拉女性，在纳什维尔多家汽车旅馆强迫卖淫。\n· 法院判令两名主犯向四名已确认受害者赔偿共计 17.16 万美元。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "FACT SHEET: The Energy Department is Strengthening Transatlantic Energy Security",
+   "title_cn": "事实清单：能源部借 P-TEC 会议强化跨大西洋能源安全",
+   "agency": "能源部",
+   "kind": "事实清单",
+   "url": "https://www.energy.gov/articles/fact-sheet-energy-department-strengthening-transatlantic-energy-security",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 第七届跨大西洋能源合作部长级会议 11 月 17 至 19 日在华沙举行。\n· 会议吸引 1107 名参会者，较上年的 850 人增加约三成。\n· 2026 年前九个月美国对欧盟能源出口增近 38%，达约 820 亿美元。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Sexual Predators, and Domestic Abusers Over the Weekend",
+   "title_cn": "国土安全部通报周末 ICE 逮捕多名性犯罪定罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/23/worst-worst-ice-arrests-pedophiles-sexual-predators-and-domestic-abusers-over",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 国土安全部通报 ICE 在周末逮捕多名有性侵儿童、强奸与家暴定罪的非法移民。\n· 通报列出 15 名被捕者，涉及古巴、洪都拉斯、印度、泰国、墨西哥等国。\n· 部长马林称 ICE 执法人员遭袭事件增加逾 1600%，承诺严惩袭警行为。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "ICE Lodges Detainer Asking Virginia Sanctuary Politicians to Not Release Illegal Alien Arrested for Raping 12-Year-Old Girl",
+   "title_cn": "ICE 就在押强奸 12 岁女孩嫌犯向弗吉尼亚州发出拘留请求",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/23/ice-lodges-detainer-asking-virginia-sanctuary-politicians-not-release-illegal-alien",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 危地马拉籍非法移民丘布·乔克 11 月 18 日在弗吉尼亚州卡尔佩珀被捕。\n· 其被控四项强奸 13 岁以下儿童、四项绑架及利用电脑引诱儿童等九项重罪。\n· ICE 同日向卡尔佩珀县成人拘留中心发出拘留请求，要求不得释放该嫌犯。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "ICE Arrests Illegal Alien from Venezuela Linked to Threats to Assassinate President Trump",
+   "title_cn": "ICE 逮捕散布刺杀特朗普图像的委内瑞拉籍非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/23/ice-arrests-illegal-alien-venezuela-linked-threats-assassinate-president-trump",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 委内瑞拉籍非法移民穆希卡-埃尔南德斯 10 月 16 日在犹他州普罗沃被捕。\n· 其 2016 年 7 月合法入境后逾期滞留，调查认定其散布刺杀总统图像。\n· 涉案图像为印有「射杀特朗普」字样的贴纸，曾在反 ICE 团体会议上分发。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "ICE Arrests Illegal Alien MS-13 Member in California Whose Criminal History Includes Cruelty Toward Child and DUI",
+   "title_cn": "ICE 在加州逮捕 MS-13 成员，其犯罪记录含虐童与醉驾",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/23/ice-arrests-illegal-alien-ms-13-member-california-whose-criminal-history-includes",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 萨尔瓦多籍 MS-13 成员罗萨莱斯·阿亚拉 11 月 6 日在加州圣马特奥被捕。\n· 其在美国有醉驾定罪与虐待儿童被捕记录，母国因凶杀贩毒等持有通缉令。\n· 逮捕时其拒捕并徒步逃跑，执法人员将其制服，未发生其他意外。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "HSTF Investigation Leads to Venezuelan National and Alleged Tren de Aragua Gang Member Pleading Guilty to New England “Jackpotting” Scheme",
+   "title_cn": "委内瑞拉籍男子就新英格兰 ATM 盗刷案认罪",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/23/hstf-investigation-leads-venezuelan-national-and-alleged-tren-de-aragua-gang-member",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 29 岁委内瑞拉籍男子马丁内斯-古铁雷斯承认两项共谋盗窃银行罪名。\n· 其参与马萨诸塞、缅因、新罕布什尔、康涅狄格与罗得岛五州 ATM 盗刷案。\n· 移民法官已于 2025 年 8 月 19 日下达最终遣返令，刑满后执行。"
+   }
+  },
   {
    "date": "2026-11-22",
    "title": "Lebanon National Day",
