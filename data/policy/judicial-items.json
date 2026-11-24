@@ -1,9 +1,99 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-23 15:57",
-  "count": 132,
+  "updated_at": "2026-11-24 09:52",
+  "count": 137,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "Ashlock v. Ashlock",
+      "url": "https://www.courtlistener.com/opinion/11069108/ashlock-v-ashlock/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "SUMMARY* ERISA / Preemption Vacating the district court’s judgment in",
+      "official_no": "",
+      "title_cn": "Ashlock 诉 Ashlock（ERISA 对 QDRO 的优先适用例外是否及于福利给付计划）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-24",
+        "body": "第九巡回法院审理一起人寿保险给付归属之争。Jerry Ashlock 在爱达荷州离婚诉讼期间违反州法院财产转让禁令，将 LINA 承保保单的唯一受益人指定为亲属 Mary Ashlock 与 Brad Wilt；其去世后，LINA 以原告 Tina Ashlock 非指定受益人、且 ERISA 优先适用于其夫妻共同财产权益为由拒付。\n\n地区法院认定《雇员退休收入保障法》「合格家庭关系令」（QDRO）的优先适用例外仅及于养老金计划，据此驳回原告请求。第九巡回加入第二、第四、第六、第七、第十巡回立场，认定 29 U.S.C. § 1144(b)(7) 该例外同样及于福利给付计划，撤销原判并发回，指令地区法院审查 Tina 是否持有使其有权分享保单给付的 QDRO。判决未就给付归属作出实体分配。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "Iowa Environmental Council v. EPA",
+      "url": "https://www.courtlistener.com/opinion/11069978/iowa-environmental-council-v-epa/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第八巡回上诉法院",
+      "summary": "that the EPA’s permitting decision was arbitrary and capricious. A 1 The emergency motion",
+      "official_no": "",
+      "title_cn": "爱荷华环境委员会诉美国环保署（请求中止陆军叠氮化铅紧急处置许可）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-24",
+        "body": "第八巡回上诉法院以不署名意见处理一起针对环保署紧急许可的中止申请。爱荷华环境委员会与塞拉俱乐部申请审查环保署 2026 年 11 月 13 日向陆军部签发的紧急危险废物管理设施许可，该许可授权陆军在爱荷华州米德尔敦的陆军弹药厂就地引爆 68 桶劣化、不稳定的叠氮化铅，有效期至 2027 年 2 月 11 日；申请人主张该许可在实体标准与公告评论程序上均属任意专断。\n\n法院认定申请人未能证明其很可能在实体复审中胜诉，驳回紧急中止动议，并解除此前签发的行政性中止。法院同时声明，对陆军通知所称拟依《资源保护与恢复法》紧急排除条款自行实施处置一事不发表意见，因该行动不在本案审理范围。许可的实体合法性尚未裁判，以复审结论为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "Healthy Gulf v. Burgum",
+      "url": "https://www.courtlistener.com/opinion/11069122/healthy-gulf-v-burgum/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "reasonable and prudent alternatives to the agency action” and that the project’s “benefits . . . clearly",
+      "official_no": "",
+      "title_cn": "Healthy Gulf 诉伯古姆（濒危物种委员会油气项目豁免的管辖归属）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-24",
+        "body": "哥伦比亚特区联邦地区法院就环保组织挑战濒危物种委员会豁免决定的第三案作出裁定。原告 Healthy Gulf、塞拉俱乐部、地球之友、海龟岛修复网络与 Oceana 主张，委员会准予墨西哥湾油气项目豁免《濒危物种法》第 7 条要求属违法，并质疑委员会本身未依法适当组成或召集。\n\n法院认定，《濒危物种法》第 1536(n) 条已将针对委员会依同条第 (h) 款所作决定的司法审查排他性地划归联邦上诉法院，本院的标的管辖权因此被排除。原告提出的三项反驳——第 (j) 款构成独立豁免授权、其他条款另辟豁免路径、禁止冗余解释规则——均未被采纳。法院准予联邦被告的驳回起诉动议。本案与同院 11 月 16 日、11 月 20 日两起关联案件结论一致，豁免决定的实体合法性未予审查。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "Citizens for Responsibility and Ethics in Washington v. U.S. Department of Defense",
+      "url": "https://www.courtlistener.com/opinion/11069364/citizens-for-responsibility-and-ethics-in-washington-v-us-department-of/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "all brought under section 706 of the Administrative Procedure Act (“APA”), 5 U.S.C. § 706.",
+      "official_no": "",
+      "title_cn": "华府公民责任与伦理组织诉美国国防部（Project Meridian 记录保全令）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-24",
+        "body": "哥伦比亚特区联邦地区法院就国防部「Project Meridian」签发文件保全令。国防部长赫格塞思 9 月 30 日以备忘录宣布设立该项目，由首席技术官筹办，10 月 2 日委托 MITRE 执行。11 月 2 日，华府公民责任与伦理组织等起诉，主张该项目属《联邦咨询委员会法》上的咨询委员会，未遵守章程备案、组成平衡与会议公开要求，四项请求均依《行政程序法》。\n\n法院认为仅凭被告与 MITRE 自愿保全不足，MITRE 亦未提交任何保留政策，遂依固有权力发布保全令，覆盖国防部、部长、首席技术官、项目参与者与 MITRE 持有的全部项目记录，含电邮、短信与会议记录，限 11 月 25 日报告送达。初步禁令动议随之驳回为无实际意义。法院明确该令系维持现状的中间命令，不表达该法是否适用。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "Freespira, Inc. v. Department of Veterans Affairs",
+      "url": "https://www.courtlistener.com/opinion/11070012/freespira-inc-v-department-of-veterans-affairs/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "the alleged “hold” does not constitute final agency action, and for failure to state a claim for relief",
+      "official_no": "",
+      "title_cn": "Freespira 公司诉美国退伍军人事务部（PTSD 数字疗法采购封锁与 VJRA 管辖排除）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-24",
+        "body": "哥伦比亚特区联邦地区法院审理一起医疗器械厂商诉退伍军人事务部案。原告 Freespira 公司生产唯一获 FDA 清关、用于治疗创伤后应激障碍与恐慌症的处方数字疗法，经持该部合同的转售商向退伍军人供货。2024 年 10 月 29 日，该部将 Freespira 的处方与采购列为「hold」，称其未获全国精神健康办公室支持，采购部门无权执行「不可执行请求」；原告称事前未获通知或听证。\n\n法院认定原告对《行政程序法》与第五修正案主张具备起诉资格，但《退伍军人司法审查法》第 511(a) 条排除本院对相关请求的管辖权，故《行政程序法》请求驳回；正当程序请求因原告未主张受保护的财产或自由利益——其持续经营逾两年、产品具独占清关地位——不成立。法院依第 12(b)(1)、(b)(6) 准予驳回。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-20",
