@@ -1,12 +1,8 @@
 {
   "schema": 1,
-  "built_at": "2026-11-23T15:58:05+08:00",
-  "source_fetched_at": "2026-11-23 15:57",
+  "built_at": "2026-11-24T08:20:16+08:00",
+  "source_fetched_at": "2026-11-24 08:19",
   "boards": {
-    "whitehouse": {
-      "count": 408,
-      "updated_at": "2026-11-23 15:31"
-    },
     "congress": {
       "count": 1873,
       "updated_at": "2026-11-23 15:44"
@@ -18,6 +14,10 @@
     "judicial": {
       "count": 132,
       "updated_at": "2026-11-23 15:57"
+    },
+    "whitehouse": {
+      "count": 408,
+      "updated_at": "2026-11-24 08:19"
     }
   }
 }
