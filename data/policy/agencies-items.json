@@ -1,9 +1,196 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-24 09:13",
-  "count": 161,
+  "updated_at": "2026-11-25 16:08",
+  "count": 172,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-25",
+      "title": "Informal Working Group 1 (IWG-1), Informal Working Group 2 (IWG-2), Informal Working Group 3 (IWG-3), and Informal Working Group 4 (IWG-4) of the 2027 World Radiocommunication Conference Advisory Committee (WRC-27 Advisory Committee) Schedule Their Meetings",
+      "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24014/informal-working-group-1-iwg-1-informal-working-group-2-iwg-2-informal-working-group-3-iwg-3-and",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-24014",
+      "title_cn": "2027年世界无线电通信大会咨询委员会第一至第四非正式工作组会议日程（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·联邦通信委员会\n· 2027年世界无线电通信大会（WRC-27）咨询委员会第一至第四非正式工作组（IWG-1 至 IWG-4）公布会议日程：2026年12月9日至10日、2027年1月12日至13日、2027年2月2日至3日各一轮。\n· 会议以 Microsoft Teams 线上举行，对公众开放；重点为拟定提交 WRC-27 的未来议题提案。\n· 全体咨询委员会定于2027年春季开会审议各工作组讨论结果。\n· 本件为程序性会议通告，不含频谱分配或规则实体内容。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-25",
+      "title": "Auction of Flexible-Use Licenses in the Upper C-Band for Next-Generation Wireless Services; Notice and Filing Requirements, Minimum Opening Bids, Upfront Payments, and Other Procedures for Auction 115; Bidding Scheduled To Begin April 27, 2027",
+      "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24013/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-notice",
+      "source": "联邦公报",
+      "kind": "规则",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-24013",
+      "title_cn": "上C频段3.98–4.14 GHz灵活使用牌照第115号拍卖：申请、预付款与最低开叫价程序（规则）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "规则·联邦通信委员会（AU 26-191，DA 26-1219）\n· 公布第115号拍卖程序：上C频段 3.98–4.14 GHz 共 3,248 张新增灵活使用牌照，全国范围160兆赫，另设 4.14–4.16 GHz 二十兆赫保护带以兼容仍在 4.16–4.2 GHz 的固定卫星业务。\n· 竞价分两阶段：先按通用牌照块进行升序时钟拍卖，再进入指配阶段确定具体频率。\n· 关键时点：参与申请截止2027年1月20日18时（美东），预付款截止2027年3月18日18时，竞价2027年4月27日开始。\n· 最低开叫价按 PEA 人口分档：第1–50档每兆赫人口0.03美元、第51–100档0.006美元、其余0.003美元，每20兆赫块不低于1,000美元；预付款约为底价一半；不设总底价。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-25",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23973/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23973",
+      "title_cn": "《安全连接法》电话线路分离信息采集（OMB 3060-1325）审查征询（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·联邦通信委员会\n· 就 OMB 控制编号 3060-1325 的信息采集征求公众意见，属现行批准的延期审查，非法定新设采集。\n· 采集依据《2022年安全连接法》第4条（47 U.S.C. 345）：受涵盖运营商须在接到请求后两个工作日内，将家庭暴力受害者及其照护对象的移动电话线路从与施害者共用的服务合同中分离；采集涵盖运营商告知义务与幸存者提交的申请信息。\n· 规模约170万应报主体、170万份回复，单次耗时1至240小时，年度总工时约363万小时，无年度成本。\n· 书面意见截止2027年1月25日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-25",
+      "title": "Request for Comments Regarding International Trade Commission's Economic Analysis",
+      "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23981/request-for-comments-regarding-international-trade-commissions-economic-analysis",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23981",
+      "title_cn": "国际贸易委员会经济分析方法与重点领域公开征询（MISC-054，通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·国际贸易委员会（调查号 MISC-054）\n· 依《1930年关税法》第332条，就委员会经济分析的方法论与重点领域公开征询意见，属事实调查类程序。\n· 征询范围包括：现有分析工具是否适配未来5至10年重大贸易政策问题；应纳入的议题（劳动市场、投资、敌对贸易措施、收入分配、环境、移民、知识产权执法、贸易失衡、市场集中度等）；模型质量控制与回溯验证；敏感性分析与可复制性；非关税措施量化；数据来源。\n· 委员会现行主要工具为基于 GTAP 数据库的可计算一般均衡模型、行业局部均衡模型与计量模型；文件称正考虑开发更能反映短期调整的模型。\n· 书面意见截止2027年3月25日，此后将汇总评论并形成报告。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23904/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-23904",
+      "title_cn": "银行控制权变更通告：Creighton 家族控制集团保留 High Plains 银行表决权（通告）",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·美联储理事会（Y条例 §225.41）\n· 堪萨斯城辖区：Joseph P. Creighton 等十余名自然人申请加入 Creighton 家族控制集团（一致行动集团），以保留 High Plains Banking Group, Inc. 及间接保留 High Plains Bank 的表决权股份，两机构均位于科罗拉多州。\n· 申请人分布于科罗拉多、得州、加州、纽约州与华盛顿州；Joseph P. Creighton 此前已获美联储许可加入该家族集团。\n· 意见截止2026年12月9日，送美联储理事会秘书处或堪萨斯城联邦储备银行。\n· 属个案批复类通告，不涉规则修订。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Wireless Telecommunications Bureau Seeks Comment on Whether Proposed Upper C-Band Relocation Coordinator Satisfies Selection Criteria",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23905/wireless-telecommunications-bureau-seeks-comment-on-whether-proposed-upper-c-band-relocation",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23905",
+      "title_cn": "无线电信局就上C频段搬迁协调人是否符合遴选标准征询意见（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·联邦通信委员会无线电信局（GN 25-59，DA 26-1248）\n· 就合格空间站运营人遴选的上C频段搬迁协调人是否符合委员会2026年7月24日《上C频段报告与命令》（FCC 26-46）所设标准征询意见。\n· 该命令要求既有固定卫星业务迁出 4.0–4.16 GHz，为全国灵活使用腾出160兆赫；搬迁协调人负责统筹过渡，协调空间站运营人、既有地球站运营人与新牌照持有人之间的搬迁事宜。\n· 评论截止2026年12月3日，回复评论截止12月14日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Federal Advisory Committee Act; Communications Security, Reliability, and Interoperability Council",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23829/federal-advisory-committee-act-communications-security-reliability-and-interoperability-council",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23829",
+      "title_cn": "通信安全、可靠与互操作性委员会（CSRIC X）第三次会议通告",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·联邦通信委员会\n· 第十届通信安全、可靠与互操作性委员会（CSRIC X）定于2026年12月18日10时（美东）在华盛顿特区 45 L Street NE 举行第三次会议，并通过网络直播，对公众开放。\n· CSRIC 为联邦咨询委员会，职责是就通信系统的安全性、可靠性与互操作性向委员会提出建议。\n· CSRIC X 章程于2026年3月26日续期两年，至2028年3月25日；本次为现行章程下第三次会议。\n· 公众可在会前向指定联邦官员提交书面意见。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Deletion of Item From November 19, 2026 Open Meeting",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23828/deletion-of-item-from-november-19-2026-open-meeting",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-23828",
+      "title_cn": "A-CAM I 高成本支持延至2028年底规则获通过并从11月19日公开会议议程删除（通告）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·联邦通信委员会\n· 委员会于2026年11月16日通过一项报告与命令，并将该事项从11月19日公开会议议程中删除；该事项原列于11月12日阳光法通告第4项。\n· 实体内容为将替代连接美国成本模型第一期（A-CAM I）支持有限延长两年至2028年12月31日，涉及 WC 26-96（高成本计划改革）与 WC 10-90（连接美国基金）。\n· A-CAM I 以模型法向农村费率回报运营商提供可预期支持，交换既定宽带部署义务；本次延长旨在避免9家运营商在委员会推进高成本支持机制整体改革期间失去支持。\n· 延长幅度与适用条件以该报告与命令文本为准。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Certain Dynamic Random Access Memory (DRAM) Devices, Products Containing the Same, and Components Thereof (III); Notice of a Commission Determination Not To Review an Initial Determination Granting a Joint Motion To Terminate the Investigation in Its Entirety Due to Settlement; Termination of the Investigation",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23863/certain-dynamic-random-access-memory-dram-devices-products-containing-the-same-and-components",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23863",
+      "title_cn": "动态随机存取存储器（DRAM）设备及组件（III）337调查因和解全面终止（337-TA-1523，通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·国际贸易委员会（337-TA-1523）\n· 委员会不复审主审行政法官第5号初裁，该初裁准许基于和解的联合动议，调查全案终止。\n· 案件于2026年9月25日立案，申诉方为加州欧文的 Netlist，指控进口及在美销售的相关 DRAM 设备及组件侵犯 '731、'523、'366、'407 四项专利。\n· 列名被申请人为美光（爱达荷州博伊西）、慧与（得州斯普林）、联想集团（中国香港）、联想（美国）与 Super Micro（加州圣何塞）。\n· 2026年10月26日 Netlist 与美光联合提出全案终止动议，其余四家所涉被控产品购自美光且不反对；委员会表决日为11月19日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Notice Concerning the Commission's Appointment of Two Administrative Law Judges for Section 337 Investigations",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23862/notice-concerning-the-commissions-appointment-of-two-administrative-law-judges-for-section-337",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23862",
+      "title_cn": "国际贸易委员会任命两名337调查行政法官（通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·国际贸易委员会\n· 委员会依《宪法》任命条款及 5 U.S.C. 3105 等规定，任命两名行政法官，承担第337条调查的正式裁决工作。\n· 依 19 U.S.C. 1337(c) 与 5 U.S.C. 556–557，337调查须经通知与听证后依案卷作出裁定，由行政法官主持并作出初裁与建议裁定（19 CFR 210.3）。\n· 依 19 U.S.C. 1331(a)(1)，主席有权任命包括行政法官在内的雇员并确定薪酬，该决定可经在任委员多数票否决。\n· 本件为程序性人事通告，未涉及具体案件分配。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-24",
+      "title": "Certain Medical Imaging Devices; Notice of Commission Determination Not to Review an Initial Determination Granting a Joint Motion To Terminate the Investigation Based on Settlement; Termination of Investigation",
+      "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23861/certain-medical-imaging-devices-notice-of-commission-determination-not-to-review-an-initial",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-23861",
+      "title_cn": "医疗器械337调查因和解终止（337-TA-1483，通告）",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "通告·国际贸易委员会（337-TA-1483）\n· 委员会不复审主审行政法官第17号初裁，该初裁准许基于和解协议的联合更正动议，全案终止。\n· 案件于2026年2月2日立案，申诉方为加拿大安大略省多伦多的 MolecuLight Inc. 与宾州匹兹堡的 MolecuLight Corp.，指控侵犯美国专利 10,438,356。\n· 列名被申请人为加拿大阿尔伯塔省卡尔加里的 Kent Imaging、印度金奈的 Adiuvo Diagnostics，2026年5月增列加拿大多伦多的 University Health Network。\n· 原终止动议因涂黑范围超出保密商业信息于10月14日被否决，10月20日提交更正动议后获准；不公平进口调查办公室支持终止。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-23",
