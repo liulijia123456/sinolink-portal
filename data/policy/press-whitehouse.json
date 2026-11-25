@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-24T08:34:12+08:00",
+ "updated_at": "2026-11-25T15:46:47+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -8,8 +8,8 @@
    "type": "html",
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
-   "fetched": 7,
-   "added": 4,
+   "fetched": 6,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 3,
+   "added": 4,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 1,
+   "added": 3,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 5,
+   "added": 4,
    "error": ""
   },
   {
@@ -87,10 +87,10 @@
    "name": "Justice",
    "type": "html",
    "url": "https://www.justice.gov/news",
-   "status": "ok",
-   "fetched": 10,
-   "added": 7,
-   "error": ""
+   "status": "error",
+   "fetched": 0,
+   "added": 0,
+   "error": "RuntimeError: 渲染返回空页面"
   },
   {
    "agency": "农业部",
@@ -164,6 +164,126 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-25",
+   "title": "Venezuela’s Reconciliation Talks Continued Progress Toward an Enduring Democracy",
+   "title_cn": "美国欢迎委内瑞拉和解谈判持续取得进展",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/venezuelas-reconciliation-talks-continued-progress-toward-an-enduring-democracy/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman Venezuela’s Reconciliation Talks Continued Progress Toward an Enduring Democracy Press Statement November 24, 2026 The United States welcomes the conclusion of the latest round of political reconciliation talks between Venezuela’s 2015 National Assembly, led by Dr. Dinorah Figuera, and the interim government. This Venezuelan-led process conti",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 委内瑞拉2015年全国代表大会与临时政府完成最新一轮政治和解谈判，美方表示欢迎。\n· 最高法院32名新法官申请期于11月18日截止，逾1300人报名角逐法官等司法领导职位。\n· 双方拟年底前修订《有组织犯罪与恐怖融资法》，并就政党法改革征询各政治组织。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "The United States Welcomes the Joint Bid by Chile and Belgium to Host the Secretariat of the Biodiversity Beyond National Jurisdiction (BBNJ) Agreement",
+   "title_cn": "美国欢迎智利与比利时联合申办BBNJ协定秘书处",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-united-states-welcomes-the-joint-bid-by-chile-and-belgium-to-host-the-secretariat-of-the-biodiversity-beyond-national-jurisdiction-bbnj-agreement/",
+   "source": "State Department",
+   "summary": "Thomas \"Tommy\" Pigott, SpokesmanOffice of the Spokesman The United States Welcomes the Joint Bid by Chile and Belgium to Host the Secretariat of the Biodiversity Beyond National Jurisdiction (BBNJ) Agreement Press Statement November 24, 2026 The United States welcomes the joint offer by Chile and Belgium to host the Secretariat of the Biodiversity Beyond National Jurisdiction (BBNJ) Agreement, als",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 智利与比利时联合提出承办《国家管辖范围以外生物多样性协定》（BBNJ，即公海条约）秘书处。\n· 美方称两国在海洋治理与透明度方面记录良好，联合申办可拓展外交领导力。\n· 美方呼吁各方在2027年1月首届缔约方大会上支持智利与比利时方案。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Secretary Rubio’s Call with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud",
+   "title_cn": "国务卿鲁比奥与沙特外交大臣费萨尔通话",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-call-with-saudi-foreign-minister-prince-faisal-bin-farhan-al-saud-14/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Secretary Rubio’s Call with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud Readout November 24, 2026 Secretary Rubio spoke today with Saudi Foreign Minister Prince Faisal bin Farhan Al Saud. The Secretary condemned the Iran-backed Houthi terrorist attacks on Saudi civilian and energy infrastructure. The Secretary and the Foreign Minister underscored the necessity o",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 国务卿鲁比奥与沙特外交大臣费萨尔·本·法尔汉通电话，讨论地区安全与双边议题。\n· 鲁比奥谴责伊朗支持的胡塞武装袭击沙特民用与能源基础设施。\n· 双方强调霍尔木兹海峡与曼德海峡航行自由，并讨论结束苏丹战争与人道停火。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "FACT SHEET: The Energy Department is Delivering on President Trump's Genesis Mission",
+   "title_cn": "能源部事实清单：推进特朗普「创世纪任务」",
+   "agency": "能源部",
+   "kind": "事实清单",
+   "url": "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 2026年11月24日，「创世纪任务」满一周年，该任务由2025年11月行政令设立。\n· 一年内启动297个研究项目，覆盖369家机构，获伙伴方25亿美元超智能工具与算力资源。\n· 首台创世纪超算Lux在橡树岭国家实验室上线，算力220.79千万亿次，居全球第14位。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Domestic Assailants",
+   "title_cn": "国土安全部：移民执法局逮捕多名重罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/24/worst-worst-ice-arrests-murderers-pedophiles-and-domestic-assailants",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 国土安全部通报，移民与海关执法局逮捕5名有重罪定罪的非法移民。\n· 涉案罪名包括谋杀、二级强奸儿童、家庭暴力与贩运管制药物。\n· 被捕者分别来自危地马拉、墨西哥与洪都拉斯，定罪地含得州、华盛顿州与田纳西州。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "TSA Is Ready for Thanksgiving Passenger Volumes, Urges Travelers to Plan Ahead",
+   "title_cn": "运输安全管理局备战感恩节客流，吁旅客提前规划",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/24/tsa-ready-thanksgiving-passenger-volumes-urges-travelers-plan-ahead",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 11月24日至30日，运输安全管理局预计安检约1760万人次航空旅客。\n· 预计11月29日安检逾300万人次，为感恩节假期客流最高的一天。\n· 建议国内航班提前2小时、国际航班提前3小时抵达机场，并预留停车与托运时间。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "SANCTUARY CALAMITY: DHS Calls on New York Sanctuary Politicians to Not Release Criminal Illegal Alien Charged with Murdering, Strangling, and Sexually Assaulting a 62-Year-Old Woman",
+   "title_cn": "国土安全部促纽约勿释放涉谋杀强奸的非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/24/sanctuary-calamity-dhs-calls-new-york-sanctuary-politicians-not-release-criminal",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 涉案人弗洛伦蒂诺-马尔达纳多系洪都拉斯籍，被控谋杀、勒颈并性侵一名62岁女性。\n· 该人2022年3月在拜登政府时期非法入境，曾被遣返墨西哥，其后再次入境。\n· 2026年纽约警方五次逮捕该人，移民局五次发出拘留令，仍均被释放，累计已七次。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Human Trafficker, Wife Beater, and MS-13 Gang Member Kilmar Garcia Self-Deports from the United States",
+   "title_cn": "涉人口走私的萨尔瓦多籍加西亚自行离境赴西班牙",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/24/human-trafficker-wife-beater-and-ms-13-gang-member-kilmar-garcia-self-deports",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 国土安全部确认，萨尔瓦多籍非法移民基尔马尔·阿夫雷戈·加西亚已自行离境前往西班牙。\n· 该人系MS-13帮派成员，该帮派已被认定为外国恐怖组织。\n· 2025年4月首次被捕；2022年12月因超速被田纳西州公路巡警拦查，车内另载8人。"
+   }
+  },
   {
    "date": "2026-11-23",
    "title": "Expeditious Enforcement of Capital Sentences and the Pursuit of Justice for Victims of Heinous Crimes",
@@ -252,6 +372,21 @@
     "at": "2026-11-23",
     "tier": "news",
     "body": "· 鲁比奥 11 月 23 日在华盛顿会见卡塔尔首相兼外交大臣阿勒萨尼。\n· 双方启动第八轮美卡战略对话，重申伙伴关系并讨论经济与安全合作。\n· 鲁比奥感谢卡塔尔斡旋努力，强调协同应对威胁、维护中东稳定。"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "title": "Joint Statement on the Eighth United States-Qatar Strategic Dialogue: An Enduring Strategic Partnership",
+   "title_cn": "美卡第八轮战略对话发表联合声明",
+   "agency": "国务院",
+   "kind": "声明",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/joint-statement-on-the-eighth-united-states-qatar-strategic-dialogue-an-enduring-strategic-partnership/",
+   "source": "State Department",
+   "summary": "Office of the Spokesman Joint Statement on the Eighth United States-Qatar Strategic Dialogue: An Enduring Strategic Partnership Media Note November 23, 2026 The text of the following statement was released by the Governments of the United States of America and the State of Qatar. Begin Text. Secretary of State Marco Rubio and Prime Minister and Minister of Foreign Affairs Sheikh Mohammed bin Abdul",
+   "brief": {
+    "at": "2026-11-23",
+    "tier": "news",
+    "body": "· 11月23日，鲁比奥与卡塔尔首相兼外交大臣穆罕默德在华盛顿共同主持第八轮美卡战略对话。\n· 双方签署关键矿产框架，并回顾380亿美元防务合作意向书的落实进展。\n· 卡塔尔宣布向联合国帮派遏制部队信托基金认捐3000万美元，用于支持海地。"
    }
   },
   {
@@ -987,6 +1122,36 @@
     "at": "2026-11-19",
     "tier": "news",
     "body": "· 美国能源部长赖特与波兰能源部长莫蒂卡在华沙举行第七届P-TEC部长级会议。\n· 会后发布2026年主席声明，强调跨大西洋能源合作与供应来源多元化。\n· 声明支持民用核能与长期液化天然气合作，并认可煤电气电的可靠性作用。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Joint Statement by the United States and the Baltic Countries following the 2026 Baltic 3+1 Energy Dialogue",
+   "title_cn": "美国与波罗的海三国发表3+1能源对话联合声明",
+   "agency": "能源部",
+   "kind": "声明",
+   "url": "https://www.energy.gov/articles/joint-statement-united-states-and-baltic-countries-following-2026-baltic-31-energy",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 11月19日，美能源部长赖特与爱沙尼亚、拉脱维亚、立陶宛代表在华沙举行第六次3+1能源对话。\n· 四方强调扩大美国液化天然气进口，并推进民用核能尤其是小型模块化反应堆部署。\n· 声明提及美国通过2026年制裁俄罗斯与伊朗法案、欧盟900亿欧元对乌贷款方案。"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Joint Declaration of the Ministers for Energy of the Visegrad Group Countries and the Secretary of Energy of the United States of America",
+   "title_cn": "美国与维谢格拉德集团发表能源联合声明",
+   "agency": "能源部",
+   "kind": "新闻稿",
+   "url": "https://www.energy.gov/articles/joint-declaration-ministers-energy-visegrad-group-countries-and-secretary-energy-united",
+   "source": "Energy",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-19",
+    "tier": "news",
+    "body": "· 11月18日，美能源部长与捷克、匈牙利、波兰、斯洛伐克能源部长在华沙发表联合宣言。\n· 各方同意推动能源来源、供应方与路线多元化，扩大美国液化天然气与原油贸易。\n· 宣言支持发展核能含小型模块化反应堆，并欢迎四国天然气输送运营商签署合作备忘录。"
    }
   },
   {
