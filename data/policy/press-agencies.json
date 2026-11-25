@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-21T09:40:47+08:00",
+ "updated_at": "2026-11-25T16:14:09+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 2,
+   "added": 1,
    "error": ""
   },
   {
@@ -54,6 +54,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-24",
+   "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+   "title_cn": "美联储公布10月19日与10月28日贴现率会议纪要",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+   "source": "Federal Reserve",
+   "summary": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 美联储理事会11月24日（周二）发布贴现率会议纪要，文件于美东时间下午2时公开。\n· 纪要涵盖2026年10月19日与10月28日两次理事会会议，内容为贴现窗口贴现率的审查与确定。\n· 理事会设定贴现率的程序，独立于联邦公开市场委员会设定联邦基金利率目标区间的程序。"
+   }
+  },
   {
    "date": "2026-11-20",
    "title": "Federal Reserve announces College Fed Challenge winners",
