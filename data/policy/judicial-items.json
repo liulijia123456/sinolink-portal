@@ -1,9 +1,81 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-24 09:52",
-  "count": 137,
+  "updated_at": "2026-11-25 16:17",
+  "count": 142,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-24",
+      "title": "King v. Villegas",
+      "url": "https://www.courtlistener.com/opinion/11070898/king-v-villegas/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第九巡回上诉法院",
+      "summary": "been reversed on direct appeal, expunged by executive order, declared invalid by a state tribunal authorized",
+      "official_no": "",
+      "title_cn": "King 诉 Villegas（狱警过度武力索赔的 Heck 规则适用）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "第九巡回上诉法院以全院庭审撤销原判并发回。上诉人系加州州立监狱在押人员，就狱警在冲突中使用过度武力，依第 1983 条提起第八修正案索赔。冲突一年多后，州法院就同一事件提起刑事指控，其对一项抗拒执法人员罪作出「不争辩」抗辩。地区法院据此认为索赔为 Heck 诉汉弗莱规则所禁止，驳回起诉。\n多数意见指出，「不争辩」抗辩不同于认罪答辩，既不承认有罪，也不承认任何事实叙述的真实性；加州法要求的事实基础仅需达到初步证据标准，故不存在约束当事人的事实版本。过度武力索赔与抗拒执法定罪并不必然冲突，不落入 Heck 禁止范围，并部分推翻 2021 年 Sanders 案的相反表述。\nCollins 法官异议，主张该抗辩在法律效果上等同认罪；Owens 法官另行发表并存意见。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-24",
+      "title": "Cornell v. United States Postal Service",
+      "url": "https://www.courtlistener.com/opinion/11071041/cornell-v-united-states-postal-service/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Civil Rule 83.23. Although dismissal is a harsh sanction, Plaintiff has not fulfilled her responsibility",
+      "official_no": "",
+      "title_cn": "Cornell 诉美国邮政署（未推进诉讼被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "哥伦比亚特区联邦地区法院以原告未推进诉讼为由驳回起诉，驳回不影响实体权利。\n原告系自行诉讼，法院此前拒绝为其指定律师，其同意以电子邮件接收文书送达，故放弃邮寄送达权利。被告美国邮政署等提出驳回起诉动议后，法院命令原告于 2026 年 10 月 19 日前答辩，并明确告知逾期可视为自认、并可视情形径行驳回。逾一个月，原告既未提交答辩，也未采取任何推进诉讼的步骤。\n法院依《联邦民事诉讼规则》第 41(b) 条及本区地方民事规则第 83.23 条主动驳回，认定驳回虽属严厉制裁，但原告未履行答辩义务、亦未遵守法院命令，为司法利益所必要，遂一并驳回被告的驳回动议（已无实际意义）。\n判决未涉及原告实体请求能否成立。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-24",
+      "title": "In Re Edward R. Martin, Jr.",
+      "url": "https://www.courtlistener.com/opinion/11070345/in-re-edward-r-martin-jr/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "violations of President Trump’s January 2025 Executive Order 14151, which purports to eliminate DEI programs",
+      "official_no": "",
+      "title_cn": "关于 Edward R. Martin, Jr.（律师纪律程序移送联邦法院的管辖异议）",
+      "domain": "司法/执法",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "哥伦比亚特区联邦地区法院裁定，特区律师纪律程序不得依联邦官员移送法移送联邦法院，因缺乏事项管辖权，将案件发回特区上诉法院律师职业责任委员会。\n被申请人 Edward R. Martin, Jr. 自 2003 年起在特区执业，2025 年 1 月出任哥伦比亚特区联邦检察官，后任赦免检察官。其任内致信乔治敦大学法学院院长，指该院继续教授并推行多元化政策，并称在对方改变前不聘用该院学生。特区纪律检察官据此立案，2026 年 3 月提出两项正式指控，另指其与特区上诉法院法官的单方沟通违反职业行为规则。\n法院认为，第 28 编第 1442 条所称「州法院」仅明文包含特区高等法院、属地法院与部落法院，不含特区上诉法院及其委员会，移送要件不成立，遂驳回回避动议与第三人介入申请。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-24",
+      "title": "Castillo Trevino v. America's Gulag shareholders/epstain Cartel",
+      "url": "https://www.courtlistener.com/opinion/11071242/castillo-trevino-v-americas-gulag-shareholdersepstain-cartel/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Convention Against Torture; and the Administrative Procedure Act (“APA”), 5 U.S.C. § 551, et seq., and",
+      "official_no": "",
+      "title_cn": "Castillo Trevino 诉「America's Gulag」股东及 Epstain 卡特尔（起诉书不符 Rule 8 被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "哥伦比亚特区联邦地区法院依《联邦民事诉讼规则》第 8 条驳回一份自行诉讼的起诉书，允许 30 日内补正，驳回不影响实体权利。\n原告 Castillo Trevino 与 63 名具名原告及名义上「一千万名」无名原告，起诉数百名个人与政府被告，涉及国土安全部、移民及海关执法局、达拉斯移民法院及得州数名官员。起诉书长 118 页、219 段，附证据 378 页，主张违反宪法多项修正案及《禁止酷刑公约》《行政程序法》，请求数千万美元赔偿及禁令、宣告、职务执行令等救济。\n法院认定该起诉书既非简短亦非平实，无法使任何被告知悉被主张的内容；非律师原告不得代表他人起诉；对移民遣返程序的审查，地区法院亦无权限。补正期限至 2026 年 12 月 24 日。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-23",
@@ -14,13 +86,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "SUMMARY* ERISA / Preemption Vacating the district court’s judgment in",
       "official_no": "",
-      "title_cn": "Ashlock 诉 Ashlock（ERISA 对 QDRO 的优先适用例外是否及于福利给付计划）",
-      "domain": "金融/保险",
       "brief": {
         "at": "2026-11-24",
         "body": "第九巡回法院审理一起人寿保险给付归属之争。Jerry Ashlock 在爱达荷州离婚诉讼期间违反州法院财产转让禁令，将 LINA 承保保单的唯一受益人指定为亲属 Mary Ashlock 与 Brad Wilt；其去世后，LINA 以原告 Tina Ashlock 非指定受益人、且 ERISA 优先适用于其夫妻共同财产权益为由拒付。\n\n地区法院认定《雇员退休收入保障法》「合格家庭关系令」（QDRO）的优先适用例外仅及于养老金计划，据此驳回原告请求。第九巡回加入第二、第四、第六、第七、第十巡回立场，认定 29 U.S.C. § 1144(b)(7) 该例外同样及于福利给付计划，撤销原判并发回，指令地区法院审查 Tina 是否持有使其有权分享保单给付的 QDRO。判决未就给付归属作出实体分配。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Ashlock 诉 Ashlock（ERISA 对 QDRO 的优先适用例外是否及于福利给付计划）",
+      "domain": "金融/保险"
     },
     {
       "board": "judicial",
@@ -32,13 +104,13 @@
       "agency": "第八巡回上诉法院",
       "summary": "that the EPA’s permitting decision was arbitrary and capricious. A 1 The emergency motion",
       "official_no": "",
-      "title_cn": "爱荷华环境委员会诉美国环保署（请求中止陆军叠氮化铅紧急处置许可）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-24",
         "body": "第八巡回上诉法院以不署名意见处理一起针对环保署紧急许可的中止申请。爱荷华环境委员会与塞拉俱乐部申请审查环保署 2026 年 11 月 13 日向陆军部签发的紧急危险废物管理设施许可，该许可授权陆军在爱荷华州米德尔敦的陆军弹药厂就地引爆 68 桶劣化、不稳定的叠氮化铅，有效期至 2027 年 2 月 11 日；申请人主张该许可在实体标准与公告评论程序上均属任意专断。\n\n法院认定申请人未能证明其很可能在实体复审中胜诉，驳回紧急中止动议，并解除此前签发的行政性中止。法院同时声明，对陆军通知所称拟依《资源保护与恢复法》紧急排除条款自行实施处置一事不发表意见，因该行动不在本案审理范围。许可的实体合法性尚未裁判，以复审结论为准。",
         "tier": "note"
-      }
+      },
+      "title_cn": "爱荷华环境委员会诉美国环保署（请求中止陆军叠氮化铅紧急处置许可）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -50,13 +122,13 @@
       "agency": "哥伦比亚特区联邦地区法院",
       "summary": "reasonable and prudent alternatives to the agency action” and that the project’s “benefits . . . clearly",
       "official_no": "",
-      "title_cn": "Healthy Gulf 诉伯古姆（濒危物种委员会油气项目豁免的管辖归属）",
-      "domain": "能源/环境",
       "brief": {
         "at": "2026-11-24",
         "body": "哥伦比亚特区联邦地区法院就环保组织挑战濒危物种委员会豁免决定的第三案作出裁定。原告 Healthy Gulf、塞拉俱乐部、地球之友、海龟岛修复网络与 Oceana 主张，委员会准予墨西哥湾油气项目豁免《濒危物种法》第 7 条要求属违法，并质疑委员会本身未依法适当组成或召集。\n\n法院认定，《濒危物种法》第 1536(n) 条已将针对委员会依同条第 (h) 款所作决定的司法审查排他性地划归联邦上诉法院，本院的标的管辖权因此被排除。原告提出的三项反驳——第 (j) 款构成独立豁免授权、其他条款另辟豁免路径、禁止冗余解释规则——均未被采纳。法院准予联邦被告的驳回起诉动议。本案与同院 11 月 16 日、11 月 20 日两起关联案件结论一致，豁免决定的实体合法性未予审查。",
         "tier": "note"
-      }
+      },
+      "title_cn": "Healthy Gulf 诉伯古姆（濒危物种委员会油气项目豁免的管辖归属）",
+      "domain": "能源/环境"
     },
     {
       "board": "judicial",
@@ -91,6 +163,24 @@
       "brief": {
         "at": "2026-11-24",
         "body": "哥伦比亚特区联邦地区法院审理一起医疗器械厂商诉退伍军人事务部案。原告 Freespira 公司生产唯一获 FDA 清关、用于治疗创伤后应激障碍与恐慌症的处方数字疗法，经持该部合同的转售商向退伍军人供货。2024 年 10 月 29 日，该部将 Freespira 的处方与采购列为「hold」，称其未获全国精神健康办公室支持，采购部门无权执行「不可执行请求」；原告称事前未获通知或听证。\n\n法院认定原告对《行政程序法》与第五修正案主张具备起诉资格，但《退伍军人司法审查法》第 511(a) 条排除本院对相关请求的管辖权，故《行政程序法》请求驳回；正当程序请求因原告未主张受保护的财产或自由利益——其持续经营逾两年、产品具独占清关地位——不成立。法院依第 12(b)(1)、(b)(6) 准予驳回。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-23",
+      "title": "United States v. Commonwealth of Virginia",
+      "url": "https://www.courtlistener.com/opinion/11071144/united-states-v-commonwealth-of-virginia/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第四巡回上诉法院",
+      "summary": "appeals. In No. 26-2258, we vacate a preliminary injunction preventing the Commonwealth of Virginia",
+      "official_no": "",
+      "title_cn": "美国诉弗吉尼亚州（州法限制联邦移民执法与政府间豁免原则）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-25",
+        "body": "第四巡回上诉法院就弗吉尼亚州两部涉移民执法的州法作出判决：一部维持禁令，一部撤销禁令。\n2026 年 4 月签署的「287(g) 法」为州及地方执法机构与联邦政府签订移民执法合作协议设定新条件，并规定逾期未修正的既有协议视为无效；5 月签署的「蒙面／身份法」禁止执法人员（含联邦人员）执勤时遮挡面部，并须出示载明标识的徽章。联邦政府提起六项请求之诉，地区法院分别签发禁令。\n合议庭认为，州不得直接向联邦政府发出指令，故「蒙面／身份法」违反政府间豁免原则，维持禁止其对联邦人员执行的禁令；「287(g) 法」未要求联邦政府作为，亦未限制私人订约，且既有协议允许非联邦一方无因终止，不违反契约条款，故撤销针对该法的禁令。Heytens 法官主笔，Benjamin 法官加入，King 法官部分异议。",
         "tier": "note"
       }
     },
