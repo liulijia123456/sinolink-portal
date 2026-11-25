@@ -237,6 +237,16 @@ OVERRIDES = {
         ('联邦公报 91 FR 72608（造船 301 暂停延至 2027-01-09）', 'https://www.federalregister.gov/citation/91-FR-72608'),
         ('联邦公报 91 FR 72610（178 项豁免延至 2027-01-09）', 'https://www.federalregister.gov/citation/91-FR-72610'),
     ],
+    ('2026-11-23', '中美农业工作组首次会议（北京）'): [
+        ('商务部 11-25 日常新闻发布', 'https://www.mofcom.gov.cn/xwfb/rcxwfb/art/2026/art_6e6ac6c48c544802b6f2b68e4ef07522.html'),
+        ('央视新闻 11-25（会期与议题）', 'https://ysxw.cctv.cn/article.html?item_id=8398948507474955782&channelId=1215'),
+    ],
+    # 待定面板条目（键用 pending 的 from 日期）
+    ('2026-11-24', '301 条款产能过剩调查结果公布'): [
+        ('USTR 301 结构产能过剩调查页', 'https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-structural-excess-capacity-and-production-manufacturing-sectors'),
+        ('路透社 11-24（税率区间与豁免口径，经 The Hindu 转载）', 'https://www.thehindu.com/news/international/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources/article71740905.ece'),
+        ('政治报 11-24（格里尔当晚公布提案）', 'https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685'),
+    ],
 }
 
 
