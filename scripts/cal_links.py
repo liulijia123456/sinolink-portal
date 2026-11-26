@@ -242,10 +242,18 @@ OVERRIDES = {
         ('央视新闻 11-25（会期与议题）', 'https://ysxw.cctv.cn/article.html?item_id=8398948507474955782&channelId=1215'),
     ],
     # 待定面板条目（键用 pending 的 from 日期）
-    ('2026-11-24', '301 条款产能过剩调查结果公布'): [
+    ('2026-11-25', '301 条款产能过剩关税落地'): [
+        ('USTR 11-25 新闻稿（14 个经济体裁定与拟征税率）', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural'),
         ('USTR 301 结构产能过剩调查页', 'https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-structural-excess-capacity-and-production-manufacturing-sectors'),
-        ('路透社 11-24（税率区间与豁免口径，经 The Hindu 转载）', 'https://www.thehindu.com/news/international/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources/article71740905.ece'),
-        ('政治报 11-24（格里尔当晚公布提案）', 'https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685'),
+    ],
+    ('2027-01-01', '终止卢旺达与南非 AGOA 优惠待遇生效'): [
+        ('USTR 11-02 声明（终止自 2027-01-01 生效）', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa'),
+    ],
+    ('2027-01-09', '301 条款造船等行业关税暂停届满'): [
+        ('联邦公报 91 FR 72608', 'https://www.federalregister.gov/citation/91-FR-72608'),
+    ],
+    ('2027-01-09', '对华 178 项 301 关税豁免期满'): [
+        ('联邦公报 91 FR 72610', 'https://www.federalregister.gov/citation/91-FR-72610'),
     ],
 }
 
