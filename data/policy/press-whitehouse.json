@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-25T15:46:47+08:00",
+ "updated_at": "2026-11-26T09:21:16+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 6,
-   "added": 0,
+   "added": 2,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 4,
+   "added": 1,
    "error": ""
   },
   {
@@ -49,7 +49,7 @@
    "url": "https://www.energy.gov/newsroom",
    "status": "ok",
    "fetched": 15,
-   "added": 3,
+   "added": 0,
    "error": ""
   },
   {
@@ -166,6 +166,36 @@
  "items": [
   {
    "date": "2026-11-25",
+   "title": "Thanksgiving Day, 2026",
+   "title_cn": "特朗普发布感恩节公告，宣布11月26日为全国感恩节",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/11/thanksgiving-day-2026/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 特朗普依宪法与法律授权发布公告，宣布11月26日星期四为全国感恩节。\n· 公告以1620年五月花号102名乘客远航、追寻宗教自由开篇，称其为立国精神源头。\n· 公告向远离家乡的武装部队官兵致敬，呼吁民众坚守信仰、保持团结。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "First Lady Melania Trump Secures Reunification of Nine Additional Children with their Families",
+   "title_cn": "第一夫人梅拉尼娅促成九名俄乌儿童与家人团聚",
+   "agency": "白宫",
+   "kind": "新闻稿",
+   "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-secures-reunification-of-nine-additional-children-with-their-families/",
+   "source": "White House",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 此为梅拉尼娅第七次促成俄乌儿童与家庭团聚，累计团聚儿童已达43名。\n· 九名儿童在俄乌领导人全面合作下与家人重聚，第一夫人称将继续人道工作。\n· 此前她促成奥列什基与赫尔松地区局部停火，称挽救近800人生命并协助物资运送。"
+   }
+  },
+  {
+   "date": "2026-11-25",
    "title": "Venezuela’s Reconciliation Talks Continued Progress Toward an Enduring Democracy",
    "title_cn": "美国欢迎委内瑞拉和解谈判持续取得进展",
    "agency": "国务院",
@@ -177,6 +207,81 @@
     "at": "2026-11-25",
     "tier": "news",
     "body": "· 委内瑞拉2015年全国代表大会与临时政府完成最新一轮政治和解谈判，美方表示欢迎。\n· 最高法院32名新法官申请期于11月18日截止，逾1300人报名角逐法官等司法领导职位。\n· 双方拟年底前修订《有组织犯罪与恐怖融资法》，并就政党法改革征询各政治组织。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Suriname National Day",
+   "title_cn": "国务卿鲁比奥祝贺苏里南独立51周年",
+   "agency": "国务院",
+   "kind": "新闻稿",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/suriname-national-day-2/",
+   "source": "State Department",
+   "summary": "Marco Rubio, Secretary of State Suriname National Day Press Statement November 25, 2026 On behalf of the United States of America, I warmly congratulate the people of Suriname as you celebrate the 51st anniversary of your independence. The United States values its partnership with Suriname and our shared commitment to a safer and more prosperous hemisphere. We are working together to address narco",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 鲁比奥11月25日发表新闻声明，代表美国祝贺苏里南人民独立51周年。\n· 声明称美方重视与苏里南的伙伴关系，共同致力于更安全繁荣的西半球。\n· 双方正合作打击毒品贩运与跨国犯罪网络，并寻求深化合作、推进共同优先事项。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Rapists, and Drug Dealers",
+   "title_cn": "国土安全部通报ICE逮捕多名性侵、强奸及贩毒罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/25/worst-worst-ice-arrests-pedophiles-rapists-and-drug-dealers",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· ICE宣布逮捕多名「最恶劣」非法移民，罪名涉13岁以下儿童性侵、强奸、可卡因贩运等。\n· 国土安全部长马林称感恩节前夕执法人员全天候工作，逮捕恋童者、强奸犯与毒贩。\n· 通报列出危地马拉、埃塞俄比亚、哥伦比亚、加纳、委内瑞拉五名被定罪者及案发地。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "ICE Arrests Alien from Sudan Who Lost Legal Status Due to Lengthy Rap Sheet",
+   "title_cn": "ICE逮捕苏丹籍男子，其合法身份因犯罪记录被撤销",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/25/ice-arrests-alien-sudan-who-lost-legal-status-due-lengthy-rap-sheet",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 该男子7月21日在加利福尼亚州被捕，犯罪记录含抢劫、家暴、醉驾与毒品共谋。\n· 其1993年9月8日合法入境并调整身份，因犯罪于2013年与2024年两次进入遣返程序。\n· 入籍证书申请多次被拒，最近一次为2023年8月29日；2024年被ICE逮捕后释放。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "DHS Condemns Washington Sanctuary Politicians, Highlights Worst Illegal Aliens with Criminal Histories in Washington State",
+   "title_cn": "国土安全部批评华盛顿州庇护政策，列举ICE逮捕重罪犯",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/25/dhs-condemns-washington-sanctuary-politicians-highlights-worst-illegal-aliens",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 华盛顿州长弗格森11月22日公开呼吁废除ICE，称其「完全失控」「文化败坏」。\n· 部长马林称相关言论属谎言，指ICE在该州逮捕谋杀、儿童强奸与贩毒定罪人员。\n· 通报列举墨西哥、越南、缅甸、萨尔瓦多等国十名被捕或已判刑人员的具体罪名。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "DHS Blasts Sanctuary Politicians in California for Abandoning ICE Officers Surrounded by Angry Mob in Long Beach",
+   "title_cn": "国土安全部批评加州长滩警方弃守ICE执法人员",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/25/dhs-blasts-sanctuary-politicians-california-abandoning-ice-officers-surrounded",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 10月17日ICE洛杉矶执法行动中，长滩警方奉命撤离，告知ICE人员「你们只能靠自己」。\n· 执法目标为一名涉家暴重罪指控的墨西哥籍非法移民，当地警方此前拒绝拘留请求。\n· 通报另列加州及他州多起涉非法移民案件，称纽森庇护政策造成严重后果。"
    }
   },
   {
