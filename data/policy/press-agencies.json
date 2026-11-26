@@ -1,6 +1,6 @@
 {
  "board": "agencies",
- "updated_at": "2026-11-25T16:14:09+08:00",
+ "updated_at": "2026-11-26T09:27:28+08:00",
  "sources": [
   {
    "agency": "美联储（Federal Reserve）",
@@ -9,7 +9,7 @@
    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
    "status": "ok",
    "fetched": 20,
-   "added": 1,
+   "added": 2,
    "error": ""
   },
   {
@@ -54,6 +54,36 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-25",
+   "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+   "title_cn": "美联储与CFPB公布2027年Z条例与M条例适用金额门槛",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+   "source": "Federal Reserve",
+   "summary": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 美联储与消费者金融保护局联合公布2027年Z条例与M条例适用的美元门槛。\n· 门槛依CPI-W年度涨幅调整，本次按截至2026年6月1日3.9%的涨幅确定。\n· Z条例与M条例一般适用于2027年7.63万美元及以下的消费信贷与租赁交易。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+   "title_cn": "美联储等三机构上调2027年抵押贷款评估豁免门槛",
+   "agency": "美联储（Federal Reserve）",
+   "kind": "新闻稿",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+   "source": "Federal Reserve",
+   "summary": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 消费者金融保护局、美联储与货币监理署联合公布2027年高价抵押贷款评估门槛。\n· 门槛由3.42万美元上调至3.55万美元，自2027年1月1日起生效。\n· 该豁免门槛每年依CPI-W涨幅调整，源于多德-弗兰克法案的评估要求。"
+   }
+  },
   {
    "date": "2026-11-24",
    "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
