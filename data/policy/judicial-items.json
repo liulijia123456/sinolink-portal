@@ -1,9 +1,117 @@
 {
   "schema": 1,
   "board": "judicial",
-  "updated_at": "2026-11-25 16:17",
-  "count": 142,
+  "updated_at": "2026-11-26 09:49",
+  "count": 149,
   "items": [
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "Buckeye Inst. v. IRS",
+      "url": "https://www.courtlistener.com/opinion/11072544/buckeye-inst-v-irs/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第六巡回上诉法院",
+      "summary": "to work around Pollock. See, e.g., Payne-Aldrich Tariff Act of 1909, ch. 6, § 38, Pub. L. No. 61-5, 36",
+      "official_no": "",
+      "title_cn": "巴克艾研究所诉美国国税局（涉慈善机构大额捐赠人披露义务合宪性）",
+      "domain": "财政/税收",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "第六巡回上诉法院撤销地区法院裁定并发回，指令作出有利于国税局的简易判决。争议条款源自《1969 年税制改革法》：依第 501(c)(3) 条享有免税资格的慈善组织，须在年度申报中向国税局披露重要捐赠人的姓名与地址。\n原告巴克艾研究所主张，该义务在 AFP 诉邦塔案之后应受严格审查，并侵害其与捐赠人的匿名结社权。合议庭（格里芬主笔，科尔附议）认定，该义务是取得免税地位与捐赠扣除这两项联邦补贴的合理条件，不触及组织的结社与倡导对象，与税法执行直接相关；组织亦可另设第 501(c)(4) 条实体接受匿名捐赠，故不构成违宪条件。\nReadler 法官异议，主张应适用严格审查，并批评多数意见对「项目范围」的界定过宽。判决未涉及已披露信息的具体公开范围。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "Medco Energi v. Cantor",
+      "url": "https://www.courtlistener.com/opinion/11072595/medco-energi-v-cantor/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第五巡回上诉法院",
+      "summary": "name-it-and-claim- it requirement for continued agency action. Instead, given the long history of Continuing",
+      "official_no": "",
+      "title_cn": "Medco Energi 诉 Cantor（涉海上油气设施检查费与设施分类）",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "第五巡回上诉法院部分维持、部分撤销地区法院简易判决，撤销内政部对 Medco Energi 核定的 64.6 万美元检查费并发回重审。\n争议源于《外大陆架土地法》下的检查收费：安全与环境执法局负责检查，自然资源收入办公室负责核定，标准由年度拨款法逐年授权。Medco 主张，2017 年与 2018 年 1 月的两次核定处于拨款法断档期，该办公室无权收费；且将中央处理平台与 18 座沉箱分别认定为独立设施。\n合议庭（全体一致）认为，延续决议已延续上年度的检查项目及授权条件，收费属项目组成部分，授权成立；但依 30 C.F.R. § 250.105，默认规则是将相连设施组视为单一设施，例外须评估各设施本身的复杂性，内政部以有无栈桥连通为分类标准，未获 Kisor/Auer 尊重，分类错误。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "Democratic National Committee v. Trump",
+      "url": "https://www.courtlistener.com/opinion/11072589/democratic-national-committee-v-trump/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "statutory authority, in violation of the Administrative Procedure Act (“APA”), 5 U.S.C. § 551 et seq., and",
+      "official_no": "",
+      "title_cn": "民主党全国委员会诉特朗普（涉拨款资金用于选举宣传，初步禁令被驳回）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "哥伦比亚特区联邦地区法院驳回民主党全国委员会的初步禁令与中止申请，同时明确不涉及实体胜负。\n原告起诉总统、白宫办公室、行政管理和预算局与国土安全部，主张其以拨款资助全国性宣传、意图影响 11 月中期选举，违反《2026 年综合拨款法》第 718 条禁止用于「宣传或鼓吹」之规定、目的法规与反缺口法。法院曾于 10 月 28 日签发临时限制令，中止拨付 2000 万美元。\n判决以未证明不可弥补损害为由驳回：选举已结束，原限制令的紧迫性基础消失；对 12 月路易斯安那州决选及 2027 年选举的损害主张，或缺乏因果关联，或过于推测。法院将修订起诉书视为补充起诉书，令双方于 12 月 9 日前提交联合状态报告。\n脚注明确，本裁定不质疑原告实体胜诉的可能性，对预算局与国土安全部的主张「很可能成立」。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "Southeastern Fisheries Association, Inc. v. Lutnick",
+      "url": "https://www.courtlistener.com/opinion/11072137/southeastern-fisheries-association-inc-v-lutnick/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "opinion granting Plaintiffs’ motion for a preliminary injunction. In brief, Plaintiffs are commercial fishing",
+      "official_no": "",
+      "title_cn": "东南渔业协会诉卢特尼克（涉红鲷捕捞豁免许可之诉是否失效）",
+      "domain": "农业/食品",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "哥伦比亚特区联邦地区法院驳回政府的驳回起诉或中止审理动议，认定本案争点不因许可撤回而失去实际意义。\n原告为商业捕捞企业、行业协会与个体渔民，挑战商务部长与全国海洋渔业局于 2026 年 5 月初向四个南大西洋州发放的四项豁免捕捞许可。该许可使部分休闲渔业数据采集活动免受《马格努森-史蒂文斯渔业养护与管理法》约束。法院已于 5 月 21 日准予初步禁令，认定原告就政府恣意专断发放许可的主张有胜诉可能。\n此后相关许可被撤回、红鲷捕捞季亦已结束，政府主张案件已无实际意义。法院认为同一争议在当事人之间合理可能再度发生，且许可存续期短、易规避司法审查，符合「可重复但规避审查」例外，故驳回动议；政府请求等待新许可申请处理的中止主张已无实际意义。法院责令于 12 月 9 日前提交行政记录。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "American Broadcasting Companies, Inc. v. Federal Communications Commission",
+      "url": "https://www.courtlistener.com/opinion/11072590/american-broadcasting-companies-inc-v-federal-communications-commission/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "motion for preliminary relief and issue a preliminary injunction. I.",
+      "official_no": "",
+      "title_cn": "美国广播公司诉联邦通信委员会（涉提前换照程序构成言论报复，获初步禁令）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "哥伦比亚特区联邦地区法院驳回联邦通信委员会的管辖异议，并部分准予初步禁令，禁止其在提前换照程序中采取进一步行动。\n原告为美国广播公司、华特迪士尼公司及八家电视台，主张委员会以提前换照报复其播出不利于总统与共和党的言论，侵害第一修正案权利。媒体局于 2026 年 4 月 28 日发出命令，称提前换照对正在进行的合规调查属必要，指令各台于 5 月 28 日前提交换照申请。\n法院依 Thunder Basin 三要素认定，该报复之诉不属通信法规定的专属审查范围，本院有管辖权，驳回管辖异议；实体上认定原告已证明报复动机与因果关联，言论受限本身即构成不可弥补损害。\n禁令范围限于提前换照程序（含听证指定令），对禁止其他「正式或非正式胁迫」的请求未予支持，理由是该类行为尚未具体化。保证金定为象征性金额。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-25",
+      "title": "Nathan v. Trump",
+      "url": "https://www.courtlistener.com/opinion/11072386/nathan-v-trump/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "哥伦比亚特区联邦地区法院",
+      "summary": "Supreme Court struck down President Trump’s Executive Order 14160, which purported to deny citizenship",
+      "official_no": "",
+      "title_cn": "内森诉特朗普（涉第 14418 号行政令限制出生公民权，获集体初步禁令）",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "哥伦比亚特区联邦地区法院准予集体诉讼认证，对第 14418 号行政令发布集体范围的初步禁令，并驳回政府提出的上诉期间中止请求。\n该行政令要求联邦机构对若干类在美出生儿童不承认公民身份，包括父母为外国政府或国际组织雇员但无外交豁免者、通过商业代孕安排出生者，以及父母被怀疑属于特定帮派或恐怖组织者。\n法院指出，第十四修正案公民条款及《移民与国籍法》确立出生公民权，仅对外国官员享有完全外交豁免者的子女、敌国占领军子女、外国公共船舶上出生者三类设例外；最高法院已在 Trump 诉 Barbara 案中撤销第 14160 号行政令，行政机关不得自行创设新的例外。法院据此认定原告有实体胜诉可能、损害不可弥补，准予认证集体并禁止对该集体成员执行该命令。判决未涉及该命令对其他未纳入集体者的效力。",
+        "tier": "note"
+      }
+    },
     {
       "board": "judicial",
       "date": "2026-11-24",
@@ -14,13 +122,13 @@
       "agency": "第九巡回上诉法院",
       "summary": "been reversed on direct appeal, expunged by executive order, declared invalid by a state tribunal authorized",
       "official_no": "",
-      "title_cn": "King 诉 Villegas（狱警过度武力索赔的 Heck 规则适用）",
-      "domain": "司法/执法",
       "brief": {
         "at": "2026-11-25",
         "body": "第九巡回上诉法院以全院庭审撤销原判并发回。上诉人系加州州立监狱在押人员，就狱警在冲突中使用过度武力，依第 1983 条提起第八修正案索赔。冲突一年多后，州法院就同一事件提起刑事指控，其对一项抗拒执法人员罪作出「不争辩」抗辩。地区法院据此认为索赔为 Heck 诉汉弗莱规则所禁止，驳回起诉。\n多数意见指出，「不争辩」抗辩不同于认罪答辩，既不承认有罪，也不承认任何事实叙述的真实性；加州法要求的事实基础仅需达到初步证据标准，故不存在约束当事人的事实版本。过度武力索赔与抗拒执法定罪并不必然冲突，不落入 Heck 禁止范围，并部分推翻 2021 年 Sanders 案的相反表述。\nCollins 法官异议，主张该抗辩在法律效果上等同认罪；Owens 法官另行发表并存意见。",
         "tier": "note"
-      }
+      },
+      "title_cn": "King 诉 Villegas（狱警过度武力索赔的 Heck 规则适用）",
+      "domain": "司法/执法"
     },
     {
       "board": "judicial",
@@ -73,6 +181,24 @@
       "brief": {
         "at": "2026-11-25",
         "body": "哥伦比亚特区联邦地区法院依《联邦民事诉讼规则》第 8 条驳回一份自行诉讼的起诉书，允许 30 日内补正，驳回不影响实体权利。\n原告 Castillo Trevino 与 63 名具名原告及名义上「一千万名」无名原告，起诉数百名个人与政府被告，涉及国土安全部、移民及海关执法局、达拉斯移民法院及得州数名官员。起诉书长 118 页、219 段，附证据 378 页，主张违反宪法多项修正案及《禁止酷刑公约》《行政程序法》，请求数千万美元赔偿及禁令、宣告、职务执行令等救济。\n法院认定该起诉书既非简短亦非平实，无法使任何被告知悉被主张的内容；非律师原告不得代表他人起诉；对移民遣返程序的审查，地区法院亦无权限。补正期限至 2026 年 12 月 24 日。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "judicial",
+      "date": "2026-11-24",
+      "title": "E-Liquid Brands, LLC v. FDA",
+      "url": "https://www.courtlistener.com/opinion/11072532/e-liquid-brands-llc-v-fda/",
+      "source": "CourtListener",
+      "kind": "判决",
+      "agency": "第四巡回上诉法院",
+      "summary": "of evidence and that it violated the Administrative Procedure Act (APA) or its own regulations",
+      "official_no": "",
+      "title_cn": "E-Liquid Brands 诉美国食品药品监督管理局（涉调味电子烟上市前申请被拒）",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-26",
+        "body": "第四巡回上诉法院驳回 E-Liquid Brands 的复审申请，维持食品药品监督管理局对其调味电子烟上市前申请的拒绝令。\n依《2009 年家庭吸烟预防与烟草控制法》，新型烟草产品须取得上市前授权方可跨州销售。原告为其甜点、糖果与水果口味电子烟申请授权，管理局以申请缺乏可靠证据、未能显示该类产品相对烟草或薄荷口味产品对成年吸烟者具有更大益处为由拒绝。\n原告主张，管理局实际以「纵向比较效能」标准作为审查前提，该标准未经通告评论程序即行确立，违反授权法与行政程序法。合议庭（拉欣主笔，全体一致）指出，管理局在审查中愿意考虑产品对人群层面的影响证据，且已撤回并未适用 2026 年 8 月 17 日备忘录，原告无法证明该要求系以规则形式发布。\n法院据此认定拒绝令不属恣意专断、滥用裁量或违法。",
         "tier": "note"
       }
     },
@@ -176,13 +302,13 @@
       "agency": "第四巡回上诉法院",
       "summary": "appeals. In No. 26-2258, we vacate a preliminary injunction preventing the Commonwealth of Virginia",
       "official_no": "",
-      "title_cn": "美国诉弗吉尼亚州（州法限制联邦移民执法与政府间豁免原则）",
-      "domain": "政府运作",
       "brief": {
         "at": "2026-11-25",
         "body": "第四巡回上诉法院就弗吉尼亚州两部涉移民执法的州法作出判决：一部维持禁令，一部撤销禁令。\n2026 年 4 月签署的「287(g) 法」为州及地方执法机构与联邦政府签订移民执法合作协议设定新条件，并规定逾期未修正的既有协议视为无效；5 月签署的「蒙面／身份法」禁止执法人员（含联邦人员）执勤时遮挡面部，并须出示载明标识的徽章。联邦政府提起六项请求之诉，地区法院分别签发禁令。\n合议庭认为，州不得直接向联邦政府发出指令，故「蒙面／身份法」违反政府间豁免原则，维持禁止其对联邦人员执行的禁令；「287(g) 法」未要求联邦政府作为，亦未限制私人订约，且既有协议允许非联邦一方无因终止，不违反契约条款，故撤销针对该法的禁令。Heytens 法官主笔，Benjamin 法官加入，King 法官部分异议。",
         "tier": "note"
-      }
+      },
+      "title_cn": "美国诉弗吉尼亚州（州法限制联邦移民执法与政府间豁免原则）",
+      "domain": "政府运作"
     },
     {
       "board": "judicial",
