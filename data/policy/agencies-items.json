@@ -1,9 +1,94 @@
 {
   "schema": 1,
   "board": "agencies",
-  "updated_at": "2026-11-26 09:24",
-  "count": 172,
+  "updated_at": "2026-11-27 12:33",
+  "count": 177,
   "items": [
+    {
+      "board": "agencies",
+      "date": "2026-11-27",
+      "title": "Change in Bank Control Notices; Acquisitions of Shares of a Bank or Bank Holding Company",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24154/change-in-bank-control-notices-acquisitions-of-shares-of-a-bank-or-bank-holding-company",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "美联储（Federal Reserve）",
+      "official_no": "2026-24154",
+      "title_cn": "银行控制权变更通告（Y 条例 §225.41）：堪萨斯城、芝加哥辖区两宗家族集团表决权保留申请",
+      "domain": "金融/保险",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "美联储依《银行控制权变更法》及 Y 条例 §225.41 公布两宗表决权申请，审查依据为法案第 7 段所列因素。\n- 堪萨斯城辖区：Jeffrey Hill、Jessica Johnson、Julie Dean 加入 Hill 家族一致行动集团，保留 Mid-America Bankshares 及子公司 Mid-America Bank 表决权股份。\n- 芝加哥辖区：Vicky J. Nicholas 信托与 Diane N. Ferree 可撤销信托保留 Whitney Corporation of Iowa 及子公司 First Whitney Bank and Trust 表决权股份。\n- 申请材料可在相关储备银行与理事会查阅；意见须于 2026 年 12 月 14 日前送达。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-27",
+      "title": "Privacy Act of 1974; System of Records",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24041/privacy-act-of-1974-system-of-records",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "联邦通信委员会 FCC",
+      "official_no": "2026-24041",
+      "title_cn": "隐私法记录系统通告：新设「外国对手风险管理系统」（FCC/OEA-7）",
+      "domain": "电信/媒体",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "FCC 依《隐私法》公告新设记录系统 FCC/OEA-7「外国对手风险管理系统」（FARMS）。\n- 制度来源为 2026 年 1 月 FCC 通过的「外国对手控制」报告与命令，要求经济与分析办公室与公共安全与国土安全局建立信息采集系统。\n- 采集对象为 47 CFR 1.80000–1.80004 项下受监管主体，内容包括其是否受外国对手控制或影响的证明，受控主体的股权结构以及持股 5% 以上个人的国籍、表决权与股权比例等。\n- 系统于 2026 年 11 月 27 日生效；常规使用条款的意见截止 12 月 28 日，同日生效，除非收到需作出相反决定的意见。\n- 控制状态信息将通过可检索的公开数据库披露，并可向国家安全与执法部门共享。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-27",
+      "title": "Polytetramethylene Ether Glycol (PTMEG) From China, South Korea, Taiwan, and Vietnam; Scheduling of the Final Phase of Antidumping Duty Investigations; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24155/polytetramethylene-ether-glycol-ptmeg-from-china-south-korea-taiwan-and-vietnam-scheduling-of-the",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-24155",
+      "title_cn": "聚四亚甲基醚二醇（PTMEG）（中国、韩国、中国台湾、越南）反倾销终局阶段日程更正通告",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "USITC 更正聚四亚甲基醚二醇（PTMEG，中国、韩国、中国台湾、越南）反倾销终局阶段日程（731-TA-1782-1785）。\n- 更正对象为 2026 年 11 月 20 日刊（91 FR 75348，FR Doc 2026-23624）所载四项日期。\n- 预听证报告列入非公开记录的时间为 2027 年 1 月 6 日。\n- 申请出席听证的截止日为 2027 年 1 月 14 日；预听证会议（如需）定于 1 月 15 日。\n- 预听证简报提交截止日为 2027 年 1 月 13 日。\n- 本条为日程更正，不涉及实体裁决结论。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-27",
+      "title": "Chromium Trioxide From India and Turkey; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24053/chromium-trioxide-from-india-and-turkey-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-24053",
+      "title_cn": "三氧化铬（印度、土耳其）肯定性终裁：认定美国产业受到实质损害",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "USITC 对三氧化铬（印度、土耳其）作出肯定性终裁（701-TA-779、731-TA-1765-1766）。\n- 认定美国产业因印度、土耳其以低于公平价值销售的三氧化铬进口，以及印度受补贴进口，受到实质损害。\n- 涉案商品对应 HTS 税号 2819.10.00；申诉方为美国铬化学品公司（ACC，宾夕法尼亚州卡农斯堡）。\n- 调查于 2025 年 9 月 29 日立案，听证会 2026 年 9 月 29 日举行，裁决 11 月 23 日提交，详见 USITC 第 5811 号出版物。\n- 委员 Samuel Negatu 未参加。肯定性终裁后，商务部将签发反倾销令（印度、土耳其）与反补贴令（印度）。",
+        "tier": "note"
+      }
+    },
+    {
+      "board": "agencies",
+      "date": "2026-11-27",
+      "title": "Welded Line Pipe From South Korea and Turkey; Determinations",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24047/welded-line-pipe-from-south-korea-and-turkey-determinations",
+      "source": "联邦公报",
+      "kind": "通告",
+      "agency": "国际贸易委员会 USITC",
+      "official_no": "2026-24047",
+      "title_cn": "焊接管线管（韩国、土耳其）第二次五年复审肯定性裁决",
+      "domain": "贸易/关税",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "USITC 对焊接管线管（韩国、土耳其）第二次五年复审作出肯定性裁决（701-TA-525、731-TA-1260-1261）。\n- 认定撤销对土耳其的反补贴令及对韩国、土耳其的反倾销令，可能在合理可预见期间内导致美国产业实质损害的持续或再度发生。\n- 复审于 2026 年 5 月 1 日立案，8 月 4 日决定采用加速程序，裁决 11 月 23 日提交，详见 USITC 第 5816 号出版物。\n- 肯定性裁决的结果是现行反补贴令与两项反倾销令继续有效五年。\n- 该裁决由委员会律师顾问 Avram Lichtenstein 署名发布。",
+        "tier": "note"
+      }
+    },
     {
       "board": "agencies",
       "date": "2026-11-25",
