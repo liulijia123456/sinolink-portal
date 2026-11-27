@@ -255,6 +255,21 @@ OVERRIDES = {
     ('2027-01-09', '对华 178 项 301 关税豁免期满'): [
         ('联邦公报 91 FR 72610', 'https://www.federalregister.gov/citation/91-FR-72610'),
     ],
+    ('2027-04-12', 'IMF / 世界银行 2027 年春季会议'): [
+        ('世界银行集团执行董事办公室（2027 春季会议 4-12 至 4-18）', 'https://www.worldbank.org/en/about/leadership/directors/eds01/events-travel'),
+    ],
+    ('2026-11-01', '中美对等降税清单落地'): [
+        ('商务部 11-26 例行新闻发布会（301 拟议措施已豁免清单产品）', 'https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n11y26r/index.html'),
+        ('USTR 11-25 新闻稿（拟议措施与豁免安排）', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural'),
+    ],
+    ('2026-11-01', '美印贸易协议签署'): [
+        ('USTR 11-25 新闻稿（印度 25%，签约则 17%）', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural'),
+        ('USTR 301 结构产能过剩调查页', 'https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-structural-excess-capacity-and-production-manufacturing-sectors'),
+    ],
+    ('2026-11-09', '2027 财年国防授权法（NDAA）跛脚鸭会期表决'): [
+        ('H.R. 8800 立法进程（众院 07-22 通过、09-14 送参院）', 'https://www.congress.gov/bill/119th-congress/house-bill/8800'),
+        ('S. 4784 立法进程（07-27 推进动议）', 'https://www.congress.gov/bill/119th-congress/senate-bill/4784'),
+    ],
 }
 
 
