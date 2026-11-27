@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-26T09:21:16+08:00",
+ "updated_at": "2026-11-27T12:17:51+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -9,7 +9,7 @@
    "url": "https://www.whitehouse.gov/news/",
    "status": "ok",
    "fetched": 6,
-   "added": 2,
+   "added": 0,
    "error": ""
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.state.gov/rss-feed/press-releases/feed/",
    "status": "ok",
    "fetched": 10,
-   "added": 1,
+   "added": 0,
    "error": ""
   },
   {
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 4,
+   "added": 0,
    "error": ""
   },
   {
@@ -87,10 +87,10 @@
    "name": "Justice",
    "type": "html",
    "url": "https://www.justice.gov/news",
-   "status": "error",
-   "fetched": 0,
-   "added": 0,
-   "error": "RuntimeError: 渲染返回空页面"
+   "status": "ok",
+   "fetched": 11,
+   "added": 11,
+   "error": ""
   },
   {
    "agency": "农业部",
@@ -226,6 +226,51 @@
   },
   {
    "date": "2026-11-25",
+   "title": "Los Angeles Man Sentenced to Over 24 Years in Prison for Sex Trafficking",
+   "title_cn": "洛杉矶男子性贩运罪成被判逾24年监禁",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/los-angeles-man-sentenced-over-24-years-prison-sex-trafficking-0",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 洛杉矶33岁男子沙巴兹因性贩运罪被判处292个月监禁，另处五年监督释放。\n· 联邦法院于6月26日经陪审团裁定其以暴力、欺诈或胁迫手段从事性贩运罪名成立。\n· 法院另令其支付10.8万美元赔偿金，案件由国土安全调查局洛杉矶办公室侦办。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Justice Department Clarifies Lawful Use of Drone Detection Technologies to Protect Americans from Emerging UAS Threats",
+   "title_cn": "司法部明确执法部门使用无人机探测技术的合法边界",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-clarifies-lawful-use-drone-detection-technologies-protect-americans",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 司法部法律顾问办公室发布意见，认定执法部门可广泛使用技术探测无人机而不违反联邦法。\n· 声学、光电红外与雷达探测通常不涉《笔式登记器法》与《窃听法》保护的通信内容。\n· 可获取无人机通信内容的技术仍受法定限制，部分情形须另行取得法律授权。"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Colombian National Indicted in Scheme to Defraud Victims of Ransomware Attacks",
+   "title_cn": "哥伦比亚籍男子因谎称可解密勒索软件数据被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/colombian-national-indicted-scheme-defraud-victims-ransomware-attacks",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-25",
+    "tier": "news",
+    "body": "· 罗得岛州联邦大陪审团起诉52岁哥伦比亚籍男子帕拉西奥，罪名为三项电信欺诈。\n· 其公司宣称掌握解密技术且从不与勒索者谈判，实则代付赎金并向受害者加价收费。\n· 2026年6月联邦调查局卧底行动中其收费逾实付赎金两倍；每项罪名最高20年监禁。"
+   }
+  },
+  {
+   "date": "2026-11-25",
    "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Rapists, and Drug Dealers",
    "title_cn": "国土安全部通报ICE逮捕多名性侵、强奸及贩毒罪犯",
    "agency": "国土安全部",
@@ -312,6 +357,126 @@
     "at": "2026-11-24",
     "tier": "news",
     "body": "· 国务卿鲁比奥与沙特外交大臣费萨尔·本·法尔汉通电话，讨论地区安全与双边议题。\n· 鲁比奥谴责伊朗支持的胡塞武装袭击沙特民用与能源基础设施。\n· 双方强调霍尔木兹海峡与曼德海峡航行自由，并讨论结束苏丹战争与人道停火。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Russian National Pleads Guilty to Evading Economic Sanctions on Russia",
+   "title_cn": "俄籍男子就合谋违反出口管制法认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/russian-national-pleads-guilty-evading-economic-sanctions-russia",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 52岁俄罗斯籍男子苏沃罗夫原居瑞典，就合谋违反《出口管制改革法》认罪。\n· 其于2022年3月至2023年4月主导采购网络，向美企骗取军民两用电子元件后运往俄罗斯。\n· 量刑定于2027年3月29日；该罪最高可判20年监禁及100万美元罚金。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Peruvian National Extradited for Overseeing a Transnational Scheme to Impersonate Government Officials and Defraud U.S. Consumers",
+   "title_cn": "秘鲁籍女子因冒充政府官员诈骗美国消费者被引渡",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/peruvian-national-extradited-overseeing-transnational-scheme-impersonate-government",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 49岁秘鲁籍女子托莱多自秘鲁引渡至美国，已在迈阿密联邦法院首次出庭。\n· 其2013年至2018年在利马经营呼叫中心，冒充政府官员威胁逮捕以骗取西语裔居民钱财。\n· 该调查已累计逮捕15人、引渡11人；其被控合谋、电信欺诈、敲诈与洗钱等罪名。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "New York Father and Son Plead Guilty in $600M Covid Tax Fraud Scheme",
+   "title_cn": "纽约父子就逾6亿美元新冠税收抵免欺诈认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/new-york-father-and-son-plead-guilty-600m-covid-tax-fraud-scheme",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 纽约州西亨普斯特德48岁男子威廉姆斯与其28岁儿子刘易斯就欺诈美国等罪名认罪。\n· 二人借名下信用修复公司提交逾8000份虚假雇佣税申报，申领逾6亿美元新冠抵免。\n· 国税局实际支付约4600万美元；刘易斯定于2027年4月19日量刑。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Justice Department Announces Largest-Ever Crackdown on Scammers, Targeting Over 800 Defendants to Protect Americans from Fraud",
+   "title_cn": "司法部宣布史上最大规模反诈骗行动，起诉逾800人",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/justice-department-announces-largest-ever-crackdown-scammers-targeting-over-800-defendants",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 依据3月6日签署的第14390号行政令，司法部宣布反诈骗集中行动成果，涉逾400起案件。\n· 全国85个联邦辖区指控逾800名被告，30名被告被引渡至美国受审。\n· 联邦调查局查扣近170亿美元非法资金、逾1.4万台电子设备，捣毁29个境外诈骗园区。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Four Family Members, Including Two Chinese Nationals, Charged in $55M Medicare and Medicaid Pharmacy Fraud Scheme",
+   "title_cn": "皇后区一家四口因5500万美元药房医保欺诈被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/four-family-members-including-two-chinese-nationals-charged-55m-medicare-and-medicaid",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 纽约皇后区黄姓一家四口于11月20日被起诉，涉向联邦医保与纽约州医疗补助虚假申报。\n· 2020年9月至2026年3月，其名下多家药房获付逾5500万美元，涉回扣与不必要处方药。\n· 政府已查扣约1240万美元涉案资产，起诉书另列670万美元不动产待没收。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Federal Grand Jury Returns Indictment Against Greensburg Man for Crop Insurance Fraud",
+   "title_cn": "肯塔基州格林斯堡男子因农作物保险欺诈被起诉",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/federal-grand-jury-returns-indictment-against-greensburg-man-crop-insurance-fraud",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 肯塔基州鲍灵格林联邦大陪审团起诉78岁男子斯特曼，罪名为一项合谋与八项农险欺诈。\n· 2017年1月至2021年6月，其经营格林斯堡烟草市场，以换票手法助八名烟农隐瞒实际产量。\n· 其另为有机烟草伪造收购合同以骗取高额理赔，定于12月1日首次出庭。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Chinese Tech Giant Huawei and Subsidiaries Convicted of Sanctions Violations, Fraud, Conspiracy to Steal Trade Secrets, and Money Laundering",
+   "title_cn": "华为及三家子公司被裁定违反制裁等多项罪名成立",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/chinese-tech-giant-huawei-and-subsidiaries-convicted-sanctions-violations-fraud-conspiracy",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 纽约东区联邦陪审团经三个月审理，裁定华为及三家子公司违反伊朗制裁、银行欺诈等罪成立。\n· 庭审证实华为以「星通」名义在伊朗开展业务，并向银行隐瞒实情以获取美元清算服务。\n· 其另被判合谋窃取美国企业商业秘密与洗钱；量刑定于2027年9月14日。"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Active-Duty U.S. Army Sergeant Pleads Guilty in Conspiracy to Gather and Transfer National Defense Information",
+   "title_cn": "美陆军现役中士就合谋搜集并传递国防情报认罪",
+   "agency": "司法部",
+   "kind": "新闻稿",
+   "url": "https://www.justice.gov/opa/pr/active-duty-us-army-sergeant-pleads-guilty-conspiracy-gather-and-transfer-national-defense",
+   "source": "Justice",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-24",
+    "tier": "news",
+    "body": "· 驻华盛顿州刘易斯-麦科德联合基地的37岁陆军中士赵某就合谋传递国防情报认罪。\n· 其2017年入伍并持安全许可，2021年11月至2025年3月向在华买家提供军事资料与装备。\n· 2025年3月被捕时查获约3万美元现金与多块陆军硬盘；量刑定于2027年3月1日。"
    }
   },
   {
