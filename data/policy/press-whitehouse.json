@@ -1,6 +1,6 @@
 {
  "board": "whitehouse",
- "updated_at": "2026-11-27T12:17:51+08:00",
+ "updated_at": "2026-11-28T08:19:39+08:00",
  "sources": [
   {
    "agency": "白宫",
@@ -57,10 +57,10 @@
    "name": "Veterans Affairs",
    "type": "html",
    "url": "https://www.va.gov/opa/pressrel/",
-   "status": "ok",
-   "fetched": 10,
+   "status": "error",
+   "fetched": 0,
    "added": 0,
-   "error": ""
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "agency": "国土安全部",
@@ -69,7 +69,7 @@
    "url": "https://www.dhs.gov/news-releases/press-releases",
    "status": "ok",
    "fetched": 10,
-   "added": 0,
+   "added": 1,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.justice.gov/news",
    "status": "ok",
    "fetched": 11,
-   "added": 11,
+   "added": 0,
    "error": ""
   },
   {
@@ -164,6 +164,21 @@
   }
  ],
  "items": [
+  {
+   "date": "2026-11-27",
+   "title": "WORST OF THE WORST: ICE Arrests Pedophiles, Robbers, and Drug Traffickers on Thanksgiving Day",
+   "title_cn": "感恩节当日ICE逮捕五名重罪非法移民",
+   "agency": "国土安全部",
+   "kind": "新闻稿",
+   "url": "https://www.dhs.gov/news/2026/11/27/worst-worst-ice-arrests-pedophiles-robbers-and-drug-traffickers-thanksgiving-day",
+   "source": "Homeland Security",
+   "summary": "",
+   "brief": {
+    "at": "2026-11-27",
+    "tier": "news",
+    "body": "· 感恩节当日，移民与海关执法局逮捕五名有重罪定罪的非法移民。\n· 涉案罪名包括儿童性侵、持危险武器抢劫、毒品贩运与妨碍证人。\n· 五人分别来自墨西哥、萨尔瓦多、埃塞俄比亚和委内瑞拉四国。"
+   }
+  },
   {
    "date": "2026-11-25",
    "title": "Thanksgiving Day, 2026",
@@ -3442,7 +3457,12 @@
    "kind": "讲话",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-22/",
    "source": "State Department",
-   "summary": "Marco Rubio, Secretary of State Paris, France InterContinental Paris Le Grand Secretary of State Marco Rubio Remarks to the Press Remarks November 9, 2026 SECRETARY RUBIO: Let’s go. QUESTION: How were your talks today, Mr. Secretary? SECRETARY RUBIO: Which one? We talked a lot today. (Laughter.) QUESTION: No, but did you mention at all the Ukraine issue with your – the other ministers? SECRETARY R"
+   "summary": "Marco Rubio, Secretary of State Paris, France InterContinental Paris Le Grand Secretary of State Marco Rubio Remarks to the Press Remarks November 9, 2026 SECRETARY RUBIO: Let’s go. QUESTION: How were your talks today, Mr. Secretary? SECRETARY RUBIO: Which one? We talked a lot today. (Laughter.) QUESTION: No, but did you mention at all the Ukraine issue with your – the other ministers? SECRETARY R",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 鲁比奥在巴黎G7外长会期间举行记者会，回答乌克兰与伊朗等问题。\n· 他称当日会议聚焦超级智能与全球冲突，乌克兰议题留待次日分组讨论。\n· 库什纳与威特科夫当日在阿布扎比参加三方会谈，德英法国安顾问亦到场。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -3452,7 +3472,12 @@
    "kind": "讲话",
    "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-21/",
    "source": "State Department",
-   "summary": "Marco Rubio, Secretary of State Homestead, Florida Homestead Air Reserve Base Secretary of State Marco Rubio Remarks to the Press Remarks November 8, 2026 QUESTION: Mr. Secretary — SECRETARY RUBIO: Yeah. QUESTION: There’s this report out just now that India is going to be investigating CEO Jensen Huang. New York Times reported that you had concerns about his relationship with the Chinese spy. Can "
+   "summary": "Marco Rubio, Secretary of State Homestead, Florida Homestead Air Reserve Base Secretary of State Marco Rubio Remarks to the Press Remarks November 8, 2026 QUESTION: Mr. Secretary — SECRETARY RUBIO: Yeah. QUESTION: There’s this report out just now that India is going to be investigating CEO Jensen Huang. New York Times reported that you had concerns about his relationship with the Chinese spy. Can ",
+   "brief": {
+    "at": "2026-11-09",
+    "tier": "news",
+    "body": "· 鲁比奥在佛罗里达州霍姆斯特德空军储备基地登机前回答记者提问。\n· 他拒绝评论印度对黄仁勋的调查以及英伟达公司内部事务。\n· 他称阿布扎比会谈次日起举行，乌克兰战后安全保障尚无定论。"
+   }
   },
   {
    "date": "2026-11-09",
@@ -3657,7 +3682,12 @@
    "kind": "新闻稿",
    "url": "https://www.energy.gov/articles/energy-secretary-builds-progress-strengthen-puerto-ricos-energy-reliability",
    "source": "Energy",
-   "summary": ""
+   "summary": "",
+   "brief": {
+    "at": "2026-11-07",
+    "tier": "news",
+    "body": "· 能源部续签两项第202(c)条紧急命令，维持波多黎各电网改造工作。\n· 命令自2026年11月8日生效，有效期至2027年2月5日。\n· 措施包括输电线周边植被清理，涉及当地320万美国居民用电。"
+   }
   },
   {
    "date": "2026-11-06",
