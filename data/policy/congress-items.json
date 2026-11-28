@@ -1,9 +1,518 @@
 {
   "schema": 1,
   "board": "congress",
-  "updated_at": "2026-11-27 12:24",
-  "count": 2062,
+  "updated_at": "2026-11-28 08:40",
+  "count": 2075,
   "items": [
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-10-15",
+      "stage_date": "2026-10-15",
+      "title": "Prohibit Corrupt Russia Oil Deals Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10828",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, and Rules, fo",
+      "official_no": "H.R. 10828",
+      "brief": {
+        "at": "2026-11-18",
+        "body": "1. 文种与主体：众议院法案 H.R. 10828，案名《禁止腐败性俄罗斯石油交易法案》，由民主党众议员Gregory W. Meeks于 2026年10月15日 提出。\n2. 核心动作：案名指向限制涉及俄罗斯石油交易的腐败性安排；队列未提供官方摘要，制裁对象与手段未列明，不作推定。\n3. 程序阶段：最新行动 2026-10-15，转交外交委员会，并同时转交司法、金融服务、筹款、监督与政府改革、议事规则委员会，进入多委员会并行审议。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《禁止腐败性俄罗斯石油交易法案》",
+      "domain": "国防/安全",
+      "actions": [
+        {
+          "date": "2026-10-15",
+          "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, and Rules, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-10-15",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "sponsor": "Gregory W. Meeks",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-5",
+      "committee": "Foreign Affairs"
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-08-10",
+      "stage_date": "2026-08-10",
+      "title": "Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10076",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Oversight and Government Reform, Financial Services, Ways and Means, Rules, and En",
+      "official_no": "H.R. 10076",
+      "sponsor": "Michael T. McCaul",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-10",
+      "committee": "Foreign Affairs",
+      "actions": [
+        {
+          "date": "2026-08-10",
+          "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Oversight and Government Reform, Financial Services, Ways and Means, Rules, and Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-10",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年林赛·格雷厄姆制裁俄罗斯与伊朗法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 10076《2026年林赛·格雷厄姆制裁俄罗斯与伊朗法案》，由共和党议员 Michael T. McCaul（R-TX-10）于 2026 年 8 月 10 日提出。\n官方标题为「对俄罗斯联邦实施制裁及其他措施」，案名同时列明伊朗，但官方标题仅述俄罗斯，涉伊朗条款无法从公开元数据核实。\n交付众议院外交事务委员会，并另交司法、监督和政府改革、金融服务、筹款、规则、能源和商业五委员会按管辖范围分阶段审议。\n最新行动为 2026-08-10 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，制裁对象、门槛与执行机制以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-12-18",
+      "stage_date": "2025-12-18",
+      "title": "Peace Through Strength Against Russia Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/6856",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, Energy and Co",
+      "official_no": "H.R. 6856",
+      "sponsor": "Brian K. Fitzpatrick",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-PA-1",
+      "committee": "Foreign Affairs",
+      "actions": [
+        {
+          "date": "2025-12-18",
+          "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, Energy and Commerce, and Rules, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-12-18",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2025年以实力促和平应对俄罗斯法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 6856《2025年以实力促和平应对俄罗斯法案》，由共和党议员 Brian K. Fitzpatrick（R-PA-1）于 2025 年 12 月 18 日提出。\n官方标题规定，在俄罗斯政府拒绝与乌克兰谈判和平协议、违反已达成的协议或再次对乌克兰发动军事入侵的情形下，对俄罗斯联邦实施制裁及其他措施。\n交付众议院外交事务委员会，并另交司法、金融服务、筹款、监督和政府改革、能源和商业、规则六委员会分阶段审议。\n最新行动为 2025-12-18 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，制裁触发条件与豁免条款的具体文本以 congress.gov 为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-09-16",
+      "stage_date": "2026-09-16",
+      "title": "Patriotic Corporations of America Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10459",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each",
+      "official_no": "H.R. 10459",
+      "sponsor": "Janice D. Schakowsky",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-9",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2026-09-16",
+          "text": "Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-09-16",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年美国爱国企业法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 10459《2026年美国爱国企业法案》，由民主党议员 Janice D. Schakowsky（D-IL-9）于 2026 年 9 月 16 日提出。\n官方标题为修订《美国法典》第 41 编公共合同部分与第 10 编武装力量部分，对联邦合同增设新要求；门槛、适用范围与合规证明方式未见于公开元数据。\n交付众议院监督和政府改革委员会，并另交军事委员会分阶段审议。\n最新行动为 2026-09-16 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-03-03",
+      "stage_date": "2025-03-03",
+      "title": "ARCH Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1805",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Ways and Means.",
+      "official_no": "H.R. 1805",
+      "sponsor": "Carol D. Miller",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WV-1",
+      "committee": "Ways and Means",
+      "actions": [
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the House Committee on Ways and Means.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《农村社区医院援助（ARCH）法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 1805《农村社区医院援助（ARCH）法案》，由共和党议员 Carol D. Miller（R-WV-1）于 2025 年 3 月 3 日提出。案名 ARCH 系 Assistance for Rural Community Hospitals 的缩写。\n据国会研究服务局摘要，法案将「医保依赖医院计划」与「低业务量医院」的支付调整延长至 2031 财年，并要求政府问责局就依医保支付分类获得认定的医院数量提交报告。\n交付众议院筹款委员会。\n最新行动为 2025-03-03 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n摘要为国会研究服务局整理稿，延长方式与支付基数以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-03-03",
+      "stage_date": "2025-03-03",
+      "title": "United States-Abraham Accords Cooperation and Security Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1794",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 1794",
+      "sponsor": "Diana Harshbarger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TN-1",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2025年美国—亚伯拉罕协议合作与安全法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 1794《2025年美国—亚伯拉罕协议合作与安全法案》，由共和党议员 Diana Harshbarger（R-TN-1）于 2025 年 3 月 3 日提出。\n官方标题为修订《联邦食品、药品和化妆品法》，在食品药品监督管理局内设立「亚伯拉罕协议办公室」；该办公室职能、人员编制与经费来源未见于公开元数据。\n交付众议院能源和商业委员会。\n最新行动为 2025-03-03 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，办公室职权范围以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-03-03",
+      "stage_date": "2025-03-03",
+      "title": "SWAMP Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1779",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management.",
+      "official_no": "H.R. 1779",
+      "sponsor": "Earl L. \"Buddy\" Carter",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-GA-1",
+      "committee": "Economic Development, Public Buildings, and Emergency Management",
+      "actions": [
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management.",
+          "tag": "委员会"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the House Committee on Transportation and Infrastructure.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《停止浪费性拨款（SWAMP）法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 1779《停止浪费性拨款（SWAMP）法案》，由共和党议员 Earl L. \"Buddy\" Carter（R-GA-1）于 2025 年 3 月 3 日提出。案名 SWAMP 系 Stop Wasteful Allocations of Money for Pelosi 的缩写。\n官方标题为要求总务署署长出售名为「议长南希·佩洛西联邦大楼」的联邦房产；处置程序、交易条件与收益用途未见于公开元数据。\n经众议院交通和基础设施委员会转交经济发展、公共建筑和应急管理小组委员会。\n最新行动为 2025-03-03 的小组委员会转交，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "committee"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-03-03",
+      "stage_date": "2025-03-03",
+      "title": "New Health Options Act of 2025",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1776",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committees on Ways and Means, and Education and Workforce, for a period to be subsequently determined by th",
+      "official_no": "H.R. 1776",
+      "sponsor": "Gary J. Palmer",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AL-6",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-03-03",
+          "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committees on Ways and Means, and Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-03-03",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2025年新医保选择法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 1776《2025年新医保选择法案》，由共和党议员 Gary J. Palmer（R-AL-6）于 2025 年 3 月 3 日提出。\n官方标题为修订《患者保护与平价医疗法案》，设立再保险计划；风险分担比例、资金来源与适用人群未见于公开元数据。\n交付众议院能源和商业委员会，并另交筹款委员会、教育和劳动力委员会分阶段审议。\n最新行动为 2025-03-03 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-02-27",
+      "stage_date": "2025-02-27",
+      "title": "USPS Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1760",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
+      "official_no": "H.R. 1760",
+      "sponsor": "Randy K. Sr. Weber",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-14",
+      "committee": "Oversight and Government Reform",
+      "actions": [
+        {
+          "date": "2025-02-27",
+          "text": "Referred to the House Committee on Oversight and Government Reform.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-02-27",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《维护邮政系统安全（USPS）法案》",
+      "domain": "政府运作",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 1760《维护邮政系统安全（USPS）法案》，由共和党议员 Randy K. Weber Sr.（R-TX-14）于 2025 年 2 月 27 日提出。案名 USPS 系 Upholding a Secure Postal System 的缩写。\n官方标题为要求美国总审计长就邮件及邮政署财产被盗、以及其他与邮政服务相关的民事或刑事违法情形向国会提交报告；报告频次与数据口径未见于公开元数据。\n交付众议院监督和政府改革委员会。\n最新行动为 2025-02-27 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-08-27",
+      "stage_date": "2026-08-27",
+      "title": "Competition in State Healthcare Markets Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10177",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 10177",
+      "sponsor": "Victoria Spartz",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-5",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2026-08-27",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-08-27",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《州级医疗保健市场竞争法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 10177《州级医疗保健市场竞争法案》，由共和党议员 Victoria Spartz（R-IN-5）于 2026 年 8 月 27 日提出。\n官方标题为要求卫生与公众服务部规划与评估助理部长办公室就各州医疗保健领域的竞争与机构整合状况开展年度研究；研究年限、报告内容与是否附带政策建议未见于公开元数据。\n交付众议院能源和商业委员会。\n最新行动为 2026-08-27 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要；该案官方标题与同院 H.R. 3017 完全一致，两案关系未见于公开记录，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2025-04-24",
+      "stage_date": "2025-04-24",
+      "title": "Measuring State Healthcare Freedom Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3017",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
+      "official_no": "H.R. 3017",
+      "sponsor": "Victoria Spartz",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-5",
+      "committee": "Energy and Commerce",
+      "actions": [
+        {
+          "date": "2025-04-24",
+          "text": "Referred to the House Committee on Energy and Commerce.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2025-04-24",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《州级医疗保健自由度衡量法案》",
+      "domain": "医疗/医药",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 3017《州级医疗保健自由度衡量法案》，由共和党议员 Victoria Spartz（R-IN-5）于 2025 年 4 月 24 日提出。\n据国会研究服务局摘要，法案要求卫生与公众服务部规划与评估助理部长办公室在生效后十年内每年开展研究，内容涉及医疗专业人员执业许可、医院与医疗保险公司等实体的并购整合，并向国会报告，且须与反垄断执法机构协商。\n交付众议院能源和商业委员会。\n最新行动为 2025-04-24 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n官方标题与同院 H.R. 10177 一致，两案关系未见于公开记录；摘要为国会研究服务局整理稿，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-09-16",
+      "stage_date": "2026-09-16",
+      "title": "Jimmy Lai Hong Kong Political Prisoner Accountability Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10406",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committees on Foreign Affairs, Financial Services, and Ways and Means, for a period to be subsequently determined",
+      "official_no": "H.R. 10406",
+      "sponsor": "Christopher H. Smith",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-NJ-4",
+      "committee": "the Judiciary",
+      "actions": [
+        {
+          "date": "2026-09-16",
+          "text": "Referred to the Committee on the Judiciary, and in addition to the Committees on Foreign Affairs, Financial Services, and Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-09-16",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年黎智英香港问责法案》",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 10406《2026年黎智英香港问责法案》，由共和党议员 Christopher H. Smith（R-NJ-4）于 2026 年 9 月 16 日提出。\n官方标题称，针对香港在押人员死亡情形实施制裁及其他政策后果。该表述系提案方主张，未经证实；香港是中国特别行政区，香港事务纯属中国内政，外国无权干涉。\n交付众议院司法委员会，并另交外交事务、金融服务、筹款三委员会分阶段审议。\n最新行动为 2026-09-16 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，制裁对象与措施范围以 congress.gov 文本为准；该案为美国国会单方面议案，对中国境内主体不具法律效力。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-09-16",
+      "stage_date": "2026-09-16",
+      "title": "Jimmy Lai Hong Kong Political Prisoner Accountability Act of 2026",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5404",
+      "source": "国会官网",
+      "kind": "参议院法案",
+      "agency": "参议院 · Read twice and referred to the Committee on Foreign Relations.",
+      "official_no": "S. 5404",
+      "sponsor": "Dan Sullivan",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-AK",
+      "committee": "Foreign Relations",
+      "actions": [
+        {
+          "date": "2026-09-16",
+          "text": "Read twice and referred to the Committee on Foreign Relations.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-09-16",
+          "text": "Introduced in Senate",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《2026年黎智英香港问责法案》（参议院版本）",
+      "domain": "国防/安全",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "参议院法案 S. 5404《2026年黎智英香港问责法案》（参议院版本），由共和党议员 Dan Sullivan（R-AK）于 2026 年 9 月 16 日提出。\n官方标题与同院 H.R. 10406 一致，称针对香港在押人员死亡情形实施制裁及其他政策后果。该表述系提案方主张，未经证实；香港是中国特别行政区，香港事务纯属中国内政，外国无权干涉。\n经二读后交付参议院外交关系委员会。\n最新行动为 2026-09-16 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，制裁对象与措施范围以 congress.gov 文本为准；该案为美国国会单方面议案，对中国境内主体不具法律效力。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
+    {
+      "board": "congress",
+      "date": "2026-11-27",
+      "introduced": "2026-04-09",
+      "stage_date": "2026-04-09",
+      "title": "End Russian Oil Windfalls Act",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8222",
+      "source": "国会官网",
+      "kind": "众议院法案",
+      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for conside",
+      "official_no": "H.R. 8222",
+      "sponsor": "Gregory W. Meeks",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-5",
+      "committee": "Foreign Affairs",
+      "actions": [
+        {
+          "date": "2026-04-09",
+          "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+          "tag": "提出/转交"
+        },
+        {
+          "date": "2026-04-09",
+          "text": "Introduced in House",
+          "tag": "提出/转交"
+        }
+      ],
+      "title_cn": "《终止俄罗斯石油超额收益法案》",
+      "domain": "能源/环境",
+      "brief": {
+        "at": "2026-11-28",
+        "body": "众议院法案 H.R. 8222《终止俄罗斯石油超额收益法案》，由民主党议员 Gregory W. Meeks（D-NY-5）于 2026 年 4 月 9 日提出。\n官方标题为废止财政部两项涉俄通用许可：第 133 号许可授权交付并销售 2026 年 3 月 5 日已装船的俄罗斯原产原油及石油产品至印度，第 134A 号许可为同一授权、装船基准日为 2026 年 3 月 12 日。\n交付众议院外交事务委员会，并另交司法委员会分阶段审议。\n最新行动为 2026-04-09 提出当日转交委员会，其后无新的立法行动；本条系元数据更新重新进入抓取窗口，非新增立法行动。\n队列未提供官方摘要，废止时点与过渡安排以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      }
+    },
     {
       "board": "congress",
       "date": "2026-11-26",
@@ -159,10 +668,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Ordered to be Reported (Amended) by the Yeas and Nays: 28 - 21.",
       "official_no": "H.R. 10184",
-      "sponsor": "Andy Barr",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-KY-6",
-      "committee": "",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "【政策背景】\n消费者金融保护局依《2010年多德-弗兰克华尔街改革与消费者保护法》设立，负责执行联邦消费者金融法律并受理消费者投诉。近届国会围绕该局的经费来源、局长职权与规则制定程序提出多项改革议案，主责委员会为众议院金融服务委员会。本条属该议题在本届国会的议案之一。\n\n【核心内容】\n法案题为「2026年消费者金融保护问责与改革法案」，由共和党众议员 Andy Barr（R-KY-6）于 2026 年 8 月 31 日提出，正式标题为「对消费者金融保护局作出改革」。提出当日交付众议院金融服务委员会，并同时交付司法、小企业、监督和政府改革三个委员会分辖相关条款。2026 年 9 月 16 日，金融服务委员会以点名表决 28 票对 21 票通过修正案并报送众议院。截至本次抓取，congress.gov 未提供国会研究服务局的条款摘要，GPO 尚未发布法案文本，因此拟改革的具体事项、过渡安排与生效时点均无法核实。本条系元数据更新重新进入抓取窗口，最新立法行动日期为 2026 年 9 月 16 日，非近日新增立法行动。\n\n【要点提炼】\n1. 以 28 比 21 获委员会多数报送，票型接近党派分界，跨党派共识有限。\n2. 下一步为列入众议院联合日程并排入院会表决；成案仍需参议院通过对应版本并经总统签署。\n3. 委员会报送版本为修正案文本，条款细节须待 GPO 公布后方可核实，本节不作条款推定。",
+        "tier": "full",
+        "stage": "committee"
+      },
+      "title_cn": "《2026年消费者金融保护问责与改革法案》",
+      "domain": "金融/保险",
       "actions": [
         {
           "date": "2026-09-16",
@@ -180,14 +693,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年消费者金融保护问责与改革法案》",
-      "domain": "金融/保险",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "【政策背景】\n消费者金融保护局依《2010年多德-弗兰克华尔街改革与消费者保护法》设立，负责执行联邦消费者金融法律并受理消费者投诉。近届国会围绕该局的经费来源、局长职权与规则制定程序提出多项改革议案，主责委员会为众议院金融服务委员会。本条属该议题在本届国会的议案之一。\n\n【核心内容】\n法案题为「2026年消费者金融保护问责与改革法案」，由共和党众议员 Andy Barr（R-KY-6）于 2026 年 8 月 31 日提出，正式标题为「对消费者金融保护局作出改革」。提出当日交付众议院金融服务委员会，并同时交付司法、小企业、监督和政府改革三个委员会分辖相关条款。2026 年 9 月 16 日，金融服务委员会以点名表决 28 票对 21 票通过修正案并报送众议院。截至本次抓取，congress.gov 未提供国会研究服务局的条款摘要，GPO 尚未发布法案文本，因此拟改革的具体事项、过渡安排与生效时点均无法核实。本条系元数据更新重新进入抓取窗口，最新立法行动日期为 2026 年 9 月 16 日，非近日新增立法行动。\n\n【要点提炼】\n1. 以 28 比 21 获委员会多数报送，票型接近党派分界，跨党派共识有限。\n2. 下一步为列入众议院联合日程并排入院会表决；成案仍需参议院通过对应版本并经总统签署。\n3. 委员会报送版本为修正案文本，条款细节须待 GPO 公布后方可核实，本节不作条款推定。",
-        "tier": "full",
-        "stage": "committee"
-      }
+      "sponsor": "Andy Barr",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-KY-6",
+      "committee": ""
     },
     {
       "board": "congress",
@@ -200,10 +709,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Finance.",
       "official_no": "S. 5774",
-      "sponsor": "Ron Wyden",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-OR",
-      "committee": "Finance",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5774《为成长中的创业者提供持续成功增长机会（PROGRESS）法案》，由民主党议员 Ron Wyden 于 2026 年 11 月 19 日 提出。\n修订《1986年国内税收法典》，为初创企业出资人提供税收抵免，并对初创企业支付给首批雇员的工资给予抵免。案名 PROGRESS 系 Providing Real Opportunities for Growth to Rising Entrepreneurs for Sustained Success 的缩写。\n最新行动为 2026-11-19 的「二读后交付参议院财政委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《为成长中的创业者提供持续成功增长机会（PROGRESS）法案》",
+      "domain": "财政/税收",
       "actions": [
         {
           "date": "2026-11-19",
@@ -216,14 +729,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《为成长中的创业者提供持续成功增长机会（PROGRESS）法案》",
-      "domain": "财政/税收",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5774《为成长中的创业者提供持续成功增长机会（PROGRESS）法案》，由民主党议员 Ron Wyden 于 2026 年 11 月 19 日 提出。\n修订《1986年国内税收法典》，为初创企业出资人提供税收抵免，并对初创企业支付给首批雇员的工资给予抵免。案名 PROGRESS 系 Providing Real Opportunities for Growth to Rising Entrepreneurs for Sustained Success 的缩写。\n最新行动为 2026-11-19 的「二读后交付参议院财政委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Ron Wyden",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-OR",
+      "committee": "Finance"
     },
     {
       "board": "congress",
@@ -236,10 +745,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Finance.",
       "official_no": "S. 5765",
-      "sponsor": "Ron Johnson",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-WI",
-      "committee": "Finance",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5765《停止恐吓老年人法案》，由共和党议员 Ron Johnson 于 2026 年 11 月 18 日 提出。\n修订《社会保障法》，规定从财政部一般基金向联邦老年和遗属保险信托基金划转资金，以确保社会保障待遇全额支付。\n最新行动为 2026-11-18 的「二读后交付参议院财政委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《停止恐吓老年人法案》",
+      "domain": "社会保障",
       "actions": [
         {
           "date": "2026-11-18",
@@ -252,14 +765,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《停止恐吓老年人法案》",
-      "domain": "社会保障",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5765《停止恐吓老年人法案》，由共和党议员 Ron Johnson 于 2026 年 11 月 18 日 提出。\n修订《社会保障法》，规定从财政部一般基金向联邦老年和遗属保险信托基金划转资金，以确保社会保障待遇全额支付。\n最新行动为 2026-11-18 的「二读后交付参议院财政委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Ron Johnson",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-WI",
+      "committee": "Finance"
     },
     {
       "board": "congress",
@@ -272,10 +781,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
       "official_no": "S. 5777",
-      "sponsor": "Cory A. Booker",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NJ",
-      "committee": "Health, Education, Labor, and Pensions",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5777《发展激励成就的创新伙伴关系与学习机会（DIPLOMA）法案》，由民主党议员 Cory A. Booker 于 2026 年 11 月 19 日 提出。\n通过创新伙伴关系回应儿童与青少年的综合需求，据以提升学生学业成绩与毕业率，并为其升学、就业与公民参与作准备。案名 DIPLOMA 系 Developing Innovative Partnerships and Learning Opportunities that Motivate Achievement 的缩写。\n最新行动为 2026-11-19 的「二读后交付参议院卫生、教育、劳工和养老金委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《发展激励成就的创新伙伴关系与学习机会（DIPLOMA）法案》",
+      "domain": "教育/劳动",
       "actions": [
         {
           "date": "2026-11-19",
@@ -288,14 +801,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《发展激励成就的创新伙伴关系与学习机会（DIPLOMA）法案》",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5777《发展激励成就的创新伙伴关系与学习机会（DIPLOMA）法案》，由民主党议员 Cory A. Booker 于 2026 年 11 月 19 日 提出。\n通过创新伙伴关系回应儿童与青少年的综合需求，据以提升学生学业成绩与毕业率，并为其升学、就业与公民参与作准备。案名 DIPLOMA 系 Developing Innovative Partnerships and Learning Opportunities that Motivate Achievement 的缩写。\n最新行动为 2026-11-19 的「二读后交付参议院卫生、教育、劳工和养老金委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Cory A. Booker",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NJ",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -308,10 +817,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
       "official_no": "S. 5747",
-      "sponsor": "Tammy Baldwin",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-WI",
-      "committee": "Health, Education, Labor, and Pensions",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5747《2026年保护美国免受季节性与大流行性流感侵害法案》，由民主党议员 Tammy Baldwin 于 2026 年 11 月 18 日 提出。\n就防范季节性流感与大流行性流感作出规定，正式标题未列明具体授权额度与实施机制。\n最新行动为 2026-11-18 的「二读后交付参议院卫生、教育、劳工和养老金委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年保护美国免受季节性与大流行性流感侵害法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-18",
@@ -324,14 +837,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年保护美国免受季节性与大流行性流感侵害法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5747《2026年保护美国免受季节性与大流行性流感侵害法案》，由民主党议员 Tammy Baldwin 于 2026 年 11 月 18 日 提出。\n就防范季节性流感与大流行性流感作出规定，正式标题未列明具体授权额度与实施机制。\n最新行动为 2026-11-18 的「二读后交付参议院卫生、教育、劳工和养老金委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Tammy Baldwin",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-WI",
+      "committee": "Health, Education, Labor, and Pensions"
     },
     {
       "board": "congress",
@@ -344,10 +853,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
       "official_no": "S. 5769",
-      "sponsor": "Gary C. Peters",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MI",
-      "committee": "Homeland Security and Governmental Affairs",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5769《将密歇根州夏洛特市西洛维特街117号邮政设施命名为“弗朗西斯·C·弗拉赫蒂邮局大楼”的法案》，由民主党议员 Gary C. Peters 于 2026 年 11 月 18 日 提出。\n将密歇根州夏洛特市西洛维特街 117 号的邮政设施命名为「弗朗西斯·C·弗拉赫蒂邮局大楼」。\n最新行动为 2026-11-18 的「二读后交付参议院国土安全与政府事务委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《将密歇根州夏洛特市西洛维特街117号邮政设施命名为“弗朗西斯·C·弗拉赫蒂邮局大楼”的法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-11-18",
@@ -360,14 +873,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《将密歇根州夏洛特市西洛维特街117号邮政设施命名为“弗朗西斯·C·弗拉赫蒂邮局大楼”的法案》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5769《将密歇根州夏洛特市西洛维特街117号邮政设施命名为“弗朗西斯·C·弗拉赫蒂邮局大楼”的法案》，由民主党议员 Gary C. Peters 于 2026 年 11 月 18 日 提出。\n将密歇根州夏洛特市西洛维特街 117 号的邮政设施命名为「弗朗西斯·C·弗拉赫蒂邮局大楼」。\n最新行动为 2026-11-18 的「二读后交付参议院国土安全与政府事务委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Gary C. Peters",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -380,10 +889,14 @@
       "kind": "参议院法案",
       "agency": "参议院 · Read twice and referred to the Committee on Homeland Security and Governmental Affairs.",
       "official_no": "S. 5770",
-      "sponsor": "Gary C. Peters",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MI",
-      "committee": "Homeland Security and Governmental Affairs",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "参议院法案 S. 5770《将密歇根州格兰德黑文市华盛顿大道324号1室邮政设施命名为“埃尔·托马斯·西曼茨邮局大楼”的法案》，由民主党议员 Gary C. Peters 于 2026 年 11 月 18 日 提出。\n将密歇根州格兰德黑文市华盛顿大道 324 号 1 室的邮政设施命名为「埃尔·托马斯·西曼茨邮局大楼」。\n最新行动为 2026-11-18 的「二读后交付参议院国土安全与政府事务委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《将密歇根州格兰德黑文市华盛顿大道324号1室邮政设施命名为“埃尔·托马斯·西曼茨邮局大楼”的法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-11-18",
@@ -396,14 +909,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《将密歇根州格兰德黑文市华盛顿大道324号1室邮政设施命名为“埃尔·托马斯·西曼茨邮局大楼”的法案》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "参议院法案 S. 5770《将密歇根州格兰德黑文市华盛顿大道324号1室邮政设施命名为“埃尔·托马斯·西曼茨邮局大楼”的法案》，由民主党议员 Gary C. Peters 于 2026 年 11 月 18 日 提出。\n将密歇根州格兰德黑文市华盛顿大道 324 号 1 室的邮政设施命名为「埃尔·托马斯·西曼茨邮局大楼」。\n最新行动为 2026-11-18 的「二读后交付参议院国土安全与政府事务委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Gary C. Peters",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI",
+      "committee": "Homeland Security and Governmental Affairs"
     },
     {
       "board": "congress",
@@ -416,10 +925,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11112",
-      "sponsor": "August Pfluger",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TX-11",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11112《为优化连接与抵消时延提供严格监督（PROTOCOL）法案》，由共和党议员 August Pfluger 于 2026 年 11 月 19 日 提出。\n将宽带服务可用性与宽带基础设施部署资金的相关地图整合为单一在线地图工具，并改进宽带地图数据的相关安排。案名 PROTOCOL 系 Provide Rigorous Oversight To Optimize Connectivity and Offset Latency 的缩写。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《为优化连接与抵消时延提供严格监督（PROTOCOL）法案》",
+      "domain": "电信/媒体",
       "actions": [
         {
           "date": "2026-11-19",
@@ -432,14 +945,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《为优化连接与抵消时延提供严格监督（PROTOCOL）法案》",
-      "domain": "电信/媒体",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11112《为优化连接与抵消时延提供严格监督（PROTOCOL）法案》，由共和党议员 August Pfluger 于 2026 年 11 月 19 日 提出。\n将宽带服务可用性与宽带基础设施部署资金的相关地图整合为单一在线地图工具，并改进宽带地图数据的相关安排。案名 PROTOCOL 系 Provide Rigorous Oversight To Optimize Connectivity and Offset Latency 的缩写。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "August Pfluger",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-11",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -452,10 +961,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
       "official_no": "H.R. 11109",
-      "sponsor": "Johnny Olszewski",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MD-2",
-      "committee": "Education and Workforce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11109《2026年记录结果与理解非传统轨迹（COUNT）法案》，由民主党议员 Johnny Olszewski 于 2026 年 11 月 19 日 提出。\n修订《1965年高等教育法》，扩大综合高等教育数据系统（IPEDS）的数据收集范围，以更好反映社区学院学生的经历与社区学院的经济影响。案名 COUNT 系 Capturing Outcomes and Understanding Nontraditional Trajectories 的缩写。\n最新行动为 2026-11-19 的「交付众议院教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年记录结果与理解非传统轨迹（COUNT）法案》",
+      "domain": "教育/劳动",
       "actions": [
         {
           "date": "2026-11-19",
@@ -468,14 +981,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年记录结果与理解非传统轨迹（COUNT）法案》",
-      "domain": "教育/劳动",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11109《2026年记录结果与理解非传统轨迹（COUNT）法案》，由民主党议员 Johnny Olszewski 于 2026 年 11 月 19 日 提出。\n修订《1965年高等教育法》，扩大综合高等教育数据系统（IPEDS）的数据收集范围，以更好反映社区学院学生的经历与社区学院的经济影响。案名 COUNT 系 Capturing Outcomes and Understanding Nontraditional Trajectories 的缩写。\n最新行动为 2026-11-19 的「交付众议院教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Johnny Olszewski",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MD-2",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -488,10 +997,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Oversight and Government Reform.",
       "official_no": "H.R. 11102",
-      "sponsor": "Robin L. Kelly",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-IL-2",
-      "committee": "Oversight and Government Reform",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11102《提高联邦支出透明度与问责法案》，由民主党议员 Robin L. Kelly 于 2026 年 11 月 19 日 提出。\n扩大对联邦奖励项下分包合同与次级拨款的报告要求，正式标题未列明报告主体与报送频次的具体安排。\n最新行动为 2026-11-19 的「交付众议院监督和政府改革委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《提高联邦支出透明度与问责法案》",
+      "domain": "政府运作",
       "actions": [
         {
           "date": "2026-11-19",
@@ -504,14 +1017,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《提高联邦支出透明度与问责法案》",
-      "domain": "政府运作",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11102《提高联邦支出透明度与问责法案》，由民主党议员 Robin L. Kelly 于 2026 年 11 月 19 日 提出。\n扩大对联邦奖励项下分包合同与次级拨款的报告要求，正式标题未列明报告主体与报送频次的具体安排。\n最新行动为 2026-11-19 的「交付众议院监督和政府改革委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Robin L. Kelly",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-IL-2",
+      "committee": "Oversight and Government Reform"
     },
     {
       "board": "congress",
@@ -524,10 +1033,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Agriculture.",
       "official_no": "H.R. 11105",
-      "sponsor": "Nancy Mace",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-SC-1",
-      "committee": "Agriculture",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11105《禁止补充营养援助家庭在线配送（NO DASH）法案》，由共和党议员 Nancy Mace 于 2026 年 11 月 19 日 提出。\n修订《2008年食品与营养法》，禁止农业部长批准零售食品店通过在线交易接受补充营养援助计划的补贴用于配送订单。案名 NO DASH 系 No Online Delivery Allowed for SNAP Households 的缩写。\n最新行动为 2026-11-19 的「交付众议院农业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《禁止补充营养援助家庭在线配送（NO DASH）法案》",
+      "domain": "农业/食品",
       "actions": [
         {
           "date": "2026-11-19",
@@ -540,14 +1053,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《禁止补充营养援助家庭在线配送（NO DASH）法案》",
-      "domain": "农业/食品",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11105《禁止补充营养援助家庭在线配送（NO DASH）法案》，由共和党议员 Nancy Mace 于 2026 年 11 月 19 日 提出。\n修订《2008年食品与营养法》，禁止农业部长批准零售食品店通过在线交易接受补充营养援助计划的补贴用于配送订单。案名 NO DASH 系 No Online Delivery Allowed for SNAP Households 的缩写。\n最新行动为 2026-11-19 的「交付众议院农业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Nancy Mace",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-SC-1",
+      "committee": "Agriculture"
     },
     {
       "board": "congress",
@@ -560,10 +1069,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committee on Rules, for a period to be subsequently determined by the Speaker, in each case for consideration of ",
       "official_no": "H.R. 11108",
-      "sponsor": "Joseph D. Morelle",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NY-25",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11108《枪支盗窃预防法案》，由民主党议员 Joseph D. Morelle 于 2026 年 11 月 19 日 提出。\n加强联邦许可枪支经销商经营场所的安全与保障措施，正式标题未列明具体合规义务与执法机制。\n最新行动为 2026-11-19 的「交付众议院司法委员会，并同时交付规则委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《枪支盗窃预防法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-19",
@@ -576,14 +1089,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《枪支盗窃预防法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11108《枪支盗窃预防法案》，由民主党议员 Joseph D. Morelle 于 2026 年 11 月 19 日 提出。\n加强联邦许可枪支经销商经营场所的安全与保障措施，正式标题未列明具体合规义务与执法机制。\n最新行动为 2026-11-19 的「交付众议院司法委员会，并同时交付规则委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Joseph D. Morelle",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-NY-25",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -596,10 +1105,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Ways and Means.",
       "official_no": "H.R. 11085",
-      "sponsor": "James R. Baird",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-IN-4",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11085《厄立特里亚伙伴投资、持久自由、农业与资源（PILLAR）法案》，由共和党议员 James R. Baird 于 2026 年 11 月 19 日 提出。\n建立美国与厄立特里亚之间的农业及关键矿产贸易伙伴关系。案名 PILLAR 系 Eritrea Partnership for Investment, Lasting Liberty, Agriculture, and Resources 的缩写。\n最新行动为 2026-11-19 的「交付众议院筹款委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《厄立特里亚伙伴投资、持久自由、农业与资源（PILLAR）法案》",
+      "domain": "贸易/关税",
       "actions": [
         {
           "date": "2026-11-19",
@@ -612,14 +1125,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《厄立特里亚伙伴投资、持久自由、农业与资源（PILLAR）法案》",
-      "domain": "贸易/关税",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11085《厄立特里亚伙伴投资、持久自由、农业与资源（PILLAR）法案》，由共和党议员 James R. Baird 于 2026 年 11 月 19 日 提出。\n建立美国与厄立特里亚之间的农业及关键矿产贸易伙伴关系。案名 PILLAR 系 Eritrea Partnership for Investment, Lasting Liberty, Agriculture, and Resources 的缩写。\n最新行动为 2026-11-19 的「交付众议院筹款委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "James R. Baird",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-4",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -632,10 +1141,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Ways and Means.",
       "official_no": "H.R. 11084",
-      "sponsor": "James R. Baird",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-IN-4",
-      "committee": "Ways and Means",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11084《埃塞俄比亚稳定、伙伴、农业、资源与关键投资（SPARK）法案》，由共和党议员 James R. Baird 于 2026 年 11 月 19 日 提出。\n建立美国与埃塞俄比亚之间的农业及关键矿产贸易伙伴关系。案名 SPARK 系 Ethiopia Stability, Partnership, Agriculture, Resources, and Key Investments 的缩写。\n最新行动为 2026-11-19 的「交付众议院筹款委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《埃塞俄比亚稳定、伙伴、农业、资源与关键投资（SPARK）法案》",
+      "domain": "贸易/关税",
       "actions": [
         {
           "date": "2026-11-19",
@@ -648,14 +1161,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《埃塞俄比亚稳定、伙伴、农业、资源与关键投资（SPARK）法案》",
-      "domain": "贸易/关税",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11084《埃塞俄比亚稳定、伙伴、农业、资源与关键投资（SPARK）法案》，由共和党议员 James R. Baird 于 2026 年 11 月 19 日 提出。\n建立美国与埃塞俄比亚之间的农业及关键矿产贸易伙伴关系。案名 SPARK 系 Ethiopia Stability, Partnership, Agriculture, Resources, and Key Investments 的缩写。\n最新行动为 2026-11-19 的「交付众议院筹款委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "James R. Baird",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-4",
+      "committee": "Ways and Means"
     },
     {
       "board": "congress",
@@ -668,10 +1177,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11115",
-      "sponsor": "Chip Roy",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-TX-21",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11115《2026年燃料自由法案》，由共和党议员 Chip Roy 于 2026 年 11 月 19 日 提出。\n修订《清洁空气法》，规定逐步淘汰并终止可再生燃料标准，正式标题未列明淘汰时间表。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年燃料自由法案》",
+      "domain": "能源/环境",
       "actions": [
         {
           "date": "2026-11-19",
@@ -684,14 +1197,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年燃料自由法案》",
-      "domain": "能源/环境",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11115《2026年燃料自由法案》，由共和党议员 Chip Roy 于 2026 年 11 月 19 日 提出。\n修订《清洁空气法》，规定逐步淘汰并终止可再生燃料标准，正式标题未列明淘汰时间表。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Chip Roy",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-TX-21",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -704,10 +1213,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Education and Workforce.",
       "official_no": "H.R. 11104",
-      "sponsor": "Summer L. Lee",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-PA-12",
-      "committee": "Education and Workforce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11104《2026年禁止拘留少年身份犯法案》，由民主党议员 Summer L. Lee 于 2026 年 11 月 19 日 提出。\n修订《1974年少年司法与犯罪预防法》，取消以有效法院命令羁押少年身份犯（status offenders）的做法。\n最新行动为 2026-11-19 的「交付众议院教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年禁止拘留少年身份犯法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-19",
@@ -720,14 +1233,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年禁止拘留少年身份犯法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11104《2026年禁止拘留少年身份犯法案》，由民主党议员 Summer L. Lee 于 2026 年 11 月 19 日 提出。\n修订《1974年少年司法与犯罪预防法》，取消以有效法院命令羁押少年身份犯（status offenders）的做法。\n最新行动为 2026-11-19 的「交付众议院教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Summer L. Lee",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-PA-12",
+      "committee": "Education and Workforce"
     },
     {
       "board": "congress",
@@ -740,10 +1249,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Armed Services.",
       "official_no": "H.R. 11111",
-      "sponsor": "Burgess Owens",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-UT-4",
-      "committee": "Armed Services",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11111《军事单位分离、过渡、就业与战备（MUSTER）法案》，由共和党议员 Burgess Owens 于 2026 年 11 月 19 日 提出。\n要求国防部长就设立「分离营」（separation battalions）一事向国会国防委员会提交报告。案名 MUSTER 系 Military Units for Separation, Transition, Employment, and Readiness 的缩写。\n最新行动为 2026-11-19 的「交付众议院军事委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《军事单位分离、过渡、就业与战备（MUSTER）法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2026-11-19",
@@ -756,14 +1269,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《军事单位分离、过渡、就业与战备（MUSTER）法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11111《军事单位分离、过渡、就业与战备（MUSTER）法案》，由共和党议员 Burgess Owens 于 2026 年 11 月 19 日 提出。\n要求国防部长就设立「分离营」（separation battalions）一事向国会国防委员会提交报告。案名 MUSTER 系 Military Units for Separation, Transition, Employment, and Readiness 的缩写。\n最新行动为 2026-11-19 的「交付众议院军事委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Burgess Owens",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT-4",
+      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -776,10 +1285,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on the Judiciary, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for",
       "official_no": "H.R. 11147",
-      "sponsor": "Emanuel Cleaver",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MO-5",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11147《2026年打击惩教设施职场歧视法案》，由民主党议员 Emanuel Cleaver 于 2026 年 11 月 24 日 提出。\n防止对被监禁劳动者实施歧视与报复，正式标题未列明申诉渠道与救济方式的具体安排。\n最新行动为 2026-11-24 的「交付众议院司法委员会，并同时交付教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年打击惩教设施职场歧视法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-24",
@@ -792,14 +1305,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年打击惩教设施职场歧视法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11147《2026年打击惩教设施职场歧视法案》，由民主党议员 Emanuel Cleaver 于 2026 年 11 月 24 日 提出。\n防止对被监禁劳动者实施歧视与报复，正式标题未列明申诉渠道与救济方式的具体安排。\n最新行动为 2026-11-24 的「交付众议院司法委员会，并同时交付教育和劳动力委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Emanuel Cleaver",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MO-5",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -812,10 +1321,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the Committee on Energy and Commerce, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for con",
       "official_no": "H.R. 11117",
-      "sponsor": "Mary Gay Scanlon",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-PA-5",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11117《2026年心理健康司法法案》，由民主党议员 Mary Gay Scanlon 于 2026 年 11 月 19 日 提出。\n修订《公共卫生服务法》，授权向州、印第安部落、部落组织及其政治分区拨款，用于雇用、培训并派遣心理健康专业人员，在涉及精神疾病或智力、发育障碍人士的紧急情形中替代执法人员响应。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会，并同时交付司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年心理健康司法法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-19",
@@ -828,14 +1341,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年心理健康司法法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11117《2026年心理健康司法法案》，由民主党议员 Mary Gay Scanlon 于 2026 年 11 月 19 日 提出。\n修订《公共卫生服务法》，授权向州、印第安部落、部落组织及其政治分区拨款，用于雇用、培训并派遣心理健康专业人员，在涉及精神疾病或智力、发育障碍人士的紧急情形中替代执法人员响应。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会，并同时交付司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Mary Gay Scanlon",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-PA-5",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -848,10 +1357,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Transportation and Infrastructure.",
       "official_no": "H.R. 11118",
-      "sponsor": "Hillary J. Scholten",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MI-3",
-      "committee": "Transportation and Infrastructure",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11118《路权基础设施发展法案》，由民主党议员 Hillary J. Scholten 于 2026 年 11 月 19 日 提出。\n就《美国法典》第 23 编第 645 部分项下特定设施的容纳作出规定，正式标题未列明适用设施类别。\n最新行动为 2026-11-19 的「交付众议院交通和基础设施委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《路权基础设施发展法案》",
+      "domain": "交通",
       "actions": [
         {
           "date": "2026-11-19",
@@ -864,14 +1377,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《路权基础设施发展法案》",
-      "domain": "交通",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11118《路权基础设施发展法案》，由民主党议员 Hillary J. Scholten 于 2026 年 11 月 19 日 提出。\n就《美国法典》第 23 编第 645 部分项下特定设施的容纳作出规定，正式标题未列明适用设施类别。\n最新行动为 2026-11-19 的「交付众议院交通和基础设施委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Hillary J. Scholten",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MI-3",
+      "committee": "Transportation and Infrastructure"
     },
     {
       "board": "congress",
@@ -884,10 +1393,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on the Judiciary.",
       "official_no": "H.R. 11148",
-      "sponsor": "Emanuel Cleaver",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-MO-5",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11148《2026年确保惩教设施工作机会法案》，由民主党议员 Emanuel Cleaver 于 2026 年 11 月 24 日 提出。\n为联邦监狱局的职业教育和培训项目授权拨款，正式标题未列明授权额度与适用年度。\n最新行动为 2026-11-24 的「交付众议院司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年确保惩教设施工作机会法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-24",
@@ -900,14 +1413,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年确保惩教设施工作机会法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11148《2026年确保惩教设施工作机会法案》，由民主党议员 Emanuel Cleaver 于 2026 年 11 月 24 日 提出。\n为联邦监狱局的职业教育和培训项目授权拨款，正式标题未列明授权额度与适用年度。\n最新行动为 2026-11-24 的「交付众议院司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Emanuel Cleaver",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-MO-5",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -920,10 +1429,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Homeland Security.",
       "official_no": "H.R. 11119",
-      "sponsor": "Jefferson Shreve",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-IN-6",
-      "committee": "Homeland Security",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11119《货运铁路网络安全增强法案》，由共和党议员 Jefferson Shreve 于 2026 年 11 月 19 日 提出。\n要求运输安全管理局局长设立拨款项目，资助符合条件的铁路企业改善货运铁路运输系统的网络安全。\n最新行动为 2026-11-19 的「交付众议院国土安全委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《货运铁路网络安全增强法案》",
+      "domain": "交通",
       "actions": [
         {
           "date": "2026-11-19",
@@ -936,14 +1449,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《货运铁路网络安全增强法案》",
-      "domain": "交通",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11119《货运铁路网络安全增强法案》，由共和党议员 Jefferson Shreve 于 2026 年 11 月 19 日 提出。\n要求运输安全管理局局长设立拨款项目，资助符合条件的铁路企业改善货运铁路运输系统的网络安全。\n最新行动为 2026-11-19 的「交付众议院国土安全委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Jefferson Shreve",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-IN-6",
+      "committee": "Homeland Security"
     },
     {
       "board": "congress",
@@ -956,10 +1465,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Armed Services.",
       "official_no": "H.R. 11110",
-      "sponsor": "Burgess Owens",
-      "sponsor_party": "R",
-      "sponsor_tag": "R-UT-4",
-      "committee": "Armed Services",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11110《军人经历认可与行业资格及就业验证（SERVICE）法案》，由共和党议员 Burgess Owens 于 2026 年 11 月 19 日 提出。\n要求国防部长就军事训练、教育与职业专业的民用等效资历向国会提交报告。案名 SERVICE 系 Servicemember Experience Recognition and Validation for Industry Credentials and Employment 的缩写。\n最新行动为 2026-11-19 的「交付众议院军事委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《军人经历认可与行业资格及就业验证（SERVICE）法案》",
+      "domain": "国防/安全",
       "actions": [
         {
           "date": "2026-11-19",
@@ -972,14 +1485,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《军人经历认可与行业资格及就业验证（SERVICE）法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11110《军人经历认可与行业资格及就业验证（SERVICE）法案》，由共和党议员 Burgess Owens 于 2026 年 11 月 19 日 提出。\n要求国防部长就军事训练、教育与职业专业的民用等效资历向国会提交报告。案名 SERVICE 系 Servicemember Experience Recognition and Validation for Industry Credentials and Employment 的缩写。\n最新行动为 2026-11-19 的「交付众议院军事委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Burgess Owens",
+      "sponsor_party": "R",
+      "sponsor_tag": "R-UT-4",
+      "committee": "Armed Services"
     },
     {
       "board": "congress",
@@ -992,10 +1501,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on Energy and Commerce.",
       "official_no": "H.R. 11116",
-      "sponsor": "Raul Ruiz",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-25",
-      "committee": "Energy and Commerce",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11116《2026年改善急诊科心理健康可及性法案》，由民主党议员 Raul Ruiz 于 2026 年 11 月 19 日 提出。\n授权卫生与公众服务部长通过药物滥用和心理健康服务管理局心理健康服务中心主任向急诊科提供拨款，用于实施创新方式，为在急诊科就诊的急性心理健康发作患者落实及时的后续照护。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《2026年改善急诊科心理健康可及性法案》",
+      "domain": "医疗/医药",
       "actions": [
         {
           "date": "2026-11-19",
@@ -1008,14 +1521,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《2026年改善急诊科心理健康可及性法案》",
-      "domain": "医疗/医药",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11116《2026年改善急诊科心理健康可及性法案》，由民主党议员 Raul Ruiz 于 2026 年 11 月 19 日 提出。\n授权卫生与公众服务部长通过药物滥用和心理健康服务管理局心理健康服务中心主任向急诊科提供拨款，用于实施创新方式，为在急诊科就诊的急性心理健康发作患者落实及时的后续照护。\n最新行动为 2026-11-19 的「交付众议院能源和商业委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Raul Ruiz",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-25",
+      "committee": "Energy and Commerce"
     },
     {
       "board": "congress",
@@ -1028,10 +1537,14 @@
       "kind": "众议院法案",
       "agency": "众议院 · Referred to the House Committee on the Judiciary.",
       "official_no": "H.R. 11120",
-      "sponsor": "Lateefah Simon",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-CA-12",
-      "committee": "the Judiciary",
+      "brief": {
+        "at": "2026-11-27",
+        "body": "众议院法案 H.R. 11120《保护我们的邻居法案》，由民主党议员 Lateefah Simon 于 2026 年 11 月 19 日 提出。\n规定最终遣返令在 10 年期满后失效，正式标题未列明适用的犯罪类别除外情形。\n最新行动为 2026-11-19 的「交付众议院司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
+        "tier": "note",
+        "stage": "introduced"
+      },
+      "title_cn": "《保护我们的邻居法案》",
+      "domain": "司法/执法",
       "actions": [
         {
           "date": "2026-11-19",
@@ -1044,14 +1557,10 @@
           "tag": "提出/转交"
         }
       ],
-      "title_cn": "《保护我们的邻居法案》",
-      "domain": "司法/执法",
-      "brief": {
-        "at": "2026-11-27",
-        "body": "众议院法案 H.R. 11120《保护我们的邻居法案》，由民主党议员 Lateefah Simon 于 2026 年 11 月 19 日 提出。\n规定最终遣返令在 10 年期满后失效，正式标题未列明适用的犯罪类别除外情形。\n最新行动为 2026-11-19 的「交付众议院司法委员会」，系提出当日转交，尚无后续立法行动。\n队列未提供官方摘要，具体条文以 congress.gov 文本为准。",
-        "tier": "note",
-        "stage": "introduced"
-      }
+      "sponsor": "Lateefah Simon",
+      "sponsor_party": "D",
+      "sponsor_tag": "D-CA-12",
+      "committee": "the Judiciary"
     },
     {
       "board": "congress",
@@ -30736,42 +31245,6 @@
         "body": "1. 文种与主体：众议院法案 H.R. 2518，案名《2025年渔业信贷增强法案》，由民主党众议员Chellie Pingree于 2025年3月31日 提出。\n2. 核心动作：案名指向扩大渔业经营者获得农业信贷体系贷款的渠道；队列未提供官方摘要，具体条款未由 GPO 发布，不作推定。\n3. 程序阶段：最新行动 2025-04-18，转交农业委员会一般农产品、风险管理与信贷小组委员会。本条系元数据更新重新进入抓取窗口。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
         "tier": "note",
         "stage": "committee"
-      }
-    },
-    {
-      "board": "congress",
-      "date": "2026-11-17",
-      "introduced": "2026-10-15",
-      "stage_date": "2026-10-15",
-      "title": "Prohibit Corrupt Russia Oil Deals Act",
-      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10828",
-      "source": "国会官网",
-      "kind": "众议院法案",
-      "agency": "众议院 · Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, and Rules, fo",
-      "official_no": "H.R. 10828",
-      "sponsor": "Gregory W. Meeks",
-      "sponsor_party": "D",
-      "sponsor_tag": "D-NY-5",
-      "committee": "Foreign Affairs",
-      "actions": [
-        {
-          "date": "2026-10-15",
-          "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committees on the Judiciary, Financial Services, Ways and Means, Oversight and Government Reform, and Rules, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
-          "tag": "提出/转交"
-        },
-        {
-          "date": "2026-10-15",
-          "text": "Introduced in House",
-          "tag": "提出/转交"
-        }
-      ],
-      "title_cn": "《禁止腐败性俄罗斯石油交易法案》",
-      "domain": "国防/安全",
-      "brief": {
-        "at": "2026-11-18",
-        "body": "1. 文种与主体：众议院法案 H.R. 10828，案名《禁止腐败性俄罗斯石油交易法案》，由民主党众议员Gregory W. Meeks于 2026年10月15日 提出。\n2. 核心动作：案名指向限制涉及俄罗斯石油交易的腐败性安排；队列未提供官方摘要，制裁对象与手段未列明，不作推定。\n3. 程序阶段：最新行动 2026-10-15，转交外交委员会，并同时转交司法、金融服务、筹款、监督与政府改革、议事规则委员会，进入多委员会并行审议。\n4. 信息边界：队列未提供官方摘要，具体条文以 congress.gov 文本为准；属第 119 届国会。",
-        "tier": "note",
-        "stage": "introduced"
       }
     },
     {
